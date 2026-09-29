@@ -68,4 +68,24 @@ describe('arcadeStore', () => {
     expect(state.zenMinutesTotal).toBe(2);
     expect(state.zenCyclesTotal).toBe(5);
   });
+
+  it('records daily challenge results and maintains streaks', () => {
+    const store = useArcadeStore.getState();
+    expect(store.dailyChallengeStreak).toBe(0);
+    expect(store.dailyChallengeCompleted).toBe(false);
+
+    // Day 1 completion
+    store.recordDailyChallenge(180, 24, 100);
+    let state = useArcadeStore.getState();
+    expect(state.dailyChallengeCompleted).toBe(true);
+    expect(state.dailyChallengeStreak).toBe(1);
+    expect(state.dailyChallengeLastResult?.score).toBe(180);
+    expect(state.dailyChallengeLastResult?.accuracy).toBe(100);
+
+    // Same day play maintains streak
+    store.recordDailyChallenge(200, 20, 100);
+    state = useArcadeStore.getState();
+    expect(state.dailyChallengeStreak).toBe(1);
+    expect(state.dailyChallengeLastResult?.score).toBe(200);
+  });
 });

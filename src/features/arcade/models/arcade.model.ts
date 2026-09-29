@@ -43,6 +43,13 @@ export interface RainItem {
   speed: number;
 }
 
+export interface DailyChallengeResult {
+  score: number;
+  timeSeconds: number;
+  accuracy: number;
+  date: string;
+}
+
 export interface ArcadeStats {
   wordlePlayed: number;
   wordleWins: number;
@@ -52,4 +59,8 @@ export interface ArcadeStats {
   rainHighScore: number;
   zenMinutesTotal: number;
   zenCyclesTotal: number;
+  dailyChallengeDate: string;
+  dailyChallengeStreak: number;
+  dailyChallengeCompleted: boolean;
+  dailyChallengeLastResult: DailyChallengeResult | null;
 }

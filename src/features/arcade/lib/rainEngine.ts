@@ -1,6 +1,6 @@
 import type { RainItem } from '../models/arcade.model';
 
-export const RAIN_CANDIDATES: Array<{ glyph: string; answer: string }> = [
+export const RAIN_CANDIDATES: { glyph: string; answer: string }[] = [
   // Hiragana
   { glyph: 'あ', answer: 'a' },
   { glyph: 'い', answer: 'i' },

@@ -8,6 +8,7 @@ interface ArcadeState extends ArcadeStats {
   recordMemoryScore: (deck: MemoryDeckMode, moves: number) => void;
   recordRainScore: (score: number) => { isNewHigh: boolean };
   addZenSession: (seconds: number, cycles: number) => void;
+  recordDailyChallenge: (score: number, timeSeconds: number, accuracy: number) => void;
   resetArcadeStats: () => void;
 }
 
@@ -24,6 +25,10 @@ const initialStats: ArcadeStats = {
   rainHighScore: 0,
   zenMinutesTotal: 0,
   zenCyclesTotal: 0,
+  dailyChallengeDate: '',
+  dailyChallengeStreak: 0,
+  dailyChallengeCompleted: false,
+  dailyChallengeLastResult: null,
 };
 
 export const useArcadeStore = create<ArcadeState>()(
@@ -76,6 +81,36 @@ export const useArcadeStore = create<ArcadeState>()(
           return {
             zenMinutesTotal: Math.round((state.zenMinutesTotal + addedMinutes) * 10) / 10,
             zenCyclesTotal: state.zenCyclesTotal + cycles,
+          };
+        });
+      },
+
+      recordDailyChallenge: (score: number, timeSeconds: number, accuracy: number) => {
+        const today = new Date().toISOString().split('T')[0];
+        const yesterdayDate = new Date();
+        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+        const yesterday = yesterdayDate.toISOString().split('T')[0];
+
+        set(state => {
+          let newStreak = state.dailyChallengeStreak;
+          if (state.dailyChallengeDate === today) {
+            // Already played today, maintain streak
+          } else if (state.dailyChallengeDate === yesterday) {
+            newStreak += 1;
+          } else {
+            newStreak = 1;
+          }
+
+          return {
+            dailyChallengeDate: today,
+            dailyChallengeStreak: newStreak,
+            dailyChallengeCompleted: true,
+            dailyChallengeLastResult: {
+              score,
+              timeSeconds,
+              accuracy,
+              date: today,
+            },
           };
         });
       },

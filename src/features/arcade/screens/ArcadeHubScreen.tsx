@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import {
   Modal,
   ScrollView,
@@ -20,9 +20,13 @@ import {
   Trophy,
   Sparkles,
   Zap,
+  Shield,
+  Users,
+  Share2,
+  Calendar,
 } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
-import { useAppTheme } from '../../../core/theme';
+import { radii, typography, useAppTheme } from '../../../core/theme';
 import { useArcadeStore } from '../store/useArcadeStore';
 import { ZenBreathingView } from '../components/ZenBreathingView';
 import { KanaWordleView } from '../components/KanaWordleView';
@@ -35,10 +39,22 @@ import { HanabiView } from '../components/HanabiView';
 import { KanaCatchView } from '../components/KanaCatchView';
 import { KanaPopView } from '../components/KanaPopView';
 import { KanaTraceView } from '../../kana/components/KanaTraceView';
+import { DailyChallengeModal } from '../components/DailyChallengeModal';
+import { getDayOfYear } from '../lib/dailyChallengeGenerator';
+import { BlitzModal } from '../../challenges/components/BlitzModal';
+import { GauntletModal } from '../../challenges/components/GauntletModal';
+import type { ChallengeQuestion } from '../../challenges/models/challenge.model';
+import { useChallengeStore } from '../../challenges/store/useChallengeStore';
+import { useKanaGroupsQuery } from '../../kana/hooks/useKanaQuery';
+import { flattenGroups, generateKanaQuestion } from '../../kana/lib/kanaGenerator';
 
 type ActiveGame = 'zen' | 'wordle' | 'memory' | 'rain' | 'runner' | 'snake' | 'rush' | 'hanabi' | 'catch' | 'pop' | 'trace' | null;
 
-export function ArcadeHubScreen() {
+interface ArcadeHubScreenProps {
+  hideBack?: boolean;
+}
+
+export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {}) {
   const router = useRouter();
   const { colors: theme } = useAppTheme();
   const insets = useSafeAreaInsets();
@@ -50,9 +66,45 @@ export function ArcadeHubScreen() {
     zenCyclesTotal,
     rainHighScore,
     memoryBestMoves,
+    dailyChallengeDate,
+    dailyChallengeStreak,
+    dailyChallengeCompleted,
+    dailyChallengeLastResult,
   } = useArcadeStore();
 
   const [activeGame, setActiveGame] = useState<ActiveGame>(null);
+  const [showDailyChallenge, setShowDailyChallenge] = useState(false);
+  const [showBlitz, setShowBlitz] = useState(false);
+  const [showGauntlet, setShowGauntlet] = useState(false);
+
+  const { data: kanaGroups } = useKanaGroupsQuery();
+  const allKana = useMemo(() => {
+    if (!kanaGroups) return [];
+    return flattenGroups(kanaGroups);
+  }, [kanaGroups]);
+
+  const generateChallengeQuestion = useCallback((): ChallengeQuestion | null => {
+    if (allKana.length === 0) return null;
+    const q = generateKanaQuestion(allKana, 'pick');
+    if (!q.options) return null;
+    return {
+      id: q.id,
+      prompt: q.prompt,
+      promptSub: q.promptSub,
+      options: q.options,
+      correctAnswer: q.correctAnswer,
+      characterKey: q.target.kana,
+      category: 'kana',
+    };
+  }, [allKana]);
+
+  const { getBlitzStats, getGauntletStats } = useChallengeStore();
+  const blitzStats = getBlitzStats('kana', 60);
+  const gauntletStats = getGauntletStats('kana', 'normal');
+
+  const todayStr = new Date().toISOString().split('T')[0];
+  const isDailyDone = dailyChallengeDate === todayStr && dailyChallengeCompleted;
+  const dayNumber = getDayOfYear();
 
   const launchGame = (game: ActiveGame) => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
@@ -67,13 +119,15 @@ export function ArcadeHubScreen() {
     <View style={[styles.container, { backgroundColor: theme.background, paddingTop: insets.top }]}>
       {/* Top Navigation */}
       <View style={styles.navBar}>
-        <Pressable
-          onPress={() => router.back()}
-          style={[styles.backButton, { backgroundColor: theme.surface, borderColor: theme.border }]}
-          accessibilityLabel="Go back"
-        >
-          <ArrowLeft size={20} color={theme.textPrimary} />
-        </Pressable>
+        {!hideBack && (
+          <Pressable
+            onPress={() => router.back()}
+            style={[styles.backButton, { backgroundColor: theme.surface, borderColor: theme.border }]}
+            accessibilityLabel="Go back"
+          >
+            <ArrowLeft size={20} color={theme.textPrimary} />
+          </Pressable>
+        )}
 
         <View style={styles.navTitles}>
           <Text style={[styles.navTitle, { color: theme.textPrimary }]}>
@@ -91,6 +145,79 @@ export function ArcadeHubScreen() {
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 24 }]}
         showsVerticalScrollIndicator={false}
       >
+        {/* 0. Daily Community Challenge Hero Card */}
+        <View
+          style={[
+            styles.dailyHeroCard,
+            {
+              backgroundColor: theme.surface,
+              borderColor: isDailyDone ? theme.success : theme.primary,
+            },
+          ]}
+        >
+          <View style={styles.dailyHeroHeader}>
+            <View style={styles.dailyBadgeRow}>
+              <View style={[styles.dailyTag, { backgroundColor: theme.primaryLight }]}>
+                <Calendar size={12} color={theme.primary} />
+                <Text style={[styles.dailyTagText, { color: theme.primary }]}>
+                  DAILY #{dayNumber}
+                </Text>
+              </View>
+
+              <View style={[styles.dailyTag, { backgroundColor: '#F9731618' }]}>
+                <Flame size={12} color="#F97316" />
+                <Text style={[styles.dailyTagText, { color: '#F97316' }]}>
+                  {dailyChallengeStreak}d Streak
+                </Text>
+              </View>
+            </View>
+
+            <View style={styles.communityPill}>
+              <Users size={12} color={theme.textMuted} />
+              <Text style={[styles.communityPillText, { color: theme.textSecondary }]}>
+                2,419 active
+              </Text>
+            </View>
+          </View>
+
+          <View style={styles.dailyHeroBody}>
+            <Text style={[styles.dailyHeroTitle, { color: theme.textPrimary }]}>
+              日替わり道場 • Daily Challenge
+            </Text>
+            <Text style={[styles.dailyHeroDesc, { color: theme.textSecondary }]}>
+              5 daily questions across Kana, Kanji & Vocabulary. Test your reflexes and compare with the community.
+            </Text>
+          </View>
+
+          {isDailyDone ? (
+            <View style={styles.dailyDoneRow}>
+              <View style={[styles.doneBadge, { backgroundColor: theme.successLight }]}>
+                <Text style={[styles.doneBadgeText, { color: theme.success }]}>
+                  ✓ Completed ({dailyChallengeLastResult?.score ?? 0} pts)
+                </Text>
+              </View>
+              <Pressable
+                onPress={() => setShowDailyChallenge(true)}
+                style={[styles.dailyPlayBtn, { backgroundColor: theme.primary }]}
+              >
+                <Share2 size={16} color="#FFFFFF" />
+                <Text style={styles.dailyPlayBtnText}>Share Result</Text>
+              </Pressable>
+            </View>
+          ) : (
+            <Pressable
+              onPress={() => {
+                Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+                setShowDailyChallenge(true);
+              }}
+              style={[styles.dailyPlayBtn, { backgroundColor: theme.primary }]}
+            >
+              <Zap size={18} color="#FFFFFF" />
+              <Text style={styles.dailyPlayBtnText}>Start Daily Challenge</Text>
+            </Pressable>
+          )}
+        </View>
+
         {/* Stats Summary Banner */}
         <View style={[styles.statsCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
           <View style={styles.statCol}>
@@ -111,6 +238,78 @@ export function ArcadeHubScreen() {
             <Text style={[styles.statLabel, { color: theme.textSecondary }]}>Rain Record</Text>
           </View>
         </View>
+
+        {/* Blitz Mode Card */}
+        <Pressable
+          onPress={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+            setShowBlitz(true);
+          }}
+          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+        >
+          <View style={styles.cardHeader}>
+            <View style={[styles.iconWrap, { backgroundColor: '#EAB30818' }]}>
+              <Zap size={24} color="#EAB308" />
+            </View>
+            <View style={styles.headerInfo}>
+              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                稲妻特訓 • Blitz Challenge
+              </Text>
+              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                Speed reflex test (30s / 60s / 120s)
+              </Text>
+            </View>
+          </View>
+
+          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+            High-octane rapid fire questions against the clock. Build your highest streak before time runs out!
+          </Text>
+
+          <View style={styles.cardFooter}>
+            <Text style={[styles.cardStatBadge, { color: '#EAB308' }]}>
+              ⚡ Best: {blitzStats.bestScore} pts
+            </Text>
+            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+              <Text style={styles.playPillText}>Start Blitz</Text>
+            </View>
+          </View>
+        </Pressable>
+
+        {/* Gauntlet Mode Card */}
+        <Pressable
+          onPress={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+            setShowGauntlet(true);
+          }}
+          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+        >
+          <View style={styles.cardHeader}>
+            <View style={[styles.iconWrap, { backgroundColor: '#EF444418' }]}>
+              <Shield size={24} color="#EF4444" />
+            </View>
+            <View style={styles.headerInfo}>
+              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                百人組手 • Gauntlet Survival
+              </Text>
+              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                Endless survival test • 3 Lives
+              </Text>
+            </View>
+          </View>
+
+          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+            Survive endless consecutive questions with 3 lives. Heal hearts with 5-streaks in normal mode!
+          </Text>
+
+          <View style={styles.cardFooter}>
+            <Text style={[styles.cardStatBadge, { color: '#EF4444' }]}>
+              🛡️ Best Streak: {gauntletStats.bestStreak}
+            </Text>
+            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+              <Text style={styles.playPillText}>Enter Gauntlet</Text>
+            </View>
+          </View>
+        </Pressable>
 
         {/* 1. Zen Breathing Mode */}
         <Pressable
@@ -575,6 +774,27 @@ export function ArcadeHubScreen() {
       >
         <KanaTraceView visible={activeGame === 'trace'} onClose={closeGame} />
       </Modal>
+
+      <DailyChallengeModal
+        visible={showDailyChallenge}
+        onClose={() => setShowDailyChallenge(false)}
+      />
+
+      <BlitzModal
+        visible={showBlitz}
+        onClose={() => setShowBlitz(false)}
+        dojoName="Arcade"
+        category="kana"
+        questionGenerator={generateChallengeQuestion}
+      />
+
+      <GauntletModal
+        visible={showGauntlet}
+        onClose={() => setShowGauntlet(false)}
+        dojoName="Arcade"
+        category="kana"
+        questionGenerator={generateChallengeQuestion}
+      />
     </View>
   );
 }
@@ -702,6 +922,91 @@ const styles = StyleSheet.create({
   playPillText: {
     color: '#FFFFFF',
     fontSize: 13,
+    fontWeight: '700',
+  },
+  dailyHeroCard: {
+    borderRadius: 20,
+    borderWidth: 2,
+    padding: 18,
+    gap: 12,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  dailyHeroHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  dailyBadgeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  dailyTag: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: radii.full,
+  },
+  dailyTagText: {
+    ...typography.caption,
+    fontSize: 11,
+    fontWeight: '700',
+    letterSpacing: 0.5,
+  },
+  communityPill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+  },
+  communityPillText: {
+    ...typography.caption,
+    fontSize: 11,
+  },
+  dailyHeroBody: {
+    gap: 4,
+  },
+  dailyHeroTitle: {
+    ...typography.h2,
+    fontWeight: '800',
+  },
+  dailyHeroDesc: {
+    ...typography.body,
+    lineHeight: 20,
+  },
+  dailyPlayBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    paddingVertical: 12,
+    borderRadius: radii.lg,
+  },
+  dailyPlayBtnText: {
+    color: '#FFFFFF',
+    ...typography.h3,
+    fontWeight: '700',
+  },
+  dailyDoneRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 8,
+  },
+  doneBadge: {
+    flex: 1,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    borderRadius: radii.lg,
+    alignItems: 'center',
+  },
+  doneBadgeText: {
+    ...typography.caption,
     fontWeight: '700',
   },
 });
