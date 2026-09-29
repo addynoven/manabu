@@ -8,10 +8,12 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { spacing, useAppTheme } from '../../../core/theme';
 import { DojoFloatingBadges } from '../components/DojoFloatingBadges';
-import { DojoWindingPath } from '../components/DojoWindingPath';
+import { DojoUnitHeader } from '../components/DojoUnitHeader';
+import { DojoTimelineRail } from '../components/DojoTimelineRail';
 import { LessonDrawerModal } from '../components/LessonDrawerModal';
 import { LessonSessionModal } from '../components/LessonSessionModal';
 import { RevisionGateModal } from '../components/RevisionGateModal';
+import { CURATED_DOJO_UNITS } from '../data/curatedUnits';
 import type { DojoLesson, DojoUnit } from '../models/dojo.model';
 import { useDojoStore } from '../store/useDojoStore';
 
@@ -19,6 +21,7 @@ export function DojoScreen() {
   const insets = useSafeAreaInsets();
   const { colors: theme } = useAppTheme();
   const passRevisionGate = useDojoStore(state => state.passRevisionGate);
+  const completedLessons = useDojoStore(state => state.completedLessons);
 
   const [selectedLesson, setSelectedLesson] = useState<DojoLesson | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -30,7 +33,29 @@ export function DojoScreen() {
   const [selectedGateUnit, setSelectedGateUnit] = useState<DojoUnit | null>(null);
   const [gateModalOpen, setGateModalOpen] = useState(false);
 
+  // Expanded units map (Unit 1 open by default)
+  const [expandedUnits, setExpandedUnits] = useState<Record<string, boolean>>({
+    unit_1: true,
+    unit_2: false,
+    unit_3: false,
+  });
+
+  const toggleUnitExpand = (unitId: string) => {
+    setExpandedUnits(prev => ({
+      ...prev,
+      [unitId]: !prev[unitId],
+    }));
+  };
+
   const handleSelectLesson = (lesson: DojoLesson) => {
+    if (lesson.category === 'Unit Test') {
+      const unit = CURATED_DOJO_UNITS.find(u => u.id === lesson.unitId);
+      if (unit) {
+        setSelectedGateUnit(unit);
+        setGateModalOpen(true);
+        return;
+      }
+    }
     setSelectedLesson(lesson);
     setDrawerOpen(true);
   };
@@ -44,17 +69,14 @@ export function DojoScreen() {
     setSessionActive(true);
   };
 
-  const handleSelectRevisionGate = (unit: DojoUnit) => {
-    setSelectedGateUnit(unit);
-    setGateModalOpen(true);
-  };
-
   const handleLaunchGateTest = (unit: DojoUnit) => {
     // Create synthetic revision lesson from gate items
     const syntheticLesson: DojoLesson = {
       id: unit.revisionGate.id,
       unitId: unit.id,
       lessonNumber: 99,
+      dayNumber: 7,
+      category: 'Unit Test',
       title: unit.revisionGate.title,
       titleJp: unit.revisionGate.titleJp,
       summary: 'Cumulative unit review test',
@@ -67,7 +89,6 @@ export function DojoScreen() {
     setSessionMode('comprehensive');
     setSessionActive(true);
 
-    // Auto-mark passed upon completion in session runner
     passRevisionGate(unit.id);
   };
 
@@ -84,15 +105,47 @@ export function DojoScreen() {
         <DojoFloatingBadges />
       </View>
 
-      {/* Main Path ScrollView */}
+      {/* Main Teuida-Style Timeline ScrollView */}
       <ScrollView
-        contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 48 }]}
+        contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 64 }]}
         showsVerticalScrollIndicator={false}
       >
-        <DojoWindingPath
-          onSelectLesson={handleSelectLesson}
-          onSelectRevisionGate={handleSelectRevisionGate}
-        />
+        {CURATED_DOJO_UNITS.map((unit, unitIndex) => {
+          const unitCompletedCount = unit.lessons.filter(l => !!completedLessons[l.id]).length;
+          const isExpanded = !!expandedUnits[unit.id];
+
+          return (
+            <View key={unit.id} style={styles.unitBlock}>
+              {/* Unit Header with Circular Progress Ring & Summary Button */}
+              <DojoUnitHeader
+                unit={unit}
+                completedCount={unitCompletedCount}
+                totalCount={unit.lessons.length}
+                isExpanded={isExpanded}
+                onToggleExpand={() => toggleUnitExpand(unit.id)}
+                showExpandToggle={unitIndex > 0}
+              />
+
+              {/* Teuida Vertical Timeline Rail */}
+              {isExpanded && (
+                <DojoTimelineRail
+                  lessons={unit.lessons}
+                  onSelectLesson={handleSelectLesson}
+                />
+              )}
+
+              {/* Unit Divider if multiple units */}
+              {unitIndex < CURATED_DOJO_UNITS.length - 1 && (
+                <View
+                  style={[
+                    styles.unitDivider,
+                    { backgroundColor: theme.borderSubtle },
+                  ]}
+                />
+              )}
+            </View>
+          );
+        })}
       </ScrollView>
 
       {/* deerleno_5 Lesson Drawer */}
@@ -138,7 +191,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
   },
   headerLeft: {
-    flexDirection: 'column',
+    flex: 1,
   },
   title: {
     fontSize: 20,
@@ -148,8 +201,16 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 12,
     fontWeight: '600',
+    marginTop: 2,
   },
   scrollContent: {
-    paddingTop: spacing.base,
+    paddingTop: spacing.sm,
+  },
+  unitBlock: {
+    marginBottom: spacing.md,
+  },
+  unitDivider: {
+    height: 8,
+    marginVertical: spacing.lg,
   },
 });

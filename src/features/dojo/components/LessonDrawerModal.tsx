@@ -85,18 +85,18 @@ export function LessonDrawerModal({
         <Pressable style={styles.backdrop} onPress={onClose} />
 
         <View style={[styles.sheet, { backgroundColor: theme.surface }]}>
-          {/* Handle bar */}
-          <View style={[styles.handleBar, { backgroundColor: theme.border }]} />
-
-          {/* Close button */}
-          <Pressable
-            onPress={onClose}
-            style={[styles.closeButton, { backgroundColor: theme.surfaceSubtle }]}
-            hitSlop={8}
-            accessibilityLabel="Close lesson drawer"
-          >
-            <X size={18} color={theme.textPrimary} />
-          </Pressable>
+          {/* Header Row */}
+          <View style={styles.sheetHeader}>
+            <View style={[styles.handleBar, { backgroundColor: theme.border }]} />
+            <Pressable
+              onPress={onClose}
+              style={[styles.closeButton, { backgroundColor: theme.surfaceSubtle }]}
+              hitSlop={8}
+              accessibilityLabel="Close lesson drawer"
+            >
+              <X size={18} color={theme.textPrimary} />
+            </Pressable>
+          </View>
 
           {/* Lesson Header Card matching deerleno_5 */}
           <View style={[styles.lessonCard, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}>
@@ -265,17 +265,23 @@ const styles = StyleSheet.create({
     gap: spacing.md,
     ...shadows.md,
   },
+  sheetHeader: {
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative',
+    minHeight: 32,
+  },
   handleBar: {
     width: 44,
     height: 5,
     borderRadius: 3,
     alignSelf: 'center',
-    marginBottom: spacing.xs,
   },
   closeButton: {
     position: 'absolute',
-    top: spacing.md,
-    right: spacing.base,
+    right: 0,
+    top: 0,
     width: 32,
     height: 32,
     borderRadius: radii.full,

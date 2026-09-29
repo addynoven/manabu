@@ -192,16 +192,16 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
           {isDailyDone ? (
             <View style={styles.dailyDoneRow}>
               <View style={[styles.doneBadge, { backgroundColor: theme.successLight }]}>
-                <Text style={[styles.doneBadgeText, { color: theme.success }]}>
+                <Text style={[styles.doneBadgeText, { color: theme.success }]} numberOfLines={1}>
                   ✓ Completed ({dailyChallengeLastResult?.score ?? 0} pts)
                 </Text>
               </View>
               <Pressable
                 onPress={() => setShowDailyChallenge(true)}
-                style={[styles.dailyPlayBtn, { backgroundColor: theme.primary }]}
+                style={[styles.dailyPlayBtn, styles.dailyDoneShareBtn, { backgroundColor: theme.primary }]}
               >
                 <Share2 size={16} color="#FFFFFF" />
-                <Text style={styles.dailyPlayBtnText}>Share Result</Text>
+                <Text style={styles.dailyDoneShareBtnText} numberOfLines={1}>Share Result</Text>
               </Pressable>
             </View>
           ) : (
@@ -985,11 +985,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 8,
     paddingVertical: 12,
+    paddingHorizontal: 20,
     borderRadius: radii.lg,
   },
   dailyPlayBtnText: {
     color: '#FFFFFF',
-    ...typography.h3,
+    fontSize: 16,
     fontWeight: '700',
   },
   dailyDoneRow: {
@@ -1000,13 +1001,23 @@ const styles = StyleSheet.create({
   },
   doneBadge: {
     flex: 1,
-    paddingVertical: 10,
+    paddingVertical: 12,
     paddingHorizontal: 12,
     borderRadius: radii.lg,
     alignItems: 'center',
+    justifyContent: 'center',
   },
   doneBadgeText: {
-    ...typography.caption,
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  dailyDoneShareBtn: {
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+  },
+  dailyDoneShareBtnText: {
+    color: '#FFFFFF',
+    fontSize: 14,
     fontWeight: '700',
   },
 });

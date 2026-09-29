@@ -22,16 +22,28 @@ export interface LessonItem {
   contextSentence?: string; // Full sentence with ___ blank
 }
 
+export type DojoLessonCategory =
+  | 'Expression'
+  | 'Vocabulary'
+  | 'Practice'
+  | 'Review Quiz'
+  | 'Conversation'
+  | 'Unit Test';
+
 export interface DojoLesson {
   id: string;
   unitId: string;
   lessonNumber: number;
+  dayNumber: number; // 1 to 7
+  category: DojoLessonCategory;
+  sectionTitle?: string;
   title: string;
   titleJp: string;
   summary: string;
   vocabKeywords: string[];
   kanjiKeywords: string[];
   items: LessonItem[];
+  iconType?: 'expression' | 'vocabulary' | 'practice' | 'quiz' | 'test';
 }
 
 export interface RevisionGate {
@@ -51,6 +63,7 @@ export interface DojoUnit {
   description: string;
   icon: string;
   themeColor: string;
+  summaryPoints?: string[];
   lessons: DojoLesson[];
   revisionGate: RevisionGate;
 }
