@@ -1,18 +1,34 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router';
+import React, { useEffect } from 'react';
+import { Stack } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
-import { useColorScheme } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { ErrorBoundary } from '../core/errors/ErrorBoundary';
+import { QueryProvider } from '../core/query/QueryProvider';
 
-import { AnimatedSplashOverlay } from '@/components/animated-icon';
-import AppTabs from '@/components/app-tabs';
+SplashScreen.preventAutoHideAsync().catch(() => {});
 
-SplashScreen.preventAutoHideAsync();
+export default function RootLayout() {
+  useEffect(() => {
+    // Hide splash screen after root layout mounts
+    SplashScreen.hideAsync().catch(() => {});
+  }, []);
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <AnimatedSplashOverlay />
-      <AppTabs />
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ErrorBoundary>
+        <QueryProvider>
+          <StatusBar style="dark" />
+          <Stack screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="index" />
+            <Stack.Screen name="(tabs)" />
+            <Stack.Screen name="conjugator" options={{ animation: 'slide_from_bottom' }} />
+            <Stack.Screen name="arcade" options={{ animation: 'slide_from_bottom' }} />
+            <Stack.Screen name="academy" options={{ animation: 'slide_from_bottom' }} />
+            <Stack.Screen name="resources" options={{ animation: 'slide_from_bottom' }} />
+          </Stack>
+        </QueryProvider>
+      </ErrorBoundary>
+    </SafeAreaProvider>
   );
 }
