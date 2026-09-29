@@ -123,7 +123,7 @@ export function DojoScreen() {
                 totalCount={unit.lessons.length}
                 isExpanded={isExpanded}
                 onToggleExpand={() => toggleUnitExpand(unit.id)}
-                showExpandToggle={unitIndex > 0}
+                showExpandToggle={true}
               />
 
               {/* Teuida Vertical Timeline Rail */}
