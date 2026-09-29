@@ -224,8 +224,8 @@ export function BlitzModal({
                     backgroundColor: theme.surfaceSubtle,
                     borderColor: theme.border,
                   },
-                  timeLeft <= 10 && styles.timerBadgeWarning,
-                  timeLeft <= 5 && styles.timerBadgeCritical,
+                  timeLeft <= 10 && { backgroundColor: theme.accentLight, borderColor: theme.accent },
+                  timeLeft <= 5 && { backgroundColor: theme.errorLight, borderColor: theme.error },
                 ]}
               >
                 <Text style={[styles.timerText, { color: theme.textPrimary }]}>⏱️ {timeLeft}s</Text>
@@ -502,14 +502,6 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.xs + 2,
     borderRadius: radii.full,
     borderWidth: 1,
-  },
-  timerBadgeWarning: {
-    backgroundColor: '#FEF3C7',
-    borderColor: '#F59E0B',
-  },
-  timerBadgeCritical: {
-    backgroundColor: '#FEE2E2',
-    borderColor: '#EF4444',
   },
   timerText: {
     fontSize: 16,

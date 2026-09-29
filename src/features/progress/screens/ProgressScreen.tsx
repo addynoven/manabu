@@ -20,7 +20,6 @@ import {
   type AchievementCategory,
 } from '../../achievements/models/achievement.model';
 import { useAchievementStore } from '../../achievements/store/useAchievementStore';
-import type { CharacterMastery } from '../models/progress.model';
 
 export function ProgressScreen() {
   const insets = useSafeAreaInsets();
@@ -297,7 +296,7 @@ export function ProgressScreen() {
                     }}
                   >
                     <View style={styles.meterHeader}>
-                      <View style={[styles.meterCharBadge, styles.meterCharBadgeWeak]}>
+                      <View style={[styles.meterCharBadge, { backgroundColor: theme.errorLight, borderColor: theme.error, borderWidth: 1 }]}>
                         <Text style={[styles.meterCharText, { color: theme.textPrimary }]}>{item.character}</Text>
                       </View>
                       <View style={styles.meterMeta}>
@@ -313,7 +312,7 @@ export function ProgressScreen() {
                           {item.correct}/{item.total} correct
                         </Text>
                       </View>
-                      <View style={[styles.meterStatusBadge, styles.meterStatusBadgeWeak]}>
+                      <View style={[styles.meterStatusBadge, { backgroundColor: theme.errorLight }]}>
                         <Text style={[styles.meterStatusText, { color: theme.error }]}>
                           {item.accuracy}% Acc
                         </Text>
@@ -361,7 +360,7 @@ export function ProgressScreen() {
                     }}
                   >
                     <View style={styles.meterHeader}>
-                      <View style={[styles.meterCharBadge, styles.meterCharBadgeStrong]}>
+                      <View style={[styles.meterCharBadge, { backgroundColor: theme.successLight, borderColor: theme.success, borderWidth: 1 }]}>
                         <Text style={[styles.meterCharText, { color: theme.textPrimary }]}>{item.character}</Text>
                       </View>
                       <View style={styles.meterMeta}>
@@ -377,7 +376,7 @@ export function ProgressScreen() {
                           {item.correct}/{item.total} correct
                         </Text>
                       </View>
-                      <View style={[styles.meterStatusBadge, styles.meterStatusBadgeStrong]}>
+                      <View style={[styles.meterStatusBadge, { backgroundColor: theme.successLight }]}>
                         <Text style={[styles.meterStatusText, { color: theme.success }]}>
                           {item.accuracy}% Acc
                         </Text>
@@ -711,16 +710,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  meterCharBadgeWeak: {
-    backgroundColor: '#FEF2F2',
-    borderWidth: 1,
-    borderColor: '#FECACA',
-  },
-  meterCharBadgeStrong: {
-    backgroundColor: '#ECFDF5',
-    borderWidth: 1,
-    borderColor: '#A7F3D0',
-  },
   meterCharText: {
     fontSize: 22,
     fontWeight: '700',
@@ -750,18 +739,10 @@ const styles = StyleSheet.create({
     paddingVertical: 4,
     borderRadius: radii.full,
   },
-  meterStatusBadgeWeak: {
-    backgroundColor: '#FEE2E2',
-  },
-  meterStatusBadgeStrong: {
-    backgroundColor: '#D1FAE5',
-  },
   meterStatusText: {
     fontSize: 11,
     fontWeight: '700',
   },
-  meterStatusTextWeak: {},
-  meterStatusTextStrong: {},
   meterTrack: {
     height: 6,
     borderRadius: radii.full,
