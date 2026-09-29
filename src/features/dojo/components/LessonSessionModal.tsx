@@ -1,0 +1,700 @@
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import {
+  Modal,
+  StyleSheet,
+  Text,
+  Pressable,
+  View,
+  Alert,
+  ScrollView,
+} from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import {
+  X,
+  Volume2,
+  Snail,
+  CheckCircle2,
+  XCircle,
+  ArrowRight,
+  Sparkles,
+} from 'lucide-react-native';
+import * as Haptics from 'expo-haptics';
+import { radii, shadows, spacing, useAppTheme } from '../../../core/theme';
+import type { DojoLesson, LessonItem } from '../models/dojo.model';
+import { speakJapanese } from '../../../core/audio/tts';
+import { useDojoStore } from '../store/useDojoStore';
+import { useProgressStore } from '../../progress/store/useProgressStore';
+
+interface LessonSessionModalProps {
+  visible: boolean;
+  lesson: DojoLesson | null;
+  mode?: 'comprehensive' | 'listen' | 'speak' | 'spell';
+  onClose: () => void;
+}
+
+interface LessonSessionContentProps {
+  lesson: DojoLesson;
+  mode: 'comprehensive' | 'listen' | 'speak' | 'spell';
+  onClose: () => void;
+}
+
+function LessonSessionContent({
+  lesson,
+  mode,
+  onClose,
+}: LessonSessionContentProps) {
+  const insets = useSafeAreaInsets();
+  const { colors: theme } = useAppTheme();
+  const completeLesson = useDojoStore(state => state.completeLesson);
+  const recordAnswer = useProgressStore(state => state.recordAnswer);
+
+  const initialItems = useMemo(() => {
+    if (mode === 'comprehensive') return [...lesson.items];
+    const filtered = lesson.items.filter(item => item.type === mode);
+    return filtered.length > 0 ? filtered : [...lesson.items];
+  }, [lesson, mode]);
+
+  const [queue, setQueue] = useState<LessonItem[]>(() => initialItems);
+  const [totalInitial] = useState(() => initialItems.length);
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [assembledTiles, setAssembledTiles] = useState<string[]>([]);
+  const [evaluation, setEvaluation] = useState<'correct' | 'incorrect' | null>(null);
+  const [isCompleted, setIsCompleted] = useState(false);
+  const [correctCount, setCorrectCount] = useState(0);
+
+  const currentItem = queue[0] || null;
+
+  // Auto-play audio on question reveal
+  useEffect(() => {
+    if (currentItem && !evaluation) {
+      speakJapanese(currentItem.audioText, { rate: 0.9 }).catch(() => {});
+    }
+  }, [currentItem, evaluation]);
+
+  const handlePlayAudio = useCallback(async (rate = 0.9) => {
+    if (!currentItem) return;
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+    await speakJapanese(currentItem.audioText, { rate });
+  }, [currentItem]);
+
+  const handleCheck = () => {
+    if (!currentItem) return;
+
+    let isCorrect = false;
+
+    if (currentItem.type === 'spell') {
+      const spelled = assembledTiles.join('');
+      isCorrect = spelled === currentItem.correctAnswer;
+    } else {
+      isCorrect = selectedOption === currentItem.correctAnswer;
+    }
+
+    if (isCorrect) {
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
+      setEvaluation('correct');
+      setCorrectCount(c => c + 1);
+      recordAnswer(currentItem.prompt, true, 'vocab');
+    } else {
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error).catch(() => {});
+      setEvaluation('incorrect');
+      recordAnswer(currentItem.prompt, false, 'vocab');
+    }
+  };
+
+  const handleContinue = () => {
+    if (!currentItem || !lesson) return;
+
+    if (evaluation === 'incorrect') {
+      // Re-queue missed question to the end
+      setQueue(prev => [...prev.slice(1), currentItem]);
+    } else {
+      setQueue(prev => prev.slice(1));
+    }
+
+    setSelectedOption(null);
+    setAssembledTiles([]);
+    setEvaluation(null);
+
+    // If queue is now empty (was last item and correct)
+    if (queue.length === 1 && evaluation === 'correct') {
+      setIsCompleted(true);
+      const finalScore = Math.round((correctCount / Math.max(1, totalInitial)) * 100);
+      completeLesson(lesson.id, finalScore);
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
+    }
+  };
+
+  const handleExit = () => {
+    Alert.alert(
+      'Quit Lesson?',
+      'Progress in this session will not be saved.',
+      [
+        { text: 'Keep Learning', style: 'cancel' },
+        { text: 'Quit', style: 'destructive', onPress: onClose },
+      ],
+    );
+  };
+
+  const handleTilePress = (tile: string) => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+    setAssembledTiles(prev => [...prev, tile]);
+  };
+
+  const handleRemoveTile = (index: number) => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+    setAssembledTiles(prev => prev.filter((_, idx) => idx !== index));
+  };
+
+  const progressPercent = totalInitial > 0
+    ? Math.min(100, Math.round(((totalInitial - queue.length) / totalInitial) * 100))
+    : 0;
+
+  return (
+    <View style={[styles.container, { backgroundColor: theme.background, paddingTop: insets.top }]}>
+        {/* Top Header Bar */}
+        <View style={styles.topHeader}>
+          <Pressable
+            onPress={handleExit}
+            style={[styles.exitBtn, { backgroundColor: theme.surfaceSubtle }]}
+            hitSlop={8}
+            accessibilityLabel="Exit lesson"
+          >
+            <X size={20} color={theme.textPrimary} />
+          </Pressable>
+
+          {/* Progress Bar */}
+          <View style={[styles.progressTrack, { backgroundColor: theme.borderSubtle }]}>
+            <View
+              style={[
+                styles.progressFill,
+                { width: `${progressPercent}%`, backgroundColor: theme.primary },
+              ]}
+            />
+          </View>
+        </View>
+
+        {isCompleted ? (
+          /* Victory Completion Screen */
+          <View style={styles.completeContainer}>
+            <View style={[styles.completeIconCircle, { backgroundColor: theme.primary + '20' }]}>
+              <Sparkles size={54} color={theme.primary} />
+            </View>
+            <Text style={[styles.completeTitle, { color: theme.textPrimary }]}>Lesson Complete!</Text>
+            <Text style={[styles.completeSub, { color: theme.textSecondary }]}>
+              {lesson.title} • {lesson.titleJp}
+            </Text>
+
+            <View style={[styles.xpCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+              <Text style={[styles.xpValue, { color: theme.primary }]}>+50 XP</Text>
+              <Text style={[styles.xpLabel, { color: theme.textSecondary }]}>Mastery Gained</Text>
+            </View>
+
+            <Pressable
+              style={[styles.finishBtn, { backgroundColor: theme.primary }]}
+              onPress={onClose}
+            >
+              <Text style={[styles.finishBtnText, { color: theme.textOnPrimary }]}>CONTINUE</Text>
+            </Pressable>
+          </View>
+        ) : currentItem ? (
+          /* Active Question View */
+          <ScrollView
+            contentContainerStyle={[styles.questionContent, { paddingBottom: insets.bottom + 120 }]}
+            showsVerticalScrollIndicator={false}
+          >
+            {/* Audio Controls (Normal & Turtle) */}
+            <View style={styles.audioRow}>
+              <Pressable
+                onPress={() => handlePlayAudio(0.9)}
+                style={[styles.audioBubble, { backgroundColor: theme.surface, borderColor: theme.border }]}
+                accessibilityLabel="Play audio normal speed"
+              >
+                <Volume2 size={24} color={theme.primary} />
+              </Pressable>
+
+              <Pressable
+                onPress={() => handlePlayAudio(0.6)}
+                style={[styles.audioBubble, { backgroundColor: theme.surface, borderColor: theme.border }]}
+                accessibilityLabel="Play audio slow speed"
+              >
+                <Snail size={24} color="#10B981" />
+              </Pressable>
+            </View>
+
+            {/* Prompt Card */}
+            <View style={[styles.promptCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+              {currentItem.dialogueSpeaker && (
+                <View style={[styles.speakerBadge, { backgroundColor: theme.primary + '20' }]}>
+                  <Text style={[styles.speakerText, { color: theme.primary }]}>
+                    {currentItem.dialogueSpeaker}
+                  </Text>
+                </View>
+              )}
+
+              <Text style={[styles.promptJapanese, { color: theme.textPrimary }]}>
+                {currentItem.prompt}
+              </Text>
+
+              {currentItem.romaji && (
+                <Text style={[styles.promptRomaji, { color: theme.textSecondary }]}>
+                  {currentItem.romaji}
+                </Text>
+              )}
+
+              <Text style={[styles.promptEnglish, { color: theme.textMuted }]}>
+                {currentItem.english}
+              </Text>
+            </View>
+
+            {/* Spelling Mode Tile Builder */}
+            {currentItem.type === 'spell' && (
+              <View style={styles.spellingContainer}>
+                {/* Assembled Slot */}
+                <View style={[styles.assembledSlot, { borderColor: theme.border, backgroundColor: theme.surfaceSubtle }]}>
+                  {assembledTiles.length === 0 ? (
+                    <Text style={[styles.slotPlaceholder, { color: theme.textMuted }]}>
+                      Tap tiles below to spell...
+                    </Text>
+                  ) : (
+                    assembledTiles.map((tile, idx) => (
+                      <Pressable
+                        key={idx}
+                        onPress={() => handleRemoveTile(idx)}
+                        style={[styles.tileItem, { backgroundColor: theme.primary }]}
+                      >
+                        <Text style={[styles.tileText, { color: theme.textOnPrimary }]}>{tile}</Text>
+                      </Pressable>
+                    ))
+                  )}
+                </View>
+
+                {/* Tile Bank */}
+                <View style={styles.tileBank}>
+                  {(currentItem.tileBank || []).map((tile, idx) => (
+                    <Pressable
+                      key={idx}
+                      onPress={() => handleTilePress(tile)}
+                      style={[styles.bankTile, { backgroundColor: theme.surface, borderColor: theme.border }]}
+                    >
+                      <Text style={[styles.bankTileText, { color: theme.textPrimary }]}>{tile}</Text>
+                    </Pressable>
+                  ))}
+                </View>
+              </View>
+            )}
+
+            {/* Multiple Choice Options (for Listen, Speak, Cloze, Dialogue) */}
+            {currentItem.type !== 'spell' && currentItem.options && (
+              <View style={styles.optionsList}>
+                {currentItem.options.map((opt, idx) => {
+                  const isSelected = selectedOption === opt;
+                  return (
+                    <Pressable
+                      key={idx}
+                      onPress={() => {
+                        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+                        setSelectedOption(opt);
+                      }}
+                      style={[
+                        styles.optionCard,
+                        { backgroundColor: theme.surface, borderColor: theme.border },
+                        isSelected && { borderColor: theme.primary, backgroundColor: theme.primary + '15' },
+                      ]}
+                    >
+                      <Text
+                        style={[
+                          styles.optionText,
+                          { color: theme.textPrimary },
+                          isSelected && { color: theme.primary, fontWeight: '800' },
+                        ]}
+                      >
+                        {opt}
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </View>
+            )}
+          </ScrollView>
+        ) : null}
+
+        {/* Sliding Evaluation Bottom Sheet matching deerlino_3.jpg */}
+        {evaluation ? (
+          <View
+            style={[
+              styles.evaluationSheet,
+              {
+                backgroundColor: evaluation === 'correct' ? '#DEF7EC' : '#FDE8E8',
+                borderTopColor: evaluation === 'correct' ? '#31C48D' : '#F98080',
+                paddingBottom: insets.bottom + 16,
+              },
+            ]}
+          >
+            <View style={styles.evalTopRow}>
+              {evaluation === 'correct' ? (
+                <CheckCircle2 size={28} color="#0E9F6E" />
+              ) : (
+                <XCircle size={28} color="#E02424" />
+              )}
+              <Text
+                style={[
+                  styles.evalStatusTitle,
+                  { color: evaluation === 'correct' ? '#03543F' : '#9B1C1C' },
+                ]}
+              >
+                {evaluation === 'correct' ? 'Correct!' : 'Incorrect'}
+              </Text>
+            </View>
+
+            <View style={styles.evalBreakdown}>
+              <Text style={styles.evalPrompt}>{currentItem?.prompt}</Text>
+              <Text style={styles.evalRomaji}>{currentItem?.romaji}</Text>
+              <Text style={styles.evalEnglish}>{currentItem?.english}</Text>
+            </View>
+
+            <Pressable
+              onPress={handleContinue}
+              style={[
+                styles.evalContinueBtn,
+                { backgroundColor: evaluation === 'correct' ? '#0E9F6E' : '#E02424' },
+              ]}
+            >
+              <Text style={styles.evalContinueText}>CONTINUE</Text>
+              <ArrowRight size={20} color="#FFFFFF" />
+            </Pressable>
+          </View>
+        ) : !isCompleted && currentItem ? (
+          /* Bottom Check Button Bar */
+          <View style={[styles.bottomActionBar, { paddingBottom: insets.bottom + 12, backgroundColor: theme.surface }]}>
+            <Pressable
+              onPress={handleCheck}
+              disabled={
+                currentItem.type === 'spell'
+                  ? assembledTiles.length === 0
+                  : !selectedOption
+              }
+              style={[
+                styles.checkBtn,
+                {
+                  backgroundColor:
+                    (currentItem.type === 'spell'
+                      ? assembledTiles.length > 0
+                      : !!selectedOption)
+                      ? theme.primary
+                      : theme.border,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.checkBtnText,
+                  {
+                    color:
+                      (currentItem.type === 'spell'
+                        ? assembledTiles.length > 0
+                        : !!selectedOption)
+                        ? theme.textOnPrimary
+                        : theme.textMuted,
+                  },
+                ]}
+              >
+                CHECK
+              </Text>
+            </Pressable>
+          </View>
+        ) : null}
+      </View>
+  );
+}
+
+export function LessonSessionModal({
+  visible,
+  lesson,
+  mode = 'comprehensive',
+  onClose,
+}: LessonSessionModalProps) {
+  if (!visible || !lesson) return null;
+
+  return (
+    <Modal
+      visible={visible}
+      animationType="slide"
+      presentationStyle="fullScreen"
+      onRequestClose={onClose}
+    >
+      <LessonSessionContent
+        key={`${lesson.id}-${mode}`}
+        lesson={lesson}
+        mode={mode}
+        onClose={onClose}
+      />
+    </Modal>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  topHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: spacing.base,
+    paddingVertical: spacing.sm,
+    gap: spacing.md,
+  },
+  exitBtn: {
+    width: 36,
+    height: 36,
+    borderRadius: radii.full,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  progressTrack: {
+    flex: 1,
+    height: 10,
+    borderRadius: 5,
+    overflow: 'hidden',
+  },
+  progressFill: {
+    height: '100%',
+    borderRadius: 5,
+  },
+  questionContent: {
+    paddingHorizontal: spacing.base,
+    paddingTop: spacing.md,
+    gap: spacing.lg,
+  },
+  audioRow: {
+    flexDirection: 'row',
+    gap: spacing.sm,
+    justifyContent: 'center',
+  },
+  audioBubble: {
+    width: 52,
+    height: 52,
+    borderRadius: radii.full,
+    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    ...shadows.sm,
+  },
+  promptCard: {
+    borderRadius: radii.xl,
+    padding: spacing.lg,
+    borderWidth: 1,
+    alignItems: 'center',
+    gap: spacing.xs,
+    ...shadows.sm,
+  },
+  speakerBadge: {
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: radii.full,
+    marginBottom: 4,
+  },
+  speakerText: {
+    fontSize: 12,
+    fontWeight: '700',
+  },
+  promptJapanese: {
+    fontSize: 28,
+    fontWeight: '900',
+    textAlign: 'center',
+  },
+  promptRomaji: {
+    fontSize: 15,
+    fontWeight: '600',
+    marginTop: 2,
+  },
+  promptEnglish: {
+    fontSize: 14,
+    textAlign: 'center',
+    marginTop: 2,
+  },
+  spellingContainer: {
+    gap: spacing.md,
+  },
+  assembledSlot: {
+    minHeight: 60,
+    borderRadius: radii.xl,
+    borderWidth: 2,
+    borderStyle: 'dashed',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    padding: spacing.sm,
+    gap: spacing.xs,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  slotPlaceholder: {
+    fontSize: 14,
+    fontStyle: 'italic',
+  },
+  tileItem: {
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: radii.lg,
+    ...shadows.sm,
+  },
+  tileText: {
+    fontSize: 20,
+    fontWeight: '800',
+  },
+  tileBank: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: spacing.sm,
+    justifyContent: 'center',
+  },
+  bankTile: {
+    paddingHorizontal: 18,
+    paddingVertical: 12,
+    borderRadius: radii.xl,
+    borderWidth: 1,
+    ...shadows.sm,
+  },
+  bankTileText: {
+    fontSize: 22,
+    fontWeight: '800',
+  },
+  optionsList: {
+    gap: spacing.sm,
+  },
+  optionCard: {
+    borderRadius: radii.xl,
+    padding: spacing.base,
+    borderWidth: 2,
+    ...shadows.sm,
+  },
+  optionText: {
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  bottomActionBar: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    paddingHorizontal: spacing.base,
+    paddingTop: spacing.sm,
+    borderTopWidth: 1,
+    borderColor: 'transparent',
+  },
+  checkBtn: {
+    paddingVertical: spacing.md,
+    borderRadius: radii.xl,
+    alignItems: 'center',
+    justifyContent: 'center',
+    ...shadows.md,
+  },
+  checkBtnText: {
+    fontSize: 16,
+    fontWeight: '800',
+    letterSpacing: 0.5,
+  },
+  evaluationSheet: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    borderTopLeftRadius: radii.xl,
+    borderTopRightRadius: radii.xl,
+    borderTopWidth: 3,
+    paddingHorizontal: spacing.base,
+    paddingTop: spacing.md,
+    gap: spacing.sm,
+    ...shadows.md,
+  },
+  evalTopRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+  },
+  evalStatusTitle: {
+    fontSize: 20,
+    fontWeight: '900',
+  },
+  evalBreakdown: {
+    gap: 2,
+    marginVertical: 4,
+  },
+  evalPrompt: {
+    fontSize: 17,
+    fontWeight: '800',
+    color: '#1F2937',
+  },
+  evalRomaji: {
+    fontSize: 13,
+    color: '#4B5563',
+  },
+  evalEnglish: {
+    fontSize: 13,
+    color: '#374151',
+  },
+  evalContinueBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: spacing.md,
+    borderRadius: radii.xl,
+    gap: spacing.xs,
+    marginTop: spacing.xs,
+  },
+  evalContinueText: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '800',
+  },
+  completeContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: spacing.xl,
+    gap: spacing.md,
+  },
+  completeIconCircle: {
+    width: 96,
+    height: 96,
+    borderRadius: radii.full,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: spacing.sm,
+  },
+  completeTitle: {
+    fontSize: 28,
+    fontWeight: '900',
+  },
+  completeSub: {
+    fontSize: 15,
+    textAlign: 'center',
+  },
+  xpCard: {
+    paddingHorizontal: spacing.xl,
+    paddingVertical: spacing.md,
+    borderRadius: radii.xl,
+    borderWidth: 1,
+    alignItems: 'center',
+    marginVertical: spacing.md,
+  },
+  xpValue: {
+    fontSize: 32,
+    fontWeight: '900',
+  },
+  xpLabel: {
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  finishBtn: {
+    width: '100%',
+    paddingVertical: spacing.md,
+    borderRadius: radii.xl,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  finishBtnText: {
+    fontSize: 16,
+    fontWeight: '800',
+    letterSpacing: 0.5,
+  },
+});

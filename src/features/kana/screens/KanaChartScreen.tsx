@@ -8,13 +8,18 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
+import { X } from 'lucide-react-native';
 import { radii, spacing, typography, useAppTheme } from '../../../core/theme';
 import { useKanaGroupsQuery } from '../hooks/useKanaQuery';
 import { KanaCard } from '../components/KanaCard';
 import type { KanaCharacter } from '../models/kana.model';
 import { useProgressStore } from '../../progress/store/useProgressStore';
 
-export function KanaChartScreen() {
+interface KanaChartScreenProps {
+  onClose?: () => void;
+}
+
+export function KanaChartScreen({ onClose }: KanaChartScreenProps = {}) {
   const insets = useSafeAreaInsets();
   const { colors: theme } = useAppTheme();
   const { data: groups } = useKanaGroupsQuery();
@@ -40,7 +45,19 @@ export function KanaChartScreen() {
       ]}
     >
       <View style={styles.header}>
-        <Text style={[styles.title, { color: theme.textPrimary }]}>Kana Charts</Text>
+        <View style={styles.headerTopRow}>
+          <Text style={[styles.title, { color: theme.textPrimary }]}>Kana Charts</Text>
+          {onClose && (
+            <Pressable
+              onPress={onClose}
+              style={[styles.closeBtn, { backgroundColor: theme.surfaceSubtle }]}
+              accessibilityLabel="Close Kana Charts"
+              hitSlop={8}
+            >
+              <X size={20} color={theme.textPrimary} />
+            </Pressable>
+          )}
+        </View>
         <View style={[styles.toggleRow, { backgroundColor: theme.surfaceSubtle }]}>
           <Pressable
             onPress={() => setActiveScript('hiragana')}
@@ -172,6 +189,11 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: '700',
+  },
+  headerTopRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
   toggleRow: {
     flexDirection: 'row',

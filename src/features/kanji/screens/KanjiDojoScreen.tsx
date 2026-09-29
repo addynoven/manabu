@@ -12,6 +12,7 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AudioButton } from "../../../core/audio/components/AudioButton";
 import { speakJapanese } from "../../../core/audio/tts";
+import { X } from "lucide-react-native";
 import { radii, shadows, spacing, useAppTheme } from "../../../core/theme";
 import { BlitzModal } from "../../challenges/components/BlitzModal";
 import { GauntletModal } from "../../challenges/components/GauntletModal";
@@ -34,7 +35,11 @@ import { useKanjiStore } from "../store/useKanjiStore";
 
 const JLPT_LEVELS: KanjiLevel[] = ["N5", "N4", "N3", "N2", "N1"];
 
-export function KanjiDojoScreen() {
+interface KanjiDojoScreenProps {
+  onClose?: () => void;
+}
+
+export function KanjiDojoScreen({ onClose }: KanjiDojoScreenProps = {}) {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { colors: theme } = useAppTheme();
@@ -225,15 +230,30 @@ export function KanjiDojoScreen() {
           <Text style={[styles.title, { color: theme.textPrimary }]}>
             Kanji Dojo (漢字)
           </Text>
-          <View
-            style={[
-              styles.streakBadge,
-              { backgroundColor: theme.surfaceSubtle },
-            ]}
-          >
-            <Text style={[styles.streakText, { color: theme.primary }]}>
-              🔥 {stats.streak}
-            </Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+            <View
+              style={[
+                styles.streakBadge,
+                { backgroundColor: theme.surfaceSubtle },
+              ]}
+            >
+              <Text style={[styles.streakText, { color: theme.primary }]}>
+                🔥 {stats.streak}
+              </Text>
+            </View>
+            {onClose && (
+              <TouchableOpacity
+                onPress={onClose}
+                style={[
+                  styles.streakBadge,
+                  { backgroundColor: theme.surfaceSubtle },
+                ]}
+                accessibilityLabel="Close Kanji Explorer"
+                hitSlop={8}
+              >
+                <X size={18} color={theme.textPrimary} />
+              </TouchableOpacity>
+            )}
           </View>
         </View>
 
