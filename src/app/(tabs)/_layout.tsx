@@ -2,11 +2,9 @@ import React from 'react';
 import { Tabs } from 'expo-router';
 import {
   BookOpen,
-  Grid,
-  Languages,
-  Sparkles,
-  Flame,
-  Settings,
+  RotateCcw,
+  Gamepad2,
+  User,
 } from 'lucide-react-native';
 import { useAppTheme } from '../../core/theme';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -39,61 +37,82 @@ export default function TabsLayout() {
           },
         }}
       >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Kana',
-          tabBarIcon: ({ color, size }) => (
-            <BookOpen size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="chart"
-        options={{
-          title: 'Charts',
-          tabBarIcon: ({ color, size }) => (
-            <Grid size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="kanji"
-        options={{
-          title: 'Kanji',
-          tabBarIcon: ({ color, size }) => (
-            <Languages size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="vocab"
-        options={{
-          title: 'Vocab',
-          tabBarIcon: ({ color, size }) => (
-            <Sparkles size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="progress"
-        options={{
-          title: 'Mastery',
-          tabBarIcon: ({ color, size }) => (
-            <Flame size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="settings"
-        options={{
-          title: 'Settings',
-          tabBarIcon: ({ color, size }) => (
-            <Settings size={size} color={color} />
-          ),
-        }}
-      />
-    </Tabs>
+        {/* Tab 1: Dojo (Learn) */}
+        <Tabs.Screen
+          name="index"
+          options={{
+            title: 'Dojo',
+            tabBarIcon: ({ color, size }) => (
+              <BookOpen size={size} color={color} />
+            ),
+          }}
+        />
+
+        {/* Tab 2: Review (SRS & Weakness) */}
+        <Tabs.Screen
+          name="review"
+          options={{
+            title: 'Review',
+            tabBarIcon: ({ color, size }) => (
+              <RotateCcw size={size} color={color} />
+            ),
+          }}
+        />
+
+        {/* Tab 3: Arcade (Games & Community) */}
+        <Tabs.Screen
+          name="arcade"
+          options={{
+            title: 'Arcade',
+            tabBarIcon: ({ color, size }) => (
+              <Gamepad2 size={size} color={color} />
+            ),
+          }}
+        />
+
+        {/* Tab 4: Profile (Mastery & Settings) */}
+        <Tabs.Screen
+          name="profile"
+          options={{
+            title: 'Profile',
+            tabBarIcon: ({ color, size }) => (
+              <User size={size} color={color} />
+            ),
+          }}
+        />
+
+        {/* Auxiliary Routes kept for backward compatibility (hidden from tab bar) */}
+        <Tabs.Screen
+          name="chart"
+          options={{
+            href: null,
+          }}
+        />
+        <Tabs.Screen
+          name="kanji"
+          options={{
+            href: null,
+          }}
+        />
+        <Tabs.Screen
+          name="vocab"
+          options={{
+            href: null,
+          }}
+        />
+        <Tabs.Screen
+          name="progress"
+          options={{
+            href: null,
+          }}
+        />
+        <Tabs.Screen
+          name="settings"
+          options={{
+            href: null,
+          }}
+        />
+      </Tabs>
     </View>
   );
 }

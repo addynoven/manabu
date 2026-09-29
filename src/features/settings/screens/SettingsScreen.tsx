@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import { Palette, Volume2, Sparkles } from 'lucide-react-native';
+import { Palette, Volume2, X } from 'lucide-react-native';
 import { radii, shadows, spacing } from '../../../core/theme';
 import { useAppTheme } from '../../../core/theme/useThemeStore';
 import { config } from '../../../core/config';
@@ -18,7 +18,11 @@ import { BackupRestoreCard } from '../components/BackupRestoreCard';
 import { ThemeSelectorModal } from '../components/ThemeSelectorModal';
 import { speakJapanese } from '../../../core/audio/tts';
 
-export function SettingsScreen() {
+interface SettingsScreenProps {
+  onClose?: () => void;
+}
+
+export function SettingsScreen({ onClose }: SettingsScreenProps = {}) {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { colors, theme } = useAppTheme();
@@ -68,6 +72,16 @@ export function SettingsScreen() {
         <Text style={[styles.title, { color: colors.textPrimary }]}>
           Settings & Preferences
         </Text>
+        {onClose && (
+          <Pressable
+            onPress={onClose}
+            hitSlop={8}
+            style={[styles.closeBtn, { backgroundColor: colors.surfaceSubtle }]}
+            accessibilityLabel="Close settings"
+          >
+            <X size={20} color={colors.textPrimary} />
+          </Pressable>
+        )}
       </View>
 
       <ScrollView
@@ -581,6 +595,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.base,
     paddingTop: spacing.xs,
     paddingBottom: spacing.sm,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  closeBtn: {
+    width: 36,
+    height: 36,
+    borderRadius: radii.full,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   title: {
     fontSize: 22,

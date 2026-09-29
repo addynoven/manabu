@@ -1,6 +1,6 @@
 import React from 'react';
-import { KanaDojoScreen } from '../../features/kana';
+import { DojoScreen } from '../../features/dojo';
 
-export default function KanaTab() {
-  return <KanaDojoScreen />;
+export default function DojoTab() {
+  return <DojoScreen />;
 }
