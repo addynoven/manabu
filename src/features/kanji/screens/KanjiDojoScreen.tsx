@@ -1,3 +1,4 @@
+import { useRouter } from "expo-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
@@ -34,6 +35,7 @@ import { useKanjiStore } from "../store/useKanjiStore";
 const JLPT_LEVELS: KanjiLevel[] = ["N5", "N4", "N3", "N2", "N1"];
 
 export function KanjiDojoScreen() {
+  const router = useRouter();
   const insets = useSafeAreaInsets();
   const { colors: theme } = useAppTheme();
   const { selectedLevel, setSelectedLevel } = useKanjiStore();
@@ -274,7 +276,7 @@ export function KanjiDojoScreen() {
         </View>
 
         {/* View Mode Toggle: [📚 Sets] vs [🎲 Quick Drill] */}
-        <View style={styles.modeRow}>
+        <View style={styles.actionRow}>
           <View
             style={[
               styles.modeToggle,
@@ -339,7 +341,11 @@ export function KanjiDojoScreen() {
           </View>
 
           {/* Challenges Strip */}
-          <View style={styles.challengeGroup}>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.challengeGroup}
+          >
             <TouchableOpacity
               onPress={() => setShowBlitz(true)}
               style={[
@@ -378,7 +384,67 @@ export function KanjiDojoScreen() {
                 🛡️ Gauntlet
               </Text>
             </TouchableOpacity>
-          </View>
+
+            <TouchableOpacity
+              onPress={() => router.push("/cloze")}
+              style={[
+                styles.challengeButton,
+                {
+                  backgroundColor: theme.surfaceSubtle,
+                  borderColor: theme.border,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.challengeButtonText,
+                  { color: theme.textPrimary },
+                ]}
+              >
+                穴 Cloze
+              </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              onPress={() => router.push("/conjugator")}
+              style={[
+                styles.challengeButton,
+                {
+                  backgroundColor: theme.surfaceSubtle,
+                  borderColor: theme.border,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.challengeButtonText,
+                  { color: theme.textPrimary },
+                ]}
+              >
+                🪓 Conjugator
+              </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              onPress={() => router.push("/arcade")}
+              style={[
+                styles.challengeButton,
+                {
+                  backgroundColor: theme.surfaceSubtle,
+                  borderColor: theme.border,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.challengeButtonText,
+                  { color: theme.textPrimary },
+                ]}
+              >
+                🎮 Arcade
+              </Text>
+            </TouchableOpacity>
+          </ScrollView>
         </View>
       </View>
 
@@ -658,17 +724,14 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: "700",
   },
-  modeRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    gap: spacing.sm,
+  actionRow: {
+    paddingHorizontal: spacing.base,
+    gap: spacing.xs,
   },
   modeToggle: {
     flexDirection: "row",
     borderRadius: radii.md,
     padding: 3,
-    flex: 1,
   },
   modeButton: {
     flex: 1,
@@ -687,6 +750,7 @@ const styles = StyleSheet.create({
   challengeGroup: {
     flexDirection: "row",
     gap: 6,
+    paddingVertical: 2,
   },
   challengeButton: {
     paddingHorizontal: 10,

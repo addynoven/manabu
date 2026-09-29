@@ -48,7 +48,6 @@ export function KanaCard({
   return (
     <Pressable
       onPress={handlePress}
-      activeOpacity={0.7}
       style={[
         styles.card,
         {

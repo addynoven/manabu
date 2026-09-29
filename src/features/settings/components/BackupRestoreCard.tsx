@@ -75,7 +75,6 @@ export function BackupRestoreCard() {
         </View>
         <Pressable
           onPress={handleExport}
-          activeOpacity={0.7}
           style={[styles.actionButton, { backgroundColor: theme.primary }]}
         >
           <Text style={[styles.actionButtonText, { color: theme.textOnPrimary }]}>
@@ -98,7 +97,6 @@ export function BackupRestoreCard() {
             setStatusMessage(null);
             setModalVisible(true);
           }}
-          activeOpacity={0.7}
           style={[
             styles.actionButton,
             styles.restoreButton,

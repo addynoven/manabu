@@ -66,7 +66,6 @@ export function AudioButton({
 
   return (
     <Pressable
-      activeOpacity={0.7}
       onPress={handlePress}
       hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
       style={[

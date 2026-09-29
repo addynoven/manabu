@@ -58,7 +58,6 @@ export function KanaGroupSelector({
             <Pressable
               key={group.id}
               onPress={() => onToggle(group.id)}
-              activeOpacity={0.7}
               style={[
                 styles.chip,
                 isSelected

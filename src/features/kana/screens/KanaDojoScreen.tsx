@@ -344,6 +344,18 @@ export function KanaDojoScreen({ onSessionFinish }: KanaDojoScreenProps) {
               <Text style={[styles.challengeButtonText, { color: theme.textPrimary }]}>🛡️ Gauntlet</Text>
             </Pressable>
             <Pressable
+              onPress={() => router.push('/cloze')}
+              style={[styles.challengeButton, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}
+            >
+              <Text style={[styles.challengeButtonText, { color: theme.textPrimary }]}>穴 Cloze</Text>
+            </Pressable>
+            <Pressable
+              onPress={() => router.push('/conjugator')}
+              style={[styles.challengeButton, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}
+            >
+              <Text style={[styles.challengeButtonText, { color: theme.textPrimary }]}>🪓 Conjugator</Text>
+            </Pressable>
+            <Pressable
               onPress={() => router.push('/arcade')}
               style={[styles.challengeButton, styles.arcadeButton]}
             >
@@ -506,11 +518,9 @@ const styles = StyleSheet.create({
   },
   scriptTabTextActive: {},
   controlStrip: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
     paddingHorizontal: spacing.base,
     paddingVertical: spacing.xs,
+    gap: spacing.xs,
   },
   modeButtonGroup: {
     flexDirection: 'row',

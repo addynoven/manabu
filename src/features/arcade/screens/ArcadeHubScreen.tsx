@@ -19,6 +19,7 @@ import {
   Clock,
   Trophy,
   Sparkles,
+  Zap,
 } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
 import { useAppTheme } from '../../../core/theme';
@@ -27,8 +28,15 @@ import { ZenBreathingView } from '../components/ZenBreathingView';
 import { KanaWordleView } from '../components/KanaWordleView';
 import { MemoryMatchView } from '../components/MemoryMatchView';
 import { KanaRainView } from '../components/KanaRainView';
+import { YokaiRunView } from '../components/YokaiRunView';
+import { KanaSnakeView } from '../components/KanaSnakeView';
+import { FlashRushView } from '../components/FlashRushView';
+import { HanabiView } from '../components/HanabiView';
+import { KanaCatchView } from '../components/KanaCatchView';
+import { KanaPopView } from '../components/KanaPopView';
+import { KanaTraceView } from '../../kana/components/KanaTraceView';
 
-type ActiveGame = 'zen' | 'wordle' | 'memory' | 'rain' | null;
+type ActiveGame = 'zen' | 'wordle' | 'memory' | 'rain' | 'runner' | 'snake' | 'rush' | 'hanabi' | 'catch' | 'pop' | 'trace' | null;
 
 export function ArcadeHubScreen() {
   const router = useRouter();
@@ -106,7 +114,6 @@ export function ArcadeHubScreen() {
 
         {/* 1. Zen Breathing Mode */}
         <Pressable
-          activeOpacity={0.9}
           onPress={() => launchGame('zen')}
           style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
         >
@@ -140,7 +147,6 @@ export function ArcadeHubScreen() {
 
         {/* 2. Kana Wordle */}
         <Pressable
-          activeOpacity={0.9}
           onPress={() => launchGame('wordle')}
           style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
         >
@@ -174,7 +180,6 @@ export function ArcadeHubScreen() {
 
         {/* 3. Memory Match Tiles */}
         <Pressable
-          activeOpacity={0.9}
           onPress={() => launchGame('memory')}
           style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
         >
@@ -208,7 +213,6 @@ export function ArcadeHubScreen() {
 
         {/* 4. Kana Rain */}
         <Pressable
-          activeOpacity={0.9}
           onPress={() => launchGame('rain')}
           style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
         >
@@ -236,6 +240,237 @@ export function ArcadeHubScreen() {
             </Text>
             <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
               <Text style={styles.playPillText}>Catch Rain</Text>
+            </View>
+          </View>
+        </Pressable>
+
+        {/* 5. Yokai Runner */}
+        <Pressable
+          onPress={() => launchGame('runner')}
+          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+        >
+          <View style={styles.cardHeader}>
+            <View style={[styles.iconWrap, { backgroundColor: '#3B82F618' }]}>
+              <Flame size={24} color="#3B82F6" />
+            </View>
+            <View style={styles.headerInfo}>
+              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                妖怪ラン • Yokai Runner
+              </Text>
+              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                2D Side-Scrolling Action
+              </Text>
+            </View>
+          </View>
+
+          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+            Jump over Yokai obstacles and collect target Kana glyphs in motion.
+          </Text>
+
+          <View style={styles.cardFooter}>
+            <Text style={[styles.cardStatBadge, { color: '#3B82F6' }]}>
+              🏃 Runner Mode
+            </Text>
+            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+              <Text style={styles.playPillText}>Run Now</Text>
+            </View>
+          </View>
+        </Pressable>
+
+        {/* 6. Kana Snake */}
+        <Pressable
+          onPress={() => launchGame('snake')}
+          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+        >
+          <View style={styles.cardHeader}>
+            <View style={[styles.iconWrap, { backgroundColor: '#84CC1618' }]}>
+              <Sparkles size={24} color="#84CC16" />
+            </View>
+            <View style={styles.headerInfo}>
+              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                ヘビゲーム • Kana Snake
+              </Text>
+              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                Retro Grid Snake
+              </Text>
+            </View>
+          </View>
+
+          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+            Guide the snake using the D-Pad to eat target Kana tiles across the grid.
+          </Text>
+
+          <View style={styles.cardFooter}>
+            <Text style={[styles.cardStatBadge, { color: '#84CC16' }]}>
+              🐍 Snake Mode
+            </Text>
+            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+              <Text style={styles.playPillText}>Play Snake</Text>
+            </View>
+          </View>
+        </Pressable>
+
+        {/* 7. Flash Rush */}
+        <Pressable
+          onPress={() => launchGame('rush')}
+          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+        >
+          <View style={styles.cardHeader}>
+            <View style={[styles.iconWrap, { backgroundColor: '#EAB30818' }]}>
+              <Zap size={24} color="#EAB308" />
+            </View>
+            <View style={styles.headerInfo}>
+              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                閃光ラッシュ • Flash Rush
+              </Text>
+              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                Lightning Flashcard Rush
+              </Text>
+            </View>
+          </View>
+
+          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+            High-speed instant recall time trial with streak multipliers.
+          </Text>
+
+          <View style={styles.cardFooter}>
+            <Text style={[styles.cardStatBadge, { color: '#EAB308' }]}>
+              ⚡ Speed Mode
+            </Text>
+            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+              <Text style={styles.playPillText}>Start Rush</Text>
+            </View>
+          </View>
+        </Pressable>
+
+        {/* 8. Hanabi Fireworks */}
+        <Pressable
+          onPress={() => launchGame('hanabi')}
+          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+        >
+          <View style={styles.cardHeader}>
+            <View style={[styles.iconWrap, { backgroundColor: '#EF444418' }]}>
+              <Sparkles size={24} color="#EF4444" />
+            </View>
+            <View style={styles.headerInfo}>
+              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                花火 • Kana Hanabi
+              </Text>
+              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                Touch Fireworks Particle Display
+              </Text>
+            </View>
+          </View>
+
+          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+            Tap anywhere in the night sky to launch vibrant Japanese Kana fireworks.
+          </Text>
+
+          <View style={styles.cardFooter}>
+            <Text style={[styles.cardStatBadge, { color: '#EF4444' }]}>
+              🎆 Fireworks Mode
+            </Text>
+            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+              <Text style={styles.playPillText}>Launch Fireworks</Text>
+            </View>
+          </View>
+        </Pressable>
+
+        {/* 9. Kana Catch */}
+        <Pressable
+          onPress={() => launchGame('catch')}
+          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+        >
+          <View style={styles.cardHeader}>
+            <View style={[styles.iconWrap, { backgroundColor: '#F59E0B18' }]}>
+              <Trophy size={24} color="#F59E0B" />
+            </View>
+            <View style={styles.headerInfo}>
+              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                キャッチ • Kana Catch
+              </Text>
+              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                Paddle Basket Catcher
+              </Text>
+            </View>
+          </View>
+
+          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+            Catch target falling Kana tiles into your basket using left/right controls.
+          </Text>
+
+          <View style={styles.cardFooter}>
+            <Text style={[styles.cardStatBadge, { color: '#F59E0B' }]}>
+              🧺 Catch Mode
+            </Text>
+            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+              <Text style={styles.playPillText}>Catch Kana</Text>
+            </View>
+          </View>
+        </Pressable>
+
+        {/* 10. Kana Pop */}
+        <Pressable
+          onPress={() => launchGame('pop')}
+          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+        >
+          <View style={styles.cardHeader}>
+            <View style={[styles.iconWrap, { backgroundColor: '#EC489918' }]}>
+              <Sparkles size={24} color="#EC4899" />
+            </View>
+            <View style={styles.headerInfo}>
+              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                バブルポップ • Kana Pop
+              </Text>
+              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                Bubble Popping Drill
+              </Text>
+            </View>
+          </View>
+
+          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+            Pop floating Kana bubbles and listen to native pronunciations on pop.
+          </Text>
+
+          <View style={styles.cardFooter}>
+            <Text style={[styles.cardStatBadge, { color: '#EC4899' }]}>
+              🫧 Pop Mode
+            </Text>
+            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+              <Text style={styles.playPillText}>Pop Bubbles</Text>
+            </View>
+          </View>
+        </Pressable>
+
+        {/* 11. Stroke Tracing */}
+        <Pressable
+          onPress={() => launchGame('trace')}
+          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+        >
+          <View style={styles.cardHeader}>
+            <View style={[styles.iconWrap, { backgroundColor: '#10B98118' }]}>
+              <Flame size={24} color="#10B981" />
+            </View>
+            <View style={styles.headerInfo}>
+              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                書き順 • Stroke Tracing
+              </Text>
+              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                Interactive Stroke Order Practice
+              </Text>
+            </View>
+          </View>
+
+          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+            Practice stroke order direction and character drawing with stroke tips.
+          </Text>
+
+          <View style={styles.cardFooter}>
+            <Text style={[styles.cardStatBadge, { color: '#10B981' }]}>
+              ✍️ Tracing Canvas
+            </Text>
+            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+              <Text style={styles.playPillText}>Trace Stroke</Text>
             </View>
           </View>
         </Pressable>
@@ -276,6 +511,69 @@ export function ArcadeHubScreen() {
         onRequestClose={closeGame}
       >
         <KanaRainView onClose={closeGame} />
+      </Modal>
+
+      <Modal
+        visible={activeGame === 'runner'}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={closeGame}
+      >
+        <YokaiRunView onClose={closeGame} />
+      </Modal>
+
+      <Modal
+        visible={activeGame === 'snake'}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={closeGame}
+      >
+        <KanaSnakeView onClose={closeGame} />
+      </Modal>
+
+      <Modal
+        visible={activeGame === 'rush'}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={closeGame}
+      >
+        <FlashRushView onClose={closeGame} />
+      </Modal>
+
+      <Modal
+        visible={activeGame === 'hanabi'}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={closeGame}
+      >
+        <HanabiView onClose={closeGame} />
+      </Modal>
+
+      <Modal
+        visible={activeGame === 'catch'}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={closeGame}
+      >
+        <KanaCatchView onClose={closeGame} />
+      </Modal>
+
+      <Modal
+        visible={activeGame === 'pop'}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={closeGame}
+      >
+        <KanaPopView onClose={closeGame} />
+      </Modal>
+
+      <Modal
+        visible={activeGame === 'trace'}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={closeGame}
+      >
+        <KanaTraceView visible={activeGame === 'trace'} onClose={closeGame} />
       </Modal>
     </View>
   );

@@ -208,7 +208,6 @@ export function MemoryMatchView({ onClose }: MemoryMatchViewProps) {
           return (
             <Pressable
               key={card.id}
-              activeOpacity={0.8}
               onPress={() => handleCardPress(card)}
               style={[
                 styles.card,

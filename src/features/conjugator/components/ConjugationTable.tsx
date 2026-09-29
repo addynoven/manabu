@@ -63,7 +63,6 @@ export function ConjugationTable({ forms }: ConjugationTableProps) {
                 },
               ]}
               onPress={() => toggleCategory(cat)}
-              activeOpacity={0.7}
             >
               <View style={styles.titleGroup}>
                 <Text style={[styles.categoryTitleEn, { color: theme.textPrimary }]}>

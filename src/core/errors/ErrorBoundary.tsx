@@ -44,7 +44,6 @@ export class ErrorBoundary extends Component<Props, State> {
           <Pressable
             style={styles.button}
             onPress={this.handleReset}
-            activeOpacity={0.8}
           >
             <Text style={styles.buttonText}>Try Again</Text>
           </Pressable>

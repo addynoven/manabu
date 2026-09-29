@@ -31,7 +31,6 @@ export function AchievementToast() {
     >
       <Pressable
         style={styles.toastCard}
-        activeOpacity={0.9}
         onPress={popToast}
       >
         <View style={styles.iconCircle}>

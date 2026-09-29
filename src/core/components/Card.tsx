@@ -45,7 +45,6 @@ export function Card({
     return (
       <Pressable
         onPress={onPress}
-        activeOpacity={0.8}
         style={containerStyle}
       >
         {children}

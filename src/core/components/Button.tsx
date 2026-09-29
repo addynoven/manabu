@@ -96,7 +96,6 @@ export function Button({
     <Pressable
       onPress={handlePress}
       disabled={disabled || loading}
-      activeOpacity={0.75}
       style={[
         styles.base,
         getVariantContainerStyle(),

@@ -71,7 +71,6 @@ export function ThemeSelectorModal({ visible, onClose }: ThemeSelectorModalProps
             return (
               <Pressable
                 key={palette.id}
-                activeOpacity={0.8}
                 onPress={() => handleSelectTheme(palette.id)}
                 style={[
                   styles.themeCard,

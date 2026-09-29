@@ -89,7 +89,6 @@ export function SettingsScreen() {
         >
           <Pressable
             style={styles.row}
-            activeOpacity={0.7}
             onPress={() => setThemeModalVisible(true)}
           >
             <View style={styles.themeInfoLeft}>
@@ -251,7 +250,6 @@ export function SettingsScreen() {
 
               <Pressable
                 style={styles.testVoiceRow}
-                activeOpacity={0.7}
                 onPress={handleTestPronunciation}
               >
                 <Volume2
@@ -421,7 +419,6 @@ export function SettingsScreen() {
         >
           <Pressable
             style={styles.row}
-            activeOpacity={0.7}
             onPress={() => router.push('/academy')}
           >
             <View style={styles.rowText}>
@@ -439,7 +436,6 @@ export function SettingsScreen() {
 
           <Pressable
             style={styles.row}
-            activeOpacity={0.7}
             onPress={() => router.push('/resources')}
           >
             <View style={styles.rowText}>
@@ -457,7 +453,23 @@ export function SettingsScreen() {
 
           <Pressable
             style={styles.row}
-            activeOpacity={0.7}
+            onPress={() => router.push('/cloze')}
+          >
+            <View style={styles.rowText}>
+              <Text style={[styles.rowLabel, { color: colors.textPrimary }]}>
+                穴 Cloze Grammar Drills (穴埋め)
+              </Text>
+              <Text style={[styles.rowSub, { color: colors.textSecondary }]}>
+                Contextual sentence completion & particle practice
+              </Text>
+            </View>
+            <Text style={[styles.chevron, { color: colors.textMuted }]}>›</Text>
+          </Pressable>
+
+          <View style={[styles.separator, { backgroundColor: colors.border }]} />
+
+          <Pressable
+            style={styles.row}
             onPress={() => router.push('/conjugator')}
           >
             <View style={styles.rowText}>
@@ -475,7 +487,6 @@ export function SettingsScreen() {
 
           <Pressable
             style={styles.row}
-            activeOpacity={0.7}
             onPress={() => router.push('/arcade')}
           >
             <View style={styles.rowText}>

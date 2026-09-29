@@ -349,7 +349,6 @@ export function GauntletModal({
                       styles.optionButton,
                       { backgroundColor: optBg, borderColor: optBorder },
                     ]}
-                    activeOpacity={0.8}
                     onPress={() => handleSelectOption(option)}
                   >
                     <Text style={[styles.optionText, { color: optText }]}>

@@ -345,6 +345,17 @@ export function VocabularyDojoScreen() {
               </Text>
             </Pressable>
             <Pressable
+              onPress={() => router.push('/cloze')}
+              style={[
+                styles.smallButton,
+                { backgroundColor: theme.surfaceSubtle, borderColor: theme.border },
+              ]}
+            >
+              <Text style={[styles.smallButtonText, { color: theme.textPrimary }]}>
+                穴 Cloze
+              </Text>
+            </Pressable>
+            <Pressable
               onPress={() => router.push('/conjugator')}
               style={[
                 styles.smallButton,

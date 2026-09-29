@@ -82,7 +82,6 @@ export function KanaChoiceGrid({
         <Pressable
           key={`${option}_${idx}`}
           onPress={() => handlePress(option)}
-          activeOpacity={0.7}
           disabled={disabled || revealed}
           style={[styles.tile, getTileStyle(option)]}
         >

@@ -1,302 +1,257 @@
-# 🏯 KanaDojo / Manabu — Complete Feature Inventory & Specification
+# 🏯 Manabu (学び) / KanaDojo — Complete Feature Inventory & Specification
 
-> **Source Analysis**: Extracted directly from the reference codebase in [`vision/kana-dojo`](file:///home/neon/programs/android/react_native/manabu/vision/kana-dojo), covering architectural modules, UI systems, training modes, gamification, and auxiliary tools.
+> **Platform**: Expo SDK 57 / React Native 0.86 / React 19 / TypeScript / MMKV / TanStack Query  
+> **Architecture**: Mobile-first cross-platform application with modular file-based Expo Router navigation, offline-first local storage, and high-performance native components.
 
 ---
 
 ## 📑 Table of Contents
 
-1. [Core Training Dojos](#1-core-training-dojos)
-2. [Game & Practice Modes](#2-game--practice-modes)
-3. [Auto-Learning & SRS Engine](#3-auto-learning--srs-engine)
-4. [Mastery, Statistics & Progress Tracking](#4-mastery-statistics--progress-tracking)
-5. [Achievements & Gamification Engine](#5-achievements--gamification-engine)
-6. [Grammar & Tools](#6-grammar--tools)
-7. [Experimental / Zen Dojo Modes](#7-experimental--zen-dojo-modes)
-8. [Theming, Audio & Customization (Preferences)](#8-theming-audio--customization-preferences)
-9. [Educational Content, Resources & Community](#9-educational-content-resources--community)
-10. [Data Backup, Import/Export & Offline Infrastructure](#10-data-backup-importexport--offline-infrastructure)
-11. [Cross-Platform Mobile Implementation Roadmap](#11-cross-platform-mobile-implementation-roadmap)
+1. [App Overview & Navigation Structure](#1-app-overview--navigation-structure)
+2. [Core Training Dojos](#2-core-training-dojos)
+   - [2.1 Kana Dojo (仮名道場)](#21-kana-dojo-仮名道場)
+   - [2.2 Kanji Dojo (漢字道場)](#22-kanji-dojo-漢字道場)
+   - [2.3 Vocabulary Dojo (単語道場)](#23-vocabulary-dojo-単語道場)
+3. [Japanese Language Tools](#3-japanese-language-tools)
+   - [3.1 Japanese Verb Conjugator (活用形)](#31-japanese-verb-conjugator-活用形)
+4. [Arcade & Zen Hub (遊楽道場)](#4-arcade--zen-hub-遊楽道場)
+   - [4.1 Zen Breathing (息吹)](#41-zen-breathing-息吹)
+   - [4.2 Kana Wordle (語文字)](#42-kana-wordle-語文字)
+   - [4.3 Memory Match (神経衰弱)](#43-memory-match-神経衰弱)
+   - [4.4 Kana Rain (仮名の雨)](#44-kana-rain-仮名の雨)
+5. [Challenge & Survival Modes](#5-challenge--survival-modes)
+   - [5.1 Timed Blitz Mode](#51-timed-blitz-mode)
+   - [5.2 Gauntlet Mode](#52-gauntlet-mode)
+6. [Progress, Mastery & Analytics Engine](#6-progress-mastery--analytics-engine)
+7. [Achievements & Gamification Engine](#7-achievements--gamification-engine)
+8. [Academy & Resource Vault](#8-academy--resource-vault)
+   - [8.1 Kana Academy (学堂)](#81-kana-academy-学堂)
+   - [8.2 Resource Vault (推薦集)](#82-resource-vault-推薦集)
+9. [Settings, Theming & Personalization](#9-settings-theming--personalization)
+10. [Technical & Offline Infrastructure](#10-technical--offline-infrastructure)
 
 ---
 
-## 1. Core Training Dojos
+## 1. App Overview & Navigation Structure
 
-KanaDojo is organized into three foundational study pillars:
+Manabu is structured with Expo Router file-based routing (`src/app/`) prioritizing intuitive mobile navigation and seamless transitions:
 
-### 1.1 Kana Dojo (仮名道場)
-- **Hiragana (ひらがな)**:
-  - **Base (46 characters)**: `あ・か・さ・た・な・は・ま・や・ら・わ・ん`
-  - **Dakuon / Handakuon (25 characters)**: `が・ざ・だ・ば・ぱ` rows
-  - **Yōon (33 digraph combinations)**: `きゃ・しゃ・ちゃ・にゃ・ひゃ・みゃ・りゃ・ぎゃ・じゃ・びゃ・ぴゃ`
-- **Katakana (カタカナ)**:
-  - **Base (46 characters)**: `ア・カ・サ・タ・ナ・ハ・マ・ヤ・ラ・ワ・ン`
-  - **Dakuon / Handakuon (25 characters)**: `ガ・ザ・ダ・バ・パ`
-  - **Yōon (33 digraphs)**: `キャ・シャ・チャ・ニャ・ヒャ・ミャ・リャ・ギャ・ジャ・ビャ・ピャ`
-  - **Foreign Sounds / Extended Katakana (26+ combinations)**: `ファ・フィ・フェ・フォ・ティ・ディ・デュ・ウィ・ウェ・ウォ・シェ・ジェ・チェ・ツァ・ツィ・ツェ・ツォ・ヴァ・ヴィ・ヴ・ヴェ・ヴォ`
-- **Interactive Character Grid / Chart**:
-  - Full matrix layout for Hiragana and Katakana.
-  - Subgroup filtering (Base, Dakuon, Yoon, Foreign).
-  - Audio pronunciation playback per tile.
-  - Romaji toggle on/off.
-  - Subset dictionary drill-down view (`/kana-chart` and subset routes).
+### Main Tab Navigation (`/(tabs)`)
+- 🌸 **Kana Dojo** (`index.tsx`): Practice Hiragana & Katakana with interactive charts, multiple choice, typing drills, and challenge overlays.
+- 漢 **Kanji Dojo** (`kanji.tsx`): Set-based JLPT N5–N1 Kanji study, set cards, interactive dictionary modals, and practice flashcards.
+- 語 **Vocab Dojo** (`vocab.tsx`): JLPT N5–N1 Vocabulary 10-word sets, Furigana toggles, and dictionary modals.
+- 📊 **Progress** (`progress.tsx`): Comprehensive analytics, streak badges, character mastery breakdown, strength/weakness filters, and player level progression.
+- ⚙️ **Settings** (`settings.tsx`): Visual theme switcher, Japanese TTS controls, audio/haptics preferences, crazy mode, and JSON backup/restore.
 
-### 1.2 Kanji Dojo (漢字道場)
+### Quick-Access Modal Routes
+- 🌀 **Verb Conjugator** (`/conjugator`): Instant verb classification and 30+ form conjugation generator.
+- 🎮 **Arcade & Zen** (`/arcade`): Hub for micro-games (Zen Breathing, Kana Wordle, Memory Match, Kana Rain).
+- 📚 **Academy** (`/academy`): Structured educational guides for Japanese scripts, grammar, and stroke mnemonics.
+- 🧰 **Resources** (`/resources`): Curated directory of Japanese textbooks, apps, podcasts, YouTube channels, and immersion tools.
+- 🗺️ **Kana Chart Modal** (`/chart`): Full-screen interactive Hiragana and Katakana matrix chart.
+
+---
+
+## 2. Core Training Dojos
+
+### 2.1 Kana Dojo (仮名道場)
+- **Comprehensive Script Coverage**:
+  - **Hiragana (ひらがな)**: Base (46), Dakuon/Handakuon (25), Yōon Digraphs (33).
+  - **Katakana (カタカナ)**: Base (46), Dakuon/Handakuon (25), Yōon Digraphs (33).
+- **Interactive Matrix Chart**:
+  - Switch between Hiragana and Katakana views.
+  - Filter by subgroup (Base, Dakuon, Yoon).
+  - Toggle Romaji readings on/off.
+  - Native Text-to-Speech (TTS) pronunciation audio per character tile.
+- **Practice & Drill Modes**:
+  - **Pick Mode**: 4-option multiple-choice quizzes with prompt-to-reading or reading-to-prompt formats.
+  - **Type / Input Mode**: Freeform text input with real-time **WanaKana** IME conversion (automatically converts Romaji to Kana as you type).
+  - **Weak Character Filtering**: Toggle to exclusively drill characters categorized as `needs-practice`.
+- **Integrated Challenges**: Launch Timed Blitz or Gauntlet mode directly from the Kana Dojo header.
+
+### 2.2 Kanji Dojo (漢字道場)
 - **JLPT Level Coverage**:
-  - **N5**: ~103 Kanji
-  - **N4**: ~181 Kanji
-  - **N3**: ~361 Kanji
-  - **N2**: ~415 Kanji
-  - **N1**: ~1,136 Kanji
-- **Kanji Unit & Subunit Structure**:
-  - Grouped into 10-kanji digestible bite-sized sets.
-  - Progress tracking per set (0–3 stars based on accuracy & completion).
-- **Kanji Data Attributes**:
-  - Kanji glyph, On'yomi readings (katakana), Kun'yomi readings (hiragana), English meanings, stroke count, JLPT level, radical, example compound words.
+  - **N5 Kanji**: 103 Kanji
+  - **N4 Kanji**: 181 Kanji
+  - **N3 Kanji**: 361 Kanji
+  - **N2 Kanji**: 415 Kanji
+  - **N1 Kanji**: 1,136 Kanji
+  - *Total*: **2,196 Kanji entries** embedded offline.
+- **10-Kanji Chunked Study Sets**:
+  - Every JLPT level is partitioned into digestible 10-Kanji sets.
+  - Star completion rating ($0-3\star$) saved in MMKV persistent storage.
+  - Visual set cards with completion progress bars and status badges.
 - **Kanji Set Dictionary Modal**:
-  - Detailed card view showing stroke order, on/kun readings, and example vocabulary compounds.
+  - View all 10 Kanji entries in a set at once.
+  - Displays stroke count, On'yomi (katakana), Kun'yomi (hiragana), English meanings, and example vocabulary compounds.
+- **Drill Engine**:
+  - Multiple-choice flashcard quizzes.
+  - Option to drill a single set or practice weak Kanji across the entire level.
+  - Audio pronunciation playback for target readings.
 
-### 1.3 Vocabulary Dojo (単語道場)
-- **JLPT Vocabulary Tiers**:
-  - **N5 Vocab**: ~665 words
-  - **N4 Vocab**: ~634 words
-  - **N3 Vocab**: ~1,818 words
-  - **N2 Vocab**: ~1,836 words
-  - **N1 Vocab**: ~3,463 words
-- **Vocabulary Unit Structure**:
-  - Divided into 10-word sets per unit.
-  - Set star rating (0–3 stars).
-- **Vocabulary Data Attributes**:
-  - Word (Kanji/Kana), Furigana reading, Romaji, English definitions, Part of speech (noun, godan verb, ichidan verb, i-adjective, na-adjective, adverb, particle, expression).
+### 2.3 Vocabulary Dojo (単語道場)
+- **JLPT Vocab Coverage**:
+  - **N5 Vocab**: 600+ words
+  - **N4 Vocab**: 600+ words
+  - **N3 Vocab**: 1,800+ words
+  - **N2 Vocab**: 1,800+ words
+  - **N1 Vocab**: 3,400+ words
+  - *Total*: **8,000+ vocabulary items** offline.
+- **10-Word Chunked Study Sets**:
+  - Structured 10-word sets with star completion badges ($0-3\star$).
+- **Vocab Set Dictionary Modal**:
+  - Shows Kanji, Furigana reading, English definitions, and Part of Speech tags (Noun, Godan Verb, Ichidan Verb, I-Adjective, Na-Adjective, Adverb, Particle, Expression).
+- **Drill Engine**:
+  - Multiple choice quizzes with Furigana visibility toggles.
+  - Audio TTS playback for words.
+  - Weak Vocabulary practice filter.
 
 ---
 
-## 2. Game & Practice Modes
+## 3. Japanese Language Tools
 
-Varied cognitive training pathways to build recall speed and writing accuracy:
+### 3.1 Japanese Verb Conjugator (活用形)
+- **Verb Classification Engine** (`classifyVerb.ts`):
+  - Automatically identifies verb groups: **Godan** (u-verbs), **Ichidan** (ru-verbs), and **Irregular** verbs (`する`, `来る`, `ある`, `行く`).
+- **30+ Conjugation Forms Generated**:
+  - **Present**: Plain Affirmative/Negative (`食べる` / `食べない`), Polite (`食べます` / `食べません`).
+  - **Past**: Plain Affirmative/Negative (`食べた` / `食べなかった`), Polite (`食べました` / `食べませんでした`).
+  - **Te-form**: Te-form (`食べて`), Negative Te-form (`食べないで` / `表わなくて`).
+  - **Potential**: `食べられる` / `読める`.
+  - **Passive**: `食べられる` / `読まれる`.
+  - **Causative**: `食べさせる` / `読ませる`.
+  - **Causative-Passive**: `食べさせられる` / `読ませられる`.
+  - **Imperative & Prohibitive**: `食べろ` / `食べるな`.
+  - **Volitional**: `食べよう` / `読もう`.
+  - **Conditional**: Ba-form (`食べれば`) and Tara-form (`食べたら`).
+- **Interactive UI**:
+  - Search bar supporting dictionary form, Kana, or Romaji input.
+  - Preset chips for high-frequency verbs (`食べる`, `飲む`, `行く`, `見る`, `話す`, `買う`, `来る`, `する`).
+  - Structured Verb Info Card and full Conjugation Matrix breakdown.
 
-| Mode | Format | Cognitive Task |
+---
+
+## 4. Arcade & Zen Hub (遊楽道場)
+
+A dedicated suite of 4 interactive micro-games designed for passive learning, speed drills, and mindfulness:
+
+| Game | Format | Description |
 | :--- | :--- | :--- |
-| **Pick (Multiple Choice)** | 4 Options | Display Japanese Prompt (Kana/Kanji/Word) → Select correct English/Romaji |
-| **Reverse-Pick** | 4 Options | Display English/Romaji Prompt → Select correct Japanese glyph/word |
-| **Input / Type** | Freeform text | Display Japanese Prompt → Type correct Romaji / reading into text input |
-| **Reverse-Input** | Freeform text | Display English/Romaji → Type Japanese (with virtual IME / WanaKana conversion) |
-| **Tiles Mode** | Interactive grid | Match kana/kanji tiles to their corresponding readings by tapping pairs |
-| **Blitz Mode** | Timed rush | 30s, 60s, or 120s rapid-fire session. Test raw recall under clock pressure |
-| **Gauntlet Mode** | Survival | Multi-level boss run with limited lives (Hearts: Normal, Hard, Instant Death) |
-| **Crazy Mode (狂気)** | Randomized chaos | Randomizes theme, fonts, and quiz permutations dynamically on every question |
+| 🍃 **Zen Breathing (息吹)** | Mindfulness | Animated breathing circle (Inhale / Hold / Exhale) paired with relaxing zen quotes and a practice timer. |
+| 🔤 **Kana Wordle (語文字)** | Daily Puzzle | 5-guess daily Kana Wordle game with color-coded feedback tiles (Green: Correct, Yellow: Present, Gray: Absent) and win streak tracking. |
+| 🃏 **Memory Match (神経衰弱)** | Memory Grid | Flip-and-match memory card game pairing Kana characters with their corresponding Romaji readings. Tracks total moves and time. |
+| 🌧️ **Kana Rain (仮名の雨)** | Arcade Shooter | Cascading matrix-style Kana shooter where users type or select falling Kana before they reach the bottom line. Includes health bar, score multiplier, and high scores. |
 
 ---
 
-## 3. Auto-Learning & SRS Engine
+## 5. Challenge & Survival Modes
 
-- **Smart Set Recommender**:
-  - Automatically identifies sets with lowest stars (<3 stars) or lowest accuracy (<70%).
-  - Automatically activates handoff sessions (`writeAutoLearningHandoff`) that guide the user to practice their weakest rows/sets.
-- **Character Weakness Detection**:
-  - Tracks every correct and incorrect attempt per character.
-  - Categorizes characters into:
-    - **Mastered**: $\ge 90\%$ accuracy with $\ge 10$ attempts.
-    - **Learning**: Mid-tier accuracy or $<10$ attempts.
-    - **Needs Practice**: $<70\%$ accuracy with $\ge 5$ attempts.
-- **Dynamic Session Generation**:
-  - Prioritizes characters with `needs-practice` status during quiz generation.
-  - Distractor generation: Selects believable incorrect options from the active or adjacent character sets.
+Dynamic challenge overlays accessible across Kana, Kanji, and Vocabulary dojos:
+
+### 5.1 Timed Blitz Mode
+- **Clock Options**: 30s, 60s, or 120s rapid-fire sessions.
+- **Dynamic Scoring**:
+  - Score multiplier and combo streak counter.
+  - Immediate visual and haptic feedback on correct/incorrect answers.
+  - Post-session summary card showing final score, peak streak, accuracy, and total questions answered.
+
+### 5.2 Gauntlet Mode
+- **Survival Hearts System**:
+  - **Normal**: 3 hearts (3 allowed mistakes).
+  - **Hard**: 2 hearts.
+  - **Instant Death**: 1 heart (1 mistake ends the run).
+- **Progressive Difficulty**:
+  - Score multiplier scales with correct streak.
+  - High score tracking per difficulty level.
 
 ---
 
-## 4. Mastery, Statistics & Progress Tracking
+## 6. Progress, Mastery & Analytics Engine
 
 - **Overview Dashboard**:
-  - Total training sessions completed.
-  - Total correct vs. incorrect answers.
-  - Overall accuracy percentage.
-  - Current streak & best streak (all-time).
-  - Total unique characters encountered.
-  - Total practice time (milliseconds tracked and formatted).
-- **Character Mastery Breakdown**:
-  - Tabbed filtering: All / Kana / Kanji / Vocabulary.
-  - Top 5 Most Mastered characters.
-  - Top 5 Most Difficult characters (frequently missed).
-  - Full character-by-character table/grid with accuracy badge and attempt count.
-- **Timed Mode & Gauntlet Analytics**:
-  - Timed Blitz accuracy, correct count, best streak per duration.
-  - Gauntlet run count, win rate, best streak, fastest clear time.
-- **Set Progress Persistence**:
-  - Saves star ratings ($0-3 \star$) per unit set in persistent storage (`MMKV` on mobile, `localStorage` on web).
-  - Visual completion rings and set badges on selection menus.
+  - **Current Streak & Best Streak**: Real-time daily streak counter with fire badges.
+  - **Total Questions & Accuracy**: Total questions answered, correct answers count, and overall accuracy percentage.
+  - **Total XP & Player Level**: Earn XP from all training modes and level up.
+- **Character Mastery Matrix**:
+  - Tracks performance per character across Kana, Kanji, and Vocabulary:
+    - **Mastered**: $\ge 90\%$ accuracy with $\ge 10$ attempts.
+    - **Learning**: $70–89\%$ accuracy or $<10$ attempts.
+    - **Needs Practice**: $<70\%$ accuracy with $\ge 5$ attempts.
+- **Weakness & Strength Filtering**:
+  - View Top 5 Weakest Characters (most frequently missed).
+  - View Top 5 Strongest Characters.
+  - Mastery distribution breakdown pie/progress bars for Kana, Kanji, and Vocab.
+- **Quick Remediation**: "Drill Weakest Characters" action button to launch an instant practice session for weak items.
+- **Stats Reset**: Interactive safety confirmation dialog to clear progress when needed.
 
 ---
 
-## 5. Achievements & Gamification Engine
+## 7. Achievements & Gamification Engine
 
-Over **80+ achievements** across **12 categories** with 5 rarity tiers (`Common`, `Uncommon`, `Rare`, `Epic`, `Legendary`) and a global points/leveling progression system:
-
-### Categories
-1. **Streak Achievements (9)**:
-   - *Streak Starter* (5 streak), *Hot Streak* (10), *Streak Legend* (25), *Unstoppable* (50), *Streak Warrior* (75), *Century Streak* (100), *Streak Titan* (150), *Streak Immortal* (200), *Streak God* (500).
-2. **Milestone Achievements (10)**:
-   - *First Steps* (1 correct), *Century Scholar* (100), *Knowledge Seeker* (500), *Master Scholar* (1,000), *Dedicated Scholar* (2,500), *Legendary Master* (5,000), *Grand Master* (10,000), *Legendary Scholar* (25,000), *Point Collector* (1,000 pts), *Point Master* (10,000 pts).
-3. **Consistency Achievements (6)**:
-   - Session completion milestones (10, 25, 50, 100, 250, 500 sessions).
-4. **Mastery Achievements (3)**:
-   - Flawless sessions ($100\%$ accuracy on sessions with $\ge 20$ questions).
-5. **Exploration Achievements (7)**:
-   - Training variety (using all 3 dojos, using all 4 game modes, training 7 days in a row, night owl training, early bird training).
-6. **Kana Specific (8)**:
-   - Hiragana base mastery, Katakana base mastery, Dakuon mastery, Yoon mastery, Foreign sounds mastery.
-7. **Kanji Specific (10)**:
-   - N5 complete, N4 complete, N3 complete, N2 complete, N1 complete.
-8. **Vocabulary Specific (6)**:
-   - JLPT N5–N1 vocab milestones.
-9. **Gauntlet Achievements (10)**:
-   - First Gauntlet victory, Hard mode clear, Instant Death clear, Flawless Gauntlet (no lives lost).
-10. **Blitz Achievements (8)**:
-    - High scores in 30s, 60s, 120s Blitz modes.
-11. **Speed Achievements (5)**:
-    - Lightning answers ($<800\text{ms}$ correct response times).
-12. **Fun & Secret Achievements (10)**:
-    - Easter eggs, theme cycling, midnight sessions, streak recovery.
-
-### Leveling & Rewards
-- Each unlocked achievement awards points (10 to 3,000 pts).
-- Level formula: $\text{Level} = \lfloor \sqrt{\text{TotalPoints} / 100} \rfloor + 1$.
-- Unlocks special themes and visual badges.
+- **80+ Achievements** spanning 5 primary categories:
+  1. 🔥 **Streaks**: *Streak Starter* (5), *Hot Streak* (10), *Streak Legend* (25), *Unstoppable* (50), *Century Streak* (100).
+  2. 🌿 **Milestones**: *First Steps* (1 correct), *Century Scholar* (100), *Knowledge Seeker* (500), *Master Scholar* (1,000).
+  3. 🎯 **Mastery**: Perfect accuracy milestones and character mastery unlocks.
+  4. 🥋 **Dojos**: Dojo exploration and set completion achievements.
+  5. 🏆 **Challenges**: High scores in Blitz mode and Gauntlet survival clears.
+- **5 Rarity Tiers**: Common, Uncommon, Rare, Epic, Legendary with custom badges and XP point payouts.
+- **Player Level Formula**: $\text{Level} = \lfloor \sqrt{\text{Total XP} / 100} \rfloor + 1$.
+- **Live Achievement Toast**: Non-intrusive floating toast overlay triggered immediately upon unlocking an achievement.
 
 ---
 
-## 6. Grammar & Auxiliary Tools
+## 8. Academy & Resource Vault
 
-Beyond basic drills, KanaDojo includes high-utility Japanese language tooling:
+### 8.1 Kana Academy (学堂)
+- Structured, in-app Japanese educational articles (`guides.ts`):
+  - *Hiragana Foundations*: Master base characters and stroke direction.
+  - *Katakana Masterclass*: Mnemonics and rules for foreign loanwords.
+  - *Kanji Radicals & Components*: Decoding complex kanji.
+  - *Japanese Grammar Essentials*: Subject-object-verb order, particles (`は`, `が`, `を`), and polite speech.
+- Filterable by category (Writing Systems, Grammar, Kanji).
+- Interactive **Guide Reader Modal** with key takeaways and structured reading sections.
 
-### 6.1 Japanese Verb Conjugator (活用形)
-- **Verb Classification Engine**:
-  - Godan verbs (五段動詞 / u-verbs).
-  - Ichidan verbs (一段動詞 / ru-verbs).
-  - Irregular verbs (不規則動詞: する, 来る, ある, 行く, honorific verbs).
-- **Conjugation Forms Generated**:
-  - Present Affirmative / Negative (Plain & Polite - ます/ません).
-  - Past Affirmative / Negative (Plain & Polite - た/なかった/ました/ませんでした).
-  - Te-form (て形) & Negative Te-form (なくて形).
-  - Potential form (可能形 - 読める / 食べられる).
-  - Passive form (受身形 - 読まれる / 食べられる).
-  - Causative form (使役形 - 読ませる / 食べさせる).
-  - Causative-Passive (使役受身 - 読ませられる).
-  - Imperative (命令形) & Prohibitive (禁止形).
-  - Volitional (意向形 - 読もう / 食べよう).
-  - Conditional (ば形 & たら形).
-- **Interactive UI**:
-  - Verb lookup input with romaji/kanji/kana auto-detection.
-  - Detailed classification badge, stem/ending breakdown, and full conjugation matrix.
-
-### 6.2 Anki Deck Converter
-- **File Parser**:
-  - In-browser local parser for `.apkg`, `.tsv`, `.sqlite`, `.colpkg`, `.anki2`.
-- **Text & Structure Extraction**:
-  - Strips HTML tags, sound tokens, and media references.
-  - Detects card types (Basic, Cloze, Reverse).
-  - Preserves deck hierarchy and tags.
-- **Export**:
-  - Converts decks into structured JSON ready for custom study sessions.
-
-### 6.3 Japanese Translator & Text Analyzer
-- Text translation between Japanese and English.
-- Tokenization & morphological breakdown (Kuromoji / Kuroshiro):
-  - Part-of-speech tagging.
-  - Furigana generation.
-  - Romaji pronunciation.
-- Translation history and vocabulary bookmarking.
+### 8.2 Resource Vault (推薦集)
+- Curated directory of Japanese learning resources (`resources.ts`):
+  - Categories: Apps, Textbooks, YouTube Channels, Podcasts, Immersion Platforms, Grammar Tools.
+  - Search bar with real-time text matching against names, descriptions, and tags.
+  - Price filter: All, Free, Freemium, Paid.
+  - Direct external web linking via `expo-linking` / `expo-web-browser`.
 
 ---
 
-## 7. Experimental / Zen Dojo Modes
+## 9. Settings, Theming & Personalization
 
-30+ gamified and relaxing micro-experiences for passive learning and stress-free retention:
+### 9.1 100+ Visual Themes
+- Integrated theme engine supporting light, dark, cyberpunk, pastel, nature, high-contrast, and glassmorphism styles.
+- **Theme Selector Modal**: Grid view with live palette preview cards (primary, background, surface, accent).
 
-| Category | Modes | Description |
-| :--- | :--- | :--- |
-| **Mindfulness & Ambient** | `ZenMode`, `BreathingExercise`, `AmbientMode`, `ZenBonsai` | Calming background audio, breathing circles synced to kana strokes, growing digital bonsai. |
-| **Particle & Visuals** | `KanaRain`, `KanaConstellation`, `Hanabi`, `KanaWave`, `KanaNebula`, `KanaOrbit`, `KanaPulse` | Matrix-style cascading characters, fireworks that explode into kana upon tap, interactive orbital physics. |
-| **Mini-Games** | `KanaPop`, `KanaSnake`, `KanaWordle`, `KanaCatch`, `KanaSlot`, `KanaBounce`, `FlashRush`, `SpeedTyping` | Bubble popping games, classic Snake eating correct kana, 5-guess kana Wordle, paddle bounce reflex tests. |
-| **Cognitive Drills** | `MemoryPalace`, `KanaTrace`, `KanaShadow`, `KanaStack`, `DailyHaiku`, `KanaFortune` | Stroke tracing, memory matching cards, haiku of the day with vocabulary breakdown. |
+### 9.2 Japanese Text-to-Speech (TTS)
+- Powered by `expo-speech` with high-quality Japanese voice synthesis.
+- Speech rate slider (0.5x slow to 1.5x fast).
+- Toggle Auto-Play on question display.
+- Integrated "Test Speech" button in Settings.
 
----
+### 9.3 Audio & Haptics Engine
+- Native touch feedback using `expo-haptics` (`ImpactFeedbackStyle.Light` and `Medium`).
+- Customizable sound effect toggles for correct/incorrect answers.
 
-## 8. Theming, Audio & Customization (Preferences)
+### 9.4 Preferences & Crazy Mode
+- Toggle Romaji visibility in Kana chart.
+- Toggle Furigana visibility in vocabulary drills.
+- **Crazy Mode (狂気)**: Dynamically permutes themes and font styles on every question.
 
-### 8.1 100+ Visual Themes
-- Base palettes categorized into Light, Dark, Pastel, Cyberpunk, Nature, and High-Contrast groups.
-- Custom CSS variable engine:
-  - `backgroundColor`, `cardColor`, `borderColor`, `mainColor`, `mainColorAccent`, `secondaryColor`, `secondaryColorAccent`.
-- Custom Theme Builder: Allows users to create, save, and export bespoke color palettes.
-- Special Themes: Glassmorphism / Frosted Glass mode (`isGlassMode`), Kyoki (Crazy Mode).
-
-### 8.2 28 Japanese Typography Styles
-- Google Fonts & specialized Japanese typefaces (Klee One, Zen Maru Gothic, Yuji Boku, Noto Sans JP, Noto Serif JP, Kaisei Tokumin, Dela Gothic One, etc.).
-- Switchable font preview cards in Settings.
-
-### 8.3 Audio & Haptics Engine
-- Native / Web Audio effects:
-  - Tap / Click sound variations (Wooden, Mechanical, Digital, Bubble).
-  - Success chime & error buzzer.
-  - Streak celebration audio.
-- Japanese Text-to-Speech (TTS):
-  - Native Web Speech API / Android TTS engine integration.
-  - Auto-play pronunciation toggle on question reveal.
-- Mobile Haptics:
-  - Impact haptics on tap (`light`, `medium`).
-  - Notification haptics on correct/incorrect (`success`, `error`, `warning`).
-
-### 8.4 Behavior Settings
-- Reading display format: Romaji vs. Kana.
-- Silent Mode toggle.
-- Auto-advance on correct answer (0ms, 200ms, 500ms delay).
-- Furigana visibility toggle.
-- Experimental modes toggle.
+### 9.5 Backup & Restore
+- One-click JSON backup exporter and importer for local MMKV state (streaks, stats, character mastery matrix, achievements, and settings).
 
 ---
 
-## 9. Educational Content, Resources & Community
+## 10. Technical & Offline Infrastructure
 
-- **Kana Academy (Blog & Learning Guides)**:
-  - In-depth articles: "How to Learn Hiragana in 3 Days", "Mastering Katakana Mnemonics", "Kanji Radicals Explained".
-  - Stroke order diagrams and mnemonic memory aids.
-- **Curated Resource Directory**:
-  - Filterable by Category: Apps, Textbooks, Podcasts, YouTube, Games, Immersion, Reading.
-  - Filterable by Level: Beginner, Intermediate, Advanced, All-Levels.
-  - Filterable by Price: Free, Freemium, Paid, Subscription.
-- **Community & Open Source Hub**:
-  - Live GitHub metrics widget.
-  - Patch notes modal and changelog feed.
-  - Discord community integration and contribution guidelines.
-
----
-
-## 10. Data Backup, Import/Export & Offline Infrastructure
-
-- **100% Offline-First**:
-  - All character datasets, JLPT vocabularies, and Kanji definitions bundled locally.
-  - Zero required server authentication or external cloud dependencies.
-- **One-Click JSON Backup & Restore**:
-  - Exports complete user state: practice history, streaks, character mastery matrix, custom themes, unlocked achievements, and set progress.
-  - Imports backup JSON with schema validation and sanitization.
-
----
-
-## 11. Cross-Platform Mobile Implementation Roadmap
-
-Mapping the vision to our native Expo / React Native architecture (`/src`):
-
-```
-src/
-├── core/                       # Theme, storage (MMKV), query, audio, haptics, UI primitives
-├── features/
-│   ├── kana/                   # Kana Dojo (Hiragana/Katakana, Cards, Chart, Blitz, Gauntlet)
-│   ├── kanji/                  # Kanji Dojo (N5–N1, Cards, Drill, Detail Modal)
-│   ├── vocabulary/             # Vocab Dojo (N5–N1, 10-word sets, Quiz)
-│   ├── progress/               # Stats, Mastery Matrix, Weakness Filter, Auto-Learning
-│   ├── achievements/           # 80+ Achievements engine, Levels, Confetti celebration
-│   ├── conjugator/             # Japanese Verb Conjugation engine & UI
-│   ├── experiments/            # Zen mode, KanaRain, KanaWordle, Mini-games
-│   └── settings/               # Themes (100+), Fonts, Backup/Restore, Audio/Haptic toggles
-```
+- **100% Offline-First**: All character datasets, JLPT vocabulary, Kanji definitions, guides, and resources are bundled locally inside the build binary.
+- **High Performance Storage**: `react-native-mmkv` for instant synchronous read/write access to settings and user progress.
+- **State Management & Caching**:
+  - `zustand` for global state (theme, audio, challenges, progress, achievements, arcade).
+  - `@tanstack/react-query` for dataset queries and asynchronous data loading.
+- **Automated Testing Suite**:
+  - Unit tests powered by `vitest` covering audio TTS, conjugator algorithms, challenge generators, progress mastery calculators, and stores.

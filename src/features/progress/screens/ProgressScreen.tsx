@@ -290,7 +290,6 @@ export function ProgressScreen() {
                   <Pressable
                     key={`${item.category}-${item.character}`}
                     style={[styles.meterCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-                    activeOpacity={0.7}
                     onPress={() => {
                       if (item.category === 'kana') router.push('/(tabs)');
                       else if (item.category === 'kanji') router.push('/(tabs)/kanji');
@@ -355,7 +354,6 @@ export function ProgressScreen() {
                   <Pressable
                     key={`${item.category}-${item.character}`}
                     style={[styles.meterCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-                    activeOpacity={0.7}
                     onPress={() => {
                       if (item.category === 'kana') router.push('/(tabs)');
                       else if (item.category === 'kanji') router.push('/(tabs)/kanji');
@@ -417,7 +415,6 @@ export function ProgressScreen() {
               <Pressable
                 key={cat.name}
                 style={[styles.breakdownCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-                activeOpacity={0.7}
                 onPress={() => router.push(cat.route as any)}
               >
                 <View style={styles.breakdownHeader}>
@@ -541,7 +538,6 @@ export function ProgressScreen() {
         <Pressable
           onPress={handleReset}
           style={[styles.resetButton, { backgroundColor: theme.surface, borderColor: theme.error }]}
-          activeOpacity={0.7}
         >
           <Text style={[styles.resetText, { color: theme.error }]}>Reset All Stats</Text>
         </Pressable>
