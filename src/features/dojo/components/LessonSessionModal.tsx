@@ -24,6 +24,7 @@ import type { DojoLesson, LessonItem } from '../models/dojo.model';
 import { speakJapanese } from '../../../core/audio/tts';
 import { useDojoStore } from '../store/useDojoStore';
 import { useProgressStore } from '../../progress/store/useProgressStore';
+import { SpellingExerciseView, type TileItem } from './SpellingExerciseView';
 
 interface LessonSessionModalProps {
   visible: boolean;
@@ -57,7 +58,8 @@ function LessonSessionContent({
   const [queue, setQueue] = useState<LessonItem[]>(() => initialItems);
   const [totalInitial] = useState(() => initialItems.length);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
-  const [assembledTiles, setAssembledTiles] = useState<string[]>([]);
+  const [assembledTiles, setAssembledTiles] = useState<TileItem[]>([]);
+  const [directInput, setDirectInput] = useState<string>('');
   const [evaluation, setEvaluation] = useState<'correct' | 'incorrect' | null>(null);
   const [isCompleted, setIsCompleted] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
@@ -83,7 +85,7 @@ function LessonSessionContent({
     let isCorrect = false;
 
     if (currentItem.type === 'spell') {
-      const spelled = assembledTiles.join('');
+      const spelled = directInput.trim() || assembledTiles.map(t => t.char).join('');
       isCorrect = spelled === currentItem.correctAnswer;
     } else {
       isCorrect = selectedOption === currentItem.correctAnswer;
@@ -113,6 +115,7 @@ function LessonSessionContent({
 
     setSelectedOption(null);
     setAssembledTiles([]);
+    setDirectInput('');
     setEvaluation(null);
 
     // If queue is now empty (was last item and correct)
@@ -135,14 +138,16 @@ function LessonSessionContent({
     );
   };
 
-  const handleTilePress = (tile: string) => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+  const handleAddTile = (tile: TileItem) => {
     setAssembledTiles(prev => [...prev, tile]);
   };
 
   const handleRemoveTile = (index: number) => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
     setAssembledTiles(prev => prev.filter((_, idx) => idx !== index));
+  };
+
+  const handleClearLastTile = () => {
+    setAssembledTiles(prev => prev.slice(0, prev.length - 1));
   };
 
   const progressPercent = totalInitial > 0
@@ -176,7 +181,7 @@ function LessonSessionContent({
         {isCompleted ? (
           /* Victory Completion Screen */
           <View style={styles.completeContainer}>
-            <View style={[styles.completeIconCircle, { backgroundColor: theme.primary + '20' }]}>
+            <View style={[styles.completeIconCircle, { backgroundColor: theme.primaryLight }]}>
               <Sparkles size={54} color={theme.primary} />
             </View>
             <Text style={[styles.completeTitle, { color: theme.textPrimary }]}>Lesson Complete!</Text>
@@ -202,118 +207,96 @@ function LessonSessionContent({
             contentContainerStyle={[styles.questionContent, { paddingBottom: insets.bottom + 120 }]}
             showsVerticalScrollIndicator={false}
           >
-            {/* Audio Controls (Normal & Turtle) */}
-            <View style={styles.audioRow}>
-              <Pressable
-                onPress={() => handlePlayAudio(0.9)}
-                style={[styles.audioBubble, { backgroundColor: theme.surface, borderColor: theme.border }]}
-                accessibilityLabel="Play audio normal speed"
-              >
-                <Volume2 size={24} color={theme.primary} />
-              </Pressable>
+            {currentItem.type === 'spell' ? (
+              <SpellingExerciseView
+                item={currentItem}
+                assembledTiles={assembledTiles}
+                onAddTile={handleAddTile}
+                onRemoveTile={handleRemoveTile}
+                onClearLast={handleClearLastTile}
+                onDirectInputChange={setDirectInput}
+                directInputText={directInput}
+                onPlayAudio={handlePlayAudio}
+              />
+            ) : (
+              <>
+                {/* Audio Controls (Normal & Turtle) */}
+                <View style={styles.audioRow}>
+                  <Pressable
+                    onPress={() => handlePlayAudio(0.9)}
+                    style={[styles.audioBubble, { backgroundColor: theme.surface, borderColor: theme.border }]}
+                    accessibilityLabel="Play audio normal speed"
+                  >
+                    <Volume2 size={24} color={theme.primary} />
+                  </Pressable>
 
-              <Pressable
-                onPress={() => handlePlayAudio(0.6)}
-                style={[styles.audioBubble, { backgroundColor: theme.surface, borderColor: theme.border }]}
-                accessibilityLabel="Play audio slow speed"
-              >
-                <Snail size={24} color="#10B981" />
-              </Pressable>
-            </View>
+                  <Pressable
+                    onPress={() => handlePlayAudio(0.6)}
+                    style={[styles.audioBubble, { backgroundColor: theme.surface, borderColor: theme.border }]}
+                    accessibilityLabel="Play audio slow speed"
+                  >
+                    <Snail size={24} color="#10B981" />
+                  </Pressable>
+                </View>
 
-            {/* Prompt Card */}
-            <View style={[styles.promptCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-              {currentItem.dialogueSpeaker && (
-                <View style={[styles.speakerBadge, { backgroundColor: theme.primary + '20' }]}>
-                  <Text style={[styles.speakerText, { color: theme.primary }]}>
-                    {currentItem.dialogueSpeaker}
+                {/* Prompt Card */}
+                <View style={[styles.promptCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+                  {currentItem.dialogueSpeaker && (
+                    <View style={[styles.speakerBadge, { backgroundColor: theme.primaryLight }]}>
+                      <Text style={[styles.speakerText, { color: theme.primary }]}>
+                        {currentItem.dialogueSpeaker}
+                      </Text>
+                    </View>
+                  )}
+
+                  <Text style={[styles.promptJapanese, { color: theme.textPrimary }]}>
+                    {currentItem.prompt}
+                  </Text>
+
+                  {currentItem.romaji && (
+                    <Text style={[styles.promptRomaji, { color: theme.textSecondary }]}>
+                      {currentItem.romaji}
+                    </Text>
+                  )}
+
+                  <Text style={[styles.promptEnglish, { color: theme.textMuted }]}>
+                    {currentItem.english}
                   </Text>
                 </View>
-              )}
 
-              <Text style={[styles.promptJapanese, { color: theme.textPrimary }]}>
-                {currentItem.prompt}
-              </Text>
-
-              {currentItem.romaji && (
-                <Text style={[styles.promptRomaji, { color: theme.textSecondary }]}>
-                  {currentItem.romaji}
-                </Text>
-              )}
-
-              <Text style={[styles.promptEnglish, { color: theme.textMuted }]}>
-                {currentItem.english}
-              </Text>
-            </View>
-
-            {/* Spelling Mode Tile Builder */}
-            {currentItem.type === 'spell' && (
-              <View style={styles.spellingContainer}>
-                {/* Assembled Slot */}
-                <View style={[styles.assembledSlot, { borderColor: theme.border, backgroundColor: theme.surfaceSubtle }]}>
-                  {assembledTiles.length === 0 ? (
-                    <Text style={[styles.slotPlaceholder, { color: theme.textMuted }]}>
-                      Tap tiles below to spell...
-                    </Text>
-                  ) : (
-                    assembledTiles.map((tile, idx) => (
-                      <Pressable
-                        key={idx}
-                        onPress={() => handleRemoveTile(idx)}
-                        style={[styles.tileItem, { backgroundColor: theme.primary }]}
-                      >
-                        <Text style={[styles.tileText, { color: theme.textOnPrimary }]}>{tile}</Text>
-                      </Pressable>
-                    ))
-                  )}
-                </View>
-
-                {/* Tile Bank */}
-                <View style={styles.tileBank}>
-                  {(currentItem.tileBank || []).map((tile, idx) => (
-                    <Pressable
-                      key={idx}
-                      onPress={() => handleTilePress(tile)}
-                      style={[styles.bankTile, { backgroundColor: theme.surface, borderColor: theme.border }]}
-                    >
-                      <Text style={[styles.bankTileText, { color: theme.textPrimary }]}>{tile}</Text>
-                    </Pressable>
-                  ))}
-                </View>
-              </View>
-            )}
-
-            {/* Multiple Choice Options (for Listen, Speak, Cloze, Dialogue) */}
-            {currentItem.type !== 'spell' && currentItem.options && (
-              <View style={styles.optionsList}>
-                {currentItem.options.map((opt, idx) => {
-                  const isSelected = selectedOption === opt;
-                  return (
-                    <Pressable
-                      key={idx}
-                      onPress={() => {
-                        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
-                        setSelectedOption(opt);
-                      }}
-                      style={[
-                        styles.optionCard,
-                        { backgroundColor: theme.surface, borderColor: theme.border },
-                        isSelected && { borderColor: theme.primary, backgroundColor: theme.primary + '15' },
-                      ]}
-                    >
-                      <Text
-                        style={[
-                          styles.optionText,
-                          { color: theme.textPrimary },
-                          isSelected && { color: theme.primary, fontWeight: '800' },
-                        ]}
-                      >
-                        {opt}
-                      </Text>
-                    </Pressable>
-                  );
-                })}
-              </View>
+                {/* Multiple Choice Options (for Listen, Speak, Cloze, Dialogue) */}
+                {currentItem.options && (
+                  <View style={styles.optionsList}>
+                    {currentItem.options.map((opt, idx) => {
+                      const isSelected = selectedOption === opt;
+                      return (
+                        <Pressable
+                          key={idx}
+                          onPress={() => {
+                            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+                            setSelectedOption(opt);
+                          }}
+                          style={[
+                            styles.optionCard,
+                            { backgroundColor: theme.surface, borderColor: theme.border },
+                            isSelected && { borderColor: theme.primary, backgroundColor: theme.primaryLight },
+                          ]}
+                        >
+                          <Text
+                            style={[
+                              styles.optionText,
+                              { color: theme.textPrimary },
+                              isSelected && { color: theme.primary, fontWeight: '800' },
+                            ]}
+                          >
+                            {opt}
+                          </Text>
+                        </Pressable>
+                      );
+                    })}
+                  </View>
+                )}
+              </>
             )}
           </ScrollView>
         ) : null}
@@ -366,41 +349,36 @@ function LessonSessionContent({
         ) : !isCompleted && currentItem ? (
           /* Bottom Check Button Bar */
           <View style={[styles.bottomActionBar, { paddingBottom: insets.bottom + 12, backgroundColor: theme.surface }]}>
-            <Pressable
-              onPress={handleCheck}
-              disabled={
+            {(() => {
+              const hasAnswer =
                 currentItem.type === 'spell'
-                  ? assembledTiles.length === 0
-                  : !selectedOption
-              }
-              style={[
-                styles.checkBtn,
-                {
-                  backgroundColor:
-                    (currentItem.type === 'spell'
-                      ? assembledTiles.length > 0
-                      : !!selectedOption)
-                      ? theme.primary
-                      : theme.border,
-                },
-              ]}
-            >
-              <Text
-                style={[
-                  styles.checkBtnText,
-                  {
-                    color:
-                      (currentItem.type === 'spell'
-                        ? assembledTiles.length > 0
-                        : !!selectedOption)
-                        ? theme.textOnPrimary
-                        : theme.textMuted,
-                  },
-                ]}
-              >
-                CHECK
-              </Text>
-            </Pressable>
+                  ? directInput.trim().length > 0 || assembledTiles.length > 0
+                  : !!selectedOption;
+
+              return (
+                <Pressable
+                  onPress={handleCheck}
+                  disabled={!hasAnswer}
+                  style={[
+                    styles.checkBtn,
+                    {
+                      backgroundColor: hasAnswer ? '#F59E0B' : theme.border,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.checkBtnText,
+                      {
+                        color: hasAnswer ? '#FFFFFF' : theme.textMuted,
+                      },
+                    ]}
+                  >
+                    CHECK
+                  </Text>
+                </Pressable>
+              );
+            })()}
           </View>
         ) : null}
       </View>
@@ -513,45 +491,52 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   spellingContainer: {
-    gap: spacing.md,
+    gap: spacing.lg,
+    marginTop: spacing.xs,
   },
   assembledSlot: {
-    minHeight: 60,
+    minHeight: 76,
     borderRadius: radii.xl,
     borderWidth: 2,
     borderStyle: 'dashed',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    padding: spacing.sm,
-    gap: spacing.xs,
+    padding: spacing.md,
+    gap: spacing.sm,
     alignItems: 'center',
     justifyContent: 'center',
   },
   slotPlaceholder: {
     fontSize: 14,
+    fontWeight: '500',
     fontStyle: 'italic',
   },
   tileItem: {
-    paddingHorizontal: 14,
-    paddingVertical: 10,
+    width: 48,
+    height: 48,
     borderRadius: radii.lg,
+    alignItems: 'center',
+    justifyContent: 'center',
     ...shadows.sm,
   },
   tileText: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: '800',
   },
   tileBank: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: spacing.sm,
+    gap: 10,
     justifyContent: 'center',
+    paddingHorizontal: spacing.xs,
   },
   bankTile: {
-    paddingHorizontal: 18,
-    paddingVertical: 12,
-    borderRadius: radii.xl,
+    width: 52,
+    height: 52,
+    borderRadius: 18,
     borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
     ...shadows.sm,
   },
   bankTileText: {
