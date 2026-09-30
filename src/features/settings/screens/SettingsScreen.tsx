@@ -513,6 +513,23 @@ export function SettingsScreen({ onClose }: SettingsScreenProps = {}) {
             </View>
             <Text style={[styles.chevron, { color: colors.textMuted }]}>›</Text>
           </Pressable>
+
+          <View style={[styles.separator, { backgroundColor: colors.border }]} />
+
+          <Pressable
+            style={styles.row}
+            onPress={() => router.push('/dev-cards')}
+          >
+            <View style={styles.rowText}>
+              <Text style={[styles.rowLabel, { color: colors.primary }]}>
+                🧪 Dev Cards Gallery (カードプレビュー)
+              </Text>
+              <Text style={[styles.rowSub, { color: colors.textSecondary }]}>
+                Live gallery of all Correct & Incorrect evaluation cards
+              </Text>
+            </View>
+            <Text style={[styles.chevron, { color: colors.primary }]}>›</Text>
+          </Pressable>
         </View>
 
         {/* Data Management */}

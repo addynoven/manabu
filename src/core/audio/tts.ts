@@ -8,6 +8,38 @@ export interface SpeakOptions {
   onError?: (error: Error) => void;
 }
 
+let cachedVoiceIdentifier: string | null = null;
+let isResolvingVoice = false;
+
+/**
+ * Discovers and caches the best available Japanese voice on the device.
+ */
+async function getBestJapaneseVoice(): Promise<string | undefined> {
+  if (cachedVoiceIdentifier) return cachedVoiceIdentifier;
+  if (isResolvingVoice) return undefined;
+
+  try {
+    isResolvingVoice = true;
+    if (typeof Speech.getAvailableVoicesAsync === 'function') {
+      const voices = await Speech.getAvailableVoicesAsync();
+      const jaVoice = voices.find(
+        (v) =>
+          v.language?.toLowerCase().startsWith('ja') ||
+          v.identifier?.toLowerCase().includes('ja-jp')
+      );
+      if (jaVoice?.identifier) {
+        cachedVoiceIdentifier = jaVoice.identifier;
+        return jaVoice.identifier;
+      }
+    }
+  } catch {
+    // If voice resolution is unavailable, fallback to default language code
+  } finally {
+    isResolvingVoice = false;
+  }
+  return undefined;
+}
+
 /**
  * Cleans text for Japanese TTS pronunciation.
  * Strips romaji hints or brackets if any exist in the input string.
@@ -35,27 +67,32 @@ export async function speakJapanese(
     const isSpeaking = await Speech.isSpeakingAsync();
     if (isSpeaking) {
       await Speech.stop();
-      await new Promise(resolve => setTimeout(resolve, 50));
+      // Allow Android TextToSpeech engine time to flush audio buffers cleanly
+      await new Promise((resolve) => setTimeout(resolve, 120));
     }
 
+    const voiceIdentifier = await getBestJapaneseVoice();
     const { rate = 1.0, pitch = 1.0, onStart, onDone, onError } = options;
 
     onStart?.();
 
     Speech.speak(cleaned, {
       language: 'ja-JP',
+      voice: voiceIdentifier,
       rate: Math.max(0.5, Math.min(rate, 1.5)),
       pitch: Math.max(0.5, Math.min(pitch, 1.5)),
       onDone,
       onStopped: onDone,
       onError: (err) => {
-        onError?.(err instanceof Error ? err : new Error(String(err)));
+        const errorObj = err instanceof Error ? err : new Error(String(err));
+        console.warn('[TTS] Speech playback error:', errorObj.message);
+        onError?.(errorObj);
       },
     });
   } catch (error) {
-    options.onError?.(
-      error instanceof Error ? error : new Error(String(error))
-    );
+    const errorObj = error instanceof Error ? error : new Error(String(error));
+    console.warn('[TTS] Failed to initialize speech:', errorObj.message);
+    options.onError?.(errorObj);
   }
 }
 

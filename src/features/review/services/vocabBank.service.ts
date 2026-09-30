@@ -23,6 +23,60 @@ export interface VocabWord {
   distractors: string[];
 }
 
+export interface UnitVocabBundle {
+  unitNumber: number;
+  unitId: string;
+  unitTitle: string;
+  words: VocabWord[];
+  totalCount: number;
+  strongCount: number;
+  weakCount: number;
+  reviewCount: number;
+  masteryRate: number; // percentage (0-100)
+}
+
+/**
+ * Groups a flat list of vocabulary words into unit-based bundles with mastery stats.
+ */
+export function groupWordsByUnit(words: VocabWord[]): UnitVocabBundle[] {
+  const map = new Map<number, UnitVocabBundle>();
+
+  for (const word of words) {
+    let bundle = map.get(word.unitNumber);
+    if (!bundle) {
+      bundle = {
+        unitNumber: word.unitNumber,
+        unitId: word.unitId,
+        unitTitle: word.unitTitle,
+        words: [],
+        totalCount: 0,
+        strongCount: 0,
+        weakCount: 0,
+        reviewCount: 0,
+        masteryRate: 0,
+      };
+      map.set(word.unitNumber, bundle);
+    }
+
+    bundle.words.push(word);
+    bundle.totalCount++;
+    if (word.status === 'strong') {
+      bundle.strongCount++;
+    } else if (word.status === 'weak') {
+      bundle.weakCount++;
+    } else {
+      bundle.reviewCount++;
+    }
+  }
+
+  const bundles = Array.from(map.values()).sort((a, b) => a.unitNumber - b.unitNumber);
+  for (const b of bundles) {
+    b.masteryRate = b.totalCount > 0 ? Math.round((b.strongCount / b.totalCount) * 100) : 0;
+  }
+
+  return bundles;
+}
+
 /**
  * Extracts and consolidates all learned and unlocked vocabulary words from Dojo curriculum,
  * merged with real user mastery progress.

@@ -33,6 +33,7 @@ import { MatchingPairsView } from './MatchingPairsView';
 import { DialogueChatView } from './DialogueChatView';
 import { SpeechDrillView } from './SpeechDrillView';
 import { DictationExerciseView } from './DictationExerciseView';
+import { EvaluationCardSheet } from './EvaluationCardSheet';
 
 interface LessonSessionModalProps {
   visible: boolean;
@@ -475,128 +476,17 @@ function LessonSessionContent({
         ) : null}
 
         {/* Sliding Evaluation Bottom Sheet */}
-        {evaluation ? (
-          <View
-            style={[
-              styles.evaluationSheet,
-              {
-                backgroundColor: evaluation === 'correct' ? '#DEF7EC' : '#FDE8E8',
-                borderTopColor: evaluation === 'correct' ? '#31C48D' : '#F98080',
-                paddingBottom: insets.bottom + 16,
-              },
-            ]}
-          >
-            <View style={styles.evalTopRow}>
-              {evaluation === 'correct' ? (
-                <CheckCircle2 size={26} color="#0E9F6E" />
-              ) : (
-                <XCircle size={26} color="#E02424" />
-              )}
-              <Text
-                style={[
-                  styles.evalStatusTitle,
-                  { color: evaluation === 'correct' ? '#03543F' : '#9B1C1C' },
-                ]}
-              >
-                {evaluation === 'correct' ? 'Correct!' : 'Incorrect'}
-              </Text>
-            </View>
+        <EvaluationCardSheet
+          evaluation={evaluation}
+          currentItem={currentItem}
+          userAnswerText={userAnswerText}
+          correctAnswerText={correctAnswerText}
+          hintText={hintText}
+          insetsBottom={insets.bottom}
+          onContinue={handleContinue}
+        />
 
-            {/* If Incorrect: Side-by-side Answer Diff Comparison */}
-            {evaluation === 'incorrect' && (
-              <View style={styles.diffContainer}>
-                <View style={styles.diffPillUser}>
-                  <View style={styles.diffPillHeader}>
-                    <XCircle size={14} color="#DC2626" />
-                    <Text style={styles.diffPillLabelUser}>YOUR ANSWER</Text>
-                  </View>
-                  <Text style={styles.diffPillValueUser} numberOfLines={1}>
-                    {userAnswerText}
-                  </Text>
-                </View>
-
-                <View style={styles.diffPillCorrect}>
-                  <View style={styles.diffPillHeader}>
-                    <CheckCircle2 size={14} color="#059669" />
-                    <Text style={styles.diffPillLabelCorrect}>CORRECT ANSWER</Text>
-                  </View>
-                  <Text style={styles.diffPillValueCorrect} numberOfLines={1}>
-                    {correctAnswerText}
-                  </Text>
-                </View>
-              </View>
-            )}
-
-            {/* Context Card: Full sentence with highlighted answer */}
-            <View style={styles.evalBreakdown}>
-              {currentItem?.type === 'cloze' || currentItem?.type === 'cloze_context' ? (
-                (() => {
-                  const raw = currentItem.clozeSentence || currentItem.contextSentence || '';
-                  if (raw.includes('{{BLANK}}') || raw.includes('____')) {
-                    const parts = raw.includes('{{BLANK}}')
-                      ? raw.split('{{BLANK}}')
-                      : raw.split('____');
-                    return (
-                      <Text style={styles.evalPrompt}>
-                        {parts[0]}
-                        <Text style={styles.highlightGreen}>{correctAnswerText}</Text>
-                        {parts[1]}
-                      </Text>
-                    );
-                  }
-                  return <Text style={styles.evalPrompt}>{currentItem.prompt}</Text>;
-                })()
-              ) : currentItem?.type === 'dialogue' ? (
-                <View style={{ gap: 6 }}>
-                  <Text style={styles.evalEnglish}>
-                    {currentItem.dialogueSpeaker || 'Speaker'}:
-                  </Text>
-                  <Text style={styles.evalPrompt}>
-                    {currentItem.dialoguePrompt || currentItem.prompt}
-                  </Text>
-                  <Text style={[styles.evalEnglish, { marginTop: 4 }]}>Your reply:</Text>
-                  <Text style={[styles.evalPrompt, styles.highlightGreen]}>
-                    {correctAnswerText}
-                  </Text>
-                </View>
-              ) : currentItem?.type === 'match' ? (
-                <Text style={styles.evalPrompt}>
-                  {currentItem.matchPairs
-                    ? currentItem.matchPairs.map(p => p.left).join('・')
-                    : currentItem.prompt}
-                </Text>
-              ) : (
-                <Text style={styles.evalPrompt}>{currentItem?.prompt}</Text>
-              )}
-
-              {currentItem?.type !== 'dialogue' && currentItem?.romaji ? (
-                <Text style={styles.evalRomaji}>{currentItem.romaji}</Text>
-              ) : null}
-              {currentItem?.type !== 'dialogue' ? (
-                <Text style={styles.evalEnglish}>{currentItem?.english}</Text>
-              ) : null}
-            </View>
-
-            {/* Pedagogical Rule / Hint */}
-            {hintText ? (
-              <View style={styles.tipBox}>
-                <Sparkles size={16} color="#D97706" style={{ marginTop: 1 }} />
-                <Text style={styles.tipText}>{hintText}</Text>
-              </View>
-            ) : null}
-
-            <Pressable
-              onPress={handleContinue}
-              style={[
-                styles.evalContinueBtn,
-                { backgroundColor: evaluation === 'correct' ? '#0E9F6E' : '#E02424' },
-              ]}
-            >
-              <Text style={styles.evalContinueText}>CONTINUE</Text>
-              <ArrowRight size={20} color="#FFFFFF" />
-            </Pressable>
-          </View>
-        ) : !isCompleted && currentItem ? (
+        {!evaluation && !isCompleted && currentItem ? (
           /* Bottom Check Button Bar */
           <View style={[styles.bottomActionBar, { paddingBottom: insets.bottom + 12, backgroundColor: theme.surface }]}>
             {(() => {
@@ -912,10 +802,22 @@ const styles = StyleSheet.create({
     color: '#991B1B',
     textDecorationLine: 'line-through',
   },
+  diffPillRomajiUser: {
+    fontSize: 11,
+    fontWeight: '600',
+    color: '#B91C1C',
+    marginTop: 1,
+  },
   diffPillValueCorrect: {
     fontSize: 16,
     fontWeight: '800',
     color: '#065F46',
+  },
+  diffPillRomajiCorrect: {
+    fontSize: 11,
+    fontWeight: '600',
+    color: '#047857',
+    marginTop: 1,
   },
   evalBreakdown: {
     gap: 3,
@@ -932,9 +834,6 @@ const styles = StyleSheet.create({
   highlightGreen: {
     color: '#059669',
     fontWeight: '900',
-    backgroundColor: '#DEF7EC',
-    paddingHorizontal: 4,
-    borderRadius: 4,
   },
   evalRomaji: {
     fontSize: 13,

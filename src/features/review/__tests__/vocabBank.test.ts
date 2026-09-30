@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getLearnedVocabWords } from '../services/vocabBank.service';
+import { getLearnedVocabWords, groupWordsByUnit } from '../services/vocabBank.service';
 
 describe('vocabBank.service', () => {
   it('extracts real vocabulary words and phrases from dojo units', () => {
@@ -43,4 +43,25 @@ describe('vocabBank.service', () => {
     expect(unit1Words.length).toBeGreaterThan(0);
     expect(unit1Words.every((w) => w.unitId === 'unit_1')).toBe(true);
   });
+
+  it('groups vocabulary words into unit bundles with mastery rates', () => {
+    const words = getLearnedVocabWords(new Set());
+    const bundles = groupWordsByUnit(words);
+    expect(bundles.length).toBeGreaterThan(0);
+    expect(bundles[0].unitNumber).toBeDefined();
+    expect(bundles[0].words.length).toBe(bundles[0].totalCount);
+    expect(bundles[0].masteryRate).toBeGreaterThanOrEqual(0);
+    expect(bundles[0].masteryRate).toBeLessThanOrEqual(100);
+  });
+
+  it('automatically adds Unit 3 deck when any lesson of Unit 3 is completed', () => {
+    const words = getLearnedVocabWords(new Set(['u3_l1']), {}, { maxUnits: 30 });
+    const bundles = groupWordsByUnit(words);
+    const unit3Bundle = bundles.find(b => b.unitNumber === 3);
+
+    expect(unit3Bundle).toBeDefined();
+    expect(unit3Bundle?.words.length).toBeGreaterThan(0);
+    expect(unit3Bundle?.unitTitle).toBeDefined();
+  });
 });
+

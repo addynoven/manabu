@@ -24,6 +24,7 @@ import {
   Users,
   Share2,
   Calendar,
+  Swords,
 } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
 import { radii, typography, useAppTheme } from '../../../core/theme';
@@ -34,21 +35,36 @@ import { MemoryMatchView } from '../components/MemoryMatchView';
 import { KanaRainView } from '../components/KanaRainView';
 import { YokaiRunView } from '../components/YokaiRunView';
 import { KanaSnakeView } from '../components/KanaSnakeView';
-import { FlashRushView } from '../components/FlashRushView';
+import { FlashSurvivalView } from '../components/FlashSurvivalView';
 import { HanabiView } from '../components/HanabiView';
 import { KanaCatchView } from '../components/KanaCatchView';
 import { KanaPopView } from '../components/KanaPopView';
 import { KanaTraceView } from '../../kana/components/KanaTraceView';
+import { ShiritoriArenaView } from '../components/ShiritoriArenaView';
+import { KarutaBattleView } from '../components/KarutaBattleView';
+import { KanjiDuelView } from '../components/KanjiDuelView';
 import { DailyChallengeModal } from '../components/DailyChallengeModal';
 import { getDayOfYear } from '../lib/dailyChallengeGenerator';
-import { BlitzModal } from '../../challenges/components/BlitzModal';
-import { GauntletModal } from '../../challenges/components/GauntletModal';
-import type { ChallengeQuestion } from '../../challenges/models/challenge.model';
-import { useChallengeStore } from '../../challenges/store/useChallengeStore';
-import { useKanaGroupsQuery } from '../../kana/hooks/useKanaQuery';
-import { flattenGroups, generateKanaQuestion } from '../../kana/lib/kanaGenerator';
 
-type ActiveGame = 'zen' | 'wordle' | 'memory' | 'rain' | 'runner' | 'snake' | 'rush' | 'hanabi' | 'catch' | 'pop' | 'trace' | null;
+type ActiveGame =
+  | 'shiritori'
+  | 'karuta'
+  | 'kanjiDuel'
+  | 'zen'
+  | 'wordle'
+  | 'memory'
+  | 'rain'
+  | 'runner'
+  | 'snake'
+  | 'survival'
+  | 'rush'
+  | 'hanabi'
+  | 'catch'
+  | 'pop'
+  | 'trace'
+  | null;
+
+type ArcadeCategory = 'all' | 'battles' | 'challenges' | 'classics' | 'zen';
 
 interface ArcadeHubScreenProps {
   hideBack?: boolean;
@@ -70,37 +86,30 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
     dailyChallengeStreak,
     dailyChallengeCompleted,
     dailyChallengeLastResult,
+    survivalHighScores,
   } = useArcadeStore();
 
   const [activeGame, setActiveGame] = useState<ActiveGame>(null);
+  const [selectedCategory, setSelectedCategory] = useState<ArcadeCategory>('all');
   const [showDailyChallenge, setShowDailyChallenge] = useState(false);
-  const [showBlitz, setShowBlitz] = useState(false);
-  const [showGauntlet, setShowGauntlet] = useState(false);
 
-  const { data: kanaGroups } = useKanaGroupsQuery();
-  const allKana = useMemo(() => {
-    if (!kanaGroups) return [];
-    return flattenGroups(kanaGroups);
-  }, [kanaGroups]);
+  const bestSurvivalScore = Math.max(
+    survivalHighScores?.kana || 0,
+    survivalHighScores?.kanji || 0,
+    survivalHighScores?.vocab || 0,
+    survivalHighScores?.hell || 0
+  );
 
-  const generateChallengeQuestion = useCallback((): ChallengeQuestion | null => {
-    if (allKana.length === 0) return null;
-    const q = generateKanaQuestion(allKana, 'pick');
-    if (!q.options) return null;
-    return {
-      id: q.id,
-      prompt: q.prompt,
-      promptSub: q.promptSub,
-      options: q.options,
-      correctAnswer: q.correctAnswer,
-      characterKey: q.target.kana,
-      category: 'kana',
-    };
-  }, [allKana]);
-
-  const { getBlitzStats, getGauntletStats } = useChallengeStore();
-  const blitzStats = getBlitzStats('kana', 60);
-  const gauntletStats = getGauntletStats('kana', 'normal');
+  const CATEGORIES: { id: ArcadeCategory; label: string }[] = useMemo(
+    () => [
+      { id: 'all', label: 'All' },
+      { id: 'battles', label: '⚔️ Battles (3)' },
+      { id: 'challenges', label: '⚡ Survival' },
+      { id: 'classics', label: '🎮 Classics (9)' },
+      { id: 'zen', label: '🧘 Zen' },
+    ],
+    []
+  );
 
   const todayStr = new Date().toISOString().split('T')[0];
   const isDailyDone = dailyChallengeDate === todayStr && dailyChallengeCompleted;
@@ -144,6 +153,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
       <ScrollView
         contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 24 }]}
         showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
       >
         {/* 0. Daily Community Challenge Hero Card */}
         <View
@@ -239,110 +249,252 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
           </View>
         </View>
 
-        {/* Blitz Mode Card */}
-        <Pressable
-          onPress={() => {
-            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
-            setShowBlitz(true);
-          }}
-          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+        {/* Category Filter Pills */}
+        <ScrollView
+          horizontal
+          nestedScrollEnabled
+          keyboardShouldPersistTaps="handled"
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.categoryRow}
         >
-          <View style={styles.cardHeader}>
-            <View style={[styles.iconWrap, { backgroundColor: '#EAB30818' }]}>
-              <Zap size={24} color="#EAB308" />
+          {CATEGORIES.map((cat) => {
+            const isSelected = selectedCategory === cat.id;
+            return (
+              <Pressable
+                key={cat.id}
+                hitSlop={8}
+                onPress={() => {
+                  Haptics.selectionAsync().catch(() => {});
+                  setSelectedCategory(cat.id);
+                }}
+                style={[
+                  styles.categoryPill,
+                  {
+                    backgroundColor: isSelected ? theme.primary : theme.surface,
+                    borderColor: isSelected ? theme.primary : theme.border,
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.categoryPillText,
+                    { color: isSelected ? '#FFFFFF' : theme.textPrimary },
+                  ]}
+                >
+                  {cat.label}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </ScrollView>
+
+        {/* 1. Authentic Japanese Battle Arena (Multiplayer Ready) */}
+        {(selectedCategory === 'all' || selectedCategory === 'battles') && (
+          <>
+            <View style={styles.sectionHeaderRow}>
+              <View style={[styles.sectionIconBadge, { backgroundColor: '#EF444420' }]}>
+                <Swords size={16} color="#EF4444" />
+              </View>
+              <View style={styles.sectionHeaderTextWrap}>
+                <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+                  対戦バトル • Battle Arena
+                </Text>
+                <Text style={[styles.sectionSubtitle, { color: theme.textSecondary }]}>
+                  Authentic Japanese multiplayer games vs AI opponents
+                </Text>
+              </View>
             </View>
-            <View style={styles.headerInfo}>
-              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
-                稲妻特訓 • Blitz Challenge
+
+            {/* Shiritori Arena */}
+            <Pressable
+              onPress={() => launchGame('shiritori')}
+              style={[styles.battleCard, { backgroundColor: theme.surface, borderColor: '#EF444470' }]}
+            >
+              <View style={styles.cardHeader}>
+                <View style={[styles.iconWrap, { backgroundColor: '#EF444418' }]}>
+                  <Swords size={24} color="#EF4444" />
+                </View>
+                <View style={styles.headerInfo}>
+                  <View style={styles.battleTagRow}>
+                    <View style={[styles.battleTag, { backgroundColor: '#EF444420' }]}>
+                      <Text style={[styles.battleTagText, { color: '#EF4444' }]}>
+                        🎌 MULTIPLAYER READY
+                      </Text>
+                    </View>
+                  </View>
+                  <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                    しりとり • Shiritori Arena
+                  </Text>
+                  <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                    言葉の鎖 (Word-Chain Duel)
+                  </Text>
+                </View>
+              </View>
+
+              <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+                Turn-based Japanese word-chain duel vs AI bots (Tanuki, Kitsune, Tengu). Real-time turn timer, authentic 'ん' loss rule, Kana/Kanji input engine, and TTS audio recitation.
               </Text>
-              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
-                Speed reflex test (30s / 60s / 120s)
+
+              <View style={styles.cardFooter}>
+                <Text style={[styles.cardStatBadge, { color: '#EF4444' }]}>
+                  ⏱️ 15s Turn Timer
+                </Text>
+                <View style={[styles.playPill, { backgroundColor: '#EF4444' }]}>
+                  <Text style={styles.playPillText}>Play Shiritori</Text>
+                </View>
+              </View>
+            </Pressable>
+
+            {/* Competitive Karuta */}
+            <Pressable
+              onPress={() => launchGame('karuta')}
+              style={[styles.battleCard, { backgroundColor: theme.surface, borderColor: '#F59E0B70' }]}
+            >
+              <View style={styles.cardHeader}>
+                <View style={[styles.iconWrap, { backgroundColor: '#F59E0B18' }]}>
+                  <Layers size={24} color="#F59E0B" />
+                </View>
+                <View style={styles.headerInfo}>
+                  <View style={styles.battleTagRow}>
+                    <View style={[styles.battleTag, { backgroundColor: '#F59E0B20' }]}>
+                      <Text style={[styles.battleTagText, { color: '#F59E0B' }]}>
+                        🎴 POEMS & VOCAB
+                      </Text>
+                    </View>
+                  </View>
+                  <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                    競技かるた • Competitive Karuta
+                  </Text>
+                  <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                    百人一首 & 単語スラップ (Tatami Slap Battle)
+                  </Text>
+                </View>
+              </View>
+
+              <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+                Tatami mat reaction slap battle! Yomite reader pronounces Japanese classical poems or vocabulary. Race against AI bot to slap matching card before they snatch it. Watch out for Otetsuki!
               </Text>
-            </View>
-          </View>
 
-          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-            High-octane rapid fire questions against the clock. Build your highest streak before time runs out!
-          </Text>
+              <View style={styles.cardFooter}>
+                <Text style={[styles.cardStatBadge, { color: '#F59E0B' }]}>
+                  🌸 12 Poems Mode
+                </Text>
+                <View style={[styles.playPill, { backgroundColor: '#F59E0B' }]}>
+                  <Text style={styles.playPillText}>Play Karuta</Text>
+                </View>
+              </View>
+            </Pressable>
 
-          <View style={styles.cardFooter}>
-            <Text style={[styles.cardStatBadge, { color: '#EAB308' }]}>
-              ⚡ Best: {blitzStats.bestScore} pts
-            </Text>
-            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
-              <Text style={styles.playPillText}>Start Blitz</Text>
-            </View>
-          </View>
-        </Pressable>
+            {/* Kanji Duel */}
+            <Pressable
+              onPress={() => launchGame('kanjiDuel')}
+              style={[styles.battleCard, { backgroundColor: theme.surface, borderColor: '#8B5CF670' }]}
+            >
+              <View style={styles.cardHeader}>
+                <View style={[styles.iconWrap, { backgroundColor: '#8B5CF618' }]}>
+                  <Zap size={24} color="#8B5CF6" />
+                </View>
+                <View style={styles.headerInfo}>
+                  <View style={styles.battleTagRow}>
+                    <View style={[styles.battleTag, { backgroundColor: '#8B5CF620' }]}>
+                      <Text style={[styles.battleTagText, { color: '#8B5CF6' }]}>
+                        ⚔️ 1000 HP COMBAT
+                      </Text>
+                    </View>
+                  </View>
+                  <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                    漢字決闘 • Kanji Duel
+                  </Text>
+                  <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                    早押しクイズ (Speed Strike Battle)
+                  </Text>
+                </View>
+              </View>
 
-        {/* Gauntlet Mode Card */}
-        <Pressable
-          onPress={() => {
-            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
-            setShowGauntlet(true);
-          }}
-          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-        >
-          <View style={styles.cardHeader}>
-            <View style={[styles.iconWrap, { backgroundColor: '#EF444418' }]}>
-              <Shield size={24} color="#EF4444" />
-            </View>
-            <View style={styles.headerInfo}>
-              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
-                百人組手 • Gauntlet Survival
+              <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+                High-speed martial arts combat! 1000 HP clash against Tanuki, Kitsune, or Tengu. Strike with Onyomi vs Kunyomi, Radicals, Stroke counts, and Compound words. Faster answers trigger Critical Hits!
               </Text>
-              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
-                Endless survival test • 3 Lives
+
+              <View style={styles.cardFooter}>
+                <Text style={[styles.cardStatBadge, { color: '#8B5CF6' }]}>
+                  ⚡ Critical Strikes
+                </Text>
+                <View style={[styles.playPill, { backgroundColor: '#8B5CF6' }]}>
+                  <Text style={styles.playPillText}>Start Duel</Text>
+                </View>
+              </View>
+            </Pressable>
+          </>
+        )}
+
+        {/* 2. Speed & Survival Section */}
+        {(selectedCategory === 'all' || selectedCategory === 'challenges') && (
+          <>
+            <View style={styles.sectionHeaderRow}>
+              <View style={[styles.sectionIconBadge, { backgroundColor: '#EAB30820' }]}>
+                <Zap size={16} color="#EAB308" />
+              </View>
+              <View style={styles.sectionHeaderTextWrap}>
+                <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+                  特訓 & サバイバル • Speed & Survival
+                </Text>
+                <Text style={[styles.sectionSubtitle, { color: theme.textSecondary }]}>
+                  High-speed time attack & hell mode
+                </Text>
+              </View>
+            </View>
+
+            {/* Unified Flash Survival Card */}
+            <Pressable
+              onPress={() => launchGame('survival')}
+              style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+            >
+              <View style={styles.cardHeader}>
+                <View style={[styles.iconWrap, { backgroundColor: '#EAB30818' }]}>
+                  <Zap size={24} color="#EAB308" />
+                </View>
+                <View style={styles.headerInfo}>
+                  <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                    閃光サバイバル • Flash Survival
+                  </Text>
+                  <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                    Time Attack Overdrive & Hell Mode
+                  </Text>
+                </View>
+              </View>
+
+              <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+                Race against the ticking clock! Correct answers add seconds, fast reflexes grant bonuses, and streaks unlock up to 5x multipliers. Test Kana, Kanji, Vocab, or mixed Hell Mode!
               </Text>
-            </View>
-          </View>
 
-          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-            Survive endless consecutive questions with 3 lives. Heal hearts with 5-streaks in normal mode!
-          </Text>
+              <View style={styles.cardFooter}>
+                <Text style={[styles.cardStatBadge, { color: '#EAB308' }]}>
+                  ⚡ Best: {bestSurvivalScore} pts
+                </Text>
+                <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+                  <Text style={styles.playPillText}>Enter Survival</Text>
+                </View>
+              </View>
+            </Pressable>
+          </>
+        )}
 
-          <View style={styles.cardFooter}>
-            <Text style={[styles.cardStatBadge, { color: '#EF4444' }]}>
-              🛡️ Best Streak: {gauntletStats.bestStreak}
-            </Text>
-            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
-              <Text style={styles.playPillText}>Enter Gauntlet</Text>
+        {/* 3. Classic Japanese Drills & Micro-Games */}
+        {(selectedCategory === 'all' || selectedCategory === 'classics') && (
+          <>
+            <View style={styles.sectionHeaderRow}>
+              <View style={[styles.sectionIconBadge, { backgroundColor: '#3B82F620' }]}>
+                <Layers size={16} color="#3B82F6" />
+              </View>
+              <View style={styles.sectionHeaderTextWrap}>
+                <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+                  クラシック • Classic Drills
+                </Text>
+                <Text style={[styles.sectionSubtitle, { color: theme.textSecondary }]}>
+                  Casual word puzzles and character drills
+                </Text>
+              </View>
             </View>
-          </View>
-        </Pressable>
-
-        {/* 1. Zen Breathing Mode */}
-        <Pressable
-          onPress={() => launchGame('zen')}
-          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-        >
-          <View style={styles.cardHeader}>
-            <View style={[styles.iconWrap, { backgroundColor: '#10B98118' }]}>
-              <Wind size={24} color="#10B981" />
-            </View>
-            <View style={styles.headerInfo}>
-              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
-                禅 • 呼吸法 (Zen Breathing)
-              </Text>
-              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
-                Mindfulness & Serenity
-              </Text>
-            </View>
-          </View>
-
-          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-            Soothing 4-4-4-2 breathing sphere synced to Japanese calligraphy, gentle haptic pulses, and contemplative audio.
-          </Text>
-
-          <View style={styles.cardFooter}>
-            <Text style={[styles.cardStatBadge, { color: '#10B981' }]}>
-              🧘 {zenCyclesTotal} cycles completed
-            </Text>
-            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
-              <Text style={styles.playPillText}>Begin Zen</Text>
-            </View>
-          </View>
-        </Pressable>
 
         {/* 2. Kana Wordle */}
         <Pressable
@@ -496,7 +648,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
           </View>
 
           <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-            Guide the snake using the D-Pad to eat target Kana tiles across the grid.
+            Guide the snake with touch & swipes to eat target Kana tiles across the expanded grid.
           </Text>
 
           <View style={styles.cardFooter}>
@@ -509,40 +661,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
           </View>
         </Pressable>
 
-        {/* 7. Flash Rush */}
-        <Pressable
-          onPress={() => launchGame('rush')}
-          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-        >
-          <View style={styles.cardHeader}>
-            <View style={[styles.iconWrap, { backgroundColor: '#EAB30818' }]}>
-              <Zap size={24} color="#EAB308" />
-            </View>
-            <View style={styles.headerInfo}>
-              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
-                閃光ラッシュ • Flash Rush
-              </Text>
-              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
-                Lightning Flashcard Rush
-              </Text>
-            </View>
-          </View>
-
-          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-            High-speed instant recall time trial with streak multipliers.
-          </Text>
-
-          <View style={styles.cardFooter}>
-            <Text style={[styles.cardStatBadge, { color: '#EAB308' }]}>
-              ⚡ Speed Mode
-            </Text>
-            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
-              <Text style={styles.playPillText}>Start Rush</Text>
-            </View>
-          </View>
-        </Pressable>
-
-        {/* 8. Hanabi Fireworks */}
+        {/* 6. Kana Hanabi Fireworks */}
         <Pressable
           onPress={() => launchGame('hanabi')}
           style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
@@ -673,9 +792,88 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
             </View>
           </View>
         </Pressable>
+          </>
+        )}
+
+        {/* 4. Zen & Mindfulness */}
+        {(selectedCategory === 'all' || selectedCategory === 'zen') && (
+          <>
+            <View style={styles.sectionHeaderRow}>
+              <View style={[styles.sectionIconBadge, { backgroundColor: '#10B98120' }]}>
+                <Wind size={16} color="#10B981" />
+              </View>
+              <View style={styles.sectionHeaderTextWrap}>
+                <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+                  禅 • Mindfulness
+                </Text>
+                <Text style={[styles.sectionSubtitle, { color: theme.textSecondary }]}>
+                  Soothing breathing and contemplation
+                </Text>
+              </View>
+            </View>
+
+            <Pressable
+              onPress={() => launchGame('zen')}
+              style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+            >
+              <View style={styles.cardHeader}>
+                <View style={[styles.iconWrap, { backgroundColor: '#10B98118' }]}>
+                  <Wind size={24} color="#10B981" />
+                </View>
+                <View style={styles.headerInfo}>
+                  <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
+                    禅 • 呼吸法 (Zen Breathing)
+                  </Text>
+                  <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
+                    Mindfulness & Serenity
+                  </Text>
+                </View>
+              </View>
+
+              <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
+                Soothing 4-4-4-2 breathing sphere synced to Japanese calligraphy, gentle haptic pulses, and contemplative audio.
+              </Text>
+
+              <View style={styles.cardFooter}>
+                <Text style={[styles.cardStatBadge, { color: '#10B981' }]}>
+                  🧘 {zenCyclesTotal} cycles completed
+                </Text>
+                <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
+                  <Text style={styles.playPillText}>Begin Zen</Text>
+                </View>
+              </View>
+            </Pressable>
+          </>
+        )}
       </ScrollView>
 
       {/* Active Game Modals */}
+      <Modal
+        visible={activeGame === 'shiritori'}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={closeGame}
+      >
+        <ShiritoriArenaView onClose={closeGame} />
+      </Modal>
+
+      <Modal
+        visible={activeGame === 'karuta'}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={closeGame}
+      >
+        <KarutaBattleView onClose={closeGame} />
+      </Modal>
+
+      <Modal
+        visible={activeGame === 'kanjiDuel'}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={closeGame}
+      >
+        <KanjiDuelView onClose={closeGame} />
+      </Modal>
       <Modal
         visible={activeGame === 'zen'}
         animationType="slide"
@@ -731,12 +929,12 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
       </Modal>
 
       <Modal
-        visible={activeGame === 'rush'}
+        visible={activeGame === 'survival' || activeGame === 'rush'}
         animationType="slide"
         presentationStyle="fullScreen"
         onRequestClose={closeGame}
       >
-        <FlashRushView onClose={closeGame} />
+        <FlashSurvivalView onClose={closeGame} />
       </Modal>
 
       <Modal
@@ -778,22 +976,6 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
       <DailyChallengeModal
         visible={showDailyChallenge}
         onClose={() => setShowDailyChallenge(false)}
-      />
-
-      <BlitzModal
-        visible={showBlitz}
-        onClose={() => setShowBlitz(false)}
-        dojoName="Arcade"
-        category="kana"
-        questionGenerator={generateChallengeQuestion}
-      />
-
-      <GauntletModal
-        visible={showGauntlet}
-        onClose={() => setShowGauntlet(false)}
-        dojoName="Arcade"
-        category="kana"
-        questionGenerator={generateChallengeQuestion}
       />
     </View>
   );
@@ -1019,5 +1201,72 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 14,
     fontWeight: '700',
+  },
+  battleCard: {
+    borderRadius: 20,
+    borderWidth: 1.5,
+    padding: 18,
+    gap: 12,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.12,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  battleTagRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 4,
+  },
+  battleTag: {
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: radii.full,
+  },
+  battleTagText: {
+    fontSize: 10,
+    fontWeight: '800',
+    letterSpacing: 0.5,
+  },
+  categoryRow: {
+    flexDirection: 'row',
+    gap: 8,
+    paddingVertical: 4,
+  },
+  categoryPill: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: radii.full,
+    borderWidth: 1,
+  },
+  categoryPillText: {
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  sectionHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    marginTop: 10,
+    marginBottom: 2,
+  },
+  sectionIconBadge: {
+    width: 32,
+    height: 32,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  sectionHeaderTextWrap: {
+    flex: 1,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: '800',
+  },
+  sectionSubtitle: {
+    fontSize: 12,
+    fontWeight: '500',
+    marginTop: 1,
   },
 });

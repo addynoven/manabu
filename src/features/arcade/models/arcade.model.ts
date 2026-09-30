@@ -57,6 +57,8 @@ export interface ArcadeStats {
   wordleMaxStreak: number;
   memoryBestMoves: Record<MemoryDeckMode, number>;
   rainHighScore: number;
+  snakeHighScore: number;
+  survivalHighScores: Record<string, number>;
   zenMinutesTotal: number;
   zenCyclesTotal: number;
   dailyChallengeDate: string;

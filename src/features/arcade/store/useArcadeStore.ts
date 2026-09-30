@@ -7,6 +7,8 @@ interface ArcadeState extends ArcadeStats {
   recordWordleResult: (won: boolean) => void;
   recordMemoryScore: (deck: MemoryDeckMode, moves: number) => void;
   recordRainScore: (score: number) => { isNewHigh: boolean };
+  recordSnakeScore: (score: number) => { isNewHigh: boolean };
+  recordSurvivalScore: (mode: string, score: number) => { isNewHigh: boolean };
   addZenSession: (seconds: number, cycles: number) => void;
   recordDailyChallenge: (score: number, timeSeconds: number, accuracy: number) => void;
   resetArcadeStats: () => void;
@@ -23,6 +25,13 @@ const initialStats: ArcadeStats = {
     'kanji-meaning': 0,
   },
   rainHighScore: 0,
+  snakeHighScore: 0,
+  survivalHighScores: {
+    kana: 0,
+    kanji: 0,
+    vocab: 0,
+    hell: 0,
+  },
   zenMinutesTotal: 0,
   zenCyclesTotal: 0,
   dailyChallengeDate: '',
@@ -71,6 +80,30 @@ export const useArcadeStore = create<ArcadeState>()(
         const isNewHigh = score > state.rainHighScore;
         if (isNewHigh) {
           set({ rainHighScore: score });
+        }
+        return { isNewHigh };
+      },
+
+      recordSnakeScore: (score: number) => {
+        const state = get();
+        const isNewHigh = score > state.snakeHighScore;
+        if (isNewHigh) {
+          set({ snakeHighScore: score });
+        }
+        return { isNewHigh };
+      },
+
+      recordSurvivalScore: (mode: string, score: number) => {
+        const state = get();
+        const currentHigh = state.survivalHighScores?.[mode] || 0;
+        const isNewHigh = score > currentHigh;
+        if (isNewHigh) {
+          set({
+            survivalHighScores: {
+              ...(state.survivalHighScores || {}),
+              [mode]: score,
+            },
+          });
         }
         return { isNewHigh };
       },
