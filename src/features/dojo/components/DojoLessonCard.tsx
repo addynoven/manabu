@@ -5,6 +5,7 @@ import * as Haptics from 'expo-haptics';
 import { radii, shadows, useAppTheme } from '../../../core/theme';
 import type { DojoLesson } from '../models/dojo.model';
 import { useDojoStore } from '../store/useDojoStore';
+import { useCooldownTimer } from '../hooks/useCooldownTimer';
 
 interface DojoLessonCardProps {
   lesson: DojoLesson;
@@ -16,21 +17,15 @@ export function DojoLessonCard({ lesson, isActive, onPress }: DojoLessonCardProp
   const { colors: theme } = useAppTheme();
   const isLessonLocked = useDojoStore(state => state.isLessonLocked);
   const completedLessons = useDojoStore(state => state.completedLessons);
+  const { isCoolingDown, formattedCompact } = useCooldownTimer();
 
   const lockStatus = isLessonLocked(lesson.id);
   const isCompleted = !!completedLessons[lesson.id];
   const isLocked = lockStatus.locked && !isCompleted;
-  const isCooldown = lockStatus.reason === 'cooldown';
-
-  const formatCooldown = (seconds?: number) => {
-    if (!seconds) return '2h 0m';
-    const h = Math.floor(seconds / 3600);
-    const m = Math.floor((seconds % 3600) / 60);
-    return `${h}h ${m}m`;
-  };
+  const isCooldown = isLocked && (lockStatus.reason === 'cooldown' || isCoolingDown);
 
   const handlePress = () => {
-    if (isLocked) {
+    if (isLocked && lockStatus.reason === 'prerequisite') {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning).catch(() => {});
       return;
     }
@@ -130,8 +125,8 @@ export function DojoLessonCard({ lesson, isActive, onPress }: DojoLessonCardProp
           {isCooldown && (
             <View style={[styles.statusBadge, { backgroundColor: '#FEF3C7' }]}>
               <Clock size={11} color="#D97706" />
-              <Text style={[styles.statusText, { color: '#D97706' }]}>
-                {formatCooldown(lockStatus.remainingSeconds)}
+              <Text style={[styles.statusText, { color: '#D97706', fontVariant: ['tabular-nums'] }]}>
+                {formattedCompact}
               </Text>
             </View>
           )}

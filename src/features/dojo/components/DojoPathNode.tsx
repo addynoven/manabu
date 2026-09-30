@@ -10,6 +10,7 @@ import * as Haptics from 'expo-haptics';
 import { shadows, useAppTheme } from '../../../core/theme';
 import type { DojoLesson } from '../models/dojo.model';
 import { useDojoStore } from '../store/useDojoStore';
+import { useCooldownTimer } from '../hooks/useCooldownTimer';
 
 interface DojoPathNodeProps {
   lesson: DojoLesson;
@@ -21,23 +22,16 @@ export function DojoPathNode({ lesson, position, onPress }: DojoPathNodeProps) {
   const { colors: theme } = useAppTheme();
   const isLessonLocked = useDojoStore(state => state.isLessonLocked);
   const completedLessons = useDojoStore(state => state.completedLessons);
+  const { isCoolingDown, formattedCompact } = useCooldownTimer();
 
   const lockStatus = isLessonLocked(lesson.id);
   const isCompleted = !!completedLessons[lesson.id];
   const isLocked = lockStatus.locked;
-  const isCooldown = isLocked && lockStatus.reason === 'cooldown';
+  const isCooldown = isLocked && lockStatus.reason === 'cooldown' && isCoolingDown;
 
   const handlePress = () => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
     onPress(lesson);
-  };
-
-  const formatRemaining = (seconds?: number) => {
-    if (!seconds) return 'Locked';
-    const mins = Math.floor(seconds / 60);
-    const hrs = Math.floor(mins / 60);
-    if (hrs > 0) return `${hrs}h ${mins % 60}m`;
-    return `${mins}m`;
   };
 
   const getAlignmentStyle = () => {
@@ -82,7 +76,7 @@ export function DojoPathNode({ lesson, position, onPress }: DojoPathNodeProps) {
         </Text>
         <Text style={[styles.lessonSub, { color: theme.textSecondary }]}>
           {isCooldown
-            ? `⏳ ${formatRemaining(lockStatus.remainingSeconds)}`
+            ? `⏳ ${formattedCompact}`
             : isCompleted
             ? '✓ Completed'
             : isLocked

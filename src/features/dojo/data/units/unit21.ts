@@ -1,0 +1,3380 @@
+import type { DojoUnit } from "../../models/dojo.model";
+
+export const unit21: DojoUnit = {
+  "id": "unit_21",
+  "unitNumber": 21,
+  "title": "Business Negotiations & Proposals",
+  "titleJp": "ビジネス交渉と企画提案",
+  "description": "Negotiate trade contracts, present new proposals, navigate polite pushback, and reach corporate agreements.",
+  "icon": "📊",
+  "themeColor": "#7C2D12",
+  "summaryPoints": [
+    "重要語彙35語以上の習得 (Over 35 Core Vocabulary Items)",
+    "日常・実用対話表現のマスター (Mastery of Practical Dialogues)",
+    "聴解と文字綴りのトレーニング (Listening & 4x2 Tile Spelling)",
+    "JLPT基準文法パターンの定着 (Grammar Patterns & Nuances)",
+    "7日間の段階的カリキュラム (Structured 7-Day Progressive Bundle)"
+  ],
+  "lessons": [
+    {
+      "id": "u21_l1",
+      "unitId": "unit_21",
+      "lessonNumber": 1,
+      "dayNumber": 1,
+      "category": "Expression",
+      "sectionTitle": "Core Expressions (Part 1)",
+      "iconType": "expression",
+      "title": "Negotiation & Proposal",
+      "titleJp": "交渉・提案",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "交渉",
+        "提案",
+        "妥協"
+      ],
+      "kanjiKeywords": [
+        "交",
+        "渉",
+        "提",
+        "案",
+        "妥",
+        "協"
+      ],
+      "items": [
+        {
+          "id": "u21_l1_1",
+          "type": "listen",
+          "prompt": "交渉",
+          "furigana": "こうしょう",
+          "romaji": "koushou",
+          "english": "Negotiation",
+          "audioText": "こうしょう",
+          "options": [
+            "Confirming Agreement / consensus",
+            "Price quotation",
+            "Negotiation",
+            "Confirming Consent / approval"
+          ],
+          "correctAnswer": "Negotiation"
+        },
+        {
+          "id": "u21_l1_2",
+          "type": "spell",
+          "prompt": "交渉",
+          "furigana": "こうしょう",
+          "romaji": "koushou",
+          "english": "Build 'Negotiation'",
+          "audioText": "こうしょう",
+          "tileBank": [
+            "う",
+            "の",
+            "ろ",
+            "ょ",
+            "こ",
+            "う",
+            "し",
+            "を"
+          ],
+          "correctAnswer": "こうしょう"
+        },
+        {
+          "id": "u21_l1_3",
+          "type": "cloze",
+          "prompt": "私は提案がすきです",
+          "furigana": "わたしはていあんがすきです",
+          "romaji": "Watashi wa teian ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Proposal.",
+          "audioText": "提案",
+          "clozeSentence": "これは提案 {{BLANK}} す。",
+          "clozeTarget": "が",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "が"
+        },
+        {
+          "id": "u21_l1_4",
+          "type": "scramble",
+          "prompt": "これは提案です",
+          "furigana": "これはていあんです",
+          "romaji": "Kore wa teian desu.",
+          "english": "This is Proposal.",
+          "audioText": "これは提案です",
+          "scrambleTokens": [
+            "です",
+            "提案",
+            "これは",
+            "それ",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "提案",
+            "です"
+          ],
+          "correctAnswer": "これは提案です"
+        },
+        {
+          "id": "u21_l1_5",
+          "type": "speak",
+          "prompt": "妥協",
+          "furigana": "だきょう",
+          "romaji": "dakyou",
+          "english": "Pronounce: Compromise",
+          "audioText": "だきょう",
+          "targetSpeech": "妥協",
+          "options": [
+            "Compromise",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "妥協"
+        },
+        {
+          "id": "u21_l1_6",
+          "type": "dictate",
+          "prompt": "妥協をお願いします",
+          "furigana": "だきょうをおねがいします",
+          "romaji": "dakyou o onegaishimasu.",
+          "english": "Compromise, please.",
+          "audioText": "妥協をお願いします",
+          "dictateTokens": [
+            "ありがとう",
+            "妥協",
+            "です",
+            "お願いします",
+            "を"
+          ],
+          "dictateSolution": [
+            "妥協",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "妥協をお願いします"
+        },
+        {
+          "id": "u21_l1_7",
+          "type": "match",
+          "prompt": "交渉・提案・妥協・合意",
+          "furigana": "こうしょう・ていあん・だきょう・ごうい",
+          "romaji": "koushou, teian, dakyou, goui",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "こうしょう",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "交渉",
+              "right": "Negotiation",
+              "furigana": "こうしょう",
+              "romaji": "koushou"
+            },
+            {
+              "id": "p_1",
+              "left": "提案",
+              "right": "Proposal",
+              "furigana": "ていあん",
+              "romaji": "teian"
+            },
+            {
+              "id": "p_2",
+              "left": "妥協",
+              "right": "Compromise",
+              "furigana": "だきょう",
+              "romaji": "dakyou"
+            },
+            {
+              "id": "p_3",
+              "left": "合意",
+              "right": "Agreement / consensus",
+              "furigana": "ごうい",
+              "romaji": "goui"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l1_8",
+          "type": "dialogue",
+          "prompt": "交渉について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "交渉について教えていただけますか？",
+          "furigana": "交渉について教えていただけますか？",
+          "romaji": "koushou ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Negotiation?",
+          "audioText": "交渉について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u21_l2",
+      "unitId": "unit_21",
+      "lessonNumber": 2,
+      "dayNumber": 1,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Agreement / consensus & Transaction / business deal",
+      "titleJp": "合意・取引",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "合意",
+        "取引",
+        "納期"
+      ],
+      "kanjiKeywords": [
+        "合",
+        "意",
+        "取",
+        "引",
+        "納",
+        "期"
+      ],
+      "items": [
+        {
+          "id": "u21_l2_1",
+          "type": "listen",
+          "prompt": "合意",
+          "furigana": "ごうい",
+          "romaji": "goui",
+          "english": "Agreement / consensus",
+          "audioText": "ごうい",
+          "options": [
+            "Profit / margin",
+            "Agreement / consensus",
+            "Confirming Transaction / business deal",
+            "Confirming Proposal"
+          ],
+          "correctAnswer": "Agreement / consensus"
+        },
+        {
+          "id": "u21_l2_2",
+          "type": "spell",
+          "prompt": "合意",
+          "furigana": "ごうい",
+          "romaji": "goui",
+          "english": "Build 'Agreement / consensus'",
+          "audioText": "ごうい",
+          "tileBank": [
+            "ろ",
+            "を",
+            "お",
+            "ご",
+            "あ",
+            "い",
+            "れ",
+            "う"
+          ],
+          "correctAnswer": "ごうい"
+        },
+        {
+          "id": "u21_l2_3",
+          "type": "cloze",
+          "prompt": "私は取引がすきです",
+          "furigana": "わたしはとりひきがすきです",
+          "romaji": "Watashi wa torihiki ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Transaction / business deal.",
+          "audioText": "取引",
+          "clozeSentence": "これは取引 {{BLANK}} す。",
+          "clozeTarget": "を",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "を"
+        },
+        {
+          "id": "u21_l2_4",
+          "type": "scramble",
+          "prompt": "これは取引です",
+          "furigana": "これはとりひきです",
+          "romaji": "Kore wa torihiki desu.",
+          "english": "This is Transaction / business deal.",
+          "audioText": "これは取引です",
+          "scrambleTokens": [
+            "です",
+            "これは",
+            "ではありません",
+            "取引",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "取引",
+            "です"
+          ],
+          "correctAnswer": "これは取引です"
+        },
+        {
+          "id": "u21_l2_5",
+          "type": "speak",
+          "prompt": "納期",
+          "furigana": "のうき",
+          "romaji": "nouki",
+          "english": "Pronounce: Delivery deadline",
+          "audioText": "のうき",
+          "targetSpeech": "納期",
+          "options": [
+            "Delivery deadline",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "納期"
+        },
+        {
+          "id": "u21_l2_6",
+          "type": "dictate",
+          "prompt": "納期をお願いします",
+          "furigana": "のうきをおねがいします",
+          "romaji": "nouki o onegaishimasu.",
+          "english": "Delivery deadline, please.",
+          "audioText": "納期をお願いします",
+          "dictateTokens": [
+            "です",
+            "お願いします",
+            "ありがとう",
+            "納期",
+            "を"
+          ],
+          "dictateSolution": [
+            "納期",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "納期をお願いします"
+        },
+        {
+          "id": "u21_l2_7",
+          "type": "match",
+          "prompt": "合意・取引・納期・見積書",
+          "furigana": "ごうい・とりひき・のうき・みつもりしょ",
+          "romaji": "goui, torihiki, nouki, mitsumorisho",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ごうい",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "合意",
+              "right": "Agreement / consensus",
+              "furigana": "ごうい",
+              "romaji": "goui"
+            },
+            {
+              "id": "p_1",
+              "left": "取引",
+              "right": "Transaction / business deal",
+              "furigana": "とりひき",
+              "romaji": "torihiki"
+            },
+            {
+              "id": "p_2",
+              "left": "納期",
+              "right": "Delivery deadline",
+              "furigana": "のうき",
+              "romaji": "nouki"
+            },
+            {
+              "id": "p_3",
+              "left": "見積書",
+              "right": "Price quotation",
+              "furigana": "みつもりしょ",
+              "romaji": "mitsumorisho"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l2_8",
+          "type": "dialogue",
+          "prompt": "提案の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "提案の準備はできていますか？",
+          "furigana": "提案の準備はできていますか？",
+          "romaji": "teian no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Proposal ready?",
+          "audioText": "提案の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u21_l3",
+      "unitId": "unit_21",
+      "lessonNumber": 3,
+      "dayNumber": 1,
+      "category": "Practice",
+      "sectionTitle": "Sentence Patterns & Fluency",
+      "iconType": "practice",
+      "title": "Price quotation & Consideration / deliberation",
+      "titleJp": "見積書・検討",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "見積書",
+        "検討",
+        "恐縮"
+      ],
+      "kanjiKeywords": [
+        "見",
+        "積",
+        "書",
+        "検",
+        "討",
+        "恐",
+        "縮"
+      ],
+      "items": [
+        {
+          "id": "u21_l3_1",
+          "type": "listen",
+          "prompt": "見積書",
+          "furigana": "みつもりしょ",
+          "romaji": "mitsumorisho",
+          "english": "Price quotation",
+          "audioText": "みつもりしょ",
+          "options": [
+            "Confirming Concluding a contract",
+            "Confirming Agreement / consensus",
+            "Price quotation",
+            "Humbly obliged / apologetic"
+          ],
+          "correctAnswer": "Price quotation"
+        },
+        {
+          "id": "u21_l3_2",
+          "type": "spell",
+          "prompt": "見積書",
+          "furigana": "みつもりしょ",
+          "romaji": "mitsumorisho",
+          "english": "Build 'Price quotation'",
+          "audioText": "みつもりしょ",
+          "tileBank": [
+            "し",
+            "ょ",
+            "つ",
+            "そ",
+            "み",
+            "も",
+            "り",
+            "す"
+          ],
+          "correctAnswer": "みつもりしょ"
+        },
+        {
+          "id": "u21_l3_3",
+          "type": "cloze",
+          "prompt": "私は検討がすきです",
+          "furigana": "わたしはけんとうがすきです",
+          "romaji": "Watashi wa kentou ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Consideration / deliberation.",
+          "audioText": "検討",
+          "clozeSentence": "これは検討 {{BLANK}} す。",
+          "clozeTarget": "に",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "に"
+        },
+        {
+          "id": "u21_l3_4",
+          "type": "scramble",
+          "prompt": "これは検討です",
+          "furigana": "これはけんとうです",
+          "romaji": "Kore wa kentou desu.",
+          "english": "This is Consideration / deliberation.",
+          "audioText": "これは検討です",
+          "scrambleTokens": [
+            "です",
+            "検討",
+            "これは",
+            "ではありません",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "検討",
+            "です"
+          ],
+          "correctAnswer": "これは検討です"
+        },
+        {
+          "id": "u21_l3_5",
+          "type": "speak",
+          "prompt": "恐縮",
+          "furigana": "きょうしゅく",
+          "romaji": "kyoushuku",
+          "english": "Pronounce: Humbly obliged / apologetic",
+          "audioText": "きょうしゅく",
+          "targetSpeech": "恐縮",
+          "options": [
+            "Humbly obliged / apologetic",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "恐縮"
+        },
+        {
+          "id": "u21_l3_6",
+          "type": "dictate",
+          "prompt": "恐縮をお願いします",
+          "furigana": "きょうしゅくをおねがいします",
+          "romaji": "kyoushuku o onegaishimasu.",
+          "english": "Humbly obliged / apologetic, please.",
+          "audioText": "恐縮をお願いします",
+          "dictateTokens": [
+            "お願いします",
+            "を",
+            "恐縮",
+            "ありがとう",
+            "です"
+          ],
+          "dictateSolution": [
+            "恐縮",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "恐縮をお願いします"
+        },
+        {
+          "id": "u21_l3_7",
+          "type": "match",
+          "prompt": "見積書・検討・恐縮・承諾",
+          "furigana": "みつもりしょ・けんとう・きょうしゅく・しょうだく",
+          "romaji": "mitsumorisho, kentou, kyoushuku, shoudaku",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "みつもりしょ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "見積書",
+              "right": "Price quotation",
+              "furigana": "みつもりしょ",
+              "romaji": "mitsumorisho"
+            },
+            {
+              "id": "p_1",
+              "left": "検討",
+              "right": "Consideration / deliberation",
+              "furigana": "けんとう",
+              "romaji": "kentou"
+            },
+            {
+              "id": "p_2",
+              "left": "恐縮",
+              "right": "Humbly obliged / apologetic",
+              "furigana": "きょうしゅく",
+              "romaji": "kyoushuku"
+            },
+            {
+              "id": "p_3",
+              "left": "承諾",
+              "right": "Consent / approval",
+              "furigana": "しょうだく",
+              "romaji": "shoudaku"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l3_8",
+          "type": "dialogue",
+          "prompt": "妥協についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "妥協についてどう思われますか？",
+          "furigana": "妥協についてどう思われますか？",
+          "romaji": "dakyou ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Compromise?",
+          "audioText": "妥協についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u21_l4",
+      "unitId": "unit_21",
+      "lessonNumber": 4,
+      "dayNumber": 2,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Consent / approval & Partnership / alliance",
+      "titleJp": "承諾・提携",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "承諾",
+        "提携",
+        "利益"
+      ],
+      "kanjiKeywords": [
+        "承",
+        "諾",
+        "提",
+        "携",
+        "利",
+        "益"
+      ],
+      "items": [
+        {
+          "id": "u21_l4_1",
+          "type": "listen",
+          "prompt": "承諾",
+          "furigana": "しょうだく",
+          "romaji": "shoudaku",
+          "english": "Consent / approval",
+          "audioText": "しょうだく",
+          "options": [
+            "Humbly obliged / apologetic",
+            "Confirming Negotiation",
+            "Consent / approval",
+            "Confirming Compromise"
+          ],
+          "correctAnswer": "Consent / approval"
+        },
+        {
+          "id": "u21_l4_2",
+          "type": "spell",
+          "prompt": "承諾",
+          "furigana": "しょうだく",
+          "romaji": "shoudaku",
+          "english": "Build 'Consent / approval'",
+          "audioText": "しょうだく",
+          "tileBank": [
+            "し",
+            "う",
+            "く",
+            "ょ",
+            "か",
+            "ほ",
+            "あ",
+            "だ"
+          ],
+          "correctAnswer": "しょうだく"
+        },
+        {
+          "id": "u21_l4_3",
+          "type": "cloze",
+          "prompt": "私は提携がすきです",
+          "furigana": "わたしはていけいがすきです",
+          "romaji": "Watashi wa teikei ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Partnership / alliance.",
+          "audioText": "提携",
+          "clozeSentence": "これは提携 {{BLANK}} す。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は"
+        },
+        {
+          "id": "u21_l4_4",
+          "type": "scramble",
+          "prompt": "これは提携です",
+          "furigana": "これはていけいです",
+          "romaji": "Kore wa teikei desu.",
+          "english": "This is Partnership / alliance.",
+          "audioText": "これは提携です",
+          "scrambleTokens": [
+            "それ",
+            "提携",
+            "これは",
+            "です",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "提携",
+            "です"
+          ],
+          "correctAnswer": "これは提携です"
+        },
+        {
+          "id": "u21_l4_5",
+          "type": "speak",
+          "prompt": "利益",
+          "furigana": "りえき",
+          "romaji": "rieki",
+          "english": "Pronounce: Profit / margin",
+          "audioText": "りえき",
+          "targetSpeech": "利益",
+          "options": [
+            "Profit / margin",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "利益"
+        },
+        {
+          "id": "u21_l4_6",
+          "type": "dictate",
+          "prompt": "利益をお願いします",
+          "furigana": "りえきをおねがいします",
+          "romaji": "rieki o onegaishimasu.",
+          "english": "Profit / margin, please.",
+          "audioText": "利益をお願いします",
+          "dictateTokens": [
+            "ありがとう",
+            "お願いします",
+            "利益",
+            "を",
+            "です"
+          ],
+          "dictateSolution": [
+            "利益",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "利益をお願いします"
+        },
+        {
+          "id": "u21_l4_7",
+          "type": "match",
+          "prompt": "承諾・提携・利益・費用",
+          "furigana": "しょうだく・ていけい・りえき・ひよう",
+          "romaji": "shoudaku, teikei, rieki, hiyou",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "しょうだく",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "承諾",
+              "right": "Consent / approval",
+              "furigana": "しょうだく",
+              "romaji": "shoudaku"
+            },
+            {
+              "id": "p_1",
+              "left": "提携",
+              "right": "Partnership / alliance",
+              "furigana": "ていけい",
+              "romaji": "teikei"
+            },
+            {
+              "id": "p_2",
+              "left": "利益",
+              "right": "Profit / margin",
+              "furigana": "りえき",
+              "romaji": "rieki"
+            },
+            {
+              "id": "p_3",
+              "left": "費用",
+              "right": "Cost / expense",
+              "furigana": "ひよう",
+              "romaji": "hiyou"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l4_8",
+          "type": "dialogue",
+          "prompt": "次は合意に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は合意に進みましょう。",
+          "furigana": "次は合意に進みましょう。",
+          "romaji": "Tsugi wa goui ni susumimashou.",
+          "english": "Speaker: Let's proceed to Agreement / consensus next.",
+          "audioText": "次は合意に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u21_l5",
+      "unitId": "unit_21",
+      "lessonNumber": 5,
+      "dayNumber": 2,
+      "category": "Expression",
+      "sectionTitle": "Situational Dialogues",
+      "iconType": "expression",
+      "title": "Cost / expense & Holding in reserve / pending",
+      "titleJp": "費用・保留",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "費用",
+        "保留",
+        "締結"
+      ],
+      "kanjiKeywords": [
+        "費",
+        "用",
+        "保",
+        "留",
+        "締",
+        "結"
+      ],
+      "items": [
+        {
+          "id": "u21_l5_1",
+          "type": "listen",
+          "prompt": "費用",
+          "furigana": "ひよう",
+          "romaji": "hiyou",
+          "english": "Cost / expense",
+          "audioText": "ひよう",
+          "options": [
+            "Cost / expense",
+            "Confirming Negotiation",
+            "Agreement / consensus",
+            "Confirming Agreement / consensus"
+          ],
+          "correctAnswer": "Cost / expense"
+        },
+        {
+          "id": "u21_l5_2",
+          "type": "spell",
+          "prompt": "費用",
+          "furigana": "ひよう",
+          "romaji": "hiyou",
+          "english": "Build 'Cost / expense'",
+          "audioText": "ひよう",
+          "tileBank": [
+            "ひ",
+            "そ",
+            "へ",
+            "さ",
+            "う",
+            "よ",
+            "あ",
+            "ゆ"
+          ],
+          "correctAnswer": "ひよう"
+        },
+        {
+          "id": "u21_l5_3",
+          "type": "cloze",
+          "prompt": "私は保留がすきです",
+          "furigana": "わたしはほりゅうがすきです",
+          "romaji": "Watashi wa horyuu ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Holding in reserve / pending.",
+          "audioText": "保留",
+          "clozeSentence": "これは保留 {{BLANK}} す。",
+          "clozeTarget": "が",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "が"
+        },
+        {
+          "id": "u21_l5_4",
+          "type": "scramble",
+          "prompt": "これは保留です",
+          "furigana": "これはほりゅうです",
+          "romaji": "Kore wa horyuu desu.",
+          "english": "This is Holding in reserve / pending.",
+          "audioText": "これは保留です",
+          "scrambleTokens": [
+            "これは",
+            "保留",
+            "です",
+            "それ",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "保留",
+            "です"
+          ],
+          "correctAnswer": "これは保留です"
+        },
+        {
+          "id": "u21_l5_5",
+          "type": "speak",
+          "prompt": "締結",
+          "furigana": "ていけつ",
+          "romaji": "teiketsu",
+          "english": "Pronounce: Concluding a contract",
+          "audioText": "ていけつ",
+          "targetSpeech": "締結",
+          "options": [
+            "Concluding a contract",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "締結"
+        },
+        {
+          "id": "u21_l5_6",
+          "type": "dictate",
+          "prompt": "締結をお願いします",
+          "furigana": "ていけつをおねがいします",
+          "romaji": "teiketsu o onegaishimasu.",
+          "english": "Concluding a contract, please.",
+          "audioText": "締結をお願いします",
+          "dictateTokens": [
+            "ありがとう",
+            "締結",
+            "お願いします",
+            "を",
+            "です"
+          ],
+          "dictateSolution": [
+            "締結",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "締結をお願いします"
+        },
+        {
+          "id": "u21_l5_7",
+          "type": "match",
+          "prompt": "費用・保留・締結・交渉の確認",
+          "furigana": "ひよう・ほりゅう・ていけつ・こうしょうのかくにん",
+          "romaji": "hiyou, horyuu, teiketsu, koushou no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ひよう",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "費用",
+              "right": "Cost / expense",
+              "furigana": "ひよう",
+              "romaji": "hiyou"
+            },
+            {
+              "id": "p_1",
+              "left": "保留",
+              "right": "Holding in reserve / pending",
+              "furigana": "ほりゅう",
+              "romaji": "horyuu"
+            },
+            {
+              "id": "p_2",
+              "left": "締結",
+              "right": "Concluding a contract",
+              "furigana": "ていけつ",
+              "romaji": "teiketsu"
+            },
+            {
+              "id": "p_3",
+              "left": "交渉の確認",
+              "right": "Confirming Negotiation",
+              "furigana": "こうしょうのかくにん",
+              "romaji": "koushou no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l5_8",
+          "type": "dialogue",
+          "prompt": "交渉について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "交渉について教えていただけますか？",
+          "furigana": "交渉について教えていただけますか？",
+          "romaji": "koushou ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Negotiation?",
+          "audioText": "交渉について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u21_l6",
+      "unitId": "unit_21",
+      "lessonNumber": 6,
+      "dayNumber": 3,
+      "category": "Conversation",
+      "sectionTitle": null,
+      "iconType": "expression",
+      "title": "Confirming Negotiation & Confirming Proposal",
+      "titleJp": "交渉の確認・提案の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "交渉の確認",
+        "提案の確認",
+        "妥協の確認"
+      ],
+      "kanjiKeywords": [
+        "交",
+        "渉",
+        "確",
+        "認",
+        "提",
+        "案",
+        "確",
+        "認",
+        "妥",
+        "協",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u21_l6_1",
+          "type": "listen",
+          "prompt": "交渉の確認",
+          "furigana": "こうしょうのかくにん",
+          "romaji": "koushou no kakunin",
+          "english": "Confirming Negotiation",
+          "audioText": "こうしょうのかくにん",
+          "options": [
+            "Confirming Negotiation",
+            "Concluding a contract",
+            "Consent / approval",
+            "Confirming Cost / expense"
+          ],
+          "correctAnswer": "Confirming Negotiation"
+        },
+        {
+          "id": "u21_l6_2",
+          "type": "spell",
+          "prompt": "交渉の確認",
+          "furigana": "こうしょうのかくにん",
+          "romaji": "koushou no kakunin",
+          "english": "Build 'Confirming Negotiation'",
+          "audioText": "こうしょうのかくにん",
+          "tileBank": [
+            "ょ",
+            "か",
+            "の",
+            "こ",
+            "し",
+            "う",
+            "く",
+            "う"
+          ],
+          "correctAnswer": "こうしょうのかくにん"
+        },
+        {
+          "id": "u21_l6_3",
+          "type": "cloze",
+          "prompt": "私は提案の確認がすきです",
+          "furigana": "わたしはていあんのかくにんがすきです",
+          "romaji": "Watashi wa teian no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Proposal.",
+          "audioText": "提案の確認",
+          "clozeSentence": "これは提案の確認 {{BLANK}} す。",
+          "clozeTarget": "を",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "を"
+        },
+        {
+          "id": "u21_l6_4",
+          "type": "scramble",
+          "prompt": "これは提案の確認です",
+          "furigana": "これはていあんのかくにんです",
+          "romaji": "Kore wa teian no kakunin desu.",
+          "english": "This is Confirming Proposal.",
+          "audioText": "これは提案の確認です",
+          "scrambleTokens": [
+            "です",
+            "提案の確認",
+            "ではありません",
+            "それ",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "提案の確認",
+            "です"
+          ],
+          "correctAnswer": "これは提案の確認です"
+        },
+        {
+          "id": "u21_l6_5",
+          "type": "speak",
+          "prompt": "妥協の確認",
+          "furigana": "だきょうのかくにん",
+          "romaji": "dakyou no kakunin",
+          "english": "Pronounce: Confirming Compromise",
+          "audioText": "だきょうのかくにん",
+          "targetSpeech": "妥協の確認",
+          "options": [
+            "Confirming Compromise",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "妥協の確認"
+        },
+        {
+          "id": "u21_l6_6",
+          "type": "dictate",
+          "prompt": "妥協の確認をお願いします",
+          "furigana": "だきょうのかくにんをおねがいします",
+          "romaji": "dakyou no kakunin o onegaishimasu.",
+          "english": "Confirming Compromise, please.",
+          "audioText": "妥協の確認をお願いします",
+          "dictateTokens": [
+            "お願いします",
+            "を",
+            "です",
+            "妥協の確認",
+            "ありがとう"
+          ],
+          "dictateSolution": [
+            "妥協の確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "妥協の確認をお願いします"
+        },
+        {
+          "id": "u21_l6_7",
+          "type": "match",
+          "prompt": "交渉の確認・提案の確認・妥協の確認・合意の確認",
+          "furigana": "こうしょうのかくにん・ていあんのかくにん・だきょうのかくにん・ごういのかくにん",
+          "romaji": "koushou no kakunin, teian no kakunin, dakyou no kakunin, goui no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "こうしょうのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "交渉の確認",
+              "right": "Confirming Negotiation",
+              "furigana": "こうしょうのかくにん",
+              "romaji": "koushou no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "提案の確認",
+              "right": "Confirming Proposal",
+              "furigana": "ていあんのかくにん",
+              "romaji": "teian no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "妥協の確認",
+              "right": "Confirming Compromise",
+              "furigana": "だきょうのかくにん",
+              "romaji": "dakyou no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "合意の確認",
+              "right": "Confirming Agreement / consensus",
+              "furigana": "ごういのかくにん",
+              "romaji": "goui no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l6_8",
+          "type": "dialogue",
+          "prompt": "提案の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "提案の準備はできていますか？",
+          "furigana": "提案の準備はできていますか？",
+          "romaji": "teian no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Proposal ready?",
+          "audioText": "提案の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u21_l7",
+      "unitId": "unit_21",
+      "lessonNumber": 7,
+      "dayNumber": 3,
+      "category": "Practice",
+      "sectionTitle": "Grammar & Listening Drill",
+      "iconType": "practice",
+      "title": "Confirming Agreement / consensus & Confirming Transaction / business deal",
+      "titleJp": "合意の確認・取引の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "合意の確認",
+        "取引の確認",
+        "納期の確認"
+      ],
+      "kanjiKeywords": [
+        "合",
+        "意",
+        "確",
+        "認",
+        "取",
+        "引",
+        "確",
+        "認",
+        "納",
+        "期",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u21_l7_1",
+          "type": "listen",
+          "prompt": "合意の確認",
+          "furigana": "ごういのかくにん",
+          "romaji": "goui no kakunin",
+          "english": "Confirming Agreement / consensus",
+          "audioText": "ごういのかくにん",
+          "options": [
+            "Agreement / consensus",
+            "Confirming Consent / approval",
+            "Confirming Negotiation",
+            "Confirming Agreement / consensus"
+          ],
+          "correctAnswer": "Confirming Agreement / consensus"
+        },
+        {
+          "id": "u21_l7_2",
+          "type": "spell",
+          "prompt": "合意の確認",
+          "furigana": "ごういのかくにん",
+          "romaji": "goui no kakunin",
+          "english": "Build 'Confirming Agreement / consensus'",
+          "audioText": "ごういのかくにん",
+          "tileBank": [
+            "に",
+            "う",
+            "い",
+            "く",
+            "か",
+            "の",
+            "ご",
+            "ん"
+          ],
+          "correctAnswer": "ごういのかくにん"
+        },
+        {
+          "id": "u21_l7_3",
+          "type": "cloze",
+          "prompt": "私は取引の確認がすきです",
+          "furigana": "わたしはとりひきのかくにんがすきです",
+          "romaji": "Watashi wa torihiki no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Transaction / business deal.",
+          "audioText": "取引の確認",
+          "clozeSentence": "これは取引の確認 {{BLANK}} す。",
+          "clozeTarget": "に",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "に"
+        },
+        {
+          "id": "u21_l7_4",
+          "type": "scramble",
+          "prompt": "これは取引の確認です",
+          "furigana": "これはとりひきのかくにんです",
+          "romaji": "Kore wa torihiki no kakunin desu.",
+          "english": "This is Confirming Transaction / business deal.",
+          "audioText": "これは取引の確認です",
+          "scrambleTokens": [
+            "ではありません",
+            "それ",
+            "です",
+            "これは",
+            "取引の確認"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "取引の確認",
+            "です"
+          ],
+          "correctAnswer": "これは取引の確認です"
+        },
+        {
+          "id": "u21_l7_5",
+          "type": "speak",
+          "prompt": "納期の確認",
+          "furigana": "のうきのかくにん",
+          "romaji": "nouki no kakunin",
+          "english": "Pronounce: Confirming Delivery deadline",
+          "audioText": "のうきのかくにん",
+          "targetSpeech": "納期の確認",
+          "options": [
+            "Confirming Delivery deadline",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "納期の確認"
+        },
+        {
+          "id": "u21_l7_6",
+          "type": "dictate",
+          "prompt": "納期の確認をお願いします",
+          "furigana": "のうきのかくにんをおねがいします",
+          "romaji": "nouki no kakunin o onegaishimasu.",
+          "english": "Confirming Delivery deadline, please.",
+          "audioText": "納期の確認をお願いします",
+          "dictateTokens": [
+            "納期の確認",
+            "です",
+            "を",
+            "お願いします",
+            "ありがとう"
+          ],
+          "dictateSolution": [
+            "納期の確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "納期の確認をお願いします"
+        },
+        {
+          "id": "u21_l7_7",
+          "type": "match",
+          "prompt": "合意の確認・取引の確認・納期の確認・見積書の確認",
+          "furigana": "ごういのかくにん・とりひきのかくにん・のうきのかくにん・みつもりしょのかくにん",
+          "romaji": "goui no kakunin, torihiki no kakunin, nouki no kakunin, mitsumorisho no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ごういのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "合意の確認",
+              "right": "Confirming Agreement / consensus",
+              "furigana": "ごういのかくにん",
+              "romaji": "goui no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "取引の確認",
+              "right": "Confirming Transaction / business deal",
+              "furigana": "とりひきのかくにん",
+              "romaji": "torihiki no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "納期の確認",
+              "right": "Confirming Delivery deadline",
+              "furigana": "のうきのかくにん",
+              "romaji": "nouki no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "見積書の確認",
+              "right": "Confirming Price quotation",
+              "furigana": "みつもりしょのかくにん",
+              "romaji": "mitsumorisho no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l7_8",
+          "type": "dialogue",
+          "prompt": "妥協についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "妥協についてどう思われますか？",
+          "furigana": "妥協についてどう思われますか？",
+          "romaji": "dakyou ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Compromise?",
+          "audioText": "妥協についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u21_l8",
+      "unitId": "unit_21",
+      "lessonNumber": 8,
+      "dayNumber": 4,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Confirming Price quotation & Confirming Consideration / deliberation",
+      "titleJp": "見積書の確認・検討の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "見積書の確認",
+        "検討の確認",
+        "恐縮の確認"
+      ],
+      "kanjiKeywords": [
+        "見",
+        "積",
+        "書",
+        "確",
+        "認",
+        "検",
+        "討",
+        "確",
+        "認",
+        "恐",
+        "縮",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u21_l8_1",
+          "type": "listen",
+          "prompt": "見積書の確認",
+          "furigana": "みつもりしょのかくにん",
+          "romaji": "mitsumorisho no kakunin",
+          "english": "Confirming Price quotation",
+          "audioText": "みつもりしょのかくにん",
+          "options": [
+            "Confirming Price quotation",
+            "Confirming Proposal",
+            "Price quotation",
+            "Confirming Delivery deadline"
+          ],
+          "correctAnswer": "Confirming Price quotation"
+        },
+        {
+          "id": "u21_l8_2",
+          "type": "spell",
+          "prompt": "見積書の確認",
+          "furigana": "みつもりしょのかくにん",
+          "romaji": "mitsumorisho no kakunin",
+          "english": "Build 'Confirming Price quotation'",
+          "audioText": "みつもりしょのかくにん",
+          "tileBank": [
+            "か",
+            "み",
+            "し",
+            "り",
+            "の",
+            "つ",
+            "も",
+            "ょ"
+          ],
+          "correctAnswer": "みつもりしょのかくにん"
+        },
+        {
+          "id": "u21_l8_3",
+          "type": "cloze",
+          "prompt": "私は検討の確認がすきです",
+          "furigana": "わたしはけんとうのかくにんがすきです",
+          "romaji": "Watashi wa kentou no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Consideration / deliberation.",
+          "audioText": "検討の確認",
+          "clozeSentence": "これは検討の確認 {{BLANK}} す。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は"
+        },
+        {
+          "id": "u21_l8_4",
+          "type": "scramble",
+          "prompt": "これは検討の確認です",
+          "furigana": "これはけんとうのかくにんです",
+          "romaji": "Kore wa kentou no kakunin desu.",
+          "english": "This is Confirming Consideration / deliberation.",
+          "audioText": "これは検討の確認です",
+          "scrambleTokens": [
+            "これは",
+            "検討の確認",
+            "です",
+            "ではありません",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "検討の確認",
+            "です"
+          ],
+          "correctAnswer": "これは検討の確認です"
+        },
+        {
+          "id": "u21_l8_5",
+          "type": "speak",
+          "prompt": "恐縮の確認",
+          "furigana": "きょうしゅくのかくにん",
+          "romaji": "kyoushuku no kakunin",
+          "english": "Pronounce: Confirming Humbly obliged / apologetic",
+          "audioText": "きょうしゅくのかくにん",
+          "targetSpeech": "恐縮の確認",
+          "options": [
+            "Confirming Humbly obliged / apologetic",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "恐縮の確認"
+        },
+        {
+          "id": "u21_l8_6",
+          "type": "dictate",
+          "prompt": "恐縮の確認をお願いします",
+          "furigana": "きょうしゅくのかくにんをおねがいします",
+          "romaji": "kyoushuku no kakunin o onegaishimasu.",
+          "english": "Confirming Humbly obliged / apologetic, please.",
+          "audioText": "恐縮の確認をお願いします",
+          "dictateTokens": [
+            "お願いします",
+            "を",
+            "ありがとう",
+            "恐縮の確認",
+            "です"
+          ],
+          "dictateSolution": [
+            "恐縮の確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "恐縮の確認をお願いします"
+        },
+        {
+          "id": "u21_l8_7",
+          "type": "match",
+          "prompt": "見積書の確認・検討の確認・恐縮の確認・承諾の確認",
+          "furigana": "みつもりしょのかくにん・けんとうのかくにん・きょうしゅくのかくにん・しょうだくのかくにん",
+          "romaji": "mitsumorisho no kakunin, kentou no kakunin, kyoushuku no kakunin, shoudaku no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "みつもりしょのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "見積書の確認",
+              "right": "Confirming Price quotation",
+              "furigana": "みつもりしょのかくにん",
+              "romaji": "mitsumorisho no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "検討の確認",
+              "right": "Confirming Consideration / deliberation",
+              "furigana": "けんとうのかくにん",
+              "romaji": "kentou no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "恐縮の確認",
+              "right": "Confirming Humbly obliged / apologetic",
+              "furigana": "きょうしゅくのかくにん",
+              "romaji": "kyoushuku no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "承諾の確認",
+              "right": "Confirming Consent / approval",
+              "furigana": "しょうだくのかくにん",
+              "romaji": "shoudaku no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l8_8",
+          "type": "dialogue",
+          "prompt": "次は合意に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は合意に進みましょう。",
+          "furigana": "次は合意に進みましょう。",
+          "romaji": "Tsugi wa goui ni susumimashou.",
+          "english": "Speaker: Let's proceed to Agreement / consensus next.",
+          "audioText": "次は合意に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u21_l9",
+      "unitId": "unit_21",
+      "lessonNumber": 9,
+      "dayNumber": 4,
+      "category": "Expression",
+      "sectionTitle": "Nuance, Pitch & Intonation",
+      "iconType": "expression",
+      "title": "Confirming Consent / approval & Confirming Partnership / alliance",
+      "titleJp": "承諾の確認・提携の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "承諾の確認",
+        "提携の確認",
+        "利益の確認"
+      ],
+      "kanjiKeywords": [
+        "承",
+        "諾",
+        "確",
+        "認",
+        "提",
+        "携",
+        "確",
+        "認",
+        "利",
+        "益",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u21_l9_1",
+          "type": "listen",
+          "prompt": "承諾の確認",
+          "furigana": "しょうだくのかくにん",
+          "romaji": "shoudaku no kakunin",
+          "english": "Confirming Consent / approval",
+          "audioText": "しょうだくのかくにん",
+          "options": [
+            "Confirming Transaction / business deal",
+            "Price quotation",
+            "Confirming Consent / approval",
+            "Confirming Compromise"
+          ],
+          "correctAnswer": "Confirming Consent / approval"
+        },
+        {
+          "id": "u21_l9_2",
+          "type": "spell",
+          "prompt": "承諾の確認",
+          "furigana": "しょうだくのかくにん",
+          "romaji": "shoudaku no kakunin",
+          "english": "Build 'Confirming Consent / approval'",
+          "audioText": "しょうだくのかくにん",
+          "tileBank": [
+            "く",
+            "だ",
+            "し",
+            "ょ",
+            "か",
+            "の",
+            "く",
+            "う"
+          ],
+          "correctAnswer": "しょうだくのかくにん"
+        },
+        {
+          "id": "u21_l9_3",
+          "type": "cloze",
+          "prompt": "私は提携の確認がすきです",
+          "furigana": "わたしはていけいのかくにんがすきです",
+          "romaji": "Watashi wa teikei no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Partnership / alliance.",
+          "audioText": "提携の確認",
+          "clozeSentence": "これは提携の確認 {{BLANK}} す。",
+          "clozeTarget": "が",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "が"
+        },
+        {
+          "id": "u21_l9_4",
+          "type": "scramble",
+          "prompt": "これは提携の確認です",
+          "furigana": "これはていけいのかくにんです",
+          "romaji": "Kore wa teikei no kakunin desu.",
+          "english": "This is Confirming Partnership / alliance.",
+          "audioText": "これは提携の確認です",
+          "scrambleTokens": [
+            "ではありません",
+            "これは",
+            "です",
+            "それ",
+            "提携の確認"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "提携の確認",
+            "です"
+          ],
+          "correctAnswer": "これは提携の確認です"
+        },
+        {
+          "id": "u21_l9_5",
+          "type": "speak",
+          "prompt": "利益の確認",
+          "furigana": "りえきのかくにん",
+          "romaji": "rieki no kakunin",
+          "english": "Pronounce: Confirming Profit / margin",
+          "audioText": "りえきのかくにん",
+          "targetSpeech": "利益の確認",
+          "options": [
+            "Confirming Profit / margin",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "利益の確認"
+        },
+        {
+          "id": "u21_l9_6",
+          "type": "dictate",
+          "prompt": "利益の確認をお願いします",
+          "furigana": "りえきのかくにんをおねがいします",
+          "romaji": "rieki no kakunin o onegaishimasu.",
+          "english": "Confirming Profit / margin, please.",
+          "audioText": "利益の確認をお願いします",
+          "dictateTokens": [
+            "です",
+            "利益の確認",
+            "を",
+            "お願いします",
+            "ありがとう"
+          ],
+          "dictateSolution": [
+            "利益の確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "利益の確認をお願いします"
+        },
+        {
+          "id": "u21_l9_7",
+          "type": "match",
+          "prompt": "承諾の確認・提携の確認・利益の確認・費用の確認",
+          "furigana": "しょうだくのかくにん・ていけいのかくにん・りえきのかくにん・ひようのかくにん",
+          "romaji": "shoudaku no kakunin, teikei no kakunin, rieki no kakunin, hiyou no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "しょうだくのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "承諾の確認",
+              "right": "Confirming Consent / approval",
+              "furigana": "しょうだくのかくにん",
+              "romaji": "shoudaku no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "提携の確認",
+              "right": "Confirming Partnership / alliance",
+              "furigana": "ていけいのかくにん",
+              "romaji": "teikei no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "利益の確認",
+              "right": "Confirming Profit / margin",
+              "furigana": "りえきのかくにん",
+              "romaji": "rieki no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "費用の確認",
+              "right": "Confirming Cost / expense",
+              "furigana": "ひようのかくにん",
+              "romaji": "hiyou no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l9_8",
+          "type": "dialogue",
+          "prompt": "交渉について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "交渉について教えていただけますか？",
+          "furigana": "交渉について教えていただけますか？",
+          "romaji": "koushou ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Negotiation?",
+          "audioText": "交渉について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u21_l10",
+      "unitId": "unit_21",
+      "lessonNumber": 10,
+      "dayNumber": 5,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Confirming Cost / expense & Confirming Holding in reserve / pending",
+      "titleJp": "費用の確認・保留の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "費用の確認",
+        "保留の確認",
+        "締結の確認"
+      ],
+      "kanjiKeywords": [
+        "費",
+        "用",
+        "確",
+        "認",
+        "保",
+        "留",
+        "確",
+        "認",
+        "締",
+        "結",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u21_l10_1",
+          "type": "listen",
+          "prompt": "費用の確認",
+          "furigana": "ひようのかくにん",
+          "romaji": "hiyou no kakunin",
+          "english": "Confirming Cost / expense",
+          "audioText": "ひようのかくにん",
+          "options": [
+            "Delivery deadline",
+            "Confirming Cost / expense",
+            "Confirming Consent / approval",
+            "Confirming Proposal"
+          ],
+          "correctAnswer": "Confirming Cost / expense"
+        },
+        {
+          "id": "u21_l10_2",
+          "type": "spell",
+          "prompt": "費用の確認",
+          "furigana": "ひようのかくにん",
+          "romaji": "hiyou no kakunin",
+          "english": "Build 'Confirming Cost / expense'",
+          "audioText": "ひようのかくにん",
+          "tileBank": [
+            "く",
+            "う",
+            "の",
+            "ん",
+            "ひ",
+            "に",
+            "よ",
+            "か"
+          ],
+          "correctAnswer": "ひようのかくにん"
+        },
+        {
+          "id": "u21_l10_3",
+          "type": "cloze",
+          "prompt": "私は保留の確認がすきです",
+          "furigana": "わたしはほりゅうのかくにんがすきです",
+          "romaji": "Watashi wa horyuu no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Holding in reserve / pending.",
+          "audioText": "保留の確認",
+          "clozeSentence": "これは保留の確認 {{BLANK}} す。",
+          "clozeTarget": "を",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "を"
+        },
+        {
+          "id": "u21_l10_4",
+          "type": "scramble",
+          "prompt": "これは保留の確認です",
+          "furigana": "これはほりゅうのかくにんです",
+          "romaji": "Kore wa horyuu no kakunin desu.",
+          "english": "This is Confirming Holding in reserve / pending.",
+          "audioText": "これは保留の確認です",
+          "scrambleTokens": [
+            "それ",
+            "です",
+            "保留の確認",
+            "ではありません",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "保留の確認",
+            "です"
+          ],
+          "correctAnswer": "これは保留の確認です"
+        },
+        {
+          "id": "u21_l10_5",
+          "type": "speak",
+          "prompt": "締結の確認",
+          "furigana": "ていけつのかくにん",
+          "romaji": "teiketsu no kakunin",
+          "english": "Pronounce: Confirming Concluding a contract",
+          "audioText": "ていけつのかくにん",
+          "targetSpeech": "締結の確認",
+          "options": [
+            "Confirming Concluding a contract",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "締結の確認"
+        },
+        {
+          "id": "u21_l10_6",
+          "type": "dictate",
+          "prompt": "締結の確認をお願いします",
+          "furigana": "ていけつのかくにんをおねがいします",
+          "romaji": "teiketsu no kakunin o onegaishimasu.",
+          "english": "Confirming Concluding a contract, please.",
+          "audioText": "締結の確認をお願いします",
+          "dictateTokens": [
+            "を",
+            "お願いします",
+            "締結の確認",
+            "です",
+            "ありがとう"
+          ],
+          "dictateSolution": [
+            "締結の確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "締結の確認をお願いします"
+        },
+        {
+          "id": "u21_l10_7",
+          "type": "match",
+          "prompt": "費用の確認・保留の確認・締結の確認・交渉の確認",
+          "furigana": "ひようのかくにん・ほりゅうのかくにん・ていけつのかくにん・こうしょうのかくにん",
+          "romaji": "hiyou no kakunin, horyuu no kakunin, teiketsu no kakunin, koushou no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ひようのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "費用の確認",
+              "right": "Confirming Cost / expense",
+              "furigana": "ひようのかくにん",
+              "romaji": "hiyou no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "保留の確認",
+              "right": "Confirming Holding in reserve / pending",
+              "furigana": "ほりゅうのかくにん",
+              "romaji": "horyuu no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "締結の確認",
+              "right": "Confirming Concluding a contract",
+              "furigana": "ていけつのかくにん",
+              "romaji": "teiketsu no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "交渉の確認",
+              "right": "Confirming Negotiation",
+              "furigana": "こうしょうのかくにん",
+              "romaji": "koushou no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l10_8",
+          "type": "dialogue",
+          "prompt": "提案の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "提案の準備はできていますか？",
+          "furigana": "提案の準備はできていますか？",
+          "romaji": "teian no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Proposal ready?",
+          "audioText": "提案の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u21_l11",
+      "unitId": "unit_21",
+      "lessonNumber": 11,
+      "dayNumber": 5,
+      "category": "Practice",
+      "sectionTitle": "Speed Assembly & Fluency",
+      "iconType": "practice",
+      "title": "Confirming Negotiation & Confirming Proposal",
+      "titleJp": "交渉の確認・提案の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "交渉の確認",
+        "提案の確認",
+        "妥協の確認"
+      ],
+      "kanjiKeywords": [
+        "交",
+        "渉",
+        "確",
+        "認",
+        "提",
+        "案",
+        "確",
+        "認",
+        "妥",
+        "協",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u21_l11_1",
+          "type": "listen",
+          "prompt": "交渉の確認",
+          "furigana": "こうしょうのかくにん",
+          "romaji": "koushou no kakunin",
+          "english": "Confirming Negotiation",
+          "audioText": "こうしょうのかくにん",
+          "options": [
+            "Confirming Agreement / consensus",
+            "Delivery deadline",
+            "Confirming Negotiation",
+            "Confirming Agreement / consensus"
+          ],
+          "correctAnswer": "Confirming Negotiation"
+        },
+        {
+          "id": "u21_l11_2",
+          "type": "spell",
+          "prompt": "交渉の確認",
+          "furigana": "こうしょうのかくにん",
+          "romaji": "koushou no kakunin",
+          "english": "Build 'Confirming Negotiation'",
+          "audioText": "こうしょうのかくにん",
+          "tileBank": [
+            "の",
+            "ょ",
+            "う",
+            "う",
+            "こ",
+            "し",
+            "く",
+            "か"
+          ],
+          "correctAnswer": "こうしょうのかくにん"
+        },
+        {
+          "id": "u21_l11_3",
+          "type": "cloze",
+          "prompt": "私は提案の確認がすきです",
+          "furigana": "わたしはていあんのかくにんがすきです",
+          "romaji": "Watashi wa teian no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Proposal.",
+          "audioText": "提案の確認",
+          "clozeSentence": "これは提案の確認 {{BLANK}} す。",
+          "clozeTarget": "に",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "に"
+        },
+        {
+          "id": "u21_l11_4",
+          "type": "scramble",
+          "prompt": "これは提案の確認です",
+          "furigana": "これはていあんのかくにんです",
+          "romaji": "Kore wa teian no kakunin desu.",
+          "english": "This is Confirming Proposal.",
+          "audioText": "これは提案の確認です",
+          "scrambleTokens": [
+            "それ",
+            "これは",
+            "ではありません",
+            "提案の確認",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "提案の確認",
+            "です"
+          ],
+          "correctAnswer": "これは提案の確認です"
+        },
+        {
+          "id": "u21_l11_5",
+          "type": "speak",
+          "prompt": "妥協の確認",
+          "furigana": "だきょうのかくにん",
+          "romaji": "dakyou no kakunin",
+          "english": "Pronounce: Confirming Compromise",
+          "audioText": "だきょうのかくにん",
+          "targetSpeech": "妥協の確認",
+          "options": [
+            "Confirming Compromise",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "妥協の確認"
+        },
+        {
+          "id": "u21_l11_6",
+          "type": "dictate",
+          "prompt": "妥協の確認をお願いします",
+          "furigana": "だきょうのかくにんをおねがいします",
+          "romaji": "dakyou no kakunin o onegaishimasu.",
+          "english": "Confirming Compromise, please.",
+          "audioText": "妥協の確認をお願いします",
+          "dictateTokens": [
+            "妥協の確認",
+            "ありがとう",
+            "です",
+            "を",
+            "お願いします"
+          ],
+          "dictateSolution": [
+            "妥協の確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "妥協の確認をお願いします"
+        },
+        {
+          "id": "u21_l11_7",
+          "type": "match",
+          "prompt": "交渉の確認・提案の確認・妥協の確認・合意の確認",
+          "furigana": "こうしょうのかくにん・ていあんのかくにん・だきょうのかくにん・ごういのかくにん",
+          "romaji": "koushou no kakunin, teian no kakunin, dakyou no kakunin, goui no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "こうしょうのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "交渉の確認",
+              "right": "Confirming Negotiation",
+              "furigana": "こうしょうのかくにん",
+              "romaji": "koushou no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "提案の確認",
+              "right": "Confirming Proposal",
+              "furigana": "ていあんのかくにん",
+              "romaji": "teian no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "妥協の確認",
+              "right": "Confirming Compromise",
+              "furigana": "だきょうのかくにん",
+              "romaji": "dakyou no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "合意の確認",
+              "right": "Confirming Agreement / consensus",
+              "furigana": "ごういのかくにん",
+              "romaji": "goui no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l11_8",
+          "type": "dialogue",
+          "prompt": "妥協についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "妥協についてどう思われますか？",
+          "furigana": "妥協についてどう思われますか？",
+          "romaji": "dakyou ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Compromise?",
+          "audioText": "妥協についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u21_l12",
+      "unitId": "unit_21",
+      "lessonNumber": 12,
+      "dayNumber": 6,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Confirming Agreement / consensus & Confirming Transaction / business deal",
+      "titleJp": "合意の確認・取引の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "合意の確認",
+        "取引の確認",
+        "納期の確認"
+      ],
+      "kanjiKeywords": [
+        "合",
+        "意",
+        "確",
+        "認",
+        "取",
+        "引",
+        "確",
+        "認",
+        "納",
+        "期",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u21_l12_1",
+          "type": "listen",
+          "prompt": "合意の確認",
+          "furigana": "ごういのかくにん",
+          "romaji": "goui no kakunin",
+          "english": "Confirming Agreement / consensus",
+          "audioText": "ごういのかくにん",
+          "options": [
+            "Confirming Proposal",
+            "Confirming Profit / margin",
+            "Confirming Agreement / consensus",
+            "Compromise"
+          ],
+          "correctAnswer": "Confirming Agreement / consensus"
+        },
+        {
+          "id": "u21_l12_2",
+          "type": "spell",
+          "prompt": "合意の確認",
+          "furigana": "ごういのかくにん",
+          "romaji": "goui no kakunin",
+          "english": "Build 'Confirming Agreement / consensus'",
+          "audioText": "ごういのかくにん",
+          "tileBank": [
+            "う",
+            "に",
+            "の",
+            "い",
+            "ん",
+            "か",
+            "く",
+            "ご"
+          ],
+          "correctAnswer": "ごういのかくにん"
+        },
+        {
+          "id": "u21_l12_3",
+          "type": "cloze",
+          "prompt": "私は取引の確認がすきです",
+          "furigana": "わたしはとりひきのかくにんがすきです",
+          "romaji": "Watashi wa torihiki no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Transaction / business deal.",
+          "audioText": "取引の確認",
+          "clozeSentence": "これは取引の確認 {{BLANK}} す。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は"
+        },
+        {
+          "id": "u21_l12_4",
+          "type": "scramble",
+          "prompt": "これは取引の確認です",
+          "furigana": "これはとりひきのかくにんです",
+          "romaji": "Kore wa torihiki no kakunin desu.",
+          "english": "This is Confirming Transaction / business deal.",
+          "audioText": "これは取引の確認です",
+          "scrambleTokens": [
+            "それ",
+            "です",
+            "これは",
+            "ではありません",
+            "取引の確認"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "取引の確認",
+            "です"
+          ],
+          "correctAnswer": "これは取引の確認です"
+        },
+        {
+          "id": "u21_l12_5",
+          "type": "speak",
+          "prompt": "納期の確認",
+          "furigana": "のうきのかくにん",
+          "romaji": "nouki no kakunin",
+          "english": "Pronounce: Confirming Delivery deadline",
+          "audioText": "のうきのかくにん",
+          "targetSpeech": "納期の確認",
+          "options": [
+            "Confirming Delivery deadline",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "納期の確認"
+        },
+        {
+          "id": "u21_l12_6",
+          "type": "dictate",
+          "prompt": "納期の確認をお願いします",
+          "furigana": "のうきのかくにんをおねがいします",
+          "romaji": "nouki no kakunin o onegaishimasu.",
+          "english": "Confirming Delivery deadline, please.",
+          "audioText": "納期の確認をお願いします",
+          "dictateTokens": [
+            "ありがとう",
+            "を",
+            "お願いします",
+            "納期の確認",
+            "です"
+          ],
+          "dictateSolution": [
+            "納期の確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "納期の確認をお願いします"
+        },
+        {
+          "id": "u21_l12_7",
+          "type": "match",
+          "prompt": "合意の確認・取引の確認・納期の確認・交渉",
+          "furigana": "ごういのかくにん・とりひきのかくにん・のうきのかくにん・こうしょう",
+          "romaji": "goui no kakunin, torihiki no kakunin, nouki no kakunin, koushou",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ごういのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "合意の確認",
+              "right": "Confirming Agreement / consensus",
+              "furigana": "ごういのかくにん",
+              "romaji": "goui no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "取引の確認",
+              "right": "Confirming Transaction / business deal",
+              "furigana": "とりひきのかくにん",
+              "romaji": "torihiki no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "納期の確認",
+              "right": "Confirming Delivery deadline",
+              "furigana": "のうきのかくにん",
+              "romaji": "nouki no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "交渉",
+              "right": "Negotiation",
+              "furigana": "こうしょう",
+              "romaji": "koushou"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l12_8",
+          "type": "dialogue",
+          "prompt": "次は合意に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は合意に進みましょう。",
+          "furigana": "次は合意に進みましょう。",
+          "romaji": "Tsugi wa goui ni susumimashou.",
+          "english": "Speaker: Let's proceed to Agreement / consensus next.",
+          "audioText": "次は合意に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u21_l13",
+      "unitId": "unit_21",
+      "lessonNumber": 13,
+      "dayNumber": 6,
+      "category": "Expression",
+      "sectionTitle": null,
+      "iconType": "expression",
+      "title": "Negotiation & Proposal",
+      "titleJp": "交渉・提案",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "交渉",
+        "提案",
+        "妥協"
+      ],
+      "kanjiKeywords": [
+        "交",
+        "渉",
+        "提",
+        "案",
+        "妥",
+        "協"
+      ],
+      "items": [
+        {
+          "id": "u21_l13_1",
+          "type": "listen",
+          "prompt": "交渉",
+          "furigana": "こうしょう",
+          "romaji": "koushou",
+          "english": "Negotiation",
+          "audioText": "こうしょう",
+          "options": [
+            "Agreement / consensus",
+            "Confirming Consideration / deliberation",
+            "Confirming Agreement / consensus",
+            "Negotiation"
+          ],
+          "correctAnswer": "Negotiation"
+        },
+        {
+          "id": "u21_l13_2",
+          "type": "spell",
+          "prompt": "交渉",
+          "furigana": "こうしょう",
+          "romaji": "koushou",
+          "english": "Build 'Negotiation'",
+          "audioText": "こうしょう",
+          "tileBank": [
+            "う",
+            "う",
+            "し",
+            "こ",
+            "ひ",
+            "や",
+            "ょ",
+            "て"
+          ],
+          "correctAnswer": "こうしょう"
+        },
+        {
+          "id": "u21_l13_3",
+          "type": "cloze",
+          "prompt": "私は提案がすきです",
+          "furigana": "わたしはていあんがすきです",
+          "romaji": "Watashi wa teian ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Proposal.",
+          "audioText": "提案",
+          "clozeSentence": "これは提案 {{BLANK}} す。",
+          "clozeTarget": "が",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "が"
+        },
+        {
+          "id": "u21_l13_4",
+          "type": "scramble",
+          "prompt": "これは提案です",
+          "furigana": "これはていあんです",
+          "romaji": "Kore wa teian desu.",
+          "english": "This is Proposal.",
+          "audioText": "これは提案です",
+          "scrambleTokens": [
+            "提案",
+            "それ",
+            "ではありません",
+            "これは",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "提案",
+            "です"
+          ],
+          "correctAnswer": "これは提案です"
+        },
+        {
+          "id": "u21_l13_5",
+          "type": "speak",
+          "prompt": "妥協",
+          "furigana": "だきょう",
+          "romaji": "dakyou",
+          "english": "Pronounce: Compromise",
+          "audioText": "だきょう",
+          "targetSpeech": "妥協",
+          "options": [
+            "Compromise",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "妥協"
+        },
+        {
+          "id": "u21_l13_6",
+          "type": "dictate",
+          "prompt": "妥協をお願いします",
+          "furigana": "だきょうをおねがいします",
+          "romaji": "dakyou o onegaishimasu.",
+          "english": "Compromise, please.",
+          "audioText": "妥協をお願いします",
+          "dictateTokens": [
+            "お願いします",
+            "妥協",
+            "ありがとう",
+            "です",
+            "を"
+          ],
+          "dictateSolution": [
+            "妥協",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "妥協をお願いします"
+        },
+        {
+          "id": "u21_l13_7",
+          "type": "match",
+          "prompt": "交渉・提案・妥協・合意",
+          "furigana": "こうしょう・ていあん・だきょう・ごうい",
+          "romaji": "koushou, teian, dakyou, goui",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "こうしょう",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "交渉",
+              "right": "Negotiation",
+              "furigana": "こうしょう",
+              "romaji": "koushou"
+            },
+            {
+              "id": "p_1",
+              "left": "提案",
+              "right": "Proposal",
+              "furigana": "ていあん",
+              "romaji": "teian"
+            },
+            {
+              "id": "p_2",
+              "left": "妥協",
+              "right": "Compromise",
+              "furigana": "だきょう",
+              "romaji": "dakyou"
+            },
+            {
+              "id": "p_3",
+              "left": "合意",
+              "right": "Agreement / consensus",
+              "furigana": "ごうい",
+              "romaji": "goui"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l13_8",
+          "type": "dialogue",
+          "prompt": "交渉について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "交渉について教えていただけますか？",
+          "furigana": "交渉について教えていただけますか？",
+          "romaji": "koushou ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Negotiation?",
+          "audioText": "交渉について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u21_l14",
+      "unitId": "unit_21",
+      "lessonNumber": 14,
+      "dayNumber": 6,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Agreement / consensus & Transaction / business deal",
+      "titleJp": "合意・取引",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "合意",
+        "取引",
+        "納期"
+      ],
+      "kanjiKeywords": [
+        "合",
+        "意",
+        "取",
+        "引",
+        "納",
+        "期"
+      ],
+      "items": [
+        {
+          "id": "u21_l14_1",
+          "type": "listen",
+          "prompt": "合意",
+          "furigana": "ごうい",
+          "romaji": "goui",
+          "english": "Agreement / consensus",
+          "audioText": "ごうい",
+          "options": [
+            "Partnership / alliance",
+            "Agreement / consensus",
+            "Proposal",
+            "Cost / expense"
+          ],
+          "correctAnswer": "Agreement / consensus"
+        },
+        {
+          "id": "u21_l14_2",
+          "type": "spell",
+          "prompt": "合意",
+          "furigana": "ごうい",
+          "romaji": "goui",
+          "english": "Build 'Agreement / consensus'",
+          "audioText": "ごうい",
+          "tileBank": [
+            "い",
+            "う",
+            "に",
+            "ご",
+            "て",
+            "る",
+            "つ",
+            "か"
+          ],
+          "correctAnswer": "ごうい"
+        },
+        {
+          "id": "u21_l14_3",
+          "type": "cloze",
+          "prompt": "私は取引がすきです",
+          "furigana": "わたしはとりひきがすきです",
+          "romaji": "Watashi wa torihiki ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Transaction / business deal.",
+          "audioText": "取引",
+          "clozeSentence": "これは取引 {{BLANK}} す。",
+          "clozeTarget": "を",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "を"
+        },
+        {
+          "id": "u21_l14_4",
+          "type": "scramble",
+          "prompt": "これは取引です",
+          "furigana": "これはとりひきです",
+          "romaji": "Kore wa torihiki desu.",
+          "english": "This is Transaction / business deal.",
+          "audioText": "これは取引です",
+          "scrambleTokens": [
+            "ではありません",
+            "これは",
+            "それ",
+            "です",
+            "取引"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "取引",
+            "です"
+          ],
+          "correctAnswer": "これは取引です"
+        },
+        {
+          "id": "u21_l14_5",
+          "type": "speak",
+          "prompt": "納期",
+          "furigana": "のうき",
+          "romaji": "nouki",
+          "english": "Pronounce: Delivery deadline",
+          "audioText": "のうき",
+          "targetSpeech": "納期",
+          "options": [
+            "Delivery deadline",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "納期"
+        },
+        {
+          "id": "u21_l14_6",
+          "type": "dictate",
+          "prompt": "納期をお願いします",
+          "furigana": "のうきをおねがいします",
+          "romaji": "nouki o onegaishimasu.",
+          "english": "Delivery deadline, please.",
+          "audioText": "納期をお願いします",
+          "dictateTokens": [
+            "です",
+            "納期",
+            "ありがとう",
+            "お願いします",
+            "を"
+          ],
+          "dictateSolution": [
+            "納期",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "納期をお願いします"
+        },
+        {
+          "id": "u21_l14_7",
+          "type": "match",
+          "prompt": "合意・取引・納期・見積書",
+          "furigana": "ごうい・とりひき・のうき・みつもりしょ",
+          "romaji": "goui, torihiki, nouki, mitsumorisho",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ごうい",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "合意",
+              "right": "Agreement / consensus",
+              "furigana": "ごうい",
+              "romaji": "goui"
+            },
+            {
+              "id": "p_1",
+              "left": "取引",
+              "right": "Transaction / business deal",
+              "furigana": "とりひき",
+              "romaji": "torihiki"
+            },
+            {
+              "id": "p_2",
+              "left": "納期",
+              "right": "Delivery deadline",
+              "furigana": "のうき",
+              "romaji": "nouki"
+            },
+            {
+              "id": "p_3",
+              "left": "見積書",
+              "right": "Price quotation",
+              "furigana": "みつもりしょ",
+              "romaji": "mitsumorisho"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l14_8",
+          "type": "dialogue",
+          "prompt": "提案の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "提案の準備はできていますか？",
+          "furigana": "提案の準備はできていますか？",
+          "romaji": "teian no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Proposal ready?",
+          "audioText": "提案の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u21_l15",
+      "unitId": "unit_21",
+      "lessonNumber": 15,
+      "dayNumber": 7,
+      "category": "Unit Test",
+      "sectionTitle": "Unit 21 Master Exam",
+      "iconType": "test",
+      "title": "Unit 21 Master Exam",
+      "titleJp": "第21週 総合試験",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "見積書",
+        "検討",
+        "恐縮"
+      ],
+      "kanjiKeywords": [
+        "見",
+        "積",
+        "書",
+        "検",
+        "討",
+        "恐",
+        "縮"
+      ],
+      "items": [
+        {
+          "id": "u21_l15_1",
+          "type": "listen",
+          "prompt": "見積書",
+          "furigana": "みつもりしょ",
+          "romaji": "mitsumorisho",
+          "english": "Price quotation",
+          "audioText": "みつもりしょ",
+          "options": [
+            "Confirming Price quotation",
+            "Confirming Transaction / business deal",
+            "Confirming Agreement / consensus",
+            "Price quotation"
+          ],
+          "correctAnswer": "Price quotation"
+        },
+        {
+          "id": "u21_l15_2",
+          "type": "spell",
+          "prompt": "見積書",
+          "furigana": "みつもりしょ",
+          "romaji": "mitsumorisho",
+          "english": "Build 'Price quotation'",
+          "audioText": "みつもりしょ",
+          "tileBank": [
+            "つ",
+            "み",
+            "ょ",
+            "も",
+            "り",
+            "か",
+            "し",
+            "ね"
+          ],
+          "correctAnswer": "みつもりしょ"
+        },
+        {
+          "id": "u21_l15_3",
+          "type": "cloze",
+          "prompt": "私は検討がすきです",
+          "furigana": "わたしはけんとうがすきです",
+          "romaji": "Watashi wa kentou ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Consideration / deliberation.",
+          "audioText": "検討",
+          "clozeSentence": "これは検討 {{BLANK}} す。",
+          "clozeTarget": "に",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "に"
+        },
+        {
+          "id": "u21_l15_4",
+          "type": "scramble",
+          "prompt": "これは検討です",
+          "furigana": "これはけんとうです",
+          "romaji": "Kore wa kentou desu.",
+          "english": "This is Consideration / deliberation.",
+          "audioText": "これは検討です",
+          "scrambleTokens": [
+            "ではありません",
+            "です",
+            "これは",
+            "検討",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "検討",
+            "です"
+          ],
+          "correctAnswer": "これは検討です"
+        },
+        {
+          "id": "u21_l15_5",
+          "type": "speak",
+          "prompt": "恐縮",
+          "furigana": "きょうしゅく",
+          "romaji": "kyoushuku",
+          "english": "Pronounce: Humbly obliged / apologetic",
+          "audioText": "きょうしゅく",
+          "targetSpeech": "恐縮",
+          "options": [
+            "Humbly obliged / apologetic",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "恐縮"
+        },
+        {
+          "id": "u21_l15_6",
+          "type": "dictate",
+          "prompt": "恐縮をお願いします",
+          "furigana": "きょうしゅくをおねがいします",
+          "romaji": "kyoushuku o onegaishimasu.",
+          "english": "Humbly obliged / apologetic, please.",
+          "audioText": "恐縮をお願いします",
+          "dictateTokens": [
+            "恐縮",
+            "を",
+            "お願いします",
+            "ありがとう",
+            "です"
+          ],
+          "dictateSolution": [
+            "恐縮",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "恐縮をお願いします"
+        },
+        {
+          "id": "u21_l15_7",
+          "type": "match",
+          "prompt": "見積書・検討・恐縮・承諾",
+          "furigana": "みつもりしょ・けんとう・きょうしゅく・しょうだく",
+          "romaji": "mitsumorisho, kentou, kyoushuku, shoudaku",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "みつもりしょ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "見積書",
+              "right": "Price quotation",
+              "furigana": "みつもりしょ",
+              "romaji": "mitsumorisho"
+            },
+            {
+              "id": "p_1",
+              "left": "検討",
+              "right": "Consideration / deliberation",
+              "furigana": "けんとう",
+              "romaji": "kentou"
+            },
+            {
+              "id": "p_2",
+              "left": "恐縮",
+              "right": "Humbly obliged / apologetic",
+              "furigana": "きょうしゅく",
+              "romaji": "kyoushuku"
+            },
+            {
+              "id": "p_3",
+              "left": "承諾",
+              "right": "Consent / approval",
+              "furigana": "しょうだく",
+              "romaji": "shoudaku"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u21_l15_8",
+          "type": "dialogue",
+          "prompt": "妥協についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "妥協についてどう思われますか？",
+          "furigana": "妥協についてどう思われますか？",
+          "romaji": "dakyou ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Compromise?",
+          "audioText": "妥協についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    }
+  ],
+  "revisionGate": {
+    "id": "gate_unit_21",
+    "unitId": "unit_21",
+    "title": "Unit 21 Mastery Checkpoint",
+    "titleJp": "第21週 総復習テスト",
+    "requiredScorePercent": 80,
+    "items": [
+      {
+        "id": "u21_l1_1",
+        "type": "listen",
+        "prompt": "交渉",
+        "furigana": "こうしょう",
+        "romaji": "koushou",
+        "english": "Negotiation",
+        "audioText": "こうしょう",
+        "options": [
+          "Confirming Agreement / consensus",
+          "Price quotation",
+          "Negotiation",
+          "Confirming Consent / approval"
+        ],
+        "correctAnswer": "Negotiation"
+      },
+      {
+        "id": "u21_l1_2",
+        "type": "spell",
+        "prompt": "交渉",
+        "furigana": "こうしょう",
+        "romaji": "koushou",
+        "english": "Build 'Negotiation'",
+        "audioText": "こうしょう",
+        "tileBank": [
+          "う",
+          "の",
+          "ろ",
+          "ょ",
+          "こ",
+          "う",
+          "し",
+          "を"
+        ],
+        "correctAnswer": "こうしょう"
+      },
+      {
+        "id": "u21_l3_1",
+        "type": "listen",
+        "prompt": "見積書",
+        "furigana": "みつもりしょ",
+        "romaji": "mitsumorisho",
+        "english": "Price quotation",
+        "audioText": "みつもりしょ",
+        "options": [
+          "Confirming Concluding a contract",
+          "Confirming Agreement / consensus",
+          "Price quotation",
+          "Humbly obliged / apologetic"
+        ],
+        "correctAnswer": "Price quotation"
+      },
+      {
+        "id": "u21_l3_2",
+        "type": "spell",
+        "prompt": "見積書",
+        "furigana": "みつもりしょ",
+        "romaji": "mitsumorisho",
+        "english": "Build 'Price quotation'",
+        "audioText": "みつもりしょ",
+        "tileBank": [
+          "し",
+          "ょ",
+          "つ",
+          "そ",
+          "み",
+          "も",
+          "り",
+          "す"
+        ],
+        "correctAnswer": "みつもりしょ"
+      },
+      {
+        "id": "u21_l5_1",
+        "type": "listen",
+        "prompt": "費用",
+        "furigana": "ひよう",
+        "romaji": "hiyou",
+        "english": "Cost / expense",
+        "audioText": "ひよう",
+        "options": [
+          "Cost / expense",
+          "Confirming Negotiation",
+          "Agreement / consensus",
+          "Confirming Agreement / consensus"
+        ],
+        "correctAnswer": "Cost / expense"
+      },
+      {
+        "id": "u21_l5_2",
+        "type": "spell",
+        "prompt": "費用",
+        "furigana": "ひよう",
+        "romaji": "hiyou",
+        "english": "Build 'Cost / expense'",
+        "audioText": "ひよう",
+        "tileBank": [
+          "ひ",
+          "そ",
+          "へ",
+          "さ",
+          "う",
+          "よ",
+          "あ",
+          "ゆ"
+        ],
+        "correctAnswer": "ひよう"
+      },
+      {
+        "id": "u21_l7_1",
+        "type": "listen",
+        "prompt": "合意の確認",
+        "furigana": "ごういのかくにん",
+        "romaji": "goui no kakunin",
+        "english": "Confirming Agreement / consensus",
+        "audioText": "ごういのかくにん",
+        "options": [
+          "Agreement / consensus",
+          "Confirming Consent / approval",
+          "Confirming Negotiation",
+          "Confirming Agreement / consensus"
+        ],
+        "correctAnswer": "Confirming Agreement / consensus"
+      },
+      {
+        "id": "u21_l7_2",
+        "type": "spell",
+        "prompt": "合意の確認",
+        "furigana": "ごういのかくにん",
+        "romaji": "goui no kakunin",
+        "english": "Build 'Confirming Agreement / consensus'",
+        "audioText": "ごういのかくにん",
+        "tileBank": [
+          "に",
+          "う",
+          "い",
+          "く",
+          "か",
+          "の",
+          "ご",
+          "ん"
+        ],
+        "correctAnswer": "ごういのかくにん"
+      },
+      {
+        "id": "u21_l9_1",
+        "type": "listen",
+        "prompt": "承諾の確認",
+        "furigana": "しょうだくのかくにん",
+        "romaji": "shoudaku no kakunin",
+        "english": "Confirming Consent / approval",
+        "audioText": "しょうだくのかくにん",
+        "options": [
+          "Confirming Transaction / business deal",
+          "Price quotation",
+          "Confirming Consent / approval",
+          "Confirming Compromise"
+        ],
+        "correctAnswer": "Confirming Consent / approval"
+      },
+      {
+        "id": "u21_l9_2",
+        "type": "spell",
+        "prompt": "承諾の確認",
+        "furigana": "しょうだくのかくにん",
+        "romaji": "shoudaku no kakunin",
+        "english": "Build 'Confirming Consent / approval'",
+        "audioText": "しょうだくのかくにん",
+        "tileBank": [
+          "く",
+          "だ",
+          "し",
+          "ょ",
+          "か",
+          "の",
+          "く",
+          "う"
+        ],
+        "correctAnswer": "しょうだくのかくにん"
+      },
+      {
+        "id": "u21_l11_1",
+        "type": "listen",
+        "prompt": "交渉の確認",
+        "furigana": "こうしょうのかくにん",
+        "romaji": "koushou no kakunin",
+        "english": "Confirming Negotiation",
+        "audioText": "こうしょうのかくにん",
+        "options": [
+          "Confirming Agreement / consensus",
+          "Delivery deadline",
+          "Confirming Negotiation",
+          "Confirming Agreement / consensus"
+        ],
+        "correctAnswer": "Confirming Negotiation"
+      },
+      {
+        "id": "u21_l11_2",
+        "type": "spell",
+        "prompt": "交渉の確認",
+        "furigana": "こうしょうのかくにん",
+        "romaji": "koushou no kakunin",
+        "english": "Build 'Confirming Negotiation'",
+        "audioText": "こうしょうのかくにん",
+        "tileBank": [
+          "の",
+          "ょ",
+          "う",
+          "う",
+          "こ",
+          "し",
+          "く",
+          "か"
+        ],
+        "correctAnswer": "こうしょうのかくにん"
+      }
+    ]
+  }
+};

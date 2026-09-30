@@ -2,9 +2,22 @@ export type LessonItemType =
   | 'listen'
   | 'speak'
   | 'spell'
+  | 'cloze'
+  | 'scramble'
+  | 'match'
+  | 'dialogue'
+  | 'dictate'
+  | 'quiz'
   | 'kanji_stroke'
-  | 'cloze_context'
-  | 'dialogue';
+  | 'cloze_context';
+
+export interface MatchPairItem {
+  id: string;
+  left: string;
+  right: string;
+  furigana?: string;
+  romaji?: string;
+}
 
 export interface LessonItem {
   id: string;
@@ -20,6 +33,31 @@ export interface LessonItem {
   kanji?: string; // Kanji character if kanji intro
   dialogueSpeaker?: string; // e.g. 'Tanaka-san' or 'Store Clerk'
   contextSentence?: string; // Full sentence with ___ blank
+
+  // Cloze Mode fields
+  clozeSentence?: string; // Sentence with "{{BLANK}}" or "____"
+  clozeTarget?: string; // Correct word for the blank
+  clozeOptions?: string[]; // Choice chips for the blank
+
+  // Sentence Scramble fields
+  scrambleTokens?: string[]; // Shuffled phrase blocks
+  scrambleSolution?: string[]; // Correct ordered chunks
+
+  // Matching Pairs fields
+  matchPairs?: MatchPairItem[];
+
+  // Dialogue Turn-Taking fields
+  dialogueSpeakerAvatar?: string;
+  dialoguePrompt?: string;
+  dialogueOptions?: string[];
+
+  // Speech Recognition fields
+  targetSpeech?: string;
+  phoneticHint?: string;
+
+  // Dictation fields
+  dictateTokens?: string[];
+  dictateSolution?: string[];
 }
 
 export type DojoLessonCategory =
@@ -36,7 +74,7 @@ export interface DojoLesson {
   lessonNumber: number;
   dayNumber: number; // 1 to 7
   category: DojoLessonCategory;
-  sectionTitle?: string;
+  sectionTitle?: string | null;
   title: string;
   titleJp: string;
   summary: string;

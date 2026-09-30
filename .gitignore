@@ -38,6 +38,10 @@ yarn-error.*
 
 example
 
+# Python
+__pycache__/
+*.pyc
+
 # generated native folders
 /ios
 /android

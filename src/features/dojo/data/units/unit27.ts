@@ -1,0 +1,3398 @@
+import type { DojoUnit } from "../../models/dojo.model";
+
+export const unit27: DojoUnit = {
+  "id": "unit_27",
+  "unitNumber": 27,
+  "title": "The Inner Psychology of Japanese Society",
+  "titleJp": "本音と建前・和の精神",
+  "description": "Decode unstated intentions, Kuuki o Yomu, group harmony (Wa), and master polite indirect refusals.",
+  "icon": "🍵",
+  "themeColor": "#4338CA",
+  "summaryPoints": [
+    "重要語彙35語以上の習得 (Over 35 Core Vocabulary Items)",
+    "日常・実用対話表現のマスター (Mastery of Practical Dialogues)",
+    "聴解と文字綴りのトレーニング (Listening & 4x2 Tile Spelling)",
+    "JLPT基準文法パターンの定着 (Grammar Patterns & Nuances)",
+    "7日間の段階的カリキュラム (Structured 7-Day Progressive Bundle)"
+  ],
+  "lessons": [
+    {
+      "id": "u27_l1",
+      "unitId": "unit_27",
+      "lessonNumber": 1,
+      "dayNumber": 1,
+      "category": "Expression",
+      "sectionTitle": "Core Expressions (Part 1)",
+      "iconType": "expression",
+      "title": "Real intentions / private opinion & Public stance / social protocol",
+      "titleJp": "本音・建前",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "本音",
+        "建前",
+        "空気を読む"
+      ],
+      "kanjiKeywords": [
+        "本",
+        "音",
+        "建",
+        "前",
+        "空",
+        "気",
+        "読"
+      ],
+      "items": [
+        {
+          "id": "u27_l1_1",
+          "type": "listen",
+          "prompt": "本音",
+          "furigana": "ほんね",
+          "romaji": "honne",
+          "english": "Real intentions / private opinion",
+          "audioText": "ほんね",
+          "options": [
+            "Confirming Spirit of collective harmony",
+            "Confirming Modesty / self-effacement",
+            "Confirming Real intentions / private opinion",
+            "Real intentions / private opinion"
+          ],
+          "correctAnswer": "Real intentions / private opinion"
+        },
+        {
+          "id": "u27_l1_2",
+          "type": "spell",
+          "prompt": "本音",
+          "furigana": "ほんね",
+          "romaji": "honne",
+          "english": "Build 'Real intentions / private opinion'",
+          "audioText": "ほんね",
+          "tileBank": [
+            "そ",
+            "く",
+            "ね",
+            "ほ",
+            "ら",
+            "ん",
+            "な",
+            "け"
+          ],
+          "correctAnswer": "ほんね"
+        },
+        {
+          "id": "u27_l1_3",
+          "type": "cloze",
+          "prompt": "私は建前がすきです",
+          "furigana": "わたしはたてまえがすきです",
+          "romaji": "Watashi wa tatemae ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Public stance / social protocol.",
+          "audioText": "建前",
+          "clozeSentence": "これは建前 {{BLANK}} す。",
+          "clozeTarget": "が",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "が"
+        },
+        {
+          "id": "u27_l1_4",
+          "type": "scramble",
+          "prompt": "これは建前です",
+          "furigana": "これはたてまえです",
+          "romaji": "Kore wa tatemae desu.",
+          "english": "This is Public stance / social protocol.",
+          "audioText": "これは建前です",
+          "scrambleTokens": [
+            "です",
+            "これは",
+            "ではありません",
+            "それ",
+            "建前"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "建前",
+            "です"
+          ],
+          "correctAnswer": "これは建前です"
+        },
+        {
+          "id": "u27_l1_5",
+          "type": "speak",
+          "prompt": "空気を読む",
+          "furigana": "くうきをよむ",
+          "romaji": "kuuki o yomu",
+          "english": "Pronounce: Reading the unspoken atmosphere",
+          "audioText": "くうきをよむ",
+          "targetSpeech": "空気を読む",
+          "options": [
+            "Reading the unspoken atmosphere",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "空気を読む"
+        },
+        {
+          "id": "u27_l1_6",
+          "type": "dictate",
+          "prompt": "空気を読むをお願いします",
+          "furigana": "くうきをよむをおねがいします",
+          "romaji": "kuuki o yomu o onegaishimasu.",
+          "english": "Reading the unspoken atmosphere, please.",
+          "audioText": "空気を読むをお願いします",
+          "dictateTokens": [
+            "です",
+            "お願いします",
+            "を",
+            "空気を読む",
+            "ありがとう"
+          ],
+          "dictateSolution": [
+            "空気を読む",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "空気を読むをお願いします"
+        },
+        {
+          "id": "u27_l1_7",
+          "type": "match",
+          "prompt": "本音・建前・空気を読む・和の精神",
+          "furigana": "ほんね・たてまえ・くうきをよむ・わのせいしん",
+          "romaji": "honne, tatemae, kuuki o yomu, wa no seishin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ほんね",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "本音",
+              "right": "Real intentions / private opinion",
+              "furigana": "ほんね",
+              "romaji": "honne"
+            },
+            {
+              "id": "p_1",
+              "left": "建前",
+              "right": "Public stance / social protocol",
+              "furigana": "たてまえ",
+              "romaji": "tatemae"
+            },
+            {
+              "id": "p_2",
+              "left": "空気を読む",
+              "right": "Reading the unspoken atmosphere",
+              "furigana": "くうきをよむ",
+              "romaji": "kuuki o yomu"
+            },
+            {
+              "id": "p_3",
+              "left": "和の精神",
+              "right": "Spirit of collective harmony",
+              "furigana": "わのせいしん",
+              "romaji": "wa no seishin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l1_8",
+          "type": "dialogue",
+          "prompt": "本音について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "本音について教えていただけますか？",
+          "furigana": "本音について教えていただけますか？",
+          "romaji": "honne ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Real intentions / private opinion?",
+          "audioText": "本音について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u27_l2",
+      "unitId": "unit_27",
+      "lessonNumber": 2,
+      "dayNumber": 1,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Spirit of collective harmony & Anticipating unspoken wishes",
+      "titleJp": "和の精神・忖度",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "和の精神",
+        "忖度",
+        "配慮"
+      ],
+      "kanjiKeywords": [
+        "和",
+        "精",
+        "神",
+        "忖",
+        "度",
+        "配",
+        "慮"
+      ],
+      "items": [
+        {
+          "id": "u27_l2_1",
+          "type": "listen",
+          "prompt": "和の精神",
+          "furigana": "わのせいしん",
+          "romaji": "wa no seishin",
+          "english": "Spirit of collective harmony",
+          "audioText": "わのせいしん",
+          "options": [
+            "Spirit of collective harmony",
+            "Confirming Modesty / self-effacement",
+            "Confirming Spirit of collective harmony",
+            "Confirming Anticipating unspoken wishes"
+          ],
+          "correctAnswer": "Spirit of collective harmony"
+        },
+        {
+          "id": "u27_l2_2",
+          "type": "spell",
+          "prompt": "和の精神",
+          "furigana": "わのせいしん",
+          "romaji": "wa no seishin",
+          "english": "Build 'Spirit of collective harmony'",
+          "audioText": "わのせいしん",
+          "tileBank": [
+            "せ",
+            "わ",
+            "い",
+            "ん",
+            "の",
+            "し",
+            "へ",
+            "お"
+          ],
+          "correctAnswer": "わのせいしん"
+        },
+        {
+          "id": "u27_l2_3",
+          "type": "cloze",
+          "prompt": "私は忖度がすきです",
+          "furigana": "わたしはそんたくがすきです",
+          "romaji": "Watashi wa sontaku ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Anticipating unspoken wishes.",
+          "audioText": "忖度",
+          "clozeSentence": "これは忖度 {{BLANK}} す。",
+          "clozeTarget": "を",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "を"
+        },
+        {
+          "id": "u27_l2_4",
+          "type": "scramble",
+          "prompt": "これは忖度です",
+          "furigana": "これはそんたくです",
+          "romaji": "Kore wa sontaku desu.",
+          "english": "This is Anticipating unspoken wishes.",
+          "audioText": "これは忖度です",
+          "scrambleTokens": [
+            "これは",
+            "です",
+            "ではありません",
+            "忖度",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "忖度",
+            "です"
+          ],
+          "correctAnswer": "これは忖度です"
+        },
+        {
+          "id": "u27_l2_5",
+          "type": "speak",
+          "prompt": "配慮",
+          "furigana": "はいりょ",
+          "romaji": "hairyo",
+          "english": "Pronounce: Thoughtful consideration for others",
+          "audioText": "はいりょ",
+          "targetSpeech": "配慮",
+          "options": [
+            "Thoughtful consideration for others",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "配慮"
+        },
+        {
+          "id": "u27_l2_6",
+          "type": "dictate",
+          "prompt": "配慮をお願いします",
+          "furigana": "はいりょをおねがいします",
+          "romaji": "hairyo o onegaishimasu.",
+          "english": "Thoughtful consideration for others, please.",
+          "audioText": "配慮をお願いします",
+          "dictateTokens": [
+            "配慮",
+            "ありがとう",
+            "を",
+            "です",
+            "お願いします"
+          ],
+          "dictateSolution": [
+            "配慮",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "配慮をお願いします"
+        },
+        {
+          "id": "u27_l2_7",
+          "type": "match",
+          "prompt": "和の精神・忖度・配慮・社交辞令",
+          "furigana": "わのせいしん・そんたく・はいりょ・しゃこうじれい",
+          "romaji": "wa no seishin, sontaku, hairyo, shakou jirei",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "わのせいしん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "和の精神",
+              "right": "Spirit of collective harmony",
+              "furigana": "わのせいしん",
+              "romaji": "wa no seishin"
+            },
+            {
+              "id": "p_1",
+              "left": "忖度",
+              "right": "Anticipating unspoken wishes",
+              "furigana": "そんたく",
+              "romaji": "sontaku"
+            },
+            {
+              "id": "p_2",
+              "left": "配慮",
+              "right": "Thoughtful consideration for others",
+              "furigana": "はいりょ",
+              "romaji": "hairyo"
+            },
+            {
+              "id": "p_3",
+              "left": "社交辞令",
+              "right": "Diplomatic compliments / polite flattery",
+              "furigana": "しゃこうじれい",
+              "romaji": "shakou jirei"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l2_8",
+          "type": "dialogue",
+          "prompt": "建前の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "建前の準備はできていますか？",
+          "furigana": "建前の準備はできていますか？",
+          "romaji": "tatemae no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Public stance / social protocol ready?",
+          "audioText": "建前の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u27_l3",
+      "unitId": "unit_27",
+      "lessonNumber": 3,
+      "dayNumber": 1,
+      "category": "Practice",
+      "sectionTitle": "Sentence Patterns & Fluency",
+      "iconType": "practice",
+      "title": "Diplomatic compliments / polite flattery & Indirect",
+      "titleJp": "社交辞令・間接的",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "社交辞令",
+        "間接的",
+        "角を立てない"
+      ],
+      "kanjiKeywords": [
+        "社",
+        "交",
+        "辞",
+        "令",
+        "間",
+        "接",
+        "的",
+        "角",
+        "立"
+      ],
+      "items": [
+        {
+          "id": "u27_l3_1",
+          "type": "listen",
+          "prompt": "社交辞令",
+          "furigana": "しゃこうじれい",
+          "romaji": "shakou jirei",
+          "english": "Diplomatic compliments / polite flattery",
+          "audioText": "しゃこうじれい",
+          "options": [
+            "Behind-the-scenes consensus building",
+            "Confirming Real intentions / private opinion",
+            "Confirming Anticipating unspoken wishes",
+            "Diplomatic compliments / polite flattery"
+          ],
+          "correctAnswer": "Diplomatic compliments / polite flattery"
+        },
+        {
+          "id": "u27_l3_2",
+          "type": "spell",
+          "prompt": "間接的",
+          "furigana": "かんせつてき",
+          "romaji": "kansetsuteki",
+          "english": "Build 'Indirect'",
+          "audioText": "かんせつてき",
+          "tileBank": [
+            "ん",
+            "や",
+            "て",
+            "つ",
+            "き",
+            "い",
+            "か",
+            "せ"
+          ],
+          "correctAnswer": "かんせつてき"
+        },
+        {
+          "id": "u27_l3_3",
+          "type": "cloze",
+          "prompt": "私は間接的がすきです",
+          "furigana": "わたしはかんせつてきがすきです",
+          "romaji": "Watashi wa kansetsuteki ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Indirect.",
+          "audioText": "間接的",
+          "clozeSentence": "これは間接的 {{BLANK}} す。",
+          "clozeTarget": "に",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "に"
+        },
+        {
+          "id": "u27_l3_4",
+          "type": "scramble",
+          "prompt": "これは間接的です",
+          "furigana": "これはかんせつてきです",
+          "romaji": "Kore wa kansetsuteki desu.",
+          "english": "This is Indirect.",
+          "audioText": "これは間接的です",
+          "scrambleTokens": [
+            "ではありません",
+            "間接的",
+            "これは",
+            "です",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "間接的",
+            "です"
+          ],
+          "correctAnswer": "これは間接的です"
+        },
+        {
+          "id": "u27_l3_5",
+          "type": "speak",
+          "prompt": "角を立てない",
+          "furigana": "かどをたてない",
+          "romaji": "kado o tatenai",
+          "english": "Pronounce: Avoiding unnecessary friction",
+          "audioText": "かどをたてない",
+          "targetSpeech": "角を立てない",
+          "options": [
+            "Avoiding unnecessary friction",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "角を立てない"
+        },
+        {
+          "id": "u27_l3_6",
+          "type": "dictate",
+          "prompt": "角を立てないをお願いします",
+          "furigana": "かどをたてないをおねがいします",
+          "romaji": "kado o tatenai o onegaishimasu.",
+          "english": "Avoiding unnecessary friction, please.",
+          "audioText": "角を立てないをお願いします",
+          "dictateTokens": [
+            "ありがとう",
+            "です",
+            "を",
+            "お願いします",
+            "角を立てない"
+          ],
+          "dictateSolution": [
+            "角を立てない",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "角を立てないをお願いします"
+        },
+        {
+          "id": "u27_l3_7",
+          "type": "match",
+          "prompt": "社交辞令・間接的・角を立てない・義理",
+          "furigana": "しゃこうじれい・かんせつてき・かどをたてない・ぎり",
+          "romaji": "shakou jirei, kansetsuteki, kado o tatenai, giri",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "しゃこうじれい",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "社交辞令",
+              "right": "Diplomatic compliments / polite flattery",
+              "furigana": "しゃこうじれい",
+              "romaji": "shakou jirei"
+            },
+            {
+              "id": "p_1",
+              "left": "間接的",
+              "right": "Indirect",
+              "furigana": "かんせつてき",
+              "romaji": "kansetsuteki"
+            },
+            {
+              "id": "p_2",
+              "left": "角を立てない",
+              "right": "Avoiding unnecessary friction",
+              "furigana": "かどをたてない",
+              "romaji": "kado o tatenai"
+            },
+            {
+              "id": "p_3",
+              "left": "義理",
+              "right": "Sense of duty / social obligation",
+              "furigana": "ぎり",
+              "romaji": "giri"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l3_8",
+          "type": "dialogue",
+          "prompt": "空気を読むについてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "空気を読むについてどう思われますか？",
+          "furigana": "空気を読むについてどう思われますか？",
+          "romaji": "kuuki o yomu ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Reading the unspoken atmosphere?",
+          "audioText": "空気を読むについてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u27_l4",
+      "unitId": "unit_27",
+      "lessonNumber": 4,
+      "dayNumber": 2,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Sense of duty / social obligation & Human warmth / empathy",
+      "titleJp": "義理・人情",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "義理",
+        "人情",
+        "根回し"
+      ],
+      "kanjiKeywords": [
+        "義",
+        "理",
+        "人",
+        "情",
+        "根",
+        "回"
+      ],
+      "items": [
+        {
+          "id": "u27_l4_1",
+          "type": "listen",
+          "prompt": "義理",
+          "furigana": "ぎり",
+          "romaji": "giri",
+          "english": "Sense of duty / social obligation",
+          "audioText": "ぎり",
+          "options": [
+            "Diplomatic compliments / polite flattery",
+            "Sense of duty / social obligation",
+            "Spirit of collective harmony",
+            "Anticipating unspoken wishes"
+          ],
+          "correctAnswer": "Sense of duty / social obligation"
+        },
+        {
+          "id": "u27_l4_2",
+          "type": "spell",
+          "prompt": "義理",
+          "furigana": "ぎり",
+          "romaji": "giri",
+          "english": "Build 'Sense of duty / social obligation'",
+          "audioText": "ぎり",
+          "tileBank": [
+            "つ",
+            "り",
+            "せ",
+            "ぎ",
+            "へ",
+            "の",
+            "を",
+            "お"
+          ],
+          "correctAnswer": "ぎり"
+        },
+        {
+          "id": "u27_l4_3",
+          "type": "cloze",
+          "prompt": "私は人情がすきです",
+          "furigana": "わたしはにんじょうがすきです",
+          "romaji": "Watashi wa ninjou ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Human warmth / empathy.",
+          "audioText": "人情",
+          "clozeSentence": "これは人情 {{BLANK}} す。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は"
+        },
+        {
+          "id": "u27_l4_4",
+          "type": "scramble",
+          "prompt": "これは人情です",
+          "furigana": "これはにんじょうです",
+          "romaji": "Kore wa ninjou desu.",
+          "english": "This is Human warmth / empathy.",
+          "audioText": "これは人情です",
+          "scrambleTokens": [
+            "です",
+            "ではありません",
+            "それ",
+            "人情",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "人情",
+            "です"
+          ],
+          "correctAnswer": "これは人情です"
+        },
+        {
+          "id": "u27_l4_5",
+          "type": "speak",
+          "prompt": "根回し",
+          "furigana": "ねまわし",
+          "romaji": "nemawashi",
+          "english": "Pronounce: Behind-the-scenes consensus building",
+          "audioText": "ねまわし",
+          "targetSpeech": "根回し",
+          "options": [
+            "Behind-the-scenes consensus building",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "根回し"
+        },
+        {
+          "id": "u27_l4_6",
+          "type": "dictate",
+          "prompt": "根回しをお願いします",
+          "furigana": "ねまわしをおねがいします",
+          "romaji": "nemawashi o onegaishimasu.",
+          "english": "Behind-the-scenes consensus building, please.",
+          "audioText": "根回しをお願いします",
+          "dictateTokens": [
+            "です",
+            "ありがとう",
+            "お願いします",
+            "根回し",
+            "を"
+          ],
+          "dictateSolution": [
+            "根回し",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "根回しをお願いします"
+        },
+        {
+          "id": "u27_l4_7",
+          "type": "match",
+          "prompt": "義理・人情・根回し・謙遜",
+          "furigana": "ぎり・にんじょう・ねまわし・けんそん",
+          "romaji": "giri, ninjou, nemawashi, kenson",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ぎり",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "義理",
+              "right": "Sense of duty / social obligation",
+              "furigana": "ぎり",
+              "romaji": "giri"
+            },
+            {
+              "id": "p_1",
+              "left": "人情",
+              "right": "Human warmth / empathy",
+              "furigana": "にんじょう",
+              "romaji": "ninjou"
+            },
+            {
+              "id": "p_2",
+              "left": "根回し",
+              "right": "Behind-the-scenes consensus building",
+              "furigana": "ねまわし",
+              "romaji": "nemawashi"
+            },
+            {
+              "id": "p_3",
+              "left": "謙遜",
+              "right": "Modesty / self-effacement",
+              "furigana": "けんそん",
+              "romaji": "kenson"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l4_8",
+          "type": "dialogue",
+          "prompt": "次は和の精神に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は和の精神に進みましょう。",
+          "furigana": "次は和の精神に進みましょう。",
+          "romaji": "Tsugi wa wa no seishin ni susumimashou.",
+          "english": "Speaker: Let's proceed to Spirit of collective harmony next.",
+          "audioText": "次は和の精神に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u27_l5",
+      "unitId": "unit_27",
+      "lessonNumber": 5,
+      "dayNumber": 2,
+      "category": "Expression",
+      "sectionTitle": "Situational Dialogues",
+      "iconType": "expression",
+      "title": "Modesty / self-effacement & Attentiveness / care",
+      "titleJp": "謙遜・気配り",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "謙遜",
+        "気配り",
+        "同調圧力"
+      ],
+      "kanjiKeywords": [
+        "謙",
+        "遜",
+        "気",
+        "配",
+        "同",
+        "調",
+        "圧",
+        "力"
+      ],
+      "items": [
+        {
+          "id": "u27_l5_1",
+          "type": "listen",
+          "prompt": "謙遜",
+          "furigana": "けんそん",
+          "romaji": "kenson",
+          "english": "Modesty / self-effacement",
+          "audioText": "けんそん",
+          "options": [
+            "Confirming Sense of duty / social obligation",
+            "Modesty / self-effacement",
+            "Thoughtful consideration for others",
+            "Confirming Public stance / social protocol"
+          ],
+          "correctAnswer": "Modesty / self-effacement"
+        },
+        {
+          "id": "u27_l5_2",
+          "type": "spell",
+          "prompt": "謙遜",
+          "furigana": "けんそん",
+          "romaji": "kenson",
+          "english": "Build 'Modesty / self-effacement'",
+          "audioText": "けんそん",
+          "tileBank": [
+            "ゆ",
+            "ん",
+            "け",
+            "ほ",
+            "い",
+            "ん",
+            "り",
+            "そ"
+          ],
+          "correctAnswer": "けんそん"
+        },
+        {
+          "id": "u27_l5_3",
+          "type": "cloze",
+          "prompt": "私は気配りがすきです",
+          "furigana": "わたしはきくばりがすきです",
+          "romaji": "Watashi wa kikubari ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Attentiveness / care.",
+          "audioText": "気配り",
+          "clozeSentence": "これは気配り {{BLANK}} す。",
+          "clozeTarget": "が",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "が"
+        },
+        {
+          "id": "u27_l5_4",
+          "type": "scramble",
+          "prompt": "これは気配りです",
+          "furigana": "これはきくばりです",
+          "romaji": "Kore wa kikubari desu.",
+          "english": "This is Attentiveness / care.",
+          "audioText": "これは気配りです",
+          "scrambleTokens": [
+            "気配り",
+            "これは",
+            "ではありません",
+            "それ",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "気配り",
+            "です"
+          ],
+          "correctAnswer": "これは気配りです"
+        },
+        {
+          "id": "u27_l5_5",
+          "type": "speak",
+          "prompt": "同調圧力",
+          "furigana": "どうちょうあつりょく",
+          "romaji": "douchou atsuryoku",
+          "english": "Pronounce: Peer pressure to conform",
+          "audioText": "どうちょうあつりょく",
+          "targetSpeech": "同調圧力",
+          "options": [
+            "Peer pressure to conform",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "同調圧力"
+        },
+        {
+          "id": "u27_l5_6",
+          "type": "dictate",
+          "prompt": "同調圧力をお願いします",
+          "furigana": "どうちょうあつりょくをおねがいします",
+          "romaji": "douchou atsuryoku o onegaishimasu.",
+          "english": "Peer pressure to conform, please.",
+          "audioText": "同調圧力をお願いします",
+          "dictateTokens": [
+            "ありがとう",
+            "お願いします",
+            "を",
+            "同調圧力",
+            "です"
+          ],
+          "dictateSolution": [
+            "同調圧力",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "同調圧力をお願いします"
+        },
+        {
+          "id": "u27_l5_7",
+          "type": "match",
+          "prompt": "謙遜・気配り・同調圧力・本音の確認",
+          "furigana": "けんそん・きくばり・どうちょうあつりょく・ほんねのかくにん",
+          "romaji": "kenson, kikubari, douchou atsuryoku, honne no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "けんそん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "謙遜",
+              "right": "Modesty / self-effacement",
+              "furigana": "けんそん",
+              "romaji": "kenson"
+            },
+            {
+              "id": "p_1",
+              "left": "気配り",
+              "right": "Attentiveness / care",
+              "furigana": "きくばり",
+              "romaji": "kikubari"
+            },
+            {
+              "id": "p_2",
+              "left": "同調圧力",
+              "right": "Peer pressure to conform",
+              "furigana": "どうちょうあつりょく",
+              "romaji": "douchou atsuryoku"
+            },
+            {
+              "id": "p_3",
+              "left": "本音の確認",
+              "right": "Confirming Real intentions / private opinion",
+              "furigana": "ほんねのかくにん",
+              "romaji": "honne no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l5_8",
+          "type": "dialogue",
+          "prompt": "本音について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "本音について教えていただけますか？",
+          "furigana": "本音について教えていただけますか？",
+          "romaji": "honne ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Real intentions / private opinion?",
+          "audioText": "本音について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u27_l6",
+      "unitId": "unit_27",
+      "lessonNumber": 6,
+      "dayNumber": 3,
+      "category": "Conversation",
+      "sectionTitle": null,
+      "iconType": "expression",
+      "title": "Confirming Real intentions / private opinion & Confirming Public stance / social protocol",
+      "titleJp": "本音の確認・建前の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "本音の確認",
+        "建前の確認",
+        "空気を読むの確認"
+      ],
+      "kanjiKeywords": [
+        "本",
+        "音",
+        "確",
+        "認",
+        "建",
+        "前",
+        "確",
+        "認",
+        "空",
+        "気",
+        "読",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u27_l6_1",
+          "type": "listen",
+          "prompt": "本音の確認",
+          "furigana": "ほんねのかくにん",
+          "romaji": "honne no kakunin",
+          "english": "Confirming Real intentions / private opinion",
+          "audioText": "ほんねのかくにん",
+          "options": [
+            "Confirming Thoughtful consideration for others",
+            "Confirming Reading the unspoken atmosphere",
+            "Avoiding unnecessary friction",
+            "Confirming Real intentions / private opinion"
+          ],
+          "correctAnswer": "Confirming Real intentions / private opinion"
+        },
+        {
+          "id": "u27_l6_2",
+          "type": "spell",
+          "prompt": "本音の確認",
+          "furigana": "ほんねのかくにん",
+          "romaji": "honne no kakunin",
+          "english": "Build 'Confirming Real intentions / private opinion'",
+          "audioText": "ほんねのかくにん",
+          "tileBank": [
+            "ん",
+            "ね",
+            "の",
+            "ん",
+            "か",
+            "く",
+            "に",
+            "ほ"
+          ],
+          "correctAnswer": "ほんねのかくにん"
+        },
+        {
+          "id": "u27_l6_3",
+          "type": "cloze",
+          "prompt": "私は建前の確認がすきです",
+          "furigana": "わたしはたてまえのかくにんがすきです",
+          "romaji": "Watashi wa tatemae no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Public stance / social protocol.",
+          "audioText": "建前の確認",
+          "clozeSentence": "これは建前の確認 {{BLANK}} す。",
+          "clozeTarget": "を",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "を"
+        },
+        {
+          "id": "u27_l6_4",
+          "type": "scramble",
+          "prompt": "これは建前の確認です",
+          "furigana": "これはたてまえのかくにんです",
+          "romaji": "Kore wa tatemae no kakunin desu.",
+          "english": "This is Confirming Public stance / social protocol.",
+          "audioText": "これは建前の確認です",
+          "scrambleTokens": [
+            "それ",
+            "ではありません",
+            "です",
+            "これは",
+            "建前の確認"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "建前の確認",
+            "です"
+          ],
+          "correctAnswer": "これは建前の確認です"
+        },
+        {
+          "id": "u27_l6_5",
+          "type": "speak",
+          "prompt": "空気を読むの確認",
+          "furigana": "くうきをよむのかくにん",
+          "romaji": "kuuki o yomu no kakunin",
+          "english": "Pronounce: Confirming Reading the unspoken atmosphere",
+          "audioText": "くうきをよむのかくにん",
+          "targetSpeech": "空気を読むの確認",
+          "options": [
+            "Confirming Reading the unspoken atmosphere",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "空気を読むの確認"
+        },
+        {
+          "id": "u27_l6_6",
+          "type": "dictate",
+          "prompt": "空気を読むの確認をお願いします",
+          "furigana": "くうきをよむのかくにんをおねがいします",
+          "romaji": "kuuki o yomu no kakunin o onegaishimasu.",
+          "english": "Confirming Reading the unspoken atmosphere, please.",
+          "audioText": "空気を読むの確認をお願いします",
+          "dictateTokens": [
+            "空気を読むの確認",
+            "を",
+            "お願いします",
+            "ありがとう",
+            "です"
+          ],
+          "dictateSolution": [
+            "空気を読むの確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "空気を読むの確認をお願いします"
+        },
+        {
+          "id": "u27_l6_7",
+          "type": "match",
+          "prompt": "本音の確認・建前の確認・空気を読むの確認・和の精神の確認",
+          "furigana": "ほんねのかくにん・たてまえのかくにん・くうきをよむのかくにん・わのせいしんのかくにん",
+          "romaji": "honne no kakunin, tatemae no kakunin, kuuki o yomu no kakunin, wa no seishin no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ほんねのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "本音の確認",
+              "right": "Confirming Real intentions / private opinion",
+              "furigana": "ほんねのかくにん",
+              "romaji": "honne no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "建前の確認",
+              "right": "Confirming Public stance / social protocol",
+              "furigana": "たてまえのかくにん",
+              "romaji": "tatemae no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "空気を読むの確認",
+              "right": "Confirming Reading the unspoken atmosphere",
+              "furigana": "くうきをよむのかくにん",
+              "romaji": "kuuki o yomu no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "和の精神の確認",
+              "right": "Confirming Spirit of collective harmony",
+              "furigana": "わのせいしんのかくにん",
+              "romaji": "wa no seishin no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l6_8",
+          "type": "dialogue",
+          "prompt": "建前の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "建前の準備はできていますか？",
+          "furigana": "建前の準備はできていますか？",
+          "romaji": "tatemae no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Public stance / social protocol ready?",
+          "audioText": "建前の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u27_l7",
+      "unitId": "unit_27",
+      "lessonNumber": 7,
+      "dayNumber": 3,
+      "category": "Practice",
+      "sectionTitle": "Grammar & Listening Drill",
+      "iconType": "practice",
+      "title": "Confirming Spirit of collective harmony & Confirming Anticipating unspoken wishes",
+      "titleJp": "和の精神の確認・忖度の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "和の精神の確認",
+        "忖度の確認",
+        "配慮の確認"
+      ],
+      "kanjiKeywords": [
+        "和",
+        "精",
+        "神",
+        "確",
+        "認",
+        "忖",
+        "度",
+        "確",
+        "認",
+        "配",
+        "慮",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u27_l7_1",
+          "type": "listen",
+          "prompt": "和の精神の確認",
+          "furigana": "わのせいしんのかくにん",
+          "romaji": "wa no seishin no kakunin",
+          "english": "Confirming Spirit of collective harmony",
+          "audioText": "わのせいしんのかくにん",
+          "options": [
+            "Confirming Avoiding unnecessary friction",
+            "Diplomatic compliments / polite flattery",
+            "Confirming Attentiveness / care",
+            "Confirming Spirit of collective harmony"
+          ],
+          "correctAnswer": "Confirming Spirit of collective harmony"
+        },
+        {
+          "id": "u27_l7_2",
+          "type": "spell",
+          "prompt": "和の精神の確認",
+          "furigana": "わのせいしんのかくにん",
+          "romaji": "wa no seishin no kakunin",
+          "english": "Build 'Confirming Spirit of collective harmony'",
+          "audioText": "わのせいしんのかくにん",
+          "tileBank": [
+            "の",
+            "し",
+            "か",
+            "ん",
+            "の",
+            "わ",
+            "せ",
+            "い"
+          ],
+          "correctAnswer": "わのせいしんのかくにん"
+        },
+        {
+          "id": "u27_l7_3",
+          "type": "cloze",
+          "prompt": "私は忖度の確認がすきです",
+          "furigana": "わたしはそんたくのかくにんがすきです",
+          "romaji": "Watashi wa sontaku no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Anticipating unspoken wishes.",
+          "audioText": "忖度の確認",
+          "clozeSentence": "これは忖度の確認 {{BLANK}} す。",
+          "clozeTarget": "に",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "に"
+        },
+        {
+          "id": "u27_l7_4",
+          "type": "scramble",
+          "prompt": "これは忖度の確認です",
+          "furigana": "これはそんたくのかくにんです",
+          "romaji": "Kore wa sontaku no kakunin desu.",
+          "english": "This is Confirming Anticipating unspoken wishes.",
+          "audioText": "これは忖度の確認です",
+          "scrambleTokens": [
+            "これは",
+            "それ",
+            "忖度の確認",
+            "です",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "忖度の確認",
+            "です"
+          ],
+          "correctAnswer": "これは忖度の確認です"
+        },
+        {
+          "id": "u27_l7_5",
+          "type": "speak",
+          "prompt": "配慮の確認",
+          "furigana": "はいりょのかくにん",
+          "romaji": "hairyo no kakunin",
+          "english": "Pronounce: Confirming Thoughtful consideration for others",
+          "audioText": "はいりょのかくにん",
+          "targetSpeech": "配慮の確認",
+          "options": [
+            "Confirming Thoughtful consideration for others",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "配慮の確認"
+        },
+        {
+          "id": "u27_l7_6",
+          "type": "dictate",
+          "prompt": "配慮の確認をお願いします",
+          "furigana": "はいりょのかくにんをおねがいします",
+          "romaji": "hairyo no kakunin o onegaishimasu.",
+          "english": "Confirming Thoughtful consideration for others, please.",
+          "audioText": "配慮の確認をお願いします",
+          "dictateTokens": [
+            "お願いします",
+            "配慮の確認",
+            "を",
+            "です",
+            "ありがとう"
+          ],
+          "dictateSolution": [
+            "配慮の確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "配慮の確認をお願いします"
+        },
+        {
+          "id": "u27_l7_7",
+          "type": "match",
+          "prompt": "和の精神の確認・忖度の確認・配慮の確認・社交辞令の確認",
+          "furigana": "わのせいしんのかくにん・そんたくのかくにん・はいりょのかくにん・しゃこうじれいのかくにん",
+          "romaji": "wa no seishin no kakunin, sontaku no kakunin, hairyo no kakunin, shakou jirei no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "わのせいしんのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "和の精神の確認",
+              "right": "Confirming Spirit of collective harmony",
+              "furigana": "わのせいしんのかくにん",
+              "romaji": "wa no seishin no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "忖度の確認",
+              "right": "Confirming Anticipating unspoken wishes",
+              "furigana": "そんたくのかくにん",
+              "romaji": "sontaku no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "配慮の確認",
+              "right": "Confirming Thoughtful consideration for others",
+              "furigana": "はいりょのかくにん",
+              "romaji": "hairyo no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "社交辞令の確認",
+              "right": "Confirming Diplomatic compliments / polite flattery",
+              "furigana": "しゃこうじれいのかくにん",
+              "romaji": "shakou jirei no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l7_8",
+          "type": "dialogue",
+          "prompt": "空気を読むについてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "空気を読むについてどう思われますか？",
+          "furigana": "空気を読むについてどう思われますか？",
+          "romaji": "kuuki o yomu ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Reading the unspoken atmosphere?",
+          "audioText": "空気を読むについてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u27_l8",
+      "unitId": "unit_27",
+      "lessonNumber": 8,
+      "dayNumber": 4,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Confirming Diplomatic compliments / polite flattery & Confirming Indirect",
+      "titleJp": "社交辞令の確認・間接的の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "社交辞令の確認",
+        "間接的の確認",
+        "角を立てないの確認"
+      ],
+      "kanjiKeywords": [
+        "社",
+        "交",
+        "辞",
+        "令",
+        "確",
+        "認",
+        "間",
+        "接",
+        "的",
+        "確",
+        "認",
+        "角",
+        "立",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u27_l8_1",
+          "type": "listen",
+          "prompt": "社交辞令の確認",
+          "furigana": "しゃこうじれいのかくにん",
+          "romaji": "shakou jirei no kakunin",
+          "english": "Confirming Diplomatic compliments / polite flattery",
+          "audioText": "しゃこうじれいのかくにん",
+          "options": [
+            "Confirming Behind-the-scenes consensus building",
+            "Confirming Diplomatic compliments / polite flattery",
+            "Confirming Peer pressure to conform",
+            "Confirming Sense of duty / social obligation"
+          ],
+          "correctAnswer": "Confirming Diplomatic compliments / polite flattery"
+        },
+        {
+          "id": "u27_l8_2",
+          "type": "spell",
+          "prompt": "社交辞令の確認",
+          "furigana": "しゃこうじれいのかくにん",
+          "romaji": "shakou jirei no kakunin",
+          "english": "Build 'Confirming Diplomatic compliments / polite flattery'",
+          "audioText": "しゃこうじれいのかくにん",
+          "tileBank": [
+            "の",
+            "じ",
+            "し",
+            "う",
+            "こ",
+            "れ",
+            "ゃ",
+            "い"
+          ],
+          "correctAnswer": "しゃこうじれいのかくにん"
+        },
+        {
+          "id": "u27_l8_3",
+          "type": "cloze",
+          "prompt": "私は間接的の確認がすきです",
+          "furigana": "わたしはかんせつてきのかくにんがすきです",
+          "romaji": "Watashi wa kansetsuteki no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Indirect.",
+          "audioText": "間接的の確認",
+          "clozeSentence": "これは間接的の確認 {{BLANK}} す。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は"
+        },
+        {
+          "id": "u27_l8_4",
+          "type": "scramble",
+          "prompt": "これは間接的の確認です",
+          "furigana": "これはかんせつてきのかくにんです",
+          "romaji": "Kore wa kansetsuteki no kakunin desu.",
+          "english": "This is Confirming Indirect.",
+          "audioText": "これは間接的の確認です",
+          "scrambleTokens": [
+            "ではありません",
+            "です",
+            "間接的の確認",
+            "それ",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "間接的の確認",
+            "です"
+          ],
+          "correctAnswer": "これは間接的の確認です"
+        },
+        {
+          "id": "u27_l8_5",
+          "type": "speak",
+          "prompt": "角を立てないの確認",
+          "furigana": "かどをたてないのかくにん",
+          "romaji": "kado o tatenai no kakunin",
+          "english": "Pronounce: Confirming Avoiding unnecessary friction",
+          "audioText": "かどをたてないのかくにん",
+          "targetSpeech": "角を立てないの確認",
+          "options": [
+            "Confirming Avoiding unnecessary friction",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "角を立てないの確認"
+        },
+        {
+          "id": "u27_l8_6",
+          "type": "dictate",
+          "prompt": "角を立てないの確認をお願いします",
+          "furigana": "かどをたてないのかくにんをおねがいします",
+          "romaji": "kado o tatenai no kakunin o onegaishimasu.",
+          "english": "Confirming Avoiding unnecessary friction, please.",
+          "audioText": "角を立てないの確認をお願いします",
+          "dictateTokens": [
+            "です",
+            "ありがとう",
+            "を",
+            "角を立てないの確認",
+            "お願いします"
+          ],
+          "dictateSolution": [
+            "角を立てないの確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "角を立てないの確認をお願いします"
+        },
+        {
+          "id": "u27_l8_7",
+          "type": "match",
+          "prompt": "社交辞令の確認・間接的の確認・角を立てないの確認・義理の確認",
+          "furigana": "しゃこうじれいのかくにん・かんせつてきのかくにん・かどをたてないのかくにん・ぎりのかくにん",
+          "romaji": "shakou jirei no kakunin, kansetsuteki no kakunin, kado o tatenai no kakunin, giri no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "しゃこうじれいのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "社交辞令の確認",
+              "right": "Confirming Diplomatic compliments / polite flattery",
+              "furigana": "しゃこうじれいのかくにん",
+              "romaji": "shakou jirei no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "間接的の確認",
+              "right": "Confirming Indirect",
+              "furigana": "かんせつてきのかくにん",
+              "romaji": "kansetsuteki no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "角を立てないの確認",
+              "right": "Confirming Avoiding unnecessary friction",
+              "furigana": "かどをたてないのかくにん",
+              "romaji": "kado o tatenai no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "義理の確認",
+              "right": "Confirming Sense of duty / social obligation",
+              "furigana": "ぎりのかくにん",
+              "romaji": "giri no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l8_8",
+          "type": "dialogue",
+          "prompt": "次は和の精神に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は和の精神に進みましょう。",
+          "furigana": "次は和の精神に進みましょう。",
+          "romaji": "Tsugi wa wa no seishin ni susumimashou.",
+          "english": "Speaker: Let's proceed to Spirit of collective harmony next.",
+          "audioText": "次は和の精神に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u27_l9",
+      "unitId": "unit_27",
+      "lessonNumber": 9,
+      "dayNumber": 4,
+      "category": "Expression",
+      "sectionTitle": "Nuance, Pitch & Intonation",
+      "iconType": "expression",
+      "title": "Confirming Sense of duty / social obligation & Confirming Human warmth / empathy",
+      "titleJp": "義理の確認・人情の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "義理の確認",
+        "人情の確認",
+        "根回しの確認"
+      ],
+      "kanjiKeywords": [
+        "義",
+        "理",
+        "確",
+        "認",
+        "人",
+        "情",
+        "確",
+        "認",
+        "根",
+        "回",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u27_l9_1",
+          "type": "listen",
+          "prompt": "義理の確認",
+          "furigana": "ぎりのかくにん",
+          "romaji": "giri no kakunin",
+          "english": "Confirming Sense of duty / social obligation",
+          "audioText": "ぎりのかくにん",
+          "options": [
+            "Confirming Behind-the-scenes consensus building",
+            "Sense of duty / social obligation",
+            "Confirming Public stance / social protocol",
+            "Confirming Sense of duty / social obligation"
+          ],
+          "correctAnswer": "Confirming Sense of duty / social obligation"
+        },
+        {
+          "id": "u27_l9_2",
+          "type": "spell",
+          "prompt": "義理の確認",
+          "furigana": "ぎりのかくにん",
+          "romaji": "giri no kakunin",
+          "english": "Build 'Confirming Sense of duty / social obligation'",
+          "audioText": "ぎりのかくにん",
+          "tileBank": [
+            "ぎ",
+            "ん",
+            "の",
+            "か",
+            "く",
+            "へ",
+            "り",
+            "に"
+          ],
+          "correctAnswer": "ぎりのかくにん"
+        },
+        {
+          "id": "u27_l9_3",
+          "type": "cloze",
+          "prompt": "私は人情の確認がすきです",
+          "furigana": "わたしはにんじょうのかくにんがすきです",
+          "romaji": "Watashi wa ninjou no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Human warmth / empathy.",
+          "audioText": "人情の確認",
+          "clozeSentence": "これは人情の確認 {{BLANK}} す。",
+          "clozeTarget": "が",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "が"
+        },
+        {
+          "id": "u27_l9_4",
+          "type": "scramble",
+          "prompt": "これは人情の確認です",
+          "furigana": "これはにんじょうのかくにんです",
+          "romaji": "Kore wa ninjou no kakunin desu.",
+          "english": "This is Confirming Human warmth / empathy.",
+          "audioText": "これは人情の確認です",
+          "scrambleTokens": [
+            "人情の確認",
+            "です",
+            "それ",
+            "ではありません",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "人情の確認",
+            "です"
+          ],
+          "correctAnswer": "これは人情の確認です"
+        },
+        {
+          "id": "u27_l9_5",
+          "type": "speak",
+          "prompt": "根回しの確認",
+          "furigana": "ねまわしのかくにん",
+          "romaji": "nemawashi no kakunin",
+          "english": "Pronounce: Confirming Behind-the-scenes consensus building",
+          "audioText": "ねまわしのかくにん",
+          "targetSpeech": "根回しの確認",
+          "options": [
+            "Confirming Behind-the-scenes consensus building",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "根回しの確認"
+        },
+        {
+          "id": "u27_l9_6",
+          "type": "dictate",
+          "prompt": "根回しの確認をお願いします",
+          "furigana": "ねまわしのかくにんをおねがいします",
+          "romaji": "nemawashi no kakunin o onegaishimasu.",
+          "english": "Confirming Behind-the-scenes consensus building, please.",
+          "audioText": "根回しの確認をお願いします",
+          "dictateTokens": [
+            "を",
+            "ありがとう",
+            "お願いします",
+            "です",
+            "根回しの確認"
+          ],
+          "dictateSolution": [
+            "根回しの確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "根回しの確認をお願いします"
+        },
+        {
+          "id": "u27_l9_7",
+          "type": "match",
+          "prompt": "義理の確認・人情の確認・根回しの確認・謙遜の確認",
+          "furigana": "ぎりのかくにん・にんじょうのかくにん・ねまわしのかくにん・けんそんのかくにん",
+          "romaji": "giri no kakunin, ninjou no kakunin, nemawashi no kakunin, kenson no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ぎりのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "義理の確認",
+              "right": "Confirming Sense of duty / social obligation",
+              "furigana": "ぎりのかくにん",
+              "romaji": "giri no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "人情の確認",
+              "right": "Confirming Human warmth / empathy",
+              "furigana": "にんじょうのかくにん",
+              "romaji": "ninjou no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "根回しの確認",
+              "right": "Confirming Behind-the-scenes consensus building",
+              "furigana": "ねまわしのかくにん",
+              "romaji": "nemawashi no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "謙遜の確認",
+              "right": "Confirming Modesty / self-effacement",
+              "furigana": "けんそんのかくにん",
+              "romaji": "kenson no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l9_8",
+          "type": "dialogue",
+          "prompt": "本音について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "本音について教えていただけますか？",
+          "furigana": "本音について教えていただけますか？",
+          "romaji": "honne ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Real intentions / private opinion?",
+          "audioText": "本音について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u27_l10",
+      "unitId": "unit_27",
+      "lessonNumber": 10,
+      "dayNumber": 5,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Confirming Modesty / self-effacement & Confirming Attentiveness / care",
+      "titleJp": "謙遜の確認・気配りの確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "謙遜の確認",
+        "気配りの確認",
+        "同調圧力の確認"
+      ],
+      "kanjiKeywords": [
+        "謙",
+        "遜",
+        "確",
+        "認",
+        "気",
+        "配",
+        "確",
+        "認",
+        "同",
+        "調",
+        "圧",
+        "力",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u27_l10_1",
+          "type": "listen",
+          "prompt": "謙遜の確認",
+          "furigana": "けんそんのかくにん",
+          "romaji": "kenson no kakunin",
+          "english": "Confirming Modesty / self-effacement",
+          "audioText": "けんそんのかくにん",
+          "options": [
+            "Confirming Anticipating unspoken wishes",
+            "Confirming Modesty / self-effacement",
+            "Avoiding unnecessary friction",
+            "Confirming Indirect"
+          ],
+          "correctAnswer": "Confirming Modesty / self-effacement"
+        },
+        {
+          "id": "u27_l10_2",
+          "type": "spell",
+          "prompt": "謙遜の確認",
+          "furigana": "けんそんのかくにん",
+          "romaji": "kenson no kakunin",
+          "english": "Build 'Confirming Modesty / self-effacement'",
+          "audioText": "けんそんのかくにん",
+          "tileBank": [
+            "け",
+            "ん",
+            "か",
+            "の",
+            "ん",
+            "く",
+            "そ",
+            "に"
+          ],
+          "correctAnswer": "けんそんのかくにん"
+        },
+        {
+          "id": "u27_l10_3",
+          "type": "cloze",
+          "prompt": "私は気配りの確認がすきです",
+          "furigana": "わたしはきくばりのかくにんがすきです",
+          "romaji": "Watashi wa kikubari no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Attentiveness / care.",
+          "audioText": "気配りの確認",
+          "clozeSentence": "これは気配りの確認 {{BLANK}} す。",
+          "clozeTarget": "を",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "を"
+        },
+        {
+          "id": "u27_l10_4",
+          "type": "scramble",
+          "prompt": "これは気配りの確認です",
+          "furigana": "これはきくばりのかくにんです",
+          "romaji": "Kore wa kikubari no kakunin desu.",
+          "english": "This is Confirming Attentiveness / care.",
+          "audioText": "これは気配りの確認です",
+          "scrambleTokens": [
+            "それ",
+            "です",
+            "ではありません",
+            "これは",
+            "気配りの確認"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "気配りの確認",
+            "です"
+          ],
+          "correctAnswer": "これは気配りの確認です"
+        },
+        {
+          "id": "u27_l10_5",
+          "type": "speak",
+          "prompt": "同調圧力の確認",
+          "furigana": "どうちょうあつりょくのかくにん",
+          "romaji": "douchou atsuryoku no kakunin",
+          "english": "Pronounce: Confirming Peer pressure to conform",
+          "audioText": "どうちょうあつりょくのかくにん",
+          "targetSpeech": "同調圧力の確認",
+          "options": [
+            "Confirming Peer pressure to conform",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "同調圧力の確認"
+        },
+        {
+          "id": "u27_l10_6",
+          "type": "dictate",
+          "prompt": "同調圧力の確認をお願いします",
+          "furigana": "どうちょうあつりょくのかくにんをおねがいします",
+          "romaji": "douchou atsuryoku no kakunin o onegaishimasu.",
+          "english": "Confirming Peer pressure to conform, please.",
+          "audioText": "同調圧力の確認をお願いします",
+          "dictateTokens": [
+            "を",
+            "お願いします",
+            "同調圧力の確認",
+            "です",
+            "ありがとう"
+          ],
+          "dictateSolution": [
+            "同調圧力の確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "同調圧力の確認をお願いします"
+        },
+        {
+          "id": "u27_l10_7",
+          "type": "match",
+          "prompt": "謙遜の確認・気配りの確認・同調圧力の確認・本音の確認",
+          "furigana": "けんそんのかくにん・きくばりのかくにん・どうちょうあつりょくのかくにん・ほんねのかくにん",
+          "romaji": "kenson no kakunin, kikubari no kakunin, douchou atsuryoku no kakunin, honne no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "けんそんのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "謙遜の確認",
+              "right": "Confirming Modesty / self-effacement",
+              "furigana": "けんそんのかくにん",
+              "romaji": "kenson no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "気配りの確認",
+              "right": "Confirming Attentiveness / care",
+              "furigana": "きくばりのかくにん",
+              "romaji": "kikubari no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "同調圧力の確認",
+              "right": "Confirming Peer pressure to conform",
+              "furigana": "どうちょうあつりょくのかくにん",
+              "romaji": "douchou atsuryoku no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "本音の確認",
+              "right": "Confirming Real intentions / private opinion",
+              "furigana": "ほんねのかくにん",
+              "romaji": "honne no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l10_8",
+          "type": "dialogue",
+          "prompt": "建前の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "建前の準備はできていますか？",
+          "furigana": "建前の準備はできていますか？",
+          "romaji": "tatemae no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Public stance / social protocol ready?",
+          "audioText": "建前の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u27_l11",
+      "unitId": "unit_27",
+      "lessonNumber": 11,
+      "dayNumber": 5,
+      "category": "Practice",
+      "sectionTitle": "Speed Assembly & Fluency",
+      "iconType": "practice",
+      "title": "Confirming Real intentions / private opinion & Confirming Public stance / social protocol",
+      "titleJp": "本音の確認・建前の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "本音の確認",
+        "建前の確認",
+        "空気を読むの確認"
+      ],
+      "kanjiKeywords": [
+        "本",
+        "音",
+        "確",
+        "認",
+        "建",
+        "前",
+        "確",
+        "認",
+        "空",
+        "気",
+        "読",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u27_l11_1",
+          "type": "listen",
+          "prompt": "本音の確認",
+          "furigana": "ほんねのかくにん",
+          "romaji": "honne no kakunin",
+          "english": "Confirming Real intentions / private opinion",
+          "audioText": "ほんねのかくにん",
+          "options": [
+            "Diplomatic compliments / polite flattery",
+            "Confirming Anticipating unspoken wishes",
+            "Confirming Reading the unspoken atmosphere",
+            "Confirming Real intentions / private opinion"
+          ],
+          "correctAnswer": "Confirming Real intentions / private opinion"
+        },
+        {
+          "id": "u27_l11_2",
+          "type": "spell",
+          "prompt": "本音の確認",
+          "furigana": "ほんねのかくにん",
+          "romaji": "honne no kakunin",
+          "english": "Build 'Confirming Real intentions / private opinion'",
+          "audioText": "ほんねのかくにん",
+          "tileBank": [
+            "に",
+            "ん",
+            "ん",
+            "ほ",
+            "く",
+            "の",
+            "ね",
+            "か"
+          ],
+          "correctAnswer": "ほんねのかくにん"
+        },
+        {
+          "id": "u27_l11_3",
+          "type": "cloze",
+          "prompt": "私は建前の確認がすきです",
+          "furigana": "わたしはたてまえのかくにんがすきです",
+          "romaji": "Watashi wa tatemae no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Public stance / social protocol.",
+          "audioText": "建前の確認",
+          "clozeSentence": "これは建前の確認 {{BLANK}} す。",
+          "clozeTarget": "に",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "に"
+        },
+        {
+          "id": "u27_l11_4",
+          "type": "scramble",
+          "prompt": "これは建前の確認です",
+          "furigana": "これはたてまえのかくにんです",
+          "romaji": "Kore wa tatemae no kakunin desu.",
+          "english": "This is Confirming Public stance / social protocol.",
+          "audioText": "これは建前の確認です",
+          "scrambleTokens": [
+            "建前の確認",
+            "これは",
+            "ではありません",
+            "それ",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "建前の確認",
+            "です"
+          ],
+          "correctAnswer": "これは建前の確認です"
+        },
+        {
+          "id": "u27_l11_5",
+          "type": "speak",
+          "prompt": "空気を読むの確認",
+          "furigana": "くうきをよむのかくにん",
+          "romaji": "kuuki o yomu no kakunin",
+          "english": "Pronounce: Confirming Reading the unspoken atmosphere",
+          "audioText": "くうきをよむのかくにん",
+          "targetSpeech": "空気を読むの確認",
+          "options": [
+            "Confirming Reading the unspoken atmosphere",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "空気を読むの確認"
+        },
+        {
+          "id": "u27_l11_6",
+          "type": "dictate",
+          "prompt": "空気を読むの確認をお願いします",
+          "furigana": "くうきをよむのかくにんをおねがいします",
+          "romaji": "kuuki o yomu no kakunin o onegaishimasu.",
+          "english": "Confirming Reading the unspoken atmosphere, please.",
+          "audioText": "空気を読むの確認をお願いします",
+          "dictateTokens": [
+            "お願いします",
+            "空気を読むの確認",
+            "ありがとう",
+            "です",
+            "を"
+          ],
+          "dictateSolution": [
+            "空気を読むの確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "空気を読むの確認をお願いします"
+        },
+        {
+          "id": "u27_l11_7",
+          "type": "match",
+          "prompt": "本音の確認・建前の確認・空気を読むの確認・和の精神の確認",
+          "furigana": "ほんねのかくにん・たてまえのかくにん・くうきをよむのかくにん・わのせいしんのかくにん",
+          "romaji": "honne no kakunin, tatemae no kakunin, kuuki o yomu no kakunin, wa no seishin no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ほんねのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "本音の確認",
+              "right": "Confirming Real intentions / private opinion",
+              "furigana": "ほんねのかくにん",
+              "romaji": "honne no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "建前の確認",
+              "right": "Confirming Public stance / social protocol",
+              "furigana": "たてまえのかくにん",
+              "romaji": "tatemae no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "空気を読むの確認",
+              "right": "Confirming Reading the unspoken atmosphere",
+              "furigana": "くうきをよむのかくにん",
+              "romaji": "kuuki o yomu no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "和の精神の確認",
+              "right": "Confirming Spirit of collective harmony",
+              "furigana": "わのせいしんのかくにん",
+              "romaji": "wa no seishin no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l11_8",
+          "type": "dialogue",
+          "prompt": "空気を読むについてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "空気を読むについてどう思われますか？",
+          "furigana": "空気を読むについてどう思われますか？",
+          "romaji": "kuuki o yomu ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Reading the unspoken atmosphere?",
+          "audioText": "空気を読むについてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u27_l12",
+      "unitId": "unit_27",
+      "lessonNumber": 12,
+      "dayNumber": 6,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Confirming Spirit of collective harmony & Confirming Anticipating unspoken wishes",
+      "titleJp": "和の精神の確認・忖度の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "和の精神の確認",
+        "忖度の確認",
+        "配慮の確認"
+      ],
+      "kanjiKeywords": [
+        "和",
+        "精",
+        "神",
+        "確",
+        "認",
+        "忖",
+        "度",
+        "確",
+        "認",
+        "配",
+        "慮",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u27_l12_1",
+          "type": "listen",
+          "prompt": "和の精神の確認",
+          "furigana": "わのせいしんのかくにん",
+          "romaji": "wa no seishin no kakunin",
+          "english": "Confirming Spirit of collective harmony",
+          "audioText": "わのせいしんのかくにん",
+          "options": [
+            "Confirming Spirit of collective harmony",
+            "Confirming Behind-the-scenes consensus building",
+            "Thoughtful consideration for others",
+            "Diplomatic compliments / polite flattery"
+          ],
+          "correctAnswer": "Confirming Spirit of collective harmony"
+        },
+        {
+          "id": "u27_l12_2",
+          "type": "spell",
+          "prompt": "和の精神の確認",
+          "furigana": "わのせいしんのかくにん",
+          "romaji": "wa no seishin no kakunin",
+          "english": "Build 'Confirming Spirit of collective harmony'",
+          "audioText": "わのせいしんのかくにん",
+          "tileBank": [
+            "い",
+            "か",
+            "の",
+            "の",
+            "わ",
+            "せ",
+            "ん",
+            "し"
+          ],
+          "correctAnswer": "わのせいしんのかくにん"
+        },
+        {
+          "id": "u27_l12_3",
+          "type": "cloze",
+          "prompt": "私は忖度の確認がすきです",
+          "furigana": "わたしはそんたくのかくにんがすきです",
+          "romaji": "Watashi wa sontaku no kakunin ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Confirming Anticipating unspoken wishes.",
+          "audioText": "忖度の確認",
+          "clozeSentence": "これは忖度の確認 {{BLANK}} す。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は"
+        },
+        {
+          "id": "u27_l12_4",
+          "type": "scramble",
+          "prompt": "これは忖度の確認です",
+          "furigana": "これはそんたくのかくにんです",
+          "romaji": "Kore wa sontaku no kakunin desu.",
+          "english": "This is Confirming Anticipating unspoken wishes.",
+          "audioText": "これは忖度の確認です",
+          "scrambleTokens": [
+            "ではありません",
+            "忖度の確認",
+            "これは",
+            "それ",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "忖度の確認",
+            "です"
+          ],
+          "correctAnswer": "これは忖度の確認です"
+        },
+        {
+          "id": "u27_l12_5",
+          "type": "speak",
+          "prompt": "配慮の確認",
+          "furigana": "はいりょのかくにん",
+          "romaji": "hairyo no kakunin",
+          "english": "Pronounce: Confirming Thoughtful consideration for others",
+          "audioText": "はいりょのかくにん",
+          "targetSpeech": "配慮の確認",
+          "options": [
+            "Confirming Thoughtful consideration for others",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "配慮の確認"
+        },
+        {
+          "id": "u27_l12_6",
+          "type": "dictate",
+          "prompt": "配慮の確認をお願いします",
+          "furigana": "はいりょのかくにんをおねがいします",
+          "romaji": "hairyo no kakunin o onegaishimasu.",
+          "english": "Confirming Thoughtful consideration for others, please.",
+          "audioText": "配慮の確認をお願いします",
+          "dictateTokens": [
+            "配慮の確認",
+            "ありがとう",
+            "です",
+            "を",
+            "お願いします"
+          ],
+          "dictateSolution": [
+            "配慮の確認",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "配慮の確認をお願いします"
+        },
+        {
+          "id": "u27_l12_7",
+          "type": "match",
+          "prompt": "和の精神の確認・忖度の確認・配慮の確認・本音",
+          "furigana": "わのせいしんのかくにん・そんたくのかくにん・はいりょのかくにん・ほんね",
+          "romaji": "wa no seishin no kakunin, sontaku no kakunin, hairyo no kakunin, honne",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "わのせいしんのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "和の精神の確認",
+              "right": "Confirming Spirit of collective harmony",
+              "furigana": "わのせいしんのかくにん",
+              "romaji": "wa no seishin no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "忖度の確認",
+              "right": "Confirming Anticipating unspoken wishes",
+              "furigana": "そんたくのかくにん",
+              "romaji": "sontaku no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "配慮の確認",
+              "right": "Confirming Thoughtful consideration for others",
+              "furigana": "はいりょのかくにん",
+              "romaji": "hairyo no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "本音",
+              "right": "Real intentions / private opinion",
+              "furigana": "ほんね",
+              "romaji": "honne"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l12_8",
+          "type": "dialogue",
+          "prompt": "次は和の精神に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は和の精神に進みましょう。",
+          "furigana": "次は和の精神に進みましょう。",
+          "romaji": "Tsugi wa wa no seishin ni susumimashou.",
+          "english": "Speaker: Let's proceed to Spirit of collective harmony next.",
+          "audioText": "次は和の精神に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u27_l13",
+      "unitId": "unit_27",
+      "lessonNumber": 13,
+      "dayNumber": 6,
+      "category": "Expression",
+      "sectionTitle": null,
+      "iconType": "expression",
+      "title": "Real intentions / private opinion & Public stance / social protocol",
+      "titleJp": "本音・建前",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "本音",
+        "建前",
+        "空気を読む"
+      ],
+      "kanjiKeywords": [
+        "本",
+        "音",
+        "建",
+        "前",
+        "空",
+        "気",
+        "読"
+      ],
+      "items": [
+        {
+          "id": "u27_l13_1",
+          "type": "listen",
+          "prompt": "本音",
+          "furigana": "ほんね",
+          "romaji": "honne",
+          "english": "Real intentions / private opinion",
+          "audioText": "ほんね",
+          "options": [
+            "Confirming Reading the unspoken atmosphere",
+            "Confirming Anticipating unspoken wishes",
+            "Confirming Real intentions / private opinion",
+            "Real intentions / private opinion"
+          ],
+          "correctAnswer": "Real intentions / private opinion"
+        },
+        {
+          "id": "u27_l13_2",
+          "type": "spell",
+          "prompt": "本音",
+          "furigana": "ほんね",
+          "romaji": "honne",
+          "english": "Build 'Real intentions / private opinion'",
+          "audioText": "ほんね",
+          "tileBank": [
+            "ん",
+            "ほ",
+            "つ",
+            "し",
+            "へ",
+            "ね",
+            "ら",
+            "か"
+          ],
+          "correctAnswer": "ほんね"
+        },
+        {
+          "id": "u27_l13_3",
+          "type": "cloze",
+          "prompt": "私は建前がすきです",
+          "furigana": "わたしはたてまえがすきです",
+          "romaji": "Watashi wa tatemae ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Public stance / social protocol.",
+          "audioText": "建前",
+          "clozeSentence": "これは建前 {{BLANK}} す。",
+          "clozeTarget": "が",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "が"
+        },
+        {
+          "id": "u27_l13_4",
+          "type": "scramble",
+          "prompt": "これは建前です",
+          "furigana": "これはたてまえです",
+          "romaji": "Kore wa tatemae desu.",
+          "english": "This is Public stance / social protocol.",
+          "audioText": "これは建前です",
+          "scrambleTokens": [
+            "です",
+            "建前",
+            "これは",
+            "ではありません",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "建前",
+            "です"
+          ],
+          "correctAnswer": "これは建前です"
+        },
+        {
+          "id": "u27_l13_5",
+          "type": "speak",
+          "prompt": "空気を読む",
+          "furigana": "くうきをよむ",
+          "romaji": "kuuki o yomu",
+          "english": "Pronounce: Reading the unspoken atmosphere",
+          "audioText": "くうきをよむ",
+          "targetSpeech": "空気を読む",
+          "options": [
+            "Reading the unspoken atmosphere",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "空気を読む"
+        },
+        {
+          "id": "u27_l13_6",
+          "type": "dictate",
+          "prompt": "空気を読むをお願いします",
+          "furigana": "くうきをよむをおねがいします",
+          "romaji": "kuuki o yomu o onegaishimasu.",
+          "english": "Reading the unspoken atmosphere, please.",
+          "audioText": "空気を読むをお願いします",
+          "dictateTokens": [
+            "ありがとう",
+            "お願いします",
+            "です",
+            "を",
+            "空気を読む"
+          ],
+          "dictateSolution": [
+            "空気を読む",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "空気を読むをお願いします"
+        },
+        {
+          "id": "u27_l13_7",
+          "type": "match",
+          "prompt": "本音・建前・空気を読む・和の精神",
+          "furigana": "ほんね・たてまえ・くうきをよむ・わのせいしん",
+          "romaji": "honne, tatemae, kuuki o yomu, wa no seishin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ほんね",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "本音",
+              "right": "Real intentions / private opinion",
+              "furigana": "ほんね",
+              "romaji": "honne"
+            },
+            {
+              "id": "p_1",
+              "left": "建前",
+              "right": "Public stance / social protocol",
+              "furigana": "たてまえ",
+              "romaji": "tatemae"
+            },
+            {
+              "id": "p_2",
+              "left": "空気を読む",
+              "right": "Reading the unspoken atmosphere",
+              "furigana": "くうきをよむ",
+              "romaji": "kuuki o yomu"
+            },
+            {
+              "id": "p_3",
+              "left": "和の精神",
+              "right": "Spirit of collective harmony",
+              "furigana": "わのせいしん",
+              "romaji": "wa no seishin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l13_8",
+          "type": "dialogue",
+          "prompt": "本音について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "本音について教えていただけますか？",
+          "furigana": "本音について教えていただけますか？",
+          "romaji": "honne ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Real intentions / private opinion?",
+          "audioText": "本音について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u27_l14",
+      "unitId": "unit_27",
+      "lessonNumber": 14,
+      "dayNumber": 6,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Spirit of collective harmony & Anticipating unspoken wishes",
+      "titleJp": "和の精神・忖度",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "和の精神",
+        "忖度",
+        "配慮"
+      ],
+      "kanjiKeywords": [
+        "和",
+        "精",
+        "神",
+        "忖",
+        "度",
+        "配",
+        "慮"
+      ],
+      "items": [
+        {
+          "id": "u27_l14_1",
+          "type": "listen",
+          "prompt": "和の精神",
+          "furigana": "わのせいしん",
+          "romaji": "wa no seishin",
+          "english": "Spirit of collective harmony",
+          "audioText": "わのせいしん",
+          "options": [
+            "Confirming Human warmth / empathy",
+            "Spirit of collective harmony",
+            "Reading the unspoken atmosphere",
+            "Confirming Avoiding unnecessary friction"
+          ],
+          "correctAnswer": "Spirit of collective harmony"
+        },
+        {
+          "id": "u27_l14_2",
+          "type": "spell",
+          "prompt": "和の精神",
+          "furigana": "わのせいしん",
+          "romaji": "wa no seishin",
+          "english": "Build 'Spirit of collective harmony'",
+          "audioText": "わのせいしん",
+          "tileBank": [
+            "き",
+            "し",
+            "ん",
+            "の",
+            "せ",
+            "わ",
+            "い",
+            "す"
+          ],
+          "correctAnswer": "わのせいしん"
+        },
+        {
+          "id": "u27_l14_3",
+          "type": "cloze",
+          "prompt": "私は忖度がすきです",
+          "furigana": "わたしはそんたくがすきです",
+          "romaji": "Watashi wa sontaku ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Anticipating unspoken wishes.",
+          "audioText": "忖度",
+          "clozeSentence": "これは忖度 {{BLANK}} す。",
+          "clozeTarget": "を",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "を"
+        },
+        {
+          "id": "u27_l14_4",
+          "type": "scramble",
+          "prompt": "これは忖度です",
+          "furigana": "これはそんたくです",
+          "romaji": "Kore wa sontaku desu.",
+          "english": "This is Anticipating unspoken wishes.",
+          "audioText": "これは忖度です",
+          "scrambleTokens": [
+            "ではありません",
+            "これは",
+            "です",
+            "忖度",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "忖度",
+            "です"
+          ],
+          "correctAnswer": "これは忖度です"
+        },
+        {
+          "id": "u27_l14_5",
+          "type": "speak",
+          "prompt": "配慮",
+          "furigana": "はいりょ",
+          "romaji": "hairyo",
+          "english": "Pronounce: Thoughtful consideration for others",
+          "audioText": "はいりょ",
+          "targetSpeech": "配慮",
+          "options": [
+            "Thoughtful consideration for others",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "配慮"
+        },
+        {
+          "id": "u27_l14_6",
+          "type": "dictate",
+          "prompt": "配慮をお願いします",
+          "furigana": "はいりょをおねがいします",
+          "romaji": "hairyo o onegaishimasu.",
+          "english": "Thoughtful consideration for others, please.",
+          "audioText": "配慮をお願いします",
+          "dictateTokens": [
+            "を",
+            "配慮",
+            "です",
+            "ありがとう",
+            "お願いします"
+          ],
+          "dictateSolution": [
+            "配慮",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "配慮をお願いします"
+        },
+        {
+          "id": "u27_l14_7",
+          "type": "match",
+          "prompt": "和の精神・忖度・配慮・社交辞令",
+          "furigana": "わのせいしん・そんたく・はいりょ・しゃこうじれい",
+          "romaji": "wa no seishin, sontaku, hairyo, shakou jirei",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "わのせいしん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "和の精神",
+              "right": "Spirit of collective harmony",
+              "furigana": "わのせいしん",
+              "romaji": "wa no seishin"
+            },
+            {
+              "id": "p_1",
+              "left": "忖度",
+              "right": "Anticipating unspoken wishes",
+              "furigana": "そんたく",
+              "romaji": "sontaku"
+            },
+            {
+              "id": "p_2",
+              "left": "配慮",
+              "right": "Thoughtful consideration for others",
+              "furigana": "はいりょ",
+              "romaji": "hairyo"
+            },
+            {
+              "id": "p_3",
+              "left": "社交辞令",
+              "right": "Diplomatic compliments / polite flattery",
+              "furigana": "しゃこうじれい",
+              "romaji": "shakou jirei"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l14_8",
+          "type": "dialogue",
+          "prompt": "建前の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "建前の準備はできていますか？",
+          "furigana": "建前の準備はできていますか？",
+          "romaji": "tatemae no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Public stance / social protocol ready?",
+          "audioText": "建前の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u27_l15",
+      "unitId": "unit_27",
+      "lessonNumber": 15,
+      "dayNumber": 7,
+      "category": "Unit Test",
+      "sectionTitle": "Unit 27 Master Exam",
+      "iconType": "test",
+      "title": "Unit 27 Master Exam",
+      "titleJp": "第27週 総合試験",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "社交辞令",
+        "間接的",
+        "角を立てない"
+      ],
+      "kanjiKeywords": [
+        "社",
+        "交",
+        "辞",
+        "令",
+        "間",
+        "接",
+        "的",
+        "角",
+        "立"
+      ],
+      "items": [
+        {
+          "id": "u27_l15_1",
+          "type": "listen",
+          "prompt": "社交辞令",
+          "furigana": "しゃこうじれい",
+          "romaji": "shakou jirei",
+          "english": "Diplomatic compliments / polite flattery",
+          "audioText": "しゃこうじれい",
+          "options": [
+            "Confirming Modesty / self-effacement",
+            "Behind-the-scenes consensus building",
+            "Diplomatic compliments / polite flattery",
+            "Anticipating unspoken wishes"
+          ],
+          "correctAnswer": "Diplomatic compliments / polite flattery"
+        },
+        {
+          "id": "u27_l15_2",
+          "type": "spell",
+          "prompt": "間接的",
+          "furigana": "かんせつてき",
+          "romaji": "kansetsuteki",
+          "english": "Build 'Indirect'",
+          "audioText": "かんせつてき",
+          "tileBank": [
+            "つ",
+            "か",
+            "き",
+            "せ",
+            "て",
+            "り",
+            "よ",
+            "ん"
+          ],
+          "correctAnswer": "かんせつてき"
+        },
+        {
+          "id": "u27_l15_3",
+          "type": "cloze",
+          "prompt": "私は間接的がすきです",
+          "furigana": "わたしはかんせつてきがすきです",
+          "romaji": "Watashi wa kansetsuteki ga suki desu.",
+          "english": "Fill in the blank with the correct particle for Indirect.",
+          "audioText": "間接的",
+          "clozeSentence": "これは間接的 {{BLANK}} す。",
+          "clozeTarget": "に",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "に"
+        },
+        {
+          "id": "u27_l15_4",
+          "type": "scramble",
+          "prompt": "これは間接的です",
+          "furigana": "これはかんせつてきです",
+          "romaji": "Kore wa kansetsuteki desu.",
+          "english": "This is Indirect.",
+          "audioText": "これは間接的です",
+          "scrambleTokens": [
+            "それ",
+            "です",
+            "これは",
+            "ではありません",
+            "間接的"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "間接的",
+            "です"
+          ],
+          "correctAnswer": "これは間接的です"
+        },
+        {
+          "id": "u27_l15_5",
+          "type": "speak",
+          "prompt": "角を立てない",
+          "furigana": "かどをたてない",
+          "romaji": "kado o tatenai",
+          "english": "Pronounce: Avoiding unnecessary friction",
+          "audioText": "かどをたてない",
+          "targetSpeech": "角を立てない",
+          "options": [
+            "Avoiding unnecessary friction",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "角を立てない"
+        },
+        {
+          "id": "u27_l15_6",
+          "type": "dictate",
+          "prompt": "角を立てないをお願いします",
+          "furigana": "かどをたてないをおねがいします",
+          "romaji": "kado o tatenai o onegaishimasu.",
+          "english": "Avoiding unnecessary friction, please.",
+          "audioText": "角を立てないをお願いします",
+          "dictateTokens": [
+            "角を立てない",
+            "です",
+            "を",
+            "お願いします",
+            "ありがとう"
+          ],
+          "dictateSolution": [
+            "角を立てない",
+            "を",
+            "お願いします"
+          ],
+          "correctAnswer": "角を立てないをお願いします"
+        },
+        {
+          "id": "u27_l15_7",
+          "type": "match",
+          "prompt": "社交辞令・間接的・角を立てない・義理",
+          "furigana": "しゃこうじれい・かんせつてき・かどをたてない・ぎり",
+          "romaji": "shakou jirei, kansetsuteki, kado o tatenai, giri",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "しゃこうじれい",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "社交辞令",
+              "right": "Diplomatic compliments / polite flattery",
+              "furigana": "しゃこうじれい",
+              "romaji": "shakou jirei"
+            },
+            {
+              "id": "p_1",
+              "left": "間接的",
+              "right": "Indirect",
+              "furigana": "かんせつてき",
+              "romaji": "kansetsuteki"
+            },
+            {
+              "id": "p_2",
+              "left": "角を立てない",
+              "right": "Avoiding unnecessary friction",
+              "furigana": "かどをたてない",
+              "romaji": "kado o tatenai"
+            },
+            {
+              "id": "p_3",
+              "left": "義理",
+              "right": "Sense of duty / social obligation",
+              "furigana": "ぎり",
+              "romaji": "giri"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u27_l15_8",
+          "type": "dialogue",
+          "prompt": "空気を読むについてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "空気を読むについてどう思われますか？",
+          "furigana": "空気を読むについてどう思われますか？",
+          "romaji": "kuuki o yomu ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Reading the unspoken atmosphere?",
+          "audioText": "空気を読むについてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    }
+  ],
+  "revisionGate": {
+    "id": "gate_unit_27",
+    "unitId": "unit_27",
+    "title": "Unit 27 Mastery Checkpoint",
+    "titleJp": "第27週 総復習テスト",
+    "requiredScorePercent": 80,
+    "items": [
+      {
+        "id": "u27_l1_1",
+        "type": "listen",
+        "prompt": "本音",
+        "furigana": "ほんね",
+        "romaji": "honne",
+        "english": "Real intentions / private opinion",
+        "audioText": "ほんね",
+        "options": [
+          "Confirming Spirit of collective harmony",
+          "Confirming Modesty / self-effacement",
+          "Confirming Real intentions / private opinion",
+          "Real intentions / private opinion"
+        ],
+        "correctAnswer": "Real intentions / private opinion"
+      },
+      {
+        "id": "u27_l1_2",
+        "type": "spell",
+        "prompt": "本音",
+        "furigana": "ほんね",
+        "romaji": "honne",
+        "english": "Build 'Real intentions / private opinion'",
+        "audioText": "ほんね",
+        "tileBank": [
+          "そ",
+          "く",
+          "ね",
+          "ほ",
+          "ら",
+          "ん",
+          "な",
+          "け"
+        ],
+        "correctAnswer": "ほんね"
+      },
+      {
+        "id": "u27_l3_1",
+        "type": "listen",
+        "prompt": "社交辞令",
+        "furigana": "しゃこうじれい",
+        "romaji": "shakou jirei",
+        "english": "Diplomatic compliments / polite flattery",
+        "audioText": "しゃこうじれい",
+        "options": [
+          "Behind-the-scenes consensus building",
+          "Confirming Real intentions / private opinion",
+          "Confirming Anticipating unspoken wishes",
+          "Diplomatic compliments / polite flattery"
+        ],
+        "correctAnswer": "Diplomatic compliments / polite flattery"
+      },
+      {
+        "id": "u27_l3_2",
+        "type": "spell",
+        "prompt": "間接的",
+        "furigana": "かんせつてき",
+        "romaji": "kansetsuteki",
+        "english": "Build 'Indirect'",
+        "audioText": "かんせつてき",
+        "tileBank": [
+          "ん",
+          "や",
+          "て",
+          "つ",
+          "き",
+          "い",
+          "か",
+          "せ"
+        ],
+        "correctAnswer": "かんせつてき"
+      },
+      {
+        "id": "u27_l5_1",
+        "type": "listen",
+        "prompt": "謙遜",
+        "furigana": "けんそん",
+        "romaji": "kenson",
+        "english": "Modesty / self-effacement",
+        "audioText": "けんそん",
+        "options": [
+          "Confirming Sense of duty / social obligation",
+          "Modesty / self-effacement",
+          "Thoughtful consideration for others",
+          "Confirming Public stance / social protocol"
+        ],
+        "correctAnswer": "Modesty / self-effacement"
+      },
+      {
+        "id": "u27_l5_2",
+        "type": "spell",
+        "prompt": "謙遜",
+        "furigana": "けんそん",
+        "romaji": "kenson",
+        "english": "Build 'Modesty / self-effacement'",
+        "audioText": "けんそん",
+        "tileBank": [
+          "ゆ",
+          "ん",
+          "け",
+          "ほ",
+          "い",
+          "ん",
+          "り",
+          "そ"
+        ],
+        "correctAnswer": "けんそん"
+      },
+      {
+        "id": "u27_l7_1",
+        "type": "listen",
+        "prompt": "和の精神の確認",
+        "furigana": "わのせいしんのかくにん",
+        "romaji": "wa no seishin no kakunin",
+        "english": "Confirming Spirit of collective harmony",
+        "audioText": "わのせいしんのかくにん",
+        "options": [
+          "Confirming Avoiding unnecessary friction",
+          "Diplomatic compliments / polite flattery",
+          "Confirming Attentiveness / care",
+          "Confirming Spirit of collective harmony"
+        ],
+        "correctAnswer": "Confirming Spirit of collective harmony"
+      },
+      {
+        "id": "u27_l7_2",
+        "type": "spell",
+        "prompt": "和の精神の確認",
+        "furigana": "わのせいしんのかくにん",
+        "romaji": "wa no seishin no kakunin",
+        "english": "Build 'Confirming Spirit of collective harmony'",
+        "audioText": "わのせいしんのかくにん",
+        "tileBank": [
+          "の",
+          "し",
+          "か",
+          "ん",
+          "の",
+          "わ",
+          "せ",
+          "い"
+        ],
+        "correctAnswer": "わのせいしんのかくにん"
+      },
+      {
+        "id": "u27_l9_1",
+        "type": "listen",
+        "prompt": "義理の確認",
+        "furigana": "ぎりのかくにん",
+        "romaji": "giri no kakunin",
+        "english": "Confirming Sense of duty / social obligation",
+        "audioText": "ぎりのかくにん",
+        "options": [
+          "Confirming Behind-the-scenes consensus building",
+          "Sense of duty / social obligation",
+          "Confirming Public stance / social protocol",
+          "Confirming Sense of duty / social obligation"
+        ],
+        "correctAnswer": "Confirming Sense of duty / social obligation"
+      },
+      {
+        "id": "u27_l9_2",
+        "type": "spell",
+        "prompt": "義理の確認",
+        "furigana": "ぎりのかくにん",
+        "romaji": "giri no kakunin",
+        "english": "Build 'Confirming Sense of duty / social obligation'",
+        "audioText": "ぎりのかくにん",
+        "tileBank": [
+          "ぎ",
+          "ん",
+          "の",
+          "か",
+          "く",
+          "へ",
+          "り",
+          "に"
+        ],
+        "correctAnswer": "ぎりのかくにん"
+      },
+      {
+        "id": "u27_l11_1",
+        "type": "listen",
+        "prompt": "本音の確認",
+        "furigana": "ほんねのかくにん",
+        "romaji": "honne no kakunin",
+        "english": "Confirming Real intentions / private opinion",
+        "audioText": "ほんねのかくにん",
+        "options": [
+          "Diplomatic compliments / polite flattery",
+          "Confirming Anticipating unspoken wishes",
+          "Confirming Reading the unspoken atmosphere",
+          "Confirming Real intentions / private opinion"
+        ],
+        "correctAnswer": "Confirming Real intentions / private opinion"
+      },
+      {
+        "id": "u27_l11_2",
+        "type": "spell",
+        "prompt": "本音の確認",
+        "furigana": "ほんねのかくにん",
+        "romaji": "honne no kakunin",
+        "english": "Build 'Confirming Real intentions / private opinion'",
+        "audioText": "ほんねのかくにん",
+        "tileBank": [
+          "に",
+          "ん",
+          "ん",
+          "ほ",
+          "く",
+          "の",
+          "ね",
+          "か"
+        ],
+        "correctAnswer": "ほんねのかくにん"
+      }
+    ]
+  }
+};

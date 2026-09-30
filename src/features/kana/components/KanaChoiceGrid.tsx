@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { radii, shadows, spacing, useAppTheme } from '../../../core/theme';
+import { speakJapanese } from '../../../core/audio/tts';
 
 interface KanaChoiceGridProps {
   options: string[];
@@ -23,6 +24,7 @@ export function KanaChoiceGrid({
   const handlePress = (option: string) => {
     if (disabled || revealed) return;
 
+    speakJapanese(option).catch(() => {});
     setSelectedOption(option);
     setRevealed(true);
     const isCorrect = option === correctAnswer;

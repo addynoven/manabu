@@ -14,7 +14,7 @@ import { LessonDrawerModal } from '../components/LessonDrawerModal';
 import { LessonSessionModal } from '../components/LessonSessionModal';
 import { RevisionGateModal } from '../components/RevisionGateModal';
 import { CURATED_DOJO_UNITS } from '../data/curatedUnits';
-import type { DojoLesson, DojoUnit } from '../models/dojo.model';
+import type { DojoLesson, DojoUnit, LessonItem } from '../models/dojo.model';
 import { useDojoStore } from '../store/useDojoStore';
 
 export function DojoScreen() {
@@ -36,8 +36,6 @@ export function DojoScreen() {
   // Expanded units map (Unit 1 open by default)
   const [expandedUnits, setExpandedUnits] = useState<Record<string, boolean>>({
     unit_1: true,
-    unit_2: false,
-    unit_3: false,
   });
 
   const toggleUnitExpand = (unitId: string) => {
@@ -92,13 +90,50 @@ export function DojoScreen() {
     passRevisionGate(unit.id);
   };
 
+  const handleLaunchEarlyUnlock = (targetLesson: DojoLesson) => {
+    // Collect revision items from completed lessons
+    const pool: LessonItem[] = [];
+    for (const unit of CURATED_DOJO_UNITS) {
+      for (const lesson of unit.lessons) {
+        if (completedLessons[lesson.id]) {
+          pool.push(...lesson.items);
+        }
+      }
+    }
+
+    if (pool.length < 3) {
+      pool.push(...CURATED_DOJO_UNITS[0].lessons[0].items);
+    }
+
+    const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, 3);
+
+    const syntheticLesson: DojoLesson = {
+      id: `early_unlock_${targetLesson.id}`,
+      unitId: targetLesson.unitId,
+      lessonNumber: targetLesson.lessonNumber,
+      dayNumber: targetLesson.dayNumber,
+      category: 'Practice',
+      title: `Revision: Unlock Lesson ${targetLesson.lessonNumber}`,
+      titleJp: '早期解除テスト',
+      summary: `Pass this revision re-test to bypass cooldown and unlock ${targetLesson.title}`,
+      vocabKeywords: targetLesson.vocabKeywords,
+      kanjiKeywords: targetLesson.kanjiKeywords,
+      items: shuffled,
+    };
+
+    setDrawerOpen(false);
+    setSessionLesson(syntheticLesson);
+    setSessionMode('comprehensive');
+    setSessionActive(true);
+  };
+
   return (
     <View style={[styles.container, { backgroundColor: theme.background, paddingTop: insets.top }]}>
       {/* Dojo Top Header with Floating Kana and Kanji Badges */}
       <View style={[styles.header, { backgroundColor: theme.surface, borderBottomColor: theme.border }]}>
         <View style={styles.headerLeft}>
           <Text style={[styles.title, { color: theme.textPrimary }]}>MANABU DOJO</Text>
-          <Text style={[styles.subtitle, { color: theme.textSecondary }]}>道場 • N5 Curriculum</Text>
+          <Text style={[styles.subtitle, { color: theme.textSecondary }]}>道場 • 30-Week Master Curriculum (N5 - N1)</Text>
         </View>
 
         {/* Floating Badges [あ Kana] [漢 Kanji] */}
@@ -154,6 +189,7 @@ export function DojoScreen() {
         lesson={selectedLesson}
         onClose={() => setDrawerOpen(false)}
         onLaunchMode={handleLaunchMode}
+        onLaunchEarlyUnlock={handleLaunchEarlyUnlock}
       />
 
       {/* Revision Gate Modal */}

@@ -24,7 +24,14 @@ import type { DojoLesson, LessonItem } from '../models/dojo.model';
 import { speakJapanese } from '../../../core/audio/tts';
 import { useDojoStore } from '../store/useDojoStore';
 import { useProgressStore } from '../../progress/store/useProgressStore';
+import * as wanakana from 'wanakana';
 import { SpellingExerciseView, type TileItem } from './SpellingExerciseView';
+import { ClozeExerciseView } from './ClozeExerciseView';
+import { ScrambleExerciseView } from './ScrambleExerciseView';
+import { MatchingPairsView } from './MatchingPairsView';
+import { DialogueChatView } from './DialogueChatView';
+import { SpeechDrillView } from './SpeechDrillView';
+import { DictationExerciseView } from './DictationExerciseView';
 
 interface LessonSessionModalProps {
   visible: boolean;
@@ -47,6 +54,7 @@ function LessonSessionContent({
   const insets = useSafeAreaInsets();
   const { colors: theme } = useAppTheme();
   const completeLesson = useDojoStore(state => state.completeLesson);
+  const clearCooldown = useDojoStore(state => state.clearCooldown);
   const recordAnswer = useProgressStore(state => state.recordAnswer);
 
   const initialItems = useMemo(() => {
@@ -60,6 +68,9 @@ function LessonSessionContent({
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [assembledTiles, setAssembledTiles] = useState<TileItem[]>([]);
   const [directInput, setDirectInput] = useState<string>('');
+  const [assembledTokens, setAssembledTokens] = useState<string[]>([]);
+  const [allMatched, setAllMatched] = useState(false);
+  const [speechRecorded, setSpeechRecorded] = useState(false);
   const [evaluation, setEvaluation] = useState<'correct' | 'incorrect' | null>(null);
   const [isCompleted, setIsCompleted] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
@@ -85,8 +96,26 @@ function LessonSessionContent({
     let isCorrect = false;
 
     if (currentItem.type === 'spell') {
-      const spelled = directInput.trim() || assembledTiles.map(t => t.char).join('');
-      isCorrect = spelled === currentItem.correctAnswer;
+      const inputTrimmed = directInput.trim();
+      const inputKana = inputTrimmed ? wanakana.toHiragana(inputTrimmed) : '';
+      const spelled = inputKana || assembledTiles.map(t => t.char).join('');
+      isCorrect = spelled === currentItem.correctAnswer || inputTrimmed === currentItem.correctAnswer;
+    } else if (currentItem.type === 'cloze' || currentItem.type === 'cloze_context') {
+      isCorrect = selectedOption === currentItem.correctAnswer || selectedOption === currentItem.clozeTarget;
+    } else if (currentItem.type === 'scramble') {
+      const assembledStr = assembledTokens.join('');
+      const solutionStr = (currentItem.scrambleSolution || []).join('') || currentItem.correctAnswer;
+      isCorrect = assembledStr === solutionStr;
+    } else if (currentItem.type === 'match') {
+      isCorrect = allMatched;
+    } else if (currentItem.type === 'dialogue') {
+      isCorrect = selectedOption === currentItem.correctAnswer;
+    } else if (currentItem.type === 'speak') {
+      isCorrect = speechRecorded;
+    } else if (currentItem.type === 'dictate') {
+      const assembledStr = assembledTokens.join('');
+      const solutionStr = (currentItem.dictateSolution || []).join('') || currentItem.correctAnswer;
+      isCorrect = assembledStr === solutionStr;
     } else {
       isCorrect = selectedOption === currentItem.correctAnswer;
     }
@@ -116,13 +145,20 @@ function LessonSessionContent({
     setSelectedOption(null);
     setAssembledTiles([]);
     setDirectInput('');
+    setAssembledTokens([]);
+    setAllMatched(false);
+    setSpeechRecorded(false);
     setEvaluation(null);
 
     // If queue is now empty (was last item and correct)
     if (queue.length === 1 && evaluation === 'correct') {
       setIsCompleted(true);
       const finalScore = Math.round((correctCount / Math.max(1, totalInitial)) * 100);
-      completeLesson(lesson.id, finalScore);
+      if (lesson.id.startsWith('early_unlock_')) {
+        clearCooldown();
+      } else {
+        completeLesson(lesson.id, finalScore);
+      }
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
     }
   };
@@ -184,14 +220,22 @@ function LessonSessionContent({
             <View style={[styles.completeIconCircle, { backgroundColor: theme.primaryLight }]}>
               <Sparkles size={54} color={theme.primary} />
             </View>
-            <Text style={[styles.completeTitle, { color: theme.textPrimary }]}>Lesson Complete!</Text>
+            <Text style={[styles.completeTitle, { color: theme.textPrimary }]}>
+              {lesson.id.startsWith('early_unlock_') ? 'Cooldown Cleared!' : 'Lesson Complete!'}
+            </Text>
             <Text style={[styles.completeSub, { color: theme.textSecondary }]}>
-              {lesson.title} • {lesson.titleJp}
+              {lesson.id.startsWith('early_unlock_')
+                ? 'Revision re-test passed! The next lesson is now unlocked.'
+                : `${lesson.title} • ${lesson.titleJp}`}
             </Text>
 
             <View style={[styles.xpCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-              <Text style={[styles.xpValue, { color: theme.primary }]}>+50 XP</Text>
-              <Text style={[styles.xpLabel, { color: theme.textSecondary }]}>Mastery Gained</Text>
+              <Text style={[styles.xpValue, { color: lesson.id.startsWith('early_unlock_') ? '#10B981' : theme.primary }]}>
+                {lesson.id.startsWith('early_unlock_') ? 'UNLOCKED' : '+50 XP'}
+              </Text>
+              <Text style={[styles.xpLabel, { color: theme.textSecondary }]}>
+                {lesson.id.startsWith('early_unlock_') ? 'Next Lesson Ready' : 'Mastery Gained'}
+              </Text>
             </View>
 
             <Pressable
@@ -216,6 +260,64 @@ function LessonSessionContent({
                 onClearLast={handleClearLastTile}
                 onDirectInputChange={setDirectInput}
                 directInputText={directInput}
+                onPlayAudio={handlePlayAudio}
+              />
+            ) : currentItem.type === 'cloze' || currentItem.type === 'cloze_context' ? (
+              <ClozeExerciseView
+                item={currentItem}
+                selectedChip={selectedOption}
+                onSelectChip={setSelectedOption}
+                onPlayAudio={handlePlayAudio}
+              />
+            ) : currentItem.type === 'scramble' ? (
+              <ScrambleExerciseView
+                item={currentItem}
+                assembledTokens={assembledTokens}
+                onAddToken={token => setAssembledTokens(prev => [...prev, token])}
+                onRemoveToken={idx => setAssembledTokens(prev => prev.filter((_, i) => i !== idx))}
+                onPlayAudio={handlePlayAudio}
+              />
+            ) : currentItem.type === 'match' ? (
+              <MatchingPairsView
+                item={currentItem}
+                onAllMatched={() => {
+                  setAllMatched(true);
+                  Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
+                  setEvaluation('correct');
+                  setCorrectCount(c => c + 1);
+                  recordAnswer(currentItem.prompt, true, 'vocab');
+                }}
+              />
+            ) : currentItem.type === 'dialogue' ? (
+              <DialogueChatView
+                item={currentItem}
+                selectedReply={selectedOption}
+                onSelectReply={setSelectedOption}
+                onPlayAudio={handlePlayAudio}
+              />
+            ) : currentItem.type === 'speak' ? (
+              <SpeechDrillView
+                item={currentItem}
+                onSpeechRecorded={_text => {
+                  setSpeechRecorded(true);
+                  setEvaluation('correct');
+                  setCorrectCount(c => c + 1);
+                  recordAnswer(currentItem.prompt, true, 'vocab');
+                }}
+                onBypassSpeech={() => {
+                  setSpeechRecorded(true);
+                  setEvaluation('correct');
+                  setCorrectCount(c => c + 1);
+                  recordAnswer(currentItem.prompt, true, 'vocab');
+                }}
+                onPlayAudio={handlePlayAudio}
+              />
+            ) : currentItem.type === 'dictate' ? (
+              <DictationExerciseView
+                item={currentItem}
+                assembledTokens={assembledTokens}
+                onAddToken={token => setAssembledTokens(prev => [...prev, token])}
+                onRemoveToken={idx => setAssembledTokens(prev => prev.filter((_, i) => i !== idx))}
                 onPlayAudio={handlePlayAudio}
               />
             ) : (
@@ -264,7 +366,7 @@ function LessonSessionContent({
                   </Text>
                 </View>
 
-                {/* Multiple Choice Options (for Listen, Speak, Cloze, Dialogue) */}
+                {/* Multiple Choice Options (for Listen, Reading, Quizzes) */}
                 {currentItem.options && (
                   <View style={styles.optionsList}>
                     {currentItem.options.map((opt, idx) => {
@@ -350,10 +452,21 @@ function LessonSessionContent({
           /* Bottom Check Button Bar */
           <View style={[styles.bottomActionBar, { paddingBottom: insets.bottom + 12, backgroundColor: theme.surface }]}>
             {(() => {
-              const hasAnswer =
-                currentItem.type === 'spell'
-                  ? directInput.trim().length > 0 || assembledTiles.length > 0
-                  : !!selectedOption;
+              const hasAnswer = (() => {
+                if (currentItem.type === 'spell') {
+                  return directInput.trim().length > 0 || assembledTiles.length > 0;
+                }
+                if (currentItem.type === 'scramble' || currentItem.type === 'dictate') {
+                  return assembledTokens.length > 0;
+                }
+                if (currentItem.type === 'match') {
+                  return allMatched;
+                }
+                if (currentItem.type === 'speak') {
+                  return speechRecorded;
+                }
+                return !!selectedOption;
+              })();
 
               return (
                 <Pressable

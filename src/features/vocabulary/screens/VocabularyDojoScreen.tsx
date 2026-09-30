@@ -360,7 +360,7 @@ export function VocabularyDojoScreen() {
               style={[
                 styles.smallButton,
                 {
-                  backgroundColor: theme.primaryLight + '30',
+                  backgroundColor: theme.primaryLight,
                   borderColor: theme.primary,
                 },
               ]}
