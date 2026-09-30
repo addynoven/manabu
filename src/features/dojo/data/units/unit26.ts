@@ -48,10 +48,10 @@ export const unit26: DojoUnit = {
           "english": "Respectfully / humbly",
           "audioText": "つつしんで",
           "options": [
-            "Attentive listening (audience)",
-            "Confirming Honor / privilege",
-            "Respectfully / humbly",
-            "Closing / conclusion of a speech"
+            "Confirming Ceremony / official celebration",
+            "Confirming Good health (formal epistolary)",
+            "Honor / privilege",
+            "Respectfully / humbly"
           ],
           "correctAnswer": "Respectfully / humbly"
         },
@@ -64,34 +64,35 @@ export const unit26: DojoUnit = {
           "english": "Build 'Respectfully / humbly'",
           "audioText": "つつしんで",
           "tileBank": [
-            "む",
             "つ",
-            "つ",
-            "し",
-            "よ",
             "で",
             "ん",
-            "け"
+            "つ",
+            "る",
+            "な",
+            "し",
+            "さ"
           ],
           "correctAnswer": "つつしんで"
         },
         {
           "id": "u26_l1_3",
           "type": "cloze",
-          "prompt": "私はお慶びがすきです",
-          "furigana": "わたしはおよろこびがすきです",
-          "romaji": "Watashi wa oyorokobi ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Heartfelt congratulations.",
-          "audioText": "お慶び",
-          "clozeSentence": "これはお慶び {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なお慶びです。",
+          "furigana": "これはいちばんたいせつなおよろこびです。",
+          "romaji": "Kore wa ichiban taisetsu na oyorokobi desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Heartfelt congratulations.",
+          "audioText": "これはお慶びです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なお慶びです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l1_4",
@@ -102,11 +103,11 @@ export const unit26: DojoUnit = {
           "english": "This is Heartfelt congratulations.",
           "audioText": "これはお慶びです",
           "scrambleTokens": [
-            "です",
-            "それ",
             "ではありません",
             "これは",
-            "お慶び"
+            "お慶び",
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -135,24 +136,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l1_6",
           "type": "dictate",
-          "prompt": "栄誉をお願いします",
-          "furigana": "えいよをおねがいします",
-          "romaji": "eiyo o onegaishimasu.",
-          "english": "Honor / prestige, please.",
-          "audioText": "栄誉をお願いします",
+          "prompt": "栄誉です",
+          "furigana": "えいよです",
+          "romaji": "eiyo desu.",
+          "english": "It is Honor / prestige.",
+          "audioText": "栄誉です",
           "dictateTokens": [
-            "です",
             "栄誉",
-            "ありがとう",
-            "を",
-            "お願いします"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "栄誉",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "栄誉をお願いします"
+          "correctAnswer": "栄誉です"
         },
         {
           "id": "u26_l1_7",
@@ -254,10 +253,10 @@ export const unit26: DojoUnit = {
           "english": "Honor / privilege",
           "audioText": "こうえい",
           "options": [
-            "Respectfully / humbly",
-            "Honor / privilege",
-            "Good health (formal epistolary)",
-            "Confirming Good health (formal epistolary)"
+            "Confirming Closing / conclusion of a speech",
+            "Confirming Ceremony / official celebration",
+            "Confirming Respectfully / humbly",
+            "Honor / privilege"
           ],
           "correctAnswer": "Honor / privilege"
         },
@@ -270,34 +269,35 @@ export const unit26: DojoUnit = {
           "english": "Build 'Honor / privilege'",
           "audioText": "こうえい",
           "tileBank": [
-            "き",
-            "な",
-            "し",
-            "こ",
             "う",
-            "を",
+            "て",
+            "こ",
             "え",
-            "い"
+            "め",
+            "ん",
+            "い",
+            "す"
           ],
           "correctAnswer": "こうえい"
         },
         {
           "id": "u26_l2_3",
           "type": "cloze",
-          "prompt": "私は式典がすきです",
-          "furigana": "わたしはしきてんがすきです",
-          "romaji": "Watashi wa shikiten ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Ceremony / official celebration.",
-          "audioText": "式典",
-          "clozeSentence": "これは式典 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な式典です。",
+          "furigana": "これはいちばんたいせつなしきてんです。",
+          "romaji": "Kore wa ichiban taisetsu na shikiten desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Ceremony / official celebration.",
+          "audioText": "これは式典です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な式典です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l2_4",
@@ -308,11 +308,11 @@ export const unit26: DojoUnit = {
           "english": "This is Ceremony / official celebration.",
           "audioText": "これは式典です",
           "scrambleTokens": [
-            "です",
             "ではありません",
-            "それ",
             "式典",
-            "これは"
+            "です",
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -341,24 +341,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l2_6",
           "type": "dictate",
-          "prompt": "祝辞をお願いします",
-          "furigana": "しゅくじをおねがいします",
-          "romaji": "shukuji o onegaishimasu.",
-          "english": "Congratulatory address, please.",
-          "audioText": "祝辞をお願いします",
+          "prompt": "祝辞です",
+          "furigana": "しゅくじです",
+          "romaji": "shukuji desu.",
+          "english": "It is Congratulatory address.",
+          "audioText": "祝辞です",
           "dictateTokens": [
-            "お願いします",
-            "祝辞",
             "です",
-            "を",
-            "ありがとう"
+            "ではありません",
+            "祝辞",
+            "これ"
           ],
           "dictateSolution": [
             "祝辞",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "祝辞をお願いします"
+          "correctAnswer": "祝辞です"
         },
         {
           "id": "u26_l2_7",
@@ -460,10 +458,10 @@ export const unit26: DojoUnit = {
           "english": "Words of thanks / appreciation",
           "audioText": "かんしゃのじ",
           "options": [
-            "Confirming Closing / conclusion of a speech",
+            "Respectfully / humbly",
             "Words of thanks / appreciation",
             "Extremely obliged / apologetic",
-            "Closing / conclusion of a speech"
+            "Proposing the official toast"
           ],
           "correctAnswer": "Words of thanks / appreciation"
         },
@@ -476,34 +474,35 @@ export const unit26: DojoUnit = {
           "english": "Build 'Words of thanks / appreciation'",
           "audioText": "かんしゃのじ",
           "tileBank": [
-            "か",
-            "さ",
-            "し",
-            "じ",
-            "な",
             "ん",
-            "ゃ",
-            "の"
+            "か",
+            "う",
+            "よ",
+            "じ",
+            "の",
+            "し",
+            "ゃ"
           ],
           "correctAnswer": "かんしゃのじ"
         },
         {
           "id": "u26_l3_3",
           "type": "cloze",
-          "prompt": "私は甚だがすきです",
-          "furigana": "わたしははなはだがすきです",
-          "romaji": "Watashi wa hanahada ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Extremely / exceedingly (formal).",
-          "audioText": "甚だ",
-          "clozeSentence": "これは甚だ {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な甚だです。",
+          "furigana": "これはいちばんたいせつなはなはだです。",
+          "romaji": "Kore wa ichiban taisetsu na hanahada desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Extremely / exceedingly (formal).",
+          "audioText": "これは甚だです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な甚だです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l3_4",
@@ -515,10 +514,10 @@ export const unit26: DojoUnit = {
           "audioText": "これは甚だです",
           "scrambleTokens": [
             "それ",
-            "これは",
+            "甚だ",
             "です",
-            "ではありません",
-            "甚だ"
+            "これは",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -547,24 +546,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l3_6",
           "type": "dictate",
-          "prompt": "恐縮をお願いします",
-          "furigana": "きょうしゅくをおねがいします",
-          "romaji": "kyoushuku o onegaishimasu.",
-          "english": "Extremely obliged / apologetic, please.",
-          "audioText": "恐縮をお願いします",
+          "prompt": "恐縮です",
+          "furigana": "きょうしゅくです",
+          "romaji": "kyoushuku desu.",
+          "english": "It is Extremely obliged / apologetic.",
+          "audioText": "恐縮です",
           "dictateTokens": [
             "です",
-            "を",
-            "お願いします",
+            "ではありません",
             "恐縮",
-            "ありがとう"
+            "これ"
           ],
           "dictateSolution": [
             "恐縮",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "恐縮をお願いします"
+          "correctAnswer": "恐縮です"
         },
         {
           "id": "u26_l3_7",
@@ -666,9 +663,9 @@ export const unit26: DojoUnit = {
           "english": "Good health (formal epistolary)",
           "audioText": "けんしょう",
           "options": [
-            "Confirming Words of thanks / appreciation",
             "Good health (formal epistolary)",
-            "Confirming Heartfelt congratulations",
+            "Extremely / exceedingly (formal)",
+            "Proposing the official toast",
             "Confirming Respectfully / humbly"
           ],
           "correctAnswer": "Good health (formal epistolary)"
@@ -682,26 +679,26 @@ export const unit26: DojoUnit = {
           "english": "Build 'Good health (formal epistolary)'",
           "audioText": "けんしょう",
           "tileBank": [
-            "う",
-            "む",
-            "ょ",
-            "け",
             "し",
-            "ふ",
+            "ょ",
+            "う",
+            "い",
             "ん",
-            "す"
+            "そ",
+            "き",
+            "け"
           ],
           "correctAnswer": "けんしょう"
         },
         {
           "id": "u26_l4_3",
           "type": "cloze",
-          "prompt": "私は発展がすきです",
-          "furigana": "わたしははってんがすきです",
-          "romaji": "Watashi wa hatten ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Prosperity / advancement.",
-          "audioText": "発展",
-          "clozeSentence": "これは発展 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な発展です。",
+          "furigana": "これはいちばんたいせつなはってんです。",
+          "romaji": "Kore wa ichiban taisetsu na hatten desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Prosperity / advancement.",
+          "audioText": "これは発展です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な発展です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -709,7 +706,8 @@ export const unit26: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l4_4",
@@ -720,11 +718,11 @@ export const unit26: DojoUnit = {
           "english": "This is Prosperity / advancement.",
           "audioText": "これは発展です",
           "scrambleTokens": [
+            "です",
             "それ",
-            "ではありません",
             "これは",
             "発展",
-            "です"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -753,24 +751,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l4_6",
           "type": "dictate",
-          "prompt": "祈念をお願いします",
-          "furigana": "きねんをおねがいします",
-          "romaji": "kinen o onegaishimasu.",
-          "english": "Praying / wishing for, please.",
-          "audioText": "祈念をお願いします",
+          "prompt": "祈念です",
+          "furigana": "きねんです",
+          "romaji": "kinen desu.",
+          "english": "It is Praying / wishing for.",
+          "audioText": "祈念です",
           "dictateTokens": [
-            "です",
-            "お願いします",
             "祈念",
-            "ありがとう",
-            "を"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "祈念",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "祈念をお願いします"
+          "correctAnswer": "祈念です"
         },
         {
           "id": "u26_l4_7",
@@ -873,10 +869,10 @@ export const unit26: DojoUnit = {
           "english": "Attentive listening (audience)",
           "audioText": "ごせいちょう",
           "options": [
-            "Praying / wishing for",
-            "Extremely / exceedingly (formal)",
+            "Confirming Honor / prestige",
             "Confirming Honor / privilege",
-            "Attentive listening (audience)"
+            "Attentive listening (audience)",
+            "Prosperity / advancement"
           ],
           "correctAnswer": "Attentive listening (audience)"
         },
@@ -890,33 +886,34 @@ export const unit26: DojoUnit = {
           "audioText": "ごせいちょう",
           "tileBank": [
             "い",
-            "と",
-            "ご",
             "せ",
-            "ち",
-            "う",
+            "ご",
             "ょ",
-            "ろ"
+            "ま",
+            "け",
+            "ち",
+            "う"
           ],
           "correctAnswer": "ごせいちょう"
         },
         {
           "id": "u26_l5_3",
           "type": "cloze",
-          "prompt": "私は乾杯の音頭がすきです",
-          "furigana": "わたしはかんぱいのおんどがすきです",
-          "romaji": "Watashi wa kanpai no ondo ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Proposing the official toast.",
-          "audioText": "乾杯の音頭",
-          "clozeSentence": "これは乾杯の音頭 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な乾杯の音頭です。",
+          "furigana": "これはいちばんたいせつなかんぱいのおんどです。",
+          "romaji": "Kore wa ichiban taisetsu na kanpai no ondo desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Proposing the official toast.",
+          "audioText": "これは乾杯の音頭です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な乾杯の音頭です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l5_4",
@@ -927,11 +924,11 @@ export const unit26: DojoUnit = {
           "english": "This is Proposing the official toast.",
           "audioText": "これは乾杯の音頭です",
           "scrambleTokens": [
-            "です",
-            "乾杯の音頭",
             "これは",
             "ではありません",
-            "それ"
+            "です",
+            "それ",
+            "乾杯の音頭"
           ],
           "scrambleSolution": [
             "これは",
@@ -960,24 +957,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l5_6",
           "type": "dictate",
-          "prompt": "結びをお願いします",
-          "furigana": "むすびをおねがいします",
-          "romaji": "musubi o onegaishimasu.",
-          "english": "Closing / conclusion of a speech, please.",
-          "audioText": "結びをお願いします",
+          "prompt": "結びです",
+          "furigana": "むすびです",
+          "romaji": "musubi desu.",
+          "english": "It is Closing / conclusion of a speech.",
+          "audioText": "結びです",
           "dictateTokens": [
-            "です",
-            "ありがとう",
+            "ではありません",
             "結び",
-            "お願いします",
-            "を"
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "結び",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "結びをお願いします"
+          "correctAnswer": "結びです"
         },
         {
           "id": "u26_l5_7",
@@ -1083,10 +1078,10 @@ export const unit26: DojoUnit = {
           "english": "Confirming Respectfully / humbly",
           "audioText": "つつしんでのかくにん",
           "options": [
-            "Extremely / exceedingly (formal)",
-            "Heartfelt congratulations",
-            "Confirming Praying / wishing for",
-            "Confirming Respectfully / humbly"
+            "Confirming Words of thanks / appreciation",
+            "Confirming Respectfully / humbly",
+            "Closing / conclusion of a speech",
+            "Honor / prestige"
           ],
           "correctAnswer": "Confirming Respectfully / humbly"
         },
@@ -1099,13 +1094,13 @@ export const unit26: DojoUnit = {
           "english": "Build 'Confirming Respectfully / humbly'",
           "audioText": "つつしんでのかくにん",
           "tileBank": [
-            "ん",
-            "く",
-            "か",
-            "つ",
-            "つ",
             "の",
             "し",
+            "つ",
+            "か",
+            "つ",
+            "く",
+            "ん",
             "で"
           ],
           "correctAnswer": "つつしんでのかくにん"
@@ -1113,20 +1108,21 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l6_3",
           "type": "cloze",
-          "prompt": "私はお慶びの確認がすきです",
-          "furigana": "わたしはおよろこびのかくにんがすきです",
-          "romaji": "Watashi wa oyorokobi no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Heartfelt congratulations.",
-          "audioText": "お慶びの確認",
-          "clozeSentence": "これはお慶びの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なお慶びの確認です。",
+          "furigana": "これはいちばんたいせつなおよろこびのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na oyorokobi no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Heartfelt congratulations.",
+          "audioText": "これはお慶びの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なお慶びの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l6_4",
@@ -1137,10 +1133,10 @@ export const unit26: DojoUnit = {
           "english": "This is Confirming Heartfelt congratulations.",
           "audioText": "これはお慶びの確認です",
           "scrambleTokens": [
-            "ではありません",
-            "です",
-            "お慶びの確認",
             "これは",
+            "です",
+            "ではありません",
+            "お慶びの確認",
             "それ"
           ],
           "scrambleSolution": [
@@ -1170,24 +1166,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l6_6",
           "type": "dictate",
-          "prompt": "栄誉の確認をお願いします",
-          "furigana": "えいよのかくにんをおねがいします",
-          "romaji": "eiyo no kakunin o onegaishimasu.",
-          "english": "Confirming Honor / prestige, please.",
-          "audioText": "栄誉の確認をお願いします",
+          "prompt": "栄誉の確認です",
+          "furigana": "えいよのかくにんです",
+          "romaji": "eiyo no kakunin desu.",
+          "english": "It is Confirming Honor / prestige.",
+          "audioText": "栄誉の確認です",
           "dictateTokens": [
-            "栄誉の確認",
             "です",
-            "ありがとう",
-            "を",
-            "お願いします"
+            "これ",
+            "栄誉の確認",
+            "ではありません"
           ],
           "dictateSolution": [
             "栄誉の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "栄誉の確認をお願いします"
+          "correctAnswer": "栄誉の確認です"
         },
         {
           "id": "u26_l6_7",
@@ -1295,9 +1289,9 @@ export const unit26: DojoUnit = {
           "english": "Confirming Honor / privilege",
           "audioText": "こうえいのかくにん",
           "options": [
-            "Confirming Proposing the official toast",
-            "Confirming Good health (formal epistolary)",
-            "Confirming Ceremony / official celebration",
+            "Good health (formal epistolary)",
+            "Confirming Heartfelt congratulations",
+            "Confirming Closing / conclusion of a speech",
             "Confirming Honor / privilege"
           ],
           "correctAnswer": "Confirming Honor / privilege"
@@ -1311,34 +1305,35 @@ export const unit26: DojoUnit = {
           "english": "Build 'Confirming Honor / privilege'",
           "audioText": "こうえいのかくにん",
           "tileBank": [
-            "の",
-            "に",
-            "い",
-            "う",
-            "こ",
             "く",
+            "い",
+            "の",
             "え",
-            "か"
+            "こ",
+            "に",
+            "か",
+            "う"
           ],
           "correctAnswer": "こうえいのかくにん"
         },
         {
           "id": "u26_l7_3",
           "type": "cloze",
-          "prompt": "私は式典の確認がすきです",
-          "furigana": "わたしはしきてんのかくにんがすきです",
-          "romaji": "Watashi wa shikiten no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Ceremony / official celebration.",
-          "audioText": "式典の確認",
-          "clozeSentence": "これは式典の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な式典の確認です。",
+          "furigana": "これはいちばんたいせつなしきてんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shikiten no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Ceremony / official celebration.",
+          "audioText": "これは式典の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な式典の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l7_4",
@@ -1349,11 +1344,11 @@ export const unit26: DojoUnit = {
           "english": "This is Confirming Ceremony / official celebration.",
           "audioText": "これは式典の確認です",
           "scrambleTokens": [
-            "です",
-            "ではありません",
-            "これは",
+            "式典の確認",
             "それ",
-            "式典の確認"
+            "です",
+            "これは",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1382,24 +1377,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l7_6",
           "type": "dictate",
-          "prompt": "祝辞の確認をお願いします",
-          "furigana": "しゅくじのかくにんをおねがいします",
-          "romaji": "shukuji no kakunin o onegaishimasu.",
-          "english": "Confirming Congratulatory address, please.",
-          "audioText": "祝辞の確認をお願いします",
+          "prompt": "祝辞の確認です",
+          "furigana": "しゅくじのかくにんです",
+          "romaji": "shukuji no kakunin desu.",
+          "english": "It is Confirming Congratulatory address.",
+          "audioText": "祝辞の確認です",
           "dictateTokens": [
+            "これ",
             "です",
-            "お願いします",
-            "を",
-            "祝辞の確認",
-            "ありがとう"
+            "ではありません",
+            "祝辞の確認"
           ],
           "dictateSolution": [
             "祝辞の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "祝辞の確認をお願いします"
+          "correctAnswer": "祝辞の確認です"
         },
         {
           "id": "u26_l7_7",
@@ -1507,10 +1500,10 @@ export const unit26: DojoUnit = {
           "english": "Confirming Words of thanks / appreciation",
           "audioText": "かんしゃのじのかくにん",
           "options": [
-            "Confirming Congratulatory address",
-            "Confirming Ceremony / official celebration",
-            "Confirming Good health (formal epistolary)",
-            "Confirming Words of thanks / appreciation"
+            "Congratulatory address",
+            "Confirming Words of thanks / appreciation",
+            "Confirming Heartfelt congratulations",
+            "Respectfully / humbly"
           ],
           "correctAnswer": "Confirming Words of thanks / appreciation"
         },
@@ -1523,26 +1516,26 @@ export const unit26: DojoUnit = {
           "english": "Build 'Confirming Words of thanks / appreciation'",
           "audioText": "かんしゃのじのかくにん",
           "tileBank": [
-            "し",
+            "の",
+            "ん",
             "か",
-            "の",
-            "の",
             "ゃ",
             "じ",
+            "し",
             "か",
-            "ん"
+            "の"
           ],
           "correctAnswer": "かんしゃのじのかくにん"
         },
         {
           "id": "u26_l8_3",
           "type": "cloze",
-          "prompt": "私は甚だの確認がすきです",
-          "furigana": "わたしははなはだのかくにんがすきです",
-          "romaji": "Watashi wa hanahada no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Extremely / exceedingly (formal).",
-          "audioText": "甚だの確認",
-          "clozeSentence": "これは甚だの確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な甚だの確認です。",
+          "furigana": "これはいちばんたいせつなはなはだのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na hanahada no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Extremely / exceedingly (formal).",
+          "audioText": "これは甚だの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な甚だの確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1550,7 +1543,8 @@ export const unit26: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l8_4",
@@ -1561,11 +1555,11 @@ export const unit26: DojoUnit = {
           "english": "This is Confirming Extremely / exceedingly (formal).",
           "audioText": "これは甚だの確認です",
           "scrambleTokens": [
+            "です",
+            "甚だの確認",
             "それ",
             "ではありません",
-            "甚だの確認",
-            "これは",
-            "です"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1594,24 +1588,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l8_6",
           "type": "dictate",
-          "prompt": "恐縮の確認をお願いします",
-          "furigana": "きょうしゅくのかくにんをおねがいします",
-          "romaji": "kyoushuku no kakunin o onegaishimasu.",
-          "english": "Confirming Extremely obliged / apologetic, please.",
-          "audioText": "恐縮の確認をお願いします",
+          "prompt": "恐縮の確認です",
+          "furigana": "きょうしゅくのかくにんです",
+          "romaji": "kyoushuku no kakunin desu.",
+          "english": "It is Confirming Extremely obliged / apologetic.",
+          "audioText": "恐縮の確認です",
           "dictateTokens": [
-            "お願いします",
-            "です",
             "恐縮の確認",
-            "を",
-            "ありがとう"
+            "これ",
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "恐縮の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "恐縮の確認をお願いします"
+          "correctAnswer": "恐縮の確認です"
         },
         {
           "id": "u26_l8_7",
@@ -1719,10 +1711,10 @@ export const unit26: DojoUnit = {
           "english": "Confirming Good health (formal epistolary)",
           "audioText": "けんしょうのかくにん",
           "options": [
-            "Confirming Words of thanks / appreciation",
-            "Confirming Heartfelt congratulations",
+            "Confirming Honor / privilege",
+            "Confirming Ceremony / official celebration",
             "Confirming Good health (formal epistolary)",
-            "Good health (formal epistolary)"
+            "Confirming Heartfelt congratulations"
           ],
           "correctAnswer": "Confirming Good health (formal epistolary)"
         },
@@ -1735,34 +1727,35 @@ export const unit26: DojoUnit = {
           "english": "Build 'Confirming Good health (formal epistolary)'",
           "audioText": "けんしょうのかくにん",
           "tileBank": [
-            "し",
-            "く",
-            "う",
-            "か",
             "ょ",
-            "け",
             "の",
-            "ん"
+            "け",
+            "か",
+            "う",
+            "し",
+            "ん",
+            "く"
           ],
           "correctAnswer": "けんしょうのかくにん"
         },
         {
           "id": "u26_l9_3",
           "type": "cloze",
-          "prompt": "私は発展の確認がすきです",
-          "furigana": "わたしははってんのかくにんがすきです",
-          "romaji": "Watashi wa hatten no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Prosperity / advancement.",
-          "audioText": "発展の確認",
-          "clozeSentence": "これは発展の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な発展の確認です。",
+          "furigana": "これはいちばんたいせつなはってんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na hatten no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Prosperity / advancement.",
+          "audioText": "これは発展の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な発展の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l9_4",
@@ -1773,11 +1766,11 @@ export const unit26: DojoUnit = {
           "english": "This is Confirming Prosperity / advancement.",
           "audioText": "これは発展の確認です",
           "scrambleTokens": [
-            "発展の確認",
-            "ではありません",
             "それ",
             "これは",
-            "です"
+            "ではありません",
+            "です",
+            "発展の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1806,24 +1799,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l9_6",
           "type": "dictate",
-          "prompt": "祈念の確認をお願いします",
-          "furigana": "きねんのかくにんをおねがいします",
-          "romaji": "kinen no kakunin o onegaishimasu.",
-          "english": "Confirming Praying / wishing for, please.",
-          "audioText": "祈念の確認をお願いします",
+          "prompt": "祈念の確認です",
+          "furigana": "きねんのかくにんです",
+          "romaji": "kinen no kakunin desu.",
+          "english": "It is Confirming Praying / wishing for.",
+          "audioText": "祈念の確認です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "です",
-            "お願いします",
-            "祈念の確認"
+            "これ",
+            "ではありません",
+            "祈念の確認",
+            "です"
           ],
           "dictateSolution": [
             "祈念の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "祈念の確認をお願いします"
+          "correctAnswer": "祈念の確認です"
         },
         {
           "id": "u26_l9_7",
@@ -1932,10 +1923,10 @@ export const unit26: DojoUnit = {
           "english": "Confirming Attentive listening (audience)",
           "audioText": "ごせいちょうのかくにん",
           "options": [
-            "Closing / conclusion of a speech",
+            "Confirming Congratulatory address",
             "Confirming Attentive listening (audience)",
-            "Confirming Respectfully / humbly",
-            "Confirming Praying / wishing for"
+            "Confirming Words of thanks / appreciation",
+            "Words of thanks / appreciation"
           ],
           "correctAnswer": "Confirming Attentive listening (audience)"
         },
@@ -1948,34 +1939,35 @@ export const unit26: DojoUnit = {
           "english": "Build 'Confirming Attentive listening (audience)'",
           "audioText": "ごせいちょうのかくにん",
           "tileBank": [
-            "の",
+            "ち",
+            "い",
             "か",
             "ょ",
-            "ご",
-            "い",
-            "せ",
             "う",
-            "ち"
+            "ご",
+            "の",
+            "せ"
           ],
           "correctAnswer": "ごせいちょうのかくにん"
         },
         {
           "id": "u26_l10_3",
           "type": "cloze",
-          "prompt": "私は乾杯の音頭の確認がすきです",
-          "furigana": "わたしはかんぱいのおんどのかくにんがすきです",
-          "romaji": "Watashi wa kanpai no ondo no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Proposing the official toast.",
-          "audioText": "乾杯の音頭の確認",
-          "clozeSentence": "これは乾杯の音頭の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な乾杯の音頭の確認です。",
+          "furigana": "これはいちばんたいせつなかんぱいのおんどのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kanpai no ondo no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Proposing the official toast.",
+          "audioText": "これは乾杯の音頭の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な乾杯の音頭の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l10_4",
@@ -1986,11 +1978,11 @@ export const unit26: DojoUnit = {
           "english": "This is Confirming Proposing the official toast.",
           "audioText": "これは乾杯の音頭の確認です",
           "scrambleTokens": [
-            "です",
-            "乾杯の音頭の確認",
-            "ではありません",
             "それ",
-            "これは"
+            "ではありません",
+            "です",
+            "これは",
+            "乾杯の音頭の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -2019,24 +2011,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l10_6",
           "type": "dictate",
-          "prompt": "結びの確認をお願いします",
-          "furigana": "むすびのかくにんをおねがいします",
-          "romaji": "musubi no kakunin o onegaishimasu.",
-          "english": "Confirming Closing / conclusion of a speech, please.",
-          "audioText": "結びの確認をお願いします",
+          "prompt": "結びの確認です",
+          "furigana": "むすびのかくにんです",
+          "romaji": "musubi no kakunin desu.",
+          "english": "It is Confirming Closing / conclusion of a speech.",
+          "audioText": "結びの確認です",
           "dictateTokens": [
-            "を",
+            "これ",
+            "ではありません",
             "です",
-            "お願いします",
-            "ありがとう",
             "結びの確認"
           ],
           "dictateSolution": [
             "結びの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "結びの確認をお願いします"
+          "correctAnswer": "結びの確認です"
         },
         {
           "id": "u26_l10_7",
@@ -2142,9 +2132,9 @@ export const unit26: DojoUnit = {
           "english": "Confirming Respectfully / humbly",
           "audioText": "つつしんでのかくにん",
           "options": [
-            "Confirming Respectfully / humbly",
-            "Confirming Attentive listening (audience)",
             "Closing / conclusion of a speech",
+            "Confirming Congratulatory address",
+            "Confirming Respectfully / humbly",
             "Good health (formal epistolary)"
           ],
           "correctAnswer": "Confirming Respectfully / humbly"
@@ -2159,33 +2149,34 @@ export const unit26: DojoUnit = {
           "audioText": "つつしんでのかくにん",
           "tileBank": [
             "の",
-            "く",
             "し",
             "つ",
             "つ",
-            "ん",
+            "か",
+            "く",
             "で",
-            "か"
+            "ん"
           ],
           "correctAnswer": "つつしんでのかくにん"
         },
         {
           "id": "u26_l11_3",
           "type": "cloze",
-          "prompt": "私はお慶びの確認がすきです",
-          "furigana": "わたしはおよろこびのかくにんがすきです",
-          "romaji": "Watashi wa oyorokobi no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Heartfelt congratulations.",
-          "audioText": "お慶びの確認",
-          "clozeSentence": "これはお慶びの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切なお慶びの確認です。",
+          "furigana": "これはいちばんたいせつなおよろこびのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na oyorokobi no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Heartfelt congratulations.",
+          "audioText": "これはお慶びの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なお慶びの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l11_4",
@@ -2196,11 +2187,11 @@ export const unit26: DojoUnit = {
           "english": "This is Confirming Heartfelt congratulations.",
           "audioText": "これはお慶びの確認です",
           "scrambleTokens": [
+            "ではありません",
             "これは",
-            "それ",
-            "お慶びの確認",
             "です",
-            "ではありません"
+            "それ",
+            "お慶びの確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -2229,24 +2220,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l11_6",
           "type": "dictate",
-          "prompt": "栄誉の確認をお願いします",
-          "furigana": "えいよのかくにんをおねがいします",
-          "romaji": "eiyo no kakunin o onegaishimasu.",
-          "english": "Confirming Honor / prestige, please.",
-          "audioText": "栄誉の確認をお願いします",
+          "prompt": "栄誉の確認です",
+          "furigana": "えいよのかくにんです",
+          "romaji": "eiyo no kakunin desu.",
+          "english": "It is Confirming Honor / prestige.",
+          "audioText": "栄誉の確認です",
           "dictateTokens": [
             "栄誉の確認",
-            "お願いします",
-            "を",
-            "ありがとう",
-            "です"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "栄誉の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "栄誉の確認をお願いします"
+          "correctAnswer": "栄誉の確認です"
         },
         {
           "id": "u26_l11_7",
@@ -2354,10 +2343,10 @@ export const unit26: DojoUnit = {
           "english": "Confirming Honor / privilege",
           "audioText": "こうえいのかくにん",
           "options": [
-            "Confirming Words of thanks / appreciation",
+            "Confirming Ceremony / official celebration",
             "Confirming Honor / privilege",
-            "Confirming Respectfully / humbly",
-            "Confirming Heartfelt congratulations"
+            "Extremely / exceedingly (formal)",
+            "Extremely obliged / apologetic"
           ],
           "correctAnswer": "Confirming Honor / privilege"
         },
@@ -2370,26 +2359,26 @@ export const unit26: DojoUnit = {
           "english": "Build 'Confirming Honor / privilege'",
           "audioText": "こうえいのかくにん",
           "tileBank": [
-            "い",
-            "の",
-            "え",
+            "に",
             "う",
             "こ",
+            "く",
             "か",
-            "に",
-            "く"
+            "の",
+            "い",
+            "え"
           ],
           "correctAnswer": "こうえいのかくにん"
         },
         {
           "id": "u26_l12_3",
           "type": "cloze",
-          "prompt": "私は式典の確認がすきです",
-          "furigana": "わたしはしきてんのかくにんがすきです",
-          "romaji": "Watashi wa shikiten no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Ceremony / official celebration.",
-          "audioText": "式典の確認",
-          "clozeSentence": "これは式典の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な式典の確認です。",
+          "furigana": "これはいちばんたいせつなしきてんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shikiten no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Ceremony / official celebration.",
+          "audioText": "これは式典の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な式典の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2397,7 +2386,8 @@ export const unit26: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l12_4",
@@ -2408,11 +2398,11 @@ export const unit26: DojoUnit = {
           "english": "This is Confirming Ceremony / official celebration.",
           "audioText": "これは式典の確認です",
           "scrambleTokens": [
-            "です",
+            "ではありません",
             "それ",
-            "式典の確認",
+            "です",
             "これは",
-            "ではありません"
+            "式典の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -2441,24 +2431,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l12_6",
           "type": "dictate",
-          "prompt": "祝辞の確認をお願いします",
-          "furigana": "しゅくじのかくにんをおねがいします",
-          "romaji": "shukuji no kakunin o onegaishimasu.",
-          "english": "Confirming Congratulatory address, please.",
-          "audioText": "祝辞の確認をお願いします",
+          "prompt": "祝辞の確認です",
+          "furigana": "しゅくじのかくにんです",
+          "romaji": "shukuji no kakunin desu.",
+          "english": "It is Confirming Congratulatory address.",
+          "audioText": "祝辞の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "祝辞の確認",
-            "を",
-            "お願いします",
-            "です"
+            "です",
+            "ではありません",
+            "これ",
+            "祝辞の確認"
           ],
           "dictateSolution": [
             "祝辞の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "祝辞の確認をお願いします"
+          "correctAnswer": "祝辞の確認です"
         },
         {
           "id": "u26_l12_7",
@@ -2558,10 +2546,10 @@ export const unit26: DojoUnit = {
           "english": "Respectfully / humbly",
           "audioText": "つつしんで",
           "options": [
+            "Confirming Prosperity / advancement",
             "Congratulatory address",
-            "Confirming Closing / conclusion of a speech",
-            "Confirming Honor / prestige",
-            "Respectfully / humbly"
+            "Respectfully / humbly",
+            "Praying / wishing for"
           ],
           "correctAnswer": "Respectfully / humbly"
         },
@@ -2574,34 +2562,35 @@ export const unit26: DojoUnit = {
           "english": "Build 'Respectfully / humbly'",
           "audioText": "つつしんで",
           "tileBank": [
-            "ん",
-            "で",
-            "や",
-            "く",
-            "め",
             "つ",
             "し",
-            "つ"
+            "む",
+            "み",
+            "つ",
+            "で",
+            "の",
+            "ん"
           ],
           "correctAnswer": "つつしんで"
         },
         {
           "id": "u26_l13_3",
           "type": "cloze",
-          "prompt": "私はお慶びがすきです",
-          "furigana": "わたしはおよろこびがすきです",
-          "romaji": "Watashi wa oyorokobi ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Heartfelt congratulations.",
-          "audioText": "お慶び",
-          "clozeSentence": "これはお慶び {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なお慶びです。",
+          "furigana": "これはいちばんたいせつなおよろこびです。",
+          "romaji": "Kore wa ichiban taisetsu na oyorokobi desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Heartfelt congratulations.",
+          "audioText": "これはお慶びです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なお慶びです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l13_4",
@@ -2612,11 +2601,11 @@ export const unit26: DojoUnit = {
           "english": "This is Heartfelt congratulations.",
           "audioText": "これはお慶びです",
           "scrambleTokens": [
+            "です",
             "それ",
             "ではありません",
-            "これは",
-            "です",
-            "お慶び"
+            "お慶び",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2645,24 +2634,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l13_6",
           "type": "dictate",
-          "prompt": "栄誉をお願いします",
-          "furigana": "えいよをおねがいします",
-          "romaji": "eiyo o onegaishimasu.",
-          "english": "Honor / prestige, please.",
-          "audioText": "栄誉をお願いします",
+          "prompt": "栄誉です",
+          "furigana": "えいよです",
+          "romaji": "eiyo desu.",
+          "english": "It is Honor / prestige.",
+          "audioText": "栄誉です",
           "dictateTokens": [
             "栄誉",
-            "お願いします",
-            "を",
-            "です",
-            "ありがとう"
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "栄誉",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "栄誉をお願いします"
+          "correctAnswer": "栄誉です"
         },
         {
           "id": "u26_l13_7",
@@ -2764,10 +2751,10 @@ export const unit26: DojoUnit = {
           "english": "Honor / privilege",
           "audioText": "こうえい",
           "options": [
-            "Prosperity / advancement",
+            "Confirming Heartfelt congratulations",
+            "Confirming Honor / privilege",
             "Honor / privilege",
-            "Heartfelt congratulations",
-            "Confirming Honor / prestige"
+            "Confirming Ceremony / official celebration"
           ],
           "correctAnswer": "Honor / privilege"
         },
@@ -2780,34 +2767,35 @@ export const unit26: DojoUnit = {
           "english": "Build 'Honor / privilege'",
           "audioText": "こうえい",
           "tileBank": [
-            "え",
             "あ",
-            "こ",
-            "き",
-            "い",
-            "な",
             "う",
-            "す"
+            "る",
+            "け",
+            "え",
+            "は",
+            "い",
+            "こ"
           ],
           "correctAnswer": "こうえい"
         },
         {
           "id": "u26_l14_3",
           "type": "cloze",
-          "prompt": "私は式典がすきです",
-          "furigana": "わたしはしきてんがすきです",
-          "romaji": "Watashi wa shikiten ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Ceremony / official celebration.",
-          "audioText": "式典",
-          "clozeSentence": "これは式典 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な式典です。",
+          "furigana": "これはいちばんたいせつなしきてんです。",
+          "romaji": "Kore wa ichiban taisetsu na shikiten desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Ceremony / official celebration.",
+          "audioText": "これは式典です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な式典です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l14_4",
@@ -2818,11 +2806,11 @@ export const unit26: DojoUnit = {
           "english": "This is Ceremony / official celebration.",
           "audioText": "これは式典です",
           "scrambleTokens": [
-            "です",
             "ではありません",
-            "式典",
+            "これは",
+            "です",
             "それ",
-            "これは"
+            "式典"
           ],
           "scrambleSolution": [
             "これは",
@@ -2851,24 +2839,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l14_6",
           "type": "dictate",
-          "prompt": "祝辞をお願いします",
-          "furigana": "しゅくじをおねがいします",
-          "romaji": "shukuji o onegaishimasu.",
-          "english": "Congratulatory address, please.",
-          "audioText": "祝辞をお願いします",
+          "prompt": "祝辞です",
+          "furigana": "しゅくじです",
+          "romaji": "shukuji desu.",
+          "english": "It is Congratulatory address.",
+          "audioText": "祝辞です",
           "dictateTokens": [
+            "ではありません",
             "です",
-            "を",
             "祝辞",
-            "お願いします",
-            "ありがとう"
+            "これ"
           ],
           "dictateSolution": [
             "祝辞",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "祝辞をお願いします"
+          "correctAnswer": "祝辞です"
         },
         {
           "id": "u26_l14_7",
@@ -2970,10 +2956,10 @@ export const unit26: DojoUnit = {
           "english": "Words of thanks / appreciation",
           "audioText": "かんしゃのじ",
           "options": [
-            "Words of thanks / appreciation",
-            "Confirming Prosperity / advancement",
-            "Closing / conclusion of a speech",
-            "Honor / prestige"
+            "Confirming Honor / prestige",
+            "Congratulatory address",
+            "Confirming Closing / conclusion of a speech",
+            "Words of thanks / appreciation"
           ],
           "correctAnswer": "Words of thanks / appreciation"
         },
@@ -2986,34 +2972,35 @@ export const unit26: DojoUnit = {
           "english": "Build 'Words of thanks / appreciation'",
           "audioText": "かんしゃのじ",
           "tileBank": [
-            "う",
             "ゃ",
-            "じ",
             "ん",
+            "ろ",
             "し",
-            "の",
-            "こ",
-            "か"
+            "か",
+            "い",
+            "じ",
+            "の"
           ],
           "correctAnswer": "かんしゃのじ"
         },
         {
           "id": "u26_l15_3",
           "type": "cloze",
-          "prompt": "私は甚だがすきです",
-          "furigana": "わたしははなはだがすきです",
-          "romaji": "Watashi wa hanahada ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Extremely / exceedingly (formal).",
-          "audioText": "甚だ",
-          "clozeSentence": "これは甚だ {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な甚だです。",
+          "furigana": "これはいちばんたいせつなはなはだです。",
+          "romaji": "Kore wa ichiban taisetsu na hanahada desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Extremely / exceedingly (formal).",
+          "audioText": "これは甚だです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な甚だです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u26_l15_4",
@@ -3024,11 +3011,11 @@ export const unit26: DojoUnit = {
           "english": "This is Extremely / exceedingly (formal).",
           "audioText": "これは甚だです",
           "scrambleTokens": [
-            "ではありません",
             "それ",
+            "ではありません",
+            "これは",
             "です",
-            "甚だ",
-            "これは"
+            "甚だ"
           ],
           "scrambleSolution": [
             "これは",
@@ -3057,24 +3044,22 @@ export const unit26: DojoUnit = {
         {
           "id": "u26_l15_6",
           "type": "dictate",
-          "prompt": "恐縮をお願いします",
-          "furigana": "きょうしゅくをおねがいします",
-          "romaji": "kyoushuku o onegaishimasu.",
-          "english": "Extremely obliged / apologetic, please.",
-          "audioText": "恐縮をお願いします",
+          "prompt": "恐縮です",
+          "furigana": "きょうしゅくです",
+          "romaji": "kyoushuku desu.",
+          "english": "It is Extremely obliged / apologetic.",
+          "audioText": "恐縮です",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "です",
-            "を",
-            "恐縮",
-            "ありがとう",
-            "お願いします"
+            "恐縮"
           ],
           "dictateSolution": [
             "恐縮",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "恐縮をお願いします"
+          "correctAnswer": "恐縮です"
         },
         {
           "id": "u26_l15_7",
@@ -3159,10 +3144,10 @@ export const unit26: DojoUnit = {
         "english": "Respectfully / humbly",
         "audioText": "つつしんで",
         "options": [
-          "Attentive listening (audience)",
-          "Confirming Honor / privilege",
-          "Respectfully / humbly",
-          "Closing / conclusion of a speech"
+          "Confirming Ceremony / official celebration",
+          "Confirming Good health (formal epistolary)",
+          "Honor / privilege",
+          "Respectfully / humbly"
         ],
         "correctAnswer": "Respectfully / humbly"
       },
@@ -3175,14 +3160,14 @@ export const unit26: DojoUnit = {
         "english": "Build 'Respectfully / humbly'",
         "audioText": "つつしんで",
         "tileBank": [
-          "む",
           "つ",
-          "つ",
-          "し",
-          "よ",
           "で",
           "ん",
-          "け"
+          "つ",
+          "る",
+          "な",
+          "し",
+          "さ"
         ],
         "correctAnswer": "つつしんで"
       },
@@ -3195,10 +3180,10 @@ export const unit26: DojoUnit = {
         "english": "Words of thanks / appreciation",
         "audioText": "かんしゃのじ",
         "options": [
-          "Confirming Closing / conclusion of a speech",
+          "Respectfully / humbly",
           "Words of thanks / appreciation",
           "Extremely obliged / apologetic",
-          "Closing / conclusion of a speech"
+          "Proposing the official toast"
         ],
         "correctAnswer": "Words of thanks / appreciation"
       },
@@ -3211,14 +3196,14 @@ export const unit26: DojoUnit = {
         "english": "Build 'Words of thanks / appreciation'",
         "audioText": "かんしゃのじ",
         "tileBank": [
-          "か",
-          "さ",
-          "し",
-          "じ",
-          "な",
           "ん",
-          "ゃ",
-          "の"
+          "か",
+          "う",
+          "よ",
+          "じ",
+          "の",
+          "し",
+          "ゃ"
         ],
         "correctAnswer": "かんしゃのじ"
       },
@@ -3231,10 +3216,10 @@ export const unit26: DojoUnit = {
         "english": "Attentive listening (audience)",
         "audioText": "ごせいちょう",
         "options": [
-          "Praying / wishing for",
-          "Extremely / exceedingly (formal)",
+          "Confirming Honor / prestige",
           "Confirming Honor / privilege",
-          "Attentive listening (audience)"
+          "Attentive listening (audience)",
+          "Prosperity / advancement"
         ],
         "correctAnswer": "Attentive listening (audience)"
       },
@@ -3248,13 +3233,13 @@ export const unit26: DojoUnit = {
         "audioText": "ごせいちょう",
         "tileBank": [
           "い",
-          "と",
-          "ご",
           "せ",
-          "ち",
-          "う",
+          "ご",
           "ょ",
-          "ろ"
+          "ま",
+          "け",
+          "ち",
+          "う"
         ],
         "correctAnswer": "ごせいちょう"
       },
@@ -3267,9 +3252,9 @@ export const unit26: DojoUnit = {
         "english": "Confirming Honor / privilege",
         "audioText": "こうえいのかくにん",
         "options": [
-          "Confirming Proposing the official toast",
-          "Confirming Good health (formal epistolary)",
-          "Confirming Ceremony / official celebration",
+          "Good health (formal epistolary)",
+          "Confirming Heartfelt congratulations",
+          "Confirming Closing / conclusion of a speech",
           "Confirming Honor / privilege"
         ],
         "correctAnswer": "Confirming Honor / privilege"
@@ -3283,14 +3268,14 @@ export const unit26: DojoUnit = {
         "english": "Build 'Confirming Honor / privilege'",
         "audioText": "こうえいのかくにん",
         "tileBank": [
-          "の",
-          "に",
-          "い",
-          "う",
-          "こ",
           "く",
+          "い",
+          "の",
           "え",
-          "か"
+          "こ",
+          "に",
+          "か",
+          "う"
         ],
         "correctAnswer": "こうえいのかくにん"
       },
@@ -3303,10 +3288,10 @@ export const unit26: DojoUnit = {
         "english": "Confirming Good health (formal epistolary)",
         "audioText": "けんしょうのかくにん",
         "options": [
-          "Confirming Words of thanks / appreciation",
-          "Confirming Heartfelt congratulations",
+          "Confirming Honor / privilege",
+          "Confirming Ceremony / official celebration",
           "Confirming Good health (formal epistolary)",
-          "Good health (formal epistolary)"
+          "Confirming Heartfelt congratulations"
         ],
         "correctAnswer": "Confirming Good health (formal epistolary)"
       },
@@ -3319,14 +3304,14 @@ export const unit26: DojoUnit = {
         "english": "Build 'Confirming Good health (formal epistolary)'",
         "audioText": "けんしょうのかくにん",
         "tileBank": [
-          "し",
-          "く",
-          "う",
-          "か",
           "ょ",
-          "け",
           "の",
-          "ん"
+          "け",
+          "か",
+          "う",
+          "し",
+          "ん",
+          "く"
         ],
         "correctAnswer": "けんしょうのかくにん"
       },
@@ -3339,9 +3324,9 @@ export const unit26: DojoUnit = {
         "english": "Confirming Respectfully / humbly",
         "audioText": "つつしんでのかくにん",
         "options": [
-          "Confirming Respectfully / humbly",
-          "Confirming Attentive listening (audience)",
           "Closing / conclusion of a speech",
+          "Confirming Congratulatory address",
+          "Confirming Respectfully / humbly",
           "Good health (formal epistolary)"
         ],
         "correctAnswer": "Confirming Respectfully / humbly"
@@ -3356,13 +3341,13 @@ export const unit26: DojoUnit = {
         "audioText": "つつしんでのかくにん",
         "tileBank": [
           "の",
-          "く",
           "し",
           "つ",
           "つ",
-          "ん",
+          "か",
+          "く",
           "で",
-          "か"
+          "ん"
         ],
         "correctAnswer": "つつしんでのかくにん"
       }

@@ -51,10 +51,10 @@ export const unit28: DojoUnit = {
           "english": "Personal essay / literary miscellany",
           "audioText": "ずいひつ",
           "options": [
-            "Confirming Subtle grace and hidden beauty",
+            "Confirming Lyrical / poetic emotionalism",
+            "Confirming Depiction / vivid description",
             "Personal essay / literary miscellany",
-            "Sentimentality",
-            "Confirming Sentimentality"
+            "Sentimentality"
           ],
           "correctAnswer": "Personal essay / literary miscellany"
         },
@@ -67,34 +67,35 @@ export const unit28: DojoUnit = {
           "english": "Build 'Personal essay / literary miscellany'",
           "audioText": "ずいひつ",
           "tileBank": [
-            "ひ",
-            "さ",
+            "ら",
+            "あ",
+            "む",
+            "た",
             "ず",
-            "せ",
-            "つ",
-            "ろ",
             "い",
-            "し"
+            "ひ",
+            "つ"
           ],
           "correctAnswer": "ずいひつ"
         },
         {
           "id": "u28_l1_3",
           "type": "cloze",
-          "prompt": "私は描写がすきです",
-          "furigana": "わたしはびょうしゃがすきです",
-          "romaji": "Watashi wa byousha ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Depiction / vivid description.",
-          "audioText": "描写",
-          "clozeSentence": "これは描写 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な描写です。",
+          "furigana": "これはいちばんたいせつなびょうしゃです。",
+          "romaji": "Kore wa ichiban taisetsu na byousha desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Depiction / vivid description.",
+          "audioText": "これは描写です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な描写です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l1_4",
@@ -106,9 +107,9 @@ export const unit28: DojoUnit = {
           "audioText": "これは描写です",
           "scrambleTokens": [
             "です",
-            "これは",
             "ではありません",
             "それ",
+            "これは",
             "描写"
           ],
           "scrambleSolution": [
@@ -138,24 +139,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l1_6",
           "type": "dictate",
-          "prompt": "叙情的をお願いします",
-          "furigana": "じょじょうてきをおねがいします",
-          "romaji": "jojouteki o onegaishimasu.",
-          "english": "Lyrical / poetic emotionalism, please.",
-          "audioText": "叙情的をお願いします",
+          "prompt": "叙情的です",
+          "furigana": "じょじょうてきです",
+          "romaji": "jojouteki desu.",
+          "english": "It is Lyrical / poetic emotionalism.",
+          "audioText": "叙情的です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
+            "これ",
             "叙情的",
-            "です",
-            "お願いします"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "叙情的",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "叙情的をお願いします"
+          "correctAnswer": "叙情的です"
         },
         {
           "id": "u28_l1_7",
@@ -257,10 +256,10 @@ export const unit28: DojoUnit = {
           "english": "Metaphor / simile",
           "audioText": "ひゆ",
           "options": [
-            "Literary style",
             "Metaphor / simile",
-            "Melancholy / sorrowful charm",
-            "Scenic taste / tasteful atmosphere"
+            "Subtle grace and hidden beauty",
+            "Confirming Abyss / profound depth",
+            "Confirming Masterpiece"
           ],
           "correctAnswer": "Metaphor / simile"
         },
@@ -273,34 +272,35 @@ export const unit28: DojoUnit = {
           "english": "Build 'Metaphor / simile'",
           "audioText": "ひゆ",
           "tileBank": [
-            "す",
-            "ん",
             "ゆ",
-            "は",
-            "お",
-            "も",
-            "ふ",
-            "ひ"
+            "こ",
+            "ひ",
+            "す",
+            "い",
+            "ん",
+            "て",
+            "え"
           ],
           "correctAnswer": "ひゆ"
         },
         {
           "id": "u28_l2_3",
           "type": "cloze",
-          "prompt": "私は情緒がすきです",
-          "furigana": "わたしはじょうちょがすきです",
-          "romaji": "Watashi wa joutcho ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Atmosphere / evocative mood.",
-          "audioText": "情緒",
-          "clozeSentence": "これは情緒 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な情緒です。",
+          "furigana": "これはいちばんたいせつなじょうちょです。",
+          "romaji": "Kore wa ichiban taisetsu na joutcho desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Atmosphere / evocative mood.",
+          "audioText": "これは情緒です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な情緒です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l2_4",
@@ -311,11 +311,11 @@ export const unit28: DojoUnit = {
           "english": "This is Atmosphere / evocative mood.",
           "audioText": "これは情緒です",
           "scrambleTokens": [
-            "情緒",
             "ではありません",
             "それ",
+            "これは",
             "です",
-            "これは"
+            "情緒"
           ],
           "scrambleSolution": [
             "これは",
@@ -344,24 +344,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l2_6",
           "type": "dictate",
-          "prompt": "哀愁をお願いします",
-          "furigana": "あいしゅうをおねがいします",
-          "romaji": "aishuu o onegaishimasu.",
-          "english": "Melancholy / sorrowful charm, please.",
-          "audioText": "哀愁をお願いします",
+          "prompt": "哀愁です",
+          "furigana": "あいしゅうです",
+          "romaji": "aishuu desu.",
+          "english": "It is Melancholy / sorrowful charm.",
+          "audioText": "哀愁です",
           "dictateTokens": [
             "哀愁",
-            "ありがとう",
-            "を",
-            "お願いします",
-            "です"
+            "これ",
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "哀愁",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "哀愁をお願いします"
+          "correctAnswer": "哀愁です"
         },
         {
           "id": "u28_l2_7",
@@ -464,10 +462,10 @@ export const unit28: DojoUnit = {
           "english": "Lingering resonance / aftertaste",
           "audioText": "よいん",
           "options": [
-            "Abyss / profound depth",
+            "Confirming Literary style",
+            "Confirming Subtle grace and hidden beauty",
             "Lingering resonance / aftertaste",
-            "Lyrical / poetic emotionalism",
-            "Confirming Metaphor / simile"
+            "Confirming Atmosphere / evocative mood"
           ],
           "correctAnswer": "Lingering resonance / aftertaste"
         },
@@ -480,34 +478,35 @@ export const unit28: DojoUnit = {
           "english": "Build 'Lingering resonance / aftertaste'",
           "audioText": "よいん",
           "tileBank": [
-            "さ",
-            "こ",
-            "き",
-            "い",
-            "ふ",
+            "は",
+            "く",
+            "よ",
+            "に",
+            "れ",
             "ん",
-            "ぬ",
-            "よ"
+            "い",
+            "り"
           ],
           "correctAnswer": "よいん"
         },
         {
           "id": "u28_l3_3",
           "type": "cloze",
-          "prompt": "私は感傷がすきです",
-          "furigana": "わたしはかんしょうがすきです",
-          "romaji": "Watashi wa kanshou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Sentimentality.",
-          "audioText": "感傷",
-          "clozeSentence": "これは感傷 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な感傷です。",
+          "furigana": "これはいちばんたいせつなかんしょうです。",
+          "romaji": "Kore wa ichiban taisetsu na kanshou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Sentimentality.",
+          "audioText": "これは感傷です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な感傷です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l3_4",
@@ -518,11 +517,11 @@ export const unit28: DojoUnit = {
           "english": "This is Sentimentality.",
           "audioText": "これは感傷です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
             "です",
-            "感傷",
-            "これは"
+            "ではありません",
+            "それ",
+            "これは",
+            "感傷"
           ],
           "scrambleSolution": [
             "これは",
@@ -551,24 +550,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l3_6",
           "type": "dictate",
-          "prompt": "無常観をお願いします",
-          "furigana": "むじょうかんをおねがいします",
-          "romaji": "mujoukan o onegaishimasu.",
-          "english": "Buddhist sense of impermanence, please.",
-          "audioText": "無常観をお願いします",
+          "prompt": "無常観です",
+          "furigana": "むじょうかんです",
+          "romaji": "mujoukan desu.",
+          "english": "It is Buddhist sense of impermanence.",
+          "audioText": "無常観です",
           "dictateTokens": [
+            "これ",
             "無常観",
-            "を",
-            "ありがとう",
-            "お願いします",
-            "です"
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "無常観",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "無常観をお願いします"
+          "correctAnswer": "無常観です"
         },
         {
           "id": "u28_l3_7",
@@ -670,10 +667,10 @@ export const unit28: DojoUnit = {
           "english": "Literary style",
           "audioText": "ぶんたい",
           "options": [
-            "Confirming Atmosphere / evocative mood",
-            "Confirming Melancholy / sorrowful charm",
             "Literary style",
-            "Confirming Masterpiece"
+            "Melancholy / sorrowful charm",
+            "Confirming Abyss / profound depth",
+            "Confirming Metaphor / simile"
           ],
           "correctAnswer": "Literary style"
         },
@@ -686,26 +683,26 @@ export const unit28: DojoUnit = {
           "english": "Build 'Literary style'",
           "audioText": "ぶんたい",
           "tileBank": [
-            "た",
-            "ぶ",
             "い",
-            "ら",
-            "れ",
+            "せ",
+            "お",
             "ん",
+            "れ",
             "か",
-            "を"
+            "ぶ",
+            "た"
           ],
           "correctAnswer": "ぶんたい"
         },
         {
           "id": "u28_l4_3",
           "type": "cloze",
-          "prompt": "私は行間がすきです",
-          "furigana": "わたしはぎょうかんがすきです",
-          "romaji": "Watashi wa gyoukan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Between the lines.",
-          "audioText": "行間",
-          "clozeSentence": "これは行間 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な行間です。",
+          "furigana": "これはいちばんたいせつなぎょうかんです。",
+          "romaji": "Kore wa ichiban taisetsu na gyoukan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Between the lines.",
+          "audioText": "これは行間です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な行間です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -713,7 +710,8 @@ export const unit28: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l4_4",
@@ -724,11 +722,11 @@ export const unit28: DojoUnit = {
           "english": "This is Between the lines.",
           "audioText": "これは行間です",
           "scrambleTokens": [
-            "ではありません",
-            "これは",
-            "行間",
             "それ",
-            "です"
+            "です",
+            "行間",
+            "ではありません",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -757,24 +755,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l4_6",
           "type": "dictate",
-          "prompt": "深淵をお願いします",
-          "furigana": "しんえんをおねがいします",
-          "romaji": "shin-en o onegaishimasu.",
-          "english": "Abyss / profound depth, please.",
-          "audioText": "深淵をお願いします",
+          "prompt": "深淵です",
+          "furigana": "しんえんです",
+          "romaji": "shin-en desu.",
+          "english": "It is Abyss / profound depth.",
+          "audioText": "深淵です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "お願いします",
             "です",
+            "ではありません",
+            "これ",
             "深淵"
           ],
           "dictateSolution": [
             "深淵",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "深淵をお願いします"
+          "correctAnswer": "深淵です"
         },
         {
           "id": "u28_l4_7",
@@ -876,10 +872,10 @@ export const unit28: DojoUnit = {
           "english": "Subtle grace and hidden beauty",
           "audioText": "ゆうげん",
           "options": [
-            "Confirming Masterpiece",
-            "Confirming Atmosphere / evocative mood",
+            "Confirming Personal essay / literary miscellany",
+            "Confirming Scenic taste / tasteful atmosphere",
             "Subtle grace and hidden beauty",
-            "Personal essay / literary miscellany"
+            "Confirming Personal essay / literary miscellany"
           ],
           "correctAnswer": "Subtle grace and hidden beauty"
         },
@@ -893,12 +889,12 @@ export const unit28: DojoUnit = {
           "audioText": "ゆうげん",
           "tileBank": [
             "ゆ",
-            "う",
-            "げ",
-            "あ",
-            "そ",
+            "し",
+            "に",
             "の",
-            "ひ",
+            "げ",
+            "う",
+            "す",
             "ん"
           ],
           "correctAnswer": "ゆうげん"
@@ -906,20 +902,21 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l5_3",
           "type": "cloze",
-          "prompt": "私は風情がすきです",
-          "furigana": "わたしはふぜいがすきです",
-          "romaji": "Watashi wa fuzei ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Scenic taste / tasteful atmosphere.",
-          "audioText": "風情",
-          "clozeSentence": "これは風情 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な風情です。",
+          "furigana": "これはいちばんたいせつなふぜいです。",
+          "romaji": "Kore wa ichiban taisetsu na fuzei desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Scenic taste / tasteful atmosphere.",
+          "audioText": "これは風情です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な風情です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l5_4",
@@ -930,11 +927,11 @@ export const unit28: DojoUnit = {
           "english": "This is Scenic taste / tasteful atmosphere.",
           "audioText": "これは風情です",
           "scrambleTokens": [
+            "これは",
             "です",
             "風情",
             "ではありません",
-            "それ",
-            "これは"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -963,24 +960,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l5_6",
           "type": "dictate",
-          "prompt": "傑作をお願いします",
-          "furigana": "けっさくをおねがいします",
-          "romaji": "kessaku o onegaishimasu.",
-          "english": "Masterpiece, please.",
-          "audioText": "傑作をお願いします",
+          "prompt": "傑作です",
+          "furigana": "けっさくです",
+          "romaji": "kessaku desu.",
+          "english": "It is Masterpiece.",
+          "audioText": "傑作です",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "です",
-            "お願いします",
-            "傑作",
-            "を",
-            "ありがとう"
+            "傑作"
           ],
           "dictateSolution": [
             "傑作",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "傑作をお願いします"
+          "correctAnswer": "傑作です"
         },
         {
           "id": "u28_l5_7",
@@ -1089,10 +1084,10 @@ export const unit28: DojoUnit = {
           "english": "Confirming Personal essay / literary miscellany",
           "audioText": "ずいひつのかくにん",
           "options": [
-            "Sentimentality",
-            "Metaphor / simile",
+            "Confirming Atmosphere / evocative mood",
+            "Confirming Lingering resonance / aftertaste",
             "Confirming Personal essay / literary miscellany",
-            "Confirming Metaphor / simile"
+            "Confirming Masterpiece"
           ],
           "correctAnswer": "Confirming Personal essay / literary miscellany"
         },
@@ -1105,34 +1100,35 @@ export const unit28: DojoUnit = {
           "english": "Build 'Confirming Personal essay / literary miscellany'",
           "audioText": "ずいひつのかくにん",
           "tileBank": [
+            "か",
+            "ず",
+            "ひ",
             "に",
             "く",
-            "ず",
             "つ",
             "の",
-            "い",
-            "か",
-            "ひ"
+            "い"
           ],
           "correctAnswer": "ずいひつのかくにん"
         },
         {
           "id": "u28_l6_3",
           "type": "cloze",
-          "prompt": "私は描写の確認がすきです",
-          "furigana": "わたしはびょうしゃのかくにんがすきです",
-          "romaji": "Watashi wa byousha no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Depiction / vivid description.",
-          "audioText": "描写の確認",
-          "clozeSentence": "これは描写の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な描写の確認です。",
+          "furigana": "これはいちばんたいせつなびょうしゃのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na byousha no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Depiction / vivid description.",
+          "audioText": "これは描写の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な描写の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l6_4",
@@ -1143,11 +1139,11 @@ export const unit28: DojoUnit = {
           "english": "This is Confirming Depiction / vivid description.",
           "audioText": "これは描写の確認です",
           "scrambleTokens": [
+            "それ",
+            "描写の確認",
             "ではありません",
             "です",
-            "これは",
-            "描写の確認",
-            "それ"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1176,24 +1172,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l6_6",
           "type": "dictate",
-          "prompt": "叙情的の確認をお願いします",
-          "furigana": "じょじょうてきのかくにんをおねがいします",
-          "romaji": "jojouteki no kakunin o onegaishimasu.",
-          "english": "Confirming Lyrical / poetic emotionalism, please.",
-          "audioText": "叙情的の確認をお願いします",
+          "prompt": "叙情的の確認です",
+          "furigana": "じょじょうてきのかくにんです",
+          "romaji": "jojouteki no kakunin desu.",
+          "english": "It is Confirming Lyrical / poetic emotionalism.",
+          "audioText": "叙情的の確認です",
           "dictateTokens": [
+            "ではありません",
             "叙情的の確認",
-            "お願いします",
-            "です",
-            "を",
-            "ありがとう"
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "叙情的の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "叙情的の確認をお願いします"
+          "correctAnswer": "叙情的の確認です"
         },
         {
           "id": "u28_l6_7",
@@ -1301,10 +1295,10 @@ export const unit28: DojoUnit = {
           "english": "Confirming Metaphor / simile",
           "audioText": "ひゆのかくにん",
           "options": [
-            "Sentimentality",
-            "Confirming Atmosphere / evocative mood",
             "Confirming Metaphor / simile",
-            "Confirming Lyrical / poetic emotionalism"
+            "Buddhist sense of impermanence",
+            "Subtle grace and hidden beauty",
+            "Confirming Subtle grace and hidden beauty"
           ],
           "correctAnswer": "Confirming Metaphor / simile"
         },
@@ -1318,33 +1312,34 @@ export const unit28: DojoUnit = {
           "audioText": "ひゆのかくにん",
           "tileBank": [
             "に",
-            "の",
-            "ん",
-            "ゆ",
-            "ひ",
             "く",
+            "の",
+            "ひ",
+            "ゆ",
             "か",
-            "へ"
+            "む",
+            "ん"
           ],
           "correctAnswer": "ひゆのかくにん"
         },
         {
           "id": "u28_l7_3",
           "type": "cloze",
-          "prompt": "私は情緒の確認がすきです",
-          "furigana": "わたしはじょうちょのかくにんがすきです",
-          "romaji": "Watashi wa joutcho no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Atmosphere / evocative mood.",
-          "audioText": "情緒の確認",
-          "clozeSentence": "これは情緒の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な情緒の確認です。",
+          "furigana": "これはいちばんたいせつなじょうちょのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na joutcho no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Atmosphere / evocative mood.",
+          "audioText": "これは情緒の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な情緒の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l7_4",
@@ -1355,11 +1350,11 @@ export const unit28: DojoUnit = {
           "english": "This is Confirming Atmosphere / evocative mood.",
           "audioText": "これは情緒の確認です",
           "scrambleTokens": [
-            "情緒の確認",
             "ではありません",
-            "これは",
+            "情緒の確認",
+            "です",
             "それ",
-            "です"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1388,24 +1383,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l7_6",
           "type": "dictate",
-          "prompt": "哀愁の確認をお願いします",
-          "furigana": "あいしゅうのかくにんをおねがいします",
-          "romaji": "aishuu no kakunin o onegaishimasu.",
-          "english": "Confirming Melancholy / sorrowful charm, please.",
-          "audioText": "哀愁の確認をお願いします",
+          "prompt": "哀愁の確認です",
+          "furigana": "あいしゅうのかくにんです",
+          "romaji": "aishuu no kakunin desu.",
+          "english": "It is Confirming Melancholy / sorrowful charm.",
+          "audioText": "哀愁の確認です",
           "dictateTokens": [
             "です",
-            "お願いします",
-            "ありがとう",
-            "を",
+            "ではありません",
+            "これ",
             "哀愁の確認"
           ],
           "dictateSolution": [
             "哀愁の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "哀愁の確認をお願いします"
+          "correctAnswer": "哀愁の確認です"
         },
         {
           "id": "u28_l7_7",
@@ -1514,10 +1507,10 @@ export const unit28: DojoUnit = {
           "english": "Confirming Lingering resonance / aftertaste",
           "audioText": "よいんのかくにん",
           "options": [
-            "Confirming Metaphor / simile",
-            "Confirming Atmosphere / evocative mood",
             "Confirming Lingering resonance / aftertaste",
-            "Masterpiece"
+            "Lingering resonance / aftertaste",
+            "Buddhist sense of impermanence",
+            "Confirming Melancholy / sorrowful charm"
           ],
           "correctAnswer": "Confirming Lingering resonance / aftertaste"
         },
@@ -1530,26 +1523,26 @@ export const unit28: DojoUnit = {
           "english": "Build 'Confirming Lingering resonance / aftertaste'",
           "audioText": "よいんのかくにん",
           "tileBank": [
+            "ん",
             "か",
-            "く",
-            "の",
+            "に",
             "い",
             "よ",
-            "ん",
-            "ん",
-            "に"
+            "く",
+            "の",
+            "ん"
           ],
           "correctAnswer": "よいんのかくにん"
         },
         {
           "id": "u28_l8_3",
           "type": "cloze",
-          "prompt": "私は感傷の確認がすきです",
-          "furigana": "わたしはかんしょうのかくにんがすきです",
-          "romaji": "Watashi wa kanshou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Sentimentality.",
-          "audioText": "感傷の確認",
-          "clozeSentence": "これは感傷の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な感傷の確認です。",
+          "furigana": "これはいちばんたいせつなかんしょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kanshou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Sentimentality.",
+          "audioText": "これは感傷の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な感傷の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1557,7 +1550,8 @@ export const unit28: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l8_4",
@@ -1568,10 +1562,10 @@ export const unit28: DojoUnit = {
           "english": "This is Confirming Sentimentality.",
           "audioText": "これは感傷の確認です",
           "scrambleTokens": [
-            "です",
-            "これは",
-            "それ",
             "感傷の確認",
+            "それ",
+            "これは",
+            "です",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -1601,24 +1595,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l8_6",
           "type": "dictate",
-          "prompt": "無常観の確認をお願いします",
-          "furigana": "むじょうかんのかくにんをおねがいします",
-          "romaji": "mujoukan no kakunin o onegaishimasu.",
-          "english": "Confirming Buddhist sense of impermanence, please.",
-          "audioText": "無常観の確認をお願いします",
+          "prompt": "無常観の確認です",
+          "furigana": "むじょうかんのかくにんです",
+          "romaji": "mujoukan no kakunin desu.",
+          "english": "It is Confirming Buddhist sense of impermanence.",
+          "audioText": "無常観の確認です",
           "dictateTokens": [
-            "無常観の確認",
-            "ありがとう",
-            "お願いします",
-            "を",
-            "です"
+            "です",
+            "これ",
+            "ではありません",
+            "無常観の確認"
           ],
           "dictateSolution": [
             "無常観の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "無常観の確認をお願いします"
+          "correctAnswer": "無常観の確認です"
         },
         {
           "id": "u28_l8_7",
@@ -1726,10 +1718,10 @@ export const unit28: DojoUnit = {
           "english": "Confirming Literary style",
           "audioText": "ぶんたいのかくにん",
           "options": [
-            "Confirming Scenic taste / tasteful atmosphere",
             "Confirming Literary style",
-            "Lyrical / poetic emotionalism",
-            "Personal essay / literary miscellany"
+            "Confirming Depiction / vivid description",
+            "Confirming Atmosphere / evocative mood",
+            "Confirming Personal essay / literary miscellany"
           ],
           "correctAnswer": "Confirming Literary style"
         },
@@ -1742,34 +1734,35 @@ export const unit28: DojoUnit = {
           "english": "Build 'Confirming Literary style'",
           "audioText": "ぶんたいのかくにん",
           "tileBank": [
-            "い",
-            "ぶ",
-            "に",
-            "ん",
-            "く",
-            "の",
             "た",
-            "か"
+            "の",
+            "に",
+            "く",
+            "か",
+            "い",
+            "ん",
+            "ぶ"
           ],
           "correctAnswer": "ぶんたいのかくにん"
         },
         {
           "id": "u28_l9_3",
           "type": "cloze",
-          "prompt": "私は行間の確認がすきです",
-          "furigana": "わたしはぎょうかんのかくにんがすきです",
-          "romaji": "Watashi wa gyoukan no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Between the lines.",
-          "audioText": "行間の確認",
-          "clozeSentence": "これは行間の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な行間の確認です。",
+          "furigana": "これはいちばんたいせつなぎょうかんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na gyoukan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Between the lines.",
+          "audioText": "これは行間の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な行間の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l9_4",
@@ -1780,11 +1773,11 @@ export const unit28: DojoUnit = {
           "english": "This is Confirming Between the lines.",
           "audioText": "これは行間の確認です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
+            "これは",
             "です",
             "行間の確認",
-            "これは"
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1813,24 +1806,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l9_6",
           "type": "dictate",
-          "prompt": "深淵の確認をお願いします",
-          "furigana": "しんえんのかくにんをおねがいします",
-          "romaji": "shin-en no kakunin o onegaishimasu.",
-          "english": "Confirming Abyss / profound depth, please.",
-          "audioText": "深淵の確認をお願いします",
+          "prompt": "深淵の確認です",
+          "furigana": "しんえんのかくにんです",
+          "romaji": "shin-en no kakunin desu.",
+          "english": "It is Confirming Abyss / profound depth.",
+          "audioText": "深淵の確認です",
           "dictateTokens": [
+            "ではありません",
+            "これ",
             "深淵の確認",
-            "を",
-            "です",
-            "お願いします",
-            "ありがとう"
+            "です"
           ],
           "dictateSolution": [
             "深淵の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "深淵の確認をお願いします"
+          "correctAnswer": "深淵の確認です"
         },
         {
           "id": "u28_l9_7",
@@ -1938,10 +1929,10 @@ export const unit28: DojoUnit = {
           "english": "Confirming Subtle grace and hidden beauty",
           "audioText": "ゆうげんのかくにん",
           "options": [
-            "Confirming Lingering resonance / aftertaste",
-            "Confirming Literary style",
+            "Confirming Subtle grace and hidden beauty",
             "Buddhist sense of impermanence",
-            "Confirming Subtle grace and hidden beauty"
+            "Melancholy / sorrowful charm",
+            "Confirming Scenic taste / tasteful atmosphere"
           ],
           "correctAnswer": "Confirming Subtle grace and hidden beauty"
         },
@@ -1954,34 +1945,35 @@ export const unit28: DojoUnit = {
           "english": "Build 'Confirming Subtle grace and hidden beauty'",
           "audioText": "ゆうげんのかくにん",
           "tileBank": [
-            "に",
-            "か",
-            "ん",
-            "の",
             "ゆ",
-            "げ",
+            "の",
             "う",
-            "く"
+            "か",
+            "く",
+            "に",
+            "げ",
+            "ん"
           ],
           "correctAnswer": "ゆうげんのかくにん"
         },
         {
           "id": "u28_l10_3",
           "type": "cloze",
-          "prompt": "私は風情の確認がすきです",
-          "furigana": "わたしはふぜいのかくにんがすきです",
-          "romaji": "Watashi wa fuzei no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Scenic taste / tasteful atmosphere.",
-          "audioText": "風情の確認",
-          "clozeSentence": "これは風情の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な風情の確認です。",
+          "furigana": "これはいちばんたいせつなふぜいのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na fuzei no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Scenic taste / tasteful atmosphere.",
+          "audioText": "これは風情の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な風情の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l10_4",
@@ -1993,10 +1985,10 @@ export const unit28: DojoUnit = {
           "audioText": "これは風情の確認です",
           "scrambleTokens": [
             "です",
-            "それ",
             "ではありません",
             "風情の確認",
-            "これは"
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2025,24 +2017,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l10_6",
           "type": "dictate",
-          "prompt": "傑作の確認をお願いします",
-          "furigana": "けっさくのかくにんをおねがいします",
-          "romaji": "kessaku no kakunin o onegaishimasu.",
-          "english": "Confirming Masterpiece, please.",
-          "audioText": "傑作の確認をお願いします",
+          "prompt": "傑作の確認です",
+          "furigana": "けっさくのかくにんです",
+          "romaji": "kessaku no kakunin desu.",
+          "english": "It is Confirming Masterpiece.",
+          "audioText": "傑作の確認です",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "傑作の確認",
-            "を",
-            "お願いします",
-            "です",
-            "ありがとう"
+            "です"
           ],
           "dictateSolution": [
             "傑作の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "傑作の確認をお願いします"
+          "correctAnswer": "傑作の確認です"
         },
         {
           "id": "u28_l10_7",
@@ -2151,10 +2141,10 @@ export const unit28: DojoUnit = {
           "english": "Confirming Personal essay / literary miscellany",
           "audioText": "ずいひつのかくにん",
           "options": [
-            "Confirming Melancholy / sorrowful charm",
-            "Confirming Metaphor / simile",
-            "Confirming Depiction / vivid description",
-            "Confirming Personal essay / literary miscellany"
+            "Confirming Personal essay / literary miscellany",
+            "Confirming Masterpiece",
+            "Buddhist sense of impermanence",
+            "Confirming Buddhist sense of impermanence"
           ],
           "correctAnswer": "Confirming Personal essay / literary miscellany"
         },
@@ -2167,34 +2157,35 @@ export const unit28: DojoUnit = {
           "english": "Build 'Confirming Personal essay / literary miscellany'",
           "audioText": "ずいひつのかくにん",
           "tileBank": [
-            "の",
-            "い",
             "く",
-            "に",
-            "ず",
+            "い",
+            "ひ",
             "つ",
-            "か",
-            "ひ"
+            "ず",
+            "に",
+            "の",
+            "か"
           ],
           "correctAnswer": "ずいひつのかくにん"
         },
         {
           "id": "u28_l11_3",
           "type": "cloze",
-          "prompt": "私は描写の確認がすきです",
-          "furigana": "わたしはびょうしゃのかくにんがすきです",
-          "romaji": "Watashi wa byousha no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Depiction / vivid description.",
-          "audioText": "描写の確認",
-          "clozeSentence": "これは描写の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な描写の確認です。",
+          "furigana": "これはいちばんたいせつなびょうしゃのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na byousha no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Depiction / vivid description.",
+          "audioText": "これは描写の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な描写の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l11_4",
@@ -2205,11 +2196,11 @@ export const unit28: DojoUnit = {
           "english": "This is Confirming Depiction / vivid description.",
           "audioText": "これは描写の確認です",
           "scrambleTokens": [
-            "ではありません",
-            "です",
             "それ",
-            "これは",
-            "描写の確認"
+            "ではありません",
+            "描写の確認",
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2238,24 +2229,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l11_6",
           "type": "dictate",
-          "prompt": "叙情的の確認をお願いします",
-          "furigana": "じょじょうてきのかくにんをおねがいします",
-          "romaji": "jojouteki no kakunin o onegaishimasu.",
-          "english": "Confirming Lyrical / poetic emotionalism, please.",
-          "audioText": "叙情的の確認をお願いします",
+          "prompt": "叙情的の確認です",
+          "furigana": "じょじょうてきのかくにんです",
+          "romaji": "jojouteki no kakunin desu.",
+          "english": "It is Confirming Lyrical / poetic emotionalism.",
+          "audioText": "叙情的の確認です",
           "dictateTokens": [
             "叙情的の確認",
-            "ありがとう",
-            "お願いします",
             "です",
-            "を"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "叙情的の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "叙情的の確認をお願いします"
+          "correctAnswer": "叙情的の確認です"
         },
         {
           "id": "u28_l11_7",
@@ -2363,10 +2352,10 @@ export const unit28: DojoUnit = {
           "english": "Confirming Metaphor / simile",
           "audioText": "ひゆのかくにん",
           "options": [
-            "Confirming Masterpiece",
-            "Confirming Subtle grace and hidden beauty",
-            "Confirming Melancholy / sorrowful charm",
-            "Confirming Metaphor / simile"
+            "Melancholy / sorrowful charm",
+            "Masterpiece",
+            "Confirming Metaphor / simile",
+            "Subtle grace and hidden beauty"
           ],
           "correctAnswer": "Confirming Metaphor / simile"
         },
@@ -2379,26 +2368,26 @@ export const unit28: DojoUnit = {
           "english": "Build 'Confirming Metaphor / simile'",
           "audioText": "ひゆのかくにん",
           "tileBank": [
-            "ん",
             "か",
-            "ひ",
-            "り",
-            "の",
             "に",
+            "ひ",
             "く",
-            "ゆ"
+            "の",
+            "ゆ",
+            "ん",
+            "お"
           ],
           "correctAnswer": "ひゆのかくにん"
         },
         {
           "id": "u28_l12_3",
           "type": "cloze",
-          "prompt": "私は情緒の確認がすきです",
-          "furigana": "わたしはじょうちょのかくにんがすきです",
-          "romaji": "Watashi wa joutcho no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Atmosphere / evocative mood.",
-          "audioText": "情緒の確認",
-          "clozeSentence": "これは情緒の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な情緒の確認です。",
+          "furigana": "これはいちばんたいせつなじょうちょのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na joutcho no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Atmosphere / evocative mood.",
+          "audioText": "これは情緒の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な情緒の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2406,7 +2395,8 @@ export const unit28: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l12_4",
@@ -2419,9 +2409,9 @@ export const unit28: DojoUnit = {
           "scrambleTokens": [
             "それ",
             "これは",
+            "情緒の確認",
             "ではありません",
-            "です",
-            "情緒の確認"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2450,24 +2440,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l12_6",
           "type": "dictate",
-          "prompt": "哀愁の確認をお願いします",
-          "furigana": "あいしゅうのかくにんをおねがいします",
-          "romaji": "aishuu no kakunin o onegaishimasu.",
-          "english": "Confirming Melancholy / sorrowful charm, please.",
-          "audioText": "哀愁の確認をお願いします",
+          "prompt": "哀愁の確認です",
+          "furigana": "あいしゅうのかくにんです",
+          "romaji": "aishuu no kakunin desu.",
+          "english": "It is Confirming Melancholy / sorrowful charm.",
+          "audioText": "哀愁の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "お願いします",
+            "これ",
             "です",
+            "ではありません",
             "哀愁の確認"
           ],
           "dictateSolution": [
             "哀愁の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "哀愁の確認をお願いします"
+          "correctAnswer": "哀愁の確認です"
         },
         {
           "id": "u28_l12_7",
@@ -2570,10 +2558,10 @@ export const unit28: DojoUnit = {
           "english": "Personal essay / literary miscellany",
           "audioText": "ずいひつ",
           "options": [
-            "Confirming Literary style",
-            "Confirming Melancholy / sorrowful charm",
+            "Lingering resonance / aftertaste",
+            "Confirming Subtle grace and hidden beauty",
             "Personal essay / literary miscellany",
-            "Confirming Personal essay / literary miscellany"
+            "Lyrical / poetic emotionalism"
           ],
           "correctAnswer": "Personal essay / literary miscellany"
         },
@@ -2586,34 +2574,35 @@ export const unit28: DojoUnit = {
           "english": "Build 'Personal essay / literary miscellany'",
           "audioText": "ずいひつ",
           "tileBank": [
-            "か",
-            "え",
-            "ひ",
             "ず",
-            "せ",
+            "め",
+            "も",
+            "い",
+            "ひ",
             "つ",
-            "き",
-            "い"
+            "け",
+            "て"
           ],
           "correctAnswer": "ずいひつ"
         },
         {
           "id": "u28_l13_3",
           "type": "cloze",
-          "prompt": "私は描写がすきです",
-          "furigana": "わたしはびょうしゃがすきです",
-          "romaji": "Watashi wa byousha ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Depiction / vivid description.",
-          "audioText": "描写",
-          "clozeSentence": "これは描写 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な描写です。",
+          "furigana": "これはいちばんたいせつなびょうしゃです。",
+          "romaji": "Kore wa ichiban taisetsu na byousha desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Depiction / vivid description.",
+          "audioText": "これは描写です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な描写です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l13_4",
@@ -2625,10 +2614,10 @@ export const unit28: DojoUnit = {
           "audioText": "これは描写です",
           "scrambleTokens": [
             "ではありません",
-            "です",
-            "描写",
+            "これは",
             "それ",
-            "これは"
+            "です",
+            "描写"
           ],
           "scrambleSolution": [
             "これは",
@@ -2657,24 +2646,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l13_6",
           "type": "dictate",
-          "prompt": "叙情的をお願いします",
-          "furigana": "じょじょうてきをおねがいします",
-          "romaji": "jojouteki o onegaishimasu.",
-          "english": "Lyrical / poetic emotionalism, please.",
-          "audioText": "叙情的をお願いします",
+          "prompt": "叙情的です",
+          "furigana": "じょじょうてきです",
+          "romaji": "jojouteki desu.",
+          "english": "It is Lyrical / poetic emotionalism.",
+          "audioText": "叙情的です",
           "dictateTokens": [
-            "を",
-            "お願いします",
-            "です",
             "叙情的",
-            "ありがとう"
+            "です",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "叙情的",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "叙情的をお願いします"
+          "correctAnswer": "叙情的です"
         },
         {
           "id": "u28_l13_7",
@@ -2776,10 +2763,10 @@ export const unit28: DojoUnit = {
           "english": "Metaphor / simile",
           "audioText": "ひゆ",
           "options": [
-            "Confirming Abyss / profound depth",
+            "Between the lines",
             "Metaphor / simile",
-            "Scenic taste / tasteful atmosphere",
-            "Confirming Masterpiece"
+            "Literary style",
+            "Confirming Literary style"
           ],
           "correctAnswer": "Metaphor / simile"
         },
@@ -2792,34 +2779,35 @@ export const unit28: DojoUnit = {
           "english": "Build 'Metaphor / simile'",
           "audioText": "ひゆ",
           "tileBank": [
-            "ち",
-            "く",
-            "ひ",
+            "を",
+            "あ",
             "ま",
-            "た",
             "ゆ",
-            "う",
-            "け"
+            "は",
+            "り",
+            "め",
+            "ひ"
           ],
           "correctAnswer": "ひゆ"
         },
         {
           "id": "u28_l14_3",
           "type": "cloze",
-          "prompt": "私は情緒がすきです",
-          "furigana": "わたしはじょうちょがすきです",
-          "romaji": "Watashi wa joutcho ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Atmosphere / evocative mood.",
-          "audioText": "情緒",
-          "clozeSentence": "これは情緒 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な情緒です。",
+          "furigana": "これはいちばんたいせつなじょうちょです。",
+          "romaji": "Kore wa ichiban taisetsu na joutcho desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Atmosphere / evocative mood.",
+          "audioText": "これは情緒です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な情緒です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l14_4",
@@ -2830,11 +2818,11 @@ export const unit28: DojoUnit = {
           "english": "This is Atmosphere / evocative mood.",
           "audioText": "これは情緒です",
           "scrambleTokens": [
-            "これは",
+            "情緒",
             "ではありません",
             "それ",
-            "です",
-            "情緒"
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2863,24 +2851,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l14_6",
           "type": "dictate",
-          "prompt": "哀愁をお願いします",
-          "furigana": "あいしゅうをおねがいします",
-          "romaji": "aishuu o onegaishimasu.",
-          "english": "Melancholy / sorrowful charm, please.",
-          "audioText": "哀愁をお願いします",
+          "prompt": "哀愁です",
+          "furigana": "あいしゅうです",
+          "romaji": "aishuu desu.",
+          "english": "It is Melancholy / sorrowful charm.",
+          "audioText": "哀愁です",
           "dictateTokens": [
-            "を",
-            "お願いします",
+            "ではありません",
             "哀愁",
-            "ありがとう",
-            "です"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "哀愁",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "哀愁をお願いします"
+          "correctAnswer": "哀愁です"
         },
         {
           "id": "u28_l14_7",
@@ -2983,10 +2969,10 @@ export const unit28: DojoUnit = {
           "english": "Lingering resonance / aftertaste",
           "audioText": "よいん",
           "options": [
-            "Metaphor / simile",
-            "Lingering resonance / aftertaste",
-            "Depiction / vivid description",
-            "Subtle grace and hidden beauty"
+            "Confirming Sentimentality",
+            "Scenic taste / tasteful atmosphere",
+            "Masterpiece",
+            "Lingering resonance / aftertaste"
           ],
           "correctAnswer": "Lingering resonance / aftertaste"
         },
@@ -2999,34 +2985,35 @@ export const unit28: DojoUnit = {
           "english": "Build 'Lingering resonance / aftertaste'",
           "audioText": "よいん",
           "tileBank": [
-            "に",
-            "ん",
-            "ら",
+            "る",
+            "な",
             "い",
             "よ",
-            "え",
-            "な",
-            "や"
+            "つ",
+            "と",
+            "ぬ",
+            "ん"
           ],
           "correctAnswer": "よいん"
         },
         {
           "id": "u28_l15_3",
           "type": "cloze",
-          "prompt": "私は感傷がすきです",
-          "furigana": "わたしはかんしょうがすきです",
-          "romaji": "Watashi wa kanshou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Sentimentality.",
-          "audioText": "感傷",
-          "clozeSentence": "これは感傷 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な感傷です。",
+          "furigana": "これはいちばんたいせつなかんしょうです。",
+          "romaji": "Kore wa ichiban taisetsu na kanshou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Sentimentality.",
+          "audioText": "これは感傷です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な感傷です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u28_l15_4",
@@ -3038,10 +3025,10 @@ export const unit28: DojoUnit = {
           "audioText": "これは感傷です",
           "scrambleTokens": [
             "それ",
-            "ではありません",
+            "感傷",
             "です",
-            "これは",
-            "感傷"
+            "ではありません",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -3070,24 +3057,22 @@ export const unit28: DojoUnit = {
         {
           "id": "u28_l15_6",
           "type": "dictate",
-          "prompt": "無常観をお願いします",
-          "furigana": "むじょうかんをおねがいします",
-          "romaji": "mujoukan o onegaishimasu.",
-          "english": "Buddhist sense of impermanence, please.",
-          "audioText": "無常観をお願いします",
+          "prompt": "無常観です",
+          "furigana": "むじょうかんです",
+          "romaji": "mujoukan desu.",
+          "english": "It is Buddhist sense of impermanence.",
+          "audioText": "無常観です",
           "dictateTokens": [
+            "無常観",
+            "ではありません",
             "です",
-            "ありがとう",
-            "お願いします",
-            "を",
-            "無常観"
+            "これ"
           ],
           "dictateSolution": [
             "無常観",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "無常観をお願いします"
+          "correctAnswer": "無常観です"
         },
         {
           "id": "u28_l15_7",
@@ -3172,10 +3157,10 @@ export const unit28: DojoUnit = {
         "english": "Personal essay / literary miscellany",
         "audioText": "ずいひつ",
         "options": [
-          "Confirming Subtle grace and hidden beauty",
+          "Confirming Lyrical / poetic emotionalism",
+          "Confirming Depiction / vivid description",
           "Personal essay / literary miscellany",
-          "Sentimentality",
-          "Confirming Sentimentality"
+          "Sentimentality"
         ],
         "correctAnswer": "Personal essay / literary miscellany"
       },
@@ -3188,14 +3173,14 @@ export const unit28: DojoUnit = {
         "english": "Build 'Personal essay / literary miscellany'",
         "audioText": "ずいひつ",
         "tileBank": [
-          "ひ",
-          "さ",
+          "ら",
+          "あ",
+          "む",
+          "た",
           "ず",
-          "せ",
-          "つ",
-          "ろ",
           "い",
-          "し"
+          "ひ",
+          "つ"
         ],
         "correctAnswer": "ずいひつ"
       },
@@ -3208,10 +3193,10 @@ export const unit28: DojoUnit = {
         "english": "Lingering resonance / aftertaste",
         "audioText": "よいん",
         "options": [
-          "Abyss / profound depth",
+          "Confirming Literary style",
+          "Confirming Subtle grace and hidden beauty",
           "Lingering resonance / aftertaste",
-          "Lyrical / poetic emotionalism",
-          "Confirming Metaphor / simile"
+          "Confirming Atmosphere / evocative mood"
         ],
         "correctAnswer": "Lingering resonance / aftertaste"
       },
@@ -3224,14 +3209,14 @@ export const unit28: DojoUnit = {
         "english": "Build 'Lingering resonance / aftertaste'",
         "audioText": "よいん",
         "tileBank": [
-          "さ",
-          "こ",
-          "き",
-          "い",
-          "ふ",
+          "は",
+          "く",
+          "よ",
+          "に",
+          "れ",
           "ん",
-          "ぬ",
-          "よ"
+          "い",
+          "り"
         ],
         "correctAnswer": "よいん"
       },
@@ -3244,10 +3229,10 @@ export const unit28: DojoUnit = {
         "english": "Subtle grace and hidden beauty",
         "audioText": "ゆうげん",
         "options": [
-          "Confirming Masterpiece",
-          "Confirming Atmosphere / evocative mood",
+          "Confirming Personal essay / literary miscellany",
+          "Confirming Scenic taste / tasteful atmosphere",
           "Subtle grace and hidden beauty",
-          "Personal essay / literary miscellany"
+          "Confirming Personal essay / literary miscellany"
         ],
         "correctAnswer": "Subtle grace and hidden beauty"
       },
@@ -3261,12 +3246,12 @@ export const unit28: DojoUnit = {
         "audioText": "ゆうげん",
         "tileBank": [
           "ゆ",
-          "う",
-          "げ",
-          "あ",
-          "そ",
+          "し",
+          "に",
           "の",
-          "ひ",
+          "げ",
+          "う",
+          "す",
           "ん"
         ],
         "correctAnswer": "ゆうげん"
@@ -3280,10 +3265,10 @@ export const unit28: DojoUnit = {
         "english": "Confirming Metaphor / simile",
         "audioText": "ひゆのかくにん",
         "options": [
-          "Sentimentality",
-          "Confirming Atmosphere / evocative mood",
           "Confirming Metaphor / simile",
-          "Confirming Lyrical / poetic emotionalism"
+          "Buddhist sense of impermanence",
+          "Subtle grace and hidden beauty",
+          "Confirming Subtle grace and hidden beauty"
         ],
         "correctAnswer": "Confirming Metaphor / simile"
       },
@@ -3297,13 +3282,13 @@ export const unit28: DojoUnit = {
         "audioText": "ひゆのかくにん",
         "tileBank": [
           "に",
-          "の",
-          "ん",
-          "ゆ",
-          "ひ",
           "く",
+          "の",
+          "ひ",
+          "ゆ",
           "か",
-          "へ"
+          "む",
+          "ん"
         ],
         "correctAnswer": "ひゆのかくにん"
       },
@@ -3316,10 +3301,10 @@ export const unit28: DojoUnit = {
         "english": "Confirming Literary style",
         "audioText": "ぶんたいのかくにん",
         "options": [
-          "Confirming Scenic taste / tasteful atmosphere",
           "Confirming Literary style",
-          "Lyrical / poetic emotionalism",
-          "Personal essay / literary miscellany"
+          "Confirming Depiction / vivid description",
+          "Confirming Atmosphere / evocative mood",
+          "Confirming Personal essay / literary miscellany"
         ],
         "correctAnswer": "Confirming Literary style"
       },
@@ -3332,14 +3317,14 @@ export const unit28: DojoUnit = {
         "english": "Build 'Confirming Literary style'",
         "audioText": "ぶんたいのかくにん",
         "tileBank": [
-          "い",
-          "ぶ",
-          "に",
-          "ん",
-          "く",
-          "の",
           "た",
-          "か"
+          "の",
+          "に",
+          "く",
+          "か",
+          "い",
+          "ん",
+          "ぶ"
         ],
         "correctAnswer": "ぶんたいのかくにん"
       },
@@ -3352,10 +3337,10 @@ export const unit28: DojoUnit = {
         "english": "Confirming Personal essay / literary miscellany",
         "audioText": "ずいひつのかくにん",
         "options": [
-          "Confirming Melancholy / sorrowful charm",
-          "Confirming Metaphor / simile",
-          "Confirming Depiction / vivid description",
-          "Confirming Personal essay / literary miscellany"
+          "Confirming Personal essay / literary miscellany",
+          "Confirming Masterpiece",
+          "Buddhist sense of impermanence",
+          "Confirming Buddhist sense of impermanence"
         ],
         "correctAnswer": "Confirming Personal essay / literary miscellany"
       },
@@ -3368,14 +3353,14 @@ export const unit28: DojoUnit = {
         "english": "Build 'Confirming Personal essay / literary miscellany'",
         "audioText": "ずいひつのかくにん",
         "tileBank": [
-          "の",
-          "い",
           "く",
-          "に",
-          "ず",
+          "い",
+          "ひ",
           "つ",
-          "か",
-          "ひ"
+          "ず",
+          "に",
+          "の",
+          "か"
         ],
         "correctAnswer": "ずいひつのかくにん"
       }

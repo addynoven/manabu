@@ -449,6 +449,538 @@ def generate_unit_curriculum(unit_num):
         
     return None
 
+def generate_cloze_item(num, l_num, v2, vocab_pool):
+    word = v2[0]
+    kana = v2[1]
+    romaji = v2[2]
+    english = v2[3]
+    cat = v2[4] if len(v2) > 4 else ""
+
+    GREETING_CLOZES = {
+        "おはようございます": {
+            "sentence": "朝、先生に会いました。「{{BLANK}}！」",
+            "prompt": "朝、先生に会いました。「おはようございます！」",
+            "furigana": "あさ、せんせいにあいました。「おはようございます！」",
+            "romaji": "Asa, sensei ni aimashita. 'Ohayou gozaimasu!'",
+            "english": "Morning greeting to teacher: 'Good morning!'",
+            "target": "おはようございます",
+            "options": ["おはようございます", "こんばんは", "おやすみなさい", "さようなら"],
+            "hint": "Use 「おはようございます」 in the morning until around 10:30 AM."
+        },
+        "こんにちは": {
+            "sentence": "昼、友達に会いました。「{{BLANK}}！」",
+            "prompt": "昼、友達に会いました。「こんにちは！」",
+            "furigana": "ひる、ともだちにあいました。「こんにちは！」",
+            "romaji": "Hiru, tomodachi ni aimashita. 'Konnichiwa!'",
+            "english": "Daytime greeting to friend: 'Hello!'",
+            "target": "こんにちは",
+            "options": ["こんにちは", "おはようございます", "こんばんは", "さようなら"],
+            "hint": "Use 「こんにちは」 during the daytime."
+        },
+        "こんばんは": {
+            "sentence": "夜、同僚に会いました。「{{BLANK}}！」",
+            "prompt": "夜、同僚に会いました。「こんばんは！」",
+            "furigana": "よる、どうりょうにあいました。「こんばんは！」",
+            "romaji": "Yoru, douryou ni aimashita. 'Konbanwa!'",
+            "english": "Evening greeting to colleague: 'Good evening!'",
+            "target": "こんばんは",
+            "options": ["こんばんは", "こんにちは", "おはようございます", "さようなら"],
+            "hint": "Use 「こんばんは」 in the evening after sunset."
+        },
+        "さようなら": {
+            "sentence": "先生と別れるとき: 「先生、{{BLANK}}！」",
+            "prompt": "先生と別れるとき: 「先生、さようなら！」",
+            "furigana": "せんせいとわかれるとき: 「せんせい、さようなら！」",
+            "romaji": "Sensei to wakareru toki: 'Sensei, sayounara!'",
+            "english": "Farewell when parting: 'Goodbye, teacher!'",
+            "target": "さようなら",
+            "options": ["さようなら", "こんにちは", "いただきます", "はじめまして"],
+            "hint": "「さようなら」 is a formal parting phrase."
+        },
+        "ありがとうございます": {
+            "sentence": "親切にしてもらいました。「{{BLANK}}！」",
+            "prompt": "親切にしてもらいました。「ありがとうございます！」",
+            "furigana": "しんせつにしてもらいました。「ありがとうございます！」",
+            "romaji": "Shinsetsu ni shite moraimashita. 'Arigatou gozaimasu!'",
+            "english": "Expressing gratitude: 'Thank you very much!'",
+            "target": "ありがとうございます",
+            "options": ["ありがとうございます", "どういたしまして", "ごちそうさまでした", "さようなら"],
+            "hint": "「ありがとうございます」 expresses polite gratitude."
+        },
+        "どういたしまして": {
+            "sentence": "「ありがとうございます！」「いいえ、{{BLANK}}。」",
+            "prompt": "「ありがとうございます！」「いいえ、どういたしまして。」",
+            "furigana": "「ありがとうございます！」「いいえ、どういたしまして。」",
+            "romaji": "'Arigatou gozaimasu!' 'Iie, douitashimashite.'",
+            "english": "'Thank you very much!' 'You are welcome.'",
+            "target": "どういたしまして",
+            "options": ["どういたしまして", "ありがとうございます", "はじめまして", "おやすみなさい"],
+            "hint": "「どういたしまして」 is used to say 'you are welcome'."
+        },
+        "はじめまして": {
+            "sentence": "「{{BLANK}}、田中です。よろしくお願いします。」",
+            "prompt": "はじめまして、田中です。よろしくお願いします。",
+            "furigana": "はじめまして、たなかです。よろしくおねがいします。",
+            "romaji": "Hajimemashite, Tanaka desu. Yoroshiku onegaishimasu.",
+            "english": "'Nice to meet you, I'm Tanaka. Pleased to meet you.'",
+            "target": "はじめまして",
+            "options": ["はじめまして", "さようなら", "いただきます", "ただいま"],
+            "hint": "「はじめまして」 is used when meeting someone for the first time."
+        },
+        "よろしくお願いします": {
+            "sentence": "「はじめまして、スミスです。どうぞ{{BLANK}}。」",
+            "prompt": "はじめまして、スミスです。どうぞよろしくお願いします。",
+            "furigana": "はじめまして、スミスです。どうぞよろしくおねがいします。",
+            "romaji": "Hajimemashite, Sumisu desu. Douzo yoroshiku onegaishimasu.",
+            "english": "'Nice to meet you, I'm Smith. Please treat me well.'",
+            "target": "よろしくお願いします",
+            "options": ["よろしくお願いします", "どういたしまして", "ごちそうさまでした", "おやすみなさい"],
+            "hint": "「よろしくお願いします」 is a key Japanese courtesy for cooperation."
+        },
+        "はい": {
+            "sentence": "「学生ですか？」「{{BLANK}}、学生です。」",
+            "prompt": "「学生ですか？」「はい、学生です。」",
+            "furigana": "「がくせいですか？」「はい、がくせいですか。」",
+            "romaji": "'Gakusei desu ka?' 'Hai, gakusei desu.'",
+            "english": "'Are you a student?' 'Yes, I am a student.'",
+            "target": "はい",
+            "options": ["はい", "いいえ", "誰", "どこ"],
+            "hint": "「はい」 means 'Yes' in polite speech."
+        },
+        "いいえ": {
+            "sentence": "「日本人ですか？」「{{BLANK}}、アメリカ人です。」",
+            "prompt": "「日本人ですか？」「いいえ、アメリカ人です。」",
+            "furigana": "「にほんじんですか？」「いいえ、アメリカじんです。」",
+            "romaji": "'Nihonjin desu ka?' 'Iie, Amerikajin desu.'",
+            "english": "'Are you Japanese?' 'No, I am American.'",
+            "target": "いいえ",
+            "options": ["いいえ", "はい", "どうぞ", "だれ"],
+            "hint": "「いいえ」 means 'No' in polite speech."
+        },
+        "いただきます": {
+            "sentence": "ご飯を食べるとき: 「{{BLANK}}！」",
+            "prompt": "ご飯を食べるとき: 「いただきます！」",
+            "furigana": "ごはんをたべるとき: 「いただきます！」",
+            "romaji": "Gohan o taberu toki: 'Itadakimasu!'",
+            "english": "Before eating a meal: 'Let's eat!'",
+            "target": "いただきます",
+            "options": ["いただきます", "ごちそうさまでした", "行ってきます", "ただいま"],
+            "hint": "Said before eating to show appreciation for food."
+        },
+        "ごちそうさまでした": {
+            "sentence": "ご飯を食べ終えたとき: 「{{BLANK}}！」",
+            "prompt": "ご飯を食べ終えたとき: 「ごちそうさまでした！」",
+            "furigana": "ごはんをたべおえたとき: 「ごちそうさまでした！」",
+            "romaji": "Gohan o tabeoeta toki: 'Gochisousamadeshita!'",
+            "english": "After finishing a meal: 'Thank you for the meal!'",
+            "target": "ごちそうさまでした",
+            "options": ["ごちそうさまでした", "いただきます", "おかえりなさい", "いってらっしゃい"],
+            "hint": "Said after a meal to thank the host or chef."
+        },
+        "ただいま": {
+            "sentence": "家に帰ってきたとき: 「{{BLANK}}！」",
+            "prompt": "家に帰ってきたとき: 「ただいま！」",
+            "furigana": "いえにかえってきたとき: 「ただいま！」",
+            "romaji": "Ie ni kaette kita toki: 'Tadaima!'",
+            "english": "Returning home: 'I am home!'",
+            "target": "ただいま",
+            "options": ["ただいま", "行ってきます", "おかえりなさい", "いってらっしゃい"],
+            "hint": "Said when you arrive home."
+        },
+        "おかえりなさい": {
+            "sentence": "家族が帰ってきたとき: 「{{BLANK}}！」",
+            "prompt": "家族が帰ってきたとき: 「おかえりなさい！」",
+            "furigana": "かぞくがかえってきたとき: 「おかえりなさい！」",
+            "romaji": "Kazoku ga kaette kita toki: 'Okaerinasai!'",
+            "english": "Welcoming someone home: 'Welcome back!'",
+            "target": "おかえりなさい",
+            "options": ["おかえりなさい", "ただいま", "行ってきます", "いってらっしゃい"],
+            "hint": "Said to welcome family or friends home."
+        },
+        "行ってきます": {
+            "sentence": "家を出かけるとき: 「{{BLANK}}！」",
+            "prompt": "家を出かけるとき: 「行ってきます！」",
+            "furigana": "いえをでかけるとき: 「いってきます！」",
+            "romaji": "Ie o dekakeru toki: 'Ittekimasu!'",
+            "english": "Leaving the house: 'I am leaving!'",
+            "target": "行ってきます",
+            "options": ["行ってきます", "ただいま", "おかえりなさい", "いってらっしゃい"],
+            "hint": "Said when leaving home for school or work."
+        },
+        "いってらっしゃい": {
+            "sentence": "出かける人を見送るとき: 「{{BLANK}}！」",
+            "prompt": "出かける人を見送るとき: 「いってらっしゃい！」",
+            "furigana": "でかけるひとをみおくるとき: 「いってらっしゃい！」",
+            "romaji": "Dekakeru hito o miokuru toki: 'Itterasshai!'",
+            "english": "Seeing someone off: 'Take care / Have a good day!'",
+            "target": "いってらっしゃい",
+            "options": ["いってらっしゃい", "行ってきます", "ただいま", "おかえりなさい"],
+            "hint": "Said to see off family leaving home."
+        },
+        "おやすみなさい": {
+            "sentence": "夜寝るときの挨拶: 「{{BLANK}}。」",
+            "prompt": "夜寝るときの挨拶: 「おやすみなさい。」",
+            "furigana": "よるねるときのあいさつ: 「おやすみなさい。」",
+            "romaji": "Yoru neru toki no aisatsu: 'Oyasuminasai.'",
+            "english": "Greeting before sleeping: 'Good night.'",
+            "target": "おやすみなさい",
+            "options": ["おやすみなさい", "おはようございます", "こんにちは", "さようなら"],
+            "hint": "Said before going to sleep."
+        },
+        "すみません": {
+            "sentence": "店員を呼ぶとき: 「{{BLANK}}、お水をください。」",
+            "prompt": "店員を呼ぶとき: 「すみません、お水をください。」",
+            "furigana": "てんいんをよぶとき: 「すみません、おみずをください。」",
+            "romaji": "Ten'in o yobu toki: 'Sumimasen, omizu o kudasai.'",
+            "english": "Calling staff: 'Excuse me, water please.'",
+            "target": "すみません",
+            "options": ["すみません", "ありがとうございます", "いただきます", "さようなら"],
+            "hint": "「すみません」 is used to get attention or apologize."
+        },
+        "ごめんなさい": {
+            "sentence": "友達に謝るとき: 「本当に{{BLANK}}。」",
+            "prompt": "友達に謝るとき: 「本当にごめんなさい。」",
+            "furigana": "ともだちにあやまるとき: 「ほんとうにごめんなさい。」",
+            "romaji": "Tomodachi ni ayamaru toki: 'Hontou ni gomennasai.'",
+            "english": "Apologizing to friend: 'I am truly sorry.'",
+            "target": "ごめんなさい",
+            "options": ["ごめんなさい", "ありがとうございます", "いただきます", "どういたしまして"],
+            "hint": "Casual polite apology between friends."
+        },
+        "こちらこそ": {
+            "sentence": "「よろしくお願いします。」「{{BLANK}}よろしくお願いします。」",
+            "prompt": "「よろしくお願いします。」「こちらこそよろしくお願いします。」",
+            "furigana": "「よろしくおねがいします。」「こちらこそよろしくおねがいします。」",
+            "romaji": "'Yoroshiku onegaishimasu.' 'Kochirakoso yoroshiku onegaishimasu.'",
+            "english": "'Pleased to meet you.' 'Likewise, pleased to meet you.'",
+            "target": "こちらこそ",
+            "options": ["こちらこそ", "すみません", "さようなら", "どういたしまして"],
+            "hint": "「こちらこそ」 means 'likewise / the pleasure is mine'."
+        },
+        "失礼します": {
+            "sentence": "部屋を出るとき: 「お先に{{BLANK}}。」",
+            "prompt": "部屋を出るとき: 「お先に失礼します。」",
+            "furigana": "へやをでるとき: 「おさきにしつれいします。」",
+            "romaji": "Heya o deru toki: 'Osaki ni shitsureishimasu.'",
+            "english": "Leaving a room: 'Pardon me for leaving first.'",
+            "target": "失礼します",
+            "options": ["失礼します", "こんにちは", "いただきます", "おやすみなさい"],
+            "hint": "Polite expression when leaving or entering a room."
+        },
+    }
+
+    if word in GREETING_CLOZES:
+        info = GREETING_CLOZES[word]
+        return {
+            "id": f"u{num}_l{l_num}_3",
+            "type": "cloze",
+            "prompt": info["prompt"],
+            "furigana": info.get("furigana", info["prompt"]),
+            "romaji": info.get("romaji", romaji),
+            "english": info["english"],
+            "audioText": word,
+            "clozeSentence": info["sentence"],
+            "clozeTarget": info["target"],
+            "clozeOptions": info["options"],
+            "correctAnswer": info["target"],
+            "explanation": info.get("hint", "")
+        }
+
+    # Food / Drink category
+    if "Food" in cat or "食べ物" in cat or "料理" in cat:
+        return {
+            "id": f"u{num}_l{l_num}_3",
+            "type": "cloze",
+            "prompt": f"私は{word}が好きです。",
+            "furigana": f"わたしは{kana}がすきです。",
+            "romaji": f"Watashi wa {romaji} ga suki desu.",
+            "english": f"Fill in particle 'が' (ga) for preference: I like {english}.",
+            "audioText": f"私は{word}が好きです。",
+            "clozeSentence": f"私は{word} {{{{BLANK}}}} 好きです。",
+            "clozeTarget": "が",
+            "clozeOptions": ["が", "を", "に", "で"],
+            "correctAnswer": "が",
+            "explanation": "助詞「が」 (ga) marks the object of preference with 「好き」 (suki)."
+        }
+
+    if "Drink" in cat or "飲み物" in cat:
+        return {
+            "id": f"u{num}_l{l_num}_3",
+            "type": "cloze",
+            "prompt": f"毎朝、冷たい{word}を飲みます。",
+            "furigana": f"まいあさ、つめたい{kana}をのみます。",
+            "romaji": f"Maiasa, tsumetai {romaji} o nomimasu.",
+            "english": f"Fill in object particle 'を' (o): I drink cold {english} every morning.",
+            "audioText": f"{word}を飲みます。",
+            "clozeSentence": f"毎朝、冷たい{word} {{{{BLANK}}}} 飲みます。",
+            "clozeTarget": "を",
+            "clozeOptions": ["を", "は", "に", "で"],
+            "correctAnswer": "を",
+            "explanation": "助詞「を」 (o) marks the direct object of action verb 「飲みます」 (drink)."
+        }
+
+    # Person / Role / Occupation / Nationality
+    if any(k in cat for k in ["Occupation", "職業", "Name", "人名", "Nationality", "国籍", "Status", "身分", "Origin", "身元"]):
+        return {
+            "id": f"u{num}_l{l_num}_3",
+            "type": "cloze",
+            "prompt": f"田中さんは{word}です。",
+            "furigana": f"たなかさんは{kana}です。",
+            "romaji": f"Tanaka-san wa {romaji} desu.",
+            "english": f"Fill in topic particle 'は' (wa): Mr. Tanaka is a {english}.",
+            "audioText": f"田中さんは{word}です。",
+            "clozeSentence": f"田中さん {{{{BLANK}}}} {word}です。",
+            "clozeTarget": "は",
+            "clozeOptions": ["は", "が", "を", "に"],
+            "correctAnswer": "は",
+            "explanation": "助詞「は」 (wa) marks the topic of the sentence."
+        }
+
+    # Verb category
+    if "Verb" in cat or "動詞" in cat:
+        if word in ["行く", "いく", "来る", "くる", "帰る", "かえる"]:
+            return {
+                "id": f"u{num}_l{l_num}_3",
+                "type": "cloze",
+                "prompt": f"電車で学校へ{word}。",
+                "furigana": f"でんしゃでがっこうへ{kana}。",
+                "romaji": f"Densha de gakkou e {romaji}.",
+                "english": f"Fill in direction particle 'へ' (e): Go to school by train.",
+                "audioText": f"学校へ{word}。",
+                "clozeSentence": f"電車で学校 {{{{BLANK}}}} {word}。",
+                "clozeTarget": "へ",
+                "clozeOptions": ["へ", "を", "が", "で"],
+                "correctAnswer": "へ",
+                "explanation": "助詞「へ」 (e) marks direction of travel towards a destination."
+            }
+        else:
+            return {
+                "id": f"u{num}_l{l_num}_3",
+                "type": "cloze",
+                "prompt": f"毎日、日本語を{word}。",
+                "furigana": f"まいにち、にほんごを{kana}。",
+                "romaji": f"Mainichi, nihongo o {romaji}.",
+                "english": f"Fill in direct object particle 'を' (o): {english} Japanese every day.",
+                "audioText": f"日本語を{word}。",
+                "clozeSentence": f"毎日、日本語 {{{{BLANK}}}} {word}。",
+                "clozeTarget": "を",
+                "clozeOptions": ["を", "は", "に", "で"],
+                "correctAnswer": "を",
+                "explanation": "助詞「を」 (o) marks the object of the action verb."
+            }
+
+    # Fallback for all other nouns and terms
+    return {
+        "id": f"u{num}_l{l_num}_3",
+        "type": "cloze",
+        "prompt": f"これはいちばん大切な{word}です。",
+        "furigana": f"これはいちばんたいせつな{kana}です。",
+        "romaji": f"Kore wa ichiban taisetsu na {romaji} desu.",
+        "english": f"Fill in topic particle 'は' (wa): This is the most important {english}.",
+        "audioText": f"これは{word}です。",
+        "clozeSentence": f"これ {{{{BLANK}}}} いちばん大切な{word}です。",
+        "clozeTarget": "は",
+        "clozeOptions": ["は", "が", "を", "に"],
+        "correctAnswer": "は",
+        "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+    }
+
+def generate_scramble_item(num, l_num, v2, vocab_pool):
+    word = v2[0]
+    kana = v2[1]
+    romaji = v2[2]
+    english = v2[3]
+    cat = v2[4] if len(v2) > 4 else ""
+
+    GREETING_SCRAMBLES = {
+        "おはようございます": (["田中さん", "、", "おはようございます"], ["さようなら", "です"], "田中さん、おはようございます", "たなかさん、おはようございます", "Tanaka-san, ohayou gozaimasu", "Good morning, Mr. Tanaka."),
+        "こんにちは": (["みなさん", "、", "こんにちは"], ["さようなら", "です"], "みなさん、こんにちは", "みなさん、こんにちは", "Minasan, konnichiwa", "Hello, everyone."),
+        "こんばんは": (["先生", "、", "こんばんは"], ["おはよう", "です"], "先生、こんばんは", "せんせい、こんばんは", "Sensei, konbanwa", "Good evening, teacher."),
+        "さようなら": (["では", "、", "また", "さようなら"], ["こんにちは"], "では、またさようなら", "では、またさようなら", "Dewa, mata sayounara", "Well then, goodbye for now."),
+        "ありがとうございます": (["どうも", "ありがとう", "ございます"], ["いいえ", "です"], "どうもありがとうございます", "どうもありがとうございます", "Doumo arigatou gozaimasu", "Thank you very much."),
+        "どういたしまして": (["いいえ", "、", "どういたしまして"], ["ありがとう"], "いいえ、どういたしまして", "いいえ、どういたしまして", "Iie, douitashimashite", "No, you are welcome."),
+        "はじめまして": (["はじめまして", "、", "田中", "です"], ["さようなら"], "はじめまして、田中です", "はじめまして、たなかです", "Hajimemashite, Tanaka desu", "Nice to meet you, I'm Tanaka."),
+        "よろしくお願いします": (["どうぞ", "よろしく", "お願いします"], ["ありがとう"], "どうぞよろしくお願いします", "どうぞよろしくおねがいします", "Douzo yoroshiku onegaishimasu", "Please treat me well."),
+        "はい": (["はい", "、", "元気", "です"], ["いいえ"], "はい、元気です", "はい、げんきです", "Hai, genki desu", "Yes, I am well."),
+        "いいえ": (["いいえ", "、", "元気", "ではありません"], ["はい"], "いいえ、元気ではありません", "いいえ、げんきではありません", "Iie, genki dewa arimasen", "No, I am not well."),
+        "いただきます": (["それでは", "、", "いただきます"], ["ごちそうさま"], "それでは、いただきます", "それでは、いただきます", "Sore dewa, itadakimasu", "Well then, let's eat."),
+        "ごちそうさまでした": (["おいしかったです", "、", "ごちそうさまでした"], ["いただきます"], "おいしかったです、ごちそうさまでした", "おいしかったです、ごちそうさまでした", "Oishikatta desu, gochisousamadeshita", "It was delicious, thank you for the meal."),
+    }
+
+    if word in GREETING_SCRAMBLES:
+        chunks, dists, full_p, full_f, full_r, full_e = GREETING_SCRAMBLES[word]
+        tokens = chunks + dists
+        random.shuffle(tokens)
+        return {
+            "id": f"u{num}_l{l_num}_4",
+            "type": "scramble",
+            "prompt": full_p,
+            "furigana": full_f,
+            "romaji": full_r,
+            "english": full_e,
+            "audioText": full_p,
+            "scrambleTokens": tokens,
+            "scrambleSolution": chunks,
+            "correctAnswer": "".join(chunks)
+        }
+
+    # Food
+    if "Food" in cat or "食べ物" in cat:
+        chunks = ["私は", f"{word}が", "好きです"]
+        dists = ["を", "ではありません"]
+        tokens = chunks + dists
+        random.shuffle(tokens)
+        return {
+            "id": f"u{num}_l{l_num}_4",
+            "type": "scramble",
+            "prompt": f"私は{word}が好きです",
+            "furigana": f"わたしは{kana}がすきです",
+            "romaji": f"Watashi wa {romaji} ga suki desu.",
+            "english": f"I like {english}.",
+            "audioText": f"私は{word}が好きです",
+            "scrambleTokens": tokens,
+            "scrambleSolution": chunks,
+            "correctAnswer": f"私は{word}が好きです"
+        }
+
+    # Drink
+    if "Drink" in cat or "飲み物" in cat:
+        chunks = ["冷たい", f"{word}を", "飲みます"]
+        dists = ["が", "食べます"]
+        tokens = chunks + dists
+        random.shuffle(tokens)
+        return {
+            "id": f"u{num}_l{l_num}_4",
+            "type": "scramble",
+            "prompt": f"冷たい{word}を飲みます",
+            "furigana": f"つめたい{kana}をのみます",
+            "romaji": f"Tsumetai {romaji} o nomimasu.",
+            "english": f"Drink cold {english}.",
+            "audioText": f"冷たい{word}を飲みます",
+            "scrambleTokens": tokens,
+            "scrambleSolution": chunks,
+            "correctAnswer": f"冷たい{word}を飲みます"
+        }
+
+    # Person / Status
+    if any(k in cat for k in ["Occupation", "職業", "Name", "人名", "Nationality", "国籍", "Status", "身分"]):
+        chunks = ["田中さんは", word, "です"]
+        dists = ["ではありません", "を"]
+        tokens = chunks + dists
+        random.shuffle(tokens)
+        return {
+            "id": f"u{num}_l{l_num}_4",
+            "type": "scramble",
+            "prompt": f"田中さんは{word}です",
+            "furigana": f"たなかさんは{kana}です",
+            "romaji": f"Tanaka-san wa {romaji} desu.",
+            "english": f"Mr. Tanaka is a {english}.",
+            "audioText": f"田中さんは{word}です",
+            "scrambleTokens": tokens,
+            "scrambleSolution": chunks,
+            "correctAnswer": f"田中さんは{word}です"
+        }
+
+    chunks = ["これは", word, "です"]
+    dists = ["それ", "ではありません"]
+    tokens = chunks + dists
+    random.shuffle(tokens)
+    return {
+        "id": f"u{num}_l{l_num}_4",
+        "type": "scramble",
+        "prompt": f"これは{word}です",
+        "furigana": f"これは{kana}です",
+        "romaji": f"Kore wa {romaji} desu.",
+        "english": f"This is {english}.",
+        "audioText": f"これは{word}です",
+        "scrambleTokens": tokens,
+        "scrambleSolution": chunks,
+        "correctAnswer": f"これは{word}です"
+    }
+
+def generate_dictate_item(num, l_num, v3, vocab_pool):
+    word = v3[0]
+    kana = v3[1]
+    romaji = v3[2]
+    english = v3[3]
+    cat = v3[4] if len(v3) > 4 else ""
+
+    GREETING_DICTATES = {
+        "こんばんは": (["こんばんは"], ["さようなら", "です"], "こんばんは", "こんばんは", "konbanwa", "Good evening"),
+        "どういたしまして": (["どういたしまして"], ["ありがとう", "です"], "どういたしまして", "どういたしまして", "douitashimashite", "You are welcome"),
+        "はじめまして": (["はじめまして"], ["さようなら", "です"], "はじめまして", "はじめまして", "hajimemashite", "Nice to meet you"),
+        "さようなら": (["さようなら"], ["こんにちは", "です"], "さようなら", "さようなら", "sayounara", "Goodbye"),
+        "いただきます": (["いただきます"], ["ごちそうさま", "です"], "いただきます", "いただきます", "itadakimasu", "Let's eat"),
+    }
+    if word in GREETING_DICTATES:
+        sol, dists, p, f, r, e = GREETING_DICTATES[word]
+        tokens = sol + dists
+        random.shuffle(tokens)
+        return {
+            "id": f"u{num}_l{l_num}_6",
+            "type": "dictate",
+            "prompt": p,
+            "furigana": f,
+            "romaji": r,
+            "english": e,
+            "audioText": p,
+            "dictateTokens": tokens,
+            "dictateSolution": sol,
+            "correctAnswer": p
+        }
+
+    # Food / Drink / Items
+    if any(k in cat for k in ["Food", "食べ物", "Drink", "飲み物", "軽食", "デザート", "衣料", "名詞"]):
+        sol = [word, "を", "お願いします"]
+        tokens = [word, "を", "お願いします", "ありがとう", "です"]
+        random.shuffle(tokens)
+        return {
+            "id": f"u{num}_l{l_num}_6",
+            "type": "dictate",
+            "prompt": f"{word}をお願いします",
+            "furigana": f"{kana}をおねがいします",
+            "romaji": f"{romaji} o onegaishimasu.",
+            "english": f"{english}, please.",
+            "audioText": f"{word}をお願いします",
+            "dictateTokens": tokens,
+            "dictateSolution": sol,
+            "correctAnswer": f"{word}をお願いします"
+        }
+
+    # Person / Status
+    if any(k in cat for k in ["Occupation", "職業", "Name", "人名", "Nationality", "国籍", "Status", "身分"]):
+        sol = ["私は", word, "です"]
+        tokens = ["私は", word, "です", "田中", "ではありません"]
+        random.shuffle(tokens)
+        return {
+            "id": f"u{num}_l{l_num}_6",
+            "type": "dictate",
+            "prompt": f"私は{word}です",
+            "furigana": f"わたしは{kana}です",
+            "romaji": f"Watashi wa {romaji} desu.",
+            "english": f"I am a {english}.",
+            "audioText": f"私は{word}です",
+            "dictateTokens": tokens,
+            "dictateSolution": sol,
+            "correctAnswer": f"私は{word}です"
+        }
+
+    sol = [word, "です"]
+    tokens = [word, "です", "これ", "ではありません"]
+    random.shuffle(tokens)
+    return {
+        "id": f"u{num}_l{l_num}_6",
+        "type": "dictate",
+        "prompt": f"{word}です",
+        "furigana": f"{kana}です",
+        "romaji": f"{romaji} desu.",
+        "english": f"It is {english}.",
+        "audioText": f"{word}です",
+        "dictateTokens": tokens,
+        "dictateSolution": sol,
+        "correctAnswer": f"{word}です"
+    }
+
 def build_rich_unit(num, custom_cfg=None):
     from generate_all_units import get_extended_unit_config, UNITS_CONFIG
     
@@ -585,40 +1117,10 @@ def build_rich_unit(num, custom_cfg=None):
         })
 
         # 3. Cloze (Fill-in-the-Blank)
-        cloze_particles = ["は", "が", "を", "に"]
-        target_particle = cloze_particles[(l_num % len(cloze_particles))]
-        cloze_sentence = f"私は{v2[0]} {{{{BLANK}}}} 好きです。" if "Noun" in v2[4] or "Food" in v2[4] or "名詞" in v2[4] or "食べ物" in v2[4] else f"これは{v2[0]} {{{{BLANK}}}} す。"
-        lesson_items.append({
-            "id": f"u{num}_l{l_num}_3",
-            "type": "cloze",
-            "prompt": f"私は{v2[0]}がすきです",
-            "furigana": f"わたしは{v2[1]}がすきです",
-            "romaji": f"Watashi wa {v2[2]} ga suki desu.",
-            "english": f"Fill in the blank with the correct particle for {v2[3]}.",
-            "audioText": f"{v2[0]}",
-            "clozeSentence": cloze_sentence,
-            "clozeTarget": target_particle,
-            "clozeOptions": cloze_particles,
-            "correctAnswer": target_particle
-        })
+        lesson_items.append(generate_cloze_item(num, l_num, v2, vocab_pool))
 
         # 4. Sentence Scramble (Grammar Word Order)
-        scramble_chunks = ["これは", f"{v2[0]}", "です"]
-        distractors = ["それ", "ではありません"]
-        scramble_tokens = scramble_chunks + distractors
-        random.shuffle(scramble_tokens)
-        lesson_items.append({
-            "id": f"u{num}_l{l_num}_4",
-            "type": "scramble",
-            "prompt": f"これは{v2[0]}です",
-            "furigana": f"これは{v2[1]}です",
-            "romaji": f"Kore wa {v2[2]} desu.",
-            "english": f"This is {v2[3]}.",
-            "audioText": f"これは{v2[0]}です",
-            "scrambleTokens": scramble_tokens,
-            "scrambleSolution": scramble_chunks,
-            "correctAnswer": f"これは{v2[0]}です"
-        })
+        lesson_items.append(generate_scramble_item(num, l_num, v2, vocab_pool))
 
         # 5. Speech Recognition Drill
         lesson_items.append({
@@ -635,21 +1137,7 @@ def build_rich_unit(num, custom_cfg=None):
         })
 
         # 6. Listening Dictation (Audio-First)
-        dictate_solution = [v3[0], "を", "お願いします"]
-        dictate_tokens = [v3[0], "を", "お願いします", "ありがとう", "です"]
-        random.shuffle(dictate_tokens)
-        lesson_items.append({
-            "id": f"u{num}_l{l_num}_6",
-            "type": "dictate",
-            "prompt": f"{v3[0]}をお願いします",
-            "furigana": f"{v3[1]}をおねがいします",
-            "romaji": f"{v3[2]} o onegaishimasu.",
-            "english": f"{v3[3]}, please.",
-            "audioText": f"{v3[0]}をお願いします",
-            "dictateTokens": dictate_tokens,
-            "dictateSolution": dictate_solution,
-            "correctAnswer": f"{v3[0]}をお願いします"
-        })
+        lesson_items.append(generate_dictate_item(num, l_num, v3, vocab_pool))
 
         # 7. Matching Pairs (4-Pair Two-Column)
         match_source = [vocab_pool[(start_idx + i) % len(vocab_pool)] for i in range(4)]

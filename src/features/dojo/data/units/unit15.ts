@@ -43,10 +43,10 @@ export const unit15: DojoUnit = {
           "english": "Naturally it means that...",
           "audioText": "わけだ",
           "options": [
+            "Circumstances / background situation",
             "Naturally it means that...",
             "Therefore / accordingly",
-            "As a matter of fact / actually",
-            "Misunderstanding"
+            "Confirming Misunderstanding"
           ],
           "correctAnswer": "Naturally it means that..."
         },
@@ -59,34 +59,35 @@ export const unit15: DojoUnit = {
           "english": "Build 'Naturally it means that...'",
           "audioText": "わけだ",
           "tileBank": [
-            "わ",
-            "の",
             "け",
-            "り",
-            "な",
-            "み",
+            "わ",
+            "う",
+            "ぬ",
             "だ",
-            "ゆ"
+            "り",
+            "お",
+            "ひ"
           ],
           "correctAnswer": "わけだ"
         },
         {
           "id": "u15_l1_3",
           "type": "cloze",
-          "prompt": "私はおかげでがすきです",
-          "furigana": "わたしはおかげでがすきです",
-          "romaji": "Watashi wa okage de ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Thanks to (positive cause).",
-          "audioText": "おかげで",
-          "clozeSentence": "これはおかげで {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なおかげでです。",
+          "furigana": "これはいちばんたいせつなおかげでです。",
+          "romaji": "Kore wa ichiban taisetsu na okage de desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Thanks to (positive cause).",
+          "audioText": "これはおかげでです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なおかげでです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l1_4",
@@ -97,11 +98,11 @@ export const unit15: DojoUnit = {
           "english": "This is Thanks to (positive cause).",
           "audioText": "これはおかげでです",
           "scrambleTokens": [
-            "です",
-            "ではありません",
             "それ",
+            "これは",
+            "ではありません",
             "おかげで",
-            "これは"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -130,24 +131,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l1_6",
           "type": "dictate",
-          "prompt": "せいでをお願いします",
-          "furigana": "せいでをおねがいします",
-          "romaji": "sei de o onegaishimasu.",
-          "english": "Due to / because of (blame), please.",
-          "audioText": "せいでをお願いします",
+          "prompt": "せいでです",
+          "furigana": "せいでです",
+          "romaji": "sei de desu.",
+          "english": "It is Due to / because of (blame).",
+          "audioText": "せいでです",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "を",
+            "ではありません",
+            "これ",
             "です",
             "せいで"
           ],
           "dictateSolution": [
             "せいで",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "せいでをお願いします"
+          "correctAnswer": "せいでです"
         },
         {
           "id": "u15_l1_7",
@@ -249,10 +248,10 @@ export const unit15: DojoUnit = {
           "english": "Cause / origin of problem",
           "audioText": "げんいん",
           "options": [
-            "Confirming Due to / because of (blame)",
-            "In short / that is to say",
-            "Confirming Thanks to (positive cause)",
-            "Cause / origin of problem"
+            "Cause / origin of problem",
+            "Confirming Reason / motive",
+            "Explanation",
+            "Confirming As a matter of fact / actually"
           ],
           "correctAnswer": "Cause / origin of problem"
         },
@@ -265,34 +264,35 @@ export const unit15: DojoUnit = {
           "english": "Build 'Cause / origin of problem'",
           "audioText": "げんいん",
           "tileBank": [
-            "と",
-            "ん",
             "げ",
-            "ま",
-            "も",
-            "い",
+            "し",
             "ん",
-            "え"
+            "や",
+            "わ",
+            "い",
+            "ほ",
+            "ん"
           ],
           "correctAnswer": "げんいん"
         },
         {
           "id": "u15_l2_3",
           "type": "cloze",
-          "prompt": "私は理由がすきです",
-          "furigana": "わたしはりゆうがすきです",
-          "romaji": "Watashi wa riyuu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Reason / motive.",
-          "audioText": "理由",
-          "clozeSentence": "これは理由 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な理由です。",
+          "furigana": "これはいちばんたいせつなりゆうです。",
+          "romaji": "Kore wa ichiban taisetsu na riyuu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Reason / motive.",
+          "audioText": "これは理由です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な理由です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l2_4",
@@ -303,10 +303,10 @@ export const unit15: DojoUnit = {
           "english": "This is Reason / motive.",
           "audioText": "これは理由です",
           "scrambleTokens": [
-            "ではありません",
             "これは",
-            "理由",
             "それ",
+            "ではありません",
+            "理由",
             "です"
           ],
           "scrambleSolution": [
@@ -336,24 +336,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l2_6",
           "type": "dictate",
-          "prompt": "誤解をお願いします",
-          "furigana": "ごかいをおねがいします",
-          "romaji": "gokai o onegaishimasu.",
-          "english": "Misunderstanding, please.",
-          "audioText": "誤解をお願いします",
+          "prompt": "誤解です",
+          "furigana": "ごかいです",
+          "romaji": "gokai desu.",
+          "english": "It is Misunderstanding.",
+          "audioText": "誤解です",
           "dictateTokens": [
-            "お願いします",
-            "誤解",
+            "これ",
             "です",
-            "ありがとう",
-            "を"
+            "ではありません",
+            "誤解"
           ],
           "dictateSolution": [
             "誤解",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "誤解をお願いします"
+          "correctAnswer": "誤解です"
         },
         {
           "id": "u15_l2_7",
@@ -454,10 +452,10 @@ export const unit15: DojoUnit = {
           "english": "As a matter of fact / actually",
           "audioText": "じつは",
           "options": [
-            "Confirming Thanks to (positive cause)",
+            "Confirming Interpretation",
+            "Confirming Reason / motive",
             "As a matter of fact / actually",
-            "Confirming Misunderstanding",
-            "Misunderstanding"
+            "Thanks to (positive cause)"
           ],
           "correctAnswer": "As a matter of fact / actually"
         },
@@ -470,34 +468,35 @@ export const unit15: DojoUnit = {
           "english": "Build 'As a matter of fact / actually'",
           "audioText": "じつは",
           "tileBank": [
-            "な",
-            "め",
-            "じ",
+            "せ",
             "は",
-            "れ",
-            "し",
-            "つ",
-            "む"
+            "に",
+            "そ",
+            "ゆ",
+            "ら",
+            "じ",
+            "つ"
           ],
           "correctAnswer": "じつは"
         },
         {
           "id": "u15_l3_3",
           "type": "cloze",
-          "prompt": "私は事情がすきです",
-          "furigana": "わたしはじじょうがすきです",
-          "romaji": "Watashi wa jijou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Circumstances / background situation.",
-          "audioText": "事情",
-          "clozeSentence": "これは事情 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な事情です。",
+          "furigana": "これはいちばんたいせつなじじょうです。",
+          "romaji": "Kore wa ichiban taisetsu na jijou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Circumstances / background situation.",
+          "audioText": "これは事情です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な事情です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l3_4",
@@ -509,10 +508,10 @@ export const unit15: DojoUnit = {
           "audioText": "これは事情です",
           "scrambleTokens": [
             "これは",
-            "それ",
-            "事情",
             "ではありません",
-            "です"
+            "それ",
+            "です",
+            "事情"
           ],
           "scrambleSolution": [
             "これは",
@@ -541,24 +540,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l3_6",
           "type": "dictate",
-          "prompt": "説明をお願いします",
-          "furigana": "せつめいをおねがいします",
-          "romaji": "setsumei o onegaishimasu.",
-          "english": "Explanation, please.",
-          "audioText": "説明をお願いします",
+          "prompt": "説明です",
+          "furigana": "せつめいです",
+          "romaji": "setsumei desu.",
+          "english": "It is Explanation.",
+          "audioText": "説明です",
           "dictateTokens": [
-            "を",
             "説明",
-            "です",
-            "ありがとう",
-            "お願いします"
+            "これ",
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "説明",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "説明をお願いします"
+          "correctAnswer": "説明です"
         },
         {
           "id": "u15_l3_7",
@@ -658,10 +655,10 @@ export const unit15: DojoUnit = {
           "english": "Result / outcome",
           "audioText": "けっか",
           "options": [
-            "Result / outcome",
             "Consent / understanding / conviction",
-            "Confirming Due to / because of (blame)",
-            "Confirming Due to / because of (blame)"
+            "Confirming Reason / motive",
+            "Circumstances / background situation",
+            "Result / outcome"
           ],
           "correctAnswer": "Result / outcome"
         },
@@ -674,26 +671,26 @@ export const unit15: DojoUnit = {
           "english": "Build 'Result / outcome'",
           "audioText": "けっか",
           "tileBank": [
-            "け",
             "か",
-            "も",
-            "む",
             "っ",
-            "い",
-            "そ",
-            "よ"
+            "け",
+            "す",
+            "せ",
+            "ほ",
+            "さ",
+            "も"
           ],
           "correctAnswer": "けっか"
         },
         {
           "id": "u15_l4_3",
           "type": "cloze",
-          "prompt": "私は納得がすきです",
-          "furigana": "わたしはなっとくがすきです",
-          "romaji": "Watashi wa nattoku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Consent / understanding / conviction.",
-          "audioText": "納得",
-          "clozeSentence": "これは納得 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な納得です。",
+          "furigana": "これはいちばんたいせつななっとくです。",
+          "romaji": "Kore wa ichiban taisetsu na nattoku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Consent / understanding / conviction.",
+          "audioText": "これは納得です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な納得です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -701,7 +698,8 @@ export const unit15: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l4_4",
@@ -712,11 +710,11 @@ export const unit15: DojoUnit = {
           "english": "This is Consent / understanding / conviction.",
           "audioText": "これは納得です",
           "scrambleTokens": [
+            "これは",
             "です",
-            "それ",
             "ではありません",
             "納得",
-            "これは"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -745,24 +743,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l4_6",
           "type": "dictate",
-          "prompt": "したがってをお願いします",
-          "furigana": "したがってをおねがいします",
-          "romaji": "shitagatte o onegaishimasu.",
-          "english": "Therefore / accordingly, please.",
-          "audioText": "したがってをお願いします",
+          "prompt": "したがってです",
+          "furigana": "したがってです",
+          "romaji": "shitagatte desu.",
+          "english": "It is Therefore / accordingly.",
+          "audioText": "したがってです",
           "dictateTokens": [
-            "を",
-            "したがって",
+            "これ",
+            "ではありません",
             "です",
-            "お願いします",
-            "ありがとう"
+            "したがって"
           ],
           "dictateSolution": [
             "したがって",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "したがってをお願いします"
+          "correctAnswer": "したがってです"
         },
         {
           "id": "u15_l4_7",
@@ -860,10 +856,10 @@ export const unit15: DojoUnit = {
           "english": "In short / that is to say",
           "audioText": "つまり",
           "options": [
-            "Confirming Reason / motive",
             "In short / that is to say",
-            "Confirming Explanation",
-            "Confirming Due to / because of (blame)"
+            "Thanks to (positive cause)",
+            "Confirming Naturally it means that...",
+            "Cause / origin of problem"
           ],
           "correctAnswer": "In short / that is to say"
         },
@@ -876,34 +872,35 @@ export const unit15: DojoUnit = {
           "english": "Build 'In short / that is to say'",
           "audioText": "つまり",
           "tileBank": [
+            "め",
+            "な",
             "り",
+            "い",
+            "え",
             "つ",
-            "く",
             "ま",
-            "て",
-            "す",
-            "と",
-            "ぬ"
+            "そ"
           ],
           "correctAnswer": "つまり"
         },
         {
           "id": "u15_l5_3",
           "type": "cloze",
-          "prompt": "私はなぜならがすきです",
-          "furigana": "わたしはなぜならがすきです",
-          "romaji": "Watashi wa nazenara ga suki desu.",
-          "english": "Fill in the blank with the correct particle for The reason being....",
-          "audioText": "なぜなら",
-          "clozeSentence": "これはなぜなら {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切ななぜならです。",
+          "furigana": "これはいちばんたいせつななぜならです。",
+          "romaji": "Kore wa ichiban taisetsu na nazenara desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important The reason being....",
+          "audioText": "これはなぜならです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切ななぜならです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l5_4",
@@ -914,11 +911,11 @@ export const unit15: DojoUnit = {
           "english": "This is The reason being....",
           "audioText": "これはなぜならです",
           "scrambleTokens": [
-            "それ",
-            "です",
-            "これは",
             "ではありません",
-            "なぜなら"
+            "なぜなら",
+            "これは",
+            "です",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -947,24 +944,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l5_6",
           "type": "dictate",
-          "prompt": "解釈をお願いします",
-          "furigana": "かいしゃくをおねがいします",
-          "romaji": "kaishaku o onegaishimasu.",
-          "english": "Interpretation, please.",
-          "audioText": "解釈をお願いします",
+          "prompt": "解釈です",
+          "furigana": "かいしゃくです",
+          "romaji": "kaishaku desu.",
+          "english": "It is Interpretation.",
+          "audioText": "解釈です",
           "dictateTokens": [
-            "です",
             "解釈",
-            "ありがとう",
-            "お願いします",
-            "を"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "解釈",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "解釈をお願いします"
+          "correctAnswer": "解釈です"
         },
         {
           "id": "u15_l5_7",
@@ -1066,10 +1061,10 @@ export const unit15: DojoUnit = {
           "english": "Confirming Naturally it means that...",
           "audioText": "わけだのかくにん",
           "options": [
-            "Confirming Reason / motive",
-            "Confirming Reason / motive",
             "Confirming Naturally it means that...",
-            "Confirming Due to / because of (blame)"
+            "The reason being...",
+            "Confirming In short / that is to say",
+            "Confirming Misunderstanding"
           ],
           "correctAnswer": "Confirming Naturally it means that..."
         },
@@ -1082,34 +1077,35 @@ export const unit15: DojoUnit = {
           "english": "Build 'Confirming Naturally it means that...'",
           "audioText": "わけだのかくにん",
           "tileBank": [
+            "か",
+            "わ",
+            "に",
+            "く",
+            "だ",
             "け",
             "ん",
-            "の",
-            "だ",
-            "わ",
-            "か",
-            "く",
-            "に"
+            "の"
           ],
           "correctAnswer": "わけだのかくにん"
         },
         {
           "id": "u15_l6_3",
           "type": "cloze",
-          "prompt": "私はおかげでの確認がすきです",
-          "furigana": "わたしはおかげでのかくにんがすきです",
-          "romaji": "Watashi wa okage de no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Thanks to (positive cause).",
-          "audioText": "おかげでの確認",
-          "clozeSentence": "これはおかげでの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なおかげでの確認です。",
+          "furigana": "これはいちばんたいせつなおかげでのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na okage de no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Thanks to (positive cause).",
+          "audioText": "これはおかげでの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なおかげでの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l6_4",
@@ -1120,11 +1116,11 @@ export const unit15: DojoUnit = {
           "english": "This is Confirming Thanks to (positive cause).",
           "audioText": "これはおかげでの確認です",
           "scrambleTokens": [
-            "それ",
-            "おかげでの確認",
             "これは",
+            "です",
             "ではありません",
-            "です"
+            "おかげでの確認",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1153,24 +1149,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l6_6",
           "type": "dictate",
-          "prompt": "せいでの確認をお願いします",
-          "furigana": "せいでのかくにんをおねがいします",
-          "romaji": "sei de no kakunin o onegaishimasu.",
-          "english": "Confirming Due to / because of (blame), please.",
-          "audioText": "せいでの確認をお願いします",
+          "prompt": "せいでの確認です",
+          "furigana": "せいでのかくにんです",
+          "romaji": "sei de no kakunin desu.",
+          "english": "It is Confirming Due to / because of (blame).",
+          "audioText": "せいでの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "を",
-            "です",
-            "せいでの確認"
+            "ではありません",
+            "せいでの確認",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "せいでの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "せいでの確認をお願いします"
+          "correctAnswer": "せいでの確認です"
         },
         {
           "id": "u15_l6_7",
@@ -1278,10 +1272,10 @@ export const unit15: DojoUnit = {
           "english": "Confirming Cause / origin of problem",
           "audioText": "げんいんのかくにん",
           "options": [
-            "Confirming Result / outcome",
-            "Confirming As a matter of fact / actually",
-            "Misunderstanding",
-            "Confirming Cause / origin of problem"
+            "Confirming Cause / origin of problem",
+            "Confirming Reason / motive",
+            "Naturally it means that...",
+            "As a matter of fact / actually"
           ],
           "correctAnswer": "Confirming Cause / origin of problem"
         },
@@ -1295,33 +1289,34 @@ export const unit15: DojoUnit = {
           "audioText": "げんいんのかくにん",
           "tileBank": [
             "の",
-            "か",
+            "に",
+            "ん",
             "ん",
             "げ",
-            "に",
-            "く",
-            "ん",
-            "い"
+            "い",
+            "か",
+            "く"
           ],
           "correctAnswer": "げんいんのかくにん"
         },
         {
           "id": "u15_l7_3",
           "type": "cloze",
-          "prompt": "私は理由の確認がすきです",
-          "furigana": "わたしはりゆうのかくにんがすきです",
-          "romaji": "Watashi wa riyuu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Reason / motive.",
-          "audioText": "理由の確認",
-          "clozeSentence": "これは理由の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な理由の確認です。",
+          "furigana": "これはいちばんたいせつなりゆうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na riyuu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Reason / motive.",
+          "audioText": "これは理由の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な理由の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l7_4",
@@ -1332,11 +1327,11 @@ export const unit15: DojoUnit = {
           "english": "This is Confirming Reason / motive.",
           "audioText": "これは理由の確認です",
           "scrambleTokens": [
-            "それ",
             "これは",
             "ではありません",
             "です",
-            "理由の確認"
+            "理由の確認",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1365,24 +1360,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l7_6",
           "type": "dictate",
-          "prompt": "誤解の確認をお願いします",
-          "furigana": "ごかいのかくにんをおねがいします",
-          "romaji": "gokai no kakunin o onegaishimasu.",
-          "english": "Confirming Misunderstanding, please.",
-          "audioText": "誤解の確認をお願いします",
+          "prompt": "誤解の確認です",
+          "furigana": "ごかいのかくにんです",
+          "romaji": "gokai no kakunin desu.",
+          "english": "It is Confirming Misunderstanding.",
+          "audioText": "誤解の確認です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
+            "です",
             "誤解の確認",
-            "お願いします",
-            "です"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "誤解の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "誤解の確認をお願いします"
+          "correctAnswer": "誤解の確認です"
         },
         {
           "id": "u15_l7_7",
@@ -1489,10 +1482,10 @@ export const unit15: DojoUnit = {
           "english": "Confirming As a matter of fact / actually",
           "audioText": "じつはのかくにん",
           "options": [
-            "Confirming Explanation",
-            "Confirming As a matter of fact / actually",
-            "Confirming Thanks to (positive cause)",
-            "Reason / motive"
+            "Confirming Due to / because of (blame)",
+            "Therefore / accordingly",
+            "Confirming Cause / origin of problem",
+            "Confirming As a matter of fact / actually"
           ],
           "correctAnswer": "Confirming As a matter of fact / actually"
         },
@@ -1505,26 +1498,26 @@ export const unit15: DojoUnit = {
           "english": "Build 'Confirming As a matter of fact / actually'",
           "audioText": "じつはのかくにん",
           "tileBank": [
-            "か",
             "に",
+            "は",
+            "の",
             "つ",
             "じ",
-            "の",
+            "ん",
             "く",
-            "は",
-            "ん"
+            "か"
           ],
           "correctAnswer": "じつはのかくにん"
         },
         {
           "id": "u15_l8_3",
           "type": "cloze",
-          "prompt": "私は事情の確認がすきです",
-          "furigana": "わたしはじじょうのかくにんがすきです",
-          "romaji": "Watashi wa jijou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Circumstances / background situation.",
-          "audioText": "事情の確認",
-          "clozeSentence": "これは事情の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な事情の確認です。",
+          "furigana": "これはいちばんたいせつなじじょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na jijou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Circumstances / background situation.",
+          "audioText": "これは事情の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な事情の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1532,7 +1525,8 @@ export const unit15: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l8_4",
@@ -1543,10 +1537,10 @@ export const unit15: DojoUnit = {
           "english": "This is Confirming Circumstances / background situation.",
           "audioText": "これは事情の確認です",
           "scrambleTokens": [
-            "事情の確認",
-            "それ",
             "です",
             "ではありません",
+            "事情の確認",
+            "それ",
             "これは"
           ],
           "scrambleSolution": [
@@ -1576,24 +1570,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l8_6",
           "type": "dictate",
-          "prompt": "説明の確認をお願いします",
-          "furigana": "せつめいのかくにんをおねがいします",
-          "romaji": "setsumei no kakunin o onegaishimasu.",
-          "english": "Confirming Explanation, please.",
-          "audioText": "説明の確認をお願いします",
+          "prompt": "説明の確認です",
+          "furigana": "せつめいのかくにんです",
+          "romaji": "setsumei no kakunin desu.",
+          "english": "It is Confirming Explanation.",
+          "audioText": "説明の確認です",
           "dictateTokens": [
-            "ありがとう",
+            "ではありません",
             "です",
-            "説明の確認",
-            "お願いします",
-            "を"
+            "これ",
+            "説明の確認"
           ],
           "dictateSolution": [
             "説明の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "説明の確認をお願いします"
+          "correctAnswer": "説明の確認です"
         },
         {
           "id": "u15_l8_7",
@@ -1699,10 +1691,10 @@ export const unit15: DojoUnit = {
           "english": "Confirming Result / outcome",
           "audioText": "けっかのかくにん",
           "options": [
+            "Confirming Interpretation",
+            "Circumstances / background situation",
             "Confirming Result / outcome",
-            "Interpretation",
-            "Confirming As a matter of fact / actually",
-            "Confirming Therefore / accordingly"
+            "Consent / understanding / conviction"
           ],
           "correctAnswer": "Confirming Result / outcome"
         },
@@ -1715,34 +1707,35 @@ export const unit15: DojoUnit = {
           "english": "Build 'Confirming Result / outcome'",
           "audioText": "けっかのかくにん",
           "tileBank": [
-            "く",
-            "に",
-            "っ",
-            "ん",
-            "か",
-            "か",
+            "の",
             "け",
-            "の"
+            "に",
+            "く",
+            "ん",
+            "っ",
+            "か",
+            "か"
           ],
           "correctAnswer": "けっかのかくにん"
         },
         {
           "id": "u15_l9_3",
           "type": "cloze",
-          "prompt": "私は納得の確認がすきです",
-          "furigana": "わたしはなっとくのかくにんがすきです",
-          "romaji": "Watashi wa nattoku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Consent / understanding / conviction.",
-          "audioText": "納得の確認",
-          "clozeSentence": "これは納得の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な納得の確認です。",
+          "furigana": "これはいちばんたいせつななっとくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na nattoku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Consent / understanding / conviction.",
+          "audioText": "これは納得の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な納得の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l9_4",
@@ -1753,11 +1746,11 @@ export const unit15: DojoUnit = {
           "english": "This is Confirming Consent / understanding / conviction.",
           "audioText": "これは納得の確認です",
           "scrambleTokens": [
-            "納得の確認",
             "これは",
-            "それ",
+            "納得の確認",
+            "です",
             "ではありません",
-            "です"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1786,24 +1779,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l9_6",
           "type": "dictate",
-          "prompt": "したがっての確認をお願いします",
-          "furigana": "したがってのかくにんをおねがいします",
-          "romaji": "shitagatte no kakunin o onegaishimasu.",
-          "english": "Confirming Therefore / accordingly, please.",
-          "audioText": "したがっての確認をお願いします",
+          "prompt": "したがっての確認です",
+          "furigana": "したがってのかくにんです",
+          "romaji": "shitagatte no kakunin desu.",
+          "english": "It is Confirming Therefore / accordingly.",
+          "audioText": "したがっての確認です",
           "dictateTokens": [
-            "です",
-            "ありがとう",
-            "お願いします",
+            "ではありません",
             "したがっての確認",
-            "を"
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "したがっての確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "したがっての確認をお願いします"
+          "correctAnswer": "したがっての確認です"
         },
         {
           "id": "u15_l9_7",
@@ -1907,10 +1898,10 @@ export const unit15: DojoUnit = {
           "english": "Confirming In short / that is to say",
           "audioText": "つまりのかくにん",
           "options": [
-            "Thanks to (positive cause)",
+            "Interpretation",
             "Confirming In short / that is to say",
-            "Confirming Explanation",
-            "Confirming Therefore / accordingly"
+            "Naturally it means that...",
+            "Confirming Reason / motive"
           ],
           "correctAnswer": "Confirming In short / that is to say"
         },
@@ -1923,34 +1914,35 @@ export const unit15: DojoUnit = {
           "english": "Build 'Confirming In short / that is to say'",
           "audioText": "つまりのかくにん",
           "tileBank": [
-            "の",
-            "に",
             "つ",
-            "ん",
-            "ま",
-            "く",
+            "に",
+            "か",
             "り",
-            "か"
+            "の",
+            "ま",
+            "ん",
+            "く"
           ],
           "correctAnswer": "つまりのかくにん"
         },
         {
           "id": "u15_l10_3",
           "type": "cloze",
-          "prompt": "私はなぜならの確認がすきです",
-          "furigana": "わたしはなぜならのかくにんがすきです",
-          "romaji": "Watashi wa nazenara no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming The reason being....",
-          "audioText": "なぜならの確認",
-          "clozeSentence": "これはなぜならの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切ななぜならの確認です。",
+          "furigana": "これはいちばんたいせつななぜならのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na nazenara no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming The reason being....",
+          "audioText": "これはなぜならの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切ななぜならの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l10_4",
@@ -1961,11 +1953,11 @@ export const unit15: DojoUnit = {
           "english": "This is Confirming The reason being....",
           "audioText": "これはなぜならの確認です",
           "scrambleTokens": [
-            "です",
             "ではありません",
+            "これは",
+            "です",
             "なぜならの確認",
-            "それ",
-            "これは"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1994,24 +1986,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l10_6",
           "type": "dictate",
-          "prompt": "解釈の確認をお願いします",
-          "furigana": "かいしゃくのかくにんをおねがいします",
-          "romaji": "kaishaku no kakunin o onegaishimasu.",
-          "english": "Confirming Interpretation, please.",
-          "audioText": "解釈の確認をお願いします",
+          "prompt": "解釈の確認です",
+          "furigana": "かいしゃくのかくにんです",
+          "romaji": "kaishaku no kakunin desu.",
+          "english": "It is Confirming Interpretation.",
+          "audioText": "解釈の確認です",
           "dictateTokens": [
             "です",
-            "を",
             "解釈の確認",
-            "お願いします",
-            "ありがとう"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "解釈の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "解釈の確認をお願いします"
+          "correctAnswer": "解釈の確認です"
         },
         {
           "id": "u15_l10_7",
@@ -2113,10 +2103,10 @@ export const unit15: DojoUnit = {
           "english": "Confirming Naturally it means that...",
           "audioText": "わけだのかくにん",
           "options": [
-            "Confirming Misunderstanding",
-            "Circumstances / background situation",
-            "Confirming Naturally it means that...",
-            "Cause / origin of problem"
+            "In short / that is to say",
+            "Confirming Reason / motive",
+            "Reason / motive",
+            "Confirming Naturally it means that..."
           ],
           "correctAnswer": "Confirming Naturally it means that..."
         },
@@ -2129,34 +2119,35 @@ export const unit15: DojoUnit = {
           "english": "Build 'Confirming Naturally it means that...'",
           "audioText": "わけだのかくにん",
           "tileBank": [
-            "に",
-            "か",
-            "け",
-            "ん",
             "く",
-            "の",
+            "だ",
+            "ん",
             "わ",
-            "だ"
+            "け",
+            "の",
+            "か",
+            "に"
           ],
           "correctAnswer": "わけだのかくにん"
         },
         {
           "id": "u15_l11_3",
           "type": "cloze",
-          "prompt": "私はおかげでの確認がすきです",
-          "furigana": "わたしはおかげでのかくにんがすきです",
-          "romaji": "Watashi wa okage de no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Thanks to (positive cause).",
-          "audioText": "おかげでの確認",
-          "clozeSentence": "これはおかげでの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切なおかげでの確認です。",
+          "furigana": "これはいちばんたいせつなおかげでのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na okage de no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Thanks to (positive cause).",
+          "audioText": "これはおかげでの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なおかげでの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l11_4",
@@ -2167,11 +2158,11 @@ export const unit15: DojoUnit = {
           "english": "This is Confirming Thanks to (positive cause).",
           "audioText": "これはおかげでの確認です",
           "scrambleTokens": [
+            "それ",
             "おかげでの確認",
-            "これは",
-            "です",
             "ではありません",
-            "それ"
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2200,24 +2191,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l11_6",
           "type": "dictate",
-          "prompt": "せいでの確認をお願いします",
-          "furigana": "せいでのかくにんをおねがいします",
-          "romaji": "sei de no kakunin o onegaishimasu.",
-          "english": "Confirming Due to / because of (blame), please.",
-          "audioText": "せいでの確認をお願いします",
+          "prompt": "せいでの確認です",
+          "furigana": "せいでのかくにんです",
+          "romaji": "sei de no kakunin desu.",
+          "english": "It is Confirming Due to / because of (blame).",
+          "audioText": "せいでの確認です",
           "dictateTokens": [
-            "せいでの確認",
             "です",
-            "を",
-            "ありがとう",
-            "お願いします"
+            "これ",
+            "ではありません",
+            "せいでの確認"
           ],
           "dictateSolution": [
             "せいでの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "せいでの確認をお願いします"
+          "correctAnswer": "せいでの確認です"
         },
         {
           "id": "u15_l11_7",
@@ -2325,10 +2314,10 @@ export const unit15: DojoUnit = {
           "english": "Confirming Cause / origin of problem",
           "audioText": "げんいんのかくにん",
           "options": [
+            "Circumstances / background situation",
+            "Confirming Explanation",
             "Confirming Cause / origin of problem",
-            "Confirming Naturally it means that...",
-            "Confirming Result / outcome",
-            "Confirming Interpretation"
+            "The reason being..."
           ],
           "correctAnswer": "Confirming Cause / origin of problem"
         },
@@ -2341,26 +2330,26 @@ export const unit15: DojoUnit = {
           "english": "Build 'Confirming Cause / origin of problem'",
           "audioText": "げんいんのかくにん",
           "tileBank": [
-            "ん",
-            "げ",
             "か",
             "の",
-            "に",
+            "ん",
             "く",
-            "い",
-            "ん"
+            "ん",
+            "げ",
+            "に",
+            "い"
           ],
           "correctAnswer": "げんいんのかくにん"
         },
         {
           "id": "u15_l12_3",
           "type": "cloze",
-          "prompt": "私は理由の確認がすきです",
-          "furigana": "わたしはりゆうのかくにんがすきです",
-          "romaji": "Watashi wa riyuu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Reason / motive.",
-          "audioText": "理由の確認",
-          "clozeSentence": "これは理由の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な理由の確認です。",
+          "furigana": "これはいちばんたいせつなりゆうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na riyuu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Reason / motive.",
+          "audioText": "これは理由の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な理由の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2368,7 +2357,8 @@ export const unit15: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l12_4",
@@ -2379,10 +2369,10 @@ export const unit15: DojoUnit = {
           "english": "This is Confirming Reason / motive.",
           "audioText": "これは理由の確認です",
           "scrambleTokens": [
-            "理由の確認",
             "これは",
-            "それ",
             "です",
+            "理由の確認",
+            "それ",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -2412,24 +2402,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l12_6",
           "type": "dictate",
-          "prompt": "誤解の確認をお願いします",
-          "furigana": "ごかいのかくにんをおねがいします",
-          "romaji": "gokai no kakunin o onegaishimasu.",
-          "english": "Confirming Misunderstanding, please.",
-          "audioText": "誤解の確認をお願いします",
+          "prompt": "誤解の確認です",
+          "furigana": "ごかいのかくにんです",
+          "romaji": "gokai no kakunin desu.",
+          "english": "It is Confirming Misunderstanding.",
+          "audioText": "誤解の確認です",
           "dictateTokens": [
-            "を",
             "誤解の確認",
             "です",
-            "ありがとう",
-            "お願いします"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "誤解の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "誤解の確認をお願いします"
+          "correctAnswer": "誤解の確認です"
         },
         {
           "id": "u15_l12_7",
@@ -2524,10 +2512,10 @@ export const unit15: DojoUnit = {
           "english": "Naturally it means that...",
           "audioText": "わけだ",
           "options": [
-            "Confirming Reason / motive",
-            "Cause / origin of problem",
             "Naturally it means that...",
-            "Interpretation"
+            "Confirming Reason / motive",
+            "Therefore / accordingly",
+            "Confirming Naturally it means that..."
           ],
           "correctAnswer": "Naturally it means that..."
         },
@@ -2542,32 +2530,33 @@ export const unit15: DojoUnit = {
           "tileBank": [
             "わ",
             "け",
-            "も",
-            "す",
-            "や",
-            "よ",
-            "ほ",
-            "だ"
+            "ち",
+            "み",
+            "へ",
+            "だ",
+            "た",
+            "り"
           ],
           "correctAnswer": "わけだ"
         },
         {
           "id": "u15_l13_3",
           "type": "cloze",
-          "prompt": "私はおかげでがすきです",
-          "furigana": "わたしはおかげでがすきです",
-          "romaji": "Watashi wa okage de ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Thanks to (positive cause).",
-          "audioText": "おかげで",
-          "clozeSentence": "これはおかげで {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なおかげでです。",
+          "furigana": "これはいちばんたいせつなおかげでです。",
+          "romaji": "Kore wa ichiban taisetsu na okage de desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Thanks to (positive cause).",
+          "audioText": "これはおかげでです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なおかげでです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l13_4",
@@ -2578,9 +2567,9 @@ export const unit15: DojoUnit = {
           "english": "This is Thanks to (positive cause).",
           "audioText": "これはおかげでです",
           "scrambleTokens": [
+            "です",
             "これは",
             "ではありません",
-            "です",
             "おかげで",
             "それ"
           ],
@@ -2611,24 +2600,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l13_6",
           "type": "dictate",
-          "prompt": "せいでをお願いします",
-          "furigana": "せいでをおねがいします",
-          "romaji": "sei de o onegaishimasu.",
-          "english": "Due to / because of (blame), please.",
-          "audioText": "せいでをお願いします",
+          "prompt": "せいでです",
+          "furigana": "せいでです",
+          "romaji": "sei de desu.",
+          "english": "It is Due to / because of (blame).",
+          "audioText": "せいでです",
           "dictateTokens": [
-            "お願いします",
+            "ではありません",
             "です",
             "せいで",
-            "ありがとう",
-            "を"
+            "これ"
           ],
           "dictateSolution": [
             "せいで",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "せいでをお願いします"
+          "correctAnswer": "せいでです"
         },
         {
           "id": "u15_l13_7",
@@ -2730,10 +2717,10 @@ export const unit15: DojoUnit = {
           "english": "Cause / origin of problem",
           "audioText": "げんいん",
           "options": [
-            "Interpretation",
-            "Cause / origin of problem",
-            "Confirming Due to / because of (blame)",
-            "Confirming In short / that is to say"
+            "Confirming Explanation",
+            "Confirming Cause / origin of problem",
+            "Confirming Misunderstanding",
+            "Cause / origin of problem"
           ],
           "correctAnswer": "Cause / origin of problem"
         },
@@ -2746,34 +2733,35 @@ export const unit15: DojoUnit = {
           "english": "Build 'Cause / origin of problem'",
           "audioText": "げんいん",
           "tileBank": [
-            "ろ",
             "ん",
-            "な",
             "げ",
+            "ら",
+            "ん",
+            "そ",
             "い",
             "て",
-            "き",
-            "ん"
+            "を"
           ],
           "correctAnswer": "げんいん"
         },
         {
           "id": "u15_l14_3",
           "type": "cloze",
-          "prompt": "私は理由がすきです",
-          "furigana": "わたしはりゆうがすきです",
-          "romaji": "Watashi wa riyuu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Reason / motive.",
-          "audioText": "理由",
-          "clozeSentence": "これは理由 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な理由です。",
+          "furigana": "これはいちばんたいせつなりゆうです。",
+          "romaji": "Kore wa ichiban taisetsu na riyuu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Reason / motive.",
+          "audioText": "これは理由です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な理由です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l14_4",
@@ -2785,10 +2773,10 @@ export const unit15: DojoUnit = {
           "audioText": "これは理由です",
           "scrambleTokens": [
             "理由",
-            "それ",
-            "です",
             "これは",
-            "ではありません"
+            "ではありません",
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2817,24 +2805,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l14_6",
           "type": "dictate",
-          "prompt": "誤解をお願いします",
-          "furigana": "ごかいをおねがいします",
-          "romaji": "gokai o onegaishimasu.",
-          "english": "Misunderstanding, please.",
-          "audioText": "誤解をお願いします",
+          "prompt": "誤解です",
+          "furigana": "ごかいです",
+          "romaji": "gokai desu.",
+          "english": "It is Misunderstanding.",
+          "audioText": "誤解です",
           "dictateTokens": [
-            "を",
-            "です",
-            "ありがとう",
+            "これ",
             "誤解",
-            "お願いします"
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "誤解",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "誤解をお願いします"
+          "correctAnswer": "誤解です"
         },
         {
           "id": "u15_l14_7",
@@ -2935,10 +2921,10 @@ export const unit15: DojoUnit = {
           "english": "As a matter of fact / actually",
           "audioText": "じつは",
           "options": [
-            "Confirming Reason / motive",
-            "Confirming Interpretation",
+            "Confirming Cause / origin of problem",
+            "Therefore / accordingly",
             "As a matter of fact / actually",
-            "Circumstances / background situation"
+            "Confirming Circumstances / background situation"
           ],
           "correctAnswer": "As a matter of fact / actually"
         },
@@ -2951,34 +2937,35 @@ export const unit15: DojoUnit = {
           "english": "Build 'As a matter of fact / actually'",
           "audioText": "じつは",
           "tileBank": [
-            "は",
-            "じ",
-            "つ",
+            "て",
+            "し",
+            "あ",
             "め",
-            "と",
-            "ゆ",
-            "に",
-            "て"
+            "は",
+            "や",
+            "つ",
+            "じ"
           ],
           "correctAnswer": "じつは"
         },
         {
           "id": "u15_l15_3",
           "type": "cloze",
-          "prompt": "私は事情がすきです",
-          "furigana": "わたしはじじょうがすきです",
-          "romaji": "Watashi wa jijou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Circumstances / background situation.",
-          "audioText": "事情",
-          "clozeSentence": "これは事情 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な事情です。",
+          "furigana": "これはいちばんたいせつなじじょうです。",
+          "romaji": "Kore wa ichiban taisetsu na jijou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Circumstances / background situation.",
+          "audioText": "これは事情です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な事情です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u15_l15_4",
@@ -2989,11 +2976,11 @@ export const unit15: DojoUnit = {
           "english": "This is Circumstances / background situation.",
           "audioText": "これは事情です",
           "scrambleTokens": [
-            "これは",
             "事情",
+            "ではありません",
+            "これは",
             "です",
-            "それ",
-            "ではありません"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -3022,24 +3009,22 @@ export const unit15: DojoUnit = {
         {
           "id": "u15_l15_6",
           "type": "dictate",
-          "prompt": "説明をお願いします",
-          "furigana": "せつめいをおねがいします",
-          "romaji": "setsumei o onegaishimasu.",
-          "english": "Explanation, please.",
-          "audioText": "説明をお願いします",
+          "prompt": "説明です",
+          "furigana": "せつめいです",
+          "romaji": "setsumei desu.",
+          "english": "It is Explanation.",
+          "audioText": "説明です",
           "dictateTokens": [
+            "ではありません",
             "です",
             "説明",
-            "を",
-            "お願いします",
-            "ありがとう"
+            "これ"
           ],
           "dictateSolution": [
             "説明",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "説明をお願いします"
+          "correctAnswer": "説明です"
         },
         {
           "id": "u15_l15_7",
@@ -3124,10 +3109,10 @@ export const unit15: DojoUnit = {
         "english": "Naturally it means that...",
         "audioText": "わけだ",
         "options": [
+          "Circumstances / background situation",
           "Naturally it means that...",
           "Therefore / accordingly",
-          "As a matter of fact / actually",
-          "Misunderstanding"
+          "Confirming Misunderstanding"
         ],
         "correctAnswer": "Naturally it means that..."
       },
@@ -3140,14 +3125,14 @@ export const unit15: DojoUnit = {
         "english": "Build 'Naturally it means that...'",
         "audioText": "わけだ",
         "tileBank": [
-          "わ",
-          "の",
           "け",
-          "り",
-          "な",
-          "み",
+          "わ",
+          "う",
+          "ぬ",
           "だ",
-          "ゆ"
+          "り",
+          "お",
+          "ひ"
         ],
         "correctAnswer": "わけだ"
       },
@@ -3160,10 +3145,10 @@ export const unit15: DojoUnit = {
         "english": "As a matter of fact / actually",
         "audioText": "じつは",
         "options": [
-          "Confirming Thanks to (positive cause)",
+          "Confirming Interpretation",
+          "Confirming Reason / motive",
           "As a matter of fact / actually",
-          "Confirming Misunderstanding",
-          "Misunderstanding"
+          "Thanks to (positive cause)"
         ],
         "correctAnswer": "As a matter of fact / actually"
       },
@@ -3176,14 +3161,14 @@ export const unit15: DojoUnit = {
         "english": "Build 'As a matter of fact / actually'",
         "audioText": "じつは",
         "tileBank": [
-          "な",
-          "め",
-          "じ",
+          "せ",
           "は",
-          "れ",
-          "し",
-          "つ",
-          "む"
+          "に",
+          "そ",
+          "ゆ",
+          "ら",
+          "じ",
+          "つ"
         ],
         "correctAnswer": "じつは"
       },
@@ -3196,10 +3181,10 @@ export const unit15: DojoUnit = {
         "english": "In short / that is to say",
         "audioText": "つまり",
         "options": [
-          "Confirming Reason / motive",
           "In short / that is to say",
-          "Confirming Explanation",
-          "Confirming Due to / because of (blame)"
+          "Thanks to (positive cause)",
+          "Confirming Naturally it means that...",
+          "Cause / origin of problem"
         ],
         "correctAnswer": "In short / that is to say"
       },
@@ -3212,14 +3197,14 @@ export const unit15: DojoUnit = {
         "english": "Build 'In short / that is to say'",
         "audioText": "つまり",
         "tileBank": [
+          "め",
+          "な",
           "り",
+          "い",
+          "え",
           "つ",
-          "く",
           "ま",
-          "て",
-          "す",
-          "と",
-          "ぬ"
+          "そ"
         ],
         "correctAnswer": "つまり"
       },
@@ -3232,10 +3217,10 @@ export const unit15: DojoUnit = {
         "english": "Confirming Cause / origin of problem",
         "audioText": "げんいんのかくにん",
         "options": [
-          "Confirming Result / outcome",
-          "Confirming As a matter of fact / actually",
-          "Misunderstanding",
-          "Confirming Cause / origin of problem"
+          "Confirming Cause / origin of problem",
+          "Confirming Reason / motive",
+          "Naturally it means that...",
+          "As a matter of fact / actually"
         ],
         "correctAnswer": "Confirming Cause / origin of problem"
       },
@@ -3249,13 +3234,13 @@ export const unit15: DojoUnit = {
         "audioText": "げんいんのかくにん",
         "tileBank": [
           "の",
-          "か",
+          "に",
+          "ん",
           "ん",
           "げ",
-          "に",
-          "く",
-          "ん",
-          "い"
+          "い",
+          "か",
+          "く"
         ],
         "correctAnswer": "げんいんのかくにん"
       },
@@ -3268,10 +3253,10 @@ export const unit15: DojoUnit = {
         "english": "Confirming Result / outcome",
         "audioText": "けっかのかくにん",
         "options": [
+          "Confirming Interpretation",
+          "Circumstances / background situation",
           "Confirming Result / outcome",
-          "Interpretation",
-          "Confirming As a matter of fact / actually",
-          "Confirming Therefore / accordingly"
+          "Consent / understanding / conviction"
         ],
         "correctAnswer": "Confirming Result / outcome"
       },
@@ -3284,14 +3269,14 @@ export const unit15: DojoUnit = {
         "english": "Build 'Confirming Result / outcome'",
         "audioText": "けっかのかくにん",
         "tileBank": [
-          "く",
-          "に",
-          "っ",
-          "ん",
-          "か",
-          "か",
+          "の",
           "け",
-          "の"
+          "に",
+          "く",
+          "ん",
+          "っ",
+          "か",
+          "か"
         ],
         "correctAnswer": "けっかのかくにん"
       },
@@ -3304,10 +3289,10 @@ export const unit15: DojoUnit = {
         "english": "Confirming Naturally it means that...",
         "audioText": "わけだのかくにん",
         "options": [
-          "Confirming Misunderstanding",
-          "Circumstances / background situation",
-          "Confirming Naturally it means that...",
-          "Cause / origin of problem"
+          "In short / that is to say",
+          "Confirming Reason / motive",
+          "Reason / motive",
+          "Confirming Naturally it means that..."
         ],
         "correctAnswer": "Confirming Naturally it means that..."
       },
@@ -3320,14 +3305,14 @@ export const unit15: DojoUnit = {
         "english": "Build 'Confirming Naturally it means that...'",
         "audioText": "わけだのかくにん",
         "tileBank": [
-          "に",
-          "か",
-          "け",
-          "ん",
           "く",
-          "の",
+          "だ",
+          "ん",
           "わ",
-          "だ"
+          "け",
+          "の",
+          "か",
+          "に"
         ],
         "correctAnswer": "わけだのかくにん"
       }

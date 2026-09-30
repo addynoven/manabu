@@ -45,10 +45,10 @@ export const unit22: DojoUnit = {
           "english": "Can't bear / irresistibly",
           "audioText": "たまらない",
           "options": [
-            "Confirming Can't help feeling...",
-            "Disappointment",
-            "Can't bear / irresistibly",
-            "Confirming Being deeply moved"
+            "Empathy",
+            "Confirming Inner conflict",
+            "Confirming Can't avoid doing / compelled",
+            "Can't bear / irresistibly"
           ],
           "correctAnswer": "Can't bear / irresistibly"
         },
@@ -61,13 +61,13 @@ export const unit22: DojoUnit = {
           "english": "Build 'Can't bear / irresistibly'",
           "audioText": "たまらない",
           "tileBank": [
-            "て",
-            "ね",
-            "な",
-            "た",
-            "せ",
+            "こ",
             "ま",
+            "あ",
             "い",
+            "な",
+            "の",
+            "た",
             "ら"
           ],
           "correctAnswer": "たまらない"
@@ -75,20 +75,21 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l1_3",
           "type": "cloze",
-          "prompt": "私はてならないがすきです",
-          "furigana": "わたしはてならないがすきです",
-          "romaji": "Watashi wa te naranai ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Can't help feeling....",
-          "audioText": "てならない",
-          "clozeSentence": "これはてならない {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なてならないです。",
+          "furigana": "これはいちばんたいせつなてならないです。",
+          "romaji": "Kore wa ichiban taisetsu na te naranai desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Can't help feeling....",
+          "audioText": "これはてならないです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なてならないです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l1_4",
@@ -99,11 +100,11 @@ export const unit22: DojoUnit = {
           "english": "This is Can't help feeling....",
           "audioText": "これはてならないです",
           "scrambleTokens": [
-            "ではありません",
-            "てならない",
-            "それ",
             "これは",
-            "です"
+            "それ",
+            "です",
+            "ではありません",
+            "てならない"
           ],
           "scrambleSolution": [
             "これは",
@@ -132,24 +133,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l1_6",
           "type": "dictate",
-          "prompt": "ざるを得ないをお願いします",
-          "furigana": "ざるをえないをおねがいします",
-          "romaji": "zaru o enai o onegaishimasu.",
-          "english": "Can't avoid doing / compelled, please.",
-          "audioText": "ざるを得ないをお願いします",
+          "prompt": "ざるを得ないです",
+          "furigana": "ざるをえないです",
+          "romaji": "zaru o enai desu.",
+          "english": "It is Can't avoid doing / compelled.",
+          "audioText": "ざるを得ないです",
           "dictateTokens": [
-            "お願いします",
             "ざるを得ない",
-            "を",
-            "ありがとう",
-            "です"
+            "これ",
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "ざるを得ない",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "ざるを得ないをお願いします"
+          "correctAnswer": "ざるを得ないです"
         },
         {
           "id": "u22_l1_7",
@@ -249,10 +248,10 @@ export const unit22: DojoUnit = {
           "english": "Being deeply moved",
           "audioText": "かんどう",
           "options": [
-            "To be bewildered / perplexed",
+            "Confirming Disappointment",
+            "Confirming Can't bear / irresistibly",
             "Being deeply moved",
-            "Can't bear / irresistibly",
-            "Confirming Relief"
+            "Confirming Pride"
           ],
           "correctAnswer": "Being deeply moved"
         },
@@ -265,34 +264,35 @@ export const unit22: DojoUnit = {
           "english": "Build 'Being deeply moved'",
           "audioText": "かんどう",
           "tileBank": [
-            "ん",
-            "う",
-            "に",
-            "の",
-            "ど",
             "か",
             "み",
-            "も"
+            "れ",
+            "う",
+            "ゆ",
+            "ん",
+            "り",
+            "ど"
           ],
           "correctAnswer": "かんどう"
         },
         {
           "id": "u22_l2_3",
           "type": "cloze",
-          "prompt": "私は焦りがすきです",
-          "furigana": "わたしはあせりがすきです",
-          "romaji": "Watashi wa aseri ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Impatience / anxiety.",
-          "audioText": "焦り",
-          "clozeSentence": "これは焦り {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な焦りです。",
+          "furigana": "これはいちばんたいせつなあせりです。",
+          "romaji": "Kore wa ichiban taisetsu na aseri desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Impatience / anxiety.",
+          "audioText": "これは焦りです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焦りです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l2_4",
@@ -303,11 +303,11 @@ export const unit22: DojoUnit = {
           "english": "This is Impatience / anxiety.",
           "audioText": "これは焦りです",
           "scrambleTokens": [
+            "それ",
+            "です",
             "これは",
             "焦り",
-            "ではありません",
-            "それ",
-            "です"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -336,24 +336,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l2_6",
           "type": "dictate",
-          "prompt": "悔しいをお願いします",
-          "furigana": "くやしいをおねがいします",
-          "romaji": "kuyashii o onegaishimasu.",
-          "english": "Frustrated / vexed, please.",
-          "audioText": "悔しいをお願いします",
+          "prompt": "悔しいです",
+          "furigana": "くやしいです",
+          "romaji": "kuyashii desu.",
+          "english": "It is Frustrated / vexed.",
+          "audioText": "悔しいです",
           "dictateTokens": [
-            "を",
-            "お願いします",
-            "ありがとう",
+            "これ",
             "悔しい",
+            "ではありません",
             "です"
           ],
           "dictateSolution": [
             "悔しい",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "悔しいをお願いします"
+          "correctAnswer": "悔しいです"
         },
         {
           "id": "u22_l2_7",
@@ -456,10 +454,10 @@ export const unit22: DojoUnit = {
           "english": "Disappointment",
           "audioText": "しつぼう",
           "options": [
-            "Confirming Sense of discomfort / out of place",
-            "Confirming Can't avoid doing / compelled",
-            "Confirming Relief",
-            "Disappointment"
+            "Confirming Being deeply moved",
+            "Frustrated / vexed",
+            "Disappointment",
+            "Sense of discomfort / out of place"
           ],
           "correctAnswer": "Disappointment"
         },
@@ -472,34 +470,35 @@ export const unit22: DojoUnit = {
           "english": "Build 'Disappointment'",
           "audioText": "しつぼう",
           "tileBank": [
-            "さ",
-            "つ",
-            "う",
-            "ひ",
-            "も",
-            "ぼ",
+            "は",
+            "ら",
             "し",
-            "ら"
+            "つ",
+            "さ",
+            "み",
+            "う",
+            "ぼ"
           ],
           "correctAnswer": "しつぼう"
         },
         {
           "id": "u22_l3_3",
           "type": "cloze",
-          "prompt": "私は共感がすきです",
-          "furigana": "わたしはきょうかんがすきです",
-          "romaji": "Watashi wa kyoukan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Empathy.",
-          "audioText": "共感",
-          "clozeSentence": "これは共感 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な共感です。",
+          "furigana": "これはいちばんたいせつなきょうかんです。",
+          "romaji": "Kore wa ichiban taisetsu na kyoukan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Empathy.",
+          "audioText": "これは共感です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な共感です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l3_4",
@@ -510,11 +509,11 @@ export const unit22: DojoUnit = {
           "english": "This is Empathy.",
           "audioText": "これは共感です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
+            "これは",
             "共感",
-            "です",
-            "これは"
+            "ではありません",
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -543,24 +542,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l3_6",
           "type": "dictate",
-          "prompt": "違和感をお願いします",
-          "furigana": "いわかんをおねがいします",
-          "romaji": "iwakan o onegaishimasu.",
-          "english": "Sense of discomfort / out of place, please.",
-          "audioText": "違和感をお願いします",
+          "prompt": "違和感です",
+          "furigana": "いわかんです",
+          "romaji": "iwakan desu.",
+          "english": "It is Sense of discomfort / out of place.",
+          "audioText": "違和感です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "を",
-            "です",
-            "違和感"
+            "違和感",
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "違和感",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "違和感をお願いします"
+          "correctAnswer": "違和感です"
         },
         {
           "id": "u22_l3_7",
@@ -661,10 +658,10 @@ export const unit22: DojoUnit = {
           "english": "To be bewildered / perplexed",
           "audioText": "とまどう",
           "options": [
-            "Real intentions / true feelings",
             "To be bewildered / perplexed",
-            "Confirming Empathy",
-            "Confirming Real intentions / true feelings"
+            "Sense of discomfort / out of place",
+            "Confirming Impatience / anxiety",
+            "Can't help feeling..."
           ],
           "correctAnswer": "To be bewildered / perplexed"
         },
@@ -677,26 +674,26 @@ export const unit22: DojoUnit = {
           "english": "Build 'To be bewildered / perplexed'",
           "audioText": "とまどう",
           "tileBank": [
-            "ひ",
-            "う",
-            "と",
-            "る",
-            "ま",
             "ど",
-            "わ",
-            "す"
+            "ふ",
+            "と",
+            "ち",
+            "う",
+            "ま",
+            "ぬ",
+            "る"
           ],
           "correctAnswer": "とまどう"
         },
         {
           "id": "u22_l4_3",
           "type": "cloze",
-          "prompt": "私は安堵がすきです",
-          "furigana": "わたしはあんどがすきです",
-          "romaji": "Watashi wa ando ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Relief.",
-          "audioText": "安堵",
-          "clozeSentence": "これは安堵 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な安堵です。",
+          "furigana": "これはいちばんたいせつなあんどです。",
+          "romaji": "Kore wa ichiban taisetsu na ando desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Relief.",
+          "audioText": "これは安堵です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な安堵です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -704,7 +701,8 @@ export const unit22: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l4_4",
@@ -715,10 +713,10 @@ export const unit22: DojoUnit = {
           "english": "This is Relief.",
           "audioText": "これは安堵です",
           "scrambleTokens": [
-            "ではありません",
             "これは",
-            "です",
             "安堵",
+            "ではありません",
+            "です",
             "それ"
           ],
           "scrambleSolution": [
@@ -748,24 +746,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l4_6",
           "type": "dictate",
-          "prompt": "誇りをお願いします",
-          "furigana": "ほこりをおねがいします",
-          "romaji": "hokori o onegaishimasu.",
-          "english": "Pride, please.",
-          "audioText": "誇りをお願いします",
+          "prompt": "誇りです",
+          "furigana": "ほこりです",
+          "romaji": "hokori desu.",
+          "english": "It is Pride.",
+          "audioText": "誇りです",
           "dictateTokens": [
+            "ではありません",
+            "これ",
             "誇り",
-            "ありがとう",
-            "お願いします",
-            "です",
-            "を"
+            "です"
           ],
           "dictateSolution": [
             "誇り",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "誇りをお願いします"
+          "correctAnswer": "誇りです"
         },
         {
           "id": "u22_l4_7",
@@ -867,10 +863,10 @@ export const unit22: DojoUnit = {
           "english": "Inner conflict",
           "audioText": "かっとう",
           "options": [
-            "Confirming Real intentions / true feelings",
-            "Can't help feeling...",
+            "Can't avoid doing / compelled",
+            "Confirming Empathy",
             "Inner conflict",
-            "Confirming To be bewildered / perplexed"
+            "Real intentions / true feelings"
           ],
           "correctAnswer": "Inner conflict"
         },
@@ -883,34 +879,35 @@ export const unit22: DojoUnit = {
           "english": "Build 'Inner conflict'",
           "audioText": "かっとう",
           "tileBank": [
-            "う",
-            "っ",
+            "き",
             "か",
-            "ね",
-            "ろ",
-            "よ",
+            "ら",
+            "っ",
+            "は",
+            "へ",
             "と",
-            "の"
+            "う"
           ],
           "correctAnswer": "かっとう"
         },
         {
           "id": "u22_l5_3",
           "type": "cloze",
-          "prompt": "私は決断がすきです",
-          "furigana": "わたしはけつだんがすきです",
-          "romaji": "Watashi wa ketsudan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Resolution / determination.",
-          "audioText": "決断",
-          "clozeSentence": "これは決断 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な決断です。",
+          "furigana": "これはいちばんたいせつなけつだんです。",
+          "romaji": "Kore wa ichiban taisetsu na ketsudan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Resolution / determination.",
+          "audioText": "これは決断です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な決断です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l5_4",
@@ -923,9 +920,9 @@ export const unit22: DojoUnit = {
           "scrambleTokens": [
             "ではありません",
             "です",
-            "決断",
+            "それ",
             "これは",
-            "それ"
+            "決断"
           ],
           "scrambleSolution": [
             "これは",
@@ -954,24 +951,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l5_6",
           "type": "dictate",
-          "prompt": "本音をお願いします",
-          "furigana": "ほんねをおねがいします",
-          "romaji": "honne o onegaishimasu.",
-          "english": "Real intentions / true feelings, please.",
-          "audioText": "本音をお願いします",
+          "prompt": "本音です",
+          "furigana": "ほんねです",
+          "romaji": "honne desu.",
+          "english": "It is Real intentions / true feelings.",
+          "audioText": "本音です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
             "本音",
             "です",
-            "を"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "本音",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "本音をお願いします"
+          "correctAnswer": "本音です"
         },
         {
           "id": "u22_l5_7",
@@ -1074,10 +1069,10 @@ export const unit22: DojoUnit = {
           "english": "Confirming Can't bear / irresistibly",
           "audioText": "たまらないのかくにん",
           "options": [
-            "Impatience / anxiety",
-            "Confirming Inner conflict",
+            "Pride",
             "Confirming Can't bear / irresistibly",
-            "Confirming Empathy"
+            "Being deeply moved",
+            "Confirming Impatience / anxiety"
           ],
           "correctAnswer": "Confirming Can't bear / irresistibly"
         },
@@ -1090,34 +1085,35 @@ export const unit22: DojoUnit = {
           "english": "Build 'Confirming Can't bear / irresistibly'",
           "audioText": "たまらないのかくにん",
           "tileBank": [
-            "の",
-            "ま",
-            "く",
-            "い",
-            "ら",
             "な",
+            "い",
             "た",
-            "か"
+            "ま",
+            "か",
+            "ら",
+            "の",
+            "く"
           ],
           "correctAnswer": "たまらないのかくにん"
         },
         {
           "id": "u22_l6_3",
           "type": "cloze",
-          "prompt": "私はてならないの確認がすきです",
-          "furigana": "わたしはてならないのかくにんがすきです",
-          "romaji": "Watashi wa te naranai no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Can't help feeling....",
-          "audioText": "てならないの確認",
-          "clozeSentence": "これはてならないの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なてならないの確認です。",
+          "furigana": "これはいちばんたいせつなてならないのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na te naranai no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Can't help feeling....",
+          "audioText": "これはてならないの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なてならないの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l6_4",
@@ -1128,11 +1124,11 @@ export const unit22: DojoUnit = {
           "english": "This is Confirming Can't help feeling....",
           "audioText": "これはてならないの確認です",
           "scrambleTokens": [
+            "これは",
             "ではありません",
-            "それ",
-            "です",
             "てならないの確認",
-            "これは"
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1161,24 +1157,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l6_6",
           "type": "dictate",
-          "prompt": "ざるを得ないの確認をお願いします",
-          "furigana": "ざるをえないのかくにんをおねがいします",
-          "romaji": "zaru o enai no kakunin o onegaishimasu.",
-          "english": "Confirming Can't avoid doing / compelled, please.",
-          "audioText": "ざるを得ないの確認をお願いします",
+          "prompt": "ざるを得ないの確認です",
+          "furigana": "ざるをえないのかくにんです",
+          "romaji": "zaru o enai no kakunin desu.",
+          "english": "It is Confirming Can't avoid doing / compelled.",
+          "audioText": "ざるを得ないの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "を",
-            "ざるを得ないの確認",
-            "です"
+            "ではありません",
+            "これ",
+            "です",
+            "ざるを得ないの確認"
           ],
           "dictateSolution": [
             "ざるを得ないの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "ざるを得ないの確認をお願いします"
+          "correctAnswer": "ざるを得ないの確認です"
         },
         {
           "id": "u22_l6_7",
@@ -1284,10 +1278,10 @@ export const unit22: DojoUnit = {
           "english": "Confirming Being deeply moved",
           "audioText": "かんどうのかくにん",
           "options": [
-            "Confirming Frustrated / vexed",
-            "Confirming Can't bear / irresistibly",
-            "Pride",
-            "Confirming Being deeply moved"
+            "Confirming Being deeply moved",
+            "Confirming Impatience / anxiety",
+            "Real intentions / true feelings",
+            "Sense of discomfort / out of place"
           ],
           "correctAnswer": "Confirming Being deeply moved"
         },
@@ -1300,34 +1294,35 @@ export const unit22: DojoUnit = {
           "english": "Build 'Confirming Being deeply moved'",
           "audioText": "かんどうのかくにん",
           "tileBank": [
-            "ど",
-            "ん",
+            "か",
             "う",
+            "ど",
+            "の",
+            "ん",
             "に",
             "か",
-            "く",
-            "の",
-            "か"
+            "く"
           ],
           "correctAnswer": "かんどうのかくにん"
         },
         {
           "id": "u22_l7_3",
           "type": "cloze",
-          "prompt": "私は焦りの確認がすきです",
-          "furigana": "わたしはあせりのかくにんがすきです",
-          "romaji": "Watashi wa aseri no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Impatience / anxiety.",
-          "audioText": "焦りの確認",
-          "clozeSentence": "これは焦りの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な焦りの確認です。",
+          "furigana": "これはいちばんたいせつなあせりのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na aseri no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Impatience / anxiety.",
+          "audioText": "これは焦りの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焦りの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l7_4",
@@ -1338,11 +1333,11 @@ export const unit22: DojoUnit = {
           "english": "This is Confirming Impatience / anxiety.",
           "audioText": "これは焦りの確認です",
           "scrambleTokens": [
-            "です",
-            "これは",
+            "ではありません",
             "それ",
-            "焦りの確認",
-            "ではありません"
+            "これは",
+            "です",
+            "焦りの確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1371,24 +1366,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l7_6",
           "type": "dictate",
-          "prompt": "悔しいの確認をお願いします",
-          "furigana": "くやしいのかくにんをおねがいします",
-          "romaji": "kuyashii no kakunin o onegaishimasu.",
-          "english": "Confirming Frustrated / vexed, please.",
-          "audioText": "悔しいの確認をお願いします",
+          "prompt": "悔しいの確認です",
+          "furigana": "くやしいのかくにんです",
+          "romaji": "kuyashii no kakunin desu.",
+          "english": "It is Confirming Frustrated / vexed.",
+          "audioText": "悔しいの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
+            "ではありません",
             "です",
-            "悔しいの確認",
-            "お願いします"
+            "これ",
+            "悔しいの確認"
           ],
           "dictateSolution": [
             "悔しいの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "悔しいの確認をお願いします"
+          "correctAnswer": "悔しいの確認です"
         },
         {
           "id": "u22_l7_7",
@@ -1497,10 +1490,10 @@ export const unit22: DojoUnit = {
           "english": "Confirming Disappointment",
           "audioText": "しつぼうのかくにん",
           "options": [
-            "Resolution / determination",
-            "To be bewildered / perplexed",
+            "Can't avoid doing / compelled",
             "Sense of discomfort / out of place",
-            "Confirming Disappointment"
+            "Confirming Disappointment",
+            "Confirming To be bewildered / perplexed"
           ],
           "correctAnswer": "Confirming Disappointment"
         },
@@ -1513,26 +1506,26 @@ export const unit22: DojoUnit = {
           "english": "Build 'Confirming Disappointment'",
           "audioText": "しつぼうのかくにん",
           "tileBank": [
-            "に",
-            "か",
-            "つ",
-            "く",
             "ぼ",
-            "う",
+            "く",
+            "に",
             "の",
-            "し"
+            "つ",
+            "う",
+            "し",
+            "か"
           ],
           "correctAnswer": "しつぼうのかくにん"
         },
         {
           "id": "u22_l8_3",
           "type": "cloze",
-          "prompt": "私は共感の確認がすきです",
-          "furigana": "わたしはきょうかんのかくにんがすきです",
-          "romaji": "Watashi wa kyoukan no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Empathy.",
-          "audioText": "共感の確認",
-          "clozeSentence": "これは共感の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な共感の確認です。",
+          "furigana": "これはいちばんたいせつなきょうかんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kyoukan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Empathy.",
+          "audioText": "これは共感の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な共感の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1540,7 +1533,8 @@ export const unit22: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l8_4",
@@ -1551,11 +1545,11 @@ export const unit22: DojoUnit = {
           "english": "This is Confirming Empathy.",
           "audioText": "これは共感の確認です",
           "scrambleTokens": [
-            "これは",
-            "共感の確認",
             "それ",
+            "共感の確認",
             "ではありません",
-            "です"
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1584,24 +1578,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l8_6",
           "type": "dictate",
-          "prompt": "違和感の確認をお願いします",
-          "furigana": "いわかんのかくにんをおねがいします",
-          "romaji": "iwakan no kakunin o onegaishimasu.",
-          "english": "Confirming Sense of discomfort / out of place, please.",
-          "audioText": "違和感の確認をお願いします",
+          "prompt": "違和感の確認です",
+          "furigana": "いわかんのかくにんです",
+          "romaji": "iwakan no kakunin desu.",
+          "english": "It is Confirming Sense of discomfort / out of place.",
+          "audioText": "違和感の確認です",
           "dictateTokens": [
-            "を",
-            "お願いします",
             "です",
-            "ありがとう",
-            "違和感の確認"
+            "違和感の確認",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "違和感の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "違和感の確認をお願いします"
+          "correctAnswer": "違和感の確認です"
         },
         {
           "id": "u22_l8_7",
@@ -1709,9 +1701,9 @@ export const unit22: DojoUnit = {
           "audioText": "とまどうのかくにん",
           "options": [
             "Confirming To be bewildered / perplexed",
-            "Confirming Empathy",
-            "Confirming Pride",
-            "Disappointment"
+            "Can't avoid doing / compelled",
+            "To be bewildered / perplexed",
+            "Can't help feeling..."
           ],
           "correctAnswer": "Confirming To be bewildered / perplexed"
         },
@@ -1724,34 +1716,35 @@ export const unit22: DojoUnit = {
           "english": "Build 'Confirming To be bewildered / perplexed'",
           "audioText": "とまどうのかくにん",
           "tileBank": [
+            "う",
+            "ま",
+            "の",
             "に",
             "か",
-            "ど",
             "と",
-            "う",
-            "の",
-            "く",
-            "ま"
+            "ど",
+            "く"
           ],
           "correctAnswer": "とまどうのかくにん"
         },
         {
           "id": "u22_l9_3",
           "type": "cloze",
-          "prompt": "私は安堵の確認がすきです",
-          "furigana": "わたしはあんどのかくにんがすきです",
-          "romaji": "Watashi wa ando no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Relief.",
-          "audioText": "安堵の確認",
-          "clozeSentence": "これは安堵の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な安堵の確認です。",
+          "furigana": "これはいちばんたいせつなあんどのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ando no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Relief.",
+          "audioText": "これは安堵の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な安堵の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l9_4",
@@ -1762,11 +1755,11 @@ export const unit22: DojoUnit = {
           "english": "This is Confirming Relief.",
           "audioText": "これは安堵の確認です",
           "scrambleTokens": [
-            "これは",
-            "安堵の確認",
+            "です",
             "ではありません",
-            "それ",
-            "です"
+            "安堵の確認",
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1795,24 +1788,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l9_6",
           "type": "dictate",
-          "prompt": "誇りの確認をお願いします",
-          "furigana": "ほこりのかくにんをおねがいします",
-          "romaji": "hokori no kakunin o onegaishimasu.",
-          "english": "Confirming Pride, please.",
-          "audioText": "誇りの確認をお願いします",
+          "prompt": "誇りの確認です",
+          "furigana": "ほこりのかくにんです",
+          "romaji": "hokori no kakunin desu.",
+          "english": "It is Confirming Pride.",
+          "audioText": "誇りの確認です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "です",
             "誇りの確認",
-            "を"
+            "これ",
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "誇りの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "誇りの確認をお願いします"
+          "correctAnswer": "誇りの確認です"
         },
         {
           "id": "u22_l9_7",
@@ -1920,10 +1911,10 @@ export const unit22: DojoUnit = {
           "english": "Confirming Inner conflict",
           "audioText": "かっとうのかくにん",
           "options": [
-            "Confirming Empathy",
-            "Can't help feeling...",
             "Confirming Inner conflict",
-            "Confirming Being deeply moved"
+            "Confirming Disappointment",
+            "Confirming Being deeply moved",
+            "Can't avoid doing / compelled"
           ],
           "correctAnswer": "Confirming Inner conflict"
         },
@@ -1936,12 +1927,12 @@ export const unit22: DojoUnit = {
           "english": "Build 'Confirming Inner conflict'",
           "audioText": "かっとうのかくにん",
           "tileBank": [
-            "の",
-            "か",
             "に",
+            "か",
+            "の",
             "っ",
-            "く",
             "う",
+            "く",
             "と",
             "か"
           ],
@@ -1950,20 +1941,21 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l10_3",
           "type": "cloze",
-          "prompt": "私は決断の確認がすきです",
-          "furigana": "わたしはけつだんのかくにんがすきです",
-          "romaji": "Watashi wa ketsudan no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Resolution / determination.",
-          "audioText": "決断の確認",
-          "clozeSentence": "これは決断の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な決断の確認です。",
+          "furigana": "これはいちばんたいせつなけつだんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ketsudan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Resolution / determination.",
+          "audioText": "これは決断の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な決断の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l10_4",
@@ -1974,10 +1966,10 @@ export const unit22: DojoUnit = {
           "english": "This is Confirming Resolution / determination.",
           "audioText": "これは決断の確認です",
           "scrambleTokens": [
-            "それ",
-            "これは",
-            "です",
             "ではありません",
+            "それ",
+            "です",
+            "これは",
             "決断の確認"
           ],
           "scrambleSolution": [
@@ -2007,24 +1999,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l10_6",
           "type": "dictate",
-          "prompt": "本音の確認をお願いします",
-          "furigana": "ほんねのかくにんをおねがいします",
-          "romaji": "honne no kakunin o onegaishimasu.",
-          "english": "Confirming Real intentions / true feelings, please.",
-          "audioText": "本音の確認をお願いします",
+          "prompt": "本音の確認です",
+          "furigana": "ほんねのかくにんです",
+          "romaji": "honne no kakunin desu.",
+          "english": "It is Confirming Real intentions / true feelings.",
+          "audioText": "本音の確認です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
+            "ではありません",
             "です",
-            "を",
-            "本音の確認"
+            "本音の確認",
+            "これ"
           ],
           "dictateSolution": [
             "本音の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "本音の確認をお願いします"
+          "correctAnswer": "本音の確認です"
         },
         {
           "id": "u22_l10_7",
@@ -2127,10 +2117,10 @@ export const unit22: DojoUnit = {
           "english": "Confirming Can't bear / irresistibly",
           "audioText": "たまらないのかくにん",
           "options": [
-            "Empathy",
-            "Confirming Can't bear / irresistibly",
-            "Pride",
-            "Can't avoid doing / compelled"
+            "Confirming Can't help feeling...",
+            "Inner conflict",
+            "Sense of discomfort / out of place",
+            "Confirming Can't bear / irresistibly"
           ],
           "correctAnswer": "Confirming Can't bear / irresistibly"
         },
@@ -2144,12 +2134,12 @@ export const unit22: DojoUnit = {
           "audioText": "たまらないのかくにん",
           "tileBank": [
             "の",
-            "ま",
-            "か",
+            "い",
             "た",
             "な",
-            "い",
+            "か",
             "ら",
+            "ま",
             "く"
           ],
           "correctAnswer": "たまらないのかくにん"
@@ -2157,20 +2147,21 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l11_3",
           "type": "cloze",
-          "prompt": "私はてならないの確認がすきです",
-          "furigana": "わたしはてならないのかくにんがすきです",
-          "romaji": "Watashi wa te naranai no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Can't help feeling....",
-          "audioText": "てならないの確認",
-          "clozeSentence": "これはてならないの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切なてならないの確認です。",
+          "furigana": "これはいちばんたいせつなてならないのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na te naranai no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Can't help feeling....",
+          "audioText": "これはてならないの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なてならないの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l11_4",
@@ -2181,11 +2172,11 @@ export const unit22: DojoUnit = {
           "english": "This is Confirming Can't help feeling....",
           "audioText": "これはてならないの確認です",
           "scrambleTokens": [
+            "これは",
+            "です",
             "ではありません",
             "てならないの確認",
-            "それ",
-            "これは",
-            "です"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2214,24 +2205,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l11_6",
           "type": "dictate",
-          "prompt": "ざるを得ないの確認をお願いします",
-          "furigana": "ざるをえないのかくにんをおねがいします",
-          "romaji": "zaru o enai no kakunin o onegaishimasu.",
-          "english": "Confirming Can't avoid doing / compelled, please.",
-          "audioText": "ざるを得ないの確認をお願いします",
+          "prompt": "ざるを得ないの確認です",
+          "furigana": "ざるをえないのかくにんです",
+          "romaji": "zaru o enai no kakunin desu.",
+          "english": "It is Confirming Can't avoid doing / compelled.",
+          "audioText": "ざるを得ないの確認です",
           "dictateTokens": [
+            "これ",
             "ざるを得ないの確認",
-            "を",
-            "ありがとう",
             "です",
-            "お願いします"
+            "ではありません"
           ],
           "dictateSolution": [
             "ざるを得ないの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "ざるを得ないの確認をお願いします"
+          "correctAnswer": "ざるを得ないの確認です"
         },
         {
           "id": "u22_l11_7",
@@ -2337,10 +2326,10 @@ export const unit22: DojoUnit = {
           "english": "Confirming Being deeply moved",
           "audioText": "かんどうのかくにん",
           "options": [
-            "Pride",
-            "Confirming Can't avoid doing / compelled",
             "Confirming Pride",
-            "Confirming Being deeply moved"
+            "Confirming Can't bear / irresistibly",
+            "Confirming Being deeply moved",
+            "Frustrated / vexed"
           ],
           "correctAnswer": "Confirming Being deeply moved"
         },
@@ -2353,26 +2342,26 @@ export const unit22: DojoUnit = {
           "english": "Build 'Confirming Being deeply moved'",
           "audioText": "かんどうのかくにん",
           "tileBank": [
-            "に",
-            "の",
-            "ど",
-            "く",
-            "ん",
-            "う",
             "か",
-            "か"
+            "の",
+            "ん",
+            "に",
+            "ど",
+            "か",
+            "う",
+            "く"
           ],
           "correctAnswer": "かんどうのかくにん"
         },
         {
           "id": "u22_l12_3",
           "type": "cloze",
-          "prompt": "私は焦りの確認がすきです",
-          "furigana": "わたしはあせりのかくにんがすきです",
-          "romaji": "Watashi wa aseri no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Impatience / anxiety.",
-          "audioText": "焦りの確認",
-          "clozeSentence": "これは焦りの確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な焦りの確認です。",
+          "furigana": "これはいちばんたいせつなあせりのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na aseri no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Impatience / anxiety.",
+          "audioText": "これは焦りの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焦りの確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2380,7 +2369,8 @@ export const unit22: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l12_4",
@@ -2391,11 +2381,11 @@ export const unit22: DojoUnit = {
           "english": "This is Confirming Impatience / anxiety.",
           "audioText": "これは焦りの確認です",
           "scrambleTokens": [
-            "です",
             "焦りの確認",
-            "それ",
+            "です",
+            "ではありません",
             "これは",
-            "ではありません"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2424,24 +2414,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l12_6",
           "type": "dictate",
-          "prompt": "悔しいの確認をお願いします",
-          "furigana": "くやしいのかくにんをおねがいします",
-          "romaji": "kuyashii no kakunin o onegaishimasu.",
-          "english": "Confirming Frustrated / vexed, please.",
-          "audioText": "悔しいの確認をお願いします",
+          "prompt": "悔しいの確認です",
+          "furigana": "くやしいのかくにんです",
+          "romaji": "kuyashii no kakunin desu.",
+          "english": "It is Confirming Frustrated / vexed.",
+          "audioText": "悔しいの確認です",
           "dictateTokens": [
-            "お願いします",
-            "を",
             "です",
-            "悔しいの確認",
-            "ありがとう"
+            "これ",
+            "ではありません",
+            "悔しいの確認"
           ],
           "dictateSolution": [
             "悔しいの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "悔しいの確認をお願いします"
+          "correctAnswer": "悔しいの確認です"
         },
         {
           "id": "u22_l12_7",
@@ -2538,10 +2526,10 @@ export const unit22: DojoUnit = {
           "english": "Can't bear / irresistibly",
           "audioText": "たまらない",
           "options": [
-            "Can't bear / irresistibly",
-            "Confirming Relief",
-            "Relief",
-            "Confirming Can't help feeling..."
+            "Inner conflict",
+            "Can't help feeling...",
+            "Sense of discomfort / out of place",
+            "Can't bear / irresistibly"
           ],
           "correctAnswer": "Can't bear / irresistibly"
         },
@@ -2554,13 +2542,13 @@ export const unit22: DojoUnit = {
           "english": "Build 'Can't bear / irresistibly'",
           "audioText": "たまらない",
           "tileBank": [
-            "み",
-            "す",
-            "い",
             "な",
-            "ひ",
+            "ち",
+            "に",
             "た",
             "ま",
+            "い",
+            "て",
             "ら"
           ],
           "correctAnswer": "たまらない"
@@ -2568,20 +2556,21 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l13_3",
           "type": "cloze",
-          "prompt": "私はてならないがすきです",
-          "furigana": "わたしはてならないがすきです",
-          "romaji": "Watashi wa te naranai ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Can't help feeling....",
-          "audioText": "てならない",
-          "clozeSentence": "これはてならない {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なてならないです。",
+          "furigana": "これはいちばんたいせつなてならないです。",
+          "romaji": "Kore wa ichiban taisetsu na te naranai desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Can't help feeling....",
+          "audioText": "これはてならないです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なてならないです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l13_4",
@@ -2592,11 +2581,11 @@ export const unit22: DojoUnit = {
           "english": "This is Can't help feeling....",
           "audioText": "これはてならないです",
           "scrambleTokens": [
-            "ではありません",
-            "これは",
+            "てならない",
             "それ",
+            "ではありません",
             "です",
-            "てならない"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2625,24 +2614,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l13_6",
           "type": "dictate",
-          "prompt": "ざるを得ないをお願いします",
-          "furigana": "ざるをえないをおねがいします",
-          "romaji": "zaru o enai o onegaishimasu.",
-          "english": "Can't avoid doing / compelled, please.",
-          "audioText": "ざるを得ないをお願いします",
+          "prompt": "ざるを得ないです",
+          "furigana": "ざるをえないです",
+          "romaji": "zaru o enai desu.",
+          "english": "It is Can't avoid doing / compelled.",
+          "audioText": "ざるを得ないです",
           "dictateTokens": [
-            "を",
-            "お願いします",
+            "ではありません",
             "です",
             "ざるを得ない",
-            "ありがとう"
+            "これ"
           ],
           "dictateSolution": [
             "ざるを得ない",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "ざるを得ないをお願いします"
+          "correctAnswer": "ざるを得ないです"
         },
         {
           "id": "u22_l13_7",
@@ -2742,10 +2729,10 @@ export const unit22: DojoUnit = {
           "english": "Being deeply moved",
           "audioText": "かんどう",
           "options": [
-            "Confirming Frustrated / vexed",
-            "Can't bear / irresistibly",
             "Being deeply moved",
-            "Relief"
+            "Confirming Disappointment",
+            "Confirming Can't avoid doing / compelled",
+            "Confirming Resolution / determination"
           ],
           "correctAnswer": "Being deeply moved"
         },
@@ -2758,34 +2745,35 @@ export const unit22: DojoUnit = {
           "english": "Build 'Being deeply moved'",
           "audioText": "かんどう",
           "tileBank": [
-            "ん",
-            "ま",
             "ど",
-            "さ",
+            "み",
+            "ね",
             "か",
-            "へ",
             "う",
-            "を"
+            "ら",
+            "わ",
+            "ん"
           ],
           "correctAnswer": "かんどう"
         },
         {
           "id": "u22_l14_3",
           "type": "cloze",
-          "prompt": "私は焦りがすきです",
-          "furigana": "わたしはあせりがすきです",
-          "romaji": "Watashi wa aseri ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Impatience / anxiety.",
-          "audioText": "焦り",
-          "clozeSentence": "これは焦り {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な焦りです。",
+          "furigana": "これはいちばんたいせつなあせりです。",
+          "romaji": "Kore wa ichiban taisetsu na aseri desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Impatience / anxiety.",
+          "audioText": "これは焦りです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焦りです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l14_4",
@@ -2796,11 +2784,11 @@ export const unit22: DojoUnit = {
           "english": "This is Impatience / anxiety.",
           "audioText": "これは焦りです",
           "scrambleTokens": [
+            "ではありません",
             "それ",
-            "これは",
-            "です",
             "焦り",
-            "ではありません"
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2829,24 +2817,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l14_6",
           "type": "dictate",
-          "prompt": "悔しいをお願いします",
-          "furigana": "くやしいをおねがいします",
-          "romaji": "kuyashii o onegaishimasu.",
-          "english": "Frustrated / vexed, please.",
-          "audioText": "悔しいをお願いします",
+          "prompt": "悔しいです",
+          "furigana": "くやしいです",
+          "romaji": "kuyashii desu.",
+          "english": "It is Frustrated / vexed.",
+          "audioText": "悔しいです",
           "dictateTokens": [
+            "ではありません",
             "です",
-            "ありがとう",
-            "を",
-            "お願いします",
+            "これ",
             "悔しい"
           ],
           "dictateSolution": [
             "悔しい",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "悔しいをお願いします"
+          "correctAnswer": "悔しいです"
         },
         {
           "id": "u22_l14_7",
@@ -2949,10 +2935,10 @@ export const unit22: DojoUnit = {
           "english": "Disappointment",
           "audioText": "しつぼう",
           "options": [
+            "Confirming Impatience / anxiety",
             "Disappointment",
-            "Inner conflict",
-            "Confirming Pride",
-            "Confirming Real intentions / true feelings"
+            "Confirming Can't avoid doing / compelled",
+            "Impatience / anxiety"
           ],
           "correctAnswer": "Disappointment"
         },
@@ -2965,34 +2951,35 @@ export const unit22: DojoUnit = {
           "english": "Build 'Disappointment'",
           "audioText": "しつぼう",
           "tileBank": [
-            "つ",
-            "ぼ",
-            "そ",
             "う",
-            "め",
-            "も",
+            "つ",
             "し",
-            "お"
+            "る",
+            "く",
+            "ふ",
+            "ん",
+            "ぼ"
           ],
           "correctAnswer": "しつぼう"
         },
         {
           "id": "u22_l15_3",
           "type": "cloze",
-          "prompt": "私は共感がすきです",
-          "furigana": "わたしはきょうかんがすきです",
-          "romaji": "Watashi wa kyoukan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Empathy.",
-          "audioText": "共感",
-          "clozeSentence": "これは共感 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な共感です。",
+          "furigana": "これはいちばんたいせつなきょうかんです。",
+          "romaji": "Kore wa ichiban taisetsu na kyoukan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Empathy.",
+          "audioText": "これは共感です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な共感です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u22_l15_4",
@@ -3004,8 +2991,8 @@ export const unit22: DojoUnit = {
           "audioText": "これは共感です",
           "scrambleTokens": [
             "です",
-            "それ",
             "これは",
+            "それ",
             "共感",
             "ではありません"
           ],
@@ -3036,24 +3023,22 @@ export const unit22: DojoUnit = {
         {
           "id": "u22_l15_6",
           "type": "dictate",
-          "prompt": "違和感をお願いします",
-          "furigana": "いわかんをおねがいします",
-          "romaji": "iwakan o onegaishimasu.",
-          "english": "Sense of discomfort / out of place, please.",
-          "audioText": "違和感をお願いします",
+          "prompt": "違和感です",
+          "furigana": "いわかんです",
+          "romaji": "iwakan desu.",
+          "english": "It is Sense of discomfort / out of place.",
+          "audioText": "違和感です",
           "dictateTokens": [
-            "です",
             "違和感",
-            "ありがとう",
-            "を",
-            "お願いします"
+            "これ",
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "違和感",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "違和感をお願いします"
+          "correctAnswer": "違和感です"
         },
         {
           "id": "u22_l15_7",
@@ -3138,10 +3123,10 @@ export const unit22: DojoUnit = {
         "english": "Can't bear / irresistibly",
         "audioText": "たまらない",
         "options": [
-          "Confirming Can't help feeling...",
-          "Disappointment",
-          "Can't bear / irresistibly",
-          "Confirming Being deeply moved"
+          "Empathy",
+          "Confirming Inner conflict",
+          "Confirming Can't avoid doing / compelled",
+          "Can't bear / irresistibly"
         ],
         "correctAnswer": "Can't bear / irresistibly"
       },
@@ -3154,13 +3139,13 @@ export const unit22: DojoUnit = {
         "english": "Build 'Can't bear / irresistibly'",
         "audioText": "たまらない",
         "tileBank": [
-          "て",
-          "ね",
-          "な",
-          "た",
-          "せ",
+          "こ",
           "ま",
+          "あ",
           "い",
+          "な",
+          "の",
+          "た",
           "ら"
         ],
         "correctAnswer": "たまらない"
@@ -3174,10 +3159,10 @@ export const unit22: DojoUnit = {
         "english": "Disappointment",
         "audioText": "しつぼう",
         "options": [
-          "Confirming Sense of discomfort / out of place",
-          "Confirming Can't avoid doing / compelled",
-          "Confirming Relief",
-          "Disappointment"
+          "Confirming Being deeply moved",
+          "Frustrated / vexed",
+          "Disappointment",
+          "Sense of discomfort / out of place"
         ],
         "correctAnswer": "Disappointment"
       },
@@ -3190,14 +3175,14 @@ export const unit22: DojoUnit = {
         "english": "Build 'Disappointment'",
         "audioText": "しつぼう",
         "tileBank": [
-          "さ",
-          "つ",
-          "う",
-          "ひ",
-          "も",
-          "ぼ",
+          "は",
+          "ら",
           "し",
-          "ら"
+          "つ",
+          "さ",
+          "み",
+          "う",
+          "ぼ"
         ],
         "correctAnswer": "しつぼう"
       },
@@ -3210,10 +3195,10 @@ export const unit22: DojoUnit = {
         "english": "Inner conflict",
         "audioText": "かっとう",
         "options": [
-          "Confirming Real intentions / true feelings",
-          "Can't help feeling...",
+          "Can't avoid doing / compelled",
+          "Confirming Empathy",
           "Inner conflict",
-          "Confirming To be bewildered / perplexed"
+          "Real intentions / true feelings"
         ],
         "correctAnswer": "Inner conflict"
       },
@@ -3226,14 +3211,14 @@ export const unit22: DojoUnit = {
         "english": "Build 'Inner conflict'",
         "audioText": "かっとう",
         "tileBank": [
-          "う",
-          "っ",
+          "き",
           "か",
-          "ね",
-          "ろ",
-          "よ",
+          "ら",
+          "っ",
+          "は",
+          "へ",
           "と",
-          "の"
+          "う"
         ],
         "correctAnswer": "かっとう"
       },
@@ -3246,10 +3231,10 @@ export const unit22: DojoUnit = {
         "english": "Confirming Being deeply moved",
         "audioText": "かんどうのかくにん",
         "options": [
-          "Confirming Frustrated / vexed",
-          "Confirming Can't bear / irresistibly",
-          "Pride",
-          "Confirming Being deeply moved"
+          "Confirming Being deeply moved",
+          "Confirming Impatience / anxiety",
+          "Real intentions / true feelings",
+          "Sense of discomfort / out of place"
         ],
         "correctAnswer": "Confirming Being deeply moved"
       },
@@ -3262,14 +3247,14 @@ export const unit22: DojoUnit = {
         "english": "Build 'Confirming Being deeply moved'",
         "audioText": "かんどうのかくにん",
         "tileBank": [
-          "ど",
-          "ん",
+          "か",
           "う",
+          "ど",
+          "の",
+          "ん",
           "に",
           "か",
-          "く",
-          "の",
-          "か"
+          "く"
         ],
         "correctAnswer": "かんどうのかくにん"
       },
@@ -3283,9 +3268,9 @@ export const unit22: DojoUnit = {
         "audioText": "とまどうのかくにん",
         "options": [
           "Confirming To be bewildered / perplexed",
-          "Confirming Empathy",
-          "Confirming Pride",
-          "Disappointment"
+          "Can't avoid doing / compelled",
+          "To be bewildered / perplexed",
+          "Can't help feeling..."
         ],
         "correctAnswer": "Confirming To be bewildered / perplexed"
       },
@@ -3298,14 +3283,14 @@ export const unit22: DojoUnit = {
         "english": "Build 'Confirming To be bewildered / perplexed'",
         "audioText": "とまどうのかくにん",
         "tileBank": [
+          "う",
+          "ま",
+          "の",
           "に",
           "か",
-          "ど",
           "と",
-          "う",
-          "の",
-          "く",
-          "ま"
+          "ど",
+          "く"
         ],
         "correctAnswer": "とまどうのかくにん"
       },
@@ -3318,10 +3303,10 @@ export const unit22: DojoUnit = {
         "english": "Confirming Can't bear / irresistibly",
         "audioText": "たまらないのかくにん",
         "options": [
-          "Empathy",
-          "Confirming Can't bear / irresistibly",
-          "Pride",
-          "Can't avoid doing / compelled"
+          "Confirming Can't help feeling...",
+          "Inner conflict",
+          "Sense of discomfort / out of place",
+          "Confirming Can't bear / irresistibly"
         ],
         "correctAnswer": "Confirming Can't bear / irresistibly"
       },
@@ -3335,12 +3320,12 @@ export const unit22: DojoUnit = {
         "audioText": "たまらないのかくにん",
         "tileBank": [
           "の",
-          "ま",
-          "か",
+          "い",
           "た",
           "な",
-          "い",
+          "か",
           "ら",
+          "ま",
           "く"
         ],
         "correctAnswer": "たまらないのかくにん"

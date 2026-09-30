@@ -58,6 +58,9 @@ export interface LessonItem {
   // Dictation fields
   dictateTokens?: string[];
   dictateSolution?: string[];
+
+  // Educational explanation/grammar tip
+  explanation?: string;
 }
 
 export type DojoLessonCategory =

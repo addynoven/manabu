@@ -50,10 +50,10 @@ export const unit16: DojoUnit = {
           "english": "Hypothesis / assumption",
           "audioText": "かてい",
           "options": [
-            "Proposal / suggestion",
-            "Hypothesis / assumption",
+            "Confirming Case / scenario",
             "Condition / requirement",
-            "Regret"
+            "Hypothesis / assumption",
+            "Proposal / suggestion"
           ],
           "correctAnswer": "Hypothesis / assumption"
         },
@@ -66,34 +66,35 @@ export const unit16: DojoUnit = {
           "english": "Build 'Hypothesis / assumption'",
           "audioText": "かてい",
           "tileBank": [
-            "き",
+            "か",
+            "す",
             "い",
-            "せ",
-            "む",
-            "そ",
-            "お",
+            "ゆ",
+            "り",
+            "く",
             "て",
-            "か"
+            "せ"
           ],
           "correctAnswer": "かてい"
         },
         {
           "id": "u16_l1_3",
           "type": "cloze",
-          "prompt": "私は条件がすきです",
-          "furigana": "わたしはじょうけんがすきです",
-          "romaji": "Watashi wa jouken ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Condition / requirement.",
-          "audioText": "条件",
-          "clozeSentence": "これは条件 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な条件です。",
+          "furigana": "これはいちばんたいせつなじょうけんです。",
+          "romaji": "Kore wa ichiban taisetsu na jouken desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Condition / requirement.",
+          "audioText": "これは条件です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な条件です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l1_4",
@@ -104,11 +105,11 @@ export const unit16: DojoUnit = {
           "english": "This is Condition / requirement.",
           "audioText": "これは条件です",
           "scrambleTokens": [
-            "それ",
             "ではありません",
-            "条件",
+            "それ",
             "です",
-            "これは"
+            "これは",
+            "条件"
           ],
           "scrambleSolution": [
             "これは",
@@ -137,24 +138,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l1_6",
           "type": "dictate",
-          "prompt": "場合をお願いします",
-          "furigana": "ばあいをおねがいします",
-          "romaji": "baai o onegaishimasu.",
-          "english": "Case / scenario, please.",
-          "audioText": "場合をお願いします",
+          "prompt": "場合です",
+          "furigana": "ばあいです",
+          "romaji": "baai desu.",
+          "english": "It is Case / scenario.",
+          "audioText": "場合です",
           "dictateTokens": [
-            "を",
             "です",
-            "ありがとう",
+            "ではありません",
             "場合",
-            "お願いします"
+            "これ"
           ],
           "dictateSolution": [
             "場合",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "場合をお願いします"
+          "correctAnswer": "場合です"
         },
         {
           "id": "u16_l1_7",
@@ -252,9 +251,9 @@ export const unit16: DojoUnit = {
           "english": "If / supposing that",
           "audioText": "もし",
           "options": [
-            "Confirming Influence / effect",
-            "Confirming Response / dealing with",
-            "Regret",
+            "Confirming Prediction / forecast",
+            "Confirming Case / scenario",
+            "Confirming If / supposing that",
             "If / supposing that"
           ],
           "correctAnswer": "If / supposing that"
@@ -268,34 +267,35 @@ export const unit16: DojoUnit = {
           "english": "Build 'If / supposing that'",
           "audioText": "もし",
           "tileBank": [
-            "れ",
-            "ひ",
-            "し",
-            "る",
-            "こ",
-            "て",
+            "も",
+            "り",
+            "せ",
             "ら",
-            "も"
+            "し",
+            "ん",
+            "の",
+            "と"
           ],
           "correctAnswer": "もし"
         },
         {
           "id": "u16_l2_3",
           "type": "cloze",
-          "prompt": "私はたとえがすきです",
-          "furigana": "わたしはたとえがすきです",
-          "romaji": "Watashi wa tatoe ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Even if / supposing.",
-          "audioText": "たとえ",
-          "clozeSentence": "これはたとえ {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なたとえです。",
+          "furigana": "これはいちばんたいせつなたとえです。",
+          "romaji": "Kore wa ichiban taisetsu na tatoe desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Even if / supposing.",
+          "audioText": "これはたとえです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なたとえです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l2_4",
@@ -306,9 +306,9 @@ export const unit16: DojoUnit = {
           "english": "This is Even if / supposing.",
           "audioText": "これはたとえです",
           "scrambleTokens": [
-            "です",
-            "たとえ",
             "それ",
+            "たとえ",
+            "です",
             "ではありません",
             "これは"
           ],
@@ -339,24 +339,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l2_6",
           "type": "dictate",
-          "prompt": "後悔をお願いします",
-          "furigana": "こうかいをおねがいします",
-          "romaji": "koukai o onegaishimasu.",
-          "english": "Regret, please.",
-          "audioText": "後悔をお願いします",
+          "prompt": "後悔です",
+          "furigana": "こうかいです",
+          "romaji": "koukai desu.",
+          "english": "It is Regret.",
+          "audioText": "後悔です",
           "dictateTokens": [
+            "これ",
             "です",
-            "お願いします",
-            "を",
             "後悔",
-            "ありがとう"
+            "ではありません"
           ],
           "dictateSolution": [
             "後悔",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "後悔をお願いします"
+          "correctAnswer": "後悔です"
         },
         {
           "id": "u16_l2_7",
@@ -460,9 +458,9 @@ export const unit16: DojoUnit = {
           "audioText": "かいぜん",
           "options": [
             "Improvement / Kaizen",
-            "Proposal / suggestion",
-            "Case / scenario",
-            "Confirming Proposal / suggestion"
+            "Even if / supposing",
+            "Option / choice",
+            "Response / dealing with"
           ],
           "correctAnswer": "Improvement / Kaizen"
         },
@@ -475,34 +473,35 @@ export const unit16: DojoUnit = {
           "english": "Build 'Improvement / Kaizen'",
           "audioText": "かいぜん",
           "tileBank": [
-            "い",
-            "け",
-            "こ",
-            "ぜ",
-            "か",
+            "る",
+            "よ",
             "ん",
-            "う",
-            "お"
+            "か",
+            "い",
+            "ら",
+            "ぜ",
+            "そ"
           ],
           "correctAnswer": "かいぜん"
         },
         {
           "id": "u16_l3_3",
           "type": "cloze",
-          "prompt": "私は提案がすきです",
-          "furigana": "わたしはていあんがすきです",
-          "romaji": "Watashi wa teian ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Proposal / suggestion.",
-          "audioText": "提案",
-          "clozeSentence": "これは提案 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な提案です。",
+          "furigana": "これはいちばんたいせつなていあんです。",
+          "romaji": "Kore wa ichiban taisetsu na teian desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Proposal / suggestion.",
+          "audioText": "これは提案です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な提案です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l3_4",
@@ -513,11 +512,11 @@ export const unit16: DojoUnit = {
           "english": "This is Proposal / suggestion.",
           "audioText": "これは提案です",
           "scrambleTokens": [
+            "提案",
             "それ",
-            "です",
-            "これは",
             "ではありません",
-            "提案"
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -546,24 +545,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l3_6",
           "type": "dictate",
-          "prompt": "可能性をお願いします",
-          "furigana": "かのうせいをおねがいします",
-          "romaji": "kanousei o onegaishimasu.",
-          "english": "Possibility / potential, please.",
-          "audioText": "可能性をお願いします",
+          "prompt": "可能性です",
+          "furigana": "かのうせいです",
+          "romaji": "kanousei desu.",
+          "english": "It is Possibility / potential.",
+          "audioText": "可能性です",
           "dictateTokens": [
-            "ありがとう",
+            "これ",
             "可能性",
             "です",
-            "を",
-            "お願いします"
+            "ではありません"
           ],
           "dictateSolution": [
             "可能性",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "可能性をお願いします"
+          "correctAnswer": "可能性です"
         },
         {
           "id": "u16_l3_7",
@@ -666,10 +663,10 @@ export const unit16: DojoUnit = {
           "english": "Option / choice",
           "audioText": "せんたくし",
           "options": [
-            "Option / choice",
-            "Influence / effect",
-            "Case / scenario",
-            "Possibility / potential"
+            "Confirming Condition / requirement",
+            "Condition / requirement",
+            "Confirming Influence / effect",
+            "Option / choice"
           ],
           "correctAnswer": "Option / choice"
         },
@@ -682,26 +679,26 @@ export const unit16: DojoUnit = {
           "english": "Build 'Option / choice'",
           "audioText": "せんたくし",
           "tileBank": [
-            "ん",
-            "し",
-            "り",
-            "あ",
+            "と",
             "せ",
             "た",
-            "く",
-            "も"
+            "ろ",
+            "め",
+            "し",
+            "ん",
+            "く"
           ],
           "correctAnswer": "せんたくし"
         },
         {
           "id": "u16_l4_3",
           "type": "cloze",
-          "prompt": "私は判断がすきです",
-          "furigana": "わたしははんだんがすきです",
-          "romaji": "Watashi wa handan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Judgement / decision.",
-          "audioText": "判断",
-          "clozeSentence": "これは判断 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な判断です。",
+          "furigana": "これはいちばんたいせつなはんだんです。",
+          "romaji": "Kore wa ichiban taisetsu na handan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Judgement / decision.",
+          "audioText": "これは判断です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な判断です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -709,7 +706,8 @@ export const unit16: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l4_4",
@@ -720,11 +718,11 @@ export const unit16: DojoUnit = {
           "english": "This is Judgement / decision.",
           "audioText": "これは判断です",
           "scrambleTokens": [
+            "ではありません",
             "判断",
-            "これは",
-            "です",
             "それ",
-            "ではありません"
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -753,24 +751,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l4_6",
           "type": "dictate",
-          "prompt": "影響をお願いします",
-          "furigana": "えいきょうをおねがいします",
-          "romaji": "eikyou o onegaishimasu.",
-          "english": "Influence / effect, please.",
-          "audioText": "影響をお願いします",
+          "prompt": "影響です",
+          "furigana": "えいきょうです",
+          "romaji": "eikyou desu.",
+          "english": "It is Influence / effect.",
+          "audioText": "影響です",
           "dictateTokens": [
-            "を",
-            "お願いします",
-            "ありがとう",
-            "です",
-            "影響"
+            "ではありません",
+            "影響",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "影響",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "影響をお願いします"
+          "correctAnswer": "影響です"
         },
         {
           "id": "u16_l4_7",
@@ -872,10 +868,10 @@ export const unit16: DojoUnit = {
           "english": "In the unlikely event",
           "audioText": "まんいち",
           "options": [
-            "Confirming Hypothesis / assumption",
-            "Influence / effect",
             "In the unlikely event",
-            "Confirming Case / scenario"
+            "Prediction / forecast",
+            "Improvement / Kaizen",
+            "Confirming Option / choice"
           ],
           "correctAnswer": "In the unlikely event"
         },
@@ -888,34 +884,35 @@ export const unit16: DojoUnit = {
           "english": "Build 'In the unlikely event'",
           "audioText": "まんいち",
           "tileBank": [
-            "ぬ",
-            "ん",
-            "ち",
-            "え",
             "い",
-            "み",
-            "も",
-            "ま"
+            "ま",
+            "ね",
+            "つ",
+            "ん",
+            "そ",
+            "る",
+            "ち"
           ],
           "correctAnswer": "まんいち"
         },
         {
           "id": "u16_l5_3",
           "type": "cloze",
-          "prompt": "私は予測がすきです",
-          "furigana": "わたしはよそくがすきです",
-          "romaji": "Watashi wa yosoku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Prediction / forecast.",
-          "audioText": "予測",
-          "clozeSentence": "これは予測 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な予測です。",
+          "furigana": "これはいちばんたいせつなよそくです。",
+          "romaji": "Kore wa ichiban taisetsu na yosoku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Prediction / forecast.",
+          "audioText": "これは予測です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な予測です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l5_4",
@@ -926,11 +923,11 @@ export const unit16: DojoUnit = {
           "english": "This is Prediction / forecast.",
           "audioText": "これは予測です",
           "scrambleTokens": [
+            "です",
             "それ",
-            "ではありません",
             "予測",
-            "これは",
-            "です"
+            "ではありません",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -959,24 +956,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l5_6",
           "type": "dictate",
-          "prompt": "対応をお願いします",
-          "furigana": "たいおうをおねがいします",
-          "romaji": "taiou o onegaishimasu.",
-          "english": "Response / dealing with, please.",
-          "audioText": "対応をお願いします",
+          "prompt": "対応です",
+          "furigana": "たいおうです",
+          "romaji": "taiou desu.",
+          "english": "It is Response / dealing with.",
+          "audioText": "対応です",
           "dictateTokens": [
             "です",
-            "を",
-            "ありがとう",
-            "お願いします",
-            "対応"
+            "対応",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "対応",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "対応をお願いします"
+          "correctAnswer": "対応です"
         },
         {
           "id": "u16_l5_7",
@@ -1084,10 +1079,10 @@ export const unit16: DojoUnit = {
           "english": "Confirming Hypothesis / assumption",
           "audioText": "かていのかくにん",
           "options": [
-            "Confirming If / supposing that",
-            "Confirming Hypothesis / assumption",
-            "Confirming In the unlikely event",
-            "Confirming Judgement / decision"
+            "In the unlikely event",
+            "Confirming Case / scenario",
+            "Confirming Possibility / potential",
+            "Confirming Hypothesis / assumption"
           ],
           "correctAnswer": "Confirming Hypothesis / assumption"
         },
@@ -1100,13 +1095,13 @@ export const unit16: DojoUnit = {
           "english": "Build 'Confirming Hypothesis / assumption'",
           "audioText": "かていのかくにん",
           "tileBank": [
-            "ん",
-            "い",
-            "の",
-            "く",
             "か",
+            "い",
             "て",
             "か",
+            "ん",
+            "く",
+            "の",
             "に"
           ],
           "correctAnswer": "かていのかくにん"
@@ -1114,20 +1109,21 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l6_3",
           "type": "cloze",
-          "prompt": "私は条件の確認がすきです",
-          "furigana": "わたしはじょうけんのかくにんがすきです",
-          "romaji": "Watashi wa jouken no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Condition / requirement.",
-          "audioText": "条件の確認",
-          "clozeSentence": "これは条件の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な条件の確認です。",
+          "furigana": "これはいちばんたいせつなじょうけんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na jouken no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Condition / requirement.",
+          "audioText": "これは条件の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な条件の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l6_4",
@@ -1138,11 +1134,11 @@ export const unit16: DojoUnit = {
           "english": "This is Confirming Condition / requirement.",
           "audioText": "これは条件の確認です",
           "scrambleTokens": [
-            "ではありません",
-            "です",
-            "条件の確認",
             "これは",
-            "それ"
+            "です",
+            "それ",
+            "条件の確認",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1171,24 +1167,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l6_6",
           "type": "dictate",
-          "prompt": "場合の確認をお願いします",
-          "furigana": "ばあいのかくにんをおねがいします",
-          "romaji": "baai no kakunin o onegaishimasu.",
-          "english": "Confirming Case / scenario, please.",
-          "audioText": "場合の確認をお願いします",
+          "prompt": "場合の確認です",
+          "furigana": "ばあいのかくにんです",
+          "romaji": "baai no kakunin desu.",
+          "english": "It is Confirming Case / scenario.",
+          "audioText": "場合の確認です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
             "場合の確認",
-            "お願いします",
-            "です"
+            "です",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "場合の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "場合の確認をお願いします"
+          "correctAnswer": "場合の確認です"
         },
         {
           "id": "u16_l6_7",
@@ -1292,10 +1286,10 @@ export const unit16: DojoUnit = {
           "english": "Confirming If / supposing that",
           "audioText": "もしのかくにん",
           "options": [
+            "Confirming In the unlikely event",
             "Confirming If / supposing that",
-            "Improvement / Kaizen",
-            "Influence / effect",
-            "Confirming Regret"
+            "Confirming Case / scenario",
+            "Confirming Possibility / potential"
           ],
           "correctAnswer": "Confirming If / supposing that"
         },
@@ -1308,13 +1302,13 @@ export const unit16: DojoUnit = {
           "english": "Build 'Confirming If / supposing that'",
           "audioText": "もしのかくにん",
           "tileBank": [
-            "の",
-            "か",
-            "め",
-            "く",
-            "ん",
-            "に",
+            "な",
             "も",
+            "か",
+            "の",
+            "に",
+            "ん",
+            "く",
             "し"
           ],
           "correctAnswer": "もしのかくにん"
@@ -1322,20 +1316,21 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l7_3",
           "type": "cloze",
-          "prompt": "私はたとえの確認がすきです",
-          "furigana": "わたしはたとえのかくにんがすきです",
-          "romaji": "Watashi wa tatoe no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Even if / supposing.",
-          "audioText": "たとえの確認",
-          "clozeSentence": "これはたとえの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切なたとえの確認です。",
+          "furigana": "これはいちばんたいせつなたとえのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na tatoe no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Even if / supposing.",
+          "audioText": "これはたとえの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なたとえの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l7_4",
@@ -1346,11 +1341,11 @@ export const unit16: DojoUnit = {
           "english": "This is Confirming Even if / supposing.",
           "audioText": "これはたとえの確認です",
           "scrambleTokens": [
-            "ではありません",
-            "たとえの確認",
-            "これは",
             "それ",
-            "です"
+            "です",
+            "これは",
+            "ではありません",
+            "たとえの確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1379,24 +1374,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l7_6",
           "type": "dictate",
-          "prompt": "後悔の確認をお願いします",
-          "furigana": "こうかいのかくにんをおねがいします",
-          "romaji": "koukai no kakunin o onegaishimasu.",
-          "english": "Confirming Regret, please.",
-          "audioText": "後悔の確認をお願いします",
+          "prompt": "後悔の確認です",
+          "furigana": "こうかいのかくにんです",
+          "romaji": "koukai no kakunin desu.",
+          "english": "It is Confirming Regret.",
+          "audioText": "後悔の確認です",
           "dictateTokens": [
-            "を",
-            "です",
             "後悔の確認",
-            "お願いします",
-            "ありがとう"
+            "これ",
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "後悔の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "後悔の確認をお願いします"
+          "correctAnswer": "後悔の確認です"
         },
         {
           "id": "u16_l7_7",
@@ -1505,10 +1498,10 @@ export const unit16: DojoUnit = {
           "english": "Confirming Improvement / Kaizen",
           "audioText": "かいぜんのかくにん",
           "options": [
-            "Judgement / decision",
-            "Confirming Improvement / Kaizen",
-            "Confirming Regret",
-            "Confirming Possibility / potential"
+            "Confirming Response / dealing with",
+            "Confirming Possibility / potential",
+            "If / supposing that",
+            "Confirming Improvement / Kaizen"
           ],
           "correctAnswer": "Confirming Improvement / Kaizen"
         },
@@ -1521,26 +1514,26 @@ export const unit16: DojoUnit = {
           "english": "Build 'Confirming Improvement / Kaizen'",
           "audioText": "かいぜんのかくにん",
           "tileBank": [
-            "く",
+            "い",
+            "か",
             "の",
             "ん",
             "か",
             "ぜ",
-            "い",
-            "か",
-            "に"
+            "に",
+            "く"
           ],
           "correctAnswer": "かいぜんのかくにん"
         },
         {
           "id": "u16_l8_3",
           "type": "cloze",
-          "prompt": "私は提案の確認がすきです",
-          "furigana": "わたしはていあんのかくにんがすきです",
-          "romaji": "Watashi wa teian no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Proposal / suggestion.",
-          "audioText": "提案の確認",
-          "clozeSentence": "これは提案の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な提案の確認です。",
+          "furigana": "これはいちばんたいせつなていあんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na teian no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Proposal / suggestion.",
+          "audioText": "これは提案の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な提案の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1548,7 +1541,8 @@ export const unit16: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l8_4",
@@ -1560,10 +1554,10 @@ export const unit16: DojoUnit = {
           "audioText": "これは提案の確認です",
           "scrambleTokens": [
             "それ",
-            "ではありません",
             "です",
-            "これは",
-            "提案の確認"
+            "提案の確認",
+            "ではありません",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1592,24 +1586,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l8_6",
           "type": "dictate",
-          "prompt": "可能性の確認をお願いします",
-          "furigana": "かのうせいのかくにんをおねがいします",
-          "romaji": "kanousei no kakunin o onegaishimasu.",
-          "english": "Confirming Possibility / potential, please.",
-          "audioText": "可能性の確認をお願いします",
+          "prompt": "可能性の確認です",
+          "furigana": "かのうせいのかくにんです",
+          "romaji": "kanousei no kakunin desu.",
+          "english": "It is Confirming Possibility / potential.",
+          "audioText": "可能性の確認です",
           "dictateTokens": [
+            "ではありません",
             "可能性の確認",
-            "お願いします",
-            "を",
-            "ありがとう",
-            "です"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "可能性の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "可能性の確認をお願いします"
+          "correctAnswer": "可能性の確認です"
         },
         {
           "id": "u16_l8_7",
@@ -1718,10 +1710,10 @@ export const unit16: DojoUnit = {
           "english": "Confirming Option / choice",
           "audioText": "せんたくしのかくにん",
           "options": [
-            "If / supposing that",
-            "Confirming In the unlikely event",
-            "Option / choice",
-            "Confirming Option / choice"
+            "Condition / requirement",
+            "Confirming Option / choice",
+            "Regret",
+            "Case / scenario"
           ],
           "correctAnswer": "Confirming Option / choice"
         },
@@ -1735,33 +1727,34 @@ export const unit16: DojoUnit = {
           "audioText": "せんたくしのかくにん",
           "tileBank": [
             "く",
-            "た",
+            "か",
+            "し",
             "の",
-            "せ",
             "く",
             "ん",
-            "し",
-            "か"
+            "せ",
+            "た"
           ],
           "correctAnswer": "せんたくしのかくにん"
         },
         {
           "id": "u16_l9_3",
           "type": "cloze",
-          "prompt": "私は判断の確認がすきです",
-          "furigana": "わたしははんだんのかくにんがすきです",
-          "romaji": "Watashi wa handan no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Judgement / decision.",
-          "audioText": "判断の確認",
-          "clozeSentence": "これは判断の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な判断の確認です。",
+          "furigana": "これはいちばんたいせつなはんだんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na handan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Judgement / decision.",
+          "audioText": "これは判断の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な判断の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l9_4",
@@ -1772,11 +1765,11 @@ export const unit16: DojoUnit = {
           "english": "This is Confirming Judgement / decision.",
           "audioText": "これは判断の確認です",
           "scrambleTokens": [
-            "判断の確認",
-            "これは",
             "それ",
+            "ではありません",
             "です",
-            "ではありません"
+            "判断の確認",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1805,24 +1798,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l9_6",
           "type": "dictate",
-          "prompt": "影響の確認をお願いします",
-          "furigana": "えいきょうのかくにんをおねがいします",
-          "romaji": "eikyou no kakunin o onegaishimasu.",
-          "english": "Confirming Influence / effect, please.",
-          "audioText": "影響の確認をお願いします",
+          "prompt": "影響の確認です",
+          "furigana": "えいきょうのかくにんです",
+          "romaji": "eikyou no kakunin desu.",
+          "english": "It is Confirming Influence / effect.",
+          "audioText": "影響の確認です",
           "dictateTokens": [
+            "これ",
             "影響の確認",
-            "お願いします",
-            "を",
-            "ありがとう",
-            "です"
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "影響の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "影響の確認をお願いします"
+          "correctAnswer": "影響の確認です"
         },
         {
           "id": "u16_l9_7",
@@ -1930,10 +1921,10 @@ export const unit16: DojoUnit = {
           "english": "Confirming In the unlikely event",
           "audioText": "まんいちのかくにん",
           "options": [
-            "Condition / requirement",
-            "Confirming Even if / supposing",
+            "Confirming Condition / requirement",
+            "Confirming Response / dealing with",
             "Confirming In the unlikely event",
-            "Confirming Hypothesis / assumption"
+            "Prediction / forecast"
           ],
           "correctAnswer": "Confirming In the unlikely event"
         },
@@ -1947,33 +1938,34 @@ export const unit16: DojoUnit = {
           "audioText": "まんいちのかくにん",
           "tileBank": [
             "に",
-            "ま",
-            "く",
+            "ん",
             "い",
-            "ち",
+            "ま",
             "の",
             "か",
-            "ん"
+            "く",
+            "ち"
           ],
           "correctAnswer": "まんいちのかくにん"
         },
         {
           "id": "u16_l10_3",
           "type": "cloze",
-          "prompt": "私は予測の確認がすきです",
-          "furigana": "わたしはよそくのかくにんがすきです",
-          "romaji": "Watashi wa yosoku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Prediction / forecast.",
-          "audioText": "予測の確認",
-          "clozeSentence": "これは予測の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な予測の確認です。",
+          "furigana": "これはいちばんたいせつなよそくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na yosoku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Prediction / forecast.",
+          "audioText": "これは予測の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な予測の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l10_4",
@@ -1984,11 +1976,11 @@ export const unit16: DojoUnit = {
           "english": "This is Confirming Prediction / forecast.",
           "audioText": "これは予測の確認です",
           "scrambleTokens": [
-            "それ",
-            "予測の確認",
             "です",
+            "予測の確認",
+            "これは",
             "ではありません",
-            "これは"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2017,24 +2009,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l10_6",
           "type": "dictate",
-          "prompt": "対応の確認をお願いします",
-          "furigana": "たいおうのかくにんをおねがいします",
-          "romaji": "taiou no kakunin o onegaishimasu.",
-          "english": "Confirming Response / dealing with, please.",
-          "audioText": "対応の確認をお願いします",
+          "prompt": "対応の確認です",
+          "furigana": "たいおうのかくにんです",
+          "romaji": "taiou no kakunin desu.",
+          "english": "It is Confirming Response / dealing with.",
+          "audioText": "対応の確認です",
           "dictateTokens": [
-            "です",
             "対応の確認",
-            "を",
-            "ありがとう",
-            "お願いします"
+            "です",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "対応の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "対応の確認をお願いします"
+          "correctAnswer": "対応の確認です"
         },
         {
           "id": "u16_l10_7",
@@ -2142,10 +2132,10 @@ export const unit16: DojoUnit = {
           "english": "Confirming Hypothesis / assumption",
           "audioText": "かていのかくにん",
           "options": [
-            "Confirming If / supposing that",
-            "Confirming Response / dealing with",
+            "Possibility / potential",
+            "Improvement / Kaizen",
             "Confirming Hypothesis / assumption",
-            "Confirming Improvement / Kaizen"
+            "Confirming Influence / effect"
           ],
           "correctAnswer": "Confirming Hypothesis / assumption"
         },
@@ -2158,34 +2148,35 @@ export const unit16: DojoUnit = {
           "english": "Build 'Confirming Hypothesis / assumption'",
           "audioText": "かていのかくにん",
           "tileBank": [
+            "か",
             "て",
             "に",
             "の",
-            "い",
-            "く",
-            "ん",
             "か",
-            "か"
+            "ん",
+            "く",
+            "い"
           ],
           "correctAnswer": "かていのかくにん"
         },
         {
           "id": "u16_l11_3",
           "type": "cloze",
-          "prompt": "私は条件の確認がすきです",
-          "furigana": "わたしはじょうけんのかくにんがすきです",
-          "romaji": "Watashi wa jouken no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Condition / requirement.",
-          "audioText": "条件の確認",
-          "clozeSentence": "これは条件の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な条件の確認です。",
+          "furigana": "これはいちばんたいせつなじょうけんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na jouken no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Condition / requirement.",
+          "audioText": "これは条件の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な条件の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l11_4",
@@ -2196,11 +2187,11 @@ export const unit16: DojoUnit = {
           "english": "This is Confirming Condition / requirement.",
           "audioText": "これは条件の確認です",
           "scrambleTokens": [
-            "ではありません",
             "条件の確認",
             "それ",
+            "です",
             "これは",
-            "です"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2229,24 +2220,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l11_6",
           "type": "dictate",
-          "prompt": "場合の確認をお願いします",
-          "furigana": "ばあいのかくにんをおねがいします",
-          "romaji": "baai no kakunin o onegaishimasu.",
-          "english": "Confirming Case / scenario, please.",
-          "audioText": "場合の確認をお願いします",
+          "prompt": "場合の確認です",
+          "furigana": "ばあいのかくにんです",
+          "romaji": "baai no kakunin desu.",
+          "english": "It is Confirming Case / scenario.",
+          "audioText": "場合の確認です",
           "dictateTokens": [
-            "を",
+            "ではありません",
             "場合の確認",
-            "お願いします",
-            "です",
-            "ありがとう"
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "場合の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "場合の確認をお願いします"
+          "correctAnswer": "場合の確認です"
         },
         {
           "id": "u16_l11_7",
@@ -2350,10 +2339,10 @@ export const unit16: DojoUnit = {
           "english": "Confirming If / supposing that",
           "audioText": "もしのかくにん",
           "options": [
+            "Hypothesis / assumption",
             "Confirming If / supposing that",
-            "Confirming Proposal / suggestion",
-            "Even if / supposing",
-            "Confirming Condition / requirement"
+            "Response / dealing with",
+            "In the unlikely event"
           ],
           "correctAnswer": "Confirming If / supposing that"
         },
@@ -2366,26 +2355,26 @@ export const unit16: DojoUnit = {
           "english": "Build 'Confirming If / supposing that'",
           "audioText": "もしのかくにん",
           "tileBank": [
-            "か",
-            "に",
-            "ん",
-            "こ",
-            "く",
             "の",
+            "く",
+            "に",
+            "か",
             "も",
-            "し"
+            "ん",
+            "し",
+            "め"
           ],
           "correctAnswer": "もしのかくにん"
         },
         {
           "id": "u16_l12_3",
           "type": "cloze",
-          "prompt": "私はたとえの確認がすきです",
-          "furigana": "わたしはたとえのかくにんがすきです",
-          "romaji": "Watashi wa tatoe no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Even if / supposing.",
-          "audioText": "たとえの確認",
-          "clozeSentence": "これはたとえの確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切なたとえの確認です。",
+          "furigana": "これはいちばんたいせつなたとえのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na tatoe no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Even if / supposing.",
+          "audioText": "これはたとえの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なたとえの確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2393,7 +2382,8 @@ export const unit16: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l12_4",
@@ -2404,11 +2394,11 @@ export const unit16: DojoUnit = {
           "english": "This is Confirming Even if / supposing.",
           "audioText": "これはたとえの確認です",
           "scrambleTokens": [
-            "これは",
-            "それ",
             "です",
             "たとえの確認",
-            "ではありません"
+            "それ",
+            "ではありません",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2437,24 +2427,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l12_6",
           "type": "dictate",
-          "prompt": "後悔の確認をお願いします",
-          "furigana": "こうかいのかくにんをおねがいします",
-          "romaji": "koukai no kakunin o onegaishimasu.",
-          "english": "Confirming Regret, please.",
-          "audioText": "後悔の確認をお願いします",
+          "prompt": "後悔の確認です",
+          "furigana": "こうかいのかくにんです",
+          "romaji": "koukai no kakunin desu.",
+          "english": "It is Confirming Regret.",
+          "audioText": "後悔の確認です",
           "dictateTokens": [
             "後悔の確認",
-            "お願いします",
-            "ありがとう",
+            "ではありません",
             "です",
-            "を"
+            "これ"
           ],
           "dictateSolution": [
             "後悔の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "後悔の確認をお願いします"
+          "correctAnswer": "後悔の確認です"
         },
         {
           "id": "u16_l12_7",
@@ -2556,9 +2544,9 @@ export const unit16: DojoUnit = {
           "english": "Hypothesis / assumption",
           "audioText": "かてい",
           "options": [
-            "Confirming Hypothesis / assumption",
-            "Case / scenario",
-            "Confirming Condition / requirement",
+            "Influence / effect",
+            "Response / dealing with",
+            "Confirming In the unlikely event",
             "Hypothesis / assumption"
           ],
           "correctAnswer": "Hypothesis / assumption"
@@ -2572,34 +2560,35 @@ export const unit16: DojoUnit = {
           "english": "Build 'Hypothesis / assumption'",
           "audioText": "かてい",
           "tileBank": [
-            "ぬ",
-            "つ",
-            "す",
-            "か",
+            "ふ",
             "い",
-            "さ",
+            "か",
             "て",
-            "の"
+            "や",
+            "さ",
+            "と",
+            "へ"
           ],
           "correctAnswer": "かてい"
         },
         {
           "id": "u16_l13_3",
           "type": "cloze",
-          "prompt": "私は条件がすきです",
-          "furigana": "わたしはじょうけんがすきです",
-          "romaji": "Watashi wa jouken ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Condition / requirement.",
-          "audioText": "条件",
-          "clozeSentence": "これは条件 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な条件です。",
+          "furigana": "これはいちばんたいせつなじょうけんです。",
+          "romaji": "Kore wa ichiban taisetsu na jouken desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Condition / requirement.",
+          "audioText": "これは条件です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な条件です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l13_4",
@@ -2610,11 +2599,11 @@ export const unit16: DojoUnit = {
           "english": "This is Condition / requirement.",
           "audioText": "これは条件です",
           "scrambleTokens": [
-            "ではありません",
-            "これは",
-            "それ",
             "です",
-            "条件"
+            "ではありません",
+            "条件",
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2643,24 +2632,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l13_6",
           "type": "dictate",
-          "prompt": "場合をお願いします",
-          "furigana": "ばあいをおねがいします",
-          "romaji": "baai o onegaishimasu.",
-          "english": "Case / scenario, please.",
-          "audioText": "場合をお願いします",
+          "prompt": "場合です",
+          "furigana": "ばあいです",
+          "romaji": "baai desu.",
+          "english": "It is Case / scenario.",
+          "audioText": "場合です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "お願いします",
-            "です",
-            "場合"
+            "場合",
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "場合",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "場合をお願いします"
+          "correctAnswer": "場合です"
         },
         {
           "id": "u16_l13_7",
@@ -2758,10 +2745,10 @@ export const unit16: DojoUnit = {
           "english": "If / supposing that",
           "audioText": "もし",
           "options": [
-            "Improvement / Kaizen",
+            "Confirming If / supposing that",
+            "Proposal / suggestion",
             "If / supposing that",
-            "Confirming Even if / supposing",
-            "Influence / effect"
+            "Option / choice"
           ],
           "correctAnswer": "If / supposing that"
         },
@@ -2774,34 +2761,35 @@ export const unit16: DojoUnit = {
           "english": "Build 'If / supposing that'",
           "audioText": "もし",
           "tileBank": [
-            "お",
+            "ふ",
+            "せ",
             "て",
-            "し",
-            "さ",
             "も",
-            "ひ",
-            "つ",
-            "わ"
+            "と",
+            "し",
+            "え",
+            "む"
           ],
           "correctAnswer": "もし"
         },
         {
           "id": "u16_l14_3",
           "type": "cloze",
-          "prompt": "私はたとえがすきです",
-          "furigana": "わたしはたとえがすきです",
-          "romaji": "Watashi wa tatoe ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Even if / supposing.",
-          "audioText": "たとえ",
-          "clozeSentence": "これはたとえ {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なたとえです。",
+          "furigana": "これはいちばんたいせつなたとえです。",
+          "romaji": "Kore wa ichiban taisetsu na tatoe desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Even if / supposing.",
+          "audioText": "これはたとえです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なたとえです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l14_4",
@@ -2812,11 +2800,11 @@ export const unit16: DojoUnit = {
           "english": "This is Even if / supposing.",
           "audioText": "これはたとえです",
           "scrambleTokens": [
-            "です",
-            "それ",
-            "たとえ",
             "これは",
-            "ではありません"
+            "です",
+            "たとえ",
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2845,24 +2833,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l14_6",
           "type": "dictate",
-          "prompt": "後悔をお願いします",
-          "furigana": "こうかいをおねがいします",
-          "romaji": "koukai o onegaishimasu.",
-          "english": "Regret, please.",
-          "audioText": "後悔をお願いします",
+          "prompt": "後悔です",
+          "furigana": "こうかいです",
+          "romaji": "koukai desu.",
+          "english": "It is Regret.",
+          "audioText": "後悔です",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "後悔",
-            "お願いします",
-            "ありがとう",
-            "です",
-            "を"
+            "です"
           ],
           "dictateSolution": [
             "後悔",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "後悔をお願いします"
+          "correctAnswer": "後悔です"
         },
         {
           "id": "u16_l14_7",
@@ -2965,10 +2951,10 @@ export const unit16: DojoUnit = {
           "english": "Improvement / Kaizen",
           "audioText": "かいぜん",
           "options": [
+            "Confirming If / supposing that",
+            "Case / scenario",
             "Improvement / Kaizen",
-            "Confirming Condition / requirement",
-            "Confirming Possibility / potential",
-            "Confirming Even if / supposing"
+            "Prediction / forecast"
           ],
           "correctAnswer": "Improvement / Kaizen"
         },
@@ -2981,34 +2967,35 @@ export const unit16: DojoUnit = {
           "english": "Build 'Improvement / Kaizen'",
           "audioText": "かいぜん",
           "tileBank": [
-            "や",
-            "ぜ",
-            "へ",
-            "を",
-            "ね",
-            "ん",
             "か",
-            "い"
+            "み",
+            "い",
+            "と",
+            "ん",
+            "お",
+            "ぜ",
+            "し"
           ],
           "correctAnswer": "かいぜん"
         },
         {
           "id": "u16_l15_3",
           "type": "cloze",
-          "prompt": "私は提案がすきです",
-          "furigana": "わたしはていあんがすきです",
-          "romaji": "Watashi wa teian ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Proposal / suggestion.",
-          "audioText": "提案",
-          "clozeSentence": "これは提案 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な提案です。",
+          "furigana": "これはいちばんたいせつなていあんです。",
+          "romaji": "Kore wa ichiban taisetsu na teian desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Proposal / suggestion.",
+          "audioText": "これは提案です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な提案です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u16_l15_4",
@@ -3019,11 +3006,11 @@ export const unit16: DojoUnit = {
           "english": "This is Proposal / suggestion.",
           "audioText": "これは提案です",
           "scrambleTokens": [
-            "ではありません",
-            "これは",
+            "それ",
             "です",
+            "これは",
             "提案",
-            "それ"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -3052,24 +3039,22 @@ export const unit16: DojoUnit = {
         {
           "id": "u16_l15_6",
           "type": "dictate",
-          "prompt": "可能性をお願いします",
-          "furigana": "かのうせいをおねがいします",
-          "romaji": "kanousei o onegaishimasu.",
-          "english": "Possibility / potential, please.",
-          "audioText": "可能性をお願いします",
+          "prompt": "可能性です",
+          "furigana": "かのうせいです",
+          "romaji": "kanousei desu.",
+          "english": "It is Possibility / potential.",
+          "audioText": "可能性です",
           "dictateTokens": [
+            "これ",
             "です",
-            "を",
-            "お願いします",
             "可能性",
-            "ありがとう"
+            "ではありません"
           ],
           "dictateSolution": [
             "可能性",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "可能性をお願いします"
+          "correctAnswer": "可能性です"
         },
         {
           "id": "u16_l15_7",
@@ -3154,10 +3139,10 @@ export const unit16: DojoUnit = {
         "english": "Hypothesis / assumption",
         "audioText": "かてい",
         "options": [
-          "Proposal / suggestion",
-          "Hypothesis / assumption",
+          "Confirming Case / scenario",
           "Condition / requirement",
-          "Regret"
+          "Hypothesis / assumption",
+          "Proposal / suggestion"
         ],
         "correctAnswer": "Hypothesis / assumption"
       },
@@ -3170,14 +3155,14 @@ export const unit16: DojoUnit = {
         "english": "Build 'Hypothesis / assumption'",
         "audioText": "かてい",
         "tileBank": [
-          "き",
+          "か",
+          "す",
           "い",
-          "せ",
-          "む",
-          "そ",
-          "お",
+          "ゆ",
+          "り",
+          "く",
           "て",
-          "か"
+          "せ"
         ],
         "correctAnswer": "かてい"
       },
@@ -3191,9 +3176,9 @@ export const unit16: DojoUnit = {
         "audioText": "かいぜん",
         "options": [
           "Improvement / Kaizen",
-          "Proposal / suggestion",
-          "Case / scenario",
-          "Confirming Proposal / suggestion"
+          "Even if / supposing",
+          "Option / choice",
+          "Response / dealing with"
         ],
         "correctAnswer": "Improvement / Kaizen"
       },
@@ -3206,14 +3191,14 @@ export const unit16: DojoUnit = {
         "english": "Build 'Improvement / Kaizen'",
         "audioText": "かいぜん",
         "tileBank": [
-          "い",
-          "け",
-          "こ",
-          "ぜ",
-          "か",
+          "る",
+          "よ",
           "ん",
-          "う",
-          "お"
+          "か",
+          "い",
+          "ら",
+          "ぜ",
+          "そ"
         ],
         "correctAnswer": "かいぜん"
       },
@@ -3226,10 +3211,10 @@ export const unit16: DojoUnit = {
         "english": "In the unlikely event",
         "audioText": "まんいち",
         "options": [
-          "Confirming Hypothesis / assumption",
-          "Influence / effect",
           "In the unlikely event",
-          "Confirming Case / scenario"
+          "Prediction / forecast",
+          "Improvement / Kaizen",
+          "Confirming Option / choice"
         ],
         "correctAnswer": "In the unlikely event"
       },
@@ -3242,14 +3227,14 @@ export const unit16: DojoUnit = {
         "english": "Build 'In the unlikely event'",
         "audioText": "まんいち",
         "tileBank": [
-          "ぬ",
-          "ん",
-          "ち",
-          "え",
           "い",
-          "み",
-          "も",
-          "ま"
+          "ま",
+          "ね",
+          "つ",
+          "ん",
+          "そ",
+          "る",
+          "ち"
         ],
         "correctAnswer": "まんいち"
       },
@@ -3262,10 +3247,10 @@ export const unit16: DojoUnit = {
         "english": "Confirming If / supposing that",
         "audioText": "もしのかくにん",
         "options": [
+          "Confirming In the unlikely event",
           "Confirming If / supposing that",
-          "Improvement / Kaizen",
-          "Influence / effect",
-          "Confirming Regret"
+          "Confirming Case / scenario",
+          "Confirming Possibility / potential"
         ],
         "correctAnswer": "Confirming If / supposing that"
       },
@@ -3278,13 +3263,13 @@ export const unit16: DojoUnit = {
         "english": "Build 'Confirming If / supposing that'",
         "audioText": "もしのかくにん",
         "tileBank": [
-          "の",
-          "か",
-          "め",
-          "く",
-          "ん",
-          "に",
+          "な",
           "も",
+          "か",
+          "の",
+          "に",
+          "ん",
+          "く",
           "し"
         ],
         "correctAnswer": "もしのかくにん"
@@ -3298,10 +3283,10 @@ export const unit16: DojoUnit = {
         "english": "Confirming Option / choice",
         "audioText": "せんたくしのかくにん",
         "options": [
-          "If / supposing that",
-          "Confirming In the unlikely event",
-          "Option / choice",
-          "Confirming Option / choice"
+          "Condition / requirement",
+          "Confirming Option / choice",
+          "Regret",
+          "Case / scenario"
         ],
         "correctAnswer": "Confirming Option / choice"
       },
@@ -3315,13 +3300,13 @@ export const unit16: DojoUnit = {
         "audioText": "せんたくしのかくにん",
         "tileBank": [
           "く",
-          "た",
+          "か",
+          "し",
           "の",
-          "せ",
           "く",
           "ん",
-          "し",
-          "か"
+          "せ",
+          "た"
         ],
         "correctAnswer": "せんたくしのかくにん"
       },
@@ -3334,10 +3319,10 @@ export const unit16: DojoUnit = {
         "english": "Confirming Hypothesis / assumption",
         "audioText": "かていのかくにん",
         "options": [
-          "Confirming If / supposing that",
-          "Confirming Response / dealing with",
+          "Possibility / potential",
+          "Improvement / Kaizen",
           "Confirming Hypothesis / assumption",
-          "Confirming Improvement / Kaizen"
+          "Confirming Influence / effect"
         ],
         "correctAnswer": "Confirming Hypothesis / assumption"
       },
@@ -3350,14 +3335,14 @@ export const unit16: DojoUnit = {
         "english": "Build 'Confirming Hypothesis / assumption'",
         "audioText": "かていのかくにん",
         "tileBank": [
+          "か",
           "て",
           "に",
           "の",
-          "い",
-          "く",
-          "ん",
           "か",
-          "か"
+          "ん",
+          "く",
+          "い"
         ],
         "correctAnswer": "かていのかくにん"
       }

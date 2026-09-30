@@ -47,10 +47,10 @@ export const unit07: DojoUnit = {
           "english": "Cheers!",
           "audioText": "かんぱい",
           "options": [
-            "Confirming Draft beer",
-            "Confirming For now / to start with",
-            "Sashimi / sliced raw fish",
-            "Cheers!"
+            "Confirming Another serving / refill",
+            "Confirming Cheers!",
+            "Cheers!",
+            "Sashimi / sliced raw fish"
           ],
           "correctAnswer": "Cheers!"
         },
@@ -63,34 +63,35 @@ export const unit07: DojoUnit = {
           "english": "Build 'Cheers!'",
           "audioText": "かんぱい",
           "tileBank": [
-            "か",
-            "ぱ",
             "ね",
             "い",
-            "ふ",
-            "あ",
-            "わ",
-            "ん"
+            "か",
+            "ん",
+            "せ",
+            "み",
+            "ろ",
+            "ぱ"
           ],
           "correctAnswer": "かんぱい"
         },
         {
           "id": "u7_l1_3",
           "type": "cloze",
-          "prompt": "私は生ビールがすきです",
-          "furigana": "わたしはなまビールがすきです",
-          "romaji": "Watashi wa nama biiru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Draft beer.",
-          "audioText": "生ビール",
-          "clozeSentence": "これは生ビール {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な生ビールです。",
+          "furigana": "これはいちばんたいせつななまビールです。",
+          "romaji": "Kore wa ichiban taisetsu na nama biiru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Draft beer.",
+          "audioText": "これは生ビールです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な生ビールです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l1_4",
@@ -101,9 +102,9 @@ export const unit07: DojoUnit = {
           "english": "This is Draft beer.",
           "audioText": "これは生ビールです",
           "scrambleTokens": [
-            "ではありません",
-            "これは",
             "生ビール",
+            "これは",
+            "ではありません",
             "です",
             "それ"
           ],
@@ -134,24 +135,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l1_6",
           "type": "dictate",
-          "prompt": "とりあえずをお願いします",
-          "furigana": "とりあえずをおねがいします",
-          "romaji": "toriaezu o onegaishimasu.",
-          "english": "For now / to start with, please.",
-          "audioText": "とりあえずをお願いします",
+          "prompt": "とりあえずです",
+          "furigana": "とりあえずです",
+          "romaji": "toriaezu desu.",
+          "english": "It is For now / to start with.",
+          "audioText": "とりあえずです",
           "dictateTokens": [
-            "とりあえず",
             "です",
-            "ありがとう",
-            "を",
-            "お願いします"
+            "これ",
+            "ではありません",
+            "とりあえず"
           ],
           "dictateSolution": [
             "とりあえず",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "とりあえずをお願いします"
+          "correctAnswer": "とりあえずです"
         },
         {
           "id": "u7_l1_7",
@@ -253,9 +252,9 @@ export const unit07: DojoUnit = {
           "english": "Edamame soybeans",
           "audioText": "えだまめ",
           "options": [
-            "Confirming Edamame soybeans",
+            "Splitting the bill",
+            "Confirming Grilled chicken skewers",
             "Edamame soybeans",
-            "Confirming Pub snacks / appetizers",
             "Confirming For now / to start with"
           ],
           "correctAnswer": "Edamame soybeans"
@@ -269,34 +268,35 @@ export const unit07: DojoUnit = {
           "english": "Build 'Edamame soybeans'",
           "audioText": "えだまめ",
           "tileBank": [
-            "ね",
+            "ん",
+            "ひ",
             "ま",
-            "け",
-            "だ",
-            "ろ",
-            "め",
+            "は",
             "え",
-            "り"
+            "め",
+            "だ",
+            "の"
           ],
           "correctAnswer": "えだまめ"
         },
         {
           "id": "u7_l2_3",
           "type": "cloze",
-          "prompt": "私は焼き鳥がすきです",
-          "furigana": "わたしはやきとりがすきです",
-          "romaji": "Watashi wa yakitori ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Grilled chicken skewers.",
-          "audioText": "焼き鳥",
-          "clozeSentence": "これは焼き鳥 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な焼き鳥です。",
+          "furigana": "これはいちばんたいせつなやきとりです。",
+          "romaji": "Kore wa ichiban taisetsu na yakitori desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Grilled chicken skewers.",
+          "audioText": "これは焼き鳥です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焼き鳥です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l2_4",
@@ -307,11 +307,11 @@ export const unit07: DojoUnit = {
           "english": "This is Grilled chicken skewers.",
           "audioText": "これは焼き鳥です",
           "scrambleTokens": [
+            "です",
+            "焼き鳥",
             "それ",
             "ではありません",
-            "焼き鳥",
-            "これは",
-            "です"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -340,24 +340,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l2_6",
           "type": "dictate",
-          "prompt": "唐揚げをお願いします",
-          "furigana": "からあげをおねがいします",
-          "romaji": "karaage o onegaishimasu.",
-          "english": "Japanese fried chicken, please.",
-          "audioText": "唐揚げをお願いします",
+          "prompt": "唐揚げです",
+          "furigana": "からあげです",
+          "romaji": "karaage desu.",
+          "english": "It is Japanese fried chicken.",
+          "audioText": "唐揚げです",
           "dictateTokens": [
+            "これ",
             "唐揚げ",
-            "ありがとう",
-            "お願いします",
-            "を",
+            "ではありません",
             "です"
           ],
           "dictateSolution": [
             "唐揚げ",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "唐揚げをお願いします"
+          "correctAnswer": "唐揚げです"
         },
         {
           "id": "u7_l2_7",
@@ -459,10 +457,10 @@ export const unit07: DojoUnit = {
           "english": "Another serving / refill",
           "audioText": "おかわり",
           "options": [
-            "Confirming Japanese pub / Izakaya",
+            "Confirming Pub snacks / appetizers",
+            "Confirming Oolong tea",
             "Another serving / refill",
-            "Confirming Draft beer",
-            "No smoking"
+            "Confirming Grilled chicken skewers"
           ],
           "correctAnswer": "Another serving / refill"
         },
@@ -475,34 +473,35 @@ export const unit07: DojoUnit = {
           "english": "Build 'Another serving / refill'",
           "audioText": "おかわり",
           "tileBank": [
-            "う",
-            "し",
-            "り",
             "か",
-            "の",
-            "お",
             "く",
-            "わ"
+            "つ",
+            "り",
+            "そ",
+            "お",
+            "わ",
+            "ね"
           ],
           "correctAnswer": "おかわり"
         },
         {
           "id": "u7_l3_3",
           "type": "cloze",
-          "prompt": "私は割り勘がすきです",
-          "furigana": "わたしはわりかんがすきです",
-          "romaji": "Watashi wa warikan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Splitting the bill.",
-          "audioText": "割り勘",
-          "clozeSentence": "これは割り勘 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な割り勘です。",
+          "furigana": "これはいちばんたいせつなわりかんです。",
+          "romaji": "Kore wa ichiban taisetsu na warikan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Splitting the bill.",
+          "audioText": "これは割り勘です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な割り勘です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l3_4",
@@ -514,10 +513,10 @@ export const unit07: DojoUnit = {
           "audioText": "これは割り勘です",
           "scrambleTokens": [
             "です",
-            "それ",
-            "割り勘",
+            "これは",
             "ではありません",
-            "これは"
+            "それ",
+            "割り勘"
           ],
           "scrambleSolution": [
             "これは",
@@ -546,24 +545,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l3_6",
           "type": "dictate",
-          "prompt": "居酒屋をお願いします",
-          "furigana": "いざかやをおねがいします",
-          "romaji": "izakaya o onegaishimasu.",
-          "english": "Japanese pub / Izakaya, please.",
-          "audioText": "居酒屋をお願いします",
+          "prompt": "居酒屋です",
+          "furigana": "いざかやです",
+          "romaji": "izakaya desu.",
+          "english": "It is Japanese pub / Izakaya.",
+          "audioText": "居酒屋です",
           "dictateTokens": [
+            "ではありません",
+            "です",
             "居酒屋",
-            "を",
-            "ありがとう",
-            "お願いします",
-            "です"
+            "これ"
           ],
           "dictateSolution": [
             "居酒屋",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "居酒屋をお願いします"
+          "correctAnswer": "居酒屋です"
         },
         {
           "id": "u7_l3_7",
@@ -660,10 +657,10 @@ export const unit07: DojoUnit = {
           "english": "Pub snacks / appetizers",
           "audioText": "おつまみ",
           "options": [
-            "Oolong tea",
+            "Confirming Splitting the bill",
             "Pub snacks / appetizers",
-            "Cheers!",
-            "Confirming Japanese fried chicken"
+            "Confirming No smoking",
+            "Sashimi / sliced raw fish"
           ],
           "correctAnswer": "Pub snacks / appetizers"
         },
@@ -676,26 +673,26 @@ export const unit07: DojoUnit = {
           "english": "Build 'Pub snacks / appetizers'",
           "audioText": "おつまみ",
           "tileBank": [
-            "み",
-            "ま",
+            "も",
             "つ",
-            "ね",
-            "お",
+            "や",
             "め",
-            "う",
-            "り"
+            "み",
+            "お",
+            "ま",
+            "う"
           ],
           "correctAnswer": "おつまみ"
         },
         {
           "id": "u7_l4_3",
           "type": "cloze",
-          "prompt": "私はハイボールがすきです",
-          "furigana": "わたしはハイボールがすきです",
-          "romaji": "Watashi wa haibooru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Whisky highball.",
-          "audioText": "ハイボール",
-          "clozeSentence": "これはハイボール {{BLANK}} す。",
+          "prompt": "これはいちばん大切なハイボールです。",
+          "furigana": "これはいちばんたいせつなハイボールです。",
+          "romaji": "Kore wa ichiban taisetsu na haibooru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Whisky highball.",
+          "audioText": "これはハイボールです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なハイボールです。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -703,7 +700,8 @@ export const unit07: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l4_4",
@@ -715,10 +713,10 @@ export const unit07: DojoUnit = {
           "audioText": "これはハイボールです",
           "scrambleTokens": [
             "です",
+            "これは",
             "それ",
-            "ではありません",
             "ハイボール",
-            "これは"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -747,24 +745,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l4_6",
           "type": "dictate",
-          "prompt": "ウーロン茶をお願いします",
-          "furigana": "ウーロンちゃをおねがいします",
-          "romaji": "uuroncha o onegaishimasu.",
-          "english": "Oolong tea, please.",
-          "audioText": "ウーロン茶をお願いします",
+          "prompt": "ウーロン茶です",
+          "furigana": "ウーロンちゃです",
+          "romaji": "uuroncha desu.",
+          "english": "It is Oolong tea.",
+          "audioText": "ウーロン茶です",
           "dictateTokens": [
-            "を",
+            "これ",
             "です",
             "ウーロン茶",
-            "ありがとう",
-            "お願いします"
+            "ではありません"
           ],
           "dictateSolution": [
             "ウーロン茶",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "ウーロン茶をお願いします"
+          "correctAnswer": "ウーロン茶です"
         },
         {
           "id": "u7_l4_7",
@@ -865,10 +861,10 @@ export const unit07: DojoUnit = {
           "english": "Sashimi / sliced raw fish",
           "audioText": "さしみ",
           "options": [
-            "No smoking",
-            "Confirming Another serving / refill",
-            "Confirming Seat / table",
-            "Sashimi / sliced raw fish"
+            "Whisky highball",
+            "Sashimi / sliced raw fish",
+            "Confirming Oolong tea",
+            "Confirming For now / to start with"
           ],
           "correctAnswer": "Sashimi / sliced raw fish"
         },
@@ -881,34 +877,35 @@ export const unit07: DojoUnit = {
           "english": "Build 'Sashimi / sliced raw fish'",
           "audioText": "さしみ",
           "tileBank": [
-            "し",
+            "よ",
+            "と",
             "さ",
-            "い",
             "み",
-            "れ",
-            "せ",
+            "ろ",
+            "し",
             "ん",
-            "ろ"
+            "た"
           ],
           "correctAnswer": "さしみ"
         },
         {
           "id": "u7_l5_3",
           "type": "cloze",
-          "prompt": "私は席がすきです",
-          "furigana": "わたしはせきがすきです",
-          "romaji": "Watashi wa seki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Seat / table.",
-          "audioText": "席",
-          "clozeSentence": "これは席 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な席です。",
+          "furigana": "これはいちばんたいせつなせきです。",
+          "romaji": "Kore wa ichiban taisetsu na seki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Seat / table.",
+          "audioText": "これは席です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な席です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l5_4",
@@ -919,11 +916,11 @@ export const unit07: DojoUnit = {
           "english": "This is Seat / table.",
           "audioText": "これは席です",
           "scrambleTokens": [
+            "席",
             "それ",
-            "これは",
-            "です",
             "ではありません",
-            "席"
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -952,24 +949,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l5_6",
           "type": "dictate",
-          "prompt": "禁煙をお願いします",
-          "furigana": "きんえんをおねがいします",
-          "romaji": "kin-en o onegaishimasu.",
-          "english": "No smoking, please.",
-          "audioText": "禁煙をお願いします",
+          "prompt": "禁煙です",
+          "furigana": "きんえんです",
+          "romaji": "kin-en desu.",
+          "english": "It is No smoking.",
+          "audioText": "禁煙です",
           "dictateTokens": [
-            "を",
-            "禁煙",
-            "お願いします",
-            "ありがとう",
-            "です"
+            "ではありません",
+            "です",
+            "これ",
+            "禁煙"
           ],
           "dictateSolution": [
             "禁煙",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "禁煙をお願いします"
+          "correctAnswer": "禁煙です"
         },
         {
           "id": "u7_l5_7",
@@ -1074,10 +1069,10 @@ export const unit07: DojoUnit = {
           "english": "Confirming Cheers!",
           "audioText": "かんぱいのかくにん",
           "options": [
-            "Grilled chicken skewers",
-            "For now / to start with",
-            "Japanese pub / Izakaya",
-            "Confirming Cheers!"
+            "Whisky highball",
+            "Confirming Grilled chicken skewers",
+            "Confirming Cheers!",
+            "Pub snacks / appetizers"
           ],
           "correctAnswer": "Confirming Cheers!"
         },
@@ -1090,11 +1085,11 @@ export const unit07: DojoUnit = {
           "english": "Build 'Confirming Cheers!'",
           "audioText": "かんぱいのかくにん",
           "tileBank": [
+            "に",
+            "か",
+            "く",
             "ぱ",
             "ん",
-            "く",
-            "か",
-            "に",
             "い",
             "の",
             "か"
@@ -1104,20 +1099,21 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l6_3",
           "type": "cloze",
-          "prompt": "私は生ビールの確認がすきです",
-          "furigana": "わたしはなまビールのかくにんがすきです",
-          "romaji": "Watashi wa nama biiru no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Draft beer.",
-          "audioText": "生ビールの確認",
-          "clozeSentence": "これは生ビールの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な生ビールの確認です。",
+          "furigana": "これはいちばんたいせつななまビールのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na nama biiru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Draft beer.",
+          "audioText": "これは生ビールの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な生ビールの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l6_4",
@@ -1128,11 +1124,11 @@ export const unit07: DojoUnit = {
           "english": "This is Confirming Draft beer.",
           "audioText": "これは生ビールの確認です",
           "scrambleTokens": [
-            "です",
-            "ではありません",
-            "生ビールの確認",
             "これは",
-            "それ"
+            "ではありません",
+            "それ",
+            "です",
+            "生ビールの確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1161,24 +1157,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l6_6",
           "type": "dictate",
-          "prompt": "とりあえずの確認をお願いします",
-          "furigana": "とりあえずのかくにんをおねがいします",
-          "romaji": "toriaezu no kakunin o onegaishimasu.",
-          "english": "Confirming For now / to start with, please.",
-          "audioText": "とりあえずの確認をお願いします",
+          "prompt": "とりあえずの確認です",
+          "furigana": "とりあえずのかくにんです",
+          "romaji": "toriaezu no kakunin desu.",
+          "english": "It is Confirming For now / to start with.",
+          "audioText": "とりあえずの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "です",
-            "を",
             "とりあえずの確認",
-            "お願いします"
+            "これ",
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "とりあえずの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "とりあえずの確認をお願いします"
+          "correctAnswer": "とりあえずの確認です"
         },
         {
           "id": "u7_l6_7",
@@ -1286,10 +1280,10 @@ export const unit07: DojoUnit = {
           "english": "Confirming Edamame soybeans",
           "audioText": "えだまめのかくにん",
           "options": [
-            "Confirming Draft beer",
-            "Confirming For now / to start with",
             "Confirming Edamame soybeans",
-            "Splitting the bill"
+            "Japanese fried chicken",
+            "Confirming For now / to start with",
+            "Confirming For now / to start with"
           ],
           "correctAnswer": "Confirming Edamame soybeans"
         },
@@ -1303,33 +1297,34 @@ export const unit07: DojoUnit = {
           "audioText": "えだまめのかくにん",
           "tileBank": [
             "の",
+            "え",
+            "だ",
+            "く",
             "ま",
             "に",
-            "か",
-            "だ",
-            "え",
             "め",
-            "く"
+            "か"
           ],
           "correctAnswer": "えだまめのかくにん"
         },
         {
           "id": "u7_l7_3",
           "type": "cloze",
-          "prompt": "私は焼き鳥の確認がすきです",
-          "furigana": "わたしはやきとりのかくにんがすきです",
-          "romaji": "Watashi wa yakitori no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Grilled chicken skewers.",
-          "audioText": "焼き鳥の確認",
-          "clozeSentence": "これは焼き鳥の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な焼き鳥の確認です。",
+          "furigana": "これはいちばんたいせつなやきとりのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na yakitori no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Grilled chicken skewers.",
+          "audioText": "これは焼き鳥の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焼き鳥の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l7_4",
@@ -1340,11 +1335,11 @@ export const unit07: DojoUnit = {
           "english": "This is Confirming Grilled chicken skewers.",
           "audioText": "これは焼き鳥の確認です",
           "scrambleTokens": [
-            "焼き鳥の確認",
-            "です",
             "ではありません",
+            "です",
             "これは",
-            "それ"
+            "それ",
+            "焼き鳥の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1373,24 +1368,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l7_6",
           "type": "dictate",
-          "prompt": "唐揚げの確認をお願いします",
-          "furigana": "からあげのかくにんをおねがいします",
-          "romaji": "karaage no kakunin o onegaishimasu.",
-          "english": "Confirming Japanese fried chicken, please.",
-          "audioText": "唐揚げの確認をお願いします",
+          "prompt": "唐揚げの確認です",
+          "furigana": "からあげのかくにんです",
+          "romaji": "karaage no kakunin desu.",
+          "english": "It is Confirming Japanese fried chicken.",
+          "audioText": "唐揚げの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "です",
-            "を",
-            "お願いします",
-            "唐揚げの確認"
+            "ではありません",
+            "唐揚げの確認",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "唐揚げの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "唐揚げの確認をお願いします"
+          "correctAnswer": "唐揚げの確認です"
         },
         {
           "id": "u7_l7_7",
@@ -1498,10 +1491,10 @@ export const unit07: DojoUnit = {
           "english": "Confirming Another serving / refill",
           "audioText": "おかわりのかくにん",
           "options": [
+            "Confirming Oolong tea",
+            "For now / to start with",
             "Confirming Another serving / refill",
-            "Confirming Cheers!",
-            "Confirming Japanese pub / Izakaya",
-            "Cheers!"
+            "Confirming Japanese pub / Izakaya"
           ],
           "correctAnswer": "Confirming Another serving / refill"
         },
@@ -1514,26 +1507,26 @@ export const unit07: DojoUnit = {
           "english": "Build 'Confirming Another serving / refill'",
           "audioText": "おかわりのかくにん",
           "tileBank": [
-            "の",
+            "り",
             "か",
             "お",
-            "か",
-            "り",
             "に",
+            "く",
+            "か",
             "わ",
-            "く"
+            "の"
           ],
           "correctAnswer": "おかわりのかくにん"
         },
         {
           "id": "u7_l8_3",
           "type": "cloze",
-          "prompt": "私は割り勘の確認がすきです",
-          "furigana": "わたしはわりかんのかくにんがすきです",
-          "romaji": "Watashi wa warikan no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Splitting the bill.",
-          "audioText": "割り勘の確認",
-          "clozeSentence": "これは割り勘の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な割り勘の確認です。",
+          "furigana": "これはいちばんたいせつなわりかんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na warikan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Splitting the bill.",
+          "audioText": "これは割り勘の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な割り勘の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1541,7 +1534,8 @@ export const unit07: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l8_4",
@@ -1552,9 +1546,9 @@ export const unit07: DojoUnit = {
           "english": "This is Confirming Splitting the bill.",
           "audioText": "これは割り勘の確認です",
           "scrambleTokens": [
-            "それ",
             "これは",
             "です",
+            "それ",
             "割り勘の確認",
             "ではありません"
           ],
@@ -1585,24 +1579,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l8_6",
           "type": "dictate",
-          "prompt": "居酒屋の確認をお願いします",
-          "furigana": "いざかやのかくにんをおねがいします",
-          "romaji": "izakaya no kakunin o onegaishimasu.",
-          "english": "Confirming Japanese pub / Izakaya, please.",
-          "audioText": "居酒屋の確認をお願いします",
+          "prompt": "居酒屋の確認です",
+          "furigana": "いざかやのかくにんです",
+          "romaji": "izakaya no kakunin desu.",
+          "english": "It is Confirming Japanese pub / Izakaya.",
+          "audioText": "居酒屋の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "です",
+            "これ",
             "居酒屋の確認",
-            "お願いします",
-            "を"
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "居酒屋の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "居酒屋の確認をお願いします"
+          "correctAnswer": "居酒屋の確認です"
         },
         {
           "id": "u7_l8_7",
@@ -1706,9 +1698,9 @@ export const unit07: DojoUnit = {
           "audioText": "おつまみのかくにん",
           "options": [
             "Confirming Edamame soybeans",
-            "Japanese fried chicken",
-            "Confirming Pub snacks / appetizers",
-            "Confirming Draft beer"
+            "Confirming Japanese pub / Izakaya",
+            "Sashimi / sliced raw fish",
+            "Confirming Pub snacks / appetizers"
           ],
           "correctAnswer": "Confirming Pub snacks / appetizers"
         },
@@ -1721,34 +1713,35 @@ export const unit07: DojoUnit = {
           "english": "Build 'Confirming Pub snacks / appetizers'",
           "audioText": "おつまみのかくにん",
           "tileBank": [
-            "に",
-            "の",
             "み",
+            "の",
+            "ま",
+            "か",
             "お",
             "く",
-            "か",
-            "つ",
-            "ま"
+            "に",
+            "つ"
           ],
           "correctAnswer": "おつまみのかくにん"
         },
         {
           "id": "u7_l9_3",
           "type": "cloze",
-          "prompt": "私はハイボールの確認がすきです",
-          "furigana": "わたしはハイボールのかくにんがすきです",
-          "romaji": "Watashi wa haibooru no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Whisky highball.",
-          "audioText": "ハイボールの確認",
-          "clozeSentence": "これはハイボールの確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なハイボールの確認です。",
+          "furigana": "これはいちばんたいせつなハイボールのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na haibooru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Whisky highball.",
+          "audioText": "これはハイボールの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なハイボールの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l9_4",
@@ -1759,11 +1752,11 @@ export const unit07: DojoUnit = {
           "english": "This is Confirming Whisky highball.",
           "audioText": "これはハイボールの確認です",
           "scrambleTokens": [
-            "ではありません",
-            "それ",
-            "です",
             "ハイボールの確認",
-            "これは"
+            "ではありません",
+            "です",
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1792,24 +1785,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l9_6",
           "type": "dictate",
-          "prompt": "ウーロン茶の確認をお願いします",
-          "furigana": "ウーロンちゃのかくにんをおねがいします",
-          "romaji": "uuroncha no kakunin o onegaishimasu.",
-          "english": "Confirming Oolong tea, please.",
-          "audioText": "ウーロン茶の確認をお願いします",
+          "prompt": "ウーロン茶の確認です",
+          "furigana": "ウーロンちゃのかくにんです",
+          "romaji": "uuroncha no kakunin desu.",
+          "english": "It is Confirming Oolong tea.",
+          "audioText": "ウーロン茶の確認です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
+            "これ",
             "ウーロン茶の確認",
             "です",
-            "お願いします"
+            "ではありません"
           ],
           "dictateSolution": [
             "ウーロン茶の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "ウーロン茶の確認をお願いします"
+          "correctAnswer": "ウーロン茶の確認です"
         },
         {
           "id": "u7_l9_7",
@@ -1916,10 +1907,10 @@ export const unit07: DojoUnit = {
           "english": "Confirming Sashimi / sliced raw fish",
           "audioText": "さしみのかくにん",
           "options": [
-            "Cheers!",
-            "Confirming Draft beer",
-            "Confirming Japanese pub / Izakaya",
-            "Confirming Sashimi / sliced raw fish"
+            "Confirming Cheers!",
+            "For now / to start with",
+            "Confirming Sashimi / sliced raw fish",
+            "Confirming Another serving / refill"
           ],
           "correctAnswer": "Confirming Sashimi / sliced raw fish"
         },
@@ -1932,34 +1923,35 @@ export const unit07: DojoUnit = {
           "english": "Build 'Confirming Sashimi / sliced raw fish'",
           "audioText": "さしみのかくにん",
           "tileBank": [
-            "し",
-            "に",
-            "ん",
-            "の",
-            "み",
-            "さ",
             "く",
-            "か"
+            "か",
+            "さ",
+            "に",
+            "み",
+            "し",
+            "の",
+            "ん"
           ],
           "correctAnswer": "さしみのかくにん"
         },
         {
           "id": "u7_l10_3",
           "type": "cloze",
-          "prompt": "私は席の確認がすきです",
-          "furigana": "わたしはせきのかくにんがすきです",
-          "romaji": "Watashi wa seki no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Seat / table.",
-          "audioText": "席の確認",
-          "clozeSentence": "これは席の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な席の確認です。",
+          "furigana": "これはいちばんたいせつなせきのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na seki no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Seat / table.",
+          "audioText": "これは席の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な席の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l10_4",
@@ -1970,11 +1962,11 @@ export const unit07: DojoUnit = {
           "english": "This is Confirming Seat / table.",
           "audioText": "これは席の確認です",
           "scrambleTokens": [
-            "これは",
             "席の確認",
-            "ではありません",
             "です",
-            "それ"
+            "ではありません",
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2003,24 +1995,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l10_6",
           "type": "dictate",
-          "prompt": "禁煙の確認をお願いします",
-          "furigana": "きんえんのかくにんをおねがいします",
-          "romaji": "kin-en no kakunin o onegaishimasu.",
-          "english": "Confirming No smoking, please.",
-          "audioText": "禁煙の確認をお願いします",
+          "prompt": "禁煙の確認です",
+          "furigana": "きんえんのかくにんです",
+          "romaji": "kin-en no kakunin desu.",
+          "english": "It is Confirming No smoking.",
+          "audioText": "禁煙の確認です",
           "dictateTokens": [
-            "を",
-            "お願いします",
+            "ではありません",
             "禁煙の確認",
-            "ありがとう",
-            "です"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "禁煙の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "禁煙の確認をお願いします"
+          "correctAnswer": "禁煙の確認です"
         },
         {
           "id": "u7_l10_7",
@@ -2125,10 +2115,10 @@ export const unit07: DojoUnit = {
           "english": "Confirming Cheers!",
           "audioText": "かんぱいのかくにん",
           "options": [
-            "Confirming For now / to start with",
+            "Confirming Sashimi / sliced raw fish",
             "Confirming Cheers!",
-            "Pub snacks / appetizers",
-            "For now / to start with"
+            "Confirming Japanese fried chicken",
+            "Confirming Draft beer"
           ],
           "correctAnswer": "Confirming Cheers!"
         },
@@ -2141,13 +2131,13 @@ export const unit07: DojoUnit = {
           "english": "Build 'Confirming Cheers!'",
           "audioText": "かんぱいのかくにん",
           "tileBank": [
-            "ぱ",
-            "く",
-            "に",
             "い",
             "か",
-            "か",
             "の",
+            "に",
+            "か",
+            "く",
+            "ぱ",
             "ん"
           ],
           "correctAnswer": "かんぱいのかくにん"
@@ -2155,20 +2145,21 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l11_3",
           "type": "cloze",
-          "prompt": "私は生ビールの確認がすきです",
-          "furigana": "わたしはなまビールのかくにんがすきです",
-          "romaji": "Watashi wa nama biiru no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Draft beer.",
-          "audioText": "生ビールの確認",
-          "clozeSentence": "これは生ビールの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な生ビールの確認です。",
+          "furigana": "これはいちばんたいせつななまビールのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na nama biiru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Draft beer.",
+          "audioText": "これは生ビールの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な生ビールの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l11_4",
@@ -2179,11 +2170,11 @@ export const unit07: DojoUnit = {
           "english": "This is Confirming Draft beer.",
           "audioText": "これは生ビールの確認です",
           "scrambleTokens": [
-            "それ",
             "ではありません",
-            "生ビールの確認",
             "これは",
-            "です"
+            "です",
+            "生ビールの確認",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2212,24 +2203,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l11_6",
           "type": "dictate",
-          "prompt": "とりあえずの確認をお願いします",
-          "furigana": "とりあえずのかくにんをおねがいします",
-          "romaji": "toriaezu no kakunin o onegaishimasu.",
-          "english": "Confirming For now / to start with, please.",
-          "audioText": "とりあえずの確認をお願いします",
+          "prompt": "とりあえずの確認です",
+          "furigana": "とりあえずのかくにんです",
+          "romaji": "toriaezu no kakunin desu.",
+          "english": "It is Confirming For now / to start with.",
+          "audioText": "とりあえずの確認です",
           "dictateTokens": [
-            "を",
-            "お願いします",
+            "です",
             "とりあえずの確認",
-            "ありがとう",
-            "です"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "とりあえずの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "とりあえずの確認をお願いします"
+          "correctAnswer": "とりあえずの確認です"
         },
         {
           "id": "u7_l11_7",
@@ -2337,10 +2326,10 @@ export const unit07: DojoUnit = {
           "english": "Confirming Edamame soybeans",
           "audioText": "えだまめのかくにん",
           "options": [
+            "Whisky highball",
+            "Sashimi / sliced raw fish",
             "Confirming Edamame soybeans",
-            "For now / to start with",
-            "Seat / table",
-            "Splitting the bill"
+            "For now / to start with"
           ],
           "correctAnswer": "Confirming Edamame soybeans"
         },
@@ -2353,26 +2342,26 @@ export const unit07: DojoUnit = {
           "english": "Build 'Confirming Edamame soybeans'",
           "audioText": "えだまめのかくにん",
           "tileBank": [
-            "く",
-            "ま",
-            "に",
-            "め",
-            "え",
             "の",
             "だ",
-            "か"
+            "か",
+            "ま",
+            "め",
+            "く",
+            "に",
+            "え"
           ],
           "correctAnswer": "えだまめのかくにん"
         },
         {
           "id": "u7_l12_3",
           "type": "cloze",
-          "prompt": "私は焼き鳥の確認がすきです",
-          "furigana": "わたしはやきとりのかくにんがすきです",
-          "romaji": "Watashi wa yakitori no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Grilled chicken skewers.",
-          "audioText": "焼き鳥の確認",
-          "clozeSentence": "これは焼き鳥の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な焼き鳥の確認です。",
+          "furigana": "これはいちばんたいせつなやきとりのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na yakitori no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Grilled chicken skewers.",
+          "audioText": "これは焼き鳥の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焼き鳥の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2380,7 +2369,8 @@ export const unit07: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l12_4",
@@ -2391,11 +2381,11 @@ export const unit07: DojoUnit = {
           "english": "This is Confirming Grilled chicken skewers.",
           "audioText": "これは焼き鳥の確認です",
           "scrambleTokens": [
+            "です",
             "それ",
-            "ではありません",
-            "焼き鳥の確認",
             "これは",
-            "です"
+            "焼き鳥の確認",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2424,24 +2414,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l12_6",
           "type": "dictate",
-          "prompt": "唐揚げの確認をお願いします",
-          "furigana": "からあげのかくにんをおねがいします",
-          "romaji": "karaage no kakunin o onegaishimasu.",
-          "english": "Confirming Japanese fried chicken, please.",
-          "audioText": "唐揚げの確認をお願いします",
+          "prompt": "唐揚げの確認です",
+          "furigana": "からあげのかくにんです",
+          "romaji": "karaage no kakunin desu.",
+          "english": "It is Confirming Japanese fried chicken.",
+          "audioText": "唐揚げの確認です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
+            "これ",
+            "唐揚げの確認",
             "です",
-            "お願いします",
-            "唐揚げの確認"
+            "ではありません"
           ],
           "dictateSolution": [
             "唐揚げの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "唐揚げの確認をお願いします"
+          "correctAnswer": "唐揚げの確認です"
         },
         {
           "id": "u7_l12_7",
@@ -2540,10 +2528,10 @@ export const unit07: DojoUnit = {
           "english": "Cheers!",
           "audioText": "かんぱい",
           "options": [
-            "Edamame soybeans",
             "Confirming Seat / table",
-            "Another serving / refill",
-            "Cheers!"
+            "Cheers!",
+            "Draft beer",
+            "Confirming Japanese pub / Izakaya"
           ],
           "correctAnswer": "Cheers!"
         },
@@ -2556,12 +2544,12 @@ export const unit07: DojoUnit = {
           "english": "Build 'Cheers!'",
           "audioText": "かんぱい",
           "tileBank": [
-            "ん",
-            "け",
-            "あ",
-            "ひ",
             "ぱ",
-            "こ",
+            "ひ",
+            "て",
+            "わ",
+            "ん",
+            "ね",
             "い",
             "か"
           ],
@@ -2570,20 +2558,21 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l13_3",
           "type": "cloze",
-          "prompt": "私は生ビールがすきです",
-          "furigana": "わたしはなまビールがすきです",
-          "romaji": "Watashi wa nama biiru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Draft beer.",
-          "audioText": "生ビール",
-          "clozeSentence": "これは生ビール {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な生ビールです。",
+          "furigana": "これはいちばんたいせつななまビールです。",
+          "romaji": "Kore wa ichiban taisetsu na nama biiru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Draft beer.",
+          "audioText": "これは生ビールです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な生ビールです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l13_4",
@@ -2594,11 +2583,11 @@ export const unit07: DojoUnit = {
           "english": "This is Draft beer.",
           "audioText": "これは生ビールです",
           "scrambleTokens": [
-            "これは",
-            "生ビール",
             "ではありません",
             "です",
-            "それ"
+            "生ビール",
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2627,24 +2616,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l13_6",
           "type": "dictate",
-          "prompt": "とりあえずをお願いします",
-          "furigana": "とりあえずをおねがいします",
-          "romaji": "toriaezu o onegaishimasu.",
-          "english": "For now / to start with, please.",
-          "audioText": "とりあえずをお願いします",
+          "prompt": "とりあえずです",
+          "furigana": "とりあえずです",
+          "romaji": "toriaezu desu.",
+          "english": "It is For now / to start with.",
+          "audioText": "とりあえずです",
           "dictateTokens": [
-            "を",
-            "お願いします",
+            "とりあえず",
             "です",
-            "ありがとう",
-            "とりあえず"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "とりあえず",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "とりあえずをお願いします"
+          "correctAnswer": "とりあえずです"
         },
         {
           "id": "u7_l13_7",
@@ -2746,10 +2733,10 @@ export const unit07: DojoUnit = {
           "english": "Edamame soybeans",
           "audioText": "えだまめ",
           "options": [
-            "Confirming Edamame soybeans",
+            "For now / to start with",
             "Confirming Edamame soybeans",
             "Edamame soybeans",
-            "Confirming Japanese pub / Izakaya"
+            "Japanese pub / Izakaya"
           ],
           "correctAnswer": "Edamame soybeans"
         },
@@ -2762,34 +2749,35 @@ export const unit07: DojoUnit = {
           "english": "Build 'Edamame soybeans'",
           "audioText": "えだまめ",
           "tileBank": [
+            "ら",
             "め",
-            "ん",
-            "け",
-            "え",
-            "ふ",
-            "だ",
             "ま",
-            "そ"
+            "だ",
+            "よ",
+            "し",
+            "え",
+            "つ"
           ],
           "correctAnswer": "えだまめ"
         },
         {
           "id": "u7_l14_3",
           "type": "cloze",
-          "prompt": "私は焼き鳥がすきです",
-          "furigana": "わたしはやきとりがすきです",
-          "romaji": "Watashi wa yakitori ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Grilled chicken skewers.",
-          "audioText": "焼き鳥",
-          "clozeSentence": "これは焼き鳥 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な焼き鳥です。",
+          "furigana": "これはいちばんたいせつなやきとりです。",
+          "romaji": "Kore wa ichiban taisetsu na yakitori desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Grilled chicken skewers.",
+          "audioText": "これは焼き鳥です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焼き鳥です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l14_4",
@@ -2800,11 +2788,11 @@ export const unit07: DojoUnit = {
           "english": "This is Grilled chicken skewers.",
           "audioText": "これは焼き鳥です",
           "scrambleTokens": [
+            "それ",
             "です",
             "焼き鳥",
             "これは",
-            "ではありません",
-            "それ"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2833,24 +2821,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l14_6",
           "type": "dictate",
-          "prompt": "唐揚げをお願いします",
-          "furigana": "からあげをおねがいします",
-          "romaji": "karaage o onegaishimasu.",
-          "english": "Japanese fried chicken, please.",
-          "audioText": "唐揚げをお願いします",
+          "prompt": "唐揚げです",
+          "furigana": "からあげです",
+          "romaji": "karaage desu.",
+          "english": "It is Japanese fried chicken.",
+          "audioText": "唐揚げです",
           "dictateTokens": [
-            "です",
+            "これ",
             "唐揚げ",
-            "ありがとう",
-            "を",
-            "お願いします"
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "唐揚げ",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "唐揚げをお願いします"
+          "correctAnswer": "唐揚げです"
         },
         {
           "id": "u7_l14_7",
@@ -2952,10 +2938,10 @@ export const unit07: DojoUnit = {
           "english": "Another serving / refill",
           "audioText": "おかわり",
           "options": [
-            "Confirming Another serving / refill",
-            "Confirming Grilled chicken skewers",
             "Another serving / refill",
-            "Edamame soybeans"
+            "For now / to start with",
+            "Confirming Whisky highball",
+            "Confirming Pub snacks / appetizers"
           ],
           "correctAnswer": "Another serving / refill"
         },
@@ -2968,34 +2954,35 @@ export const unit07: DojoUnit = {
           "english": "Build 'Another serving / refill'",
           "audioText": "おかわり",
           "tileBank": [
-            "そ",
-            "り",
-            "さ",
-            "わ",
-            "ぬ",
             "か",
-            "ひ",
-            "お"
+            "う",
+            "と",
+            "わ",
+            "ち",
+            "お",
+            "た",
+            "り"
           ],
           "correctAnswer": "おかわり"
         },
         {
           "id": "u7_l15_3",
           "type": "cloze",
-          "prompt": "私は割り勘がすきです",
-          "furigana": "わたしはわりかんがすきです",
-          "romaji": "Watashi wa warikan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Splitting the bill.",
-          "audioText": "割り勘",
-          "clozeSentence": "これは割り勘 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な割り勘です。",
+          "furigana": "これはいちばんたいせつなわりかんです。",
+          "romaji": "Kore wa ichiban taisetsu na warikan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Splitting the bill.",
+          "audioText": "これは割り勘です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な割り勘です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u7_l15_4",
@@ -3006,11 +2993,11 @@ export const unit07: DojoUnit = {
           "english": "This is Splitting the bill.",
           "audioText": "これは割り勘です",
           "scrambleTokens": [
+            "ではありません",
             "です",
             "これは",
-            "割り勘",
-            "ではありません",
-            "それ"
+            "それ",
+            "割り勘"
           ],
           "scrambleSolution": [
             "これは",
@@ -3039,24 +3026,22 @@ export const unit07: DojoUnit = {
         {
           "id": "u7_l15_6",
           "type": "dictate",
-          "prompt": "居酒屋をお願いします",
-          "furigana": "いざかやをおねがいします",
-          "romaji": "izakaya o onegaishimasu.",
-          "english": "Japanese pub / Izakaya, please.",
-          "audioText": "居酒屋をお願いします",
+          "prompt": "居酒屋です",
+          "furigana": "いざかやです",
+          "romaji": "izakaya desu.",
+          "english": "It is Japanese pub / Izakaya.",
+          "audioText": "居酒屋です",
           "dictateTokens": [
-            "ありがとう",
+            "ではありません",
             "居酒屋",
             "です",
-            "を",
-            "お願いします"
+            "これ"
           ],
           "dictateSolution": [
             "居酒屋",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "居酒屋をお願いします"
+          "correctAnswer": "居酒屋です"
         },
         {
           "id": "u7_l15_7",
@@ -3141,10 +3126,10 @@ export const unit07: DojoUnit = {
         "english": "Cheers!",
         "audioText": "かんぱい",
         "options": [
-          "Confirming Draft beer",
-          "Confirming For now / to start with",
-          "Sashimi / sliced raw fish",
-          "Cheers!"
+          "Confirming Another serving / refill",
+          "Confirming Cheers!",
+          "Cheers!",
+          "Sashimi / sliced raw fish"
         ],
         "correctAnswer": "Cheers!"
       },
@@ -3157,14 +3142,14 @@ export const unit07: DojoUnit = {
         "english": "Build 'Cheers!'",
         "audioText": "かんぱい",
         "tileBank": [
-          "か",
-          "ぱ",
           "ね",
           "い",
-          "ふ",
-          "あ",
-          "わ",
-          "ん"
+          "か",
+          "ん",
+          "せ",
+          "み",
+          "ろ",
+          "ぱ"
         ],
         "correctAnswer": "かんぱい"
       },
@@ -3177,10 +3162,10 @@ export const unit07: DojoUnit = {
         "english": "Another serving / refill",
         "audioText": "おかわり",
         "options": [
-          "Confirming Japanese pub / Izakaya",
+          "Confirming Pub snacks / appetizers",
+          "Confirming Oolong tea",
           "Another serving / refill",
-          "Confirming Draft beer",
-          "No smoking"
+          "Confirming Grilled chicken skewers"
         ],
         "correctAnswer": "Another serving / refill"
       },
@@ -3193,14 +3178,14 @@ export const unit07: DojoUnit = {
         "english": "Build 'Another serving / refill'",
         "audioText": "おかわり",
         "tileBank": [
-          "う",
-          "し",
-          "り",
           "か",
-          "の",
-          "お",
           "く",
-          "わ"
+          "つ",
+          "り",
+          "そ",
+          "お",
+          "わ",
+          "ね"
         ],
         "correctAnswer": "おかわり"
       },
@@ -3213,10 +3198,10 @@ export const unit07: DojoUnit = {
         "english": "Sashimi / sliced raw fish",
         "audioText": "さしみ",
         "options": [
-          "No smoking",
-          "Confirming Another serving / refill",
-          "Confirming Seat / table",
-          "Sashimi / sliced raw fish"
+          "Whisky highball",
+          "Sashimi / sliced raw fish",
+          "Confirming Oolong tea",
+          "Confirming For now / to start with"
         ],
         "correctAnswer": "Sashimi / sliced raw fish"
       },
@@ -3229,14 +3214,14 @@ export const unit07: DojoUnit = {
         "english": "Build 'Sashimi / sliced raw fish'",
         "audioText": "さしみ",
         "tileBank": [
-          "し",
+          "よ",
+          "と",
           "さ",
-          "い",
           "み",
-          "れ",
-          "せ",
+          "ろ",
+          "し",
           "ん",
-          "ろ"
+          "た"
         ],
         "correctAnswer": "さしみ"
       },
@@ -3249,10 +3234,10 @@ export const unit07: DojoUnit = {
         "english": "Confirming Edamame soybeans",
         "audioText": "えだまめのかくにん",
         "options": [
-          "Confirming Draft beer",
-          "Confirming For now / to start with",
           "Confirming Edamame soybeans",
-          "Splitting the bill"
+          "Japanese fried chicken",
+          "Confirming For now / to start with",
+          "Confirming For now / to start with"
         ],
         "correctAnswer": "Confirming Edamame soybeans"
       },
@@ -3266,13 +3251,13 @@ export const unit07: DojoUnit = {
         "audioText": "えだまめのかくにん",
         "tileBank": [
           "の",
+          "え",
+          "だ",
+          "く",
           "ま",
           "に",
-          "か",
-          "だ",
-          "え",
           "め",
-          "く"
+          "か"
         ],
         "correctAnswer": "えだまめのかくにん"
       },
@@ -3286,9 +3271,9 @@ export const unit07: DojoUnit = {
         "audioText": "おつまみのかくにん",
         "options": [
           "Confirming Edamame soybeans",
-          "Japanese fried chicken",
-          "Confirming Pub snacks / appetizers",
-          "Confirming Draft beer"
+          "Confirming Japanese pub / Izakaya",
+          "Sashimi / sliced raw fish",
+          "Confirming Pub snacks / appetizers"
         ],
         "correctAnswer": "Confirming Pub snacks / appetizers"
       },
@@ -3301,14 +3286,14 @@ export const unit07: DojoUnit = {
         "english": "Build 'Confirming Pub snacks / appetizers'",
         "audioText": "おつまみのかくにん",
         "tileBank": [
-          "に",
-          "の",
           "み",
+          "の",
+          "ま",
+          "か",
           "お",
           "く",
-          "か",
-          "つ",
-          "ま"
+          "に",
+          "つ"
         ],
         "correctAnswer": "おつまみのかくにん"
       },
@@ -3321,10 +3306,10 @@ export const unit07: DojoUnit = {
         "english": "Confirming Cheers!",
         "audioText": "かんぱいのかくにん",
         "options": [
-          "Confirming For now / to start with",
+          "Confirming Sashimi / sliced raw fish",
           "Confirming Cheers!",
-          "Pub snacks / appetizers",
-          "For now / to start with"
+          "Confirming Japanese fried chicken",
+          "Confirming Draft beer"
         ],
         "correctAnswer": "Confirming Cheers!"
       },
@@ -3337,13 +3322,13 @@ export const unit07: DojoUnit = {
         "english": "Build 'Confirming Cheers!'",
         "audioText": "かんぱいのかくにん",
         "tileBank": [
-          "ぱ",
-          "く",
-          "に",
           "い",
           "か",
-          "か",
           "の",
+          "に",
+          "か",
+          "く",
+          "ぱ",
           "ん"
         ],
         "correctAnswer": "かんぱいのかくにん"

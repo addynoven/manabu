@@ -56,10 +56,10 @@ export const unit25: DojoUnit = {
           "english": "Once in a lifetime encounter",
           "audioText": "いちごいちえ",
           "options": [
-            "Confirming Tacit mutual understanding",
             "Confirming Trial and error",
-            "Confirming Learning wisdom from the past",
-            "Once in a lifetime encounter"
+            "Once in a lifetime encounter",
+            "Confirming Putting cart before horse",
+            "Miraculous revival from near defeat"
           ],
           "correctAnswer": "Once in a lifetime encounter"
         },
@@ -73,12 +73,12 @@ export const unit25: DojoUnit = {
           "audioText": "いちごいちえ",
           "tileBank": [
             "い",
-            "い",
             "ご",
-            "す",
+            "い",
             "え",
-            "ぬ",
+            "を",
             "ち",
+            "あ",
             "ち"
           ],
           "correctAnswer": "いちごいちえ"
@@ -86,20 +86,21 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l1_3",
           "type": "cloze",
-          "prompt": "私は以心伝心がすきです",
-          "furigana": "わたしはいしんでんしんがすきです",
-          "romaji": "Watashi wa ishin denshin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Tacit mutual understanding.",
-          "audioText": "以心伝心",
-          "clozeSentence": "これは以心伝心 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な以心伝心です。",
+          "furigana": "これはいちばんたいせつないしんでんしんです。",
+          "romaji": "Kore wa ichiban taisetsu na ishin denshin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Tacit mutual understanding.",
+          "audioText": "これは以心伝心です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な以心伝心です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l1_4",
@@ -110,11 +111,11 @@ export const unit25: DojoUnit = {
           "english": "This is Tacit mutual understanding.",
           "audioText": "これは以心伝心です",
           "scrambleTokens": [
-            "それ",
+            "ではありません",
             "です",
-            "以心伝心",
+            "それ",
             "これは",
-            "ではありません"
+            "以心伝心"
           ],
           "scrambleSolution": [
             "これは",
@@ -143,24 +144,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l1_6",
           "type": "dictate",
-          "prompt": "十人十色をお願いします",
-          "furigana": "じゅうにんといろをおねがいします",
-          "romaji": "juunin toiro o onegaishimasu.",
-          "english": "Ten people, ten colors (each unique), please.",
-          "audioText": "十人十色をお願いします",
+          "prompt": "十人十色です",
+          "furigana": "じゅうにんといろです",
+          "romaji": "juunin toiro desu.",
+          "english": "It is Ten people, ten colors (each unique).",
+          "audioText": "十人十色です",
           "dictateTokens": [
-            "お願いします",
-            "十人十色",
             "です",
-            "を",
-            "ありがとう"
+            "十人十色",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "十人十色",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "十人十色をお願いします"
+          "correctAnswer": "十人十色です"
         },
         {
           "id": "u25_l1_7",
@@ -268,10 +267,10 @@ export const unit25: DojoUnit = {
           "english": "Diligently honing skills together",
           "audioText": "せっさたくま",
           "options": [
+            "Confirming Steady rapid progress",
             "Tacit mutual understanding",
-            "Self-sufficiency",
             "Diligently honing skills together",
-            "Confirming With one voice / unanimously"
+            "Confirming Once in a lifetime encounter"
           ],
           "correctAnswer": "Diligently honing skills together"
         },
@@ -284,34 +283,35 @@ export const unit25: DojoUnit = {
           "english": "Build 'Diligently honing skills together'",
           "audioText": "せっさたくま",
           "tileBank": [
-            "ま",
-            "た",
-            "さ",
-            "な",
-            "く",
             "っ",
-            "の",
-            "せ"
+            "み",
+            "た",
+            "せ",
+            "さ",
+            "ま",
+            "ろ",
+            "く"
           ],
           "correctAnswer": "せっさたくま"
         },
         {
           "id": "u25_l2_3",
           "type": "cloze",
-          "prompt": "私は臨機応変がすきです",
-          "furigana": "わたしはりんきおうへんがすきです",
-          "romaji": "Watashi wa rinki ouhen ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Adapting flexibly to the situation.",
-          "audioText": "臨機応変",
-          "clozeSentence": "これは臨機応変 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な臨機応変です。",
+          "furigana": "これはいちばんたいせつなりんきおうへんです。",
+          "romaji": "Kore wa ichiban taisetsu na rinki ouhen desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Adapting flexibly to the situation.",
+          "audioText": "これは臨機応変です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な臨機応変です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l2_4",
@@ -322,10 +322,10 @@ export const unit25: DojoUnit = {
           "english": "This is Adapting flexibly to the situation.",
           "audioText": "これは臨機応変です",
           "scrambleTokens": [
-            "ではありません",
             "それ",
             "これは",
             "です",
+            "ではありません",
             "臨機応変"
           ],
           "scrambleSolution": [
@@ -355,24 +355,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l2_6",
           "type": "dictate",
-          "prompt": "臥薪嘗胆をお願いします",
-          "furigana": "がしんしょうたんをおねがいします",
-          "romaji": "gashin shoutan o onegaishimasu.",
-          "english": "Enduring hardships for future triumph, please.",
-          "audioText": "臥薪嘗胆をお願いします",
+          "prompt": "臥薪嘗胆です",
+          "furigana": "がしんしょうたんです",
+          "romaji": "gashin shoutan desu.",
+          "english": "It is Enduring hardships for future triumph.",
+          "audioText": "臥薪嘗胆です",
           "dictateTokens": [
-            "を",
-            "お願いします",
             "です",
             "臥薪嘗胆",
-            "ありがとう"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "臥薪嘗胆",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "臥薪嘗胆をお願いします"
+          "correctAnswer": "臥薪嘗胆です"
         },
         {
           "id": "u25_l2_7",
@@ -480,10 +478,10 @@ export const unit25: DojoUnit = {
           "english": "Learning wisdom from the past",
           "audioText": "おんこちしん",
           "options": [
-            "Ten people, ten colors (each unique)",
-            "Substantially identical with minor differences",
+            "Self-sufficiency",
+            "Putting cart before horse",
             "Learning wisdom from the past",
-            "Confirming Enduring hardships for future triumph"
+            "Confirming Adapting flexibly to the situation"
           ],
           "correctAnswer": "Learning wisdom from the past"
         },
@@ -496,34 +494,35 @@ export const unit25: DojoUnit = {
           "english": "Build 'Learning wisdom from the past'",
           "audioText": "おんこちしん",
           "tileBank": [
+            "お",
+            "ん",
             "ん",
             "ち",
-            "ん",
             "こ",
-            "お",
-            "を",
-            "け",
-            "し"
+            "ら",
+            "し",
+            "な"
           ],
           "correctAnswer": "おんこちしん"
         },
         {
           "id": "u25_l3_3",
           "type": "cloze",
-          "prompt": "私は起死回生がすきです",
-          "furigana": "わたしはきしかいせいがすきです",
-          "romaji": "Watashi wa kishi kaisei ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Miraculous revival from near defeat.",
-          "audioText": "起死回生",
-          "clozeSentence": "これは起死回生 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な起死回生です。",
+          "furigana": "これはいちばんたいせつなきしかいせいです。",
+          "romaji": "Kore wa ichiban taisetsu na kishi kaisei desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Miraculous revival from near defeat.",
+          "audioText": "これは起死回生です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な起死回生です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l3_4",
@@ -535,10 +534,10 @@ export const unit25: DojoUnit = {
           "audioText": "これは起死回生です",
           "scrambleTokens": [
             "これは",
-            "起死回生",
             "それ",
-            "です",
-            "ではありません"
+            "起死回生",
+            "ではありません",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -567,24 +566,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l3_6",
           "type": "dictate",
-          "prompt": "試行錯誤をお願いします",
-          "furigana": "しこうさくごをおねがいします",
-          "romaji": "shikou sakugo o onegaishimasu.",
-          "english": "Trial and error, please.",
-          "audioText": "試行錯誤をお願いします",
+          "prompt": "試行錯誤です",
+          "furigana": "しこうさくごです",
+          "romaji": "shikou sakugo desu.",
+          "english": "It is Trial and error.",
+          "audioText": "試行錯誤です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
+            "ではありません",
+            "これ",
             "試行錯誤",
-            "です",
-            "お願いします"
+            "です"
           ],
           "dictateSolution": [
             "試行錯誤",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "試行錯誤をお願いします"
+          "correctAnswer": "試行錯誤です"
         },
         {
           "id": "u25_l3_7",
@@ -692,10 +689,10 @@ export const unit25: DojoUnit = {
           "english": "Putting cart before horse",
           "audioText": "ほんまつてんとう",
           "options": [
+            "Putting cart before horse",
             "Substantially identical with minor differences",
-            "Confirming Substantially identical with minor differences",
-            "Confirming Trial and error",
-            "Putting cart before horse"
+            "Confirming Miraculous revival from near defeat",
+            "Confirming Tacit mutual understanding"
           ],
           "correctAnswer": "Putting cart before horse"
         },
@@ -708,26 +705,26 @@ export const unit25: DojoUnit = {
           "english": "Build 'With one voice / unanimously'",
           "audioText": "いくどうおん",
           "tileBank": [
-            "く",
+            "さ",
             "い",
+            "む",
+            "く",
+            "ん",
             "ど",
-            "み",
             "う",
-            "ゆ",
-            "お",
-            "ん"
+            "お"
           ],
           "correctAnswer": "いくどうおん"
         },
         {
           "id": "u25_l4_3",
           "type": "cloze",
-          "prompt": "私は異口同音がすきです",
-          "furigana": "わたしはいくどうおんがすきです",
-          "romaji": "Watashi wa iku douon ga suki desu.",
-          "english": "Fill in the blank with the correct particle for With one voice / unanimously.",
-          "audioText": "異口同音",
-          "clozeSentence": "これは異口同音 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な異口同音です。",
+          "furigana": "これはいちばんたいせつないくどうおんです。",
+          "romaji": "Kore wa ichiban taisetsu na iku douon desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important With one voice / unanimously.",
+          "audioText": "これは異口同音です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な異口同音です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -735,7 +732,8 @@ export const unit25: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l4_4",
@@ -746,11 +744,11 @@ export const unit25: DojoUnit = {
           "english": "This is With one voice / unanimously.",
           "audioText": "これは異口同音です",
           "scrambleTokens": [
-            "です",
             "ではありません",
             "それ",
+            "異口同音",
             "これは",
-            "異口同音"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -779,24 +777,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l4_6",
           "type": "dictate",
-          "prompt": "日進月歩をお願いします",
-          "furigana": "にっしんげっぽをおねがいします",
-          "romaji": "nisshin geppo o onegaishimasu.",
-          "english": "Steady rapid progress, please.",
-          "audioText": "日進月歩をお願いします",
+          "prompt": "日進月歩です",
+          "furigana": "にっしんげっぽです",
+          "romaji": "nisshin geppo desu.",
+          "english": "It is Steady rapid progress.",
+          "audioText": "日進月歩です",
           "dictateTokens": [
-            "ありがとう",
             "です",
-            "を",
+            "ではありません",
             "日進月歩",
-            "お願いします"
+            "これ"
           ],
           "dictateSolution": [
             "日進月歩",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "日進月歩をお願いします"
+          "correctAnswer": "日進月歩です"
         },
         {
           "id": "u25_l4_7",
@@ -904,10 +900,10 @@ export const unit25: DojoUnit = {
           "english": "Self-sufficiency",
           "audioText": "じきゅうじそく",
           "options": [
-            "Confirming Once in a lifetime encounter",
-            "Confirming Learning wisdom from the past",
+            "Substantially identical with minor differences",
+            "Self-sufficiency",
             "Confirming Miraculous revival from near defeat",
-            "Self-sufficiency"
+            "Steady rapid progress"
           ],
           "correctAnswer": "Self-sufficiency"
         },
@@ -920,34 +916,35 @@ export const unit25: DojoUnit = {
           "english": "Build 'Self-sufficiency'",
           "audioText": "じきゅうじそく",
           "tileBank": [
-            "く",
             "じ",
             "う",
-            "あ",
             "そ",
-            "ゅ",
             "き",
-            "じ"
+            "ゅ",
+            "く",
+            "じ",
+            "に"
           ],
           "correctAnswer": "じきゅうじそく"
         },
         {
           "id": "u25_l5_3",
           "type": "cloze",
-          "prompt": "私は大同小異がすきです",
-          "furigana": "わたしはだいどうしょういがすきです",
-          "romaji": "Watashi wa daidou shoui ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Substantially identical with minor differences.",
-          "audioText": "大同小異",
-          "clozeSentence": "これは大同小異 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な大同小異です。",
+          "furigana": "これはいちばんたいせつなだいどうしょういです。",
+          "romaji": "Kore wa ichiban taisetsu na daidou shoui desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Substantially identical with minor differences.",
+          "audioText": "これは大同小異です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な大同小異です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l5_4",
@@ -959,10 +956,10 @@ export const unit25: DojoUnit = {
           "audioText": "これは大同小異です",
           "scrambleTokens": [
             "これは",
-            "それ",
-            "大同小異",
             "です",
-            "ではありません"
+            "ではありません",
+            "それ",
+            "大同小異"
           ],
           "scrambleSolution": [
             "これは",
@@ -991,24 +988,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l5_6",
           "type": "dictate",
-          "prompt": "電光石火をお願いします",
-          "furigana": "でんこうせっかをおねがいします",
-          "romaji": "denkou sekka o onegaishimasu.",
-          "english": "Fast as lightning, please.",
-          "audioText": "電光石火をお願いします",
+          "prompt": "電光石火です",
+          "furigana": "でんこうせっかです",
+          "romaji": "denkou sekka desu.",
+          "english": "It is Fast as lightning.",
+          "audioText": "電光石火です",
           "dictateTokens": [
-            "を",
             "電光石火",
-            "お願いします",
-            "ありがとう",
-            "です"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "電光石火",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "電光石火をお願いします"
+          "correctAnswer": "電光石火です"
         },
         {
           "id": "u25_l5_7",
@@ -1123,9 +1118,9 @@ export const unit25: DojoUnit = {
           "audioText": "いちごいちえのかくにん",
           "options": [
             "Confirming Once in a lifetime encounter",
-            "Miraculous revival from near defeat",
-            "Substantially identical with minor differences",
-            "Ten people, ten colors (each unique)"
+            "Confirming Trial and error",
+            "Confirming Substantially identical with minor differences",
+            "Learning wisdom from the past"
           ],
           "correctAnswer": "Confirming Once in a lifetime encounter"
         },
@@ -1139,33 +1134,34 @@ export const unit25: DojoUnit = {
           "audioText": "いちごいちえのかくにん",
           "tileBank": [
             "い",
-            "ち",
-            "か",
-            "え",
-            "い",
-            "ち",
             "ご",
-            "の"
+            "ち",
+            "え",
+            "ち",
+            "の",
+            "い",
+            "か"
           ],
           "correctAnswer": "いちごいちえのかくにん"
         },
         {
           "id": "u25_l6_3",
           "type": "cloze",
-          "prompt": "私は以心伝心の確認がすきです",
-          "furigana": "わたしはいしんでんしんのかくにんがすきです",
-          "romaji": "Watashi wa ishin denshin no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Tacit mutual understanding.",
-          "audioText": "以心伝心の確認",
-          "clozeSentence": "これは以心伝心の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な以心伝心の確認です。",
+          "furigana": "これはいちばんたいせつないしんでんしんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ishin denshin no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Tacit mutual understanding.",
+          "audioText": "これは以心伝心の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な以心伝心の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l6_4",
@@ -1177,10 +1173,10 @@ export const unit25: DojoUnit = {
           "audioText": "これは以心伝心の確認です",
           "scrambleTokens": [
             "以心伝心の確認",
+            "ではありません",
             "それ",
             "これは",
-            "です",
-            "ではありません"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1209,24 +1205,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l6_6",
           "type": "dictate",
-          "prompt": "十人十色の確認をお願いします",
-          "furigana": "じゅうにんといろのかくにんをおねがいします",
-          "romaji": "juunin toiro no kakunin o onegaishimasu.",
-          "english": "Confirming Ten people, ten colors (each unique), please.",
-          "audioText": "十人十色の確認をお願いします",
+          "prompt": "十人十色の確認です",
+          "furigana": "じゅうにんといろのかくにんです",
+          "romaji": "juunin toiro no kakunin desu.",
+          "english": "It is Confirming Ten people, ten colors (each unique).",
+          "audioText": "十人十色の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
+            "です",
+            "これ",
             "十人十色の確認",
-            "を",
-            "です"
+            "ではありません"
           ],
           "dictateSolution": [
             "十人十色の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "十人十色の確認をお願いします"
+          "correctAnswer": "十人十色の確認です"
         },
         {
           "id": "u25_l6_7",
@@ -1340,10 +1334,10 @@ export const unit25: DojoUnit = {
           "english": "Confirming Diligently honing skills together",
           "audioText": "せっさたくまのかくにん",
           "options": [
-            "Confirming Enduring hardships for future triumph",
+            "Diligently honing skills together",
             "Confirming Diligently honing skills together",
-            "Miraculous revival from near defeat",
-            "Fast as lightning"
+            "Confirming Steady rapid progress",
+            "Confirming With one voice / unanimously"
           ],
           "correctAnswer": "Confirming Diligently honing skills together"
         },
@@ -1356,34 +1350,35 @@ export const unit25: DojoUnit = {
           "english": "Build 'Confirming Diligently honing skills together'",
           "audioText": "せっさたくまのかくにん",
           "tileBank": [
-            "く",
-            "せ",
-            "ま",
-            "か",
-            "の",
+            "さ",
             "た",
+            "か",
             "っ",
-            "さ"
+            "ま",
+            "の",
+            "せ",
+            "く"
           ],
           "correctAnswer": "せっさたくまのかくにん"
         },
         {
           "id": "u25_l7_3",
           "type": "cloze",
-          "prompt": "私は臨機応変の確認がすきです",
-          "furigana": "わたしはりんきおうへんのかくにんがすきです",
-          "romaji": "Watashi wa rinki ouhen no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Adapting flexibly to the situation.",
-          "audioText": "臨機応変の確認",
-          "clozeSentence": "これは臨機応変の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な臨機応変の確認です。",
+          "furigana": "これはいちばんたいせつなりんきおうへんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na rinki ouhen no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Adapting flexibly to the situation.",
+          "audioText": "これは臨機応変の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な臨機応変の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l7_4",
@@ -1394,8 +1389,8 @@ export const unit25: DojoUnit = {
           "english": "This is Confirming Adapting flexibly to the situation.",
           "audioText": "これは臨機応変の確認です",
           "scrambleTokens": [
-            "ではありません",
             "臨機応変の確認",
+            "ではありません",
             "です",
             "これは",
             "それ"
@@ -1427,24 +1422,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l7_6",
           "type": "dictate",
-          "prompt": "臥薪嘗胆の確認をお願いします",
-          "furigana": "がしんしょうたんのかくにんをおねがいします",
-          "romaji": "gashin shoutan no kakunin o onegaishimasu.",
-          "english": "Confirming Enduring hardships for future triumph, please.",
-          "audioText": "臥薪嘗胆の確認をお願いします",
+          "prompt": "臥薪嘗胆の確認です",
+          "furigana": "がしんしょうたんのかくにんです",
+          "romaji": "gashin shoutan no kakunin desu.",
+          "english": "It is Confirming Enduring hardships for future triumph.",
+          "audioText": "臥薪嘗胆の確認です",
           "dictateTokens": [
+            "ではありません",
             "臥薪嘗胆の確認",
-            "ありがとう",
-            "お願いします",
-            "を",
-            "です"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "臥薪嘗胆の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "臥薪嘗胆の確認をお願いします"
+          "correctAnswer": "臥薪嘗胆の確認です"
         },
         {
           "id": "u25_l7_7",
@@ -1558,10 +1551,10 @@ export const unit25: DojoUnit = {
           "english": "Confirming Learning wisdom from the past",
           "audioText": "おんこちしんのかくにん",
           "options": [
-            "Confirming Trial and error",
+            "Confirming Adapting flexibly to the situation",
             "Confirming Learning wisdom from the past",
-            "Steady rapid progress",
-            "Trial and error"
+            "Miraculous revival from near defeat",
+            "Confirming Ten people, ten colors (each unique)"
           ],
           "correctAnswer": "Confirming Learning wisdom from the past"
         },
@@ -1575,25 +1568,25 @@ export const unit25: DojoUnit = {
           "audioText": "おんこちしんのかくにん",
           "tileBank": [
             "ん",
+            "し",
             "の",
+            "こ",
+            "お",
             "か",
             "ち",
-            "ん",
-            "し",
-            "お",
-            "こ"
+            "ん"
           ],
           "correctAnswer": "おんこちしんのかくにん"
         },
         {
           "id": "u25_l8_3",
           "type": "cloze",
-          "prompt": "私は起死回生の確認がすきです",
-          "furigana": "わたしはきしかいせいのかくにんがすきです",
-          "romaji": "Watashi wa kishi kaisei no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Miraculous revival from near defeat.",
-          "audioText": "起死回生の確認",
-          "clozeSentence": "これは起死回生の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な起死回生の確認です。",
+          "furigana": "これはいちばんたいせつなきしかいせいのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kishi kaisei no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Miraculous revival from near defeat.",
+          "audioText": "これは起死回生の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な起死回生の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1601,7 +1594,8 @@ export const unit25: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l8_4",
@@ -1612,11 +1606,11 @@ export const unit25: DojoUnit = {
           "english": "This is Confirming Miraculous revival from near defeat.",
           "audioText": "これは起死回生の確認です",
           "scrambleTokens": [
-            "です",
             "それ",
             "起死回生の確認",
-            "ではありません",
-            "これは"
+            "です",
+            "これは",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1645,24 +1639,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l8_6",
           "type": "dictate",
-          "prompt": "試行錯誤の確認をお願いします",
-          "furigana": "しこうさくごのかくにんをおねがいします",
-          "romaji": "shikou sakugo no kakunin o onegaishimasu.",
-          "english": "Confirming Trial and error, please.",
-          "audioText": "試行錯誤の確認をお願いします",
+          "prompt": "試行錯誤の確認です",
+          "furigana": "しこうさくごのかくにんです",
+          "romaji": "shikou sakugo no kakunin desu.",
+          "english": "It is Confirming Trial and error.",
+          "audioText": "試行錯誤の確認です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "試行錯誤の確認",
             "です",
-            "お願いします"
+            "これ",
+            "ではありません",
+            "試行錯誤の確認"
           ],
           "dictateSolution": [
             "試行錯誤の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "試行錯誤の確認をお願いします"
+          "correctAnswer": "試行錯誤の確認です"
         },
         {
           "id": "u25_l8_7",
@@ -1776,10 +1768,10 @@ export const unit25: DojoUnit = {
           "english": "Confirming Putting cart before horse",
           "audioText": "ほんまつてんとうのかくにん",
           "options": [
-            "Confirming Enduring hardships for future triumph",
-            "Trial and error",
-            "Confirming Putting cart before horse",
-            "Confirming Fast as lightning"
+            "Confirming With one voice / unanimously",
+            "Confirming Adapting flexibly to the situation",
+            "Confirming Adapting flexibly to the situation",
+            "Confirming Putting cart before horse"
           ],
           "correctAnswer": "Confirming Putting cart before horse"
         },
@@ -1792,34 +1784,35 @@ export const unit25: DojoUnit = {
           "english": "Build 'Confirming Putting cart before horse'",
           "audioText": "ほんまつてんとうのかくにん",
           "tileBank": [
-            "と",
-            "て",
-            "ん",
-            "つ",
             "ほ",
-            "ま",
             "ん",
-            "う"
+            "て",
+            "ま",
+            "と",
+            "つ",
+            "う",
+            "ん"
           ],
           "correctAnswer": "ほんまつてんとうのかくにん"
         },
         {
           "id": "u25_l9_3",
           "type": "cloze",
-          "prompt": "私は異口同音の確認がすきです",
-          "furigana": "わたしはいくどうおんのかくにんがすきです",
-          "romaji": "Watashi wa iku douon no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming With one voice / unanimously.",
-          "audioText": "異口同音の確認",
-          "clozeSentence": "これは異口同音の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な異口同音の確認です。",
+          "furigana": "これはいちばんたいせつないくどうおんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na iku douon no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming With one voice / unanimously.",
+          "audioText": "これは異口同音の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な異口同音の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l9_4",
@@ -1830,11 +1823,11 @@ export const unit25: DojoUnit = {
           "english": "This is Confirming With one voice / unanimously.",
           "audioText": "これは異口同音の確認です",
           "scrambleTokens": [
-            "ではありません",
             "それ",
+            "ではありません",
             "これは",
-            "異口同音の確認",
-            "です"
+            "です",
+            "異口同音の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1863,24 +1856,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l9_6",
           "type": "dictate",
-          "prompt": "日進月歩の確認をお願いします",
-          "furigana": "にっしんげっぽのかくにんをおねがいします",
-          "romaji": "nisshin geppo no kakunin o onegaishimasu.",
-          "english": "Confirming Steady rapid progress, please.",
-          "audioText": "日進月歩の確認をお願いします",
+          "prompt": "日進月歩の確認です",
+          "furigana": "にっしんげっぽのかくにんです",
+          "romaji": "nisshin geppo no kakunin desu.",
+          "english": "It is Confirming Steady rapid progress.",
+          "audioText": "日進月歩の確認です",
           "dictateTokens": [
-            "お願いします",
+            "これ",
             "です",
-            "を",
-            "日進月歩の確認",
-            "ありがとう"
+            "ではありません",
+            "日進月歩の確認"
           ],
           "dictateSolution": [
             "日進月歩の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "日進月歩の確認をお願いします"
+          "correctAnswer": "日進月歩の確認です"
         },
         {
           "id": "u25_l9_7",
@@ -1995,9 +1986,9 @@ export const unit25: DojoUnit = {
           "audioText": "じきゅうじそくのかくにん",
           "options": [
             "Confirming Self-sufficiency",
-            "Trial and error",
-            "Confirming Steady rapid progress",
-            "Confirming Enduring hardships for future triumph"
+            "Confirming Miraculous revival from near defeat",
+            "Diligently honing skills together",
+            "Self-sufficiency"
           ],
           "correctAnswer": "Confirming Self-sufficiency"
         },
@@ -2011,33 +2002,34 @@ export const unit25: DojoUnit = {
           "audioText": "じきゅうじそくのかくにん",
           "tileBank": [
             "く",
-            "じ",
-            "の",
-            "う",
-            "そ",
-            "じ",
             "き",
-            "ゅ"
+            "う",
+            "の",
+            "じ",
+            "ゅ",
+            "そ",
+            "じ"
           ],
           "correctAnswer": "じきゅうじそくのかくにん"
         },
         {
           "id": "u25_l10_3",
           "type": "cloze",
-          "prompt": "私は大同小異の確認がすきです",
-          "furigana": "わたしはだいどうしょういのかくにんがすきです",
-          "romaji": "Watashi wa daidou shoui no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Substantially identical with minor differences.",
-          "audioText": "大同小異の確認",
-          "clozeSentence": "これは大同小異の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な大同小異の確認です。",
+          "furigana": "これはいちばんたいせつなだいどうしょういのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na daidou shoui no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Substantially identical with minor differences.",
+          "audioText": "これは大同小異の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な大同小異の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l10_4",
@@ -2048,11 +2040,11 @@ export const unit25: DojoUnit = {
           "english": "This is Confirming Substantially identical with minor differences.",
           "audioText": "これは大同小異の確認です",
           "scrambleTokens": [
-            "それ",
             "これは",
+            "それ",
             "大同小異の確認",
-            "ではありません",
-            "です"
+            "です",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2081,24 +2073,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l10_6",
           "type": "dictate",
-          "prompt": "電光石火の確認をお願いします",
-          "furigana": "でんこうせっかのかくにんをおねがいします",
-          "romaji": "denkou sekka no kakunin o onegaishimasu.",
-          "english": "Confirming Fast as lightning, please.",
-          "audioText": "電光石火の確認をお願いします",
+          "prompt": "電光石火の確認です",
+          "furigana": "でんこうせっかのかくにんです",
+          "romaji": "denkou sekka no kakunin desu.",
+          "english": "It is Confirming Fast as lightning.",
+          "audioText": "電光石火の確認です",
           "dictateTokens": [
-            "です",
-            "お願いします",
-            "ありがとう",
+            "ではありません",
             "電光石火の確認",
-            "を"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "電光石火の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "電光石火の確認をお願いします"
+          "correctAnswer": "電光石火の確認です"
         },
         {
           "id": "u25_l10_7",
@@ -2212,9 +2202,9 @@ export const unit25: DojoUnit = {
           "english": "Confirming Once in a lifetime encounter",
           "audioText": "いちごいちえのかくにん",
           "options": [
+            "Confirming Learning wisdom from the past",
             "Confirming Once in a lifetime encounter",
-            "Confirming Enduring hardships for future triumph",
-            "Self-sufficiency",
+            "Learning wisdom from the past",
             "Confirming Tacit mutual understanding"
           ],
           "correctAnswer": "Confirming Once in a lifetime encounter"
@@ -2228,34 +2218,35 @@ export const unit25: DojoUnit = {
           "english": "Build 'Confirming Once in a lifetime encounter'",
           "audioText": "いちごいちえのかくにん",
           "tileBank": [
+            "か",
+            "い",
+            "ち",
+            "の",
+            "ご",
             "い",
             "え",
-            "ち",
-            "い",
-            "か",
-            "ち",
-            "ご",
-            "の"
+            "ち"
           ],
           "correctAnswer": "いちごいちえのかくにん"
         },
         {
           "id": "u25_l11_3",
           "type": "cloze",
-          "prompt": "私は以心伝心の確認がすきです",
-          "furigana": "わたしはいしんでんしんのかくにんがすきです",
-          "romaji": "Watashi wa ishin denshin no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Tacit mutual understanding.",
-          "audioText": "以心伝心の確認",
-          "clozeSentence": "これは以心伝心の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な以心伝心の確認です。",
+          "furigana": "これはいちばんたいせつないしんでんしんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ishin denshin no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Tacit mutual understanding.",
+          "audioText": "これは以心伝心の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な以心伝心の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l11_4",
@@ -2266,11 +2257,11 @@ export const unit25: DojoUnit = {
           "english": "This is Confirming Tacit mutual understanding.",
           "audioText": "これは以心伝心の確認です",
           "scrambleTokens": [
+            "です",
             "ではありません",
-            "これは",
-            "それ",
             "以心伝心の確認",
-            "です"
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2299,24 +2290,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l11_6",
           "type": "dictate",
-          "prompt": "十人十色の確認をお願いします",
-          "furigana": "じゅうにんといろのかくにんをおねがいします",
-          "romaji": "juunin toiro no kakunin o onegaishimasu.",
-          "english": "Confirming Ten people, ten colors (each unique), please.",
-          "audioText": "十人十色の確認をお願いします",
+          "prompt": "十人十色の確認です",
+          "furigana": "じゅうにんといろのかくにんです",
+          "romaji": "juunin toiro no kakunin desu.",
+          "english": "It is Confirming Ten people, ten colors (each unique).",
+          "audioText": "十人十色の確認です",
           "dictateTokens": [
+            "ではありません",
+            "これ",
             "です",
-            "ありがとう",
-            "お願いします",
-            "を",
             "十人十色の確認"
           ],
           "dictateSolution": [
             "十人十色の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "十人十色の確認をお願いします"
+          "correctAnswer": "十人十色の確認です"
         },
         {
           "id": "u25_l11_7",
@@ -2430,10 +2419,10 @@ export const unit25: DojoUnit = {
           "english": "Confirming Diligently honing skills together",
           "audioText": "せっさたくまのかくにん",
           "options": [
-            "Once in a lifetime encounter",
-            "Confirming With one voice / unanimously",
+            "Confirming Adapting flexibly to the situation",
             "Confirming Miraculous revival from near defeat",
-            "Confirming Diligently honing skills together"
+            "Confirming Diligently honing skills together",
+            "Confirming Ten people, ten colors (each unique)"
           ],
           "correctAnswer": "Confirming Diligently honing skills together"
         },
@@ -2446,26 +2435,26 @@ export const unit25: DojoUnit = {
           "english": "Build 'Confirming Diligently honing skills together'",
           "audioText": "せっさたくまのかくにん",
           "tileBank": [
-            "か",
-            "ま",
-            "く",
+            "さ",
+            "っ",
             "の",
             "た",
-            "せ",
-            "さ",
-            "っ"
+            "く",
+            "ま",
+            "か",
+            "せ"
           ],
           "correctAnswer": "せっさたくまのかくにん"
         },
         {
           "id": "u25_l12_3",
           "type": "cloze",
-          "prompt": "私は臨機応変の確認がすきです",
-          "furigana": "わたしはりんきおうへんのかくにんがすきです",
-          "romaji": "Watashi wa rinki ouhen no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Adapting flexibly to the situation.",
-          "audioText": "臨機応変の確認",
-          "clozeSentence": "これは臨機応変の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な臨機応変の確認です。",
+          "furigana": "これはいちばんたいせつなりんきおうへんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na rinki ouhen no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Adapting flexibly to the situation.",
+          "audioText": "これは臨機応変の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な臨機応変の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2473,7 +2462,8 @@ export const unit25: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l12_4",
@@ -2484,11 +2474,11 @@ export const unit25: DojoUnit = {
           "english": "This is Confirming Adapting flexibly to the situation.",
           "audioText": "これは臨機応変の確認です",
           "scrambleTokens": [
-            "それ",
-            "臨機応変の確認",
             "ではありません",
+            "です",
+            "臨機応変の確認",
             "これは",
-            "です"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2517,24 +2507,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l12_6",
           "type": "dictate",
-          "prompt": "臥薪嘗胆の確認をお願いします",
-          "furigana": "がしんしょうたんのかくにんをおねがいします",
-          "romaji": "gashin shoutan no kakunin o onegaishimasu.",
-          "english": "Confirming Enduring hardships for future triumph, please.",
-          "audioText": "臥薪嘗胆の確認をお願いします",
+          "prompt": "臥薪嘗胆の確認です",
+          "furigana": "がしんしょうたんのかくにんです",
+          "romaji": "gashin shoutan no kakunin desu.",
+          "english": "It is Confirming Enduring hardships for future triumph.",
+          "audioText": "臥薪嘗胆の確認です",
           "dictateTokens": [
-            "を",
-            "お願いします",
+            "臥薪嘗胆の確認",
+            "ではありません",
             "です",
-            "ありがとう",
-            "臥薪嘗胆の確認"
+            "これ"
           ],
           "dictateSolution": [
             "臥薪嘗胆の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "臥薪嘗胆の確認をお願いします"
+          "correctAnswer": "臥薪嘗胆の確認です"
         },
         {
           "id": "u25_l12_7",
@@ -2642,10 +2630,10 @@ export const unit25: DojoUnit = {
           "english": "Once in a lifetime encounter",
           "audioText": "いちごいちえ",
           "options": [
-            "Enduring hardships for future triumph",
-            "Confirming Ten people, ten colors (each unique)",
             "Confirming Adapting flexibly to the situation",
-            "Once in a lifetime encounter"
+            "Self-sufficiency",
+            "Once in a lifetime encounter",
+            "Enduring hardships for future triumph"
           ],
           "correctAnswer": "Once in a lifetime encounter"
         },
@@ -2658,34 +2646,35 @@ export const unit25: DojoUnit = {
           "english": "Build 'Once in a lifetime encounter'",
           "audioText": "いちごいちえ",
           "tileBank": [
-            "そ",
+            "ご",
+            "ぬ",
+            "ち",
+            "ち",
+            "い",
+            "か",
             "え",
-            "い",
-            "と",
-            "ち",
-            "い",
-            "ち",
-            "ご"
+            "い"
           ],
           "correctAnswer": "いちごいちえ"
         },
         {
           "id": "u25_l13_3",
           "type": "cloze",
-          "prompt": "私は以心伝心がすきです",
-          "furigana": "わたしはいしんでんしんがすきです",
-          "romaji": "Watashi wa ishin denshin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Tacit mutual understanding.",
-          "audioText": "以心伝心",
-          "clozeSentence": "これは以心伝心 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な以心伝心です。",
+          "furigana": "これはいちばんたいせつないしんでんしんです。",
+          "romaji": "Kore wa ichiban taisetsu na ishin denshin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Tacit mutual understanding.",
+          "audioText": "これは以心伝心です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な以心伝心です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l13_4",
@@ -2696,11 +2685,11 @@ export const unit25: DojoUnit = {
           "english": "This is Tacit mutual understanding.",
           "audioText": "これは以心伝心です",
           "scrambleTokens": [
+            "です",
             "以心伝心",
             "これは",
-            "それ",
-            "です",
-            "ではありません"
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2729,24 +2718,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l13_6",
           "type": "dictate",
-          "prompt": "十人十色をお願いします",
-          "furigana": "じゅうにんといろをおねがいします",
-          "romaji": "juunin toiro o onegaishimasu.",
-          "english": "Ten people, ten colors (each unique), please.",
-          "audioText": "十人十色をお願いします",
+          "prompt": "十人十色です",
+          "furigana": "じゅうにんといろです",
+          "romaji": "juunin toiro desu.",
+          "english": "It is Ten people, ten colors (each unique).",
+          "audioText": "十人十色です",
           "dictateTokens": [
-            "お願いします",
-            "を",
             "十人十色",
-            "ありがとう",
-            "です"
+            "です",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "十人十色",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "十人十色をお願いします"
+          "correctAnswer": "十人十色です"
         },
         {
           "id": "u25_l13_7",
@@ -2854,10 +2841,10 @@ export const unit25: DojoUnit = {
           "english": "Diligently honing skills together",
           "audioText": "せっさたくま",
           "options": [
-            "Diligently honing skills together",
-            "Confirming Ten people, ten colors (each unique)",
-            "Miraculous revival from near defeat",
-            "Enduring hardships for future triumph"
+            "Adapting flexibly to the situation",
+            "Once in a lifetime encounter",
+            "Confirming Once in a lifetime encounter",
+            "Diligently honing skills together"
           ],
           "correctAnswer": "Diligently honing skills together"
         },
@@ -2870,13 +2857,13 @@ export const unit25: DojoUnit = {
           "english": "Build 'Diligently honing skills together'",
           "audioText": "せっさたくま",
           "tileBank": [
-            "く",
-            "る",
-            "さ",
-            "か",
-            "せ",
-            "っ",
             "た",
+            "ち",
+            "っ",
+            "く",
+            "さ",
+            "こ",
+            "せ",
             "ま"
           ],
           "correctAnswer": "せっさたくま"
@@ -2884,20 +2871,21 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l14_3",
           "type": "cloze",
-          "prompt": "私は臨機応変がすきです",
-          "furigana": "わたしはりんきおうへんがすきです",
-          "romaji": "Watashi wa rinki ouhen ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Adapting flexibly to the situation.",
-          "audioText": "臨機応変",
-          "clozeSentence": "これは臨機応変 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な臨機応変です。",
+          "furigana": "これはいちばんたいせつなりんきおうへんです。",
+          "romaji": "Kore wa ichiban taisetsu na rinki ouhen desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Adapting flexibly to the situation.",
+          "audioText": "これは臨機応変です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な臨機応変です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l14_4",
@@ -2908,11 +2896,11 @@ export const unit25: DojoUnit = {
           "english": "This is Adapting flexibly to the situation.",
           "audioText": "これは臨機応変です",
           "scrambleTokens": [
-            "それ",
             "これは",
             "です",
             "臨機応変",
-            "ではありません"
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2941,24 +2929,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l14_6",
           "type": "dictate",
-          "prompt": "臥薪嘗胆をお願いします",
-          "furigana": "がしんしょうたんをおねがいします",
-          "romaji": "gashin shoutan o onegaishimasu.",
-          "english": "Enduring hardships for future triumph, please.",
-          "audioText": "臥薪嘗胆をお願いします",
+          "prompt": "臥薪嘗胆です",
+          "furigana": "がしんしょうたんです",
+          "romaji": "gashin shoutan desu.",
+          "english": "It is Enduring hardships for future triumph.",
+          "audioText": "臥薪嘗胆です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "お願いします",
+            "これ",
+            "臥薪嘗胆",
             "です",
-            "臥薪嘗胆"
+            "ではありません"
           ],
           "dictateSolution": [
             "臥薪嘗胆",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "臥薪嘗胆をお願いします"
+          "correctAnswer": "臥薪嘗胆です"
         },
         {
           "id": "u25_l14_7",
@@ -3066,10 +3052,10 @@ export const unit25: DojoUnit = {
           "english": "Learning wisdom from the past",
           "audioText": "おんこちしん",
           "options": [
-            "Confirming Adapting flexibly to the situation",
+            "Putting cart before horse",
+            "Confirming Putting cart before horse",
             "Learning wisdom from the past",
-            "Adapting flexibly to the situation",
-            "Confirming Enduring hardships for future triumph"
+            "Fast as lightning"
           ],
           "correctAnswer": "Learning wisdom from the past"
         },
@@ -3082,34 +3068,35 @@ export const unit25: DojoUnit = {
           "english": "Build 'Learning wisdom from the past'",
           "audioText": "おんこちしん",
           "tileBank": [
-            "ろ",
-            "ん",
             "ち",
-            "へ",
-            "お",
+            "ん",
+            "き",
             "こ",
             "し",
-            "ん"
+            "ん",
+            "を",
+            "お"
           ],
           "correctAnswer": "おんこちしん"
         },
         {
           "id": "u25_l15_3",
           "type": "cloze",
-          "prompt": "私は起死回生がすきです",
-          "furigana": "わたしはきしかいせいがすきです",
-          "romaji": "Watashi wa kishi kaisei ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Miraculous revival from near defeat.",
-          "audioText": "起死回生",
-          "clozeSentence": "これは起死回生 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な起死回生です。",
+          "furigana": "これはいちばんたいせつなきしかいせいです。",
+          "romaji": "Kore wa ichiban taisetsu na kishi kaisei desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Miraculous revival from near defeat.",
+          "audioText": "これは起死回生です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な起死回生です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u25_l15_4",
@@ -3120,11 +3107,11 @@ export const unit25: DojoUnit = {
           "english": "This is Miraculous revival from near defeat.",
           "audioText": "これは起死回生です",
           "scrambleTokens": [
-            "それ",
             "です",
-            "これは",
+            "それ",
+            "起死回生",
             "ではありません",
-            "起死回生"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -3153,24 +3140,22 @@ export const unit25: DojoUnit = {
         {
           "id": "u25_l15_6",
           "type": "dictate",
-          "prompt": "試行錯誤をお願いします",
-          "furigana": "しこうさくごをおねがいします",
-          "romaji": "shikou sakugo o onegaishimasu.",
-          "english": "Trial and error, please.",
-          "audioText": "試行錯誤をお願いします",
+          "prompt": "試行錯誤です",
+          "furigana": "しこうさくごです",
+          "romaji": "shikou sakugo desu.",
+          "english": "It is Trial and error.",
+          "audioText": "試行錯誤です",
           "dictateTokens": [
-            "お願いします",
-            "を",
-            "ありがとう",
+            "ではありません",
+            "これ",
             "試行錯誤",
             "です"
           ],
           "dictateSolution": [
             "試行錯誤",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "試行錯誤をお願いします"
+          "correctAnswer": "試行錯誤です"
         },
         {
           "id": "u25_l15_7",
@@ -3255,10 +3240,10 @@ export const unit25: DojoUnit = {
         "english": "Once in a lifetime encounter",
         "audioText": "いちごいちえ",
         "options": [
-          "Confirming Tacit mutual understanding",
           "Confirming Trial and error",
-          "Confirming Learning wisdom from the past",
-          "Once in a lifetime encounter"
+          "Once in a lifetime encounter",
+          "Confirming Putting cart before horse",
+          "Miraculous revival from near defeat"
         ],
         "correctAnswer": "Once in a lifetime encounter"
       },
@@ -3272,12 +3257,12 @@ export const unit25: DojoUnit = {
         "audioText": "いちごいちえ",
         "tileBank": [
           "い",
-          "い",
           "ご",
-          "す",
+          "い",
           "え",
-          "ぬ",
+          "を",
           "ち",
+          "あ",
           "ち"
         ],
         "correctAnswer": "いちごいちえ"
@@ -3291,10 +3276,10 @@ export const unit25: DojoUnit = {
         "english": "Learning wisdom from the past",
         "audioText": "おんこちしん",
         "options": [
-          "Ten people, ten colors (each unique)",
-          "Substantially identical with minor differences",
+          "Self-sufficiency",
+          "Putting cart before horse",
           "Learning wisdom from the past",
-          "Confirming Enduring hardships for future triumph"
+          "Confirming Adapting flexibly to the situation"
         ],
         "correctAnswer": "Learning wisdom from the past"
       },
@@ -3307,14 +3292,14 @@ export const unit25: DojoUnit = {
         "english": "Build 'Learning wisdom from the past'",
         "audioText": "おんこちしん",
         "tileBank": [
+          "お",
+          "ん",
           "ん",
           "ち",
-          "ん",
           "こ",
-          "お",
-          "を",
-          "け",
-          "し"
+          "ら",
+          "し",
+          "な"
         ],
         "correctAnswer": "おんこちしん"
       },
@@ -3327,10 +3312,10 @@ export const unit25: DojoUnit = {
         "english": "Self-sufficiency",
         "audioText": "じきゅうじそく",
         "options": [
-          "Confirming Once in a lifetime encounter",
-          "Confirming Learning wisdom from the past",
+          "Substantially identical with minor differences",
+          "Self-sufficiency",
           "Confirming Miraculous revival from near defeat",
-          "Self-sufficiency"
+          "Steady rapid progress"
         ],
         "correctAnswer": "Self-sufficiency"
       },
@@ -3343,14 +3328,14 @@ export const unit25: DojoUnit = {
         "english": "Build 'Self-sufficiency'",
         "audioText": "じきゅうじそく",
         "tileBank": [
-          "く",
           "じ",
           "う",
-          "あ",
           "そ",
-          "ゅ",
           "き",
-          "じ"
+          "ゅ",
+          "く",
+          "じ",
+          "に"
         ],
         "correctAnswer": "じきゅうじそく"
       },
@@ -3363,10 +3348,10 @@ export const unit25: DojoUnit = {
         "english": "Confirming Diligently honing skills together",
         "audioText": "せっさたくまのかくにん",
         "options": [
-          "Confirming Enduring hardships for future triumph",
+          "Diligently honing skills together",
           "Confirming Diligently honing skills together",
-          "Miraculous revival from near defeat",
-          "Fast as lightning"
+          "Confirming Steady rapid progress",
+          "Confirming With one voice / unanimously"
         ],
         "correctAnswer": "Confirming Diligently honing skills together"
       },
@@ -3379,14 +3364,14 @@ export const unit25: DojoUnit = {
         "english": "Build 'Confirming Diligently honing skills together'",
         "audioText": "せっさたくまのかくにん",
         "tileBank": [
-          "く",
-          "せ",
-          "ま",
-          "か",
-          "の",
+          "さ",
           "た",
+          "か",
           "っ",
-          "さ"
+          "ま",
+          "の",
+          "せ",
+          "く"
         ],
         "correctAnswer": "せっさたくまのかくにん"
       },
@@ -3399,10 +3384,10 @@ export const unit25: DojoUnit = {
         "english": "Confirming Putting cart before horse",
         "audioText": "ほんまつてんとうのかくにん",
         "options": [
-          "Confirming Enduring hardships for future triumph",
-          "Trial and error",
-          "Confirming Putting cart before horse",
-          "Confirming Fast as lightning"
+          "Confirming With one voice / unanimously",
+          "Confirming Adapting flexibly to the situation",
+          "Confirming Adapting flexibly to the situation",
+          "Confirming Putting cart before horse"
         ],
         "correctAnswer": "Confirming Putting cart before horse"
       },
@@ -3415,14 +3400,14 @@ export const unit25: DojoUnit = {
         "english": "Build 'Confirming Putting cart before horse'",
         "audioText": "ほんまつてんとうのかくにん",
         "tileBank": [
-          "と",
-          "て",
-          "ん",
-          "つ",
           "ほ",
-          "ま",
           "ん",
-          "う"
+          "て",
+          "ま",
+          "と",
+          "つ",
+          "う",
+          "ん"
         ],
         "correctAnswer": "ほんまつてんとうのかくにん"
       },
@@ -3435,9 +3420,9 @@ export const unit25: DojoUnit = {
         "english": "Confirming Once in a lifetime encounter",
         "audioText": "いちごいちえのかくにん",
         "options": [
+          "Confirming Learning wisdom from the past",
           "Confirming Once in a lifetime encounter",
-          "Confirming Enduring hardships for future triumph",
-          "Self-sufficiency",
+          "Learning wisdom from the past",
           "Confirming Tacit mutual understanding"
         ],
         "correctAnswer": "Confirming Once in a lifetime encounter"
@@ -3451,14 +3436,14 @@ export const unit25: DojoUnit = {
         "english": "Build 'Confirming Once in a lifetime encounter'",
         "audioText": "いちごいちえのかくにん",
         "tileBank": [
+          "か",
+          "い",
+          "ち",
+          "の",
+          "ご",
           "い",
           "え",
-          "ち",
-          "い",
-          "か",
-          "ち",
-          "ご",
-          "の"
+          "ち"
         ],
         "correctAnswer": "いちごいちえのかくにん"
       }

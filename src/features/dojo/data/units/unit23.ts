@@ -54,10 +54,10 @@ export const unit23: DojoUnit = {
           "english": "Artificial Intelligence (AI)",
           "audioText": "じんこうちのう",
           "options": [
+            "Sustainable",
             "Artificial Intelligence (AI)",
-            "Automation",
-            "Confirming Automation",
-            "Confirming Adoption / implementation"
+            "Confirming Data leak / security breach",
+            "Transformation / reform"
           ],
           "correctAnswer": "Artificial Intelligence (AI)"
         },
@@ -70,34 +70,35 @@ export const unit23: DojoUnit = {
           "english": "Build 'Automation'",
           "audioText": "じどうか",
           "tileBank": [
-            "そ",
-            "は",
+            "ゆ",
             "か",
-            "じ",
+            "ま",
+            "て",
             "ど",
-            "ん",
+            "じ",
             "う",
-            "を"
+            "ひ"
           ],
           "correctAnswer": "じどうか"
         },
         {
           "id": "u23_l1_3",
           "type": "cloze",
-          "prompt": "私は自動化がすきです",
-          "furigana": "わたしはじどうかがすきです",
-          "romaji": "Watashi wa jidouka ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Automation.",
-          "audioText": "自動化",
-          "clozeSentence": "これは自動化 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な自動化です。",
+          "furigana": "これはいちばんたいせつなじどうかです。",
+          "romaji": "Kore wa ichiban taisetsu na jidouka desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Automation.",
+          "audioText": "これは自動化です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な自動化です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l1_4",
@@ -108,11 +109,11 @@ export const unit23: DojoUnit = {
           "english": "This is Automation.",
           "audioText": "これは自動化です",
           "scrambleTokens": [
-            "ではありません",
-            "それ",
             "自動化",
+            "ではありません",
+            "です",
             "これは",
-            "です"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -141,24 +142,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l1_6",
           "type": "dictate",
-          "prompt": "高齢化をお願いします",
-          "furigana": "こうれいかをおねがいします",
-          "romaji": "koureika o onegaishimasu.",
-          "english": "Population aging, please.",
-          "audioText": "高齢化をお願いします",
+          "prompt": "高齢化です",
+          "furigana": "こうれいかです",
+          "romaji": "koureika desu.",
+          "english": "It is Population aging.",
+          "audioText": "高齢化です",
           "dictateTokens": [
+            "これ",
             "です",
-            "ありがとう",
-            "高齢化",
-            "お願いします",
-            "を"
+            "ではありません",
+            "高齢化"
           ],
           "dictateSolution": [
             "高齢化",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "高齢化をお願いします"
+          "correctAnswer": "高齢化です"
         },
         {
           "id": "u23_l1_7",
@@ -263,10 +262,10 @@ export const unit23: DojoUnit = {
           "english": "Declining birthrate",
           "audioText": "しょうしか",
           "options": [
-            "Adoption / implementation",
-            "Confirming Automation",
-            "Innovation",
-            "Declining birthrate"
+            "Declining birthrate",
+            "Ethics / moral standards",
+            "Confirming Artificial Intelligence (AI)",
+            "Adoption / implementation"
           ],
           "correctAnswer": "Declining birthrate"
         },
@@ -279,34 +278,35 @@ export const unit23: DojoUnit = {
           "english": "Build 'Declining birthrate'",
           "audioText": "しょうしか",
           "tileBank": [
-            "ょ",
-            "つ",
-            "う",
-            "し",
-            "る",
+            "の",
             "か",
-            "き",
-            "し"
+            "え",
+            "し",
+            "つ",
+            "し",
+            "う",
+            "ょ"
           ],
           "correctAnswer": "しょうしか"
         },
         {
           "id": "u23_l2_3",
           "type": "cloze",
-          "prompt": "私は革新がすきです",
-          "furigana": "わたしはかくしんがすきです",
-          "romaji": "Watashi wa kakushin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Innovation.",
-          "audioText": "革新",
-          "clozeSentence": "これは革新 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な革新です。",
+          "furigana": "これはいちばんたいせつなかくしんです。",
+          "romaji": "Kore wa ichiban taisetsu na kakushin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Innovation.",
+          "audioText": "これは革新です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な革新です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l2_4",
@@ -317,11 +317,11 @@ export const unit23: DojoUnit = {
           "english": "This is Innovation.",
           "audioText": "これは革新です",
           "scrambleTokens": [
-            "ではありません",
-            "それ",
             "です",
-            "革新",
-            "これは"
+            "ではありません",
+            "これは",
+            "それ",
+            "革新"
           ],
           "scrambleSolution": [
             "これは",
@@ -350,24 +350,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l2_6",
           "type": "dictate",
-          "prompt": "持続可能をお願いします",
-          "furigana": "じぞくかのうをおねがいします",
-          "romaji": "jizoku kanou o onegaishimasu.",
-          "english": "Sustainable, please.",
-          "audioText": "持続可能をお願いします",
+          "prompt": "持続可能です",
+          "furigana": "じぞくかのうです",
+          "romaji": "jizoku kanou desu.",
+          "english": "It is Sustainable.",
+          "audioText": "持続可能です",
           "dictateTokens": [
-            "持続可能",
+            "これ",
             "です",
-            "を",
-            "ありがとう",
-            "お願いします"
+            "持続可能",
+            "ではありません"
           ],
           "dictateSolution": [
             "持続可能",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "持続可能をお願いします"
+          "correctAnswer": "持続可能です"
         },
         {
           "id": "u23_l2_7",
@@ -470,9 +468,9 @@ export const unit23: DojoUnit = {
           "english": "Diffusion / spread",
           "audioText": "ふきゅう",
           "options": [
-            "Confirming Artificial Intelligence (AI)",
-            "Challenge / issue to solve",
             "Diffusion / spread",
+            "Adoption / implementation",
+            "Confirming Data leak / security breach",
             "Confirming Artificial Intelligence (AI)"
           ],
           "correctAnswer": "Diffusion / spread"
@@ -486,34 +484,35 @@ export const unit23: DojoUnit = {
           "english": "Build 'Diffusion / spread'",
           "audioText": "ふきゅう",
           "tileBank": [
-            "ゅ",
-            "し",
             "き",
+            "せ",
             "ふ",
-            "う",
-            "ね",
-            "そ",
-            "ぬ"
+            "ゆ",
+            "あ",
+            "さ",
+            "ゅ",
+            "う"
           ],
           "correctAnswer": "ふきゅう"
         },
         {
           "id": "u23_l3_3",
           "type": "cloze",
-          "prompt": "私は開発がすきです",
-          "furigana": "わたしはかいはつがすきです",
-          "romaji": "Watashi wa kaihatsu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Development / R&D.",
-          "audioText": "開発",
-          "clozeSentence": "これは開発 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な開発です。",
+          "furigana": "これはいちばんたいせつなかいはつです。",
+          "romaji": "Kore wa ichiban taisetsu na kaihatsu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Development / R&D.",
+          "audioText": "これは開発です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な開発です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l3_4",
@@ -524,11 +523,11 @@ export const unit23: DojoUnit = {
           "english": "This is Development / R&D.",
           "audioText": "これは開発です",
           "scrambleTokens": [
-            "それ",
             "ではありません",
             "です",
-            "これは",
-            "開発"
+            "それ",
+            "開発",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -557,24 +556,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l3_6",
           "type": "dictate",
-          "prompt": "効率化をお願いします",
-          "furigana": "こうりつかをおねがいします",
-          "romaji": "kouritsuka o onegaishimasu.",
-          "english": "Streamlining / efficiency, please.",
-          "audioText": "効率化をお願いします",
+          "prompt": "効率化です",
+          "furigana": "こうりつかです",
+          "romaji": "kouritsuka desu.",
+          "english": "It is Streamlining / efficiency.",
+          "audioText": "効率化です",
           "dictateTokens": [
-            "効率化",
             "です",
-            "お願いします",
-            "を",
-            "ありがとう"
+            "効率化",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "効率化",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "効率化をお願いします"
+          "correctAnswer": "効率化です"
         },
         {
           "id": "u23_l3_7",
@@ -678,10 +675,10 @@ export const unit23: DojoUnit = {
           "english": "Adoption / implementation",
           "audioText": "どうにゅう",
           "options": [
-            "Confirming Streamlining / efficiency",
-            "Declining birthrate",
+            "Transformation / reform",
+            "Sustainable",
             "Adoption / implementation",
-            "Innovation"
+            "Confirming Ethics / moral standards"
           ],
           "correctAnswer": "Adoption / implementation"
         },
@@ -694,26 +691,26 @@ export const unit23: DojoUnit = {
           "english": "Build 'Adoption / implementation'",
           "audioText": "どうにゅう",
           "tileBank": [
-            "に",
-            "ひ",
             "う",
-            "へ",
-            "を",
-            "ど",
+            "お",
+            "う",
+            "き",
             "ゅ",
-            "う"
+            "ど",
+            "を",
+            "に"
           ],
           "correctAnswer": "どうにゅう"
         },
         {
           "id": "u23_l4_3",
           "type": "cloze",
-          "prompt": "私は課題がすきです",
-          "furigana": "わたしはかだいがすきです",
-          "romaji": "Watashi wa kadai ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Challenge / issue to solve.",
-          "audioText": "課題",
-          "clozeSentence": "これは課題 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な課題です。",
+          "furigana": "これはいちばんたいせつなかだいです。",
+          "romaji": "Kore wa ichiban taisetsu na kadai desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Challenge / issue to solve.",
+          "audioText": "これは課題です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な課題です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -721,7 +718,8 @@ export const unit23: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l4_4",
@@ -732,11 +730,11 @@ export const unit23: DojoUnit = {
           "english": "This is Challenge / issue to solve.",
           "audioText": "これは課題です",
           "scrambleTokens": [
+            "です",
             "ではありません",
-            "課題",
             "これは",
-            "それ",
-            "です"
+            "課題",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -765,24 +763,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l4_6",
           "type": "dictate",
-          "prompt": "情報漏洩をお願いします",
-          "furigana": "じょうほうろうえいをおねがいします",
-          "romaji": "jouhou rouei o onegaishimasu.",
-          "english": "Data leak / security breach, please.",
-          "audioText": "情報漏洩をお願いします",
+          "prompt": "情報漏洩です",
+          "furigana": "じょうほうろうえいです",
+          "romaji": "jouhou rouei desu.",
+          "english": "It is Data leak / security breach.",
+          "audioText": "情報漏洩です",
           "dictateTokens": [
+            "ではありません",
+            "これ",
             "です",
-            "を",
-            "お願いします",
-            "ありがとう",
             "情報漏洩"
           ],
           "dictateSolution": [
             "情報漏洩",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "情報漏洩をお願いします"
+          "correctAnswer": "情報漏洩です"
         },
         {
           "id": "u23_l4_7",
@@ -885,10 +881,10 @@ export const unit23: DojoUnit = {
           "english": "Ethics / moral standards",
           "audioText": "りんり",
           "options": [
+            "Data leak / security breach",
+            "Confirming Declining birthrate",
             "Ethics / moral standards",
-            "Confirming Sustainable",
-            "Confirming Automation",
-            "Data leak / security breach"
+            "Confirming Population aging"
           ],
           "correctAnswer": "Ethics / moral standards"
         },
@@ -901,34 +897,35 @@ export const unit23: DojoUnit = {
           "english": "Build 'Ethics / moral standards'",
           "audioText": "りんり",
           "tileBank": [
-            "り",
-            "か",
-            "り",
             "ん",
-            "け",
-            "あ",
-            "ら",
-            "ゆ"
+            "り",
+            "そ",
+            "も",
+            "り",
+            "こ",
+            "え",
+            "く"
           ],
           "correctAnswer": "りんり"
         },
         {
           "id": "u23_l5_3",
           "type": "cloze",
-          "prompt": "私は変革がすきです",
-          "furigana": "わたしはへんかくがすきです",
-          "romaji": "Watashi wa henkaku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Transformation / reform.",
-          "audioText": "変革",
-          "clozeSentence": "これは変革 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な変革です。",
+          "furigana": "これはいちばんたいせつなへんかくです。",
+          "romaji": "Kore wa ichiban taisetsu na henkaku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Transformation / reform.",
+          "audioText": "これは変革です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な変革です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l5_4",
@@ -939,11 +936,11 @@ export const unit23: DojoUnit = {
           "english": "This is Transformation / reform.",
           "audioText": "これは変革です",
           "scrambleTokens": [
-            "変革",
-            "ではありません",
-            "これは",
             "それ",
-            "です"
+            "ではありません",
+            "です",
+            "変革",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -972,24 +969,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l5_6",
           "type": "dictate",
-          "prompt": "将来性をお願いします",
-          "furigana": "しょうらいせいをおねがいします",
-          "romaji": "shouraisei o onegaishimasu.",
-          "english": "Future potential / promise, please.",
-          "audioText": "将来性をお願いします",
+          "prompt": "将来性です",
+          "furigana": "しょうらいせいです",
+          "romaji": "shouraisei desu.",
+          "english": "It is Future potential / promise.",
+          "audioText": "将来性です",
           "dictateTokens": [
-            "です",
-            "を",
-            "ありがとう",
+            "ではありません",
             "将来性",
-            "お願いします"
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "将来性",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "将来性をお願いします"
+          "correctAnswer": "将来性です"
         },
         {
           "id": "u23_l5_7",
@@ -1101,10 +1096,10 @@ export const unit23: DojoUnit = {
           "english": "Confirming Artificial Intelligence (AI)",
           "audioText": "じんこうちのうのかくにん",
           "options": [
-            "Development / R&D",
-            "Confirming Artificial Intelligence (AI)",
-            "Streamlining / efficiency",
-            "Confirming Sustainable"
+            "Sustainable",
+            "Confirming Innovation",
+            "Artificial Intelligence (AI)",
+            "Confirming Artificial Intelligence (AI)"
           ],
           "correctAnswer": "Confirming Artificial Intelligence (AI)"
         },
@@ -1117,34 +1112,35 @@ export const unit23: DojoUnit = {
           "english": "Build 'Confirming Artificial Intelligence (AI)'",
           "audioText": "じんこうちのうのかくにん",
           "tileBank": [
+            "の",
+            "ち",
+            "じ",
             "う",
             "ん",
-            "じ",
-            "の",
             "う",
             "の",
-            "こ",
-            "ち"
+            "こ"
           ],
           "correctAnswer": "じんこうちのうのかくにん"
         },
         {
           "id": "u23_l6_3",
           "type": "cloze",
-          "prompt": "私は自動化の確認がすきです",
-          "furigana": "わたしはじどうかのかくにんがすきです",
-          "romaji": "Watashi wa jidouka no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Automation.",
-          "audioText": "自動化の確認",
-          "clozeSentence": "これは自動化の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な自動化の確認です。",
+          "furigana": "これはいちばんたいせつなじどうかのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na jidouka no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Automation.",
+          "audioText": "これは自動化の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な自動化の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l6_4",
@@ -1155,11 +1151,11 @@ export const unit23: DojoUnit = {
           "english": "This is Confirming Automation.",
           "audioText": "これは自動化の確認です",
           "scrambleTokens": [
-            "それ",
-            "自動化の確認",
             "です",
             "ではありません",
-            "これは"
+            "これは",
+            "それ",
+            "自動化の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1188,24 +1184,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l6_6",
           "type": "dictate",
-          "prompt": "高齢化の確認をお願いします",
-          "furigana": "こうれいかのかくにんをおねがいします",
-          "romaji": "koureika no kakunin o onegaishimasu.",
-          "english": "Confirming Population aging, please.",
-          "audioText": "高齢化の確認をお願いします",
+          "prompt": "高齢化の確認です",
+          "furigana": "こうれいかのかくにんです",
+          "romaji": "koureika no kakunin desu.",
+          "english": "It is Confirming Population aging.",
+          "audioText": "高齢化の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "です",
             "高齢化の確認",
-            "お願いします"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "高齢化の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "高齢化の確認をお願いします"
+          "correctAnswer": "高齢化の確認です"
         },
         {
           "id": "u23_l6_7",
@@ -1317,9 +1311,9 @@ export const unit23: DojoUnit = {
           "audioText": "しょうしかのかくにん",
           "options": [
             "Confirming Declining birthrate",
-            "Confirming Sustainable",
-            "Innovation",
-            "Confirming Diffusion / spread"
+            "Confirming Ethics / moral standards",
+            "Confirming Challenge / issue to solve",
+            "Confirming Automation"
           ],
           "correctAnswer": "Confirming Declining birthrate"
         },
@@ -1332,34 +1326,35 @@ export const unit23: DojoUnit = {
           "english": "Build 'Confirming Declining birthrate'",
           "audioText": "しょうしかのかくにん",
           "tileBank": [
-            "し",
-            "の",
-            "か",
             "く",
             "し",
+            "か",
+            "か",
             "う",
-            "ょ",
-            "か"
+            "し",
+            "の",
+            "ょ"
           ],
           "correctAnswer": "しょうしかのかくにん"
         },
         {
           "id": "u23_l7_3",
           "type": "cloze",
-          "prompt": "私は革新の確認がすきです",
-          "furigana": "わたしはかくしんのかくにんがすきです",
-          "romaji": "Watashi wa kakushin no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Innovation.",
-          "audioText": "革新の確認",
-          "clozeSentence": "これは革新の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な革新の確認です。",
+          "furigana": "これはいちばんたいせつなかくしんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kakushin no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Innovation.",
+          "audioText": "これは革新の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な革新の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l7_4",
@@ -1370,11 +1365,11 @@ export const unit23: DojoUnit = {
           "english": "This is Confirming Innovation.",
           "audioText": "これは革新の確認です",
           "scrambleTokens": [
+            "それ",
+            "これは",
             "ではありません",
             "です",
-            "それ",
-            "革新の確認",
-            "これは"
+            "革新の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1403,24 +1398,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l7_6",
           "type": "dictate",
-          "prompt": "持続可能の確認をお願いします",
-          "furigana": "じぞくかのうのかくにんをおねがいします",
-          "romaji": "jizoku kanou no kakunin o onegaishimasu.",
-          "english": "Confirming Sustainable, please.",
-          "audioText": "持続可能の確認をお願いします",
+          "prompt": "持続可能の確認です",
+          "furigana": "じぞくかのうのかくにんです",
+          "romaji": "jizoku kanou no kakunin desu.",
+          "english": "It is Confirming Sustainable.",
+          "audioText": "持続可能の確認です",
           "dictateTokens": [
             "です",
-            "お願いします",
-            "を",
-            "ありがとう",
+            "これ",
+            "ではありません",
             "持続可能の確認"
           ],
           "dictateSolution": [
             "持続可能の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "持続可能の確認をお願いします"
+          "correctAnswer": "持続可能の確認です"
         },
         {
           "id": "u23_l7_7",
@@ -1529,10 +1522,10 @@ export const unit23: DojoUnit = {
           "english": "Confirming Diffusion / spread",
           "audioText": "ふきゅうのかくにん",
           "options": [
-            "Innovation",
+            "Confirming Artificial Intelligence (AI)",
+            "Confirming Population aging",
             "Confirming Diffusion / spread",
-            "Confirming Innovation",
-            "Confirming Transformation / reform"
+            "Confirming Future potential / promise"
           ],
           "correctAnswer": "Confirming Diffusion / spread"
         },
@@ -1545,26 +1538,26 @@ export const unit23: DojoUnit = {
           "english": "Build 'Confirming Diffusion / spread'",
           "audioText": "ふきゅうのかくにん",
           "tileBank": [
+            "に",
             "ゅ",
             "か",
-            "に",
-            "う",
-            "ふ",
             "の",
-            "き",
-            "く"
+            "く",
+            "ふ",
+            "う",
+            "き"
           ],
           "correctAnswer": "ふきゅうのかくにん"
         },
         {
           "id": "u23_l8_3",
           "type": "cloze",
-          "prompt": "私は開発の確認がすきです",
-          "furigana": "わたしはかいはつのかくにんがすきです",
-          "romaji": "Watashi wa kaihatsu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Development / R&D.",
-          "audioText": "開発の確認",
-          "clozeSentence": "これは開発の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な開発の確認です。",
+          "furigana": "これはいちばんたいせつなかいはつのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kaihatsu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Development / R&D.",
+          "audioText": "これは開発の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な開発の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1572,7 +1565,8 @@ export const unit23: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l8_4",
@@ -1583,11 +1577,11 @@ export const unit23: DojoUnit = {
           "english": "This is Confirming Development / R&D.",
           "audioText": "これは開発の確認です",
           "scrambleTokens": [
+            "ではありません",
+            "これは",
             "です",
             "それ",
-            "これは",
-            "開発の確認",
-            "ではありません"
+            "開発の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1616,24 +1610,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l8_6",
           "type": "dictate",
-          "prompt": "効率化の確認をお願いします",
-          "furigana": "こうりつかのかくにんをおねがいします",
-          "romaji": "kouritsuka no kakunin o onegaishimasu.",
-          "english": "Confirming Streamlining / efficiency, please.",
-          "audioText": "効率化の確認をお願いします",
+          "prompt": "効率化の確認です",
+          "furigana": "こうりつかのかくにんです",
+          "romaji": "kouritsuka no kakunin desu.",
+          "english": "It is Confirming Streamlining / efficiency.",
+          "audioText": "効率化の確認です",
           "dictateTokens": [
-            "ありがとう",
             "です",
+            "これ",
             "効率化の確認",
-            "を",
-            "お願いします"
+            "ではありません"
           ],
           "dictateSolution": [
             "効率化の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "効率化の確認をお願いします"
+          "correctAnswer": "効率化の確認です"
         },
         {
           "id": "u23_l8_7",
@@ -1743,10 +1735,10 @@ export const unit23: DojoUnit = {
           "english": "Confirming Adoption / implementation",
           "audioText": "どうにゅうのかくにん",
           "options": [
-            "Future potential / promise",
+            "Confirming Artificial Intelligence (AI)",
             "Confirming Adoption / implementation",
-            "Streamlining / efficiency",
-            "Confirming Ethics / moral standards"
+            "Confirming Innovation",
+            "Declining birthrate"
           ],
           "correctAnswer": "Confirming Adoption / implementation"
         },
@@ -1760,33 +1752,34 @@ export const unit23: DojoUnit = {
           "audioText": "どうにゅうのかくにん",
           "tileBank": [
             "う",
-            "く",
-            "に",
-            "ゅ",
-            "う",
             "か",
             "ど",
-            "の"
+            "う",
+            "に",
+            "の",
+            "ゅ",
+            "く"
           ],
           "correctAnswer": "どうにゅうのかくにん"
         },
         {
           "id": "u23_l9_3",
           "type": "cloze",
-          "prompt": "私は課題の確認がすきです",
-          "furigana": "わたしはかだいのかくにんがすきです",
-          "romaji": "Watashi wa kadai no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Challenge / issue to solve.",
-          "audioText": "課題の確認",
-          "clozeSentence": "これは課題の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な課題の確認です。",
+          "furigana": "これはいちばんたいせつなかだいのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kadai no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Challenge / issue to solve.",
+          "audioText": "これは課題の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な課題の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l9_4",
@@ -1797,11 +1790,11 @@ export const unit23: DojoUnit = {
           "english": "This is Confirming Challenge / issue to solve.",
           "audioText": "これは課題の確認です",
           "scrambleTokens": [
-            "これは",
-            "です",
-            "ではありません",
             "課題の確認",
-            "それ"
+            "です",
+            "それ",
+            "これは",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1830,24 +1823,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l9_6",
           "type": "dictate",
-          "prompt": "情報漏洩の確認をお願いします",
-          "furigana": "じょうほうろうえいのかくにんをおねがいします",
-          "romaji": "jouhou rouei no kakunin o onegaishimasu.",
-          "english": "Confirming Data leak / security breach, please.",
-          "audioText": "情報漏洩の確認をお願いします",
+          "prompt": "情報漏洩の確認です",
+          "furigana": "じょうほうろうえいのかくにんです",
+          "romaji": "jouhou rouei no kakunin desu.",
+          "english": "It is Confirming Data leak / security breach.",
+          "audioText": "情報漏洩の確認です",
           "dictateTokens": [
-            "を",
-            "です",
-            "ありがとう",
+            "ではありません",
+            "これ",
             "情報漏洩の確認",
-            "お願いします"
+            "です"
           ],
           "dictateSolution": [
             "情報漏洩の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "情報漏洩の確認をお願いします"
+          "correctAnswer": "情報漏洩の確認です"
         },
         {
           "id": "u23_l9_7",
@@ -1957,9 +1948,9 @@ export const unit23: DojoUnit = {
           "audioText": "りんりのかくにん",
           "options": [
             "Confirming Automation",
-            "Transformation / reform",
+            "Confirming Data leak / security breach",
             "Confirming Ethics / moral standards",
-            "Confirming Declining birthrate"
+            "Confirming Sustainable"
           ],
           "correctAnswer": "Confirming Ethics / moral standards"
         },
@@ -1972,13 +1963,13 @@ export const unit23: DojoUnit = {
           "english": "Build 'Confirming Ethics / moral standards'",
           "audioText": "りんりのかくにん",
           "tileBank": [
-            "か",
+            "り",
+            "く",
             "に",
             "ん",
             "ん",
-            "り",
-            "く",
             "の",
+            "か",
             "り"
           ],
           "correctAnswer": "りんりのかくにん"
@@ -1986,20 +1977,21 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l10_3",
           "type": "cloze",
-          "prompt": "私は変革の確認がすきです",
-          "furigana": "わたしはへんかくのかくにんがすきです",
-          "romaji": "Watashi wa henkaku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Transformation / reform.",
-          "audioText": "変革の確認",
-          "clozeSentence": "これは変革の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な変革の確認です。",
+          "furigana": "これはいちばんたいせつなへんかくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na henkaku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Transformation / reform.",
+          "audioText": "これは変革の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な変革の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l10_4",
@@ -2010,11 +2002,11 @@ export const unit23: DojoUnit = {
           "english": "This is Confirming Transformation / reform.",
           "audioText": "これは変革の確認です",
           "scrambleTokens": [
+            "変革の確認",
             "です",
-            "それ",
             "ではありません",
             "これは",
-            "変革の確認"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2043,24 +2035,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l10_6",
           "type": "dictate",
-          "prompt": "将来性の確認をお願いします",
-          "furigana": "しょうらいせいのかくにんをおねがいします",
-          "romaji": "shouraisei no kakunin o onegaishimasu.",
-          "english": "Confirming Future potential / promise, please.",
-          "audioText": "将来性の確認をお願いします",
+          "prompt": "将来性の確認です",
+          "furigana": "しょうらいせいのかくにんです",
+          "romaji": "shouraisei no kakunin desu.",
+          "english": "It is Confirming Future potential / promise.",
+          "audioText": "将来性の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
             "将来性の確認",
-            "お願いします",
-            "です"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "将来性の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "将来性の確認をお願いします"
+          "correctAnswer": "将来性の確認です"
         },
         {
           "id": "u23_l10_7",
@@ -2172,10 +2162,10 @@ export const unit23: DojoUnit = {
           "english": "Confirming Artificial Intelligence (AI)",
           "audioText": "じんこうちのうのかくにん",
           "options": [
-            "Ethics / moral standards",
             "Confirming Artificial Intelligence (AI)",
-            "Population aging",
-            "Confirming Future potential / promise"
+            "Confirming Automation",
+            "Automation",
+            "Confirming Challenge / issue to solve"
           ],
           "correctAnswer": "Confirming Artificial Intelligence (AI)"
         },
@@ -2188,34 +2178,35 @@ export const unit23: DojoUnit = {
           "english": "Build 'Confirming Artificial Intelligence (AI)'",
           "audioText": "じんこうちのうのかくにん",
           "tileBank": [
+            "こ",
+            "の",
+            "う",
             "う",
             "の",
-            "こ",
-            "ち",
             "ん",
             "じ",
-            "の",
-            "う"
+            "ち"
           ],
           "correctAnswer": "じんこうちのうのかくにん"
         },
         {
           "id": "u23_l11_3",
           "type": "cloze",
-          "prompt": "私は自動化の確認がすきです",
-          "furigana": "わたしはじどうかのかくにんがすきです",
-          "romaji": "Watashi wa jidouka no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Automation.",
-          "audioText": "自動化の確認",
-          "clozeSentence": "これは自動化の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な自動化の確認です。",
+          "furigana": "これはいちばんたいせつなじどうかのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na jidouka no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Automation.",
+          "audioText": "これは自動化の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な自動化の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l11_4",
@@ -2226,11 +2217,11 @@ export const unit23: DojoUnit = {
           "english": "This is Confirming Automation.",
           "audioText": "これは自動化の確認です",
           "scrambleTokens": [
-            "です",
-            "これは",
             "それ",
+            "これは",
+            "自動化の確認",
             "ではありません",
-            "自動化の確認"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2259,24 +2250,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l11_6",
           "type": "dictate",
-          "prompt": "高齢化の確認をお願いします",
-          "furigana": "こうれいかのかくにんをおねがいします",
-          "romaji": "koureika no kakunin o onegaishimasu.",
-          "english": "Confirming Population aging, please.",
-          "audioText": "高齢化の確認をお願いします",
+          "prompt": "高齢化の確認です",
+          "furigana": "こうれいかのかくにんです",
+          "romaji": "koureika no kakunin desu.",
+          "english": "It is Confirming Population aging.",
+          "audioText": "高齢化の確認です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "高齢化の確認",
             "です",
-            "を"
+            "これ",
+            "ではありません",
+            "高齢化の確認"
           ],
           "dictateSolution": [
             "高齢化の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "高齢化の確認をお願いします"
+          "correctAnswer": "高齢化の確認です"
         },
         {
           "id": "u23_l11_7",
@@ -2387,10 +2376,10 @@ export const unit23: DojoUnit = {
           "english": "Confirming Declining birthrate",
           "audioText": "しょうしかのかくにん",
           "options": [
+            "Automation",
             "Confirming Declining birthrate",
-            "Innovation",
-            "Confirming Sustainable",
-            "Confirming Development / R&D"
+            "Confirming Artificial Intelligence (AI)",
+            "Diffusion / spread"
           ],
           "correctAnswer": "Confirming Declining birthrate"
         },
@@ -2403,26 +2392,26 @@ export const unit23: DojoUnit = {
           "english": "Build 'Confirming Declining birthrate'",
           "audioText": "しょうしかのかくにん",
           "tileBank": [
-            "の",
+            "く",
+            "か",
             "ょ",
             "し",
-            "く",
-            "し",
             "う",
+            "し",
             "か",
-            "か"
+            "の"
           ],
           "correctAnswer": "しょうしかのかくにん"
         },
         {
           "id": "u23_l12_3",
           "type": "cloze",
-          "prompt": "私は革新の確認がすきです",
-          "furigana": "わたしはかくしんのかくにんがすきです",
-          "romaji": "Watashi wa kakushin no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Innovation.",
-          "audioText": "革新の確認",
-          "clozeSentence": "これは革新の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な革新の確認です。",
+          "furigana": "これはいちばんたいせつなかくしんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kakushin no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Innovation.",
+          "audioText": "これは革新の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な革新の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2430,7 +2419,8 @@ export const unit23: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l12_4",
@@ -2441,11 +2431,11 @@ export const unit23: DojoUnit = {
           "english": "This is Confirming Innovation.",
           "audioText": "これは革新の確認です",
           "scrambleTokens": [
-            "ではありません",
-            "革新の確認",
-            "それ",
             "これは",
-            "です"
+            "です",
+            "ではありません",
+            "それ",
+            "革新の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -2474,24 +2464,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l12_6",
           "type": "dictate",
-          "prompt": "持続可能の確認をお願いします",
-          "furigana": "じぞくかのうのかくにんをおねがいします",
-          "romaji": "jizoku kanou no kakunin o onegaishimasu.",
-          "english": "Confirming Sustainable, please.",
-          "audioText": "持続可能の確認をお願いします",
+          "prompt": "持続可能の確認です",
+          "furigana": "じぞくかのうのかくにんです",
+          "romaji": "jizoku kanou no kakunin desu.",
+          "english": "It is Confirming Sustainable.",
+          "audioText": "持続可能の確認です",
           "dictateTokens": [
+            "です",
+            "ではありません",
             "持続可能の確認",
-            "お願いします",
-            "ありがとう",
-            "を",
-            "です"
+            "これ"
           ],
           "dictateSolution": [
             "持続可能の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "持続可能の確認をお願いします"
+          "correctAnswer": "持続可能の確認です"
         },
         {
           "id": "u23_l12_7",
@@ -2597,10 +2585,10 @@ export const unit23: DojoUnit = {
           "english": "Artificial Intelligence (AI)",
           "audioText": "じんこうちのう",
           "options": [
+            "Confirming Declining birthrate",
+            "Confirming Data leak / security breach",
             "Artificial Intelligence (AI)",
-            "Adoption / implementation",
-            "Ethics / moral standards",
-            "Confirming Sustainable"
+            "Confirming Future potential / promise"
           ],
           "correctAnswer": "Artificial Intelligence (AI)"
         },
@@ -2613,13 +2601,13 @@ export const unit23: DojoUnit = {
           "english": "Build 'Automation'",
           "audioText": "じどうか",
           "tileBank": [
+            "る",
             "う",
-            "ゆ",
+            "も",
             "ど",
-            "じ",
             "に",
-            "ひ",
-            "や",
+            "じ",
+            "け",
             "か"
           ],
           "correctAnswer": "じどうか"
@@ -2627,20 +2615,21 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l13_3",
           "type": "cloze",
-          "prompt": "私は自動化がすきです",
-          "furigana": "わたしはじどうかがすきです",
-          "romaji": "Watashi wa jidouka ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Automation.",
-          "audioText": "自動化",
-          "clozeSentence": "これは自動化 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な自動化です。",
+          "furigana": "これはいちばんたいせつなじどうかです。",
+          "romaji": "Kore wa ichiban taisetsu na jidouka desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Automation.",
+          "audioText": "これは自動化です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な自動化です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l13_4",
@@ -2652,10 +2641,10 @@ export const unit23: DojoUnit = {
           "audioText": "これは自動化です",
           "scrambleTokens": [
             "自動化",
-            "です",
-            "これは",
             "それ",
-            "ではありません"
+            "これは",
+            "ではありません",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2684,24 +2673,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l13_6",
           "type": "dictate",
-          "prompt": "高齢化をお願いします",
-          "furigana": "こうれいかをおねがいします",
-          "romaji": "koureika o onegaishimasu.",
-          "english": "Population aging, please.",
-          "audioText": "高齢化をお願いします",
+          "prompt": "高齢化です",
+          "furigana": "こうれいかです",
+          "romaji": "koureika desu.",
+          "english": "It is Population aging.",
+          "audioText": "高齢化です",
           "dictateTokens": [
+            "ではありません",
             "です",
-            "お願いします",
-            "高齢化",
-            "を",
-            "ありがとう"
+            "これ",
+            "高齢化"
           ],
           "dictateSolution": [
             "高齢化",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "高齢化をお願いします"
+          "correctAnswer": "高齢化です"
         },
         {
           "id": "u23_l13_7",
@@ -2806,10 +2793,10 @@ export const unit23: DojoUnit = {
           "english": "Declining birthrate",
           "audioText": "しょうしか",
           "options": [
-            "Diffusion / spread",
-            "Automation",
+            "Confirming Streamlining / efficiency",
+            "Ethics / moral standards",
             "Declining birthrate",
-            "Confirming Population aging"
+            "Confirming Transformation / reform"
           ],
           "correctAnswer": "Declining birthrate"
         },
@@ -2822,34 +2809,35 @@ export const unit23: DojoUnit = {
           "english": "Build 'Declining birthrate'",
           "audioText": "しょうしか",
           "tileBank": [
-            "か",
-            "ょ",
+            "に",
+            "ろ",
             "し",
-            "い",
             "し",
             "ん",
+            "ょ",
             "う",
-            "も"
+            "か"
           ],
           "correctAnswer": "しょうしか"
         },
         {
           "id": "u23_l14_3",
           "type": "cloze",
-          "prompt": "私は革新がすきです",
-          "furigana": "わたしはかくしんがすきです",
-          "romaji": "Watashi wa kakushin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Innovation.",
-          "audioText": "革新",
-          "clozeSentence": "これは革新 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な革新です。",
+          "furigana": "これはいちばんたいせつなかくしんです。",
+          "romaji": "Kore wa ichiban taisetsu na kakushin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Innovation.",
+          "audioText": "これは革新です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な革新です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l14_4",
@@ -2862,9 +2850,9 @@ export const unit23: DojoUnit = {
           "scrambleTokens": [
             "革新",
             "これは",
-            "です",
             "それ",
-            "ではありません"
+            "ではありません",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2893,24 +2881,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l14_6",
           "type": "dictate",
-          "prompt": "持続可能をお願いします",
-          "furigana": "じぞくかのうをおねがいします",
-          "romaji": "jizoku kanou o onegaishimasu.",
-          "english": "Sustainable, please.",
-          "audioText": "持続可能をお願いします",
+          "prompt": "持続可能です",
+          "furigana": "じぞくかのうです",
+          "romaji": "jizoku kanou desu.",
+          "english": "It is Sustainable.",
+          "audioText": "持続可能です",
           "dictateTokens": [
             "です",
-            "お願いします",
-            "ありがとう",
-            "を",
-            "持続可能"
+            "これ",
+            "持続可能",
+            "ではありません"
           ],
           "dictateSolution": [
             "持続可能",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "持続可能をお願いします"
+          "correctAnswer": "持続可能です"
         },
         {
           "id": "u23_l14_7",
@@ -3013,10 +2999,10 @@ export const unit23: DojoUnit = {
           "english": "Diffusion / spread",
           "audioText": "ふきゅう",
           "options": [
-            "Sustainable",
-            "Confirming Sustainable",
-            "Diffusion / spread",
-            "Confirming Innovation"
+            "Innovation",
+            "Confirming Artificial Intelligence (AI)",
+            "Confirming Artificial Intelligence (AI)",
+            "Diffusion / spread"
           ],
           "correctAnswer": "Diffusion / spread"
         },
@@ -3029,34 +3015,35 @@ export const unit23: DojoUnit = {
           "english": "Build 'Diffusion / spread'",
           "audioText": "ふきゅう",
           "tileBank": [
-            "と",
-            "ゅ",
             "き",
-            "い",
-            "ら",
-            "ろ",
-            "ふ",
-            "う"
+            "わ",
+            "る",
+            "お",
+            "う",
+            "の",
+            "ゅ",
+            "ふ"
           ],
           "correctAnswer": "ふきゅう"
         },
         {
           "id": "u23_l15_3",
           "type": "cloze",
-          "prompt": "私は開発がすきです",
-          "furigana": "わたしはかいはつがすきです",
-          "romaji": "Watashi wa kaihatsu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Development / R&D.",
-          "audioText": "開発",
-          "clozeSentence": "これは開発 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な開発です。",
+          "furigana": "これはいちばんたいせつなかいはつです。",
+          "romaji": "Kore wa ichiban taisetsu na kaihatsu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Development / R&D.",
+          "audioText": "これは開発です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な開発です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u23_l15_4",
@@ -3067,11 +3054,11 @@ export const unit23: DojoUnit = {
           "english": "This is Development / R&D.",
           "audioText": "これは開発です",
           "scrambleTokens": [
-            "開発",
-            "です",
             "ではありません",
             "それ",
-            "これは"
+            "です",
+            "これは",
+            "開発"
           ],
           "scrambleSolution": [
             "これは",
@@ -3100,24 +3087,22 @@ export const unit23: DojoUnit = {
         {
           "id": "u23_l15_6",
           "type": "dictate",
-          "prompt": "効率化をお願いします",
-          "furigana": "こうりつかをおねがいします",
-          "romaji": "kouritsuka o onegaishimasu.",
-          "english": "Streamlining / efficiency, please.",
-          "audioText": "効率化をお願いします",
+          "prompt": "効率化です",
+          "furigana": "こうりつかです",
+          "romaji": "kouritsuka desu.",
+          "english": "It is Streamlining / efficiency.",
+          "audioText": "効率化です",
           "dictateTokens": [
-            "ありがとう",
             "です",
-            "を",
-            "効率化",
-            "お願いします"
+            "ではありません",
+            "これ",
+            "効率化"
           ],
           "dictateSolution": [
             "効率化",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "効率化をお願いします"
+          "correctAnswer": "効率化です"
         },
         {
           "id": "u23_l15_7",
@@ -3202,10 +3187,10 @@ export const unit23: DojoUnit = {
         "english": "Artificial Intelligence (AI)",
         "audioText": "じんこうちのう",
         "options": [
+          "Sustainable",
           "Artificial Intelligence (AI)",
-          "Automation",
-          "Confirming Automation",
-          "Confirming Adoption / implementation"
+          "Confirming Data leak / security breach",
+          "Transformation / reform"
         ],
         "correctAnswer": "Artificial Intelligence (AI)"
       },
@@ -3218,14 +3203,14 @@ export const unit23: DojoUnit = {
         "english": "Build 'Automation'",
         "audioText": "じどうか",
         "tileBank": [
-          "そ",
-          "は",
+          "ゆ",
           "か",
-          "じ",
+          "ま",
+          "て",
           "ど",
-          "ん",
+          "じ",
           "う",
-          "を"
+          "ひ"
         ],
         "correctAnswer": "じどうか"
       },
@@ -3238,9 +3223,9 @@ export const unit23: DojoUnit = {
         "english": "Diffusion / spread",
         "audioText": "ふきゅう",
         "options": [
-          "Confirming Artificial Intelligence (AI)",
-          "Challenge / issue to solve",
           "Diffusion / spread",
+          "Adoption / implementation",
+          "Confirming Data leak / security breach",
           "Confirming Artificial Intelligence (AI)"
         ],
         "correctAnswer": "Diffusion / spread"
@@ -3254,14 +3239,14 @@ export const unit23: DojoUnit = {
         "english": "Build 'Diffusion / spread'",
         "audioText": "ふきゅう",
         "tileBank": [
-          "ゅ",
-          "し",
           "き",
+          "せ",
           "ふ",
-          "う",
-          "ね",
-          "そ",
-          "ぬ"
+          "ゆ",
+          "あ",
+          "さ",
+          "ゅ",
+          "う"
         ],
         "correctAnswer": "ふきゅう"
       },
@@ -3274,10 +3259,10 @@ export const unit23: DojoUnit = {
         "english": "Ethics / moral standards",
         "audioText": "りんり",
         "options": [
+          "Data leak / security breach",
+          "Confirming Declining birthrate",
           "Ethics / moral standards",
-          "Confirming Sustainable",
-          "Confirming Automation",
-          "Data leak / security breach"
+          "Confirming Population aging"
         ],
         "correctAnswer": "Ethics / moral standards"
       },
@@ -3290,14 +3275,14 @@ export const unit23: DojoUnit = {
         "english": "Build 'Ethics / moral standards'",
         "audioText": "りんり",
         "tileBank": [
-          "り",
-          "か",
-          "り",
           "ん",
-          "け",
-          "あ",
-          "ら",
-          "ゆ"
+          "り",
+          "そ",
+          "も",
+          "り",
+          "こ",
+          "え",
+          "く"
         ],
         "correctAnswer": "りんり"
       },
@@ -3311,9 +3296,9 @@ export const unit23: DojoUnit = {
         "audioText": "しょうしかのかくにん",
         "options": [
           "Confirming Declining birthrate",
-          "Confirming Sustainable",
-          "Innovation",
-          "Confirming Diffusion / spread"
+          "Confirming Ethics / moral standards",
+          "Confirming Challenge / issue to solve",
+          "Confirming Automation"
         ],
         "correctAnswer": "Confirming Declining birthrate"
       },
@@ -3326,14 +3311,14 @@ export const unit23: DojoUnit = {
         "english": "Build 'Confirming Declining birthrate'",
         "audioText": "しょうしかのかくにん",
         "tileBank": [
-          "し",
-          "の",
-          "か",
           "く",
           "し",
+          "か",
+          "か",
           "う",
-          "ょ",
-          "か"
+          "し",
+          "の",
+          "ょ"
         ],
         "correctAnswer": "しょうしかのかくにん"
       },
@@ -3346,10 +3331,10 @@ export const unit23: DojoUnit = {
         "english": "Confirming Adoption / implementation",
         "audioText": "どうにゅうのかくにん",
         "options": [
-          "Future potential / promise",
+          "Confirming Artificial Intelligence (AI)",
           "Confirming Adoption / implementation",
-          "Streamlining / efficiency",
-          "Confirming Ethics / moral standards"
+          "Confirming Innovation",
+          "Declining birthrate"
         ],
         "correctAnswer": "Confirming Adoption / implementation"
       },
@@ -3363,13 +3348,13 @@ export const unit23: DojoUnit = {
         "audioText": "どうにゅうのかくにん",
         "tileBank": [
           "う",
-          "く",
-          "に",
-          "ゅ",
-          "う",
           "か",
           "ど",
-          "の"
+          "う",
+          "に",
+          "の",
+          "ゅ",
+          "く"
         ],
         "correctAnswer": "どうにゅうのかくにん"
       },
@@ -3382,10 +3367,10 @@ export const unit23: DojoUnit = {
         "english": "Confirming Artificial Intelligence (AI)",
         "audioText": "じんこうちのうのかくにん",
         "options": [
-          "Ethics / moral standards",
           "Confirming Artificial Intelligence (AI)",
-          "Population aging",
-          "Confirming Future potential / promise"
+          "Confirming Automation",
+          "Automation",
+          "Confirming Challenge / issue to solve"
         ],
         "correctAnswer": "Confirming Artificial Intelligence (AI)"
       },
@@ -3398,14 +3383,14 @@ export const unit23: DojoUnit = {
         "english": "Build 'Confirming Artificial Intelligence (AI)'",
         "audioText": "じんこうちのうのかくにん",
         "tileBank": [
+          "こ",
+          "の",
+          "う",
           "う",
           "の",
-          "こ",
-          "ち",
           "ん",
           "じ",
-          "の",
-          "う"
+          "ち"
         ],
         "correctAnswer": "じんこうちのうのかくにん"
       }

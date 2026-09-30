@@ -51,10 +51,10 @@ export const unit29: DojoUnit = {
           "english": "Clause / contractual article",
           "audioText": "じょうこう",
           "options": [
-            "Clause / contractual article",
-            "Confirming Discussion / scholarly review",
-            "Confirming Academic paper / thesis",
-            "Based upon / taking into account"
+            "Confirming Verification / empirical testing",
+            "Confirming Jurisdiction",
+            "Compliance / observance",
+            "Clause / contractual article"
           ],
           "correctAnswer": "Clause / contractual article"
         },
@@ -67,34 +67,35 @@ export const unit29: DojoUnit = {
           "english": "Build 'Clause / contractual article'",
           "audioText": "じょうこう",
           "tileBank": [
-            "う",
-            "じ",
-            "た",
-            "ょ",
-            "ひ",
+            "な",
             "こ",
+            "み",
+            "じ",
             "う",
-            "や"
+            "う",
+            "ょ",
+            "く"
           ],
           "correctAnswer": "じょうこう"
         },
         {
           "id": "u29_l1_3",
           "type": "cloze",
-          "prompt": "私は甲及び乙がすきです",
-          "furigana": "わたしはこうおよびおつがすきです",
-          "romaji": "Watashi wa kou oyobi otsu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Party A and Party B.",
-          "audioText": "甲及び乙",
-          "clozeSentence": "これは甲及び乙 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な甲及び乙です。",
+          "furigana": "これはいちばんたいせつなこうおよびおつです。",
+          "romaji": "Kore wa ichiban taisetsu na kou oyobi otsu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Party A and Party B.",
+          "audioText": "これは甲及び乙です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な甲及び乙です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l1_4",
@@ -106,10 +107,10 @@ export const unit29: DojoUnit = {
           "audioText": "これは甲及び乙です",
           "scrambleTokens": [
             "ではありません",
-            "甲及び乙",
-            "それ",
             "です",
-            "これは"
+            "それ",
+            "これは",
+            "甲及び乙"
           ],
           "scrambleSolution": [
             "これは",
@@ -138,24 +139,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l1_6",
           "type": "dictate",
-          "prompt": "遵守をお願いします",
-          "furigana": "じゅんしゅをおねがいします",
-          "romaji": "junshu o onegaishimasu.",
-          "english": "Compliance / observance, please.",
-          "audioText": "遵守をお願いします",
+          "prompt": "遵守です",
+          "furigana": "じゅんしゅです",
+          "romaji": "junshu desu.",
+          "english": "It is Compliance / observance.",
+          "audioText": "遵守です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "遵守",
-            "お願いします",
-            "です"
+            "これ",
+            "です",
+            "ではありません",
+            "遵守"
           ],
           "dictateSolution": [
             "遵守",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "遵守をお願いします"
+          "correctAnswer": "遵守です"
         },
         {
           "id": "u29_l1_7",
@@ -259,10 +258,10 @@ export const unit29: DojoUnit = {
           "english": "Exemption from liability / disclaimer",
           "audioText": "めんせき",
           "options": [
-            "Academic paper / thesis",
             "Exemption from liability / disclaimer",
-            "Confirming Citation / quotation",
-            "Confirming Verification / empirical testing"
+            "Confirming Exemption from liability / disclaimer",
+            "Confirming Exemption from liability / disclaimer",
+            "Confirming Clause / contractual article"
           ],
           "correctAnswer": "Exemption from liability / disclaimer"
         },
@@ -276,33 +275,34 @@ export const unit29: DojoUnit = {
           "audioText": "めんせき",
           "tileBank": [
             "め",
-            "い",
+            "む",
+            "か",
+            "ゆ",
+            "す",
+            "き",
             "せ",
-            "ん",
-            "な",
-            "ね",
-            "と",
-            "き"
+            "ん"
           ],
           "correctAnswer": "めんせき"
         },
         {
           "id": "u29_l2_3",
           "type": "cloze",
-          "prompt": "私は損害賠償がすきです",
-          "furigana": "わたしはそんがいばいしょうがすきです",
-          "romaji": "Watashi wa songai baishou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Compensation for damages.",
-          "audioText": "損害賠償",
-          "clozeSentence": "これは損害賠償 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な損害賠償です。",
+          "furigana": "これはいちばんたいせつなそんがいばいしょうです。",
+          "romaji": "Kore wa ichiban taisetsu na songai baishou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Compensation for damages.",
+          "audioText": "これは損害賠償です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な損害賠償です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l2_4",
@@ -313,11 +313,11 @@ export const unit29: DojoUnit = {
           "english": "This is Compensation for damages.",
           "audioText": "これは損害賠償です",
           "scrambleTokens": [
-            "ではありません",
+            "損害賠償",
             "です",
+            "ではありません",
             "これは",
-            "それ",
-            "損害賠償"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -346,24 +346,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l2_6",
           "type": "dictate",
-          "prompt": "管轄をお願いします",
-          "furigana": "かんかつをおねがいします",
-          "romaji": "kankatsu o onegaishimasu.",
-          "english": "Jurisdiction, please.",
-          "audioText": "管轄をお願いします",
+          "prompt": "管轄です",
+          "furigana": "かんかつです",
+          "romaji": "kankatsu desu.",
+          "english": "It is Jurisdiction.",
+          "audioText": "管轄です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
             "管轄",
-            "です",
-            "お願いします"
+            "これ",
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "管轄",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "管轄をお願いします"
+          "correctAnswer": "管轄です"
         },
         {
           "id": "u29_l2_7",
@@ -466,10 +464,10 @@ export const unit29: DojoUnit = {
           "english": "Governing law",
           "audioText": "じゅんきょほう",
           "options": [
-            "Compensation for damages",
-            "Governing law",
-            "Validity / soundness",
-            "Confirming Compensation for damages"
+            "Confirming Validity / soundness",
+            "Confirming Academic paper / thesis",
+            "Exemption from liability / disclaimer",
+            "Governing law"
           ],
           "correctAnswer": "Governing law"
         },
@@ -482,34 +480,35 @@ export const unit29: DojoUnit = {
           "english": "Build 'Academic paper / thesis'",
           "audioText": "ろんぶん",
           "tileBank": [
-            "ぶ",
-            "こ",
             "ろ",
-            "と",
             "ん",
-            "さ",
-            "よ",
-            "ん"
+            "ん",
+            "ぶ",
+            "せ",
+            "は",
+            "う",
+            "み"
           ],
           "correctAnswer": "ろんぶん"
         },
         {
           "id": "u29_l3_3",
           "type": "cloze",
-          "prompt": "私は論文がすきです",
-          "furigana": "わたしはろんぶんがすきです",
-          "romaji": "Watashi wa ronbun ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Academic paper / thesis.",
-          "audioText": "論文",
-          "clozeSentence": "これは論文 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な論文です。",
+          "furigana": "これはいちばんたいせつなろんぶんです。",
+          "romaji": "Kore wa ichiban taisetsu na ronbun desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Academic paper / thesis.",
+          "audioText": "これは論文です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な論文です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l3_4",
@@ -520,11 +519,11 @@ export const unit29: DojoUnit = {
           "english": "This is Academic paper / thesis.",
           "audioText": "これは論文です",
           "scrambleTokens": [
-            "ではありません",
             "それ",
             "です",
-            "論文",
-            "これは"
+            "これは",
+            "ではありません",
+            "論文"
           ],
           "scrambleSolution": [
             "これは",
@@ -553,24 +552,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l3_6",
           "type": "dictate",
-          "prompt": "検証をお願いします",
-          "furigana": "けんしょうをおねがいします",
-          "romaji": "kenshou o onegaishimasu.",
-          "english": "Verification / empirical testing, please.",
-          "audioText": "検証をお願いします",
+          "prompt": "検証です",
+          "furigana": "けんしょうです",
+          "romaji": "kenshou desu.",
+          "english": "It is Verification / empirical testing.",
+          "audioText": "検証です",
           "dictateTokens": [
-            "を",
             "です",
-            "ありがとう",
+            "これ",
             "検証",
-            "お願いします"
+            "ではありません"
           ],
           "dictateSolution": [
             "検証",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "検証をお願いします"
+          "correctAnswer": "検証です"
         },
         {
           "id": "u29_l3_7",
@@ -673,10 +670,10 @@ export const unit29: DojoUnit = {
           "english": "Validity / soundness",
           "audioText": "だとうせい",
           "options": [
-            "Confirming Governing law",
-            "Confirming Force majeure / act of God",
-            "In consideration of / in light of",
-            "Validity / soundness"
+            "Clause / contractual article",
+            "Validity / soundness",
+            "Based upon / taking into account",
+            "Compensation for damages"
           ],
           "correctAnswer": "Validity / soundness"
         },
@@ -689,26 +686,26 @@ export const unit29: DojoUnit = {
           "english": "Build 'Validity / soundness'",
           "audioText": "だとうせい",
           "tileBank": [
-            "せ",
-            "ま",
             "と",
-            "め",
-            "ひ",
             "う",
             "だ",
-            "い"
+            "ん",
+            "せ",
+            "い",
+            "の",
+            "す"
           ],
           "correctAnswer": "だとうせい"
         },
         {
           "id": "u29_l4_3",
           "type": "cloze",
-          "prompt": "私は考察がすきです",
-          "furigana": "わたしはこうさつがすきです",
-          "romaji": "Watashi wa kousatsu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Discussion / scholarly review.",
-          "audioText": "考察",
-          "clozeSentence": "これは考察 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な考察です。",
+          "furigana": "これはいちばんたいせつなこうさつです。",
+          "romaji": "Kore wa ichiban taisetsu na kousatsu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Discussion / scholarly review.",
+          "audioText": "これは考察です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な考察です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -716,7 +713,8 @@ export const unit29: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l4_4",
@@ -727,11 +725,11 @@ export const unit29: DojoUnit = {
           "english": "This is Discussion / scholarly review.",
           "audioText": "これは考察です",
           "scrambleTokens": [
-            "それ",
-            "これは",
             "ではありません",
-            "です",
-            "考察"
+            "それ",
+            "考察",
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -760,24 +758,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l4_6",
           "type": "dictate",
-          "prompt": "引用をお願いします",
-          "furigana": "いんようをおねがいします",
-          "romaji": "in-you o onegaishimasu.",
-          "english": "Citation / quotation, please.",
-          "audioText": "引用をお願いします",
+          "prompt": "引用です",
+          "furigana": "いんようです",
+          "romaji": "in-you desu.",
+          "english": "It is Citation / quotation.",
+          "audioText": "引用です",
           "dictateTokens": [
-            "お願いします",
+            "これ",
             "です",
-            "を",
-            "ありがとう",
+            "ではありません",
             "引用"
           ],
           "dictateSolution": [
             "引用",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "引用をお願いします"
+          "correctAnswer": "引用です"
         },
         {
           "id": "u29_l4_7",
@@ -880,8 +876,8 @@ export const unit29: DojoUnit = {
           "audioText": "かんがみる",
           "options": [
             "In consideration of / in light of",
-            "Governing law",
-            "Confirming Discussion / scholarly review",
+            "Confirming Party A and Party B",
+            "Citation / quotation",
             "Confirming Verification / empirical testing"
           ],
           "correctAnswer": "In consideration of / in light of"
@@ -895,34 +891,35 @@ export const unit29: DojoUnit = {
           "english": "Build 'In consideration of / in light of'",
           "audioText": "かんがみる",
           "tileBank": [
-            "み",
-            "る",
-            "か",
+            "た",
+            "け",
             "ん",
-            "が",
-            "い",
-            "せ",
-            "ろ"
+            "か",
+            "さ",
+            "る",
+            "み",
+            "が"
           ],
           "correctAnswer": "かんがみる"
         },
         {
           "id": "u29_l5_3",
           "type": "cloze",
-          "prompt": "私は踏まえるがすきです",
-          "furigana": "わたしはふまえるがすきです",
-          "romaji": "Watashi wa fumaeru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Based upon / taking into account.",
-          "audioText": "踏まえる",
-          "clozeSentence": "これは踏まえる {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な踏まえるです。",
+          "furigana": "これはいちばんたいせつなふまえるです。",
+          "romaji": "Kore wa ichiban taisetsu na fumaeru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Based upon / taking into account.",
+          "audioText": "これは踏まえるです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な踏まえるです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l5_4",
@@ -933,11 +930,11 @@ export const unit29: DojoUnit = {
           "english": "This is Based upon / taking into account.",
           "audioText": "これは踏まえるです",
           "scrambleTokens": [
-            "ではありません",
             "それ",
             "です",
+            "踏まえる",
             "これは",
-            "踏まえる"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -966,24 +963,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l5_6",
           "type": "dictate",
-          "prompt": "不可抗力をお願いします",
-          "furigana": "ふかこうりょくをおねがいします",
-          "romaji": "fukakouryoku o onegaishimasu.",
-          "english": "Force majeure / act of God, please.",
-          "audioText": "不可抗力をお願いします",
+          "prompt": "不可抗力です",
+          "furigana": "ふかこうりょくです",
+          "romaji": "fukakouryoku desu.",
+          "english": "It is Force majeure / act of God.",
+          "audioText": "不可抗力です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "です",
             "不可抗力",
-            "を"
+            "これ",
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "不可抗力",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "不可抗力をお願いします"
+          "correctAnswer": "不可抗力です"
         },
         {
           "id": "u29_l5_7",
@@ -1093,9 +1088,9 @@ export const unit29: DojoUnit = {
           "audioText": "じょうこうのかくにん",
           "options": [
             "Confirming Clause / contractual article",
-            "Clause / contractual article",
-            "Discussion / scholarly review",
-            "Based upon / taking into account"
+            "Confirming Compliance / observance",
+            "Exemption from liability / disclaimer",
+            "Confirming Party A and Party B"
           ],
           "correctAnswer": "Confirming Clause / contractual article"
         },
@@ -1108,12 +1103,12 @@ export const unit29: DojoUnit = {
           "english": "Build 'Confirming Clause / contractual article'",
           "audioText": "じょうこうのかくにん",
           "tileBank": [
-            "こ",
-            "く",
-            "の",
-            "う",
-            "じ",
             "ょ",
+            "じ",
+            "こ",
+            "う",
+            "の",
+            "く",
             "う",
             "か"
           ],
@@ -1122,20 +1117,21 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l6_3",
           "type": "cloze",
-          "prompt": "私は甲及び乙の確認がすきです",
-          "furigana": "わたしはこうおよびおつのかくにんがすきです",
-          "romaji": "Watashi wa kou oyobi otsu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Party A and Party B.",
-          "audioText": "甲及び乙の確認",
-          "clozeSentence": "これは甲及び乙の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な甲及び乙の確認です。",
+          "furigana": "これはいちばんたいせつなこうおよびおつのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kou oyobi otsu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Party A and Party B.",
+          "audioText": "これは甲及び乙の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な甲及び乙の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l6_4",
@@ -1146,11 +1142,11 @@ export const unit29: DojoUnit = {
           "english": "This is Confirming Party A and Party B.",
           "audioText": "これは甲及び乙の確認です",
           "scrambleTokens": [
-            "ではありません",
+            "です",
             "それ",
+            "ではありません",
             "これは",
-            "甲及び乙の確認",
-            "です"
+            "甲及び乙の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1179,24 +1175,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l6_6",
           "type": "dictate",
-          "prompt": "遵守の確認をお願いします",
-          "furigana": "じゅんしゅのかくにんをおねがいします",
-          "romaji": "junshu no kakunin o onegaishimasu.",
-          "english": "Confirming Compliance / observance, please.",
-          "audioText": "遵守の確認をお願いします",
+          "prompt": "遵守の確認です",
+          "furigana": "じゅんしゅのかくにんです",
+          "romaji": "junshu no kakunin desu.",
+          "english": "It is Confirming Compliance / observance.",
+          "audioText": "遵守の確認です",
           "dictateTokens": [
-            "遵守の確認",
-            "ありがとう",
             "です",
-            "を",
-            "お願いします"
+            "遵守の確認",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "遵守の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "遵守の確認をお願いします"
+          "correctAnswer": "遵守の確認です"
         },
         {
           "id": "u29_l6_7",
@@ -1306,10 +1300,10 @@ export const unit29: DojoUnit = {
           "english": "Confirming Exemption from liability / disclaimer",
           "audioText": "めんせきのかくにん",
           "options": [
-            "Confirming Jurisdiction",
-            "Confirming Discussion / scholarly review",
+            "Confirming Clause / contractual article",
+            "Force majeure / act of God",
             "Confirming Exemption from liability / disclaimer",
-            "Citation / quotation"
+            "Confirming Discussion / scholarly review"
           ],
           "correctAnswer": "Confirming Exemption from liability / disclaimer"
         },
@@ -1322,34 +1316,35 @@ export const unit29: DojoUnit = {
           "english": "Build 'Confirming Exemption from liability / disclaimer'",
           "audioText": "めんせきのかくにん",
           "tileBank": [
-            "に",
-            "ん",
-            "せ",
-            "き",
             "か",
+            "ん",
+            "の",
+            "き",
             "め",
             "く",
-            "の"
+            "せ",
+            "に"
           ],
           "correctAnswer": "めんせきのかくにん"
         },
         {
           "id": "u29_l7_3",
           "type": "cloze",
-          "prompt": "私は損害賠償の確認がすきです",
-          "furigana": "わたしはそんがいばいしょうのかくにんがすきです",
-          "romaji": "Watashi wa songai baishou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Compensation for damages.",
-          "audioText": "損害賠償の確認",
-          "clozeSentence": "これは損害賠償の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な損害賠償の確認です。",
+          "furigana": "これはいちばんたいせつなそんがいばいしょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na songai baishou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Compensation for damages.",
+          "audioText": "これは損害賠償の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な損害賠償の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l7_4",
@@ -1361,10 +1356,10 @@ export const unit29: DojoUnit = {
           "audioText": "これは損害賠償の確認です",
           "scrambleTokens": [
             "損害賠償の確認",
-            "それ",
             "です",
             "ではありません",
-            "これは"
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1393,24 +1388,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l7_6",
           "type": "dictate",
-          "prompt": "管轄の確認をお願いします",
-          "furigana": "かんかつのかくにんをおねがいします",
-          "romaji": "kankatsu no kakunin o onegaishimasu.",
-          "english": "Confirming Jurisdiction, please.",
-          "audioText": "管轄の確認をお願いします",
+          "prompt": "管轄の確認です",
+          "furigana": "かんかつのかくにんです",
+          "romaji": "kankatsu no kakunin desu.",
+          "english": "It is Confirming Jurisdiction.",
+          "audioText": "管轄の確認です",
           "dictateTokens": [
             "管轄の確認",
-            "お願いします",
-            "ありがとう",
-            "を",
-            "です"
+            "です",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "管轄の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "管轄の確認をお願いします"
+          "correctAnswer": "管轄の確認です"
         },
         {
           "id": "u29_l7_7",
@@ -1519,10 +1512,10 @@ export const unit29: DojoUnit = {
           "english": "Confirming Governing law",
           "audioText": "じゅんきょほうのかくにん",
           "options": [
+            "Confirming Governing law",
+            "Confirming Exemption from liability / disclaimer",
             "Confirming Verification / empirical testing",
-            "Confirming Force majeure / act of God",
-            "In consideration of / in light of",
-            "Confirming Governing law"
+            "Confirming Jurisdiction"
           ],
           "correctAnswer": "Confirming Governing law"
         },
@@ -1535,26 +1528,26 @@ export const unit29: DojoUnit = {
           "english": "Build 'Confirming Governing law'",
           "audioText": "じゅんきょほうのかくにん",
           "tileBank": [
-            "の",
             "ゅ",
             "ほ",
-            "じ",
-            "ょ",
             "き",
+            "ょ",
+            "の",
             "う",
-            "ん"
+            "ん",
+            "じ"
           ],
           "correctAnswer": "じゅんきょほうのかくにん"
         },
         {
           "id": "u29_l8_3",
           "type": "cloze",
-          "prompt": "私は論文の確認がすきです",
-          "furigana": "わたしはろんぶんのかくにんがすきです",
-          "romaji": "Watashi wa ronbun no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Academic paper / thesis.",
-          "audioText": "論文の確認",
-          "clozeSentence": "これは論文の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な論文の確認です。",
+          "furigana": "これはいちばんたいせつなろんぶんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ronbun no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Academic paper / thesis.",
+          "audioText": "これは論文の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な論文の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1562,7 +1555,8 @@ export const unit29: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l8_4",
@@ -1573,11 +1567,11 @@ export const unit29: DojoUnit = {
           "english": "This is Confirming Academic paper / thesis.",
           "audioText": "これは論文の確認です",
           "scrambleTokens": [
-            "これは",
             "論文の確認",
             "ではありません",
             "です",
-            "それ"
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1606,24 +1600,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l8_6",
           "type": "dictate",
-          "prompt": "検証の確認をお願いします",
-          "furigana": "けんしょうのかくにんをおねがいします",
-          "romaji": "kenshou no kakunin o onegaishimasu.",
-          "english": "Confirming Verification / empirical testing, please.",
-          "audioText": "検証の確認をお願いします",
+          "prompt": "検証の確認です",
+          "furigana": "けんしょうのかくにんです",
+          "romaji": "kenshou no kakunin desu.",
+          "english": "It is Confirming Verification / empirical testing.",
+          "audioText": "検証の確認です",
           "dictateTokens": [
-            "を",
-            "お願いします",
+            "ではありません",
+            "です",
             "検証の確認",
-            "ありがとう",
-            "です"
+            "これ"
           ],
           "dictateSolution": [
             "検証の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "検証の確認をお願いします"
+          "correctAnswer": "検証の確認です"
         },
         {
           "id": "u29_l8_7",
@@ -1732,10 +1724,10 @@ export const unit29: DojoUnit = {
           "english": "Confirming Validity / soundness",
           "audioText": "だとうせいのかくにん",
           "options": [
+            "Clause / contractual article",
             "Confirming Validity / soundness",
-            "Compliance / observance",
-            "Confirming Discussion / scholarly review",
-            "Confirming Clause / contractual article"
+            "Confirming In consideration of / in light of",
+            "Party A and Party B"
           ],
           "correctAnswer": "Confirming Validity / soundness"
         },
@@ -1748,34 +1740,35 @@ export const unit29: DojoUnit = {
           "english": "Build 'Confirming Validity / soundness'",
           "audioText": "だとうせいのかくにん",
           "tileBank": [
-            "と",
-            "い",
-            "の",
-            "か",
-            "う",
-            "く",
             "だ",
-            "せ"
+            "う",
+            "せ",
+            "い",
+            "と",
+            "く",
+            "か",
+            "の"
           ],
           "correctAnswer": "だとうせいのかくにん"
         },
         {
           "id": "u29_l9_3",
           "type": "cloze",
-          "prompt": "私は考察の確認がすきです",
-          "furigana": "わたしはこうさつのかくにんがすきです",
-          "romaji": "Watashi wa kousatsu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Discussion / scholarly review.",
-          "audioText": "考察の確認",
-          "clozeSentence": "これは考察の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な考察の確認です。",
+          "furigana": "これはいちばんたいせつなこうさつのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kousatsu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Discussion / scholarly review.",
+          "audioText": "これは考察の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な考察の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l9_4",
@@ -1786,11 +1779,11 @@ export const unit29: DojoUnit = {
           "english": "This is Confirming Discussion / scholarly review.",
           "audioText": "これは考察の確認です",
           "scrambleTokens": [
-            "これは",
-            "です",
+            "考察の確認",
             "それ",
             "ではありません",
-            "考察の確認"
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1819,24 +1812,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l9_6",
           "type": "dictate",
-          "prompt": "引用の確認をお願いします",
-          "furigana": "いんようのかくにんをおねがいします",
-          "romaji": "in-you no kakunin o onegaishimasu.",
-          "english": "Confirming Citation / quotation, please.",
-          "audioText": "引用の確認をお願いします",
+          "prompt": "引用の確認です",
+          "furigana": "いんようのかくにんです",
+          "romaji": "in-you no kakunin desu.",
+          "english": "It is Confirming Citation / quotation.",
+          "audioText": "引用の確認です",
           "dictateTokens": [
-            "お願いします",
+            "引用の確認",
+            "ではありません",
             "です",
-            "を",
-            "ありがとう",
-            "引用の確認"
+            "これ"
           ],
           "dictateSolution": [
             "引用の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "引用の確認をお願いします"
+          "correctAnswer": "引用の確認です"
         },
         {
           "id": "u29_l9_7",
@@ -1944,10 +1935,10 @@ export const unit29: DojoUnit = {
           "english": "Confirming In consideration of / in light of",
           "audioText": "かんがみるのかくにん",
           "options": [
-            "Confirming In consideration of / in light of",
-            "Confirming Clause / contractual article",
             "Confirming Exemption from liability / disclaimer",
-            "Compliance / observance"
+            "Confirming In consideration of / in light of",
+            "Clause / contractual article",
+            "Validity / soundness"
           ],
           "correctAnswer": "Confirming In consideration of / in light of"
         },
@@ -1960,34 +1951,35 @@ export const unit29: DojoUnit = {
           "english": "Build 'Confirming In consideration of / in light of'",
           "audioText": "かんがみるのかくにん",
           "tileBank": [
-            "る",
             "み",
-            "ん",
             "か",
-            "が",
             "の",
+            "く",
             "か",
-            "く"
+            "ん",
+            "る",
+            "が"
           ],
           "correctAnswer": "かんがみるのかくにん"
         },
         {
           "id": "u29_l10_3",
           "type": "cloze",
-          "prompt": "私は踏まえるの確認がすきです",
-          "furigana": "わたしはふまえるのかくにんがすきです",
-          "romaji": "Watashi wa fumaeru no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Based upon / taking into account.",
-          "audioText": "踏まえるの確認",
-          "clozeSentence": "これは踏まえるの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な踏まえるの確認です。",
+          "furigana": "これはいちばんたいせつなふまえるのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na fumaeru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Based upon / taking into account.",
+          "audioText": "これは踏まえるの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な踏まえるの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l10_4",
@@ -1998,11 +1990,11 @@ export const unit29: DojoUnit = {
           "english": "This is Confirming Based upon / taking into account.",
           "audioText": "これは踏まえるの確認です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
-            "です",
             "これは",
-            "踏まえるの確認"
+            "踏まえるの確認",
+            "です",
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2031,24 +2023,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l10_6",
           "type": "dictate",
-          "prompt": "不可抗力の確認をお願いします",
-          "furigana": "ふかこうりょくのかくにんをおねがいします",
-          "romaji": "fukakouryoku no kakunin o onegaishimasu.",
-          "english": "Confirming Force majeure / act of God, please.",
-          "audioText": "不可抗力の確認をお願いします",
+          "prompt": "不可抗力の確認です",
+          "furigana": "ふかこうりょくのかくにんです",
+          "romaji": "fukakouryoku no kakunin desu.",
+          "english": "It is Confirming Force majeure / act of God.",
+          "audioText": "不可抗力の確認です",
           "dictateTokens": [
-            "です",
-            "ありがとう",
-            "を",
-            "お願いします",
-            "不可抗力の確認"
+            "これ",
+            "ではありません",
+            "不可抗力の確認",
+            "です"
           ],
           "dictateSolution": [
             "不可抗力の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "不可抗力の確認をお願いします"
+          "correctAnswer": "不可抗力の確認です"
         },
         {
           "id": "u29_l10_7",
@@ -2157,10 +2147,10 @@ export const unit29: DojoUnit = {
           "english": "Confirming Clause / contractual article",
           "audioText": "じょうこうのかくにん",
           "options": [
-            "Discussion / scholarly review",
-            "Governing law",
-            "Confirming Clause / contractual article",
-            "Confirming Exemption from liability / disclaimer"
+            "Confirming Academic paper / thesis",
+            "Confirming Jurisdiction",
+            "Verification / empirical testing",
+            "Confirming Clause / contractual article"
           ],
           "correctAnswer": "Confirming Clause / contractual article"
         },
@@ -2174,33 +2164,34 @@ export const unit29: DojoUnit = {
           "audioText": "じょうこうのかくにん",
           "tileBank": [
             "じ",
-            "く",
-            "の",
+            "か",
             "う",
             "う",
             "ょ",
-            "こ",
-            "か"
+            "く",
+            "の",
+            "こ"
           ],
           "correctAnswer": "じょうこうのかくにん"
         },
         {
           "id": "u29_l11_3",
           "type": "cloze",
-          "prompt": "私は甲及び乙の確認がすきです",
-          "furigana": "わたしはこうおよびおつのかくにんがすきです",
-          "romaji": "Watashi wa kou oyobi otsu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Party A and Party B.",
-          "audioText": "甲及び乙の確認",
-          "clozeSentence": "これは甲及び乙の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な甲及び乙の確認です。",
+          "furigana": "これはいちばんたいせつなこうおよびおつのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kou oyobi otsu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Party A and Party B.",
+          "audioText": "これは甲及び乙の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な甲及び乙の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l11_4",
@@ -2211,11 +2202,11 @@ export const unit29: DojoUnit = {
           "english": "This is Confirming Party A and Party B.",
           "audioText": "これは甲及び乙の確認です",
           "scrambleTokens": [
-            "これは",
+            "それ",
             "です",
-            "ではありません",
+            "これは",
             "甲及び乙の確認",
-            "それ"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2244,24 +2235,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l11_6",
           "type": "dictate",
-          "prompt": "遵守の確認をお願いします",
-          "furigana": "じゅんしゅのかくにんをおねがいします",
-          "romaji": "junshu no kakunin o onegaishimasu.",
-          "english": "Confirming Compliance / observance, please.",
-          "audioText": "遵守の確認をお願いします",
+          "prompt": "遵守の確認です",
+          "furigana": "じゅんしゅのかくにんです",
+          "romaji": "junshu no kakunin desu.",
+          "english": "It is Confirming Compliance / observance.",
+          "audioText": "遵守の確認です",
           "dictateTokens": [
+            "ではありません",
+            "これ",
             "です",
-            "遵守の確認",
-            "を",
-            "お願いします",
-            "ありがとう"
+            "遵守の確認"
           ],
           "dictateSolution": [
             "遵守の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "遵守の確認をお願いします"
+          "correctAnswer": "遵守の確認です"
         },
         {
           "id": "u29_l11_7",
@@ -2371,9 +2360,9 @@ export const unit29: DojoUnit = {
           "english": "Confirming Exemption from liability / disclaimer",
           "audioText": "めんせきのかくにん",
           "options": [
-            "Confirming Verification / empirical testing",
-            "Confirming Validity / soundness",
             "Confirming Governing law",
+            "Confirming Clause / contractual article",
+            "Confirming Validity / soundness",
             "Confirming Exemption from liability / disclaimer"
           ],
           "correctAnswer": "Confirming Exemption from liability / disclaimer"
@@ -2387,26 +2376,26 @@ export const unit29: DojoUnit = {
           "english": "Build 'Confirming Exemption from liability / disclaimer'",
           "audioText": "めんせきのかくにん",
           "tileBank": [
-            "の",
             "か",
-            "ん",
             "に",
-            "き",
-            "せ",
             "く",
-            "め"
+            "き",
+            "め",
+            "せ",
+            "ん",
+            "の"
           ],
           "correctAnswer": "めんせきのかくにん"
         },
         {
           "id": "u29_l12_3",
           "type": "cloze",
-          "prompt": "私は損害賠償の確認がすきです",
-          "furigana": "わたしはそんがいばいしょうのかくにんがすきです",
-          "romaji": "Watashi wa songai baishou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Compensation for damages.",
-          "audioText": "損害賠償の確認",
-          "clozeSentence": "これは損害賠償の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な損害賠償の確認です。",
+          "furigana": "これはいちばんたいせつなそんがいばいしょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na songai baishou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Compensation for damages.",
+          "audioText": "これは損害賠償の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な損害賠償の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2414,7 +2403,8 @@ export const unit29: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l12_4",
@@ -2425,10 +2415,10 @@ export const unit29: DojoUnit = {
           "english": "This is Confirming Compensation for damages.",
           "audioText": "これは損害賠償の確認です",
           "scrambleTokens": [
+            "です",
             "損害賠償の確認",
             "ではありません",
             "これは",
-            "です",
             "それ"
           ],
           "scrambleSolution": [
@@ -2458,24 +2448,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l12_6",
           "type": "dictate",
-          "prompt": "管轄の確認をお願いします",
-          "furigana": "かんかつのかくにんをおねがいします",
-          "romaji": "kankatsu no kakunin o onegaishimasu.",
-          "english": "Confirming Jurisdiction, please.",
-          "audioText": "管轄の確認をお願いします",
+          "prompt": "管轄の確認です",
+          "furigana": "かんかつのかくにんです",
+          "romaji": "kankatsu no kakunin desu.",
+          "english": "It is Confirming Jurisdiction.",
+          "audioText": "管轄の確認です",
           "dictateTokens": [
+            "これ",
             "です",
-            "お願いします",
-            "ありがとう",
-            "を",
+            "ではありません",
             "管轄の確認"
           ],
           "dictateSolution": [
             "管轄の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "管轄の確認をお願いします"
+          "correctAnswer": "管轄の確認です"
         },
         {
           "id": "u29_l12_7",
@@ -2578,10 +2566,10 @@ export const unit29: DojoUnit = {
           "english": "Clause / contractual article",
           "audioText": "じょうこう",
           "options": [
-            "Citation / quotation",
+            "Confirming Compliance / observance",
+            "Confirming Jurisdiction",
             "Clause / contractual article",
-            "Academic paper / thesis",
-            "Governing law"
+            "Based upon / taking into account"
           ],
           "correctAnswer": "Clause / contractual article"
         },
@@ -2594,34 +2582,35 @@ export const unit29: DojoUnit = {
           "english": "Build 'Clause / contractual article'",
           "audioText": "じょうこう",
           "tileBank": [
-            "お",
             "う",
-            "こ",
-            "そ",
+            "さ",
+            "り",
             "じ",
-            "ょ",
-            "の",
-            "う"
+            "こ",
+            "う",
+            "や",
+            "ょ"
           ],
           "correctAnswer": "じょうこう"
         },
         {
           "id": "u29_l13_3",
           "type": "cloze",
-          "prompt": "私は甲及び乙がすきです",
-          "furigana": "わたしはこうおよびおつがすきです",
-          "romaji": "Watashi wa kou oyobi otsu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Party A and Party B.",
-          "audioText": "甲及び乙",
-          "clozeSentence": "これは甲及び乙 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な甲及び乙です。",
+          "furigana": "これはいちばんたいせつなこうおよびおつです。",
+          "romaji": "Kore wa ichiban taisetsu na kou oyobi otsu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Party A and Party B.",
+          "audioText": "これは甲及び乙です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な甲及び乙です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l13_4",
@@ -2632,11 +2621,11 @@ export const unit29: DojoUnit = {
           "english": "This is Party A and Party B.",
           "audioText": "これは甲及び乙です",
           "scrambleTokens": [
-            "です",
-            "ではありません",
-            "それ",
             "甲及び乙",
-            "これは"
+            "ではありません",
+            "です",
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2665,24 +2654,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l13_6",
           "type": "dictate",
-          "prompt": "遵守をお願いします",
-          "furigana": "じゅんしゅをおねがいします",
-          "romaji": "junshu o onegaishimasu.",
-          "english": "Compliance / observance, please.",
-          "audioText": "遵守をお願いします",
+          "prompt": "遵守です",
+          "furigana": "じゅんしゅです",
+          "romaji": "junshu desu.",
+          "english": "It is Compliance / observance.",
+          "audioText": "遵守です",
           "dictateTokens": [
-            "です",
-            "を",
-            "お願いします",
             "遵守",
-            "ありがとう"
+            "これ",
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "遵守",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "遵守をお願いします"
+          "correctAnswer": "遵守です"
         },
         {
           "id": "u29_l13_7",
@@ -2786,10 +2773,10 @@ export const unit29: DojoUnit = {
           "english": "Exemption from liability / disclaimer",
           "audioText": "めんせき",
           "options": [
-            "Force majeure / act of God",
-            "Confirming Discussion / scholarly review",
             "Exemption from liability / disclaimer",
-            "Citation / quotation"
+            "Confirming Based upon / taking into account",
+            "Confirming Compensation for damages",
+            "Confirming Validity / soundness"
           ],
           "correctAnswer": "Exemption from liability / disclaimer"
         },
@@ -2802,34 +2789,35 @@ export const unit29: DojoUnit = {
           "english": "Build 'Exemption from liability / disclaimer'",
           "audioText": "めんせき",
           "tileBank": [
-            "き",
+            "ね",
             "せ",
-            "に",
-            "そ",
+            "き",
             "め",
-            "ゆ",
-            "を",
-            "ん"
+            "ん",
+            "に",
+            "み",
+            "さ"
           ],
           "correctAnswer": "めんせき"
         },
         {
           "id": "u29_l14_3",
           "type": "cloze",
-          "prompt": "私は損害賠償がすきです",
-          "furigana": "わたしはそんがいばいしょうがすきです",
-          "romaji": "Watashi wa songai baishou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Compensation for damages.",
-          "audioText": "損害賠償",
-          "clozeSentence": "これは損害賠償 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な損害賠償です。",
+          "furigana": "これはいちばんたいせつなそんがいばいしょうです。",
+          "romaji": "Kore wa ichiban taisetsu na songai baishou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Compensation for damages.",
+          "audioText": "これは損害賠償です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な損害賠償です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l14_4",
@@ -2841,10 +2829,10 @@ export const unit29: DojoUnit = {
           "audioText": "これは損害賠償です",
           "scrambleTokens": [
             "ではありません",
-            "これは",
             "それ",
             "です",
-            "損害賠償"
+            "損害賠償",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2873,24 +2861,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l14_6",
           "type": "dictate",
-          "prompt": "管轄をお願いします",
-          "furigana": "かんかつをおねがいします",
-          "romaji": "kankatsu o onegaishimasu.",
-          "english": "Jurisdiction, please.",
-          "audioText": "管轄をお願いします",
+          "prompt": "管轄です",
+          "furigana": "かんかつです",
+          "romaji": "kankatsu desu.",
+          "english": "It is Jurisdiction.",
+          "audioText": "管轄です",
           "dictateTokens": [
-            "お願いします",
-            "を",
+            "ではありません",
             "管轄",
-            "ありがとう",
-            "です"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "管轄",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "管轄をお願いします"
+          "correctAnswer": "管轄です"
         },
         {
           "id": "u29_l14_7",
@@ -2993,10 +2979,10 @@ export const unit29: DojoUnit = {
           "english": "Governing law",
           "audioText": "じゅんきょほう",
           "options": [
-            "Confirming Compliance / observance",
-            "Confirming Clause / contractual article",
-            "Confirming Jurisdiction",
-            "Governing law"
+            "Confirming Validity / soundness",
+            "Academic paper / thesis",
+            "Governing law",
+            "Confirming Citation / quotation"
           ],
           "correctAnswer": "Governing law"
         },
@@ -3009,34 +2995,35 @@ export const unit29: DojoUnit = {
           "english": "Build 'Academic paper / thesis'",
           "audioText": "ろんぶん",
           "tileBank": [
-            "へ",
+            "に",
+            "す",
+            "ん",
+            "ん",
+            "う",
             "ぶ",
-            "ね",
             "ろ",
-            "ん",
-            "ん",
-            "り",
-            "つ"
+            "え"
           ],
           "correctAnswer": "ろんぶん"
         },
         {
           "id": "u29_l15_3",
           "type": "cloze",
-          "prompt": "私は論文がすきです",
-          "furigana": "わたしはろんぶんがすきです",
-          "romaji": "Watashi wa ronbun ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Academic paper / thesis.",
-          "audioText": "論文",
-          "clozeSentence": "これは論文 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な論文です。",
+          "furigana": "これはいちばんたいせつなろんぶんです。",
+          "romaji": "Kore wa ichiban taisetsu na ronbun desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Academic paper / thesis.",
+          "audioText": "これは論文です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な論文です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u29_l15_4",
@@ -3048,9 +3035,9 @@ export const unit29: DojoUnit = {
           "audioText": "これは論文です",
           "scrambleTokens": [
             "これは",
+            "です",
             "それ",
             "論文",
-            "です",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -3080,24 +3067,22 @@ export const unit29: DojoUnit = {
         {
           "id": "u29_l15_6",
           "type": "dictate",
-          "prompt": "検証をお願いします",
-          "furigana": "けんしょうをおねがいします",
-          "romaji": "kenshou o onegaishimasu.",
-          "english": "Verification / empirical testing, please.",
-          "audioText": "検証をお願いします",
+          "prompt": "検証です",
+          "furigana": "けんしょうです",
+          "romaji": "kenshou desu.",
+          "english": "It is Verification / empirical testing.",
+          "audioText": "検証です",
           "dictateTokens": [
-            "検証",
-            "お願いします",
-            "ありがとう",
+            "ではありません",
             "です",
-            "を"
+            "これ",
+            "検証"
           ],
           "dictateSolution": [
             "検証",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "検証をお願いします"
+          "correctAnswer": "検証です"
         },
         {
           "id": "u29_l15_7",
@@ -3182,10 +3167,10 @@ export const unit29: DojoUnit = {
         "english": "Clause / contractual article",
         "audioText": "じょうこう",
         "options": [
-          "Clause / contractual article",
-          "Confirming Discussion / scholarly review",
-          "Confirming Academic paper / thesis",
-          "Based upon / taking into account"
+          "Confirming Verification / empirical testing",
+          "Confirming Jurisdiction",
+          "Compliance / observance",
+          "Clause / contractual article"
         ],
         "correctAnswer": "Clause / contractual article"
       },
@@ -3198,14 +3183,14 @@ export const unit29: DojoUnit = {
         "english": "Build 'Clause / contractual article'",
         "audioText": "じょうこう",
         "tileBank": [
-          "う",
-          "じ",
-          "た",
-          "ょ",
-          "ひ",
+          "な",
           "こ",
+          "み",
+          "じ",
           "う",
-          "や"
+          "う",
+          "ょ",
+          "く"
         ],
         "correctAnswer": "じょうこう"
       },
@@ -3218,10 +3203,10 @@ export const unit29: DojoUnit = {
         "english": "Governing law",
         "audioText": "じゅんきょほう",
         "options": [
-          "Compensation for damages",
-          "Governing law",
-          "Validity / soundness",
-          "Confirming Compensation for damages"
+          "Confirming Validity / soundness",
+          "Confirming Academic paper / thesis",
+          "Exemption from liability / disclaimer",
+          "Governing law"
         ],
         "correctAnswer": "Governing law"
       },
@@ -3234,14 +3219,14 @@ export const unit29: DojoUnit = {
         "english": "Build 'Academic paper / thesis'",
         "audioText": "ろんぶん",
         "tileBank": [
-          "ぶ",
-          "こ",
           "ろ",
-          "と",
           "ん",
-          "さ",
-          "よ",
-          "ん"
+          "ん",
+          "ぶ",
+          "せ",
+          "は",
+          "う",
+          "み"
         ],
         "correctAnswer": "ろんぶん"
       },
@@ -3255,8 +3240,8 @@ export const unit29: DojoUnit = {
         "audioText": "かんがみる",
         "options": [
           "In consideration of / in light of",
-          "Governing law",
-          "Confirming Discussion / scholarly review",
+          "Confirming Party A and Party B",
+          "Citation / quotation",
           "Confirming Verification / empirical testing"
         ],
         "correctAnswer": "In consideration of / in light of"
@@ -3270,14 +3255,14 @@ export const unit29: DojoUnit = {
         "english": "Build 'In consideration of / in light of'",
         "audioText": "かんがみる",
         "tileBank": [
-          "み",
-          "る",
-          "か",
+          "た",
+          "け",
           "ん",
-          "が",
-          "い",
-          "せ",
-          "ろ"
+          "か",
+          "さ",
+          "る",
+          "み",
+          "が"
         ],
         "correctAnswer": "かんがみる"
       },
@@ -3290,10 +3275,10 @@ export const unit29: DojoUnit = {
         "english": "Confirming Exemption from liability / disclaimer",
         "audioText": "めんせきのかくにん",
         "options": [
-          "Confirming Jurisdiction",
-          "Confirming Discussion / scholarly review",
+          "Confirming Clause / contractual article",
+          "Force majeure / act of God",
           "Confirming Exemption from liability / disclaimer",
-          "Citation / quotation"
+          "Confirming Discussion / scholarly review"
         ],
         "correctAnswer": "Confirming Exemption from liability / disclaimer"
       },
@@ -3306,14 +3291,14 @@ export const unit29: DojoUnit = {
         "english": "Build 'Confirming Exemption from liability / disclaimer'",
         "audioText": "めんせきのかくにん",
         "tileBank": [
-          "に",
-          "ん",
-          "せ",
-          "き",
           "か",
+          "ん",
+          "の",
+          "き",
           "め",
           "く",
-          "の"
+          "せ",
+          "に"
         ],
         "correctAnswer": "めんせきのかくにん"
       },
@@ -3326,10 +3311,10 @@ export const unit29: DojoUnit = {
         "english": "Confirming Validity / soundness",
         "audioText": "だとうせいのかくにん",
         "options": [
+          "Clause / contractual article",
           "Confirming Validity / soundness",
-          "Compliance / observance",
-          "Confirming Discussion / scholarly review",
-          "Confirming Clause / contractual article"
+          "Confirming In consideration of / in light of",
+          "Party A and Party B"
         ],
         "correctAnswer": "Confirming Validity / soundness"
       },
@@ -3342,14 +3327,14 @@ export const unit29: DojoUnit = {
         "english": "Build 'Confirming Validity / soundness'",
         "audioText": "だとうせいのかくにん",
         "tileBank": [
-          "と",
-          "い",
-          "の",
-          "か",
-          "う",
-          "く",
           "だ",
-          "せ"
+          "う",
+          "せ",
+          "い",
+          "と",
+          "く",
+          "か",
+          "の"
         ],
         "correctAnswer": "だとうせいのかくにん"
       },
@@ -3362,10 +3347,10 @@ export const unit29: DojoUnit = {
         "english": "Confirming Clause / contractual article",
         "audioText": "じょうこうのかくにん",
         "options": [
-          "Discussion / scholarly review",
-          "Governing law",
-          "Confirming Clause / contractual article",
-          "Confirming Exemption from liability / disclaimer"
+          "Confirming Academic paper / thesis",
+          "Confirming Jurisdiction",
+          "Verification / empirical testing",
+          "Confirming Clause / contractual article"
         ],
         "correctAnswer": "Confirming Clause / contractual article"
       },
@@ -3379,13 +3364,13 @@ export const unit29: DojoUnit = {
         "audioText": "じょうこうのかくにん",
         "tileBank": [
           "じ",
-          "く",
-          "の",
+          "か",
           "う",
           "う",
           "ょ",
-          "こ",
-          "か"
+          "く",
+          "の",
+          "こ"
         ],
         "correctAnswer": "じょうこうのかくにん"
       }

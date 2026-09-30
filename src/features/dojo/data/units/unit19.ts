@@ -52,10 +52,10 @@ export const unit19: DojoUnit = {
           "english": "Job interview",
           "audioText": "めんせつ",
           "options": [
-            "Aptitude / suitability",
-            "Job interview",
-            "Confirming Self-promotion",
-            "Joining a company"
+            "Self-promotion",
+            "Unofficial job offer",
+            "Confirming Enthusiasm / will to achieve",
+            "Job interview"
           ],
           "correctAnswer": "Job interview"
         },
@@ -68,34 +68,35 @@ export const unit19: DojoUnit = {
           "english": "Build 'Job interview'",
           "audioText": "めんせつ",
           "tileBank": [
-            "ね",
-            "ほ",
-            "つ",
             "せ",
             "ん",
-            "む",
-            "き",
-            "め"
+            "う",
+            "め",
+            "つ",
+            "さ",
+            "ら",
+            "か"
           ],
           "correctAnswer": "めんせつ"
         },
         {
           "id": "u19_l1_3",
           "type": "cloze",
-          "prompt": "私は志望動機がすきです",
-          "furigana": "わたしはしぼうどうきがすきです",
-          "romaji": "Watashi wa shibou douki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Motivation for applying.",
-          "audioText": "志望動機",
-          "clozeSentence": "これは志望動機 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な志望動機です。",
+          "furigana": "これはいちばんたいせつなしぼうどうきです。",
+          "romaji": "Kore wa ichiban taisetsu na shibou douki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Motivation for applying.",
+          "audioText": "これは志望動機です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な志望動機です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l1_4",
@@ -106,11 +107,11 @@ export const unit19: DojoUnit = {
           "english": "This is Motivation for applying.",
           "audioText": "これは志望動機です",
           "scrambleTokens": [
+            "ではありません",
+            "志望動機",
             "それ",
             "これは",
-            "です",
-            "志望動機",
-            "ではありません"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -139,24 +140,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l1_6",
           "type": "dictate",
-          "prompt": "自己PRをお願いします",
-          "furigana": "じこピーアールをおねがいします",
-          "romaji": "jiko pii aaru o onegaishimasu.",
-          "english": "Self-promotion, please.",
-          "audioText": "自己PRをお願いします",
+          "prompt": "自己PRです",
+          "furigana": "じこピーアールです",
+          "romaji": "jiko pii aaru desu.",
+          "english": "It is Self-promotion.",
+          "audioText": "自己PRです",
           "dictateTokens": [
-            "です",
-            "お願いします",
-            "ありがとう",
+            "これ",
             "自己PR",
-            "を"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "自己PR",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "自己PRをお願いします"
+          "correctAnswer": "自己PRです"
         },
         {
           "id": "u19_l1_7",
@@ -258,10 +257,10 @@ export const unit19: DojoUnit = {
           "english": "Strength / strong point",
           "audioText": "ちょうしょ",
           "options": [
-            "Confirming Self-promotion",
+            "Confirming Enthusiasm / will to achieve",
+            "Confirming Job interview",
             "Strength / strong point",
-            "Confirming Weakness / shortcoming",
-            "Confirming Joining a company"
+            "Confirming Weakness / shortcoming"
           ],
           "correctAnswer": "Strength / strong point"
         },
@@ -274,34 +273,35 @@ export const unit19: DojoUnit = {
           "english": "Build 'Strength / strong point'",
           "audioText": "ちょうしょ",
           "tileBank": [
-            "ょ",
-            "め",
-            "し",
+            "う",
             "ち",
-            "ょ",
-            "り",
+            "ら",
             "た",
-            "う"
+            "ょ",
+            "し",
+            "ょ",
+            "ん"
           ],
           "correctAnswer": "ちょうしょ"
         },
         {
           "id": "u19_l2_3",
           "type": "cloze",
-          "prompt": "私は短所がすきです",
-          "furigana": "わたしはたんしょがすきです",
-          "romaji": "Watashi wa tansho ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Weakness / shortcoming.",
-          "audioText": "短所",
-          "clozeSentence": "これは短所 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な短所です。",
+          "furigana": "これはいちばんたいせつなたんしょです。",
+          "romaji": "Kore wa ichiban taisetsu na tansho desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Weakness / shortcoming.",
+          "audioText": "これは短所です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な短所です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l2_4",
@@ -312,11 +312,11 @@ export const unit19: DojoUnit = {
           "english": "This is Weakness / shortcoming.",
           "audioText": "これは短所です",
           "scrambleTokens": [
+            "これは",
             "短所",
             "ではありません",
-            "これは",
-            "です",
-            "それ"
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -345,24 +345,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l2_6",
           "type": "dictate",
-          "prompt": "採用をお願いします",
-          "furigana": "さいようをおねがいします",
-          "romaji": "saiyou o onegaishimasu.",
-          "english": "Recruitment / hiring, please.",
-          "audioText": "採用をお願いします",
+          "prompt": "採用です",
+          "furigana": "さいようです",
+          "romaji": "saiyou desu.",
+          "english": "It is Recruitment / hiring.",
+          "audioText": "採用です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "採用",
             "です",
-            "を"
+            "ではありません",
+            "採用",
+            "これ"
           ],
           "dictateSolution": [
             "採用",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "採用をお願いします"
+          "correctAnswer": "採用です"
         },
         {
           "id": "u19_l2_7",
@@ -465,10 +463,10 @@ export const unit19: DojoUnit = {
           "english": "Resume / curriculum vitae",
           "audioText": "りれきしょ",
           "options": [
-            "Confirming Weakness / shortcoming",
-            "Resume / curriculum vitae",
-            "Confirming Aptitude / suitability",
-            "Confirming Weakness / shortcoming"
+            "Contribution",
+            "Confirming Recruitment / hiring",
+            "Confirming Unofficial job offer",
+            "Resume / curriculum vitae"
           ],
           "correctAnswer": "Resume / curriculum vitae"
         },
@@ -481,34 +479,35 @@ export const unit19: DojoUnit = {
           "english": "Build 'Resume / curriculum vitae'",
           "audioText": "りれきしょ",
           "tileBank": [
-            "き",
-            "え",
-            "ょ",
-            "し",
-            "た",
-            "か",
             "れ",
-            "り"
+            "き",
+            "り",
+            "ち",
+            "め",
+            "ょ",
+            "お",
+            "し"
           ],
           "correctAnswer": "りれきしょ"
         },
         {
           "id": "u19_l3_3",
           "type": "cloze",
-          "prompt": "私は貢献がすきです",
-          "furigana": "わたしはこうけんがすきです",
-          "romaji": "Watashi wa kouken ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Contribution.",
-          "audioText": "貢献",
-          "clozeSentence": "これは貢献 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な貢献です。",
+          "furigana": "これはいちばんたいせつなこうけんです。",
+          "romaji": "Kore wa ichiban taisetsu na kouken desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Contribution.",
+          "audioText": "これは貢献です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な貢献です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l3_4",
@@ -519,11 +518,11 @@ export const unit19: DojoUnit = {
           "english": "This is Contribution.",
           "audioText": "これは貢献です",
           "scrambleTokens": [
-            "です",
             "それ",
-            "貢献",
             "ではありません",
-            "これは"
+            "これは",
+            "です",
+            "貢献"
           ],
           "scrambleSolution": [
             "これは",
@@ -552,24 +551,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l3_6",
           "type": "dictate",
-          "prompt": "適性をお願いします",
-          "furigana": "てきせいをおねがいします",
-          "romaji": "tekisei o onegaishimasu.",
-          "english": "Aptitude / suitability, please.",
-          "audioText": "適性をお願いします",
+          "prompt": "適性です",
+          "furigana": "てきせいです",
+          "romaji": "tekisei desu.",
+          "english": "It is Aptitude / suitability.",
+          "audioText": "適性です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "です",
-            "を",
-            "適性"
+            "適性",
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "適性",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "適性をお願いします"
+          "correctAnswer": "適性です"
         },
         {
           "id": "u19_l3_7",
@@ -671,10 +668,10 @@ export const unit19: DojoUnit = {
           "english": "Enthusiasm / will to achieve",
           "audioText": "いよく",
           "options": [
-            "Confirming Weakness / shortcoming",
-            "Motivation for applying",
+            "Confirming Track record / achievements",
             "Confirming Strength / strong point",
-            "Enthusiasm / will to achieve"
+            "Enthusiasm / will to achieve",
+            "Job interview"
           ],
           "correctAnswer": "Enthusiasm / will to achieve"
         },
@@ -687,26 +684,26 @@ export const unit19: DojoUnit = {
           "english": "Build 'Enthusiasm / will to achieve'",
           "audioText": "いよく",
           "tileBank": [
-            "い",
-            "く",
-            "た",
+            "う",
+            "や",
             "よ",
-            "き",
-            "へ",
-            "と",
-            "わ"
+            "お",
+            "く",
+            "い",
+            "せ",
+            "す"
           ],
           "correctAnswer": "いよく"
         },
         {
           "id": "u19_l4_3",
           "type": "cloze",
-          "prompt": "私は実績がすきです",
-          "furigana": "わたしはじっせきがすきです",
-          "romaji": "Watashi wa jisseki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Track record / achievements.",
-          "audioText": "実績",
-          "clozeSentence": "これは実績 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な実績です。",
+          "furigana": "これはいちばんたいせつなじっせきです。",
+          "romaji": "Kore wa ichiban taisetsu na jisseki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Track record / achievements.",
+          "audioText": "これは実績です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な実績です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -714,7 +711,8 @@ export const unit19: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l4_4",
@@ -726,8 +724,8 @@ export const unit19: DojoUnit = {
           "audioText": "これは実績です",
           "scrambleTokens": [
             "これは",
-            "実績",
             "です",
+            "実績",
             "それ",
             "ではありません"
           ],
@@ -758,24 +756,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l4_6",
           "type": "dictate",
-          "prompt": "入社をお願いします",
-          "furigana": "にゅうしゃをおねがいします",
-          "romaji": "nyuusha o onegaishimasu.",
-          "english": "Joining a company, please.",
-          "audioText": "入社をお願いします",
+          "prompt": "入社です",
+          "furigana": "にゅうしゃです",
+          "romaji": "nyuusha desu.",
+          "english": "It is Joining a company.",
+          "audioText": "入社です",
           "dictateTokens": [
-            "を",
+            "ではありません",
             "入社",
             "です",
-            "ありがとう",
-            "お願いします"
+            "これ"
           ],
           "dictateSolution": [
             "入社",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "入社をお願いします"
+          "correctAnswer": "入社です"
         },
         {
           "id": "u19_l4_7",
@@ -877,10 +873,10 @@ export const unit19: DojoUnit = {
           "english": "Your esteemed company (written)",
           "audioText": "きしゃ",
           "options": [
-            "Confirming Track record / achievements",
+            "Resume / curriculum vitae",
+            "Confirming Contribution",
             "Your esteemed company (written)",
-            "Confirming Enthusiasm / will to achieve",
-            "Joining a company"
+            "Confirming Your esteemed company (spoken)"
           ],
           "correctAnswer": "Your esteemed company (written)"
         },
@@ -893,34 +889,35 @@ export const unit19: DojoUnit = {
           "english": "Build 'Your esteemed company (written)'",
           "audioText": "きしゃ",
           "tileBank": [
-            "ま",
-            "を",
-            "ゃ",
             "し",
-            "と",
-            "き",
-            "つ",
-            "せ"
+            "ね",
+            "お",
+            "ゃ",
+            "に",
+            "よ",
+            "ぬ",
+            "き"
           ],
           "correctAnswer": "きしゃ"
         },
         {
           "id": "u19_l5_3",
           "type": "cloze",
-          "prompt": "私は御社がすきです",
-          "furigana": "わたしはおんしゃがすきです",
-          "romaji": "Watashi wa onsha ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Your esteemed company (spoken).",
-          "audioText": "御社",
-          "clozeSentence": "これは御社 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な御社です。",
+          "furigana": "これはいちばんたいせつなおんしゃです。",
+          "romaji": "Kore wa ichiban taisetsu na onsha desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Your esteemed company (spoken).",
+          "audioText": "これは御社です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な御社です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l5_4",
@@ -931,11 +928,11 @@ export const unit19: DojoUnit = {
           "english": "This is Your esteemed company (spoken).",
           "audioText": "これは御社です",
           "scrambleTokens": [
-            "です",
+            "それ",
             "御社",
-            "これは",
+            "です",
             "ではありません",
-            "それ"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -964,24 +961,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l5_6",
           "type": "dictate",
-          "prompt": "内定をお願いします",
-          "furigana": "ないていをおねがいします",
-          "romaji": "naitei o onegaishimasu.",
-          "english": "Unofficial job offer, please.",
-          "audioText": "内定をお願いします",
+          "prompt": "内定です",
+          "furigana": "ないていです",
+          "romaji": "naitei desu.",
+          "english": "It is Unofficial job offer.",
+          "audioText": "内定です",
           "dictateTokens": [
-            "です",
-            "ありがとう",
             "内定",
-            "を",
-            "お願いします"
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "内定",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "内定をお願いします"
+          "correctAnswer": "内定です"
         },
         {
           "id": "u19_l5_7",
@@ -1091,10 +1086,10 @@ export const unit19: DojoUnit = {
           "english": "Confirming Job interview",
           "audioText": "めんせつのかくにん",
           "options": [
-            "Confirming Job interview",
-            "Confirming Recruitment / hiring",
             "Motivation for applying",
-            "Confirming Strength / strong point"
+            "Confirming Job interview",
+            "Confirming Contribution",
+            "Confirming Weakness / shortcoming"
           ],
           "correctAnswer": "Confirming Job interview"
         },
@@ -1108,33 +1103,34 @@ export const unit19: DojoUnit = {
           "audioText": "めんせつのかくにん",
           "tileBank": [
             "ん",
-            "く",
             "か",
-            "に",
-            "つ",
-            "め",
+            "く",
             "の",
-            "せ"
+            "せ",
+            "め",
+            "に",
+            "つ"
           ],
           "correctAnswer": "めんせつのかくにん"
         },
         {
           "id": "u19_l6_3",
           "type": "cloze",
-          "prompt": "私は志望動機の確認がすきです",
-          "furigana": "わたしはしぼうどうきのかくにんがすきです",
-          "romaji": "Watashi wa shibou douki no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Motivation for applying.",
-          "audioText": "志望動機の確認",
-          "clozeSentence": "これは志望動機の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な志望動機の確認です。",
+          "furigana": "これはいちばんたいせつなしぼうどうきのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shibou douki no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Motivation for applying.",
+          "audioText": "これは志望動機の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な志望動機の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l6_4",
@@ -1145,11 +1141,11 @@ export const unit19: DojoUnit = {
           "english": "This is Confirming Motivation for applying.",
           "audioText": "これは志望動機の確認です",
           "scrambleTokens": [
-            "です",
+            "志望動機の確認",
             "これは",
-            "ではありません",
+            "です",
             "それ",
-            "志望動機の確認"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1178,24 +1174,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l6_6",
           "type": "dictate",
-          "prompt": "自己PRの確認をお願いします",
-          "furigana": "じこピーアールのかくにんをおねがいします",
-          "romaji": "jiko pii aaru no kakunin o onegaishimasu.",
-          "english": "Confirming Self-promotion, please.",
-          "audioText": "自己PRの確認をお願いします",
+          "prompt": "自己PRの確認です",
+          "furigana": "じこピーアールのかくにんです",
+          "romaji": "jiko pii aaru no kakunin desu.",
+          "english": "It is Confirming Self-promotion.",
+          "audioText": "自己PRの確認です",
           "dictateTokens": [
-            "を",
             "自己PRの確認",
-            "です",
-            "お願いします",
-            "ありがとう"
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "自己PRの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "自己PRの確認をお願いします"
+          "correctAnswer": "自己PRの確認です"
         },
         {
           "id": "u19_l6_7",
@@ -1303,10 +1297,10 @@ export const unit19: DojoUnit = {
           "english": "Confirming Strength / strong point",
           "audioText": "ちょうしょのかくにん",
           "options": [
-            "Confirming Recruitment / hiring",
+            "Unofficial job offer",
+            "Confirming Your esteemed company (written)",
             "Confirming Strength / strong point",
-            "Confirming Track record / achievements",
-            "Confirming Weakness / shortcoming"
+            "Confirming Self-promotion"
           ],
           "correctAnswer": "Confirming Strength / strong point"
         },
@@ -1321,32 +1315,33 @@ export const unit19: DojoUnit = {
           "tileBank": [
             "く",
             "の",
-            "し",
-            "ち",
             "か",
-            "ょ",
             "う",
-            "ょ"
+            "し",
+            "ょ",
+            "ょ",
+            "ち"
           ],
           "correctAnswer": "ちょうしょのかくにん"
         },
         {
           "id": "u19_l7_3",
           "type": "cloze",
-          "prompt": "私は短所の確認がすきです",
-          "furigana": "わたしはたんしょのかくにんがすきです",
-          "romaji": "Watashi wa tansho no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Weakness / shortcoming.",
-          "audioText": "短所の確認",
-          "clozeSentence": "これは短所の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な短所の確認です。",
+          "furigana": "これはいちばんたいせつなたんしょのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na tansho no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Weakness / shortcoming.",
+          "audioText": "これは短所の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な短所の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l7_4",
@@ -1357,11 +1352,11 @@ export const unit19: DojoUnit = {
           "english": "This is Confirming Weakness / shortcoming.",
           "audioText": "これは短所の確認です",
           "scrambleTokens": [
-            "ではありません",
+            "それ",
             "です",
+            "ではありません",
             "これは",
-            "短所の確認",
-            "それ"
+            "短所の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1390,24 +1385,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l7_6",
           "type": "dictate",
-          "prompt": "採用の確認をお願いします",
-          "furigana": "さいようのかくにんをおねがいします",
-          "romaji": "saiyou no kakunin o onegaishimasu.",
-          "english": "Confirming Recruitment / hiring, please.",
-          "audioText": "採用の確認をお願いします",
+          "prompt": "採用の確認です",
+          "furigana": "さいようのかくにんです",
+          "romaji": "saiyou no kakunin desu.",
+          "english": "It is Confirming Recruitment / hiring.",
+          "audioText": "採用の確認です",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "採用の確認",
-            "ありがとう",
-            "です",
-            "お願いします",
-            "を"
+            "です"
           ],
           "dictateSolution": [
             "採用の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "採用の確認をお願いします"
+          "correctAnswer": "採用の確認です"
         },
         {
           "id": "u19_l7_7",
@@ -1516,10 +1509,10 @@ export const unit19: DojoUnit = {
           "english": "Confirming Resume / curriculum vitae",
           "audioText": "りれきしょのかくにん",
           "options": [
-            "Recruitment / hiring",
+            "Confirming Your esteemed company (spoken)",
             "Confirming Resume / curriculum vitae",
-            "Unofficial job offer",
-            "Self-promotion"
+            "Aptitude / suitability",
+            "Confirming Job interview"
           ],
           "correctAnswer": "Confirming Resume / curriculum vitae"
         },
@@ -1533,25 +1526,25 @@ export const unit19: DojoUnit = {
           "audioText": "りれきしょのかくにん",
           "tileBank": [
             "り",
-            "き",
-            "く",
+            "か",
+            "し",
             "の",
+            "き",
             "ょ",
             "れ",
-            "か",
-            "し"
+            "く"
           ],
           "correctAnswer": "りれきしょのかくにん"
         },
         {
           "id": "u19_l8_3",
           "type": "cloze",
-          "prompt": "私は貢献の確認がすきです",
-          "furigana": "わたしはこうけんのかくにんがすきです",
-          "romaji": "Watashi wa kouken no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Contribution.",
-          "audioText": "貢献の確認",
-          "clozeSentence": "これは貢献の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な貢献の確認です。",
+          "furigana": "これはいちばんたいせつなこうけんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kouken no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Contribution.",
+          "audioText": "これは貢献の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な貢献の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1559,7 +1552,8 @@ export const unit19: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l8_4",
@@ -1570,11 +1564,11 @@ export const unit19: DojoUnit = {
           "english": "This is Confirming Contribution.",
           "audioText": "これは貢献の確認です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
-            "これは",
             "貢献の確認",
-            "です"
+            "です",
+            "それ",
+            "これは",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1603,24 +1597,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l8_6",
           "type": "dictate",
-          "prompt": "適性の確認をお願いします",
-          "furigana": "てきせいのかくにんをおねがいします",
-          "romaji": "tekisei no kakunin o onegaishimasu.",
-          "english": "Confirming Aptitude / suitability, please.",
-          "audioText": "適性の確認をお願いします",
+          "prompt": "適性の確認です",
+          "furigana": "てきせいのかくにんです",
+          "romaji": "tekisei no kakunin desu.",
+          "english": "It is Confirming Aptitude / suitability.",
+          "audioText": "適性の確認です",
           "dictateTokens": [
             "適性の確認",
             "です",
-            "ありがとう",
-            "を",
-            "お願いします"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "適性の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "適性の確認をお願いします"
+          "correctAnswer": "適性の確認です"
         },
         {
           "id": "u19_l8_7",
@@ -1728,10 +1720,10 @@ export const unit19: DojoUnit = {
           "english": "Confirming Enthusiasm / will to achieve",
           "audioText": "いよくのかくにん",
           "options": [
+            "Confirming Aptitude / suitability",
             "Confirming Enthusiasm / will to achieve",
-            "Recruitment / hiring",
-            "Weakness / shortcoming",
-            "Self-promotion"
+            "Unofficial job offer",
+            "Enthusiasm / will to achieve"
           ],
           "correctAnswer": "Confirming Enthusiasm / will to achieve"
         },
@@ -1745,33 +1737,34 @@ export const unit19: DojoUnit = {
           "audioText": "いよくのかくにん",
           "tileBank": [
             "く",
-            "の",
-            "よ",
-            "ん",
             "に",
-            "く",
+            "ん",
             "い",
-            "か"
+            "く",
+            "よ",
+            "か",
+            "の"
           ],
           "correctAnswer": "いよくのかくにん"
         },
         {
           "id": "u19_l9_3",
           "type": "cloze",
-          "prompt": "私は実績の確認がすきです",
-          "furigana": "わたしはじっせきのかくにんがすきです",
-          "romaji": "Watashi wa jisseki no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Track record / achievements.",
-          "audioText": "実績の確認",
-          "clozeSentence": "これは実績の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な実績の確認です。",
+          "furigana": "これはいちばんたいせつなじっせきのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na jisseki no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Track record / achievements.",
+          "audioText": "これは実績の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な実績の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l9_4",
@@ -1782,11 +1775,11 @@ export const unit19: DojoUnit = {
           "english": "This is Confirming Track record / achievements.",
           "audioText": "これは実績の確認です",
           "scrambleTokens": [
-            "これは",
+            "実績の確認",
             "それ",
+            "これは",
             "です",
-            "ではありません",
-            "実績の確認"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1815,24 +1808,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l9_6",
           "type": "dictate",
-          "prompt": "入社の確認をお願いします",
-          "furigana": "にゅうしゃのかくにんをおねがいします",
-          "romaji": "nyuusha no kakunin o onegaishimasu.",
-          "english": "Confirming Joining a company, please.",
-          "audioText": "入社の確認をお願いします",
+          "prompt": "入社の確認です",
+          "furigana": "にゅうしゃのかくにんです",
+          "romaji": "nyuusha no kakunin desu.",
+          "english": "It is Confirming Joining a company.",
+          "audioText": "入社の確認です",
           "dictateTokens": [
+            "ではありません",
             "入社の確認",
-            "です",
-            "お願いします",
-            "を",
-            "ありがとう"
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "入社の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "入社の確認をお願いします"
+          "correctAnswer": "入社の確認です"
         },
         {
           "id": "u19_l9_7",
@@ -1940,10 +1931,10 @@ export const unit19: DojoUnit = {
           "english": "Confirming Your esteemed company (written)",
           "audioText": "きしゃのかくにん",
           "options": [
-            "Confirming Recruitment / hiring",
+            "Joining a company",
             "Self-promotion",
             "Confirming Your esteemed company (written)",
-            "Confirming Aptitude / suitability"
+            "Unofficial job offer"
           ],
           "correctAnswer": "Confirming Your esteemed company (written)"
         },
@@ -1956,34 +1947,35 @@ export const unit19: DojoUnit = {
           "english": "Build 'Confirming Your esteemed company (written)'",
           "audioText": "きしゃのかくにん",
           "tileBank": [
+            "ん",
             "き",
+            "く",
+            "ゃ",
+            "に",
             "か",
             "の",
-            "ゃ",
-            "く",
-            "し",
-            "に",
-            "ん"
+            "し"
           ],
           "correctAnswer": "きしゃのかくにん"
         },
         {
           "id": "u19_l10_3",
           "type": "cloze",
-          "prompt": "私は御社の確認がすきです",
-          "furigana": "わたしはおんしゃのかくにんがすきです",
-          "romaji": "Watashi wa onsha no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Your esteemed company (spoken).",
-          "audioText": "御社の確認",
-          "clozeSentence": "これは御社の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な御社の確認です。",
+          "furigana": "これはいちばんたいせつなおんしゃのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na onsha no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Your esteemed company (spoken).",
+          "audioText": "これは御社の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な御社の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l10_4",
@@ -1994,11 +1986,11 @@ export const unit19: DojoUnit = {
           "english": "This is Confirming Your esteemed company (spoken).",
           "audioText": "これは御社の確認です",
           "scrambleTokens": [
+            "それ",
+            "です",
             "御社の確認",
             "ではありません",
-            "です",
-            "これは",
-            "それ"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2027,24 +2019,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l10_6",
           "type": "dictate",
-          "prompt": "内定の確認をお願いします",
-          "furigana": "ないていのかくにんをおねがいします",
-          "romaji": "naitei no kakunin o onegaishimasu.",
-          "english": "Confirming Unofficial job offer, please.",
-          "audioText": "内定の確認をお願いします",
+          "prompt": "内定の確認です",
+          "furigana": "ないていのかくにんです",
+          "romaji": "naitei no kakunin desu.",
+          "english": "It is Confirming Unofficial job offer.",
+          "audioText": "内定の確認です",
           "dictateTokens": [
-            "内定の確認",
+            "ではありません",
             "です",
-            "を",
-            "ありがとう",
-            "お願いします"
+            "内定の確認",
+            "これ"
           ],
           "dictateSolution": [
             "内定の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "内定の確認をお願いします"
+          "correctAnswer": "内定の確認です"
         },
         {
           "id": "u19_l10_7",
@@ -2154,10 +2144,10 @@ export const unit19: DojoUnit = {
           "english": "Confirming Job interview",
           "audioText": "めんせつのかくにん",
           "options": [
-            "Joining a company",
-            "Confirming Strength / strong point",
-            "Confirming Contribution",
-            "Confirming Job interview"
+            "Your esteemed company (spoken)",
+            "Confirming Track record / achievements",
+            "Confirming Job interview",
+            "Your esteemed company (written)"
           ],
           "correctAnswer": "Confirming Job interview"
         },
@@ -2170,34 +2160,35 @@ export const unit19: DojoUnit = {
           "english": "Build 'Confirming Job interview'",
           "audioText": "めんせつのかくにん",
           "tileBank": [
-            "の",
-            "せ",
-            "つ",
             "め",
             "か",
             "に",
+            "く",
+            "つ",
             "ん",
-            "く"
+            "の",
+            "せ"
           ],
           "correctAnswer": "めんせつのかくにん"
         },
         {
           "id": "u19_l11_3",
           "type": "cloze",
-          "prompt": "私は志望動機の確認がすきです",
-          "furigana": "わたしはしぼうどうきのかくにんがすきです",
-          "romaji": "Watashi wa shibou douki no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Motivation for applying.",
-          "audioText": "志望動機の確認",
-          "clozeSentence": "これは志望動機の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な志望動機の確認です。",
+          "furigana": "これはいちばんたいせつなしぼうどうきのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shibou douki no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Motivation for applying.",
+          "audioText": "これは志望動機の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な志望動機の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l11_4",
@@ -2208,11 +2199,11 @@ export const unit19: DojoUnit = {
           "english": "This is Confirming Motivation for applying.",
           "audioText": "これは志望動機の確認です",
           "scrambleTokens": [
+            "それ",
             "志望動機の確認",
-            "ではありません",
-            "です",
             "これは",
-            "それ"
+            "です",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2241,24 +2232,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l11_6",
           "type": "dictate",
-          "prompt": "自己PRの確認をお願いします",
-          "furigana": "じこピーアールのかくにんをおねがいします",
-          "romaji": "jiko pii aaru no kakunin o onegaishimasu.",
-          "english": "Confirming Self-promotion, please.",
-          "audioText": "自己PRの確認をお願いします",
+          "prompt": "自己PRの確認です",
+          "furigana": "じこピーアールのかくにんです",
+          "romaji": "jiko pii aaru no kakunin desu.",
+          "english": "It is Confirming Self-promotion.",
+          "audioText": "自己PRの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "お願いします",
+            "です",
             "自己PRの確認",
-            "です"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "自己PRの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "自己PRの確認をお願いします"
+          "correctAnswer": "自己PRの確認です"
         },
         {
           "id": "u19_l11_7",
@@ -2366,10 +2355,10 @@ export const unit19: DojoUnit = {
           "english": "Confirming Strength / strong point",
           "audioText": "ちょうしょのかくにん",
           "options": [
-            "Confirming Aptitude / suitability",
-            "Confirming Strength / strong point",
-            "Unofficial job offer",
-            "Confirming Contribution"
+            "Confirming Self-promotion",
+            "Confirming Unofficial job offer",
+            "Self-promotion",
+            "Confirming Strength / strong point"
           ],
           "correctAnswer": "Confirming Strength / strong point"
         },
@@ -2382,26 +2371,26 @@ export const unit19: DojoUnit = {
           "english": "Build 'Confirming Strength / strong point'",
           "audioText": "ちょうしょのかくにん",
           "tileBank": [
-            "の",
-            "か",
+            "ょ",
+            "ょ",
+            "う",
+            "ち",
             "く",
             "し",
-            "ち",
-            "う",
-            "ょ",
-            "ょ"
+            "か",
+            "の"
           ],
           "correctAnswer": "ちょうしょのかくにん"
         },
         {
           "id": "u19_l12_3",
           "type": "cloze",
-          "prompt": "私は短所の確認がすきです",
-          "furigana": "わたしはたんしょのかくにんがすきです",
-          "romaji": "Watashi wa tansho no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Weakness / shortcoming.",
-          "audioText": "短所の確認",
-          "clozeSentence": "これは短所の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な短所の確認です。",
+          "furigana": "これはいちばんたいせつなたんしょのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na tansho no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Weakness / shortcoming.",
+          "audioText": "これは短所の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な短所の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2409,7 +2398,8 @@ export const unit19: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l12_4",
@@ -2420,11 +2410,11 @@ export const unit19: DojoUnit = {
           "english": "This is Confirming Weakness / shortcoming.",
           "audioText": "これは短所の確認です",
           "scrambleTokens": [
+            "ではありません",
             "短所の確認",
-            "それ",
             "これは",
             "です",
-            "ではありません"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2453,24 +2443,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l12_6",
           "type": "dictate",
-          "prompt": "採用の確認をお願いします",
-          "furigana": "さいようのかくにんをおねがいします",
-          "romaji": "saiyou no kakunin o onegaishimasu.",
-          "english": "Confirming Recruitment / hiring, please.",
-          "audioText": "採用の確認をお願いします",
+          "prompt": "採用の確認です",
+          "furigana": "さいようのかくにんです",
+          "romaji": "saiyou no kakunin desu.",
+          "english": "It is Confirming Recruitment / hiring.",
+          "audioText": "採用の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "です",
             "採用の確認",
-            "を",
-            "お願いします"
+            "です",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "採用の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "採用の確認をお願いします"
+          "correctAnswer": "採用の確認です"
         },
         {
           "id": "u19_l12_7",
@@ -2574,9 +2562,9 @@ export const unit19: DojoUnit = {
           "english": "Job interview",
           "audioText": "めんせつ",
           "options": [
-            "Enthusiasm / will to achieve",
-            "Contribution",
-            "Confirming Weakness / shortcoming",
+            "Your esteemed company (spoken)",
+            "Confirming Contribution",
+            "Confirming Self-promotion",
             "Job interview"
           ],
           "correctAnswer": "Job interview"
@@ -2590,34 +2578,35 @@ export const unit19: DojoUnit = {
           "english": "Build 'Job interview'",
           "audioText": "めんせつ",
           "tileBank": [
-            "た",
-            "め",
-            "せ",
-            "ら",
-            "ん",
-            "ま",
             "つ",
-            "ぬ"
+            "せ",
+            "め",
+            "た",
+            "み",
+            "ぬ",
+            "ん",
+            "ろ"
           ],
           "correctAnswer": "めんせつ"
         },
         {
           "id": "u19_l13_3",
           "type": "cloze",
-          "prompt": "私は志望動機がすきです",
-          "furigana": "わたしはしぼうどうきがすきです",
-          "romaji": "Watashi wa shibou douki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Motivation for applying.",
-          "audioText": "志望動機",
-          "clozeSentence": "これは志望動機 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な志望動機です。",
+          "furigana": "これはいちばんたいせつなしぼうどうきです。",
+          "romaji": "Kore wa ichiban taisetsu na shibou douki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Motivation for applying.",
+          "audioText": "これは志望動機です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な志望動機です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l13_4",
@@ -2661,24 +2650,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l13_6",
           "type": "dictate",
-          "prompt": "自己PRをお願いします",
-          "furigana": "じこピーアールをおねがいします",
-          "romaji": "jiko pii aaru o onegaishimasu.",
-          "english": "Self-promotion, please.",
-          "audioText": "自己PRをお願いします",
+          "prompt": "自己PRです",
+          "furigana": "じこピーアールです",
+          "romaji": "jiko pii aaru desu.",
+          "english": "It is Self-promotion.",
+          "audioText": "自己PRです",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "です",
-            "お願いします",
-            "自己PR",
-            "を",
-            "ありがとう"
+            "自己PR"
           ],
           "dictateSolution": [
             "自己PR",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "自己PRをお願いします"
+          "correctAnswer": "自己PRです"
         },
         {
           "id": "u19_l13_7",
@@ -2780,10 +2767,10 @@ export const unit19: DojoUnit = {
           "english": "Strength / strong point",
           "audioText": "ちょうしょ",
           "options": [
+            "Confirming Track record / achievements",
+            "Joining a company",
             "Strength / strong point",
-            "Track record / achievements",
-            "Confirming Unofficial job offer",
-            "Resume / curriculum vitae"
+            "Confirming Self-promotion"
           ],
           "correctAnswer": "Strength / strong point"
         },
@@ -2796,34 +2783,35 @@ export const unit19: DojoUnit = {
           "english": "Build 'Strength / strong point'",
           "audioText": "ちょうしょ",
           "tileBank": [
-            "わ",
-            "ち",
-            "し",
-            "い",
-            "う",
+            "さ",
             "ょ",
-            "む",
-            "ょ"
+            "ょ",
+            "ち",
+            "て",
+            "う",
+            "し",
+            "く"
           ],
           "correctAnswer": "ちょうしょ"
         },
         {
           "id": "u19_l14_3",
           "type": "cloze",
-          "prompt": "私は短所がすきです",
-          "furigana": "わたしはたんしょがすきです",
-          "romaji": "Watashi wa tansho ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Weakness / shortcoming.",
-          "audioText": "短所",
-          "clozeSentence": "これは短所 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な短所です。",
+          "furigana": "これはいちばんたいせつなたんしょです。",
+          "romaji": "Kore wa ichiban taisetsu na tansho desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Weakness / shortcoming.",
+          "audioText": "これは短所です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な短所です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l14_4",
@@ -2834,11 +2822,11 @@ export const unit19: DojoUnit = {
           "english": "This is Weakness / shortcoming.",
           "audioText": "これは短所です",
           "scrambleTokens": [
-            "それ",
-            "短所",
-            "これは",
             "ではありません",
-            "です"
+            "短所",
+            "です",
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2867,24 +2855,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l14_6",
           "type": "dictate",
-          "prompt": "採用をお願いします",
-          "furigana": "さいようをおねがいします",
-          "romaji": "saiyou o onegaishimasu.",
-          "english": "Recruitment / hiring, please.",
-          "audioText": "採用をお願いします",
+          "prompt": "採用です",
+          "furigana": "さいようです",
+          "romaji": "saiyou desu.",
+          "english": "It is Recruitment / hiring.",
+          "audioText": "採用です",
           "dictateTokens": [
-            "お願いします",
-            "です",
+            "これ",
             "採用",
-            "を",
-            "ありがとう"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "採用",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "採用をお願いします"
+          "correctAnswer": "採用です"
         },
         {
           "id": "u19_l14_7",
@@ -2987,10 +2973,10 @@ export const unit19: DojoUnit = {
           "english": "Resume / curriculum vitae",
           "audioText": "りれきしょ",
           "options": [
-            "Contribution",
-            "Confirming Strength / strong point",
             "Resume / curriculum vitae",
-            "Your esteemed company (spoken)"
+            "Recruitment / hiring",
+            "Confirming Job interview",
+            "Aptitude / suitability"
           ],
           "correctAnswer": "Resume / curriculum vitae"
         },
@@ -3003,34 +2989,35 @@ export const unit19: DojoUnit = {
           "english": "Build 'Resume / curriculum vitae'",
           "audioText": "りれきしょ",
           "tileBank": [
-            "き",
-            "れ",
-            "し",
-            "へ",
-            "よ",
             "り",
-            "て",
-            "ょ"
+            "く",
+            "る",
+            "き",
+            "し",
+            "ひ",
+            "ょ",
+            "れ"
           ],
           "correctAnswer": "りれきしょ"
         },
         {
           "id": "u19_l15_3",
           "type": "cloze",
-          "prompt": "私は貢献がすきです",
-          "furigana": "わたしはこうけんがすきです",
-          "romaji": "Watashi wa kouken ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Contribution.",
-          "audioText": "貢献",
-          "clozeSentence": "これは貢献 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な貢献です。",
+          "furigana": "これはいちばんたいせつなこうけんです。",
+          "romaji": "Kore wa ichiban taisetsu na kouken desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Contribution.",
+          "audioText": "これは貢献です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な貢献です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u19_l15_4",
@@ -3041,11 +3028,11 @@ export const unit19: DojoUnit = {
           "english": "This is Contribution.",
           "audioText": "これは貢献です",
           "scrambleTokens": [
-            "ではありません",
+            "これは",
             "それ",
-            "です",
             "貢献",
-            "これは"
+            "ではありません",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -3074,24 +3061,22 @@ export const unit19: DojoUnit = {
         {
           "id": "u19_l15_6",
           "type": "dictate",
-          "prompt": "適性をお願いします",
-          "furigana": "てきせいをおねがいします",
-          "romaji": "tekisei o onegaishimasu.",
-          "english": "Aptitude / suitability, please.",
-          "audioText": "適性をお願いします",
+          "prompt": "適性です",
+          "furigana": "てきせいです",
+          "romaji": "tekisei desu.",
+          "english": "It is Aptitude / suitability.",
+          "audioText": "適性です",
           "dictateTokens": [
             "です",
-            "を",
-            "ありがとう",
+            "ではありません",
             "適性",
-            "お願いします"
+            "これ"
           ],
           "dictateSolution": [
             "適性",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "適性をお願いします"
+          "correctAnswer": "適性です"
         },
         {
           "id": "u19_l15_7",
@@ -3176,10 +3161,10 @@ export const unit19: DojoUnit = {
         "english": "Job interview",
         "audioText": "めんせつ",
         "options": [
-          "Aptitude / suitability",
-          "Job interview",
-          "Confirming Self-promotion",
-          "Joining a company"
+          "Self-promotion",
+          "Unofficial job offer",
+          "Confirming Enthusiasm / will to achieve",
+          "Job interview"
         ],
         "correctAnswer": "Job interview"
       },
@@ -3192,14 +3177,14 @@ export const unit19: DojoUnit = {
         "english": "Build 'Job interview'",
         "audioText": "めんせつ",
         "tileBank": [
-          "ね",
-          "ほ",
-          "つ",
           "せ",
           "ん",
-          "む",
-          "き",
-          "め"
+          "う",
+          "め",
+          "つ",
+          "さ",
+          "ら",
+          "か"
         ],
         "correctAnswer": "めんせつ"
       },
@@ -3212,10 +3197,10 @@ export const unit19: DojoUnit = {
         "english": "Resume / curriculum vitae",
         "audioText": "りれきしょ",
         "options": [
-          "Confirming Weakness / shortcoming",
-          "Resume / curriculum vitae",
-          "Confirming Aptitude / suitability",
-          "Confirming Weakness / shortcoming"
+          "Contribution",
+          "Confirming Recruitment / hiring",
+          "Confirming Unofficial job offer",
+          "Resume / curriculum vitae"
         ],
         "correctAnswer": "Resume / curriculum vitae"
       },
@@ -3228,14 +3213,14 @@ export const unit19: DojoUnit = {
         "english": "Build 'Resume / curriculum vitae'",
         "audioText": "りれきしょ",
         "tileBank": [
-          "き",
-          "え",
-          "ょ",
-          "し",
-          "た",
-          "か",
           "れ",
-          "り"
+          "き",
+          "り",
+          "ち",
+          "め",
+          "ょ",
+          "お",
+          "し"
         ],
         "correctAnswer": "りれきしょ"
       },
@@ -3248,10 +3233,10 @@ export const unit19: DojoUnit = {
         "english": "Your esteemed company (written)",
         "audioText": "きしゃ",
         "options": [
-          "Confirming Track record / achievements",
+          "Resume / curriculum vitae",
+          "Confirming Contribution",
           "Your esteemed company (written)",
-          "Confirming Enthusiasm / will to achieve",
-          "Joining a company"
+          "Confirming Your esteemed company (spoken)"
         ],
         "correctAnswer": "Your esteemed company (written)"
       },
@@ -3264,14 +3249,14 @@ export const unit19: DojoUnit = {
         "english": "Build 'Your esteemed company (written)'",
         "audioText": "きしゃ",
         "tileBank": [
-          "ま",
-          "を",
-          "ゃ",
           "し",
-          "と",
-          "き",
-          "つ",
-          "せ"
+          "ね",
+          "お",
+          "ゃ",
+          "に",
+          "よ",
+          "ぬ",
+          "き"
         ],
         "correctAnswer": "きしゃ"
       },
@@ -3284,10 +3269,10 @@ export const unit19: DojoUnit = {
         "english": "Confirming Strength / strong point",
         "audioText": "ちょうしょのかくにん",
         "options": [
-          "Confirming Recruitment / hiring",
+          "Unofficial job offer",
+          "Confirming Your esteemed company (written)",
           "Confirming Strength / strong point",
-          "Confirming Track record / achievements",
-          "Confirming Weakness / shortcoming"
+          "Confirming Self-promotion"
         ],
         "correctAnswer": "Confirming Strength / strong point"
       },
@@ -3302,12 +3287,12 @@ export const unit19: DojoUnit = {
         "tileBank": [
           "く",
           "の",
-          "し",
-          "ち",
           "か",
-          "ょ",
           "う",
-          "ょ"
+          "し",
+          "ょ",
+          "ょ",
+          "ち"
         ],
         "correctAnswer": "ちょうしょのかくにん"
       },
@@ -3320,10 +3305,10 @@ export const unit19: DojoUnit = {
         "english": "Confirming Enthusiasm / will to achieve",
         "audioText": "いよくのかくにん",
         "options": [
+          "Confirming Aptitude / suitability",
           "Confirming Enthusiasm / will to achieve",
-          "Recruitment / hiring",
-          "Weakness / shortcoming",
-          "Self-promotion"
+          "Unofficial job offer",
+          "Enthusiasm / will to achieve"
         ],
         "correctAnswer": "Confirming Enthusiasm / will to achieve"
       },
@@ -3337,13 +3322,13 @@ export const unit19: DojoUnit = {
         "audioText": "いよくのかくにん",
         "tileBank": [
           "く",
-          "の",
-          "よ",
-          "ん",
           "に",
-          "く",
+          "ん",
           "い",
-          "か"
+          "く",
+          "よ",
+          "か",
+          "の"
         ],
         "correctAnswer": "いよくのかくにん"
       },
@@ -3356,10 +3341,10 @@ export const unit19: DojoUnit = {
         "english": "Confirming Job interview",
         "audioText": "めんせつのかくにん",
         "options": [
-          "Joining a company",
-          "Confirming Strength / strong point",
-          "Confirming Contribution",
-          "Confirming Job interview"
+          "Your esteemed company (spoken)",
+          "Confirming Track record / achievements",
+          "Confirming Job interview",
+          "Your esteemed company (written)"
         ],
         "correctAnswer": "Confirming Job interview"
       },
@@ -3372,14 +3357,14 @@ export const unit19: DojoUnit = {
         "english": "Build 'Confirming Job interview'",
         "audioText": "めんせつのかくにん",
         "tileBank": [
-          "の",
-          "せ",
-          "つ",
           "め",
           "か",
           "に",
+          "く",
+          "つ",
           "ん",
-          "く"
+          "の",
+          "せ"
         ],
         "correctAnswer": "めんせつのかくにん"
       }

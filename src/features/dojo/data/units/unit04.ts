@@ -43,10 +43,10 @@ export const unit04: DojoUnit = {
           "english": "Coffee",
           "audioText": "コーヒー",
           "options": [
-            "Small size",
-            "Large size",
-            "Seat / table",
-            "Coffee"
+            "Coffee",
+            "Cake",
+            "Please / I request...",
+            "Cheesecake"
           ],
           "correctAnswer": "Coffee"
         },
@@ -59,13 +59,13 @@ export const unit04: DojoUnit = {
           "english": "Build 'Coffee'",
           "audioText": "コーヒー",
           "tileBank": [
-            "わ",
-            "コ",
             "ヒ",
-            "ー",
-            "め",
             "け",
-            "ぬ",
+            "コ",
+            "し",
+            "わ",
+            "ー",
+            "り",
             "ー"
           ],
           "correctAnswer": "コーヒー"
@@ -73,42 +73,43 @@ export const unit04: DojoUnit = {
         {
           "id": "u4_l1_3",
           "type": "cloze",
-          "prompt": "私はホットコーヒーがすきです",
-          "furigana": "わたしはホットコーヒーがすきです",
-          "romaji": "Watashi wa hotto koohii ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Hot coffee.",
-          "audioText": "ホットコーヒー",
-          "clozeSentence": "これはホットコーヒー {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "毎朝、冷たいホットコーヒーを飲みます。",
+          "furigana": "まいあさ、つめたいホットコーヒーをのみます。",
+          "romaji": "Maiasa, tsumetai hotto koohii o nomimasu.",
+          "english": "Fill in object particle 'を' (o): I drink cold Hot coffee every morning.",
+          "audioText": "ホットコーヒーを飲みます。",
+          "clozeSentence": "毎朝、冷たいホットコーヒー {{BLANK}} 飲みます。",
+          "clozeTarget": "を",
           "clozeOptions": [
-            "は",
-            "が",
             "を",
-            "に"
+            "は",
+            "に",
+            "で"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "を",
+          "explanation": "助詞「を」 (o) marks the direct object of action verb 「飲みます」 (drink)."
         },
         {
           "id": "u4_l1_4",
           "type": "scramble",
-          "prompt": "これはホットコーヒーです",
-          "furigana": "これはホットコーヒーです",
-          "romaji": "Kore wa hotto koohii desu.",
-          "english": "This is Hot coffee.",
-          "audioText": "これはホットコーヒーです",
+          "prompt": "冷たいホットコーヒーを飲みます",
+          "furigana": "つめたいホットコーヒーをのみます",
+          "romaji": "Tsumetai hotto koohii o nomimasu.",
+          "english": "Drink cold Hot coffee.",
+          "audioText": "冷たいホットコーヒーを飲みます",
           "scrambleTokens": [
-            "これは",
-            "それ",
-            "ではありません",
-            "です",
-            "ホットコーヒー"
+            "ホットコーヒーを",
+            "飲みます",
+            "が",
+            "冷たい",
+            "食べます"
           ],
           "scrambleSolution": [
-            "これは",
-            "ホットコーヒー",
-            "です"
+            "冷たい",
+            "ホットコーヒーを",
+            "飲みます"
           ],
-          "correctAnswer": "これはホットコーヒーです"
+          "correctAnswer": "冷たいホットコーヒーを飲みます"
         },
         {
           "id": "u4_l1_5",
@@ -136,11 +137,11 @@ export const unit04: DojoUnit = {
           "english": "Iced tea, please.",
           "audioText": "アイスティーをお願いします",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "アイスティー",
             "です",
-            "お願いします"
+            "お願いします",
+            "アイスティー",
+            "ありがとう",
+            "を"
           ],
           "dictateSolution": [
             "アイスティー",
@@ -247,10 +248,10 @@ export const unit04: DojoUnit = {
           "english": "Black tea",
           "audioText": "こうちゃ",
           "options": [
+            "Welcome (store greeting)",
             "Café latte",
             "Black tea",
-            "Hot coffee",
-            "Toast"
+            "Coffee"
           ],
           "correctAnswer": "Black tea"
         },
@@ -263,56 +264,57 @@ export const unit04: DojoUnit = {
           "english": "Build 'Black tea'",
           "audioText": "こうちゃ",
           "tileBank": [
-            "た",
-            "よ",
+            "け",
+            "ね",
+            "い",
             "こ",
+            "ち",
             "う",
-            "ゃ",
-            "あ",
-            "ん",
-            "ち"
+            "ゆ",
+            "ゃ"
           ],
           "correctAnswer": "こうちゃ"
         },
         {
           "id": "u4_l2_3",
           "type": "cloze",
-          "prompt": "私はカフェラテがすきです",
-          "furigana": "わたしはカフェラテがすきです",
-          "romaji": "Watashi wa kafe rate ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Café latte.",
-          "audioText": "カフェラテ",
-          "clozeSentence": "これはカフェラテ {{BLANK}} す。",
+          "prompt": "毎朝、冷たいカフェラテを飲みます。",
+          "furigana": "まいあさ、つめたいカフェラテをのみます。",
+          "romaji": "Maiasa, tsumetai kafe rate o nomimasu.",
+          "english": "Fill in object particle 'を' (o): I drink cold Café latte every morning.",
+          "audioText": "カフェラテを飲みます。",
+          "clozeSentence": "毎朝、冷たいカフェラテ {{BLANK}} 飲みます。",
           "clozeTarget": "を",
           "clozeOptions": [
-            "は",
-            "が",
             "を",
-            "に"
+            "は",
+            "に",
+            "で"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "を",
+          "explanation": "助詞「を」 (o) marks the direct object of action verb 「飲みます」 (drink)."
         },
         {
           "id": "u4_l2_4",
           "type": "scramble",
-          "prompt": "これはカフェラテです",
-          "furigana": "これはカフェラテです",
-          "romaji": "Kore wa kafe rate desu.",
-          "english": "This is Café latte.",
-          "audioText": "これはカフェラテです",
+          "prompt": "冷たいカフェラテを飲みます",
+          "furigana": "つめたいカフェラテをのみます",
+          "romaji": "Tsumetai kafe rate o nomimasu.",
+          "english": "Drink cold Café latte.",
+          "audioText": "冷たいカフェラテを飲みます",
           "scrambleTokens": [
-            "それ",
-            "これは",
-            "ではありません",
-            "カフェラテ",
-            "です"
+            "飲みます",
+            "食べます",
+            "が",
+            "カフェラテを",
+            "冷たい"
           ],
           "scrambleSolution": [
-            "これは",
-            "カフェラテ",
-            "です"
+            "冷たい",
+            "カフェラテを",
+            "飲みます"
           ],
-          "correctAnswer": "これはカフェラテです"
+          "correctAnswer": "冷たいカフェラテを飲みます"
         },
         {
           "id": "u4_l2_5",
@@ -340,10 +342,10 @@ export const unit04: DojoUnit = {
           "english": "Matcha green tea latte, please.",
           "audioText": "抹茶ラテをお願いします",
           "dictateTokens": [
+            "ありがとう",
+            "抹茶ラテ",
             "を",
             "お願いします",
-            "抹茶ラテ",
-            "ありがとう",
             "です"
           ],
           "dictateSolution": [
@@ -449,10 +451,10 @@ export const unit04: DojoUnit = {
           "english": "Please give me...",
           "audioText": "ください",
           "options": [
-            "Please / I request...",
-            "Medium size",
-            "Please give me...",
-            "Iced tea"
+            "Without ice",
+            "Coffee",
+            "Two items (counter)",
+            "Please give me..."
           ],
           "correctAnswer": "Please give me..."
         },
@@ -465,34 +467,35 @@ export const unit04: DojoUnit = {
           "english": "Build 'Please give me...'",
           "audioText": "ください",
           "tileBank": [
-            "ひ",
-            "さ",
-            "せ",
             "い",
-            "だ",
-            "り",
+            "え",
             "く",
-            "む"
+            "み",
+            "さ",
+            "や",
+            "こ",
+            "だ"
           ],
           "correctAnswer": "ください"
         },
         {
           "id": "u4_l3_3",
           "type": "cloze",
-          "prompt": "私はお願いしますがすきです",
-          "furigana": "わたしはおねがいしますがすきです",
-          "romaji": "Watashi wa onegaishimasu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Please / I request....",
-          "audioText": "お願いします",
-          "clozeSentence": "これはお願いします {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切なお願いしますです。",
+          "furigana": "これはいちばんたいせつなおねがいしますです。",
+          "romaji": "Kore wa ichiban taisetsu na onegaishimasu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Please / I request....",
+          "audioText": "これはお願いしますです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なお願いしますです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l3_4",
@@ -503,11 +506,11 @@ export const unit04: DojoUnit = {
           "english": "This is Please / I request....",
           "audioText": "これはお願いしますです",
           "scrambleTokens": [
-            "お願いします",
-            "です",
-            "ではありません",
             "これは",
-            "それ"
+            "です",
+            "それ",
+            "お願いします",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -536,24 +539,22 @@ export const unit04: DojoUnit = {
         {
           "id": "u4_l3_6",
           "type": "dictate",
-          "prompt": "一つをお願いします",
-          "furigana": "ひとつをおねがいします",
-          "romaji": "hitotsu o onegaishimasu.",
-          "english": "One item (counter), please.",
-          "audioText": "一つをお願いします",
+          "prompt": "一つです",
+          "furigana": "ひとつです",
+          "romaji": "hitotsu desu.",
+          "english": "It is One item (counter).",
+          "audioText": "一つです",
           "dictateTokens": [
+            "ではありません",
+            "これ",
             "です",
-            "一つ",
-            "お願いします",
-            "ありがとう",
-            "を"
+            "一つ"
           ],
           "dictateSolution": [
             "一つ",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "一つをお願いします"
+          "correctAnswer": "一つです"
         },
         {
           "id": "u4_l3_7",
@@ -653,9 +654,9 @@ export const unit04: DojoUnit = {
           "audioText": "ふたつ",
           "options": [
             "Two items (counter)",
-            "Dine-in / in-store",
-            "Café latte",
-            "Takeout (Japanese term)"
+            "The bill / payment",
+            "Non-smoking seat",
+            "Hot coffee"
           ],
           "correctAnswer": "Two items (counter)"
         },
@@ -668,13 +669,13 @@ export const unit04: DojoUnit = {
           "english": "Build 'Two items (counter)'",
           "audioText": "ふたつ",
           "tileBank": [
-            "ふ",
             "つ",
-            "も",
-            "う",
-            "は",
-            "む",
-            "ほ",
+            "に",
+            "か",
+            "ぬ",
+            "と",
+            "ふ",
+            "よ",
             "た"
           ],
           "correctAnswer": "ふたつ"
@@ -682,12 +683,12 @@ export const unit04: DojoUnit = {
         {
           "id": "u4_l4_3",
           "type": "cloze",
-          "prompt": "私は三つがすきです",
-          "furigana": "わたしはみっつがすきです",
-          "romaji": "Watashi wa mittsu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Three items (counter).",
-          "audioText": "三つ",
-          "clozeSentence": "これは三つ {{BLANK}} す。",
+          "prompt": "これはいちばん大切な三つです。",
+          "furigana": "これはいちばんたいせつなみっつです。",
+          "romaji": "Kore wa ichiban taisetsu na mittsu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Three items (counter).",
+          "audioText": "これは三つです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な三つです。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -695,7 +696,8 @@ export const unit04: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l4_4",
@@ -706,11 +708,11 @@ export const unit04: DojoUnit = {
           "english": "This is Three items (counter).",
           "audioText": "これは三つです",
           "scrambleTokens": [
-            "ではありません",
+            "三つ",
+            "です",
             "それ",
             "これは",
-            "です",
-            "三つ"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -739,24 +741,22 @@ export const unit04: DojoUnit = {
         {
           "id": "u4_l4_6",
           "type": "dictate",
-          "prompt": "四つをお願いします",
-          "furigana": "よっつをおねがいします",
-          "romaji": "yottsu o onegaishimasu.",
-          "english": "Four items (counter), please.",
-          "audioText": "四つをお願いします",
+          "prompt": "四つです",
+          "furigana": "よっつです",
+          "romaji": "yottsu desu.",
+          "english": "It is Four items (counter).",
+          "audioText": "四つです",
           "dictateTokens": [
-            "ありがとう",
             "です",
+            "ではありません",
             "四つ",
-            "を",
-            "お願いします"
+            "これ"
           ],
           "dictateSolution": [
             "四つ",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "四つをお願いします"
+          "correctAnswer": "四つです"
         },
         {
           "id": "u4_l4_7",
@@ -851,10 +851,10 @@ export const unit04: DojoUnit = {
           "english": "Cup size",
           "audioText": "サイズ",
           "options": [
+            "Please / I request...",
             "Cup size",
-            "One item (counter)",
-            "Non-smoking seat",
-            "Recommendation"
+            "Menu",
+            "Milk / creamer"
           ],
           "correctAnswer": "Cup size"
         },
@@ -867,34 +867,35 @@ export const unit04: DojoUnit = {
           "english": "Build 'Cup size'",
           "audioText": "サイズ",
           "tileBank": [
-            "す",
-            "り",
+            "み",
             "サ",
-            "ズ",
-            "イ",
-            "て",
             "も",
-            "た"
+            "の",
+            "イ",
+            "ズ",
+            "ゆ",
+            "し"
           ],
           "correctAnswer": "サイズ"
         },
         {
           "id": "u4_l5_3",
           "type": "cloze",
-          "prompt": "私はSサイズがすきです",
-          "furigana": "わたしはエスサイズがすきです",
-          "romaji": "Watashi wa esu saizu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Small size.",
-          "audioText": "Sサイズ",
-          "clozeSentence": "私はSサイズ {{BLANK}} 好きです。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なSサイズです。",
+          "furigana": "これはいちばんたいせつなエスサイズです。",
+          "romaji": "Kore wa ichiban taisetsu na esu saizu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Small size.",
+          "audioText": "これはSサイズです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なSサイズです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l5_4",
@@ -905,11 +906,11 @@ export const unit04: DojoUnit = {
           "english": "This is Small size.",
           "audioText": "これはSサイズです",
           "scrambleTokens": [
-            "これは",
-            "それ",
             "Sサイズ",
+            "です",
+            "それ",
             "ではありません",
-            "です"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -944,11 +945,11 @@ export const unit04: DojoUnit = {
           "english": "Medium size, please.",
           "audioText": "Mサイズをお願いします",
           "dictateTokens": [
-            "です",
             "ありがとう",
-            "Mサイズ",
             "を",
-            "お願いします"
+            "Mサイズ",
+            "お願いします",
+            "です"
           ],
           "dictateSolution": [
             "Mサイズ",
@@ -1050,10 +1051,10 @@ export const unit04: DojoUnit = {
           "english": "Large size",
           "audioText": "エルサイズ",
           "options": [
-            "Cup size",
+            "Seasonal limited edition",
+            "Coffee",
             "Large size",
-            "Seat / table",
-            "Without ice"
+            "Sugar"
           ],
           "correctAnswer": "Large size"
         },
@@ -1066,34 +1067,35 @@ export const unit04: DojoUnit = {
           "english": "Build 'Large size'",
           "audioText": "エルサイズ",
           "tileBank": [
-            "か",
-            "ズ",
-            "さ",
-            "イ",
-            "わ",
             "サ",
-            "ル",
-            "エ"
+            "イ",
+            "ズ",
+            "エ",
+            "ら",
+            "と",
+            "き",
+            "ル"
           ],
           "correctAnswer": "エルサイズ"
         },
         {
           "id": "u4_l6_3",
           "type": "cloze",
-          "prompt": "私はケーキがすきです",
-          "furigana": "わたしはケーキがすきです",
-          "romaji": "Watashi wa keeki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Cake.",
-          "audioText": "ケーキ",
-          "clozeSentence": "これはケーキ {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なケーキです。",
+          "furigana": "これはいちばんたいせつなケーキです。",
+          "romaji": "Kore wa ichiban taisetsu na keeki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Cake.",
+          "audioText": "これはケーキです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なケーキです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l6_4",
@@ -1104,11 +1106,11 @@ export const unit04: DojoUnit = {
           "english": "This is Cake.",
           "audioText": "これはケーキです",
           "scrambleTokens": [
-            "ケーキ",
+            "それ",
             "です",
             "ではありません",
-            "これは",
-            "それ"
+            "ケーキ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1143,11 +1145,11 @@ export const unit04: DojoUnit = {
           "english": "Cheesecake, please.",
           "audioText": "チーズケーキをお願いします",
           "dictateTokens": [
+            "です",
+            "ありがとう",
             "を",
             "お願いします",
-            "チーズケーキ",
-            "ありがとう",
-            "です"
+            "チーズケーキ"
           ],
           "dictateSolution": [
             "チーズケーキ",
@@ -1249,9 +1251,9 @@ export const unit04: DojoUnit = {
           "english": "Sandwich",
           "audioText": "サンドイッチ",
           "options": [
-            "Receipt",
-            "The bill / payment",
-            "Seat / table",
+            "Croissant",
+            "Dine-in / in-store",
+            "Drinking straw",
             "Sandwich"
           ],
           "correctAnswer": "Sandwich"
@@ -1265,34 +1267,35 @@ export const unit04: DojoUnit = {
           "english": "Build 'Sandwich'",
           "audioText": "サンドイッチ",
           "tileBank": [
-            "ね",
+            "ふ",
+            "チ",
             "イ",
             "ン",
-            "ッ",
             "サ",
-            "チ",
             "ド",
-            "た"
+            "ッ",
+            "さ"
           ],
           "correctAnswer": "サンドイッチ"
         },
         {
           "id": "u4_l7_3",
           "type": "cloze",
-          "prompt": "私はトーストがすきです",
-          "furigana": "わたしはトーストがすきです",
-          "romaji": "Watashi wa toosuto ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Toast.",
-          "audioText": "トースト",
-          "clozeSentence": "これはトースト {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切なトーストです。",
+          "furigana": "これはいちばんたいせつなトーストです。",
+          "romaji": "Kore wa ichiban taisetsu na toosuto desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Toast.",
+          "audioText": "これはトーストです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なトーストです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l7_4",
@@ -1303,10 +1306,10 @@ export const unit04: DojoUnit = {
           "english": "This is Toast.",
           "audioText": "これはトーストです",
           "scrambleTokens": [
-            "それ",
             "です",
-            "これは",
             "ではありません",
+            "それ",
+            "これは",
             "トースト"
           ],
           "scrambleSolution": [
@@ -1336,24 +1339,22 @@ export const unit04: DojoUnit = {
         {
           "id": "u4_l7_6",
           "type": "dictate",
-          "prompt": "クロワッサンをお願いします",
-          "furigana": "クロワッサンをおねがいします",
-          "romaji": "kurowassan o onegaishimasu.",
-          "english": "Croissant, please.",
-          "audioText": "クロワッサンをお願いします",
+          "prompt": "クロワッサンです",
+          "furigana": "クロワッサンです",
+          "romaji": "kurowassan desu.",
+          "english": "It is Croissant.",
+          "audioText": "クロワッサンです",
           "dictateTokens": [
-            "を",
-            "ありがとう",
             "です",
             "クロワッサン",
-            "お願いします"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "クロワッサン",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "クロワッサンをお願いします"
+          "correctAnswer": "クロワッサンです"
         },
         {
           "id": "u4_l7_7",
@@ -1453,10 +1454,10 @@ export const unit04: DojoUnit = {
           "english": "Menu",
           "audioText": "メニュー",
           "options": [
-            "Small size",
-            "Takeout / to-go",
             "Menu",
-            "Sugar"
+            "Medium size",
+            "Coffee",
+            "Without ice"
           ],
           "correctAnswer": "Menu"
         },
@@ -1469,26 +1470,26 @@ export const unit04: DojoUnit = {
           "english": "Build 'Menu'",
           "audioText": "メニュー",
           "tileBank": [
-            "メ",
-            "け",
+            "ー",
             "ュ",
-            "な",
-            "し",
-            "の",
             "ニ",
-            "ー"
+            "メ",
+            "し",
+            "ま",
+            "れ",
+            "い"
           ],
           "correctAnswer": "メニュー"
         },
         {
           "id": "u4_l8_3",
           "type": "cloze",
-          "prompt": "私はおすすめがすきです",
-          "furigana": "わたしはおすすめがすきです",
-          "romaji": "Watashi wa osusume ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Recommendation.",
-          "audioText": "おすすめ",
-          "clozeSentence": "私はおすすめ {{BLANK}} 好きです。",
+          "prompt": "これはいちばん大切なおすすめです。",
+          "furigana": "これはいちばんたいせつなおすすめです。",
+          "romaji": "Kore wa ichiban taisetsu na osusume desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Recommendation.",
+          "audioText": "これはおすすめです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なおすすめです。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1496,7 +1497,8 @@ export const unit04: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l8_4",
@@ -1507,11 +1509,11 @@ export const unit04: DojoUnit = {
           "english": "This is Recommendation.",
           "audioText": "これはおすすめです",
           "scrambleTokens": [
-            "ではありません",
-            "それ",
-            "おすすめ",
             "これは",
-            "です"
+            "それ",
+            "ではありません",
+            "です",
+            "おすすめ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1546,11 +1548,11 @@ export const unit04: DojoUnit = {
           "english": "Seasonal limited edition, please.",
           "audioText": "季節限定をお願いします",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "季節限定",
+            "です",
             "お願いします",
-            "です"
+            "季節限定",
+            "を",
+            "ありがとう"
           ],
           "dictateSolution": [
             "季節限定",
@@ -1657,10 +1659,10 @@ export const unit04: DojoUnit = {
           "english": "Dine-in / in-store",
           "audioText": "てんない",
           "options": [
+            "Toast",
+            "Hot coffee",
             "Medium size",
-            "Dine-in / in-store",
-            "Two items (counter)",
-            "Croissant"
+            "Dine-in / in-store"
           ],
           "correctAnswer": "Dine-in / in-store"
         },
@@ -1673,34 +1675,35 @@ export const unit04: DojoUnit = {
           "english": "Build 'Dine-in / in-store'",
           "audioText": "てんない",
           "tileBank": [
+            "し",
             "て",
-            "あ",
-            "そ",
+            "く",
             "さ",
-            "な",
+            "や",
             "ん",
-            "い",
-            "ね"
+            "な",
+            "い"
           ],
           "correctAnswer": "てんない"
         },
         {
           "id": "u4_l9_3",
           "type": "cloze",
-          "prompt": "私はテイクアウトがすきです",
-          "furigana": "わたしはテイクアウトがすきです",
-          "romaji": "Watashi wa teikuauto ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Takeout / to-go.",
-          "audioText": "テイクアウト",
-          "clozeSentence": "私はテイクアウト {{BLANK}} 好きです。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なテイクアウトです。",
+          "furigana": "これはいちばんたいせつなテイクアウトです。",
+          "romaji": "Kore wa ichiban taisetsu na teikuauto desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Takeout / to-go.",
+          "audioText": "これはテイクアウトです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なテイクアウトです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l9_4",
@@ -1711,11 +1714,11 @@ export const unit04: DojoUnit = {
           "english": "This is Takeout / to-go.",
           "audioText": "これはテイクアウトです",
           "scrambleTokens": [
-            "テイクアウト",
-            "ではありません",
-            "です",
             "これは",
-            "それ"
+            "テイクアウト",
+            "です",
+            "それ",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1750,11 +1753,11 @@ export const unit04: DojoUnit = {
           "english": "Takeout (Japanese term), please.",
           "audioText": "持ち帰りをお願いします",
           "dictateTokens": [
-            "を",
-            "持ち帰り",
-            "です",
             "お願いします",
-            "ありがとう"
+            "持ち帰り",
+            "を",
+            "ありがとう",
+            "です"
           ],
           "dictateSolution": [
             "持ち帰り",
@@ -1860,10 +1863,10 @@ export const unit04: DojoUnit = {
           "english": "Without ice",
           "audioText": "こおりなし",
           "options": [
-            "Four items (counter)",
-            "Cup size",
             "Without ice",
-            "Cheesecake"
+            "Your order",
+            "Seat / table",
+            "Syrup"
           ],
           "correctAnswer": "Without ice"
         },
@@ -1876,34 +1879,35 @@ export const unit04: DojoUnit = {
           "english": "Build 'Without ice'",
           "audioText": "こおりなし",
           "tileBank": [
-            "し",
-            "ち",
+            "ら",
             "り",
             "な",
+            "す",
             "こ",
-            "か",
             "お",
-            "も"
+            "し",
+            "は"
           ],
           "correctAnswer": "こおりなし"
         },
         {
           "id": "u4_l10_3",
           "type": "cloze",
-          "prompt": "私は砂糖がすきです",
-          "furigana": "わたしはさとうがすきです",
-          "romaji": "Watashi wa satou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Sugar.",
-          "audioText": "砂糖",
-          "clozeSentence": "これは砂糖 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な砂糖です。",
+          "furigana": "これはいちばんたいせつなさとうです。",
+          "romaji": "Kore wa ichiban taisetsu na satou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Sugar.",
+          "audioText": "これは砂糖です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な砂糖です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l10_4",
@@ -1914,11 +1918,11 @@ export const unit04: DojoUnit = {
           "english": "This is Sugar.",
           "audioText": "これは砂糖です",
           "scrambleTokens": [
-            "ではありません",
-            "それ",
             "これは",
             "です",
-            "砂糖"
+            "ではありません",
+            "砂糖",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1947,24 +1951,22 @@ export const unit04: DojoUnit = {
         {
           "id": "u4_l10_6",
           "type": "dictate",
-          "prompt": "ミルクをお願いします",
-          "furigana": "ミルクをおねがいします",
-          "romaji": "miruku o onegaishimasu.",
-          "english": "Milk / creamer, please.",
-          "audioText": "ミルクをお願いします",
+          "prompt": "ミルクです",
+          "furigana": "ミルクです",
+          "romaji": "miruku desu.",
+          "english": "It is Milk / creamer.",
+          "audioText": "ミルクです",
           "dictateTokens": [
             "です",
-            "ありがとう",
             "ミルク",
-            "を",
-            "お願いします"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "ミルク",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "ミルクをお願いします"
+          "correctAnswer": "ミルクです"
         },
         {
           "id": "u4_l10_7",
@@ -2059,10 +2061,10 @@ export const unit04: DojoUnit = {
           "english": "Syrup",
           "audioText": "シロップ",
           "options": [
-            "Please give me...",
+            "Hot coffee",
+            "Receipt",
             "Syrup",
-            "Menu",
-            "Toast"
+            "Croissant"
           ],
           "correctAnswer": "Syrup"
         },
@@ -2075,34 +2077,35 @@ export const unit04: DojoUnit = {
           "english": "Build 'Syrup'",
           "audioText": "シロップ",
           "tileBank": [
+            "り",
+            "ひ",
             "や",
-            "ふ",
-            "ロ",
-            "プ",
             "シ",
-            "の",
+            "ほ",
+            "ロ",
             "ッ",
-            "を"
+            "プ"
           ],
           "correctAnswer": "シロップ"
         },
         {
           "id": "u4_l11_3",
           "type": "cloze",
-          "prompt": "私はストローがすきです",
-          "furigana": "わたしはストローがすきです",
-          "romaji": "Watashi wa sutoroo ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Drinking straw.",
-          "audioText": "ストロー",
-          "clozeSentence": "これはストロー {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切なストローです。",
+          "furigana": "これはいちばんたいせつなストローです。",
+          "romaji": "Kore wa ichiban taisetsu na sutoroo desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Drinking straw.",
+          "audioText": "これはストローです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なストローです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l11_4",
@@ -2113,11 +2116,11 @@ export const unit04: DojoUnit = {
           "english": "This is Drinking straw.",
           "audioText": "これはストローです",
           "scrambleTokens": [
-            "ではありません",
-            "それ",
-            "です",
             "ストロー",
-            "これは"
+            "ではありません",
+            "です",
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2146,24 +2149,22 @@ export const unit04: DojoUnit = {
         {
           "id": "u4_l11_6",
           "type": "dictate",
-          "prompt": "いらっしゃいませをお願いします",
-          "furigana": "いらっしゃいませをおねがいします",
-          "romaji": "irasshaimase o onegaishimasu.",
-          "english": "Welcome (store greeting), please.",
-          "audioText": "いらっしゃいませをお願いします",
+          "prompt": "いらっしゃいませです",
+          "furigana": "いらっしゃいませです",
+          "romaji": "irasshaimase desu.",
+          "english": "It is Welcome (store greeting).",
+          "audioText": "いらっしゃいませです",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "です",
-            "ありがとう",
-            "いらっしゃいませ",
-            "を",
-            "お願いします"
+            "いらっしゃいませ"
           ],
           "dictateSolution": [
             "いらっしゃいませ",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "いらっしゃいませをお願いします"
+          "correctAnswer": "いらっしゃいませです"
         },
         {
           "id": "u4_l11_7",
@@ -2263,10 +2264,10 @@ export const unit04: DojoUnit = {
           "english": "Your order",
           "audioText": "ごちゅうもん",
           "options": [
-            "Recommendation",
-            "Your order",
-            "Matcha green tea latte",
-            "Cheesecake"
+            "Dine-in / in-store",
+            "Four items (counter)",
+            "Milk / creamer",
+            "Your order"
           ],
           "correctAnswer": "Your order"
         },
@@ -2279,26 +2280,26 @@ export const unit04: DojoUnit = {
           "english": "Build 'Your order'",
           "audioText": "ごちゅうもん",
           "tileBank": [
-            "ゅ",
-            "ん",
-            "ご",
-            "そ",
-            "る",
+            "き",
             "ち",
-            "も",
-            "う"
+            "ゅ",
+            "ほ",
+            "ご",
+            "う",
+            "ん",
+            "も"
           ],
           "correctAnswer": "ごちゅうもん"
         },
         {
           "id": "u4_l12_3",
           "type": "cloze",
-          "prompt": "私はお会計がすきです",
-          "furigana": "わたしはおかいけいがすきです",
-          "romaji": "Watashi wa okaikei ga suki desu.",
-          "english": "Fill in the blank with the correct particle for The bill / payment.",
-          "audioText": "お会計",
-          "clozeSentence": "これはお会計 {{BLANK}} す。",
+          "prompt": "これはいちばん大切なお会計です。",
+          "furigana": "これはいちばんたいせつなおかいけいです。",
+          "romaji": "Kore wa ichiban taisetsu na okaikei desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important The bill / payment.",
+          "audioText": "これはお会計です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なお会計です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2306,7 +2307,8 @@ export const unit04: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l12_4",
@@ -2317,11 +2319,11 @@ export const unit04: DojoUnit = {
           "english": "This is The bill / payment.",
           "audioText": "これはお会計です",
           "scrambleTokens": [
-            "これは",
-            "それ",
-            "ではありません",
             "です",
-            "お会計"
+            "それ",
+            "これは",
+            "お会計",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2350,24 +2352,22 @@ export const unit04: DojoUnit = {
         {
           "id": "u4_l12_6",
           "type": "dictate",
-          "prompt": "レシートをお願いします",
-          "furigana": "レシートをおねがいします",
-          "romaji": "reshiito o onegaishimasu.",
-          "english": "Receipt, please.",
-          "audioText": "レシートをお願いします",
+          "prompt": "レシートです",
+          "furigana": "レシートです",
+          "romaji": "reshiito desu.",
+          "english": "It is Receipt.",
+          "audioText": "レシートです",
           "dictateTokens": [
-            "お願いします",
+            "これ",
+            "レシート",
             "です",
-            "ありがとう",
-            "を",
-            "レシート"
+            "ではありません"
           ],
           "dictateSolution": [
             "レシート",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "レシートをお願いします"
+          "correctAnswer": "レシートです"
         },
         {
           "id": "u4_l12_7",
@@ -2467,10 +2467,10 @@ export const unit04: DojoUnit = {
           "english": "Seat / table",
           "audioText": "せき",
           "options": [
-            "Dine-in / in-store",
-            "Seat / table",
-            "The bill / payment",
-            "Milk / creamer"
+            "Without ice",
+            "Drinking straw",
+            "Coffee",
+            "Seat / table"
           ],
           "correctAnswer": "Seat / table"
         },
@@ -2483,34 +2483,35 @@ export const unit04: DojoUnit = {
           "english": "Build 'Seat / table'",
           "audioText": "せき",
           "tileBank": [
-            "あ",
+            "ほ",
+            "か",
             "せ",
-            "て",
-            "ゆ",
-            "ひ",
-            "は",
-            "き",
-            "く"
+            "し",
+            "ぬ",
+            "え",
+            "み",
+            "き"
           ],
           "correctAnswer": "せき"
         },
         {
           "id": "u4_l13_3",
           "type": "cloze",
-          "prompt": "私は禁煙席がすきです",
-          "furigana": "わたしはきんえんせきがすきです",
-          "romaji": "Watashi wa kin-enseki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Non-smoking seat.",
-          "audioText": "禁煙席",
-          "clozeSentence": "私は禁煙席 {{BLANK}} 好きです。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な禁煙席です。",
+          "furigana": "これはいちばんたいせつなきんえんせきです。",
+          "romaji": "Kore wa ichiban taisetsu na kin-enseki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Non-smoking seat.",
+          "audioText": "これは禁煙席です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な禁煙席です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u4_l13_4",
@@ -2521,11 +2522,11 @@ export const unit04: DojoUnit = {
           "english": "This is Non-smoking seat.",
           "audioText": "これは禁煙席です",
           "scrambleTokens": [
+            "禁煙席",
+            "それ",
             "です",
             "これは",
-            "禁煙席",
-            "ではありません",
-            "それ"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2554,24 +2555,22 @@ export const unit04: DojoUnit = {
         {
           "id": "u4_l13_6",
           "type": "dictate",
-          "prompt": "カードをお願いします",
-          "furigana": "カードをおねがいします",
-          "romaji": "kaado o onegaishimasu.",
-          "english": "Credit / IC card, please.",
-          "audioText": "カードをお願いします",
+          "prompt": "カードです",
+          "furigana": "カードです",
+          "romaji": "kaado desu.",
+          "english": "It is Credit / IC card.",
+          "audioText": "カードです",
           "dictateTokens": [
-            "カード",
-            "を",
+            "これ",
             "です",
-            "お願いします",
-            "ありがとう"
+            "カード",
+            "ではありません"
           ],
           "dictateSolution": [
             "カード",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "カードをお願いします"
+          "correctAnswer": "カードです"
         },
         {
           "id": "u4_l13_7",
@@ -2669,10 +2668,10 @@ export const unit04: DojoUnit = {
           "english": "Please wait a moment",
           "audioText": "しょうしょうおまちください",
           "options": [
-            "Drinking straw",
-            "Seat / table",
-            "Cup size",
-            "Please wait a moment"
+            "Credit / IC card",
+            "Café latte",
+            "Please wait a moment",
+            "Non-smoking seat"
           ],
           "correctAnswer": "Please wait a moment"
         },
@@ -2685,56 +2684,57 @@ export const unit04: DojoUnit = {
           "english": "Build 'Coffee'",
           "audioText": "コーヒー",
           "tileBank": [
+            "た",
             "ー",
-            "や",
-            "に",
+            "む",
             "ヒ",
+            "コ",
             "ー",
-            "の",
             "ゆ",
-            "コ"
+            "る"
           ],
           "correctAnswer": "コーヒー"
         },
         {
           "id": "u4_l14_3",
           "type": "cloze",
-          "prompt": "私はコーヒーがすきです",
-          "furigana": "わたしはコーヒーがすきです",
-          "romaji": "Watashi wa koohii ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Coffee.",
-          "audioText": "コーヒー",
-          "clozeSentence": "これはコーヒー {{BLANK}} す。",
+          "prompt": "毎朝、冷たいコーヒーを飲みます。",
+          "furigana": "まいあさ、つめたいコーヒーをのみます。",
+          "romaji": "Maiasa, tsumetai koohii o nomimasu.",
+          "english": "Fill in object particle 'を' (o): I drink cold Coffee every morning.",
+          "audioText": "コーヒーを飲みます。",
+          "clozeSentence": "毎朝、冷たいコーヒー {{BLANK}} 飲みます。",
           "clozeTarget": "を",
           "clozeOptions": [
-            "は",
-            "が",
             "を",
-            "に"
+            "は",
+            "に",
+            "で"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "を",
+          "explanation": "助詞「を」 (o) marks the direct object of action verb 「飲みます」 (drink)."
         },
         {
           "id": "u4_l14_4",
           "type": "scramble",
-          "prompt": "これはコーヒーです",
-          "furigana": "これはコーヒーです",
-          "romaji": "Kore wa koohii desu.",
-          "english": "This is Coffee.",
-          "audioText": "これはコーヒーです",
+          "prompt": "冷たいコーヒーを飲みます",
+          "furigana": "つめたいコーヒーをのみます",
+          "romaji": "Tsumetai koohii o nomimasu.",
+          "english": "Drink cold Coffee.",
+          "audioText": "冷たいコーヒーを飲みます",
           "scrambleTokens": [
-            "です",
-            "それ",
-            "これは",
-            "コーヒー",
-            "ではありません"
+            "飲みます",
+            "が",
+            "食べます",
+            "コーヒーを",
+            "冷たい"
           ],
           "scrambleSolution": [
-            "これは",
-            "コーヒー",
-            "です"
+            "冷たい",
+            "コーヒーを",
+            "飲みます"
           ],
-          "correctAnswer": "これはコーヒーです"
+          "correctAnswer": "冷たいコーヒーを飲みます"
         },
         {
           "id": "u4_l14_5",
@@ -2763,10 +2763,10 @@ export const unit04: DojoUnit = {
           "audioText": "ホットコーヒーをお願いします",
           "dictateTokens": [
             "を",
-            "です",
             "ホットコーヒー",
             "ありがとう",
-            "お願いします"
+            "お願いします",
+            "です"
           ],
           "dictateSolution": [
             "ホットコーヒー",
@@ -2871,10 +2871,10 @@ export const unit04: DojoUnit = {
           "english": "Iced tea",
           "audioText": "アイスティー",
           "options": [
-            "Black tea",
-            "Without ice",
-            "Four items (counter)",
-            "Iced tea"
+            "Two items (counter)",
+            "Iced tea",
+            "Dine-in / in-store",
+            "Syrup"
           ],
           "correctAnswer": "Iced tea"
         },
@@ -2887,56 +2887,57 @@ export const unit04: DojoUnit = {
           "english": "Build 'Iced tea'",
           "audioText": "アイスティー",
           "tileBank": [
-            "ろ",
+            "ゆ",
             "ア",
-            "ス",
-            "に",
-            "ー",
-            "テ",
             "ィ",
-            "イ"
+            "ス",
+            "イ",
+            "ー",
+            "り",
+            "テ"
           ],
           "correctAnswer": "アイスティー"
         },
         {
           "id": "u4_l15_3",
           "type": "cloze",
-          "prompt": "私は紅茶がすきです",
-          "furigana": "わたしはこうちゃがすきです",
-          "romaji": "Watashi wa koucha ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Black tea.",
-          "audioText": "紅茶",
-          "clozeSentence": "これは紅茶 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "毎朝、冷たい紅茶を飲みます。",
+          "furigana": "まいあさ、つめたいこうちゃをのみます。",
+          "romaji": "Maiasa, tsumetai koucha o nomimasu.",
+          "english": "Fill in object particle 'を' (o): I drink cold Black tea every morning.",
+          "audioText": "紅茶を飲みます。",
+          "clozeSentence": "毎朝、冷たい紅茶 {{BLANK}} 飲みます。",
+          "clozeTarget": "を",
           "clozeOptions": [
-            "は",
-            "が",
             "を",
-            "に"
+            "は",
+            "に",
+            "で"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "を",
+          "explanation": "助詞「を」 (o) marks the direct object of action verb 「飲みます」 (drink)."
         },
         {
           "id": "u4_l15_4",
           "type": "scramble",
-          "prompt": "これは紅茶です",
-          "furigana": "これはこうちゃです",
-          "romaji": "Kore wa koucha desu.",
-          "english": "This is Black tea.",
-          "audioText": "これは紅茶です",
+          "prompt": "冷たい紅茶を飲みます",
+          "furigana": "つめたいこうちゃをのみます",
+          "romaji": "Tsumetai koucha o nomimasu.",
+          "english": "Drink cold Black tea.",
+          "audioText": "冷たい紅茶を飲みます",
           "scrambleTokens": [
-            "ではありません",
-            "それ",
-            "紅茶",
-            "これは",
-            "です"
+            "冷たい",
+            "紅茶を",
+            "が",
+            "飲みます",
+            "食べます"
           ],
           "scrambleSolution": [
-            "これは",
-            "紅茶",
-            "です"
+            "冷たい",
+            "紅茶を",
+            "飲みます"
           ],
-          "correctAnswer": "これは紅茶です"
+          "correctAnswer": "冷たい紅茶を飲みます"
         },
         {
           "id": "u4_l15_5",
@@ -2964,11 +2965,11 @@ export const unit04: DojoUnit = {
           "english": "Café latte, please.",
           "audioText": "カフェラテをお願いします",
           "dictateTokens": [
-            "を",
-            "カフェラテ",
             "お願いします",
+            "ありがとう",
+            "を",
             "です",
-            "ありがとう"
+            "カフェラテ"
           ],
           "dictateSolution": [
             "カフェラテ",
@@ -3060,10 +3061,10 @@ export const unit04: DojoUnit = {
         "english": "Coffee",
         "audioText": "コーヒー",
         "options": [
-          "Small size",
-          "Large size",
-          "Seat / table",
-          "Coffee"
+          "Coffee",
+          "Cake",
+          "Please / I request...",
+          "Cheesecake"
         ],
         "correctAnswer": "Coffee"
       },
@@ -3076,13 +3077,13 @@ export const unit04: DojoUnit = {
         "english": "Build 'Coffee'",
         "audioText": "コーヒー",
         "tileBank": [
-          "わ",
-          "コ",
           "ヒ",
-          "ー",
-          "め",
           "け",
-          "ぬ",
+          "コ",
+          "し",
+          "わ",
+          "ー",
+          "り",
           "ー"
         ],
         "correctAnswer": "コーヒー"
@@ -3096,10 +3097,10 @@ export const unit04: DojoUnit = {
         "english": "Please give me...",
         "audioText": "ください",
         "options": [
-          "Please / I request...",
-          "Medium size",
-          "Please give me...",
-          "Iced tea"
+          "Without ice",
+          "Coffee",
+          "Two items (counter)",
+          "Please give me..."
         ],
         "correctAnswer": "Please give me..."
       },
@@ -3112,14 +3113,14 @@ export const unit04: DojoUnit = {
         "english": "Build 'Please give me...'",
         "audioText": "ください",
         "tileBank": [
-          "ひ",
-          "さ",
-          "せ",
           "い",
-          "だ",
-          "り",
+          "え",
           "く",
-          "む"
+          "み",
+          "さ",
+          "や",
+          "こ",
+          "だ"
         ],
         "correctAnswer": "ください"
       },
@@ -3132,10 +3133,10 @@ export const unit04: DojoUnit = {
         "english": "Cup size",
         "audioText": "サイズ",
         "options": [
+          "Please / I request...",
           "Cup size",
-          "One item (counter)",
-          "Non-smoking seat",
-          "Recommendation"
+          "Menu",
+          "Milk / creamer"
         ],
         "correctAnswer": "Cup size"
       },
@@ -3148,14 +3149,14 @@ export const unit04: DojoUnit = {
         "english": "Build 'Cup size'",
         "audioText": "サイズ",
         "tileBank": [
-          "す",
-          "り",
+          "み",
           "サ",
-          "ズ",
-          "イ",
-          "て",
           "も",
-          "た"
+          "の",
+          "イ",
+          "ズ",
+          "ゆ",
+          "し"
         ],
         "correctAnswer": "サイズ"
       },
@@ -3168,9 +3169,9 @@ export const unit04: DojoUnit = {
         "english": "Sandwich",
         "audioText": "サンドイッチ",
         "options": [
-          "Receipt",
-          "The bill / payment",
-          "Seat / table",
+          "Croissant",
+          "Dine-in / in-store",
+          "Drinking straw",
           "Sandwich"
         ],
         "correctAnswer": "Sandwich"
@@ -3184,14 +3185,14 @@ export const unit04: DojoUnit = {
         "english": "Build 'Sandwich'",
         "audioText": "サンドイッチ",
         "tileBank": [
-          "ね",
+          "ふ",
+          "チ",
           "イ",
           "ン",
-          "ッ",
           "サ",
-          "チ",
           "ド",
-          "た"
+          "ッ",
+          "さ"
         ],
         "correctAnswer": "サンドイッチ"
       },
@@ -3204,10 +3205,10 @@ export const unit04: DojoUnit = {
         "english": "Dine-in / in-store",
         "audioText": "てんない",
         "options": [
+          "Toast",
+          "Hot coffee",
           "Medium size",
-          "Dine-in / in-store",
-          "Two items (counter)",
-          "Croissant"
+          "Dine-in / in-store"
         ],
         "correctAnswer": "Dine-in / in-store"
       },
@@ -3220,14 +3221,14 @@ export const unit04: DojoUnit = {
         "english": "Build 'Dine-in / in-store'",
         "audioText": "てんない",
         "tileBank": [
+          "し",
           "て",
-          "あ",
-          "そ",
+          "く",
           "さ",
-          "な",
+          "や",
           "ん",
-          "い",
-          "ね"
+          "な",
+          "い"
         ],
         "correctAnswer": "てんない"
       },
@@ -3240,10 +3241,10 @@ export const unit04: DojoUnit = {
         "english": "Syrup",
         "audioText": "シロップ",
         "options": [
-          "Please give me...",
+          "Hot coffee",
+          "Receipt",
           "Syrup",
-          "Menu",
-          "Toast"
+          "Croissant"
         ],
         "correctAnswer": "Syrup"
       },
@@ -3256,14 +3257,14 @@ export const unit04: DojoUnit = {
         "english": "Build 'Syrup'",
         "audioText": "シロップ",
         "tileBank": [
+          "り",
+          "ひ",
           "や",
-          "ふ",
-          "ロ",
-          "プ",
           "シ",
-          "の",
+          "ほ",
+          "ロ",
           "ッ",
-          "を"
+          "プ"
         ],
         "correctAnswer": "シロップ"
       }

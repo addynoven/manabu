@@ -43,10 +43,10 @@ export const unit01: DojoUnit = {
           "english": "Hello / Good afternoon",
           "audioText": "こんにちは",
           "options": [
-            "Name",
-            "Hello / Good afternoon",
-            "Who",
-            "No"
+            "Please / go ahead",
+            "Likewise / the pleasure is mine",
+            "See you later (casual)",
+            "Hello / Good afternoon"
           ],
           "correctAnswer": "Hello / Good afternoon"
         },
@@ -59,56 +59,57 @@ export const unit01: DojoUnit = {
           "english": "Build 'Hello / Good afternoon'",
           "audioText": "こんにちは",
           "tileBank": [
-            "ん",
-            "さ",
+            "い",
             "ち",
-            "こ",
-            "ね",
-            "た",
+            "め",
             "は",
-            "に"
+            "に",
+            "こ",
+            "さ",
+            "ん"
           ],
           "correctAnswer": "こんにちは"
         },
         {
           "id": "u1_l1_3",
           "type": "cloze",
-          "prompt": "私はおはようございますがすきです",
-          "furigana": "わたしはおはようございますがすきです",
-          "romaji": "Watashi wa ohayou gozaimasu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Good morning (polite).",
+          "prompt": "朝、先生に会いました。「おはようございます！」",
+          "furigana": "あさ、せんせいにあいました。「おはようございます！」",
+          "romaji": "Asa, sensei ni aimashita. 'Ohayou gozaimasu!'",
+          "english": "Morning greeting to teacher: 'Good morning!'",
           "audioText": "おはようございます",
-          "clozeSentence": "これはおはようございます {{BLANK}} す。",
-          "clozeTarget": "が",
+          "clozeSentence": "朝、先生に会いました。「{{BLANK}}！」",
+          "clozeTarget": "おはようございます",
           "clozeOptions": [
-            "は",
-            "が",
-            "を",
-            "に"
+            "おはようございます",
+            "こんばんは",
+            "おやすみなさい",
+            "さようなら"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "おはようございます",
+          "explanation": "Use 「おはようございます」 in the morning until around 10:30 AM."
         },
         {
           "id": "u1_l1_4",
           "type": "scramble",
-          "prompt": "これはおはようございますです",
-          "furigana": "これはおはようございますです",
-          "romaji": "Kore wa ohayou gozaimasu desu.",
-          "english": "This is Good morning (polite).",
-          "audioText": "これはおはようございますです",
+          "prompt": "田中さん、おはようございます",
+          "furigana": "たなかさん、おはようございます",
+          "romaji": "Tanaka-san, ohayou gozaimasu",
+          "english": "Good morning, Mr. Tanaka.",
+          "audioText": "田中さん、おはようございます",
           "scrambleTokens": [
             "です",
+            "さようなら",
             "おはようございます",
-            "ではありません",
-            "それ",
-            "これは"
+            "、",
+            "田中さん"
           ],
           "scrambleSolution": [
-            "これは",
-            "おはようございます",
-            "です"
+            "田中さん",
+            "、",
+            "おはようございます"
           ],
-          "correctAnswer": "これはおはようございますです"
+          "correctAnswer": "田中さん、おはようございます"
         },
         {
           "id": "u1_l1_5",
@@ -130,24 +131,20 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l1_6",
           "type": "dictate",
-          "prompt": "こんばんはをお願いします",
-          "furigana": "こんばんはをおねがいします",
-          "romaji": "konbanwa o onegaishimasu.",
-          "english": "Good evening, please.",
-          "audioText": "こんばんはをお願いします",
+          "prompt": "こんばんは",
+          "furigana": "こんばんは",
+          "romaji": "konbanwa",
+          "english": "Good evening",
+          "audioText": "こんばんは",
           "dictateTokens": [
-            "こんばんは",
             "です",
-            "ありがとう",
-            "お願いします",
-            "を"
+            "さようなら",
+            "こんばんは"
           ],
           "dictateSolution": [
-            "こんばんは",
-            "を",
-            "お願いします"
+            "こんばんは"
           ],
-          "correctAnswer": "こんばんはをお願いします"
+          "correctAnswer": "こんばんは"
         },
         {
           "id": "u1_l1_7",
@@ -242,10 +239,10 @@ export const unit01: DojoUnit = {
           "english": "Goodbye",
           "audioText": "さようなら",
           "options": [
-            "Welcome home",
+            "See you later (casual)",
+            "I am well / healthy",
             "Goodbye",
-            "Company employee",
-            "Excuse me / I'm sorry"
+            "It's all right / no problem"
           ],
           "correctAnswer": "Goodbye"
         },
@@ -258,56 +255,57 @@ export const unit01: DojoUnit = {
           "english": "Build 'Goodbye'",
           "audioText": "さようなら",
           "tileBank": [
-            "さ",
-            "ら",
-            "よ",
             "う",
+            "つ",
             "な",
-            "と",
-            "を",
-            "ね"
+            "よ",
+            "せ",
+            "ら",
+            "め",
+            "さ"
           ],
           "correctAnswer": "さようなら"
         },
         {
           "id": "u1_l2_3",
           "type": "cloze",
-          "prompt": "私はありがとうございますがすきです",
-          "furigana": "わたしはありがとうございますがすきです",
-          "romaji": "Watashi wa arigatou gozaimasu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Thank you very much.",
+          "prompt": "親切にしてもらいました。「ありがとうございます！」",
+          "furigana": "しんせつにしてもらいました。「ありがとうございます！」",
+          "romaji": "Shinsetsu ni shite moraimashita. 'Arigatou gozaimasu!'",
+          "english": "Expressing gratitude: 'Thank you very much!'",
           "audioText": "ありがとうございます",
-          "clozeSentence": "これはありがとうございます {{BLANK}} す。",
-          "clozeTarget": "を",
+          "clozeSentence": "親切にしてもらいました。「{{BLANK}}！」",
+          "clozeTarget": "ありがとうございます",
           "clozeOptions": [
-            "は",
-            "が",
-            "を",
-            "に"
+            "ありがとうございます",
+            "どういたしまして",
+            "ごちそうさまでした",
+            "さようなら"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "ありがとうございます",
+          "explanation": "「ありがとうございます」 expresses polite gratitude."
         },
         {
           "id": "u1_l2_4",
           "type": "scramble",
-          "prompt": "これはありがとうございますです",
-          "furigana": "これはありがとうございますです",
-          "romaji": "Kore wa arigatou gozaimasu desu.",
-          "english": "This is Thank you very much.",
-          "audioText": "これはありがとうございますです",
+          "prompt": "どうもありがとうございます",
+          "furigana": "どうもありがとうございます",
+          "romaji": "Doumo arigatou gozaimasu",
+          "english": "Thank you very much.",
+          "audioText": "どうもありがとうございます",
           "scrambleTokens": [
-            "です",
-            "ではありません",
-            "これは",
-            "ありがとうございます",
-            "それ"
-          ],
-          "scrambleSolution": [
-            "これは",
-            "ありがとうございます",
+            "どうも",
+            "ございます",
+            "ありがとう",
+            "いいえ",
             "です"
           ],
-          "correctAnswer": "これはありがとうございますです"
+          "scrambleSolution": [
+            "どうも",
+            "ありがとう",
+            "ございます"
+          ],
+          "correctAnswer": "どうもありがとうございます"
         },
         {
           "id": "u1_l2_5",
@@ -329,24 +327,20 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l2_6",
           "type": "dictate",
-          "prompt": "どういたしましてをお願いします",
-          "furigana": "どういたしましてをおねがいします",
-          "romaji": "douitashimashite o onegaishimasu.",
-          "english": "You are welcome, please.",
-          "audioText": "どういたしましてをお願いします",
+          "prompt": "どういたしまして",
+          "furigana": "どういたしまして",
+          "romaji": "douitashimashite",
+          "english": "You are welcome",
+          "audioText": "どういたしまして",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "お願いします",
+            "どういたしまして",
             "です",
-            "どういたしまして"
+            "ありがとう"
           ],
           "dictateSolution": [
-            "どういたしまして",
-            "を",
-            "お願いします"
+            "どういたしまして"
           ],
-          "correctAnswer": "どういたしましてをお願いします"
+          "correctAnswer": "どういたしまして"
         },
         {
           "id": "u1_l2_7",
@@ -441,10 +435,10 @@ export const unit01: DojoUnit = {
           "english": "Yes",
           "audioText": "はい",
           "options": [
-            "You are welcome",
-            "Good night",
+            "Yes",
             "Company employee",
-            "Yes"
+            "Where / which direction (polite)",
+            "Have a good day / take care"
           ],
           "correctAnswer": "Yes"
         },
@@ -457,56 +451,58 @@ export const unit01: DojoUnit = {
           "english": "Build 'Yes'",
           "audioText": "はい",
           "tileBank": [
-            "め",
             "は",
-            "ほ",
-            "あ",
+            "か",
+            "や",
             "い",
             "む",
-            "う",
-            "て"
+            "ち",
+            "さ",
+            "み"
           ],
           "correctAnswer": "はい"
         },
         {
           "id": "u1_l3_3",
           "type": "cloze",
-          "prompt": "私はいいえがすきです",
-          "furigana": "わたしはいいえがすきです",
-          "romaji": "Watashi wa iie ga suki desu.",
-          "english": "Fill in the blank with the correct particle for No.",
+          "prompt": "「日本人ですか？」「いいえ、アメリカ人です。」",
+          "furigana": "「にほんじんですか？」「いいえ、アメリカじんです。」",
+          "romaji": "'Nihonjin desu ka?' 'Iie, Amerikajin desu.'",
+          "english": "'Are you Japanese?' 'No, I am American.'",
           "audioText": "いいえ",
-          "clozeSentence": "これはいいえ {{BLANK}} す。",
-          "clozeTarget": "に",
+          "clozeSentence": "「日本人ですか？」「{{BLANK}}、アメリカ人です。」",
+          "clozeTarget": "いいえ",
           "clozeOptions": [
-            "は",
-            "が",
-            "を",
-            "に"
+            "いいえ",
+            "はい",
+            "どうぞ",
+            "だれ"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "いいえ",
+          "explanation": "「いいえ」 means 'No' in polite speech."
         },
         {
           "id": "u1_l3_4",
           "type": "scramble",
-          "prompt": "これはいいえです",
-          "furigana": "これはいいえです",
-          "romaji": "Kore wa iie desu.",
-          "english": "This is No.",
-          "audioText": "これはいいえです",
+          "prompt": "いいえ、元気ではありません",
+          "furigana": "いいえ、げんきではありません",
+          "romaji": "Iie, genki dewa arimasen",
+          "english": "No, I am not well.",
+          "audioText": "いいえ、元気ではありません",
           "scrambleTokens": [
-            "です",
-            "これは",
-            "ではありません",
             "いいえ",
-            "それ"
+            "ではありません",
+            "、",
+            "はい",
+            "元気"
           ],
           "scrambleSolution": [
-            "これは",
             "いいえ",
-            "です"
+            "、",
+            "元気",
+            "ではありません"
           ],
-          "correctAnswer": "これはいいえです"
+          "correctAnswer": "いいえ、元気ではありません"
         },
         {
           "id": "u1_l3_5",
@@ -528,24 +524,20 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l3_6",
           "type": "dictate",
-          "prompt": "はじめましてをお願いします",
-          "furigana": "はじめましてをおねがいします",
-          "romaji": "hajimemashite o onegaishimasu.",
-          "english": "Nice to meet you, please.",
-          "audioText": "はじめましてをお願いします",
+          "prompt": "はじめまして",
+          "furigana": "はじめまして",
+          "romaji": "hajimemashite",
+          "english": "Nice to meet you",
+          "audioText": "はじめまして",
           "dictateTokens": [
-            "ありがとう",
-            "です",
-            "を",
             "はじめまして",
-            "お願いします"
+            "です",
+            "さようなら"
           ],
           "dictateSolution": [
-            "はじめまして",
-            "を",
-            "お願いします"
+            "はじめまして"
           ],
-          "correctAnswer": "はじめましてをお願いします"
+          "correctAnswer": "はじめまして"
         },
         {
           "id": "u1_l3_7",
@@ -646,10 +638,10 @@ export const unit01: DojoUnit = {
           "english": "Please treat me well",
           "audioText": "よろしくおねがいします",
           "options": [
-            "See you later (casual)",
-            "Who",
-            "Please treat me well",
-            "Thank you for the meal"
+            "Japanese person",
+            "Hello / Good afternoon",
+            "It's all right / no problem",
+            "Please treat me well"
           ],
           "correctAnswer": "Please treat me well"
         },
@@ -662,26 +654,26 @@ export const unit01: DojoUnit = {
           "english": "Build 'Tanaka (common name)'",
           "audioText": "たなか",
           "tileBank": [
-            "せ",
-            "く",
-            "な",
-            "き",
+            "や",
+            "え",
+            "ゆ",
             "か",
-            "た",
-            "ひ",
-            "う"
+            "る",
+            "ま",
+            "な",
+            "た"
           ],
           "correctAnswer": "たなか"
         },
         {
           "id": "u1_l4_3",
           "type": "cloze",
-          "prompt": "私は田中がすきです",
-          "furigana": "わたしはたなかがすきです",
-          "romaji": "Watashi wa tanaka ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Tanaka (common name).",
-          "audioText": "田中",
-          "clozeSentence": "これは田中 {{BLANK}} す。",
+          "prompt": "田中さんは田中です。",
+          "furigana": "たなかさんはたなかです。",
+          "romaji": "Tanaka-san wa tanaka desu.",
+          "english": "Fill in topic particle 'は' (wa): Mr. Tanaka is a Tanaka (common name).",
+          "audioText": "田中さんは田中です。",
+          "clozeSentence": "田中さん {{BLANK}} 田中です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -689,29 +681,30 @@ export const unit01: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the topic of the sentence."
         },
         {
           "id": "u1_l4_4",
           "type": "scramble",
-          "prompt": "これは田中です",
-          "furigana": "これはたなかです",
-          "romaji": "Kore wa tanaka desu.",
-          "english": "This is Tanaka (common name).",
-          "audioText": "これは田中です",
+          "prompt": "田中さんは田中です",
+          "furigana": "たなかさんはたなかです",
+          "romaji": "Tanaka-san wa tanaka desu.",
+          "english": "Mr. Tanaka is a Tanaka (common name).",
+          "audioText": "田中さんは田中です",
           "scrambleTokens": [
-            "これは",
-            "です",
-            "それ",
             "田中",
-            "ではありません"
+            "ではありません",
+            "を",
+            "です",
+            "田中さんは"
           ],
           "scrambleSolution": [
-            "これは",
+            "田中さんは",
             "田中",
             "です"
           ],
-          "correctAnswer": "これは田中です"
+          "correctAnswer": "田中さんは田中です"
         },
         {
           "id": "u1_l4_5",
@@ -733,24 +726,24 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l4_6",
           "type": "dictate",
-          "prompt": "学生をお願いします",
-          "furigana": "がくせいをおねがいします",
-          "romaji": "gakusei o onegaishimasu.",
-          "english": "Student, please.",
-          "audioText": "学生をお願いします",
+          "prompt": "私は学生です",
+          "furigana": "わたしはがくせいです",
+          "romaji": "Watashi wa gakusei desu.",
+          "english": "I am a Student.",
+          "audioText": "私は学生です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "お願いします",
+            "です",
+            "ではありません",
+            "田中",
+            "私は",
+            "学生"
+          ],
+          "dictateSolution": [
+            "私は",
             "学生",
             "です"
           ],
-          "dictateSolution": [
-            "学生",
-            "を",
-            "お願いします"
-          ],
-          "correctAnswer": "学生をお願いします"
+          "correctAnswer": "私は学生です"
         },
         {
           "id": "u1_l4_7",
@@ -854,10 +847,10 @@ export const unit01: DojoUnit = {
           "english": "Teacher / Professor",
           "audioText": "せんせい",
           "options": [
-            "Hello / Good afternoon",
             "Teacher / Professor",
-            "Who",
-            "Welcome home"
+            "Likewise / the pleasure is mine",
+            "Welcome home",
+            "Name"
           ],
           "correctAnswer": "Teacher / Professor"
         },
@@ -870,56 +863,57 @@ export const unit01: DojoUnit = {
           "english": "Build 'Teacher / Professor'",
           "audioText": "せんせい",
           "tileBank": [
-            "お",
-            "せ",
-            "ね",
-            "せ",
+            "の",
             "い",
-            "め",
-            "つ",
-            "ん"
+            "わ",
+            "せ",
+            "ん",
+            "す",
+            "せ",
+            "ら"
           ],
           "correctAnswer": "せんせい"
         },
         {
           "id": "u1_l5_3",
           "type": "cloze",
-          "prompt": "私は会社員がすきです",
-          "furigana": "わたしはかいしゃいんがすきです",
-          "romaji": "Watashi wa kaishain ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Company employee.",
-          "audioText": "会社員",
-          "clozeSentence": "これは会社員 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "田中さんは会社員です。",
+          "furigana": "たなかさんはかいしゃいんです。",
+          "romaji": "Tanaka-san wa kaishain desu.",
+          "english": "Fill in topic particle 'は' (wa): Mr. Tanaka is a Company employee.",
+          "audioText": "田中さんは会社員です。",
+          "clozeSentence": "田中さん {{BLANK}} 会社員です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the topic of the sentence."
         },
         {
           "id": "u1_l5_4",
           "type": "scramble",
-          "prompt": "これは会社員です",
-          "furigana": "これはかいしゃいんです",
-          "romaji": "Kore wa kaishain desu.",
-          "english": "This is Company employee.",
-          "audioText": "これは会社員です",
+          "prompt": "田中さんは会社員です",
+          "furigana": "たなかさんはかいしゃいんです",
+          "romaji": "Tanaka-san wa kaishain desu.",
+          "english": "Mr. Tanaka is a Company employee.",
+          "audioText": "田中さんは会社員です",
           "scrambleTokens": [
-            "です",
             "ではありません",
-            "会社員",
-            "それ",
-            "これは"
+            "です",
+            "田中さんは",
+            "を",
+            "会社員"
           ],
           "scrambleSolution": [
-            "これは",
+            "田中さんは",
             "会社員",
             "です"
           ],
-          "correctAnswer": "これは会社員です"
+          "correctAnswer": "田中さんは会社員です"
         },
         {
           "id": "u1_l5_5",
@@ -941,24 +935,24 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l5_6",
           "type": "dictate",
-          "prompt": "日本人をお願いします",
-          "furigana": "にほんじんをおねがいします",
-          "romaji": "nihonjin o onegaishimasu.",
-          "english": "Japanese person, please.",
-          "audioText": "日本人をお願いします",
+          "prompt": "私は日本人です",
+          "furigana": "わたしはにほんじんです",
+          "romaji": "Watashi wa nihonjin desu.",
+          "english": "I am a Japanese person.",
+          "audioText": "私は日本人です",
           "dictateTokens": [
-            "です",
-            "を",
             "日本人",
-            "ありがとう",
-            "お願いします"
+            "田中",
+            "私は",
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
+            "私は",
             "日本人",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "日本人をお願いします"
+          "correctAnswer": "私は日本人です"
         },
         {
           "id": "u1_l5_7",
@@ -1061,10 +1055,10 @@ export const unit01: DojoUnit = {
           "english": "International student",
           "audioText": "りゅうがくせい",
           "options": [
-            "Please / go ahead",
-            "Nice to meet you",
+            "Thank you for the meal",
             "International student",
-            "I'm home"
+            "Hometown / origin",
+            "Pardon me / Goodbye (polite)"
           ],
           "correctAnswer": "International student"
         },
@@ -1077,34 +1071,35 @@ export const unit01: DojoUnit = {
           "english": "Build 'I am well / healthy'",
           "audioText": "げんきです",
           "tileBank": [
-            "す",
-            "ん",
             "き",
-            "で",
-            "れ",
+            "や",
+            "ほ",
+            "ん",
             "げ",
-            "の",
-            "ち"
+            "ゆ",
+            "す",
+            "で"
           ],
           "correctAnswer": "げんきです"
         },
         {
           "id": "u1_l6_3",
           "type": "cloze",
-          "prompt": "私はお元気ですかがすきです",
-          "furigana": "わたしはおげんきですかがすきです",
-          "romaji": "Watashi wa ogenki desu ka ga suki desu.",
-          "english": "Fill in the blank with the correct particle for How are you?.",
-          "audioText": "お元気ですか",
-          "clozeSentence": "これはお元気ですか {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なお元気ですかです。",
+          "furigana": "これはいちばんたいせつなおげんきですかです。",
+          "romaji": "Kore wa ichiban taisetsu na ogenki desu ka desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important How are you?.",
+          "audioText": "これはお元気ですかです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なお元気ですかです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u1_l6_4",
@@ -1115,10 +1110,10 @@ export const unit01: DojoUnit = {
           "english": "This is How are you?.",
           "audioText": "これはお元気ですかです",
           "scrambleTokens": [
-            "これは",
-            "それ",
             "ではありません",
             "です",
+            "これは",
+            "それ",
             "お元気ですか"
           ],
           "scrambleSolution": [
@@ -1148,24 +1143,22 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l6_6",
           "type": "dictate",
-          "prompt": "元気ですをお願いします",
-          "furigana": "げんきですをおねがいします",
-          "romaji": "genki desu o onegaishimasu.",
-          "english": "I am well / healthy, please.",
-          "audioText": "元気ですをお願いします",
+          "prompt": "元気ですです",
+          "furigana": "げんきですです",
+          "romaji": "genki desu desu.",
+          "english": "It is I am well / healthy.",
+          "audioText": "元気ですです",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "です",
-            "を",
-            "元気です"
+            "ではありません",
+            "元気です",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "元気です",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "元気ですをお願いします"
+          "correctAnswer": "元気ですです"
         },
         {
           "id": "u1_l6_7",
@@ -1263,10 +1256,10 @@ export const unit01: DojoUnit = {
           "english": "Hometown / origin",
           "audioText": "しゅっしん",
           "options": [
-            "It's all right / no problem",
-            "Good night",
+            "Good evening",
             "Hometown / origin",
-            "Let's eat (before meal)"
+            "Goodbye",
+            "Where / which direction (polite)"
           ],
           "correctAnswer": "Hometown / origin"
         },
@@ -1279,34 +1272,35 @@ export const unit01: DojoUnit = {
           "english": "Build 'Hometown / origin'",
           "audioText": "しゅっしん",
           "tileBank": [
-            "は",
+            "い",
             "ゅ",
-            "ま",
-            "っ",
-            "ん",
-            "め",
             "し",
-            "し"
+            "く",
+            "し",
+            "ん",
+            "お",
+            "っ"
           ],
           "correctAnswer": "しゅっしん"
         },
         {
           "id": "u1_l7_3",
           "type": "cloze",
-          "prompt": "私はどちらがすきです",
-          "furigana": "わたしはどちらがすきです",
-          "romaji": "Watashi wa dochira ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Where / which direction (polite).",
-          "audioText": "どちら",
-          "clozeSentence": "これはどちら {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切などちらです。",
+          "furigana": "これはいちばんたいせつなどちらです。",
+          "romaji": "Kore wa ichiban taisetsu na dochira desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Where / which direction (polite).",
+          "audioText": "これはどちらです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切などちらです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u1_l7_4",
@@ -1317,11 +1311,11 @@ export const unit01: DojoUnit = {
           "english": "This is Where / which direction (polite).",
           "audioText": "これはどちらです",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
-            "これは",
             "です",
-            "どちら"
+            "これは",
+            "どちら",
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1350,24 +1344,22 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l7_6",
           "type": "dictate",
-          "prompt": "アメリカをお願いします",
-          "furigana": "アメリカをおねがいします",
-          "romaji": "amerika o onegaishimasu.",
-          "english": "America / USA, please.",
-          "audioText": "アメリカをお願いします",
+          "prompt": "アメリカです",
+          "furigana": "アメリカです",
+          "romaji": "amerika desu.",
+          "english": "It is America / USA.",
+          "audioText": "アメリカです",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
+            "ではありません",
             "です",
-            "を",
-            "アメリカ"
+            "アメリカ",
+            "これ"
           ],
           "dictateSolution": [
             "アメリカ",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "アメリカをお願いします"
+          "correctAnswer": "アメリカです"
         },
         {
           "id": "u1_l7_7",
@@ -1467,10 +1459,10 @@ export const unit01: DojoUnit = {
           "english": "Name",
           "audioText": "なまえ",
           "options": [
-            "Teacher / Professor",
+            "International student",
+            "Nice to meet you",
             "Name",
-            "See you later (casual)",
-            "Good evening"
+            "Good night"
           ],
           "correctAnswer": "Name"
         },
@@ -1483,26 +1475,26 @@ export const unit01: DojoUnit = {
           "english": "Build 'Name'",
           "audioText": "なまえ",
           "tileBank": [
+            "ほ",
+            "く",
             "な",
-            "こ",
-            "ひ",
-            "ま",
-            "き",
-            "い",
             "え",
-            "ね"
+            "て",
+            "ま",
+            "あ",
+            "そ"
           ],
           "correctAnswer": "なまえ"
         },
         {
           "id": "u1_l8_3",
           "type": "cloze",
-          "prompt": "私は誰がすきです",
-          "furigana": "わたしはだれがすきです",
-          "romaji": "Watashi wa dare ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Who.",
-          "audioText": "誰",
-          "clozeSentence": "これは誰 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な誰です。",
+          "furigana": "これはいちばんたいせつなだれです。",
+          "romaji": "Kore wa ichiban taisetsu na dare desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Who.",
+          "audioText": "これは誰です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な誰です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1510,7 +1502,8 @@ export const unit01: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u1_l8_4",
@@ -1521,10 +1514,10 @@ export const unit01: DojoUnit = {
           "english": "This is Who.",
           "audioText": "これは誰です",
           "scrambleTokens": [
-            "これは",
             "です",
             "ではありません",
             "それ",
+            "これは",
             "誰"
           ],
           "scrambleSolution": [
@@ -1560,11 +1553,11 @@ export const unit01: DojoUnit = {
           "english": "I / me, please.",
           "audioText": "私をお願いします",
           "dictateTokens": [
+            "私",
             "お願いします",
             "ありがとう",
-            "を",
             "です",
-            "私"
+            "を"
           ],
           "dictateSolution": [
             "私",
@@ -1670,10 +1663,10 @@ export const unit01: DojoUnit = {
           "english": "Excuse me / I'm sorry",
           "audioText": "すみません",
           "options": [
+            "I'm leaving (home)",
             "Excuse me / I'm sorry",
-            "Tanaka (common name)",
-            "Thank you very much",
-            "Thank you for the meal"
+            "Where / which direction (polite)",
+            "Thank you very much"
           ],
           "correctAnswer": "Excuse me / I'm sorry"
         },
@@ -1686,34 +1679,35 @@ export const unit01: DojoUnit = {
           "english": "Build 'Excuse me / I'm sorry'",
           "audioText": "すみません",
           "tileBank": [
+            "う",
             "す",
-            "み",
-            "ら",
-            "ろ",
-            "せ",
             "ん",
-            "へ",
-            "ま"
+            "る",
+            "ま",
+            "せ",
+            "ほ",
+            "み"
           ],
           "correctAnswer": "すみません"
         },
         {
           "id": "u1_l9_3",
           "type": "cloze",
-          "prompt": "私はごめんなさいがすきです",
-          "furigana": "わたしはごめんなさいがすきです",
-          "romaji": "Watashi wa gomennasai ga suki desu.",
-          "english": "Fill in the blank with the correct particle for I'm sorry (casual polite).",
+          "prompt": "友達に謝るとき: 「本当にごめんなさい。」",
+          "furigana": "ともだちにあやまるとき: 「ほんとうにごめんなさい。」",
+          "romaji": "Tomodachi ni ayamaru toki: 'Hontou ni gomennasai.'",
+          "english": "Apologizing to friend: 'I am truly sorry.'",
           "audioText": "ごめんなさい",
-          "clozeSentence": "これはごめんなさい {{BLANK}} す。",
-          "clozeTarget": "が",
+          "clozeSentence": "友達に謝るとき: 「本当に{{BLANK}}。」",
+          "clozeTarget": "ごめんなさい",
           "clozeOptions": [
-            "は",
-            "が",
-            "を",
-            "に"
+            "ごめんなさい",
+            "ありがとうございます",
+            "いただきます",
+            "どういたしまして"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "ごめんなさい",
+          "explanation": "Casual polite apology between friends."
         },
         {
           "id": "u1_l9_4",
@@ -1724,10 +1718,10 @@ export const unit01: DojoUnit = {
           "english": "This is I'm sorry (casual polite).",
           "audioText": "これはごめんなさいです",
           "scrambleTokens": [
-            "です",
             "ではありません",
             "これは",
             "それ",
+            "です",
             "ごめんなさい"
           ],
           "scrambleSolution": [
@@ -1757,24 +1751,22 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l9_6",
           "type": "dictate",
-          "prompt": "大丈夫ですをお願いします",
-          "furigana": "だいじょうぶですをおねがいします",
-          "romaji": "daijoubu desu o onegaishimasu.",
-          "english": "It's all right / no problem, please.",
-          "audioText": "大丈夫ですをお願いします",
+          "prompt": "大丈夫ですです",
+          "furigana": "だいじょうぶですです",
+          "romaji": "daijoubu desu desu.",
+          "english": "It is It's all right / no problem.",
+          "audioText": "大丈夫ですです",
           "dictateTokens": [
-            "を",
+            "大丈夫です",
             "です",
-            "お願いします",
-            "ありがとう",
-            "大丈夫です"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "大丈夫です",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "大丈夫ですをお願いします"
+          "correctAnswer": "大丈夫ですです"
         },
         {
           "id": "u1_l9_7",
@@ -1872,10 +1864,10 @@ export const unit01: DojoUnit = {
           "english": "Please / go ahead",
           "audioText": "どうぞ",
           "options": [
-            "Please / go ahead",
-            "Nice to meet you",
-            "I'm leaving (home)",
-            "I / me"
+            "Japanese person",
+            "Let's eat (before meal)",
+            "Thank you for the meal",
+            "Please / go ahead"
           ],
           "correctAnswer": "Please / go ahead"
         },
@@ -1888,34 +1880,35 @@ export const unit01: DojoUnit = {
           "english": "Build 'Please / go ahead'",
           "audioText": "どうぞ",
           "tileBank": [
-            "す",
-            "う",
-            "い",
-            "を",
-            "ど",
+            "と",
+            "く",
+            "そ",
             "ぞ",
-            "は",
-            "み"
+            "ひ",
+            "ど",
+            "ち",
+            "う"
           ],
           "correctAnswer": "どうぞ"
         },
         {
           "id": "u1_l10_3",
           "type": "cloze",
-          "prompt": "私はこちらこそがすきです",
-          "furigana": "わたしはこちらこそがすきです",
-          "romaji": "Watashi wa kochirakoso ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Likewise / the pleasure is mine.",
+          "prompt": "「よろしくお願いします。」「こちらこそよろしくお願いします。」",
+          "furigana": "「よろしくおねがいします。」「こちらこそよろしくおねがいします。」",
+          "romaji": "'Yoroshiku onegaishimasu.' 'Kochirakoso yoroshiku onegaishimasu.'",
+          "english": "'Pleased to meet you.' 'Likewise, pleased to meet you.'",
           "audioText": "こちらこそ",
-          "clozeSentence": "これはこちらこそ {{BLANK}} す。",
-          "clozeTarget": "を",
+          "clozeSentence": "「よろしくお願いします。」「{{BLANK}}よろしくお願いします。」",
+          "clozeTarget": "こちらこそ",
           "clozeOptions": [
-            "は",
-            "が",
-            "を",
-            "に"
+            "こちらこそ",
+            "すみません",
+            "さようなら",
+            "どういたしまして"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "こちらこそ",
+          "explanation": "「こちらこそ」 means 'likewise / the pleasure is mine'."
         },
         {
           "id": "u1_l10_4",
@@ -1926,11 +1919,11 @@ export const unit01: DojoUnit = {
           "english": "This is Likewise / the pleasure is mine.",
           "audioText": "これはこちらこそです",
           "scrambleTokens": [
-            "です",
-            "ではありません",
-            "それ",
             "こちらこそ",
-            "これは"
+            "ではありません",
+            "これは",
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1959,24 +1952,22 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l10_6",
           "type": "dictate",
-          "prompt": "失礼しますをお願いします",
-          "furigana": "しつれいしますをおねがいします",
-          "romaji": "shitsureishimasu o onegaishimasu.",
-          "english": "Pardon me / Goodbye (polite), please.",
-          "audioText": "失礼しますをお願いします",
+          "prompt": "失礼しますです",
+          "furigana": "しつれいしますです",
+          "romaji": "shitsureishimasu desu.",
+          "english": "It is Pardon me / Goodbye (polite).",
+          "audioText": "失礼しますです",
           "dictateTokens": [
-            "を",
-            "失礼します",
+            "ではありません",
+            "これ",
             "です",
-            "お願いします",
-            "ありがとう"
+            "失礼します"
           ],
           "dictateSolution": [
             "失礼します",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "失礼しますをお願いします"
+          "correctAnswer": "失礼しますです"
         },
         {
           "id": "u1_l10_7",
@@ -2073,10 +2064,10 @@ export const unit01: DojoUnit = {
           "english": "Let's eat (before meal)",
           "audioText": "いただきます",
           "options": [
-            "How are you?",
             "Let's eat (before meal)",
-            "Excuse me / I'm sorry",
-            "Good evening"
+            "Good night",
+            "Likewise / the pleasure is mine",
+            "You are welcome"
           ],
           "correctAnswer": "Let's eat (before meal)"
         },
@@ -2089,56 +2080,56 @@ export const unit01: DojoUnit = {
           "english": "Build 'Let's eat (before meal)'",
           "audioText": "いただきます",
           "tileBank": [
-            "す",
-            "き",
+            "ぬ",
             "だ",
-            "ま",
-            "は",
-            "た",
             "い",
-            "ち"
+            "す",
+            "た",
+            "ま",
+            "き",
+            "さ"
           ],
           "correctAnswer": "いただきます"
         },
         {
           "id": "u1_l11_3",
           "type": "cloze",
-          "prompt": "私はごちそうさまでしたがすきです",
-          "furigana": "わたしはごちそうさまでしたがすきです",
-          "romaji": "Watashi wa gochisousamadeshita ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Thank you for the meal.",
+          "prompt": "ご飯を食べ終えたとき: 「ごちそうさまでした！」",
+          "furigana": "ごはんをたべおえたとき: 「ごちそうさまでした！」",
+          "romaji": "Gohan o tabeoeta toki: 'Gochisousamadeshita!'",
+          "english": "After finishing a meal: 'Thank you for the meal!'",
           "audioText": "ごちそうさまでした",
-          "clozeSentence": "これはごちそうさまでした {{BLANK}} す。",
-          "clozeTarget": "に",
+          "clozeSentence": "ご飯を食べ終えたとき: 「{{BLANK}}！」",
+          "clozeTarget": "ごちそうさまでした",
           "clozeOptions": [
-            "は",
-            "が",
-            "を",
-            "に"
+            "ごちそうさまでした",
+            "いただきます",
+            "おかえりなさい",
+            "いってらっしゃい"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "ごちそうさまでした",
+          "explanation": "Said after a meal to thank the host or chef."
         },
         {
           "id": "u1_l11_4",
           "type": "scramble",
-          "prompt": "これはごちそうさまでしたです",
-          "furigana": "これはごちそうさまでしたです",
-          "romaji": "Kore wa gochisousamadeshita desu.",
-          "english": "This is Thank you for the meal.",
-          "audioText": "これはごちそうさまでしたです",
+          "prompt": "おいしかったです、ごちそうさまでした",
+          "furigana": "おいしかったです、ごちそうさまでした",
+          "romaji": "Oishikatta desu, gochisousamadeshita",
+          "english": "It was delicious, thank you for the meal.",
+          "audioText": "おいしかったです、ごちそうさまでした",
           "scrambleTokens": [
-            "それ",
-            "これは",
+            "いただきます",
             "ごちそうさまでした",
-            "です",
-            "ではありません"
+            "、",
+            "おいしかったです"
           ],
           "scrambleSolution": [
-            "これは",
-            "ごちそうさまでした",
-            "です"
+            "おいしかったです",
+            "、",
+            "ごちそうさまでした"
           ],
-          "correctAnswer": "これはごちそうさまでしたです"
+          "correctAnswer": "おいしかったです、ごちそうさまでした"
         },
         {
           "id": "u1_l11_5",
@@ -2160,24 +2151,22 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l11_6",
           "type": "dictate",
-          "prompt": "行ってきますをお願いします",
-          "furigana": "いってきますをおねがいします",
-          "romaji": "ittekimasu o onegaishimasu.",
-          "english": "I'm leaving (home), please.",
-          "audioText": "行ってきますをお願いします",
+          "prompt": "行ってきますです",
+          "furigana": "いってきますです",
+          "romaji": "ittekimasu desu.",
+          "english": "It is I'm leaving (home).",
+          "audioText": "行ってきますです",
           "dictateTokens": [
-            "を",
-            "お願いします",
-            "行ってきます",
             "です",
-            "ありがとう"
+            "ではありません",
+            "行ってきます",
+            "これ"
           ],
           "dictateSolution": [
             "行ってきます",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "行ってきますをお願いします"
+          "correctAnswer": "行ってきますです"
         },
         {
           "id": "u1_l11_7",
@@ -2272,10 +2261,10 @@ export const unit01: DojoUnit = {
           "english": "Have a good day / take care",
           "audioText": "いってらっしゃい",
           "options": [
-            "Good night",
-            "Hometown / origin",
-            "Goodbye",
-            "Have a good day / take care"
+            "Have a good day / take care",
+            "Student",
+            "Teacher / Professor",
+            "Hometown / origin"
           ],
           "correctAnswer": "Have a good day / take care"
         },
@@ -2288,34 +2277,35 @@ export const unit01: DojoUnit = {
           "english": "Build 'I'm home'",
           "audioText": "ただいま",
           "tileBank": [
-            "ん",
-            "き",
+            "を",
+            "だ",
             "ま",
-            "ろ",
-            "た",
             "い",
-            "は",
-            "だ"
+            "た",
+            "ね",
+            "ひ",
+            "さ"
           ],
           "correctAnswer": "ただいま"
         },
         {
           "id": "u1_l12_3",
           "type": "cloze",
-          "prompt": "私はただいまがすきです",
-          "furigana": "わたしはただいまがすきです",
-          "romaji": "Watashi wa tadaima ga suki desu.",
-          "english": "Fill in the blank with the correct particle for I'm home.",
+          "prompt": "家に帰ってきたとき: 「ただいま！」",
+          "furigana": "いえにかえってきたとき: 「ただいま！」",
+          "romaji": "Ie ni kaette kita toki: 'Tadaima!'",
+          "english": "Returning home: 'I am home!'",
           "audioText": "ただいま",
-          "clozeSentence": "これはただいま {{BLANK}} す。",
-          "clozeTarget": "は",
+          "clozeSentence": "家に帰ってきたとき: 「{{BLANK}}！」",
+          "clozeTarget": "ただいま",
           "clozeOptions": [
-            "は",
-            "が",
-            "を",
-            "に"
+            "ただいま",
+            "行ってきます",
+            "おかえりなさい",
+            "いってらっしゃい"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "ただいま",
+          "explanation": "Said when you arrive home."
         },
         {
           "id": "u1_l12_4",
@@ -2326,11 +2316,11 @@ export const unit01: DojoUnit = {
           "english": "This is I'm home.",
           "audioText": "これはただいまです",
           "scrambleTokens": [
-            "です",
+            "ただいま",
             "それ",
-            "これは",
             "ではありません",
-            "ただいま"
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2359,24 +2349,22 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l12_6",
           "type": "dictate",
-          "prompt": "おかえりなさいをお願いします",
-          "furigana": "おかえりなさいをおねがいします",
-          "romaji": "okaerinasai o onegaishimasu.",
-          "english": "Welcome home, please.",
-          "audioText": "おかえりなさいをお願いします",
+          "prompt": "おかえりなさいです",
+          "furigana": "おかえりなさいです",
+          "romaji": "okaerinasai desu.",
+          "english": "It is Welcome home.",
+          "audioText": "おかえりなさいです",
           "dictateTokens": [
-            "ありがとう",
-            "です",
             "おかえりなさい",
-            "を",
-            "お願いします"
+            "です",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "おかえりなさい",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "おかえりなさいをお願いします"
+          "correctAnswer": "おかえりなさいです"
         },
         {
           "id": "u1_l12_7",
@@ -2471,10 +2459,10 @@ export const unit01: DojoUnit = {
           "english": "Good night",
           "audioText": "おやすみなさい",
           "options": [
-            "Company employee",
-            "Student",
+            "Good night",
+            "Goodbye",
             "Let's eat (before meal)",
-            "Good night"
+            "Company employee"
           ],
           "correctAnswer": "Good night"
         },
@@ -2487,34 +2475,35 @@ export const unit01: DojoUnit = {
           "english": "Build 'See you later (casual)'",
           "audioText": "またね",
           "tileBank": [
-            "ら",
-            "み",
-            "あ",
+            "へ",
+            "ぬ",
+            "ま",
+            "ん",
+            "い",
             "き",
             "ね",
-            "た",
-            "る",
-            "ま"
+            "た"
           ],
           "correctAnswer": "またね"
         },
         {
           "id": "u1_l13_3",
           "type": "cloze",
-          "prompt": "私はまたねがすきです",
-          "furigana": "わたしはまたねがすきです",
-          "romaji": "Watashi wa matane ga suki desu.",
-          "english": "Fill in the blank with the correct particle for See you later (casual).",
-          "audioText": "またね",
-          "clozeSentence": "これはまたね {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なまたねです。",
+          "furigana": "これはいちばんたいせつなまたねです。",
+          "romaji": "Kore wa ichiban taisetsu na matane desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important See you later (casual).",
+          "audioText": "これはまたねです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なまたねです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u1_l13_4",
@@ -2526,10 +2515,10 @@ export const unit01: DojoUnit = {
           "audioText": "これはまたねです",
           "scrambleTokens": [
             "これは",
-            "それ",
             "です",
+            "またね",
             "ではありません",
-            "またね"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2558,24 +2547,22 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l13_6",
           "type": "dictate",
-          "prompt": "こんにちはをお願いします",
-          "furigana": "こんにちはをおねがいします",
-          "romaji": "konnichiwa o onegaishimasu.",
-          "english": "Hello / Good afternoon, please.",
-          "audioText": "こんにちはをお願いします",
+          "prompt": "こんにちはです",
+          "furigana": "こんにちはです",
+          "romaji": "konnichiwa desu.",
+          "english": "It is Hello / Good afternoon.",
+          "audioText": "こんにちはです",
           "dictateTokens": [
-            "です",
-            "お願いします",
-            "ありがとう",
             "こんにちは",
-            "を"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "こんにちは",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "こんにちはをお願いします"
+          "correctAnswer": "こんにちはです"
         },
         {
           "id": "u1_l13_7",
@@ -2670,10 +2657,10 @@ export const unit01: DojoUnit = {
           "english": "Good morning (polite)",
           "audioText": "おはようございます",
           "options": [
-            "Teacher / Professor",
             "Good morning (polite)",
-            "I am well / healthy",
-            "Please / go ahead"
+            "Where / which direction (polite)",
+            "Name",
+            "Student"
           ],
           "correctAnswer": "Good morning (polite)"
         },
@@ -2686,13 +2673,13 @@ export const unit01: DojoUnit = {
           "english": "Build 'Good evening'",
           "audioText": "こんばんは",
           "tileBank": [
-            "て",
-            "ん",
-            "ば",
-            "こ",
+            "ふ",
             "は",
-            "き",
-            "へ",
+            "ん",
+            "こ",
+            "ば",
+            "ち",
+            "せ",
             "ん"
           ],
           "correctAnswer": "こんばんは"
@@ -2700,42 +2687,43 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l14_3",
           "type": "cloze",
-          "prompt": "私はこんばんはがすきです",
-          "furigana": "わたしはこんばんはがすきです",
-          "romaji": "Watashi wa konbanwa ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Good evening.",
+          "prompt": "夜、同僚に会いました。「こんばんは！」",
+          "furigana": "よる、どうりょうにあいました。「こんばんは！」",
+          "romaji": "Yoru, douryou ni aimashita. 'Konbanwa!'",
+          "english": "Evening greeting to colleague: 'Good evening!'",
           "audioText": "こんばんは",
-          "clozeSentence": "これはこんばんは {{BLANK}} す。",
-          "clozeTarget": "を",
+          "clozeSentence": "夜、同僚に会いました。「{{BLANK}}！」",
+          "clozeTarget": "こんばんは",
           "clozeOptions": [
-            "は",
-            "が",
-            "を",
-            "に"
+            "こんばんは",
+            "こんにちは",
+            "おはようございます",
+            "さようなら"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "こんばんは",
+          "explanation": "Use 「こんばんは」 in the evening after sunset."
         },
         {
           "id": "u1_l14_4",
           "type": "scramble",
-          "prompt": "これはこんばんはです",
-          "furigana": "これはこんばんはです",
-          "romaji": "Kore wa konbanwa desu.",
-          "english": "This is Good evening.",
-          "audioText": "これはこんばんはです",
+          "prompt": "先生、こんばんは",
+          "furigana": "せんせい、こんばんは",
+          "romaji": "Sensei, konbanwa",
+          "english": "Good evening, teacher.",
+          "audioText": "先生、こんばんは",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
+            "先生",
             "です",
-            "これは",
-            "こんばんは"
+            "、",
+            "こんばんは",
+            "おはよう"
           ],
           "scrambleSolution": [
-            "これは",
-            "こんばんは",
-            "です"
+            "先生",
+            "、",
+            "こんばんは"
           ],
-          "correctAnswer": "これはこんばんはです"
+          "correctAnswer": "先生、こんばんは"
         },
         {
           "id": "u1_l14_5",
@@ -2757,24 +2745,20 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l14_6",
           "type": "dictate",
-          "prompt": "さようならをお願いします",
-          "furigana": "さようならをおねがいします",
-          "romaji": "sayounara o onegaishimasu.",
-          "english": "Goodbye, please.",
-          "audioText": "さようならをお願いします",
+          "prompt": "さようなら",
+          "furigana": "さようなら",
+          "romaji": "sayounara",
+          "english": "Goodbye",
+          "audioText": "さようなら",
           "dictateTokens": [
-            "ありがとう",
-            "さようなら",
-            "お願いします",
+            "こんにちは",
             "です",
-            "を"
+            "さようなら"
           ],
           "dictateSolution": [
-            "さようなら",
-            "を",
-            "お願いします"
+            "さようなら"
           ],
-          "correctAnswer": "さようならをお願いします"
+          "correctAnswer": "さようなら"
         },
         {
           "id": "u1_l14_7",
@@ -2869,10 +2853,10 @@ export const unit01: DojoUnit = {
           "english": "Thank you very much",
           "audioText": "ありがとうございます",
           "options": [
-            "Thank you very much",
-            "I'm leaving (home)",
-            "Yes",
-            "Have a good day / take care"
+            "Japanese person",
+            "Pardon me / Goodbye (polite)",
+            "Please treat me well",
+            "Thank you very much"
           ],
           "correctAnswer": "Thank you very much"
         },
@@ -2885,56 +2869,56 @@ export const unit01: DojoUnit = {
           "english": "Build 'Yes'",
           "audioText": "はい",
           "tileBank": [
-            "き",
-            "わ",
             "い",
-            "こ",
-            "ん",
+            "う",
             "は",
-            "と",
-            "え"
+            "け",
+            "わ",
+            "ま",
+            "ぬ",
+            "れ"
           ],
           "correctAnswer": "はい"
         },
         {
           "id": "u1_l15_3",
           "type": "cloze",
-          "prompt": "私はどういたしましてがすきです",
-          "furigana": "わたしはどういたしましてがすきです",
-          "romaji": "Watashi wa douitashimashite ga suki desu.",
-          "english": "Fill in the blank with the correct particle for You are welcome.",
+          "prompt": "「ありがとうございます！」「いいえ、どういたしまして。」",
+          "furigana": "「ありがとうございます！」「いいえ、どういたしまして。」",
+          "romaji": "'Arigatou gozaimasu!' 'Iie, douitashimashite.'",
+          "english": "'Thank you very much!' 'You are welcome.'",
           "audioText": "どういたしまして",
-          "clozeSentence": "これはどういたしまして {{BLANK}} す。",
-          "clozeTarget": "に",
+          "clozeSentence": "「ありがとうございます！」「いいえ、{{BLANK}}。」",
+          "clozeTarget": "どういたしまして",
           "clozeOptions": [
-            "は",
-            "が",
-            "を",
-            "に"
+            "どういたしまして",
+            "ありがとうございます",
+            "はじめまして",
+            "おやすみなさい"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "どういたしまして",
+          "explanation": "「どういたしまして」 is used to say 'you are welcome'."
         },
         {
           "id": "u1_l15_4",
           "type": "scramble",
-          "prompt": "これはどういたしましてです",
-          "furigana": "これはどういたしましてです",
-          "romaji": "Kore wa douitashimashite desu.",
-          "english": "This is You are welcome.",
-          "audioText": "これはどういたしましてです",
+          "prompt": "いいえ、どういたしまして",
+          "furigana": "いいえ、どういたしまして",
+          "romaji": "Iie, douitashimashite",
+          "english": "No, you are welcome.",
+          "audioText": "いいえ、どういたしまして",
           "scrambleTokens": [
             "どういたしまして",
-            "それ",
-            "です",
-            "ではありません",
-            "これは"
+            "いいえ",
+            "、",
+            "ありがとう"
           ],
           "scrambleSolution": [
-            "これは",
-            "どういたしまして",
-            "です"
+            "いいえ",
+            "、",
+            "どういたしまして"
           ],
-          "correctAnswer": "これはどういたしましてです"
+          "correctAnswer": "いいえ、どういたしまして"
         },
         {
           "id": "u1_l15_5",
@@ -2956,24 +2940,22 @@ export const unit01: DojoUnit = {
         {
           "id": "u1_l15_6",
           "type": "dictate",
-          "prompt": "はいをお願いします",
-          "furigana": "はいをおねがいします",
-          "romaji": "hai o onegaishimasu.",
-          "english": "Yes, please.",
-          "audioText": "はいをお願いします",
+          "prompt": "はいです",
+          "furigana": "はいです",
+          "romaji": "hai desu.",
+          "english": "It is Yes.",
+          "audioText": "はいです",
           "dictateTokens": [
-            "です",
-            "ありがとう",
-            "を",
             "はい",
-            "お願いします"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "はい",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "はいをお願いします"
+          "correctAnswer": "はいです"
         },
         {
           "id": "u1_l15_7",
@@ -3058,10 +3040,10 @@ export const unit01: DojoUnit = {
         "english": "Hello / Good afternoon",
         "audioText": "こんにちは",
         "options": [
-          "Name",
-          "Hello / Good afternoon",
-          "Who",
-          "No"
+          "Please / go ahead",
+          "Likewise / the pleasure is mine",
+          "See you later (casual)",
+          "Hello / Good afternoon"
         ],
         "correctAnswer": "Hello / Good afternoon"
       },
@@ -3074,14 +3056,14 @@ export const unit01: DojoUnit = {
         "english": "Build 'Hello / Good afternoon'",
         "audioText": "こんにちは",
         "tileBank": [
-          "ん",
-          "さ",
+          "い",
           "ち",
-          "こ",
-          "ね",
-          "た",
+          "め",
           "は",
-          "に"
+          "に",
+          "こ",
+          "さ",
+          "ん"
         ],
         "correctAnswer": "こんにちは"
       },
@@ -3094,10 +3076,10 @@ export const unit01: DojoUnit = {
         "english": "Yes",
         "audioText": "はい",
         "options": [
-          "You are welcome",
-          "Good night",
+          "Yes",
           "Company employee",
-          "Yes"
+          "Where / which direction (polite)",
+          "Have a good day / take care"
         ],
         "correctAnswer": "Yes"
       },
@@ -3110,14 +3092,14 @@ export const unit01: DojoUnit = {
         "english": "Build 'Yes'",
         "audioText": "はい",
         "tileBank": [
-          "め",
           "は",
-          "ほ",
-          "あ",
+          "か",
+          "や",
           "い",
           "む",
-          "う",
-          "て"
+          "ち",
+          "さ",
+          "み"
         ],
         "correctAnswer": "はい"
       },
@@ -3130,10 +3112,10 @@ export const unit01: DojoUnit = {
         "english": "Teacher / Professor",
         "audioText": "せんせい",
         "options": [
-          "Hello / Good afternoon",
           "Teacher / Professor",
-          "Who",
-          "Welcome home"
+          "Likewise / the pleasure is mine",
+          "Welcome home",
+          "Name"
         ],
         "correctAnswer": "Teacher / Professor"
       },
@@ -3146,14 +3128,14 @@ export const unit01: DojoUnit = {
         "english": "Build 'Teacher / Professor'",
         "audioText": "せんせい",
         "tileBank": [
-          "お",
-          "せ",
-          "ね",
-          "せ",
+          "の",
           "い",
-          "め",
-          "つ",
-          "ん"
+          "わ",
+          "せ",
+          "ん",
+          "す",
+          "せ",
+          "ら"
         ],
         "correctAnswer": "せんせい"
       },
@@ -3166,10 +3148,10 @@ export const unit01: DojoUnit = {
         "english": "Hometown / origin",
         "audioText": "しゅっしん",
         "options": [
-          "It's all right / no problem",
-          "Good night",
+          "Good evening",
           "Hometown / origin",
-          "Let's eat (before meal)"
+          "Goodbye",
+          "Where / which direction (polite)"
         ],
         "correctAnswer": "Hometown / origin"
       },
@@ -3182,14 +3164,14 @@ export const unit01: DojoUnit = {
         "english": "Build 'Hometown / origin'",
         "audioText": "しゅっしん",
         "tileBank": [
-          "は",
+          "い",
           "ゅ",
-          "ま",
-          "っ",
-          "ん",
-          "め",
           "し",
-          "し"
+          "く",
+          "し",
+          "ん",
+          "お",
+          "っ"
         ],
         "correctAnswer": "しゅっしん"
       },
@@ -3202,10 +3184,10 @@ export const unit01: DojoUnit = {
         "english": "Excuse me / I'm sorry",
         "audioText": "すみません",
         "options": [
+          "I'm leaving (home)",
           "Excuse me / I'm sorry",
-          "Tanaka (common name)",
-          "Thank you very much",
-          "Thank you for the meal"
+          "Where / which direction (polite)",
+          "Thank you very much"
         ],
         "correctAnswer": "Excuse me / I'm sorry"
       },
@@ -3218,14 +3200,14 @@ export const unit01: DojoUnit = {
         "english": "Build 'Excuse me / I'm sorry'",
         "audioText": "すみません",
         "tileBank": [
+          "う",
           "す",
-          "み",
-          "ら",
-          "ろ",
-          "せ",
           "ん",
-          "へ",
-          "ま"
+          "る",
+          "ま",
+          "せ",
+          "ほ",
+          "み"
         ],
         "correctAnswer": "すみません"
       },
@@ -3238,10 +3220,10 @@ export const unit01: DojoUnit = {
         "english": "Let's eat (before meal)",
         "audioText": "いただきます",
         "options": [
-          "How are you?",
           "Let's eat (before meal)",
-          "Excuse me / I'm sorry",
-          "Good evening"
+          "Good night",
+          "Likewise / the pleasure is mine",
+          "You are welcome"
         ],
         "correctAnswer": "Let's eat (before meal)"
       },
@@ -3254,14 +3236,14 @@ export const unit01: DojoUnit = {
         "english": "Build 'Let's eat (before meal)'",
         "audioText": "いただきます",
         "tileBank": [
-          "す",
-          "き",
+          "ぬ",
           "だ",
-          "ま",
-          "は",
-          "た",
           "い",
-          "ち"
+          "す",
+          "た",
+          "ま",
+          "き",
+          "さ"
         ],
         "correctAnswer": "いただきます"
       }

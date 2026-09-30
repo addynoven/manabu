@@ -48,9 +48,9 @@ export const unit10: DojoUnit = {
           "english": "Weather",
           "audioText": "てんき",
           "options": [
-            "Temperature",
-            "Confirming Reserved seat",
-            "Confirming Luggage / baggage",
+            "Confirming Typhoon",
+            "Non-reserved seat",
+            "Bullet train",
             "Weather"
           ],
           "correctAnswer": "Weather"
@@ -64,34 +64,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Weather'",
           "audioText": "てんき",
           "tileBank": [
-            "ん",
-            "く",
+            "け",
             "や",
-            "し",
-            "さ",
-            "う",
-            "き",
-            "て"
+            "は",
+            "り",
+            "て",
+            "い",
+            "ん",
+            "き"
           ],
           "correctAnswer": "てんき"
         },
         {
           "id": "u10_l1_3",
           "type": "cloze",
-          "prompt": "私は晴れがすきです",
-          "furigana": "わたしははれがすきです",
-          "romaji": "Watashi wa hare ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Sunny / clear.",
-          "audioText": "晴れ",
-          "clozeSentence": "これは晴れ {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な晴れです。",
+          "furigana": "これはいちばんたいせつなはれです。",
+          "romaji": "Kore wa ichiban taisetsu na hare desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Sunny / clear.",
+          "audioText": "これは晴れです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な晴れです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l1_4",
@@ -102,11 +103,11 @@ export const unit10: DojoUnit = {
           "english": "This is Sunny / clear.",
           "audioText": "これは晴れです",
           "scrambleTokens": [
-            "これは",
-            "です",
             "それ",
             "ではありません",
-            "晴れ"
+            "これは",
+            "晴れ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -135,24 +136,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l1_6",
           "type": "dictate",
-          "prompt": "雨をお願いします",
-          "furigana": "あめをおねがいします",
-          "romaji": "ame o onegaishimasu.",
-          "english": "Rain, please.",
-          "audioText": "雨をお願いします",
+          "prompt": "雨です",
+          "furigana": "あめです",
+          "romaji": "ame desu.",
+          "english": "It is Rain.",
+          "audioText": "雨です",
           "dictateTokens": [
-            "を",
+            "これ",
             "雨",
-            "お願いします",
-            "ありがとう",
-            "です"
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "雨",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "雨をお願いします"
+          "correctAnswer": "雨です"
         },
         {
           "id": "u10_l1_7",
@@ -255,10 +254,10 @@ export const unit10: DojoUnit = {
           "english": "Typhoon",
           "audioText": "たいふう",
           "options": [
-            "Confirming Umbrella",
-            "Non-reserved seat",
-            "Typhoon",
-            "Confirming Ticket"
+            "Confirming Weather",
+            "Confirming Ticket",
+            "Confirming Bullet train",
+            "Typhoon"
           ],
           "correctAnswer": "Typhoon"
         },
@@ -271,34 +270,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Typhoon'",
           "audioText": "たいふう",
           "tileBank": [
-            "さ",
-            "い",
+            "う",
             "た",
+            "わ",
             "れ",
-            "に",
-            "え",
-            "ふ",
-            "う"
+            "け",
+            "い",
+            "り",
+            "ふ"
           ],
           "correctAnswer": "たいふう"
         },
         {
           "id": "u10_l2_3",
           "type": "cloze",
-          "prompt": "私は新幹線がすきです",
-          "furigana": "わたしはしんかんせんがすきです",
-          "romaji": "Watashi wa shinkansen ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Bullet train.",
-          "audioText": "新幹線",
-          "clozeSentence": "これは新幹線 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な新幹線です。",
+          "furigana": "これはいちばんたいせつなしんかんせんです。",
+          "romaji": "Kore wa ichiban taisetsu na shinkansen desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Bullet train.",
+          "audioText": "これは新幹線です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な新幹線です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l2_4",
@@ -309,11 +309,11 @@ export const unit10: DojoUnit = {
           "english": "This is Bullet train.",
           "audioText": "これは新幹線です",
           "scrambleTokens": [
-            "それ",
-            "新幹線",
-            "ではありません",
+            "です",
             "これは",
-            "です"
+            "ではありません",
+            "新幹線",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -342,24 +342,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l2_6",
           "type": "dictate",
-          "prompt": "切符をお願いします",
-          "furigana": "きっぷをおねがいします",
-          "romaji": "kippu o onegaishimasu.",
-          "english": "Ticket, please.",
-          "audioText": "切符をお願いします",
+          "prompt": "切符です",
+          "furigana": "きっぷです",
+          "romaji": "kippu desu.",
+          "english": "It is Ticket.",
+          "audioText": "切符です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "を",
+            "です",
             "切符",
-            "です"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "切符",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "切符をお願いします"
+          "correctAnswer": "切符です"
         },
         {
           "id": "u10_l2_7",
@@ -463,10 +461,10 @@ export const unit10: DojoUnit = {
           "english": "Reserved seat",
           "audioText": "していせき",
           "options": [
-            "Confirming Luggage / baggage",
+            "Confirming Cool / refreshing",
             "Reserved seat",
-            "Confirming Umbrella",
-            "Confirming Rain"
+            "Weather",
+            "Umbrella"
           ],
           "correctAnswer": "Reserved seat"
         },
@@ -479,34 +477,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Reserved seat'",
           "audioText": "していせき",
           "tileBank": [
-            "こ",
-            "に",
-            "な",
-            "き",
-            "い",
             "せ",
+            "い",
+            "へ",
+            "め",
+            "し",
             "て",
-            "し"
+            "き",
+            "ゆ"
           ],
           "correctAnswer": "していせき"
         },
         {
           "id": "u10_l3_3",
           "type": "cloze",
-          "prompt": "私は自由席がすきです",
-          "furigana": "わたしはじゆうせきがすきです",
-          "romaji": "Watashi wa jiyuuseki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Non-reserved seat.",
-          "audioText": "自由席",
-          "clozeSentence": "これは自由席 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な自由席です。",
+          "furigana": "これはいちばんたいせつなじゆうせきです。",
+          "romaji": "Kore wa ichiban taisetsu na jiyuuseki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Non-reserved seat.",
+          "audioText": "これは自由席です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な自由席です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l3_4",
@@ -517,10 +516,10 @@ export const unit10: DojoUnit = {
           "english": "This is Non-reserved seat.",
           "audioText": "これは自由席です",
           "scrambleTokens": [
-            "ではありません",
-            "自由席",
-            "です",
             "これは",
+            "ではありません",
+            "です",
+            "自由席",
             "それ"
           ],
           "scrambleSolution": [
@@ -550,24 +549,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l3_6",
           "type": "dictate",
-          "prompt": "旅行をお願いします",
-          "furigana": "りょこうをおねがいします",
-          "romaji": "ryokou o onegaishimasu.",
-          "english": "Travel / trip, please.",
-          "audioText": "旅行をお願いします",
+          "prompt": "旅行です",
+          "furigana": "りょこうです",
+          "romaji": "ryokou desu.",
+          "english": "It is Travel / trip.",
+          "audioText": "旅行です",
           "dictateTokens": [
+            "これ",
             "です",
-            "ありがとう",
             "旅行",
-            "を",
-            "お願いします"
+            "ではありません"
           ],
           "dictateSolution": [
             "旅行",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "旅行をお願いします"
+          "correctAnswer": "旅行です"
         },
         {
           "id": "u10_l3_7",
@@ -669,9 +666,9 @@ export const unit10: DojoUnit = {
           "audioText": "さくら",
           "options": [
             "Cherry blossom",
-            "Confirming Luggage / baggage",
-            "Confirming Autumn foliage",
-            "Ticket"
+            "Confirming Temperature",
+            "Confirming Rain",
+            "Autumn foliage"
           ],
           "correctAnswer": "Cherry blossom"
         },
@@ -684,26 +681,26 @@ export const unit10: DojoUnit = {
           "english": "Build 'Cherry blossom'",
           "audioText": "さくら",
           "tileBank": [
+            "り",
+            "た",
+            "な",
+            "お",
+            "よ",
             "ら",
-            "ま",
-            "の",
-            "く",
             "さ",
-            "し",
-            "あ",
-            "ほ"
+            "く"
           ],
           "correctAnswer": "さくら"
         },
         {
           "id": "u10_l4_3",
           "type": "cloze",
-          "prompt": "私は紅葉がすきです",
-          "furigana": "わたしはこうようがすきです",
-          "romaji": "Watashi wa kouyou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Autumn foliage.",
-          "audioText": "紅葉",
-          "clozeSentence": "これは紅葉 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な紅葉です。",
+          "furigana": "これはいちばんたいせつなこうようです。",
+          "romaji": "Kore wa ichiban taisetsu na kouyou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Autumn foliage.",
+          "audioText": "これは紅葉です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な紅葉です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -711,7 +708,8 @@ export const unit10: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l4_4",
@@ -722,10 +720,10 @@ export const unit10: DojoUnit = {
           "english": "This is Autumn foliage.",
           "audioText": "これは紅葉です",
           "scrambleTokens": [
-            "これは",
+            "ではありません",
             "です",
             "それ",
-            "ではありません",
+            "これは",
             "紅葉"
           ],
           "scrambleSolution": [
@@ -755,24 +753,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l4_6",
           "type": "dictate",
-          "prompt": "気温をお願いします",
-          "furigana": "きおんをおねがいします",
-          "romaji": "kion o onegaishimasu.",
-          "english": "Temperature, please.",
-          "audioText": "気温をお願いします",
+          "prompt": "気温です",
+          "furigana": "きおんです",
+          "romaji": "kion desu.",
+          "english": "It is Temperature.",
+          "audioText": "気温です",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "気温",
-            "お願いします",
-            "です",
-            "ありがとう",
-            "を"
+            "です"
           ],
           "dictateSolution": [
             "気温",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "気温をお願いします"
+          "correctAnswer": "気温です"
         },
         {
           "id": "u10_l4_7",
@@ -873,9 +869,9 @@ export const unit10: DojoUnit = {
           "audioText": "かさ",
           "options": [
             "Umbrella",
-            "Confirming Typhoon",
-            "Confirming Typhoon",
-            "Confirming Cool / refreshing"
+            "Autumn foliage",
+            "Cool / refreshing",
+            "Non-reserved seat"
           ],
           "correctAnswer": "Umbrella"
         },
@@ -889,33 +885,34 @@ export const unit10: DojoUnit = {
           "audioText": "かさ",
           "tileBank": [
             "さ",
+            "な",
             "け",
-            "れ",
-            "か",
+            "ら",
+            "せ",
             "ち",
-            "ね",
-            "を",
-            "あ"
+            "む",
+            "か"
           ],
           "correctAnswer": "かさ"
         },
         {
           "id": "u10_l5_3",
           "type": "cloze",
-          "prompt": "私は涼しいがすきです",
-          "furigana": "わたしはすずしいがすきです",
-          "romaji": "Watashi wa suzushii ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Cool / refreshing.",
-          "audioText": "涼しい",
-          "clozeSentence": "これは涼しい {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な涼しいです。",
+          "furigana": "これはいちばんたいせつなすずしいです。",
+          "romaji": "Kore wa ichiban taisetsu na suzushii desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Cool / refreshing.",
+          "audioText": "これは涼しいです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な涼しいです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l5_4",
@@ -927,10 +924,10 @@ export const unit10: DojoUnit = {
           "audioText": "これは涼しいです",
           "scrambleTokens": [
             "それ",
-            "これは",
+            "涼しい",
             "ではありません",
             "です",
-            "涼しい"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -959,24 +956,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l5_6",
           "type": "dictate",
-          "prompt": "荷物をお願いします",
-          "furigana": "にもつをおねがいします",
-          "romaji": "nimotsu o onegaishimasu.",
-          "english": "Luggage / baggage, please.",
-          "audioText": "荷物をお願いします",
+          "prompt": "荷物です",
+          "furigana": "にもつです",
+          "romaji": "nimotsu desu.",
+          "english": "It is Luggage / baggage.",
+          "audioText": "荷物です",
           "dictateTokens": [
-            "お願いします",
+            "ではありません",
+            "これ",
             "荷物",
-            "です",
-            "ありがとう",
-            "を"
+            "です"
           ],
           "dictateSolution": [
             "荷物",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "荷物をお願いします"
+          "correctAnswer": "荷物です"
         },
         {
           "id": "u10_l5_7",
@@ -1082,10 +1077,10 @@ export const unit10: DojoUnit = {
           "english": "Confirming Weather",
           "audioText": "てんきのかくにん",
           "options": [
-            "Reserved seat",
-            "Cherry blossom",
+            "Confirming Weather",
+            "Confirming Cherry blossom",
             "Confirming Typhoon",
-            "Confirming Weather"
+            "Rain"
           ],
           "correctAnswer": "Confirming Weather"
         },
@@ -1098,34 +1093,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Confirming Weather'",
           "audioText": "てんきのかくにん",
           "tileBank": [
-            "ん",
             "く",
+            "か",
             "き",
             "に",
-            "か",
+            "の",
             "ん",
             "て",
-            "の"
+            "ん"
           ],
           "correctAnswer": "てんきのかくにん"
         },
         {
           "id": "u10_l6_3",
           "type": "cloze",
-          "prompt": "私は晴れの確認がすきです",
-          "furigana": "わたしははれのかくにんがすきです",
-          "romaji": "Watashi wa hare no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Sunny / clear.",
-          "audioText": "晴れの確認",
-          "clozeSentence": "これは晴れの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な晴れの確認です。",
+          "furigana": "これはいちばんたいせつなはれのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na hare no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Sunny / clear.",
+          "audioText": "これは晴れの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な晴れの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l6_4",
@@ -1137,9 +1133,9 @@ export const unit10: DojoUnit = {
           "audioText": "これは晴れの確認です",
           "scrambleTokens": [
             "です",
+            "これは",
             "ではありません",
             "晴れの確認",
-            "これは",
             "それ"
           ],
           "scrambleSolution": [
@@ -1169,24 +1165,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l6_6",
           "type": "dictate",
-          "prompt": "雨の確認をお願いします",
-          "furigana": "あめのかくにんをおねがいします",
-          "romaji": "ame no kakunin o onegaishimasu.",
-          "english": "Confirming Rain, please.",
-          "audioText": "雨の確認をお願いします",
+          "prompt": "雨の確認です",
+          "furigana": "あめのかくにんです",
+          "romaji": "ame no kakunin desu.",
+          "english": "It is Confirming Rain.",
+          "audioText": "雨の確認です",
           "dictateTokens": [
-            "ありがとう",
+            "です",
             "雨の確認",
-            "お願いします",
-            "を",
-            "です"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "雨の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "雨の確認をお願いします"
+          "correctAnswer": "雨の確認です"
         },
         {
           "id": "u10_l6_7",
@@ -1295,10 +1289,10 @@ export const unit10: DojoUnit = {
           "english": "Confirming Typhoon",
           "audioText": "たいふうのかくにん",
           "options": [
-            "Confirming Non-reserved seat",
-            "Confirming Rain",
+            "Confirming Weather",
+            "Travel / trip",
             "Confirming Typhoon",
-            "Confirming Sunny / clear"
+            "Confirming Bullet train"
           ],
           "correctAnswer": "Confirming Typhoon"
         },
@@ -1311,34 +1305,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Confirming Typhoon'",
           "audioText": "たいふうのかくにん",
           "tileBank": [
-            "う",
-            "く",
-            "か",
-            "た",
-            "い",
             "ふ",
+            "た",
+            "う",
+            "い",
             "の",
-            "に"
+            "か",
+            "に",
+            "く"
           ],
           "correctAnswer": "たいふうのかくにん"
         },
         {
           "id": "u10_l7_3",
           "type": "cloze",
-          "prompt": "私は新幹線の確認がすきです",
-          "furigana": "わたしはしんかんせんのかくにんがすきです",
-          "romaji": "Watashi wa shinkansen no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Bullet train.",
-          "audioText": "新幹線の確認",
-          "clozeSentence": "これは新幹線の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な新幹線の確認です。",
+          "furigana": "これはいちばんたいせつなしんかんせんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shinkansen no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Bullet train.",
+          "audioText": "これは新幹線の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な新幹線の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l7_4",
@@ -1349,11 +1344,11 @@ export const unit10: DojoUnit = {
           "english": "This is Confirming Bullet train.",
           "audioText": "これは新幹線の確認です",
           "scrambleTokens": [
-            "新幹線の確認",
             "それ",
+            "新幹線の確認",
+            "これは",
             "ではありません",
-            "です",
-            "これは"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1382,24 +1377,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l7_6",
           "type": "dictate",
-          "prompt": "切符の確認をお願いします",
-          "furigana": "きっぷのかくにんをおねがいします",
-          "romaji": "kippu no kakunin o onegaishimasu.",
-          "english": "Confirming Ticket, please.",
-          "audioText": "切符の確認をお願いします",
+          "prompt": "切符の確認です",
+          "furigana": "きっぷのかくにんです",
+          "romaji": "kippu no kakunin desu.",
+          "english": "It is Confirming Ticket.",
+          "audioText": "切符の確認です",
           "dictateTokens": [
-            "です",
             "切符の確認",
-            "お願いします",
-            "ありがとう",
-            "を"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "切符の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "切符の確認をお願いします"
+          "correctAnswer": "切符の確認です"
         },
         {
           "id": "u10_l7_7",
@@ -1509,10 +1502,10 @@ export const unit10: DojoUnit = {
           "english": "Confirming Reserved seat",
           "audioText": "していせきのかくにん",
           "options": [
-            "Confirming Reserved seat",
-            "Confirming Rain",
-            "Luggage / baggage",
-            "Confirming Autumn foliage"
+            "Confirming Weather",
+            "Confirming Non-reserved seat",
+            "Rain",
+            "Confirming Reserved seat"
           ],
           "correctAnswer": "Confirming Reserved seat"
         },
@@ -1525,26 +1518,26 @@ export const unit10: DojoUnit = {
           "english": "Build 'Confirming Reserved seat'",
           "audioText": "していせきのかくにん",
           "tileBank": [
-            "の",
-            "せ",
-            "か",
             "き",
             "い",
-            "く",
             "し",
-            "て"
+            "か",
+            "く",
+            "せ",
+            "て",
+            "の"
           ],
           "correctAnswer": "していせきのかくにん"
         },
         {
           "id": "u10_l8_3",
           "type": "cloze",
-          "prompt": "私は自由席の確認がすきです",
-          "furigana": "わたしはじゆうせきのかくにんがすきです",
-          "romaji": "Watashi wa jiyuuseki no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Non-reserved seat.",
-          "audioText": "自由席の確認",
-          "clozeSentence": "これは自由席の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な自由席の確認です。",
+          "furigana": "これはいちばんたいせつなじゆうせきのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na jiyuuseki no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Non-reserved seat.",
+          "audioText": "これは自由席の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な自由席の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1552,7 +1545,8 @@ export const unit10: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l8_4",
@@ -1563,11 +1557,11 @@ export const unit10: DojoUnit = {
           "english": "This is Confirming Non-reserved seat.",
           "audioText": "これは自由席の確認です",
           "scrambleTokens": [
-            "これは",
-            "です",
-            "それ",
+            "自由席の確認",
             "ではありません",
-            "自由席の確認"
+            "これは",
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1596,24 +1590,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l8_6",
           "type": "dictate",
-          "prompt": "旅行の確認をお願いします",
-          "furigana": "りょこうのかくにんをおねがいします",
-          "romaji": "ryokou no kakunin o onegaishimasu.",
-          "english": "Confirming Travel / trip, please.",
-          "audioText": "旅行の確認をお願いします",
+          "prompt": "旅行の確認です",
+          "furigana": "りょこうのかくにんです",
+          "romaji": "ryokou no kakunin desu.",
+          "english": "It is Confirming Travel / trip.",
+          "audioText": "旅行の確認です",
           "dictateTokens": [
-            "旅行の確認",
-            "を",
             "です",
-            "お願いします",
-            "ありがとう"
+            "これ",
+            "ではありません",
+            "旅行の確認"
           ],
           "dictateSolution": [
             "旅行の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "旅行の確認をお願いします"
+          "correctAnswer": "旅行の確認です"
         },
         {
           "id": "u10_l8_7",
@@ -1720,10 +1712,10 @@ export const unit10: DojoUnit = {
           "english": "Confirming Cherry blossom",
           "audioText": "さくらのかくにん",
           "options": [
-            "Confirming Non-reserved seat",
-            "Confirming Rain",
             "Confirming Cherry blossom",
-            "Cherry blossom"
+            "Confirming Temperature",
+            "Confirming Rain",
+            "Autumn foliage"
           ],
           "correctAnswer": "Confirming Cherry blossom"
         },
@@ -1736,34 +1728,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Confirming Cherry blossom'",
           "audioText": "さくらのかくにん",
           "tileBank": [
-            "に",
-            "く",
+            "か",
+            "ん",
             "ら",
             "さ",
             "く",
             "の",
-            "か",
-            "ん"
+            "く",
+            "に"
           ],
           "correctAnswer": "さくらのかくにん"
         },
         {
           "id": "u10_l9_3",
           "type": "cloze",
-          "prompt": "私は紅葉の確認がすきです",
-          "furigana": "わたしはこうようのかくにんがすきです",
-          "romaji": "Watashi wa kouyou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Autumn foliage.",
-          "audioText": "紅葉の確認",
-          "clozeSentence": "これは紅葉の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な紅葉の確認です。",
+          "furigana": "これはいちばんたいせつなこうようのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kouyou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Autumn foliage.",
+          "audioText": "これは紅葉の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な紅葉の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l9_4",
@@ -1774,11 +1767,11 @@ export const unit10: DojoUnit = {
           "english": "This is Confirming Autumn foliage.",
           "audioText": "これは紅葉の確認です",
           "scrambleTokens": [
-            "ではありません",
             "それ",
-            "これは",
+            "ではありません",
+            "です",
             "紅葉の確認",
-            "です"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1807,24 +1800,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l9_6",
           "type": "dictate",
-          "prompt": "気温の確認をお願いします",
-          "furigana": "きおんのかくにんをおねがいします",
-          "romaji": "kion no kakunin o onegaishimasu.",
-          "english": "Confirming Temperature, please.",
-          "audioText": "気温の確認をお願いします",
+          "prompt": "気温の確認です",
+          "furigana": "きおんのかくにんです",
+          "romaji": "kion no kakunin desu.",
+          "english": "It is Confirming Temperature.",
+          "audioText": "気温の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
+            "これ",
+            "ではありません",
             "です",
-            "気温の確認",
-            "を"
+            "気温の確認"
           ],
           "dictateSolution": [
             "気温の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "気温の確認をお願いします"
+          "correctAnswer": "気温の確認です"
         },
         {
           "id": "u10_l9_7",
@@ -1930,10 +1921,10 @@ export const unit10: DojoUnit = {
           "english": "Confirming Umbrella",
           "audioText": "かさのかくにん",
           "options": [
-            "Bullet train",
-            "Confirming Umbrella",
-            "Confirming Cool / refreshing",
-            "Ticket"
+            "Confirming Sunny / clear",
+            "Autumn foliage",
+            "Confirming Temperature",
+            "Confirming Umbrella"
           ],
           "correctAnswer": "Confirming Umbrella"
         },
@@ -1946,34 +1937,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Confirming Umbrella'",
           "audioText": "かさのかくにん",
           "tileBank": [
-            "の",
-            "く",
-            "ん",
-            "に",
-            "か",
-            "れ",
             "さ",
-            "か"
+            "か",
+            "か",
+            "く",
+            "の",
+            "た",
+            "に",
+            "ん"
           ],
           "correctAnswer": "かさのかくにん"
         },
         {
           "id": "u10_l10_3",
           "type": "cloze",
-          "prompt": "私は涼しいの確認がすきです",
-          "furigana": "わたしはすずしいのかくにんがすきです",
-          "romaji": "Watashi wa suzushii no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Cool / refreshing.",
-          "audioText": "涼しいの確認",
-          "clozeSentence": "これは涼しいの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な涼しいの確認です。",
+          "furigana": "これはいちばんたいせつなすずしいのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na suzushii no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Cool / refreshing.",
+          "audioText": "これは涼しいの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な涼しいの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l10_4",
@@ -1984,11 +1976,11 @@ export const unit10: DojoUnit = {
           "english": "This is Confirming Cool / refreshing.",
           "audioText": "これは涼しいの確認です",
           "scrambleTokens": [
-            "です",
             "それ",
-            "涼しいの確認",
             "これは",
-            "ではありません"
+            "ではありません",
+            "です",
+            "涼しいの確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -2017,24 +2009,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l10_6",
           "type": "dictate",
-          "prompt": "荷物の確認をお願いします",
-          "furigana": "にもつのかくにんをおねがいします",
-          "romaji": "nimotsu no kakunin o onegaishimasu.",
-          "english": "Confirming Luggage / baggage, please.",
-          "audioText": "荷物の確認をお願いします",
+          "prompt": "荷物の確認です",
+          "furigana": "にもつのかくにんです",
+          "romaji": "nimotsu no kakunin desu.",
+          "english": "It is Confirming Luggage / baggage.",
+          "audioText": "荷物の確認です",
           "dictateTokens": [
-            "ありがとう",
+            "荷物の確認",
+            "ではありません",
             "です",
-            "お願いします",
-            "を",
-            "荷物の確認"
+            "これ"
           ],
           "dictateSolution": [
             "荷物の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "荷物の確認をお願いします"
+          "correctAnswer": "荷物の確認です"
         },
         {
           "id": "u10_l10_7",
@@ -2140,10 +2130,10 @@ export const unit10: DojoUnit = {
           "english": "Confirming Weather",
           "audioText": "てんきのかくにん",
           "options": [
-            "Ticket",
             "Autumn foliage",
-            "Confirming Bullet train",
-            "Confirming Weather"
+            "Confirming Weather",
+            "Non-reserved seat",
+            "Confirming Cool / refreshing"
           ],
           "correctAnswer": "Confirming Weather"
         },
@@ -2156,34 +2146,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Confirming Weather'",
           "audioText": "てんきのかくにん",
           "tileBank": [
-            "く",
-            "ん",
-            "の",
-            "ん",
-            "か",
             "き",
+            "か",
+            "の",
             "て",
-            "に"
+            "に",
+            "ん",
+            "ん",
+            "く"
           ],
           "correctAnswer": "てんきのかくにん"
         },
         {
           "id": "u10_l11_3",
           "type": "cloze",
-          "prompt": "私は晴れの確認がすきです",
-          "furigana": "わたしははれのかくにんがすきです",
-          "romaji": "Watashi wa hare no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Sunny / clear.",
-          "audioText": "晴れの確認",
-          "clozeSentence": "これは晴れの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な晴れの確認です。",
+          "furigana": "これはいちばんたいせつなはれのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na hare no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Sunny / clear.",
+          "audioText": "これは晴れの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な晴れの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l11_4",
@@ -2194,11 +2185,11 @@ export const unit10: DojoUnit = {
           "english": "This is Confirming Sunny / clear.",
           "audioText": "これは晴れの確認です",
           "scrambleTokens": [
-            "ではありません",
-            "晴れの確認",
-            "です",
             "これは",
-            "それ"
+            "晴れの確認",
+            "それ",
+            "です",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2227,24 +2218,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l11_6",
           "type": "dictate",
-          "prompt": "雨の確認をお願いします",
-          "furigana": "あめのかくにんをおねがいします",
-          "romaji": "ame no kakunin o onegaishimasu.",
-          "english": "Confirming Rain, please.",
-          "audioText": "雨の確認をお願いします",
+          "prompt": "雨の確認です",
+          "furigana": "あめのかくにんです",
+          "romaji": "ame no kakunin desu.",
+          "english": "It is Confirming Rain.",
+          "audioText": "雨の確認です",
           "dictateTokens": [
-            "ありがとう",
             "雨の確認",
-            "を",
-            "お願いします",
-            "です"
+            "です",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "雨の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "雨の確認をお願いします"
+          "correctAnswer": "雨の確認です"
         },
         {
           "id": "u10_l11_7",
@@ -2353,10 +2342,10 @@ export const unit10: DojoUnit = {
           "english": "Confirming Typhoon",
           "audioText": "たいふうのかくにん",
           "options": [
-            "Confirming Autumn foliage",
             "Confirming Typhoon",
-            "Cool / refreshing",
-            "Confirming Rain"
+            "Confirming Cherry blossom",
+            "Confirming Reserved seat",
+            "Temperature"
           ],
           "correctAnswer": "Confirming Typhoon"
         },
@@ -2369,13 +2358,13 @@ export const unit10: DojoUnit = {
           "english": "Build 'Confirming Typhoon'",
           "audioText": "たいふうのかくにん",
           "tileBank": [
+            "う",
+            "に",
+            "か",
+            "く",
+            "の",
             "い",
             "ふ",
-            "か",
-            "の",
-            "に",
-            "う",
-            "く",
             "た"
           ],
           "correctAnswer": "たいふうのかくにん"
@@ -2383,12 +2372,12 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l12_3",
           "type": "cloze",
-          "prompt": "私は新幹線の確認がすきです",
-          "furigana": "わたしはしんかんせんのかくにんがすきです",
-          "romaji": "Watashi wa shinkansen no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Bullet train.",
-          "audioText": "新幹線の確認",
-          "clozeSentence": "これは新幹線の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な新幹線の確認です。",
+          "furigana": "これはいちばんたいせつなしんかんせんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shinkansen no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Bullet train.",
+          "audioText": "これは新幹線の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な新幹線の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2396,7 +2385,8 @@ export const unit10: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l12_4",
@@ -2407,11 +2397,11 @@ export const unit10: DojoUnit = {
           "english": "This is Confirming Bullet train.",
           "audioText": "これは新幹線の確認です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
-            "です",
             "新幹線の確認",
-            "これは"
+            "それ",
+            "これは",
+            "です",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2440,24 +2430,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l12_6",
           "type": "dictate",
-          "prompt": "切符の確認をお願いします",
-          "furigana": "きっぷのかくにんをおねがいします",
-          "romaji": "kippu no kakunin o onegaishimasu.",
-          "english": "Confirming Ticket, please.",
-          "audioText": "切符の確認をお願いします",
+          "prompt": "切符の確認です",
+          "furigana": "きっぷのかくにんです",
+          "romaji": "kippu no kakunin desu.",
+          "english": "It is Confirming Ticket.",
+          "audioText": "切符の確認です",
           "dictateTokens": [
-            "ありがとう",
             "切符の確認",
-            "を",
-            "です",
-            "お願いします"
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "切符の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "切符の確認をお願いします"
+          "correctAnswer": "切符の確認です"
         },
         {
           "id": "u10_l12_7",
@@ -2557,10 +2545,10 @@ export const unit10: DojoUnit = {
           "english": "Weather",
           "audioText": "てんき",
           "options": [
-            "Rain",
-            "Cherry blossom",
+            "Confirming Reserved seat",
             "Weather",
-            "Confirming Sunny / clear"
+            "Confirming Rain",
+            "Autumn foliage"
           ],
           "correctAnswer": "Weather"
         },
@@ -2573,34 +2561,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Weather'",
           "audioText": "てんき",
           "tileBank": [
-            "に",
-            "さ",
-            "て",
-            "け",
-            "ん",
-            "き",
+            "せ",
+            "こ",
             "く",
-            "も"
+            "そ",
+            "て",
+            "や",
+            "ん",
+            "き"
           ],
           "correctAnswer": "てんき"
         },
         {
           "id": "u10_l13_3",
           "type": "cloze",
-          "prompt": "私は晴れがすきです",
-          "furigana": "わたしははれがすきです",
-          "romaji": "Watashi wa hare ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Sunny / clear.",
-          "audioText": "晴れ",
-          "clozeSentence": "これは晴れ {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な晴れです。",
+          "furigana": "これはいちばんたいせつなはれです。",
+          "romaji": "Kore wa ichiban taisetsu na hare desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Sunny / clear.",
+          "audioText": "これは晴れです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な晴れです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l13_4",
@@ -2611,11 +2600,11 @@ export const unit10: DojoUnit = {
           "english": "This is Sunny / clear.",
           "audioText": "これは晴れです",
           "scrambleTokens": [
-            "それ",
-            "これは",
-            "です",
+            "ではありません",
             "晴れ",
-            "ではありません"
+            "それ",
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2644,24 +2633,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l13_6",
           "type": "dictate",
-          "prompt": "雨をお願いします",
-          "furigana": "あめをおねがいします",
-          "romaji": "ame o onegaishimasu.",
-          "english": "Rain, please.",
-          "audioText": "雨をお願いします",
+          "prompt": "雨です",
+          "furigana": "あめです",
+          "romaji": "ame desu.",
+          "english": "It is Rain.",
+          "audioText": "雨です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
+            "ではありません",
+            "です",
             "雨",
-            "お願いします",
-            "です"
+            "これ"
           ],
           "dictateSolution": [
             "雨",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "雨をお願いします"
+          "correctAnswer": "雨です"
         },
         {
           "id": "u10_l13_7",
@@ -2764,10 +2751,10 @@ export const unit10: DojoUnit = {
           "english": "Typhoon",
           "audioText": "たいふう",
           "options": [
-            "Non-reserved seat",
-            "Confirming Sunny / clear",
-            "Typhoon",
-            "Confirming Typhoon"
+            "Confirming Cherry blossom",
+            "Travel / trip",
+            "Cherry blossom",
+            "Typhoon"
           ],
           "correctAnswer": "Typhoon"
         },
@@ -2780,34 +2767,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Typhoon'",
           "audioText": "たいふう",
           "tileBank": [
-            "う",
-            "え",
-            "い",
-            "な",
-            "て",
+            "ふ",
             "た",
-            "し",
-            "ふ"
+            "か",
+            "け",
+            "う",
+            "ね",
+            "い",
+            "さ"
           ],
           "correctAnswer": "たいふう"
         },
         {
           "id": "u10_l14_3",
           "type": "cloze",
-          "prompt": "私は新幹線がすきです",
-          "furigana": "わたしはしんかんせんがすきです",
-          "romaji": "Watashi wa shinkansen ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Bullet train.",
-          "audioText": "新幹線",
-          "clozeSentence": "これは新幹線 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な新幹線です。",
+          "furigana": "これはいちばんたいせつなしんかんせんです。",
+          "romaji": "Kore wa ichiban taisetsu na shinkansen desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Bullet train.",
+          "audioText": "これは新幹線です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な新幹線です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l14_4",
@@ -2818,11 +2806,11 @@ export const unit10: DojoUnit = {
           "english": "This is Bullet train.",
           "audioText": "これは新幹線です",
           "scrambleTokens": [
-            "それ",
-            "です",
+            "これは",
             "新幹線",
             "ではありません",
-            "これは"
+            "です",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2851,24 +2839,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l14_6",
           "type": "dictate",
-          "prompt": "切符をお願いします",
-          "furigana": "きっぷをおねがいします",
-          "romaji": "kippu o onegaishimasu.",
-          "english": "Ticket, please.",
-          "audioText": "切符をお願いします",
+          "prompt": "切符です",
+          "furigana": "きっぷです",
+          "romaji": "kippu desu.",
+          "english": "It is Ticket.",
+          "audioText": "切符です",
           "dictateTokens": [
-            "ありがとう",
             "です",
-            "お願いします",
             "切符",
-            "を"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "切符",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "切符をお願いします"
+          "correctAnswer": "切符です"
         },
         {
           "id": "u10_l14_7",
@@ -2972,10 +2958,10 @@ export const unit10: DojoUnit = {
           "english": "Reserved seat",
           "audioText": "していせき",
           "options": [
-            "Confirming Bullet train",
             "Reserved seat",
-            "Confirming Typhoon",
-            "Typhoon"
+            "Confirming Umbrella",
+            "Ticket",
+            "Confirming Luggage / baggage"
           ],
           "correctAnswer": "Reserved seat"
         },
@@ -2988,34 +2974,35 @@ export const unit10: DojoUnit = {
           "english": "Build 'Reserved seat'",
           "audioText": "していせき",
           "tileBank": [
-            "と",
-            "き",
             "せ",
-            "て",
-            "い",
-            "ら",
+            "の",
             "し",
-            "た"
+            "い",
+            "へ",
+            "え",
+            "き",
+            "て"
           ],
           "correctAnswer": "していせき"
         },
         {
           "id": "u10_l15_3",
           "type": "cloze",
-          "prompt": "私は自由席がすきです",
-          "furigana": "わたしはじゆうせきがすきです",
-          "romaji": "Watashi wa jiyuuseki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Non-reserved seat.",
-          "audioText": "自由席",
-          "clozeSentence": "これは自由席 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な自由席です。",
+          "furigana": "これはいちばんたいせつなじゆうせきです。",
+          "romaji": "Kore wa ichiban taisetsu na jiyuuseki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Non-reserved seat.",
+          "audioText": "これは自由席です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な自由席です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u10_l15_4",
@@ -3026,11 +3013,11 @@ export const unit10: DojoUnit = {
           "english": "This is Non-reserved seat.",
           "audioText": "これは自由席です",
           "scrambleTokens": [
+            "です",
+            "それ",
             "自由席",
             "ではありません",
-            "です",
-            "これは",
-            "それ"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -3059,24 +3046,22 @@ export const unit10: DojoUnit = {
         {
           "id": "u10_l15_6",
           "type": "dictate",
-          "prompt": "旅行をお願いします",
-          "furigana": "りょこうをおねがいします",
-          "romaji": "ryokou o onegaishimasu.",
-          "english": "Travel / trip, please.",
-          "audioText": "旅行をお願いします",
+          "prompt": "旅行です",
+          "furigana": "りょこうです",
+          "romaji": "ryokou desu.",
+          "english": "It is Travel / trip.",
+          "audioText": "旅行です",
           "dictateTokens": [
-            "です",
+            "ではありません",
             "旅行",
-            "を",
-            "ありがとう",
-            "お願いします"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "旅行",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "旅行をお願いします"
+          "correctAnswer": "旅行です"
         },
         {
           "id": "u10_l15_7",
@@ -3161,9 +3146,9 @@ export const unit10: DojoUnit = {
         "english": "Weather",
         "audioText": "てんき",
         "options": [
-          "Temperature",
-          "Confirming Reserved seat",
-          "Confirming Luggage / baggage",
+          "Confirming Typhoon",
+          "Non-reserved seat",
+          "Bullet train",
           "Weather"
         ],
         "correctAnswer": "Weather"
@@ -3177,14 +3162,14 @@ export const unit10: DojoUnit = {
         "english": "Build 'Weather'",
         "audioText": "てんき",
         "tileBank": [
-          "ん",
-          "く",
+          "け",
           "や",
-          "し",
-          "さ",
-          "う",
-          "き",
-          "て"
+          "は",
+          "り",
+          "て",
+          "い",
+          "ん",
+          "き"
         ],
         "correctAnswer": "てんき"
       },
@@ -3197,10 +3182,10 @@ export const unit10: DojoUnit = {
         "english": "Reserved seat",
         "audioText": "していせき",
         "options": [
-          "Confirming Luggage / baggage",
+          "Confirming Cool / refreshing",
           "Reserved seat",
-          "Confirming Umbrella",
-          "Confirming Rain"
+          "Weather",
+          "Umbrella"
         ],
         "correctAnswer": "Reserved seat"
       },
@@ -3213,14 +3198,14 @@ export const unit10: DojoUnit = {
         "english": "Build 'Reserved seat'",
         "audioText": "していせき",
         "tileBank": [
-          "こ",
-          "に",
-          "な",
-          "き",
-          "い",
           "せ",
+          "い",
+          "へ",
+          "め",
+          "し",
           "て",
-          "し"
+          "き",
+          "ゆ"
         ],
         "correctAnswer": "していせき"
       },
@@ -3234,9 +3219,9 @@ export const unit10: DojoUnit = {
         "audioText": "かさ",
         "options": [
           "Umbrella",
-          "Confirming Typhoon",
-          "Confirming Typhoon",
-          "Confirming Cool / refreshing"
+          "Autumn foliage",
+          "Cool / refreshing",
+          "Non-reserved seat"
         ],
         "correctAnswer": "Umbrella"
       },
@@ -3250,13 +3235,13 @@ export const unit10: DojoUnit = {
         "audioText": "かさ",
         "tileBank": [
           "さ",
+          "な",
           "け",
-          "れ",
-          "か",
+          "ら",
+          "せ",
           "ち",
-          "ね",
-          "を",
-          "あ"
+          "む",
+          "か"
         ],
         "correctAnswer": "かさ"
       },
@@ -3269,10 +3254,10 @@ export const unit10: DojoUnit = {
         "english": "Confirming Typhoon",
         "audioText": "たいふうのかくにん",
         "options": [
-          "Confirming Non-reserved seat",
-          "Confirming Rain",
+          "Confirming Weather",
+          "Travel / trip",
           "Confirming Typhoon",
-          "Confirming Sunny / clear"
+          "Confirming Bullet train"
         ],
         "correctAnswer": "Confirming Typhoon"
       },
@@ -3285,14 +3270,14 @@ export const unit10: DojoUnit = {
         "english": "Build 'Confirming Typhoon'",
         "audioText": "たいふうのかくにん",
         "tileBank": [
-          "う",
-          "く",
-          "か",
-          "た",
-          "い",
           "ふ",
+          "た",
+          "う",
+          "い",
           "の",
-          "に"
+          "か",
+          "に",
+          "く"
         ],
         "correctAnswer": "たいふうのかくにん"
       },
@@ -3305,10 +3290,10 @@ export const unit10: DojoUnit = {
         "english": "Confirming Cherry blossom",
         "audioText": "さくらのかくにん",
         "options": [
-          "Confirming Non-reserved seat",
-          "Confirming Rain",
           "Confirming Cherry blossom",
-          "Cherry blossom"
+          "Confirming Temperature",
+          "Confirming Rain",
+          "Autumn foliage"
         ],
         "correctAnswer": "Confirming Cherry blossom"
       },
@@ -3321,14 +3306,14 @@ export const unit10: DojoUnit = {
         "english": "Build 'Confirming Cherry blossom'",
         "audioText": "さくらのかくにん",
         "tileBank": [
-          "に",
-          "く",
+          "か",
+          "ん",
           "ら",
           "さ",
           "く",
           "の",
-          "か",
-          "ん"
+          "く",
+          "に"
         ],
         "correctAnswer": "さくらのかくにん"
       },
@@ -3341,10 +3326,10 @@ export const unit10: DojoUnit = {
         "english": "Confirming Weather",
         "audioText": "てんきのかくにん",
         "options": [
-          "Ticket",
           "Autumn foliage",
-          "Confirming Bullet train",
-          "Confirming Weather"
+          "Confirming Weather",
+          "Non-reserved seat",
+          "Confirming Cool / refreshing"
         ],
         "correctAnswer": "Confirming Weather"
       },
@@ -3357,14 +3342,14 @@ export const unit10: DojoUnit = {
         "english": "Build 'Confirming Weather'",
         "audioText": "てんきのかくにん",
         "tileBank": [
-          "く",
-          "ん",
-          "の",
-          "ん",
-          "か",
           "き",
+          "か",
+          "の",
           "て",
-          "に"
+          "に",
+          "ん",
+          "ん",
+          "く"
         ],
         "correctAnswer": "てんきのかくにん"
       }

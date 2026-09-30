@@ -46,10 +46,10 @@ export const unit05: DojoUnit = {
           "english": "Train station",
           "audioText": "えき",
           "options": [
+            "Right over there",
             "Train station",
-            "South exit",
-            "Ticket machine area",
-            "On foot / walking"
+            "In front / ahead",
+            "Road / path / way"
           ],
           "correctAnswer": "Train station"
         },
@@ -62,34 +62,35 @@ export const unit05: DojoUnit = {
           "english": "Build 'Train station'",
           "audioText": "えき",
           "tileBank": [
+            "い",
+            "ふ",
             "き",
-            "そ",
-            "れ",
+            "ち",
+            "か",
             "え",
-            "に",
-            "の",
-            "け",
-            "ひ"
+            "と",
+            "せ"
           ],
           "correctAnswer": "えき"
         },
         {
           "id": "u5_l1_3",
           "type": "cloze",
-          "prompt": "私はどこがすきです",
-          "furigana": "わたしはどこがすきです",
-          "romaji": "Watashi wa doko ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Where.",
-          "audioText": "どこ",
-          "clozeSentence": "これはどこ {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切などこです。",
+          "furigana": "これはいちばんたいせつなどこです。",
+          "romaji": "Kore wa ichiban taisetsu na doko desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Where.",
+          "audioText": "これはどこです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切などこです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l1_4",
@@ -100,11 +101,11 @@ export const unit05: DojoUnit = {
           "english": "This is Where.",
           "audioText": "これはどこです",
           "scrambleTokens": [
-            "です",
-            "これは",
-            "どこ",
+            "ではありません",
             "それ",
-            "ではありません"
+            "これは",
+            "です",
+            "どこ"
           ],
           "scrambleSolution": [
             "これは",
@@ -133,24 +134,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l1_6",
           "type": "dictate",
-          "prompt": "右をお願いします",
-          "furigana": "みぎをおねがいします",
-          "romaji": "migi o onegaishimasu.",
-          "english": "Right side, please.",
-          "audioText": "右をお願いします",
+          "prompt": "右です",
+          "furigana": "みぎです",
+          "romaji": "migi desu.",
+          "english": "It is Right side.",
+          "audioText": "右です",
           "dictateTokens": [
             "です",
-            "お願いします",
-            "右",
-            "を",
-            "ありがとう"
+            "ではありません",
+            "これ",
+            "右"
           ],
           "dictateSolution": [
             "右",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "右をお願いします"
+          "correctAnswer": "右です"
         },
         {
           "id": "u5_l1_7",
@@ -248,10 +247,10 @@ export const unit05: DojoUnit = {
           "english": "Left side",
           "audioText": "ひだり",
           "options": [
+            "Straight ahead",
             "Left side",
-            "Ticket gate",
-            "Traffic light",
-            "To turn"
+            "Ticket machine area",
+            "East exit"
           ],
           "correctAnswer": "Left side"
         },
@@ -264,34 +263,35 @@ export const unit05: DojoUnit = {
           "english": "Build 'Left side'",
           "audioText": "ひだり",
           "tileBank": [
-            "ひ",
-            "く",
-            "き",
-            "ら",
-            "ふ",
-            "り",
+            "な",
+            "つ",
+            "お",
             "だ",
-            "や"
+            "ゆ",
+            "ひ",
+            "て",
+            "り"
           ],
           "correctAnswer": "ひだり"
         },
         {
           "id": "u5_l2_3",
           "type": "cloze",
-          "prompt": "私はまっすぐがすきです",
-          "furigana": "わたしはまっすぐがすきです",
-          "romaji": "Watashi wa massugu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Straight ahead.",
-          "audioText": "まっすぐ",
-          "clozeSentence": "これはまっすぐ {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なまっすぐです。",
+          "furigana": "これはいちばんたいせつなまっすぐです。",
+          "romaji": "Kore wa ichiban taisetsu na massugu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Straight ahead.",
+          "audioText": "これはまっすぐです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なまっすぐです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l2_4",
@@ -302,11 +302,11 @@ export const unit05: DojoUnit = {
           "english": "This is Straight ahead.",
           "audioText": "これはまっすぐです",
           "scrambleTokens": [
-            "それ",
+            "これは",
             "です",
+            "それ",
             "ではありません",
-            "まっすぐ",
-            "これは"
+            "まっすぐ"
           ],
           "scrambleSolution": [
             "これは",
@@ -335,24 +335,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l2_6",
           "type": "dictate",
-          "prompt": "前をお願いします",
-          "furigana": "まえをおねがいします",
-          "romaji": "mae o onegaishimasu.",
-          "english": "In front / ahead, please.",
-          "audioText": "前をお願いします",
+          "prompt": "前です",
+          "furigana": "まえです",
+          "romaji": "mae desu.",
+          "english": "It is In front / ahead.",
+          "audioText": "前です",
           "dictateTokens": [
-            "前",
-            "ありがとう",
-            "を",
-            "お願いします",
-            "です"
+            "ではありません",
+            "です",
+            "これ",
+            "前"
           ],
           "dictateSolution": [
             "前",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "前をお願いします"
+          "correctAnswer": "前です"
         },
         {
           "id": "u5_l2_7",
@@ -451,10 +449,10 @@ export const unit05: DojoUnit = {
           "english": "Behind / back",
           "audioText": "うしろ",
           "options": [
-            "Right over there",
-            "Right side",
+            "Road / path / way",
+            "Ticket machine area",
             "Behind / back",
-            "Landmark"
+            "North exit"
           ],
           "correctAnswer": "Behind / back"
         },
@@ -467,13 +465,13 @@ export const unit05: DojoUnit = {
           "english": "Build 'Behind / back'",
           "audioText": "うしろ",
           "tileBank": [
-            "か",
             "ろ",
-            "む",
             "こ",
-            "る",
-            "ふ",
+            "も",
+            "み",
             "う",
+            "け",
+            "め",
             "し"
           ],
           "correctAnswer": "うしろ"
@@ -481,20 +479,21 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l3_3",
           "type": "cloze",
-          "prompt": "私は隣がすきです",
-          "furigana": "わたしはとなりがすきです",
-          "romaji": "Watashi wa tonari ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Next to / beside.",
-          "audioText": "隣",
-          "clozeSentence": "これは隣 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な隣です。",
+          "furigana": "これはいちばんたいせつなとなりです。",
+          "romaji": "Kore wa ichiban taisetsu na tonari desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Next to / beside.",
+          "audioText": "これは隣です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な隣です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l3_4",
@@ -508,8 +507,8 @@ export const unit05: DojoUnit = {
             "これは",
             "ではありません",
             "です",
-            "隣",
-            "それ"
+            "それ",
+            "隣"
           ],
           "scrambleSolution": [
             "これは",
@@ -538,24 +537,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l3_6",
           "type": "dictate",
-          "prompt": "向かいをお願いします",
-          "furigana": "むかいをおねがいします",
-          "romaji": "mukai o onegaishimasu.",
-          "english": "Across from / opposite, please.",
-          "audioText": "向かいをお願いします",
+          "prompt": "向かいです",
+          "furigana": "むかいです",
+          "romaji": "mukai desu.",
+          "english": "It is Across from / opposite.",
+          "audioText": "向かいです",
           "dictateTokens": [
-            "ありがとう",
+            "ではありません",
+            "これ",
             "です",
-            "を",
-            "向かい",
-            "お願いします"
+            "向かい"
           ],
           "dictateSolution": [
             "向かい",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "向かいをお願いします"
+          "correctAnswer": "向かいです"
         },
         {
           "id": "u5_l3_7",
@@ -656,10 +653,10 @@ export const unit05: DojoUnit = {
           "english": "Nearby",
           "audioText": "ちかく",
           "options": [
+            "Nearby",
             "Right side",
-            "To get lost",
-            "Guidance / directions",
-            "Nearby"
+            "Left side",
+            "Train station"
           ],
           "correctAnswer": "Nearby"
         },
@@ -672,26 +669,26 @@ export const unit05: DojoUnit = {
           "english": "Build 'Nearby'",
           "audioText": "ちかく",
           "tileBank": [
-            "ち",
-            "く",
-            "な",
-            "と",
+            "た",
             "か",
-            "ろ",
-            "て",
-            "い"
+            "に",
+            "ち",
+            "ふ",
+            "ん",
+            "そ",
+            "く"
           ],
           "correctAnswer": "ちかく"
         },
         {
           "id": "u5_l4_3",
           "type": "cloze",
-          "prompt": "私は遠いがすきです",
-          "furigana": "わたしはとおいがすきです",
-          "romaji": "Watashi wa tooi ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Far away.",
-          "audioText": "遠い",
-          "clozeSentence": "これは遠い {{BLANK}} す。",
+          "prompt": "これはいちばん大切な遠いです。",
+          "furigana": "これはいちばんたいせつなとおいです。",
+          "romaji": "Kore wa ichiban taisetsu na tooi desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Far away.",
+          "audioText": "これは遠いです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な遠いです。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -699,7 +696,8 @@ export const unit05: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l4_4",
@@ -711,9 +709,9 @@ export const unit05: DojoUnit = {
           "audioText": "これは遠いです",
           "scrambleTokens": [
             "です",
-            "遠い",
-            "ではありません",
             "それ",
+            "ではありません",
+            "遠い",
             "これは"
           ],
           "scrambleSolution": [
@@ -743,24 +741,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l4_6",
           "type": "dictate",
-          "prompt": "交差点をお願いします",
-          "furigana": "こうさてんをおねがいします",
-          "romaji": "kousaten o onegaishimasu.",
-          "english": "Intersection, please.",
-          "audioText": "交差点をお願いします",
+          "prompt": "交差点です",
+          "furigana": "こうさてんです",
+          "romaji": "kousaten desu.",
+          "english": "It is Intersection.",
+          "audioText": "交差点です",
           "dictateTokens": [
+            "これ",
             "です",
-            "お願いします",
             "交差点",
-            "を",
-            "ありがとう"
+            "ではありません"
           ],
           "dictateSolution": [
             "交差点",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "交差点をお願いします"
+          "correctAnswer": "交差点です"
         },
         {
           "id": "u5_l4_7",
@@ -863,10 +859,10 @@ export const unit05: DojoUnit = {
           "english": "Traffic light",
           "audioText": "しんごう",
           "options": [
-            "Behind / back",
+            "To cross (street/bridge)",
+            "Intersection",
             "Traffic light",
-            "Where",
-            "To turn"
+            "In front / ahead"
           ],
           "correctAnswer": "Traffic light"
         },
@@ -879,34 +875,35 @@ export const unit05: DojoUnit = {
           "english": "Build 'Traffic light'",
           "audioText": "しんごう",
           "tileBank": [
-            "ん",
-            "し",
-            "ご",
-            "こ",
-            "を",
-            "へ",
+            "あ",
             "う",
-            "そ"
+            "い",
+            "き",
+            "ん",
+            "と",
+            "し",
+            "ご"
           ],
           "correctAnswer": "しんごう"
         },
         {
           "id": "u5_l5_3",
           "type": "cloze",
-          "prompt": "私は角がすきです",
-          "furigana": "わたしはかどがすきです",
-          "romaji": "Watashi wa kado ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Street corner.",
-          "audioText": "角",
-          "clozeSentence": "これは角 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な角です。",
+          "furigana": "これはいちばんたいせつなかどです。",
+          "romaji": "Kore wa ichiban taisetsu na kado desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Street corner.",
+          "audioText": "これは角です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な角です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l5_4",
@@ -917,11 +914,11 @@ export const unit05: DojoUnit = {
           "english": "This is Street corner.",
           "audioText": "これは角です",
           "scrambleTokens": [
-            "これは",
             "ではありません",
-            "です",
             "それ",
-            "角"
+            "です",
+            "角",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -950,24 +947,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l5_6",
           "type": "dictate",
-          "prompt": "横断歩道をお願いします",
-          "furigana": "おうだんほどうをおねがいします",
-          "romaji": "oudanhodou o onegaishimasu.",
-          "english": "Pedestrian crosswalk, please.",
-          "audioText": "横断歩道をお願いします",
+          "prompt": "横断歩道です",
+          "furigana": "おうだんほどうです",
+          "romaji": "oudanhodou desu.",
+          "english": "It is Pedestrian crosswalk.",
+          "audioText": "横断歩道です",
           "dictateTokens": [
-            "です",
-            "お願いします",
+            "これ",
+            "ではありません",
             "横断歩道",
-            "を",
-            "ありがとう"
+            "です"
           ],
           "dictateSolution": [
             "横断歩道",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "横断歩道をお願いします"
+          "correctAnswer": "横断歩道です"
         },
         {
           "id": "u5_l5_7",
@@ -1071,10 +1066,10 @@ export const unit05: DojoUnit = {
           "english": "Ticket gate",
           "audioText": "かいさつ",
           "options": [
-            "South exit",
-            "Signboard",
             "Ticket gate",
-            "Ticket machine area"
+            "Train station",
+            "Straight ahead",
+            "Next to / beside"
           ],
           "correctAnswer": "Ticket gate"
         },
@@ -1087,34 +1082,35 @@ export const unit05: DojoUnit = {
           "english": "Build 'Ticket gate'",
           "audioText": "かいさつ",
           "tileBank": [
-            "や",
-            "か",
+            "え",
+            "に",
+            "る",
             "さ",
-            "あ",
+            "つ",
+            "か",
             "い",
-            "せ",
-            "ち",
-            "つ"
+            "こ"
           ],
           "correctAnswer": "かいさつ"
         },
         {
           "id": "u5_l6_3",
           "type": "cloze",
-          "prompt": "私は切符売り場がすきです",
-          "furigana": "わたしはきっぷうりばがすきです",
-          "romaji": "Watashi wa kippu uriba ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Ticket machine area.",
-          "audioText": "切符売り場",
-          "clozeSentence": "これは切符売り場 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な切符売り場です。",
+          "furigana": "これはいちばんたいせつなきっぷうりばです。",
+          "romaji": "Kore wa ichiban taisetsu na kippu uriba desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Ticket machine area.",
+          "audioText": "これは切符売り場です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な切符売り場です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l6_4",
@@ -1126,10 +1122,10 @@ export const unit05: DojoUnit = {
           "audioText": "これは切符売り場です",
           "scrambleTokens": [
             "これは",
-            "です",
             "ではありません",
-            "切符売り場",
-            "それ"
+            "です",
+            "それ",
+            "切符売り場"
           ],
           "scrambleSolution": [
             "これは",
@@ -1158,24 +1154,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l6_6",
           "type": "dictate",
-          "prompt": "出口をお願いします",
-          "furigana": "でぐちをおねがいします",
-          "romaji": "deguchi o onegaishimasu.",
-          "english": "Exit, please.",
-          "audioText": "出口をお願いします",
+          "prompt": "出口です",
+          "furigana": "でぐちです",
+          "romaji": "deguchi desu.",
+          "english": "It is Exit.",
+          "audioText": "出口です",
           "dictateTokens": [
-            "ありがとう",
-            "出口",
-            "を",
             "です",
-            "お願いします"
+            "出口",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "出口",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "出口をお願いします"
+          "correctAnswer": "出口です"
         },
         {
           "id": "u5_l6_7",
@@ -1277,9 +1271,9 @@ export const unit05: DojoUnit = {
           "english": "North exit",
           "audioText": "きたぐち",
           "options": [
-            "Train station",
-            "Pedestrian crosswalk",
-            "Ticket machine area",
+            "Across from / opposite",
+            "In front / ahead",
+            "Next to / beside",
             "North exit"
           ],
           "correctAnswer": "North exit"
@@ -1293,34 +1287,35 @@ export const unit05: DojoUnit = {
           "english": "Build 'North exit'",
           "audioText": "きたぐち",
           "tileBank": [
+            "う",
             "た",
-            "ち",
-            "お",
-            "し",
+            "き",
+            "こ",
             "ぐ",
-            "の",
             "つ",
-            "き"
+            "ほ",
+            "ち"
           ],
           "correctAnswer": "きたぐち"
         },
         {
           "id": "u5_l7_3",
           "type": "cloze",
-          "prompt": "私は南口がすきです",
-          "furigana": "わたしはみなみぐちがすきです",
-          "romaji": "Watashi wa minamiguchi ga suki desu.",
-          "english": "Fill in the blank with the correct particle for South exit.",
-          "audioText": "南口",
-          "clozeSentence": "これは南口 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な南口です。",
+          "furigana": "これはいちばんたいせつなみなみぐちです。",
+          "romaji": "Kore wa ichiban taisetsu na minamiguchi desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important South exit.",
+          "audioText": "これは南口です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な南口です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l7_4",
@@ -1333,9 +1328,9 @@ export const unit05: DojoUnit = {
           "scrambleTokens": [
             "それ",
             "です",
-            "南口",
             "ではありません",
-            "これは"
+            "これは",
+            "南口"
           ],
           "scrambleSolution": [
             "これは",
@@ -1364,24 +1359,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l7_6",
           "type": "dictate",
-          "prompt": "東口をお願いします",
-          "furigana": "ひがしぐちをおねがいします",
-          "romaji": "higashiguchi o onegaishimasu.",
-          "english": "East exit, please.",
-          "audioText": "東口をお願いします",
+          "prompt": "東口です",
+          "furigana": "ひがしぐちです",
+          "romaji": "higashiguchi desu.",
+          "english": "It is East exit.",
+          "audioText": "東口です",
           "dictateTokens": [
-            "ありがとう",
             "東口",
-            "お願いします",
+            "これ",
             "です",
-            "を"
+            "ではありません"
           ],
           "dictateSolution": [
             "東口",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "東口をお願いします"
+          "correctAnswer": "東口です"
         },
         {
           "id": "u5_l7_7",
@@ -1479,10 +1472,10 @@ export const unit05: DojoUnit = {
           "english": "West exit",
           "audioText": "にしぐち",
           "options": [
-            "To get lost",
-            "Guidance / directions",
-            "Next to / beside",
-            "West exit"
+            "Intersection",
+            "Nearby",
+            "West exit",
+            "Next to / beside"
           ],
           "correctAnswer": "West exit"
         },
@@ -1495,26 +1488,26 @@ export const unit05: DojoUnit = {
           "english": "Build 'West exit'",
           "audioText": "にしぐち",
           "tileBank": [
-            "あ",
-            "ち",
-            "し",
-            "ぐ",
             "に",
-            "ひ",
-            "ゆ",
-            "き"
+            "し",
+            "わ",
+            "ち",
+            "や",
+            "ぐ",
+            "ろ",
+            "ゆ"
           ],
           "correctAnswer": "にしぐち"
         },
         {
           "id": "u5_l8_3",
           "type": "cloze",
-          "prompt": "私はトイレがすきです",
-          "furigana": "わたしはトイレがすきです",
-          "romaji": "Watashi wa toire ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Restroom.",
-          "audioText": "トイレ",
-          "clozeSentence": "これはトイレ {{BLANK}} す。",
+          "prompt": "これはいちばん大切なトイレです。",
+          "furigana": "これはいちばんたいせつなトイレです。",
+          "romaji": "Kore wa ichiban taisetsu na toire desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Restroom.",
+          "audioText": "これはトイレです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なトイレです。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1522,7 +1515,8 @@ export const unit05: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l8_4",
@@ -1533,11 +1527,11 @@ export const unit05: DojoUnit = {
           "english": "This is Restroom.",
           "audioText": "これはトイレです",
           "scrambleTokens": [
-            "トイレ",
             "それ",
+            "ではありません",
             "これは",
             "です",
-            "ではありません"
+            "トイレ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1566,24 +1560,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l8_6",
           "type": "dictate",
-          "prompt": "コンビニをお願いします",
-          "furigana": "コンビニをおねがいします",
-          "romaji": "konbini o onegaishimasu.",
-          "english": "Convenience store, please.",
-          "audioText": "コンビニをお願いします",
+          "prompt": "コンビニです",
+          "furigana": "コンビニです",
+          "romaji": "konbini desu.",
+          "english": "It is Convenience store.",
+          "audioText": "コンビニです",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "お願いします",
+            "ではありません",
             "コンビニ",
+            "これ",
             "です"
           ],
           "dictateSolution": [
             "コンビニ",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "コンビニをお願いします"
+          "correctAnswer": "コンビニです"
         },
         {
           "id": "u5_l8_7",
@@ -1686,10 +1678,10 @@ export const unit05: DojoUnit = {
           "english": "Police box",
           "audioText": "こうばん",
           "options": [
+            "East exit",
             "Police box",
-            "Landmark",
-            "Restroom",
-            "To turn"
+            "North exit",
+            "Straight ahead"
           ],
           "correctAnswer": "Police box"
         },
@@ -1702,34 +1694,35 @@ export const unit05: DojoUnit = {
           "english": "Build 'Police box'",
           "audioText": "こうばん",
           "tileBank": [
+            "ん",
             "ば",
-            "き",
             "こ",
-            "う",
-            "も",
+            "え",
             "は",
-            "と",
-            "ん"
+            "う",
+            "な",
+            "け"
           ],
           "correctAnswer": "こうばん"
         },
         {
           "id": "u5_l9_3",
           "type": "cloze",
-          "prompt": "私は銀行がすきです",
-          "furigana": "わたしはぎんこうがすきです",
-          "romaji": "Watashi wa ginkou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Bank.",
-          "audioText": "銀行",
-          "clozeSentence": "これは銀行 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な銀行です。",
+          "furigana": "これはいちばんたいせつなぎんこうです。",
+          "romaji": "Kore wa ichiban taisetsu na ginkou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Bank.",
+          "audioText": "これは銀行です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な銀行です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l9_4",
@@ -1740,10 +1733,10 @@ export const unit05: DojoUnit = {
           "english": "This is Bank.",
           "audioText": "これは銀行です",
           "scrambleTokens": [
-            "ではありません",
             "これは",
-            "です",
             "それ",
+            "です",
+            "ではありません",
             "銀行"
           ],
           "scrambleSolution": [
@@ -1773,24 +1766,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l9_6",
           "type": "dictate",
-          "prompt": "郵便局をお願いします",
-          "furigana": "ゆうびんきょくをおねがいします",
-          "romaji": "yuubinkyoku o onegaishimasu.",
-          "english": "Post office, please.",
-          "audioText": "郵便局をお願いします",
+          "prompt": "郵便局です",
+          "furigana": "ゆうびんきょくです",
+          "romaji": "yuubinkyoku desu.",
+          "english": "It is Post office.",
+          "audioText": "郵便局です",
           "dictateTokens": [
-            "郵便局",
             "です",
-            "ありがとう",
-            "を",
-            "お願いします"
+            "これ",
+            "ではありません",
+            "郵便局"
           ],
           "dictateSolution": [
             "郵便局",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "郵便局をお願いします"
+          "correctAnswer": "郵便局です"
         },
         {
           "id": "u5_l9_7",
@@ -1889,10 +1880,10 @@ export const unit05: DojoUnit = {
           "english": "On foot / walking",
           "audioText": "あるいて",
           "options": [
-            "East exit",
-            "On foot / walking",
-            "Landmark",
-            "Signboard"
+            "Bank",
+            "Behind / back",
+            "South exit",
+            "On foot / walking"
           ],
           "correctAnswer": "On foot / walking"
         },
@@ -1905,34 +1896,35 @@ export const unit05: DojoUnit = {
           "english": "Build 'On foot / walking'",
           "audioText": "あるいて",
           "tileBank": [
-            "ふ",
-            "て",
-            "ん",
-            "ま",
-            "い",
-            "あ",
+            "ろ",
             "る",
-            "ほ"
+            "お",
+            "い",
+            "そ",
+            "れ",
+            "て",
+            "あ"
           ],
           "correctAnswer": "あるいて"
         },
         {
           "id": "u5_l10_3",
           "type": "cloze",
-          "prompt": "私は曲がるがすきです",
-          "furigana": "わたしはまがるがすきです",
-          "romaji": "Watashi wa magaru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for To turn.",
-          "audioText": "曲がる",
-          "clozeSentence": "これは曲がる {{BLANK}} す。",
+          "prompt": "毎日、日本語を曲がる。",
+          "furigana": "まいにち、にほんごをまがる。",
+          "romaji": "Mainichi, nihongo o magaru.",
+          "english": "Fill in direct object particle 'を' (o): To turn Japanese every day.",
+          "audioText": "日本語を曲がる。",
+          "clozeSentence": "毎日、日本語 {{BLANK}} 曲がる。",
           "clozeTarget": "を",
           "clozeOptions": [
-            "は",
-            "が",
             "を",
-            "に"
+            "は",
+            "に",
+            "で"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "を",
+          "explanation": "助詞「を」 (o) marks the object of the action verb."
         },
         {
           "id": "u5_l10_4",
@@ -1943,11 +1935,11 @@ export const unit05: DojoUnit = {
           "english": "This is To turn.",
           "audioText": "これは曲がるです",
           "scrambleTokens": [
+            "ではありません",
+            "それ",
             "曲がる",
             "これは",
-            "です",
-            "それ",
-            "ではありません"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1976,24 +1968,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l10_6",
           "type": "dictate",
-          "prompt": "渡るをお願いします",
-          "furigana": "わたるをおねがいします",
-          "romaji": "wataru o onegaishimasu.",
-          "english": "To cross (street/bridge), please.",
-          "audioText": "渡るをお願いします",
+          "prompt": "渡るです",
+          "furigana": "わたるです",
+          "romaji": "wataru desu.",
+          "english": "It is To cross (street/bridge).",
+          "audioText": "渡るです",
           "dictateTokens": [
-            "を",
-            "お願いします",
-            "渡る",
+            "ではありません",
             "です",
-            "ありがとう"
+            "これ",
+            "渡る"
           ],
           "dictateSolution": [
             "渡る",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "渡るをお願いします"
+          "correctAnswer": "渡るです"
         },
         {
           "id": "u5_l10_7",
@@ -2093,10 +2083,10 @@ export const unit05: DojoUnit = {
           "english": "Road / path / way",
           "audioText": "みち",
           "options": [
-            "Road / path / way",
-            "In front / ahead",
-            "Far away",
-            "To turn"
+            "To get lost",
+            "To cross (street/bridge)",
+            "Train station",
+            "Road / path / way"
           ],
           "correctAnswer": "Road / path / way"
         },
@@ -2109,34 +2099,35 @@ export const unit05: DojoUnit = {
           "english": "Build 'Road / path / way'",
           "audioText": "みち",
           "tileBank": [
-            "ろ",
-            "み",
-            "い",
             "ち",
-            "お",
-            "す",
-            "よ",
-            "て"
+            "み",
+            "ひ",
+            "む",
+            "あ",
+            "や",
+            "け",
+            "か"
           ],
           "correctAnswer": "みち"
         },
         {
           "id": "u5_l11_3",
           "type": "cloze",
-          "prompt": "私は案内がすきです",
-          "furigana": "わたしはあんないがすきです",
-          "romaji": "Watashi wa annai ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Guidance / directions.",
-          "audioText": "案内",
-          "clozeSentence": "私は案内 {{BLANK}} 好きです。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な案内です。",
+          "furigana": "これはいちばんたいせつなあんないです。",
+          "romaji": "Kore wa ichiban taisetsu na annai desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Guidance / directions.",
+          "audioText": "これは案内です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な案内です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l11_4",
@@ -2147,11 +2138,11 @@ export const unit05: DojoUnit = {
           "english": "This is Guidance / directions.",
           "audioText": "これは案内です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
             "です",
-            "これは",
-            "案内"
+            "ではありません",
+            "それ",
+            "案内",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2180,24 +2171,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l11_6",
           "type": "dictate",
-          "prompt": "迷うをお願いします",
-          "furigana": "まようをおねがいします",
-          "romaji": "mayou o onegaishimasu.",
-          "english": "To get lost, please.",
-          "audioText": "迷うをお願いします",
+          "prompt": "迷うです",
+          "furigana": "まようです",
+          "romaji": "mayou desu.",
+          "english": "It is To get lost.",
+          "audioText": "迷うです",
           "dictateTokens": [
-            "迷う",
             "です",
-            "お願いします",
-            "ありがとう",
-            "を"
+            "迷う",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "迷う",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "迷うをお願いします"
+          "correctAnswer": "迷うです"
         },
         {
           "id": "u5_l11_7",
@@ -2297,10 +2286,10 @@ export const unit05: DojoUnit = {
           "english": "Right over there",
           "audioText": "すぐそこ",
           "options": [
-            "Far away",
-            "Traffic light",
             "Right over there",
-            "Intersection"
+            "To cross (street/bridge)",
+            "Landmark",
+            "Far away"
           ],
           "correctAnswer": "Right over there"
         },
@@ -2313,26 +2302,26 @@ export const unit05: DojoUnit = {
           "english": "Build 'Right over there'",
           "audioText": "すぐそこ",
           "tileBank": [
-            "め",
-            "な",
             "そ",
-            "き",
-            "い",
-            "ぐ",
             "こ",
-            "す"
+            "な",
+            "に",
+            "す",
+            "み",
+            "ぐ",
+            "や"
           ],
           "correctAnswer": "すぐそこ"
         },
         {
           "id": "u5_l12_3",
           "type": "cloze",
-          "prompt": "私は目印がすきです",
-          "furigana": "わたしはめじるしがすきです",
-          "romaji": "Watashi wa mejirushi ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Landmark.",
-          "audioText": "目印",
-          "clozeSentence": "私は目印 {{BLANK}} 好きです。",
+          "prompt": "これはいちばん大切な目印です。",
+          "furigana": "これはいちばんたいせつなめじるしです。",
+          "romaji": "Kore wa ichiban taisetsu na mejirushi desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Landmark.",
+          "audioText": "これは目印です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な目印です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2340,7 +2329,8 @@ export const unit05: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l12_4",
@@ -2351,11 +2341,11 @@ export const unit05: DojoUnit = {
           "english": "This is Landmark.",
           "audioText": "これは目印です",
           "scrambleTokens": [
-            "それ",
-            "です",
+            "ではありません",
             "目印",
+            "です",
             "これは",
-            "ではありません"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2390,11 +2380,11 @@ export const unit05: DojoUnit = {
           "english": "Signboard, please.",
           "audioText": "看板をお願いします",
           "dictateTokens": [
+            "です",
+            "ありがとう",
             "お願いします",
             "看板",
-            "です",
-            "を",
-            "ありがとう"
+            "を"
           ],
           "dictateSolution": [
             "看板",
@@ -2499,10 +2489,10 @@ export const unit05: DojoUnit = {
           "english": "Train station",
           "audioText": "えき",
           "options": [
-            "Convenience store",
-            "On foot / walking",
+            "Intersection",
             "Train station",
-            "Post office"
+            "Bank",
+            "Restroom"
           ],
           "correctAnswer": "Train station"
         },
@@ -2516,33 +2506,34 @@ export const unit05: DojoUnit = {
           "audioText": "えき",
           "tileBank": [
             "き",
-            "む",
-            "こ",
+            "た",
+            "す",
             "え",
-            "は",
-            "し",
-            "ろ",
-            "さ"
+            "そ",
+            "つ",
+            "り",
+            "う"
           ],
           "correctAnswer": "えき"
         },
         {
           "id": "u5_l13_3",
           "type": "cloze",
-          "prompt": "私はどこがすきです",
-          "furigana": "わたしはどこがすきです",
-          "romaji": "Watashi wa doko ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Where.",
-          "audioText": "どこ",
-          "clozeSentence": "これはどこ {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切などこです。",
+          "furigana": "これはいちばんたいせつなどこです。",
+          "romaji": "Kore wa ichiban taisetsu na doko desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Where.",
+          "audioText": "これはどこです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切などこです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l13_4",
@@ -2553,11 +2544,11 @@ export const unit05: DojoUnit = {
           "english": "This is Where.",
           "audioText": "これはどこです",
           "scrambleTokens": [
+            "どこ",
+            "です",
             "これは",
             "ではありません",
-            "どこ",
-            "それ",
-            "です"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2586,24 +2577,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l13_6",
           "type": "dictate",
-          "prompt": "右をお願いします",
-          "furigana": "みぎをおねがいします",
-          "romaji": "migi o onegaishimasu.",
-          "english": "Right side, please.",
-          "audioText": "右をお願いします",
+          "prompt": "右です",
+          "furigana": "みぎです",
+          "romaji": "migi desu.",
+          "english": "It is Right side.",
+          "audioText": "右です",
           "dictateTokens": [
-            "お願いします",
-            "右",
-            "を",
             "です",
-            "ありがとう"
+            "右",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "右",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "右をお願いします"
+          "correctAnswer": "右です"
         },
         {
           "id": "u5_l13_7",
@@ -2701,9 +2690,9 @@ export const unit05: DojoUnit = {
           "english": "Left side",
           "audioText": "ひだり",
           "options": [
-            "Nearby",
-            "Right side",
-            "Exit",
+            "Ticket machine area",
+            "Traffic light",
+            "Guidance / directions",
             "Left side"
           ],
           "correctAnswer": "Left side"
@@ -2717,34 +2706,35 @@ export const unit05: DojoUnit = {
           "english": "Build 'Left side'",
           "audioText": "ひだり",
           "tileBank": [
-            "ひ",
+            "く",
+            "も",
             "り",
-            "よ",
-            "ん",
-            "し",
-            "ぬ",
-            "だ",
-            "せ"
+            "そ",
+            "ゆ",
+            "ひ",
+            "め",
+            "だ"
           ],
           "correctAnswer": "ひだり"
         },
         {
           "id": "u5_l14_3",
           "type": "cloze",
-          "prompt": "私はまっすぐがすきです",
-          "furigana": "わたしはまっすぐがすきです",
-          "romaji": "Watashi wa massugu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Straight ahead.",
-          "audioText": "まっすぐ",
-          "clozeSentence": "これはまっすぐ {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なまっすぐです。",
+          "furigana": "これはいちばんたいせつなまっすぐです。",
+          "romaji": "Kore wa ichiban taisetsu na massugu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Straight ahead.",
+          "audioText": "これはまっすぐです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なまっすぐです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l14_4",
@@ -2755,11 +2745,11 @@ export const unit05: DojoUnit = {
           "english": "This is Straight ahead.",
           "audioText": "これはまっすぐです",
           "scrambleTokens": [
-            "これは",
             "ではありません",
-            "です",
+            "これは",
+            "まっすぐ",
             "それ",
-            "まっすぐ"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2788,24 +2778,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l14_6",
           "type": "dictate",
-          "prompt": "前をお願いします",
-          "furigana": "まえをおねがいします",
-          "romaji": "mae o onegaishimasu.",
-          "english": "In front / ahead, please.",
-          "audioText": "前をお願いします",
+          "prompt": "前です",
+          "furigana": "まえです",
+          "romaji": "mae desu.",
+          "english": "It is In front / ahead.",
+          "audioText": "前です",
           "dictateTokens": [
-            "お願いします",
-            "を",
+            "ではありません",
             "です",
-            "ありがとう",
+            "これ",
             "前"
           ],
           "dictateSolution": [
             "前",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "前をお願いします"
+          "correctAnswer": "前です"
         },
         {
           "id": "u5_l14_7",
@@ -2904,10 +2892,10 @@ export const unit05: DojoUnit = {
           "english": "Behind / back",
           "audioText": "うしろ",
           "options": [
-            "Convenience store",
-            "Bank",
-            "Next to / beside",
-            "Behind / back"
+            "Behind / back",
+            "Ticket gate",
+            "East exit",
+            "Nearby"
           ],
           "correctAnswer": "Behind / back"
         },
@@ -2920,34 +2908,35 @@ export const unit05: DojoUnit = {
           "english": "Build 'Behind / back'",
           "audioText": "うしろ",
           "tileBank": [
-            "う",
-            "ち",
-            "む",
-            "り",
-            "つ",
-            "さ",
             "し",
-            "ろ"
+            "む",
+            "う",
+            "た",
+            "に",
+            "ろ",
+            "け",
+            "よ"
           ],
           "correctAnswer": "うしろ"
         },
         {
           "id": "u5_l15_3",
           "type": "cloze",
-          "prompt": "私は隣がすきです",
-          "furigana": "わたしはとなりがすきです",
-          "romaji": "Watashi wa tonari ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Next to / beside.",
-          "audioText": "隣",
-          "clozeSentence": "これは隣 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な隣です。",
+          "furigana": "これはいちばんたいせつなとなりです。",
+          "romaji": "Kore wa ichiban taisetsu na tonari desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Next to / beside.",
+          "audioText": "これは隣です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な隣です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u5_l15_4",
@@ -2958,11 +2947,11 @@ export const unit05: DojoUnit = {
           "english": "This is Next to / beside.",
           "audioText": "これは隣です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
-            "です",
             "隣",
-            "これは"
+            "これは",
+            "です",
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2991,24 +2980,22 @@ export const unit05: DojoUnit = {
         {
           "id": "u5_l15_6",
           "type": "dictate",
-          "prompt": "向かいをお願いします",
-          "furigana": "むかいをおねがいします",
-          "romaji": "mukai o onegaishimasu.",
-          "english": "Across from / opposite, please.",
-          "audioText": "向かいをお願いします",
+          "prompt": "向かいです",
+          "furigana": "むかいです",
+          "romaji": "mukai desu.",
+          "english": "It is Across from / opposite.",
+          "audioText": "向かいです",
           "dictateTokens": [
-            "向かい",
-            "を",
             "です",
-            "お願いします",
-            "ありがとう"
+            "向かい",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "向かい",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "向かいをお願いします"
+          "correctAnswer": "向かいです"
         },
         {
           "id": "u5_l15_7",
@@ -3093,10 +3080,10 @@ export const unit05: DojoUnit = {
         "english": "Train station",
         "audioText": "えき",
         "options": [
+          "Right over there",
           "Train station",
-          "South exit",
-          "Ticket machine area",
-          "On foot / walking"
+          "In front / ahead",
+          "Road / path / way"
         ],
         "correctAnswer": "Train station"
       },
@@ -3109,14 +3096,14 @@ export const unit05: DojoUnit = {
         "english": "Build 'Train station'",
         "audioText": "えき",
         "tileBank": [
+          "い",
+          "ふ",
           "き",
-          "そ",
-          "れ",
+          "ち",
+          "か",
           "え",
-          "に",
-          "の",
-          "け",
-          "ひ"
+          "と",
+          "せ"
         ],
         "correctAnswer": "えき"
       },
@@ -3129,10 +3116,10 @@ export const unit05: DojoUnit = {
         "english": "Behind / back",
         "audioText": "うしろ",
         "options": [
-          "Right over there",
-          "Right side",
+          "Road / path / way",
+          "Ticket machine area",
           "Behind / back",
-          "Landmark"
+          "North exit"
         ],
         "correctAnswer": "Behind / back"
       },
@@ -3145,13 +3132,13 @@ export const unit05: DojoUnit = {
         "english": "Build 'Behind / back'",
         "audioText": "うしろ",
         "tileBank": [
-          "か",
           "ろ",
-          "む",
           "こ",
-          "る",
-          "ふ",
+          "も",
+          "み",
           "う",
+          "け",
+          "め",
           "し"
         ],
         "correctAnswer": "うしろ"
@@ -3165,10 +3152,10 @@ export const unit05: DojoUnit = {
         "english": "Traffic light",
         "audioText": "しんごう",
         "options": [
-          "Behind / back",
+          "To cross (street/bridge)",
+          "Intersection",
           "Traffic light",
-          "Where",
-          "To turn"
+          "In front / ahead"
         ],
         "correctAnswer": "Traffic light"
       },
@@ -3181,14 +3168,14 @@ export const unit05: DojoUnit = {
         "english": "Build 'Traffic light'",
         "audioText": "しんごう",
         "tileBank": [
-          "ん",
-          "し",
-          "ご",
-          "こ",
-          "を",
-          "へ",
+          "あ",
           "う",
-          "そ"
+          "い",
+          "き",
+          "ん",
+          "と",
+          "し",
+          "ご"
         ],
         "correctAnswer": "しんごう"
       },
@@ -3201,9 +3188,9 @@ export const unit05: DojoUnit = {
         "english": "North exit",
         "audioText": "きたぐち",
         "options": [
-          "Train station",
-          "Pedestrian crosswalk",
-          "Ticket machine area",
+          "Across from / opposite",
+          "In front / ahead",
+          "Next to / beside",
           "North exit"
         ],
         "correctAnswer": "North exit"
@@ -3217,14 +3204,14 @@ export const unit05: DojoUnit = {
         "english": "Build 'North exit'",
         "audioText": "きたぐち",
         "tileBank": [
+          "う",
           "た",
-          "ち",
-          "お",
-          "し",
+          "き",
+          "こ",
           "ぐ",
-          "の",
           "つ",
-          "き"
+          "ほ",
+          "ち"
         ],
         "correctAnswer": "きたぐち"
       },
@@ -3237,10 +3224,10 @@ export const unit05: DojoUnit = {
         "english": "Police box",
         "audioText": "こうばん",
         "options": [
+          "East exit",
           "Police box",
-          "Landmark",
-          "Restroom",
-          "To turn"
+          "North exit",
+          "Straight ahead"
         ],
         "correctAnswer": "Police box"
       },
@@ -3253,14 +3240,14 @@ export const unit05: DojoUnit = {
         "english": "Build 'Police box'",
         "audioText": "こうばん",
         "tileBank": [
+          "ん",
           "ば",
-          "き",
           "こ",
-          "う",
-          "も",
+          "え",
           "は",
-          "と",
-          "ん"
+          "う",
+          "な",
+          "け"
         ],
         "correctAnswer": "こうばん"
       },
@@ -3273,10 +3260,10 @@ export const unit05: DojoUnit = {
         "english": "Road / path / way",
         "audioText": "みち",
         "options": [
-          "Road / path / way",
-          "In front / ahead",
-          "Far away",
-          "To turn"
+          "To get lost",
+          "To cross (street/bridge)",
+          "Train station",
+          "Road / path / way"
         ],
         "correctAnswer": "Road / path / way"
       },
@@ -3289,14 +3276,14 @@ export const unit05: DojoUnit = {
         "english": "Build 'Road / path / way'",
         "audioText": "みち",
         "tileBank": [
-          "ろ",
-          "み",
-          "い",
           "ち",
-          "お",
-          "す",
-          "よ",
-          "て"
+          "み",
+          "ひ",
+          "む",
+          "あ",
+          "や",
+          "け",
+          "か"
         ],
         "correctAnswer": "みち"
       }

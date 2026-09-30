@@ -48,10 +48,10 @@ export const unit18: DojoUnit = {
           "english": "Trouble / incident",
           "audioText": "トラブル",
           "options": [
-            "Reissue (card/ticket)",
-            "Inquiry / contact",
-            "Confirming Consultation",
-            "Trouble / incident"
+            "Confirming Advice",
+            "Trouble / incident",
+            "Confirming Official certificate",
+            "Police"
           ],
           "correctAnswer": "Trouble / incident"
         },
@@ -64,34 +64,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Trouble / incident'",
           "audioText": "トラブル",
           "tileBank": [
-            "ル",
-            "は",
+            "ラ",
             "ブ",
-            "ぬ",
-            "ね",
+            "ふ",
             "ト",
-            "け",
-            "ラ"
+            "ル",
+            "ん",
+            "ぬ",
+            "ら"
           ],
           "correctAnswer": "トラブル"
         },
         {
           "id": "u18_l1_3",
           "type": "cloze",
-          "prompt": "私は落とし物がすきです",
-          "furigana": "わたしはおとしものがすきです",
-          "romaji": "Watashi wa otoshimono ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Lost property.",
-          "audioText": "落とし物",
-          "clozeSentence": "これは落とし物 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な落とし物です。",
+          "furigana": "これはいちばんたいせつなおとしものです。",
+          "romaji": "Kore wa ichiban taisetsu na otoshimono desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Lost property.",
+          "audioText": "これは落とし物です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な落とし物です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l1_4",
@@ -102,10 +103,10 @@ export const unit18: DojoUnit = {
           "english": "This is Lost property.",
           "audioText": "これは落とし物です",
           "scrambleTokens": [
-            "落とし物",
             "それ",
             "です",
             "これは",
+            "落とし物",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -135,24 +136,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l1_6",
           "type": "dictate",
-          "prompt": "遅延をお願いします",
-          "furigana": "ちえんをおねがいします",
-          "romaji": "chien o onegaishimasu.",
-          "english": "Train / flight delay, please.",
-          "audioText": "遅延をお願いします",
+          "prompt": "遅延です",
+          "furigana": "ちえんです",
+          "romaji": "chien desu.",
+          "english": "It is Train / flight delay.",
+          "audioText": "遅延です",
           "dictateTokens": [
-            "です",
+            "ではありません",
             "遅延",
-            "を",
-            "ありがとう",
-            "お願いします"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "遅延",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "遅延をお願いします"
+          "correctAnswer": "遅延です"
         },
         {
           "id": "u18_l1_7",
@@ -254,10 +253,10 @@ export const unit18: DojoUnit = {
           "english": "Loss / misplacement",
           "audioText": "ふんしつ",
           "options": [
-            "Inquiry / contact",
-            "Lost property",
-            "Trouble / incident",
-            "Loss / misplacement"
+            "Loss / misplacement",
+            "Police",
+            "To be in trouble / at a loss",
+            "Train / flight delay"
           ],
           "correctAnswer": "Loss / misplacement"
         },
@@ -270,34 +269,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Loss / misplacement'",
           "audioText": "ふんしつ",
           "tileBank": [
-            "ん",
-            "さ",
-            "つ",
-            "か",
-            "し",
+            "ち",
             "ふ",
-            "て",
-            "く"
+            "し",
+            "つ",
+            "の",
+            "ん",
+            "あ",
+            "ゆ"
           ],
           "correctAnswer": "ふんしつ"
         },
         {
           "id": "u18_l2_3",
           "type": "cloze",
-          "prompt": "私は解決がすきです",
-          "furigana": "わたしはかいけつがすきです",
-          "romaji": "Watashi wa kaiketsu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Resolution / solution.",
-          "audioText": "解決",
-          "clozeSentence": "これは解決 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な解決です。",
+          "furigana": "これはいちばんたいせつなかいけつです。",
+          "romaji": "Kore wa ichiban taisetsu na kaiketsu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Resolution / solution.",
+          "audioText": "これは解決です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な解決です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l2_4",
@@ -308,11 +308,11 @@ export const unit18: DojoUnit = {
           "english": "This is Resolution / solution.",
           "audioText": "これは解決です",
           "scrambleTokens": [
-            "です",
-            "ではありません",
             "それ",
+            "です",
             "これは",
-            "解決"
+            "解決",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -341,24 +341,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l2_6",
           "type": "dictate",
-          "prompt": "相談をお願いします",
-          "furigana": "そうだんをおねがいします",
-          "romaji": "soudan o onegaishimasu.",
-          "english": "Consultation, please.",
-          "audioText": "相談をお願いします",
+          "prompt": "相談です",
+          "furigana": "そうだんです",
+          "romaji": "soudan desu.",
+          "english": "It is Consultation.",
+          "audioText": "相談です",
           "dictateTokens": [
-            "相談",
+            "ではありません",
             "です",
-            "お願いします",
-            "を",
-            "ありがとう"
+            "これ",
+            "相談"
           ],
           "dictateSolution": [
             "相談",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "相談をお願いします"
+          "correctAnswer": "相談です"
         },
         {
           "id": "u18_l2_7",
@@ -460,10 +458,10 @@ export const unit18: DojoUnit = {
           "english": "Advice",
           "audioText": "じょげん",
           "options": [
-            "Confirming Consultation",
-            "Consultation",
+            "Peace of mind / relief",
             "Advice",
-            "Confirming Resolution / solution"
+            "Confirming Train / flight delay",
+            "Confirming Consultation"
           ],
           "correctAnswer": "Advice"
         },
@@ -476,34 +474,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Advice'",
           "audioText": "じょげん",
           "tileBank": [
+            "れ",
+            "せ",
             "じ",
-            "ょ",
-            "む",
-            "え",
-            "あ",
+            "つ",
             "ん",
-            "げ",
-            "は"
+            "う",
+            "ょ",
+            "げ"
           ],
           "correctAnswer": "じょげん"
         },
         {
           "id": "u18_l3_3",
           "type": "cloze",
-          "prompt": "私は緊急がすきです",
-          "furigana": "わたしはきんきゅうがすきです",
-          "romaji": "Watashi wa kinkyuu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Emergency.",
-          "audioText": "緊急",
-          "clozeSentence": "これは緊急 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な緊急です。",
+          "furigana": "これはいちばんたいせつなきんきゅうです。",
+          "romaji": "Kore wa ichiban taisetsu na kinkyuu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Emergency.",
+          "audioText": "これは緊急です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な緊急です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l3_4",
@@ -514,11 +513,11 @@ export const unit18: DojoUnit = {
           "english": "This is Emergency.",
           "audioText": "これは緊急です",
           "scrambleTokens": [
-            "です",
-            "それ",
-            "緊急",
             "ではありません",
-            "これは"
+            "これは",
+            "緊急",
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -547,24 +546,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l3_6",
           "type": "dictate",
-          "prompt": "問い合わせをお願いします",
-          "furigana": "といあわせをおねがいします",
-          "romaji": "toiawase o onegaishimasu.",
-          "english": "Inquiry / contact, please.",
-          "audioText": "問い合わせをお願いします",
+          "prompt": "問い合わせです",
+          "furigana": "といあわせです",
+          "romaji": "toiawase desu.",
+          "english": "It is Inquiry / contact.",
+          "audioText": "問い合わせです",
           "dictateTokens": [
-            "お願いします",
             "です",
-            "を",
-            "ありがとう",
-            "問い合わせ"
+            "問い合わせ",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "問い合わせ",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "問い合わせをお願いします"
+          "correctAnswer": "問い合わせです"
         },
         {
           "id": "u18_l3_7",
@@ -667,10 +664,10 @@ export const unit18: DojoUnit = {
           "english": "Police",
           "audioText": "けいさつ",
           "options": [
-            "Police",
-            "Reissue (card/ticket)",
             "Confirming Advice",
-            "Confirming Reissue (card/ticket)"
+            "Confirming Consultation",
+            "Police",
+            "Confirming Consultation"
           ],
           "correctAnswer": "Police"
         },
@@ -683,13 +680,13 @@ export const unit18: DojoUnit = {
           "english": "Build 'Police'",
           "audioText": "けいさつ",
           "tileBank": [
-            "つ",
+            "と",
+            "ほ",
             "い",
-            "ひ",
-            "て",
-            "め",
-            "み",
             "さ",
+            "み",
+            "つ",
+            "め",
             "け"
           ],
           "correctAnswer": "けいさつ"
@@ -697,12 +694,12 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l4_3",
           "type": "cloze",
-          "prompt": "私は証明書がすきです",
-          "furigana": "わたしはしょうめいしょがすきです",
-          "romaji": "Watashi wa shoumeisho ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Official certificate.",
-          "audioText": "証明書",
-          "clozeSentence": "これは証明書 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な証明書です。",
+          "furigana": "これはいちばんたいせつなしょうめいしょです。",
+          "romaji": "Kore wa ichiban taisetsu na shoumeisho desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Official certificate.",
+          "audioText": "これは証明書です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な証明書です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -710,7 +707,8 @@ export const unit18: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l4_4",
@@ -721,11 +719,11 @@ export const unit18: DojoUnit = {
           "english": "This is Official certificate.",
           "audioText": "これは証明書です",
           "scrambleTokens": [
+            "ではありません",
             "これは",
-            "証明書",
-            "それ",
             "です",
-            "ではありません"
+            "証明書",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -754,24 +752,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l4_6",
           "type": "dictate",
-          "prompt": "修理をお願いします",
-          "furigana": "しゅうりをおねがいします",
-          "romaji": "shuuri o onegaishimasu.",
-          "english": "Repair, please.",
-          "audioText": "修理をお願いします",
+          "prompt": "修理です",
+          "furigana": "しゅうりです",
+          "romaji": "shuuri desu.",
+          "english": "It is Repair.",
+          "audioText": "修理です",
           "dictateTokens": [
-            "です",
-            "を",
+            "これ",
             "修理",
-            "お願いします",
-            "ありがとう"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "修理",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "修理をお願いします"
+          "correctAnswer": "修理です"
         },
         {
           "id": "u18_l4_7",
@@ -873,10 +869,10 @@ export const unit18: DojoUnit = {
           "english": "Reissue (card/ticket)",
           "audioText": "さいはっこう",
           "options": [
-            "Confirming Official certificate",
+            "Inquiry / contact",
             "Reissue (card/ticket)",
-            "Confirming Loss / misplacement",
-            "Confirming Train / flight delay"
+            "Lost property",
+            "Trouble / incident"
           ],
           "correctAnswer": "Reissue (card/ticket)"
         },
@@ -889,13 +885,13 @@ export const unit18: DojoUnit = {
           "english": "Build 'Reissue (card/ticket)'",
           "audioText": "さいはっこう",
           "tileBank": [
-            "は",
-            "さ",
-            "っ",
             "い",
-            "ゆ",
+            "っ",
+            "さ",
+            "も",
+            "つ",
+            "は",
             "こ",
-            "ろ",
             "う"
           ],
           "correctAnswer": "さいはっこう"
@@ -903,20 +899,21 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l5_3",
           "type": "cloze",
-          "prompt": "私は困るがすきです",
-          "furigana": "わたしはこまるがすきです",
-          "romaji": "Watashi wa komaru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for To be in trouble / at a loss.",
-          "audioText": "困る",
-          "clozeSentence": "これは困る {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な困るです。",
+          "furigana": "これはいちばんたいせつなこまるです。",
+          "romaji": "Kore wa ichiban taisetsu na komaru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important To be in trouble / at a loss.",
+          "audioText": "これは困るです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な困るです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l5_4",
@@ -928,9 +925,9 @@ export const unit18: DojoUnit = {
           "audioText": "これは困るです",
           "scrambleTokens": [
             "これは",
-            "それ",
-            "ではありません",
             "困る",
+            "ではありません",
+            "それ",
             "です"
           ],
           "scrambleSolution": [
@@ -960,24 +957,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l5_6",
           "type": "dictate",
-          "prompt": "安心をお願いします",
-          "furigana": "あんしんをおねがいします",
-          "romaji": "anshin o onegaishimasu.",
-          "english": "Peace of mind / relief, please.",
-          "audioText": "安心をお願いします",
+          "prompt": "安心です",
+          "furigana": "あんしんです",
+          "romaji": "anshin desu.",
+          "english": "It is Peace of mind / relief.",
+          "audioText": "安心です",
           "dictateTokens": [
-            "です",
+            "ではありません",
             "安心",
-            "を",
-            "お願いします",
-            "ありがとう"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "安心",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "安心をお願いします"
+          "correctAnswer": "安心です"
         },
         {
           "id": "u18_l5_7",
@@ -1083,10 +1078,10 @@ export const unit18: DojoUnit = {
           "english": "Confirming Trouble / incident",
           "audioText": "トラブルのかくにん",
           "options": [
+            "Confirming Trouble / incident",
             "Confirming Peace of mind / relief",
-            "Confirming Resolution / solution",
             "Confirming Train / flight delay",
-            "Confirming Trouble / incident"
+            "Confirming Official certificate"
           ],
           "correctAnswer": "Confirming Trouble / incident"
         },
@@ -1099,34 +1094,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Confirming Trouble / incident'",
           "audioText": "トラブルのかくにん",
           "tileBank": [
-            "ル",
-            "か",
-            "く",
-            "ラ",
-            "に",
             "の",
+            "か",
+            "に",
             "ブ",
-            "ト"
+            "ル",
+            "ト",
+            "ラ",
+            "く"
           ],
           "correctAnswer": "トラブルのかくにん"
         },
         {
           "id": "u18_l6_3",
           "type": "cloze",
-          "prompt": "私は落とし物の確認がすきです",
-          "furigana": "わたしはおとしもののかくにんがすきです",
-          "romaji": "Watashi wa otoshimono no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Lost property.",
-          "audioText": "落とし物の確認",
-          "clozeSentence": "これは落とし物の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な落とし物の確認です。",
+          "furigana": "これはいちばんたいせつなおとしもののかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na otoshimono no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Lost property.",
+          "audioText": "これは落とし物の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な落とし物の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l6_4",
@@ -1137,11 +1133,11 @@ export const unit18: DojoUnit = {
           "english": "This is Confirming Lost property.",
           "audioText": "これは落とし物の確認です",
           "scrambleTokens": [
-            "です",
             "これは",
-            "落とし物の確認",
             "それ",
-            "ではありません"
+            "ではありません",
+            "です",
+            "落とし物の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1170,24 +1166,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l6_6",
           "type": "dictate",
-          "prompt": "遅延の確認をお願いします",
-          "furigana": "ちえんのかくにんをおねがいします",
-          "romaji": "chien no kakunin o onegaishimasu.",
-          "english": "Confirming Train / flight delay, please.",
-          "audioText": "遅延の確認をお願いします",
+          "prompt": "遅延の確認です",
+          "furigana": "ちえんのかくにんです",
+          "romaji": "chien no kakunin desu.",
+          "english": "It is Confirming Train / flight delay.",
+          "audioText": "遅延の確認です",
           "dictateTokens": [
-            "お願いします",
             "遅延の確認",
-            "を",
-            "ありがとう",
+            "これ",
+            "ではありません",
             "です"
           ],
           "dictateSolution": [
             "遅延の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "遅延の確認をお願いします"
+          "correctAnswer": "遅延の確認です"
         },
         {
           "id": "u18_l6_7",
@@ -1295,10 +1289,10 @@ export const unit18: DojoUnit = {
           "english": "Confirming Loss / misplacement",
           "audioText": "ふんしつのかくにん",
           "options": [
-            "Confirming Repair",
-            "Confirming Resolution / solution",
-            "Confirming Loss / misplacement",
-            "Confirming Train / flight delay"
+            "Repair",
+            "Confirming Inquiry / contact",
+            "Confirming Advice",
+            "Confirming Loss / misplacement"
           ],
           "correctAnswer": "Confirming Loss / misplacement"
         },
@@ -1311,34 +1305,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Confirming Loss / misplacement'",
           "audioText": "ふんしつのかくにん",
           "tileBank": [
-            "ん",
             "ふ",
             "に",
-            "か",
-            "く",
-            "し",
             "つ",
-            "の"
+            "の",
+            "く",
+            "か",
+            "し",
+            "ん"
           ],
           "correctAnswer": "ふんしつのかくにん"
         },
         {
           "id": "u18_l7_3",
           "type": "cloze",
-          "prompt": "私は解決の確認がすきです",
-          "furigana": "わたしはかいけつのかくにんがすきです",
-          "romaji": "Watashi wa kaiketsu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Resolution / solution.",
-          "audioText": "解決の確認",
-          "clozeSentence": "これは解決の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な解決の確認です。",
+          "furigana": "これはいちばんたいせつなかいけつのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kaiketsu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Resolution / solution.",
+          "audioText": "これは解決の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な解決の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l7_4",
@@ -1349,10 +1344,10 @@ export const unit18: DojoUnit = {
           "english": "This is Confirming Resolution / solution.",
           "audioText": "これは解決の確認です",
           "scrambleTokens": [
-            "ではありません",
             "それ",
-            "です",
             "これは",
+            "ではありません",
+            "です",
             "解決の確認"
           ],
           "scrambleSolution": [
@@ -1382,24 +1377,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l7_6",
           "type": "dictate",
-          "prompt": "相談の確認をお願いします",
-          "furigana": "そうだんのかくにんをおねがいします",
-          "romaji": "soudan no kakunin o onegaishimasu.",
-          "english": "Confirming Consultation, please.",
-          "audioText": "相談の確認をお願いします",
+          "prompt": "相談の確認です",
+          "furigana": "そうだんのかくにんです",
+          "romaji": "soudan no kakunin desu.",
+          "english": "It is Confirming Consultation.",
+          "audioText": "相談の確認です",
           "dictateTokens": [
-            "を",
-            "お願いします",
             "です",
-            "ありがとう",
-            "相談の確認"
+            "相談の確認",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "相談の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "相談の確認をお願いします"
+          "correctAnswer": "相談の確認です"
         },
         {
           "id": "u18_l7_7",
@@ -1507,10 +1500,10 @@ export const unit18: DojoUnit = {
           "english": "Confirming Advice",
           "audioText": "じょげんのかくにん",
           "options": [
-            "Confirming Repair",
-            "Consultation",
-            "Confirming Reissue (card/ticket)",
-            "Confirming Advice"
+            "Confirming Advice",
+            "Confirming To be in trouble / at a loss",
+            "Inquiry / contact",
+            "Emergency"
           ],
           "correctAnswer": "Confirming Advice"
         },
@@ -1524,25 +1517,25 @@ export const unit18: DojoUnit = {
           "audioText": "じょげんのかくにん",
           "tileBank": [
             "ん",
-            "じ",
-            "ょ",
-            "く",
-            "か",
             "げ",
+            "ょ",
+            "に",
+            "か",
+            "じ",
             "の",
-            "に"
+            "く"
           ],
           "correctAnswer": "じょげんのかくにん"
         },
         {
           "id": "u18_l8_3",
           "type": "cloze",
-          "prompt": "私は緊急の確認がすきです",
-          "furigana": "わたしはきんきゅうのかくにんがすきです",
-          "romaji": "Watashi wa kinkyuu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Emergency.",
-          "audioText": "緊急の確認",
-          "clozeSentence": "これは緊急の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な緊急の確認です。",
+          "furigana": "これはいちばんたいせつなきんきゅうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kinkyuu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Emergency.",
+          "audioText": "これは緊急の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な緊急の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1550,7 +1543,8 @@ export const unit18: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l8_4",
@@ -1564,8 +1558,8 @@ export const unit18: DojoUnit = {
             "それ",
             "です",
             "これは",
-            "ではありません",
-            "緊急の確認"
+            "緊急の確認",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1594,24 +1588,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l8_6",
           "type": "dictate",
-          "prompt": "問い合わせの確認をお願いします",
-          "furigana": "といあわせのかくにんをおねがいします",
-          "romaji": "toiawase no kakunin o onegaishimasu.",
-          "english": "Confirming Inquiry / contact, please.",
-          "audioText": "問い合わせの確認をお願いします",
+          "prompt": "問い合わせの確認です",
+          "furigana": "といあわせのかくにんです",
+          "romaji": "toiawase no kakunin desu.",
+          "english": "It is Confirming Inquiry / contact.",
+          "audioText": "問い合わせの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "問い合わせの確認",
-            "お願いします",
-            "です"
+            "です",
+            "ではありません",
+            "これ",
+            "問い合わせの確認"
           ],
           "dictateSolution": [
             "問い合わせの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "問い合わせの確認をお願いします"
+          "correctAnswer": "問い合わせの確認です"
         },
         {
           "id": "u18_l8_7",
@@ -1720,10 +1712,10 @@ export const unit18: DojoUnit = {
           "english": "Confirming Police",
           "audioText": "けいさつのかくにん",
           "options": [
-            "Trouble / incident",
-            "Confirming Consultation",
-            "Confirming Peace of mind / relief",
-            "Confirming Police"
+            "Confirming Repair",
+            "Loss / misplacement",
+            "Confirming Police",
+            "Confirming Resolution / solution"
           ],
           "correctAnswer": "Confirming Police"
         },
@@ -1736,34 +1728,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Confirming Police'",
           "audioText": "けいさつのかくにん",
           "tileBank": [
-            "く",
-            "か",
-            "さ",
             "に",
-            "の",
-            "け",
             "い",
-            "つ"
+            "つ",
+            "さ",
+            "か",
+            "の",
+            "く",
+            "け"
           ],
           "correctAnswer": "けいさつのかくにん"
         },
         {
           "id": "u18_l9_3",
           "type": "cloze",
-          "prompt": "私は証明書の確認がすきです",
-          "furigana": "わたしはしょうめいしょのかくにんがすきです",
-          "romaji": "Watashi wa shoumeisho no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Official certificate.",
-          "audioText": "証明書の確認",
-          "clozeSentence": "これは証明書の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な証明書の確認です。",
+          "furigana": "これはいちばんたいせつなしょうめいしょのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shoumeisho no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Official certificate.",
+          "audioText": "これは証明書の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な証明書の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l9_4",
@@ -1774,11 +1767,11 @@ export const unit18: DojoUnit = {
           "english": "This is Confirming Official certificate.",
           "audioText": "これは証明書の確認です",
           "scrambleTokens": [
-            "です",
             "ではありません",
-            "証明書の確認",
             "それ",
-            "これは"
+            "これは",
+            "証明書の確認",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1807,24 +1800,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l9_6",
           "type": "dictate",
-          "prompt": "修理の確認をお願いします",
-          "furigana": "しゅうりのかくにんをおねがいします",
-          "romaji": "shuuri no kakunin o onegaishimasu.",
-          "english": "Confirming Repair, please.",
-          "audioText": "修理の確認をお願いします",
+          "prompt": "修理の確認です",
+          "furigana": "しゅうりのかくにんです",
+          "romaji": "shuuri no kakunin desu.",
+          "english": "It is Confirming Repair.",
+          "audioText": "修理の確認です",
           "dictateTokens": [
-            "ありがとう",
+            "ではありません",
             "修理の確認",
-            "を",
-            "です",
-            "お願いします"
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "修理の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "修理の確認をお願いします"
+          "correctAnswer": "修理の確認です"
         },
         {
           "id": "u18_l9_7",
@@ -1932,10 +1923,10 @@ export const unit18: DojoUnit = {
           "english": "Confirming Reissue (card/ticket)",
           "audioText": "さいはっこうのかくにん",
           "options": [
-            "Police",
-            "Confirming Loss / misplacement",
             "Confirming Reissue (card/ticket)",
-            "Trouble / incident"
+            "Official certificate",
+            "Confirming Resolution / solution",
+            "Confirming Lost property"
           ],
           "correctAnswer": "Confirming Reissue (card/ticket)"
         },
@@ -1948,34 +1939,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Confirming Reissue (card/ticket)'",
           "audioText": "さいはっこうのかくにん",
           "tileBank": [
-            "は",
+            "さ",
+            "い",
+            "こ",
+            "の",
             "う",
             "っ",
-            "さ",
-            "こ",
-            "か",
-            "い",
-            "の"
+            "は",
+            "か"
           ],
           "correctAnswer": "さいはっこうのかくにん"
         },
         {
           "id": "u18_l10_3",
           "type": "cloze",
-          "prompt": "私は困るの確認がすきです",
-          "furigana": "わたしはこまるのかくにんがすきです",
-          "romaji": "Watashi wa komaru no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming To be in trouble / at a loss.",
-          "audioText": "困るの確認",
-          "clozeSentence": "これは困るの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な困るの確認です。",
+          "furigana": "これはいちばんたいせつなこまるのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na komaru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming To be in trouble / at a loss.",
+          "audioText": "これは困るの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な困るの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l10_4",
@@ -1986,11 +1978,11 @@ export const unit18: DojoUnit = {
           "english": "This is Confirming To be in trouble / at a loss.",
           "audioText": "これは困るの確認です",
           "scrambleTokens": [
-            "それ",
+            "困るの確認",
             "です",
             "これは",
-            "困るの確認",
-            "ではありません"
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2019,24 +2011,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l10_6",
           "type": "dictate",
-          "prompt": "安心の確認をお願いします",
-          "furigana": "あんしんのかくにんをおねがいします",
-          "romaji": "anshin no kakunin o onegaishimasu.",
-          "english": "Confirming Peace of mind / relief, please.",
-          "audioText": "安心の確認をお願いします",
+          "prompt": "安心の確認です",
+          "furigana": "あんしんのかくにんです",
+          "romaji": "anshin no kakunin desu.",
+          "english": "It is Confirming Peace of mind / relief.",
+          "audioText": "安心の確認です",
           "dictateTokens": [
             "です",
-            "を",
-            "お願いします",
-            "ありがとう",
+            "ではありません",
+            "これ",
             "安心の確認"
           ],
           "dictateSolution": [
             "安心の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "安心の確認をお願いします"
+          "correctAnswer": "安心の確認です"
         },
         {
           "id": "u18_l10_7",
@@ -2142,10 +2132,10 @@ export const unit18: DojoUnit = {
           "english": "Confirming Trouble / incident",
           "audioText": "トラブルのかくにん",
           "options": [
-            "Consultation",
+            "Confirming Official certificate",
+            "Confirming Advice",
             "Confirming Trouble / incident",
-            "Reissue (card/ticket)",
-            "Confirming Police"
+            "Lost property"
           ],
           "correctAnswer": "Confirming Trouble / incident"
         },
@@ -2158,34 +2148,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Confirming Trouble / incident'",
           "audioText": "トラブルのかくにん",
           "tileBank": [
-            "か",
             "ブ",
-            "ラ",
-            "く",
-            "ト",
             "に",
+            "ラ",
+            "か",
+            "の",
             "ル",
-            "の"
+            "く",
+            "ト"
           ],
           "correctAnswer": "トラブルのかくにん"
         },
         {
           "id": "u18_l11_3",
           "type": "cloze",
-          "prompt": "私は落とし物の確認がすきです",
-          "furigana": "わたしはおとしもののかくにんがすきです",
-          "romaji": "Watashi wa otoshimono no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Lost property.",
-          "audioText": "落とし物の確認",
-          "clozeSentence": "これは落とし物の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な落とし物の確認です。",
+          "furigana": "これはいちばんたいせつなおとしもののかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na otoshimono no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Lost property.",
+          "audioText": "これは落とし物の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な落とし物の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l11_4",
@@ -2196,11 +2187,11 @@ export const unit18: DojoUnit = {
           "english": "This is Confirming Lost property.",
           "audioText": "これは落とし物の確認です",
           "scrambleTokens": [
+            "ではありません",
             "それ",
             "これは",
-            "落とし物の確認",
             "です",
-            "ではありません"
+            "落とし物の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -2229,24 +2220,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l11_6",
           "type": "dictate",
-          "prompt": "遅延の確認をお願いします",
-          "furigana": "ちえんのかくにんをおねがいします",
-          "romaji": "chien no kakunin o onegaishimasu.",
-          "english": "Confirming Train / flight delay, please.",
-          "audioText": "遅延の確認をお願いします",
+          "prompt": "遅延の確認です",
+          "furigana": "ちえんのかくにんです",
+          "romaji": "chien no kakunin desu.",
+          "english": "It is Confirming Train / flight delay.",
+          "audioText": "遅延の確認です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
             "遅延の確認",
-            "お願いします",
+            "ではありません",
+            "これ",
             "です"
           ],
           "dictateSolution": [
             "遅延の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "遅延の確認をお願いします"
+          "correctAnswer": "遅延の確認です"
         },
         {
           "id": "u18_l11_7",
@@ -2354,10 +2343,10 @@ export const unit18: DojoUnit = {
           "english": "Confirming Loss / misplacement",
           "audioText": "ふんしつのかくにん",
           "options": [
-            "Confirming Peace of mind / relief",
+            "Confirming Consultation",
+            "Confirming Official certificate",
             "Confirming Loss / misplacement",
-            "Confirming Train / flight delay",
-            "To be in trouble / at a loss"
+            "Official certificate"
           ],
           "correctAnswer": "Confirming Loss / misplacement"
         },
@@ -2370,26 +2359,26 @@ export const unit18: DojoUnit = {
           "english": "Build 'Confirming Loss / misplacement'",
           "audioText": "ふんしつのかくにん",
           "tileBank": [
-            "ふ",
-            "し",
-            "つ",
-            "ん",
             "く",
-            "か",
+            "ふ",
             "の",
-            "に"
+            "に",
+            "し",
+            "か",
+            "ん",
+            "つ"
           ],
           "correctAnswer": "ふんしつのかくにん"
         },
         {
           "id": "u18_l12_3",
           "type": "cloze",
-          "prompt": "私は解決の確認がすきです",
-          "furigana": "わたしはかいけつのかくにんがすきです",
-          "romaji": "Watashi wa kaiketsu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Resolution / solution.",
-          "audioText": "解決の確認",
-          "clozeSentence": "これは解決の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な解決の確認です。",
+          "furigana": "これはいちばんたいせつなかいけつのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kaiketsu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Resolution / solution.",
+          "audioText": "これは解決の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な解決の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2397,7 +2386,8 @@ export const unit18: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l12_4",
@@ -2408,11 +2398,11 @@ export const unit18: DojoUnit = {
           "english": "This is Confirming Resolution / solution.",
           "audioText": "これは解決の確認です",
           "scrambleTokens": [
-            "解決の確認",
-            "です",
-            "ではありません",
             "それ",
-            "これは"
+            "これは",
+            "ではありません",
+            "解決の確認",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2441,24 +2431,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l12_6",
           "type": "dictate",
-          "prompt": "相談の確認をお願いします",
-          "furigana": "そうだんのかくにんをおねがいします",
-          "romaji": "soudan no kakunin o onegaishimasu.",
-          "english": "Confirming Consultation, please.",
-          "audioText": "相談の確認をお願いします",
+          "prompt": "相談の確認です",
+          "furigana": "そうだんのかくにんです",
+          "romaji": "soudan no kakunin desu.",
+          "english": "It is Confirming Consultation.",
+          "audioText": "相談の確認です",
           "dictateTokens": [
             "です",
-            "ありがとう",
-            "を",
+            "ではありません",
             "相談の確認",
-            "お願いします"
+            "これ"
           ],
           "dictateSolution": [
             "相談の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "相談の確認をお願いします"
+          "correctAnswer": "相談の確認です"
         },
         {
           "id": "u18_l12_7",
@@ -2558,10 +2546,10 @@ export const unit18: DojoUnit = {
           "english": "Trouble / incident",
           "audioText": "トラブル",
           "options": [
+            "Consultation",
+            "Confirming Reissue (card/ticket)",
             "Trouble / incident",
-            "Confirming Official certificate",
-            "Inquiry / contact",
-            "Resolution / solution"
+            "Confirming Consultation"
           ],
           "correctAnswer": "Trouble / incident"
         },
@@ -2574,34 +2562,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Trouble / incident'",
           "audioText": "トラブル",
           "tileBank": [
-            "き",
-            "ラ",
             "ル",
-            "を",
-            "ト",
-            "ち",
             "ブ",
-            "へ"
+            "か",
+            "ラ",
+            "ト",
+            "え",
+            "ら",
+            "む"
           ],
           "correctAnswer": "トラブル"
         },
         {
           "id": "u18_l13_3",
           "type": "cloze",
-          "prompt": "私は落とし物がすきです",
-          "furigana": "わたしはおとしものがすきです",
-          "romaji": "Watashi wa otoshimono ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Lost property.",
-          "audioText": "落とし物",
-          "clozeSentence": "これは落とし物 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な落とし物です。",
+          "furigana": "これはいちばんたいせつなおとしものです。",
+          "romaji": "Kore wa ichiban taisetsu na otoshimono desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Lost property.",
+          "audioText": "これは落とし物です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な落とし物です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l13_4",
@@ -2612,10 +2601,10 @@ export const unit18: DojoUnit = {
           "english": "This is Lost property.",
           "audioText": "これは落とし物です",
           "scrambleTokens": [
-            "それ",
-            "これは",
-            "です",
             "落とし物",
+            "それ",
+            "です",
+            "これは",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -2645,24 +2634,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l13_6",
           "type": "dictate",
-          "prompt": "遅延をお願いします",
-          "furigana": "ちえんをおねがいします",
-          "romaji": "chien o onegaishimasu.",
-          "english": "Train / flight delay, please.",
-          "audioText": "遅延をお願いします",
+          "prompt": "遅延です",
+          "furigana": "ちえんです",
+          "romaji": "chien desu.",
+          "english": "It is Train / flight delay.",
+          "audioText": "遅延です",
           "dictateTokens": [
-            "遅延",
-            "お願いします",
-            "ありがとう",
+            "これ",
+            "ではありません",
             "です",
-            "を"
+            "遅延"
           ],
           "dictateSolution": [
             "遅延",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "遅延をお願いします"
+          "correctAnswer": "遅延です"
         },
         {
           "id": "u18_l13_7",
@@ -2764,9 +2751,9 @@ export const unit18: DojoUnit = {
           "english": "Loss / misplacement",
           "audioText": "ふんしつ",
           "options": [
-            "Confirming Train / flight delay",
-            "Resolution / solution",
-            "Confirming Advice",
+            "Confirming Peace of mind / relief",
+            "Confirming Official certificate",
+            "Peace of mind / relief",
             "Loss / misplacement"
           ],
           "correctAnswer": "Loss / misplacement"
@@ -2780,34 +2767,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Loss / misplacement'",
           "audioText": "ふんしつ",
           "tileBank": [
-            "を",
-            "ほ",
-            "つ",
-            "し",
             "ん",
+            "よ",
+            "う",
+            "し",
             "ふ",
-            "ろ",
-            "な"
+            "か",
+            "つ",
+            "ろ"
           ],
           "correctAnswer": "ふんしつ"
         },
         {
           "id": "u18_l14_3",
           "type": "cloze",
-          "prompt": "私は解決がすきです",
-          "furigana": "わたしはかいけつがすきです",
-          "romaji": "Watashi wa kaiketsu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Resolution / solution.",
-          "audioText": "解決",
-          "clozeSentence": "これは解決 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な解決です。",
+          "furigana": "これはいちばんたいせつなかいけつです。",
+          "romaji": "Kore wa ichiban taisetsu na kaiketsu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Resolution / solution.",
+          "audioText": "これは解決です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な解決です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l14_4",
@@ -2819,10 +2807,10 @@ export const unit18: DojoUnit = {
           "audioText": "これは解決です",
           "scrambleTokens": [
             "解決",
-            "これは",
+            "です",
             "それ",
-            "ではありません",
-            "です"
+            "これは",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2851,24 +2839,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l14_6",
           "type": "dictate",
-          "prompt": "相談をお願いします",
-          "furigana": "そうだんをおねがいします",
-          "romaji": "soudan o onegaishimasu.",
-          "english": "Consultation, please.",
-          "audioText": "相談をお願いします",
+          "prompt": "相談です",
+          "furigana": "そうだんです",
+          "romaji": "soudan desu.",
+          "english": "It is Consultation.",
+          "audioText": "相談です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
+            "ではありません",
+            "これ",
             "です",
-            "を",
             "相談"
           ],
           "dictateSolution": [
             "相談",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "相談をお願いします"
+          "correctAnswer": "相談です"
         },
         {
           "id": "u18_l14_7",
@@ -2970,10 +2956,10 @@ export const unit18: DojoUnit = {
           "english": "Advice",
           "audioText": "じょげん",
           "options": [
-            "Confirming Lost property",
-            "Confirming Consultation",
+            "Confirming Trouble / incident",
+            "Confirming Official certificate",
             "Advice",
-            "Confirming Peace of mind / relief"
+            "Confirming To be in trouble / at a loss"
           ],
           "correctAnswer": "Advice"
         },
@@ -2986,34 +2972,35 @@ export const unit18: DojoUnit = {
           "english": "Build 'Advice'",
           "audioText": "じょげん",
           "tileBank": [
-            "ん",
-            "や",
+            "を",
+            "れ",
+            "ょ",
             "げ",
-            "た",
-            "る",
-            "く",
             "じ",
-            "ょ"
+            "ん",
+            "に",
+            "そ"
           ],
           "correctAnswer": "じょげん"
         },
         {
           "id": "u18_l15_3",
           "type": "cloze",
-          "prompt": "私は緊急がすきです",
-          "furigana": "わたしはきんきゅうがすきです",
-          "romaji": "Watashi wa kinkyuu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Emergency.",
-          "audioText": "緊急",
-          "clozeSentence": "これは緊急 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な緊急です。",
+          "furigana": "これはいちばんたいせつなきんきゅうです。",
+          "romaji": "Kore wa ichiban taisetsu na kinkyuu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Emergency.",
+          "audioText": "これは緊急です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な緊急です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u18_l15_4",
@@ -3024,11 +3011,11 @@ export const unit18: DojoUnit = {
           "english": "This is Emergency.",
           "audioText": "これは緊急です",
           "scrambleTokens": [
-            "これは",
+            "です",
             "緊急",
-            "それ",
             "ではありません",
-            "です"
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -3057,24 +3044,22 @@ export const unit18: DojoUnit = {
         {
           "id": "u18_l15_6",
           "type": "dictate",
-          "prompt": "問い合わせをお願いします",
-          "furigana": "といあわせをおねがいします",
-          "romaji": "toiawase o onegaishimasu.",
-          "english": "Inquiry / contact, please.",
-          "audioText": "問い合わせをお願いします",
+          "prompt": "問い合わせです",
+          "furigana": "といあわせです",
+          "romaji": "toiawase desu.",
+          "english": "It is Inquiry / contact.",
+          "audioText": "問い合わせです",
           "dictateTokens": [
-            "を",
             "問い合わせ",
-            "です",
-            "お願いします",
-            "ありがとう"
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "問い合わせ",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "問い合わせをお願いします"
+          "correctAnswer": "問い合わせです"
         },
         {
           "id": "u18_l15_7",
@@ -3159,10 +3144,10 @@ export const unit18: DojoUnit = {
         "english": "Trouble / incident",
         "audioText": "トラブル",
         "options": [
-          "Reissue (card/ticket)",
-          "Inquiry / contact",
-          "Confirming Consultation",
-          "Trouble / incident"
+          "Confirming Advice",
+          "Trouble / incident",
+          "Confirming Official certificate",
+          "Police"
         ],
         "correctAnswer": "Trouble / incident"
       },
@@ -3175,14 +3160,14 @@ export const unit18: DojoUnit = {
         "english": "Build 'Trouble / incident'",
         "audioText": "トラブル",
         "tileBank": [
-          "ル",
-          "は",
+          "ラ",
           "ブ",
-          "ぬ",
-          "ね",
+          "ふ",
           "ト",
-          "け",
-          "ラ"
+          "ル",
+          "ん",
+          "ぬ",
+          "ら"
         ],
         "correctAnswer": "トラブル"
       },
@@ -3195,10 +3180,10 @@ export const unit18: DojoUnit = {
         "english": "Advice",
         "audioText": "じょげん",
         "options": [
-          "Confirming Consultation",
-          "Consultation",
+          "Peace of mind / relief",
           "Advice",
-          "Confirming Resolution / solution"
+          "Confirming Train / flight delay",
+          "Confirming Consultation"
         ],
         "correctAnswer": "Advice"
       },
@@ -3211,14 +3196,14 @@ export const unit18: DojoUnit = {
         "english": "Build 'Advice'",
         "audioText": "じょげん",
         "tileBank": [
+          "れ",
+          "せ",
           "じ",
-          "ょ",
-          "む",
-          "え",
-          "あ",
+          "つ",
           "ん",
-          "げ",
-          "は"
+          "う",
+          "ょ",
+          "げ"
         ],
         "correctAnswer": "じょげん"
       },
@@ -3231,10 +3216,10 @@ export const unit18: DojoUnit = {
         "english": "Reissue (card/ticket)",
         "audioText": "さいはっこう",
         "options": [
-          "Confirming Official certificate",
+          "Inquiry / contact",
           "Reissue (card/ticket)",
-          "Confirming Loss / misplacement",
-          "Confirming Train / flight delay"
+          "Lost property",
+          "Trouble / incident"
         ],
         "correctAnswer": "Reissue (card/ticket)"
       },
@@ -3247,13 +3232,13 @@ export const unit18: DojoUnit = {
         "english": "Build 'Reissue (card/ticket)'",
         "audioText": "さいはっこう",
         "tileBank": [
-          "は",
-          "さ",
-          "っ",
           "い",
-          "ゆ",
+          "っ",
+          "さ",
+          "も",
+          "つ",
+          "は",
           "こ",
-          "ろ",
           "う"
         ],
         "correctAnswer": "さいはっこう"
@@ -3267,10 +3252,10 @@ export const unit18: DojoUnit = {
         "english": "Confirming Loss / misplacement",
         "audioText": "ふんしつのかくにん",
         "options": [
-          "Confirming Repair",
-          "Confirming Resolution / solution",
-          "Confirming Loss / misplacement",
-          "Confirming Train / flight delay"
+          "Repair",
+          "Confirming Inquiry / contact",
+          "Confirming Advice",
+          "Confirming Loss / misplacement"
         ],
         "correctAnswer": "Confirming Loss / misplacement"
       },
@@ -3283,14 +3268,14 @@ export const unit18: DojoUnit = {
         "english": "Build 'Confirming Loss / misplacement'",
         "audioText": "ふんしつのかくにん",
         "tileBank": [
-          "ん",
           "ふ",
           "に",
-          "か",
-          "く",
-          "し",
           "つ",
-          "の"
+          "の",
+          "く",
+          "か",
+          "し",
+          "ん"
         ],
         "correctAnswer": "ふんしつのかくにん"
       },
@@ -3303,10 +3288,10 @@ export const unit18: DojoUnit = {
         "english": "Confirming Police",
         "audioText": "けいさつのかくにん",
         "options": [
-          "Trouble / incident",
-          "Confirming Consultation",
-          "Confirming Peace of mind / relief",
-          "Confirming Police"
+          "Confirming Repair",
+          "Loss / misplacement",
+          "Confirming Police",
+          "Confirming Resolution / solution"
         ],
         "correctAnswer": "Confirming Police"
       },
@@ -3319,14 +3304,14 @@ export const unit18: DojoUnit = {
         "english": "Build 'Confirming Police'",
         "audioText": "けいさつのかくにん",
         "tileBank": [
-          "く",
-          "か",
-          "さ",
           "に",
-          "の",
-          "け",
           "い",
-          "つ"
+          "つ",
+          "さ",
+          "か",
+          "の",
+          "く",
+          "け"
         ],
         "correctAnswer": "けいさつのかくにん"
       },
@@ -3339,10 +3324,10 @@ export const unit18: DojoUnit = {
         "english": "Confirming Trouble / incident",
         "audioText": "トラブルのかくにん",
         "options": [
-          "Consultation",
+          "Confirming Official certificate",
+          "Confirming Advice",
           "Confirming Trouble / incident",
-          "Reissue (card/ticket)",
-          "Confirming Police"
+          "Lost property"
         ],
         "correctAnswer": "Confirming Trouble / incident"
       },
@@ -3355,14 +3340,14 @@ export const unit18: DojoUnit = {
         "english": "Build 'Confirming Trouble / incident'",
         "audioText": "トラブルのかくにん",
         "tileBank": [
-          "か",
           "ブ",
-          "ラ",
-          "く",
-          "ト",
           "に",
+          "ラ",
+          "か",
+          "の",
           "ル",
-          "の"
+          "く",
+          "ト"
         ],
         "correctAnswer": "トラブルのかくにん"
       }

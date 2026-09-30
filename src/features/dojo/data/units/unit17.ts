@@ -48,9 +48,9 @@ export const unit17: DojoUnit = {
           "english": "Festival",
           "audioText": "まつり",
           "options": [
+            "Confirming Tradition / heritage",
             "Confirming Worship / paying respects at shrine",
-            "Confirming Obon ancestral holiday",
-            "Confirming Festival",
+            "History",
             "Festival"
           ],
           "correctAnswer": "Festival"
@@ -64,34 +64,35 @@ export const unit17: DojoUnit = {
           "english": "Build 'Festival'",
           "audioText": "まつり",
           "tileBank": [
-            "の",
-            "み",
-            "な",
-            "つ",
-            "わ",
+            "に",
+            "あ",
+            "を",
             "り",
-            "も",
-            "ま"
+            "く",
+            "ほ",
+            "ま",
+            "つ"
           ],
           "correctAnswer": "まつり"
         },
         {
           "id": "u17_l1_3",
           "type": "cloze",
-          "prompt": "私は神社がすきです",
-          "furigana": "わたしはじんじゃがすきです",
-          "romaji": "Watashi wa jinja ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Shinto shrine.",
-          "audioText": "神社",
-          "clozeSentence": "これは神社 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な神社です。",
+          "furigana": "これはいちばんたいせつなじんじゃです。",
+          "romaji": "Kore wa ichiban taisetsu na jinja desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Shinto shrine.",
+          "audioText": "これは神社です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な神社です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l1_4",
@@ -102,11 +103,11 @@ export const unit17: DojoUnit = {
           "english": "This is Shinto shrine.",
           "audioText": "これは神社です",
           "scrambleTokens": [
-            "これは",
-            "神社",
-            "それ",
+            "です",
             "ではありません",
-            "です"
+            "神社",
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -135,24 +136,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l1_6",
           "type": "dictate",
-          "prompt": "寺をお願いします",
-          "furigana": "てらをおねがいします",
-          "romaji": "tera o onegaishimasu.",
-          "english": "Buddhist temple, please.",
-          "audioText": "寺をお願いします",
+          "prompt": "寺です",
+          "furigana": "てらです",
+          "romaji": "tera desu.",
+          "english": "It is Buddhist temple.",
+          "audioText": "寺です",
           "dictateTokens": [
-            "お願いします",
             "寺",
-            "を",
-            "ありがとう",
+            "ではありません",
+            "これ",
             "です"
           ],
           "dictateSolution": [
             "寺",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "寺をお願いします"
+          "correctAnswer": "寺です"
         },
         {
           "id": "u17_l1_7",
@@ -255,9 +254,9 @@ export const unit17: DojoUnit = {
           "audioText": "さんぱい",
           "options": [
             "Worship / paying respects at shrine",
-            "Shinto shrine",
-            "Confirming Tradition / heritage",
-            "Festival"
+            "Confirming Culture",
+            "Confirming Buddhist temple",
+            "Tea ceremony"
           ],
           "correctAnswer": "Worship / paying respects at shrine"
         },
@@ -270,34 +269,35 @@ export const unit17: DojoUnit = {
           "english": "Build 'Worship / paying respects at shrine'",
           "audioText": "さんぱい",
           "tileBank": [
-            "き",
-            "ち",
-            "い",
-            "ん",
             "ぱ",
-            "つ",
+            "ま",
+            "ん",
             "さ",
-            "ほ"
+            "け",
+            "ね",
+            "い",
+            "て"
           ],
           "correctAnswer": "さんぱい"
         },
         {
           "id": "u17_l2_3",
           "type": "cloze",
-          "prompt": "私は伝統がすきです",
-          "furigana": "わたしはでんとうがすきです",
-          "romaji": "Watashi wa dentou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Tradition / heritage.",
-          "audioText": "伝統",
-          "clozeSentence": "これは伝統 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な伝統です。",
+          "furigana": "これはいちばんたいせつなでんとうです。",
+          "romaji": "Kore wa ichiban taisetsu na dentou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Tradition / heritage.",
+          "audioText": "これは伝統です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な伝統です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l2_4",
@@ -309,10 +309,10 @@ export const unit17: DojoUnit = {
           "audioText": "これは伝統です",
           "scrambleTokens": [
             "それ",
+            "です",
             "伝統",
-            "ではありません",
             "これは",
-            "です"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -341,24 +341,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l2_6",
           "type": "dictate",
-          "prompt": "文化をお願いします",
-          "furigana": "ぶんかをおねがいします",
-          "romaji": "bunka o onegaishimasu.",
-          "english": "Culture, please.",
-          "audioText": "文化をお願いします",
+          "prompt": "文化です",
+          "furigana": "ぶんかです",
+          "romaji": "bunka desu.",
+          "english": "It is Culture.",
+          "audioText": "文化です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "お願いします",
+            "これ",
             "文化",
-            "です"
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "文化",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "文化をお願いします"
+          "correctAnswer": "文化です"
         },
         {
           "id": "u17_l2_7",
@@ -460,9 +458,9 @@ export const unit17: DojoUnit = {
           "english": "Tea ceremony",
           "audioText": "さどう",
           "options": [
-            "Shinto shrine",
             "Confirming Worship / paying respects at shrine",
-            "Festival",
+            "Buddhist temple",
+            "Confirming Omen / good fortune",
             "Tea ceremony"
           ],
           "correctAnswer": "Tea ceremony"
@@ -476,34 +474,35 @@ export const unit17: DojoUnit = {
           "english": "Build 'Tea ceremony'",
           "audioText": "さどう",
           "tileBank": [
+            "い",
             "ど",
-            "ひ",
-            "に",
-            "さ",
-            "れ",
-            "め",
+            "た",
             "ま",
-            "う"
+            "し",
+            "さ",
+            "う",
+            "ろ"
           ],
           "correctAnswer": "さどう"
         },
         {
           "id": "u17_l3_3",
           "type": "cloze",
-          "prompt": "私は着物がすきです",
-          "furigana": "わたしはきものがすきです",
-          "romaji": "Watashi wa kimono ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Traditional kimono.",
-          "audioText": "着物",
-          "clozeSentence": "これは着物 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な着物です。",
+          "furigana": "これはいちばんたいせつなきものです。",
+          "romaji": "Kore wa ichiban taisetsu na kimono desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Traditional kimono.",
+          "audioText": "これは着物です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な着物です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l3_4",
@@ -514,11 +513,11 @@ export const unit17: DojoUnit = {
           "english": "This is Traditional kimono.",
           "audioText": "これは着物です",
           "scrambleTokens": [
-            "これは",
-            "ではありません",
             "それ",
+            "ではありません",
+            "です",
             "着物",
-            "です"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -547,24 +546,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l3_6",
           "type": "dictate",
-          "prompt": "神輿をお願いします",
-          "furigana": "みこしをおねがいします",
-          "romaji": "mikoshi o onegaishimasu.",
-          "english": "Portable shrine carried in festivals, please.",
-          "audioText": "神輿をお願いします",
+          "prompt": "神輿です",
+          "furigana": "みこしです",
+          "romaji": "mikoshi desu.",
+          "english": "It is Portable shrine carried in festivals.",
+          "audioText": "神輿です",
           "dictateTokens": [
-            "神輿",
-            "お願いします",
-            "を",
-            "ありがとう",
-            "です"
+            "ではありません",
+            "です",
+            "これ",
+            "神輿"
           ],
           "dictateSolution": [
             "神輿",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "神輿をお願いします"
+          "correctAnswer": "神輿です"
         },
         {
           "id": "u17_l3_7",
@@ -666,9 +663,9 @@ export const unit17: DojoUnit = {
           "audioText": "おぼん",
           "options": [
             "Obon ancestral holiday",
-            "Confirming Tea ceremony",
-            "Confirming Shinto shrine",
-            "Omen / good fortune"
+            "Culture",
+            "Confirming Festival",
+            "Confirming Culture"
           ],
           "correctAnswer": "Obon ancestral holiday"
         },
@@ -681,26 +678,26 @@ export const unit17: DojoUnit = {
           "english": "Build 'Obon ancestral holiday'",
           "audioText": "おぼん",
           "tileBank": [
-            "み",
+            "ら",
             "て",
-            "ぼ",
-            "さ",
-            "の",
-            "お",
+            "み",
             "ん",
-            "も"
+            "と",
+            "ね",
+            "お",
+            "ぼ"
           ],
           "correctAnswer": "おぼん"
         },
         {
           "id": "u17_l4_3",
           "type": "cloze",
-          "prompt": "私は初詣がすきです",
-          "furigana": "わたしははつもうでがすきです",
-          "romaji": "Watashi wa hatsumoude ga suki desu.",
-          "english": "Fill in the blank with the correct particle for First shrine visit of New Year.",
-          "audioText": "初詣",
-          "clozeSentence": "これは初詣 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な初詣です。",
+          "furigana": "これはいちばんたいせつなはつもうでです。",
+          "romaji": "Kore wa ichiban taisetsu na hatsumoude desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important First shrine visit of New Year.",
+          "audioText": "これは初詣です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な初詣です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -708,7 +705,8 @@ export const unit17: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l4_4",
@@ -719,11 +717,11 @@ export const unit17: DojoUnit = {
           "english": "This is First shrine visit of New Year.",
           "audioText": "これは初詣です",
           "scrambleTokens": [
-            "初詣",
-            "それ",
-            "これは",
             "ではありません",
-            "です"
+            "それ",
+            "初詣",
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -752,24 +750,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l4_6",
           "type": "dictate",
-          "prompt": "縁起をお願いします",
-          "furigana": "えんぎをおねがいします",
-          "romaji": "engi o onegaishimasu.",
-          "english": "Omen / good fortune, please.",
-          "audioText": "縁起をお願いします",
+          "prompt": "縁起です",
+          "furigana": "えんぎです",
+          "romaji": "engi desu.",
+          "english": "It is Omen / good fortune.",
+          "audioText": "縁起です",
           "dictateTokens": [
-            "です",
-            "ありがとう",
             "縁起",
-            "を",
-            "お願いします"
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "縁起",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "縁起をお願いします"
+          "correctAnswer": "縁起です"
         },
         {
           "id": "u17_l4_7",
@@ -871,10 +867,10 @@ export const unit17: DojoUnit = {
           "english": "History",
           "audioText": "れきし",
           "options": [
-            "Omen / good fortune",
-            "Confirming Festival",
+            "Confirming Portable shrine carried in festivals",
+            "Tea ceremony",
             "History",
-            "Ceremony / rite"
+            "Confirming Worship / paying respects at shrine"
           ],
           "correctAnswer": "History"
         },
@@ -887,34 +883,35 @@ export const unit17: DojoUnit = {
           "english": "Build 'History'",
           "audioText": "れきし",
           "tileBank": [
-            "の",
+            "ほ",
+            "と",
+            "は",
             "き",
-            "も",
-            "を",
             "れ",
-            "こ",
-            "ら",
-            "し"
+            "く",
+            "し",
+            "ち"
           ],
           "correctAnswer": "れきし"
         },
         {
           "id": "u17_l5_3",
           "type": "cloze",
-          "prompt": "私は受け継ぐがすきです",
-          "furigana": "わたしはうけつぐがすきです",
-          "romaji": "Watashi wa uketsugu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for To inherit / pass down.",
-          "audioText": "受け継ぐ",
-          "clozeSentence": "これは受け継ぐ {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な受け継ぐです。",
+          "furigana": "これはいちばんたいせつなうけつぐです。",
+          "romaji": "Kore wa ichiban taisetsu na uketsugu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important To inherit / pass down.",
+          "audioText": "これは受け継ぐです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な受け継ぐです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l5_4",
@@ -925,11 +922,11 @@ export const unit17: DojoUnit = {
           "english": "This is To inherit / pass down.",
           "audioText": "これは受け継ぐです",
           "scrambleTokens": [
-            "ではありません",
             "それ",
             "です",
-            "これは",
-            "受け継ぐ"
+            "ではありません",
+            "受け継ぐ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -958,24 +955,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l5_6",
           "type": "dictate",
-          "prompt": "儀式をお願いします",
-          "furigana": "ぎしきをおねがいします",
-          "romaji": "gishiki o onegaishimasu.",
-          "english": "Ceremony / rite, please.",
-          "audioText": "儀式をお願いします",
+          "prompt": "儀式です",
+          "furigana": "ぎしきです",
+          "romaji": "gishiki desu.",
+          "english": "It is Ceremony / rite.",
+          "audioText": "儀式です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "です",
-            "を",
-            "儀式"
+            "これ",
+            "儀式",
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "儀式",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "儀式をお願いします"
+          "correctAnswer": "儀式です"
         },
         {
           "id": "u17_l5_7",
@@ -1081,10 +1076,10 @@ export const unit17: DojoUnit = {
           "english": "Confirming Festival",
           "audioText": "まつりのかくにん",
           "options": [
+            "Traditional kimono",
             "Confirming Festival",
-            "Confirming Buddhist temple",
-            "Confirming Omen / good fortune",
-            "Culture"
+            "Confirming Portable shrine carried in festivals",
+            "Confirming Buddhist temple"
           ],
           "correctAnswer": "Confirming Festival"
         },
@@ -1097,34 +1092,35 @@ export const unit17: DojoUnit = {
           "english": "Build 'Confirming Festival'",
           "audioText": "まつりのかくにん",
           "tileBank": [
-            "に",
-            "ま",
-            "り",
             "つ",
             "か",
+            "り",
             "ん",
-            "く",
-            "の"
+            "に",
+            "の",
+            "ま",
+            "く"
           ],
           "correctAnswer": "まつりのかくにん"
         },
         {
           "id": "u17_l6_3",
           "type": "cloze",
-          "prompt": "私は神社の確認がすきです",
-          "furigana": "わたしはじんじゃのかくにんがすきです",
-          "romaji": "Watashi wa jinja no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Shinto shrine.",
-          "audioText": "神社の確認",
-          "clozeSentence": "これは神社の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な神社の確認です。",
+          "furigana": "これはいちばんたいせつなじんじゃのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na jinja no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Shinto shrine.",
+          "audioText": "これは神社の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な神社の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l6_4",
@@ -1136,10 +1132,10 @@ export const unit17: DojoUnit = {
           "audioText": "これは神社の確認です",
           "scrambleTokens": [
             "それ",
-            "神社の確認",
-            "これは",
             "です",
-            "ではありません"
+            "神社の確認",
+            "ではありません",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1168,24 +1164,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l6_6",
           "type": "dictate",
-          "prompt": "寺の確認をお願いします",
-          "furigana": "てらのかくにんをおねがいします",
-          "romaji": "tera no kakunin o onegaishimasu.",
-          "english": "Confirming Buddhist temple, please.",
-          "audioText": "寺の確認をお願いします",
+          "prompt": "寺の確認です",
+          "furigana": "てらのかくにんです",
+          "romaji": "tera no kakunin desu.",
+          "english": "It is Confirming Buddhist temple.",
+          "audioText": "寺の確認です",
           "dictateTokens": [
-            "です",
-            "を",
             "寺の確認",
-            "お願いします",
-            "ありがとう"
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "寺の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "寺の確認をお願いします"
+          "correctAnswer": "寺の確認です"
         },
         {
           "id": "u17_l6_7",
@@ -1293,9 +1287,9 @@ export const unit17: DojoUnit = {
           "english": "Confirming Worship / paying respects at shrine",
           "audioText": "さんぱいのかくにん",
           "options": [
-            "To inherit / pass down",
-            "Confirming History",
-            "Shinto shrine",
+            "Obon ancestral holiday",
+            "Buddhist temple",
+            "Confirming Tradition / heritage",
             "Confirming Worship / paying respects at shrine"
           ],
           "correctAnswer": "Confirming Worship / paying respects at shrine"
@@ -1310,33 +1304,34 @@ export const unit17: DojoUnit = {
           "audioText": "さんぱいのかくにん",
           "tileBank": [
             "く",
+            "の",
             "か",
             "い",
             "ん",
             "さ",
-            "に",
             "ぱ",
-            "の"
+            "に"
           ],
           "correctAnswer": "さんぱいのかくにん"
         },
         {
           "id": "u17_l7_3",
           "type": "cloze",
-          "prompt": "私は伝統の確認がすきです",
-          "furigana": "わたしはでんとうのかくにんがすきです",
-          "romaji": "Watashi wa dentou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Tradition / heritage.",
-          "audioText": "伝統の確認",
-          "clozeSentence": "これは伝統の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な伝統の確認です。",
+          "furigana": "これはいちばんたいせつなでんとうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na dentou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Tradition / heritage.",
+          "audioText": "これは伝統の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な伝統の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l7_4",
@@ -1347,11 +1342,11 @@ export const unit17: DojoUnit = {
           "english": "This is Confirming Tradition / heritage.",
           "audioText": "これは伝統の確認です",
           "scrambleTokens": [
-            "です",
             "これは",
+            "です",
+            "それ",
             "伝統の確認",
-            "ではありません",
-            "それ"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1380,24 +1375,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l7_6",
           "type": "dictate",
-          "prompt": "文化の確認をお願いします",
-          "furigana": "ぶんかのかくにんをおねがいします",
-          "romaji": "bunka no kakunin o onegaishimasu.",
-          "english": "Confirming Culture, please.",
-          "audioText": "文化の確認をお願いします",
+          "prompt": "文化の確認です",
+          "furigana": "ぶんかのかくにんです",
+          "romaji": "bunka no kakunin desu.",
+          "english": "It is Confirming Culture.",
+          "audioText": "文化の確認です",
           "dictateTokens": [
-            "を",
-            "お願いします",
-            "です",
-            "ありがとう",
-            "文化の確認"
+            "これ",
+            "文化の確認",
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "文化の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "文化の確認をお願いします"
+          "correctAnswer": "文化の確認です"
         },
         {
           "id": "u17_l7_7",
@@ -1505,10 +1498,10 @@ export const unit17: DojoUnit = {
           "english": "Confirming Tea ceremony",
           "audioText": "さどうのかくにん",
           "options": [
-            "Confirming Traditional kimono",
+            "Confirming Ceremony / rite",
             "Confirming Tea ceremony",
-            "Confirming First shrine visit of New Year",
-            "Confirming Omen / good fortune"
+            "History",
+            "Omen / good fortune"
           ],
           "correctAnswer": "Confirming Tea ceremony"
         },
@@ -1522,25 +1515,25 @@ export const unit17: DojoUnit = {
           "audioText": "さどうのかくにん",
           "tileBank": [
             "ん",
-            "ど",
-            "に",
-            "か",
             "う",
+            "ど",
             "の",
+            "さ",
+            "か",
             "く",
-            "さ"
+            "に"
           ],
           "correctAnswer": "さどうのかくにん"
         },
         {
           "id": "u17_l8_3",
           "type": "cloze",
-          "prompt": "私は着物の確認がすきです",
-          "furigana": "わたしはきもののかくにんがすきです",
-          "romaji": "Watashi wa kimono no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Traditional kimono.",
-          "audioText": "着物の確認",
-          "clozeSentence": "これは着物の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な着物の確認です。",
+          "furigana": "これはいちばんたいせつなきもののかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kimono no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Traditional kimono.",
+          "audioText": "これは着物の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な着物の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1548,7 +1541,8 @@ export const unit17: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l8_4",
@@ -1560,10 +1554,10 @@ export const unit17: DojoUnit = {
           "audioText": "これは着物の確認です",
           "scrambleTokens": [
             "です",
-            "これは",
+            "ではありません",
             "着物の確認",
             "それ",
-            "ではありません"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1592,24 +1586,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l8_6",
           "type": "dictate",
-          "prompt": "神輿の確認をお願いします",
-          "furigana": "みこしのかくにんをおねがいします",
-          "romaji": "mikoshi no kakunin o onegaishimasu.",
-          "english": "Confirming Portable shrine carried in festivals, please.",
-          "audioText": "神輿の確認をお願いします",
+          "prompt": "神輿の確認です",
+          "furigana": "みこしのかくにんです",
+          "romaji": "mikoshi no kakunin desu.",
+          "english": "It is Confirming Portable shrine carried in festivals.",
+          "audioText": "神輿の確認です",
           "dictateTokens": [
-            "お願いします",
-            "を",
-            "です",
-            "ありがとう",
-            "神輿の確認"
+            "ではありません",
+            "これ",
+            "神輿の確認",
+            "です"
           ],
           "dictateSolution": [
             "神輿の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "神輿の確認をお願いします"
+          "correctAnswer": "神輿の確認です"
         },
         {
           "id": "u17_l8_7",
@@ -1716,10 +1708,10 @@ export const unit17: DojoUnit = {
           "english": "Confirming Obon ancestral holiday",
           "audioText": "おぼんのかくにん",
           "options": [
-            "Confirming First shrine visit of New Year",
             "Confirming Obon ancestral holiday",
-            "Confirming Tradition / heritage",
-            "Omen / good fortune"
+            "Traditional kimono",
+            "Confirming Culture",
+            "Confirming Worship / paying respects at shrine"
           ],
           "correctAnswer": "Confirming Obon ancestral holiday"
         },
@@ -1732,34 +1724,35 @@ export const unit17: DojoUnit = {
           "english": "Build 'Confirming Obon ancestral holiday'",
           "audioText": "おぼんのかくにん",
           "tileBank": [
-            "ぼ",
-            "く",
             "に",
-            "か",
-            "ん",
             "の",
             "お",
-            "ん"
+            "く",
+            "ん",
+            "か",
+            "ん",
+            "ぼ"
           ],
           "correctAnswer": "おぼんのかくにん"
         },
         {
           "id": "u17_l9_3",
           "type": "cloze",
-          "prompt": "私は初詣の確認がすきです",
-          "furigana": "わたしははつもうでのかくにんがすきです",
-          "romaji": "Watashi wa hatsumoude no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming First shrine visit of New Year.",
-          "audioText": "初詣の確認",
-          "clozeSentence": "これは初詣の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な初詣の確認です。",
+          "furigana": "これはいちばんたいせつなはつもうでのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na hatsumoude no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming First shrine visit of New Year.",
+          "audioText": "これは初詣の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な初詣の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l9_4",
@@ -1770,11 +1763,11 @@ export const unit17: DojoUnit = {
           "english": "This is Confirming First shrine visit of New Year.",
           "audioText": "これは初詣の確認です",
           "scrambleTokens": [
-            "初詣の確認",
-            "ではありません",
             "これは",
+            "ではありません",
             "それ",
-            "です"
+            "です",
+            "初詣の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1803,24 +1796,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l9_6",
           "type": "dictate",
-          "prompt": "縁起の確認をお願いします",
-          "furigana": "えんぎのかくにんをおねがいします",
-          "romaji": "engi no kakunin o onegaishimasu.",
-          "english": "Confirming Omen / good fortune, please.",
-          "audioText": "縁起の確認をお願いします",
+          "prompt": "縁起の確認です",
+          "furigana": "えんぎのかくにんです",
+          "romaji": "engi no kakunin desu.",
+          "english": "It is Confirming Omen / good fortune.",
+          "audioText": "縁起の確認です",
           "dictateTokens": [
-            "ありがとう",
+            "ではありません",
+            "これ",
             "縁起の確認",
-            "です",
-            "お願いします",
-            "を"
+            "です"
           ],
           "dictateSolution": [
             "縁起の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "縁起の確認をお願いします"
+          "correctAnswer": "縁起の確認です"
         },
         {
           "id": "u17_l9_7",
@@ -1928,10 +1919,10 @@ export const unit17: DojoUnit = {
           "english": "Confirming History",
           "audioText": "れきしのかくにん",
           "options": [
-            "Ceremony / rite",
-            "Confirming History",
-            "Confirming Festival",
-            "Confirming Buddhist temple"
+            "Confirming Tea ceremony",
+            "Confirming Tradition / heritage",
+            "Tea ceremony",
+            "Confirming History"
           ],
           "correctAnswer": "Confirming History"
         },
@@ -1944,34 +1935,35 @@ export const unit17: DojoUnit = {
           "english": "Build 'Confirming History'",
           "audioText": "れきしのかくにん",
           "tileBank": [
+            "に",
+            "く",
             "し",
             "か",
-            "く",
-            "れ",
-            "き",
+            "ん",
             "の",
-            "に",
-            "ん"
+            "き",
+            "れ"
           ],
           "correctAnswer": "れきしのかくにん"
         },
         {
           "id": "u17_l10_3",
           "type": "cloze",
-          "prompt": "私は受け継ぐの確認がすきです",
-          "furigana": "わたしはうけつぐのかくにんがすきです",
-          "romaji": "Watashi wa uketsugu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming To inherit / pass down.",
-          "audioText": "受け継ぐの確認",
-          "clozeSentence": "これは受け継ぐの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な受け継ぐの確認です。",
+          "furigana": "これはいちばんたいせつなうけつぐのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na uketsugu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming To inherit / pass down.",
+          "audioText": "これは受け継ぐの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な受け継ぐの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l10_4",
@@ -1982,11 +1974,11 @@ export const unit17: DojoUnit = {
           "english": "This is Confirming To inherit / pass down.",
           "audioText": "これは受け継ぐの確認です",
           "scrambleTokens": [
-            "受け継ぐの確認",
             "です",
-            "ではありません",
+            "それ",
             "これは",
-            "それ"
+            "受け継ぐの確認",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2015,24 +2007,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l10_6",
           "type": "dictate",
-          "prompt": "儀式の確認をお願いします",
-          "furigana": "ぎしきのかくにんをおねがいします",
-          "romaji": "gishiki no kakunin o onegaishimasu.",
-          "english": "Confirming Ceremony / rite, please.",
-          "audioText": "儀式の確認をお願いします",
+          "prompt": "儀式の確認です",
+          "furigana": "ぎしきのかくにんです",
+          "romaji": "gishiki no kakunin desu.",
+          "english": "It is Confirming Ceremony / rite.",
+          "audioText": "儀式の確認です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
+            "これ",
             "儀式の確認",
-            "です",
-            "お願いします"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "儀式の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "儀式の確認をお願いします"
+          "correctAnswer": "儀式の確認です"
         },
         {
           "id": "u17_l10_7",
@@ -2138,10 +2128,10 @@ export const unit17: DojoUnit = {
           "english": "Confirming Festival",
           "audioText": "まつりのかくにん",
           "options": [
-            "Confirming Tea ceremony",
-            "Confirming Portable shrine carried in festivals",
-            "First shrine visit of New Year",
-            "Confirming Festival"
+            "Omen / good fortune",
+            "Confirming Festival",
+            "Ceremony / rite",
+            "Confirming First shrine visit of New Year"
           ],
           "correctAnswer": "Confirming Festival"
         },
@@ -2154,13 +2144,13 @@ export const unit17: DojoUnit = {
           "english": "Build 'Confirming Festival'",
           "audioText": "まつりのかくにん",
           "tileBank": [
-            "か",
-            "に",
             "く",
-            "つ",
-            "の",
             "り",
             "ま",
+            "つ",
+            "の",
+            "に",
+            "か",
             "ん"
           ],
           "correctAnswer": "まつりのかくにん"
@@ -2168,20 +2158,21 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l11_3",
           "type": "cloze",
-          "prompt": "私は神社の確認がすきです",
-          "furigana": "わたしはじんじゃのかくにんがすきです",
-          "romaji": "Watashi wa jinja no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Shinto shrine.",
-          "audioText": "神社の確認",
-          "clozeSentence": "これは神社の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な神社の確認です。",
+          "furigana": "これはいちばんたいせつなじんじゃのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na jinja no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Shinto shrine.",
+          "audioText": "これは神社の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な神社の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l11_4",
@@ -2192,11 +2183,11 @@ export const unit17: DojoUnit = {
           "english": "This is Confirming Shinto shrine.",
           "audioText": "これは神社の確認です",
           "scrambleTokens": [
-            "ではありません",
+            "それ",
             "これは",
             "神社の確認",
             "です",
-            "それ"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2225,24 +2216,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l11_6",
           "type": "dictate",
-          "prompt": "寺の確認をお願いします",
-          "furigana": "てらのかくにんをおねがいします",
-          "romaji": "tera no kakunin o onegaishimasu.",
-          "english": "Confirming Buddhist temple, please.",
-          "audioText": "寺の確認をお願いします",
+          "prompt": "寺の確認です",
+          "furigana": "てらのかくにんです",
+          "romaji": "tera no kakunin desu.",
+          "english": "It is Confirming Buddhist temple.",
+          "audioText": "寺の確認です",
           "dictateTokens": [
+            "これ",
             "寺の確認",
-            "ありがとう",
-            "お願いします",
-            "を",
-            "です"
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "寺の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "寺の確認をお願いします"
+          "correctAnswer": "寺の確認です"
         },
         {
           "id": "u17_l11_7",
@@ -2350,10 +2339,10 @@ export const unit17: DojoUnit = {
           "english": "Confirming Worship / paying respects at shrine",
           "audioText": "さんぱいのかくにん",
           "options": [
+            "First shrine visit of New Year",
+            "History",
             "Confirming Worship / paying respects at shrine",
-            "Tradition / heritage",
-            "Festival",
-            "Confirming Traditional kimono"
+            "Buddhist temple"
           ],
           "correctAnswer": "Confirming Worship / paying respects at shrine"
         },
@@ -2366,26 +2355,26 @@ export const unit17: DojoUnit = {
           "english": "Build 'Confirming Worship / paying respects at shrine'",
           "audioText": "さんぱいのかくにん",
           "tileBank": [
-            "ぱ",
-            "に",
+            "い",
+            "ん",
             "か",
             "さ",
+            "ぱ",
             "く",
             "の",
-            "ん",
-            "い"
+            "に"
           ],
           "correctAnswer": "さんぱいのかくにん"
         },
         {
           "id": "u17_l12_3",
           "type": "cloze",
-          "prompt": "私は伝統の確認がすきです",
-          "furigana": "わたしはでんとうのかくにんがすきです",
-          "romaji": "Watashi wa dentou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Tradition / heritage.",
-          "audioText": "伝統の確認",
-          "clozeSentence": "これは伝統の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な伝統の確認です。",
+          "furigana": "これはいちばんたいせつなでんとうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na dentou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Tradition / heritage.",
+          "audioText": "これは伝統の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な伝統の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2393,7 +2382,8 @@ export const unit17: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l12_4",
@@ -2404,11 +2394,11 @@ export const unit17: DojoUnit = {
           "english": "This is Confirming Tradition / heritage.",
           "audioText": "これは伝統の確認です",
           "scrambleTokens": [
-            "です",
+            "ではありません",
             "それ",
             "これは",
             "伝統の確認",
-            "ではありません"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2437,24 +2427,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l12_6",
           "type": "dictate",
-          "prompt": "文化の確認をお願いします",
-          "furigana": "ぶんかのかくにんをおねがいします",
-          "romaji": "bunka no kakunin o onegaishimasu.",
-          "english": "Confirming Culture, please.",
-          "audioText": "文化の確認をお願いします",
+          "prompt": "文化の確認です",
+          "furigana": "ぶんかのかくにんです",
+          "romaji": "bunka no kakunin desu.",
+          "english": "It is Confirming Culture.",
+          "audioText": "文化の確認です",
           "dictateTokens": [
-            "ありがとう",
+            "ではありません",
+            "これ",
             "文化の確認",
-            "です",
-            "を",
-            "お願いします"
+            "です"
           ],
           "dictateSolution": [
             "文化の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "文化の確認をお願いします"
+          "correctAnswer": "文化の確認です"
         },
         {
           "id": "u17_l12_7",
@@ -2554,10 +2542,10 @@ export const unit17: DojoUnit = {
           "english": "Festival",
           "audioText": "まつり",
           "options": [
-            "Confirming Ceremony / rite",
-            "Confirming Traditional kimono",
             "Festival",
-            "Traditional kimono"
+            "Confirming Culture",
+            "Tea ceremony",
+            "Confirming Tradition / heritage"
           ],
           "correctAnswer": "Festival"
         },
@@ -2570,34 +2558,35 @@ export const unit17: DojoUnit = {
           "english": "Build 'Festival'",
           "audioText": "まつり",
           "tileBank": [
-            "う",
             "つ",
-            "ま",
-            "そ",
-            "お",
-            "ら",
             "り",
-            "に"
+            "ん",
+            "み",
+            "ま",
+            "ろ",
+            "む",
+            "え"
           ],
           "correctAnswer": "まつり"
         },
         {
           "id": "u17_l13_3",
           "type": "cloze",
-          "prompt": "私は神社がすきです",
-          "furigana": "わたしはじんじゃがすきです",
-          "romaji": "Watashi wa jinja ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Shinto shrine.",
-          "audioText": "神社",
-          "clozeSentence": "これは神社 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な神社です。",
+          "furigana": "これはいちばんたいせつなじんじゃです。",
+          "romaji": "Kore wa ichiban taisetsu na jinja desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Shinto shrine.",
+          "audioText": "これは神社です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な神社です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l13_4",
@@ -2608,11 +2597,11 @@ export const unit17: DojoUnit = {
           "english": "This is Shinto shrine.",
           "audioText": "これは神社です",
           "scrambleTokens": [
-            "です",
-            "それ",
-            "ではありません",
             "神社",
-            "これは"
+            "ではありません",
+            "これは",
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2641,24 +2630,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l13_6",
           "type": "dictate",
-          "prompt": "寺をお願いします",
-          "furigana": "てらをおねがいします",
-          "romaji": "tera o onegaishimasu.",
-          "english": "Buddhist temple, please.",
-          "audioText": "寺をお願いします",
+          "prompt": "寺です",
+          "furigana": "てらです",
+          "romaji": "tera desu.",
+          "english": "It is Buddhist temple.",
+          "audioText": "寺です",
           "dictateTokens": [
+            "ではありません",
             "です",
-            "を",
-            "お願いします",
-            "ありがとう",
+            "これ",
             "寺"
           ],
           "dictateSolution": [
             "寺",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "寺をお願いします"
+          "correctAnswer": "寺です"
         },
         {
           "id": "u17_l13_7",
@@ -2760,10 +2747,10 @@ export const unit17: DojoUnit = {
           "english": "Worship / paying respects at shrine",
           "audioText": "さんぱい",
           "options": [
+            "Obon ancestral holiday",
             "Worship / paying respects at shrine",
-            "Confirming Worship / paying respects at shrine",
-            "Confirming Buddhist temple",
-            "Confirming Festival"
+            "Portable shrine carried in festivals",
+            "To inherit / pass down"
           ],
           "correctAnswer": "Worship / paying respects at shrine"
         },
@@ -2776,34 +2763,35 @@ export const unit17: DojoUnit = {
           "english": "Build 'Worship / paying respects at shrine'",
           "audioText": "さんぱい",
           "tileBank": [
-            "ぱ",
-            "は",
-            "ん",
-            "す",
-            "う",
-            "よ",
             "い",
-            "さ"
+            "ひ",
+            "ぱ",
+            "さ",
+            "こ",
+            "え",
+            "ろ",
+            "ん"
           ],
           "correctAnswer": "さんぱい"
         },
         {
           "id": "u17_l14_3",
           "type": "cloze",
-          "prompt": "私は伝統がすきです",
-          "furigana": "わたしはでんとうがすきです",
-          "romaji": "Watashi wa dentou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Tradition / heritage.",
-          "audioText": "伝統",
-          "clozeSentence": "これは伝統 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な伝統です。",
+          "furigana": "これはいちばんたいせつなでんとうです。",
+          "romaji": "Kore wa ichiban taisetsu na dentou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Tradition / heritage.",
+          "audioText": "これは伝統です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な伝統です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l14_4",
@@ -2814,11 +2802,11 @@ export const unit17: DojoUnit = {
           "english": "This is Tradition / heritage.",
           "audioText": "これは伝統です",
           "scrambleTokens": [
-            "伝統",
-            "これは",
             "それ",
+            "です",
+            "これは",
             "ではありません",
-            "です"
+            "伝統"
           ],
           "scrambleSolution": [
             "これは",
@@ -2847,24 +2835,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l14_6",
           "type": "dictate",
-          "prompt": "文化をお願いします",
-          "furigana": "ぶんかをおねがいします",
-          "romaji": "bunka o onegaishimasu.",
-          "english": "Culture, please.",
-          "audioText": "文化をお願いします",
+          "prompt": "文化です",
+          "furigana": "ぶんかです",
+          "romaji": "bunka desu.",
+          "english": "It is Culture.",
+          "audioText": "文化です",
           "dictateTokens": [
+            "これ",
             "です",
-            "お願いします",
-            "文化",
-            "を",
-            "ありがとう"
+            "ではありません",
+            "文化"
           ],
           "dictateSolution": [
             "文化",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "文化をお願いします"
+          "correctAnswer": "文化です"
         },
         {
           "id": "u17_l14_7",
@@ -2966,10 +2952,10 @@ export const unit17: DojoUnit = {
           "english": "Tea ceremony",
           "audioText": "さどう",
           "options": [
-            "Confirming First shrine visit of New Year",
-            "Confirming Tea ceremony",
-            "Tea ceremony",
-            "Confirming Buddhist temple"
+            "Festival",
+            "Culture",
+            "Shinto shrine",
+            "Tea ceremony"
           ],
           "correctAnswer": "Tea ceremony"
         },
@@ -2982,34 +2968,35 @@ export const unit17: DojoUnit = {
           "english": "Build 'Tea ceremony'",
           "audioText": "さどう",
           "tileBank": [
-            "け",
-            "ね",
             "ど",
-            "う",
-            "お",
-            "ゆ",
+            "は",
+            "け",
             "そ",
-            "さ"
+            "ね",
+            "ゆ",
+            "さ",
+            "う"
           ],
           "correctAnswer": "さどう"
         },
         {
           "id": "u17_l15_3",
           "type": "cloze",
-          "prompt": "私は着物がすきです",
-          "furigana": "わたしはきものがすきです",
-          "romaji": "Watashi wa kimono ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Traditional kimono.",
-          "audioText": "着物",
-          "clozeSentence": "これは着物 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な着物です。",
+          "furigana": "これはいちばんたいせつなきものです。",
+          "romaji": "Kore wa ichiban taisetsu na kimono desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Traditional kimono.",
+          "audioText": "これは着物です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な着物です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u17_l15_4",
@@ -3020,11 +3007,11 @@ export const unit17: DojoUnit = {
           "english": "This is Traditional kimono.",
           "audioText": "これは着物です",
           "scrambleTokens": [
-            "着物",
-            "です",
             "これは",
+            "着物",
             "それ",
-            "ではありません"
+            "ではありません",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -3053,24 +3040,22 @@ export const unit17: DojoUnit = {
         {
           "id": "u17_l15_6",
           "type": "dictate",
-          "prompt": "神輿をお願いします",
-          "furigana": "みこしをおねがいします",
-          "romaji": "mikoshi o onegaishimasu.",
-          "english": "Portable shrine carried in festivals, please.",
-          "audioText": "神輿をお願いします",
+          "prompt": "神輿です",
+          "furigana": "みこしです",
+          "romaji": "mikoshi desu.",
+          "english": "It is Portable shrine carried in festivals.",
+          "audioText": "神輿です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "を",
             "神輿",
-            "です"
+            "です",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "神輿",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "神輿をお願いします"
+          "correctAnswer": "神輿です"
         },
         {
           "id": "u17_l15_7",
@@ -3155,9 +3140,9 @@ export const unit17: DojoUnit = {
         "english": "Festival",
         "audioText": "まつり",
         "options": [
+          "Confirming Tradition / heritage",
           "Confirming Worship / paying respects at shrine",
-          "Confirming Obon ancestral holiday",
-          "Confirming Festival",
+          "History",
           "Festival"
         ],
         "correctAnswer": "Festival"
@@ -3171,14 +3156,14 @@ export const unit17: DojoUnit = {
         "english": "Build 'Festival'",
         "audioText": "まつり",
         "tileBank": [
-          "の",
-          "み",
-          "な",
-          "つ",
-          "わ",
+          "に",
+          "あ",
+          "を",
           "り",
-          "も",
-          "ま"
+          "く",
+          "ほ",
+          "ま",
+          "つ"
         ],
         "correctAnswer": "まつり"
       },
@@ -3191,9 +3176,9 @@ export const unit17: DojoUnit = {
         "english": "Tea ceremony",
         "audioText": "さどう",
         "options": [
-          "Shinto shrine",
           "Confirming Worship / paying respects at shrine",
-          "Festival",
+          "Buddhist temple",
+          "Confirming Omen / good fortune",
           "Tea ceremony"
         ],
         "correctAnswer": "Tea ceremony"
@@ -3207,14 +3192,14 @@ export const unit17: DojoUnit = {
         "english": "Build 'Tea ceremony'",
         "audioText": "さどう",
         "tileBank": [
+          "い",
           "ど",
-          "ひ",
-          "に",
-          "さ",
-          "れ",
-          "め",
+          "た",
           "ま",
-          "う"
+          "し",
+          "さ",
+          "う",
+          "ろ"
         ],
         "correctAnswer": "さどう"
       },
@@ -3227,10 +3212,10 @@ export const unit17: DojoUnit = {
         "english": "History",
         "audioText": "れきし",
         "options": [
-          "Omen / good fortune",
-          "Confirming Festival",
+          "Confirming Portable shrine carried in festivals",
+          "Tea ceremony",
           "History",
-          "Ceremony / rite"
+          "Confirming Worship / paying respects at shrine"
         ],
         "correctAnswer": "History"
       },
@@ -3243,14 +3228,14 @@ export const unit17: DojoUnit = {
         "english": "Build 'History'",
         "audioText": "れきし",
         "tileBank": [
-          "の",
+          "ほ",
+          "と",
+          "は",
           "き",
-          "も",
-          "を",
           "れ",
-          "こ",
-          "ら",
-          "し"
+          "く",
+          "し",
+          "ち"
         ],
         "correctAnswer": "れきし"
       },
@@ -3263,9 +3248,9 @@ export const unit17: DojoUnit = {
         "english": "Confirming Worship / paying respects at shrine",
         "audioText": "さんぱいのかくにん",
         "options": [
-          "To inherit / pass down",
-          "Confirming History",
-          "Shinto shrine",
+          "Obon ancestral holiday",
+          "Buddhist temple",
+          "Confirming Tradition / heritage",
           "Confirming Worship / paying respects at shrine"
         ],
         "correctAnswer": "Confirming Worship / paying respects at shrine"
@@ -3280,13 +3265,13 @@ export const unit17: DojoUnit = {
         "audioText": "さんぱいのかくにん",
         "tileBank": [
           "く",
+          "の",
           "か",
           "い",
           "ん",
           "さ",
-          "に",
           "ぱ",
-          "の"
+          "に"
         ],
         "correctAnswer": "さんぱいのかくにん"
       },
@@ -3299,10 +3284,10 @@ export const unit17: DojoUnit = {
         "english": "Confirming Obon ancestral holiday",
         "audioText": "おぼんのかくにん",
         "options": [
-          "Confirming First shrine visit of New Year",
           "Confirming Obon ancestral holiday",
-          "Confirming Tradition / heritage",
-          "Omen / good fortune"
+          "Traditional kimono",
+          "Confirming Culture",
+          "Confirming Worship / paying respects at shrine"
         ],
         "correctAnswer": "Confirming Obon ancestral holiday"
       },
@@ -3315,14 +3300,14 @@ export const unit17: DojoUnit = {
         "english": "Build 'Confirming Obon ancestral holiday'",
         "audioText": "おぼんのかくにん",
         "tileBank": [
-          "ぼ",
-          "く",
           "に",
-          "か",
-          "ん",
           "の",
           "お",
-          "ん"
+          "く",
+          "ん",
+          "か",
+          "ん",
+          "ぼ"
         ],
         "correctAnswer": "おぼんのかくにん"
       },
@@ -3335,10 +3320,10 @@ export const unit17: DojoUnit = {
         "english": "Confirming Festival",
         "audioText": "まつりのかくにん",
         "options": [
-          "Confirming Tea ceremony",
-          "Confirming Portable shrine carried in festivals",
-          "First shrine visit of New Year",
-          "Confirming Festival"
+          "Omen / good fortune",
+          "Confirming Festival",
+          "Ceremony / rite",
+          "Confirming First shrine visit of New Year"
         ],
         "correctAnswer": "Confirming Festival"
       },
@@ -3351,13 +3336,13 @@ export const unit17: DojoUnit = {
         "english": "Build 'Confirming Festival'",
         "audioText": "まつりのかくにん",
         "tileBank": [
-          "か",
-          "に",
           "く",
-          "つ",
-          "の",
           "り",
           "ま",
+          "つ",
+          "の",
+          "に",
+          "か",
           "ん"
         ],
         "correctAnswer": "まつりのかくにん"

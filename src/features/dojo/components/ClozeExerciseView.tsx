@@ -5,7 +5,7 @@ import {
   Pressable,
   View,
 } from 'react-native';
-import { Volume2, Snail } from 'lucide-react-native';
+import { Volume2, Snail, CheckCircle2, XCircle } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
 import { useAppTheme } from '../../../core/theme';
 import type { LessonItem } from '../models/dojo.model';
@@ -15,6 +15,7 @@ interface ClozeExerciseViewProps {
   selectedChip: string | null;
   onSelectChip: (chip: string | null) => void;
   onPlayAudio: (rate?: number) => void;
+  evaluation?: 'correct' | 'incorrect' | null;
 }
 
 export function ClozeExerciseView({
@@ -22,6 +23,7 @@ export function ClozeExerciseView({
   selectedChip,
   onSelectChip,
   onPlayAudio,
+  evaluation = null,
 }: ClozeExerciseViewProps) {
   const { colors: theme } = useAppTheme();
 
@@ -37,11 +39,12 @@ export function ClozeExerciseView({
   const suffix = parts[1] || '';
 
   const options = item.clozeOptions || item.options || [];
+  const correctTarget = item.clozeTarget || item.correctAnswer;
 
   const handleChipPress = (chip: string) => {
+    if (evaluation !== null) return;
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
     if (selectedChip === chip) {
-      // Toggle off
       onSelectChip(null);
     } else {
       onSelectChip(chip);
@@ -49,11 +52,41 @@ export function ClozeExerciseView({
   };
 
   const handleSlotPress = () => {
+    if (evaluation !== null) return;
     if (selectedChip) {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
       onSelectChip(null);
     }
   };
+
+  // Determine slot styling based on evaluation
+  const isEvaluated = evaluation !== null;
+  const isIncorrect = evaluation === 'incorrect';
+  const isCorrect = evaluation === 'correct';
+
+  const slotBg = isCorrect
+    ? '#DEF7EC'
+    : isIncorrect
+    ? '#FDE8E8'
+    : selectedChip
+    ? theme.primary
+    : theme.surfaceSubtle;
+
+  const slotBorder = isCorrect
+    ? '#059669'
+    : isIncorrect
+    ? '#E02424'
+    : selectedChip
+    ? theme.primary
+    : theme.border;
+
+  const slotTextColor = isCorrect
+    ? '#03543F'
+    : isIncorrect
+    ? '#9B1C1C'
+    : selectedChip
+    ? theme.textOnPrimary
+    : theme.textMuted;
 
   return (
     <View style={styles.container}>
@@ -100,20 +133,29 @@ export function ClozeExerciseView({
             onPress={handleSlotPress}
             style={[
               styles.slotBox,
-              selectedChip
-                ? { backgroundColor: theme.primary, borderColor: theme.primary }
-                : { backgroundColor: theme.surfaceSubtle, borderColor: theme.border },
+              {
+                backgroundColor: slotBg,
+                borderColor: slotBorder,
+                minWidth: (selectedChip && selectedChip.length > 3) ? 110 : 80,
+              },
             ]}
-            accessibilityLabel={selectedChip ? `Filled with ${selectedChip}, tap to remove` : 'Empty slot'}
+            accessibilityLabel={selectedChip ? `Filled with ${selectedChip}` : 'Empty slot'}
           >
-            <Text
-              style={[
-                styles.slotText,
-                { color: selectedChip ? theme.textOnPrimary : theme.textMuted },
-              ]}
-            >
-              {selectedChip || '____'}
-            </Text>
+            <View style={styles.slotInnerRow}>
+              <Text
+                style={[
+                  styles.slotText,
+                  {
+                    color: slotTextColor,
+                    fontSize: selectedChip && selectedChip.length > 5 ? 16 : 22,
+                  },
+                ]}
+              >
+                {selectedChip || '____'}
+              </Text>
+              {isCorrect && <CheckCircle2 size={18} color="#059669" style={{ marginLeft: 4 }} />}
+              {isIncorrect && <XCircle size={18} color="#E02424" style={{ marginLeft: 4 }} />}
+            </View>
           </Pressable>
 
           {suffix.length > 0 && (
@@ -122,6 +164,15 @@ export function ClozeExerciseView({
             </Text>
           )}
         </View>
+
+        {/* Inline Correction Highlight when Incorrect */}
+        {isIncorrect && (
+          <View style={styles.inlineCorrectionRow}>
+            <CheckCircle2 size={16} color="#059669" />
+            <Text style={styles.inlineCorrectionLabel}>Correct answer: </Text>
+            <Text style={styles.inlineCorrectionTarget}>{correctTarget}</Text>
+          </View>
+        )}
 
         {/* English Translation */}
         <Text style={[styles.translationText, { color: theme.textMuted }]}>
@@ -132,32 +183,65 @@ export function ClozeExerciseView({
       {/* Option Chips Tray */}
       <View style={styles.traySection}>
         <Text style={[styles.trayLabel, { color: theme.textSecondary }]}>
-          Tap to insert:
+          {isEvaluated ? 'Options:' : 'Tap to insert:'}
         </Text>
         <View style={styles.chipsContainer}>
           {options.map((option, idx) => {
             const isUsed = selectedChip === option;
+            const isOptionTarget = option === correctTarget;
+
+            let chipBg = theme.surface;
+            let chipBorder = theme.border;
+            let chipText = theme.textPrimary;
+
+            if (isEvaluated) {
+              if (isOptionTarget) {
+                chipBg = '#DEF7EC';
+                chipBorder = '#059669';
+                chipText = '#03543F';
+              } else if (isUsed && isIncorrect) {
+                chipBg = '#FDE8E8';
+                chipBorder = '#E02424';
+                chipText = '#9B1C1C';
+              }
+            } else if (isUsed) {
+              chipBg = theme.surfaceSubtle;
+              chipBorder = theme.border;
+              chipText = theme.textMuted;
+            }
+
             return (
               <Pressable
                 key={idx}
-                disabled={isUsed}
+                disabled={isEvaluated || isUsed}
                 onPress={() => handleChipPress(option)}
                 style={[
                   styles.chipButton,
-                  { backgroundColor: theme.surface, borderColor: theme.border },
-                  isUsed && { opacity: 0.3, backgroundColor: theme.surfaceSubtle },
+                  { backgroundColor: chipBg, borderColor: chipBorder },
+                  !isEvaluated && isUsed && { opacity: 0.3 },
                 ]}
                 accessibilityLabel={`Option ${option}`}
               >
-                <Text
-                  style={[
-                    styles.chipText,
-                    { color: theme.textPrimary },
-                    isUsed && { color: theme.textMuted },
-                  ]}
-                >
-                  {option}
-                </Text>
+                <View style={styles.chipInnerRow}>
+                  <Text
+                    style={[
+                      styles.chipText,
+                      {
+                        color: chipText,
+                        fontSize: option.length > 5 ? 16 : 20,
+                        fontWeight: isOptionTarget && isEvaluated ? '800' : '700',
+                      },
+                    ]}
+                  >
+                    {option}
+                  </Text>
+                  {isEvaluated && isOptionTarget && (
+                    <CheckCircle2 size={16} color="#059669" style={{ marginLeft: 6 }} />
+                  )}
+                  {isEvaluated && isUsed && isIncorrect && (
+                    <XCircle size={16} color="#E02424" style={{ marginLeft: 6 }} />
+                  )}
+                </View>
               </Pressable>
             );
           })}
@@ -267,6 +351,39 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  slotInnerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  inlineCorrectionRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#DEF7EC',
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 10,
+    marginBottom: 12,
+    borderWidth: 1,
+    borderColor: '#31C48D',
+  },
+  inlineCorrectionLabel: {
+    fontSize: 13,
+    color: '#03543F',
+    fontWeight: '600',
+    marginLeft: 6,
+  },
+  inlineCorrectionTarget: {
+    fontSize: 14,
+    color: '#03543F',
+    fontWeight: '800',
+  },
+  chipInnerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   chipText: {
     fontSize: 20,

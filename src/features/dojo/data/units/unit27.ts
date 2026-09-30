@@ -51,10 +51,10 @@ export const unit27: DojoUnit = {
           "english": "Real intentions / private opinion",
           "audioText": "ほんね",
           "options": [
-            "Confirming Spirit of collective harmony",
-            "Confirming Modesty / self-effacement",
-            "Confirming Real intentions / private opinion",
-            "Real intentions / private opinion"
+            "Real intentions / private opinion",
+            "Sense of duty / social obligation",
+            "Confirming Reading the unspoken atmosphere",
+            "Confirming Avoiding unnecessary friction"
           ],
           "correctAnswer": "Real intentions / private opinion"
         },
@@ -67,34 +67,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Real intentions / private opinion'",
           "audioText": "ほんね",
           "tileBank": [
-            "そ",
-            "く",
-            "ね",
             "ほ",
-            "ら",
+            "み",
+            "ゆ",
+            "さ",
+            "ね",
+            "る",
             "ん",
-            "な",
-            "け"
+            "は"
           ],
           "correctAnswer": "ほんね"
         },
         {
           "id": "u27_l1_3",
           "type": "cloze",
-          "prompt": "私は建前がすきです",
-          "furigana": "わたしはたてまえがすきです",
-          "romaji": "Watashi wa tatemae ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Public stance / social protocol.",
-          "audioText": "建前",
-          "clozeSentence": "これは建前 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な建前です。",
+          "furigana": "これはいちばんたいせつなたてまえです。",
+          "romaji": "Kore wa ichiban taisetsu na tatemae desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Public stance / social protocol.",
+          "audioText": "これは建前です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な建前です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l1_4",
@@ -107,9 +108,9 @@ export const unit27: DojoUnit = {
           "scrambleTokens": [
             "です",
             "これは",
+            "建前",
             "ではありません",
-            "それ",
-            "建前"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -138,24 +139,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l1_6",
           "type": "dictate",
-          "prompt": "空気を読むをお願いします",
-          "furigana": "くうきをよむをおねがいします",
-          "romaji": "kuuki o yomu o onegaishimasu.",
-          "english": "Reading the unspoken atmosphere, please.",
-          "audioText": "空気を読むをお願いします",
+          "prompt": "空気を読むです",
+          "furigana": "くうきをよむです",
+          "romaji": "kuuki o yomu desu.",
+          "english": "It is Reading the unspoken atmosphere.",
+          "audioText": "空気を読むです",
           "dictateTokens": [
+            "ではありません",
+            "これ",
             "です",
-            "お願いします",
-            "を",
-            "空気を読む",
-            "ありがとう"
+            "空気を読む"
           ],
           "dictateSolution": [
             "空気を読む",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "空気を読むをお願いします"
+          "correctAnswer": "空気を読むです"
         },
         {
           "id": "u27_l1_7",
@@ -259,9 +258,9 @@ export const unit27: DojoUnit = {
           "audioText": "わのせいしん",
           "options": [
             "Spirit of collective harmony",
-            "Confirming Modesty / self-effacement",
-            "Confirming Spirit of collective harmony",
-            "Confirming Anticipating unspoken wishes"
+            "Confirming Anticipating unspoken wishes",
+            "Public stance / social protocol",
+            "Confirming Real intentions / private opinion"
           ],
           "correctAnswer": "Spirit of collective harmony"
         },
@@ -274,34 +273,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Spirit of collective harmony'",
           "audioText": "わのせいしん",
           "tileBank": [
-            "せ",
-            "わ",
-            "い",
+            "ろ",
             "ん",
-            "の",
             "し",
-            "へ",
-            "お"
+            "い",
+            "の",
+            "ち",
+            "わ",
+            "せ"
           ],
           "correctAnswer": "わのせいしん"
         },
         {
           "id": "u27_l2_3",
           "type": "cloze",
-          "prompt": "私は忖度がすきです",
-          "furigana": "わたしはそんたくがすきです",
-          "romaji": "Watashi wa sontaku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Anticipating unspoken wishes.",
-          "audioText": "忖度",
-          "clozeSentence": "これは忖度 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な忖度です。",
+          "furigana": "これはいちばんたいせつなそんたくです。",
+          "romaji": "Kore wa ichiban taisetsu na sontaku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Anticipating unspoken wishes.",
+          "audioText": "これは忖度です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な忖度です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l2_4",
@@ -312,11 +312,11 @@ export const unit27: DojoUnit = {
           "english": "This is Anticipating unspoken wishes.",
           "audioText": "これは忖度です",
           "scrambleTokens": [
-            "これは",
             "です",
-            "ではありません",
+            "これは",
             "忖度",
-            "それ"
+            "それ",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -345,24 +345,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l2_6",
           "type": "dictate",
-          "prompt": "配慮をお願いします",
-          "furigana": "はいりょをおねがいします",
-          "romaji": "hairyo o onegaishimasu.",
-          "english": "Thoughtful consideration for others, please.",
-          "audioText": "配慮をお願いします",
+          "prompt": "配慮です",
+          "furigana": "はいりょです",
+          "romaji": "hairyo desu.",
+          "english": "It is Thoughtful consideration for others.",
+          "audioText": "配慮です",
           "dictateTokens": [
             "配慮",
-            "ありがとう",
-            "を",
+            "これ",
             "です",
-            "お願いします"
+            "ではありません"
           ],
           "dictateSolution": [
             "配慮",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "配慮をお願いします"
+          "correctAnswer": "配慮です"
         },
         {
           "id": "u27_l2_7",
@@ -467,10 +465,10 @@ export const unit27: DojoUnit = {
           "english": "Diplomatic compliments / polite flattery",
           "audioText": "しゃこうじれい",
           "options": [
-            "Behind-the-scenes consensus building",
+            "Diplomatic compliments / polite flattery",
+            "Confirming Modesty / self-effacement",
             "Confirming Real intentions / private opinion",
-            "Confirming Anticipating unspoken wishes",
-            "Diplomatic compliments / polite flattery"
+            "Confirming Peer pressure to conform"
           ],
           "correctAnswer": "Diplomatic compliments / polite flattery"
         },
@@ -483,34 +481,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Indirect'",
           "audioText": "かんせつてき",
           "tileBank": [
-            "ん",
-            "や",
             "て",
-            "つ",
+            "ん",
+            "せ",
             "き",
-            "い",
             "か",
-            "せ"
+            "ほ",
+            "ぬ",
+            "つ"
           ],
           "correctAnswer": "かんせつてき"
         },
         {
           "id": "u27_l3_3",
           "type": "cloze",
-          "prompt": "私は間接的がすきです",
-          "furigana": "わたしはかんせつてきがすきです",
-          "romaji": "Watashi wa kansetsuteki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Indirect.",
-          "audioText": "間接的",
-          "clozeSentence": "これは間接的 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な間接的です。",
+          "furigana": "これはいちばんたいせつなかんせつてきです。",
+          "romaji": "Kore wa ichiban taisetsu na kansetsuteki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Indirect.",
+          "audioText": "これは間接的です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な間接的です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l3_4",
@@ -521,11 +520,11 @@ export const unit27: DojoUnit = {
           "english": "This is Indirect.",
           "audioText": "これは間接的です",
           "scrambleTokens": [
-            "ではありません",
             "間接的",
-            "これは",
+            "それ",
             "です",
-            "それ"
+            "ではありません",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -554,24 +553,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l3_6",
           "type": "dictate",
-          "prompt": "角を立てないをお願いします",
-          "furigana": "かどをたてないをおねがいします",
-          "romaji": "kado o tatenai o onegaishimasu.",
-          "english": "Avoiding unnecessary friction, please.",
-          "audioText": "角を立てないをお願いします",
+          "prompt": "角を立てないです",
+          "furigana": "かどをたてないです",
+          "romaji": "kado o tatenai desu.",
+          "english": "It is Avoiding unnecessary friction.",
+          "audioText": "角を立てないです",
           "dictateTokens": [
-            "ありがとう",
+            "これ",
             "です",
-            "を",
-            "お願いします",
+            "ではありません",
             "角を立てない"
           ],
           "dictateSolution": [
             "角を立てない",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "角を立てないをお願いします"
+          "correctAnswer": "角を立てないです"
         },
         {
           "id": "u27_l3_7",
@@ -673,10 +670,10 @@ export const unit27: DojoUnit = {
           "english": "Sense of duty / social obligation",
           "audioText": "ぎり",
           "options": [
-            "Diplomatic compliments / polite flattery",
+            "Confirming Avoiding unnecessary friction",
             "Sense of duty / social obligation",
-            "Spirit of collective harmony",
-            "Anticipating unspoken wishes"
+            "Confirming Public stance / social protocol",
+            "Behind-the-scenes consensus building"
           ],
           "correctAnswer": "Sense of duty / social obligation"
         },
@@ -689,26 +686,26 @@ export const unit27: DojoUnit = {
           "english": "Build 'Sense of duty / social obligation'",
           "audioText": "ぎり",
           "tileBank": [
-            "つ",
+            "た",
+            "い",
+            "む",
+            "や",
             "り",
-            "せ",
+            "え",
             "ぎ",
-            "へ",
-            "の",
-            "を",
-            "お"
+            "す"
           ],
           "correctAnswer": "ぎり"
         },
         {
           "id": "u27_l4_3",
           "type": "cloze",
-          "prompt": "私は人情がすきです",
-          "furigana": "わたしはにんじょうがすきです",
-          "romaji": "Watashi wa ninjou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Human warmth / empathy.",
-          "audioText": "人情",
-          "clozeSentence": "これは人情 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な人情です。",
+          "furigana": "これはいちばんたいせつなにんじょうです。",
+          "romaji": "Kore wa ichiban taisetsu na ninjou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Human warmth / empathy.",
+          "audioText": "これは人情です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な人情です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -716,7 +713,8 @@ export const unit27: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l4_4",
@@ -727,11 +725,11 @@ export const unit27: DojoUnit = {
           "english": "This is Human warmth / empathy.",
           "audioText": "これは人情です",
           "scrambleTokens": [
-            "です",
-            "ではありません",
             "それ",
+            "ではありません",
             "人情",
-            "これは"
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -760,24 +758,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l4_6",
           "type": "dictate",
-          "prompt": "根回しをお願いします",
-          "furigana": "ねまわしをおねがいします",
-          "romaji": "nemawashi o onegaishimasu.",
-          "english": "Behind-the-scenes consensus building, please.",
-          "audioText": "根回しをお願いします",
+          "prompt": "根回しです",
+          "furigana": "ねまわしです",
+          "romaji": "nemawashi desu.",
+          "english": "It is Behind-the-scenes consensus building.",
+          "audioText": "根回しです",
           "dictateTokens": [
-            "です",
-            "ありがとう",
-            "お願いします",
             "根回し",
-            "を"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "根回し",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "根回しをお願いします"
+          "correctAnswer": "根回しです"
         },
         {
           "id": "u27_l4_7",
@@ -881,10 +877,10 @@ export const unit27: DojoUnit = {
           "english": "Modesty / self-effacement",
           "audioText": "けんそん",
           "options": [
+            "Human warmth / empathy",
+            "Confirming Human warmth / empathy",
             "Confirming Sense of duty / social obligation",
-            "Modesty / self-effacement",
-            "Thoughtful consideration for others",
-            "Confirming Public stance / social protocol"
+            "Modesty / self-effacement"
           ],
           "correctAnswer": "Modesty / self-effacement"
         },
@@ -897,34 +893,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Modesty / self-effacement'",
           "audioText": "けんそん",
           "tileBank": [
-            "ゆ",
             "ん",
-            "け",
-            "ほ",
-            "い",
+            "を",
+            "ぬ",
+            "ろ",
             "ん",
+            "そ",
             "り",
-            "そ"
+            "け"
           ],
           "correctAnswer": "けんそん"
         },
         {
           "id": "u27_l5_3",
           "type": "cloze",
-          "prompt": "私は気配りがすきです",
-          "furigana": "わたしはきくばりがすきです",
-          "romaji": "Watashi wa kikubari ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Attentiveness / care.",
-          "audioText": "気配り",
-          "clozeSentence": "これは気配り {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な気配りです。",
+          "furigana": "これはいちばんたいせつなきくばりです。",
+          "romaji": "Kore wa ichiban taisetsu na kikubari desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Attentiveness / care.",
+          "audioText": "これは気配りです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な気配りです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l5_4",
@@ -935,11 +932,11 @@ export const unit27: DojoUnit = {
           "english": "This is Attentiveness / care.",
           "audioText": "これは気配りです",
           "scrambleTokens": [
+            "それ",
+            "です",
             "気配り",
             "これは",
-            "ではありません",
-            "それ",
-            "です"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -968,24 +965,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l5_6",
           "type": "dictate",
-          "prompt": "同調圧力をお願いします",
-          "furigana": "どうちょうあつりょくをおねがいします",
-          "romaji": "douchou atsuryoku o onegaishimasu.",
-          "english": "Peer pressure to conform, please.",
-          "audioText": "同調圧力をお願いします",
+          "prompt": "同調圧力です",
+          "furigana": "どうちょうあつりょくです",
+          "romaji": "douchou atsuryoku desu.",
+          "english": "It is Peer pressure to conform.",
+          "audioText": "同調圧力です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "を",
             "同調圧力",
-            "です"
+            "これ",
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "同調圧力",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "同調圧力をお願いします"
+          "correctAnswer": "同調圧力です"
         },
         {
           "id": "u27_l5_7",
@@ -1094,10 +1089,10 @@ export const unit27: DojoUnit = {
           "english": "Confirming Real intentions / private opinion",
           "audioText": "ほんねのかくにん",
           "options": [
-            "Confirming Thoughtful consideration for others",
-            "Confirming Reading the unspoken atmosphere",
-            "Avoiding unnecessary friction",
-            "Confirming Real intentions / private opinion"
+            "Anticipating unspoken wishes",
+            "Confirming Real intentions / private opinion",
+            "Confirming Peer pressure to conform",
+            "Confirming Sense of duty / social obligation"
           ],
           "correctAnswer": "Confirming Real intentions / private opinion"
         },
@@ -1110,34 +1105,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Confirming Real intentions / private opinion'",
           "audioText": "ほんねのかくにん",
           "tileBank": [
-            "ん",
             "ね",
+            "く",
             "の",
             "ん",
             "か",
-            "く",
+            "ほ",
             "に",
-            "ほ"
+            "ん"
           ],
           "correctAnswer": "ほんねのかくにん"
         },
         {
           "id": "u27_l6_3",
           "type": "cloze",
-          "prompt": "私は建前の確認がすきです",
-          "furigana": "わたしはたてまえのかくにんがすきです",
-          "romaji": "Watashi wa tatemae no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Public stance / social protocol.",
-          "audioText": "建前の確認",
-          "clozeSentence": "これは建前の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な建前の確認です。",
+          "furigana": "これはいちばんたいせつなたてまえのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na tatemae no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Public stance / social protocol.",
+          "audioText": "これは建前の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な建前の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l6_4",
@@ -1148,11 +1144,11 @@ export const unit27: DojoUnit = {
           "english": "This is Confirming Public stance / social protocol.",
           "audioText": "これは建前の確認です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
             "です",
             "これは",
-            "建前の確認"
+            "建前の確認",
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1181,24 +1177,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l6_6",
           "type": "dictate",
-          "prompt": "空気を読むの確認をお願いします",
-          "furigana": "くうきをよむのかくにんをおねがいします",
-          "romaji": "kuuki o yomu no kakunin o onegaishimasu.",
-          "english": "Confirming Reading the unspoken atmosphere, please.",
-          "audioText": "空気を読むの確認をお願いします",
+          "prompt": "空気を読むの確認です",
+          "furigana": "くうきをよむのかくにんです",
+          "romaji": "kuuki o yomu no kakunin desu.",
+          "english": "It is Confirming Reading the unspoken atmosphere.",
+          "audioText": "空気を読むの確認です",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "空気を読むの確認",
-            "を",
-            "お願いします",
-            "ありがとう",
             "です"
           ],
           "dictateSolution": [
             "空気を読むの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "空気を読むの確認をお願いします"
+          "correctAnswer": "空気を読むの確認です"
         },
         {
           "id": "u27_l6_7",
@@ -1307,9 +1301,9 @@ export const unit27: DojoUnit = {
           "english": "Confirming Spirit of collective harmony",
           "audioText": "わのせいしんのかくにん",
           "options": [
-            "Confirming Avoiding unnecessary friction",
-            "Diplomatic compliments / polite flattery",
-            "Confirming Attentiveness / care",
+            "Indirect",
+            "Attentiveness / care",
+            "Confirming Anticipating unspoken wishes",
             "Confirming Spirit of collective harmony"
           ],
           "correctAnswer": "Confirming Spirit of collective harmony"
@@ -1324,33 +1318,34 @@ export const unit27: DojoUnit = {
           "audioText": "わのせいしんのかくにん",
           "tileBank": [
             "の",
-            "し",
-            "か",
-            "ん",
             "の",
-            "わ",
+            "し",
             "せ",
-            "い"
+            "ん",
+            "わ",
+            "い",
+            "か"
           ],
           "correctAnswer": "わのせいしんのかくにん"
         },
         {
           "id": "u27_l7_3",
           "type": "cloze",
-          "prompt": "私は忖度の確認がすきです",
-          "furigana": "わたしはそんたくのかくにんがすきです",
-          "romaji": "Watashi wa sontaku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Anticipating unspoken wishes.",
-          "audioText": "忖度の確認",
-          "clozeSentence": "これは忖度の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な忖度の確認です。",
+          "furigana": "これはいちばんたいせつなそんたくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na sontaku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Anticipating unspoken wishes.",
+          "audioText": "これは忖度の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な忖度の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l7_4",
@@ -1361,11 +1356,11 @@ export const unit27: DojoUnit = {
           "english": "This is Confirming Anticipating unspoken wishes.",
           "audioText": "これは忖度の確認です",
           "scrambleTokens": [
-            "これは",
-            "それ",
-            "忖度の確認",
             "です",
-            "ではありません"
+            "これは",
+            "ではありません",
+            "それ",
+            "忖度の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1394,24 +1389,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l7_6",
           "type": "dictate",
-          "prompt": "配慮の確認をお願いします",
-          "furigana": "はいりょのかくにんをおねがいします",
-          "romaji": "hairyo no kakunin o onegaishimasu.",
-          "english": "Confirming Thoughtful consideration for others, please.",
-          "audioText": "配慮の確認をお願いします",
+          "prompt": "配慮の確認です",
+          "furigana": "はいりょのかくにんです",
+          "romaji": "hairyo no kakunin desu.",
+          "english": "It is Confirming Thoughtful consideration for others.",
+          "audioText": "配慮の確認です",
           "dictateTokens": [
-            "お願いします",
-            "配慮の確認",
-            "を",
             "です",
-            "ありがとう"
+            "これ",
+            "ではありません",
+            "配慮の確認"
           ],
           "dictateSolution": [
             "配慮の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "配慮の確認をお願いします"
+          "correctAnswer": "配慮の確認です"
         },
         {
           "id": "u27_l7_7",
@@ -1522,10 +1515,10 @@ export const unit27: DojoUnit = {
           "english": "Confirming Diplomatic compliments / polite flattery",
           "audioText": "しゃこうじれいのかくにん",
           "options": [
-            "Confirming Behind-the-scenes consensus building",
+            "Confirming Reading the unspoken atmosphere",
             "Confirming Diplomatic compliments / polite flattery",
             "Confirming Peer pressure to conform",
-            "Confirming Sense of duty / social obligation"
+            "Sense of duty / social obligation"
           ],
           "correctAnswer": "Confirming Diplomatic compliments / polite flattery"
         },
@@ -1538,26 +1531,26 @@ export const unit27: DojoUnit = {
           "english": "Build 'Confirming Diplomatic compliments / polite flattery'",
           "audioText": "しゃこうじれいのかくにん",
           "tileBank": [
-            "の",
-            "じ",
-            "し",
-            "う",
+            "い",
             "こ",
+            "の",
             "れ",
+            "う",
             "ゃ",
-            "い"
+            "し",
+            "じ"
           ],
           "correctAnswer": "しゃこうじれいのかくにん"
         },
         {
           "id": "u27_l8_3",
           "type": "cloze",
-          "prompt": "私は間接的の確認がすきです",
-          "furigana": "わたしはかんせつてきのかくにんがすきです",
-          "romaji": "Watashi wa kansetsuteki no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Indirect.",
-          "audioText": "間接的の確認",
-          "clozeSentence": "これは間接的の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な間接的の確認です。",
+          "furigana": "これはいちばんたいせつなかんせつてきのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kansetsuteki no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Indirect.",
+          "audioText": "これは間接的の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な間接的の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1565,7 +1558,8 @@ export const unit27: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l8_4",
@@ -1577,10 +1571,10 @@ export const unit27: DojoUnit = {
           "audioText": "これは間接的の確認です",
           "scrambleTokens": [
             "ではありません",
-            "です",
             "間接的の確認",
-            "それ",
-            "これは"
+            "です",
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1609,24 +1603,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l8_6",
           "type": "dictate",
-          "prompt": "角を立てないの確認をお願いします",
-          "furigana": "かどをたてないのかくにんをおねがいします",
-          "romaji": "kado o tatenai no kakunin o onegaishimasu.",
-          "english": "Confirming Avoiding unnecessary friction, please.",
-          "audioText": "角を立てないの確認をお願いします",
+          "prompt": "角を立てないの確認です",
+          "furigana": "かどをたてないのかくにんです",
+          "romaji": "kado o tatenai no kakunin desu.",
+          "english": "It is Confirming Avoiding unnecessary friction.",
+          "audioText": "角を立てないの確認です",
           "dictateTokens": [
+            "ではありません",
             "です",
-            "ありがとう",
-            "を",
             "角を立てないの確認",
-            "お願いします"
+            "これ"
           ],
           "dictateSolution": [
             "角を立てないの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "角を立てないの確認をお願いします"
+          "correctAnswer": "角を立てないの確認です"
         },
         {
           "id": "u27_l8_7",
@@ -1734,9 +1726,9 @@ export const unit27: DojoUnit = {
           "english": "Confirming Sense of duty / social obligation",
           "audioText": "ぎりのかくにん",
           "options": [
-            "Confirming Behind-the-scenes consensus building",
-            "Sense of duty / social obligation",
-            "Confirming Public stance / social protocol",
+            "Indirect",
+            "Anticipating unspoken wishes",
+            "Confirming Anticipating unspoken wishes",
             "Confirming Sense of duty / social obligation"
           ],
           "correctAnswer": "Confirming Sense of duty / social obligation"
@@ -1750,34 +1742,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Confirming Sense of duty / social obligation'",
           "audioText": "ぎりのかくにん",
           "tileBank": [
-            "ぎ",
+            "つ",
+            "に",
             "ん",
-            "の",
-            "か",
-            "く",
-            "へ",
             "り",
-            "に"
+            "の",
+            "ぎ",
+            "く",
+            "か"
           ],
           "correctAnswer": "ぎりのかくにん"
         },
         {
           "id": "u27_l9_3",
           "type": "cloze",
-          "prompt": "私は人情の確認がすきです",
-          "furigana": "わたしはにんじょうのかくにんがすきです",
-          "romaji": "Watashi wa ninjou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Human warmth / empathy.",
-          "audioText": "人情の確認",
-          "clozeSentence": "これは人情の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な人情の確認です。",
+          "furigana": "これはいちばんたいせつなにんじょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ninjou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Human warmth / empathy.",
+          "audioText": "これは人情の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な人情の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l9_4",
@@ -1788,11 +1781,11 @@ export const unit27: DojoUnit = {
           "english": "This is Confirming Human warmth / empathy.",
           "audioText": "これは人情の確認です",
           "scrambleTokens": [
-            "人情の確認",
-            "です",
-            "それ",
             "ではありません",
-            "これは"
+            "これは",
+            "それ",
+            "人情の確認",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1821,24 +1814,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l9_6",
           "type": "dictate",
-          "prompt": "根回しの確認をお願いします",
-          "furigana": "ねまわしのかくにんをおねがいします",
-          "romaji": "nemawashi no kakunin o onegaishimasu.",
-          "english": "Confirming Behind-the-scenes consensus building, please.",
-          "audioText": "根回しの確認をお願いします",
+          "prompt": "根回しの確認です",
+          "furigana": "ねまわしのかくにんです",
+          "romaji": "nemawashi no kakunin desu.",
+          "english": "It is Confirming Behind-the-scenes consensus building.",
+          "audioText": "根回しの確認です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "お願いします",
             "です",
-            "根回しの確認"
+            "根回しの確認",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "根回しの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "根回しの確認をお願いします"
+          "correctAnswer": "根回しの確認です"
         },
         {
           "id": "u27_l9_7",
@@ -1950,8 +1941,8 @@ export const unit27: DojoUnit = {
           "options": [
             "Confirming Anticipating unspoken wishes",
             "Confirming Modesty / self-effacement",
-            "Avoiding unnecessary friction",
-            "Confirming Indirect"
+            "Confirming Attentiveness / care",
+            "Confirming Public stance / social protocol"
           ],
           "correctAnswer": "Confirming Modesty / self-effacement"
         },
@@ -1964,34 +1955,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Confirming Modesty / self-effacement'",
           "audioText": "けんそんのかくにん",
           "tileBank": [
-            "け",
             "ん",
-            "か",
+            "け",
             "の",
             "ん",
+            "に",
             "く",
-            "そ",
-            "に"
+            "か",
+            "そ"
           ],
           "correctAnswer": "けんそんのかくにん"
         },
         {
           "id": "u27_l10_3",
           "type": "cloze",
-          "prompt": "私は気配りの確認がすきです",
-          "furigana": "わたしはきくばりのかくにんがすきです",
-          "romaji": "Watashi wa kikubari no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Attentiveness / care.",
-          "audioText": "気配りの確認",
-          "clozeSentence": "これは気配りの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な気配りの確認です。",
+          "furigana": "これはいちばんたいせつなきくばりのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kikubari no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Attentiveness / care.",
+          "audioText": "これは気配りの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な気配りの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l10_4",
@@ -2002,11 +1994,11 @@ export const unit27: DojoUnit = {
           "english": "This is Confirming Attentiveness / care.",
           "audioText": "これは気配りの確認です",
           "scrambleTokens": [
-            "それ",
             "です",
             "ではありません",
+            "気配りの確認",
             "これは",
-            "気配りの確認"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2035,24 +2027,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l10_6",
           "type": "dictate",
-          "prompt": "同調圧力の確認をお願いします",
-          "furigana": "どうちょうあつりょくのかくにんをおねがいします",
-          "romaji": "douchou atsuryoku no kakunin o onegaishimasu.",
-          "english": "Confirming Peer pressure to conform, please.",
-          "audioText": "同調圧力の確認をお願いします",
+          "prompt": "同調圧力の確認です",
+          "furigana": "どうちょうあつりょくのかくにんです",
+          "romaji": "douchou atsuryoku no kakunin desu.",
+          "english": "It is Confirming Peer pressure to conform.",
+          "audioText": "同調圧力の確認です",
           "dictateTokens": [
-            "を",
-            "お願いします",
-            "同調圧力の確認",
             "です",
-            "ありがとう"
+            "ではありません",
+            "これ",
+            "同調圧力の確認"
           ],
           "dictateSolution": [
             "同調圧力の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "同調圧力の確認をお願いします"
+          "correctAnswer": "同調圧力の確認です"
         },
         {
           "id": "u27_l10_7",
@@ -2161,9 +2151,9 @@ export const unit27: DojoUnit = {
           "english": "Confirming Real intentions / private opinion",
           "audioText": "ほんねのかくにん",
           "options": [
-            "Diplomatic compliments / polite flattery",
-            "Confirming Anticipating unspoken wishes",
-            "Confirming Reading the unspoken atmosphere",
+            "Avoiding unnecessary friction",
+            "Modesty / self-effacement",
+            "Confirming Spirit of collective harmony",
             "Confirming Real intentions / private opinion"
           ],
           "correctAnswer": "Confirming Real intentions / private opinion"
@@ -2177,34 +2167,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Confirming Real intentions / private opinion'",
           "audioText": "ほんねのかくにん",
           "tileBank": [
-            "に",
-            "ん",
-            "ん",
-            "ほ",
-            "く",
             "の",
             "ね",
-            "か"
+            "ん",
+            "ん",
+            "に",
+            "ほ",
+            "か",
+            "く"
           ],
           "correctAnswer": "ほんねのかくにん"
         },
         {
           "id": "u27_l11_3",
           "type": "cloze",
-          "prompt": "私は建前の確認がすきです",
-          "furigana": "わたしはたてまえのかくにんがすきです",
-          "romaji": "Watashi wa tatemae no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Public stance / social protocol.",
-          "audioText": "建前の確認",
-          "clozeSentence": "これは建前の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な建前の確認です。",
+          "furigana": "これはいちばんたいせつなたてまえのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na tatemae no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Public stance / social protocol.",
+          "audioText": "これは建前の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な建前の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l11_4",
@@ -2215,11 +2206,11 @@ export const unit27: DojoUnit = {
           "english": "This is Confirming Public stance / social protocol.",
           "audioText": "これは建前の確認です",
           "scrambleTokens": [
-            "建前の確認",
-            "これは",
+            "です",
             "ではありません",
+            "建前の確認",
             "それ",
-            "です"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2248,24 +2239,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l11_6",
           "type": "dictate",
-          "prompt": "空気を読むの確認をお願いします",
-          "furigana": "くうきをよむのかくにんをおねがいします",
-          "romaji": "kuuki o yomu no kakunin o onegaishimasu.",
-          "english": "Confirming Reading the unspoken atmosphere, please.",
-          "audioText": "空気を読むの確認をお願いします",
+          "prompt": "空気を読むの確認です",
+          "furigana": "くうきをよむのかくにんです",
+          "romaji": "kuuki o yomu no kakunin desu.",
+          "english": "It is Confirming Reading the unspoken atmosphere.",
+          "audioText": "空気を読むの確認です",
           "dictateTokens": [
-            "お願いします",
-            "空気を読むの確認",
-            "ありがとう",
             "です",
-            "を"
+            "ではありません",
+            "空気を読むの確認",
+            "これ"
           ],
           "dictateSolution": [
             "空気を読むの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "空気を読むの確認をお願いします"
+          "correctAnswer": "空気を読むの確認です"
         },
         {
           "id": "u27_l11_7",
@@ -2374,10 +2363,10 @@ export const unit27: DojoUnit = {
           "english": "Confirming Spirit of collective harmony",
           "audioText": "わのせいしんのかくにん",
           "options": [
+            "Human warmth / empathy",
             "Confirming Spirit of collective harmony",
-            "Confirming Behind-the-scenes consensus building",
-            "Thoughtful consideration for others",
-            "Diplomatic compliments / polite flattery"
+            "Confirming Attentiveness / care",
+            "Modesty / self-effacement"
           ],
           "correctAnswer": "Confirming Spirit of collective harmony"
         },
@@ -2390,26 +2379,26 @@ export const unit27: DojoUnit = {
           "english": "Build 'Confirming Spirit of collective harmony'",
           "audioText": "わのせいしんのかくにん",
           "tileBank": [
-            "い",
-            "か",
-            "の",
+            "ん",
             "の",
             "わ",
+            "か",
             "せ",
-            "ん",
-            "し"
+            "し",
+            "の",
+            "い"
           ],
           "correctAnswer": "わのせいしんのかくにん"
         },
         {
           "id": "u27_l12_3",
           "type": "cloze",
-          "prompt": "私は忖度の確認がすきです",
-          "furigana": "わたしはそんたくのかくにんがすきです",
-          "romaji": "Watashi wa sontaku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Anticipating unspoken wishes.",
-          "audioText": "忖度の確認",
-          "clozeSentence": "これは忖度の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な忖度の確認です。",
+          "furigana": "これはいちばんたいせつなそんたくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na sontaku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Anticipating unspoken wishes.",
+          "audioText": "これは忖度の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な忖度の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2417,7 +2406,8 @@ export const unit27: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l12_4",
@@ -2461,24 +2451,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l12_6",
           "type": "dictate",
-          "prompt": "配慮の確認をお願いします",
-          "furigana": "はいりょのかくにんをおねがいします",
-          "romaji": "hairyo no kakunin o onegaishimasu.",
-          "english": "Confirming Thoughtful consideration for others, please.",
-          "audioText": "配慮の確認をお願いします",
+          "prompt": "配慮の確認です",
+          "furigana": "はいりょのかくにんです",
+          "romaji": "hairyo no kakunin desu.",
+          "english": "It is Confirming Thoughtful consideration for others.",
+          "audioText": "配慮の確認です",
           "dictateTokens": [
-            "配慮の確認",
-            "ありがとう",
+            "ではありません",
             "です",
-            "を",
-            "お願いします"
+            "これ",
+            "配慮の確認"
           ],
           "dictateSolution": [
             "配慮の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "配慮の確認をお願いします"
+          "correctAnswer": "配慮の確認です"
         },
         {
           "id": "u27_l12_7",
@@ -2581,10 +2569,10 @@ export const unit27: DojoUnit = {
           "english": "Real intentions / private opinion",
           "audioText": "ほんね",
           "options": [
-            "Confirming Reading the unspoken atmosphere",
-            "Confirming Anticipating unspoken wishes",
-            "Confirming Real intentions / private opinion",
-            "Real intentions / private opinion"
+            "Real intentions / private opinion",
+            "Confirming Avoiding unnecessary friction",
+            "Diplomatic compliments / polite flattery",
+            "Attentiveness / care"
           ],
           "correctAnswer": "Real intentions / private opinion"
         },
@@ -2597,34 +2585,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Real intentions / private opinion'",
           "audioText": "ほんね",
           "tileBank": [
-            "ん",
-            "ほ",
-            "つ",
-            "し",
-            "へ",
             "ね",
-            "ら",
-            "か"
+            "や",
+            "ほ",
+            "せ",
+            "み",
+            "ひ",
+            "ん",
+            "は"
           ],
           "correctAnswer": "ほんね"
         },
         {
           "id": "u27_l13_3",
           "type": "cloze",
-          "prompt": "私は建前がすきです",
-          "furigana": "わたしはたてまえがすきです",
-          "romaji": "Watashi wa tatemae ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Public stance / social protocol.",
-          "audioText": "建前",
-          "clozeSentence": "これは建前 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な建前です。",
+          "furigana": "これはいちばんたいせつなたてまえです。",
+          "romaji": "Kore wa ichiban taisetsu na tatemae desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Public stance / social protocol.",
+          "audioText": "これは建前です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な建前です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l13_4",
@@ -2635,11 +2624,11 @@ export const unit27: DojoUnit = {
           "english": "This is Public stance / social protocol.",
           "audioText": "これは建前です",
           "scrambleTokens": [
-            "です",
             "建前",
-            "これは",
             "ではありません",
-            "それ"
+            "これは",
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2668,24 +2657,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l13_6",
           "type": "dictate",
-          "prompt": "空気を読むをお願いします",
-          "furigana": "くうきをよむをおねがいします",
-          "romaji": "kuuki o yomu o onegaishimasu.",
-          "english": "Reading the unspoken atmosphere, please.",
-          "audioText": "空気を読むをお願いします",
+          "prompt": "空気を読むです",
+          "furigana": "くうきをよむです",
+          "romaji": "kuuki o yomu desu.",
+          "english": "It is Reading the unspoken atmosphere.",
+          "audioText": "空気を読むです",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "です",
-            "を",
-            "空気を読む"
+            "ではありません",
+            "これ",
+            "空気を読む",
+            "です"
           ],
           "dictateSolution": [
             "空気を読む",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "空気を読むをお願いします"
+          "correctAnswer": "空気を読むです"
         },
         {
           "id": "u27_l13_7",
@@ -2788,10 +2775,10 @@ export const unit27: DojoUnit = {
           "english": "Spirit of collective harmony",
           "audioText": "わのせいしん",
           "options": [
-            "Confirming Human warmth / empathy",
             "Spirit of collective harmony",
-            "Reading the unspoken atmosphere",
-            "Confirming Avoiding unnecessary friction"
+            "Confirming Real intentions / private opinion",
+            "Confirming Spirit of collective harmony",
+            "Confirming Spirit of collective harmony"
           ],
           "correctAnswer": "Spirit of collective harmony"
         },
@@ -2804,34 +2791,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Spirit of collective harmony'",
           "audioText": "わのせいしん",
           "tileBank": [
-            "き",
-            "し",
-            "ん",
+            "わ",
             "の",
             "せ",
-            "わ",
-            "い",
-            "す"
+            "ん",
+            "し",
+            "つ",
+            "こ",
+            "い"
           ],
           "correctAnswer": "わのせいしん"
         },
         {
           "id": "u27_l14_3",
           "type": "cloze",
-          "prompt": "私は忖度がすきです",
-          "furigana": "わたしはそんたくがすきです",
-          "romaji": "Watashi wa sontaku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Anticipating unspoken wishes.",
-          "audioText": "忖度",
-          "clozeSentence": "これは忖度 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な忖度です。",
+          "furigana": "これはいちばんたいせつなそんたくです。",
+          "romaji": "Kore wa ichiban taisetsu na sontaku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Anticipating unspoken wishes.",
+          "audioText": "これは忖度です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な忖度です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l14_4",
@@ -2842,9 +2830,9 @@ export const unit27: DojoUnit = {
           "english": "This is Anticipating unspoken wishes.",
           "audioText": "これは忖度です",
           "scrambleTokens": [
-            "ではありません",
-            "これは",
             "です",
+            "これは",
+            "ではありません",
             "忖度",
             "それ"
           ],
@@ -2875,24 +2863,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l14_6",
           "type": "dictate",
-          "prompt": "配慮をお願いします",
-          "furigana": "はいりょをおねがいします",
-          "romaji": "hairyo o onegaishimasu.",
-          "english": "Thoughtful consideration for others, please.",
-          "audioText": "配慮をお願いします",
+          "prompt": "配慮です",
+          "furigana": "はいりょです",
+          "romaji": "hairyo desu.",
+          "english": "It is Thoughtful consideration for others.",
+          "audioText": "配慮です",
           "dictateTokens": [
-            "を",
+            "これ",
             "配慮",
-            "です",
-            "ありがとう",
-            "お願いします"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "配慮",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "配慮をお願いします"
+          "correctAnswer": "配慮です"
         },
         {
           "id": "u27_l14_7",
@@ -2997,9 +2983,9 @@ export const unit27: DojoUnit = {
           "english": "Diplomatic compliments / polite flattery",
           "audioText": "しゃこうじれい",
           "options": [
-            "Confirming Modesty / self-effacement",
-            "Behind-the-scenes consensus building",
+            "Confirming Peer pressure to conform",
             "Diplomatic compliments / polite flattery",
+            "Attentiveness / care",
             "Anticipating unspoken wishes"
           ],
           "correctAnswer": "Diplomatic compliments / polite flattery"
@@ -3013,34 +2999,35 @@ export const unit27: DojoUnit = {
           "english": "Build 'Indirect'",
           "audioText": "かんせつてき",
           "tileBank": [
-            "つ",
-            "か",
             "き",
-            "せ",
+            "か",
+            "ん",
+            "あ",
+            "つ",
             "て",
-            "り",
-            "よ",
-            "ん"
+            "せ",
+            "へ"
           ],
           "correctAnswer": "かんせつてき"
         },
         {
           "id": "u27_l15_3",
           "type": "cloze",
-          "prompt": "私は間接的がすきです",
-          "furigana": "わたしはかんせつてきがすきです",
-          "romaji": "Watashi wa kansetsuteki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Indirect.",
-          "audioText": "間接的",
-          "clozeSentence": "これは間接的 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な間接的です。",
+          "furigana": "これはいちばんたいせつなかんせつてきです。",
+          "romaji": "Kore wa ichiban taisetsu na kansetsuteki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Indirect.",
+          "audioText": "これは間接的です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な間接的です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u27_l15_4",
@@ -3051,11 +3038,11 @@ export const unit27: DojoUnit = {
           "english": "This is Indirect.",
           "audioText": "これは間接的です",
           "scrambleTokens": [
-            "それ",
             "です",
             "これは",
+            "間接的",
             "ではありません",
-            "間接的"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -3084,24 +3071,22 @@ export const unit27: DojoUnit = {
         {
           "id": "u27_l15_6",
           "type": "dictate",
-          "prompt": "角を立てないをお願いします",
-          "furigana": "かどをたてないをおねがいします",
-          "romaji": "kado o tatenai o onegaishimasu.",
-          "english": "Avoiding unnecessary friction, please.",
-          "audioText": "角を立てないをお願いします",
+          "prompt": "角を立てないです",
+          "furigana": "かどをたてないです",
+          "romaji": "kado o tatenai desu.",
+          "english": "It is Avoiding unnecessary friction.",
+          "audioText": "角を立てないです",
           "dictateTokens": [
+            "ではありません",
             "角を立てない",
-            "です",
-            "を",
-            "お願いします",
-            "ありがとう"
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "角を立てない",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "角を立てないをお願いします"
+          "correctAnswer": "角を立てないです"
         },
         {
           "id": "u27_l15_7",
@@ -3186,10 +3171,10 @@ export const unit27: DojoUnit = {
         "english": "Real intentions / private opinion",
         "audioText": "ほんね",
         "options": [
-          "Confirming Spirit of collective harmony",
-          "Confirming Modesty / self-effacement",
-          "Confirming Real intentions / private opinion",
-          "Real intentions / private opinion"
+          "Real intentions / private opinion",
+          "Sense of duty / social obligation",
+          "Confirming Reading the unspoken atmosphere",
+          "Confirming Avoiding unnecessary friction"
         ],
         "correctAnswer": "Real intentions / private opinion"
       },
@@ -3202,14 +3187,14 @@ export const unit27: DojoUnit = {
         "english": "Build 'Real intentions / private opinion'",
         "audioText": "ほんね",
         "tileBank": [
-          "そ",
-          "く",
-          "ね",
           "ほ",
-          "ら",
+          "み",
+          "ゆ",
+          "さ",
+          "ね",
+          "る",
           "ん",
-          "な",
-          "け"
+          "は"
         ],
         "correctAnswer": "ほんね"
       },
@@ -3222,10 +3207,10 @@ export const unit27: DojoUnit = {
         "english": "Diplomatic compliments / polite flattery",
         "audioText": "しゃこうじれい",
         "options": [
-          "Behind-the-scenes consensus building",
+          "Diplomatic compliments / polite flattery",
+          "Confirming Modesty / self-effacement",
           "Confirming Real intentions / private opinion",
-          "Confirming Anticipating unspoken wishes",
-          "Diplomatic compliments / polite flattery"
+          "Confirming Peer pressure to conform"
         ],
         "correctAnswer": "Diplomatic compliments / polite flattery"
       },
@@ -3238,14 +3223,14 @@ export const unit27: DojoUnit = {
         "english": "Build 'Indirect'",
         "audioText": "かんせつてき",
         "tileBank": [
-          "ん",
-          "や",
           "て",
-          "つ",
+          "ん",
+          "せ",
           "き",
-          "い",
           "か",
-          "せ"
+          "ほ",
+          "ぬ",
+          "つ"
         ],
         "correctAnswer": "かんせつてき"
       },
@@ -3258,10 +3243,10 @@ export const unit27: DojoUnit = {
         "english": "Modesty / self-effacement",
         "audioText": "けんそん",
         "options": [
+          "Human warmth / empathy",
+          "Confirming Human warmth / empathy",
           "Confirming Sense of duty / social obligation",
-          "Modesty / self-effacement",
-          "Thoughtful consideration for others",
-          "Confirming Public stance / social protocol"
+          "Modesty / self-effacement"
         ],
         "correctAnswer": "Modesty / self-effacement"
       },
@@ -3274,14 +3259,14 @@ export const unit27: DojoUnit = {
         "english": "Build 'Modesty / self-effacement'",
         "audioText": "けんそん",
         "tileBank": [
-          "ゆ",
           "ん",
-          "け",
-          "ほ",
-          "い",
+          "を",
+          "ぬ",
+          "ろ",
           "ん",
+          "そ",
           "り",
-          "そ"
+          "け"
         ],
         "correctAnswer": "けんそん"
       },
@@ -3294,9 +3279,9 @@ export const unit27: DojoUnit = {
         "english": "Confirming Spirit of collective harmony",
         "audioText": "わのせいしんのかくにん",
         "options": [
-          "Confirming Avoiding unnecessary friction",
-          "Diplomatic compliments / polite flattery",
-          "Confirming Attentiveness / care",
+          "Indirect",
+          "Attentiveness / care",
+          "Confirming Anticipating unspoken wishes",
           "Confirming Spirit of collective harmony"
         ],
         "correctAnswer": "Confirming Spirit of collective harmony"
@@ -3311,13 +3296,13 @@ export const unit27: DojoUnit = {
         "audioText": "わのせいしんのかくにん",
         "tileBank": [
           "の",
-          "し",
-          "か",
-          "ん",
           "の",
-          "わ",
+          "し",
           "せ",
-          "い"
+          "ん",
+          "わ",
+          "い",
+          "か"
         ],
         "correctAnswer": "わのせいしんのかくにん"
       },
@@ -3330,9 +3315,9 @@ export const unit27: DojoUnit = {
         "english": "Confirming Sense of duty / social obligation",
         "audioText": "ぎりのかくにん",
         "options": [
-          "Confirming Behind-the-scenes consensus building",
-          "Sense of duty / social obligation",
-          "Confirming Public stance / social protocol",
+          "Indirect",
+          "Anticipating unspoken wishes",
+          "Confirming Anticipating unspoken wishes",
           "Confirming Sense of duty / social obligation"
         ],
         "correctAnswer": "Confirming Sense of duty / social obligation"
@@ -3346,14 +3331,14 @@ export const unit27: DojoUnit = {
         "english": "Build 'Confirming Sense of duty / social obligation'",
         "audioText": "ぎりのかくにん",
         "tileBank": [
-          "ぎ",
+          "つ",
+          "に",
           "ん",
-          "の",
-          "か",
-          "く",
-          "へ",
           "り",
-          "に"
+          "の",
+          "ぎ",
+          "く",
+          "か"
         ],
         "correctAnswer": "ぎりのかくにん"
       },
@@ -3366,9 +3351,9 @@ export const unit27: DojoUnit = {
         "english": "Confirming Real intentions / private opinion",
         "audioText": "ほんねのかくにん",
         "options": [
-          "Diplomatic compliments / polite flattery",
-          "Confirming Anticipating unspoken wishes",
-          "Confirming Reading the unspoken atmosphere",
+          "Avoiding unnecessary friction",
+          "Modesty / self-effacement",
+          "Confirming Spirit of collective harmony",
           "Confirming Real intentions / private opinion"
         ],
         "correctAnswer": "Confirming Real intentions / private opinion"
@@ -3382,14 +3367,14 @@ export const unit27: DojoUnit = {
         "english": "Build 'Confirming Real intentions / private opinion'",
         "audioText": "ほんねのかくにん",
         "tileBank": [
-          "に",
-          "ん",
-          "ん",
-          "ほ",
-          "く",
           "の",
           "ね",
-          "か"
+          "ん",
+          "ん",
+          "に",
+          "ほ",
+          "か",
+          "く"
         ],
         "correctAnswer": "ほんねのかくにん"
       }

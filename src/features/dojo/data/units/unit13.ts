@@ -50,10 +50,10 @@ export const unit13: DojoUnit = {
           "english": "Monthly rent",
           "audioText": "やちん",
           "options": [
-            "Confirming Security deposit",
-            "Monthly rent",
+            "Sunlight exposure",
             "Confirming Sunlight exposure",
-            "Moving residence"
+            "Monthly rent",
+            "Confirming Security deposit"
           ],
           "correctAnswer": "Monthly rent"
         },
@@ -66,34 +66,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Monthly rent'",
           "audioText": "やちん",
           "tileBank": [
-            "て",
-            "む",
-            "ち",
-            "わ",
-            "こ",
-            "ん",
             "や",
-            "に"
+            "な",
+            "ぬ",
+            "ち",
+            "ん",
+            "る",
+            "り",
+            "す"
           ],
           "correctAnswer": "やちん"
         },
         {
           "id": "u13_l1_3",
           "type": "cloze",
-          "prompt": "私は敷金がすきです",
-          "furigana": "わたしはしききんがすきです",
-          "romaji": "Watashi wa shikikin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Security deposit.",
-          "audioText": "敷金",
-          "clozeSentence": "これは敷金 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な敷金です。",
+          "furigana": "これはいちばんたいせつなしききんです。",
+          "romaji": "Kore wa ichiban taisetsu na shikikin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Security deposit.",
+          "audioText": "これは敷金です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な敷金です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l1_4",
@@ -104,11 +105,11 @@ export const unit13: DojoUnit = {
           "english": "This is Security deposit.",
           "audioText": "これは敷金です",
           "scrambleTokens": [
-            "これは",
             "ではありません",
             "敷金",
+            "です",
             "それ",
-            "です"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -137,24 +138,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l1_6",
           "type": "dictate",
-          "prompt": "礼金をお願いします",
-          "furigana": "れいきんをおねがいします",
-          "romaji": "reikin o onegaishimasu.",
-          "english": "Key money (gratuity), please.",
-          "audioText": "礼金をお願いします",
+          "prompt": "礼金です",
+          "furigana": "れいきんです",
+          "romaji": "reikin desu.",
+          "english": "It is Key money (gratuity).",
+          "audioText": "礼金です",
           "dictateTokens": [
-            "を",
-            "お願いします",
-            "ありがとう",
             "です",
-            "礼金"
+            "礼金",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "礼金",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "礼金をお願いします"
+          "correctAnswer": "礼金です"
         },
         {
           "id": "u13_l1_7",
@@ -258,9 +257,9 @@ export const unit13: DojoUnit = {
           "audioText": "まどり",
           "options": [
             "Floor plan layout",
-            "Confirming Landlord",
             "Confirming Real estate agency",
-            "Confirming Contract / lease agreement"
+            "Sunlight exposure",
+            "Security deposit"
           ],
           "correctAnswer": "Floor plan layout"
         },
@@ -273,34 +272,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Floor plan layout'",
           "audioText": "まどり",
           "tileBank": [
-            "と",
-            "ま",
-            "ふ",
-            "く",
-            "ど",
+            "た",
+            "さ",
             "り",
-            "や",
-            "よ"
+            "ぬ",
+            "ど",
+            "お",
+            "ま",
+            "ゆ"
           ],
           "correctAnswer": "まどり"
         },
         {
           "id": "u13_l2_3",
           "type": "cloze",
-          "prompt": "私は不動産がすきです",
-          "furigana": "わたしはふどうさんがすきです",
-          "romaji": "Watashi wa fudousan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Real estate agency.",
-          "audioText": "不動産",
-          "clozeSentence": "これは不動産 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な不動産です。",
+          "furigana": "これはいちばんたいせつなふどうさんです。",
+          "romaji": "Kore wa ichiban taisetsu na fudousan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Real estate agency.",
+          "audioText": "これは不動産です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な不動産です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l2_4",
@@ -312,8 +312,8 @@ export const unit13: DojoUnit = {
           "audioText": "これは不動産です",
           "scrambleTokens": [
             "不動産",
-            "ではありません",
             "それ",
+            "ではありません",
             "です",
             "これは"
           ],
@@ -344,24 +344,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l2_6",
           "type": "dictate",
-          "prompt": "契約をお願いします",
-          "furigana": "けいやくをおねがいします",
-          "romaji": "keiyaku o onegaishimasu.",
-          "english": "Contract / lease agreement, please.",
-          "audioText": "契約をお願いします",
+          "prompt": "契約です",
+          "furigana": "けいやくです",
+          "romaji": "keiyaku desu.",
+          "english": "It is Contract / lease agreement.",
+          "audioText": "契約です",
           "dictateTokens": [
-            "契約",
-            "お願いします",
             "です",
-            "を",
-            "ありがとう"
+            "ではありません",
+            "契約",
+            "これ"
           ],
           "dictateSolution": [
             "契約",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "契約をお願いします"
+          "correctAnswer": "契約です"
         },
         {
           "id": "u13_l2_7",
@@ -464,10 +462,10 @@ export const unit13: DojoUnit = {
           "english": "Guarantor",
           "audioText": "ほしょうにん",
           "options": [
-            "Sunlight exposure",
-            "Initial upfront costs",
             "Guarantor",
-            "Confirming Key money (gratuity)"
+            "Contract / lease agreement",
+            "Confirming Lease renewal fee",
+            "Initial upfront costs"
           ],
           "correctAnswer": "Guarantor"
         },
@@ -480,34 +478,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Guarantor'",
           "audioText": "ほしょうにん",
           "tileBank": [
-            "ん",
+            "と",
             "ほ",
+            "ょ",
             "し",
-            "う",
+            "や",
             "に",
-            "り",
-            "さ",
-            "ょ"
+            "う",
+            "ん"
           ],
           "correctAnswer": "ほしょうにん"
         },
         {
           "id": "u13_l3_3",
           "type": "cloze",
-          "prompt": "私は日当たりがすきです",
-          "furigana": "わたしはひあたりがすきです",
-          "romaji": "Watashi wa hiatari ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Sunlight exposure.",
-          "audioText": "日当たり",
-          "clozeSentence": "これは日当たり {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な日当たりです。",
+          "furigana": "これはいちばんたいせつなひあたりです。",
+          "romaji": "Kore wa ichiban taisetsu na hiatari desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Sunlight exposure.",
+          "audioText": "これは日当たりです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な日当たりです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l3_4",
@@ -518,11 +517,11 @@ export const unit13: DojoUnit = {
           "english": "This is Sunlight exposure.",
           "audioText": "これは日当たりです",
           "scrambleTokens": [
-            "これは",
+            "日当たり",
+            "ではありません",
             "それ",
             "です",
-            "日当たり",
-            "ではありません"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -551,24 +550,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l3_6",
           "type": "dictate",
-          "prompt": "駅近をお願いします",
-          "furigana": "えきちかをおねがいします",
-          "romaji": "ekichika o onegaishimasu.",
-          "english": "Close to train station, please.",
-          "audioText": "駅近をお願いします",
+          "prompt": "駅近です",
+          "furigana": "えきちかです",
+          "romaji": "ekichika desu.",
+          "english": "It is Close to train station.",
+          "audioText": "駅近です",
           "dictateTokens": [
             "駅近",
-            "お願いします",
-            "です",
-            "ありがとう",
-            "を"
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "駅近",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "駅近をお願いします"
+          "correctAnswer": "駅近です"
         },
         {
           "id": "u13_l3_7",
@@ -671,10 +668,10 @@ export const unit13: DojoUnit = {
           "english": "Soundproof",
           "audioText": "ぼうおん",
           "options": [
+            "Walking distance",
             "Soundproof",
-            "Confirming Key money (gratuity)",
-            "Close to train station",
-            "Confirming Real estate agency"
+            "Confirming Walking distance",
+            "Confirming Security deposit"
           ],
           "correctAnswer": "Soundproof"
         },
@@ -687,26 +684,26 @@ export const unit13: DojoUnit = {
           "english": "Build 'Soundproof'",
           "audioText": "ぼうおん",
           "tileBank": [
-            "お",
-            "へ",
-            "つ",
-            "う",
-            "ぼ",
+            "る",
             "ん",
-            "ゆ",
-            "め"
+            "ぼ",
+            "む",
+            "お",
+            "ほ",
+            "ね",
+            "う"
           ],
           "correctAnswer": "ぼうおん"
         },
         {
           "id": "u13_l4_3",
           "type": "cloze",
-          "prompt": "私は更新料がすきです",
-          "furigana": "わたしはこうしんりょうがすきです",
-          "romaji": "Watashi wa koushinryou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Lease renewal fee.",
-          "audioText": "更新料",
-          "clozeSentence": "これは更新料 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な更新料です。",
+          "furigana": "これはいちばんたいせつなこうしんりょうです。",
+          "romaji": "Kore wa ichiban taisetsu na koushinryou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Lease renewal fee.",
+          "audioText": "これは更新料です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な更新料です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -714,7 +711,8 @@ export const unit13: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l4_4",
@@ -725,11 +723,11 @@ export const unit13: DojoUnit = {
           "english": "This is Lease renewal fee.",
           "audioText": "これは更新料です",
           "scrambleTokens": [
-            "ではありません",
+            "更新料",
+            "それ",
             "これは",
             "です",
-            "それ",
-            "更新料"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -758,24 +756,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l4_6",
           "type": "dictate",
-          "prompt": "引越しをお願いします",
-          "furigana": "ひっこしをおねがいします",
-          "romaji": "hikkoshi o onegaishimasu.",
-          "english": "Moving residence, please.",
-          "audioText": "引越しをお願いします",
+          "prompt": "引越しです",
+          "furigana": "ひっこしです",
+          "romaji": "hikkoshi desu.",
+          "english": "It is Moving residence.",
+          "audioText": "引越しです",
           "dictateTokens": [
-            "を",
-            "お願いします",
-            "です",
             "引越し",
-            "ありがとう"
+            "です",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "引越し",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "引越しをお願いします"
+          "correctAnswer": "引越しです"
         },
         {
           "id": "u13_l4_7",
@@ -879,10 +875,10 @@ export const unit13: DojoUnit = {
           "english": "Landlord",
           "audioText": "おおや",
           "options": [
-            "Monthly rent",
-            "Confirming Initial upfront costs",
             "Landlord",
-            "Confirming Floor plan layout"
+            "Confirming Key money (gratuity)",
+            "Confirming Monthly rent",
+            "Confirming Key money (gratuity)"
           ],
           "correctAnswer": "Landlord"
         },
@@ -895,13 +891,13 @@ export const unit13: DojoUnit = {
           "english": "Build 'Landlord'",
           "audioText": "おおや",
           "tileBank": [
-            "や",
-            "れ",
-            "そ",
-            "ふ",
+            "さ",
             "お",
-            "と",
+            "え",
+            "や",
+            "に",
             "か",
+            "ふ",
             "お"
           ],
           "correctAnswer": "おおや"
@@ -909,20 +905,21 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l5_3",
           "type": "cloze",
-          "prompt": "私は徒歩がすきです",
-          "furigana": "わたしはとほがすきです",
-          "romaji": "Watashi wa toho ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Walking distance.",
-          "audioText": "徒歩",
-          "clozeSentence": "これは徒歩 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な徒歩です。",
+          "furigana": "これはいちばんたいせつなとほです。",
+          "romaji": "Kore wa ichiban taisetsu na toho desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Walking distance.",
+          "audioText": "これは徒歩です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な徒歩です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l5_4",
@@ -933,10 +930,10 @@ export const unit13: DojoUnit = {
           "english": "This is Walking distance.",
           "audioText": "これは徒歩です",
           "scrambleTokens": [
-            "ではありません",
             "徒歩",
             "これは",
             "です",
+            "ではありません",
             "それ"
           ],
           "scrambleSolution": [
@@ -966,24 +963,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l5_6",
           "type": "dictate",
-          "prompt": "初期費用をお願いします",
-          "furigana": "しょきひようをおねがいします",
-          "romaji": "shoki hiyou o onegaishimasu.",
-          "english": "Initial upfront costs, please.",
-          "audioText": "初期費用をお願いします",
+          "prompt": "初期費用です",
+          "furigana": "しょきひようです",
+          "romaji": "shoki hiyou desu.",
+          "english": "It is Initial upfront costs.",
+          "audioText": "初期費用です",
           "dictateTokens": [
-            "を",
+            "です",
             "初期費用",
-            "ありがとう",
-            "お願いします",
-            "です"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "初期費用",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "初期費用をお願いします"
+          "correctAnswer": "初期費用です"
         },
         {
           "id": "u13_l5_7",
@@ -1092,9 +1087,9 @@ export const unit13: DojoUnit = {
           "audioText": "やちんのかくにん",
           "options": [
             "Confirming Monthly rent",
-            "Confirming Security deposit",
-            "Soundproof",
-            "Confirming Guarantor"
+            "Sunlight exposure",
+            "Security deposit",
+            "Contract / lease agreement"
           ],
           "correctAnswer": "Confirming Monthly rent"
         },
@@ -1107,34 +1102,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Confirming Monthly rent'",
           "audioText": "やちんのかくにん",
           "tileBank": [
-            "に",
-            "ん",
-            "や",
             "の",
-            "ん",
+            "に",
+            "や",
             "か",
+            "ん",
+            "ち",
             "く",
-            "ち"
+            "ん"
           ],
           "correctAnswer": "やちんのかくにん"
         },
         {
           "id": "u13_l6_3",
           "type": "cloze",
-          "prompt": "私は敷金の確認がすきです",
-          "furigana": "わたしはしききんのかくにんがすきです",
-          "romaji": "Watashi wa shikikin no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Security deposit.",
-          "audioText": "敷金の確認",
-          "clozeSentence": "これは敷金の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な敷金の確認です。",
+          "furigana": "これはいちばんたいせつなしききんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shikikin no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Security deposit.",
+          "audioText": "これは敷金の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な敷金の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l6_4",
@@ -1145,11 +1141,11 @@ export const unit13: DojoUnit = {
           "english": "This is Confirming Security deposit.",
           "audioText": "これは敷金の確認です",
           "scrambleTokens": [
-            "それ",
             "です",
+            "それ",
             "敷金の確認",
-            "ではありません",
-            "これは"
+            "これは",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1178,24 +1174,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l6_6",
           "type": "dictate",
-          "prompt": "礼金の確認をお願いします",
-          "furigana": "れいきんのかくにんをおねがいします",
-          "romaji": "reikin no kakunin o onegaishimasu.",
-          "english": "Confirming Key money (gratuity), please.",
-          "audioText": "礼金の確認をお願いします",
+          "prompt": "礼金の確認です",
+          "furigana": "れいきんのかくにんです",
+          "romaji": "reikin no kakunin desu.",
+          "english": "It is Confirming Key money (gratuity).",
+          "audioText": "礼金の確認です",
           "dictateTokens": [
+            "ではありません",
             "です",
-            "ありがとう",
-            "を",
-            "お願いします",
-            "礼金の確認"
+            "礼金の確認",
+            "これ"
           ],
           "dictateSolution": [
             "礼金の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "礼金の確認をお願いします"
+          "correctAnswer": "礼金の確認です"
         },
         {
           "id": "u13_l6_7",
@@ -1304,10 +1298,10 @@ export const unit13: DojoUnit = {
           "english": "Confirming Floor plan layout",
           "audioText": "まどりのかくにん",
           "options": [
-            "Confirming Contract / lease agreement",
-            "Confirming Soundproof",
-            "Walking distance",
-            "Confirming Floor plan layout"
+            "Confirming Monthly rent",
+            "Confirming Key money (gratuity)",
+            "Confirming Floor plan layout",
+            "Confirming Monthly rent"
           ],
           "correctAnswer": "Confirming Floor plan layout"
         },
@@ -1320,34 +1314,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Confirming Floor plan layout'",
           "audioText": "まどりのかくにん",
           "tileBank": [
-            "ど",
-            "か",
+            "く",
             "の",
-            "に",
+            "ど",
             "り",
-            "ん",
+            "か",
             "ま",
-            "く"
+            "に",
+            "ん"
           ],
           "correctAnswer": "まどりのかくにん"
         },
         {
           "id": "u13_l7_3",
           "type": "cloze",
-          "prompt": "私は不動産の確認がすきです",
-          "furigana": "わたしはふどうさんのかくにんがすきです",
-          "romaji": "Watashi wa fudousan no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Real estate agency.",
-          "audioText": "不動産の確認",
-          "clozeSentence": "これは不動産の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な不動産の確認です。",
+          "furigana": "これはいちばんたいせつなふどうさんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na fudousan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Real estate agency.",
+          "audioText": "これは不動産の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な不動産の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l7_4",
@@ -1358,11 +1353,11 @@ export const unit13: DojoUnit = {
           "english": "This is Confirming Real estate agency.",
           "audioText": "これは不動産の確認です",
           "scrambleTokens": [
-            "不動産の確認",
             "です",
-            "それ",
+            "これは",
             "ではありません",
-            "これは"
+            "それ",
+            "不動産の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1391,24 +1386,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l7_6",
           "type": "dictate",
-          "prompt": "契約の確認をお願いします",
-          "furigana": "けいやくのかくにんをおねがいします",
-          "romaji": "keiyaku no kakunin o onegaishimasu.",
-          "english": "Confirming Contract / lease agreement, please.",
-          "audioText": "契約の確認をお願いします",
+          "prompt": "契約の確認です",
+          "furigana": "けいやくのかくにんです",
+          "romaji": "keiyaku no kakunin desu.",
+          "english": "It is Confirming Contract / lease agreement.",
+          "audioText": "契約の確認です",
           "dictateTokens": [
+            "これ",
             "契約の確認",
-            "お願いします",
-            "です",
-            "を",
-            "ありがとう"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "契約の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "契約の確認をお願いします"
+          "correctAnswer": "契約の確認です"
         },
         {
           "id": "u13_l7_7",
@@ -1517,10 +1510,10 @@ export const unit13: DojoUnit = {
           "english": "Confirming Guarantor",
           "audioText": "ほしょうにんのかくにん",
           "options": [
-            "Guarantor",
-            "Soundproof",
-            "Confirming Guarantor",
-            "Floor plan layout"
+            "Contract / lease agreement",
+            "Moving residence",
+            "Confirming Initial upfront costs",
+            "Confirming Guarantor"
           ],
           "correctAnswer": "Confirming Guarantor"
         },
@@ -1533,26 +1526,26 @@ export const unit13: DojoUnit = {
           "english": "Build 'Confirming Guarantor'",
           "audioText": "ほしょうにんのかくにん",
           "tileBank": [
-            "の",
             "に",
-            "し",
+            "の",
             "ん",
-            "う",
-            "ほ",
+            "し",
+            "か",
             "ょ",
-            "か"
+            "ほ",
+            "う"
           ],
           "correctAnswer": "ほしょうにんのかくにん"
         },
         {
           "id": "u13_l8_3",
           "type": "cloze",
-          "prompt": "私は日当たりの確認がすきです",
-          "furigana": "わたしはひあたりのかくにんがすきです",
-          "romaji": "Watashi wa hiatari no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Sunlight exposure.",
-          "audioText": "日当たりの確認",
-          "clozeSentence": "これは日当たりの確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な日当たりの確認です。",
+          "furigana": "これはいちばんたいせつなひあたりのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na hiatari no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Sunlight exposure.",
+          "audioText": "これは日当たりの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な日当たりの確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1560,7 +1553,8 @@ export const unit13: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l8_4",
@@ -1571,11 +1565,11 @@ export const unit13: DojoUnit = {
           "english": "This is Confirming Sunlight exposure.",
           "audioText": "これは日当たりの確認です",
           "scrambleTokens": [
-            "です",
-            "ではありません",
-            "日当たりの確認",
             "これは",
-            "それ"
+            "それ",
+            "日当たりの確認",
+            "ではありません",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1604,24 +1598,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l8_6",
           "type": "dictate",
-          "prompt": "駅近の確認をお願いします",
-          "furigana": "えきちかのかくにんをおねがいします",
-          "romaji": "ekichika no kakunin o onegaishimasu.",
-          "english": "Confirming Close to train station, please.",
-          "audioText": "駅近の確認をお願いします",
+          "prompt": "駅近の確認です",
+          "furigana": "えきちかのかくにんです",
+          "romaji": "ekichika no kakunin desu.",
+          "english": "It is Confirming Close to train station.",
+          "audioText": "駅近の確認です",
           "dictateTokens": [
-            "です",
+            "ではありません",
             "駅近の確認",
-            "お願いします",
-            "ありがとう",
-            "を"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "駅近の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "駅近の確認をお願いします"
+          "correctAnswer": "駅近の確認です"
         },
         {
           "id": "u13_l8_7",
@@ -1730,10 +1722,10 @@ export const unit13: DojoUnit = {
           "english": "Confirming Soundproof",
           "audioText": "ぼうおんのかくにん",
           "options": [
-            "Confirming Lease renewal fee",
-            "Confirming Monthly rent",
-            "Floor plan layout",
-            "Confirming Soundproof"
+            "Confirming Moving residence",
+            "Confirming Soundproof",
+            "Security deposit",
+            "Soundproof"
           ],
           "correctAnswer": "Confirming Soundproof"
         },
@@ -1746,34 +1738,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Confirming Soundproof'",
           "audioText": "ぼうおんのかくにん",
           "tileBank": [
-            "お",
-            "う",
-            "の",
             "か",
+            "う",
             "に",
+            "ん",
+            "の",
             "く",
             "ぼ",
-            "ん"
+            "お"
           ],
           "correctAnswer": "ぼうおんのかくにん"
         },
         {
           "id": "u13_l9_3",
           "type": "cloze",
-          "prompt": "私は更新料の確認がすきです",
-          "furigana": "わたしはこうしんりょうのかくにんがすきです",
-          "romaji": "Watashi wa koushinryou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Lease renewal fee.",
-          "audioText": "更新料の確認",
-          "clozeSentence": "これは更新料の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な更新料の確認です。",
+          "furigana": "これはいちばんたいせつなこうしんりょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na koushinryou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Lease renewal fee.",
+          "audioText": "これは更新料の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な更新料の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l9_4",
@@ -1784,11 +1777,11 @@ export const unit13: DojoUnit = {
           "english": "This is Confirming Lease renewal fee.",
           "audioText": "これは更新料の確認です",
           "scrambleTokens": [
-            "それ",
             "更新料の確認",
+            "これは",
             "ではありません",
-            "です",
-            "これは"
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1817,24 +1810,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l9_6",
           "type": "dictate",
-          "prompt": "引越しの確認をお願いします",
-          "furigana": "ひっこしのかくにんをおねがいします",
-          "romaji": "hikkoshi no kakunin o onegaishimasu.",
-          "english": "Confirming Moving residence, please.",
-          "audioText": "引越しの確認をお願いします",
+          "prompt": "引越しの確認です",
+          "furigana": "ひっこしのかくにんです",
+          "romaji": "hikkoshi no kakunin desu.",
+          "english": "It is Confirming Moving residence.",
+          "audioText": "引越しの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "です",
-            "を",
             "引越しの確認",
-            "お願いします"
+            "です",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "引越しの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "引越しの確認をお願いします"
+          "correctAnswer": "引越しの確認です"
         },
         {
           "id": "u13_l9_7",
@@ -1944,10 +1935,10 @@ export const unit13: DojoUnit = {
           "english": "Confirming Landlord",
           "audioText": "おおやのかくにん",
           "options": [
-            "Initial upfront costs",
-            "Confirming Security deposit",
-            "Confirming Landlord",
-            "Confirming Real estate agency"
+            "Sunlight exposure",
+            "Landlord",
+            "Confirming Monthly rent",
+            "Confirming Landlord"
           ],
           "correctAnswer": "Confirming Landlord"
         },
@@ -1960,34 +1951,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Confirming Landlord'",
           "audioText": "おおやのかくにん",
           "tileBank": [
-            "か",
+            "お",
             "く",
+            "か",
             "に",
-            "の",
-            "ん",
             "お",
             "や",
-            "お"
+            "ん",
+            "の"
           ],
           "correctAnswer": "おおやのかくにん"
         },
         {
           "id": "u13_l10_3",
           "type": "cloze",
-          "prompt": "私は徒歩の確認がすきです",
-          "furigana": "わたしはとほのかくにんがすきです",
-          "romaji": "Watashi wa toho no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Walking distance.",
-          "audioText": "徒歩の確認",
-          "clozeSentence": "これは徒歩の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な徒歩の確認です。",
+          "furigana": "これはいちばんたいせつなとほのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na toho no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Walking distance.",
+          "audioText": "これは徒歩の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な徒歩の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l10_4",
@@ -2000,8 +1992,8 @@ export const unit13: DojoUnit = {
           "scrambleTokens": [
             "それ",
             "です",
-            "徒歩の確認",
             "ではありません",
+            "徒歩の確認",
             "これは"
           ],
           "scrambleSolution": [
@@ -2031,24 +2023,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l10_6",
           "type": "dictate",
-          "prompt": "初期費用の確認をお願いします",
-          "furigana": "しょきひようのかくにんをおねがいします",
-          "romaji": "shoki hiyou no kakunin o onegaishimasu.",
-          "english": "Confirming Initial upfront costs, please.",
-          "audioText": "初期費用の確認をお願いします",
+          "prompt": "初期費用の確認です",
+          "furigana": "しょきひようのかくにんです",
+          "romaji": "shoki hiyou no kakunin desu.",
+          "english": "It is Confirming Initial upfront costs.",
+          "audioText": "初期費用の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "です",
+            "これ",
             "初期費用の確認",
-            "お願いします"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "初期費用の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "初期費用の確認をお願いします"
+          "correctAnswer": "初期費用の確認です"
         },
         {
           "id": "u13_l10_7",
@@ -2156,10 +2146,10 @@ export const unit13: DojoUnit = {
           "english": "Confirming Monthly rent",
           "audioText": "やちんのかくにん",
           "options": [
-            "Confirming Security deposit",
-            "Monthly rent",
+            "Confirming Landlord",
+            "Real estate agency",
             "Confirming Monthly rent",
-            "Soundproof"
+            "Monthly rent"
           ],
           "correctAnswer": "Confirming Monthly rent"
         },
@@ -2172,34 +2162,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Confirming Monthly rent'",
           "audioText": "やちんのかくにん",
           "tileBank": [
+            "ん",
+            "や",
+            "ん",
             "に",
-            "ん",
-            "の",
-            "く",
-            "ん",
             "か",
             "ち",
-            "や"
+            "く",
+            "の"
           ],
           "correctAnswer": "やちんのかくにん"
         },
         {
           "id": "u13_l11_3",
           "type": "cloze",
-          "prompt": "私は敷金の確認がすきです",
-          "furigana": "わたしはしききんのかくにんがすきです",
-          "romaji": "Watashi wa shikikin no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Security deposit.",
-          "audioText": "敷金の確認",
-          "clozeSentence": "これは敷金の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な敷金の確認です。",
+          "furigana": "これはいちばんたいせつなしききんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shikikin no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Security deposit.",
+          "audioText": "これは敷金の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な敷金の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l11_4",
@@ -2210,11 +2201,11 @@ export const unit13: DojoUnit = {
           "english": "This is Confirming Security deposit.",
           "audioText": "これは敷金の確認です",
           "scrambleTokens": [
-            "それ",
-            "です",
-            "敷金の確認",
             "これは",
-            "ではありません"
+            "それ",
+            "ではありません",
+            "敷金の確認",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2243,24 +2234,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l11_6",
           "type": "dictate",
-          "prompt": "礼金の確認をお願いします",
-          "furigana": "れいきんのかくにんをおねがいします",
-          "romaji": "reikin no kakunin o onegaishimasu.",
-          "english": "Confirming Key money (gratuity), please.",
-          "audioText": "礼金の確認をお願いします",
+          "prompt": "礼金の確認です",
+          "furigana": "れいきんのかくにんです",
+          "romaji": "reikin no kakunin desu.",
+          "english": "It is Confirming Key money (gratuity).",
+          "audioText": "礼金の確認です",
           "dictateTokens": [
+            "ではありません",
+            "これ",
             "です",
-            "ありがとう",
-            "を",
-            "お願いします",
             "礼金の確認"
           ],
           "dictateSolution": [
             "礼金の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "礼金の確認をお願いします"
+          "correctAnswer": "礼金の確認です"
         },
         {
           "id": "u13_l11_7",
@@ -2369,10 +2358,10 @@ export const unit13: DojoUnit = {
           "english": "Confirming Floor plan layout",
           "audioText": "まどりのかくにん",
           "options": [
-            "Confirming Floor plan layout",
-            "Confirming Sunlight exposure",
-            "Confirming Security deposit",
-            "Confirming Moving residence"
+            "Real estate agency",
+            "Soundproof",
+            "Confirming Lease renewal fee",
+            "Confirming Floor plan layout"
           ],
           "correctAnswer": "Confirming Floor plan layout"
         },
@@ -2385,26 +2374,26 @@ export const unit13: DojoUnit = {
           "english": "Build 'Confirming Floor plan layout'",
           "audioText": "まどりのかくにん",
           "tileBank": [
-            "か",
-            "の",
-            "く",
             "ま",
-            "ん",
             "に",
             "ど",
-            "り"
+            "り",
+            "か",
+            "ん",
+            "の",
+            "く"
           ],
           "correctAnswer": "まどりのかくにん"
         },
         {
           "id": "u13_l12_3",
           "type": "cloze",
-          "prompt": "私は不動産の確認がすきです",
-          "furigana": "わたしはふどうさんのかくにんがすきです",
-          "romaji": "Watashi wa fudousan no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Real estate agency.",
-          "audioText": "不動産の確認",
-          "clozeSentence": "これは不動産の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な不動産の確認です。",
+          "furigana": "これはいちばんたいせつなふどうさんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na fudousan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Real estate agency.",
+          "audioText": "これは不動産の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な不動産の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2412,7 +2401,8 @@ export const unit13: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l12_4",
@@ -2423,10 +2413,10 @@ export const unit13: DojoUnit = {
           "english": "This is Confirming Real estate agency.",
           "audioText": "これは不動産の確認です",
           "scrambleTokens": [
-            "です",
-            "不動産の確認",
             "これは",
             "それ",
+            "です",
+            "不動産の確認",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -2456,24 +2446,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l12_6",
           "type": "dictate",
-          "prompt": "契約の確認をお願いします",
-          "furigana": "けいやくのかくにんをおねがいします",
-          "romaji": "keiyaku no kakunin o onegaishimasu.",
-          "english": "Confirming Contract / lease agreement, please.",
-          "audioText": "契約の確認をお願いします",
+          "prompt": "契約の確認です",
+          "furigana": "けいやくのかくにんです",
+          "romaji": "keiyaku no kakunin desu.",
+          "english": "It is Confirming Contract / lease agreement.",
+          "audioText": "契約の確認です",
           "dictateTokens": [
-            "を",
             "契約の確認",
             "です",
-            "お願いします",
-            "ありがとう"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "契約の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "契約の確認をお願いします"
+          "correctAnswer": "契約の確認です"
         },
         {
           "id": "u13_l12_7",
@@ -2576,9 +2564,9 @@ export const unit13: DojoUnit = {
           "audioText": "やちん",
           "options": [
             "Monthly rent",
-            "Moving residence",
-            "Security deposit",
-            "Landlord"
+            "Confirming Contract / lease agreement",
+            "Soundproof",
+            "Walking distance"
           ],
           "correctAnswer": "Monthly rent"
         },
@@ -2591,34 +2579,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Monthly rent'",
           "audioText": "やちん",
           "tileBank": [
-            "と",
+            "ぬ",
+            "ち",
+            "れ",
             "ん",
+            "ろ",
+            "た",
             "や",
-            "き",
-            "そ",
-            "せ",
-            "の",
-            "ち"
+            "き"
           ],
           "correctAnswer": "やちん"
         },
         {
           "id": "u13_l13_3",
           "type": "cloze",
-          "prompt": "私は敷金がすきです",
-          "furigana": "わたしはしききんがすきです",
-          "romaji": "Watashi wa shikikin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Security deposit.",
-          "audioText": "敷金",
-          "clozeSentence": "これは敷金 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な敷金です。",
+          "furigana": "これはいちばんたいせつなしききんです。",
+          "romaji": "Kore wa ichiban taisetsu na shikikin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Security deposit.",
+          "audioText": "これは敷金です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な敷金です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l13_4",
@@ -2629,11 +2618,11 @@ export const unit13: DojoUnit = {
           "english": "This is Security deposit.",
           "audioText": "これは敷金です",
           "scrambleTokens": [
-            "これは",
-            "敷金",
             "ではありません",
+            "敷金",
+            "です",
             "それ",
-            "です"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2662,24 +2651,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l13_6",
           "type": "dictate",
-          "prompt": "礼金をお願いします",
-          "furigana": "れいきんをおねがいします",
-          "romaji": "reikin o onegaishimasu.",
-          "english": "Key money (gratuity), please.",
-          "audioText": "礼金をお願いします",
+          "prompt": "礼金です",
+          "furigana": "れいきんです",
+          "romaji": "reikin desu.",
+          "english": "It is Key money (gratuity).",
+          "audioText": "礼金です",
           "dictateTokens": [
-            "礼金",
-            "を",
-            "お願いします",
             "です",
-            "ありがとう"
+            "礼金",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "礼金",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "礼金をお願いします"
+          "correctAnswer": "礼金です"
         },
         {
           "id": "u13_l13_7",
@@ -2783,9 +2770,9 @@ export const unit13: DojoUnit = {
           "audioText": "まどり",
           "options": [
             "Confirming Monthly rent",
-            "Confirming Sunlight exposure",
-            "Floor plan layout",
-            "Initial upfront costs"
+            "Walking distance",
+            "Confirming Security deposit",
+            "Floor plan layout"
           ],
           "correctAnswer": "Floor plan layout"
         },
@@ -2798,34 +2785,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Floor plan layout'",
           "audioText": "まどり",
           "tileBank": [
-            "ど",
-            "け",
-            "ま",
-            "こ",
             "り",
-            "す",
             "さ",
-            "み"
+            "へ",
+            "ま",
+            "ど",
+            "る",
+            "し",
+            "け"
           ],
           "correctAnswer": "まどり"
         },
         {
           "id": "u13_l14_3",
           "type": "cloze",
-          "prompt": "私は不動産がすきです",
-          "furigana": "わたしはふどうさんがすきです",
-          "romaji": "Watashi wa fudousan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Real estate agency.",
-          "audioText": "不動産",
-          "clozeSentence": "これは不動産 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な不動産です。",
+          "furigana": "これはいちばんたいせつなふどうさんです。",
+          "romaji": "Kore wa ichiban taisetsu na fudousan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Real estate agency.",
+          "audioText": "これは不動産です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な不動産です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l14_4",
@@ -2836,11 +2824,11 @@ export const unit13: DojoUnit = {
           "english": "This is Real estate agency.",
           "audioText": "これは不動産です",
           "scrambleTokens": [
-            "不動産",
-            "です",
-            "それ",
             "これは",
-            "ではありません"
+            "それ",
+            "不動産",
+            "ではありません",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2869,24 +2857,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l14_6",
           "type": "dictate",
-          "prompt": "契約をお願いします",
-          "furigana": "けいやくをおねがいします",
-          "romaji": "keiyaku o onegaishimasu.",
-          "english": "Contract / lease agreement, please.",
-          "audioText": "契約をお願いします",
+          "prompt": "契約です",
+          "furigana": "けいやくです",
+          "romaji": "keiyaku desu.",
+          "english": "It is Contract / lease agreement.",
+          "audioText": "契約です",
           "dictateTokens": [
-            "契約",
-            "を",
-            "ありがとう",
             "です",
-            "お願いします"
+            "これ",
+            "ではありません",
+            "契約"
           ],
           "dictateSolution": [
             "契約",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "契約をお願いします"
+          "correctAnswer": "契約です"
         },
         {
           "id": "u13_l14_7",
@@ -2989,10 +2975,10 @@ export const unit13: DojoUnit = {
           "english": "Guarantor",
           "audioText": "ほしょうにん",
           "options": [
-            "Confirming Contract / lease agreement",
-            "Initial upfront costs",
-            "Confirming Monthly rent",
-            "Guarantor"
+            "Confirming Soundproof",
+            "Confirming Security deposit",
+            "Guarantor",
+            "Lease renewal fee"
           ],
           "correctAnswer": "Guarantor"
         },
@@ -3005,34 +2991,35 @@ export const unit13: DojoUnit = {
           "english": "Build 'Guarantor'",
           "audioText": "ほしょうにん",
           "tileBank": [
+            "さ",
+            "わ",
             "し",
-            "ほ",
             "ん",
-            "ょ",
-            "に",
-            "ひ",
+            "ほ",
             "う",
-            "ろ"
+            "ょ",
+            "に"
           ],
           "correctAnswer": "ほしょうにん"
         },
         {
           "id": "u13_l15_3",
           "type": "cloze",
-          "prompt": "私は日当たりがすきです",
-          "furigana": "わたしはひあたりがすきです",
-          "romaji": "Watashi wa hiatari ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Sunlight exposure.",
-          "audioText": "日当たり",
-          "clozeSentence": "これは日当たり {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な日当たりです。",
+          "furigana": "これはいちばんたいせつなひあたりです。",
+          "romaji": "Kore wa ichiban taisetsu na hiatari desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Sunlight exposure.",
+          "audioText": "これは日当たりです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な日当たりです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u13_l15_4",
@@ -3043,11 +3030,11 @@ export const unit13: DojoUnit = {
           "english": "This is Sunlight exposure.",
           "audioText": "これは日当たりです",
           "scrambleTokens": [
-            "これは",
-            "ではありません",
             "です",
-            "それ",
-            "日当たり"
+            "これは",
+            "日当たり",
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -3076,24 +3063,22 @@ export const unit13: DojoUnit = {
         {
           "id": "u13_l15_6",
           "type": "dictate",
-          "prompt": "駅近をお願いします",
-          "furigana": "えきちかをおねがいします",
-          "romaji": "ekichika o onegaishimasu.",
-          "english": "Close to train station, please.",
-          "audioText": "駅近をお願いします",
+          "prompt": "駅近です",
+          "furigana": "えきちかです",
+          "romaji": "ekichika desu.",
+          "english": "It is Close to train station.",
+          "audioText": "駅近です",
           "dictateTokens": [
-            "を",
-            "お願いします",
             "です",
-            "駅近",
-            "ありがとう"
+            "ではありません",
+            "これ",
+            "駅近"
           ],
           "dictateSolution": [
             "駅近",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "駅近をお願いします"
+          "correctAnswer": "駅近です"
         },
         {
           "id": "u13_l15_7",
@@ -3178,10 +3163,10 @@ export const unit13: DojoUnit = {
         "english": "Monthly rent",
         "audioText": "やちん",
         "options": [
-          "Confirming Security deposit",
-          "Monthly rent",
+          "Sunlight exposure",
           "Confirming Sunlight exposure",
-          "Moving residence"
+          "Monthly rent",
+          "Confirming Security deposit"
         ],
         "correctAnswer": "Monthly rent"
       },
@@ -3194,14 +3179,14 @@ export const unit13: DojoUnit = {
         "english": "Build 'Monthly rent'",
         "audioText": "やちん",
         "tileBank": [
-          "て",
-          "む",
-          "ち",
-          "わ",
-          "こ",
-          "ん",
           "や",
-          "に"
+          "な",
+          "ぬ",
+          "ち",
+          "ん",
+          "る",
+          "り",
+          "す"
         ],
         "correctAnswer": "やちん"
       },
@@ -3214,10 +3199,10 @@ export const unit13: DojoUnit = {
         "english": "Guarantor",
         "audioText": "ほしょうにん",
         "options": [
-          "Sunlight exposure",
-          "Initial upfront costs",
           "Guarantor",
-          "Confirming Key money (gratuity)"
+          "Contract / lease agreement",
+          "Confirming Lease renewal fee",
+          "Initial upfront costs"
         ],
         "correctAnswer": "Guarantor"
       },
@@ -3230,14 +3215,14 @@ export const unit13: DojoUnit = {
         "english": "Build 'Guarantor'",
         "audioText": "ほしょうにん",
         "tileBank": [
-          "ん",
+          "と",
           "ほ",
+          "ょ",
           "し",
-          "う",
+          "や",
           "に",
-          "り",
-          "さ",
-          "ょ"
+          "う",
+          "ん"
         ],
         "correctAnswer": "ほしょうにん"
       },
@@ -3250,10 +3235,10 @@ export const unit13: DojoUnit = {
         "english": "Landlord",
         "audioText": "おおや",
         "options": [
-          "Monthly rent",
-          "Confirming Initial upfront costs",
           "Landlord",
-          "Confirming Floor plan layout"
+          "Confirming Key money (gratuity)",
+          "Confirming Monthly rent",
+          "Confirming Key money (gratuity)"
         ],
         "correctAnswer": "Landlord"
       },
@@ -3266,13 +3251,13 @@ export const unit13: DojoUnit = {
         "english": "Build 'Landlord'",
         "audioText": "おおや",
         "tileBank": [
-          "や",
-          "れ",
-          "そ",
-          "ふ",
+          "さ",
           "お",
-          "と",
+          "え",
+          "や",
+          "に",
           "か",
+          "ふ",
           "お"
         ],
         "correctAnswer": "おおや"
@@ -3286,10 +3271,10 @@ export const unit13: DojoUnit = {
         "english": "Confirming Floor plan layout",
         "audioText": "まどりのかくにん",
         "options": [
-          "Confirming Contract / lease agreement",
-          "Confirming Soundproof",
-          "Walking distance",
-          "Confirming Floor plan layout"
+          "Confirming Monthly rent",
+          "Confirming Key money (gratuity)",
+          "Confirming Floor plan layout",
+          "Confirming Monthly rent"
         ],
         "correctAnswer": "Confirming Floor plan layout"
       },
@@ -3302,14 +3287,14 @@ export const unit13: DojoUnit = {
         "english": "Build 'Confirming Floor plan layout'",
         "audioText": "まどりのかくにん",
         "tileBank": [
-          "ど",
-          "か",
+          "く",
           "の",
-          "に",
+          "ど",
           "り",
-          "ん",
+          "か",
           "ま",
-          "く"
+          "に",
+          "ん"
         ],
         "correctAnswer": "まどりのかくにん"
       },
@@ -3322,10 +3307,10 @@ export const unit13: DojoUnit = {
         "english": "Confirming Soundproof",
         "audioText": "ぼうおんのかくにん",
         "options": [
-          "Confirming Lease renewal fee",
-          "Confirming Monthly rent",
-          "Floor plan layout",
-          "Confirming Soundproof"
+          "Confirming Moving residence",
+          "Confirming Soundproof",
+          "Security deposit",
+          "Soundproof"
         ],
         "correctAnswer": "Confirming Soundproof"
       },
@@ -3338,14 +3323,14 @@ export const unit13: DojoUnit = {
         "english": "Build 'Confirming Soundproof'",
         "audioText": "ぼうおんのかくにん",
         "tileBank": [
-          "お",
-          "う",
-          "の",
           "か",
+          "う",
           "に",
+          "ん",
+          "の",
           "く",
           "ぼ",
-          "ん"
+          "お"
         ],
         "correctAnswer": "ぼうおんのかくにん"
       },
@@ -3358,10 +3343,10 @@ export const unit13: DojoUnit = {
         "english": "Confirming Monthly rent",
         "audioText": "やちんのかくにん",
         "options": [
-          "Confirming Security deposit",
-          "Monthly rent",
+          "Confirming Landlord",
+          "Real estate agency",
           "Confirming Monthly rent",
-          "Soundproof"
+          "Monthly rent"
         ],
         "correctAnswer": "Confirming Monthly rent"
       },
@@ -3374,14 +3359,14 @@ export const unit13: DojoUnit = {
         "english": "Build 'Confirming Monthly rent'",
         "audioText": "やちんのかくにん",
         "tileBank": [
+          "ん",
+          "や",
+          "ん",
           "に",
-          "ん",
-          "の",
-          "く",
-          "ん",
           "か",
           "ち",
-          "や"
+          "く",
+          "の"
         ],
         "correctAnswer": "やちんのかくにん"
       }

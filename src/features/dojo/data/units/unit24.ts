@@ -45,10 +45,10 @@ export const unit24: DojoUnit = {
           "english": "Despite / in spite of",
           "audioText": "にもかかわらず",
           "options": [
-            "Confirming Logic / reasoning",
-            "Unconditionally / sweeps all as one",
-            "Assertion / contention",
-            "Despite / in spite of"
+            "Despite / in spite of",
+            "Confirming Far from / let alone",
+            "Contrary to",
+            "Contradiction"
           ],
           "correctAnswer": "Despite / in spite of"
         },
@@ -61,34 +61,35 @@ export const unit24: DojoUnit = {
           "english": "Build 'Far from / let alone'",
           "audioText": "どころか",
           "tileBank": [
-            "ひ",
-            "ん",
-            "ど",
-            "き",
-            "ろ",
             "か",
-            "こ",
-            "わ"
+            "う",
+            "や",
+            "し",
+            "ろ",
+            "る",
+            "ど",
+            "こ"
           ],
           "correctAnswer": "どころか"
         },
         {
           "id": "u24_l1_3",
           "type": "cloze",
-          "prompt": "私はどころかがすきです",
-          "furigana": "わたしはどころかがすきです",
-          "romaji": "Watashi wa dokoroka ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Far from / let alone.",
-          "audioText": "どころか",
-          "clozeSentence": "これはどころか {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切などころかです。",
+          "furigana": "これはいちばんたいせつなどころかです。",
+          "romaji": "Kore wa ichiban taisetsu na dokoroka desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Far from / let alone.",
+          "audioText": "これはどころかです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切などころかです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l1_4",
@@ -99,11 +100,11 @@ export const unit24: DojoUnit = {
           "english": "This is Far from / let alone.",
           "audioText": "これはどころかです",
           "scrambleTokens": [
-            "それ",
-            "これは",
+            "どころか",
             "です",
+            "これは",
             "ではありません",
-            "どころか"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -132,24 +133,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l1_6",
           "type": "dictate",
-          "prompt": "に反してをお願いします",
-          "furigana": "にはんしてをおねがいします",
-          "romaji": "ni hanshite o onegaishimasu.",
-          "english": "Contrary to, please.",
-          "audioText": "に反してをお願いします",
+          "prompt": "に反してです",
+          "furigana": "にはんしてです",
+          "romaji": "ni hanshite desu.",
+          "english": "It is Contrary to.",
+          "audioText": "に反してです",
           "dictateTokens": [
-            "に反して",
-            "を",
-            "お願いします",
             "です",
-            "ありがとう"
+            "に反して",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "に反して",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "に反してをお願いします"
+          "correctAnswer": "に反してです"
         },
         {
           "id": "u24_l1_7",
@@ -251,10 +250,10 @@ export const unit24: DojoUnit = {
           "english": "On the other hand",
           "audioText": "はんめん",
           "options": [
-            "Subjective",
+            "Confirming Assertion / contention",
             "On the other hand",
-            "Confirming Consistency / integrity",
-            "Objective"
+            "Grounds / objective basis",
+            "Subjective"
           ],
           "correctAnswer": "On the other hand"
         },
@@ -267,34 +266,35 @@ export const unit24: DojoUnit = {
           "english": "Build 'On the other hand'",
           "audioText": "はんめん",
           "tileBank": [
-            "に",
-            "か",
+            "さ",
+            "を",
             "ん",
-            "め",
-            "ほ",
+            "か",
+            "た",
+            "ん",
             "は",
-            "く",
-            "ん"
+            "め"
           ],
           "correctAnswer": "はんめん"
         },
         {
           "id": "u24_l2_3",
           "type": "cloze",
-          "prompt": "私は主張がすきです",
-          "furigana": "わたしはしゅちょうがすきです",
-          "romaji": "Watashi wa shuchou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Assertion / contention.",
-          "audioText": "主張",
-          "clozeSentence": "これは主張 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な主張です。",
+          "furigana": "これはいちばんたいせつなしゅちょうです。",
+          "romaji": "Kore wa ichiban taisetsu na shuchou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Assertion / contention.",
+          "audioText": "これは主張です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な主張です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l2_4",
@@ -305,11 +305,11 @@ export const unit24: DojoUnit = {
           "english": "This is Assertion / contention.",
           "audioText": "これは主張です",
           "scrambleTokens": [
-            "です",
             "ではありません",
-            "それ",
+            "です",
+            "これは",
             "主張",
-            "これは"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -338,24 +338,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l2_6",
           "type": "dictate",
-          "prompt": "根拠をお願いします",
-          "furigana": "こんきょをおねがいします",
-          "romaji": "konkyo o onegaishimasu.",
-          "english": "Grounds / objective basis, please.",
-          "audioText": "根拠をお願いします",
+          "prompt": "根拠です",
+          "furigana": "こんきょです",
+          "romaji": "konkyo desu.",
+          "english": "It is Grounds / objective basis.",
+          "audioText": "根拠です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
             "です",
-            "お願いします",
+            "これ",
+            "ではありません",
             "根拠"
           ],
           "dictateSolution": [
             "根拠",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "根拠をお願いします"
+          "correctAnswer": "根拠です"
         },
         {
           "id": "u24_l2_7",
@@ -458,10 +456,10 @@ export const unit24: DojoUnit = {
           "english": "Critique / criticism",
           "audioText": "ひはん",
           "options": [
-            "Confirming Summary / synopsis",
-            "Valid / appropriate",
-            "Confirming Unconditionally / sweeps all as one",
-            "Critique / criticism"
+            "Critique / criticism",
+            "Despite / in spite of",
+            "Confirming Contrary to",
+            "Valid / appropriate"
           ],
           "correctAnswer": "Critique / criticism"
         },
@@ -474,34 +472,35 @@ export const unit24: DojoUnit = {
           "english": "Build 'Critique / criticism'",
           "audioText": "ひはん",
           "tileBank": [
-            "て",
-            "ね",
+            "ん",
+            "え",
+            "き",
+            "へ",
             "ひ",
+            "く",
             "は",
-            "ち",
-            "せ",
-            "わ",
-            "ん"
+            "つ"
           ],
           "correctAnswer": "ひはん"
         },
         {
           "id": "u24_l3_3",
           "type": "cloze",
-          "prompt": "私は妥当がすきです",
-          "furigana": "わたしはだとうがすきです",
-          "romaji": "Watashi wa datou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Valid / appropriate.",
-          "audioText": "妥当",
-          "clozeSentence": "これは妥当 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な妥当です。",
+          "furigana": "これはいちばんたいせつなだとうです。",
+          "romaji": "Kore wa ichiban taisetsu na datou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Valid / appropriate.",
+          "audioText": "これは妥当です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な妥当です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l3_4",
@@ -512,11 +511,11 @@ export const unit24: DojoUnit = {
           "english": "This is Valid / appropriate.",
           "audioText": "これは妥当です",
           "scrambleTokens": [
-            "ではありません",
-            "それ",
             "です",
-            "これは",
-            "妥当"
+            "ではありません",
+            "妥当",
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -545,24 +544,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l3_6",
           "type": "dictate",
-          "prompt": "客観的をお願いします",
-          "furigana": "きゃっかんてきをおねがいします",
-          "romaji": "kyakkanteki o onegaishimasu.",
-          "english": "Objective, please.",
-          "audioText": "客観的をお願いします",
+          "prompt": "客観的です",
+          "furigana": "きゃっかんてきです",
+          "romaji": "kyakkanteki desu.",
+          "english": "It is Objective.",
+          "audioText": "客観的です",
           "dictateTokens": [
-            "を",
             "です",
-            "お願いします",
-            "ありがとう",
-            "客観的"
+            "客観的",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "客観的",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "客観的をお願いします"
+          "correctAnswer": "客観的です"
         },
         {
           "id": "u24_l3_7",
@@ -666,10 +663,10 @@ export const unit24: DojoUnit = {
           "english": "Subjective",
           "audioText": "しゅかんてき",
           "options": [
-            "Valid / appropriate",
-            "Confirming Subjective",
-            "Subjective",
-            "Confirming On the other hand"
+            "Contrary to",
+            "Confirming Grounds / objective basis",
+            "Confirming Far from / let alone",
+            "Subjective"
           ],
           "correctAnswer": "Subjective"
         },
@@ -682,26 +679,26 @@ export const unit24: DojoUnit = {
           "english": "Build 'Subjective'",
           "audioText": "しゅかんてき",
           "tileBank": [
-            "ゅ",
-            "か",
-            "く",
             "き",
+            "か",
+            "ゅ",
             "ん",
-            "し",
+            "よ",
             "て",
-            "み"
+            "ゆ",
+            "し"
           ],
           "correctAnswer": "しゅかんてき"
         },
         {
           "id": "u24_l4_3",
           "type": "cloze",
-          "prompt": "私は矛盾がすきです",
-          "furigana": "わたしはむじゅんがすきです",
-          "romaji": "Watashi wa mujun ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Contradiction.",
-          "audioText": "矛盾",
-          "clozeSentence": "これは矛盾 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な矛盾です。",
+          "furigana": "これはいちばんたいせつなむじゅんです。",
+          "romaji": "Kore wa ichiban taisetsu na mujun desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Contradiction.",
+          "audioText": "これは矛盾です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な矛盾です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -709,7 +706,8 @@ export const unit24: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l4_4",
@@ -720,11 +718,11 @@ export const unit24: DojoUnit = {
           "english": "This is Contradiction.",
           "audioText": "これは矛盾です",
           "scrambleTokens": [
-            "それ",
             "ではありません",
-            "これは",
+            "矛盾",
             "です",
-            "矛盾"
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -753,24 +751,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l4_6",
           "type": "dictate",
-          "prompt": "整合性をお願いします",
-          "furigana": "せいごうせいをおねがいします",
-          "romaji": "seigousei o onegaishimasu.",
-          "english": "Consistency / integrity, please.",
-          "audioText": "整合性をお願いします",
+          "prompt": "整合性です",
+          "furigana": "せいごうせいです",
+          "romaji": "seigousei desu.",
+          "english": "It is Consistency / integrity.",
+          "audioText": "整合性です",
           "dictateTokens": [
-            "を",
-            "お願いします",
-            "整合性",
             "です",
-            "ありがとう"
+            "これ",
+            "整合性",
+            "ではありません"
           ],
           "dictateSolution": [
             "整合性",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "整合性をお願いします"
+          "correctAnswer": "整合性です"
         },
         {
           "id": "u24_l4_7",
@@ -872,10 +868,10 @@ export const unit24: DojoUnit = {
           "english": "Unconditionally / sweeps all as one",
           "audioText": "いちがいに",
           "options": [
-            "Confirming Summary / synopsis",
-            "Despite / in spite of",
             "Unconditionally / sweeps all as one",
-            "Confirming Contrary to"
+            "Confirming Logic / reasoning",
+            "Confirming Assertion / contention",
+            "Contradiction"
           ],
           "correctAnswer": "Unconditionally / sweeps all as one"
         },
@@ -888,13 +884,13 @@ export const unit24: DojoUnit = {
           "english": "Build 'Unconditionally / sweeps all as one'",
           "audioText": "いちがいに",
           "tileBank": [
-            "け",
-            "ふ",
-            "ち",
-            "に",
+            "う",
             "い",
-            "ほ",
             "が",
+            "め",
+            "に",
+            "は",
+            "ち",
             "い"
           ],
           "correctAnswer": "いちがいに"
@@ -902,20 +898,21 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l5_3",
           "type": "cloze",
-          "prompt": "私は論理がすきです",
-          "furigana": "わたしはろんりがすきです",
-          "romaji": "Watashi wa ronri ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Logic / reasoning.",
-          "audioText": "論理",
-          "clozeSentence": "これは論理 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な論理です。",
+          "furigana": "これはいちばんたいせつなろんりです。",
+          "romaji": "Kore wa ichiban taisetsu na ronri desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Logic / reasoning.",
+          "audioText": "これは論理です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な論理です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l5_4",
@@ -927,10 +924,10 @@ export const unit24: DojoUnit = {
           "audioText": "これは論理です",
           "scrambleTokens": [
             "ではありません",
+            "これは",
             "です",
             "それ",
-            "論理",
-            "これは"
+            "論理"
           ],
           "scrambleSolution": [
             "これは",
@@ -959,24 +956,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l5_6",
           "type": "dictate",
-          "prompt": "要約をお願いします",
-          "furigana": "ようやくをおねがいします",
-          "romaji": "youyaku o onegaishimasu.",
-          "english": "Summary / synopsis, please.",
-          "audioText": "要約をお願いします",
+          "prompt": "要約です",
+          "furigana": "ようやくです",
+          "romaji": "youyaku desu.",
+          "english": "It is Summary / synopsis.",
+          "audioText": "要約です",
           "dictateTokens": [
-            "です",
-            "ありがとう",
-            "を",
             "要約",
-            "お願いします"
+            "これ",
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "要約",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "要約をお願いします"
+          "correctAnswer": "要約です"
         },
         {
           "id": "u24_l5_7",
@@ -1079,10 +1074,10 @@ export const unit24: DojoUnit = {
           "english": "Confirming Despite / in spite of",
           "audioText": "にもかかわらずのかくにん",
           "options": [
-            "Contrary to",
-            "Confirming Despite / in spite of",
-            "Objective",
-            "On the other hand"
+            "Despite / in spite of",
+            "Critique / criticism",
+            "Confirming Objective",
+            "Confirming Despite / in spite of"
           ],
           "correctAnswer": "Confirming Despite / in spite of"
         },
@@ -1095,13 +1090,13 @@ export const unit24: DojoUnit = {
           "english": "Build 'Confirming Despite / in spite of'",
           "audioText": "にもかかわらずのかくにん",
           "tileBank": [
+            "わ",
+            "ら",
             "も",
             "か",
+            "ず",
             "の",
             "か",
-            "ら",
-            "ず",
-            "わ",
             "に"
           ],
           "correctAnswer": "にもかかわらずのかくにん"
@@ -1109,20 +1104,21 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l6_3",
           "type": "cloze",
-          "prompt": "私はどころかの確認がすきです",
-          "furigana": "わたしはどころかのかくにんがすきです",
-          "romaji": "Watashi wa dokoroka no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Far from / let alone.",
-          "audioText": "どころかの確認",
-          "clozeSentence": "これはどころかの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切などころかの確認です。",
+          "furigana": "これはいちばんたいせつなどころかのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na dokoroka no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Far from / let alone.",
+          "audioText": "これはどころかの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切などころかの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l6_4",
@@ -1133,11 +1129,11 @@ export const unit24: DojoUnit = {
           "english": "This is Confirming Far from / let alone.",
           "audioText": "これはどころかの確認です",
           "scrambleTokens": [
-            "どころかの確認",
-            "これは",
-            "それ",
             "です",
-            "ではありません"
+            "これは",
+            "ではありません",
+            "それ",
+            "どころかの確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1166,24 +1162,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l6_6",
           "type": "dictate",
-          "prompt": "に反しての確認をお願いします",
-          "furigana": "にはんしてのかくにんをおねがいします",
-          "romaji": "ni hanshite no kakunin o onegaishimasu.",
-          "english": "Confirming Contrary to, please.",
-          "audioText": "に反しての確認をお願いします",
+          "prompt": "に反しての確認です",
+          "furigana": "にはんしてのかくにんです",
+          "romaji": "ni hanshite no kakunin desu.",
+          "english": "It is Confirming Contrary to.",
+          "audioText": "に反しての確認です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "お願いします",
-            "に反しての確認",
-            "です"
+            "これ",
+            "ではありません",
+            "です",
+            "に反しての確認"
           ],
           "dictateSolution": [
             "に反しての確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "に反しての確認をお願いします"
+          "correctAnswer": "に反しての確認です"
         },
         {
           "id": "u24_l6_7",
@@ -1292,9 +1286,9 @@ export const unit24: DojoUnit = {
           "audioText": "はんめんのかくにん",
           "options": [
             "Confirming On the other hand",
-            "Grounds / objective basis",
-            "Logic / reasoning",
-            "Despite / in spite of"
+            "On the other hand",
+            "Confirming Assertion / contention",
+            "Confirming Summary / synopsis"
           ],
           "correctAnswer": "Confirming On the other hand"
         },
@@ -1307,34 +1301,35 @@ export const unit24: DojoUnit = {
           "english": "Build 'Confirming On the other hand'",
           "audioText": "はんめんのかくにん",
           "tileBank": [
-            "く",
-            "に",
             "め",
-            "ん",
-            "の",
+            "く",
+            "は",
             "か",
+            "の",
+            "に",
             "ん",
-            "は"
+            "ん"
           ],
           "correctAnswer": "はんめんのかくにん"
         },
         {
           "id": "u24_l7_3",
           "type": "cloze",
-          "prompt": "私は主張の確認がすきです",
-          "furigana": "わたしはしゅちょうのかくにんがすきです",
-          "romaji": "Watashi wa shuchou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Assertion / contention.",
-          "audioText": "主張の確認",
-          "clozeSentence": "これは主張の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な主張の確認です。",
+          "furigana": "これはいちばんたいせつなしゅちょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shuchou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Assertion / contention.",
+          "audioText": "これは主張の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な主張の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l7_4",
@@ -1346,10 +1341,10 @@ export const unit24: DojoUnit = {
           "audioText": "これは主張の確認です",
           "scrambleTokens": [
             "これは",
-            "それ",
-            "主張の確認",
             "ではありません",
-            "です"
+            "主張の確認",
+            "です",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1378,24 +1373,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l7_6",
           "type": "dictate",
-          "prompt": "根拠の確認をお願いします",
-          "furigana": "こんきょのかくにんをおねがいします",
-          "romaji": "konkyo no kakunin o onegaishimasu.",
-          "english": "Confirming Grounds / objective basis, please.",
-          "audioText": "根拠の確認をお願いします",
+          "prompt": "根拠の確認です",
+          "furigana": "こんきょのかくにんです",
+          "romaji": "konkyo no kakunin desu.",
+          "english": "It is Confirming Grounds / objective basis.",
+          "audioText": "根拠の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "です",
             "根拠の確認",
-            "お願いします"
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "根拠の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "根拠の確認をお願いします"
+          "correctAnswer": "根拠の確認です"
         },
         {
           "id": "u24_l7_7",
@@ -1504,10 +1497,10 @@ export const unit24: DojoUnit = {
           "english": "Confirming Critique / criticism",
           "audioText": "ひはんのかくにん",
           "options": [
-            "Confirming Subjective",
+            "Confirming On the other hand",
             "Confirming Critique / criticism",
-            "Confirming Assertion / contention",
-            "Confirming Objective"
+            "Confirming Grounds / objective basis",
+            "Confirming Grounds / objective basis"
           ],
           "correctAnswer": "Confirming Critique / criticism"
         },
@@ -1520,26 +1513,26 @@ export const unit24: DojoUnit = {
           "english": "Build 'Confirming Critique / criticism'",
           "audioText": "ひはんのかくにん",
           "tileBank": [
-            "か",
             "ひ",
-            "に",
             "は",
+            "ん",
+            "に",
+            "の",
             "く",
             "ん",
-            "の",
-            "ん"
+            "か"
           ],
           "correctAnswer": "ひはんのかくにん"
         },
         {
           "id": "u24_l8_3",
           "type": "cloze",
-          "prompt": "私は妥当の確認がすきです",
-          "furigana": "わたしはだとうのかくにんがすきです",
-          "romaji": "Watashi wa datou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Valid / appropriate.",
-          "audioText": "妥当の確認",
-          "clozeSentence": "これは妥当の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な妥当の確認です。",
+          "furigana": "これはいちばんたいせつなだとうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na datou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Valid / appropriate.",
+          "audioText": "これは妥当の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な妥当の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1547,7 +1540,8 @@ export const unit24: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l8_4",
@@ -1558,11 +1552,11 @@ export const unit24: DojoUnit = {
           "english": "This is Confirming Valid / appropriate.",
           "audioText": "これは妥当の確認です",
           "scrambleTokens": [
-            "それ",
             "妥当の確認",
-            "です",
+            "ではありません",
             "これは",
-            "ではありません"
+            "です",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1591,24 +1585,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l8_6",
           "type": "dictate",
-          "prompt": "客観的の確認をお願いします",
-          "furigana": "きゃっかんてきのかくにんをおねがいします",
-          "romaji": "kyakkanteki no kakunin o onegaishimasu.",
-          "english": "Confirming Objective, please.",
-          "audioText": "客観的の確認をお願いします",
+          "prompt": "客観的の確認です",
+          "furigana": "きゃっかんてきのかくにんです",
+          "romaji": "kyakkanteki no kakunin desu.",
+          "english": "It is Confirming Objective.",
+          "audioText": "客観的の確認です",
           "dictateTokens": [
-            "を",
+            "ではありません",
             "客観的の確認",
-            "お願いします",
-            "ありがとう",
-            "です"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "客観的の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "客観的の確認をお願いします"
+          "correctAnswer": "客観的の確認です"
         },
         {
           "id": "u24_l8_7",
@@ -1718,10 +1710,10 @@ export const unit24: DojoUnit = {
           "english": "Confirming Subjective",
           "audioText": "しゅかんてきのかくにん",
           "options": [
-            "On the other hand",
+            "Confirming Contradiction",
             "Confirming Subjective",
-            "Confirming Despite / in spite of",
-            "Confirming Contradiction"
+            "Unconditionally / sweeps all as one",
+            "Critique / criticism"
           ],
           "correctAnswer": "Confirming Subjective"
         },
@@ -1734,34 +1726,35 @@ export const unit24: DojoUnit = {
           "english": "Build 'Confirming Subjective'",
           "audioText": "しゅかんてきのかくにん",
           "tileBank": [
-            "ん",
-            "し",
-            "か",
             "か",
             "の",
-            "き",
+            "て",
             "ゅ",
-            "て"
+            "ん",
+            "し",
+            "き",
+            "か"
           ],
           "correctAnswer": "しゅかんてきのかくにん"
         },
         {
           "id": "u24_l9_3",
           "type": "cloze",
-          "prompt": "私は矛盾の確認がすきです",
-          "furigana": "わたしはむじゅんのかくにんがすきです",
-          "romaji": "Watashi wa mujun no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Contradiction.",
-          "audioText": "矛盾の確認",
-          "clozeSentence": "これは矛盾の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な矛盾の確認です。",
+          "furigana": "これはいちばんたいせつなむじゅんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na mujun no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Contradiction.",
+          "audioText": "これは矛盾の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な矛盾の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l9_4",
@@ -1772,11 +1765,11 @@ export const unit24: DojoUnit = {
           "english": "This is Confirming Contradiction.",
           "audioText": "これは矛盾の確認です",
           "scrambleTokens": [
-            "これは",
-            "ではありません",
-            "それ",
             "です",
-            "矛盾の確認"
+            "それ",
+            "矛盾の確認",
+            "ではありません",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1805,24 +1798,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l9_6",
           "type": "dictate",
-          "prompt": "整合性の確認をお願いします",
-          "furigana": "せいごうせいのかくにんをおねがいします",
-          "romaji": "seigousei no kakunin o onegaishimasu.",
-          "english": "Confirming Consistency / integrity, please.",
-          "audioText": "整合性の確認をお願いします",
+          "prompt": "整合性の確認です",
+          "furigana": "せいごうせいのかくにんです",
+          "romaji": "seigousei no kakunin desu.",
+          "english": "It is Confirming Consistency / integrity.",
+          "audioText": "整合性の確認です",
           "dictateTokens": [
-            "お願いします",
+            "ではありません",
             "です",
             "整合性の確認",
-            "を",
-            "ありがとう"
+            "これ"
           ],
           "dictateSolution": [
             "整合性の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "整合性の確認をお願いします"
+          "correctAnswer": "整合性の確認です"
         },
         {
           "id": "u24_l9_7",
@@ -1930,10 +1921,10 @@ export const unit24: DojoUnit = {
           "english": "Confirming Unconditionally / sweeps all as one",
           "audioText": "いちがいにのかくにん",
           "options": [
-            "On the other hand",
+            "Unconditionally / sweeps all as one",
             "Confirming Unconditionally / sweeps all as one",
-            "Logic / reasoning",
-            "Confirming Despite / in spite of"
+            "Confirming Assertion / contention",
+            "Contradiction"
           ],
           "correctAnswer": "Confirming Unconditionally / sweeps all as one"
         },
@@ -1946,34 +1937,35 @@ export const unit24: DojoUnit = {
           "english": "Build 'Confirming Unconditionally / sweeps all as one'",
           "audioText": "いちがいにのかくにん",
           "tileBank": [
-            "の",
-            "ち",
-            "に",
-            "く",
             "い",
-            "か",
+            "ち",
+            "い",
+            "に",
             "が",
-            "い"
+            "の",
+            "か",
+            "く"
           ],
           "correctAnswer": "いちがいにのかくにん"
         },
         {
           "id": "u24_l10_3",
           "type": "cloze",
-          "prompt": "私は論理の確認がすきです",
-          "furigana": "わたしはろんりのかくにんがすきです",
-          "romaji": "Watashi wa ronri no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Logic / reasoning.",
-          "audioText": "論理の確認",
-          "clozeSentence": "これは論理の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な論理の確認です。",
+          "furigana": "これはいちばんたいせつなろんりのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ronri no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Logic / reasoning.",
+          "audioText": "これは論理の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な論理の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l10_4",
@@ -1985,9 +1977,9 @@ export const unit24: DojoUnit = {
           "audioText": "これは論理の確認です",
           "scrambleTokens": [
             "です",
+            "ではありません",
             "これは",
             "論理の確認",
-            "ではありません",
             "それ"
           ],
           "scrambleSolution": [
@@ -2017,24 +2009,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l10_6",
           "type": "dictate",
-          "prompt": "要約の確認をお願いします",
-          "furigana": "ようやくのかくにんをおねがいします",
-          "romaji": "youyaku no kakunin o onegaishimasu.",
-          "english": "Confirming Summary / synopsis, please.",
-          "audioText": "要約の確認をお願いします",
+          "prompt": "要約の確認です",
+          "furigana": "ようやくのかくにんです",
+          "romaji": "youyaku no kakunin desu.",
+          "english": "It is Confirming Summary / synopsis.",
+          "audioText": "要約の確認です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "要約の確認",
             "です",
-            "を"
+            "これ",
+            "ではありません",
+            "要約の確認"
           ],
           "dictateSolution": [
             "要約の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "要約の確認をお願いします"
+          "correctAnswer": "要約の確認です"
         },
         {
           "id": "u24_l10_7",
@@ -2137,10 +2127,10 @@ export const unit24: DojoUnit = {
           "english": "Confirming Despite / in spite of",
           "audioText": "にもかかわらずのかくにん",
           "options": [
-            "Confirming Logic / reasoning",
-            "Confirming Assertion / contention",
-            "Assertion / contention",
-            "Confirming Despite / in spite of"
+            "Confirming Despite / in spite of",
+            "Confirming On the other hand",
+            "Summary / synopsis",
+            "Subjective"
           ],
           "correctAnswer": "Confirming Despite / in spite of"
         },
@@ -2153,34 +2143,35 @@ export const unit24: DojoUnit = {
           "english": "Build 'Confirming Despite / in spite of'",
           "audioText": "にもかかわらずのかくにん",
           "tileBank": [
-            "に",
-            "か",
-            "ら",
-            "わ",
-            "も",
             "の",
+            "ら",
+            "ず",
             "か",
-            "ず"
+            "わ",
+            "か",
+            "も",
+            "に"
           ],
           "correctAnswer": "にもかかわらずのかくにん"
         },
         {
           "id": "u24_l11_3",
           "type": "cloze",
-          "prompt": "私はどころかの確認がすきです",
-          "furigana": "わたしはどころかのかくにんがすきです",
-          "romaji": "Watashi wa dokoroka no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Far from / let alone.",
-          "audioText": "どころかの確認",
-          "clozeSentence": "これはどころかの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切などころかの確認です。",
+          "furigana": "これはいちばんたいせつなどころかのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na dokoroka no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Far from / let alone.",
+          "audioText": "これはどころかの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切などころかの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l11_4",
@@ -2224,24 +2215,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l11_6",
           "type": "dictate",
-          "prompt": "に反しての確認をお願いします",
-          "furigana": "にはんしてのかくにんをおねがいします",
-          "romaji": "ni hanshite no kakunin o onegaishimasu.",
-          "english": "Confirming Contrary to, please.",
-          "audioText": "に反しての確認をお願いします",
+          "prompt": "に反しての確認です",
+          "furigana": "にはんしてのかくにんです",
+          "romaji": "ni hanshite no kakunin desu.",
+          "english": "It is Confirming Contrary to.",
+          "audioText": "に反しての確認です",
           "dictateTokens": [
-            "お願いします",
-            "に反しての確認",
-            "を",
             "です",
-            "ありがとう"
+            "これ",
+            "ではありません",
+            "に反しての確認"
           ],
           "dictateSolution": [
             "に反しての確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "に反しての確認をお願いします"
+          "correctAnswer": "に反しての確認です"
         },
         {
           "id": "u24_l11_7",
@@ -2349,10 +2338,10 @@ export const unit24: DojoUnit = {
           "english": "Confirming On the other hand",
           "audioText": "はんめんのかくにん",
           "options": [
+            "Confirming Valid / appropriate",
+            "Logic / reasoning",
             "Confirming On the other hand",
-            "Subjective",
-            "Confirming Summary / synopsis",
-            "Contrary to"
+            "Valid / appropriate"
           ],
           "correctAnswer": "Confirming On the other hand"
         },
@@ -2365,26 +2354,26 @@ export const unit24: DojoUnit = {
           "english": "Build 'Confirming On the other hand'",
           "audioText": "はんめんのかくにん",
           "tileBank": [
-            "に",
-            "は",
-            "め",
-            "ん",
-            "か",
+            "の",
             "く",
             "ん",
-            "の"
+            "か",
+            "め",
+            "ん",
+            "は",
+            "に"
           ],
           "correctAnswer": "はんめんのかくにん"
         },
         {
           "id": "u24_l12_3",
           "type": "cloze",
-          "prompt": "私は主張の確認がすきです",
-          "furigana": "わたしはしゅちょうのかくにんがすきです",
-          "romaji": "Watashi wa shuchou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Assertion / contention.",
-          "audioText": "主張の確認",
-          "clozeSentence": "これは主張の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な主張の確認です。",
+          "furigana": "これはいちばんたいせつなしゅちょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shuchou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Assertion / contention.",
+          "audioText": "これは主張の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な主張の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2392,7 +2381,8 @@ export const unit24: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l12_4",
@@ -2436,24 +2426,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l12_6",
           "type": "dictate",
-          "prompt": "根拠の確認をお願いします",
-          "furigana": "こんきょのかくにんをおねがいします",
-          "romaji": "konkyo no kakunin o onegaishimasu.",
-          "english": "Confirming Grounds / objective basis, please.",
-          "audioText": "根拠の確認をお願いします",
+          "prompt": "根拠の確認です",
+          "furigana": "こんきょのかくにんです",
+          "romaji": "konkyo no kakunin desu.",
+          "english": "It is Confirming Grounds / objective basis.",
+          "audioText": "根拠の確認です",
           "dictateTokens": [
-            "お願いします",
-            "を",
+            "これ",
             "です",
-            "ありがとう",
+            "ではありません",
             "根拠の確認"
           ],
           "dictateSolution": [
             "根拠の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "根拠の確認をお願いします"
+          "correctAnswer": "根拠の確認です"
         },
         {
           "id": "u24_l12_7",
@@ -2550,10 +2538,10 @@ export const unit24: DojoUnit = {
           "english": "Despite / in spite of",
           "audioText": "にもかかわらず",
           "options": [
-            "Confirming Far from / let alone",
-            "Confirming Summary / synopsis",
-            "Despite / in spite of",
-            "Confirming Objective"
+            "Subjective",
+            "Confirming Consistency / integrity",
+            "Confirming Critique / criticism",
+            "Despite / in spite of"
           ],
           "correctAnswer": "Despite / in spite of"
         },
@@ -2566,34 +2554,35 @@ export const unit24: DojoUnit = {
           "english": "Build 'Far from / let alone'",
           "audioText": "どころか",
           "tileBank": [
+            "あ",
+            "か",
             "こ",
-            "く",
-            "に",
             "ど",
             "ろ",
-            "か",
-            "れ",
-            "ち"
+            "し",
+            "と",
+            "え"
           ],
           "correctAnswer": "どころか"
         },
         {
           "id": "u24_l13_3",
           "type": "cloze",
-          "prompt": "私はどころかがすきです",
-          "furigana": "わたしはどころかがすきです",
-          "romaji": "Watashi wa dokoroka ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Far from / let alone.",
-          "audioText": "どころか",
-          "clozeSentence": "これはどころか {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切などころかです。",
+          "furigana": "これはいちばんたいせつなどころかです。",
+          "romaji": "Kore wa ichiban taisetsu na dokoroka desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Far from / let alone.",
+          "audioText": "これはどころかです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切などころかです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l13_4",
@@ -2604,11 +2593,11 @@ export const unit24: DojoUnit = {
           "english": "This is Far from / let alone.",
           "audioText": "これはどころかです",
           "scrambleTokens": [
-            "ではありません",
-            "これは",
             "どころか",
-            "それ",
-            "です"
+            "ではありません",
+            "です",
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2637,24 +2626,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l13_6",
           "type": "dictate",
-          "prompt": "に反してをお願いします",
-          "furigana": "にはんしてをおねがいします",
-          "romaji": "ni hanshite o onegaishimasu.",
-          "english": "Contrary to, please.",
-          "audioText": "に反してをお願いします",
+          "prompt": "に反してです",
+          "furigana": "にはんしてです",
+          "romaji": "ni hanshite desu.",
+          "english": "It is Contrary to.",
+          "audioText": "に反してです",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
             "です",
-            "を",
-            "に反して"
+            "ではありません",
+            "に反して",
+            "これ"
           ],
           "dictateSolution": [
             "に反して",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "に反してをお願いします"
+          "correctAnswer": "に反してです"
         },
         {
           "id": "u24_l13_7",
@@ -2756,10 +2743,10 @@ export const unit24: DojoUnit = {
           "english": "On the other hand",
           "audioText": "はんめん",
           "options": [
-            "Contrary to",
+            "Subjective",
+            "Objective",
             "Valid / appropriate",
-            "On the other hand",
-            "Confirming Unconditionally / sweeps all as one"
+            "On the other hand"
           ],
           "correctAnswer": "On the other hand"
         },
@@ -2773,33 +2760,34 @@ export const unit24: DojoUnit = {
           "audioText": "はんめん",
           "tileBank": [
             "ん",
-            "め",
-            "は",
-            "へ",
-            "ん",
+            "さ",
             "ふ",
-            "あ",
-            "わ"
+            "め",
+            "ん",
+            "く",
+            "の",
+            "は"
           ],
           "correctAnswer": "はんめん"
         },
         {
           "id": "u24_l14_3",
           "type": "cloze",
-          "prompt": "私は主張がすきです",
-          "furigana": "わたしはしゅちょうがすきです",
-          "romaji": "Watashi wa shuchou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Assertion / contention.",
-          "audioText": "主張",
-          "clozeSentence": "これは主張 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な主張です。",
+          "furigana": "これはいちばんたいせつなしゅちょうです。",
+          "romaji": "Kore wa ichiban taisetsu na shuchou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Assertion / contention.",
+          "audioText": "これは主張です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な主張です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l14_4",
@@ -2811,9 +2799,9 @@ export const unit24: DojoUnit = {
           "audioText": "これは主張です",
           "scrambleTokens": [
             "主張",
+            "ではありません",
             "これは",
             "それ",
-            "ではありません",
             "です"
           ],
           "scrambleSolution": [
@@ -2843,24 +2831,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l14_6",
           "type": "dictate",
-          "prompt": "根拠をお願いします",
-          "furigana": "こんきょをおねがいします",
-          "romaji": "konkyo o onegaishimasu.",
-          "english": "Grounds / objective basis, please.",
-          "audioText": "根拠をお願いします",
+          "prompt": "根拠です",
+          "furigana": "こんきょです",
+          "romaji": "konkyo desu.",
+          "english": "It is Grounds / objective basis.",
+          "audioText": "根拠です",
           "dictateTokens": [
             "です",
-            "お願いします",
-            "を",
-            "根拠",
-            "ありがとう"
+            "これ",
+            "ではありません",
+            "根拠"
           ],
           "dictateSolution": [
             "根拠",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "根拠をお願いします"
+          "correctAnswer": "根拠です"
         },
         {
           "id": "u24_l14_7",
@@ -2963,10 +2949,10 @@ export const unit24: DojoUnit = {
           "english": "Critique / criticism",
           "audioText": "ひはん",
           "options": [
-            "Critique / criticism",
+            "Confirming Grounds / objective basis",
+            "Confirming Objective",
             "Confirming Contrary to",
-            "Objective",
-            "Summary / synopsis"
+            "Critique / criticism"
           ],
           "correctAnswer": "Critique / criticism"
         },
@@ -2979,34 +2965,35 @@ export const unit24: DojoUnit = {
           "english": "Build 'Critique / criticism'",
           "audioText": "ひはん",
           "tileBank": [
-            "ん",
-            "う",
-            "ら",
-            "ひ",
+            "の",
+            "も",
             "り",
-            "は",
-            "お",
-            "き"
+            "み",
+            "ん",
+            "ひ",
+            "む",
+            "は"
           ],
           "correctAnswer": "ひはん"
         },
         {
           "id": "u24_l15_3",
           "type": "cloze",
-          "prompt": "私は妥当がすきです",
-          "furigana": "わたしはだとうがすきです",
-          "romaji": "Watashi wa datou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Valid / appropriate.",
-          "audioText": "妥当",
-          "clozeSentence": "これは妥当 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な妥当です。",
+          "furigana": "これはいちばんたいせつなだとうです。",
+          "romaji": "Kore wa ichiban taisetsu na datou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Valid / appropriate.",
+          "audioText": "これは妥当です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な妥当です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u24_l15_4",
@@ -3017,10 +3004,10 @@ export const unit24: DojoUnit = {
           "english": "This is Valid / appropriate.",
           "audioText": "これは妥当です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
-            "これは",
             "です",
+            "それ",
+            "これは",
+            "ではありません",
             "妥当"
           ],
           "scrambleSolution": [
@@ -3050,24 +3037,22 @@ export const unit24: DojoUnit = {
         {
           "id": "u24_l15_6",
           "type": "dictate",
-          "prompt": "客観的をお願いします",
-          "furigana": "きゃっかんてきをおねがいします",
-          "romaji": "kyakkanteki o onegaishimasu.",
-          "english": "Objective, please.",
-          "audioText": "客観的をお願いします",
+          "prompt": "客観的です",
+          "furigana": "きゃっかんてきです",
+          "romaji": "kyakkanteki desu.",
+          "english": "It is Objective.",
+          "audioText": "客観的です",
           "dictateTokens": [
+            "これ",
             "です",
-            "を",
-            "お願いします",
-            "ありがとう",
-            "客観的"
+            "客観的",
+            "ではありません"
           ],
           "dictateSolution": [
             "客観的",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "客観的をお願いします"
+          "correctAnswer": "客観的です"
         },
         {
           "id": "u24_l15_7",
@@ -3152,10 +3137,10 @@ export const unit24: DojoUnit = {
         "english": "Despite / in spite of",
         "audioText": "にもかかわらず",
         "options": [
-          "Confirming Logic / reasoning",
-          "Unconditionally / sweeps all as one",
-          "Assertion / contention",
-          "Despite / in spite of"
+          "Despite / in spite of",
+          "Confirming Far from / let alone",
+          "Contrary to",
+          "Contradiction"
         ],
         "correctAnswer": "Despite / in spite of"
       },
@@ -3168,14 +3153,14 @@ export const unit24: DojoUnit = {
         "english": "Build 'Far from / let alone'",
         "audioText": "どころか",
         "tileBank": [
-          "ひ",
-          "ん",
-          "ど",
-          "き",
-          "ろ",
           "か",
-          "こ",
-          "わ"
+          "う",
+          "や",
+          "し",
+          "ろ",
+          "る",
+          "ど",
+          "こ"
         ],
         "correctAnswer": "どころか"
       },
@@ -3188,10 +3173,10 @@ export const unit24: DojoUnit = {
         "english": "Critique / criticism",
         "audioText": "ひはん",
         "options": [
-          "Confirming Summary / synopsis",
-          "Valid / appropriate",
-          "Confirming Unconditionally / sweeps all as one",
-          "Critique / criticism"
+          "Critique / criticism",
+          "Despite / in spite of",
+          "Confirming Contrary to",
+          "Valid / appropriate"
         ],
         "correctAnswer": "Critique / criticism"
       },
@@ -3204,14 +3189,14 @@ export const unit24: DojoUnit = {
         "english": "Build 'Critique / criticism'",
         "audioText": "ひはん",
         "tileBank": [
-          "て",
-          "ね",
+          "ん",
+          "え",
+          "き",
+          "へ",
           "ひ",
+          "く",
           "は",
-          "ち",
-          "せ",
-          "わ",
-          "ん"
+          "つ"
         ],
         "correctAnswer": "ひはん"
       },
@@ -3224,10 +3209,10 @@ export const unit24: DojoUnit = {
         "english": "Unconditionally / sweeps all as one",
         "audioText": "いちがいに",
         "options": [
-          "Confirming Summary / synopsis",
-          "Despite / in spite of",
           "Unconditionally / sweeps all as one",
-          "Confirming Contrary to"
+          "Confirming Logic / reasoning",
+          "Confirming Assertion / contention",
+          "Contradiction"
         ],
         "correctAnswer": "Unconditionally / sweeps all as one"
       },
@@ -3240,13 +3225,13 @@ export const unit24: DojoUnit = {
         "english": "Build 'Unconditionally / sweeps all as one'",
         "audioText": "いちがいに",
         "tileBank": [
-          "け",
-          "ふ",
-          "ち",
-          "に",
+          "う",
           "い",
-          "ほ",
           "が",
+          "め",
+          "に",
+          "は",
+          "ち",
           "い"
         ],
         "correctAnswer": "いちがいに"
@@ -3261,9 +3246,9 @@ export const unit24: DojoUnit = {
         "audioText": "はんめんのかくにん",
         "options": [
           "Confirming On the other hand",
-          "Grounds / objective basis",
-          "Logic / reasoning",
-          "Despite / in spite of"
+          "On the other hand",
+          "Confirming Assertion / contention",
+          "Confirming Summary / synopsis"
         ],
         "correctAnswer": "Confirming On the other hand"
       },
@@ -3276,14 +3261,14 @@ export const unit24: DojoUnit = {
         "english": "Build 'Confirming On the other hand'",
         "audioText": "はんめんのかくにん",
         "tileBank": [
-          "く",
-          "に",
           "め",
-          "ん",
-          "の",
+          "く",
+          "は",
           "か",
+          "の",
+          "に",
           "ん",
-          "は"
+          "ん"
         ],
         "correctAnswer": "はんめんのかくにん"
       },
@@ -3296,10 +3281,10 @@ export const unit24: DojoUnit = {
         "english": "Confirming Subjective",
         "audioText": "しゅかんてきのかくにん",
         "options": [
-          "On the other hand",
+          "Confirming Contradiction",
           "Confirming Subjective",
-          "Confirming Despite / in spite of",
-          "Confirming Contradiction"
+          "Unconditionally / sweeps all as one",
+          "Critique / criticism"
         ],
         "correctAnswer": "Confirming Subjective"
       },
@@ -3312,14 +3297,14 @@ export const unit24: DojoUnit = {
         "english": "Build 'Confirming Subjective'",
         "audioText": "しゅかんてきのかくにん",
         "tileBank": [
-          "ん",
-          "し",
-          "か",
           "か",
           "の",
-          "き",
+          "て",
           "ゅ",
-          "て"
+          "ん",
+          "し",
+          "き",
+          "か"
         ],
         "correctAnswer": "しゅかんてきのかくにん"
       },
@@ -3332,10 +3317,10 @@ export const unit24: DojoUnit = {
         "english": "Confirming Despite / in spite of",
         "audioText": "にもかかわらずのかくにん",
         "options": [
-          "Confirming Logic / reasoning",
-          "Confirming Assertion / contention",
-          "Assertion / contention",
-          "Confirming Despite / in spite of"
+          "Confirming Despite / in spite of",
+          "Confirming On the other hand",
+          "Summary / synopsis",
+          "Subjective"
         ],
         "correctAnswer": "Confirming Despite / in spite of"
       },
@@ -3348,14 +3333,14 @@ export const unit24: DojoUnit = {
         "english": "Build 'Confirming Despite / in spite of'",
         "audioText": "にもかかわらずのかくにん",
         "tileBank": [
-          "に",
-          "か",
-          "ら",
-          "わ",
-          "も",
           "の",
+          "ら",
+          "ず",
           "か",
-          "ず"
+          "わ",
+          "か",
+          "も",
+          "に"
         ],
         "correctAnswer": "にもかかわらずのかくにん"
       }

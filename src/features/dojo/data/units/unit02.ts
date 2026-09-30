@@ -48,10 +48,10 @@ export const unit02: DojoUnit = {
           "english": "Liked / fond of",
           "audioText": "すき",
           "options": [
-            "Anime / Japanese animation",
-            "Pizza",
+            "To do / play",
             "Liked / fond of",
-            "To see / watch"
+            "Juice",
+            "Disliked / hated"
           ],
           "correctAnswer": "Liked / fond of"
         },
@@ -64,34 +64,35 @@ export const unit02: DojoUnit = {
           "english": "Build 'Liked / fond of'",
           "audioText": "すき",
           "tileBank": [
-            "う",
-            "む",
-            "き",
             "す",
-            "ん",
-            "か",
-            "の",
-            "ひ"
+            "や",
+            "ち",
+            "わ",
+            "あ",
+            "き",
+            "ふ",
+            "ん"
           ],
           "correctAnswer": "すき"
         },
         {
           "id": "u2_l1_3",
           "type": "cloze",
-          "prompt": "私は大好きがすきです",
-          "furigana": "わたしはだいすきがすきです",
-          "romaji": "Watashi wa daisuki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Loved / favorite.",
-          "audioText": "大好き",
-          "clozeSentence": "これは大好き {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な大好きです。",
+          "furigana": "これはいちばんたいせつなだいすきです。",
+          "romaji": "Kore wa ichiban taisetsu na daisuki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Loved / favorite.",
+          "audioText": "これは大好きです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な大好きです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u2_l1_4",
@@ -103,10 +104,10 @@ export const unit02: DojoUnit = {
           "audioText": "これは大好きです",
           "scrambleTokens": [
             "これは",
-            "大好き",
-            "です",
             "それ",
-            "ではありません"
+            "ではありません",
+            "です",
+            "大好き"
           ],
           "scrambleSolution": [
             "これは",
@@ -135,24 +136,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l1_6",
           "type": "dictate",
-          "prompt": "嫌いをお願いします",
-          "furigana": "きらいをおねがいします",
-          "romaji": "kirai o onegaishimasu.",
-          "english": "Disliked / hated, please.",
-          "audioText": "嫌いをお願いします",
+          "prompt": "嫌いです",
+          "furigana": "きらいです",
+          "romaji": "kirai desu.",
+          "english": "It is Disliked / hated.",
+          "audioText": "嫌いです",
           "dictateTokens": [
-            "お願いします",
+            "これ",
             "嫌い",
-            "ありがとう",
-            "を",
-            "です"
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "嫌い",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "嫌いをお願いします"
+          "correctAnswer": "嫌いです"
         },
         {
           "id": "u2_l1_7",
@@ -251,10 +250,10 @@ export const unit02: DojoUnit = {
           "english": "Sushi",
           "audioText": "すし",
           "options": [
-            "Manga / comics",
-            "Sushi",
-            "Pizza",
-            "Soccer / football"
+            "Spicy food",
+            "Sweet",
+            "Travel / trips",
+            "Sushi"
           ],
           "correctAnswer": "Sushi"
         },
@@ -267,56 +266,57 @@ export const unit02: DojoUnit = {
           "english": "Build 'Sushi'",
           "audioText": "すし",
           "tileBank": [
-            "も",
-            "を",
-            "す",
-            "か",
+            "ち",
+            "よ",
             "し",
-            "ろ",
-            "や",
-            "り"
+            "す",
+            "ふ",
+            "つ",
+            "は",
+            "や"
           ],
           "correctAnswer": "すし"
         },
         {
           "id": "u2_l2_3",
           "type": "cloze",
-          "prompt": "私はラーメンがすきです",
-          "furigana": "わたしはラーメンがすきです",
+          "prompt": "私はラーメンが好きです。",
+          "furigana": "わたしはラーメンがすきです。",
           "romaji": "Watashi wa raamen ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Ramen noodles.",
-          "audioText": "ラーメン",
+          "english": "Fill in particle 'が' (ga) for preference: I like Ramen noodles.",
+          "audioText": "私はラーメンが好きです。",
           "clozeSentence": "私はラーメン {{BLANK}} 好きです。",
-          "clozeTarget": "を",
+          "clozeTarget": "が",
           "clozeOptions": [
-            "は",
             "が",
             "を",
-            "に"
+            "に",
+            "で"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "が",
+          "explanation": "助詞「が」 (ga) marks the object of preference with 「好き」 (suki)."
         },
         {
           "id": "u2_l2_4",
           "type": "scramble",
-          "prompt": "これはラーメンです",
-          "furigana": "これはラーメンです",
-          "romaji": "Kore wa raamen desu.",
-          "english": "This is Ramen noodles.",
-          "audioText": "これはラーメンです",
+          "prompt": "私はラーメンが好きです",
+          "furigana": "わたしはラーメンがすきです",
+          "romaji": "Watashi wa raamen ga suki desu.",
+          "english": "I like Ramen noodles.",
+          "audioText": "私はラーメンが好きです",
           "scrambleTokens": [
-            "ラーメン",
-            "これは",
-            "です",
+            "私は",
+            "を",
+            "好きです",
             "ではありません",
-            "それ"
+            "ラーメンが"
           ],
           "scrambleSolution": [
-            "これは",
-            "ラーメン",
-            "です"
+            "私は",
+            "ラーメンが",
+            "好きです"
           ],
-          "correctAnswer": "これはラーメンです"
+          "correctAnswer": "私はラーメンが好きです"
         },
         {
           "id": "u2_l2_5",
@@ -344,10 +344,10 @@ export const unit02: DojoUnit = {
           "english": "Tempura, please.",
           "audioText": "天ぷらをお願いします",
           "dictateTokens": [
-            "天ぷら",
             "ありがとう",
-            "です",
             "を",
+            "です",
+            "天ぷら",
             "お願いします"
           ],
           "dictateSolution": [
@@ -453,10 +453,10 @@ export const unit02: DojoUnit = {
           "english": "Japanese curry",
           "audioText": "カレー",
           "options": [
-            "Music",
+            "Not very / rarely (with neg)",
+            "Manga / comics",
             "Japanese curry",
-            "Loved / favorite",
-            "Tempura"
+            "Movie / cinema"
           ],
           "correctAnswer": "Japanese curry"
         },
@@ -469,56 +469,57 @@ export const unit02: DojoUnit = {
           "english": "Build 'Japanese curry'",
           "audioText": "カレー",
           "tileBank": [
-            "カ",
-            "つ",
-            "い",
-            "ろ",
-            "あ",
+            "ほ",
             "レ",
-            "ん",
-            "ー"
+            "け",
+            "ふ",
+            "と",
+            "ま",
+            "ー",
+            "カ"
           ],
           "correctAnswer": "カレー"
         },
         {
           "id": "u2_l3_3",
           "type": "cloze",
-          "prompt": "私はピザがすきです",
-          "furigana": "わたしはピザがすきです",
+          "prompt": "私はピザが好きです。",
+          "furigana": "わたしはピザがすきです。",
           "romaji": "Watashi wa piza ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Pizza.",
-          "audioText": "ピザ",
+          "english": "Fill in particle 'が' (ga) for preference: I like Pizza.",
+          "audioText": "私はピザが好きです。",
           "clozeSentence": "私はピザ {{BLANK}} 好きです。",
-          "clozeTarget": "に",
+          "clozeTarget": "が",
           "clozeOptions": [
-            "は",
             "が",
             "を",
-            "に"
+            "に",
+            "で"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "が",
+          "explanation": "助詞「が」 (ga) marks the object of preference with 「好き」 (suki)."
         },
         {
           "id": "u2_l3_4",
           "type": "scramble",
-          "prompt": "これはピザです",
-          "furigana": "これはピザです",
-          "romaji": "Kore wa piza desu.",
-          "english": "This is Pizza.",
-          "audioText": "これはピザです",
+          "prompt": "私はピザが好きです",
+          "furigana": "わたしはピザがすきです",
+          "romaji": "Watashi wa piza ga suki desu.",
+          "english": "I like Pizza.",
+          "audioText": "私はピザが好きです",
           "scrambleTokens": [
+            "を",
             "ではありません",
-            "です",
-            "ピザ",
-            "それ",
-            "これは"
+            "ピザが",
+            "私は",
+            "好きです"
           ],
           "scrambleSolution": [
-            "これは",
-            "ピザ",
-            "です"
+            "私は",
+            "ピザが",
+            "好きです"
           ],
-          "correctAnswer": "これはピザです"
+          "correctAnswer": "私はピザが好きです"
         },
         {
           "id": "u2_l3_5",
@@ -540,24 +541,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l3_6",
           "type": "dictate",
-          "prompt": "美味しいをお願いします",
-          "furigana": "おいしいをおねがいします",
-          "romaji": "oishii o onegaishimasu.",
-          "english": "Delicious / tasty, please.",
-          "audioText": "美味しいをお願いします",
+          "prompt": "美味しいです",
+          "furigana": "おいしいです",
+          "romaji": "oishii desu.",
+          "english": "It is Delicious / tasty.",
+          "audioText": "美味しいです",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "を",
-            "美味しい",
-            "です"
+            "ではありません",
+            "です",
+            "これ",
+            "美味しい"
           ],
           "dictateSolution": [
             "美味しい",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "美味しいをお願いします"
+          "correctAnswer": "美味しいです"
         },
         {
           "id": "u2_l3_7",
@@ -655,10 +654,10 @@ export const unit02: DojoUnit = {
           "english": "Unpalatable / bad taste",
           "audioText": "まずい",
           "options": [
-            "Pizza",
+            "Ramen noodles",
             "Unpalatable / bad taste",
-            "Music",
-            "Reading books"
+            "To see / watch",
+            "Fun / enjoyable"
           ],
           "correctAnswer": "Unpalatable / bad taste"
         },
@@ -671,26 +670,26 @@ export const unit02: DojoUnit = {
           "english": "Build 'Unpalatable / bad taste'",
           "audioText": "まずい",
           "tileBank": [
-            "ず",
-            "め",
-            "そ",
-            "ま",
             "い",
-            "き",
-            "か",
-            "り"
+            "を",
+            "む",
+            "ま",
+            "ぬ",
+            "は",
+            "ち",
+            "ず"
           ],
           "correctAnswer": "まずい"
         },
         {
           "id": "u2_l4_3",
           "type": "cloze",
-          "prompt": "私は甘いがすきです",
-          "furigana": "わたしはあまいがすきです",
-          "romaji": "Watashi wa amai ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Sweet.",
-          "audioText": "甘い",
-          "clozeSentence": "これは甘い {{BLANK}} す。",
+          "prompt": "これはいちばん大切な甘いです。",
+          "furigana": "これはいちばんたいせつなあまいです。",
+          "romaji": "Kore wa ichiban taisetsu na amai desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Sweet.",
+          "audioText": "これは甘いです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な甘いです。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -698,7 +697,8 @@ export const unit02: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u2_l4_4",
@@ -710,10 +710,10 @@ export const unit02: DojoUnit = {
           "audioText": "これは甘いです",
           "scrambleTokens": [
             "これは",
+            "甘い",
             "それ",
-            "ではありません",
             "です",
-            "甘い"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -742,24 +742,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l4_6",
           "type": "dictate",
-          "prompt": "辛いをお願いします",
-          "furigana": "からいをおねがいします",
-          "romaji": "karai o onegaishimasu.",
-          "english": "Spicy / hot, please.",
-          "audioText": "辛いをお願いします",
+          "prompt": "辛いです",
+          "furigana": "からいです",
+          "romaji": "karai desu.",
+          "english": "It is Spicy / hot.",
+          "audioText": "辛いです",
           "dictateTokens": [
-            "辛い",
-            "お願いします",
-            "を",
-            "ありがとう",
-            "です"
+            "ではありません",
+            "です",
+            "これ",
+            "辛い"
           ],
           "dictateSolution": [
             "辛い",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "辛いをお願いします"
+          "correctAnswer": "辛いです"
         },
         {
           "id": "u2_l4_7",
@@ -857,10 +855,10 @@ export const unit02: DojoUnit = {
           "english": "Green tea",
           "audioText": "おちゃ",
           "options": [
-            "Green tea",
-            "Spicy food",
-            "Very / extremely",
-            "Sports"
+            "What kind of...",
+            "Number one / most",
+            "Loved / favorite",
+            "Green tea"
           ],
           "correctAnswer": "Green tea"
         },
@@ -873,56 +871,57 @@ export const unit02: DojoUnit = {
           "english": "Build 'Green tea'",
           "audioText": "おちゃ",
           "tileBank": [
-            "ぬ",
-            "さ",
-            "ま",
+            "の",
             "お",
+            "ち",
+            "ゆ",
             "き",
             "ゃ",
-            "ふ",
-            "ち"
+            "ひ",
+            "こ"
           ],
           "correctAnswer": "おちゃ"
         },
         {
           "id": "u2_l5_3",
           "type": "cloze",
-          "prompt": "私は水がすきです",
-          "furigana": "わたしはみずがすきです",
-          "romaji": "Watashi wa mizu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Water.",
-          "audioText": "水",
-          "clozeSentence": "これは水 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "毎朝、冷たい水を飲みます。",
+          "furigana": "まいあさ、つめたいみずをのみます。",
+          "romaji": "Maiasa, tsumetai mizu o nomimasu.",
+          "english": "Fill in object particle 'を' (o): I drink cold Water every morning.",
+          "audioText": "水を飲みます。",
+          "clozeSentence": "毎朝、冷たい水 {{BLANK}} 飲みます。",
+          "clozeTarget": "を",
           "clozeOptions": [
-            "は",
-            "が",
             "を",
-            "に"
+            "は",
+            "に",
+            "で"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "を",
+          "explanation": "助詞「を」 (o) marks the direct object of action verb 「飲みます」 (drink)."
         },
         {
           "id": "u2_l5_4",
           "type": "scramble",
-          "prompt": "これは水です",
-          "furigana": "これはみずです",
-          "romaji": "Kore wa mizu desu.",
-          "english": "This is Water.",
-          "audioText": "これは水です",
+          "prompt": "冷たい水を飲みます",
+          "furigana": "つめたいみずをのみます",
+          "romaji": "Tsumetai mizu o nomimasu.",
+          "english": "Drink cold Water.",
+          "audioText": "冷たい水を飲みます",
           "scrambleTokens": [
-            "それ",
-            "水",
-            "これは",
-            "です",
-            "ではありません"
+            "が",
+            "食べます",
+            "飲みます",
+            "水を",
+            "冷たい"
           ],
           "scrambleSolution": [
-            "これは",
-            "水",
-            "です"
+            "冷たい",
+            "水を",
+            "飲みます"
           ],
-          "correctAnswer": "これは水です"
+          "correctAnswer": "冷たい水を飲みます"
         },
         {
           "id": "u2_l5_5",
@@ -950,10 +949,10 @@ export const unit02: DojoUnit = {
           "english": "Beer, please.",
           "audioText": "ビールをお願いします",
           "dictateTokens": [
-            "ビール",
-            "を",
-            "です",
             "ありがとう",
+            "ビール",
+            "です",
+            "を",
             "お願いします"
           ],
           "dictateSolution": [
@@ -1059,9 +1058,9 @@ export const unit02: DojoUnit = {
           "english": "Juice",
           "audioText": "ジュース",
           "options": [
-            "What",
             "Loved / favorite",
-            "Sushi",
+            "What kind of...",
+            "Disliked / hated",
             "Juice"
           ],
           "correctAnswer": "Juice"
@@ -1075,34 +1074,35 @@ export const unit02: DojoUnit = {
           "english": "Build 'Juice'",
           "audioText": "ジュース",
           "tileBank": [
-            "は",
-            "ス",
-            "た",
-            "ろ",
-            "し",
-            "ー",
+            "よ",
+            "ュ",
             "ジ",
-            "ュ"
+            "な",
+            "ー",
+            "ス",
+            "の",
+            "い"
           ],
           "correctAnswer": "ジュース"
         },
         {
           "id": "u2_l6_3",
           "type": "cloze",
-          "prompt": "私はアニメがすきです",
-          "furigana": "わたしはアニメがすきです",
-          "romaji": "Watashi wa anime ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Anime / Japanese animation.",
-          "audioText": "アニメ",
-          "clozeSentence": "これはアニメ {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なアニメです。",
+          "furigana": "これはいちばんたいせつなアニメです。",
+          "romaji": "Kore wa ichiban taisetsu na anime desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Anime / Japanese animation.",
+          "audioText": "これはアニメです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なアニメです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u2_l6_4",
@@ -1113,11 +1113,11 @@ export const unit02: DojoUnit = {
           "english": "This is Anime / Japanese animation.",
           "audioText": "これはアニメです",
           "scrambleTokens": [
-            "です",
-            "アニメ",
-            "ではありません",
             "これは",
-            "それ"
+            "それ",
+            "です",
+            "ではありません",
+            "アニメ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1146,24 +1146,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l6_6",
           "type": "dictate",
-          "prompt": "漫画をお願いします",
-          "furigana": "まんがをおねがいします",
-          "romaji": "manga o onegaishimasu.",
-          "english": "Manga / comics, please.",
-          "audioText": "漫画をお願いします",
+          "prompt": "漫画です",
+          "furigana": "まんがです",
+          "romaji": "manga desu.",
+          "english": "It is Manga / comics.",
+          "audioText": "漫画です",
           "dictateTokens": [
             "です",
+            "これ",
             "漫画",
-            "お願いします",
-            "を",
-            "ありがとう"
+            "ではありません"
           ],
           "dictateSolution": [
             "漫画",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "漫画をお願いします"
+          "correctAnswer": "漫画です"
         },
         {
           "id": "u2_l6_7",
@@ -1263,10 +1261,10 @@ export const unit02: DojoUnit = {
           "english": "Movie / cinema",
           "audioText": "えいが",
           "options": [
-            "Tempura",
-            "Number one / most",
+            "Very / extremely",
             "Movie / cinema",
-            "Spicy food"
+            "Liked / fond of",
+            "Anime / Japanese animation"
           ],
           "correctAnswer": "Movie / cinema"
         },
@@ -1279,34 +1277,35 @@ export const unit02: DojoUnit = {
           "english": "Build 'Movie / cinema'",
           "audioText": "えいが",
           "tileBank": [
-            "ひ",
+            "と",
+            "や",
+            "ほ",
+            "が",
             "い",
-            "こ",
             "え",
-            "し",
-            "を",
-            "さ",
-            "が"
+            "ふ",
+            "わ"
           ],
           "correctAnswer": "えいが"
         },
         {
           "id": "u2_l7_3",
           "type": "cloze",
-          "prompt": "私は音楽がすきです",
-          "furigana": "わたしはおんがくがすきです",
-          "romaji": "Watashi wa ongaku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Music.",
-          "audioText": "音楽",
-          "clozeSentence": "これは音楽 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な音楽です。",
+          "furigana": "これはいちばんたいせつなおんがくです。",
+          "romaji": "Kore wa ichiban taisetsu na ongaku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Music.",
+          "audioText": "これは音楽です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な音楽です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u2_l7_4",
@@ -1317,11 +1316,11 @@ export const unit02: DojoUnit = {
           "english": "This is Music.",
           "audioText": "これは音楽です",
           "scrambleTokens": [
-            "です",
-            "音楽",
+            "それ",
             "ではありません",
             "これは",
-            "それ"
+            "です",
+            "音楽"
           ],
           "scrambleSolution": [
             "これは",
@@ -1350,24 +1349,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l7_6",
           "type": "dictate",
-          "prompt": "ゲームをお願いします",
-          "furigana": "ゲームをおねがいします",
-          "romaji": "geemu o onegaishimasu.",
-          "english": "Video games, please.",
-          "audioText": "ゲームをお願いします",
+          "prompt": "ゲームです",
+          "furigana": "ゲームです",
+          "romaji": "geemu desu.",
+          "english": "It is Video games.",
+          "audioText": "ゲームです",
           "dictateTokens": [
-            "お願いします",
+            "ではありません",
+            "これ",
             "ゲーム",
-            "を",
-            "ありがとう",
             "です"
           ],
           "dictateSolution": [
             "ゲーム",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "ゲームをお願いします"
+          "correctAnswer": "ゲームです"
         },
         {
           "id": "u2_l7_7",
@@ -1465,10 +1462,10 @@ export const unit02: DojoUnit = {
           "english": "Sports",
           "audioText": "スポーツ",
           "options": [
-            "Beer",
-            "Interesting / amusing",
-            "Movie / cinema",
-            "Sports"
+            "Sports",
+            "Anime / Japanese animation",
+            "Sushi",
+            "Loved / favorite"
           ],
           "correctAnswer": "Sports"
         },
@@ -1481,26 +1478,26 @@ export const unit02: DojoUnit = {
           "english": "Build 'Sports'",
           "audioText": "スポーツ",
           "tileBank": [
-            "も",
-            "み",
-            "ス",
-            "ん",
             "ー",
-            "と",
+            "ポ",
             "ツ",
-            "ポ"
+            "ら",
+            "ス",
+            "に",
+            "よ",
+            "せ"
           ],
           "correctAnswer": "スポーツ"
         },
         {
           "id": "u2_l8_3",
           "type": "cloze",
-          "prompt": "私はサッカーがすきです",
-          "furigana": "わたしはサッカーがすきです",
-          "romaji": "Watashi wa sakkaa ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Soccer / football.",
-          "audioText": "サッカー",
-          "clozeSentence": "これはサッカー {{BLANK}} す。",
+          "prompt": "これはいちばん大切なサッカーです。",
+          "furigana": "これはいちばんたいせつなサッカーです。",
+          "romaji": "Kore wa ichiban taisetsu na sakkaa desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Soccer / football.",
+          "audioText": "これはサッカーです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なサッカーです。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1508,7 +1505,8 @@ export const unit02: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u2_l8_4",
@@ -1519,11 +1517,11 @@ export const unit02: DojoUnit = {
           "english": "This is Soccer / football.",
           "audioText": "これはサッカーです",
           "scrambleTokens": [
-            "です",
-            "これは",
-            "サッカー",
             "ではありません",
-            "それ"
+            "です",
+            "それ",
+            "サッカー",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1552,24 +1550,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l8_6",
           "type": "dictate",
-          "prompt": "野球をお願いします",
-          "furigana": "やきゅうをおねがいします",
-          "romaji": "yakyuu o onegaishimasu.",
-          "english": "Baseball, please.",
-          "audioText": "野球をお願いします",
+          "prompt": "野球です",
+          "furigana": "やきゅうです",
+          "romaji": "yakyuu desu.",
+          "english": "It is Baseball.",
+          "audioText": "野球です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "です",
             "野球",
-            "を"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "野球",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "野球をお願いします"
+          "correctAnswer": "野球です"
         },
         {
           "id": "u2_l8_7",
@@ -1668,10 +1664,10 @@ export const unit02: DojoUnit = {
           "english": "Fun / enjoyable",
           "audioText": "たのしい",
           "options": [
-            "Fun / enjoyable",
-            "Sweet",
-            "Disliked / hated",
-            "Boring / dull"
+            "Sports",
+            "To listen / hear",
+            "Beer",
+            "Fun / enjoyable"
           ],
           "correctAnswer": "Fun / enjoyable"
         },
@@ -1684,34 +1680,35 @@ export const unit02: DojoUnit = {
           "english": "Build 'Fun / enjoyable'",
           "audioText": "たのしい",
           "tileBank": [
-            "た",
-            "と",
-            "ち",
-            "に",
-            "り",
-            "い",
             "し",
-            "の"
+            "た",
+            "む",
+            "の",
+            "ん",
+            "い",
+            "な",
+            "え"
           ],
           "correctAnswer": "たのしい"
         },
         {
           "id": "u2_l9_3",
           "type": "cloze",
-          "prompt": "私は面白いがすきです",
-          "furigana": "わたしはおもしろいがすきです",
-          "romaji": "Watashi wa omoshiroi ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Interesting / amusing.",
-          "audioText": "面白い",
-          "clozeSentence": "これは面白い {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な面白いです。",
+          "furigana": "これはいちばんたいせつなおもしろいです。",
+          "romaji": "Kore wa ichiban taisetsu na omoshiroi desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Interesting / amusing.",
+          "audioText": "これは面白いです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な面白いです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u2_l9_4",
@@ -1722,10 +1719,10 @@ export const unit02: DojoUnit = {
           "english": "This is Interesting / amusing.",
           "audioText": "これは面白いです",
           "scrambleTokens": [
-            "です",
+            "面白い",
             "ではありません",
             "これは",
-            "面白い",
+            "です",
             "それ"
           ],
           "scrambleSolution": [
@@ -1755,24 +1752,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l9_6",
           "type": "dictate",
-          "prompt": "つまらないをお願いします",
-          "furigana": "つまらないをおねがいします",
-          "romaji": "tsumaranai o onegaishimasu.",
-          "english": "Boring / dull, please.",
-          "audioText": "つまらないをお願いします",
+          "prompt": "つまらないです",
+          "furigana": "つまらないです",
+          "romaji": "tsumaranai desu.",
+          "english": "It is Boring / dull.",
+          "audioText": "つまらないです",
           "dictateTokens": [
-            "お願いします",
-            "を",
-            "ありがとう",
             "です",
+            "ではありません",
+            "これ",
             "つまらない"
           ],
           "dictateSolution": [
             "つまらない",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "つまらないをお願いします"
+          "correctAnswer": "つまらないです"
         },
         {
           "id": "u2_l9_7",
@@ -1871,9 +1866,9 @@ export const unit02: DojoUnit = {
           "audioText": "みる",
           "options": [
             "To see / watch",
-            "Anime / Japanese animation",
-            "Not at all (with neg)",
-            "Interesting / amusing"
+            "To do / play",
+            "Spicy food",
+            "Tempura"
           ],
           "correctAnswer": "To see / watch"
         },
@@ -1886,34 +1881,35 @@ export const unit02: DojoUnit = {
           "english": "Build 'To see / watch'",
           "audioText": "みる",
           "tileBank": [
-            "ぬ",
-            "ひ",
-            "ね",
+            "そ",
             "み",
+            "た",
+            "し",
             "る",
-            "に",
-            "や",
-            "り"
+            "わ",
+            "り",
+            "え"
           ],
           "correctAnswer": "みる"
         },
         {
           "id": "u2_l10_3",
           "type": "cloze",
-          "prompt": "私は聞くがすきです",
-          "furigana": "わたしはきくがすきです",
-          "romaji": "Watashi wa kiku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for To listen / hear.",
-          "audioText": "聞く",
-          "clozeSentence": "これは聞く {{BLANK}} す。",
+          "prompt": "毎日、日本語を聞く。",
+          "furigana": "まいにち、にほんごをきく。",
+          "romaji": "Mainichi, nihongo o kiku.",
+          "english": "Fill in direct object particle 'を' (o): To listen / hear Japanese every day.",
+          "audioText": "日本語を聞く。",
+          "clozeSentence": "毎日、日本語 {{BLANK}} 聞く。",
           "clozeTarget": "を",
           "clozeOptions": [
-            "は",
-            "が",
             "を",
-            "に"
+            "は",
+            "に",
+            "で"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "を",
+          "explanation": "助詞「を」 (o) marks the object of the action verb."
         },
         {
           "id": "u2_l10_4",
@@ -1925,10 +1921,10 @@ export const unit02: DojoUnit = {
           "audioText": "これは聞くです",
           "scrambleTokens": [
             "それ",
-            "ではありません",
-            "これは",
             "です",
-            "聞く"
+            "ではありません",
+            "聞く",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1957,24 +1953,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l10_6",
           "type": "dictate",
-          "prompt": "するをお願いします",
-          "furigana": "するをおねがいします",
-          "romaji": "suru o onegaishimasu.",
-          "english": "To do / play, please.",
-          "audioText": "するをお願いします",
+          "prompt": "するです",
+          "furigana": "するです",
+          "romaji": "suru desu.",
+          "english": "It is To do / play.",
+          "audioText": "するです",
           "dictateTokens": [
+            "する",
             "です",
-            "お願いします",
-            "を",
-            "ありがとう",
-            "する"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "する",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "するをお願いします"
+          "correctAnswer": "するです"
         },
         {
           "id": "u2_l10_7",
@@ -2076,10 +2070,10 @@ export const unit02: DojoUnit = {
           "english": "Reading books",
           "audioText": "どくしょ",
           "options": [
-            "Reading books",
-            "Baseball",
-            "Spicy / hot",
-            "What kind of..."
+            "Movie / cinema",
+            "Travel / trips",
+            "Not at all (with neg)",
+            "Reading books"
           ],
           "correctAnswer": "Reading books"
         },
@@ -2092,34 +2086,35 @@ export const unit02: DojoUnit = {
           "english": "Build 'Reading books'",
           "audioText": "どくしょ",
           "tileBank": [
-            "そ",
-            "く",
             "ど",
             "し",
-            "も",
+            "は",
+            "せ",
+            "て",
             "ょ",
-            "め",
-            "ゆ"
+            "わ",
+            "く"
           ],
           "correctAnswer": "どくしょ"
         },
         {
           "id": "u2_l11_3",
           "type": "cloze",
-          "prompt": "私は旅行がすきです",
-          "furigana": "わたしはりょこうがすきです",
-          "romaji": "Watashi wa ryokou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Travel / trips.",
-          "audioText": "旅行",
-          "clozeSentence": "これは旅行 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な旅行です。",
+          "furigana": "これはいちばんたいせつなりょこうです。",
+          "romaji": "Kore wa ichiban taisetsu na ryokou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Travel / trips.",
+          "audioText": "これは旅行です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な旅行です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u2_l11_4",
@@ -2130,11 +2125,11 @@ export const unit02: DojoUnit = {
           "english": "This is Travel / trips.",
           "audioText": "これは旅行です",
           "scrambleTokens": [
-            "旅行",
-            "これは",
-            "ではありません",
+            "です",
             "それ",
-            "です"
+            "旅行",
+            "ではありません",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2163,24 +2158,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l11_6",
           "type": "dictate",
-          "prompt": "一番をお願いします",
-          "furigana": "いちばんをおねがいします",
-          "romaji": "ichiban o onegaishimasu.",
-          "english": "Number one / most, please.",
-          "audioText": "一番をお願いします",
+          "prompt": "一番です",
+          "furigana": "いちばんです",
+          "romaji": "ichiban desu.",
+          "english": "It is Number one / most.",
+          "audioText": "一番です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "です",
+            "ではありません",
+            "これ",
             "一番",
-            "を"
+            "です"
           ],
           "dictateSolution": [
             "一番",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "一番をお願いします"
+          "correctAnswer": "一番です"
         },
         {
           "id": "u2_l11_7",
@@ -2278,10 +2271,10 @@ export const unit02: DojoUnit = {
           "english": "Very / extremely",
           "audioText": "とても",
           "options": [
-            "Unpalatable / bad taste",
+            "Travel / trips",
             "Very / extremely",
-            "What",
-            "Tempura"
+            "Tempura",
+            "Video games"
           ],
           "correctAnswer": "Very / extremely"
         },
@@ -2294,26 +2287,26 @@ export const unit02: DojoUnit = {
           "english": "Build 'Very / extremely'",
           "audioText": "とても",
           "tileBank": [
-            "と",
-            "わ",
-            "ん",
+            "は",
+            "り",
             "こ",
-            "さ",
+            "と",
+            "そ",
             "も",
-            "て",
-            "よ"
+            "お",
+            "て"
           ],
           "correctAnswer": "とても"
         },
         {
           "id": "u2_l12_3",
           "type": "cloze",
-          "prompt": "私はあまりがすきです",
-          "furigana": "わたしはあまりがすきです",
-          "romaji": "Watashi wa amari ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Not very / rarely (with neg).",
-          "audioText": "あまり",
-          "clozeSentence": "これはあまり {{BLANK}} す。",
+          "prompt": "これはいちばん大切なあまりです。",
+          "furigana": "これはいちばんたいせつなあまりです。",
+          "romaji": "Kore wa ichiban taisetsu na amari desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Not very / rarely (with neg).",
+          "audioText": "これはあまりです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なあまりです。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2321,7 +2314,8 @@ export const unit02: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u2_l12_4",
@@ -2333,10 +2327,10 @@ export const unit02: DojoUnit = {
           "audioText": "これはあまりです",
           "scrambleTokens": [
             "ではありません",
-            "です",
             "それ",
+            "あまり",
             "これは",
-            "あまり"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2365,24 +2359,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l12_6",
           "type": "dictate",
-          "prompt": "全然をお願いします",
-          "furigana": "ぜんぜんをおねがいします",
-          "romaji": "zenzen o onegaishimasu.",
-          "english": "Not at all (with neg), please.",
-          "audioText": "全然をお願いします",
+          "prompt": "全然です",
+          "furigana": "ぜんぜんです",
+          "romaji": "zenzen desu.",
+          "english": "It is Not at all (with neg).",
+          "audioText": "全然です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
+            "これ",
             "全然",
-            "お願いします",
-            "です"
+            "です",
+            "ではありません"
           ],
           "dictateSolution": [
             "全然",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "全然をお願いします"
+          "correctAnswer": "全然です"
         },
         {
           "id": "u2_l12_7",
@@ -2481,10 +2473,10 @@ export const unit02: DojoUnit = {
           "english": "What kind of...",
           "audioText": "どんな",
           "options": [
-            "Japanese curry",
             "What kind of...",
-            "Movie / cinema",
-            "To listen / hear"
+            "Anime / Japanese animation",
+            "Not very / rarely (with neg)",
+            "Reading books"
           ],
           "correctAnswer": "What kind of..."
         },
@@ -2497,34 +2489,35 @@ export const unit02: DojoUnit = {
           "english": "Build 'What kind of...'",
           "audioText": "どんな",
           "tileBank": [
-            "り",
-            "な",
-            "ど",
+            "け",
+            "は",
+            "か",
             "ん",
-            "ぬ",
-            "ゆ",
-            "も",
-            "ち"
+            "な",
+            "ふ",
+            "ど",
+            "へ"
           ],
           "correctAnswer": "どんな"
         },
         {
           "id": "u2_l13_3",
           "type": "cloze",
-          "prompt": "私は何がすきです",
-          "furigana": "わたしはなにがすきです",
-          "romaji": "Watashi wa nani ga suki desu.",
-          "english": "Fill in the blank with the correct particle for What.",
-          "audioText": "何",
-          "clozeSentence": "これは何 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な何です。",
+          "furigana": "これはいちばんたいせつななにです。",
+          "romaji": "Kore wa ichiban taisetsu na nani desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important What.",
+          "audioText": "これは何です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な何です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u2_l13_4",
@@ -2536,10 +2529,10 @@ export const unit02: DojoUnit = {
           "audioText": "これは何です",
           "scrambleTokens": [
             "それ",
-            "これは",
             "ではありません",
+            "何",
             "です",
-            "何"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2574,11 +2567,11 @@ export const unit02: DojoUnit = {
           "english": "Cooking / cuisine, please.",
           "audioText": "料理をお願いします",
           "dictateTokens": [
-            "を",
             "ありがとう",
-            "です",
             "料理",
-            "お願いします"
+            "お願いします",
+            "を",
+            "です"
           ],
           "dictateSolution": [
             "料理",
@@ -2687,10 +2680,10 @@ export const unit02: DojoUnit = {
           "english": "Spicy food",
           "audioText": "からいりょうり",
           "options": [
-            "Sushi",
-            "Soccer / football",
+            "Pizza",
             "Spicy food",
-            "What"
+            "Music",
+            "Loved / favorite"
           ],
           "correctAnswer": "Spicy food"
         },
@@ -2703,34 +2696,35 @@ export const unit02: DojoUnit = {
           "english": "Build 'Liked / fond of'",
           "audioText": "すき",
           "tileBank": [
-            "あ",
-            "す",
-            "ゆ",
             "き",
-            "ろ",
-            "の",
-            "よ",
-            "け"
+            "て",
+            "し",
+            "す",
+            "く",
+            "た",
+            "り",
+            "ら"
           ],
           "correctAnswer": "すき"
         },
         {
           "id": "u2_l14_3",
           "type": "cloze",
-          "prompt": "私は好きがすきです",
-          "furigana": "わたしはすきがすきです",
-          "romaji": "Watashi wa suki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Liked / fond of.",
-          "audioText": "好き",
-          "clozeSentence": "これは好き {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な好きです。",
+          "furigana": "これはいちばんたいせつなすきです。",
+          "romaji": "Kore wa ichiban taisetsu na suki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Liked / fond of.",
+          "audioText": "これは好きです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な好きです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u2_l14_4",
@@ -2742,10 +2736,10 @@ export const unit02: DojoUnit = {
           "audioText": "これは好きです",
           "scrambleTokens": [
             "です",
+            "それ",
             "好き",
             "ではありません",
-            "これは",
-            "それ"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2774,24 +2768,22 @@ export const unit02: DojoUnit = {
         {
           "id": "u2_l14_6",
           "type": "dictate",
-          "prompt": "大好きをお願いします",
-          "furigana": "だいすきをおねがいします",
-          "romaji": "daisuki o onegaishimasu.",
-          "english": "Loved / favorite, please.",
-          "audioText": "大好きをお願いします",
+          "prompt": "大好きです",
+          "furigana": "だいすきです",
+          "romaji": "daisuki desu.",
+          "english": "It is Loved / favorite.",
+          "audioText": "大好きです",
           "dictateTokens": [
-            "お願いします",
             "です",
+            "ではありません",
             "大好き",
-            "ありがとう",
-            "を"
+            "これ"
           ],
           "dictateSolution": [
             "大好き",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "大好きをお願いします"
+          "correctAnswer": "大好きです"
         },
         {
           "id": "u2_l14_7",
@@ -2890,10 +2882,10 @@ export const unit02: DojoUnit = {
           "english": "Disliked / hated",
           "audioText": "きらい",
           "options": [
+            "Fun / enjoyable",
+            "Sweet",
             "Disliked / hated",
-            "Boring / dull",
-            "To do / play",
-            "Movie / cinema"
+            "Travel / trips"
           ],
           "correctAnswer": "Disliked / hated"
         },
@@ -2906,56 +2898,57 @@ export const unit02: DojoUnit = {
           "english": "Build 'Disliked / hated'",
           "audioText": "きらい",
           "tileBank": [
-            "き",
-            "わ",
-            "よ",
-            "ち",
-            "い",
+            "ほ",
+            "す",
+            "ら",
             "ん",
-            "な",
-            "ら"
+            "き",
+            "れ",
+            "み",
+            "い"
           ],
           "correctAnswer": "きらい"
         },
         {
           "id": "u2_l15_3",
           "type": "cloze",
-          "prompt": "私は寿司がすきです",
-          "furigana": "わたしはすしがすきです",
+          "prompt": "私は寿司が好きです。",
+          "furigana": "わたしはすしがすきです。",
           "romaji": "Watashi wa sushi ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Sushi.",
-          "audioText": "寿司",
+          "english": "Fill in particle 'が' (ga) for preference: I like Sushi.",
+          "audioText": "私は寿司が好きです。",
           "clozeSentence": "私は寿司 {{BLANK}} 好きです。",
-          "clozeTarget": "に",
+          "clozeTarget": "が",
           "clozeOptions": [
-            "は",
             "が",
             "を",
-            "に"
+            "に",
+            "で"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "が",
+          "explanation": "助詞「が」 (ga) marks the object of preference with 「好き」 (suki)."
         },
         {
           "id": "u2_l15_4",
           "type": "scramble",
-          "prompt": "これは寿司です",
-          "furigana": "これはすしです",
-          "romaji": "Kore wa sushi desu.",
-          "english": "This is Sushi.",
-          "audioText": "これは寿司です",
+          "prompt": "私は寿司が好きです",
+          "furigana": "わたしはすしがすきです",
+          "romaji": "Watashi wa sushi ga suki desu.",
+          "english": "I like Sushi.",
+          "audioText": "私は寿司が好きです",
           "scrambleTokens": [
             "ではありません",
-            "これは",
-            "です",
-            "それ",
-            "寿司"
+            "私は",
+            "寿司が",
+            "を",
+            "好きです"
           ],
           "scrambleSolution": [
-            "これは",
-            "寿司",
-            "です"
+            "私は",
+            "寿司が",
+            "好きです"
           ],
-          "correctAnswer": "これは寿司です"
+          "correctAnswer": "私は寿司が好きです"
         },
         {
           "id": "u2_l15_5",
@@ -2983,11 +2976,11 @@ export const unit02: DojoUnit = {
           "english": "Ramen noodles, please.",
           "audioText": "ラーメンをお願いします",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
             "を",
+            "です",
             "ラーメン",
-            "です"
+            "お願いします",
+            "ありがとう"
           ],
           "dictateSolution": [
             "ラーメン",
@@ -3079,10 +3072,10 @@ export const unit02: DojoUnit = {
         "english": "Liked / fond of",
         "audioText": "すき",
         "options": [
-          "Anime / Japanese animation",
-          "Pizza",
+          "To do / play",
           "Liked / fond of",
-          "To see / watch"
+          "Juice",
+          "Disliked / hated"
         ],
         "correctAnswer": "Liked / fond of"
       },
@@ -3095,14 +3088,14 @@ export const unit02: DojoUnit = {
         "english": "Build 'Liked / fond of'",
         "audioText": "すき",
         "tileBank": [
-          "う",
-          "む",
-          "き",
           "す",
-          "ん",
-          "か",
-          "の",
-          "ひ"
+          "や",
+          "ち",
+          "わ",
+          "あ",
+          "き",
+          "ふ",
+          "ん"
         ],
         "correctAnswer": "すき"
       },
@@ -3115,10 +3108,10 @@ export const unit02: DojoUnit = {
         "english": "Japanese curry",
         "audioText": "カレー",
         "options": [
-          "Music",
+          "Not very / rarely (with neg)",
+          "Manga / comics",
           "Japanese curry",
-          "Loved / favorite",
-          "Tempura"
+          "Movie / cinema"
         ],
         "correctAnswer": "Japanese curry"
       },
@@ -3131,14 +3124,14 @@ export const unit02: DojoUnit = {
         "english": "Build 'Japanese curry'",
         "audioText": "カレー",
         "tileBank": [
-          "カ",
-          "つ",
-          "い",
-          "ろ",
-          "あ",
+          "ほ",
           "レ",
-          "ん",
-          "ー"
+          "け",
+          "ふ",
+          "と",
+          "ま",
+          "ー",
+          "カ"
         ],
         "correctAnswer": "カレー"
       },
@@ -3151,10 +3144,10 @@ export const unit02: DojoUnit = {
         "english": "Green tea",
         "audioText": "おちゃ",
         "options": [
-          "Green tea",
-          "Spicy food",
-          "Very / extremely",
-          "Sports"
+          "What kind of...",
+          "Number one / most",
+          "Loved / favorite",
+          "Green tea"
         ],
         "correctAnswer": "Green tea"
       },
@@ -3167,14 +3160,14 @@ export const unit02: DojoUnit = {
         "english": "Build 'Green tea'",
         "audioText": "おちゃ",
         "tileBank": [
-          "ぬ",
-          "さ",
-          "ま",
+          "の",
           "お",
+          "ち",
+          "ゆ",
           "き",
           "ゃ",
-          "ふ",
-          "ち"
+          "ひ",
+          "こ"
         ],
         "correctAnswer": "おちゃ"
       },
@@ -3187,10 +3180,10 @@ export const unit02: DojoUnit = {
         "english": "Movie / cinema",
         "audioText": "えいが",
         "options": [
-          "Tempura",
-          "Number one / most",
+          "Very / extremely",
           "Movie / cinema",
-          "Spicy food"
+          "Liked / fond of",
+          "Anime / Japanese animation"
         ],
         "correctAnswer": "Movie / cinema"
       },
@@ -3203,14 +3196,14 @@ export const unit02: DojoUnit = {
         "english": "Build 'Movie / cinema'",
         "audioText": "えいが",
         "tileBank": [
-          "ひ",
+          "と",
+          "や",
+          "ほ",
+          "が",
           "い",
-          "こ",
           "え",
-          "し",
-          "を",
-          "さ",
-          "が"
+          "ふ",
+          "わ"
         ],
         "correctAnswer": "えいが"
       },
@@ -3223,10 +3216,10 @@ export const unit02: DojoUnit = {
         "english": "Fun / enjoyable",
         "audioText": "たのしい",
         "options": [
-          "Fun / enjoyable",
-          "Sweet",
-          "Disliked / hated",
-          "Boring / dull"
+          "Sports",
+          "To listen / hear",
+          "Beer",
+          "Fun / enjoyable"
         ],
         "correctAnswer": "Fun / enjoyable"
       },
@@ -3239,14 +3232,14 @@ export const unit02: DojoUnit = {
         "english": "Build 'Fun / enjoyable'",
         "audioText": "たのしい",
         "tileBank": [
-          "た",
-          "と",
-          "ち",
-          "に",
-          "り",
-          "い",
           "し",
-          "の"
+          "た",
+          "む",
+          "の",
+          "ん",
+          "い",
+          "な",
+          "え"
         ],
         "correctAnswer": "たのしい"
       },
@@ -3259,10 +3252,10 @@ export const unit02: DojoUnit = {
         "english": "Reading books",
         "audioText": "どくしょ",
         "options": [
-          "Reading books",
-          "Baseball",
-          "Spicy / hot",
-          "What kind of..."
+          "Movie / cinema",
+          "Travel / trips",
+          "Not at all (with neg)",
+          "Reading books"
         ],
         "correctAnswer": "Reading books"
       },
@@ -3275,14 +3268,14 @@ export const unit02: DojoUnit = {
         "english": "Build 'Reading books'",
         "audioText": "どくしょ",
         "tileBank": [
-          "そ",
-          "く",
           "ど",
           "し",
-          "も",
+          "は",
+          "せ",
+          "て",
           "ょ",
-          "め",
-          "ゆ"
+          "わ",
+          "く"
         ],
         "correctAnswer": "どくしょ"
       }

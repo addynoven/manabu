@@ -50,10 +50,10 @@ export const unit21: DojoUnit = {
           "english": "Negotiation",
           "audioText": "こうしょう",
           "options": [
-            "Confirming Agreement / consensus",
-            "Price quotation",
+            "Confirming Price quotation",
             "Negotiation",
-            "Confirming Consent / approval"
+            "Confirming Agreement / consensus",
+            "Cost / expense"
           ],
           "correctAnswer": "Negotiation"
         },
@@ -66,34 +66,35 @@ export const unit21: DojoUnit = {
           "english": "Build 'Negotiation'",
           "audioText": "こうしょう",
           "tileBank": [
-            "う",
-            "の",
-            "ろ",
-            "ょ",
             "こ",
+            "ょ",
             "う",
+            "う",
+            "せ",
+            "や",
             "し",
-            "を"
+            "く"
           ],
           "correctAnswer": "こうしょう"
         },
         {
           "id": "u21_l1_3",
           "type": "cloze",
-          "prompt": "私は提案がすきです",
-          "furigana": "わたしはていあんがすきです",
-          "romaji": "Watashi wa teian ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Proposal.",
-          "audioText": "提案",
-          "clozeSentence": "これは提案 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な提案です。",
+          "furigana": "これはいちばんたいせつなていあんです。",
+          "romaji": "Kore wa ichiban taisetsu na teian desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Proposal.",
+          "audioText": "これは提案です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な提案です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l1_4",
@@ -104,11 +105,11 @@ export const unit21: DojoUnit = {
           "english": "This is Proposal.",
           "audioText": "これは提案です",
           "scrambleTokens": [
+            "ではありません",
             "です",
-            "提案",
-            "これは",
             "それ",
-            "ではありません"
+            "提案",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -137,24 +138,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l1_6",
           "type": "dictate",
-          "prompt": "妥協をお願いします",
-          "furigana": "だきょうをおねがいします",
-          "romaji": "dakyou o onegaishimasu.",
-          "english": "Compromise, please.",
-          "audioText": "妥協をお願いします",
+          "prompt": "妥協です",
+          "furigana": "だきょうです",
+          "romaji": "dakyou desu.",
+          "english": "It is Compromise.",
+          "audioText": "妥協です",
           "dictateTokens": [
-            "ありがとう",
-            "妥協",
+            "これ",
             "です",
-            "お願いします",
-            "を"
+            "ではありません",
+            "妥協"
           ],
           "dictateSolution": [
             "妥協",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "妥協をお願いします"
+          "correctAnswer": "妥協です"
         },
         {
           "id": "u21_l1_7",
@@ -256,9 +255,9 @@ export const unit21: DojoUnit = {
           "english": "Agreement / consensus",
           "audioText": "ごうい",
           "options": [
-            "Profit / margin",
             "Agreement / consensus",
-            "Confirming Transaction / business deal",
+            "Confirming Delivery deadline",
+            "Consideration / deliberation",
             "Confirming Proposal"
           ],
           "correctAnswer": "Agreement / consensus"
@@ -272,34 +271,35 @@ export const unit21: DojoUnit = {
           "english": "Build 'Agreement / consensus'",
           "audioText": "ごうい",
           "tileBank": [
-            "ろ",
-            "を",
-            "お",
+            "は",
+            "う",
             "ご",
-            "あ",
+            "せ",
+            "ま",
             "い",
-            "れ",
-            "う"
+            "え",
+            "ろ"
           ],
           "correctAnswer": "ごうい"
         },
         {
           "id": "u21_l2_3",
           "type": "cloze",
-          "prompt": "私は取引がすきです",
-          "furigana": "わたしはとりひきがすきです",
-          "romaji": "Watashi wa torihiki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Transaction / business deal.",
-          "audioText": "取引",
-          "clozeSentence": "これは取引 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な取引です。",
+          "furigana": "これはいちばんたいせつなとりひきです。",
+          "romaji": "Kore wa ichiban taisetsu na torihiki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Transaction / business deal.",
+          "audioText": "これは取引です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な取引です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l2_4",
@@ -312,9 +312,9 @@ export const unit21: DojoUnit = {
           "scrambleTokens": [
             "です",
             "これは",
+            "それ",
             "ではありません",
-            "取引",
-            "それ"
+            "取引"
           ],
           "scrambleSolution": [
             "これは",
@@ -343,24 +343,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l2_6",
           "type": "dictate",
-          "prompt": "納期をお願いします",
-          "furigana": "のうきをおねがいします",
-          "romaji": "nouki o onegaishimasu.",
-          "english": "Delivery deadline, please.",
-          "audioText": "納期をお願いします",
+          "prompt": "納期です",
+          "furigana": "のうきです",
+          "romaji": "nouki desu.",
+          "english": "It is Delivery deadline.",
+          "audioText": "納期です",
           "dictateTokens": [
-            "です",
-            "お願いします",
-            "ありがとう",
+            "ではありません",
             "納期",
-            "を"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "納期",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "納期をお願いします"
+          "correctAnswer": "納期です"
         },
         {
           "id": "u21_l2_7",
@@ -463,10 +461,10 @@ export const unit21: DojoUnit = {
           "english": "Price quotation",
           "audioText": "みつもりしょ",
           "options": [
-            "Confirming Concluding a contract",
-            "Confirming Agreement / consensus",
             "Price quotation",
-            "Humbly obliged / apologetic"
+            "Confirming Holding in reserve / pending",
+            "Compromise",
+            "Proposal"
           ],
           "correctAnswer": "Price quotation"
         },
@@ -480,33 +478,34 @@ export const unit21: DojoUnit = {
           "audioText": "みつもりしょ",
           "tileBank": [
             "し",
-            "ょ",
-            "つ",
-            "そ",
-            "み",
             "も",
+            "つ",
+            "ょ",
+            "ゆ",
+            "そ",
             "り",
-            "す"
+            "み"
           ],
           "correctAnswer": "みつもりしょ"
         },
         {
           "id": "u21_l3_3",
           "type": "cloze",
-          "prompt": "私は検討がすきです",
-          "furigana": "わたしはけんとうがすきです",
-          "romaji": "Watashi wa kentou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Consideration / deliberation.",
-          "audioText": "検討",
-          "clozeSentence": "これは検討 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な検討です。",
+          "furigana": "これはいちばんたいせつなけんとうです。",
+          "romaji": "Kore wa ichiban taisetsu na kentou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Consideration / deliberation.",
+          "audioText": "これは検討です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な検討です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l3_4",
@@ -517,11 +516,11 @@ export const unit21: DojoUnit = {
           "english": "This is Consideration / deliberation.",
           "audioText": "これは検討です",
           "scrambleTokens": [
-            "です",
             "検討",
-            "これは",
+            "それ",
             "ではありません",
-            "それ"
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -550,24 +549,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l3_6",
           "type": "dictate",
-          "prompt": "恐縮をお願いします",
-          "furigana": "きょうしゅくをおねがいします",
-          "romaji": "kyoushuku o onegaishimasu.",
-          "english": "Humbly obliged / apologetic, please.",
-          "audioText": "恐縮をお願いします",
+          "prompt": "恐縮です",
+          "furigana": "きょうしゅくです",
+          "romaji": "kyoushuku desu.",
+          "english": "It is Humbly obliged / apologetic.",
+          "audioText": "恐縮です",
           "dictateTokens": [
-            "お願いします",
-            "を",
             "恐縮",
-            "ありがとう",
-            "です"
+            "です",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "恐縮",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "恐縮をお願いします"
+          "correctAnswer": "恐縮です"
         },
         {
           "id": "u21_l3_7",
@@ -669,10 +666,10 @@ export const unit21: DojoUnit = {
           "english": "Consent / approval",
           "audioText": "しょうだく",
           "options": [
-            "Humbly obliged / apologetic",
-            "Confirming Negotiation",
             "Consent / approval",
-            "Confirming Compromise"
+            "Transaction / business deal",
+            "Concluding a contract",
+            "Holding in reserve / pending"
           ],
           "correctAnswer": "Consent / approval"
         },
@@ -685,26 +682,26 @@ export const unit21: DojoUnit = {
           "english": "Build 'Consent / approval'",
           "audioText": "しょうだく",
           "tileBank": [
-            "し",
+            "わ",
+            "こ",
+            "け",
             "う",
             "く",
-            "ょ",
-            "か",
-            "ほ",
-            "あ",
-            "だ"
+            "だ",
+            "し",
+            "ょ"
           ],
           "correctAnswer": "しょうだく"
         },
         {
           "id": "u21_l4_3",
           "type": "cloze",
-          "prompt": "私は提携がすきです",
-          "furigana": "わたしはていけいがすきです",
-          "romaji": "Watashi wa teikei ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Partnership / alliance.",
-          "audioText": "提携",
-          "clozeSentence": "これは提携 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な提携です。",
+          "furigana": "これはいちばんたいせつなていけいです。",
+          "romaji": "Kore wa ichiban taisetsu na teikei desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Partnership / alliance.",
+          "audioText": "これは提携です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な提携です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -712,7 +709,8 @@ export const unit21: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l4_4",
@@ -723,11 +721,11 @@ export const unit21: DojoUnit = {
           "english": "This is Partnership / alliance.",
           "audioText": "これは提携です",
           "scrambleTokens": [
-            "それ",
             "提携",
+            "ではありません",
             "これは",
-            "です",
-            "ではありません"
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -756,24 +754,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l4_6",
           "type": "dictate",
-          "prompt": "利益をお願いします",
-          "furigana": "りえきをおねがいします",
-          "romaji": "rieki o onegaishimasu.",
-          "english": "Profit / margin, please.",
-          "audioText": "利益をお願いします",
+          "prompt": "利益です",
+          "furigana": "りえきです",
+          "romaji": "rieki desu.",
+          "english": "It is Profit / margin.",
+          "audioText": "利益です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
+            "これ",
+            "ではありません",
             "利益",
-            "を",
             "です"
           ],
           "dictateSolution": [
             "利益",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "利益をお願いします"
+          "correctAnswer": "利益です"
         },
         {
           "id": "u21_l4_7",
@@ -875,10 +871,10 @@ export const unit21: DojoUnit = {
           "english": "Cost / expense",
           "audioText": "ひよう",
           "options": [
+            "Confirming Agreement / consensus",
             "Cost / expense",
-            "Confirming Negotiation",
-            "Agreement / consensus",
-            "Confirming Agreement / consensus"
+            "Concluding a contract",
+            "Confirming Transaction / business deal"
           ],
           "correctAnswer": "Cost / expense"
         },
@@ -891,34 +887,35 @@ export const unit21: DojoUnit = {
           "english": "Build 'Cost / expense'",
           "audioText": "ひよう",
           "tileBank": [
-            "ひ",
-            "そ",
-            "へ",
-            "さ",
-            "う",
             "よ",
-            "あ",
-            "ゆ"
+            "ゆ",
+            "る",
+            "ね",
+            "て",
+            "ひ",
+            "つ",
+            "う"
           ],
           "correctAnswer": "ひよう"
         },
         {
           "id": "u21_l5_3",
           "type": "cloze",
-          "prompt": "私は保留がすきです",
-          "furigana": "わたしはほりゅうがすきです",
-          "romaji": "Watashi wa horyuu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Holding in reserve / pending.",
-          "audioText": "保留",
-          "clozeSentence": "これは保留 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な保留です。",
+          "furigana": "これはいちばんたいせつなほりゅうです。",
+          "romaji": "Kore wa ichiban taisetsu na horyuu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Holding in reserve / pending.",
+          "audioText": "これは保留です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な保留です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l5_4",
@@ -930,10 +927,10 @@ export const unit21: DojoUnit = {
           "audioText": "これは保留です",
           "scrambleTokens": [
             "これは",
-            "保留",
-            "です",
+            "ではありません",
             "それ",
-            "ではありません"
+            "保留",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -962,24 +959,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l5_6",
           "type": "dictate",
-          "prompt": "締結をお願いします",
-          "furigana": "ていけつをおねがいします",
-          "romaji": "teiketsu o onegaishimasu.",
-          "english": "Concluding a contract, please.",
-          "audioText": "締結をお願いします",
+          "prompt": "締結です",
+          "furigana": "ていけつです",
+          "romaji": "teiketsu desu.",
+          "english": "It is Concluding a contract.",
+          "audioText": "締結です",
           "dictateTokens": [
-            "ありがとう",
             "締結",
-            "お願いします",
-            "を",
+            "ではありません",
+            "これ",
             "です"
           ],
           "dictateSolution": [
             "締結",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "締結をお願いします"
+          "correctAnswer": "締結です"
         },
         {
           "id": "u21_l5_7",
@@ -1088,9 +1083,9 @@ export const unit21: DojoUnit = {
           "audioText": "こうしょうのかくにん",
           "options": [
             "Confirming Negotiation",
-            "Concluding a contract",
-            "Consent / approval",
-            "Confirming Cost / expense"
+            "Delivery deadline",
+            "Transaction / business deal",
+            "Negotiation"
           ],
           "correctAnswer": "Confirming Negotiation"
         },
@@ -1104,12 +1099,12 @@ export const unit21: DojoUnit = {
           "audioText": "こうしょうのかくにん",
           "tileBank": [
             "ょ",
-            "か",
-            "の",
-            "こ",
-            "し",
-            "う",
             "く",
+            "の",
+            "し",
+            "こ",
+            "か",
+            "う",
             "う"
           ],
           "correctAnswer": "こうしょうのかくにん"
@@ -1117,20 +1112,21 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l6_3",
           "type": "cloze",
-          "prompt": "私は提案の確認がすきです",
-          "furigana": "わたしはていあんのかくにんがすきです",
-          "romaji": "Watashi wa teian no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Proposal.",
-          "audioText": "提案の確認",
-          "clozeSentence": "これは提案の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な提案の確認です。",
+          "furigana": "これはいちばんたいせつなていあんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na teian no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Proposal.",
+          "audioText": "これは提案の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な提案の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l6_4",
@@ -1141,11 +1137,11 @@ export const unit21: DojoUnit = {
           "english": "This is Confirming Proposal.",
           "audioText": "これは提案の確認です",
           "scrambleTokens": [
-            "です",
-            "提案の確認",
             "ではありません",
+            "これは",
+            "提案の確認",
             "それ",
-            "これは"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1174,24 +1170,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l6_6",
           "type": "dictate",
-          "prompt": "妥協の確認をお願いします",
-          "furigana": "だきょうのかくにんをおねがいします",
-          "romaji": "dakyou no kakunin o onegaishimasu.",
-          "english": "Confirming Compromise, please.",
-          "audioText": "妥協の確認をお願いします",
+          "prompt": "妥協の確認です",
+          "furigana": "だきょうのかくにんです",
+          "romaji": "dakyou no kakunin desu.",
+          "english": "It is Confirming Compromise.",
+          "audioText": "妥協の確認です",
           "dictateTokens": [
-            "お願いします",
-            "を",
-            "です",
             "妥協の確認",
-            "ありがとう"
+            "です",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "妥協の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "妥協の確認をお願いします"
+          "correctAnswer": "妥協の確認です"
         },
         {
           "id": "u21_l6_7",
@@ -1299,10 +1293,10 @@ export const unit21: DojoUnit = {
           "english": "Confirming Agreement / consensus",
           "audioText": "ごういのかくにん",
           "options": [
-            "Agreement / consensus",
-            "Confirming Consent / approval",
-            "Confirming Negotiation",
-            "Confirming Agreement / consensus"
+            "Confirming Agreement / consensus",
+            "Concluding a contract",
+            "Confirming Profit / margin",
+            "Confirming Partnership / alliance"
           ],
           "correctAnswer": "Confirming Agreement / consensus"
         },
@@ -1315,34 +1309,35 @@ export const unit21: DojoUnit = {
           "english": "Build 'Confirming Agreement / consensus'",
           "audioText": "ごういのかくにん",
           "tileBank": [
-            "に",
-            "う",
             "い",
-            "く",
-            "か",
             "の",
+            "に",
+            "ん",
+            "く",
             "ご",
-            "ん"
+            "か",
+            "う"
           ],
           "correctAnswer": "ごういのかくにん"
         },
         {
           "id": "u21_l7_3",
           "type": "cloze",
-          "prompt": "私は取引の確認がすきです",
-          "furigana": "わたしはとりひきのかくにんがすきです",
-          "romaji": "Watashi wa torihiki no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Transaction / business deal.",
-          "audioText": "取引の確認",
-          "clozeSentence": "これは取引の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な取引の確認です。",
+          "furigana": "これはいちばんたいせつなとりひきのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na torihiki no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Transaction / business deal.",
+          "audioText": "これは取引の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な取引の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l7_4",
@@ -1353,10 +1348,10 @@ export const unit21: DojoUnit = {
           "english": "This is Confirming Transaction / business deal.",
           "audioText": "これは取引の確認です",
           "scrambleTokens": [
-            "ではありません",
-            "それ",
             "です",
+            "それ",
             "これは",
+            "ではありません",
             "取引の確認"
           ],
           "scrambleSolution": [
@@ -1386,24 +1381,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l7_6",
           "type": "dictate",
-          "prompt": "納期の確認をお願いします",
-          "furigana": "のうきのかくにんをおねがいします",
-          "romaji": "nouki no kakunin o onegaishimasu.",
-          "english": "Confirming Delivery deadline, please.",
-          "audioText": "納期の確認をお願いします",
+          "prompt": "納期の確認です",
+          "furigana": "のうきのかくにんです",
+          "romaji": "nouki no kakunin desu.",
+          "english": "It is Confirming Delivery deadline.",
+          "audioText": "納期の確認です",
           "dictateTokens": [
+            "ではありません",
             "納期の確認",
             "です",
-            "を",
-            "お願いします",
-            "ありがとう"
+            "これ"
           ],
           "dictateSolution": [
             "納期の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "納期の確認をお願いします"
+          "correctAnswer": "納期の確認です"
         },
         {
           "id": "u21_l7_7",
@@ -1512,10 +1505,10 @@ export const unit21: DojoUnit = {
           "english": "Confirming Price quotation",
           "audioText": "みつもりしょのかくにん",
           "options": [
-            "Confirming Price quotation",
+            "Confirming Compromise",
             "Confirming Proposal",
-            "Price quotation",
-            "Confirming Delivery deadline"
+            "Confirming Price quotation",
+            "Holding in reserve / pending"
           ],
           "correctAnswer": "Confirming Price quotation"
         },
@@ -1528,26 +1521,26 @@ export const unit21: DojoUnit = {
           "english": "Build 'Confirming Price quotation'",
           "audioText": "みつもりしょのかくにん",
           "tileBank": [
-            "か",
-            "み",
             "し",
-            "り",
-            "の",
+            "ょ",
             "つ",
+            "み",
             "も",
-            "ょ"
+            "か",
+            "の",
+            "り"
           ],
           "correctAnswer": "みつもりしょのかくにん"
         },
         {
           "id": "u21_l8_3",
           "type": "cloze",
-          "prompt": "私は検討の確認がすきです",
-          "furigana": "わたしはけんとうのかくにんがすきです",
-          "romaji": "Watashi wa kentou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Consideration / deliberation.",
-          "audioText": "検討の確認",
-          "clozeSentence": "これは検討の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な検討の確認です。",
+          "furigana": "これはいちばんたいせつなけんとうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kentou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Consideration / deliberation.",
+          "audioText": "これは検討の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な検討の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1555,7 +1548,8 @@ export const unit21: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l8_4",
@@ -1566,11 +1560,11 @@ export const unit21: DojoUnit = {
           "english": "This is Confirming Consideration / deliberation.",
           "audioText": "これは検討の確認です",
           "scrambleTokens": [
-            "これは",
             "検討の確認",
-            "です",
             "ではありません",
-            "それ"
+            "です",
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1599,24 +1593,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l8_6",
           "type": "dictate",
-          "prompt": "恐縮の確認をお願いします",
-          "furigana": "きょうしゅくのかくにんをおねがいします",
-          "romaji": "kyoushuku no kakunin o onegaishimasu.",
-          "english": "Confirming Humbly obliged / apologetic, please.",
-          "audioText": "恐縮の確認をお願いします",
+          "prompt": "恐縮の確認です",
+          "furigana": "きょうしゅくのかくにんです",
+          "romaji": "kyoushuku no kakunin desu.",
+          "english": "It is Confirming Humbly obliged / apologetic.",
+          "audioText": "恐縮の確認です",
           "dictateTokens": [
-            "お願いします",
-            "を",
-            "ありがとう",
             "恐縮の確認",
+            "ではありません",
+            "これ",
             "です"
           ],
           "dictateSolution": [
             "恐縮の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "恐縮の確認をお願いします"
+          "correctAnswer": "恐縮の確認です"
         },
         {
           "id": "u21_l8_7",
@@ -1724,10 +1716,10 @@ export const unit21: DojoUnit = {
           "english": "Confirming Consent / approval",
           "audioText": "しょうだくのかくにん",
           "options": [
-            "Confirming Transaction / business deal",
-            "Price quotation",
+            "Confirming Agreement / consensus",
             "Confirming Consent / approval",
-            "Confirming Compromise"
+            "Confirming Delivery deadline",
+            "Partnership / alliance"
           ],
           "correctAnswer": "Confirming Consent / approval"
         },
@@ -1740,34 +1732,35 @@ export const unit21: DojoUnit = {
           "english": "Build 'Confirming Consent / approval'",
           "audioText": "しょうだくのかくにん",
           "tileBank": [
-            "く",
             "だ",
             "し",
-            "ょ",
             "か",
-            "の",
+            "う",
             "く",
-            "う"
+            "の",
+            "ょ",
+            "く"
           ],
           "correctAnswer": "しょうだくのかくにん"
         },
         {
           "id": "u21_l9_3",
           "type": "cloze",
-          "prompt": "私は提携の確認がすきです",
-          "furigana": "わたしはていけいのかくにんがすきです",
-          "romaji": "Watashi wa teikei no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Partnership / alliance.",
-          "audioText": "提携の確認",
-          "clozeSentence": "これは提携の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な提携の確認です。",
+          "furigana": "これはいちばんたいせつなていけいのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na teikei no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Partnership / alliance.",
+          "audioText": "これは提携の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な提携の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l9_4",
@@ -1778,11 +1771,11 @@ export const unit21: DojoUnit = {
           "english": "This is Confirming Partnership / alliance.",
           "audioText": "これは提携の確認です",
           "scrambleTokens": [
-            "ではありません",
             "これは",
-            "です",
             "それ",
-            "提携の確認"
+            "提携の確認",
+            "ではありません",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1811,24 +1804,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l9_6",
           "type": "dictate",
-          "prompt": "利益の確認をお願いします",
-          "furigana": "りえきのかくにんをおねがいします",
-          "romaji": "rieki no kakunin o onegaishimasu.",
-          "english": "Confirming Profit / margin, please.",
-          "audioText": "利益の確認をお願いします",
+          "prompt": "利益の確認です",
+          "furigana": "りえきのかくにんです",
+          "romaji": "rieki no kakunin desu.",
+          "english": "It is Confirming Profit / margin.",
+          "audioText": "利益の確認です",
           "dictateTokens": [
-            "です",
             "利益の確認",
-            "を",
-            "お願いします",
-            "ありがとう"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "利益の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "利益の確認をお願いします"
+          "correctAnswer": "利益の確認です"
         },
         {
           "id": "u21_l9_7",
@@ -1936,10 +1927,10 @@ export const unit21: DojoUnit = {
           "english": "Confirming Cost / expense",
           "audioText": "ひようのかくにん",
           "options": [
-            "Delivery deadline",
             "Confirming Cost / expense",
-            "Confirming Consent / approval",
-            "Confirming Proposal"
+            "Confirming Transaction / business deal",
+            "Confirming Proposal",
+            "Partnership / alliance"
           ],
           "correctAnswer": "Confirming Cost / expense"
         },
@@ -1952,34 +1943,35 @@ export const unit21: DojoUnit = {
           "english": "Build 'Confirming Cost / expense'",
           "audioText": "ひようのかくにん",
           "tileBank": [
-            "く",
-            "う",
-            "の",
-            "ん",
             "ひ",
+            "う",
+            "か",
             "に",
             "よ",
-            "か"
+            "ん",
+            "く",
+            "の"
           ],
           "correctAnswer": "ひようのかくにん"
         },
         {
           "id": "u21_l10_3",
           "type": "cloze",
-          "prompt": "私は保留の確認がすきです",
-          "furigana": "わたしはほりゅうのかくにんがすきです",
-          "romaji": "Watashi wa horyuu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Holding in reserve / pending.",
-          "audioText": "保留の確認",
-          "clozeSentence": "これは保留の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な保留の確認です。",
+          "furigana": "これはいちばんたいせつなほりゅうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na horyuu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Holding in reserve / pending.",
+          "audioText": "これは保留の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な保留の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l10_4",
@@ -1990,11 +1982,11 @@ export const unit21: DojoUnit = {
           "english": "This is Confirming Holding in reserve / pending.",
           "audioText": "これは保留の確認です",
           "scrambleTokens": [
+            "これは",
+            "ではありません",
             "それ",
             "です",
-            "保留の確認",
-            "ではありません",
-            "これは"
+            "保留の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -2023,24 +2015,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l10_6",
           "type": "dictate",
-          "prompt": "締結の確認をお願いします",
-          "furigana": "ていけつのかくにんをおねがいします",
-          "romaji": "teiketsu no kakunin o onegaishimasu.",
-          "english": "Confirming Concluding a contract, please.",
-          "audioText": "締結の確認をお願いします",
+          "prompt": "締結の確認です",
+          "furigana": "ていけつのかくにんです",
+          "romaji": "teiketsu no kakunin desu.",
+          "english": "It is Confirming Concluding a contract.",
+          "audioText": "締結の確認です",
           "dictateTokens": [
-            "を",
-            "お願いします",
             "締結の確認",
             "です",
-            "ありがとう"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "締結の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "締結の確認をお願いします"
+          "correctAnswer": "締結の確認です"
         },
         {
           "id": "u21_l10_7",
@@ -2148,10 +2138,10 @@ export const unit21: DojoUnit = {
           "english": "Confirming Negotiation",
           "audioText": "こうしょうのかくにん",
           "options": [
-            "Confirming Agreement / consensus",
-            "Delivery deadline",
+            "Negotiation",
             "Confirming Negotiation",
-            "Confirming Agreement / consensus"
+            "Humbly obliged / apologetic",
+            "Confirming Cost / expense"
           ],
           "correctAnswer": "Confirming Negotiation"
         },
@@ -2164,34 +2154,35 @@ export const unit21: DojoUnit = {
           "english": "Build 'Confirming Negotiation'",
           "audioText": "こうしょうのかくにん",
           "tileBank": [
-            "の",
-            "ょ",
             "う",
             "う",
-            "こ",
             "し",
-            "く",
-            "か"
+            "の",
+            "か",
+            "こ",
+            "ょ",
+            "く"
           ],
           "correctAnswer": "こうしょうのかくにん"
         },
         {
           "id": "u21_l11_3",
           "type": "cloze",
-          "prompt": "私は提案の確認がすきです",
-          "furigana": "わたしはていあんのかくにんがすきです",
-          "romaji": "Watashi wa teian no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Proposal.",
-          "audioText": "提案の確認",
-          "clozeSentence": "これは提案の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な提案の確認です。",
+          "furigana": "これはいちばんたいせつなていあんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na teian no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Proposal.",
+          "audioText": "これは提案の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な提案の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l11_4",
@@ -2202,11 +2193,11 @@ export const unit21: DojoUnit = {
           "english": "This is Confirming Proposal.",
           "audioText": "これは提案の確認です",
           "scrambleTokens": [
-            "それ",
-            "これは",
+            "です",
             "ではありません",
             "提案の確認",
-            "です"
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2235,24 +2226,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l11_6",
           "type": "dictate",
-          "prompt": "妥協の確認をお願いします",
-          "furigana": "だきょうのかくにんをおねがいします",
-          "romaji": "dakyou no kakunin o onegaishimasu.",
-          "english": "Confirming Compromise, please.",
-          "audioText": "妥協の確認をお願いします",
+          "prompt": "妥協の確認です",
+          "furigana": "だきょうのかくにんです",
+          "romaji": "dakyou no kakunin desu.",
+          "english": "It is Confirming Compromise.",
+          "audioText": "妥協の確認です",
           "dictateTokens": [
-            "妥協の確認",
-            "ありがとう",
             "です",
-            "を",
-            "お願いします"
+            "妥協の確認",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "妥協の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "妥協の確認をお願いします"
+          "correctAnswer": "妥協の確認です"
         },
         {
           "id": "u21_l11_7",
@@ -2360,10 +2349,10 @@ export const unit21: DojoUnit = {
           "english": "Confirming Agreement / consensus",
           "audioText": "ごういのかくにん",
           "options": [
-            "Confirming Proposal",
-            "Confirming Profit / margin",
+            "Cost / expense",
+            "Confirming Transaction / business deal",
             "Confirming Agreement / consensus",
-            "Compromise"
+            "Negotiation"
           ],
           "correctAnswer": "Confirming Agreement / consensus"
         },
@@ -2376,26 +2365,26 @@ export const unit21: DojoUnit = {
           "english": "Build 'Confirming Agreement / consensus'",
           "audioText": "ごういのかくにん",
           "tileBank": [
-            "う",
             "に",
-            "の",
-            "い",
-            "ん",
             "か",
+            "ご",
+            "ん",
+            "う",
             "く",
-            "ご"
+            "の",
+            "い"
           ],
           "correctAnswer": "ごういのかくにん"
         },
         {
           "id": "u21_l12_3",
           "type": "cloze",
-          "prompt": "私は取引の確認がすきです",
-          "furigana": "わたしはとりひきのかくにんがすきです",
-          "romaji": "Watashi wa torihiki no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Transaction / business deal.",
-          "audioText": "取引の確認",
-          "clozeSentence": "これは取引の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な取引の確認です。",
+          "furigana": "これはいちばんたいせつなとりひきのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na torihiki no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Transaction / business deal.",
+          "audioText": "これは取引の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な取引の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2403,7 +2392,8 @@ export const unit21: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l12_4",
@@ -2414,10 +2404,10 @@ export const unit21: DojoUnit = {
           "english": "This is Confirming Transaction / business deal.",
           "audioText": "これは取引の確認です",
           "scrambleTokens": [
-            "それ",
-            "です",
             "これは",
             "ではありません",
+            "それ",
+            "です",
             "取引の確認"
           ],
           "scrambleSolution": [
@@ -2447,24 +2437,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l12_6",
           "type": "dictate",
-          "prompt": "納期の確認をお願いします",
-          "furigana": "のうきのかくにんをおねがいします",
-          "romaji": "nouki no kakunin o onegaishimasu.",
-          "english": "Confirming Delivery deadline, please.",
-          "audioText": "納期の確認をお願いします",
+          "prompt": "納期の確認です",
+          "furigana": "のうきのかくにんです",
+          "romaji": "nouki no kakunin desu.",
+          "english": "It is Confirming Delivery deadline.",
+          "audioText": "納期の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "お願いします",
-            "納期の確認",
-            "です"
+            "これ",
+            "です",
+            "ではありません",
+            "納期の確認"
           ],
           "dictateSolution": [
             "納期の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "納期の確認をお願いします"
+          "correctAnswer": "納期の確認です"
         },
         {
           "id": "u21_l12_7",
@@ -2566,10 +2554,10 @@ export const unit21: DojoUnit = {
           "english": "Negotiation",
           "audioText": "こうしょう",
           "options": [
-            "Agreement / consensus",
-            "Confirming Consideration / deliberation",
-            "Confirming Agreement / consensus",
-            "Negotiation"
+            "Negotiation",
+            "Confirming Delivery deadline",
+            "Profit / margin",
+            "Holding in reserve / pending"
           ],
           "correctAnswer": "Negotiation"
         },
@@ -2582,34 +2570,35 @@ export const unit21: DojoUnit = {
           "english": "Build 'Negotiation'",
           "audioText": "こうしょう",
           "tileBank": [
+            "む",
             "う",
             "う",
             "し",
+            "つ",
             "こ",
-            "ひ",
-            "や",
-            "ょ",
-            "て"
+            "に",
+            "ょ"
           ],
           "correctAnswer": "こうしょう"
         },
         {
           "id": "u21_l13_3",
           "type": "cloze",
-          "prompt": "私は提案がすきです",
-          "furigana": "わたしはていあんがすきです",
-          "romaji": "Watashi wa teian ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Proposal.",
-          "audioText": "提案",
-          "clozeSentence": "これは提案 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な提案です。",
+          "furigana": "これはいちばんたいせつなていあんです。",
+          "romaji": "Kore wa ichiban taisetsu na teian desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Proposal.",
+          "audioText": "これは提案です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な提案です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l13_4",
@@ -2621,10 +2610,10 @@ export const unit21: DojoUnit = {
           "audioText": "これは提案です",
           "scrambleTokens": [
             "提案",
-            "それ",
+            "です",
             "ではありません",
             "これは",
-            "です"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2653,24 +2642,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l13_6",
           "type": "dictate",
-          "prompt": "妥協をお願いします",
-          "furigana": "だきょうをおねがいします",
-          "romaji": "dakyou o onegaishimasu.",
-          "english": "Compromise, please.",
-          "audioText": "妥協をお願いします",
+          "prompt": "妥協です",
+          "furigana": "だきょうです",
+          "romaji": "dakyou desu.",
+          "english": "It is Compromise.",
+          "audioText": "妥協です",
           "dictateTokens": [
-            "お願いします",
-            "妥協",
-            "ありがとう",
+            "これ",
             "です",
-            "を"
+            "妥協",
+            "ではありません"
           ],
           "dictateSolution": [
             "妥協",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "妥協をお願いします"
+          "correctAnswer": "妥協です"
         },
         {
           "id": "u21_l13_7",
@@ -2772,10 +2759,10 @@ export const unit21: DojoUnit = {
           "english": "Agreement / consensus",
           "audioText": "ごうい",
           "options": [
-            "Partnership / alliance",
-            "Agreement / consensus",
-            "Proposal",
-            "Cost / expense"
+            "Confirming Negotiation",
+            "Confirming Cost / expense",
+            "Cost / expense",
+            "Agreement / consensus"
           ],
           "correctAnswer": "Agreement / consensus"
         },
@@ -2788,34 +2775,35 @@ export const unit21: DojoUnit = {
           "english": "Build 'Agreement / consensus'",
           "audioText": "ごうい",
           "tileBank": [
+            "を",
             "い",
-            "う",
-            "に",
             "ご",
-            "て",
-            "る",
-            "つ",
-            "か"
+            "ち",
+            "な",
+            "ほ",
+            "う",
+            "こ"
           ],
           "correctAnswer": "ごうい"
         },
         {
           "id": "u21_l14_3",
           "type": "cloze",
-          "prompt": "私は取引がすきです",
-          "furigana": "わたしはとりひきがすきです",
-          "romaji": "Watashi wa torihiki ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Transaction / business deal.",
-          "audioText": "取引",
-          "clozeSentence": "これは取引 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な取引です。",
+          "furigana": "これはいちばんたいせつなとりひきです。",
+          "romaji": "Kore wa ichiban taisetsu na torihiki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Transaction / business deal.",
+          "audioText": "これは取引です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な取引です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l14_4",
@@ -2826,10 +2814,10 @@ export const unit21: DojoUnit = {
           "english": "This is Transaction / business deal.",
           "audioText": "これは取引です",
           "scrambleTokens": [
+            "です",
+            "それ",
             "ではありません",
             "これは",
-            "それ",
-            "です",
             "取引"
           ],
           "scrambleSolution": [
@@ -2859,24 +2847,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l14_6",
           "type": "dictate",
-          "prompt": "納期をお願いします",
-          "furigana": "のうきをおねがいします",
-          "romaji": "nouki o onegaishimasu.",
-          "english": "Delivery deadline, please.",
-          "audioText": "納期をお願いします",
+          "prompt": "納期です",
+          "furigana": "のうきです",
+          "romaji": "nouki desu.",
+          "english": "It is Delivery deadline.",
+          "audioText": "納期です",
           "dictateTokens": [
             "です",
+            "ではありません",
             "納期",
-            "ありがとう",
-            "お願いします",
-            "を"
+            "これ"
           ],
           "dictateSolution": [
             "納期",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "納期をお願いします"
+          "correctAnswer": "納期です"
         },
         {
           "id": "u21_l14_7",
@@ -2979,10 +2965,10 @@ export const unit21: DojoUnit = {
           "english": "Price quotation",
           "audioText": "みつもりしょ",
           "options": [
-            "Confirming Price quotation",
-            "Confirming Transaction / business deal",
-            "Confirming Agreement / consensus",
-            "Price quotation"
+            "Confirming Compromise",
+            "Confirming Negotiation",
+            "Price quotation",
+            "Confirming Agreement / consensus"
           ],
           "correctAnswer": "Price quotation"
         },
@@ -2995,34 +2981,35 @@ export const unit21: DojoUnit = {
           "english": "Build 'Price quotation'",
           "audioText": "みつもりしょ",
           "tileBank": [
+            "せ",
+            "も",
             "つ",
             "み",
             "ょ",
-            "も",
+            "ち",
             "り",
-            "か",
-            "し",
-            "ね"
+            "し"
           ],
           "correctAnswer": "みつもりしょ"
         },
         {
           "id": "u21_l15_3",
           "type": "cloze",
-          "prompt": "私は検討がすきです",
-          "furigana": "わたしはけんとうがすきです",
-          "romaji": "Watashi wa kentou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Consideration / deliberation.",
-          "audioText": "検討",
-          "clozeSentence": "これは検討 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な検討です。",
+          "furigana": "これはいちばんたいせつなけんとうです。",
+          "romaji": "Kore wa ichiban taisetsu na kentou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Consideration / deliberation.",
+          "audioText": "これは検討です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な検討です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u21_l15_4",
@@ -3033,11 +3020,11 @@ export const unit21: DojoUnit = {
           "english": "This is Consideration / deliberation.",
           "audioText": "これは検討です",
           "scrambleTokens": [
-            "ではありません",
-            "です",
             "これは",
+            "それ",
+            "です",
             "検討",
-            "それ"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -3066,24 +3053,22 @@ export const unit21: DojoUnit = {
         {
           "id": "u21_l15_6",
           "type": "dictate",
-          "prompt": "恐縮をお願いします",
-          "furigana": "きょうしゅくをおねがいします",
-          "romaji": "kyoushuku o onegaishimasu.",
-          "english": "Humbly obliged / apologetic, please.",
-          "audioText": "恐縮をお願いします",
+          "prompt": "恐縮です",
+          "furigana": "きょうしゅくです",
+          "romaji": "kyoushuku desu.",
+          "english": "It is Humbly obliged / apologetic.",
+          "audioText": "恐縮です",
           "dictateTokens": [
             "恐縮",
-            "を",
-            "お願いします",
-            "ありがとう",
+            "これ",
+            "ではありません",
             "です"
           ],
           "dictateSolution": [
             "恐縮",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "恐縮をお願いします"
+          "correctAnswer": "恐縮です"
         },
         {
           "id": "u21_l15_7",
@@ -3168,10 +3153,10 @@ export const unit21: DojoUnit = {
         "english": "Negotiation",
         "audioText": "こうしょう",
         "options": [
-          "Confirming Agreement / consensus",
-          "Price quotation",
+          "Confirming Price quotation",
           "Negotiation",
-          "Confirming Consent / approval"
+          "Confirming Agreement / consensus",
+          "Cost / expense"
         ],
         "correctAnswer": "Negotiation"
       },
@@ -3184,14 +3169,14 @@ export const unit21: DojoUnit = {
         "english": "Build 'Negotiation'",
         "audioText": "こうしょう",
         "tileBank": [
-          "う",
-          "の",
-          "ろ",
-          "ょ",
           "こ",
+          "ょ",
           "う",
+          "う",
+          "せ",
+          "や",
           "し",
-          "を"
+          "く"
         ],
         "correctAnswer": "こうしょう"
       },
@@ -3204,10 +3189,10 @@ export const unit21: DojoUnit = {
         "english": "Price quotation",
         "audioText": "みつもりしょ",
         "options": [
-          "Confirming Concluding a contract",
-          "Confirming Agreement / consensus",
           "Price quotation",
-          "Humbly obliged / apologetic"
+          "Confirming Holding in reserve / pending",
+          "Compromise",
+          "Proposal"
         ],
         "correctAnswer": "Price quotation"
       },
@@ -3221,13 +3206,13 @@ export const unit21: DojoUnit = {
         "audioText": "みつもりしょ",
         "tileBank": [
           "し",
-          "ょ",
-          "つ",
-          "そ",
-          "み",
           "も",
+          "つ",
+          "ょ",
+          "ゆ",
+          "そ",
           "り",
-          "す"
+          "み"
         ],
         "correctAnswer": "みつもりしょ"
       },
@@ -3240,10 +3225,10 @@ export const unit21: DojoUnit = {
         "english": "Cost / expense",
         "audioText": "ひよう",
         "options": [
+          "Confirming Agreement / consensus",
           "Cost / expense",
-          "Confirming Negotiation",
-          "Agreement / consensus",
-          "Confirming Agreement / consensus"
+          "Concluding a contract",
+          "Confirming Transaction / business deal"
         ],
         "correctAnswer": "Cost / expense"
       },
@@ -3256,14 +3241,14 @@ export const unit21: DojoUnit = {
         "english": "Build 'Cost / expense'",
         "audioText": "ひよう",
         "tileBank": [
-          "ひ",
-          "そ",
-          "へ",
-          "さ",
-          "う",
           "よ",
-          "あ",
-          "ゆ"
+          "ゆ",
+          "る",
+          "ね",
+          "て",
+          "ひ",
+          "つ",
+          "う"
         ],
         "correctAnswer": "ひよう"
       },
@@ -3276,10 +3261,10 @@ export const unit21: DojoUnit = {
         "english": "Confirming Agreement / consensus",
         "audioText": "ごういのかくにん",
         "options": [
-          "Agreement / consensus",
-          "Confirming Consent / approval",
-          "Confirming Negotiation",
-          "Confirming Agreement / consensus"
+          "Confirming Agreement / consensus",
+          "Concluding a contract",
+          "Confirming Profit / margin",
+          "Confirming Partnership / alliance"
         ],
         "correctAnswer": "Confirming Agreement / consensus"
       },
@@ -3292,14 +3277,14 @@ export const unit21: DojoUnit = {
         "english": "Build 'Confirming Agreement / consensus'",
         "audioText": "ごういのかくにん",
         "tileBank": [
-          "に",
-          "う",
           "い",
-          "く",
-          "か",
           "の",
+          "に",
+          "ん",
+          "く",
           "ご",
-          "ん"
+          "か",
+          "う"
         ],
         "correctAnswer": "ごういのかくにん"
       },
@@ -3312,10 +3297,10 @@ export const unit21: DojoUnit = {
         "english": "Confirming Consent / approval",
         "audioText": "しょうだくのかくにん",
         "options": [
-          "Confirming Transaction / business deal",
-          "Price quotation",
+          "Confirming Agreement / consensus",
           "Confirming Consent / approval",
-          "Confirming Compromise"
+          "Confirming Delivery deadline",
+          "Partnership / alliance"
         ],
         "correctAnswer": "Confirming Consent / approval"
       },
@@ -3328,14 +3313,14 @@ export const unit21: DojoUnit = {
         "english": "Build 'Confirming Consent / approval'",
         "audioText": "しょうだくのかくにん",
         "tileBank": [
-          "く",
           "だ",
           "し",
-          "ょ",
           "か",
-          "の",
+          "う",
           "く",
-          "う"
+          "の",
+          "ょ",
+          "く"
         ],
         "correctAnswer": "しょうだくのかくにん"
       },
@@ -3348,10 +3333,10 @@ export const unit21: DojoUnit = {
         "english": "Confirming Negotiation",
         "audioText": "こうしょうのかくにん",
         "options": [
-          "Confirming Agreement / consensus",
-          "Delivery deadline",
+          "Negotiation",
           "Confirming Negotiation",
-          "Confirming Agreement / consensus"
+          "Humbly obliged / apologetic",
+          "Confirming Cost / expense"
         ],
         "correctAnswer": "Confirming Negotiation"
       },
@@ -3364,14 +3349,14 @@ export const unit21: DojoUnit = {
         "english": "Build 'Confirming Negotiation'",
         "audioText": "こうしょうのかくにん",
         "tileBank": [
-          "の",
-          "ょ",
           "う",
           "う",
-          "こ",
           "し",
-          "く",
-          "か"
+          "の",
+          "か",
+          "こ",
+          "ょ",
+          "く"
         ],
         "correctAnswer": "こうしょうのかくにん"
       }

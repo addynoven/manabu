@@ -47,6 +47,19 @@ interface LessonSessionContentProps {
   onClose: () => void;
 }
 
+function getEducationalHint(item: LessonItem | null, correctAnswer: string): string | null {
+  if (!item) return null;
+  if (item.explanation) return item.explanation;
+  if (correctAnswer === 'は') return '助詞「は」 (wa): Topic marker indicating what the sentence is about.';
+  if (correctAnswer === 'が') return '助詞「が」 (ga): Subject/preference marker used with likes (〜が好き), desires, or abilities.';
+  if (correctAnswer === 'を') return '助詞「を」 (o): Direct object marker pointing to what receives the action.';
+  if (correctAnswer === 'に') return '助詞「に」 (ni): Destination, target, or specific time marker.';
+  if (correctAnswer === 'で') return '助詞「で」 (de): Location of an action or method/transportation used.';
+  if (correctAnswer === 'へ') return '助詞「へ」 (e): Direction marker indicating movement towards a destination.';
+  if (correctAnswer === 'か') return '助詞「か」 (ka): Question marker placed at the end of a sentence.';
+  return null;
+}
+
 function LessonSessionContent({
   lesson,
   mode,
@@ -77,6 +90,41 @@ function LessonSessionContent({
   const [correctCount, setCorrectCount] = useState(0);
 
   const currentItem = queue[0] || null;
+
+  const userAnswerText = useMemo(() => {
+    if (!currentItem) return '';
+    if (currentItem.type === 'spell') {
+      return directInput.trim() || assembledTiles.map(t => t.char).join('') || '(Empty)';
+    }
+    if (currentItem.type === 'cloze' || currentItem.type === 'cloze_context') {
+      return selectedOption || '(None selected)';
+    }
+    if (currentItem.type === 'scramble' || currentItem.type === 'dictate') {
+      return assembledTokens.join(' ') || '(Empty)';
+    }
+    if (currentItem.type === 'dialogue' || currentItem.type === 'listen') {
+      return selectedOption || '(None selected)';
+    }
+    return selectedOption || '(None)';
+  }, [currentItem, directInput, assembledTiles, selectedOption, assembledTokens]);
+
+  const correctAnswerText = useMemo(() => {
+    if (!currentItem) return '';
+    if (currentItem.type === 'cloze' || currentItem.type === 'cloze_context') {
+      return currentItem.clozeTarget || currentItem.correctAnswer;
+    }
+    if (currentItem.type === 'scramble') {
+      return (currentItem.scrambleSolution || []).join(' ') || currentItem.correctAnswer;
+    }
+    if (currentItem.type === 'dictate') {
+      return (currentItem.dictateSolution || []).join(' ') || currentItem.correctAnswer;
+    }
+    return currentItem.correctAnswer;
+  }, [currentItem]);
+
+  const hintText = useMemo(() => {
+    return getEducationalHint(currentItem, correctAnswerText);
+  }, [currentItem, correctAnswerText]);
 
   // Auto-play audio on question reveal
   useEffect(() => {
@@ -255,7 +303,7 @@ function LessonSessionContent({
         ) : currentItem ? (
           /* Active Question View */
           <ScrollView
-            contentContainerStyle={[styles.questionContent, { paddingBottom: insets.bottom + 120 }]}
+            contentContainerStyle={[styles.questionContent, { paddingBottom: insets.bottom + 120, flexGrow: 1 }]}
             showsVerticalScrollIndicator={false}
           >
             {currentItem.type === 'spell' ? (
@@ -275,6 +323,7 @@ function LessonSessionContent({
                 selectedChip={selectedOption}
                 onSelectChip={setSelectedOption}
                 onPlayAudio={handlePlayAudio}
+                evaluation={evaluation}
               />
             ) : currentItem.type === 'scramble' ? (
               <ScrambleExerciseView
@@ -380,9 +429,14 @@ function LessonSessionContent({
                   <View style={styles.optionsList}>
                     {currentItem.options.map((opt, idx) => {
                       const isSelected = selectedOption === opt;
+                      const isOptCorrect = opt === currentItem.correctAnswer;
+                      const showCorrect = evaluation !== null && isOptCorrect;
+                      const showWrong = evaluation === 'incorrect' && isSelected && !isOptCorrect;
+
                       return (
                         <Pressable
                           key={idx}
+                          disabled={evaluation !== null}
                           onPress={() => {
                             Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
                             setSelectedOption(opt);
@@ -391,17 +445,25 @@ function LessonSessionContent({
                             styles.optionCard,
                             { backgroundColor: theme.surface, borderColor: theme.border },
                             isSelected && { borderColor: theme.primary, backgroundColor: theme.primaryLight },
+                            showCorrect && { borderColor: '#059669', backgroundColor: '#DEF7EC' },
+                            showWrong && { borderColor: '#E02424', backgroundColor: '#FDE8E8' },
                           ]}
                         >
-                          <Text
-                            style={[
-                              styles.optionText,
-                              { color: theme.textPrimary },
-                              isSelected && { color: theme.primary, fontWeight: '800' },
-                            ]}
-                          >
-                            {opt}
-                          </Text>
+                          <View style={styles.optionInnerRow}>
+                            <Text
+                              style={[
+                                styles.optionText,
+                                { color: theme.textPrimary },
+                                isSelected && { color: theme.primary, fontWeight: '800' },
+                                showCorrect && { color: '#03543F', fontWeight: '800' },
+                                showWrong && { color: '#9B1C1C', fontWeight: '800' },
+                              ]}
+                            >
+                              {opt}
+                            </Text>
+                            {showCorrect && <CheckCircle2 size={20} color="#059669" />}
+                            {showWrong && <XCircle size={20} color="#E02424" />}
+                          </View>
                         </Pressable>
                       );
                     })}
@@ -412,7 +474,7 @@ function LessonSessionContent({
           </ScrollView>
         ) : null}
 
-        {/* Sliding Evaluation Bottom Sheet matching deerlino_3.jpg */}
+        {/* Sliding Evaluation Bottom Sheet */}
         {evaluation ? (
           <View
             style={[
@@ -426,9 +488,9 @@ function LessonSessionContent({
           >
             <View style={styles.evalTopRow}>
               {evaluation === 'correct' ? (
-                <CheckCircle2 size={28} color="#0E9F6E" />
+                <CheckCircle2 size={26} color="#0E9F6E" />
               ) : (
-                <XCircle size={28} color="#E02424" />
+                <XCircle size={26} color="#E02424" />
               )}
               <Text
                 style={[
@@ -440,11 +502,88 @@ function LessonSessionContent({
               </Text>
             </View>
 
+            {/* If Incorrect: Side-by-side Answer Diff Comparison */}
+            {evaluation === 'incorrect' && (
+              <View style={styles.diffContainer}>
+                <View style={styles.diffPillUser}>
+                  <View style={styles.diffPillHeader}>
+                    <XCircle size={14} color="#DC2626" />
+                    <Text style={styles.diffPillLabelUser}>YOUR ANSWER</Text>
+                  </View>
+                  <Text style={styles.diffPillValueUser} numberOfLines={1}>
+                    {userAnswerText}
+                  </Text>
+                </View>
+
+                <View style={styles.diffPillCorrect}>
+                  <View style={styles.diffPillHeader}>
+                    <CheckCircle2 size={14} color="#059669" />
+                    <Text style={styles.diffPillLabelCorrect}>CORRECT ANSWER</Text>
+                  </View>
+                  <Text style={styles.diffPillValueCorrect} numberOfLines={1}>
+                    {correctAnswerText}
+                  </Text>
+                </View>
+              </View>
+            )}
+
+            {/* Context Card: Full sentence with highlighted answer */}
             <View style={styles.evalBreakdown}>
-              <Text style={styles.evalPrompt}>{currentItem?.prompt}</Text>
-              <Text style={styles.evalRomaji}>{currentItem?.romaji}</Text>
-              <Text style={styles.evalEnglish}>{currentItem?.english}</Text>
+              {currentItem?.type === 'cloze' || currentItem?.type === 'cloze_context' ? (
+                (() => {
+                  const raw = currentItem.clozeSentence || currentItem.contextSentence || '';
+                  if (raw.includes('{{BLANK}}') || raw.includes('____')) {
+                    const parts = raw.includes('{{BLANK}}')
+                      ? raw.split('{{BLANK}}')
+                      : raw.split('____');
+                    return (
+                      <Text style={styles.evalPrompt}>
+                        {parts[0]}
+                        <Text style={styles.highlightGreen}>{correctAnswerText}</Text>
+                        {parts[1]}
+                      </Text>
+                    );
+                  }
+                  return <Text style={styles.evalPrompt}>{currentItem.prompt}</Text>;
+                })()
+              ) : currentItem?.type === 'dialogue' ? (
+                <View style={{ gap: 6 }}>
+                  <Text style={styles.evalEnglish}>
+                    {currentItem.dialogueSpeaker || 'Speaker'}:
+                  </Text>
+                  <Text style={styles.evalPrompt}>
+                    {currentItem.dialoguePrompt || currentItem.prompt}
+                  </Text>
+                  <Text style={[styles.evalEnglish, { marginTop: 4 }]}>Your reply:</Text>
+                  <Text style={[styles.evalPrompt, styles.highlightGreen]}>
+                    {correctAnswerText}
+                  </Text>
+                </View>
+              ) : currentItem?.type === 'match' ? (
+                <Text style={styles.evalPrompt}>
+                  {currentItem.matchPairs
+                    ? currentItem.matchPairs.map(p => p.left).join('・')
+                    : currentItem.prompt}
+                </Text>
+              ) : (
+                <Text style={styles.evalPrompt}>{currentItem?.prompt}</Text>
+              )}
+
+              {currentItem?.type !== 'dialogue' && currentItem?.romaji ? (
+                <Text style={styles.evalRomaji}>{currentItem.romaji}</Text>
+              ) : null}
+              {currentItem?.type !== 'dialogue' ? (
+                <Text style={styles.evalEnglish}>{currentItem?.english}</Text>
+              ) : null}
             </View>
+
+            {/* Pedagogical Rule / Hint */}
+            {hintText ? (
+              <View style={styles.tipBox}>
+                <Sparkles size={16} color="#D97706" style={{ marginTop: 1 }} />
+                <Text style={styles.tipText}>{hintText}</Text>
+              </View>
+            ) : null}
 
             <Pressable
               onPress={handleContinue}
@@ -700,6 +839,11 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     letterSpacing: 0.5,
   },
+  optionInnerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
   evaluationSheet: {
     position: 'absolute',
     bottom: 0,
@@ -722,14 +866,75 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '900',
   },
+  diffContainer: {
+    flexDirection: 'row',
+    gap: 10,
+    marginTop: 4,
+    marginBottom: 4,
+  },
+  diffPillUser: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+    padding: 10,
+    borderRadius: radii.md,
+    borderWidth: 1.5,
+    borderColor: '#F87171',
+  },
+  diffPillCorrect: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+    padding: 10,
+    borderRadius: radii.md,
+    borderWidth: 1.5,
+    borderColor: '#34D399',
+  },
+  diffPillHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    marginBottom: 4,
+  },
+  diffPillLabelUser: {
+    fontSize: 10,
+    fontWeight: '800',
+    color: '#DC2626',
+    letterSpacing: 0.5,
+  },
+  diffPillLabelCorrect: {
+    fontSize: 10,
+    fontWeight: '800',
+    color: '#059669',
+    letterSpacing: 0.5,
+  },
+  diffPillValueUser: {
+    fontSize: 16,
+    fontWeight: '800',
+    color: '#991B1B',
+    textDecorationLine: 'line-through',
+  },
+  diffPillValueCorrect: {
+    fontSize: 16,
+    fontWeight: '800',
+    color: '#065F46',
+  },
   evalBreakdown: {
-    gap: 2,
-    marginVertical: 4,
+    gap: 3,
+    backgroundColor: '#FFFFFF60',
+    padding: 12,
+    borderRadius: radii.md,
+    marginVertical: 2,
   },
   evalPrompt: {
     fontSize: 17,
     fontWeight: '800',
     color: '#1F2937',
+  },
+  highlightGreen: {
+    color: '#059669',
+    fontWeight: '900',
+    backgroundColor: '#DEF7EC',
+    paddingHorizontal: 4,
+    borderRadius: 4,
   },
   evalRomaji: {
     fontSize: 13,
@@ -738,6 +943,24 @@ const styles = StyleSheet.create({
   evalEnglish: {
     fontSize: 13,
     color: '#374151',
+  },
+  tipBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    backgroundColor: '#FEF3C7',
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: radii.md,
+    borderWidth: 1,
+    borderColor: '#FCD34D',
+    marginTop: 2,
+  },
+  tipText: {
+    fontSize: 12,
+    color: '#92400E',
+    fontWeight: '600',
+    flex: 1,
   },
   evalContinueBtn: {
     flexDirection: 'row',

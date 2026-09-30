@@ -52,10 +52,10 @@ export const unit08: DojoUnit = {
           "english": "Hot spring",
           "audioText": "おんせん",
           "options": [
-            "Confirming Light cotton kimono",
+            "Tatami mat flooring",
+            "Room",
             "Hot spring",
-            "Confirming Hot spring",
-            "Traditional multi-course feast"
+            "Confirming Breakfast"
           ],
           "correctAnswer": "Hot spring"
         },
@@ -68,34 +68,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Hot spring'",
           "audioText": "おんせん",
           "tileBank": [
-            "ん",
-            "と",
-            "ん",
-            "は",
-            "せ",
             "お",
-            "す",
-            "の"
+            "せ",
+            "む",
+            "み",
+            "も",
+            "ん",
+            "や",
+            "ん"
           ],
           "correctAnswer": "おんせん"
         },
         {
           "id": "u8_l1_3",
           "type": "cloze",
-          "prompt": "私は旅館がすきです",
-          "furigana": "わたしはりょかんがすきです",
-          "romaji": "Watashi wa ryokan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Traditional Japanese inn.",
-          "audioText": "旅館",
-          "clozeSentence": "これは旅館 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な旅館です。",
+          "furigana": "これはいちばんたいせつなりょかんです。",
+          "romaji": "Kore wa ichiban taisetsu na ryokan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Traditional Japanese inn.",
+          "audioText": "これは旅館です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な旅館です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l1_4",
@@ -106,11 +107,11 @@ export const unit08: DojoUnit = {
           "english": "This is Traditional Japanese inn.",
           "audioText": "これは旅館です",
           "scrambleTokens": [
-            "ではありません",
             "旅館",
-            "これは",
+            "それ",
             "です",
-            "それ"
+            "ではありません",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -139,24 +140,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l1_6",
           "type": "dictate",
-          "prompt": "露天風呂をお願いします",
-          "furigana": "ろてんぶろをおねがいします",
-          "romaji": "rotenburo o onegaishimasu.",
-          "english": "Open-air hot spring bath, please.",
-          "audioText": "露天風呂をお願いします",
+          "prompt": "露天風呂です",
+          "furigana": "ろてんぶろです",
+          "romaji": "rotenburo desu.",
+          "english": "It is Open-air hot spring bath.",
+          "audioText": "露天風呂です",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "露天風呂",
-            "です",
-            "を",
-            "お願いします",
-            "ありがとう"
+            "です"
           ],
           "dictateSolution": [
             "露天風呂",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "露天風呂をお願いします"
+          "correctAnswer": "露天風呂です"
         },
         {
           "id": "u8_l1_7",
@@ -258,10 +257,10 @@ export const unit08: DojoUnit = {
           "english": "Light cotton kimono",
           "audioText": "ゆかた",
           "options": [
-            "Confirming Reservation",
+            "Traditional Japanese inn",
             "Light cotton kimono",
-            "Dinner",
-            "Confirming Light cotton kimono"
+            "Confirming Open-air hot spring bath",
+            "Confirming Towel"
           ],
           "correctAnswer": "Light cotton kimono"
         },
@@ -274,34 +273,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Light cotton kimono'",
           "audioText": "ゆかた",
           "tileBank": [
-            "ゆ",
-            "か",
-            "て",
+            "む",
+            "そ",
+            "ま",
             "た",
-            "あ",
-            "ほ",
-            "し",
-            "み"
+            "ゆ",
+            "お",
+            "の",
+            "か"
           ],
           "correctAnswer": "ゆかた"
         },
         {
           "id": "u8_l2_3",
           "type": "cloze",
-          "prompt": "私は予約がすきです",
-          "furigana": "わたしはよやくがすきです",
-          "romaji": "Watashi wa yoyaku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Reservation.",
-          "audioText": "予約",
-          "clozeSentence": "これは予約 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な予約です。",
+          "furigana": "これはいちばんたいせつなよやくです。",
+          "romaji": "Kore wa ichiban taisetsu na yoyaku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Reservation.",
+          "audioText": "これは予約です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な予約です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l2_4",
@@ -312,11 +312,11 @@ export const unit08: DojoUnit = {
           "english": "This is Reservation.",
           "audioText": "これは予約です",
           "scrambleTokens": [
-            "です",
-            "予約",
-            "ではありません",
             "それ",
-            "これは"
+            "これは",
+            "です",
+            "ではありません",
+            "予約"
           ],
           "scrambleSolution": [
             "これは",
@@ -345,24 +345,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l2_6",
           "type": "dictate",
-          "prompt": "部屋をお願いします",
-          "furigana": "へやをおねがいします",
-          "romaji": "heya o onegaishimasu.",
-          "english": "Room, please.",
-          "audioText": "部屋をお願いします",
+          "prompt": "部屋です",
+          "furigana": "へやです",
+          "romaji": "heya desu.",
+          "english": "It is Room.",
+          "audioText": "部屋です",
           "dictateTokens": [
-            "を",
+            "ではありません",
+            "これ",
             "です",
-            "部屋",
-            "ありがとう",
-            "お願いします"
+            "部屋"
           ],
           "dictateSolution": [
             "部屋",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "部屋をお願いします"
+          "correctAnswer": "部屋です"
         },
         {
           "id": "u8_l2_7",
@@ -463,10 +461,10 @@ export const unit08: DojoUnit = {
           "english": "Japanese-style tatami room",
           "audioText": "わしつ",
           "options": [
-            "Confirming Reservation",
-            "Confirming Open-air hot spring bath",
-            "Confirming Room",
-            "Japanese-style tatami room"
+            "Confirming Japanese-style tatami room",
+            "Japanese-style tatami room",
+            "Japanese sleeping futon",
+            "Confirming Hot spring"
           ],
           "correctAnswer": "Japanese-style tatami room"
         },
@@ -479,34 +477,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Japanese-style tatami room'",
           "audioText": "わしつ",
           "tileBank": [
-            "て",
-            "は",
-            "つ",
+            "か",
+            "を",
+            "い",
+            "ふ",
+            "ま",
+            "わ",
             "し",
-            "く",
-            "る",
-            "り",
-            "わ"
+            "つ"
           ],
           "correctAnswer": "わしつ"
         },
         {
           "id": "u8_l3_3",
           "type": "cloze",
-          "prompt": "私は畳がすきです",
-          "furigana": "わたしはたたみがすきです",
-          "romaji": "Watashi wa tatami ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Tatami mat flooring.",
-          "audioText": "畳",
-          "clozeSentence": "これは畳 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な畳です。",
+          "furigana": "これはいちばんたいせつなたたみです。",
+          "romaji": "Kore wa ichiban taisetsu na tatami desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Tatami mat flooring.",
+          "audioText": "これは畳です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な畳です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l3_4",
@@ -517,11 +516,11 @@ export const unit08: DojoUnit = {
           "english": "This is Tatami mat flooring.",
           "audioText": "これは畳です",
           "scrambleTokens": [
-            "です",
-            "これは",
+            "それ",
             "ではありません",
+            "です",
             "畳",
-            "それ"
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -550,24 +549,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l3_6",
           "type": "dictate",
-          "prompt": "布団をお願いします",
-          "furigana": "ふとんをおねがいします",
-          "romaji": "futon o onegaishimasu.",
-          "english": "Japanese sleeping futon, please.",
-          "audioText": "布団をお願いします",
+          "prompt": "布団です",
+          "furigana": "ふとんです",
+          "romaji": "futon desu.",
+          "english": "It is Japanese sleeping futon.",
+          "audioText": "布団です",
           "dictateTokens": [
-            "を",
-            "布団",
-            "ありがとう",
-            "お願いします",
-            "です"
+            "です",
+            "これ",
+            "ではありません",
+            "布団"
           ],
           "dictateSolution": [
             "布団",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "布団をお願いします"
+          "correctAnswer": "布団です"
         },
         {
           "id": "u8_l3_7",
@@ -671,10 +668,10 @@ export const unit08: DojoUnit = {
           "english": "Breakfast",
           "audioText": "ちょうしょく",
           "options": [
-            "Confirming Hot spring",
-            "Confirming Japanese sleeping futon",
-            "Confirming Breakfast",
-            "Breakfast"
+            "Confirming Private hire / reserved bath",
+            "Breakfast",
+            "Confirming Japanese-style tatami room",
+            "Confirming Reservation"
           ],
           "correctAnswer": "Breakfast"
         },
@@ -688,25 +685,25 @@ export const unit08: DojoUnit = {
           "audioText": "ちょうしょく",
           "tileBank": [
             "う",
-            "そ",
-            "み",
-            "く",
+            "ね",
             "ょ",
+            "ょ",
+            "く",
+            "た",
             "し",
-            "ち",
-            "ょ"
+            "ち"
           ],
           "correctAnswer": "ちょうしょく"
         },
         {
           "id": "u8_l4_3",
           "type": "cloze",
-          "prompt": "私は夕食がすきです",
-          "furigana": "わたしはゆうしょくがすきです",
-          "romaji": "Watashi wa yuushoku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Dinner.",
-          "audioText": "夕食",
-          "clozeSentence": "これは夕食 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な夕食です。",
+          "furigana": "これはいちばんたいせつなゆうしょくです。",
+          "romaji": "Kore wa ichiban taisetsu na yuushoku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Dinner.",
+          "audioText": "これは夕食です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な夕食です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -714,7 +711,8 @@ export const unit08: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l4_4",
@@ -725,11 +723,11 @@ export const unit08: DojoUnit = {
           "english": "This is Dinner.",
           "audioText": "これは夕食です",
           "scrambleTokens": [
-            "それ",
             "これは",
-            "夕食",
             "ではありません",
-            "です"
+            "それ",
+            "です",
+            "夕食"
           ],
           "scrambleSolution": [
             "これは",
@@ -758,24 +756,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l4_6",
           "type": "dictate",
-          "prompt": "懐石料理をお願いします",
-          "furigana": "かいせきりょうりをおねがいします",
-          "romaji": "kaiseki ryouri o onegaishimasu.",
-          "english": "Traditional multi-course feast, please.",
-          "audioText": "懐石料理をお願いします",
+          "prompt": "懐石料理です",
+          "furigana": "かいせきりょうりです",
+          "romaji": "kaiseki ryouri desu.",
+          "english": "It is Traditional multi-course feast.",
+          "audioText": "懐石料理です",
           "dictateTokens": [
-            "を",
-            "です",
-            "ありがとう",
+            "ではありません",
+            "これ",
             "懐石料理",
-            "お願いします"
+            "です"
           ],
           "dictateSolution": [
             "懐石料理",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "懐石料理をお願いします"
+          "correctAnswer": "懐石料理です"
         },
         {
           "id": "u8_l4_7",
@@ -876,10 +872,10 @@ export const unit08: DojoUnit = {
           "english": "Towel",
           "audioText": "タオル",
           "options": [
-            "Confirming Traditional Japanese inn",
-            "Confirming Open-air hot spring bath",
-            "Breakfast",
-            "Towel"
+            "Japanese sleeping futon",
+            "Towel",
+            "Confirming Traditional multi-course feast",
+            "Confirming Open-air hot spring bath"
           ],
           "correctAnswer": "Towel"
         },
@@ -892,34 +888,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Towel'",
           "audioText": "タオル",
           "tileBank": [
-            "ル",
-            "あ",
-            "め",
-            "タ",
+            "な",
+            "く",
+            "ゆ",
             "オ",
-            "ち",
-            "す",
-            "ね"
+            "せ",
+            "タ",
+            "や",
+            "ル"
           ],
           "correctAnswer": "タオル"
         },
         {
           "id": "u8_l5_3",
           "type": "cloze",
-          "prompt": "私は脱衣所がすきです",
-          "furigana": "わたしはだついじょがすきです",
-          "romaji": "Watashi wa datsuijo ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Changing / dressing room.",
-          "audioText": "脱衣所",
-          "clozeSentence": "これは脱衣所 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な脱衣所です。",
+          "furigana": "これはいちばんたいせつなだついじょです。",
+          "romaji": "Kore wa ichiban taisetsu na datsuijo desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Changing / dressing room.",
+          "audioText": "これは脱衣所です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な脱衣所です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l5_4",
@@ -930,11 +927,11 @@ export const unit08: DojoUnit = {
           "english": "This is Changing / dressing room.",
           "audioText": "これは脱衣所です",
           "scrambleTokens": [
-            "それ",
-            "です",
-            "ではありません",
             "脱衣所",
-            "これは"
+            "ではありません",
+            "これは",
+            "です",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -963,24 +960,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l5_6",
           "type": "dictate",
-          "prompt": "貸切をお願いします",
-          "furigana": "かしきりをおねがいします",
-          "romaji": "kashikiri o onegaishimasu.",
-          "english": "Private hire / reserved bath, please.",
-          "audioText": "貸切をお願いします",
+          "prompt": "貸切です",
+          "furigana": "かしきりです",
+          "romaji": "kashikiri desu.",
+          "english": "It is Private hire / reserved bath.",
+          "audioText": "貸切です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
             "です",
-            "を",
-            "貸切"
+            "貸切",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "貸切",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "貸切をお願いします"
+          "correctAnswer": "貸切です"
         },
         {
           "id": "u8_l5_7",
@@ -1091,9 +1086,9 @@ export const unit08: DojoUnit = {
           "audioText": "おんせんのかくにん",
           "options": [
             "Confirming Hot spring",
-            "Traditional multi-course feast",
-            "Tatami mat flooring",
-            "Confirming Private hire / reserved bath"
+            "Confirming Dinner",
+            "Light cotton kimono",
+            "Confirming Light cotton kimono"
           ],
           "correctAnswer": "Confirming Hot spring"
         },
@@ -1106,34 +1101,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Confirming Hot spring'",
           "audioText": "おんせんのかくにん",
           "tileBank": [
-            "く",
             "ん",
+            "せ",
+            "く",
+            "お",
             "に",
             "ん",
-            "お",
             "か",
-            "の",
-            "せ"
+            "の"
           ],
           "correctAnswer": "おんせんのかくにん"
         },
         {
           "id": "u8_l6_3",
           "type": "cloze",
-          "prompt": "私は旅館の確認がすきです",
-          "furigana": "わたしはりょかんのかくにんがすきです",
-          "romaji": "Watashi wa ryokan no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Traditional Japanese inn.",
-          "audioText": "旅館の確認",
-          "clozeSentence": "これは旅館の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な旅館の確認です。",
+          "furigana": "これはいちばんたいせつなりょかんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ryokan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Traditional Japanese inn.",
+          "audioText": "これは旅館の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な旅館の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l6_4",
@@ -1145,10 +1141,10 @@ export const unit08: DojoUnit = {
           "audioText": "これは旅館の確認です",
           "scrambleTokens": [
             "旅館の確認",
-            "それ",
+            "ではありません",
             "です",
             "これは",
-            "ではありません"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1177,24 +1173,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l6_6",
           "type": "dictate",
-          "prompt": "露天風呂の確認をお願いします",
-          "furigana": "ろてんぶろのかくにんをおねがいします",
-          "romaji": "rotenburo no kakunin o onegaishimasu.",
-          "english": "Confirming Open-air hot spring bath, please.",
-          "audioText": "露天風呂の確認をお願いします",
+          "prompt": "露天風呂の確認です",
+          "furigana": "ろてんぶろのかくにんです",
+          "romaji": "rotenburo no kakunin desu.",
+          "english": "It is Confirming Open-air hot spring bath.",
+          "audioText": "露天風呂の確認です",
           "dictateTokens": [
-            "です",
-            "ありがとう",
-            "お願いします",
-            "を",
-            "露天風呂の確認"
+            "露天風呂の確認",
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "露天風呂の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "露天風呂の確認をお願いします"
+          "correctAnswer": "露天風呂の確認です"
         },
         {
           "id": "u8_l6_7",
@@ -1302,10 +1296,10 @@ export const unit08: DojoUnit = {
           "english": "Confirming Light cotton kimono",
           "audioText": "ゆかたのかくにん",
           "options": [
-            "Open-air hot spring bath",
-            "Room",
-            "Japanese-style tatami room",
-            "Confirming Light cotton kimono"
+            "Confirming Light cotton kimono",
+            "Confirming Traditional Japanese inn",
+            "Towel",
+            "Private hire / reserved bath"
           ],
           "correctAnswer": "Confirming Light cotton kimono"
         },
@@ -1318,13 +1312,13 @@ export const unit08: DojoUnit = {
           "english": "Build 'Confirming Light cotton kimono'",
           "audioText": "ゆかたのかくにん",
           "tileBank": [
+            "く",
             "ゆ",
-            "の",
             "た",
             "に",
-            "く",
             "か",
             "ん",
+            "の",
             "か"
           ],
           "correctAnswer": "ゆかたのかくにん"
@@ -1332,20 +1326,21 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l7_3",
           "type": "cloze",
-          "prompt": "私は予約の確認がすきです",
-          "furigana": "わたしはよやくのかくにんがすきです",
-          "romaji": "Watashi wa yoyaku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Reservation.",
-          "audioText": "予約の確認",
-          "clozeSentence": "これは予約の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な予約の確認です。",
+          "furigana": "これはいちばんたいせつなよやくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na yoyaku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Reservation.",
+          "audioText": "これは予約の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な予約の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l7_4",
@@ -1356,11 +1351,11 @@ export const unit08: DojoUnit = {
           "english": "This is Confirming Reservation.",
           "audioText": "これは予約の確認です",
           "scrambleTokens": [
-            "です",
-            "予約の確認",
-            "それ",
             "これは",
-            "ではありません"
+            "予約の確認",
+            "です",
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1389,24 +1384,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l7_6",
           "type": "dictate",
-          "prompt": "部屋の確認をお願いします",
-          "furigana": "へやのかくにんをおねがいします",
-          "romaji": "heya no kakunin o onegaishimasu.",
-          "english": "Confirming Room, please.",
-          "audioText": "部屋の確認をお願いします",
+          "prompt": "部屋の確認です",
+          "furigana": "へやのかくにんです",
+          "romaji": "heya no kakunin desu.",
+          "english": "It is Confirming Room.",
+          "audioText": "部屋の確認です",
           "dictateTokens": [
-            "お願いします",
+            "ではありません",
             "部屋の確認",
-            "ありがとう",
-            "です",
-            "を"
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "部屋の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "部屋の確認をお願いします"
+          "correctAnswer": "部屋の確認です"
         },
         {
           "id": "u8_l7_7",
@@ -1513,10 +1506,10 @@ export const unit08: DojoUnit = {
           "english": "Confirming Japanese-style tatami room",
           "audioText": "わしつのかくにん",
           "options": [
-            "Towel",
-            "Confirming Room",
+            "Confirming Dinner",
+            "Light cotton kimono",
             "Confirming Japanese-style tatami room",
-            "Reservation"
+            "Confirming Room"
           ],
           "correctAnswer": "Confirming Japanese-style tatami room"
         },
@@ -1529,26 +1522,26 @@ export const unit08: DojoUnit = {
           "english": "Build 'Confirming Japanese-style tatami room'",
           "audioText": "わしつのかくにん",
           "tileBank": [
-            "わ",
-            "し",
-            "つ",
-            "く",
             "か",
-            "ん",
             "に",
-            "の"
+            "つ",
+            "の",
+            "く",
+            "ん",
+            "わ",
+            "し"
           ],
           "correctAnswer": "わしつのかくにん"
         },
         {
           "id": "u8_l8_3",
           "type": "cloze",
-          "prompt": "私は畳の確認がすきです",
-          "furigana": "わたしはたたみのかくにんがすきです",
-          "romaji": "Watashi wa tatami no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Tatami mat flooring.",
-          "audioText": "畳の確認",
-          "clozeSentence": "これは畳の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な畳の確認です。",
+          "furigana": "これはいちばんたいせつなたたみのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na tatami no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Tatami mat flooring.",
+          "audioText": "これは畳の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な畳の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1556,7 +1549,8 @@ export const unit08: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l8_4",
@@ -1567,11 +1561,11 @@ export const unit08: DojoUnit = {
           "english": "This is Confirming Tatami mat flooring.",
           "audioText": "これは畳の確認です",
           "scrambleTokens": [
-            "ではありません",
+            "です",
+            "これは",
             "畳の確認",
             "それ",
-            "これは",
-            "です"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1600,24 +1594,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l8_6",
           "type": "dictate",
-          "prompt": "布団の確認をお願いします",
-          "furigana": "ふとんのかくにんをおねがいします",
-          "romaji": "futon no kakunin o onegaishimasu.",
-          "english": "Confirming Japanese sleeping futon, please.",
-          "audioText": "布団の確認をお願いします",
+          "prompt": "布団の確認です",
+          "furigana": "ふとんのかくにんです",
+          "romaji": "futon no kakunin desu.",
+          "english": "It is Confirming Japanese sleeping futon.",
+          "audioText": "布団の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "を",
+            "です",
             "布団の確認",
-            "です"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "布団の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "布団の確認をお願いします"
+          "correctAnswer": "布団の確認です"
         },
         {
           "id": "u8_l8_7",
@@ -1727,10 +1719,10 @@ export const unit08: DojoUnit = {
           "english": "Confirming Breakfast",
           "audioText": "ちょうしょくのかくにん",
           "options": [
-            "Confirming Hot spring",
-            "Traditional multi-course feast",
+            "Confirming Reservation",
+            "Confirming Breakfast",
             "Open-air hot spring bath",
-            "Confirming Breakfast"
+            "Dinner"
           ],
           "correctAnswer": "Confirming Breakfast"
         },
@@ -1743,34 +1735,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Confirming Breakfast'",
           "audioText": "ちょうしょくのかくにん",
           "tileBank": [
-            "し",
-            "ょ",
-            "ょ",
-            "の",
             "く",
+            "の",
+            "ょ",
             "ち",
-            "か",
-            "う"
+            "う",
+            "ょ",
+            "し",
+            "か"
           ],
           "correctAnswer": "ちょうしょくのかくにん"
         },
         {
           "id": "u8_l9_3",
           "type": "cloze",
-          "prompt": "私は夕食の確認がすきです",
-          "furigana": "わたしはゆうしょくのかくにんがすきです",
-          "romaji": "Watashi wa yuushoku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Dinner.",
-          "audioText": "夕食の確認",
-          "clozeSentence": "これは夕食の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な夕食の確認です。",
+          "furigana": "これはいちばんたいせつなゆうしょくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na yuushoku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Dinner.",
+          "audioText": "これは夕食の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な夕食の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l9_4",
@@ -1781,11 +1774,11 @@ export const unit08: DojoUnit = {
           "english": "This is Confirming Dinner.",
           "audioText": "これは夕食の確認です",
           "scrambleTokens": [
-            "ではありません",
             "夕食の確認",
             "です",
             "それ",
-            "これは"
+            "これは",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1814,24 +1807,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l9_6",
           "type": "dictate",
-          "prompt": "懐石料理の確認をお願いします",
-          "furigana": "かいせきりょうりのかくにんをおねがいします",
-          "romaji": "kaiseki ryouri no kakunin o onegaishimasu.",
-          "english": "Confirming Traditional multi-course feast, please.",
-          "audioText": "懐石料理の確認をお願いします",
+          "prompt": "懐石料理の確認です",
+          "furigana": "かいせきりょうりのかくにんです",
+          "romaji": "kaiseki ryouri no kakunin desu.",
+          "english": "It is Confirming Traditional multi-course feast.",
+          "audioText": "懐石料理の確認です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "を",
-            "です",
-            "懐石料理の確認"
+            "ではありません",
+            "これ",
+            "懐石料理の確認",
+            "です"
           ],
           "dictateSolution": [
             "懐石料理の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "懐石料理の確認をお願いします"
+          "correctAnswer": "懐石料理の確認です"
         },
         {
           "id": "u8_l9_7",
@@ -1938,10 +1929,10 @@ export const unit08: DojoUnit = {
           "english": "Confirming Towel",
           "audioText": "タオルのかくにん",
           "options": [
-            "Changing / dressing room",
-            "Confirming Light cotton kimono",
+            "Hot spring",
+            "Confirming Reservation",
             "Confirming Towel",
-            "Traditional multi-course feast"
+            "Japanese sleeping futon"
           ],
           "correctAnswer": "Confirming Towel"
         },
@@ -1954,34 +1945,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Confirming Towel'",
           "audioText": "タオルのかくにん",
           "tileBank": [
-            "ん",
-            "の",
-            "か",
+            "ル",
             "オ",
             "タ",
-            "ル",
-            "に",
-            "く"
+            "か",
+            "の",
+            "く",
+            "ん",
+            "に"
           ],
           "correctAnswer": "タオルのかくにん"
         },
         {
           "id": "u8_l10_3",
           "type": "cloze",
-          "prompt": "私は脱衣所の確認がすきです",
-          "furigana": "わたしはだついじょのかくにんがすきです",
-          "romaji": "Watashi wa datsuijo no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Changing / dressing room.",
-          "audioText": "脱衣所の確認",
-          "clozeSentence": "これは脱衣所の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な脱衣所の確認です。",
+          "furigana": "これはいちばんたいせつなだついじょのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na datsuijo no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Changing / dressing room.",
+          "audioText": "これは脱衣所の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な脱衣所の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l10_4",
@@ -1992,10 +1984,10 @@ export const unit08: DojoUnit = {
           "english": "This is Confirming Changing / dressing room.",
           "audioText": "これは脱衣所の確認です",
           "scrambleTokens": [
-            "です",
-            "それ",
             "ではありません",
             "これは",
+            "です",
+            "それ",
             "脱衣所の確認"
           ],
           "scrambleSolution": [
@@ -2025,24 +2017,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l10_6",
           "type": "dictate",
-          "prompt": "貸切の確認をお願いします",
-          "furigana": "かしきりのかくにんをおねがいします",
-          "romaji": "kashikiri no kakunin o onegaishimasu.",
-          "english": "Confirming Private hire / reserved bath, please.",
-          "audioText": "貸切の確認をお願いします",
+          "prompt": "貸切の確認です",
+          "furigana": "かしきりのかくにんです",
+          "romaji": "kashikiri no kakunin desu.",
+          "english": "It is Confirming Private hire / reserved bath.",
+          "audioText": "貸切の確認です",
           "dictateTokens": [
+            "ではありません",
             "です",
-            "貸切の確認",
-            "お願いします",
-            "ありがとう",
-            "を"
+            "これ",
+            "貸切の確認"
           ],
           "dictateSolution": [
             "貸切の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "貸切の確認をお願いします"
+          "correctAnswer": "貸切の確認です"
         },
         {
           "id": "u8_l10_7",
@@ -2152,10 +2142,10 @@ export const unit08: DojoUnit = {
           "english": "Confirming Hot spring",
           "audioText": "おんせんのかくにん",
           "options": [
-            "Light cotton kimono",
-            "Hot spring",
+            "Japanese sleeping futon",
+            "Changing / dressing room",
             "Confirming Hot spring",
-            "Confirming Japanese-style tatami room"
+            "Confirming Traditional Japanese inn"
           ],
           "correctAnswer": "Confirming Hot spring"
         },
@@ -2168,34 +2158,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Confirming Hot spring'",
           "audioText": "おんせんのかくにん",
           "tileBank": [
-            "く",
-            "か",
-            "に",
             "の",
-            "お",
             "せ",
             "ん",
-            "ん"
+            "か",
+            "ん",
+            "お",
+            "く",
+            "に"
           ],
           "correctAnswer": "おんせんのかくにん"
         },
         {
           "id": "u8_l11_3",
           "type": "cloze",
-          "prompt": "私は旅館の確認がすきです",
-          "furigana": "わたしはりょかんのかくにんがすきです",
-          "romaji": "Watashi wa ryokan no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Traditional Japanese inn.",
-          "audioText": "旅館の確認",
-          "clozeSentence": "これは旅館の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な旅館の確認です。",
+          "furigana": "これはいちばんたいせつなりょかんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ryokan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Traditional Japanese inn.",
+          "audioText": "これは旅館の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な旅館の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l11_4",
@@ -2206,10 +2197,10 @@ export const unit08: DojoUnit = {
           "english": "This is Confirming Traditional Japanese inn.",
           "audioText": "これは旅館の確認です",
           "scrambleTokens": [
-            "です",
             "旅館の確認",
             "それ",
             "ではありません",
+            "です",
             "これは"
           ],
           "scrambleSolution": [
@@ -2239,24 +2230,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l11_6",
           "type": "dictate",
-          "prompt": "露天風呂の確認をお願いします",
-          "furigana": "ろてんぶろのかくにんをおねがいします",
-          "romaji": "rotenburo no kakunin o onegaishimasu.",
-          "english": "Confirming Open-air hot spring bath, please.",
-          "audioText": "露天風呂の確認をお願いします",
+          "prompt": "露天風呂の確認です",
+          "furigana": "ろてんぶろのかくにんです",
+          "romaji": "rotenburo no kakunin desu.",
+          "english": "It is Confirming Open-air hot spring bath.",
+          "audioText": "露天風呂の確認です",
           "dictateTokens": [
-            "です",
+            "これ",
+            "ではありません",
             "露天風呂の確認",
-            "を",
-            "お願いします",
-            "ありがとう"
+            "です"
           ],
           "dictateSolution": [
             "露天風呂の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "露天風呂の確認をお願いします"
+          "correctAnswer": "露天風呂の確認です"
         },
         {
           "id": "u8_l11_7",
@@ -2364,10 +2353,10 @@ export const unit08: DojoUnit = {
           "english": "Confirming Light cotton kimono",
           "audioText": "ゆかたのかくにん",
           "options": [
-            "Confirming Private hire / reserved bath",
-            "Confirming Light cotton kimono",
-            "Confirming Room",
-            "Confirming Hot spring"
+            "Confirming Traditional multi-course feast",
+            "Confirming Tatami mat flooring",
+            "Tatami mat flooring",
+            "Confirming Light cotton kimono"
           ],
           "correctAnswer": "Confirming Light cotton kimono"
         },
@@ -2380,26 +2369,26 @@ export const unit08: DojoUnit = {
           "english": "Build 'Confirming Light cotton kimono'",
           "audioText": "ゆかたのかくにん",
           "tileBank": [
-            "く",
-            "か",
-            "か",
             "に",
-            "た",
+            "か",
+            "ん",
+            "か",
             "ゆ",
             "の",
-            "ん"
+            "た",
+            "く"
           ],
           "correctAnswer": "ゆかたのかくにん"
         },
         {
           "id": "u8_l12_3",
           "type": "cloze",
-          "prompt": "私は予約の確認がすきです",
-          "furigana": "わたしはよやくのかくにんがすきです",
-          "romaji": "Watashi wa yoyaku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Reservation.",
-          "audioText": "予約の確認",
-          "clozeSentence": "これは予約の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な予約の確認です。",
+          "furigana": "これはいちばんたいせつなよやくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na yoyaku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Reservation.",
+          "audioText": "これは予約の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な予約の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2407,7 +2396,8 @@ export const unit08: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l12_4",
@@ -2418,11 +2408,11 @@ export const unit08: DojoUnit = {
           "english": "This is Confirming Reservation.",
           "audioText": "これは予約の確認です",
           "scrambleTokens": [
-            "です",
-            "これは",
-            "ではありません",
             "それ",
-            "予約の確認"
+            "ではありません",
+            "です",
+            "予約の確認",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2451,24 +2441,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l12_6",
           "type": "dictate",
-          "prompt": "部屋の確認をお願いします",
-          "furigana": "へやのかくにんをおねがいします",
-          "romaji": "heya no kakunin o onegaishimasu.",
-          "english": "Confirming Room, please.",
-          "audioText": "部屋の確認をお願いします",
+          "prompt": "部屋の確認です",
+          "furigana": "へやのかくにんです",
+          "romaji": "heya no kakunin desu.",
+          "english": "It is Confirming Room.",
+          "audioText": "部屋の確認です",
           "dictateTokens": [
-            "部屋の確認",
-            "ありがとう",
+            "これ",
             "です",
-            "お願いします",
-            "を"
+            "ではありません",
+            "部屋の確認"
           ],
           "dictateSolution": [
             "部屋の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "部屋の確認をお願いします"
+          "correctAnswer": "部屋の確認です"
         },
         {
           "id": "u8_l12_7",
@@ -2572,10 +2560,10 @@ export const unit08: DojoUnit = {
           "english": "Hot spring",
           "audioText": "おんせん",
           "options": [
-            "Tatami mat flooring",
+            "Confirming Open-air hot spring bath",
+            "Dinner",
             "Hot spring",
-            "Traditional multi-course feast",
-            "Confirming Reservation"
+            "Changing / dressing room"
           ],
           "correctAnswer": "Hot spring"
         },
@@ -2588,34 +2576,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Hot spring'",
           "audioText": "おんせん",
           "tileBank": [
-            "さ",
+            "わ",
+            "も",
             "ん",
-            "ま",
-            "や",
             "お",
-            "し",
             "ん",
-            "せ"
+            "け",
+            "せ",
+            "り"
           ],
           "correctAnswer": "おんせん"
         },
         {
           "id": "u8_l13_3",
           "type": "cloze",
-          "prompt": "私は旅館がすきです",
-          "furigana": "わたしはりょかんがすきです",
-          "romaji": "Watashi wa ryokan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Traditional Japanese inn.",
-          "audioText": "旅館",
-          "clozeSentence": "これは旅館 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な旅館です。",
+          "furigana": "これはいちばんたいせつなりょかんです。",
+          "romaji": "Kore wa ichiban taisetsu na ryokan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Traditional Japanese inn.",
+          "audioText": "これは旅館です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な旅館です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l13_4",
@@ -2628,9 +2617,9 @@ export const unit08: DojoUnit = {
           "scrambleTokens": [
             "これは",
             "旅館",
-            "それ",
+            "ではありません",
             "です",
-            "ではありません"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2659,24 +2648,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l13_6",
           "type": "dictate",
-          "prompt": "露天風呂をお願いします",
-          "furigana": "ろてんぶろをおねがいします",
-          "romaji": "rotenburo o onegaishimasu.",
-          "english": "Open-air hot spring bath, please.",
-          "audioText": "露天風呂をお願いします",
+          "prompt": "露天風呂です",
+          "furigana": "ろてんぶろです",
+          "romaji": "rotenburo desu.",
+          "english": "It is Open-air hot spring bath.",
+          "audioText": "露天風呂です",
           "dictateTokens": [
-            "露天風呂",
-            "を",
-            "お願いします",
-            "ありがとう",
-            "です"
+            "これ",
+            "です",
+            "ではありません",
+            "露天風呂"
           ],
           "dictateSolution": [
             "露天風呂",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "露天風呂をお願いします"
+          "correctAnswer": "露天風呂です"
         },
         {
           "id": "u8_l13_7",
@@ -2778,10 +2765,10 @@ export const unit08: DojoUnit = {
           "english": "Light cotton kimono",
           "audioText": "ゆかた",
           "options": [
-            "Confirming Reservation",
-            "Hot spring",
-            "Confirming Traditional Japanese inn",
-            "Light cotton kimono"
+            "Reservation",
+            "Light cotton kimono",
+            "Confirming Japanese-style tatami room",
+            "Confirming Changing / dressing room"
           ],
           "correctAnswer": "Light cotton kimono"
         },
@@ -2794,34 +2781,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Light cotton kimono'",
           "audioText": "ゆかた",
           "tileBank": [
-            "ふ",
-            "ぬ",
-            "ら",
-            "ゆ",
-            "や",
+            "ね",
+            "せ",
+            "た",
             "か",
             "ま",
-            "た"
+            "ゆ",
+            "ふ",
+            "く"
           ],
           "correctAnswer": "ゆかた"
         },
         {
           "id": "u8_l14_3",
           "type": "cloze",
-          "prompt": "私は予約がすきです",
-          "furigana": "わたしはよやくがすきです",
-          "romaji": "Watashi wa yoyaku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Reservation.",
-          "audioText": "予約",
-          "clozeSentence": "これは予約 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な予約です。",
+          "furigana": "これはいちばんたいせつなよやくです。",
+          "romaji": "Kore wa ichiban taisetsu na yoyaku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Reservation.",
+          "audioText": "これは予約です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な予約です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l14_4",
@@ -2832,11 +2820,11 @@ export const unit08: DojoUnit = {
           "english": "This is Reservation.",
           "audioText": "これは予約です",
           "scrambleTokens": [
+            "予約",
             "これは",
             "です",
             "それ",
-            "ではありません",
-            "予約"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2865,24 +2853,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l14_6",
           "type": "dictate",
-          "prompt": "部屋をお願いします",
-          "furigana": "へやをおねがいします",
-          "romaji": "heya o onegaishimasu.",
-          "english": "Room, please.",
-          "audioText": "部屋をお願いします",
+          "prompt": "部屋です",
+          "furigana": "へやです",
+          "romaji": "heya desu.",
+          "english": "It is Room.",
+          "audioText": "部屋です",
           "dictateTokens": [
-            "を",
-            "部屋",
             "です",
-            "お願いします",
-            "ありがとう"
+            "ではありません",
+            "部屋",
+            "これ"
           ],
           "dictateSolution": [
             "部屋",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "部屋をお願いします"
+          "correctAnswer": "部屋です"
         },
         {
           "id": "u8_l14_7",
@@ -2983,10 +2969,10 @@ export const unit08: DojoUnit = {
           "english": "Japanese-style tatami room",
           "audioText": "わしつ",
           "options": [
-            "Confirming Open-air hot spring bath",
             "Japanese-style tatami room",
-            "Room",
-            "Confirming Room"
+            "Confirming Light cotton kimono",
+            "Private hire / reserved bath",
+            "Confirming Traditional multi-course feast"
           ],
           "correctAnswer": "Japanese-style tatami room"
         },
@@ -2999,34 +2985,35 @@ export const unit08: DojoUnit = {
           "english": "Build 'Japanese-style tatami room'",
           "audioText": "わしつ",
           "tileBank": [
-            "つ",
             "か",
-            "み",
-            "る",
-            "し",
             "わ",
-            "お",
-            "ふ"
+            "つ",
+            "ゆ",
+            "し",
+            "は",
+            "こ",
+            "ひ"
           ],
           "correctAnswer": "わしつ"
         },
         {
           "id": "u8_l15_3",
           "type": "cloze",
-          "prompt": "私は畳がすきです",
-          "furigana": "わたしはたたみがすきです",
-          "romaji": "Watashi wa tatami ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Tatami mat flooring.",
-          "audioText": "畳",
-          "clozeSentence": "これは畳 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な畳です。",
+          "furigana": "これはいちばんたいせつなたたみです。",
+          "romaji": "Kore wa ichiban taisetsu na tatami desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Tatami mat flooring.",
+          "audioText": "これは畳です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な畳です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u8_l15_4",
@@ -3038,10 +3025,10 @@ export const unit08: DojoUnit = {
           "audioText": "これは畳です",
           "scrambleTokens": [
             "です",
-            "これは",
-            "畳",
+            "ではありません",
             "それ",
-            "ではありません"
+            "畳",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -3070,24 +3057,22 @@ export const unit08: DojoUnit = {
         {
           "id": "u8_l15_6",
           "type": "dictate",
-          "prompt": "布団をお願いします",
-          "furigana": "ふとんをおねがいします",
-          "romaji": "futon o onegaishimasu.",
-          "english": "Japanese sleeping futon, please.",
-          "audioText": "布団をお願いします",
+          "prompt": "布団です",
+          "furigana": "ふとんです",
+          "romaji": "futon desu.",
+          "english": "It is Japanese sleeping futon.",
+          "audioText": "布団です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "お願いします",
+            "これ",
+            "布団",
             "です",
-            "布団"
+            "ではありません"
           ],
           "dictateSolution": [
             "布団",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "布団をお願いします"
+          "correctAnswer": "布団です"
         },
         {
           "id": "u8_l15_7",
@@ -3172,10 +3157,10 @@ export const unit08: DojoUnit = {
         "english": "Hot spring",
         "audioText": "おんせん",
         "options": [
-          "Confirming Light cotton kimono",
+          "Tatami mat flooring",
+          "Room",
           "Hot spring",
-          "Confirming Hot spring",
-          "Traditional multi-course feast"
+          "Confirming Breakfast"
         ],
         "correctAnswer": "Hot spring"
       },
@@ -3188,14 +3173,14 @@ export const unit08: DojoUnit = {
         "english": "Build 'Hot spring'",
         "audioText": "おんせん",
         "tileBank": [
-          "ん",
-          "と",
-          "ん",
-          "は",
-          "せ",
           "お",
-          "す",
-          "の"
+          "せ",
+          "む",
+          "み",
+          "も",
+          "ん",
+          "や",
+          "ん"
         ],
         "correctAnswer": "おんせん"
       },
@@ -3208,10 +3193,10 @@ export const unit08: DojoUnit = {
         "english": "Japanese-style tatami room",
         "audioText": "わしつ",
         "options": [
-          "Confirming Reservation",
-          "Confirming Open-air hot spring bath",
-          "Confirming Room",
-          "Japanese-style tatami room"
+          "Confirming Japanese-style tatami room",
+          "Japanese-style tatami room",
+          "Japanese sleeping futon",
+          "Confirming Hot spring"
         ],
         "correctAnswer": "Japanese-style tatami room"
       },
@@ -3224,14 +3209,14 @@ export const unit08: DojoUnit = {
         "english": "Build 'Japanese-style tatami room'",
         "audioText": "わしつ",
         "tileBank": [
-          "て",
-          "は",
-          "つ",
+          "か",
+          "を",
+          "い",
+          "ふ",
+          "ま",
+          "わ",
           "し",
-          "く",
-          "る",
-          "り",
-          "わ"
+          "つ"
         ],
         "correctAnswer": "わしつ"
       },
@@ -3244,10 +3229,10 @@ export const unit08: DojoUnit = {
         "english": "Towel",
         "audioText": "タオル",
         "options": [
-          "Confirming Traditional Japanese inn",
-          "Confirming Open-air hot spring bath",
-          "Breakfast",
-          "Towel"
+          "Japanese sleeping futon",
+          "Towel",
+          "Confirming Traditional multi-course feast",
+          "Confirming Open-air hot spring bath"
         ],
         "correctAnswer": "Towel"
       },
@@ -3260,14 +3245,14 @@ export const unit08: DojoUnit = {
         "english": "Build 'Towel'",
         "audioText": "タオル",
         "tileBank": [
-          "ル",
-          "あ",
-          "め",
-          "タ",
+          "な",
+          "く",
+          "ゆ",
           "オ",
-          "ち",
-          "す",
-          "ね"
+          "せ",
+          "タ",
+          "や",
+          "ル"
         ],
         "correctAnswer": "タオル"
       },
@@ -3280,10 +3265,10 @@ export const unit08: DojoUnit = {
         "english": "Confirming Light cotton kimono",
         "audioText": "ゆかたのかくにん",
         "options": [
-          "Open-air hot spring bath",
-          "Room",
-          "Japanese-style tatami room",
-          "Confirming Light cotton kimono"
+          "Confirming Light cotton kimono",
+          "Confirming Traditional Japanese inn",
+          "Towel",
+          "Private hire / reserved bath"
         ],
         "correctAnswer": "Confirming Light cotton kimono"
       },
@@ -3296,13 +3281,13 @@ export const unit08: DojoUnit = {
         "english": "Build 'Confirming Light cotton kimono'",
         "audioText": "ゆかたのかくにん",
         "tileBank": [
+          "く",
           "ゆ",
-          "の",
           "た",
           "に",
-          "く",
           "か",
           "ん",
+          "の",
           "か"
         ],
         "correctAnswer": "ゆかたのかくにん"
@@ -3316,10 +3301,10 @@ export const unit08: DojoUnit = {
         "english": "Confirming Breakfast",
         "audioText": "ちょうしょくのかくにん",
         "options": [
-          "Confirming Hot spring",
-          "Traditional multi-course feast",
+          "Confirming Reservation",
+          "Confirming Breakfast",
           "Open-air hot spring bath",
-          "Confirming Breakfast"
+          "Dinner"
         ],
         "correctAnswer": "Confirming Breakfast"
       },
@@ -3332,14 +3317,14 @@ export const unit08: DojoUnit = {
         "english": "Build 'Confirming Breakfast'",
         "audioText": "ちょうしょくのかくにん",
         "tileBank": [
-          "し",
-          "ょ",
-          "ょ",
-          "の",
           "く",
+          "の",
+          "ょ",
           "ち",
-          "か",
-          "う"
+          "う",
+          "ょ",
+          "し",
+          "か"
         ],
         "correctAnswer": "ちょうしょくのかくにん"
       },
@@ -3352,10 +3337,10 @@ export const unit08: DojoUnit = {
         "english": "Confirming Hot spring",
         "audioText": "おんせんのかくにん",
         "options": [
-          "Light cotton kimono",
-          "Hot spring",
+          "Japanese sleeping futon",
+          "Changing / dressing room",
           "Confirming Hot spring",
-          "Confirming Japanese-style tatami room"
+          "Confirming Traditional Japanese inn"
         ],
         "correctAnswer": "Confirming Hot spring"
       },
@@ -3368,14 +3353,14 @@ export const unit08: DojoUnit = {
         "english": "Build 'Confirming Hot spring'",
         "audioText": "おんせんのかくにん",
         "tileBank": [
-          "く",
-          "か",
-          "に",
           "の",
-          "お",
           "せ",
           "ん",
-          "ん"
+          "か",
+          "ん",
+          "お",
+          "く",
+          "に"
         ],
         "correctAnswer": "おんせんのかくにん"
       }

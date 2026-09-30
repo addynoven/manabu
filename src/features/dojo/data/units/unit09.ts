@@ -49,9 +49,9 @@ export const unit09: DojoUnit = {
           "english": "Hospital / clinic",
           "audioText": "びょういん",
           "options": [
-            "Pharmacy",
-            "Confirming Health insurance card",
-            "Medicine",
+            "Painful / hurts",
+            "Confirming Headache",
+            "Common cold",
             "Hospital / clinic"
           ],
           "correctAnswer": "Hospital / clinic"
@@ -65,34 +65,35 @@ export const unit09: DojoUnit = {
           "english": "Build 'Hospital / clinic'",
           "audioText": "びょういん",
           "tileBank": [
-            "び",
-            "わ",
-            "い",
-            "け",
             "ん",
-            "う",
+            "い",
+            "お",
             "ょ",
-            "さ"
+            "う",
+            "さ",
+            "と",
+            "び"
           ],
           "correctAnswer": "びょういん"
         },
         {
           "id": "u9_l1_3",
           "type": "cloze",
-          "prompt": "私は薬局がすきです",
-          "furigana": "わたしはやっきょくがすきです",
-          "romaji": "Watashi wa yakkyoku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Pharmacy.",
-          "audioText": "薬局",
-          "clozeSentence": "これは薬局 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な薬局です。",
+          "furigana": "これはいちばんたいせつなやっきょくです。",
+          "romaji": "Kore wa ichiban taisetsu na yakkyoku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Pharmacy.",
+          "audioText": "これは薬局です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な薬局です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l1_4",
@@ -103,11 +104,11 @@ export const unit09: DojoUnit = {
           "english": "This is Pharmacy.",
           "audioText": "これは薬局です",
           "scrambleTokens": [
-            "です",
-            "それ",
             "これは",
-            "薬局",
-            "ではありません"
+            "それ",
+            "ではありません",
+            "です",
+            "薬局"
           ],
           "scrambleSolution": [
             "これは",
@@ -136,24 +137,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l1_6",
           "type": "dictate",
-          "prompt": "熱をお願いします",
-          "furigana": "ねつをおねがいします",
-          "romaji": "netsu o onegaishimasu.",
-          "english": "Fever, please.",
-          "audioText": "熱をお願いします",
+          "prompt": "熱です",
+          "furigana": "ねつです",
+          "romaji": "netsu desu.",
+          "english": "It is Fever.",
+          "audioText": "熱です",
           "dictateTokens": [
+            "ではありません",
+            "これ",
             "です",
-            "お願いします",
-            "ありがとう",
-            "を",
             "熱"
           ],
           "dictateSolution": [
             "熱",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "熱をお願いします"
+          "correctAnswer": "熱です"
         },
         {
           "id": "u9_l1_7",
@@ -253,10 +252,10 @@ export const unit09: DojoUnit = {
           "english": "Headache",
           "audioText": "ずつう",
           "options": [
-            "Health insurance card",
-            "Cough",
-            "Headache",
-            "Confirming Pharmacy"
+            "Confirming Fever",
+            "Hospital / clinic",
+            "Confirming Throat",
+            "Headache"
           ],
           "correctAnswer": "Headache"
         },
@@ -269,13 +268,13 @@ export const unit09: DojoUnit = {
           "english": "Build 'Headache'",
           "audioText": "ずつう",
           "tileBank": [
-            "い",
-            "つ",
-            "む",
-            "の",
-            "き",
+            "ち",
             "う",
-            "て",
+            "ん",
+            "え",
+            "せ",
+            "ま",
+            "つ",
             "ず"
           ],
           "correctAnswer": "ずつう"
@@ -283,20 +282,21 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l2_3",
           "type": "cloze",
-          "prompt": "私は喉がすきです",
-          "furigana": "わたしはのどがすきです",
-          "romaji": "Watashi wa nodo ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Throat.",
-          "audioText": "喉",
-          "clozeSentence": "これは喉 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な喉です。",
+          "furigana": "これはいちばんたいせつなのどです。",
+          "romaji": "Kore wa ichiban taisetsu na nodo desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Throat.",
+          "audioText": "これは喉です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な喉です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l2_4",
@@ -307,10 +307,10 @@ export const unit09: DojoUnit = {
           "english": "This is Throat.",
           "audioText": "これは喉です",
           "scrambleTokens": [
-            "それ",
-            "これは",
-            "ではありません",
             "です",
+            "それ",
+            "ではありません",
+            "これは",
             "喉"
           ],
           "scrambleSolution": [
@@ -340,24 +340,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l2_6",
           "type": "dictate",
-          "prompt": "お腹をお願いします",
-          "furigana": "おなかをおねがいします",
-          "romaji": "onaka o onegaishimasu.",
-          "english": "Stomach / belly, please.",
-          "audioText": "お腹をお願いします",
+          "prompt": "お腹です",
+          "furigana": "おなかです",
+          "romaji": "onaka desu.",
+          "english": "It is Stomach / belly.",
+          "audioText": "お腹です",
           "dictateTokens": [
-            "を",
-            "お腹",
+            "これ",
+            "ではありません",
             "です",
-            "お願いします",
-            "ありがとう"
+            "お腹"
           ],
           "dictateSolution": [
             "お腹",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "お腹をお願いします"
+          "correctAnswer": "お腹です"
         },
         {
           "id": "u9_l2_7",
@@ -457,10 +455,10 @@ export const unit09: DojoUnit = {
           "english": "Painful / hurts",
           "audioText": "いたい",
           "options": [
+            "Common cold",
+            "Confirming Health insurance card",
             "Painful / hurts",
-            "Confirming Headache",
-            "Confirming Medicine",
-            "Confirming Headache"
+            "Headache"
           ],
           "correctAnswer": "Painful / hurts"
         },
@@ -473,34 +471,35 @@ export const unit09: DojoUnit = {
           "english": "Build 'Painful / hurts'",
           "audioText": "いたい",
           "tileBank": [
-            "よ",
-            "に",
-            "ね",
+            "ぬ",
+            "み",
             "い",
-            "せ",
-            "ら",
+            "れ",
+            "い",
+            "や",
             "た",
-            "い"
+            "り"
           ],
           "correctAnswer": "いたい"
         },
         {
           "id": "u9_l3_3",
           "type": "cloze",
-          "prompt": "私は風邪がすきです",
-          "furigana": "わたしはかぜがすきです",
-          "romaji": "Watashi wa kaze ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Common cold.",
-          "audioText": "風邪",
-          "clozeSentence": "これは風邪 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な風邪です。",
+          "furigana": "これはいちばんたいせつなかぜです。",
+          "romaji": "Kore wa ichiban taisetsu na kaze desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Common cold.",
+          "audioText": "これは風邪です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な風邪です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l3_4",
@@ -511,10 +510,10 @@ export const unit09: DojoUnit = {
           "english": "This is Common cold.",
           "audioText": "これは風邪です",
           "scrambleTokens": [
-            "ではありません",
-            "それ",
             "です",
             "風邪",
+            "ではありません",
+            "それ",
             "これは"
           ],
           "scrambleSolution": [
@@ -544,24 +543,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l3_6",
           "type": "dictate",
-          "prompt": "咳をお願いします",
-          "furigana": "せきをおねがいします",
-          "romaji": "seki o onegaishimasu.",
-          "english": "Cough, please.",
-          "audioText": "咳をお願いします",
+          "prompt": "咳です",
+          "furigana": "せきです",
+          "romaji": "seki desu.",
+          "english": "It is Cough.",
+          "audioText": "咳です",
           "dictateTokens": [
-            "を",
-            "お願いします",
             "咳",
             "です",
-            "ありがとう"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "咳",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "咳をお願いします"
+          "correctAnswer": "咳です"
         },
         {
           "id": "u9_l3_7",
@@ -664,10 +661,10 @@ export const unit09: DojoUnit = {
           "english": "Medicine",
           "audioText": "くすり",
           "options": [
-            "Confirming Headache",
-            "Confirming After meal",
+            "Confirming Pharmacy",
             "Medicine",
-            "Confirming Doctor's prescription"
+            "Take care / get well soon",
+            "Cough"
           ],
           "correctAnswer": "Medicine"
         },
@@ -680,26 +677,26 @@ export const unit09: DojoUnit = {
           "english": "Build 'Medicine'",
           "audioText": "くすり",
           "tileBank": [
-            "る",
-            "く",
             "め",
-            "り",
+            "え",
             "す",
-            "ひ",
-            "か",
-            "に"
+            "れ",
+            "り",
+            "く",
+            "ほ",
+            "み"
           ],
           "correctAnswer": "くすり"
         },
         {
           "id": "u9_l4_3",
           "type": "cloze",
-          "prompt": "私は保険証がすきです",
-          "furigana": "わたしはほけんしょうがすきです",
-          "romaji": "Watashi wa hokenshou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Health insurance card.",
-          "audioText": "保険証",
-          "clozeSentence": "これは保険証 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な保険証です。",
+          "furigana": "これはいちばんたいせつなほけんしょうです。",
+          "romaji": "Kore wa ichiban taisetsu na hokenshou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Health insurance card.",
+          "audioText": "これは保険証です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な保険証です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -707,7 +704,8 @@ export const unit09: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l4_4",
@@ -718,11 +716,11 @@ export const unit09: DojoUnit = {
           "english": "This is Health insurance card.",
           "audioText": "これは保険証です",
           "scrambleTokens": [
-            "です",
-            "これは",
+            "それ",
             "ではありません",
-            "保険証",
-            "それ"
+            "これは",
+            "です",
+            "保険証"
           ],
           "scrambleSolution": [
             "これは",
@@ -751,24 +749,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l4_6",
           "type": "dictate",
-          "prompt": "処方箋をお願いします",
-          "furigana": "しょほうせんをおねがいします",
-          "romaji": "shohousen o onegaishimasu.",
-          "english": "Doctor's prescription, please.",
-          "audioText": "処方箋をお願いします",
+          "prompt": "処方箋です",
+          "furigana": "しょほうせんです",
+          "romaji": "shohousen desu.",
+          "english": "It is Doctor's prescription.",
+          "audioText": "処方箋です",
           "dictateTokens": [
-            "を",
             "処方箋",
-            "ありがとう",
-            "です",
-            "お願いします"
+            "ではありません",
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "処方箋",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "処方箋をお願いします"
+          "correctAnswer": "処方箋です"
         },
         {
           "id": "u9_l4_7",
@@ -868,10 +864,10 @@ export const unit09: DojoUnit = {
           "english": "After meal",
           "audioText": "しょくご",
           "options": [
-            "After meal",
-            "Confirming Fever",
-            "Confirming Painful / hurts",
-            "Confirming Pharmacy"
+            "Confirming Common cold",
+            "Confirming Throat",
+            "Confirming Pharmacy",
+            "After meal"
           ],
           "correctAnswer": "After meal"
         },
@@ -884,34 +880,35 @@ export const unit09: DojoUnit = {
           "english": "Build 'After meal'",
           "audioText": "しょくご",
           "tileBank": [
-            "ょ",
-            "り",
-            "し",
-            "く",
+            "そ",
             "ご",
-            "み",
-            "き",
-            "ん"
+            "ょ",
+            "し",
+            "あ",
+            "く",
+            "て",
+            "ほ"
           ],
           "correctAnswer": "しょくご"
         },
         {
           "id": "u9_l5_3",
           "type": "cloze",
-          "prompt": "私はアレルギーがすきです",
-          "furigana": "わたしはアレルギーがすきです",
-          "romaji": "Watashi wa arerugii ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Allergy.",
-          "audioText": "アレルギー",
-          "clozeSentence": "これはアレルギー {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なアレルギーです。",
+          "furigana": "これはいちばんたいせつなアレルギーです。",
+          "romaji": "Kore wa ichiban taisetsu na arerugii desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Allergy.",
+          "audioText": "これはアレルギーです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なアレルギーです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l5_4",
@@ -922,11 +919,11 @@ export const unit09: DojoUnit = {
           "english": "This is Allergy.",
           "audioText": "これはアレルギーです",
           "scrambleTokens": [
-            "です",
-            "それ",
             "ではありません",
-            "これは",
-            "アレルギー"
+            "アレルギー",
+            "それ",
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -955,24 +952,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l5_6",
           "type": "dictate",
-          "prompt": "お大事にをお願いします",
-          "furigana": "おだいじにをおねがいします",
-          "romaji": "odaiji ni o onegaishimasu.",
-          "english": "Take care / get well soon, please.",
-          "audioText": "お大事にをお願いします",
+          "prompt": "お大事にです",
+          "furigana": "おだいじにです",
+          "romaji": "odaiji ni desu.",
+          "english": "It is Take care / get well soon.",
+          "audioText": "お大事にです",
           "dictateTokens": [
-            "ありがとう",
             "です",
+            "ではありません",
             "お大事に",
-            "を",
-            "お願いします"
+            "これ"
           ],
           "dictateSolution": [
             "お大事に",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "お大事にをお願いします"
+          "correctAnswer": "お大事にです"
         },
         {
           "id": "u9_l5_7",
@@ -1079,10 +1074,10 @@ export const unit09: DojoUnit = {
           "english": "Confirming Hospital / clinic",
           "audioText": "びょういんのかくにん",
           "options": [
-            "Confirming Throat",
+            "Confirming Cough",
             "Confirming Hospital / clinic",
-            "Throat",
-            "Confirming Common cold"
+            "Headache",
+            "Confirming Stomach / belly"
           ],
           "correctAnswer": "Confirming Hospital / clinic"
         },
@@ -1095,34 +1090,35 @@ export const unit09: DojoUnit = {
           "english": "Build 'Confirming Hospital / clinic'",
           "audioText": "びょういんのかくにん",
           "tileBank": [
-            "び",
-            "か",
-            "い",
-            "ん",
-            "の",
-            "う",
             "ょ",
-            "く"
+            "ん",
+            "び",
+            "の",
+            "く",
+            "う",
+            "い",
+            "か"
           ],
           "correctAnswer": "びょういんのかくにん"
         },
         {
           "id": "u9_l6_3",
           "type": "cloze",
-          "prompt": "私は薬局の確認がすきです",
-          "furigana": "わたしはやっきょくのかくにんがすきです",
-          "romaji": "Watashi wa yakkyoku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Pharmacy.",
-          "audioText": "薬局の確認",
-          "clozeSentence": "これは薬局の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な薬局の確認です。",
+          "furigana": "これはいちばんたいせつなやっきょくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na yakkyoku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Pharmacy.",
+          "audioText": "これは薬局の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な薬局の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l6_4",
@@ -1133,11 +1129,11 @@ export const unit09: DojoUnit = {
           "english": "This is Confirming Pharmacy.",
           "audioText": "これは薬局の確認です",
           "scrambleTokens": [
-            "薬局の確認",
-            "それ",
-            "ではありません",
             "これは",
-            "です"
+            "それ",
+            "薬局の確認",
+            "です",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -1166,24 +1162,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l6_6",
           "type": "dictate",
-          "prompt": "熱の確認をお願いします",
-          "furigana": "ねつのかくにんをおねがいします",
-          "romaji": "netsu no kakunin o onegaishimasu.",
-          "english": "Confirming Fever, please.",
-          "audioText": "熱の確認をお願いします",
+          "prompt": "熱の確認です",
+          "furigana": "ねつのかくにんです",
+          "romaji": "netsu no kakunin desu.",
+          "english": "It is Confirming Fever.",
+          "audioText": "熱の確認です",
           "dictateTokens": [
-            "を",
-            "です",
-            "ありがとう",
+            "これ",
             "熱の確認",
-            "お願いします"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "熱の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "熱の確認をお願いします"
+          "correctAnswer": "熱の確認です"
         },
         {
           "id": "u9_l6_7",
@@ -1289,10 +1283,10 @@ export const unit09: DojoUnit = {
           "english": "Confirming Headache",
           "audioText": "ずつうのかくにん",
           "options": [
-            "Fever",
-            "Confirming Painful / hurts",
+            "Cough",
             "Confirming Headache",
-            "Stomach / belly"
+            "Hospital / clinic",
+            "Allergy"
           ],
           "correctAnswer": "Confirming Headache"
         },
@@ -1305,34 +1299,35 @@ export const unit09: DojoUnit = {
           "english": "Build 'Confirming Headache'",
           "audioText": "ずつうのかくにん",
           "tileBank": [
-            "つ",
+            "う",
             "く",
+            "ん",
+            "に",
             "の",
             "か",
-            "ん",
-            "ず",
-            "に",
-            "う"
+            "つ",
+            "ず"
           ],
           "correctAnswer": "ずつうのかくにん"
         },
         {
           "id": "u9_l7_3",
           "type": "cloze",
-          "prompt": "私は喉の確認がすきです",
-          "furigana": "わたしはのどのかくにんがすきです",
-          "romaji": "Watashi wa nodo no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Throat.",
-          "audioText": "喉の確認",
-          "clozeSentence": "これは喉の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な喉の確認です。",
+          "furigana": "これはいちばんたいせつなのどのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na nodo no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Throat.",
+          "audioText": "これは喉の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な喉の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l7_4",
@@ -1344,9 +1339,9 @@ export const unit09: DojoUnit = {
           "audioText": "これは喉の確認です",
           "scrambleTokens": [
             "です",
-            "これは",
             "喉の確認",
             "それ",
+            "これは",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -1376,24 +1371,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l7_6",
           "type": "dictate",
-          "prompt": "お腹の確認をお願いします",
-          "furigana": "おなかのかくにんをおねがいします",
-          "romaji": "onaka no kakunin o onegaishimasu.",
-          "english": "Confirming Stomach / belly, please.",
-          "audioText": "お腹の確認をお願いします",
+          "prompt": "お腹の確認です",
+          "furigana": "おなかのかくにんです",
+          "romaji": "onaka no kakunin desu.",
+          "english": "It is Confirming Stomach / belly.",
+          "audioText": "お腹の確認です",
           "dictateTokens": [
-            "ありがとう",
             "です",
             "お腹の確認",
-            "お願いします",
-            "を"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "お腹の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "お腹の確認をお願いします"
+          "correctAnswer": "お腹の確認です"
         },
         {
           "id": "u9_l7_7",
@@ -1499,10 +1492,10 @@ export const unit09: DojoUnit = {
           "english": "Confirming Painful / hurts",
           "audioText": "いたいのかくにん",
           "options": [
-            "After meal",
             "Confirming Painful / hurts",
-            "Confirming Medicine",
-            "Throat"
+            "Confirming Throat",
+            "Headache",
+            "Hospital / clinic"
           ],
           "correctAnswer": "Confirming Painful / hurts"
         },
@@ -1515,13 +1508,13 @@ export const unit09: DojoUnit = {
           "english": "Build 'Confirming Painful / hurts'",
           "audioText": "いたいのかくにん",
           "tileBank": [
-            "く",
             "に",
-            "か",
             "ん",
+            "く",
+            "い",
             "の",
             "い",
-            "い",
+            "か",
             "た"
           ],
           "correctAnswer": "いたいのかくにん"
@@ -1529,12 +1522,12 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l8_3",
           "type": "cloze",
-          "prompt": "私は風邪の確認がすきです",
-          "furigana": "わたしはかぜのかくにんがすきです",
-          "romaji": "Watashi wa kaze no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Common cold.",
-          "audioText": "風邪の確認",
-          "clozeSentence": "これは風邪の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な風邪の確認です。",
+          "furigana": "これはいちばんたいせつなかぜのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kaze no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Common cold.",
+          "audioText": "これは風邪の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な風邪の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1542,7 +1535,8 @@ export const unit09: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l8_4",
@@ -1553,11 +1547,11 @@ export const unit09: DojoUnit = {
           "english": "This is Confirming Common cold.",
           "audioText": "これは風邪の確認です",
           "scrambleTokens": [
-            "風邪の確認",
             "これは",
             "ではありません",
-            "です",
-            "それ"
+            "それ",
+            "風邪の確認",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1586,24 +1580,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l8_6",
           "type": "dictate",
-          "prompt": "咳の確認をお願いします",
-          "furigana": "せきのかくにんをおねがいします",
-          "romaji": "seki no kakunin o onegaishimasu.",
-          "english": "Confirming Cough, please.",
-          "audioText": "咳の確認をお願いします",
+          "prompt": "咳の確認です",
+          "furigana": "せきのかくにんです",
+          "romaji": "seki no kakunin desu.",
+          "english": "It is Confirming Cough.",
+          "audioText": "咳の確認です",
           "dictateTokens": [
             "咳の確認",
             "です",
-            "を",
-            "お願いします",
-            "ありがとう"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "咳の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "咳の確認をお願いします"
+          "correctAnswer": "咳の確認です"
         },
         {
           "id": "u9_l8_7",
@@ -1713,9 +1705,9 @@ export const unit09: DojoUnit = {
           "audioText": "くすりのかくにん",
           "options": [
             "Confirming Medicine",
-            "Painful / hurts",
-            "Fever",
-            "Confirming Allergy"
+            "Confirming Headache",
+            "Allergy",
+            "Painful / hurts"
           ],
           "correctAnswer": "Confirming Medicine"
         },
@@ -1728,34 +1720,35 @@ export const unit09: DojoUnit = {
           "english": "Build 'Confirming Medicine'",
           "audioText": "くすりのかくにん",
           "tileBank": [
-            "り",
             "す",
             "の",
-            "か",
+            "く",
             "に",
+            "ん",
+            "り",
             "く",
-            "く",
-            "ん"
+            "か"
           ],
           "correctAnswer": "くすりのかくにん"
         },
         {
           "id": "u9_l9_3",
           "type": "cloze",
-          "prompt": "私は保険証の確認がすきです",
-          "furigana": "わたしはほけんしょうのかくにんがすきです",
-          "romaji": "Watashi wa hokenshou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Health insurance card.",
-          "audioText": "保険証の確認",
-          "clozeSentence": "これは保険証の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な保険証の確認です。",
+          "furigana": "これはいちばんたいせつなほけんしょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na hokenshou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Health insurance card.",
+          "audioText": "これは保険証の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な保険証の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l9_4",
@@ -1766,10 +1759,10 @@ export const unit09: DojoUnit = {
           "english": "This is Confirming Health insurance card.",
           "audioText": "これは保険証の確認です",
           "scrambleTokens": [
-            "ではありません",
-            "これは",
-            "それ",
             "保険証の確認",
+            "それ",
+            "これは",
+            "ではありません",
             "です"
           ],
           "scrambleSolution": [
@@ -1799,24 +1792,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l9_6",
           "type": "dictate",
-          "prompt": "処方箋の確認をお願いします",
-          "furigana": "しょほうせんのかくにんをおねがいします",
-          "romaji": "shohousen no kakunin o onegaishimasu.",
-          "english": "Confirming Doctor's prescription, please.",
-          "audioText": "処方箋の確認をお願いします",
+          "prompt": "処方箋の確認です",
+          "furigana": "しょほうせんのかくにんです",
+          "romaji": "shohousen no kakunin desu.",
+          "english": "It is Confirming Doctor's prescription.",
+          "audioText": "処方箋の確認です",
           "dictateTokens": [
-            "ありがとう",
+            "ではありません",
+            "これ",
             "です",
-            "お願いします",
-            "処方箋の確認",
-            "を"
+            "処方箋の確認"
           ],
           "dictateSolution": [
             "処方箋の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "処方箋の確認をお願いします"
+          "correctAnswer": "処方箋の確認です"
         },
         {
           "id": "u9_l9_7",
@@ -1922,10 +1913,10 @@ export const unit09: DojoUnit = {
           "english": "Confirming After meal",
           "audioText": "しょくごのかくにん",
           "options": [
-            "Headache",
-            "Throat",
+            "Confirming Take care / get well soon",
+            "Confirming Stomach / belly",
             "Confirming After meal",
-            "Confirming Throat"
+            "Hospital / clinic"
           ],
           "correctAnswer": "Confirming After meal"
         },
@@ -1939,33 +1930,34 @@ export const unit09: DojoUnit = {
           "audioText": "しょくごのかくにん",
           "tileBank": [
             "く",
-            "か",
-            "し",
-            "ご",
             "く",
-            "に",
+            "し",
+            "の",
             "ょ",
-            "の"
+            "ご",
+            "か",
+            "に"
           ],
           "correctAnswer": "しょくごのかくにん"
         },
         {
           "id": "u9_l10_3",
           "type": "cloze",
-          "prompt": "私はアレルギーの確認がすきです",
-          "furigana": "わたしはアレルギーのかくにんがすきです",
-          "romaji": "Watashi wa arerugii no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Allergy.",
-          "audioText": "アレルギーの確認",
-          "clozeSentence": "これはアレルギーの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なアレルギーの確認です。",
+          "furigana": "これはいちばんたいせつなアレルギーのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na arerugii no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Allergy.",
+          "audioText": "これはアレルギーの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なアレルギーの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l10_4",
@@ -1976,11 +1968,11 @@ export const unit09: DojoUnit = {
           "english": "This is Confirming Allergy.",
           "audioText": "これはアレルギーの確認です",
           "scrambleTokens": [
-            "アレルギーの確認",
-            "これは",
-            "です",
             "それ",
-            "ではありません"
+            "ではありません",
+            "です",
+            "アレルギーの確認",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2009,24 +2001,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l10_6",
           "type": "dictate",
-          "prompt": "お大事にの確認をお願いします",
-          "furigana": "おだいじにのかくにんをおねがいします",
-          "romaji": "odaiji ni no kakunin o onegaishimasu.",
-          "english": "Confirming Take care / get well soon, please.",
-          "audioText": "お大事にの確認をお願いします",
+          "prompt": "お大事にの確認です",
+          "furigana": "おだいじにのかくにんです",
+          "romaji": "odaiji ni no kakunin desu.",
+          "english": "It is Confirming Take care / get well soon.",
+          "audioText": "お大事にの確認です",
           "dictateTokens": [
-            "お大事にの確認",
-            "お願いします",
-            "を",
-            "ありがとう",
-            "です"
+            "これ",
+            "ではありません",
+            "です",
+            "お大事にの確認"
           ],
           "dictateSolution": [
             "お大事にの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "お大事にの確認をお願いします"
+          "correctAnswer": "お大事にの確認です"
         },
         {
           "id": "u9_l10_7",
@@ -2133,10 +2123,10 @@ export const unit09: DojoUnit = {
           "english": "Confirming Hospital / clinic",
           "audioText": "びょういんのかくにん",
           "options": [
-            "Confirming Hospital / clinic",
-            "Confirming Stomach / belly",
-            "Confirming Pharmacy",
-            "Medicine"
+            "Confirming Allergy",
+            "Allergy",
+            "Doctor's prescription",
+            "Confirming Hospital / clinic"
           ],
           "correctAnswer": "Confirming Hospital / clinic"
         },
@@ -2149,13 +2139,13 @@ export const unit09: DojoUnit = {
           "english": "Build 'Confirming Hospital / clinic'",
           "audioText": "びょういんのかくにん",
           "tileBank": [
-            "い",
-            "か",
-            "ん",
-            "く",
-            "う",
             "の",
+            "い",
             "び",
+            "ん",
+            "う",
+            "か",
+            "く",
             "ょ"
           ],
           "correctAnswer": "びょういんのかくにん"
@@ -2163,20 +2153,21 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l11_3",
           "type": "cloze",
-          "prompt": "私は薬局の確認がすきです",
-          "furigana": "わたしはやっきょくのかくにんがすきです",
-          "romaji": "Watashi wa yakkyoku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Pharmacy.",
-          "audioText": "薬局の確認",
-          "clozeSentence": "これは薬局の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な薬局の確認です。",
+          "furigana": "これはいちばんたいせつなやっきょくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na yakkyoku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Pharmacy.",
+          "audioText": "これは薬局の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な薬局の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l11_4",
@@ -2188,10 +2179,10 @@ export const unit09: DojoUnit = {
           "audioText": "これは薬局の確認です",
           "scrambleTokens": [
             "ではありません",
-            "それ",
-            "です",
             "これは",
-            "薬局の確認"
+            "薬局の確認",
+            "それ",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2220,24 +2211,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l11_6",
           "type": "dictate",
-          "prompt": "熱の確認をお願いします",
-          "furigana": "ねつのかくにんをおねがいします",
-          "romaji": "netsu no kakunin o onegaishimasu.",
-          "english": "Confirming Fever, please.",
-          "audioText": "熱の確認をお願いします",
+          "prompt": "熱の確認です",
+          "furigana": "ねつのかくにんです",
+          "romaji": "netsu no kakunin desu.",
+          "english": "It is Confirming Fever.",
+          "audioText": "熱の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
-            "熱の確認",
-            "を",
-            "です"
+            "これ",
+            "ではありません",
+            "です",
+            "熱の確認"
           ],
           "dictateSolution": [
             "熱の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "熱の確認をお願いします"
+          "correctAnswer": "熱の確認です"
         },
         {
           "id": "u9_l11_7",
@@ -2343,10 +2332,10 @@ export const unit09: DojoUnit = {
           "english": "Confirming Headache",
           "audioText": "ずつうのかくにん",
           "options": [
-            "Confirming Fever",
+            "Hospital / clinic",
+            "Take care / get well soon",
             "Confirming Headache",
-            "Headache",
-            "Confirming Painful / hurts"
+            "Doctor's prescription"
           ],
           "correctAnswer": "Confirming Headache"
         },
@@ -2360,25 +2349,25 @@ export const unit09: DojoUnit = {
           "audioText": "ずつうのかくにん",
           "tileBank": [
             "う",
-            "か",
+            "ず",
+            "く",
             "の",
+            "ん",
             "に",
             "つ",
-            "ず",
-            "ん",
-            "く"
+            "か"
           ],
           "correctAnswer": "ずつうのかくにん"
         },
         {
           "id": "u9_l12_3",
           "type": "cloze",
-          "prompt": "私は喉の確認がすきです",
-          "furigana": "わたしはのどのかくにんがすきです",
-          "romaji": "Watashi wa nodo no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Throat.",
-          "audioText": "喉の確認",
-          "clozeSentence": "これは喉の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な喉の確認です。",
+          "furigana": "これはいちばんたいせつなのどのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na nodo no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Throat.",
+          "audioText": "これは喉の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な喉の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2386,7 +2375,8 @@ export const unit09: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l12_4",
@@ -2397,11 +2387,11 @@ export const unit09: DojoUnit = {
           "english": "This is Confirming Throat.",
           "audioText": "これは喉の確認です",
           "scrambleTokens": [
+            "ではありません",
             "これは",
-            "それ",
             "喉の確認",
             "です",
-            "ではありません"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2430,24 +2420,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l12_6",
           "type": "dictate",
-          "prompt": "お腹の確認をお願いします",
-          "furigana": "おなかのかくにんをおねがいします",
-          "romaji": "onaka no kakunin o onegaishimasu.",
-          "english": "Confirming Stomach / belly, please.",
-          "audioText": "お腹の確認をお願いします",
+          "prompt": "お腹の確認です",
+          "furigana": "おなかのかくにんです",
+          "romaji": "onaka no kakunin desu.",
+          "english": "It is Confirming Stomach / belly.",
+          "audioText": "お腹の確認です",
           "dictateTokens": [
+            "ではありません",
+            "これ",
             "です",
-            "ありがとう",
-            "お願いします",
-            "を",
             "お腹の確認"
           ],
           "dictateSolution": [
             "お腹の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "お腹の確認をお願いします"
+          "correctAnswer": "お腹の確認です"
         },
         {
           "id": "u9_l12_7",
@@ -2548,10 +2536,10 @@ export const unit09: DojoUnit = {
           "english": "Hospital / clinic",
           "audioText": "びょういん",
           "options": [
-            "Confirming Medicine",
-            "Hospital / clinic",
-            "Stomach / belly",
-            "Painful / hurts"
+            "Confirming Hospital / clinic",
+            "Pharmacy",
+            "Confirming Painful / hurts",
+            "Hospital / clinic"
           ],
           "correctAnswer": "Hospital / clinic"
         },
@@ -2564,34 +2552,35 @@ export const unit09: DojoUnit = {
           "english": "Build 'Hospital / clinic'",
           "audioText": "びょういん",
           "tileBank": [
-            "ひ",
+            "び",
             "う",
-            "ょ",
-            "い",
-            "に",
-            "ま",
+            "な",
             "ん",
-            "び"
+            "と",
+            "い",
+            "お",
+            "ょ"
           ],
           "correctAnswer": "びょういん"
         },
         {
           "id": "u9_l13_3",
           "type": "cloze",
-          "prompt": "私は薬局がすきです",
-          "furigana": "わたしはやっきょくがすきです",
-          "romaji": "Watashi wa yakkyoku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Pharmacy.",
-          "audioText": "薬局",
-          "clozeSentence": "これは薬局 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な薬局です。",
+          "furigana": "これはいちばんたいせつなやっきょくです。",
+          "romaji": "Kore wa ichiban taisetsu na yakkyoku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Pharmacy.",
+          "audioText": "これは薬局です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な薬局です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l13_4",
@@ -2602,10 +2591,10 @@ export const unit09: DojoUnit = {
           "english": "This is Pharmacy.",
           "audioText": "これは薬局です",
           "scrambleTokens": [
-            "それ",
             "薬局",
-            "です",
+            "それ",
             "これは",
+            "です",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -2635,24 +2624,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l13_6",
           "type": "dictate",
-          "prompt": "熱をお願いします",
-          "furigana": "ねつをおねがいします",
-          "romaji": "netsu o onegaishimasu.",
-          "english": "Fever, please.",
-          "audioText": "熱をお願いします",
+          "prompt": "熱です",
+          "furigana": "ねつです",
+          "romaji": "netsu desu.",
+          "english": "It is Fever.",
+          "audioText": "熱です",
           "dictateTokens": [
-            "を",
+            "ではありません",
             "です",
-            "熱",
-            "お願いします",
-            "ありがとう"
+            "これ",
+            "熱"
           ],
           "dictateSolution": [
             "熱",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "熱をお願いします"
+          "correctAnswer": "熱です"
         },
         {
           "id": "u9_l13_7",
@@ -2752,10 +2739,10 @@ export const unit09: DojoUnit = {
           "english": "Headache",
           "audioText": "ずつう",
           "options": [
-            "Confirming Allergy",
-            "Medicine",
-            "Confirming Take care / get well soon",
-            "Headache"
+            "Confirming Headache",
+            "Headache",
+            "Doctor's prescription",
+            "Confirming Allergy"
           ],
           "correctAnswer": "Headache"
         },
@@ -2768,34 +2755,35 @@ export const unit09: DojoUnit = {
           "english": "Build 'Headache'",
           "audioText": "ずつう",
           "tileBank": [
-            "へ",
-            "う",
-            "り",
-            "つ",
             "ず",
-            "と",
-            "く",
-            "を"
+            "よ",
+            "つ",
+            "う",
+            "ね",
+            "ま",
+            "ゆ",
+            "は"
           ],
           "correctAnswer": "ずつう"
         },
         {
           "id": "u9_l14_3",
           "type": "cloze",
-          "prompt": "私は喉がすきです",
-          "furigana": "わたしはのどがすきです",
-          "romaji": "Watashi wa nodo ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Throat.",
-          "audioText": "喉",
-          "clozeSentence": "これは喉 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な喉です。",
+          "furigana": "これはいちばんたいせつなのどです。",
+          "romaji": "Kore wa ichiban taisetsu na nodo desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Throat.",
+          "audioText": "これは喉です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な喉です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l14_4",
@@ -2806,11 +2794,11 @@ export const unit09: DojoUnit = {
           "english": "This is Throat.",
           "audioText": "これは喉です",
           "scrambleTokens": [
-            "です",
-            "ではありません",
             "喉",
-            "これは",
-            "それ"
+            "それ",
+            "ではありません",
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2839,24 +2827,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l14_6",
           "type": "dictate",
-          "prompt": "お腹をお願いします",
-          "furigana": "おなかをおねがいします",
-          "romaji": "onaka o onegaishimasu.",
-          "english": "Stomach / belly, please.",
-          "audioText": "お腹をお願いします",
+          "prompt": "お腹です",
+          "furigana": "おなかです",
+          "romaji": "onaka desu.",
+          "english": "It is Stomach / belly.",
+          "audioText": "お腹です",
           "dictateTokens": [
-            "を",
-            "お願いします",
+            "お腹",
             "です",
-            "ありがとう",
-            "お腹"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "お腹",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "お腹をお願いします"
+          "correctAnswer": "お腹です"
         },
         {
           "id": "u9_l14_7",
@@ -2956,10 +2942,10 @@ export const unit09: DojoUnit = {
           "english": "Painful / hurts",
           "audioText": "いたい",
           "options": [
-            "Health insurance card",
-            "Confirming Stomach / belly",
-            "Painful / hurts",
-            "Fever"
+            "Confirming Throat",
+            "After meal",
+            "Cough",
+            "Painful / hurts"
           ],
           "correctAnswer": "Painful / hurts"
         },
@@ -2973,33 +2959,34 @@ export const unit09: DojoUnit = {
           "audioText": "いたい",
           "tileBank": [
             "い",
-            "を",
-            "ほ",
-            "み",
-            "た",
-            "な",
             "い",
-            "は"
+            "う",
+            "や",
+            "ゆ",
+            "た",
+            "よ",
+            "る"
           ],
           "correctAnswer": "いたい"
         },
         {
           "id": "u9_l15_3",
           "type": "cloze",
-          "prompt": "私は風邪がすきです",
-          "furigana": "わたしはかぜがすきです",
-          "romaji": "Watashi wa kaze ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Common cold.",
-          "audioText": "風邪",
-          "clozeSentence": "これは風邪 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な風邪です。",
+          "furigana": "これはいちばんたいせつなかぜです。",
+          "romaji": "Kore wa ichiban taisetsu na kaze desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Common cold.",
+          "audioText": "これは風邪です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な風邪です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u9_l15_4",
@@ -3010,10 +2997,10 @@ export const unit09: DojoUnit = {
           "english": "This is Common cold.",
           "audioText": "これは風邪です",
           "scrambleTokens": [
-            "です",
-            "それ",
             "風邪",
+            "です",
             "これは",
+            "それ",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -3043,24 +3030,22 @@ export const unit09: DojoUnit = {
         {
           "id": "u9_l15_6",
           "type": "dictate",
-          "prompt": "咳をお願いします",
-          "furigana": "せきをおねがいします",
-          "romaji": "seki o onegaishimasu.",
-          "english": "Cough, please.",
-          "audioText": "咳をお願いします",
+          "prompt": "咳です",
+          "furigana": "せきです",
+          "romaji": "seki desu.",
+          "english": "It is Cough.",
+          "audioText": "咳です",
           "dictateTokens": [
-            "ありがとう",
+            "これ",
             "咳",
-            "です",
-            "お願いします",
-            "を"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "咳",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "咳をお願いします"
+          "correctAnswer": "咳です"
         },
         {
           "id": "u9_l15_7",
@@ -3145,9 +3130,9 @@ export const unit09: DojoUnit = {
         "english": "Hospital / clinic",
         "audioText": "びょういん",
         "options": [
-          "Pharmacy",
-          "Confirming Health insurance card",
-          "Medicine",
+          "Painful / hurts",
+          "Confirming Headache",
+          "Common cold",
           "Hospital / clinic"
         ],
         "correctAnswer": "Hospital / clinic"
@@ -3161,14 +3146,14 @@ export const unit09: DojoUnit = {
         "english": "Build 'Hospital / clinic'",
         "audioText": "びょういん",
         "tileBank": [
-          "び",
-          "わ",
-          "い",
-          "け",
           "ん",
-          "う",
+          "い",
+          "お",
           "ょ",
-          "さ"
+          "う",
+          "さ",
+          "と",
+          "び"
         ],
         "correctAnswer": "びょういん"
       },
@@ -3181,10 +3166,10 @@ export const unit09: DojoUnit = {
         "english": "Painful / hurts",
         "audioText": "いたい",
         "options": [
+          "Common cold",
+          "Confirming Health insurance card",
           "Painful / hurts",
-          "Confirming Headache",
-          "Confirming Medicine",
-          "Confirming Headache"
+          "Headache"
         ],
         "correctAnswer": "Painful / hurts"
       },
@@ -3197,14 +3182,14 @@ export const unit09: DojoUnit = {
         "english": "Build 'Painful / hurts'",
         "audioText": "いたい",
         "tileBank": [
-          "よ",
-          "に",
-          "ね",
+          "ぬ",
+          "み",
           "い",
-          "せ",
-          "ら",
+          "れ",
+          "い",
+          "や",
           "た",
-          "い"
+          "り"
         ],
         "correctAnswer": "いたい"
       },
@@ -3217,10 +3202,10 @@ export const unit09: DojoUnit = {
         "english": "After meal",
         "audioText": "しょくご",
         "options": [
-          "After meal",
-          "Confirming Fever",
-          "Confirming Painful / hurts",
-          "Confirming Pharmacy"
+          "Confirming Common cold",
+          "Confirming Throat",
+          "Confirming Pharmacy",
+          "After meal"
         ],
         "correctAnswer": "After meal"
       },
@@ -3233,14 +3218,14 @@ export const unit09: DojoUnit = {
         "english": "Build 'After meal'",
         "audioText": "しょくご",
         "tileBank": [
-          "ょ",
-          "り",
-          "し",
-          "く",
+          "そ",
           "ご",
-          "み",
-          "き",
-          "ん"
+          "ょ",
+          "し",
+          "あ",
+          "く",
+          "て",
+          "ほ"
         ],
         "correctAnswer": "しょくご"
       },
@@ -3253,10 +3238,10 @@ export const unit09: DojoUnit = {
         "english": "Confirming Headache",
         "audioText": "ずつうのかくにん",
         "options": [
-          "Fever",
-          "Confirming Painful / hurts",
+          "Cough",
           "Confirming Headache",
-          "Stomach / belly"
+          "Hospital / clinic",
+          "Allergy"
         ],
         "correctAnswer": "Confirming Headache"
       },
@@ -3269,14 +3254,14 @@ export const unit09: DojoUnit = {
         "english": "Build 'Confirming Headache'",
         "audioText": "ずつうのかくにん",
         "tileBank": [
-          "つ",
+          "う",
           "く",
+          "ん",
+          "に",
           "の",
           "か",
-          "ん",
-          "ず",
-          "に",
-          "う"
+          "つ",
+          "ず"
         ],
         "correctAnswer": "ずつうのかくにん"
       },
@@ -3290,9 +3275,9 @@ export const unit09: DojoUnit = {
         "audioText": "くすりのかくにん",
         "options": [
           "Confirming Medicine",
-          "Painful / hurts",
-          "Fever",
-          "Confirming Allergy"
+          "Confirming Headache",
+          "Allergy",
+          "Painful / hurts"
         ],
         "correctAnswer": "Confirming Medicine"
       },
@@ -3305,14 +3290,14 @@ export const unit09: DojoUnit = {
         "english": "Build 'Confirming Medicine'",
         "audioText": "くすりのかくにん",
         "tileBank": [
-          "り",
           "す",
           "の",
-          "か",
+          "く",
           "に",
+          "ん",
+          "り",
           "く",
-          "く",
-          "ん"
+          "か"
         ],
         "correctAnswer": "くすりのかくにん"
       },
@@ -3325,10 +3310,10 @@ export const unit09: DojoUnit = {
         "english": "Confirming Hospital / clinic",
         "audioText": "びょういんのかくにん",
         "options": [
-          "Confirming Hospital / clinic",
-          "Confirming Stomach / belly",
-          "Confirming Pharmacy",
-          "Medicine"
+          "Confirming Allergy",
+          "Allergy",
+          "Doctor's prescription",
+          "Confirming Hospital / clinic"
         ],
         "correctAnswer": "Confirming Hospital / clinic"
       },
@@ -3341,13 +3326,13 @@ export const unit09: DojoUnit = {
         "english": "Build 'Confirming Hospital / clinic'",
         "audioText": "びょういんのかくにん",
         "tileBank": [
-          "い",
-          "か",
-          "ん",
-          "く",
-          "う",
           "の",
+          "い",
           "び",
+          "ん",
+          "う",
+          "か",
+          "く",
           "ょ"
         ],
         "correctAnswer": "びょういんのかくにん"

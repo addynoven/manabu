@@ -46,10 +46,10 @@ export const unit12: DojoUnit = {
           "english": "To help / assist",
           "audioText": "てつだう",
           "options": [
-            "To help / assist",
+            "Confirming To help / assist",
             "Confirming To be saved / helpful",
-            "Hesitation / holding back",
-            "Confirming Hesitation / holding back"
+            "Confirming To give (to someone else)",
+            "To help / assist"
           ],
           "correctAnswer": "To help / assist"
         },
@@ -62,34 +62,35 @@ export const unit12: DojoUnit = {
           "english": "Build 'To help / assist'",
           "audioText": "てつだう",
           "tileBank": [
-            "ら",
+            "う",
             "て",
             "だ",
-            "す",
-            "う",
+            "か",
+            "に",
             "つ",
-            "は",
-            "け"
+            "ほ",
+            "あ"
           ],
           "correctAnswer": "てつだう"
         },
         {
           "id": "u12_l1_3",
           "type": "cloze",
-          "prompt": "私はあげるがすきです",
-          "furigana": "わたしはあげるがすきです",
-          "romaji": "Watashi wa ageru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for To give (to someone else).",
-          "audioText": "あげる",
-          "clozeSentence": "これはあげる {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なあげるです。",
+          "furigana": "これはいちばんたいせつなあげるです。",
+          "romaji": "Kore wa ichiban taisetsu na ageru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important To give (to someone else).",
+          "audioText": "これはあげるです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なあげるです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l1_4",
@@ -101,10 +102,10 @@ export const unit12: DojoUnit = {
           "audioText": "これはあげるです",
           "scrambleTokens": [
             "ではありません",
-            "です",
-            "あげる",
             "それ",
-            "これは"
+            "あげる",
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -133,24 +134,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l1_6",
           "type": "dictate",
-          "prompt": "くれるをお願いします",
-          "furigana": "くれるをおねがいします",
-          "romaji": "kureru o onegaishimasu.",
-          "english": "To give (to speaker), please.",
-          "audioText": "くれるをお願いします",
+          "prompt": "くれるです",
+          "furigana": "くれるです",
+          "romaji": "kureru desu.",
+          "english": "It is To give (to speaker).",
+          "audioText": "くれるです",
           "dictateTokens": [
-            "お願いします",
-            "くれる",
+            "ではありません",
             "です",
-            "ありがとう",
-            "を"
+            "これ",
+            "くれる"
           ],
           "dictateSolution": [
             "くれる",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "くれるをお願いします"
+          "correctAnswer": "くれるです"
         },
         {
           "id": "u12_l1_7",
@@ -248,10 +247,10 @@ export const unit12: DojoUnit = {
           "english": "To receive",
           "audioText": "もらう",
           "options": [
+            "Nuisance / inconvenience",
             "To receive",
-            "To give (to speaker)",
-            "Confirming To lend",
-            "Confirming To give (to speaker)"
+            "Confirming To be saved / helpful",
+            "To help / assist"
           ],
           "correctAnswer": "To receive"
         },
@@ -264,34 +263,35 @@ export const unit12: DojoUnit = {
           "english": "Build 'To receive'",
           "audioText": "もらう",
           "tileBank": [
-            "と",
+            "そ",
             "も",
+            "お",
+            "み",
+            "に",
             "ら",
             "う",
-            "く",
-            "せ",
-            "ま",
-            "を"
+            "よ"
           ],
           "correctAnswer": "もらう"
         },
         {
           "id": "u12_l2_3",
           "type": "cloze",
-          "prompt": "私は教えてがすきです",
-          "furigana": "わたしはおしえてがすきです",
-          "romaji": "Watashi wa oshiete ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Please teach / tell.",
-          "audioText": "教えて",
-          "clozeSentence": "これは教えて {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な教えてです。",
+          "furigana": "これはいちばんたいせつなおしえてです。",
+          "romaji": "Kore wa ichiban taisetsu na oshiete desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Please teach / tell.",
+          "audioText": "これは教えてです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な教えてです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l2_4",
@@ -303,10 +303,10 @@ export const unit12: DojoUnit = {
           "audioText": "これは教えてです",
           "scrambleTokens": [
             "それ",
-            "です",
+            "ではありません",
             "教えて",
-            "これは",
-            "ではありません"
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -335,24 +335,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l2_6",
           "type": "dictate",
-          "prompt": "貸すをお願いします",
-          "furigana": "かすをおねがいします",
-          "romaji": "kasu o onegaishimasu.",
-          "english": "To lend, please.",
-          "audioText": "貸すをお願いします",
+          "prompt": "貸すです",
+          "furigana": "かすです",
+          "romaji": "kasu desu.",
+          "english": "It is To lend.",
+          "audioText": "貸すです",
           "dictateTokens": [
-            "です",
-            "お願いします",
-            "ありがとう",
+            "ではありません",
+            "これ",
             "貸す",
-            "を"
+            "です"
           ],
           "dictateSolution": [
             "貸す",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "貸すをお願いします"
+          "correctAnswer": "貸すです"
         },
         {
           "id": "u12_l2_7",
@@ -452,10 +450,10 @@ export const unit12: DojoUnit = {
           "english": "To borrow",
           "audioText": "かりる",
           "options": [
-            "To help / assist",
-            "To borrow",
-            "To lend",
-            "Confirming To lend"
+            "Confirming To help / assist",
+            "Please teach / tell",
+            "Confirming Rude / excuse me",
+            "To borrow"
           ],
           "correctAnswer": "To borrow"
         },
@@ -469,33 +467,34 @@ export const unit12: DojoUnit = {
           "audioText": "かりる",
           "tileBank": [
             "り",
-            "を",
+            "ひ",
+            "め",
+            "ほ",
             "る",
-            "お",
+            "ら",
             "か",
-            "ゆ",
-            "な",
-            "あ"
+            "な"
           ],
           "correctAnswer": "かりる"
         },
         {
           "id": "u12_l3_3",
           "type": "cloze",
-          "prompt": "私は送るがすきです",
-          "furigana": "わたしはおくるがすきです",
-          "romaji": "Watashi wa okuru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for To send / see someone off.",
-          "audioText": "送る",
-          "clozeSentence": "これは送る {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な送るです。",
+          "furigana": "これはいちばんたいせつなおくるです。",
+          "romaji": "Kore wa ichiban taisetsu na okuru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important To send / see someone off.",
+          "audioText": "これは送るです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な送るです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l3_4",
@@ -506,10 +505,10 @@ export const unit12: DojoUnit = {
           "english": "This is To send / see someone off.",
           "audioText": "これは送るです",
           "scrambleTokens": [
-            "送る",
-            "です",
             "ではありません",
             "それ",
+            "送る",
+            "です",
             "これは"
           ],
           "scrambleSolution": [
@@ -539,24 +538,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l3_6",
           "type": "dictate",
-          "prompt": "親切をお願いします",
-          "furigana": "しんせつをおねがいします",
-          "romaji": "shinsetsu o onegaishimasu.",
-          "english": "Kind / hospitable, please.",
-          "audioText": "親切をお願いします",
+          "prompt": "親切です",
+          "furigana": "しんせつです",
+          "romaji": "shinsetsu desu.",
+          "english": "It is Kind / hospitable.",
+          "audioText": "親切です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
             "親切",
-            "を",
-            "です"
+            "です",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "親切",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "親切をお願いします"
+          "correctAnswer": "親切です"
         },
         {
           "id": "u12_l3_7",
@@ -656,10 +653,10 @@ export const unit12: DojoUnit = {
           "english": "Favor / request",
           "audioText": "おねがい",
           "options": [
-            "Confirming Hesitation / holding back",
-            "Confirming To lend",
-            "To give (to someone else)",
-            "Favor / request"
+            "Favor / request",
+            "Confirming Please teach / tell",
+            "To give (to speaker)",
+            "Confirming To help / assist"
           ],
           "correctAnswer": "Favor / request"
         },
@@ -672,26 +669,26 @@ export const unit12: DojoUnit = {
           "english": "Build 'Favor / request'",
           "audioText": "おねがい",
           "tileBank": [
-            "え",
             "ね",
+            "ろ",
+            "ら",
             "が",
+            "か",
             "お",
-            "い",
             "ひ",
-            "と",
-            "を"
+            "い"
           ],
           "correctAnswer": "おねがい"
         },
         {
           "id": "u12_l4_3",
           "type": "cloze",
-          "prompt": "私は迷惑がすきです",
-          "furigana": "わたしはめいわくがすきです",
-          "romaji": "Watashi wa meiwaku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Nuisance / inconvenience.",
-          "audioText": "迷惑",
-          "clozeSentence": "これは迷惑 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な迷惑です。",
+          "furigana": "これはいちばんたいせつなめいわくです。",
+          "romaji": "Kore wa ichiban taisetsu na meiwaku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Nuisance / inconvenience.",
+          "audioText": "これは迷惑です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な迷惑です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -699,7 +696,8 @@ export const unit12: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l4_4",
@@ -712,8 +710,8 @@ export const unit12: DojoUnit = {
           "scrambleTokens": [
             "ではありません",
             "それ",
-            "です",
             "迷惑",
+            "です",
             "これは"
           ],
           "scrambleSolution": [
@@ -743,24 +741,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l4_6",
           "type": "dictate",
-          "prompt": "助かるをお願いします",
-          "furigana": "たすかるをおねがいします",
-          "romaji": "tasukaru o onegaishimasu.",
-          "english": "To be saved / helpful, please.",
-          "audioText": "助かるをお願いします",
+          "prompt": "助かるです",
+          "furigana": "たすかるです",
+          "romaji": "tasukaru desu.",
+          "english": "It is To be saved / helpful.",
+          "audioText": "助かるです",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "です",
+            "これ",
             "助かる",
-            "を"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "助かる",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "助かるをお願いします"
+          "correctAnswer": "助かるです"
         },
         {
           "id": "u12_l4_7",
@@ -862,10 +858,10 @@ export const unit12: DojoUnit = {
           "english": "Hesitation / holding back",
           "audioText": "えんりょ",
           "options": [
-            "Confirming To help / assist",
-            "To lend",
-            "To help / assist",
-            "Hesitation / holding back"
+            "Rude / excuse me",
+            "Hesitation / holding back",
+            "Confirming To borrow",
+            "Confirming Nuisance / inconvenience"
           ],
           "correctAnswer": "Hesitation / holding back"
         },
@@ -878,34 +874,35 @@ export const unit12: DojoUnit = {
           "english": "Build 'Hesitation / holding back'",
           "audioText": "えんりょ",
           "tileBank": [
+            "そ",
+            "ん",
             "り",
-            "を",
-            "む",
-            "さ",
+            "も",
             "ょ",
-            "ら",
             "え",
-            "ん"
+            "な",
+            "ま"
           ],
           "correctAnswer": "えんりょ"
         },
         {
           "id": "u12_l5_3",
           "type": "cloze",
-          "prompt": "私は失礼がすきです",
-          "furigana": "わたしはしつれいがすきです",
-          "romaji": "Watashi wa shitsurei ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Rude / excuse me.",
-          "audioText": "失礼",
-          "clozeSentence": "これは失礼 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な失礼です。",
+          "furigana": "これはいちばんたいせつなしつれいです。",
+          "romaji": "Kore wa ichiban taisetsu na shitsurei desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Rude / excuse me.",
+          "audioText": "これは失礼です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な失礼です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l5_4",
@@ -916,11 +913,11 @@ export const unit12: DojoUnit = {
           "english": "This is Rude / excuse me.",
           "audioText": "これは失礼です",
           "scrambleTokens": [
-            "ではありません",
-            "これは",
-            "失礼",
+            "です",
             "それ",
-            "です"
+            "ではありません",
+            "失礼",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -949,24 +946,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l5_6",
           "type": "dictate",
-          "prompt": "感謝をお願いします",
-          "furigana": "かんしゃをおねがいします",
-          "romaji": "kansha o onegaishimasu.",
-          "english": "Gratitude / appreciation, please.",
-          "audioText": "感謝をお願いします",
+          "prompt": "感謝です",
+          "furigana": "かんしゃです",
+          "romaji": "kansha desu.",
+          "english": "It is Gratitude / appreciation.",
+          "audioText": "感謝です",
           "dictateTokens": [
+            "これ",
             "感謝",
-            "を",
-            "ありがとう",
-            "です",
-            "お願いします"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "感謝",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "感謝をお願いします"
+          "correctAnswer": "感謝です"
         },
         {
           "id": "u12_l5_7",
@@ -1070,10 +1065,10 @@ export const unit12: DojoUnit = {
           "english": "Confirming To help / assist",
           "audioText": "てつだうのかくにん",
           "options": [
-            "Kind / hospitable",
-            "Confirming To help / assist",
-            "Confirming To be saved / helpful",
-            "Confirming Hesitation / holding back"
+            "Confirming To receive",
+            "To receive",
+            "Favor / request",
+            "Confirming To help / assist"
           ],
           "correctAnswer": "Confirming To help / assist"
         },
@@ -1086,34 +1081,35 @@ export const unit12: DojoUnit = {
           "english": "Build 'Confirming To help / assist'",
           "audioText": "てつだうのかくにん",
           "tileBank": [
-            "う",
-            "つ",
             "く",
+            "の",
+            "つ",
+            "に",
+            "う",
             "か",
             "だ",
-            "て",
-            "に",
-            "の"
+            "て"
           ],
           "correctAnswer": "てつだうのかくにん"
         },
         {
           "id": "u12_l6_3",
           "type": "cloze",
-          "prompt": "私はあげるの確認がすきです",
-          "furigana": "わたしはあげるのかくにんがすきです",
-          "romaji": "Watashi wa ageru no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming To give (to someone else).",
-          "audioText": "あげるの確認",
-          "clozeSentence": "これはあげるの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なあげるの確認です。",
+          "furigana": "これはいちばんたいせつなあげるのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ageru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming To give (to someone else).",
+          "audioText": "これはあげるの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なあげるの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l6_4",
@@ -1124,11 +1120,11 @@ export const unit12: DojoUnit = {
           "english": "This is Confirming To give (to someone else).",
           "audioText": "これはあげるの確認です",
           "scrambleTokens": [
-            "それ",
-            "です",
-            "これは",
+            "ではありません",
             "あげるの確認",
-            "ではありません"
+            "それ",
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1157,24 +1153,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l6_6",
           "type": "dictate",
-          "prompt": "くれるの確認をお願いします",
-          "furigana": "くれるのかくにんをおねがいします",
-          "romaji": "kureru no kakunin o onegaishimasu.",
-          "english": "Confirming To give (to speaker), please.",
-          "audioText": "くれるの確認をお願いします",
+          "prompt": "くれるの確認です",
+          "furigana": "くれるのかくにんです",
+          "romaji": "kureru no kakunin desu.",
+          "english": "It is Confirming To give (to speaker).",
+          "audioText": "くれるの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "です",
-            "を",
             "くれるの確認",
-            "お願いします"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "くれるの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "くれるの確認をお願いします"
+          "correctAnswer": "くれるの確認です"
         },
         {
           "id": "u12_l6_7",
@@ -1278,9 +1272,9 @@ export const unit12: DojoUnit = {
           "english": "Confirming To receive",
           "audioText": "もらうのかくにん",
           "options": [
+            "To receive",
+            "Confirming Please teach / tell",
             "Kind / hospitable",
-            "Confirming To be saved / helpful",
-            "Confirming Hesitation / holding back",
             "Confirming To receive"
           ],
           "correctAnswer": "Confirming To receive"
@@ -1297,9 +1291,9 @@ export const unit12: DojoUnit = {
             "く",
             "ん",
             "も",
-            "の",
-            "う",
             "に",
+            "う",
+            "の",
             "か",
             "ら"
           ],
@@ -1308,20 +1302,21 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l7_3",
           "type": "cloze",
-          "prompt": "私は教えての確認がすきです",
-          "furigana": "わたしはおしえてのかくにんがすきです",
-          "romaji": "Watashi wa oshiete no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Please teach / tell.",
-          "audioText": "教えての確認",
-          "clozeSentence": "これは教えての確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な教えての確認です。",
+          "furigana": "これはいちばんたいせつなおしえてのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na oshiete no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Please teach / tell.",
+          "audioText": "これは教えての確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な教えての確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l7_4",
@@ -1332,11 +1327,11 @@ export const unit12: DojoUnit = {
           "english": "This is Confirming Please teach / tell.",
           "audioText": "これは教えての確認です",
           "scrambleTokens": [
-            "それ",
+            "教えての確認",
+            "です",
             "ではありません",
             "これは",
-            "です",
-            "教えての確認"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1365,24 +1360,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l7_6",
           "type": "dictate",
-          "prompt": "貸すの確認をお願いします",
-          "furigana": "かすのかくにんをおねがいします",
-          "romaji": "kasu no kakunin o onegaishimasu.",
-          "english": "Confirming To lend, please.",
-          "audioText": "貸すの確認をお願いします",
+          "prompt": "貸すの確認です",
+          "furigana": "かすのかくにんです",
+          "romaji": "kasu no kakunin desu.",
+          "english": "It is Confirming To lend.",
+          "audioText": "貸すの確認です",
           "dictateTokens": [
             "貸すの確認",
-            "お願いします",
+            "これ",
             "です",
-            "を",
-            "ありがとう"
+            "ではありません"
           ],
           "dictateSolution": [
             "貸すの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "貸すの確認をお願いします"
+          "correctAnswer": "貸すの確認です"
         },
         {
           "id": "u12_l7_7",
@@ -1488,10 +1481,10 @@ export const unit12: DojoUnit = {
           "english": "Confirming To borrow",
           "audioText": "かりるのかくにん",
           "options": [
+            "To help / assist",
             "Confirming To borrow",
-            "To send / see someone off",
-            "Rude / excuse me",
-            "To borrow"
+            "Kind / hospitable",
+            "Confirming To give (to speaker)"
           ],
           "correctAnswer": "Confirming To borrow"
         },
@@ -1504,26 +1497,26 @@ export const unit12: DojoUnit = {
           "english": "Build 'Confirming To borrow'",
           "audioText": "かりるのかくにん",
           "tileBank": [
-            "か",
-            "に",
-            "く",
-            "る",
             "ん",
+            "く",
+            "の",
+            "に",
             "か",
-            "り",
-            "の"
+            "る",
+            "か",
+            "り"
           ],
           "correctAnswer": "かりるのかくにん"
         },
         {
           "id": "u12_l8_3",
           "type": "cloze",
-          "prompt": "私は送るの確認がすきです",
-          "furigana": "わたしはおくるのかくにんがすきです",
-          "romaji": "Watashi wa okuru no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming To send / see someone off.",
-          "audioText": "送るの確認",
-          "clozeSentence": "これは送るの確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な送るの確認です。",
+          "furigana": "これはいちばんたいせつなおくるのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na okuru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming To send / see someone off.",
+          "audioText": "これは送るの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な送るの確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1531,7 +1524,8 @@ export const unit12: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l8_4",
@@ -1542,11 +1536,11 @@ export const unit12: DojoUnit = {
           "english": "This is Confirming To send / see someone off.",
           "audioText": "これは送るの確認です",
           "scrambleTokens": [
-            "ではありません",
             "です",
-            "それ",
+            "ではありません",
+            "送るの確認",
             "これは",
-            "送るの確認"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1575,24 +1569,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l8_6",
           "type": "dictate",
-          "prompt": "親切の確認をお願いします",
-          "furigana": "しんせつのかくにんをおねがいします",
-          "romaji": "shinsetsu no kakunin o onegaishimasu.",
-          "english": "Confirming Kind / hospitable, please.",
-          "audioText": "親切の確認をお願いします",
+          "prompt": "親切の確認です",
+          "furigana": "しんせつのかくにんです",
+          "romaji": "shinsetsu no kakunin desu.",
+          "english": "It is Confirming Kind / hospitable.",
+          "audioText": "親切の確認です",
           "dictateTokens": [
-            "ありがとう",
+            "これ",
             "親切の確認",
-            "を",
-            "お願いします",
+            "ではありません",
             "です"
           ],
           "dictateSolution": [
             "親切の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "親切の確認をお願いします"
+          "correctAnswer": "親切の確認です"
         },
         {
           "id": "u12_l8_7",
@@ -1698,10 +1690,10 @@ export const unit12: DojoUnit = {
           "english": "Confirming Favor / request",
           "audioText": "おねがいのかくにん",
           "options": [
-            "Confirming Favor / request",
-            "Confirming To send / see someone off",
-            "Confirming To give (to someone else)",
-            "Confirming Kind / hospitable"
+            "Confirming To help / assist",
+            "Confirming To receive",
+            "To help / assist",
+            "Confirming Favor / request"
           ],
           "correctAnswer": "Confirming Favor / request"
         },
@@ -1714,34 +1706,35 @@ export const unit12: DojoUnit = {
           "english": "Build 'Confirming Favor / request'",
           "audioText": "おねがいのかくにん",
           "tileBank": [
-            "に",
-            "が",
             "の",
-            "く",
+            "か",
             "お",
-            "い",
+            "く",
+            "が",
+            "に",
             "ね",
-            "か"
+            "い"
           ],
           "correctAnswer": "おねがいのかくにん"
         },
         {
           "id": "u12_l9_3",
           "type": "cloze",
-          "prompt": "私は迷惑の確認がすきです",
-          "furigana": "わたしはめいわくのかくにんがすきです",
-          "romaji": "Watashi wa meiwaku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Nuisance / inconvenience.",
-          "audioText": "迷惑の確認",
-          "clozeSentence": "これは迷惑の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な迷惑の確認です。",
+          "furigana": "これはいちばんたいせつなめいわくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na meiwaku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Nuisance / inconvenience.",
+          "audioText": "これは迷惑の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な迷惑の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l9_4",
@@ -1753,10 +1746,10 @@ export const unit12: DojoUnit = {
           "audioText": "これは迷惑の確認です",
           "scrambleTokens": [
             "それ",
-            "これは",
-            "迷惑の確認",
+            "です",
             "ではありません",
-            "です"
+            "迷惑の確認",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1785,24 +1778,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l9_6",
           "type": "dictate",
-          "prompt": "助かるの確認をお願いします",
-          "furigana": "たすかるのかくにんをおねがいします",
-          "romaji": "tasukaru no kakunin o onegaishimasu.",
-          "english": "Confirming To be saved / helpful, please.",
-          "audioText": "助かるの確認をお願いします",
+          "prompt": "助かるの確認です",
+          "furigana": "たすかるのかくにんです",
+          "romaji": "tasukaru no kakunin desu.",
+          "english": "It is Confirming To be saved / helpful.",
+          "audioText": "助かるの確認です",
           "dictateTokens": [
-            "を",
             "助かるの確認",
-            "です",
-            "お願いします",
-            "ありがとう"
+            "これ",
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "助かるの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "助かるの確認をお願いします"
+          "correctAnswer": "助かるの確認です"
         },
         {
           "id": "u12_l9_7",
@@ -1910,10 +1901,10 @@ export const unit12: DojoUnit = {
           "english": "Confirming Hesitation / holding back",
           "audioText": "えんりょのかくにん",
           "options": [
-            "Confirming Please teach / tell",
+            "Favor / request",
             "Confirming Hesitation / holding back",
-            "Confirming To lend",
-            "To send / see someone off"
+            "Confirming To receive",
+            "To give (to speaker)"
           ],
           "correctAnswer": "Confirming Hesitation / holding back"
         },
@@ -1926,34 +1917,35 @@ export const unit12: DojoUnit = {
           "english": "Build 'Confirming Hesitation / holding back'",
           "audioText": "えんりょのかくにん",
           "tileBank": [
-            "り",
             "え",
+            "か",
+            "の",
             "ょ",
             "く",
-            "か",
+            "ん",
             "に",
-            "の",
-            "ん"
+            "り"
           ],
           "correctAnswer": "えんりょのかくにん"
         },
         {
           "id": "u12_l10_3",
           "type": "cloze",
-          "prompt": "私は失礼の確認がすきです",
-          "furigana": "わたしはしつれいのかくにんがすきです",
-          "romaji": "Watashi wa shitsurei no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Rude / excuse me.",
-          "audioText": "失礼の確認",
-          "clozeSentence": "これは失礼の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な失礼の確認です。",
+          "furigana": "これはいちばんたいせつなしつれいのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shitsurei no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Rude / excuse me.",
+          "audioText": "これは失礼の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な失礼の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l10_4",
@@ -1964,11 +1956,11 @@ export const unit12: DojoUnit = {
           "english": "This is Confirming Rude / excuse me.",
           "audioText": "これは失礼の確認です",
           "scrambleTokens": [
-            "失礼の確認",
-            "です",
             "これは",
-            "それ",
-            "ではありません"
+            "です",
+            "失礼の確認",
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1997,24 +1989,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l10_6",
           "type": "dictate",
-          "prompt": "感謝の確認をお願いします",
-          "furigana": "かんしゃのかくにんをおねがいします",
-          "romaji": "kansha no kakunin o onegaishimasu.",
-          "english": "Confirming Gratitude / appreciation, please.",
-          "audioText": "感謝の確認をお願いします",
+          "prompt": "感謝の確認です",
+          "furigana": "かんしゃのかくにんです",
+          "romaji": "kansha no kakunin desu.",
+          "english": "It is Confirming Gratitude / appreciation.",
+          "audioText": "感謝の確認です",
           "dictateTokens": [
-            "お願いします",
-            "です",
-            "を",
+            "これ",
             "感謝の確認",
-            "ありがとう"
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "感謝の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "感謝の確認をお願いします"
+          "correctAnswer": "感謝の確認です"
         },
         {
           "id": "u12_l10_7",
@@ -2118,10 +2108,10 @@ export const unit12: DojoUnit = {
           "english": "Confirming To help / assist",
           "audioText": "てつだうのかくにん",
           "options": [
-            "To be saved / helpful",
-            "Confirming To help / assist",
-            "Confirming Please teach / tell",
-            "Favor / request"
+            "Gratitude / appreciation",
+            "Confirming To give (to speaker)",
+            "Confirming Rude / excuse me",
+            "Confirming To help / assist"
           ],
           "correctAnswer": "Confirming To help / assist"
         },
@@ -2134,34 +2124,35 @@ export const unit12: DojoUnit = {
           "english": "Build 'Confirming To help / assist'",
           "audioText": "てつだうのかくにん",
           "tileBank": [
-            "く",
-            "つ",
-            "の",
-            "に",
             "だ",
             "う",
+            "の",
             "か",
-            "て"
+            "く",
+            "て",
+            "つ",
+            "に"
           ],
           "correctAnswer": "てつだうのかくにん"
         },
         {
           "id": "u12_l11_3",
           "type": "cloze",
-          "prompt": "私はあげるの確認がすきです",
-          "furigana": "わたしはあげるのかくにんがすきです",
-          "romaji": "Watashi wa ageru no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming To give (to someone else).",
-          "audioText": "あげるの確認",
-          "clozeSentence": "これはあげるの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切なあげるの確認です。",
+          "furigana": "これはいちばんたいせつなあげるのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ageru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming To give (to someone else).",
+          "audioText": "これはあげるの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なあげるの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l11_4",
@@ -2172,11 +2163,11 @@ export const unit12: DojoUnit = {
           "english": "This is Confirming To give (to someone else).",
           "audioText": "これはあげるの確認です",
           "scrambleTokens": [
-            "ではありません",
-            "これは",
             "それ",
-            "です",
-            "あげるの確認"
+            "これは",
+            "ではありません",
+            "あげるの確認",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2205,24 +2196,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l11_6",
           "type": "dictate",
-          "prompt": "くれるの確認をお願いします",
-          "furigana": "くれるのかくにんをおねがいします",
-          "romaji": "kureru no kakunin o onegaishimasu.",
-          "english": "Confirming To give (to speaker), please.",
-          "audioText": "くれるの確認をお願いします",
+          "prompt": "くれるの確認です",
+          "furigana": "くれるのかくにんです",
+          "romaji": "kureru no kakunin desu.",
+          "english": "It is Confirming To give (to speaker).",
+          "audioText": "くれるの確認です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
+            "これ",
+            "ではありません",
             "くれるの確認",
-            "です",
-            "を"
+            "です"
           ],
           "dictateSolution": [
             "くれるの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "くれるの確認をお願いします"
+          "correctAnswer": "くれるの確認です"
         },
         {
           "id": "u12_l11_7",
@@ -2327,8 +2316,8 @@ export const unit12: DojoUnit = {
           "audioText": "もらうのかくにん",
           "options": [
             "Favor / request",
-            "Confirming To be saved / helpful",
-            "To give (to someone else)",
+            "Confirming To borrow",
+            "Confirming Favor / request",
             "Confirming To receive"
           ],
           "correctAnswer": "Confirming To receive"
@@ -2342,26 +2331,26 @@ export const unit12: DojoUnit = {
           "english": "Build 'Confirming To receive'",
           "audioText": "もらうのかくにん",
           "tileBank": [
-            "も",
             "ら",
-            "に",
-            "か",
-            "の",
-            "く",
             "ん",
-            "う"
+            "に",
+            "う",
+            "の",
+            "か",
+            "く",
+            "も"
           ],
           "correctAnswer": "もらうのかくにん"
         },
         {
           "id": "u12_l12_3",
           "type": "cloze",
-          "prompt": "私は教えての確認がすきです",
-          "furigana": "わたしはおしえてのかくにんがすきです",
-          "romaji": "Watashi wa oshiete no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Please teach / tell.",
-          "audioText": "教えての確認",
-          "clozeSentence": "これは教えての確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な教えての確認です。",
+          "furigana": "これはいちばんたいせつなおしえてのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na oshiete no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Please teach / tell.",
+          "audioText": "これは教えての確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な教えての確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2369,7 +2358,8 @@ export const unit12: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l12_4",
@@ -2380,11 +2370,11 @@ export const unit12: DojoUnit = {
           "english": "This is Confirming Please teach / tell.",
           "audioText": "これは教えての確認です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
             "教えての確認",
+            "ではありません",
             "これは",
-            "です"
+            "です",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2413,24 +2403,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l12_6",
           "type": "dictate",
-          "prompt": "貸すの確認をお願いします",
-          "furigana": "かすのかくにんをおねがいします",
-          "romaji": "kasu no kakunin o onegaishimasu.",
-          "english": "Confirming To lend, please.",
-          "audioText": "貸すの確認をお願いします",
+          "prompt": "貸すの確認です",
+          "furigana": "かすのかくにんです",
+          "romaji": "kasu no kakunin desu.",
+          "english": "It is Confirming To lend.",
+          "audioText": "貸すの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
             "です",
             "貸すの確認",
-            "お願いします"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "貸すの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "貸すの確認をお願いします"
+          "correctAnswer": "貸すの確認です"
         },
         {
           "id": "u12_l12_7",
@@ -2528,10 +2516,10 @@ export const unit12: DojoUnit = {
           "english": "To help / assist",
           "audioText": "てつだう",
           "options": [
-            "To help / assist",
-            "Kind / hospitable",
-            "Confirming To give (to speaker)",
-            "Confirming To lend"
+            "Confirming Please teach / tell",
+            "Confirming To help / assist",
+            "Confirming Nuisance / inconvenience",
+            "To help / assist"
           ],
           "correctAnswer": "To help / assist"
         },
@@ -2544,34 +2532,35 @@ export const unit12: DojoUnit = {
           "english": "Build 'To help / assist'",
           "audioText": "てつだう",
           "tileBank": [
-            "て",
+            "だ",
             "う",
             "つ",
-            "だ",
-            "た",
-            "む",
-            "き",
-            "さ"
+            "す",
+            "の",
+            "ふ",
+            "も",
+            "て"
           ],
           "correctAnswer": "てつだう"
         },
         {
           "id": "u12_l13_3",
           "type": "cloze",
-          "prompt": "私はあげるがすきです",
-          "furigana": "わたしはあげるがすきです",
-          "romaji": "Watashi wa ageru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for To give (to someone else).",
-          "audioText": "あげる",
-          "clozeSentence": "これはあげる {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切なあげるです。",
+          "furigana": "これはいちばんたいせつなあげるです。",
+          "romaji": "Kore wa ichiban taisetsu na ageru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important To give (to someone else).",
+          "audioText": "これはあげるです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なあげるです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l13_4",
@@ -2582,10 +2571,10 @@ export const unit12: DojoUnit = {
           "english": "This is To give (to someone else).",
           "audioText": "これはあげるです",
           "scrambleTokens": [
-            "それ",
             "ではありません",
-            "これは",
+            "それ",
             "です",
+            "これは",
             "あげる"
           ],
           "scrambleSolution": [
@@ -2615,24 +2604,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l13_6",
           "type": "dictate",
-          "prompt": "くれるをお願いします",
-          "furigana": "くれるをおねがいします",
-          "romaji": "kureru o onegaishimasu.",
-          "english": "To give (to speaker), please.",
-          "audioText": "くれるをお願いします",
+          "prompt": "くれるです",
+          "furigana": "くれるです",
+          "romaji": "kureru desu.",
+          "english": "It is To give (to speaker).",
+          "audioText": "くれるです",
           "dictateTokens": [
-            "くれる",
             "です",
-            "を",
-            "お願いします",
-            "ありがとう"
+            "くれる",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "くれる",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "くれるをお願いします"
+          "correctAnswer": "くれるです"
         },
         {
           "id": "u12_l13_7",
@@ -2730,10 +2717,10 @@ export const unit12: DojoUnit = {
           "english": "To receive",
           "audioText": "もらう",
           "options": [
-            "Confirming To lend",
-            "To be saved / helpful",
-            "To receive",
-            "Confirming Nuisance / inconvenience"
+            "Confirming To receive",
+            "Confirming To give (to speaker)",
+            "Confirming To send / see someone off",
+            "To receive"
           ],
           "correctAnswer": "To receive"
         },
@@ -2746,34 +2733,35 @@ export const unit12: DojoUnit = {
           "english": "Build 'To receive'",
           "audioText": "もらう",
           "tileBank": [
-            "ね",
-            "ひ",
+            "さ",
+            "わ",
             "う",
-            "ゆ",
+            "し",
             "も",
-            "ら",
             "な",
-            "ぬ"
+            "つ",
+            "ら"
           ],
           "correctAnswer": "もらう"
         },
         {
           "id": "u12_l14_3",
           "type": "cloze",
-          "prompt": "私は教えてがすきです",
-          "furigana": "わたしはおしえてがすきです",
-          "romaji": "Watashi wa oshiete ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Please teach / tell.",
-          "audioText": "教えて",
-          "clozeSentence": "これは教えて {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な教えてです。",
+          "furigana": "これはいちばんたいせつなおしえてです。",
+          "romaji": "Kore wa ichiban taisetsu na oshiete desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Please teach / tell.",
+          "audioText": "これは教えてです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な教えてです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l14_4",
@@ -2784,10 +2772,10 @@ export const unit12: DojoUnit = {
           "english": "This is Please teach / tell.",
           "audioText": "これは教えてです",
           "scrambleTokens": [
-            "これは",
-            "です",
-            "それ",
             "教えて",
+            "これは",
+            "それ",
+            "です",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -2817,24 +2805,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l14_6",
           "type": "dictate",
-          "prompt": "貸すをお願いします",
-          "furigana": "かすをおねがいします",
-          "romaji": "kasu o onegaishimasu.",
-          "english": "To lend, please.",
-          "audioText": "貸すをお願いします",
+          "prompt": "貸すです",
+          "furigana": "かすです",
+          "romaji": "kasu desu.",
+          "english": "It is To lend.",
+          "audioText": "貸すです",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "です",
-            "貸す",
-            "ありがとう",
-            "お願いします",
-            "を"
+            "貸す"
           ],
           "dictateSolution": [
             "貸す",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "貸すをお願いします"
+          "correctAnswer": "貸すです"
         },
         {
           "id": "u12_l14_7",
@@ -2935,9 +2921,9 @@ export const unit12: DojoUnit = {
           "audioText": "かりる",
           "options": [
             "To borrow",
-            "To lend",
-            "Confirming Hesitation / holding back",
-            "To give (to speaker)"
+            "Confirming Please teach / tell",
+            "Confirming Rude / excuse me",
+            "Confirming To lend"
           ],
           "correctAnswer": "To borrow"
         },
@@ -2950,34 +2936,35 @@ export const unit12: DojoUnit = {
           "english": "Build 'To borrow'",
           "audioText": "かりる",
           "tileBank": [
-            "ん",
-            "し",
-            "の",
-            "る",
-            "ら",
-            "か",
             "り",
-            "よ"
+            "る",
+            "か",
+            "み",
+            "お",
+            "わ",
+            "け",
+            "ひ"
           ],
           "correctAnswer": "かりる"
         },
         {
           "id": "u12_l15_3",
           "type": "cloze",
-          "prompt": "私は送るがすきです",
-          "furigana": "わたしはおくるがすきです",
-          "romaji": "Watashi wa okuru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for To send / see someone off.",
-          "audioText": "送る",
-          "clozeSentence": "これは送る {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な送るです。",
+          "furigana": "これはいちばんたいせつなおくるです。",
+          "romaji": "Kore wa ichiban taisetsu na okuru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important To send / see someone off.",
+          "audioText": "これは送るです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な送るです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u12_l15_4",
@@ -2988,10 +2975,10 @@ export const unit12: DojoUnit = {
           "english": "This is To send / see someone off.",
           "audioText": "これは送るです",
           "scrambleTokens": [
-            "ではありません",
             "です",
-            "それ",
             "これは",
+            "ではありません",
+            "それ",
             "送る"
           ],
           "scrambleSolution": [
@@ -3021,24 +3008,22 @@ export const unit12: DojoUnit = {
         {
           "id": "u12_l15_6",
           "type": "dictate",
-          "prompt": "親切をお願いします",
-          "furigana": "しんせつをおねがいします",
-          "romaji": "shinsetsu o onegaishimasu.",
-          "english": "Kind / hospitable, please.",
-          "audioText": "親切をお願いします",
+          "prompt": "親切です",
+          "furigana": "しんせつです",
+          "romaji": "shinsetsu desu.",
+          "english": "It is Kind / hospitable.",
+          "audioText": "親切です",
           "dictateTokens": [
-            "お願いします",
+            "これ",
             "です",
-            "ありがとう",
             "親切",
-            "を"
+            "ではありません"
           ],
           "dictateSolution": [
             "親切",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "親切をお願いします"
+          "correctAnswer": "親切です"
         },
         {
           "id": "u12_l15_7",
@@ -3123,10 +3108,10 @@ export const unit12: DojoUnit = {
         "english": "To help / assist",
         "audioText": "てつだう",
         "options": [
-          "To help / assist",
+          "Confirming To help / assist",
           "Confirming To be saved / helpful",
-          "Hesitation / holding back",
-          "Confirming Hesitation / holding back"
+          "Confirming To give (to someone else)",
+          "To help / assist"
         ],
         "correctAnswer": "To help / assist"
       },
@@ -3139,14 +3124,14 @@ export const unit12: DojoUnit = {
         "english": "Build 'To help / assist'",
         "audioText": "てつだう",
         "tileBank": [
-          "ら",
+          "う",
           "て",
           "だ",
-          "す",
-          "う",
+          "か",
+          "に",
           "つ",
-          "は",
-          "け"
+          "ほ",
+          "あ"
         ],
         "correctAnswer": "てつだう"
       },
@@ -3159,10 +3144,10 @@ export const unit12: DojoUnit = {
         "english": "To borrow",
         "audioText": "かりる",
         "options": [
-          "To help / assist",
-          "To borrow",
-          "To lend",
-          "Confirming To lend"
+          "Confirming To help / assist",
+          "Please teach / tell",
+          "Confirming Rude / excuse me",
+          "To borrow"
         ],
         "correctAnswer": "To borrow"
       },
@@ -3176,13 +3161,13 @@ export const unit12: DojoUnit = {
         "audioText": "かりる",
         "tileBank": [
           "り",
-          "を",
+          "ひ",
+          "め",
+          "ほ",
           "る",
-          "お",
+          "ら",
           "か",
-          "ゆ",
-          "な",
-          "あ"
+          "な"
         ],
         "correctAnswer": "かりる"
       },
@@ -3195,10 +3180,10 @@ export const unit12: DojoUnit = {
         "english": "Hesitation / holding back",
         "audioText": "えんりょ",
         "options": [
-          "Confirming To help / assist",
-          "To lend",
-          "To help / assist",
-          "Hesitation / holding back"
+          "Rude / excuse me",
+          "Hesitation / holding back",
+          "Confirming To borrow",
+          "Confirming Nuisance / inconvenience"
         ],
         "correctAnswer": "Hesitation / holding back"
       },
@@ -3211,14 +3196,14 @@ export const unit12: DojoUnit = {
         "english": "Build 'Hesitation / holding back'",
         "audioText": "えんりょ",
         "tileBank": [
+          "そ",
+          "ん",
           "り",
-          "を",
-          "む",
-          "さ",
+          "も",
           "ょ",
-          "ら",
           "え",
-          "ん"
+          "な",
+          "ま"
         ],
         "correctAnswer": "えんりょ"
       },
@@ -3231,9 +3216,9 @@ export const unit12: DojoUnit = {
         "english": "Confirming To receive",
         "audioText": "もらうのかくにん",
         "options": [
+          "To receive",
+          "Confirming Please teach / tell",
           "Kind / hospitable",
-          "Confirming To be saved / helpful",
-          "Confirming Hesitation / holding back",
           "Confirming To receive"
         ],
         "correctAnswer": "Confirming To receive"
@@ -3250,9 +3235,9 @@ export const unit12: DojoUnit = {
           "く",
           "ん",
           "も",
-          "の",
-          "う",
           "に",
+          "う",
+          "の",
           "か",
           "ら"
         ],
@@ -3267,10 +3252,10 @@ export const unit12: DojoUnit = {
         "english": "Confirming Favor / request",
         "audioText": "おねがいのかくにん",
         "options": [
-          "Confirming Favor / request",
-          "Confirming To send / see someone off",
-          "Confirming To give (to someone else)",
-          "Confirming Kind / hospitable"
+          "Confirming To help / assist",
+          "Confirming To receive",
+          "To help / assist",
+          "Confirming Favor / request"
         ],
         "correctAnswer": "Confirming Favor / request"
       },
@@ -3283,14 +3268,14 @@ export const unit12: DojoUnit = {
         "english": "Build 'Confirming Favor / request'",
         "audioText": "おねがいのかくにん",
         "tileBank": [
-          "に",
-          "が",
           "の",
-          "く",
+          "か",
           "お",
-          "い",
+          "く",
+          "が",
+          "に",
           "ね",
-          "か"
+          "い"
         ],
         "correctAnswer": "おねがいのかくにん"
       },
@@ -3303,10 +3288,10 @@ export const unit12: DojoUnit = {
         "english": "Confirming To help / assist",
         "audioText": "てつだうのかくにん",
         "options": [
-          "To be saved / helpful",
-          "Confirming To help / assist",
-          "Confirming Please teach / tell",
-          "Favor / request"
+          "Gratitude / appreciation",
+          "Confirming To give (to speaker)",
+          "Confirming Rude / excuse me",
+          "Confirming To help / assist"
         ],
         "correctAnswer": "Confirming To help / assist"
       },
@@ -3319,14 +3304,14 @@ export const unit12: DojoUnit = {
         "english": "Build 'Confirming To help / assist'",
         "audioText": "てつだうのかくにん",
         "tileBank": [
-          "く",
-          "つ",
-          "の",
-          "に",
           "だ",
           "う",
+          "の",
           "か",
-          "て"
+          "く",
+          "て",
+          "つ",
+          "に"
         ],
         "correctAnswer": "てつだうのかくにん"
       }

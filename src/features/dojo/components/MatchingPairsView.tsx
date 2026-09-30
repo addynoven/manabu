@@ -107,85 +107,80 @@ export function MatchingPairsView({
         </Text>
       </View>
 
-      {/* 2-Column Matching Grid */}
-      <View style={styles.columnsContainer}>
-        {/* Left Column (Japanese) */}
-        <View style={styles.column}>
-          {leftItems.map(p => {
-            const isMatched = matchedIds.has(p.id);
-            const isSelected = selectedLeft === p.id;
-            const isMismatched = mismatchedPair?.left === p.id;
+      {/* Row-based Matching Grid */}
+      <View style={styles.rowsContainer}>
+        {leftItems.map((leftPair, rowIndex) => {
+          const rightPair = rightItems[rowIndex];
+          if (!rightPair) return null;
 
-            return (
+          const leftMatched = matchedIds.has(leftPair.id);
+          const leftSelected = selectedLeft === leftPair.id;
+          const leftMismatch = mismatchedPair?.left === leftPair.id;
+
+          const rightMatched = matchedIds.has(rightPair.id);
+          const rightSelected = selectedRight === rightPair.id;
+          const rightMismatch = mismatchedPair?.right === rightPair.id;
+
+          return (
+            <View key={`row-${rowIndex}`} style={styles.pairRow}>
+              {/* Left card (Japanese) */}
               <Pressable
-                key={p.id}
-                disabled={isMatched}
-                onPress={() => handleLeftPress(p)}
+                disabled={leftMatched}
+                onPress={() => handleLeftPress(leftPair)}
                 style={[
                   styles.card,
                   { backgroundColor: theme.surface, borderColor: theme.border },
-                  isSelected && { borderColor: theme.primary, backgroundColor: theme.primaryLight },
-                  isMatched && { borderColor: '#10B981', backgroundColor: '#10B98115', opacity: 0.6 },
-                  isMismatched && { borderColor: '#EF4444', backgroundColor: '#EF444415' },
+                  leftSelected && { borderColor: theme.primary, backgroundColor: theme.primaryLight },
+                  leftMatched && { borderColor: '#10B981', backgroundColor: '#10B98115', opacity: 0.6 },
+                  leftMismatch && { borderColor: '#EF4444', backgroundColor: '#EF444415' },
                 ]}
-                accessibilityLabel={`Japanese: ${p.left}`}
+                accessibilityLabel={`Japanese: ${leftPair.left}`}
               >
                 <Text
                   style={[
                     styles.cardTextJp,
                     { color: theme.textPrimary },
-                    isSelected && { color: theme.primary, fontWeight: '800' },
-                    isMatched && { color: '#10B981' },
-                    isMismatched && { color: '#EF4444' },
+                    leftSelected && { color: theme.primary, fontWeight: '800' },
+                    leftMatched && { color: '#10B981' },
+                    leftMismatch && { color: '#EF4444' },
                   ]}
                   numberOfLines={2}
                 >
-                  {p.left}
+                  {leftPair.left}
                 </Text>
-                {isMatched && <Check size={16} color="#10B981" style={styles.checkIcon} />}
+                {leftMatched && <Check size={16} color="#10B981" style={styles.checkIcon} />}
               </Pressable>
-            );
-          })}
-        </View>
 
-        {/* Right Column (English) */}
-        <View style={styles.column}>
-          {rightItems.map(p => {
-            const isMatched = matchedIds.has(p.id);
-            const isSelected = selectedRight === p.id;
-            const isMismatched = mismatchedPair?.right === p.id;
-
-            return (
+              {/* Right card (English) */}
               <Pressable
-                key={p.id}
-                disabled={isMatched}
-                onPress={() => handleRightPress(p)}
+                disabled={rightMatched}
+                onPress={() => handleRightPress(rightPair)}
                 style={[
                   styles.card,
                   { backgroundColor: theme.surface, borderColor: theme.border },
-                  isSelected && { borderColor: theme.primary, backgroundColor: theme.primaryLight },
-                  isMatched && { borderColor: '#10B981', backgroundColor: '#10B98115', opacity: 0.6 },
-                  isMismatched && { borderColor: '#EF4444', backgroundColor: '#EF444415' },
+                  rightSelected && { borderColor: theme.primary, backgroundColor: theme.primaryLight },
+                  rightMatched && { borderColor: '#10B981', backgroundColor: '#10B98115', opacity: 0.6 },
+                  rightMismatch && { borderColor: '#EF4444', backgroundColor: '#EF444415' },
                 ]}
-                accessibilityLabel={`English: ${p.right}`}
+                accessibilityLabel={`English: ${rightPair.right}`}
               >
                 <Text
                   style={[
                     styles.cardTextEng,
                     { color: theme.textPrimary },
-                    isSelected && { color: theme.primary, fontWeight: '800' },
-                    isMatched && { color: '#10B981' },
-                    isMismatched && { color: '#EF4444' },
+                    rightSelected && { color: theme.primary, fontWeight: '800' },
+                    rightMatched && { color: '#10B981' },
+                    rightMismatch && { color: '#EF4444' },
                   ]}
                   numberOfLines={2}
                 >
-                  {p.right}
+                  {rightPair.right}
                 </Text>
-                {isMatched && <Check size={16} color="#10B981" style={styles.checkIcon} />}
+                {rightMatched && <Check size={16} color="#10B981" style={styles.checkIcon} />}
               </Pressable>
-            );
-          })}
-        </View>
+            </View>
+          );
+        })}
       </View>
     </View>
   );
@@ -193,12 +188,14 @@ export function MatchingPairsView({
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     width: '100%',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   headerRow: {
     width: '100%',
-    marginBottom: 20,
+    marginBottom: 24,
   },
   badge: {
     alignSelf: 'flex-start',
@@ -216,17 +213,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
   },
-  columnsContainer: {
+  rowsContainer: {
     width: '100%',
-    flexDirection: 'row',
-    gap: 12,
-    justifyContent: 'space-between',
+    gap: 14,
   },
-  column: {
-    flex: 1,
+  pairRow: {
+    flexDirection: 'row',
     gap: 12,
   },
   card: {
+    flex: 1,
     minHeight: 74,
     padding: 12,
     borderRadius: 16,

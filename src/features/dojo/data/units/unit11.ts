@@ -48,10 +48,10 @@ export const unit11: DojoUnit = {
           "english": "Hobby",
           "audioText": "しゅみ",
           "options": [
-            "Reading books",
-            "Hobby",
-            "Confirming Experience",
-            "Cooking"
+            "Skillful / good at",
+            "Confirming Reading books",
+            "Confirming To climb",
+            "Hobby"
           ],
           "correctAnswer": "Hobby"
         },
@@ -64,34 +64,35 @@ export const unit11: DojoUnit = {
           "english": "Build 'Hobby'",
           "audioText": "しゅみ",
           "tileBank": [
-            "ま",
-            "す",
-            "ゅ",
-            "に",
-            "け",
+            "し",
+            "も",
+            "る",
+            "な",
             "み",
-            "く",
-            "し"
+            "め",
+            "ゅ",
+            "け"
           ],
           "correctAnswer": "しゅみ"
         },
         {
           "id": "u11_l1_3",
           "type": "cloze",
-          "prompt": "私は話せるがすきです",
-          "furigana": "わたしははなせるがすきです",
-          "romaji": "Watashi wa hanaseru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Can speak.",
-          "audioText": "話せる",
-          "clozeSentence": "これは話せる {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な話せるです。",
+          "furigana": "これはいちばんたいせつなはなせるです。",
+          "romaji": "Kore wa ichiban taisetsu na hanaseru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Can speak.",
+          "audioText": "これは話せるです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な話せるです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l1_4",
@@ -102,11 +103,11 @@ export const unit11: DojoUnit = {
           "english": "This is Can speak.",
           "audioText": "これは話せるです",
           "scrambleTokens": [
+            "ではありません",
             "これは",
-            "それ",
             "です",
             "話せる",
-            "ではありません"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -135,24 +136,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l1_6",
           "type": "dictate",
-          "prompt": "泳げるをお願いします",
-          "furigana": "およげるをおねがいします",
-          "romaji": "oyogeru o onegaishimasu.",
-          "english": "Can swim, please.",
-          "audioText": "泳げるをお願いします",
+          "prompt": "泳げるです",
+          "furigana": "およげるです",
+          "romaji": "oyogeru desu.",
+          "english": "It is Can swim.",
+          "audioText": "泳げるです",
           "dictateTokens": [
+            "これ",
             "です",
-            "ありがとう",
-            "を",
-            "お願いします",
-            "泳げる"
+            "泳げる",
+            "ではありません"
           ],
           "dictateSolution": [
             "泳げる",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "泳げるをお願いします"
+          "correctAnswer": "泳げるです"
         },
         {
           "id": "u11_l1_7",
@@ -251,10 +250,10 @@ export const unit11: DojoUnit = {
           "english": "Guitar",
           "audioText": "ギター",
           "options": [
-            "Confirming Number one / most",
+            "Confirming Unskillful / bad at",
+            "Can speak",
             "Guitar",
-            "Strong point / pride in skill",
-            "Number one / most"
+            "Confirming Photograph"
           ],
           "correctAnswer": "Guitar"
         },
@@ -267,34 +266,35 @@ export const unit11: DojoUnit = {
           "english": "Build 'Guitar'",
           "audioText": "ギター",
           "tileBank": [
-            "に",
-            "ギ",
-            "し",
-            "ろ",
+            "ん",
+            "つ",
             "タ",
-            "も",
-            "ー",
-            "ふ"
+            "ギ",
+            "み",
+            "か",
+            "そ",
+            "ー"
           ],
           "correctAnswer": "ギター"
         },
         {
           "id": "u11_l2_3",
           "type": "cloze",
-          "prompt": "私は写真がすきです",
-          "furigana": "わたしはしゃしんがすきです",
-          "romaji": "Watashi wa shashin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Photograph.",
-          "audioText": "写真",
-          "clozeSentence": "これは写真 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な写真です。",
+          "furigana": "これはいちばんたいせつなしゃしんです。",
+          "romaji": "Kore wa ichiban taisetsu na shashin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Photograph.",
+          "audioText": "これは写真です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な写真です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l2_4",
@@ -305,10 +305,10 @@ export const unit11: DojoUnit = {
           "english": "This is Photograph.",
           "audioText": "これは写真です",
           "scrambleTokens": [
-            "です",
             "ではありません",
             "写真",
             "それ",
+            "です",
             "これは"
           ],
           "scrambleSolution": [
@@ -338,24 +338,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l2_6",
           "type": "dictate",
-          "prompt": "登るをお願いします",
-          "furigana": "のぼるをおねがいします",
-          "romaji": "noboru o onegaishimasu.",
-          "english": "To climb, please.",
-          "audioText": "登るをお願いします",
+          "prompt": "登るです",
+          "furigana": "のぼるです",
+          "romaji": "noboru desu.",
+          "english": "It is To climb.",
+          "audioText": "登るです",
           "dictateTokens": [
+            "ではありません",
             "登る",
             "です",
-            "ありがとう",
-            "お願いします",
-            "を"
+            "これ"
           ],
           "dictateSolution": [
             "登る",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "登るをお願いします"
+          "correctAnswer": "登るです"
         },
         {
           "id": "u11_l2_7",
@@ -457,10 +455,10 @@ export const unit11: DojoUnit = {
           "english": "Number one / most",
           "audioText": "いちばん",
           "options": [
+            "Photograph",
+            "Confirming Guitar",
             "Number one / most",
-            "Confirming Can swim",
-            "Experience",
-            "Confirming To climb"
+            "Can swim"
           ],
           "correctAnswer": "Number one / most"
         },
@@ -473,34 +471,35 @@ export const unit11: DojoUnit = {
           "english": "Build 'Number one / most'",
           "audioText": "いちばん",
           "tileBank": [
-            "い",
-            "ち",
-            "つ",
             "の",
+            "ち",
             "ば",
-            "く",
-            "か",
-            "ん"
+            "い",
+            "る",
+            "れ",
+            "ん",
+            "み"
           ],
           "correctAnswer": "いちばん"
         },
         {
           "id": "u11_l3_3",
           "type": "cloze",
-          "prompt": "私は上手がすきです",
-          "furigana": "わたしはじょうずがすきです",
-          "romaji": "Watashi wa jouzu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Skillful / good at.",
-          "audioText": "上手",
-          "clozeSentence": "これは上手 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な上手です。",
+          "furigana": "これはいちばんたいせつなじょうずです。",
+          "romaji": "Kore wa ichiban taisetsu na jouzu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Skillful / good at.",
+          "audioText": "これは上手です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な上手です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l3_4",
@@ -511,10 +510,10 @@ export const unit11: DojoUnit = {
           "english": "This is Skillful / good at.",
           "audioText": "これは上手です",
           "scrambleTokens": [
-            "上手",
-            "これは",
             "ではありません",
+            "上手",
             "それ",
+            "これは",
             "です"
           ],
           "scrambleSolution": [
@@ -544,24 +543,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l3_6",
           "type": "dictate",
-          "prompt": "下手をお願いします",
-          "furigana": "へたをおねがいします",
-          "romaji": "heta o onegaishimasu.",
-          "english": "Unskillful / bad at, please.",
-          "audioText": "下手をお願いします",
+          "prompt": "下手です",
+          "furigana": "へたです",
+          "romaji": "heta desu.",
+          "english": "It is Unskillful / bad at.",
+          "audioText": "下手です",
           "dictateTokens": [
-            "ありがとう",
             "です",
-            "下手",
-            "を",
-            "お願いします"
+            "これ",
+            "ではありません",
+            "下手"
           ],
           "dictateSolution": [
             "下手",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "下手をお願いします"
+          "correctAnswer": "下手です"
         },
         {
           "id": "u11_l3_7",
@@ -663,10 +660,10 @@ export const unit11: DojoUnit = {
           "english": "Experience",
           "audioText": "けいけん",
           "options": [
-            "Reading books",
             "Experience",
-            "Confirming Number one / most",
-            "Photograph"
+            "Number one / most",
+            "Confirming To climb",
+            "To play (strings/piano)"
           ],
           "correctAnswer": "Experience"
         },
@@ -679,26 +676,26 @@ export const unit11: DojoUnit = {
           "english": "Build 'Experience'",
           "audioText": "けいけん",
           "tileBank": [
-            "き",
-            "み",
-            "に",
-            "ん",
-            "ま",
             "け",
+            "う",
             "い",
-            "け"
+            "く",
+            "け",
+            "ろ",
+            "ん",
+            "り"
           ],
           "correctAnswer": "けいけん"
         },
         {
           "id": "u11_l4_3",
           "type": "cloze",
-          "prompt": "私は読書がすきです",
-          "furigana": "わたしはどくしょがすきです",
-          "romaji": "Watashi wa dokusho ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Reading books.",
-          "audioText": "読書",
-          "clozeSentence": "これは読書 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な読書です。",
+          "furigana": "これはいちばんたいせつなどくしょです。",
+          "romaji": "Kore wa ichiban taisetsu na dokusho desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Reading books.",
+          "audioText": "これは読書です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な読書です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -706,7 +703,8 @@ export const unit11: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l4_4",
@@ -717,11 +715,11 @@ export const unit11: DojoUnit = {
           "english": "This is Reading books.",
           "audioText": "これは読書です",
           "scrambleTokens": [
+            "これは",
+            "読書",
             "それ",
             "です",
-            "これは",
-            "ではありません",
-            "読書"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -750,24 +748,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l4_6",
           "type": "dictate",
-          "prompt": "料理をお願いします",
-          "furigana": "りょうりをおねがいします",
-          "romaji": "ryouri o onegaishimasu.",
-          "english": "Cooking, please.",
-          "audioText": "料理をお願いします",
+          "prompt": "料理です",
+          "furigana": "りょうりです",
+          "romaji": "ryouri desu.",
+          "english": "It is Cooking.",
+          "audioText": "料理です",
           "dictateTokens": [
-            "を",
-            "ありがとう",
-            "お願いします",
-            "料理",
-            "です"
+            "です",
+            "ではありません",
+            "これ",
+            "料理"
           ],
           "dictateSolution": [
             "料理",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "料理をお願いします"
+          "correctAnswer": "料理です"
         },
         {
           "id": "u11_l4_7",
@@ -868,10 +864,10 @@ export const unit11: DojoUnit = {
           "english": "Driving",
           "audioText": "うんてん",
           "options": [
-            "Confirming Can swim",
+            "Confirming Experience",
             "Driving",
-            "Confirming Photograph",
-            "Hobby"
+            "Can swim",
+            "Confirming Unskillful / bad at"
           ],
           "correctAnswer": "Driving"
         },
@@ -884,34 +880,35 @@ export const unit11: DojoUnit = {
           "english": "Build 'Driving'",
           "audioText": "うんてん",
           "tileBank": [
-            "つ",
-            "て",
             "う",
-            "こ",
-            "け",
-            "れ",
+            "の",
             "ん",
-            "ん"
+            "り",
+            "ん",
+            "て",
+            "ほ",
+            "な"
           ],
           "correctAnswer": "うんてん"
         },
         {
           "id": "u11_l5_3",
           "type": "cloze",
-          "prompt": "私は弾くがすきです",
-          "furigana": "わたしはひくがすきです",
-          "romaji": "Watashi wa hiku ga suki desu.",
-          "english": "Fill in the blank with the correct particle for To play (strings/piano).",
-          "audioText": "弾く",
-          "clozeSentence": "これは弾く {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な弾くです。",
+          "furigana": "これはいちばんたいせつなひくです。",
+          "romaji": "Kore wa ichiban taisetsu na hiku desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important To play (strings/piano).",
+          "audioText": "これは弾くです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な弾くです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l5_4",
@@ -922,11 +919,11 @@ export const unit11: DojoUnit = {
           "english": "This is To play (strings/piano).",
           "audioText": "これは弾くです",
           "scrambleTokens": [
-            "ではありません",
-            "弾く",
             "それ",
+            "これは",
+            "弾く",
             "です",
-            "これは"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -955,24 +952,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l5_6",
           "type": "dictate",
-          "prompt": "得意をお願いします",
-          "furigana": "とくいをおねがいします",
-          "romaji": "tokui o onegaishimasu.",
-          "english": "Strong point / pride in skill, please.",
-          "audioText": "得意をお願いします",
+          "prompt": "得意です",
+          "furigana": "とくいです",
+          "romaji": "tokui desu.",
+          "english": "It is Strong point / pride in skill.",
+          "audioText": "得意です",
           "dictateTokens": [
-            "です",
-            "お願いします",
-            "を",
             "得意",
-            "ありがとう"
+            "です",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "得意",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "得意をお願いします"
+          "correctAnswer": "得意です"
         },
         {
           "id": "u11_l5_7",
@@ -1078,10 +1073,10 @@ export const unit11: DojoUnit = {
           "english": "Confirming Hobby",
           "audioText": "しゅみのかくにん",
           "options": [
-            "Confirming Unskillful / bad at",
+            "Confirming To play (strings/piano)",
             "Confirming Hobby",
-            "Photograph",
-            "Confirming Experience"
+            "Confirming Skillful / good at",
+            "To play (strings/piano)"
           ],
           "correctAnswer": "Confirming Hobby"
         },
@@ -1095,33 +1090,34 @@ export const unit11: DojoUnit = {
           "audioText": "しゅみのかくにん",
           "tileBank": [
             "か",
-            "く",
-            "ん",
-            "に",
             "み",
-            "し",
             "の",
-            "ゅ"
+            "に",
+            "ん",
+            "ゅ",
+            "し",
+            "く"
           ],
           "correctAnswer": "しゅみのかくにん"
         },
         {
           "id": "u11_l6_3",
           "type": "cloze",
-          "prompt": "私は話せるの確認がすきです",
-          "furigana": "わたしははなせるのかくにんがすきです",
-          "romaji": "Watashi wa hanaseru no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Can speak.",
-          "audioText": "話せるの確認",
-          "clozeSentence": "これは話せるの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な話せるの確認です。",
+          "furigana": "これはいちばんたいせつなはなせるのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na hanaseru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Can speak.",
+          "audioText": "これは話せるの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な話せるの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l6_4",
@@ -1132,11 +1128,11 @@ export const unit11: DojoUnit = {
           "english": "This is Confirming Can speak.",
           "audioText": "これは話せるの確認です",
           "scrambleTokens": [
-            "それ",
-            "これは",
             "です",
+            "話せるの確認",
+            "これは",
             "ではありません",
-            "話せるの確認"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1165,24 +1161,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l6_6",
           "type": "dictate",
-          "prompt": "泳げるの確認をお願いします",
-          "furigana": "およげるのかくにんをおねがいします",
-          "romaji": "oyogeru no kakunin o onegaishimasu.",
-          "english": "Confirming Can swim, please.",
-          "audioText": "泳げるの確認をお願いします",
+          "prompt": "泳げるの確認です",
+          "furigana": "およげるのかくにんです",
+          "romaji": "oyogeru no kakunin desu.",
+          "english": "It is Confirming Can swim.",
+          "audioText": "泳げるの確認です",
           "dictateTokens": [
+            "これ",
             "です",
-            "を",
-            "泳げるの確認",
-            "ありがとう",
-            "お願いします"
+            "ではありません",
+            "泳げるの確認"
           ],
           "dictateSolution": [
             "泳げるの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "泳げるの確認をお願いします"
+          "correctAnswer": "泳げるの確認です"
         },
         {
           "id": "u11_l6_7",
@@ -1287,10 +1281,10 @@ export const unit11: DojoUnit = {
           "english": "Confirming Guitar",
           "audioText": "ギターのかくにん",
           "options": [
-            "Confirming To climb",
-            "Strong point / pride in skill",
             "Confirming Guitar",
-            "Cooking"
+            "Confirming Hobby",
+            "Confirming Number one / most",
+            "Can swim"
           ],
           "correctAnswer": "Confirming Guitar"
         },
@@ -1304,33 +1298,34 @@ export const unit11: DojoUnit = {
           "audioText": "ギターのかくにん",
           "tileBank": [
             "か",
-            "の",
-            "ギ",
-            "ー",
-            "ん",
-            "タ",
             "に",
-            "く"
+            "タ",
+            "ん",
+            "ー",
+            "く",
+            "の",
+            "ギ"
           ],
           "correctAnswer": "ギターのかくにん"
         },
         {
           "id": "u11_l7_3",
           "type": "cloze",
-          "prompt": "私は写真の確認がすきです",
-          "furigana": "わたしはしゃしんのかくにんがすきです",
-          "romaji": "Watashi wa shashin no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Photograph.",
-          "audioText": "写真の確認",
-          "clozeSentence": "これは写真の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な写真の確認です。",
+          "furigana": "これはいちばんたいせつなしゃしんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shashin no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Photograph.",
+          "audioText": "これは写真の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な写真の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l7_4",
@@ -1343,9 +1338,9 @@ export const unit11: DojoUnit = {
           "scrambleTokens": [
             "です",
             "ではありません",
-            "これは",
             "写真の確認",
-            "それ"
+            "それ",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1374,24 +1369,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l7_6",
           "type": "dictate",
-          "prompt": "登るの確認をお願いします",
-          "furigana": "のぼるのかくにんをおねがいします",
-          "romaji": "noboru no kakunin o onegaishimasu.",
-          "english": "Confirming To climb, please.",
-          "audioText": "登るの確認をお願いします",
+          "prompt": "登るの確認です",
+          "furigana": "のぼるのかくにんです",
+          "romaji": "noboru no kakunin desu.",
+          "english": "It is Confirming To climb.",
+          "audioText": "登るの確認です",
           "dictateTokens": [
-            "ありがとう",
-            "を",
+            "これ",
+            "ではありません",
             "登るの確認",
-            "です",
-            "お願いします"
+            "です"
           ],
           "dictateSolution": [
             "登るの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "登るの確認をお願いします"
+          "correctAnswer": "登るの確認です"
         },
         {
           "id": "u11_l7_7",
@@ -1499,10 +1492,10 @@ export const unit11: DojoUnit = {
           "english": "Confirming Number one / most",
           "audioText": "いちばんのかくにん",
           "options": [
+            "Guitar",
+            "Strong point / pride in skill",
             "Confirming Number one / most",
-            "Number one / most",
-            "Confirming Cooking",
-            "Confirming To climb"
+            "Confirming Hobby"
           ],
           "correctAnswer": "Confirming Number one / most"
         },
@@ -1516,25 +1509,25 @@ export const unit11: DojoUnit = {
           "audioText": "いちばんのかくにん",
           "tileBank": [
             "ん",
-            "ち",
-            "い",
             "ば",
-            "く",
             "に",
             "の",
-            "か"
+            "く",
+            "ち",
+            "か",
+            "い"
           ],
           "correctAnswer": "いちばんのかくにん"
         },
         {
           "id": "u11_l8_3",
           "type": "cloze",
-          "prompt": "私は上手の確認がすきです",
-          "furigana": "わたしはじょうずのかくにんがすきです",
-          "romaji": "Watashi wa jouzu no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Skillful / good at.",
-          "audioText": "上手の確認",
-          "clozeSentence": "これは上手の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な上手の確認です。",
+          "furigana": "これはいちばんたいせつなじょうずのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na jouzu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Skillful / good at.",
+          "audioText": "これは上手の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な上手の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1542,7 +1535,8 @@ export const unit11: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l8_4",
@@ -1553,10 +1547,10 @@ export const unit11: DojoUnit = {
           "english": "This is Confirming Skillful / good at.",
           "audioText": "これは上手の確認です",
           "scrambleTokens": [
-            "それ",
-            "ではありません",
             "です",
+            "それ",
             "これは",
+            "ではありません",
             "上手の確認"
           ],
           "scrambleSolution": [
@@ -1586,24 +1580,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l8_6",
           "type": "dictate",
-          "prompt": "下手の確認をお願いします",
-          "furigana": "へたのかくにんをおねがいします",
-          "romaji": "heta no kakunin o onegaishimasu.",
-          "english": "Confirming Unskillful / bad at, please.",
-          "audioText": "下手の確認をお願いします",
+          "prompt": "下手の確認です",
+          "furigana": "へたのかくにんです",
+          "romaji": "heta no kakunin desu.",
+          "english": "It is Confirming Unskillful / bad at.",
+          "audioText": "下手の確認です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "を",
             "です",
-            "下手の確認"
+            "下手の確認",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "下手の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "下手の確認をお願いします"
+          "correctAnswer": "下手の確認です"
         },
         {
           "id": "u11_l8_7",
@@ -1711,9 +1703,9 @@ export const unit11: DojoUnit = {
           "english": "Confirming Experience",
           "audioText": "けいけんのかくにん",
           "options": [
-            "Confirming Can swim",
-            "Confirming Unskillful / bad at",
-            "Confirming Reading books",
+            "Confirming Can speak",
+            "Confirming Hobby",
+            "Hobby",
             "Confirming Experience"
           ],
           "correctAnswer": "Confirming Experience"
@@ -1728,33 +1720,34 @@ export const unit11: DojoUnit = {
           "audioText": "けいけんのかくにん",
           "tileBank": [
             "の",
-            "け",
             "く",
+            "か",
             "ん",
-            "い",
             "け",
+            "い",
             "に",
-            "か"
+            "け"
           ],
           "correctAnswer": "けいけんのかくにん"
         },
         {
           "id": "u11_l9_3",
           "type": "cloze",
-          "prompt": "私は読書の確認がすきです",
-          "furigana": "わたしはどくしょのかくにんがすきです",
-          "romaji": "Watashi wa dokusho no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Reading books.",
-          "audioText": "読書の確認",
-          "clozeSentence": "これは読書の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な読書の確認です。",
+          "furigana": "これはいちばんたいせつなどくしょのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na dokusho no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Reading books.",
+          "audioText": "これは読書の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な読書の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l9_4",
@@ -1765,11 +1758,11 @@ export const unit11: DojoUnit = {
           "english": "This is Confirming Reading books.",
           "audioText": "これは読書の確認です",
           "scrambleTokens": [
-            "です",
+            "読書の確認",
+            "ではありません",
             "これは",
             "それ",
-            "ではありません",
-            "読書の確認"
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -1798,24 +1791,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l9_6",
           "type": "dictate",
-          "prompt": "料理の確認をお願いします",
-          "furigana": "りょうりのかくにんをおねがいします",
-          "romaji": "ryouri no kakunin o onegaishimasu.",
-          "english": "Confirming Cooking, please.",
-          "audioText": "料理の確認をお願いします",
+          "prompt": "料理の確認です",
+          "furigana": "りょうりのかくにんです",
+          "romaji": "ryouri no kakunin desu.",
+          "english": "It is Confirming Cooking.",
+          "audioText": "料理の確認です",
           "dictateTokens": [
-            "料理の確認",
-            "ありがとう",
+            "ではありません",
+            "これ",
             "です",
-            "お願いします",
-            "を"
+            "料理の確認"
           ],
           "dictateSolution": [
             "料理の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "料理の確認をお願いします"
+          "correctAnswer": "料理の確認です"
         },
         {
           "id": "u11_l9_7",
@@ -1922,10 +1913,10 @@ export const unit11: DojoUnit = {
           "english": "Confirming Driving",
           "audioText": "うんてんのかくにん",
           "options": [
+            "Hobby",
             "Confirming Driving",
-            "Experience",
-            "Confirming Reading books",
-            "Confirming To climb"
+            "Can swim",
+            "Reading books"
           ],
           "correctAnswer": "Confirming Driving"
         },
@@ -1938,34 +1929,35 @@ export const unit11: DojoUnit = {
           "english": "Build 'Confirming Driving'",
           "audioText": "うんてんのかくにん",
           "tileBank": [
-            "う",
+            "ん",
+            "に",
+            "か",
+            "の",
+            "く",
             "て",
             "ん",
-            "か",
-            "ん",
-            "く",
-            "に",
-            "の"
+            "う"
           ],
           "correctAnswer": "うんてんのかくにん"
         },
         {
           "id": "u11_l10_3",
           "type": "cloze",
-          "prompt": "私は弾くの確認がすきです",
-          "furigana": "わたしはひくのかくにんがすきです",
-          "romaji": "Watashi wa hiku no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming To play (strings/piano).",
-          "audioText": "弾くの確認",
-          "clozeSentence": "これは弾くの確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な弾くの確認です。",
+          "furigana": "これはいちばんたいせつなひくのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na hiku no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming To play (strings/piano).",
+          "audioText": "これは弾くの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な弾くの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l10_4",
@@ -1977,10 +1969,10 @@ export const unit11: DojoUnit = {
           "audioText": "これは弾くの確認です",
           "scrambleTokens": [
             "これは",
-            "です",
             "ではありません",
-            "弾くの確認",
-            "それ"
+            "それ",
+            "です",
+            "弾くの確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -2009,24 +2001,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l10_6",
           "type": "dictate",
-          "prompt": "得意の確認をお願いします",
-          "furigana": "とくいのかくにんをおねがいします",
-          "romaji": "tokui no kakunin o onegaishimasu.",
-          "english": "Confirming Strong point / pride in skill, please.",
-          "audioText": "得意の確認をお願いします",
+          "prompt": "得意の確認です",
+          "furigana": "とくいのかくにんです",
+          "romaji": "tokui no kakunin desu.",
+          "english": "It is Confirming Strong point / pride in skill.",
+          "audioText": "得意の確認です",
           "dictateTokens": [
+            "です",
             "得意の確認",
-            "を",
-            "ありがとう",
-            "お願いします",
-            "です"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "得意の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "得意の確認をお願いします"
+          "correctAnswer": "得意の確認です"
         },
         {
           "id": "u11_l10_7",
@@ -2132,10 +2122,10 @@ export const unit11: DojoUnit = {
           "english": "Confirming Hobby",
           "audioText": "しゅみのかくにん",
           "options": [
-            "Confirming Unskillful / bad at",
-            "Confirming Hobby",
-            "Confirming To play (strings/piano)",
-            "Can swim"
+            "Confirming Experience",
+            "To play (strings/piano)",
+            "Confirming To climb",
+            "Confirming Hobby"
           ],
           "correctAnswer": "Confirming Hobby"
         },
@@ -2149,12 +2139,12 @@ export const unit11: DojoUnit = {
           "audioText": "しゅみのかくにん",
           "tileBank": [
             "ん",
-            "く",
-            "ゅ",
-            "し",
-            "の",
             "か",
             "に",
+            "く",
+            "し",
+            "の",
+            "ゅ",
             "み"
           ],
           "correctAnswer": "しゅみのかくにん"
@@ -2162,20 +2152,21 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l11_3",
           "type": "cloze",
-          "prompt": "私は話せるの確認がすきです",
-          "furigana": "わたしははなせるのかくにんがすきです",
-          "romaji": "Watashi wa hanaseru no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Can speak.",
-          "audioText": "話せるの確認",
-          "clozeSentence": "これは話せるの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な話せるの確認です。",
+          "furigana": "これはいちばんたいせつなはなせるのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na hanaseru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Can speak.",
+          "audioText": "これは話せるの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な話せるの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l11_4",
@@ -2186,11 +2177,11 @@ export const unit11: DojoUnit = {
           "english": "This is Confirming Can speak.",
           "audioText": "これは話せるの確認です",
           "scrambleTokens": [
-            "話せるの確認",
             "ではありません",
-            "それ",
             "これは",
-            "です"
+            "です",
+            "話せるの確認",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2219,24 +2210,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l11_6",
           "type": "dictate",
-          "prompt": "泳げるの確認をお願いします",
-          "furigana": "およげるのかくにんをおねがいします",
-          "romaji": "oyogeru no kakunin o onegaishimasu.",
-          "english": "Confirming Can swim, please.",
-          "audioText": "泳げるの確認をお願いします",
+          "prompt": "泳げるの確認です",
+          "furigana": "およげるのかくにんです",
+          "romaji": "oyogeru no kakunin desu.",
+          "english": "It is Confirming Can swim.",
+          "audioText": "泳げるの確認です",
           "dictateTokens": [
             "です",
             "泳げるの確認",
-            "ありがとう",
-            "を",
-            "お願いします"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "泳げるの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "泳げるの確認をお願いします"
+          "correctAnswer": "泳げるの確認です"
         },
         {
           "id": "u11_l11_7",
@@ -2341,10 +2330,10 @@ export const unit11: DojoUnit = {
           "english": "Confirming Guitar",
           "audioText": "ギターのかくにん",
           "options": [
+            "Hobby",
             "Confirming Guitar",
-            "Photograph",
-            "Confirming Driving",
-            "Skillful / good at"
+            "Skillful / good at",
+            "Confirming Driving"
           ],
           "correctAnswer": "Confirming Guitar"
         },
@@ -2357,13 +2346,13 @@ export const unit11: DojoUnit = {
           "english": "Build 'Confirming Guitar'",
           "audioText": "ギターのかくにん",
           "tileBank": [
-            "タ",
-            "ギ",
-            "ー",
             "に",
+            "タ",
+            "ー",
             "ん",
-            "く",
             "の",
+            "く",
+            "ギ",
             "か"
           ],
           "correctAnswer": "ギターのかくにん"
@@ -2371,12 +2360,12 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l12_3",
           "type": "cloze",
-          "prompt": "私は写真の確認がすきです",
-          "furigana": "わたしはしゃしんのかくにんがすきです",
-          "romaji": "Watashi wa shashin no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Photograph.",
-          "audioText": "写真の確認",
-          "clozeSentence": "これは写真の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な写真の確認です。",
+          "furigana": "これはいちばんたいせつなしゃしんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shashin no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Photograph.",
+          "audioText": "これは写真の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な写真の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2384,7 +2373,8 @@ export const unit11: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l12_4",
@@ -2395,11 +2385,11 @@ export const unit11: DojoUnit = {
           "english": "This is Confirming Photograph.",
           "audioText": "これは写真の確認です",
           "scrambleTokens": [
-            "写真の確認",
-            "これは",
-            "それ",
             "ではありません",
-            "です"
+            "それ",
+            "写真の確認",
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2428,24 +2418,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l12_6",
           "type": "dictate",
-          "prompt": "登るの確認をお願いします",
-          "furigana": "のぼるのかくにんをおねがいします",
-          "romaji": "noboru no kakunin o onegaishimasu.",
-          "english": "Confirming To climb, please.",
-          "audioText": "登るの確認をお願いします",
+          "prompt": "登るの確認です",
+          "furigana": "のぼるのかくにんです",
+          "romaji": "noboru no kakunin desu.",
+          "english": "It is Confirming To climb.",
+          "audioText": "登るの確認です",
           "dictateTokens": [
-            "を",
-            "登るの確認",
             "です",
-            "ありがとう",
-            "お願いします"
+            "登るの確認",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "登るの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "登るの確認をお願いします"
+          "correctAnswer": "登るの確認です"
         },
         {
           "id": "u11_l12_7",
@@ -2545,10 +2533,10 @@ export const unit11: DojoUnit = {
           "english": "Hobby",
           "audioText": "しゅみ",
           "options": [
-            "To play (strings/piano)",
+            "Confirming Strong point / pride in skill",
             "Hobby",
-            "Confirming Photograph",
-            "Number one / most"
+            "Confirming Can swim",
+            "Can speak"
           ],
           "correctAnswer": "Hobby"
         },
@@ -2561,34 +2549,35 @@ export const unit11: DojoUnit = {
           "english": "Build 'Hobby'",
           "audioText": "しゅみ",
           "tileBank": [
-            "て",
-            "り",
-            "ゅ",
-            "し",
-            "ひ",
             "よ",
-            "は",
-            "み"
+            "り",
+            "れ",
+            "し",
+            "ぬ",
+            "ゅ",
+            "み",
+            "ら"
           ],
           "correctAnswer": "しゅみ"
         },
         {
           "id": "u11_l13_3",
           "type": "cloze",
-          "prompt": "私は話せるがすきです",
-          "furigana": "わたしははなせるがすきです",
-          "romaji": "Watashi wa hanaseru ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Can speak.",
-          "audioText": "話せる",
-          "clozeSentence": "これは話せる {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な話せるです。",
+          "furigana": "これはいちばんたいせつなはなせるです。",
+          "romaji": "Kore wa ichiban taisetsu na hanaseru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Can speak.",
+          "audioText": "これは話せるです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な話せるです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l13_4",
@@ -2599,11 +2588,11 @@ export const unit11: DojoUnit = {
           "english": "This is Can speak.",
           "audioText": "これは話せるです",
           "scrambleTokens": [
-            "話せる",
             "です",
+            "これは",
             "ではありません",
-            "それ",
-            "これは"
+            "話せる",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2632,24 +2621,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l13_6",
           "type": "dictate",
-          "prompt": "泳げるをお願いします",
-          "furigana": "およげるをおねがいします",
-          "romaji": "oyogeru o onegaishimasu.",
-          "english": "Can swim, please.",
-          "audioText": "泳げるをお願いします",
+          "prompt": "泳げるです",
+          "furigana": "およげるです",
+          "romaji": "oyogeru desu.",
+          "english": "It is Can swim.",
+          "audioText": "泳げるです",
           "dictateTokens": [
-            "ありがとう",
-            "を",
-            "泳げる",
+            "ではありません",
             "です",
-            "お願いします"
+            "これ",
+            "泳げる"
           ],
           "dictateSolution": [
             "泳げる",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "泳げるをお願いします"
+          "correctAnswer": "泳げるです"
         },
         {
           "id": "u11_l13_7",
@@ -2748,10 +2735,10 @@ export const unit11: DojoUnit = {
           "english": "Guitar",
           "audioText": "ギター",
           "options": [
-            "Confirming Photograph",
+            "Driving",
+            "Confirming To climb",
             "Guitar",
-            "Confirming Number one / most",
-            "Confirming Guitar"
+            "To climb"
           ],
           "correctAnswer": "Guitar"
         },
@@ -2764,34 +2751,35 @@ export const unit11: DojoUnit = {
           "english": "Build 'Guitar'",
           "audioText": "ギター",
           "tileBank": [
+            "ろ",
             "ー",
-            "て",
-            "タ",
-            "む",
+            "お",
+            "け",
+            "せ",
             "ギ",
-            "は",
-            "ほ",
-            "み"
+            "タ",
+            "ふ"
           ],
           "correctAnswer": "ギター"
         },
         {
           "id": "u11_l14_3",
           "type": "cloze",
-          "prompt": "私は写真がすきです",
-          "furigana": "わたしはしゃしんがすきです",
-          "romaji": "Watashi wa shashin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Photograph.",
-          "audioText": "写真",
-          "clozeSentence": "これは写真 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な写真です。",
+          "furigana": "これはいちばんたいせつなしゃしんです。",
+          "romaji": "Kore wa ichiban taisetsu na shashin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Photograph.",
+          "audioText": "これは写真です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な写真です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l14_4",
@@ -2803,10 +2791,10 @@ export const unit11: DojoUnit = {
           "audioText": "これは写真です",
           "scrambleTokens": [
             "写真",
+            "それ",
             "これは",
             "です",
-            "ではありません",
-            "それ"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2835,24 +2823,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l14_6",
           "type": "dictate",
-          "prompt": "登るをお願いします",
-          "furigana": "のぼるをおねがいします",
-          "romaji": "noboru o onegaishimasu.",
-          "english": "To climb, please.",
-          "audioText": "登るをお願いします",
+          "prompt": "登るです",
+          "furigana": "のぼるです",
+          "romaji": "noboru desu.",
+          "english": "It is To climb.",
+          "audioText": "登るです",
           "dictateTokens": [
+            "これ",
             "登る",
-            "を",
-            "お願いします",
-            "ありがとう",
+            "ではありません",
             "です"
           ],
           "dictateSolution": [
             "登る",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "登るをお願いします"
+          "correctAnswer": "登るです"
         },
         {
           "id": "u11_l14_7",
@@ -2954,9 +2940,9 @@ export const unit11: DojoUnit = {
           "english": "Number one / most",
           "audioText": "いちばん",
           "options": [
-            "Confirming Guitar",
-            "Strong point / pride in skill",
-            "Can speak",
+            "Photograph",
+            "Hobby",
+            "Confirming Hobby",
             "Number one / most"
           ],
           "correctAnswer": "Number one / most"
@@ -2970,34 +2956,35 @@ export const unit11: DojoUnit = {
           "english": "Build 'Number one / most'",
           "audioText": "いちばん",
           "tileBank": [
-            "い",
-            "ば",
+            "う",
             "ん",
-            "ひ",
-            "め",
-            "に",
-            "も",
-            "ち"
+            "く",
+            "か",
+            "ち",
+            "い",
+            "あ",
+            "ば"
           ],
           "correctAnswer": "いちばん"
         },
         {
           "id": "u11_l15_3",
           "type": "cloze",
-          "prompt": "私は上手がすきです",
-          "furigana": "わたしはじょうずがすきです",
-          "romaji": "Watashi wa jouzu ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Skillful / good at.",
-          "audioText": "上手",
-          "clozeSentence": "これは上手 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な上手です。",
+          "furigana": "これはいちばんたいせつなじょうずです。",
+          "romaji": "Kore wa ichiban taisetsu na jouzu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Skillful / good at.",
+          "audioText": "これは上手です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な上手です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u11_l15_4",
@@ -3008,11 +2995,11 @@ export const unit11: DojoUnit = {
           "english": "This is Skillful / good at.",
           "audioText": "これは上手です",
           "scrambleTokens": [
-            "上手",
-            "ではありません",
-            "それ",
             "です",
-            "これは"
+            "それ",
+            "上手",
+            "これは",
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -3041,24 +3028,22 @@ export const unit11: DojoUnit = {
         {
           "id": "u11_l15_6",
           "type": "dictate",
-          "prompt": "下手をお願いします",
-          "furigana": "へたをおねがいします",
-          "romaji": "heta o onegaishimasu.",
-          "english": "Unskillful / bad at, please.",
-          "audioText": "下手をお願いします",
+          "prompt": "下手です",
+          "furigana": "へたです",
+          "romaji": "heta desu.",
+          "english": "It is Unskillful / bad at.",
+          "audioText": "下手です",
           "dictateTokens": [
             "です",
-            "お願いします",
-            "下手",
-            "ありがとう",
-            "を"
+            "ではありません",
+            "これ",
+            "下手"
           ],
           "dictateSolution": [
             "下手",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "下手をお願いします"
+          "correctAnswer": "下手です"
         },
         {
           "id": "u11_l15_7",
@@ -3143,10 +3128,10 @@ export const unit11: DojoUnit = {
         "english": "Hobby",
         "audioText": "しゅみ",
         "options": [
-          "Reading books",
-          "Hobby",
-          "Confirming Experience",
-          "Cooking"
+          "Skillful / good at",
+          "Confirming Reading books",
+          "Confirming To climb",
+          "Hobby"
         ],
         "correctAnswer": "Hobby"
       },
@@ -3159,14 +3144,14 @@ export const unit11: DojoUnit = {
         "english": "Build 'Hobby'",
         "audioText": "しゅみ",
         "tileBank": [
-          "ま",
-          "す",
-          "ゅ",
-          "に",
-          "け",
+          "し",
+          "も",
+          "る",
+          "な",
           "み",
-          "く",
-          "し"
+          "め",
+          "ゅ",
+          "け"
         ],
         "correctAnswer": "しゅみ"
       },
@@ -3179,10 +3164,10 @@ export const unit11: DojoUnit = {
         "english": "Number one / most",
         "audioText": "いちばん",
         "options": [
+          "Photograph",
+          "Confirming Guitar",
           "Number one / most",
-          "Confirming Can swim",
-          "Experience",
-          "Confirming To climb"
+          "Can swim"
         ],
         "correctAnswer": "Number one / most"
       },
@@ -3195,14 +3180,14 @@ export const unit11: DojoUnit = {
         "english": "Build 'Number one / most'",
         "audioText": "いちばん",
         "tileBank": [
-          "い",
-          "ち",
-          "つ",
           "の",
+          "ち",
           "ば",
-          "く",
-          "か",
-          "ん"
+          "い",
+          "る",
+          "れ",
+          "ん",
+          "み"
         ],
         "correctAnswer": "いちばん"
       },
@@ -3215,10 +3200,10 @@ export const unit11: DojoUnit = {
         "english": "Driving",
         "audioText": "うんてん",
         "options": [
-          "Confirming Can swim",
+          "Confirming Experience",
           "Driving",
-          "Confirming Photograph",
-          "Hobby"
+          "Can swim",
+          "Confirming Unskillful / bad at"
         ],
         "correctAnswer": "Driving"
       },
@@ -3231,14 +3216,14 @@ export const unit11: DojoUnit = {
         "english": "Build 'Driving'",
         "audioText": "うんてん",
         "tileBank": [
-          "つ",
-          "て",
           "う",
-          "こ",
-          "け",
-          "れ",
+          "の",
           "ん",
-          "ん"
+          "り",
+          "ん",
+          "て",
+          "ほ",
+          "な"
         ],
         "correctAnswer": "うんてん"
       },
@@ -3251,10 +3236,10 @@ export const unit11: DojoUnit = {
         "english": "Confirming Guitar",
         "audioText": "ギターのかくにん",
         "options": [
-          "Confirming To climb",
-          "Strong point / pride in skill",
           "Confirming Guitar",
-          "Cooking"
+          "Confirming Hobby",
+          "Confirming Number one / most",
+          "Can swim"
         ],
         "correctAnswer": "Confirming Guitar"
       },
@@ -3268,13 +3253,13 @@ export const unit11: DojoUnit = {
         "audioText": "ギターのかくにん",
         "tileBank": [
           "か",
-          "の",
-          "ギ",
-          "ー",
-          "ん",
-          "タ",
           "に",
-          "く"
+          "タ",
+          "ん",
+          "ー",
+          "く",
+          "の",
+          "ギ"
         ],
         "correctAnswer": "ギターのかくにん"
       },
@@ -3287,9 +3272,9 @@ export const unit11: DojoUnit = {
         "english": "Confirming Experience",
         "audioText": "けいけんのかくにん",
         "options": [
-          "Confirming Can swim",
-          "Confirming Unskillful / bad at",
-          "Confirming Reading books",
+          "Confirming Can speak",
+          "Confirming Hobby",
+          "Hobby",
           "Confirming Experience"
         ],
         "correctAnswer": "Confirming Experience"
@@ -3304,13 +3289,13 @@ export const unit11: DojoUnit = {
         "audioText": "けいけんのかくにん",
         "tileBank": [
           "の",
-          "け",
           "く",
+          "か",
           "ん",
-          "い",
           "け",
+          "い",
           "に",
-          "か"
+          "け"
         ],
         "correctAnswer": "けいけんのかくにん"
       },
@@ -3323,10 +3308,10 @@ export const unit11: DojoUnit = {
         "english": "Confirming Hobby",
         "audioText": "しゅみのかくにん",
         "options": [
-          "Confirming Unskillful / bad at",
-          "Confirming Hobby",
-          "Confirming To play (strings/piano)",
-          "Can swim"
+          "Confirming Experience",
+          "To play (strings/piano)",
+          "Confirming To climb",
+          "Confirming Hobby"
         ],
         "correctAnswer": "Confirming Hobby"
       },
@@ -3340,12 +3325,12 @@ export const unit11: DojoUnit = {
         "audioText": "しゅみのかくにん",
         "tileBank": [
           "ん",
-          "く",
-          "ゅ",
-          "し",
-          "の",
           "か",
           "に",
+          "く",
+          "し",
+          "の",
+          "ゅ",
           "み"
         ],
         "correctAnswer": "しゅみのかくにん"

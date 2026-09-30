@@ -52,10 +52,10 @@ export const unit30: DojoUnit = {
           "english": "Grand master / instructor",
           "audioText": "しはん",
           "options": [
-            "Indomitable / unyielding spirit",
+            "Confirming Full initiation and complete mastery",
             "Grand master / instructor",
-            "Confirming Grand master / instructor",
-            "Confirming Expert knowledge / thorough familiarity"
+            "Confirming True essence / quintessential core",
+            "Ultimate secrets / esoteric mystery"
           ],
           "correctAnswer": "Grand master / instructor"
         },
@@ -68,34 +68,35 @@ export const unit30: DojoUnit = {
           "english": "Build 'Grand master / instructor'",
           "audioText": "しはん",
           "tileBank": [
-            "れ",
-            "は",
-            "な",
+            "む",
             "し",
-            "ろ",
-            "け",
-            "く",
-            "ん"
+            "さ",
+            "つ",
+            "は",
+            "ん",
+            "あ",
+            "き"
           ],
           "correctAnswer": "しはん"
         },
         {
           "id": "u30_l1_3",
           "type": "cloze",
-          "prompt": "私は奥義がすきです",
-          "furigana": "わたしはおうぎがすきです",
-          "romaji": "Watashi wa ougi ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Ultimate secrets / esoteric mystery.",
-          "audioText": "奥義",
-          "clozeSentence": "これは奥義 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な奥義です。",
+          "furigana": "これはいちばんたいせつなおうぎです。",
+          "romaji": "Kore wa ichiban taisetsu na ougi desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Ultimate secrets / esoteric mystery.",
+          "audioText": "これは奥義です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な奥義です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l1_4",
@@ -106,11 +107,11 @@ export const unit30: DojoUnit = {
           "english": "This is Ultimate secrets / esoteric mystery.",
           "audioText": "これは奥義です",
           "scrambleTokens": [
-            "奥義",
             "それ",
+            "これは",
             "です",
             "ではありません",
-            "これは"
+            "奥義"
           ],
           "scrambleSolution": [
             "これは",
@@ -139,24 +140,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l1_6",
           "type": "dictate",
-          "prompt": "免許皆伝をお願いします",
-          "furigana": "めんきょかいでんをおねがいします",
-          "romaji": "menkyo kaiden o onegaishimasu.",
-          "english": "Full initiation and complete mastery, please.",
-          "audioText": "免許皆伝をお願いします",
+          "prompt": "免許皆伝です",
+          "furigana": "めんきょかいでんです",
+          "romaji": "menkyo kaiden desu.",
+          "english": "It is Full initiation and complete mastery.",
+          "audioText": "免許皆伝です",
           "dictateTokens": [
-            "を",
-            "です",
-            "お願いします",
-            "ありがとう",
-            "免許皆伝"
+            "これ",
+            "ではありません",
+            "免許皆伝",
+            "です"
           ],
           "dictateSolution": [
             "免許皆伝",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "免許皆伝をお願いします"
+          "correctAnswer": "免許皆伝です"
         },
         {
           "id": "u30_l1_7",
@@ -259,9 +258,9 @@ export const unit30: DojoUnit = {
           "audioText": "せいつう",
           "options": [
             "Expert knowledge / thorough familiarity",
-            "The innermost secret",
-            "Confirming The Dojo / sacred place of the Way",
-            "Devoted study and self-improvement"
+            "Confirming Master / expert practitioner",
+            "Grand master / instructor",
+            "Confirming Rigorous training / spiritual discipline"
           ],
           "correctAnswer": "Expert knowledge / thorough familiarity"
         },
@@ -274,34 +273,35 @@ export const unit30: DojoUnit = {
           "english": "Build 'Expert knowledge / thorough familiarity'",
           "audioText": "せいつう",
           "tileBank": [
-            "せ",
-            "い",
-            "み",
-            "て",
-            "ち",
-            "ん",
+            "も",
+            "と",
             "う",
-            "つ"
+            "つ",
+            "か",
+            "た",
+            "い",
+            "せ"
           ],
           "correctAnswer": "せいつう"
         },
         {
           "id": "u30_l2_3",
           "type": "cloze",
-          "prompt": "私は達人がすきです",
-          "furigana": "わたしはたつじんがすきです",
-          "romaji": "Watashi wa tatsujin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Master / expert practitioner.",
-          "audioText": "達人",
-          "clozeSentence": "これは達人 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な達人です。",
+          "furigana": "これはいちばんたいせつなたつじんです。",
+          "romaji": "Kore wa ichiban taisetsu na tatsujin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Master / expert practitioner.",
+          "audioText": "これは達人です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な達人です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l2_4",
@@ -312,11 +312,11 @@ export const unit30: DojoUnit = {
           "english": "This is Master / expert practitioner.",
           "audioText": "これは達人です",
           "scrambleTokens": [
-            "達人",
             "です",
+            "それ",
             "ではありません",
-            "これは",
-            "それ"
+            "達人",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -345,24 +345,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l2_6",
           "type": "dictate",
-          "prompt": "神髄をお願いします",
-          "furigana": "しんずいをおねがいします",
-          "romaji": "shinzui o onegaishimasu.",
-          "english": "True essence / quintessential core, please.",
-          "audioText": "神髄をお願いします",
+          "prompt": "神髄です",
+          "furigana": "しんずいです",
+          "romaji": "shinzui desu.",
+          "english": "It is True essence / quintessential core.",
+          "audioText": "神髄です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
+            "これ",
+            "ではありません",
             "です",
-            "を",
             "神髄"
           ],
           "dictateSolution": [
             "神髄",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "神髄をお願いします"
+          "correctAnswer": "神髄です"
         },
         {
           "id": "u30_l2_7",
@@ -464,10 +462,10 @@ export const unit30: DojoUnit = {
           "english": "Rigorous training / spiritual discipline",
           "audioText": "しゅうれん",
           "options": [
-            "Confirming Full initiation and complete mastery",
-            "Confirming True essence / quintessential core",
+            "Confirming Ultimate secrets / esoteric mystery",
+            "True essence / quintessential core",
             "Rigorous training / spiritual discipline",
-            "Confirming Full initiation and complete mastery"
+            "Confirming The Dojo / sacred place of the Way"
           ],
           "correctAnswer": "Rigorous training / spiritual discipline"
         },
@@ -481,33 +479,34 @@ export const unit30: DojoUnit = {
           "audioText": "しゅうれん",
           "tileBank": [
             "う",
-            "く",
-            "り",
             "れ",
-            "ん",
+            "な",
+            "し",
+            "つ",
+            "ふ",
             "ゅ",
-            "ぬ",
-            "し"
+            "ん"
           ],
           "correctAnswer": "しゅうれん"
         },
         {
           "id": "u30_l3_3",
           "type": "cloze",
-          "prompt": "私は頂点がすきです",
-          "furigana": "わたしはちょうてんがすきです",
-          "romaji": "Watashi wa chouten ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Zenith / summit of achievement.",
-          "audioText": "頂点",
-          "clozeSentence": "これは頂点 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な頂点です。",
+          "furigana": "これはいちばんたいせつなちょうてんです。",
+          "romaji": "Kore wa ichiban taisetsu na chouten desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Zenith / summit of achievement.",
+          "audioText": "これは頂点です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な頂点です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l3_4",
@@ -518,11 +517,11 @@ export const unit30: DojoUnit = {
           "english": "This is Zenith / summit of achievement.",
           "audioText": "これは頂点です",
           "scrambleTokens": [
-            "それ",
-            "これは",
-            "ではありません",
             "頂点",
-            "です"
+            "これは",
+            "です",
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -551,24 +550,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l3_6",
           "type": "dictate",
-          "prompt": "貫禄をお願いします",
-          "furigana": "かんろくをおねがいします",
-          "romaji": "kanroku o onegaishimasu.",
-          "english": "Dignity / imposing presence, please.",
-          "audioText": "貫禄をお願いします",
+          "prompt": "貫禄です",
+          "furigana": "かんろくです",
+          "romaji": "kanroku desu.",
+          "english": "It is Dignity / imposing presence.",
+          "audioText": "貫禄です",
           "dictateTokens": [
-            "お願いします",
             "です",
-            "を",
-            "ありがとう",
-            "貫禄"
+            "これ",
+            "貫禄",
+            "ではありません"
           ],
           "dictateSolution": [
             "貫禄",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "貫禄をお願いします"
+          "correctAnswer": "貫禄です"
         },
         {
           "id": "u30_l3_7",
@@ -670,9 +667,9 @@ export const unit30: DojoUnit = {
           "english": "Great culmination / successful achievement",
           "audioText": "たいせい",
           "options": [
-            "Confirming Grand master / instructor",
-            "Confirming Zenith / summit of achievement",
-            "Confirming Ultimate secrets / esoteric mystery",
+            "Dignity / imposing presence",
+            "Master / expert practitioner",
+            "Confirming The innermost secret",
             "Great culmination / successful achievement"
           ],
           "correctAnswer": "Great culmination / successful achievement"
@@ -686,26 +683,26 @@ export const unit30: DojoUnit = {
           "english": "Build 'Great culmination / successful achievement'",
           "audioText": "たいせい",
           "tileBank": [
-            "い",
-            "ほ",
-            "い",
+            "せ",
+            "ま",
+            "れ",
             "た",
-            "よ",
-            "ん",
-            "ろ",
-            "せ"
+            "い",
+            "い",
+            "ゆ",
+            "を"
           ],
           "correctAnswer": "たいせい"
         },
         {
           "id": "u30_l4_3",
           "type": "cloze",
-          "prompt": "私は研鑽がすきです",
-          "furigana": "わたしはけんさんがすきです",
-          "romaji": "Watashi wa kensan ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Devoted study and self-improvement.",
-          "audioText": "研鑽",
-          "clozeSentence": "これは研鑽 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な研鑽です。",
+          "furigana": "これはいちばんたいせつなけんさんです。",
+          "romaji": "Kore wa ichiban taisetsu na kensan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Devoted study and self-improvement.",
+          "audioText": "これは研鑽です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な研鑽です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -713,7 +710,8 @@ export const unit30: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l4_4",
@@ -724,11 +722,11 @@ export const unit30: DojoUnit = {
           "english": "This is Devoted study and self-improvement.",
           "audioText": "これは研鑽です",
           "scrambleTokens": [
-            "これは",
-            "です",
             "ではありません",
             "研鑽",
-            "それ"
+            "それ",
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -757,24 +755,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l4_6",
           "type": "dictate",
-          "prompt": "不屈をお願いします",
-          "furigana": "ふくつをおねがいします",
-          "romaji": "fukutsu o onegaishimasu.",
-          "english": "Indomitable / unyielding spirit, please.",
-          "audioText": "不屈をお願いします",
+          "prompt": "不屈です",
+          "furigana": "ふくつです",
+          "romaji": "fukutsu desu.",
+          "english": "It is Indomitable / unyielding spirit.",
+          "audioText": "不屈です",
           "dictateTokens": [
             "不屈",
-            "お願いします",
-            "を",
-            "です",
-            "ありがとう"
+            "これ",
+            "ではありません",
+            "です"
           ],
           "dictateSolution": [
             "不屈",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "不屈をお願いします"
+          "correctAnswer": "不屈です"
         },
         {
           "id": "u30_l4_7",
@@ -876,10 +872,10 @@ export const unit30: DojoUnit = {
           "english": "Passing down of oral tradition",
           "audioText": "でんしょう",
           "options": [
-            "Passing down of oral tradition",
-            "Confirming Indomitable / unyielding spirit",
-            "Confirming Great culmination / successful achievement",
-            "Confirming Grand master / instructor"
+            "Master / expert practitioner",
+            "Confirming Ultimate secrets / esoteric mystery",
+            "Confirming True essence / quintessential core",
+            "Passing down of oral tradition"
           ],
           "correctAnswer": "Passing down of oral tradition"
         },
@@ -892,34 +888,35 @@ export const unit30: DojoUnit = {
           "english": "Build 'Passing down of oral tradition'",
           "audioText": "でんしょう",
           "tileBank": [
-            "く",
-            "し",
             "ん",
-            "ょ",
-            "に",
-            "せ",
+            "り",
+            "さ",
+            "で",
+            "し",
             "う",
-            "で"
+            "え",
+            "ょ"
           ],
           "correctAnswer": "でんしょう"
         },
         {
           "id": "u30_l5_3",
           "type": "cloze",
-          "prompt": "私は極意がすきです",
-          "furigana": "わたしはごくいがすきです",
-          "romaji": "Watashi wa gokui ga suki desu.",
-          "english": "Fill in the blank with the correct particle for The innermost secret.",
-          "audioText": "極意",
-          "clozeSentence": "これは極意 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な極意です。",
+          "furigana": "これはいちばんたいせつなごくいです。",
+          "romaji": "Kore wa ichiban taisetsu na gokui desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important The innermost secret.",
+          "audioText": "これは極意です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な極意です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l5_4",
@@ -930,11 +927,11 @@ export const unit30: DojoUnit = {
           "english": "This is The innermost secret.",
           "audioText": "これは極意です",
           "scrambleTokens": [
-            "極意",
             "ではありません",
-            "これは",
             "それ",
-            "です"
+            "です",
+            "これは",
+            "極意"
           ],
           "scrambleSolution": [
             "これは",
@@ -963,24 +960,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l5_6",
           "type": "dictate",
-          "prompt": "道場をお願いします",
-          "furigana": "どうじょうをおねがいします",
-          "romaji": "doujou o onegaishimasu.",
-          "english": "The Dojo / sacred place of the Way, please.",
-          "audioText": "道場をお願いします",
+          "prompt": "道場です",
+          "furigana": "どうじょうです",
+          "romaji": "doujou desu.",
+          "english": "It is The Dojo / sacred place of the Way.",
+          "audioText": "道場です",
           "dictateTokens": [
+            "ではありません",
             "道場",
-            "お願いします",
-            "ありがとう",
-            "を",
-            "です"
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "道場",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "道場をお願いします"
+          "correctAnswer": "道場です"
         },
         {
           "id": "u30_l5_7",
@@ -1090,10 +1085,10 @@ export const unit30: DojoUnit = {
           "english": "Confirming Grand master / instructor",
           "audioText": "しはんのかくにん",
           "options": [
-            "Confirming Full initiation and complete mastery",
-            "Confirming Grand master / instructor",
-            "Passing down of oral tradition",
-            "Confirming The Dojo / sacred place of the Way"
+            "Master / expert practitioner",
+            "Confirming The Dojo / sacred place of the Way",
+            "Confirming True essence / quintessential core",
+            "Confirming Grand master / instructor"
           ],
           "correctAnswer": "Confirming Grand master / instructor"
         },
@@ -1106,34 +1101,35 @@ export const unit30: DojoUnit = {
           "english": "Build 'Confirming Grand master / instructor'",
           "audioText": "しはんのかくにん",
           "tileBank": [
-            "か",
-            "ん",
-            "く",
+            "に",
             "し",
-            "は",
-            "の",
             "ん",
-            "に"
+            "ん",
+            "か",
+            "く",
+            "は",
+            "の"
           ],
           "correctAnswer": "しはんのかくにん"
         },
         {
           "id": "u30_l6_3",
           "type": "cloze",
-          "prompt": "私は奥義の確認がすきです",
-          "furigana": "わたしはおうぎのかくにんがすきです",
-          "romaji": "Watashi wa ougi no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Ultimate secrets / esoteric mystery.",
-          "audioText": "奥義の確認",
-          "clozeSentence": "これは奥義の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な奥義の確認です。",
+          "furigana": "これはいちばんたいせつなおうぎのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ougi no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Ultimate secrets / esoteric mystery.",
+          "audioText": "これは奥義の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な奥義の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l6_4",
@@ -1144,11 +1140,11 @@ export const unit30: DojoUnit = {
           "english": "This is Confirming Ultimate secrets / esoteric mystery.",
           "audioText": "これは奥義の確認です",
           "scrambleTokens": [
-            "ではありません",
-            "奥義の確認",
             "それ",
             "これは",
-            "です"
+            "です",
+            "ではありません",
+            "奥義の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1177,24 +1173,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l6_6",
           "type": "dictate",
-          "prompt": "免許皆伝の確認をお願いします",
-          "furigana": "めんきょかいでんのかくにんをおねがいします",
-          "romaji": "menkyo kaiden no kakunin o onegaishimasu.",
-          "english": "Confirming Full initiation and complete mastery, please.",
-          "audioText": "免許皆伝の確認をお願いします",
+          "prompt": "免許皆伝の確認です",
+          "furigana": "めんきょかいでんのかくにんです",
+          "romaji": "menkyo kaiden no kakunin desu.",
+          "english": "It is Confirming Full initiation and complete mastery.",
+          "audioText": "免許皆伝の確認です",
           "dictateTokens": [
-            "です",
-            "を",
-            "ありがとう",
             "免許皆伝の確認",
-            "お願いします"
+            "ではありません",
+            "です",
+            "これ"
           ],
           "dictateSolution": [
             "免許皆伝の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "免許皆伝の確認をお願いします"
+          "correctAnswer": "免許皆伝の確認です"
         },
         {
           "id": "u30_l6_7",
@@ -1302,10 +1296,10 @@ export const unit30: DojoUnit = {
           "english": "Confirming Expert knowledge / thorough familiarity",
           "audioText": "せいつうのかくにん",
           "options": [
-            "Confirming Master / expert practitioner",
-            "Confirming Grand master / instructor",
             "Confirming Expert knowledge / thorough familiarity",
-            "Confirming Master / expert practitioner"
+            "Confirming Ultimate secrets / esoteric mystery",
+            "The Dojo / sacred place of the Way",
+            "Confirming Devoted study and self-improvement"
           ],
           "correctAnswer": "Confirming Expert knowledge / thorough familiarity"
         },
@@ -1318,13 +1312,13 @@ export const unit30: DojoUnit = {
           "english": "Build 'Confirming Expert knowledge / thorough familiarity'",
           "audioText": "せいつうのかくにん",
           "tileBank": [
-            "つ",
-            "く",
-            "う",
-            "の",
-            "せ",
-            "か",
             "い",
+            "の",
+            "か",
+            "う",
+            "く",
+            "つ",
+            "せ",
             "に"
           ],
           "correctAnswer": "せいつうのかくにん"
@@ -1332,20 +1326,21 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l7_3",
           "type": "cloze",
-          "prompt": "私は達人の確認がすきです",
-          "furigana": "わたしはたつじんのかくにんがすきです",
-          "romaji": "Watashi wa tatsujin no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Master / expert practitioner.",
-          "audioText": "達人の確認",
-          "clozeSentence": "これは達人の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な達人の確認です。",
+          "furigana": "これはいちばんたいせつなたつじんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na tatsujin no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Master / expert practitioner.",
+          "audioText": "これは達人の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な達人の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l7_4",
@@ -1358,9 +1353,9 @@ export const unit30: DojoUnit = {
           "scrambleTokens": [
             "ではありません",
             "達人の確認",
-            "これは",
             "それ",
-            "です"
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -1389,24 +1384,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l7_6",
           "type": "dictate",
-          "prompt": "神髄の確認をお願いします",
-          "furigana": "しんずいのかくにんをおねがいします",
-          "romaji": "shinzui no kakunin o onegaishimasu.",
-          "english": "Confirming True essence / quintessential core, please.",
-          "audioText": "神髄の確認をお願いします",
+          "prompt": "神髄の確認です",
+          "furigana": "しんずいのかくにんです",
+          "romaji": "shinzui no kakunin desu.",
+          "english": "It is Confirming True essence / quintessential core.",
+          "audioText": "神髄の確認です",
           "dictateTokens": [
-            "お願いします",
-            "を",
-            "です",
+            "ではありません",
+            "これ",
             "神髄の確認",
-            "ありがとう"
+            "です"
           ],
           "dictateSolution": [
             "神髄の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "神髄の確認をお願いします"
+          "correctAnswer": "神髄の確認です"
         },
         {
           "id": "u30_l7_7",
@@ -1514,10 +1507,10 @@ export const unit30: DojoUnit = {
           "english": "Confirming Rigorous training / spiritual discipline",
           "audioText": "しゅうれんのかくにん",
           "options": [
-            "Confirming Full initiation and complete mastery",
-            "Confirming Passing down of oral tradition",
-            "Confirming Expert knowledge / thorough familiarity",
-            "Confirming Rigorous training / spiritual discipline"
+            "Confirming Rigorous training / spiritual discipline",
+            "Dignity / imposing presence",
+            "Confirming True essence / quintessential core",
+            "Rigorous training / spiritual discipline"
           ],
           "correctAnswer": "Confirming Rigorous training / spiritual discipline"
         },
@@ -1530,26 +1523,26 @@ export const unit30: DojoUnit = {
           "english": "Build 'Confirming Rigorous training / spiritual discipline'",
           "audioText": "しゅうれんのかくにん",
           "tileBank": [
-            "の",
-            "れ",
-            "く",
             "ゅ",
-            "ん",
+            "れ",
             "う",
+            "く",
+            "の",
+            "か",
             "し",
-            "か"
+            "ん"
           ],
           "correctAnswer": "しゅうれんのかくにん"
         },
         {
           "id": "u30_l8_3",
           "type": "cloze",
-          "prompt": "私は頂点の確認がすきです",
-          "furigana": "わたしはちょうてんのかくにんがすきです",
-          "romaji": "Watashi wa chouten no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Zenith / summit of achievement.",
-          "audioText": "頂点の確認",
-          "clozeSentence": "これは頂点の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な頂点の確認です。",
+          "furigana": "これはいちばんたいせつなちょうてんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na chouten no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Zenith / summit of achievement.",
+          "audioText": "これは頂点の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な頂点の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1557,7 +1550,8 @@ export const unit30: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l8_4",
@@ -1568,11 +1562,11 @@ export const unit30: DojoUnit = {
           "english": "This is Confirming Zenith / summit of achievement.",
           "audioText": "これは頂点の確認です",
           "scrambleTokens": [
-            "頂点の確認",
+            "これは",
             "です",
+            "頂点の確認",
             "ではありません",
-            "それ",
-            "これは"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1601,24 +1595,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l8_6",
           "type": "dictate",
-          "prompt": "貫禄の確認をお願いします",
-          "furigana": "かんろくのかくにんをおねがいします",
-          "romaji": "kanroku no kakunin o onegaishimasu.",
-          "english": "Confirming Dignity / imposing presence, please.",
-          "audioText": "貫禄の確認をお願いします",
+          "prompt": "貫禄の確認です",
+          "furigana": "かんろくのかくにんです",
+          "romaji": "kanroku no kakunin desu.",
+          "english": "It is Confirming Dignity / imposing presence.",
+          "audioText": "貫禄の確認です",
           "dictateTokens": [
-            "ありがとう",
+            "ではありません",
             "貫禄の確認",
             "です",
-            "を",
-            "お願いします"
+            "これ"
           ],
           "dictateSolution": [
             "貫禄の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "貫禄の確認をお願いします"
+          "correctAnswer": "貫禄の確認です"
         },
         {
           "id": "u30_l8_7",
@@ -1726,10 +1718,10 @@ export const unit30: DojoUnit = {
           "english": "Confirming Great culmination / successful achievement",
           "audioText": "たいせいのかくにん",
           "options": [
-            "Full initiation and complete mastery",
-            "Ultimate secrets / esoteric mystery",
+            "Rigorous training / spiritual discipline",
             "Confirming Great culmination / successful achievement",
-            "Confirming True essence / quintessential core"
+            "Confirming True essence / quintessential core",
+            "Confirming The Dojo / sacred place of the Way"
           ],
           "correctAnswer": "Confirming Great culmination / successful achievement"
         },
@@ -1742,34 +1734,35 @@ export const unit30: DojoUnit = {
           "english": "Build 'Confirming Great culmination / successful achievement'",
           "audioText": "たいせいのかくにん",
           "tileBank": [
-            "の",
             "い",
-            "た",
             "い",
             "せ",
+            "く",
             "か",
+            "た",
             "に",
-            "く"
+            "の"
           ],
           "correctAnswer": "たいせいのかくにん"
         },
         {
           "id": "u30_l9_3",
           "type": "cloze",
-          "prompt": "私は研鑽の確認がすきです",
-          "furigana": "わたしはけんさんのかくにんがすきです",
-          "romaji": "Watashi wa kensan no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Devoted study and self-improvement.",
-          "audioText": "研鑽の確認",
-          "clozeSentence": "これは研鑽の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な研鑽の確認です。",
+          "furigana": "これはいちばんたいせつなけんさんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kensan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Devoted study and self-improvement.",
+          "audioText": "これは研鑽の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な研鑽の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l9_4",
@@ -1780,11 +1773,11 @@ export const unit30: DojoUnit = {
           "english": "This is Confirming Devoted study and self-improvement.",
           "audioText": "これは研鑽の確認です",
           "scrambleTokens": [
-            "研鑽の確認",
-            "です",
+            "ではありません",
             "これは",
             "それ",
-            "ではありません"
+            "です",
+            "研鑽の確認"
           ],
           "scrambleSolution": [
             "これは",
@@ -1813,24 +1806,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l9_6",
           "type": "dictate",
-          "prompt": "不屈の確認をお願いします",
-          "furigana": "ふくつのかくにんをおねがいします",
-          "romaji": "fukutsu no kakunin o onegaishimasu.",
-          "english": "Confirming Indomitable / unyielding spirit, please.",
-          "audioText": "不屈の確認をお願いします",
+          "prompt": "不屈の確認です",
+          "furigana": "ふくつのかくにんです",
+          "romaji": "fukutsu no kakunin desu.",
+          "english": "It is Confirming Indomitable / unyielding spirit.",
+          "audioText": "不屈の確認です",
           "dictateTokens": [
-            "不屈の確認",
+            "これ",
+            "ではありません",
             "です",
-            "を",
-            "ありがとう",
-            "お願いします"
+            "不屈の確認"
           ],
           "dictateSolution": [
             "不屈の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "不屈の確認をお願いします"
+          "correctAnswer": "不屈の確認です"
         },
         {
           "id": "u30_l9_7",
@@ -1938,10 +1929,10 @@ export const unit30: DojoUnit = {
           "english": "Confirming Passing down of oral tradition",
           "audioText": "でんしょうのかくにん",
           "options": [
-            "Confirming Passing down of oral tradition",
-            "Devoted study and self-improvement",
-            "Ultimate secrets / esoteric mystery",
-            "Rigorous training / spiritual discipline"
+            "Rigorous training / spiritual discipline",
+            "Expert knowledge / thorough familiarity",
+            "Confirming The Dojo / sacred place of the Way",
+            "Confirming Passing down of oral tradition"
           ],
           "correctAnswer": "Confirming Passing down of oral tradition"
         },
@@ -1954,34 +1945,35 @@ export const unit30: DojoUnit = {
           "english": "Build 'Confirming Passing down of oral tradition'",
           "audioText": "でんしょうのかくにん",
           "tileBank": [
+            "ん",
             "く",
             "で",
-            "の",
+            "か",
+            "ょ",
             "う",
             "し",
-            "ん",
-            "か",
-            "ょ"
+            "の"
           ],
           "correctAnswer": "でんしょうのかくにん"
         },
         {
           "id": "u30_l10_3",
           "type": "cloze",
-          "prompt": "私は極意の確認がすきです",
-          "furigana": "わたしはごくいのかくにんがすきです",
-          "romaji": "Watashi wa gokui no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming The innermost secret.",
-          "audioText": "極意の確認",
-          "clozeSentence": "これは極意の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な極意の確認です。",
+          "furigana": "これはいちばんたいせつなごくいのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na gokui no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming The innermost secret.",
+          "audioText": "これは極意の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な極意の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l10_4",
@@ -1992,11 +1984,11 @@ export const unit30: DojoUnit = {
           "english": "This is Confirming The innermost secret.",
           "audioText": "これは極意の確認です",
           "scrambleTokens": [
+            "これは",
             "それ",
-            "ではありません",
             "極意の確認",
             "です",
-            "これは"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2025,24 +2017,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l10_6",
           "type": "dictate",
-          "prompt": "道場の確認をお願いします",
-          "furigana": "どうじょうのかくにんをおねがいします",
-          "romaji": "doujou no kakunin o onegaishimasu.",
-          "english": "Confirming The Dojo / sacred place of the Way, please.",
-          "audioText": "道場の確認をお願いします",
+          "prompt": "道場の確認です",
+          "furigana": "どうじょうのかくにんです",
+          "romaji": "doujou no kakunin desu.",
+          "english": "It is Confirming The Dojo / sacred place of the Way.",
+          "audioText": "道場の確認です",
           "dictateTokens": [
             "道場の確認",
-            "を",
             "です",
-            "お願いします",
-            "ありがとう"
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "道場の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "道場の確認をお願いします"
+          "correctAnswer": "道場の確認です"
         },
         {
           "id": "u30_l10_7",
@@ -2152,10 +2142,10 @@ export const unit30: DojoUnit = {
           "english": "Confirming Grand master / instructor",
           "audioText": "しはんのかくにん",
           "options": [
-            "Passing down of oral tradition",
-            "Confirming Ultimate secrets / esoteric mystery",
             "Confirming Expert knowledge / thorough familiarity",
-            "Confirming Grand master / instructor"
+            "Confirming Grand master / instructor",
+            "Devoted study and self-improvement",
+            "Rigorous training / spiritual discipline"
           ],
           "correctAnswer": "Confirming Grand master / instructor"
         },
@@ -2169,33 +2159,34 @@ export const unit30: DojoUnit = {
           "audioText": "しはんのかくにん",
           "tileBank": [
             "ん",
-            "に",
-            "ん",
-            "は",
             "く",
             "し",
             "の",
-            "か"
+            "に",
+            "か",
+            "ん",
+            "は"
           ],
           "correctAnswer": "しはんのかくにん"
         },
         {
           "id": "u30_l11_3",
           "type": "cloze",
-          "prompt": "私は奥義の確認がすきです",
-          "furigana": "わたしはおうぎのかくにんがすきです",
-          "romaji": "Watashi wa ougi no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Ultimate secrets / esoteric mystery.",
-          "audioText": "奥義の確認",
-          "clozeSentence": "これは奥義の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な奥義の確認です。",
+          "furigana": "これはいちばんたいせつなおうぎのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na ougi no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Ultimate secrets / esoteric mystery.",
+          "audioText": "これは奥義の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な奥義の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l11_4",
@@ -2206,11 +2197,11 @@ export const unit30: DojoUnit = {
           "english": "This is Confirming Ultimate secrets / esoteric mystery.",
           "audioText": "これは奥義の確認です",
           "scrambleTokens": [
-            "それ",
             "奥義の確認",
+            "です",
             "ではありません",
             "これは",
-            "です"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2239,24 +2230,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l11_6",
           "type": "dictate",
-          "prompt": "免許皆伝の確認をお願いします",
-          "furigana": "めんきょかいでんのかくにんをおねがいします",
-          "romaji": "menkyo kaiden no kakunin o onegaishimasu.",
-          "english": "Confirming Full initiation and complete mastery, please.",
-          "audioText": "免許皆伝の確認をお願いします",
+          "prompt": "免許皆伝の確認です",
+          "furigana": "めんきょかいでんのかくにんです",
+          "romaji": "menkyo kaiden no kakunin desu.",
+          "english": "It is Confirming Full initiation and complete mastery.",
+          "audioText": "免許皆伝の確認です",
           "dictateTokens": [
-            "お願いします",
-            "免許皆伝の確認",
+            "これ",
             "です",
-            "ありがとう",
-            "を"
+            "ではありません",
+            "免許皆伝の確認"
           ],
           "dictateSolution": [
             "免許皆伝の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "免許皆伝の確認をお願いします"
+          "correctAnswer": "免許皆伝の確認です"
         },
         {
           "id": "u30_l11_7",
@@ -2364,10 +2353,10 @@ export const unit30: DojoUnit = {
           "english": "Confirming Expert knowledge / thorough familiarity",
           "audioText": "せいつうのかくにん",
           "options": [
-            "Confirming True essence / quintessential core",
+            "Great culmination / successful achievement",
             "Confirming Expert knowledge / thorough familiarity",
-            "The Dojo / sacred place of the Way",
-            "The innermost secret"
+            "Confirming The Dojo / sacred place of the Way",
+            "Devoted study and self-improvement"
           ],
           "correctAnswer": "Confirming Expert knowledge / thorough familiarity"
         },
@@ -2380,26 +2369,26 @@ export const unit30: DojoUnit = {
           "english": "Build 'Confirming Expert knowledge / thorough familiarity'",
           "audioText": "せいつうのかくにん",
           "tileBank": [
-            "せ",
-            "の",
-            "く",
-            "う",
             "つ",
             "に",
             "か",
-            "い"
+            "せ",
+            "の",
+            "い",
+            "う",
+            "く"
           ],
           "correctAnswer": "せいつうのかくにん"
         },
         {
           "id": "u30_l12_3",
           "type": "cloze",
-          "prompt": "私は達人の確認がすきです",
-          "furigana": "わたしはたつじんのかくにんがすきです",
-          "romaji": "Watashi wa tatsujin no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Master / expert practitioner.",
-          "audioText": "達人の確認",
-          "clozeSentence": "これは達人の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な達人の確認です。",
+          "furigana": "これはいちばんたいせつなたつじんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na tatsujin no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Master / expert practitioner.",
+          "audioText": "これは達人の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な達人の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2407,7 +2396,8 @@ export const unit30: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l12_4",
@@ -2418,11 +2408,11 @@ export const unit30: DojoUnit = {
           "english": "This is Confirming Master / expert practitioner.",
           "audioText": "これは達人の確認です",
           "scrambleTokens": [
-            "それ",
+            "これは",
             "です",
-            "ではありません",
             "達人の確認",
-            "これは"
+            "ではありません",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2451,24 +2441,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l12_6",
           "type": "dictate",
-          "prompt": "神髄の確認をお願いします",
-          "furigana": "しんずいのかくにんをおねがいします",
-          "romaji": "shinzui no kakunin o onegaishimasu.",
-          "english": "Confirming True essence / quintessential core, please.",
-          "audioText": "神髄の確認をお願いします",
+          "prompt": "神髄の確認です",
+          "furigana": "しんずいのかくにんです",
+          "romaji": "shinzui no kakunin desu.",
+          "english": "It is Confirming True essence / quintessential core.",
+          "audioText": "神髄の確認です",
           "dictateTokens": [
+            "ではありません",
             "です",
-            "お願いします",
-            "ありがとう",
-            "を",
+            "これ",
             "神髄の確認"
           ],
           "dictateSolution": [
             "神髄の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "神髄の確認をお願いします"
+          "correctAnswer": "神髄の確認です"
         },
         {
           "id": "u30_l12_7",
@@ -2572,10 +2560,10 @@ export const unit30: DojoUnit = {
           "english": "Grand master / instructor",
           "audioText": "しはん",
           "options": [
-            "Confirming True essence / quintessential core",
-            "Grand master / instructor",
-            "Expert knowledge / thorough familiarity",
-            "Confirming Expert knowledge / thorough familiarity"
+            "Zenith / summit of achievement",
+            "Confirming Full initiation and complete mastery",
+            "Confirming Master / expert practitioner",
+            "Grand master / instructor"
           ],
           "correctAnswer": "Grand master / instructor"
         },
@@ -2588,34 +2576,35 @@ export const unit30: DojoUnit = {
           "english": "Build 'Grand master / instructor'",
           "audioText": "しはん",
           "tileBank": [
-            "へ",
-            "お",
-            "は",
-            "ん",
-            "わ",
             "し",
-            "ら",
-            "の"
+            "み",
+            "い",
+            "る",
+            "ん",
+            "や",
+            "は",
+            "あ"
           ],
           "correctAnswer": "しはん"
         },
         {
           "id": "u30_l13_3",
           "type": "cloze",
-          "prompt": "私は奥義がすきです",
-          "furigana": "わたしはおうぎがすきです",
-          "romaji": "Watashi wa ougi ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Ultimate secrets / esoteric mystery.",
-          "audioText": "奥義",
-          "clozeSentence": "これは奥義 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な奥義です。",
+          "furigana": "これはいちばんたいせつなおうぎです。",
+          "romaji": "Kore wa ichiban taisetsu na ougi desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Ultimate secrets / esoteric mystery.",
+          "audioText": "これは奥義です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な奥義です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l13_4",
@@ -2626,11 +2615,11 @@ export const unit30: DojoUnit = {
           "english": "This is Ultimate secrets / esoteric mystery.",
           "audioText": "これは奥義です",
           "scrambleTokens": [
-            "奥義",
-            "です",
             "ではありません",
+            "これは",
             "それ",
-            "これは"
+            "奥義",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2659,24 +2648,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l13_6",
           "type": "dictate",
-          "prompt": "免許皆伝をお願いします",
-          "furigana": "めんきょかいでんをおねがいします",
-          "romaji": "menkyo kaiden o onegaishimasu.",
-          "english": "Full initiation and complete mastery, please.",
-          "audioText": "免許皆伝をお願いします",
+          "prompt": "免許皆伝です",
+          "furigana": "めんきょかいでんです",
+          "romaji": "menkyo kaiden desu.",
+          "english": "It is Full initiation and complete mastery.",
+          "audioText": "免許皆伝です",
           "dictateTokens": [
-            "免許皆伝",
-            "を",
+            "ではありません",
             "です",
-            "ありがとう",
-            "お願いします"
+            "これ",
+            "免許皆伝"
           ],
           "dictateSolution": [
             "免許皆伝",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "免許皆伝をお願いします"
+          "correctAnswer": "免許皆伝です"
         },
         {
           "id": "u30_l13_7",
@@ -2778,10 +2765,10 @@ export const unit30: DojoUnit = {
           "english": "Expert knowledge / thorough familiarity",
           "audioText": "せいつう",
           "options": [
-            "True essence / quintessential core",
-            "Grand master / instructor",
-            "Confirming Rigorous training / spiritual discipline",
-            "Expert knowledge / thorough familiarity"
+            "Confirming Full initiation and complete mastery",
+            "Full initiation and complete mastery",
+            "Expert knowledge / thorough familiarity",
+            "Confirming Devoted study and self-improvement"
           ],
           "correctAnswer": "Expert knowledge / thorough familiarity"
         },
@@ -2794,34 +2781,35 @@ export const unit30: DojoUnit = {
           "english": "Build 'Expert knowledge / thorough familiarity'",
           "audioText": "せいつう",
           "tileBank": [
-            "た",
-            "う",
-            "と",
-            "す",
-            "り",
+            "ん",
+            "つ",
+            "に",
+            "み",
             "せ",
+            "う",
             "い",
-            "つ"
+            "た"
           ],
           "correctAnswer": "せいつう"
         },
         {
           "id": "u30_l14_3",
           "type": "cloze",
-          "prompt": "私は達人がすきです",
-          "furigana": "わたしはたつじんがすきです",
-          "romaji": "Watashi wa tatsujin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Master / expert practitioner.",
-          "audioText": "達人",
-          "clozeSentence": "これは達人 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な達人です。",
+          "furigana": "これはいちばんたいせつなたつじんです。",
+          "romaji": "Kore wa ichiban taisetsu na tatsujin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Master / expert practitioner.",
+          "audioText": "これは達人です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な達人です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l14_4",
@@ -2832,11 +2820,11 @@ export const unit30: DojoUnit = {
           "english": "This is Master / expert practitioner.",
           "audioText": "これは達人です",
           "scrambleTokens": [
-            "ではありません",
             "それ",
-            "達人",
+            "ではありません",
+            "これは",
             "です",
-            "これは"
+            "達人"
           ],
           "scrambleSolution": [
             "これは",
@@ -2865,24 +2853,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l14_6",
           "type": "dictate",
-          "prompt": "神髄をお願いします",
-          "furigana": "しんずいをおねがいします",
-          "romaji": "shinzui o onegaishimasu.",
-          "english": "True essence / quintessential core, please.",
-          "audioText": "神髄をお願いします",
+          "prompt": "神髄です",
+          "furigana": "しんずいです",
+          "romaji": "shinzui desu.",
+          "english": "It is True essence / quintessential core.",
+          "audioText": "神髄です",
           "dictateTokens": [
-            "です",
-            "ありがとう",
-            "を",
-            "お願いします",
-            "神髄"
+            "これ",
+            "ではありません",
+            "神髄",
+            "です"
           ],
           "dictateSolution": [
             "神髄",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "神髄をお願いします"
+          "correctAnswer": "神髄です"
         },
         {
           "id": "u30_l14_7",
@@ -2984,10 +2970,10 @@ export const unit30: DojoUnit = {
           "english": "Rigorous training / spiritual discipline",
           "audioText": "しゅうれん",
           "options": [
-            "Confirming The Dojo / sacred place of the Way",
-            "Confirming Ultimate secrets / esoteric mystery",
+            "The innermost secret",
+            "Confirming Expert knowledge / thorough familiarity",
             "Rigorous training / spiritual discipline",
-            "Indomitable / unyielding spirit"
+            "Confirming Great culmination / successful achievement"
           ],
           "correctAnswer": "Rigorous training / spiritual discipline"
         },
@@ -3000,34 +2986,35 @@ export const unit30: DojoUnit = {
           "english": "Build 'Rigorous training / spiritual discipline'",
           "audioText": "しゅうれん",
           "tileBank": [
-            "こ",
             "れ",
-            "は",
-            "う",
-            "し",
             "ゅ",
-            "ぬ",
-            "ん"
+            "し",
+            "お",
+            "う",
+            "に",
+            "ん",
+            "た"
           ],
           "correctAnswer": "しゅうれん"
         },
         {
           "id": "u30_l15_3",
           "type": "cloze",
-          "prompt": "私は頂点がすきです",
-          "furigana": "わたしはちょうてんがすきです",
-          "romaji": "Watashi wa chouten ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Zenith / summit of achievement.",
-          "audioText": "頂点",
-          "clozeSentence": "これは頂点 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な頂点です。",
+          "furigana": "これはいちばんたいせつなちょうてんです。",
+          "romaji": "Kore wa ichiban taisetsu na chouten desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Zenith / summit of achievement.",
+          "audioText": "これは頂点です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な頂点です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u30_l15_4",
@@ -3038,11 +3025,11 @@ export const unit30: DojoUnit = {
           "english": "This is Zenith / summit of achievement.",
           "audioText": "これは頂点です",
           "scrambleTokens": [
-            "これは",
-            "ではありません",
             "頂点",
-            "です",
-            "それ"
+            "それ",
+            "ではありません",
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -3071,24 +3058,22 @@ export const unit30: DojoUnit = {
         {
           "id": "u30_l15_6",
           "type": "dictate",
-          "prompt": "貫禄をお願いします",
-          "furigana": "かんろくをおねがいします",
-          "romaji": "kanroku o onegaishimasu.",
-          "english": "Dignity / imposing presence, please.",
-          "audioText": "貫禄をお願いします",
+          "prompt": "貫禄です",
+          "furigana": "かんろくです",
+          "romaji": "kanroku desu.",
+          "english": "It is Dignity / imposing presence.",
+          "audioText": "貫禄です",
           "dictateTokens": [
-            "お願いします",
+            "ではありません",
+            "これ",
             "貫禄",
-            "ありがとう",
-            "を",
             "です"
           ],
           "dictateSolution": [
             "貫禄",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "貫禄をお願いします"
+          "correctAnswer": "貫禄です"
         },
         {
           "id": "u30_l15_7",
@@ -3173,10 +3158,10 @@ export const unit30: DojoUnit = {
         "english": "Grand master / instructor",
         "audioText": "しはん",
         "options": [
-          "Indomitable / unyielding spirit",
+          "Confirming Full initiation and complete mastery",
           "Grand master / instructor",
-          "Confirming Grand master / instructor",
-          "Confirming Expert knowledge / thorough familiarity"
+          "Confirming True essence / quintessential core",
+          "Ultimate secrets / esoteric mystery"
         ],
         "correctAnswer": "Grand master / instructor"
       },
@@ -3189,14 +3174,14 @@ export const unit30: DojoUnit = {
         "english": "Build 'Grand master / instructor'",
         "audioText": "しはん",
         "tileBank": [
-          "れ",
-          "は",
-          "な",
+          "む",
           "し",
-          "ろ",
-          "け",
-          "く",
-          "ん"
+          "さ",
+          "つ",
+          "は",
+          "ん",
+          "あ",
+          "き"
         ],
         "correctAnswer": "しはん"
       },
@@ -3209,10 +3194,10 @@ export const unit30: DojoUnit = {
         "english": "Rigorous training / spiritual discipline",
         "audioText": "しゅうれん",
         "options": [
-          "Confirming Full initiation and complete mastery",
-          "Confirming True essence / quintessential core",
+          "Confirming Ultimate secrets / esoteric mystery",
+          "True essence / quintessential core",
           "Rigorous training / spiritual discipline",
-          "Confirming Full initiation and complete mastery"
+          "Confirming The Dojo / sacred place of the Way"
         ],
         "correctAnswer": "Rigorous training / spiritual discipline"
       },
@@ -3226,13 +3211,13 @@ export const unit30: DojoUnit = {
         "audioText": "しゅうれん",
         "tileBank": [
           "う",
-          "く",
-          "り",
           "れ",
-          "ん",
+          "な",
+          "し",
+          "つ",
+          "ふ",
           "ゅ",
-          "ぬ",
-          "し"
+          "ん"
         ],
         "correctAnswer": "しゅうれん"
       },
@@ -3245,10 +3230,10 @@ export const unit30: DojoUnit = {
         "english": "Passing down of oral tradition",
         "audioText": "でんしょう",
         "options": [
-          "Passing down of oral tradition",
-          "Confirming Indomitable / unyielding spirit",
-          "Confirming Great culmination / successful achievement",
-          "Confirming Grand master / instructor"
+          "Master / expert practitioner",
+          "Confirming Ultimate secrets / esoteric mystery",
+          "Confirming True essence / quintessential core",
+          "Passing down of oral tradition"
         ],
         "correctAnswer": "Passing down of oral tradition"
       },
@@ -3261,14 +3246,14 @@ export const unit30: DojoUnit = {
         "english": "Build 'Passing down of oral tradition'",
         "audioText": "でんしょう",
         "tileBank": [
-          "く",
-          "し",
           "ん",
-          "ょ",
-          "に",
-          "せ",
+          "り",
+          "さ",
+          "で",
+          "し",
           "う",
-          "で"
+          "え",
+          "ょ"
         ],
         "correctAnswer": "でんしょう"
       },
@@ -3281,10 +3266,10 @@ export const unit30: DojoUnit = {
         "english": "Confirming Expert knowledge / thorough familiarity",
         "audioText": "せいつうのかくにん",
         "options": [
-          "Confirming Master / expert practitioner",
-          "Confirming Grand master / instructor",
           "Confirming Expert knowledge / thorough familiarity",
-          "Confirming Master / expert practitioner"
+          "Confirming Ultimate secrets / esoteric mystery",
+          "The Dojo / sacred place of the Way",
+          "Confirming Devoted study and self-improvement"
         ],
         "correctAnswer": "Confirming Expert knowledge / thorough familiarity"
       },
@@ -3297,13 +3282,13 @@ export const unit30: DojoUnit = {
         "english": "Build 'Confirming Expert knowledge / thorough familiarity'",
         "audioText": "せいつうのかくにん",
         "tileBank": [
-          "つ",
-          "く",
-          "う",
-          "の",
-          "せ",
-          "か",
           "い",
+          "の",
+          "か",
+          "う",
+          "く",
+          "つ",
+          "せ",
           "に"
         ],
         "correctAnswer": "せいつうのかくにん"
@@ -3317,10 +3302,10 @@ export const unit30: DojoUnit = {
         "english": "Confirming Great culmination / successful achievement",
         "audioText": "たいせいのかくにん",
         "options": [
-          "Full initiation and complete mastery",
-          "Ultimate secrets / esoteric mystery",
+          "Rigorous training / spiritual discipline",
           "Confirming Great culmination / successful achievement",
-          "Confirming True essence / quintessential core"
+          "Confirming True essence / quintessential core",
+          "Confirming The Dojo / sacred place of the Way"
         ],
         "correctAnswer": "Confirming Great culmination / successful achievement"
       },
@@ -3333,14 +3318,14 @@ export const unit30: DojoUnit = {
         "english": "Build 'Confirming Great culmination / successful achievement'",
         "audioText": "たいせいのかくにん",
         "tileBank": [
-          "の",
           "い",
-          "た",
           "い",
           "せ",
+          "く",
           "か",
+          "た",
           "に",
-          "く"
+          "の"
         ],
         "correctAnswer": "たいせいのかくにん"
       },
@@ -3353,10 +3338,10 @@ export const unit30: DojoUnit = {
         "english": "Confirming Grand master / instructor",
         "audioText": "しはんのかくにん",
         "options": [
-          "Passing down of oral tradition",
-          "Confirming Ultimate secrets / esoteric mystery",
           "Confirming Expert knowledge / thorough familiarity",
-          "Confirming Grand master / instructor"
+          "Confirming Grand master / instructor",
+          "Devoted study and self-improvement",
+          "Rigorous training / spiritual discipline"
         ],
         "correctAnswer": "Confirming Grand master / instructor"
       },
@@ -3370,13 +3355,13 @@ export const unit30: DojoUnit = {
         "audioText": "しはんのかくにん",
         "tileBank": [
           "ん",
-          "に",
-          "ん",
-          "は",
           "く",
           "し",
           "の",
-          "か"
+          "に",
+          "か",
+          "ん",
+          "は"
         ],
         "correctAnswer": "しはんのかくにん"
       }

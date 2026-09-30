@@ -50,10 +50,10 @@ export const unit20: DojoUnit = {
           "english": "Economic climate",
           "audioText": "けいき",
           "options": [
-            "Confirming News report / journalism",
-            "Confirming Strong yen appreciation",
-            "Confirming Growth rate",
-            "Economic climate"
+            "Confirming Outlook / prospect",
+            "Economic climate",
+            "Inflation",
+            "Confirming Stock price"
           ],
           "correctAnswer": "Economic climate"
         },
@@ -66,34 +66,35 @@ export const unit20: DojoUnit = {
           "english": "Build 'Economic climate'",
           "audioText": "けいき",
           "tileBank": [
+            "た",
             "け",
-            "き",
-            "も",
-            "み",
-            "る",
             "わ",
+            "ろ",
             "い",
-            "せ"
+            "ね",
+            "き",
+            "を"
           ],
           "correctAnswer": "けいき"
         },
         {
           "id": "u20_l1_3",
           "type": "cloze",
-          "prompt": "私は株価がすきです",
-          "furigana": "わたしはかぶかがすきです",
-          "romaji": "Watashi wa kabuka ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Stock price.",
-          "audioText": "株価",
-          "clozeSentence": "これは株価 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な株価です。",
+          "furigana": "これはいちばんたいせつなかぶかです。",
+          "romaji": "Kore wa ichiban taisetsu na kabuka desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Stock price.",
+          "audioText": "これは株価です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な株価です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l1_4",
@@ -104,11 +105,11 @@ export const unit20: DojoUnit = {
           "english": "This is Stock price.",
           "audioText": "これは株価です",
           "scrambleTokens": [
-            "それ",
-            "株価",
+            "です",
             "ではありません",
+            "株価",
             "これは",
-            "です"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -137,24 +138,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l1_6",
           "type": "dictate",
-          "prompt": "円安をお願いします",
-          "furigana": "えんやすをおねがいします",
-          "romaji": "enyasu o onegaishimasu.",
-          "english": "Weak yen depreciation, please.",
-          "audioText": "円安をお願いします",
+          "prompt": "円安です",
+          "furigana": "えんやすです",
+          "romaji": "enyasu desu.",
+          "english": "It is Weak yen depreciation.",
+          "audioText": "円安です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
+            "これ",
+            "ではありません",
             "です",
-            "を",
             "円安"
           ],
           "dictateSolution": [
             "円安",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "円安をお願いします"
+          "correctAnswer": "円安です"
         },
         {
           "id": "u20_l1_7",
@@ -254,10 +253,10 @@ export const unit20: DojoUnit = {
           "english": "Strong yen appreciation",
           "audioText": "えんだか",
           "options": [
-            "Enterprise / corporation",
-            "Confirming Enterprise / corporation",
+            "Economic climate",
             "Strong yen appreciation",
-            "Confirming Inflation"
+            "Confirming Strong yen appreciation",
+            "Confirming Growth rate"
           ],
           "correctAnswer": "Strong yen appreciation"
         },
@@ -270,34 +269,35 @@ export const unit20: DojoUnit = {
           "english": "Build 'Strong yen appreciation'",
           "audioText": "えんだか",
           "tileBank": [
-            "の",
-            "き",
-            "あ",
-            "だ",
-            "か",
             "ん",
-            "へ",
-            "え"
+            "ろ",
+            "い",
+            "そ",
+            "よ",
+            "え",
+            "だ",
+            "か"
           ],
           "correctAnswer": "えんだか"
         },
         {
           "id": "u20_l2_3",
           "type": "cloze",
-          "prompt": "私はインフレがすきです",
-          "furigana": "わたしはインフレがすきです",
-          "romaji": "Watashi wa infure ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Inflation.",
-          "audioText": "インフレ",
-          "clozeSentence": "これはインフレ {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なインフレです。",
+          "furigana": "これはいちばんたいせつなインフレです。",
+          "romaji": "Kore wa ichiban taisetsu na infure desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Inflation.",
+          "audioText": "これはインフレです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なインフレです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l2_4",
@@ -308,11 +308,11 @@ export const unit20: DojoUnit = {
           "english": "This is Inflation.",
           "audioText": "これはインフレです",
           "scrambleTokens": [
-            "これは",
             "ではありません",
+            "それ",
+            "これは",
             "です",
-            "インフレ",
-            "それ"
+            "インフレ"
           ],
           "scrambleSolution": [
             "これは",
@@ -341,24 +341,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l2_6",
           "type": "dictate",
-          "prompt": "報道をお願いします",
-          "furigana": "ほうどうをおねがいします",
-          "romaji": "houdou o onegaishimasu.",
-          "english": "News report / journalism, please.",
-          "audioText": "報道をお願いします",
+          "prompt": "報道です",
+          "furigana": "ほうどうです",
+          "romaji": "houdou desu.",
+          "english": "It is News report / journalism.",
+          "audioText": "報道です",
           "dictateTokens": [
-            "です",
-            "を",
             "報道",
-            "お願いします",
-            "ありがとう"
+            "です",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "報道",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "報道をお願いします"
+          "correctAnswer": "報道です"
         },
         {
           "id": "u20_l2_7",
@@ -461,10 +459,10 @@ export const unit20: DojoUnit = {
           "english": "Government policy",
           "audioText": "せいさく",
           "options": [
-            "Confirming Consumption / spending",
+            "Inflation",
             "Government policy",
-            "Confirming Strong yen appreciation",
-            "Outlook / prospect"
+            "Confirming News report / journalism",
+            "Confirming Economic climate"
           ],
           "correctAnswer": "Government policy"
         },
@@ -477,34 +475,35 @@ export const unit20: DojoUnit = {
           "english": "Build 'Government policy'",
           "audioText": "せいさく",
           "tileBank": [
-            "の",
             "い",
-            "わ",
             "せ",
-            "し",
+            "に",
             "く",
-            "ひ",
-            "さ"
+            "こ",
+            "ね",
+            "さ",
+            "ま"
           ],
           "correctAnswer": "せいさく"
         },
         {
           "id": "u20_l3_3",
           "type": "cloze",
-          "prompt": "私は市場がすきです",
-          "furigana": "わたしはしじょうがすきです",
-          "romaji": "Watashi wa shijou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Financial market.",
-          "audioText": "市場",
-          "clozeSentence": "これは市場 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な市場です。",
+          "furigana": "これはいちばんたいせつなしじょうです。",
+          "romaji": "Kore wa ichiban taisetsu na shijou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Financial market.",
+          "audioText": "これは市場です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な市場です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l3_4",
@@ -515,11 +514,11 @@ export const unit20: DojoUnit = {
           "english": "This is Financial market.",
           "audioText": "これは市場です",
           "scrambleTokens": [
-            "市場",
-            "それ",
-            "これは",
             "ではありません",
-            "です"
+            "市場",
+            "です",
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -548,24 +547,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l3_6",
           "type": "dictate",
-          "prompt": "成長率をお願いします",
-          "furigana": "せいちょうりつをおねがいします",
-          "romaji": "seichouritsu o onegaishimasu.",
-          "english": "Growth rate, please.",
-          "audioText": "成長率をお願いします",
+          "prompt": "成長率です",
+          "furigana": "せいちょうりつです",
+          "romaji": "seichouritsu desu.",
+          "english": "It is Growth rate.",
+          "audioText": "成長率です",
           "dictateTokens": [
-            "を",
-            "成長率",
-            "ありがとう",
             "です",
-            "お願いします"
+            "成長率",
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "成長率",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "成長率をお願いします"
+          "correctAnswer": "成長率です"
         },
         {
           "id": "u20_l3_7",
@@ -667,10 +664,10 @@ export const unit20: DojoUnit = {
           "english": "Consumption / spending",
           "audioText": "しょうひ",
           "options": [
-            "Confirming Investment",
-            "Confirming Stock price",
+            "Confirming Impact / consequence",
             "Consumption / spending",
-            "Confirming Strong yen appreciation"
+            "Confirming Inflation",
+            "Confirming Consumption / spending"
           ],
           "correctAnswer": "Consumption / spending"
         },
@@ -683,13 +680,13 @@ export const unit20: DojoUnit = {
           "english": "Build 'Consumption / spending'",
           "audioText": "しょうひ",
           "tileBank": [
-            "か",
+            "そ",
             "ひ",
-            "は",
-            "る",
-            "う",
+            "と",
+            "さ",
+            "む",
             "し",
-            "ほ",
+            "う",
             "ょ"
           ],
           "correctAnswer": "しょうひ"
@@ -697,12 +694,12 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l4_3",
           "type": "cloze",
-          "prompt": "私は投資がすきです",
-          "furigana": "わたしはとうしがすきです",
-          "romaji": "Watashi wa toushi ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Investment.",
-          "audioText": "投資",
-          "clozeSentence": "これは投資 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な投資です。",
+          "furigana": "これはいちばんたいせつなとうしです。",
+          "romaji": "Kore wa ichiban taisetsu na toushi desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Investment.",
+          "audioText": "これは投資です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な投資です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -710,7 +707,8 @@ export const unit20: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l4_4",
@@ -721,11 +719,11 @@ export const unit20: DojoUnit = {
           "english": "This is Investment.",
           "audioText": "これは投資です",
           "scrambleTokens": [
-            "です",
-            "ではありません",
-            "これは",
+            "投資",
             "それ",
-            "投資"
+            "ではありません",
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -754,24 +752,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l4_6",
           "type": "dictate",
-          "prompt": "企業をお願いします",
-          "furigana": "きぎょうをおねがいします",
-          "romaji": "kigyou o onegaishimasu.",
-          "english": "Enterprise / corporation, please.",
-          "audioText": "企業をお願いします",
+          "prompt": "企業です",
+          "furigana": "きぎょうです",
+          "romaji": "kigyou desu.",
+          "english": "It is Enterprise / corporation.",
+          "audioText": "企業です",
           "dictateTokens": [
-            "を",
-            "お願いします",
+            "です",
+            "これ",
             "企業",
-            "ありがとう",
-            "です"
+            "ではありません"
           ],
           "dictateSolution": [
             "企業",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "企業をお願いします"
+          "correctAnswer": "企業です"
         },
         {
           "id": "u20_l4_7",
@@ -873,10 +869,10 @@ export const unit20: DojoUnit = {
           "english": "Impact / consequence",
           "audioText": "えいきょう",
           "options": [
+            "Stock price",
             "Confirming Weak yen depreciation",
-            "Impact / consequence",
-            "Confirming News report / journalism",
-            "Investment"
+            "Confirming Consumption / spending",
+            "Impact / consequence"
           ],
           "correctAnswer": "Impact / consequence"
         },
@@ -889,13 +885,13 @@ export const unit20: DojoUnit = {
           "english": "Build 'Impact / consequence'",
           "audioText": "えいきょう",
           "tileBank": [
-            "き",
-            "ほ",
-            "ね",
-            "ょ",
-            "な",
             "う",
             "い",
+            "き",
+            "ら",
+            "は",
+            "ょ",
+            "む",
             "え"
           ],
           "correctAnswer": "えいきょう"
@@ -903,20 +899,21 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l5_3",
           "type": "cloze",
-          "prompt": "私は懸念がすきです",
-          "furigana": "わたしはけねんがすきです",
-          "romaji": "Watashi wa kenen ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Concern / anxiety.",
-          "audioText": "懸念",
-          "clozeSentence": "これは懸念 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な懸念です。",
+          "furigana": "これはいちばんたいせつなけねんです。",
+          "romaji": "Kore wa ichiban taisetsu na kenen desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Concern / anxiety.",
+          "audioText": "これは懸念です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な懸念です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l5_4",
@@ -927,11 +924,11 @@ export const unit20: DojoUnit = {
           "english": "This is Concern / anxiety.",
           "audioText": "これは懸念です",
           "scrambleTokens": [
+            "です",
             "これは",
-            "ではありません",
             "それ",
-            "懸念",
-            "です"
+            "ではありません",
+            "懸念"
           ],
           "scrambleSolution": [
             "これは",
@@ -960,24 +957,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l5_6",
           "type": "dictate",
-          "prompt": "見通しをお願いします",
-          "furigana": "みとおしをおねがいします",
-          "romaji": "mitooshi o onegaishimasu.",
-          "english": "Outlook / prospect, please.",
-          "audioText": "見通しをお願いします",
+          "prompt": "見通しです",
+          "furigana": "みとおしです",
+          "romaji": "mitooshi desu.",
+          "english": "It is Outlook / prospect.",
+          "audioText": "見通しです",
           "dictateTokens": [
-            "ありがとう",
             "見通し",
-            "お願いします",
             "です",
-            "を"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "見通し",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "見通しをお願いします"
+          "correctAnswer": "見通しです"
         },
         {
           "id": "u20_l5_7",
@@ -1085,10 +1080,10 @@ export const unit20: DojoUnit = {
           "english": "Confirming Economic climate",
           "audioText": "けいきのかくにん",
           "options": [
-            "Consumption / spending",
+            "Confirming Concern / anxiety",
+            "Weak yen depreciation",
             "Confirming Economic climate",
-            "Confirming Enterprise / corporation",
-            "Confirming Government policy"
+            "Economic climate"
           ],
           "correctAnswer": "Confirming Economic climate"
         },
@@ -1101,34 +1096,35 @@ export const unit20: DojoUnit = {
           "english": "Build 'Confirming Economic climate'",
           "audioText": "けいきのかくにん",
           "tileBank": [
-            "に",
+            "い",
             "け",
-            "く",
-            "か",
             "ん",
-            "き",
             "の",
-            "い"
+            "か",
+            "に",
+            "き",
+            "く"
           ],
           "correctAnswer": "けいきのかくにん"
         },
         {
           "id": "u20_l6_3",
           "type": "cloze",
-          "prompt": "私は株価の確認がすきです",
-          "furigana": "わたしはかぶかのかくにんがすきです",
-          "romaji": "Watashi wa kabuka no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Stock price.",
-          "audioText": "株価の確認",
-          "clozeSentence": "これは株価の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な株価の確認です。",
+          "furigana": "これはいちばんたいせつなかぶかのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kabuka no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Stock price.",
+          "audioText": "これは株価の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な株価の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l6_4",
@@ -1139,10 +1135,10 @@ export const unit20: DojoUnit = {
           "english": "This is Confirming Stock price.",
           "audioText": "これは株価の確認です",
           "scrambleTokens": [
-            "株価の確認",
             "です",
-            "それ",
             "これは",
+            "株価の確認",
+            "それ",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -1172,24 +1168,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l6_6",
           "type": "dictate",
-          "prompt": "円安の確認をお願いします",
-          "furigana": "えんやすのかくにんをおねがいします",
-          "romaji": "enyasu no kakunin o onegaishimasu.",
-          "english": "Confirming Weak yen depreciation, please.",
-          "audioText": "円安の確認をお願いします",
+          "prompt": "円安の確認です",
+          "furigana": "えんやすのかくにんです",
+          "romaji": "enyasu no kakunin desu.",
+          "english": "It is Confirming Weak yen depreciation.",
+          "audioText": "円安の確認です",
           "dictateTokens": [
+            "これ",
+            "です",
             "円安の確認",
-            "を",
-            "ありがとう",
-            "お願いします",
-            "です"
+            "ではありません"
           ],
           "dictateSolution": [
             "円安の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "円安の確認をお願いします"
+          "correctAnswer": "円安の確認です"
         },
         {
           "id": "u20_l6_7",
@@ -1295,10 +1289,10 @@ export const unit20: DojoUnit = {
           "english": "Confirming Strong yen appreciation",
           "audioText": "えんだかのかくにん",
           "options": [
-            "Confirming Investment",
-            "Stock price",
             "Confirming Strong yen appreciation",
-            "Confirming Inflation"
+            "Confirming News report / journalism",
+            "Impact / consequence",
+            "Confirming Enterprise / corporation"
           ],
           "correctAnswer": "Confirming Strong yen appreciation"
         },
@@ -1311,34 +1305,35 @@ export const unit20: DojoUnit = {
           "english": "Build 'Confirming Strong yen appreciation'",
           "audioText": "えんだかのかくにん",
           "tileBank": [
-            "か",
-            "か",
-            "だ",
             "く",
+            "え",
+            "か",
             "ん",
+            "だ",
             "の",
-            "に",
-            "え"
+            "か",
+            "に"
           ],
           "correctAnswer": "えんだかのかくにん"
         },
         {
           "id": "u20_l7_3",
           "type": "cloze",
-          "prompt": "私はインフレの確認がすきです",
-          "furigana": "わたしはインフレのかくにんがすきです",
-          "romaji": "Watashi wa infure no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Inflation.",
-          "audioText": "インフレの確認",
-          "clozeSentence": "これはインフレの確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切なインフレの確認です。",
+          "furigana": "これはいちばんたいせつなインフレのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na infure no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Inflation.",
+          "audioText": "これはインフレの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なインフレの確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l7_4",
@@ -1349,11 +1344,11 @@ export const unit20: DojoUnit = {
           "english": "This is Confirming Inflation.",
           "audioText": "これはインフレの確認です",
           "scrambleTokens": [
-            "です",
-            "それ",
             "これは",
+            "です",
+            "インフレの確認",
             "ではありません",
-            "インフレの確認"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1382,24 +1377,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l7_6",
           "type": "dictate",
-          "prompt": "報道の確認をお願いします",
-          "furigana": "ほうどうのかくにんをおねがいします",
-          "romaji": "houdou no kakunin o onegaishimasu.",
-          "english": "Confirming News report / journalism, please.",
-          "audioText": "報道の確認をお願いします",
+          "prompt": "報道の確認です",
+          "furigana": "ほうどうのかくにんです",
+          "romaji": "houdou no kakunin desu.",
+          "english": "It is Confirming News report / journalism.",
+          "audioText": "報道の確認です",
           "dictateTokens": [
+            "ではありません",
             "です",
-            "お願いします",
-            "ありがとう",
             "報道の確認",
-            "を"
+            "これ"
           ],
           "dictateSolution": [
             "報道の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "報道の確認をお願いします"
+          "correctAnswer": "報道の確認です"
         },
         {
           "id": "u20_l7_7",
@@ -1508,10 +1501,10 @@ export const unit20: DojoUnit = {
           "english": "Confirming Government policy",
           "audioText": "せいさくのかくにん",
           "options": [
-            "Growth rate",
+            "Confirming Growth rate",
             "Confirming Government policy",
-            "Confirming Economic climate",
-            "Confirming Stock price"
+            "Confirming Financial market",
+            "Confirming Concern / anxiety"
           ],
           "correctAnswer": "Confirming Government policy"
         },
@@ -1524,26 +1517,26 @@ export const unit20: DojoUnit = {
           "english": "Build 'Confirming Government policy'",
           "audioText": "せいさくのかくにん",
           "tileBank": [
-            "い",
-            "の",
-            "く",
+            "に",
             "せ",
             "く",
             "か",
-            "さ",
-            "に"
+            "の",
+            "く",
+            "い",
+            "さ"
           ],
           "correctAnswer": "せいさくのかくにん"
         },
         {
           "id": "u20_l8_3",
           "type": "cloze",
-          "prompt": "私は市場の確認がすきです",
-          "furigana": "わたしはしじょうのかくにんがすきです",
-          "romaji": "Watashi wa shijou no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Financial market.",
-          "audioText": "市場の確認",
-          "clozeSentence": "これは市場の確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切な市場の確認です。",
+          "furigana": "これはいちばんたいせつなしじょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shijou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Financial market.",
+          "audioText": "これは市場の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な市場の確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -1551,7 +1544,8 @@ export const unit20: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l8_4",
@@ -1562,11 +1556,11 @@ export const unit20: DojoUnit = {
           "english": "This is Confirming Financial market.",
           "audioText": "これは市場の確認です",
           "scrambleTokens": [
-            "それ",
+            "市場の確認",
+            "これは",
             "です",
             "ではありません",
-            "市場の確認",
-            "これは"
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -1595,24 +1589,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l8_6",
           "type": "dictate",
-          "prompt": "成長率の確認をお願いします",
-          "furigana": "せいちょうりつのかくにんをおねがいします",
-          "romaji": "seichouritsu no kakunin o onegaishimasu.",
-          "english": "Confirming Growth rate, please.",
-          "audioText": "成長率の確認をお願いします",
+          "prompt": "成長率の確認です",
+          "furigana": "せいちょうりつのかくにんです",
+          "romaji": "seichouritsu no kakunin desu.",
+          "english": "It is Confirming Growth rate.",
+          "audioText": "成長率の確認です",
           "dictateTokens": [
             "です",
-            "ありがとう",
-            "お願いします",
-            "を",
-            "成長率の確認"
+            "これ",
+            "成長率の確認",
+            "ではありません"
           ],
           "dictateSolution": [
             "成長率の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "成長率の確認をお願いします"
+          "correctAnswer": "成長率の確認です"
         },
         {
           "id": "u20_l8_7",
@@ -1720,10 +1712,10 @@ export const unit20: DojoUnit = {
           "english": "Confirming Consumption / spending",
           "audioText": "しょうひのかくにん",
           "options": [
-            "Confirming Strong yen appreciation",
-            "Stock price",
-            "Impact / consequence",
-            "Confirming Consumption / spending"
+            "Confirming Growth rate",
+            "Confirming Consumption / spending",
+            "Confirming Outlook / prospect",
+            "Confirming News report / journalism"
           ],
           "correctAnswer": "Confirming Consumption / spending"
         },
@@ -1736,34 +1728,35 @@ export const unit20: DojoUnit = {
           "english": "Build 'Confirming Consumption / spending'",
           "audioText": "しょうひのかくにん",
           "tileBank": [
-            "し",
-            "く",
-            "に",
-            "ょ",
             "の",
-            "か",
+            "ょ",
+            "く",
             "ひ",
-            "う"
+            "か",
+            "に",
+            "う",
+            "し"
           ],
           "correctAnswer": "しょうひのかくにん"
         },
         {
           "id": "u20_l9_3",
           "type": "cloze",
-          "prompt": "私は投資の確認がすきです",
-          "furigana": "わたしはとうしのかくにんがすきです",
-          "romaji": "Watashi wa toushi no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Investment.",
-          "audioText": "投資の確認",
-          "clozeSentence": "これは投資の確認 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な投資の確認です。",
+          "furigana": "これはいちばんたいせつなとうしのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na toushi no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Investment.",
+          "audioText": "これは投資の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な投資の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l9_4",
@@ -1775,9 +1768,9 @@ export const unit20: DojoUnit = {
           "audioText": "これは投資の確認です",
           "scrambleTokens": [
             "です",
-            "投資の確認",
-            "ではありません",
             "これは",
+            "ではありません",
+            "投資の確認",
             "それ"
           ],
           "scrambleSolution": [
@@ -1807,24 +1800,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l9_6",
           "type": "dictate",
-          "prompt": "企業の確認をお願いします",
-          "furigana": "きぎょうのかくにんをおねがいします",
-          "romaji": "kigyou no kakunin o onegaishimasu.",
-          "english": "Confirming Enterprise / corporation, please.",
-          "audioText": "企業の確認をお願いします",
+          "prompt": "企業の確認です",
+          "furigana": "きぎょうのかくにんです",
+          "romaji": "kigyou no kakunin desu.",
+          "english": "It is Confirming Enterprise / corporation.",
+          "audioText": "企業の確認です",
           "dictateTokens": [
+            "これ",
+            "ではありません",
             "企業の確認",
-            "ありがとう",
-            "お願いします",
-            "を",
             "です"
           ],
           "dictateSolution": [
             "企業の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "企業の確認をお願いします"
+          "correctAnswer": "企業の確認です"
         },
         {
           "id": "u20_l9_7",
@@ -1932,10 +1923,10 @@ export const unit20: DojoUnit = {
           "english": "Confirming Impact / consequence",
           "audioText": "えいきょうのかくにん",
           "options": [
-            "Confirming Inflation",
+            "Confirming Economic climate",
             "Confirming Growth rate",
-            "Government policy",
-            "Confirming Impact / consequence"
+            "Confirming Impact / consequence",
+            "Confirming News report / journalism"
           ],
           "correctAnswer": "Confirming Impact / consequence"
         },
@@ -1948,34 +1939,35 @@ export const unit20: DojoUnit = {
           "english": "Build 'Confirming Impact / consequence'",
           "audioText": "えいきょうのかくにん",
           "tileBank": [
-            "う",
-            "の",
-            "き",
-            "ょ",
             "え",
             "く",
+            "か",
+            "う",
             "い",
-            "か"
+            "の",
+            "ょ",
+            "き"
           ],
           "correctAnswer": "えいきょうのかくにん"
         },
         {
           "id": "u20_l10_3",
           "type": "cloze",
-          "prompt": "私は懸念の確認がすきです",
-          "furigana": "わたしはけねんのかくにんがすきです",
-          "romaji": "Watashi wa kenen no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Concern / anxiety.",
-          "audioText": "懸念の確認",
-          "clozeSentence": "これは懸念の確認 {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切な懸念の確認です。",
+          "furigana": "これはいちばんたいせつなけねんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kenen no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Concern / anxiety.",
+          "audioText": "これは懸念の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な懸念の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l10_4",
@@ -1987,10 +1979,10 @@ export const unit20: DojoUnit = {
           "audioText": "これは懸念の確認です",
           "scrambleTokens": [
             "懸念の確認",
-            "ではありません",
-            "これは",
             "それ",
-            "です"
+            "ではありません",
+            "です",
+            "これは"
           ],
           "scrambleSolution": [
             "これは",
@@ -2019,24 +2011,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l10_6",
           "type": "dictate",
-          "prompt": "見通しの確認をお願いします",
-          "furigana": "みとおしのかくにんをおねがいします",
-          "romaji": "mitooshi no kakunin o onegaishimasu.",
-          "english": "Confirming Outlook / prospect, please.",
-          "audioText": "見通しの確認をお願いします",
+          "prompt": "見通しの確認です",
+          "furigana": "みとおしのかくにんです",
+          "romaji": "mitooshi no kakunin desu.",
+          "english": "It is Confirming Outlook / prospect.",
+          "audioText": "見通しの確認です",
           "dictateTokens": [
+            "見通しの確認",
             "です",
-            "ありがとう",
-            "お願いします",
-            "を",
-            "見通しの確認"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "見通しの確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "見通しの確認をお願いします"
+          "correctAnswer": "見通しの確認です"
         },
         {
           "id": "u20_l10_7",
@@ -2145,9 +2135,9 @@ export const unit20: DojoUnit = {
           "audioText": "けいきのかくにん",
           "options": [
             "Confirming Economic climate",
-            "Confirming Government policy",
-            "News report / journalism",
-            "Strong yen appreciation"
+            "Confirming Strong yen appreciation",
+            "Confirming Weak yen depreciation",
+            "Confirming Enterprise / corporation"
           ],
           "correctAnswer": "Confirming Economic climate"
         },
@@ -2160,13 +2150,13 @@ export const unit20: DojoUnit = {
           "english": "Build 'Confirming Economic climate'",
           "audioText": "けいきのかくにん",
           "tileBank": [
-            "の",
-            "ん",
+            "く",
             "に",
+            "の",
             "き",
             "か",
-            "く",
             "い",
+            "ん",
             "け"
           ],
           "correctAnswer": "けいきのかくにん"
@@ -2174,20 +2164,21 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l11_3",
           "type": "cloze",
-          "prompt": "私は株価の確認がすきです",
-          "furigana": "わたしはかぶかのかくにんがすきです",
-          "romaji": "Watashi wa kabuka no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Stock price.",
-          "audioText": "株価の確認",
-          "clozeSentence": "これは株価の確認 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な株価の確認です。",
+          "furigana": "これはいちばんたいせつなかぶかのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kabuka no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Stock price.",
+          "audioText": "これは株価の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な株価の確認です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l11_4",
@@ -2198,10 +2189,10 @@ export const unit20: DojoUnit = {
           "english": "This is Confirming Stock price.",
           "audioText": "これは株価の確認です",
           "scrambleTokens": [
+            "です",
             "それ",
             "株価の確認",
             "これは",
-            "です",
             "ではありません"
           ],
           "scrambleSolution": [
@@ -2231,24 +2222,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l11_6",
           "type": "dictate",
-          "prompt": "円安の確認をお願いします",
-          "furigana": "えんやすのかくにんをおねがいします",
-          "romaji": "enyasu no kakunin o onegaishimasu.",
-          "english": "Confirming Weak yen depreciation, please.",
-          "audioText": "円安の確認をお願いします",
+          "prompt": "円安の確認です",
+          "furigana": "えんやすのかくにんです",
+          "romaji": "enyasu no kakunin desu.",
+          "english": "It is Confirming Weak yen depreciation.",
+          "audioText": "円安の確認です",
           "dictateTokens": [
-            "ありがとう",
-            "お願いします",
             "円安の確認",
-            "を",
+            "ではありません",
+            "これ",
             "です"
           ],
           "dictateSolution": [
             "円安の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "円安の確認をお願いします"
+          "correctAnswer": "円安の確認です"
         },
         {
           "id": "u20_l11_7",
@@ -2354,10 +2343,10 @@ export const unit20: DojoUnit = {
           "english": "Confirming Strong yen appreciation",
           "audioText": "えんだかのかくにん",
           "options": [
-            "Investment",
-            "Consumption / spending",
-            "Confirming Impact / consequence",
-            "Confirming Strong yen appreciation"
+            "Confirming Strong yen appreciation",
+            "Confirming Inflation",
+            "Confirming News report / journalism",
+            "Confirming Government policy"
           ],
           "correctAnswer": "Confirming Strong yen appreciation"
         },
@@ -2370,13 +2359,13 @@ export const unit20: DojoUnit = {
           "english": "Build 'Confirming Strong yen appreciation'",
           "audioText": "えんだかのかくにん",
           "tileBank": [
-            "か",
-            "か",
-            "だ",
-            "く",
-            "ん",
-            "の",
             "え",
+            "く",
+            "か",
+            "の",
+            "だ",
+            "ん",
+            "か",
             "に"
           ],
           "correctAnswer": "えんだかのかくにん"
@@ -2384,12 +2373,12 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l12_3",
           "type": "cloze",
-          "prompt": "私はインフレの確認がすきです",
-          "furigana": "わたしはインフレのかくにんがすきです",
-          "romaji": "Watashi wa infure no kakunin ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Confirming Inflation.",
-          "audioText": "インフレの確認",
-          "clozeSentence": "これはインフレの確認 {{BLANK}} す。",
+          "prompt": "これはいちばん大切なインフレの確認です。",
+          "furigana": "これはいちばんたいせつなインフレのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na infure no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Inflation.",
+          "audioText": "これはインフレの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なインフレの確認です。",
           "clozeTarget": "は",
           "clozeOptions": [
             "は",
@@ -2397,7 +2386,8 @@ export const unit20: DojoUnit = {
             "を",
             "に"
           ],
-          "correctAnswer": "は"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l12_4",
@@ -2408,11 +2398,11 @@ export const unit20: DojoUnit = {
           "english": "This is Confirming Inflation.",
           "audioText": "これはインフレの確認です",
           "scrambleTokens": [
-            "ではありません",
             "です",
+            "それ",
             "これは",
             "インフレの確認",
-            "それ"
+            "ではありません"
           ],
           "scrambleSolution": [
             "これは",
@@ -2441,24 +2431,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l12_6",
           "type": "dictate",
-          "prompt": "報道の確認をお願いします",
-          "furigana": "ほうどうのかくにんをおねがいします",
-          "romaji": "houdou no kakunin o onegaishimasu.",
-          "english": "Confirming News report / journalism, please.",
-          "audioText": "報道の確認をお願いします",
+          "prompt": "報道の確認です",
+          "furigana": "ほうどうのかくにんです",
+          "romaji": "houdou no kakunin desu.",
+          "english": "It is Confirming News report / journalism.",
+          "audioText": "報道の確認です",
           "dictateTokens": [
-            "お願いします",
-            "ありがとう",
-            "報道の確認",
+            "これ",
             "です",
-            "を"
+            "報道の確認",
+            "ではありません"
           ],
           "dictateSolution": [
             "報道の確認",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "報道の確認をお願いします"
+          "correctAnswer": "報道の確認です"
         },
         {
           "id": "u20_l12_7",
@@ -2560,10 +2548,10 @@ export const unit20: DojoUnit = {
           "english": "Economic climate",
           "audioText": "けいき",
           "options": [
-            "Inflation",
+            "Confirming Strong yen appreciation",
             "Economic climate",
-            "Confirming Weak yen depreciation",
-            "Confirming Investment"
+            "Stock price",
+            "Confirming Stock price"
           ],
           "correctAnswer": "Economic climate"
         },
@@ -2576,34 +2564,35 @@ export const unit20: DojoUnit = {
           "english": "Build 'Economic climate'",
           "audioText": "けいき",
           "tileBank": [
-            "よ",
-            "な",
-            "き",
-            "さ",
-            "ゆ",
-            "け",
             "い",
-            "ほ"
+            "め",
+            "け",
+            "た",
+            "き",
+            "す",
+            "と",
+            "ま"
           ],
           "correctAnswer": "けいき"
         },
         {
           "id": "u20_l13_3",
           "type": "cloze",
-          "prompt": "私は株価がすきです",
-          "furigana": "わたしはかぶかがすきです",
-          "romaji": "Watashi wa kabuka ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Stock price.",
-          "audioText": "株価",
-          "clozeSentence": "これは株価 {{BLANK}} す。",
-          "clozeTarget": "が",
+          "prompt": "これはいちばん大切な株価です。",
+          "furigana": "これはいちばんたいせつなかぶかです。",
+          "romaji": "Kore wa ichiban taisetsu na kabuka desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Stock price.",
+          "audioText": "これは株価です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な株価です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "が"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l13_4",
@@ -2614,11 +2603,11 @@ export const unit20: DojoUnit = {
           "english": "This is Stock price.",
           "audioText": "これは株価です",
           "scrambleTokens": [
-            "それ",
-            "です",
-            "株価",
             "ではありません",
-            "これは"
+            "です",
+            "これは",
+            "株価",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -2647,24 +2636,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l13_6",
           "type": "dictate",
-          "prompt": "円安をお願いします",
-          "furigana": "えんやすをおねがいします",
-          "romaji": "enyasu o onegaishimasu.",
-          "english": "Weak yen depreciation, please.",
-          "audioText": "円安をお願いします",
+          "prompt": "円安です",
+          "furigana": "えんやすです",
+          "romaji": "enyasu desu.",
+          "english": "It is Weak yen depreciation.",
+          "audioText": "円安です",
           "dictateTokens": [
-            "です",
-            "を",
             "円安",
-            "ありがとう",
-            "お願いします"
+            "です",
+            "これ",
+            "ではありません"
           ],
           "dictateSolution": [
             "円安",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "円安をお願いします"
+          "correctAnswer": "円安です"
         },
         {
           "id": "u20_l13_7",
@@ -2764,10 +2751,10 @@ export const unit20: DojoUnit = {
           "english": "Strong yen appreciation",
           "audioText": "えんだか",
           "options": [
-            "Confirming Strong yen appreciation",
-            "Confirming Stock price",
             "Strong yen appreciation",
-            "Inflation"
+            "Confirming Growth rate",
+            "Concern / anxiety",
+            "Stock price"
           ],
           "correctAnswer": "Strong yen appreciation"
         },
@@ -2780,34 +2767,35 @@ export const unit20: DojoUnit = {
           "english": "Build 'Strong yen appreciation'",
           "audioText": "えんだか",
           "tileBank": [
-            "み",
-            "え",
-            "い",
-            "か",
-            "だ",
+            "む",
             "ん",
-            "め",
-            "う"
+            "も",
+            "だ",
+            "か",
+            "え",
+            "り",
+            "そ"
           ],
           "correctAnswer": "えんだか"
         },
         {
           "id": "u20_l14_3",
           "type": "cloze",
-          "prompt": "私はインフレがすきです",
-          "furigana": "わたしはインフレがすきです",
-          "romaji": "Watashi wa infure ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Inflation.",
-          "audioText": "インフレ",
-          "clozeSentence": "これはインフレ {{BLANK}} す。",
-          "clozeTarget": "を",
+          "prompt": "これはいちばん大切なインフレです。",
+          "furigana": "これはいちばんたいせつなインフレです。",
+          "romaji": "Kore wa ichiban taisetsu na infure desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Inflation.",
+          "audioText": "これはインフレです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なインフレです。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "を"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l14_4",
@@ -2818,11 +2806,11 @@ export const unit20: DojoUnit = {
           "english": "This is Inflation.",
           "audioText": "これはインフレです",
           "scrambleTokens": [
-            "インフレ",
-            "です",
             "それ",
             "ではありません",
-            "これは"
+            "インフレ",
+            "これは",
+            "です"
           ],
           "scrambleSolution": [
             "これは",
@@ -2851,24 +2839,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l14_6",
           "type": "dictate",
-          "prompt": "報道をお願いします",
-          "furigana": "ほうどうをおねがいします",
-          "romaji": "houdou o onegaishimasu.",
-          "english": "News report / journalism, please.",
-          "audioText": "報道をお願いします",
+          "prompt": "報道です",
+          "furigana": "ほうどうです",
+          "romaji": "houdou desu.",
+          "english": "It is News report / journalism.",
+          "audioText": "報道です",
           "dictateTokens": [
-            "お願いします",
             "報道",
-            "ありがとう",
             "です",
-            "を"
+            "ではありません",
+            "これ"
           ],
           "dictateSolution": [
             "報道",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "報道をお願いします"
+          "correctAnswer": "報道です"
         },
         {
           "id": "u20_l14_7",
@@ -2971,10 +2957,10 @@ export const unit20: DojoUnit = {
           "english": "Government policy",
           "audioText": "せいさく",
           "options": [
+            "Inflation",
+            "Confirming News report / journalism",
             "Government policy",
-            "Enterprise / corporation",
-            "News report / journalism",
-            "Outlook / prospect"
+            "Confirming Weak yen depreciation"
           ],
           "correctAnswer": "Government policy"
         },
@@ -2987,34 +2973,35 @@ export const unit20: DojoUnit = {
           "english": "Build 'Government policy'",
           "audioText": "せいさく",
           "tileBank": [
-            "こ",
+            "せ",
             "ち",
+            "な",
             "く",
-            "さ",
-            "か",
+            "わ",
             "い",
-            "も",
-            "せ"
+            "さ",
+            "や"
           ],
           "correctAnswer": "せいさく"
         },
         {
           "id": "u20_l15_3",
           "type": "cloze",
-          "prompt": "私は市場がすきです",
-          "furigana": "わたしはしじょうがすきです",
-          "romaji": "Watashi wa shijou ga suki desu.",
-          "english": "Fill in the blank with the correct particle for Financial market.",
-          "audioText": "市場",
-          "clozeSentence": "これは市場 {{BLANK}} す。",
-          "clozeTarget": "に",
+          "prompt": "これはいちばん大切な市場です。",
+          "furigana": "これはいちばんたいせつなしじょうです。",
+          "romaji": "Kore wa ichiban taisetsu na shijou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Financial market.",
+          "audioText": "これは市場です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な市場です。",
+          "clozeTarget": "は",
           "clozeOptions": [
             "は",
             "が",
             "を",
             "に"
           ],
-          "correctAnswer": "に"
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
         },
         {
           "id": "u20_l15_4",
@@ -3025,11 +3012,11 @@ export const unit20: DojoUnit = {
           "english": "This is Financial market.",
           "audioText": "これは市場です",
           "scrambleTokens": [
-            "それ",
+            "市場",
             "です",
             "ではありません",
-            "市場",
-            "これは"
+            "これは",
+            "それ"
           ],
           "scrambleSolution": [
             "これは",
@@ -3058,24 +3045,22 @@ export const unit20: DojoUnit = {
         {
           "id": "u20_l15_6",
           "type": "dictate",
-          "prompt": "成長率をお願いします",
-          "furigana": "せいちょうりつをおねがいします",
-          "romaji": "seichouritsu o onegaishimasu.",
-          "english": "Growth rate, please.",
-          "audioText": "成長率をお願いします",
+          "prompt": "成長率です",
+          "furigana": "せいちょうりつです",
+          "romaji": "seichouritsu desu.",
+          "english": "It is Growth rate.",
+          "audioText": "成長率です",
           "dictateTokens": [
-            "を",
-            "お願いします",
+            "ではありません",
             "成長率",
-            "です",
-            "ありがとう"
+            "これ",
+            "です"
           ],
           "dictateSolution": [
             "成長率",
-            "を",
-            "お願いします"
+            "です"
           ],
-          "correctAnswer": "成長率をお願いします"
+          "correctAnswer": "成長率です"
         },
         {
           "id": "u20_l15_7",
@@ -3160,10 +3145,10 @@ export const unit20: DojoUnit = {
         "english": "Economic climate",
         "audioText": "けいき",
         "options": [
-          "Confirming News report / journalism",
-          "Confirming Strong yen appreciation",
-          "Confirming Growth rate",
-          "Economic climate"
+          "Confirming Outlook / prospect",
+          "Economic climate",
+          "Inflation",
+          "Confirming Stock price"
         ],
         "correctAnswer": "Economic climate"
       },
@@ -3176,14 +3161,14 @@ export const unit20: DojoUnit = {
         "english": "Build 'Economic climate'",
         "audioText": "けいき",
         "tileBank": [
+          "た",
           "け",
-          "き",
-          "も",
-          "み",
-          "る",
           "わ",
+          "ろ",
           "い",
-          "せ"
+          "ね",
+          "き",
+          "を"
         ],
         "correctAnswer": "けいき"
       },
@@ -3196,10 +3181,10 @@ export const unit20: DojoUnit = {
         "english": "Government policy",
         "audioText": "せいさく",
         "options": [
-          "Confirming Consumption / spending",
+          "Inflation",
           "Government policy",
-          "Confirming Strong yen appreciation",
-          "Outlook / prospect"
+          "Confirming News report / journalism",
+          "Confirming Economic climate"
         ],
         "correctAnswer": "Government policy"
       },
@@ -3212,14 +3197,14 @@ export const unit20: DojoUnit = {
         "english": "Build 'Government policy'",
         "audioText": "せいさく",
         "tileBank": [
-          "の",
           "い",
-          "わ",
           "せ",
-          "し",
+          "に",
           "く",
-          "ひ",
-          "さ"
+          "こ",
+          "ね",
+          "さ",
+          "ま"
         ],
         "correctAnswer": "せいさく"
       },
@@ -3232,10 +3217,10 @@ export const unit20: DojoUnit = {
         "english": "Impact / consequence",
         "audioText": "えいきょう",
         "options": [
+          "Stock price",
           "Confirming Weak yen depreciation",
-          "Impact / consequence",
-          "Confirming News report / journalism",
-          "Investment"
+          "Confirming Consumption / spending",
+          "Impact / consequence"
         ],
         "correctAnswer": "Impact / consequence"
       },
@@ -3248,13 +3233,13 @@ export const unit20: DojoUnit = {
         "english": "Build 'Impact / consequence'",
         "audioText": "えいきょう",
         "tileBank": [
-          "き",
-          "ほ",
-          "ね",
-          "ょ",
-          "な",
           "う",
           "い",
+          "き",
+          "ら",
+          "は",
+          "ょ",
+          "む",
           "え"
         ],
         "correctAnswer": "えいきょう"
@@ -3268,10 +3253,10 @@ export const unit20: DojoUnit = {
         "english": "Confirming Strong yen appreciation",
         "audioText": "えんだかのかくにん",
         "options": [
-          "Confirming Investment",
-          "Stock price",
           "Confirming Strong yen appreciation",
-          "Confirming Inflation"
+          "Confirming News report / journalism",
+          "Impact / consequence",
+          "Confirming Enterprise / corporation"
         ],
         "correctAnswer": "Confirming Strong yen appreciation"
       },
@@ -3284,14 +3269,14 @@ export const unit20: DojoUnit = {
         "english": "Build 'Confirming Strong yen appreciation'",
         "audioText": "えんだかのかくにん",
         "tileBank": [
-          "か",
-          "か",
-          "だ",
           "く",
+          "え",
+          "か",
           "ん",
+          "だ",
           "の",
-          "に",
-          "え"
+          "か",
+          "に"
         ],
         "correctAnswer": "えんだかのかくにん"
       },
@@ -3304,10 +3289,10 @@ export const unit20: DojoUnit = {
         "english": "Confirming Consumption / spending",
         "audioText": "しょうひのかくにん",
         "options": [
-          "Confirming Strong yen appreciation",
-          "Stock price",
-          "Impact / consequence",
-          "Confirming Consumption / spending"
+          "Confirming Growth rate",
+          "Confirming Consumption / spending",
+          "Confirming Outlook / prospect",
+          "Confirming News report / journalism"
         ],
         "correctAnswer": "Confirming Consumption / spending"
       },
@@ -3320,14 +3305,14 @@ export const unit20: DojoUnit = {
         "english": "Build 'Confirming Consumption / spending'",
         "audioText": "しょうひのかくにん",
         "tileBank": [
-          "し",
-          "く",
-          "に",
-          "ょ",
           "の",
-          "か",
+          "ょ",
+          "く",
           "ひ",
-          "う"
+          "か",
+          "に",
+          "う",
+          "し"
         ],
         "correctAnswer": "しょうひのかくにん"
       },
@@ -3341,9 +3326,9 @@ export const unit20: DojoUnit = {
         "audioText": "けいきのかくにん",
         "options": [
           "Confirming Economic climate",
-          "Confirming Government policy",
-          "News report / journalism",
-          "Strong yen appreciation"
+          "Confirming Strong yen appreciation",
+          "Confirming Weak yen depreciation",
+          "Confirming Enterprise / corporation"
         ],
         "correctAnswer": "Confirming Economic climate"
       },
@@ -3356,13 +3341,13 @@ export const unit20: DojoUnit = {
         "english": "Build 'Confirming Economic climate'",
         "audioText": "けいきのかくにん",
         "tileBank": [
-          "の",
-          "ん",
+          "く",
           "に",
+          "の",
           "き",
           "か",
-          "く",
           "い",
+          "ん",
           "け"
         ],
         "correctAnswer": "けいきのかくにん"
