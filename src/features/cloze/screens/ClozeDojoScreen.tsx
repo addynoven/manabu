@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   ScrollView,
   StyleSheet,
@@ -76,7 +76,7 @@ export function ClozeDojoScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { colors: theme } = useAppTheme();
-  const ttsEnabled = useSettingsStore(s => s.ttsEnabled);
+  const { ttsEnabled, ttsRate } = useSettingsStore();
 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -85,6 +85,17 @@ export function ClozeDojoScreen() {
   const currentQ = CLOZE_QUESTIONS[currentIdx % CLOZE_QUESTIONS.length];
   const isAnswered = selectedOption !== null;
   const isCorrect = selectedOption === currentQ.correctParticle;
+
+  // Auto-play sentence on question reveal
+  useEffect(() => {
+    if (ttsEnabled && currentQ && !isAnswered) {
+      const textToSpeak = currentQ.fullSentence;
+      const timer = setTimeout(() => {
+        speakJapanese(textToSpeak, { rate: ttsRate }).catch(() => {});
+      }, 120);
+      return () => clearTimeout(timer);
+    }
+  }, [currentIdx, isAnswered, ttsEnabled, ttsRate]);
 
   const handleSelectOption = (opt: string) => {
     if (isAnswered) return;

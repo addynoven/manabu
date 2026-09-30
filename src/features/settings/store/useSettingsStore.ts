@@ -38,7 +38,7 @@ export const useSettingsStore = create<SettingsState>()(
       themeId: DEFAULT_THEME_ID,
       ttsEnabled: true,
       ttsRate: 1.0,
-      ttsAutoPlay: false,
+      ttsAutoPlay: true,
       crazyMode: false,
       setHapticsEnabled: (enabled) => set({ hapticsEnabled: enabled }),
       setSoundEffectsEnabled: (enabled) => set({ soundEffectsEnabled: enabled }),

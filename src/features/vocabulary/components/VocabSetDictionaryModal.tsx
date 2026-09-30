@@ -11,6 +11,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAppTheme } from '../../../core/theme';
 import { radii, shadows, spacing } from '../../../core/theme';
 import { AudioButton } from '../../../core/audio/components/AudioButton';
+import { CopyableJapaneseText } from '../../../core/components/CopyableJapaneseText';
 import type { VocabEntry } from '../models/vocabulary.model';
 
 interface VocabSetDictionaryModalProps {
@@ -85,9 +86,11 @@ export function VocabSetDictionaryModal({
                 ]}
               >
                 <View style={styles.leftCol}>
-                  <Text style={[styles.wordText, { color: theme.textPrimary }]}>
-                    {displayWord}
-                  </Text>
+                  <CopyableJapaneseText text={displayWord}>
+                    <Text style={[styles.wordText, { color: theme.textPrimary }]}>
+                      {displayWord}
+                    </Text>
+                  </CopyableJapaneseText>
                   {subReading && (
                     <Text
                       style={[styles.readingText, { color: theme.primary }]}

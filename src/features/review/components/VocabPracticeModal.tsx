@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Modal,
   StyleSheet,
@@ -18,6 +18,7 @@ import {
 import * as Haptics from 'expo-haptics';
 import { radii, shadows, useAppTheme } from '../../../core/theme';
 import { speakJapanese } from '../../../core/audio/tts';
+import { CopyableJapaneseText } from '../../../core/components/CopyableJapaneseText';
 import { useProgressStore } from '../../progress/store/useProgressStore';
 import type { VocabWord } from '../services/vocabBank.service';
 
@@ -64,6 +65,17 @@ function VocabPracticeContent({
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
     await speakJapanese(text, { rate: 0.85 });
   };
+
+  // Auto-play audio as soon as question appears
+  useEffect(() => {
+    if (currentWord && !evaluation && !isFinished) {
+      const textToSpeak = currentWord.audioText || currentWord.japanese;
+      const timer = setTimeout(() => {
+        speakJapanese(textToSpeak, { rate: 0.9 }).catch(() => {});
+      }, 120);
+      return () => clearTimeout(timer);
+    }
+  }, [currentIndex, currentWord, evaluation, isFinished]);
 
   const handleSelectOption = (opt: string) => {
     if (evaluation !== null || !currentWord) return;
@@ -201,12 +213,16 @@ function VocabPracticeContent({
               <Volume2 size={22} color={theme.primary} />
             </Pressable>
 
-            <Text style={[styles.jpWord, { color: theme.textPrimary }]}>
-              {currentWord.japanese}
-            </Text>
-            <Text style={[styles.furigana, { color: theme.textSecondary }]}>
-              {currentWord.reading}
-            </Text>
+            <CopyableJapaneseText text={currentWord.japanese}>
+              <Text style={[styles.jpWord, { color: theme.textPrimary }]}>
+                {currentWord.japanese}
+              </Text>
+            </CopyableJapaneseText>
+            {currentWord.reading && currentWord.reading !== currentWord.japanese && (
+              <Text style={[styles.furigana, { color: theme.textSecondary }]}>
+                {currentWord.reading}
+              </Text>
+            )}
           </View>
 
           {/* Meaning Prompt & Options */}

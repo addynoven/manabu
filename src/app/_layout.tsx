@@ -6,6 +6,8 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ErrorBoundary } from '../core/errors/ErrorBoundary';
 import { QueryProvider } from '../core/query/QueryProvider';
 
+import { GlobalClipboardToast } from '../core/clipboard/GlobalClipboardToast';
+
 SplashScreen.preventAutoHideAsync().catch(() => {});
 
 export default function RootLayout() {
@@ -27,6 +29,7 @@ export default function RootLayout() {
             <Stack.Screen name="academy" options={{ animation: 'slide_from_bottom' }} />
             <Stack.Screen name="resources" options={{ animation: 'slide_from_bottom' }} />
           </Stack>
+          <GlobalClipboardToast />
         </QueryProvider>
       </ErrorBoundary>
     </SafeAreaProvider>

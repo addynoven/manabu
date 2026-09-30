@@ -11,6 +11,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAppTheme } from '../../../core/theme';
 import { radii, shadows, spacing } from '../../../core/theme';
 import { AudioButton } from '../../../core/audio/components/AudioButton';
+import { CopyableJapaneseText } from '../../../core/components/CopyableJapaneseText';
 import type { KanjiEntry } from '../models/kanji.model';
 import { extractKana } from '../lib/kanjiGenerator';
 
@@ -104,9 +105,11 @@ export function KanjiSetDictionaryModal({
                       { backgroundColor: theme.border },
                     ]}
                   />
-                  <Text style={[styles.kanjiGlyph, { color: theme.textPrimary }]}>
-                    {item.kanjiChar}
-                  </Text>
+                  <CopyableJapaneseText text={item.kanjiChar}>
+                    <Text style={[styles.kanjiGlyph, { color: theme.textPrimary }]}>
+                      {item.kanjiChar}
+                    </Text>
+                  </CopyableJapaneseText>
                 </View>
                 <AudioButton
                   text={extractKana(item.onyomi[0] || item.kunyomi[0] || '') || item.kanjiChar}

@@ -94,6 +94,16 @@ export function DailyChallengeModal({ visible, onClose }: DailyChallengeModalPro
     }
   };
 
+  // Auto-play audio on question reveal
+  useEffect(() => {
+    if (visible && currentQ && !isFinished && feedback === 'idle') {
+      const timer = setTimeout(() => {
+        speakJapanese(currentQ.prompt, { rate: ttsRate }).catch(() => {});
+      }, 120);
+      return () => clearTimeout(timer);
+    }
+  }, [visible, currentIndex, currentQ?.prompt, isFinished, feedback, ttsRate]);
+
   const handleSelectOption = (option: string) => {
     if (feedback !== 'idle' || isFinished || !currentQ) return;
 

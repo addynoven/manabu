@@ -35,6 +35,7 @@ export async function speakJapanese(
     const isSpeaking = await Speech.isSpeakingAsync();
     if (isSpeaking) {
       await Speech.stop();
+      await new Promise(resolve => setTimeout(resolve, 50));
     }
 
     const { rate = 1.0, pitch = 1.0, onStart, onDone, onError } = options;

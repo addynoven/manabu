@@ -22,6 +22,7 @@ import { radii, shadows, useAppTheme } from '../../../core/theme';
 import { useProgressStore } from '../../progress/store/useProgressStore';
 import { useDojoStore } from '../../dojo/store/useDojoStore';
 import { speakJapanese } from '../../../core/audio/tts';
+import { CopyableJapaneseText } from '../../../core/components/CopyableJapaneseText';
 import {
   getLearnedVocabWords,
   type VocabWord,
@@ -264,12 +265,18 @@ export function ReviewScreen() {
               >
                 <View style={styles.wordMain}>
                   <View style={styles.wordTitleRow}>
-                    <Text style={[styles.wordJp, { color: theme.textPrimary }]}>
-                      {word.japanese}
-                    </Text>
-                    <Text style={[styles.wordReading, { color: theme.textSecondary }]}>
-                      {word.reading}
-                    </Text>
+                    <CopyableJapaneseText text={word.japanese}>
+                      <Text style={[styles.wordJp, { color: theme.textPrimary }]}>
+                        {word.japanese}
+                      </Text>
+                    </CopyableJapaneseText>
+                    {word.reading && word.reading !== word.japanese && (
+                      <View style={[styles.readingTag, { backgroundColor: theme.surfaceSubtle }]}>
+                        <Text style={[styles.wordReading, { color: theme.textSecondary }]} numberOfLines={1}>
+                          {word.reading}
+                        </Text>
+                      </View>
+                    )}
                   </View>
 
                   <Text style={[styles.wordEnglish, { color: theme.textPrimary }]}>
@@ -500,16 +507,23 @@ const styles = StyleSheet.create({
   },
   wordTitleRow: {
     flexDirection: 'row',
-    alignItems: 'baseline',
+    alignItems: 'center',
+    flexWrap: 'wrap',
     gap: 8,
-    marginBottom: 4,
+    marginBottom: 6,
   },
   wordJp: {
     fontSize: 22,
     fontWeight: '900',
+    letterSpacing: -0.2,
+  },
+  readingTag: {
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: radii.sm,
   },
   wordReading: {
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: '600',
   },
   wordEnglish: {

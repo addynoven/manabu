@@ -116,6 +116,19 @@ function ReviewSessionContent({
     await speakJapanese(text, { rate: 0.85 });
   };
 
+  // Auto-play audio on question reveal
+  useEffect(() => {
+    if (currentItem && !sessionCompleted && !evaluation) {
+      const textToSpeak = currentItem.audioText || currentItem.japanese;
+      if (textToSpeak) {
+        const timer = setTimeout(() => {
+          speakJapanese(textToSpeak, { rate: 0.85 }).catch(() => {});
+        }, 120);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [currentIndex, currentItem, sessionCompleted, evaluation]);
+
   const advanceNext = () => {
     if (currentIndex + 1 >= items.length) {
       if (timerRef.current) clearInterval(timerRef.current);

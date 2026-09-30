@@ -22,6 +22,7 @@ import * as Haptics from 'expo-haptics';
 import { radii, shadows, spacing, useAppTheme } from '../../../core/theme';
 import type { DojoLesson, LessonItem } from '../models/dojo.model';
 import { speakJapanese } from '../../../core/audio/tts';
+import { CopyableJapaneseText } from '../../../core/components/CopyableJapaneseText';
 import { useDojoStore } from '../store/useDojoStore';
 import { useProgressStore } from '../../progress/store/useProgressStore';
 import * as wanakana from 'wanakana';
@@ -79,10 +80,16 @@ function LessonSessionContent({
 
   // Auto-play audio on question reveal
   useEffect(() => {
-    if (currentItem && !evaluation) {
-      speakJapanese(currentItem.audioText, { rate: 0.9 }).catch(() => {});
+    if (currentItem && !evaluation && !isCompleted) {
+      const textToSpeak = currentItem.audioText || currentItem.prompt || (currentItem.type !== 'match' ? currentItem.correctAnswer : '');
+      if (textToSpeak) {
+        const timer = setTimeout(() => {
+          speakJapanese(textToSpeak, { rate: 0.9 }).catch(() => {});
+        }, 120);
+        return () => clearTimeout(timer);
+      }
     }
-  }, [currentItem, evaluation]);
+  }, [currentItem?.id, evaluation, isCompleted]);
 
   const handlePlayAudio = useCallback(async (rate = 0.9) => {
     if (!currentItem) return;
@@ -351,9 +358,11 @@ function LessonSessionContent({
                     </View>
                   )}
 
-                  <Text style={[styles.promptJapanese, { color: theme.textPrimary }]}>
-                    {currentItem.prompt}
-                  </Text>
+                  <CopyableJapaneseText text={currentItem.prompt}>
+                    <Text style={[styles.promptJapanese, { color: theme.textPrimary }]}>
+                      {currentItem.prompt}
+                    </Text>
+                  </CopyableJapaneseText>
 
                   {currentItem.romaji && (
                     <Text style={[styles.promptRomaji, { color: theme.textSecondary }]}>

@@ -16,14 +16,18 @@ describe('vocabBank.service', () => {
   it('filters by status: needs-practice', () => {
     const mockMastery = {
       'こんにちは': {
-        accuracy: 0.3,
-        totalAttempts: 5,
-        correctCount: 1,
-        incorrectCount: 4,
+        character: 'こんにちは',
+        category: 'vocab' as const,
+        correct: 1,
+        incorrect: 4,
+        total: 5,
+        accuracy: 0.2,
+        masteryLevel: 'needs-practice' as const,
         lastPracticedAt: new Date().toISOString(),
-        interval: 1,
-        easeFactor: 2.5,
-        itemType: 'vocab' as const,
+        srsStage: 'apprentice-1' as const,
+        nextReviewAt: null,
+        intervalDays: 0.16,
+        streak: 0,
       },
     };
 
