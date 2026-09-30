@@ -14,12 +14,16 @@ import {
   Volume2,
   CheckCircle2,
   Flame,
+  Layers,
 } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
-import { radii, shadows, spacing, useAppTheme } from '../../../core/theme';
+import { radii, shadows, useAppTheme } from '../../../core/theme';
 import { useProgressStore } from '../../progress/store/useProgressStore';
 import { speakJapanese } from '../../../core/audio/tts';
-import { router } from 'expo-router';
+import { ReviewSessionModal, type ReviewMode } from '../components/ReviewSessionModal';
+import { ItemMasteryModal } from '../components/ItemMasteryModal';
+import { getStageColor } from '../services/srsEngine';
+import type { CharacterMastery } from '../../progress/models/progress.model';
 
 export function ReviewScreen() {
   const insets = useSafeAreaInsets();
@@ -27,36 +31,59 @@ export function ReviewScreen() {
 
   const mastery = useProgressStore(state => state.mastery);
   const getWeakestCharacters = useProgressStore(state => state.getWeakestCharacters);
-  const getMasteryDistribution = useProgressStore(state => state.getMasteryDistribution);
+  const getDueReviewItems = useProgressStore(state => state.getDueReviewItems);
+  const getSrsDistribution = useProgressStore(state => state.getSrsDistribution);
 
   const [activeTab, setActiveTab] = useState<'all' | 'kana' | 'kanji' | 'vocab'>('all');
-
   const selectedCategory = activeTab === 'all' ? undefined : activeTab;
 
+  // Active Review Session Modal state
+  const [reviewModalVisible, setReviewModalVisible] = useState(false);
+  const [reviewMode, setReviewMode] = useState<ReviewMode>('daily');
+  const [sessionKey, setSessionKey] = useState(0);
+
+  // Item Inspection Modal state
+  const [selectedMasteryItem, setSelectedMasteryItem] = useState<CharacterMastery | null>(null);
+  const [itemModalVisible, setItemModalVisible] = useState(false);
+
+  // Due items query
+  const dueItems = useMemo(() => {
+    if (!mastery) return [];
+    return getDueReviewItems(selectedCategory);
+  }, [mastery, selectedCategory, getDueReviewItems]);
+
+  const dueCount = dueItems.length;
+
+  // Weak items query
   const weakItems = useMemo(() => {
     if (!mastery) return [];
     return getWeakestCharacters(selectedCategory, 12);
   }, [mastery, selectedCategory, getWeakestCharacters]);
 
-  const distribution = useMemo(() => {
-    if (!mastery) return { mastered: 0, learning: 0, needsPractice: 0, total: 0 };
-    return getMasteryDistribution(selectedCategory);
-  }, [mastery, selectedCategory, getMasteryDistribution]);
-
-  const dueCount = useMemo(() => {
-    // Items needing practice or in learning phase
-    return distribution.needsPractice + Math.min(10, distribution.learning);
-  }, [distribution]);
+  // SRS Stage Distribution
+  const srsDistribution = useMemo(() => {
+    if (!mastery) {
+      return { apprentice: 0, guru: 0, master: 0, enlightened: 0, burned: 0, total: 0 };
+    }
+    return getSrsDistribution(selectedCategory);
+  }, [mastery, selectedCategory, getSrsDistribution]);
 
   const handlePlaySound = async (char: string) => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
     await speakJapanese(char, { rate: 0.85 });
   };
 
-  const handleStartReview = (_type: string) => {
+  const handleStartReview = (type: ReviewMode) => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
-    // Direct user to appropriate practice or kana dojo
-    router.push('/(tabs)');
+    setReviewMode(type);
+    setSessionKey(k => k + 1);
+    setReviewModalVisible(true);
+  };
+
+  const handleInspectItem = (item: CharacterMastery) => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+    setSelectedMasteryItem(item);
+    setItemModalVisible(true);
   };
 
   return (
@@ -90,8 +117,8 @@ export function ReviewScreen() {
               <Text style={[styles.heroTitle, { color: theme.textPrimary }]}>Daily SRS Queue</Text>
               <Text style={[styles.heroSub, { color: theme.textSecondary }]}>
                 {dueCount > 0
-                  ? `${dueCount} items due for memory reinforcement today`
-                  : 'All caught up! Excellent retention streak'}
+                  ? `${dueCount} items due for spaced repetition today`
+                  : 'All caught up! Start a bonus reinforcement round'}
               </Text>
             </View>
           </View>
@@ -99,10 +126,11 @@ export function ReviewScreen() {
           <Pressable
             style={[styles.primaryButton, { backgroundColor: theme.primary }]}
             onPress={() => handleStartReview('daily')}
+            accessibilityLabel="Start Daily Review"
           >
             <Zap size={18} color={theme.textOnPrimary} />
             <Text style={[styles.primaryButtonText, { color: theme.textOnPrimary }]}>
-              {dueCount > 0 ? `Start Daily Review (${dueCount})` : 'Start Bonus Speed Run'}
+              {dueCount > 0 ? `Start Daily Review (${dueCount})` : 'Start Bonus Practice Run'}
             </Text>
           </Pressable>
         </View>
@@ -118,6 +146,7 @@ export function ReviewScreen() {
                 activeTab === tab && { backgroundColor: theme.primary, borderColor: theme.primary },
               ]}
               onPress={() => setActiveTab(tab)}
+              accessibilityLabel={`Filter by ${tab}`}
             >
               <Text
                 style={[
@@ -132,12 +161,75 @@ export function ReviewScreen() {
           ))}
         </View>
 
+        {/* SRS Memory Vault Stages Bar */}
+        <View style={[styles.srsCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+          <View style={styles.srsHeader}>
+            <View style={styles.srsTitleRow}>
+              <Layers size={16} color={theme.primary} />
+              <Text style={[styles.srsTitle, { color: theme.textPrimary }]}>
+                SRS Memory Vault ({srsDistribution.total})
+              </Text>
+            </View>
+            <Text style={[styles.srsSubtitle, { color: theme.textMuted }]}>
+              Spaced Repetition Tiers
+            </Text>
+          </View>
+
+          <View style={styles.srsSegments}>
+            <View style={[styles.srsPill, { backgroundColor: getStageColor('apprentice') + '20' }]}>
+              <Text style={[styles.srsPillLabel, { color: getStageColor('apprentice') }]}>
+                🌱 Apprentice
+              </Text>
+              <Text style={[styles.srsPillCount, { color: getStageColor('apprentice') }]}>
+                {srsDistribution.apprentice}
+              </Text>
+            </View>
+
+            <View style={[styles.srsPill, { backgroundColor: getStageColor('guru') + '20' }]}>
+              <Text style={[styles.srsPillLabel, { color: getStageColor('guru') }]}>
+                🌿 Guru
+              </Text>
+              <Text style={[styles.srsPillCount, { color: getStageColor('guru') }]}>
+                {srsDistribution.guru}
+              </Text>
+            </View>
+
+            <View style={[styles.srsPill, { backgroundColor: getStageColor('master') + '20' }]}>
+              <Text style={[styles.srsPillLabel, { color: getStageColor('master') }]}>
+                🥋 Master
+              </Text>
+              <Text style={[styles.srsPillCount, { color: getStageColor('master') }]}>
+                {srsDistribution.master}
+              </Text>
+            </View>
+
+            <View style={[styles.srsPill, { backgroundColor: getStageColor('enlightened') + '20' }]}>
+              <Text style={[styles.srsPillLabel, { color: getStageColor('enlightened') }]}>
+                ✨ Enlightened
+              </Text>
+              <Text style={[styles.srsPillCount, { color: getStageColor('enlightened') }]}>
+                {srsDistribution.enlightened}
+              </Text>
+            </View>
+
+            <View style={[styles.srsPill, { backgroundColor: getStageColor('burned') + '20' }]}>
+              <Text style={[styles.srsPillLabel, { color: getStageColor('burned') }]}>
+                🔥 Burned
+              </Text>
+              <Text style={[styles.srsPillCount, { color: getStageColor('burned') }]}>
+                {srsDistribution.burned}
+              </Text>
+            </View>
+          </View>
+        </View>
+
         {/* Quick Launch Cards */}
         <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>Practice Modes</Text>
         <View style={styles.quickGrid}>
           <Pressable
             style={[styles.quickCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
             onPress={() => handleStartReview('weakness')}
+            accessibilityLabel="Start Weakness Sprint"
           >
             <View style={[styles.quickIconCircle, { backgroundColor: '#EF4444' + '20' }]}>
               <AlertTriangle size={20} color="#EF4444" />
@@ -151,6 +243,7 @@ export function ReviewScreen() {
           <Pressable
             style={[styles.quickCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
             onPress={() => handleStartReview('speed')}
+            accessibilityLabel="Start Speed Drill"
           >
             <View style={[styles.quickIconCircle, { backgroundColor: '#F59E0B' + '20' }]}>
               <Flame size={20} color="#F59E0B" />
@@ -167,6 +260,9 @@ export function ReviewScreen() {
           <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>
             Priority Focus Items ({weakItems.length})
           </Text>
+          <Text style={[styles.sectionHint, { color: theme.textMuted }]}>
+            Tap item to inspect
+          </Text>
         </View>
 
         {weakItems.length === 0 ? (
@@ -180,15 +276,17 @@ export function ReviewScreen() {
         ) : (
           <View style={styles.itemsList}>
             {weakItems.map(item => (
-              <View
+              <Pressable
                 key={item.character}
                 style={[styles.itemCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+                onPress={() => handleInspectItem(item)}
+                accessibilityLabel={`Inspect item ${item.character}`}
               >
                 <View style={styles.itemLeft}>
                   <Text style={[styles.itemChar, { color: theme.textPrimary }]}>{item.character}</Text>
                   <View style={styles.itemMeta}>
                     <Text style={[styles.itemType, { color: theme.textMuted }]}>
-                      {item.category.toUpperCase()} • STATUS: {item.masteryLevel.toUpperCase()}
+                      {item.category.toUpperCase()} • STATUS: {(item.masteryLevel || 'learning').toUpperCase()}
                     </Text>
                     <Text style={[styles.itemAccuracy, { color: item.accuracy < 60 ? theme.error : theme.accent }]}>
                       {item.accuracy}% accuracy ({item.incorrect} misses)
@@ -204,11 +302,32 @@ export function ReviewScreen() {
                 >
                   <Volume2 size={18} color={theme.textPrimary} />
                 </Pressable>
-              </View>
+              </Pressable>
             ))}
           </View>
         )}
       </ScrollView>
+
+      {/* Real Review Session Modal */}
+      <ReviewSessionModal
+        visible={reviewModalVisible}
+        onClose={() => setReviewModalVisible(false)}
+        mode={reviewMode}
+        category={selectedCategory}
+        sessionKey={sessionKey}
+      />
+
+      {/* Individual Item Inspection Drawer Modal */}
+      <ItemMasteryModal
+        visible={itemModalVisible}
+        onClose={() => setItemModalVisible(false)}
+        masteryItem={selectedMasteryItem}
+        onDrillItem={() => {
+          setReviewMode('weakness');
+          setSessionKey(k => k + 1);
+          setReviewModalVisible(true);
+        }}
+      />
     </View>
   );
 }
@@ -218,20 +337,22 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    paddingHorizontal: spacing.base,
-    paddingVertical: spacing.md,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    paddingHorizontal: 20,
+    paddingVertical: 14,
     borderBottomWidth: 1,
   },
   title: {
     fontSize: 20,
     fontWeight: '800',
+    letterSpacing: 0.2,
   },
   subtitle: {
     fontSize: 12,
     fontWeight: '600',
+    marginTop: 2,
   },
   dueBadge: {
     paddingHorizontal: 12,
@@ -240,146 +361,210 @@ const styles = StyleSheet.create({
   },
   dueBadgeText: {
     fontSize: 12,
-    fontWeight: '700',
+    fontWeight: '800',
   },
   content: {
-    padding: spacing.base,
-    gap: spacing.md,
+    padding: 20,
   },
   heroCard: {
     borderRadius: radii.xl,
-    padding: spacing.base,
     borderWidth: 1,
-    gap: spacing.md,
+    padding: 20,
+    marginBottom: 16,
     ...shadows.sm,
   },
   heroTop: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing.md,
+    marginBottom: 16,
   },
   heroIconBox: {
     width: 48,
     height: 48,
-    borderRadius: radii.lg,
+    borderRadius: radii.md,
     alignItems: 'center',
     justifyContent: 'center',
+    marginRight: 14,
   },
   heroText: {
     flex: 1,
   },
   heroTitle: {
     fontSize: 17,
-    fontWeight: '700',
+    fontWeight: '800',
   },
   heroSub: {
-    fontSize: 13,
+    fontSize: 12,
+    fontWeight: '500',
     marginTop: 2,
+    lineHeight: 16,
   },
   primaryButton: {
+    height: 48,
+    borderRadius: radii.lg,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: spacing.sm + 2,
-    borderRadius: radii.lg,
-    gap: spacing.xs,
+    gap: 8,
   },
   primaryButtonText: {
     fontSize: 14,
-    fontWeight: '700',
+    fontWeight: '800',
+    letterSpacing: 0.3,
   },
   filterRow: {
     flexDirection: 'row',
     gap: 8,
+    marginBottom: 16,
   },
   filterPill: {
-    paddingHorizontal: 14,
-    paddingVertical: 7,
-    borderRadius: radii.full,
+    flex: 1,
+    paddingVertical: 8,
+    borderRadius: radii.md,
     borderWidth: 1,
+    alignItems: 'center',
   },
   filterPillText: {
     fontSize: 12,
     fontWeight: '600',
   },
-  sectionTitle: {
-    fontSize: 13,
+  srsCard: {
+    borderRadius: radii.xl,
+    borderWidth: 1,
+    padding: 16,
+    marginBottom: 20,
+    ...shadows.sm,
+  },
+  srsHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+  },
+  srsTitleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  srsTitle: {
+    fontSize: 14,
+    fontWeight: '800',
+  },
+  srsSubtitle: {
+    fontSize: 11,
+    fontWeight: '600',
+  },
+  srsSegments: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  srsPill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: radii.sm,
+    flex: 1,
+    minWidth: '45%',
+  },
+  srsPillLabel: {
+    fontSize: 11,
     fontWeight: '700',
-    textTransform: 'uppercase',
+  },
+  srsPillCount: {
+    fontSize: 12,
+    fontWeight: '800',
+  },
+  sectionTitle: {
+    fontSize: 11,
+    fontWeight: '800',
     letterSpacing: 0.6,
+    textTransform: 'uppercase',
+    marginBottom: 10,
   },
   sectionHeaderRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginTop: spacing.xs,
+    marginTop: 8,
+    marginBottom: 10,
+  },
+  sectionHint: {
+    fontSize: 11,
+    fontWeight: '600',
   },
   quickGrid: {
     flexDirection: 'row',
-    gap: spacing.sm,
+    gap: 12,
+    marginBottom: 20,
   },
   quickCard: {
     flex: 1,
     borderRadius: radii.xl,
-    padding: spacing.base,
     borderWidth: 1,
-    gap: spacing.xs,
+    padding: 14,
     ...shadows.sm,
   },
   quickIconCircle: {
     width: 36,
     height: 36,
-    borderRadius: radii.full,
+    borderRadius: 18,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 4,
+    marginBottom: 10,
   },
   quickCardTitle: {
-    fontSize: 15,
-    fontWeight: '700',
+    fontSize: 14,
+    fontWeight: '800',
+    marginBottom: 2,
   },
   quickCardSub: {
-    fontSize: 12,
-    lineHeight: 16,
+    fontSize: 11,
+    fontWeight: '500',
+    lineHeight: 14,
   },
   emptyCard: {
     borderRadius: radii.xl,
-    padding: spacing.xl,
-    alignItems: 'center',
     borderWidth: 1,
-    gap: spacing.xs,
+    padding: 24,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   emptyTitle: {
     fontSize: 16,
-    fontWeight: '700',
-    marginTop: spacing.xs,
+    fontWeight: '800',
+    marginTop: 10,
   },
   emptySub: {
-    fontSize: 13,
+    fontSize: 12,
+    fontWeight: '500',
     textAlign: 'center',
+    marginTop: 4,
+    lineHeight: 16,
   },
   itemsList: {
-    gap: spacing.xs,
+    gap: 8,
   },
   itemCard: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: spacing.base,
-    paddingVertical: spacing.sm,
     borderRadius: radii.lg,
     borderWidth: 1,
+    padding: 12,
   },
   itemLeft: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: spacing.md,
+    gap: 12,
     flex: 1,
   },
   itemChar: {
     fontSize: 24,
-    fontWeight: '800',
-    width: 36,
+    fontWeight: '900',
+    width: 38,
     textAlign: 'center',
   },
   itemMeta: {
@@ -387,7 +572,8 @@ const styles = StyleSheet.create({
   },
   itemType: {
     fontSize: 10,
-    fontWeight: '700',
+    fontWeight: '800',
+    letterSpacing: 0.5,
   },
   itemAccuracy: {
     fontSize: 12,
@@ -397,7 +583,7 @@ const styles = StyleSheet.create({
   audioButton: {
     width: 36,
     height: 36,
-    borderRadius: radii.full,
+    borderRadius: 18,
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -3,6 +3,19 @@ import { z } from 'zod';
 export const MasteryLevelSchema = z.enum(['mastered', 'learning', 'needs-practice']);
 export type MasteryLevel = z.infer<typeof MasteryLevelSchema>;
 
+export const SrsStageSchema = z.enum([
+  'apprentice-1',
+  'apprentice-2',
+  'apprentice-3',
+  'apprentice-4',
+  'guru-1',
+  'guru-2',
+  'master',
+  'enlightened',
+  'burned',
+]);
+export type SrsStage = z.infer<typeof SrsStageSchema>;
+
 export const CharacterMasterySchema = z.object({
   character: z.string(),
   category: z.enum(['kana', 'kanji', 'vocab']),
@@ -12,6 +25,10 @@ export const CharacterMasterySchema = z.object({
   accuracy: z.number().default(0),
   masteryLevel: MasteryLevelSchema.default('learning'),
   lastPracticedAt: z.string().nullable().default(null),
+  srsStage: SrsStageSchema.default('apprentice-1'),
+  nextReviewAt: z.string().nullable().default(null),
+  intervalDays: z.number().default(0.16),
+  streak: z.number().default(0),
 });
 export type CharacterMastery = z.infer<typeof CharacterMasterySchema>;
 

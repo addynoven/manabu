@@ -9,6 +9,11 @@ import {
   type UserStats,
 } from '../models/progress.model';
 import { useAchievementStore } from '../../achievements/store/useAchievementStore';
+import {
+  calculateNextSrsStep,
+  isItemDue,
+  getStageGroup,
+} from '../../review/services/srsEngine';
 
 interface ProgressState extends UserStats {
   recordAnswer: (
@@ -16,7 +21,15 @@ interface ProgressState extends UserStats {
     isCorrect: boolean,
     category: 'kana' | 'kanji' | 'vocab',
   ) => void;
+  recordSrsReview: (
+    characterKey: string,
+    isCorrect: boolean,
+    category: 'kana' | 'kanji' | 'vocab',
+  ) => void;
   getCharacterMastery: (characterKey: string) => CharacterMastery | null;
+  getDueReviewItems: (
+    category?: 'kana' | 'kanji' | 'vocab',
+  ) => CharacterMastery[];
   getWeakestCharacters: (
     category?: 'kana' | 'kanji' | 'vocab',
     limit?: number,
@@ -32,6 +45,14 @@ interface ProgressState extends UserStats {
     mastered: number;
     learning: number;
     needsPractice: number;
+    total: number;
+  };
+  getSrsDistribution: (category?: 'kana' | 'kanji' | 'vocab') => {
+    apprentice: number;
+    guru: number;
+    master: number;
+    enlightened: number;
+    burned: number;
     total: number;
   };
   exportBackup: () => string;
@@ -99,6 +120,10 @@ export const useProgressStore = create<ProgressState>()(
           accuracy: 0,
           masteryLevel: 'learning' as MasteryLevel,
           lastPracticedAt: null,
+          srsStage: 'apprentice-1',
+          nextReviewAt: null,
+          intervalDays: 0.16,
+          streak: 0,
         };
 
         const newCorrect = isCorrect ? prevRecord.correct + 1 : prevRecord.correct;
@@ -108,6 +133,7 @@ export const useProgressStore = create<ProgressState>()(
         const newTotal = newCorrect + newIncorrect;
         const newAccuracy = Math.round((newCorrect / newTotal) * 100);
         const newMasteryLevel = calculateMasteryLevel(newCorrect, newTotal);
+        const srsStep = calculateNextSrsStep(prevRecord.srsStage || 'apprentice-1', isCorrect);
 
         const updatedMastery: Record<string, CharacterMastery> = {
           ...mastery,
@@ -120,6 +146,10 @@ export const useProgressStore = create<ProgressState>()(
             accuracy: newAccuracy,
             masteryLevel: newMasteryLevel,
             lastPracticedAt: new Date().toISOString(),
+            srsStage: srsStep.nextStage,
+            nextReviewAt: srsStep.nextReviewAt,
+            intervalDays: srsStep.intervalDays,
+            streak: isCorrect ? (prevRecord.streak || 0) + 1 : 0,
           },
         };
 
@@ -159,6 +189,93 @@ export const useProgressStore = create<ProgressState>()(
           kanjiCount: updated.kanjiPracticedCount,
           vocabCount: updated.vocabPracticedCount,
         });
+      },
+
+      recordSrsReview: (characterKey, isCorrect, category) => {
+        const today = new Date().toISOString().slice(0, 10);
+        const { lastActiveDate, currentStreak, bestStreak, mastery } = get();
+
+        let nextStreak = currentStreak;
+        if (!lastActiveDate) {
+          nextStreak = 1;
+        } else if (lastActiveDate !== today) {
+          const lastDate = new Date(lastActiveDate);
+          const currentDate = new Date(today);
+          const diffDays = Math.round(
+            (currentDate.getTime() - lastDate.getTime()) / (1000 * 3600 * 24),
+          );
+
+          if (diffDays === 1) {
+            nextStreak = currentStreak + 1;
+          } else if (diffDays > 1) {
+            nextStreak = 1;
+          }
+        }
+
+        const xpGained = isCorrect ? 15 : 3;
+        const prevRecord = mastery[characterKey] || {
+          character: characterKey,
+          category,
+          correct: 0,
+          incorrect: 0,
+          total: 0,
+          accuracy: 0,
+          masteryLevel: 'learning' as MasteryLevel,
+          lastPracticedAt: null,
+          srsStage: 'apprentice-1',
+          nextReviewAt: null,
+          intervalDays: 0.16,
+          streak: 0,
+        };
+
+        const newCorrect = isCorrect ? prevRecord.correct + 1 : prevRecord.correct;
+        const newIncorrect = !isCorrect
+          ? prevRecord.incorrect + 1
+          : prevRecord.incorrect;
+        const newTotal = newCorrect + newIncorrect;
+        const newAccuracy = Math.round((newCorrect / newTotal) * 100);
+        const newMasteryLevel = calculateMasteryLevel(newCorrect, newTotal);
+        const srsStep = calculateNextSrsStep(prevRecord.srsStage || 'apprentice-1', isCorrect);
+
+        const updatedMastery: Record<string, CharacterMastery> = {
+          ...mastery,
+          [characterKey]: {
+            character: characterKey,
+            category,
+            correct: newCorrect,
+            incorrect: newIncorrect,
+            total: newTotal,
+            accuracy: newAccuracy,
+            masteryLevel: newMasteryLevel,
+            lastPracticedAt: new Date().toISOString(),
+            srsStage: srsStep.nextStage,
+            nextReviewAt: srsStep.nextReviewAt,
+            intervalDays: srsStep.intervalDays,
+            streak: isCorrect ? (prevRecord.streak || 0) + 1 : 0,
+          },
+        };
+
+        set(state => ({
+          currentStreak: nextStreak,
+          bestStreak: Math.max(nextStreak, bestStreak),
+          lastActiveDate: today,
+          totalQuestionsAnswered: state.totalQuestionsAnswered + 1,
+          totalCorrect: isCorrect ? state.totalCorrect + 1 : state.totalCorrect,
+          totalXp: state.totalXp + xpGained,
+          kanaPracticedCount:
+            category === 'kana'
+              ? state.kanaPracticedCount + 1
+              : state.kanaPracticedCount,
+          kanjiPracticedCount:
+            category === 'kanji'
+              ? state.kanjiPracticedCount + 1
+              : state.kanjiPracticedCount,
+          vocabPracticedCount:
+            category === 'vocab'
+              ? state.vocabPracticedCount + 1
+              : state.vocabPracticedCount,
+          mastery: updatedMastery,
+        }));
       },
 
       getCharacterMastery: characterKey => {
@@ -244,6 +361,52 @@ export const useProgressStore = create<ProgressState>()(
           mastered,
           learning,
           needsPractice,
+          total: filtered.length,
+        };
+      },
+
+      getDueReviewItems: category => {
+        const records = Object.values(get().mastery);
+        const filtered = category
+          ? records.filter(r => r.category === category)
+          : records;
+        const now = new Date();
+        return filtered
+          .filter(r => isItemDue(r, now))
+          .sort((a, b) => {
+            const timeA = a.nextReviewAt ? new Date(a.nextReviewAt).getTime() : 0;
+            const timeB = b.nextReviewAt ? new Date(b.nextReviewAt).getTime() : 0;
+            return timeA - timeB;
+          });
+      },
+
+      getSrsDistribution: category => {
+        const records = Object.values(get().mastery);
+        const filtered = category
+          ? records.filter(r => r.category === category)
+          : records;
+
+        let apprentice = 0;
+        let guru = 0;
+        let master = 0;
+        let enlightened = 0;
+        let burned = 0;
+
+        for (const item of filtered) {
+          const group = getStageGroup(item.srsStage);
+          if (group === 'burned') burned++;
+          else if (group === 'enlightened') enlightened++;
+          else if (group === 'master') master++;
+          else if (group === 'guru') guru++;
+          else apprentice++;
+        }
+
+        return {
+          apprentice,
+          guru,
+          master,
+          enlightened,
+          burned,
           total: filtered.length,
         };
       },
