@@ -4,86 +4,110 @@ import {
   StyleSheet,
   Text,
   Pressable,
+  TextInput,
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
-  RotateCcw,
-  AlertTriangle,
-  Zap,
   Volume2,
+  Zap,
+  RotateCcw,
+  Search,
   CheckCircle2,
-  Flame,
-  Layers,
+  AlertCircle,
+  BookOpen,
 } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
 import { radii, shadows, useAppTheme } from '../../../core/theme';
 import { useProgressStore } from '../../progress/store/useProgressStore';
+import { useDojoStore } from '../../dojo/store/useDojoStore';
 import { speakJapanese } from '../../../core/audio/tts';
-import { ReviewSessionModal, type ReviewMode } from '../components/ReviewSessionModal';
-import { ItemMasteryModal } from '../components/ItemMasteryModal';
-import { getStageColor } from '../services/srsEngine';
-import type { CharacterMastery } from '../../progress/models/progress.model';
+import {
+  getLearnedVocabWords,
+  type VocabWord,
+} from '../services/vocabBank.service';
+import { VocabPracticeModal } from '../components/VocabPracticeModal';
 
 export function ReviewScreen() {
   const insets = useSafeAreaInsets();
   const { colors: theme } = useAppTheme();
 
+  const completedLessons = useDojoStore(state => state.completedLessons);
   const mastery = useProgressStore(state => state.mastery);
-  const getWeakestCharacters = useProgressStore(state => state.getWeakestCharacters);
-  const getDueReviewItems = useProgressStore(state => state.getDueReviewItems);
-  const getSrsDistribution = useProgressStore(state => state.getSrsDistribution);
 
-  const [activeTab, setActiveTab] = useState<'all' | 'kana' | 'kanji' | 'vocab'>('all');
-  const selectedCategory = activeTab === 'all' ? undefined : activeTab;
+  const [activeFilter, setActiveFilter] = useState<'all' | 'needs-practice' | 'unit_1' | 'unit_2'>('all');
+  const [searchQuery, setSearchQuery] = useState('');
 
-  // Active Review Session Modal state
-  const [reviewModalVisible, setReviewModalVisible] = useState(false);
-  const [reviewMode, setReviewMode] = useState<ReviewMode>('daily');
-  const [sessionKey, setSessionKey] = useState(0);
+  // Practice Modal State
+  const [practiceModalVisible, setPracticeModalVisible] = useState(false);
+  const [practiceWords, setPracticeWords] = useState<VocabWord[]>([]);
+  const [practiceTitle, setPracticeTitle] = useState('Vocabulary Practice');
 
-  // Item Inspection Modal state
-  const [selectedMasteryItem, setSelectedMasteryItem] = useState<CharacterMastery | null>(null);
-  const [itemModalVisible, setItemModalVisible] = useState(false);
+  // Compute all learned words
+  const completedLessonIds = useMemo(() => {
+    return new Set(Object.keys(completedLessons));
+  }, [completedLessons]);
 
-  // Due items query
-  const dueItems = useMemo(() => {
-    if (!mastery) return [];
-    return getDueReviewItems(selectedCategory);
-  }, [mastery, selectedCategory, getDueReviewItems]);
+  const allWords = useMemo(() => {
+    return getLearnedVocabWords(completedLessonIds, mastery);
+  }, [completedLessonIds, mastery]);
 
-  const dueCount = dueItems.length;
+  // Weak / Needs practice words
+  const weakWords = useMemo(() => {
+    return allWords.filter(w => w.status === 'weak' || w.status === 'review');
+  }, [allWords]);
 
-  // Weak items query
-  const weakItems = useMemo(() => {
-    if (!mastery) return [];
-    return getWeakestCharacters(selectedCategory, 12);
-  }, [mastery, selectedCategory, getWeakestCharacters]);
+  // Filtered words
+  const filteredWords = useMemo(() => {
+    let list = allWords;
 
-  // SRS Stage Distribution
-  const srsDistribution = useMemo(() => {
-    if (!mastery) {
-      return { apprentice: 0, guru: 0, master: 0, enlightened: 0, burned: 0, total: 0 };
+    if (activeFilter === 'needs-practice') {
+      list = list.filter(w => w.status === 'weak' || w.status === 'review');
+    } else if (activeFilter === 'unit_1') {
+      list = list.filter(w => w.unitNumber === 1);
+    } else if (activeFilter === 'unit_2') {
+      list = list.filter(w => w.unitNumber === 2);
     }
-    return getSrsDistribution(selectedCategory);
-  }, [mastery, selectedCategory, getSrsDistribution]);
 
-  const handlePlaySound = async (char: string) => {
+    if (searchQuery.trim().length > 0) {
+      const q = searchQuery.toLowerCase().trim();
+      list = list.filter(
+        w =>
+          w.japanese.toLowerCase().includes(q) ||
+          w.reading.toLowerCase().includes(q) ||
+          w.english.toLowerCase().includes(q) ||
+          w.romaji.toLowerCase().includes(q),
+      );
+    }
+
+    return list;
+  }, [allWords, activeFilter, searchQuery]);
+
+  const handlePlayAudio = async (text: string) => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
-    await speakJapanese(char, { rate: 0.85 });
+    await speakJapanese(text, { rate: 0.85 });
   };
 
-  const handleStartReview = (type: ReviewMode) => {
+  const handleStartPractice = (mode: 'due' | 'mistakes') => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
-    setReviewMode(type);
-    setSessionKey(k => k + 1);
-    setReviewModalVisible(true);
+    if (mode === 'mistakes') {
+      const mistakes = allWords.filter(w => w.incorrectCount > 0);
+      const queue = mistakes.length > 0 ? mistakes : weakWords.slice(0, 10);
+      setPracticeWords(queue.length > 0 ? queue : allWords.slice(0, 10));
+      setPracticeTitle('Review Mistakes');
+    } else {
+      const due = weakWords.length > 0 ? weakWords.slice(0, 10) : allWords.slice(0, 10);
+      setPracticeWords(due);
+      setPracticeTitle('Practice Due Words');
+    }
+    setPracticeModalVisible(true);
   };
 
-  const handleInspectItem = (item: CharacterMastery) => {
+  const handlePracticeSingleWord = (word: VocabWord) => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
-    setSelectedMasteryItem(item);
-    setItemModalVisible(true);
+    setPracticeWords([word]);
+    setPracticeTitle(`Practice: ${word.japanese}`);
+    setPracticeModalVisible(true);
   };
 
   return (
@@ -91,216 +115,204 @@ export function ReviewScreen() {
       {/* Header */}
       <View style={[styles.header, { backgroundColor: theme.surface, borderBottomColor: theme.border }]}>
         <View>
-          <Text style={[styles.title, { color: theme.textPrimary }]}>復習 • Review Hub</Text>
+          <Text style={[styles.title, { color: theme.textPrimary }]}>復習 • Vocabulary & Phrases</Text>
           <Text style={[styles.subtitle, { color: theme.textSecondary }]}>
-            Targeted SRS recall & weakness mastery
+            Review your unlocked words & master expressions
           </Text>
         </View>
-        <View style={[styles.dueBadge, { backgroundColor: dueCount > 0 ? theme.primary : theme.surfaceSubtle }]}>
-          <Text style={[styles.dueBadgeText, { color: dueCount > 0 ? theme.textOnPrimary : theme.textMuted }]}>
-            {dueCount} Due
-          </Text>
+
+        <View style={styles.headerBadges}>
+          <View style={[styles.countPill, { backgroundColor: theme.primary + '20' }]}>
+            <Text style={[styles.countPillText, { color: theme.primary }]}>
+              {allWords.length} Words
+            </Text>
+          </View>
         </View>
       </View>
 
       <ScrollView
         contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + 32 }]}
         showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
       >
-        {/* Daily Queue Hero Card */}
-        <View style={[styles.heroCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-          <View style={styles.heroTop}>
-            <View style={[styles.heroIconBox, { backgroundColor: theme.primary + '20' }]}>
-              <RotateCcw size={24} color={theme.primary} />
+        {/* Top Action Banner */}
+        <View style={[styles.actionBanner, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+          <View style={styles.bannerRow}>
+            <View style={[styles.bannerIconBox, { backgroundColor: theme.primary + '20' }]}>
+              <BookOpen size={24} color={theme.primary} />
             </View>
-            <View style={styles.heroText}>
-              <Text style={[styles.heroTitle, { color: theme.textPrimary }]}>Daily SRS Queue</Text>
-              <Text style={[styles.heroSub, { color: theme.textSecondary }]}>
-                {dueCount > 0
-                  ? `${dueCount} items due for spaced repetition today`
-                  : 'All caught up! Start a bonus reinforcement round'}
+            <View style={styles.bannerText}>
+              <Text style={[styles.bannerTitle, { color: theme.textPrimary }]}>
+                {weakWords.length > 0
+                  ? `${weakWords.length} words need revision`
+                  : 'All learned words are strong!'}
+              </Text>
+              <Text style={[styles.bannerSub, { color: theme.textSecondary }]}>
+                Reinforce pronunciation and translations through active recall.
               </Text>
             </View>
           </View>
 
-          <Pressable
-            style={[styles.primaryButton, { backgroundColor: theme.primary }]}
-            onPress={() => handleStartReview('daily')}
-            accessibilityLabel="Start Daily Review"
-          >
-            <Zap size={18} color={theme.textOnPrimary} />
-            <Text style={[styles.primaryButtonText, { color: theme.textOnPrimary }]}>
-              {dueCount > 0 ? `Start Daily Review (${dueCount})` : 'Start Bonus Practice Run'}
-            </Text>
-          </Pressable>
-        </View>
-
-        {/* Category Filters */}
-        <View style={styles.filterRow}>
-          {(['all', 'kana', 'kanji', 'vocab'] as const).map(tab => (
+          <View style={styles.buttonRow}>
             <Pressable
-              key={tab}
-              style={[
-                styles.filterPill,
-                { borderColor: theme.border, backgroundColor: theme.surface },
-                activeTab === tab && { backgroundColor: theme.primary, borderColor: theme.primary },
-              ]}
-              onPress={() => setActiveTab(tab)}
-              accessibilityLabel={`Filter by ${tab}`}
+              style={[styles.primaryBtn, { backgroundColor: theme.primary }]}
+              onPress={() => handleStartPractice('due')}
+              accessibilityLabel="Practice due words"
             >
-              <Text
-                style={[
-                  styles.filterPillText,
-                  { color: theme.textSecondary },
-                  activeTab === tab && { color: theme.textOnPrimary, fontWeight: '700' },
-                ]}
-              >
-                {tab === 'all' ? 'All Items' : tab.toUpperCase()}
+              <Zap size={16} color={theme.textOnPrimary} />
+              <Text style={[styles.primaryBtnText, { color: theme.textOnPrimary }]}>
+                Practice Due Words
               </Text>
             </Pressable>
-          ))}
-        </View>
 
-        {/* SRS Memory Vault Stages Bar */}
-        <View style={[styles.srsCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-          <View style={styles.srsHeader}>
-            <View style={styles.srsTitleRow}>
-              <Layers size={16} color={theme.primary} />
-              <Text style={[styles.srsTitle, { color: theme.textPrimary }]}>
-                SRS Memory Vault ({srsDistribution.total})
+            <Pressable
+              style={[styles.secondaryBtn, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}
+              onPress={() => handleStartPractice('mistakes')}
+              accessibilityLabel="Practice mistakes"
+            >
+              <RotateCcw size={16} color={theme.textPrimary} />
+              <Text style={[styles.secondaryBtnText, { color: theme.textPrimary }]}>
+                Review Mistakes
               </Text>
-            </View>
-            <Text style={[styles.srsSubtitle, { color: theme.textMuted }]}>
-              Spaced Repetition Tiers
-            </Text>
-          </View>
-
-          <View style={styles.srsSegments}>
-            <View style={[styles.srsPill, { backgroundColor: getStageColor('apprentice') + '20' }]}>
-              <Text style={[styles.srsPillLabel, { color: getStageColor('apprentice') }]}>
-                🌱 Apprentice
-              </Text>
-              <Text style={[styles.srsPillCount, { color: getStageColor('apprentice') }]}>
-                {srsDistribution.apprentice}
-              </Text>
-            </View>
-
-            <View style={[styles.srsPill, { backgroundColor: getStageColor('guru') + '20' }]}>
-              <Text style={[styles.srsPillLabel, { color: getStageColor('guru') }]}>
-                🌿 Guru
-              </Text>
-              <Text style={[styles.srsPillCount, { color: getStageColor('guru') }]}>
-                {srsDistribution.guru}
-              </Text>
-            </View>
-
-            <View style={[styles.srsPill, { backgroundColor: getStageColor('master') + '20' }]}>
-              <Text style={[styles.srsPillLabel, { color: getStageColor('master') }]}>
-                🥋 Master
-              </Text>
-              <Text style={[styles.srsPillCount, { color: getStageColor('master') }]}>
-                {srsDistribution.master}
-              </Text>
-            </View>
-
-            <View style={[styles.srsPill, { backgroundColor: getStageColor('enlightened') + '20' }]}>
-              <Text style={[styles.srsPillLabel, { color: getStageColor('enlightened') }]}>
-                ✨ Enlightened
-              </Text>
-              <Text style={[styles.srsPillCount, { color: getStageColor('enlightened') }]}>
-                {srsDistribution.enlightened}
-              </Text>
-            </View>
-
-            <View style={[styles.srsPill, { backgroundColor: getStageColor('burned') + '20' }]}>
-              <Text style={[styles.srsPillLabel, { color: getStageColor('burned') }]}>
-                🔥 Burned
-              </Text>
-              <Text style={[styles.srsPillCount, { color: getStageColor('burned') }]}>
-                {srsDistribution.burned}
-              </Text>
-            </View>
+            </Pressable>
           </View>
         </View>
 
-        {/* Quick Launch Cards */}
-        <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>Practice Modes</Text>
-        <View style={styles.quickGrid}>
-          <Pressable
-            style={[styles.quickCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-            onPress={() => handleStartReview('weakness')}
-            accessibilityLabel="Start Weakness Sprint"
-          >
-            <View style={[styles.quickIconCircle, { backgroundColor: '#EF4444' + '20' }]}>
-              <AlertTriangle size={20} color="#EF4444" />
-            </View>
-            <Text style={[styles.quickCardTitle, { color: theme.textPrimary }]}>Weakness Sprint</Text>
-            <Text style={[styles.quickCardSub, { color: theme.textSecondary }]}>
-              Target {weakItems.length} items with low accuracy
-            </Text>
-          </Pressable>
-
-          <Pressable
-            style={[styles.quickCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-            onPress={() => handleStartReview('speed')}
-            accessibilityLabel="Start Speed Drill"
-          >
-            <View style={[styles.quickIconCircle, { backgroundColor: '#F59E0B' + '20' }]}>
-              <Flame size={20} color="#F59E0B" />
-            </View>
-            <Text style={[styles.quickCardTitle, { color: theme.textPrimary }]}>Speed Drill</Text>
-            <Text style={[styles.quickCardSub, { color: theme.textSecondary }]}>
-              60s rapid-fire active recall test
-            </Text>
-          </Pressable>
+        {/* Search Bar */}
+        <View style={[styles.searchBox, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+          <Search size={18} color={theme.textMuted} />
+          <TextInput
+            style={[styles.searchInput, { color: theme.textPrimary }]}
+            placeholder="Search words, readings, or English meanings..."
+            placeholderTextColor={theme.textMuted}
+            value={searchQuery}
+            onChangeText={setSearchQuery}
+            autoCorrect={false}
+          />
+          {searchQuery.length > 0 && (
+            <Pressable onPress={() => setSearchQuery('')} hitSlop={8}>
+              <Text style={[styles.clearSearch, { color: theme.textMuted }]}>Clear</Text>
+            </Pressable>
+          )}
         </View>
 
-        {/* Weakness Vault List */}
-        <View style={styles.sectionHeaderRow}>
-          <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>
-            Priority Focus Items ({weakItems.length})
+        {/* Filter Pills */}
+        <View style={styles.filtersRow}>
+          {[
+            { id: 'all', label: `All Words (${allWords.length})` },
+            { id: 'needs-practice', label: `Needs Review (${weakWords.length})` },
+            { id: 'unit_1', label: 'Unit 1' },
+            { id: 'unit_2', label: 'Unit 2' },
+          ].map(f => {
+            const isSelected = activeFilter === f.id;
+            return (
+              <Pressable
+                key={f.id}
+                style={[
+                  styles.filterChip,
+                  {
+                    backgroundColor: isSelected ? theme.primary : theme.surface,
+                    borderColor: isSelected ? theme.primary : theme.border,
+                  },
+                ]}
+                onPress={() => setActiveFilter(f.id as any)}
+                accessibilityLabel={f.label}
+              >
+                <Text
+                  style={[
+                    styles.filterChipText,
+                    {
+                      color: isSelected ? theme.textOnPrimary : theme.textSecondary,
+                      fontWeight: isSelected ? '700' : '500',
+                    },
+                  ]}
+                >
+                  {f.label}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+
+        {/* Words Bank List Header */}
+        <View style={styles.listHeaderRow}>
+          <Text style={[styles.listHeaderTitle, { color: theme.textSecondary }]}>
+            WORDS & PHRASES ({filteredWords.length})
           </Text>
-          <Text style={[styles.sectionHint, { color: theme.textMuted }]}>
-            Tap item to inspect
+          <Text style={[styles.listHeaderHint, { color: theme.textMuted }]}>
+            Tap card to practice
           </Text>
         </View>
 
-        {weakItems.length === 0 ? (
-          <View style={[styles.emptyCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+        {/* Words Bank Cards */}
+        {filteredWords.length === 0 ? (
+          <View style={[styles.emptyBox, { backgroundColor: theme.surface, borderColor: theme.border }]}>
             <CheckCircle2 size={36} color={theme.success} />
-            <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>No critical weaknesses!</Text>
+            <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>No words match filter</Text>
             <Text style={[styles.emptySub, { color: theme.textSecondary }]}>
-              Complete drills in Dojo to identify items that need reinforcement.
+              Try clearing your search query or switching filters.
             </Text>
           </View>
         ) : (
-          <View style={styles.itemsList}>
-            {weakItems.map(item => (
+          <View style={styles.wordsList}>
+            {filteredWords.map(word => (
               <Pressable
-                key={item.character}
-                style={[styles.itemCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-                onPress={() => handleInspectItem(item)}
-                accessibilityLabel={`Inspect item ${item.character}`}
+                key={word.id}
+                style={[styles.wordRowCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+                onPress={() => handlePracticeSingleWord(word)}
+                accessibilityLabel={`Practice ${word.japanese}`}
               >
-                <View style={styles.itemLeft}>
-                  <Text style={[styles.itemChar, { color: theme.textPrimary }]}>{item.character}</Text>
-                  <View style={styles.itemMeta}>
-                    <Text style={[styles.itemType, { color: theme.textMuted }]}>
-                      {item.category.toUpperCase()} • STATUS: {(item.masteryLevel || 'learning').toUpperCase()}
+                <View style={styles.wordMain}>
+                  <View style={styles.wordTitleRow}>
+                    <Text style={[styles.wordJp, { color: theme.textPrimary }]}>
+                      {word.japanese}
                     </Text>
-                    <Text style={[styles.itemAccuracy, { color: item.accuracy < 60 ? theme.error : theme.accent }]}>
-                      {item.accuracy}% accuracy ({item.incorrect} misses)
+                    <Text style={[styles.wordReading, { color: theme.textSecondary }]}>
+                      {word.reading}
                     </Text>
+                  </View>
+
+                  <Text style={[styles.wordEnglish, { color: theme.textPrimary }]}>
+                    {word.english}
+                  </Text>
+
+                  <View style={styles.wordMetaRow}>
+                    <Text style={[styles.wordUnitTag, { color: theme.textMuted }]}>
+                      Unit {word.unitNumber}
+                    </Text>
+
+                    {word.status === 'weak' ? (
+                      <View style={[styles.strengthBadge, { backgroundColor: '#EF444420' }]}>
+                        <AlertCircle size={12} color="#EF4444" />
+                        <Text style={[styles.strengthText, { color: '#EF4444' }]}>
+                          Needs Practice ({word.incorrectCount} miss)
+                        </Text>
+                      </View>
+                    ) : word.status === 'strong' ? (
+                      <View style={[styles.strengthBadge, { backgroundColor: '#10B98120' }]}>
+                        <CheckCircle2 size={12} color="#10B981" />
+                        <Text style={[styles.strengthText, { color: '#10B981' }]}>
+                          Strong
+                        </Text>
+                      </View>
+                    ) : (
+                      <View style={[styles.strengthBadge, { backgroundColor: '#F59E0B20' }]}>
+                        <Text style={[styles.strengthText, { color: '#F59E0B' }]}>
+                          Review Soon
+                        </Text>
+                      </View>
+                    )}
                   </View>
                 </View>
 
+                {/* Speaker Button */}
                 <Pressable
-                  style={[styles.audioButton, { backgroundColor: theme.surfaceSubtle }]}
-                  onPress={() => handlePlaySound(item.character)}
-                  accessibilityLabel={`Pronounce ${item.character}`}
+                  style={[styles.speakerBtn, { backgroundColor: theme.surfaceSubtle }]}
+                  onPress={() => handlePlayAudio(word.audioText)}
+                  accessibilityLabel={`Pronounce ${word.japanese}`}
                   hitSlop={8}
                 >
-                  <Volume2 size={18} color={theme.textPrimary} />
+                  <Volume2 size={20} color={theme.primary} />
                 </Pressable>
               </Pressable>
             ))}
@@ -308,25 +320,12 @@ export function ReviewScreen() {
         )}
       </ScrollView>
 
-      {/* Real Review Session Modal */}
-      <ReviewSessionModal
-        visible={reviewModalVisible}
-        onClose={() => setReviewModalVisible(false)}
-        mode={reviewMode}
-        category={selectedCategory}
-        sessionKey={sessionKey}
-      />
-
-      {/* Individual Item Inspection Drawer Modal */}
-      <ItemMasteryModal
-        visible={itemModalVisible}
-        onClose={() => setItemModalVisible(false)}
-        masteryItem={selectedMasteryItem}
-        onDrillItem={() => {
-          setReviewMode('weakness');
-          setSessionKey(k => k + 1);
-          setReviewModalVisible(true);
-        }}
+      {/* Vocabulary Practice Modal */}
+      <VocabPracticeModal
+        visible={practiceModalVisible}
+        onClose={() => setPracticeModalVisible(false)}
+        words={practiceWords}
+        title={practiceTitle}
       />
     </View>
   );
@@ -345,7 +344,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
   },
   title: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: '800',
     letterSpacing: 0.2,
   },
@@ -354,181 +353,202 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     marginTop: 2,
   },
-  dueBadge: {
+  headerBadges: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  countPill: {
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: radii.full,
   },
-  dueBadgeText: {
+  countPillText: {
     fontSize: 12,
     fontWeight: '800',
   },
   content: {
-    padding: 20,
+    padding: 18,
   },
-  heroCard: {
+  actionBanner: {
     borderRadius: radii.xl,
     borderWidth: 1,
-    padding: 20,
+    padding: 18,
     marginBottom: 16,
     ...shadows.sm,
   },
-  heroTop: {
+  bannerRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 16,
+    marginBottom: 14,
   },
-  heroIconBox: {
-    width: 48,
-    height: 48,
+  bannerIconBox: {
+    width: 44,
+    height: 44,
     borderRadius: radii.md,
     alignItems: 'center',
     justifyContent: 'center',
-    marginRight: 14,
+    marginRight: 12,
   },
-  heroText: {
+  bannerText: {
     flex: 1,
   },
-  heroTitle: {
-    fontSize: 17,
+  bannerTitle: {
+    fontSize: 15,
     fontWeight: '800',
   },
-  heroSub: {
+  bannerSub: {
     fontSize: 12,
     fontWeight: '500',
     marginTop: 2,
     lineHeight: 16,
   },
-  primaryButton: {
-    height: 48,
+  buttonRow: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+  primaryBtn: {
+    flex: 1,
+    height: 44,
     borderRadius: radii.lg,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 8,
+    gap: 6,
   },
-  primaryButtonText: {
-    fontSize: 14,
+  primaryBtnText: {
+    fontSize: 13,
     fontWeight: '800',
-    letterSpacing: 0.3,
   },
-  filterRow: {
-    flexDirection: 'row',
-    gap: 8,
-    marginBottom: 16,
-  },
-  filterPill: {
+  secondaryBtn: {
     flex: 1,
-    paddingVertical: 8,
-    borderRadius: radii.md,
+    height: 44,
+    borderRadius: radii.lg,
     borderWidth: 1,
+    flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
   },
-  filterPillText: {
+  secondaryBtnText: {
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  searchBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderRadius: radii.lg,
+    borderWidth: 1,
+    marginBottom: 14,
+    gap: 10,
+  },
+  searchInput: {
+    flex: 1,
+    fontSize: 14,
+    padding: 0,
+  },
+  clearSearch: {
     fontSize: 12,
     fontWeight: '600',
   },
-  srsCard: {
-    borderRadius: radii.xl,
-    borderWidth: 1,
-    padding: 16,
-    marginBottom: 20,
-    ...shadows.sm,
-  },
-  srsHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginBottom: 12,
-  },
-  srsTitleRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-  },
-  srsTitle: {
-    fontSize: 14,
-    fontWeight: '800',
-  },
-  srsSubtitle: {
-    fontSize: 11,
-    fontWeight: '600',
-  },
-  srsSegments: {
+  filtersRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 8,
+    marginBottom: 16,
   },
-  srsPill: {
+  filterChip: {
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: radii.full,
+    borderWidth: 1,
+  },
+  filterChipText: {
+    fontSize: 12,
+  },
+  listHeaderRow: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    borderRadius: radii.sm,
-    flex: 1,
-    minWidth: '45%',
+    marginBottom: 10,
   },
-  srsPillLabel: {
-    fontSize: 11,
-    fontWeight: '700',
-  },
-  srsPillCount: {
-    fontSize: 12,
-    fontWeight: '800',
-  },
-  sectionTitle: {
+  listHeaderTitle: {
     fontSize: 11,
     fontWeight: '800',
     letterSpacing: 0.6,
-    textTransform: 'uppercase',
-    marginBottom: 10,
   },
-  sectionHeaderRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginTop: 8,
-    marginBottom: 10,
-  },
-  sectionHint: {
+  listHeaderHint: {
     fontSize: 11,
     fontWeight: '600',
   },
-  quickGrid: {
-    flexDirection: 'row',
-    gap: 12,
-    marginBottom: 20,
+  wordsList: {
+    gap: 10,
   },
-  quickCard: {
-    flex: 1,
+  wordRowCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     borderRadius: radii.xl,
     borderWidth: 1,
-    padding: 14,
+    padding: 16,
     ...shadows.sm,
   },
-  quickIconCircle: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+  wordMain: {
+    flex: 1,
+    marginRight: 12,
+  },
+  wordTitleRow: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    gap: 8,
+    marginBottom: 4,
+  },
+  wordJp: {
+    fontSize: 22,
+    fontWeight: '900',
+  },
+  wordReading: {
+    fontSize: 14,
+    fontWeight: '600',
+  },
+  wordEnglish: {
+    fontSize: 15,
+    fontWeight: '600',
+    marginBottom: 8,
+  },
+  wordMetaRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  wordUnitTag: {
+    fontSize: 11,
+    fontWeight: '700',
+  },
+  strengthBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: radii.sm,
+  },
+  strengthText: {
+    fontSize: 10,
+    fontWeight: '700',
+  },
+  speakerBtn: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 10,
   },
-  quickCardTitle: {
-    fontSize: 14,
-    fontWeight: '800',
-    marginBottom: 2,
-  },
-  quickCardSub: {
-    fontSize: 11,
-    fontWeight: '500',
-    lineHeight: 14,
-  },
-  emptyCard: {
+  emptyBox: {
     borderRadius: radii.xl,
     borderWidth: 1,
-    padding: 24,
+    padding: 28,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -542,49 +562,5 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     textAlign: 'center',
     marginTop: 4,
-    lineHeight: 16,
-  },
-  itemsList: {
-    gap: 8,
-  },
-  itemCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    borderRadius: radii.lg,
-    borderWidth: 1,
-    padding: 12,
-  },
-  itemLeft: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    flex: 1,
-  },
-  itemChar: {
-    fontSize: 24,
-    fontWeight: '900',
-    width: 38,
-    textAlign: 'center',
-  },
-  itemMeta: {
-    flex: 1,
-  },
-  itemType: {
-    fontSize: 10,
-    fontWeight: '800',
-    letterSpacing: 0.5,
-  },
-  itemAccuracy: {
-    fontSize: 12,
-    fontWeight: '600',
-    marginTop: 2,
-  },
-  audioButton: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
