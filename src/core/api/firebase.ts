@@ -1,5 +1,6 @@
 import { initializeApp, getApps, getApp, type FirebaseApp } from 'firebase/app';
 import { getAuth, type Auth } from 'firebase/auth';
+import { getFirestore, type Firestore } from 'firebase/firestore';
 
 /**
  * Manabu Firebase Cloud Configuration.
@@ -30,3 +31,4 @@ function initFirebaseApp(): FirebaseApp {
 
 export const firebaseApp: FirebaseApp = initFirebaseApp();
 export const firebaseAuth: Auth = getAuth(firebaseApp);
+export const firebaseDb: Firestore = getFirestore(firebaseApp);

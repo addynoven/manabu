@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
+import { Image } from 'expo-image';
 import {
   AlertTriangle,
   Award,
@@ -38,6 +39,7 @@ import { radii, shadows, spacing, useAppTheme } from '../../../core/theme';
 import { THEME_PALETTES } from '../../../core/theme/palettes';
 import { useProgressStore } from '../../progress/store/useProgressStore';
 import { useAuthStore } from '../../auth/store/useAuthStore';
+import { useCloudSync } from '../../sync';
 import { StreakBadge } from '../../progress/components/StreakBadge';
 import {
   ACHIEVEMENTS,
@@ -107,6 +109,7 @@ export function ProfileScreen() {
   } = useProgressStore();
 
   const { currentUser, signOut } = useAuthStore();
+  const { isSyncing, lastError } = useCloudSync();
 
   const handleSignOut = () => {
     Alert.alert(
@@ -286,7 +289,16 @@ export function ProfileScreen() {
               ]}
               accessibilityLabel="Change avatar"
             >
-              <Text style={styles.avatarEmoji}>{avatarEmoji || '🥋'}</Text>
+              {currentUser?.avatarUrl ? (
+                <Image
+                  source={{ uri: currentUser.avatarUrl }}
+                  style={styles.avatarImage}
+                  contentFit="cover"
+                  transition={200}
+                />
+              ) : (
+                <Text style={styles.avatarEmoji}>{avatarEmoji || '🥋'}</Text>
+              )}
               <View style={[styles.avatarEditBadge, { backgroundColor: theme.primary }]}>
                 <Edit3 size={11} color="#FFFFFF" />
               </View>
@@ -396,11 +408,32 @@ export function ProfileScreen() {
                 </Pressable>
               </View>
 
-              <View style={[styles.syncStatusRow, { backgroundColor: 'rgba(34, 197, 94, 0.08)', borderColor: 'rgba(34, 197, 94, 0.2)' }]}>
-                <CheckCircle2 size={13} color="#22C55E" />
-                <Text style={[styles.syncStatusText, { color: '#22C55E' }]}>
-                  Cloud Sync Active • Streak & Dojo Progress Protected
-                </Text>
+              <View
+                style={[
+                  styles.syncStatusRow,
+                  {
+                    backgroundColor: lastError ? 'rgba(239, 68, 68, 0.08)' : 'rgba(34, 197, 94, 0.08)',
+                    borderColor: lastError ? 'rgba(239, 68, 68, 0.2)' : 'rgba(34, 197, 94, 0.2)',
+                  },
+                ]}
+              >
+                {lastError ? (
+                  <>
+                    <AlertTriangle size={13} color="#EF4444" />
+                    <Text style={[styles.syncStatusText, { color: '#EF4444' }]} numberOfLines={1}>
+                      Cloud sync issue: {lastError}
+                    </Text>
+                  </>
+                ) : (
+                  <>
+                    <CheckCircle2 size={13} color="#22C55E" />
+                    <Text style={[styles.syncStatusText, { color: '#22C55E' }]}>
+                      {isSyncing
+                        ? 'Syncing with Cloud...'
+                        : 'Cloud Protected • Synced Automatically'}
+                    </Text>
+                  </>
+                )}
               </View>
             </View>
           ) : (
@@ -1264,6 +1297,11 @@ const styles = StyleSheet.create({
   },
   avatarEmoji: {
     fontSize: 34,
+  },
+  avatarImage: {
+    width: 62,
+    height: 62,
+    borderRadius: 31,
   },
   avatarEditBadge: {
     position: 'absolute',

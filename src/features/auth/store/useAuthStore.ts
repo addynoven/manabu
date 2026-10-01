@@ -3,6 +3,7 @@ import { authStorage } from '../storage/auth.storage';
 import { authService } from '../services/auth.service';
 import { type AuthMode, type UserProfile } from '../models/auth.model';
 import { useProgressStore } from '../../progress/store/useProgressStore';
+import { cloudSyncService } from '../../sync/services/cloudSync.service';
 
 export interface AuthState {
   currentUser: UserProfile | null;
@@ -46,6 +47,9 @@ export const useAuthStore = create<AuthState>((set, get) => {
           progress.setDisplayName(user.displayName);
         }
 
+        // Sync with Firestore Cloud
+        cloudSyncService.syncOnAuthChange(user.uid).catch(() => {});
+
         return true;
       } catch (err: any) {
         const message = err?.message || 'Google Sign-In failed. Please try again.';
@@ -68,6 +72,9 @@ export const useAuthStore = create<AuthState>((set, get) => {
         if (user.displayName && (!progress.displayName || progress.displayName === 'Manabu Student')) {
           progress.setDisplayName(user.displayName);
         }
+
+        // Sync with Firestore Cloud
+        cloudSyncService.syncOnAuthChange(user.uid).catch(() => {});
 
         return true;
       } catch (err: any) {
@@ -101,6 +108,9 @@ export const useAuthStore = create<AuthState>((set, get) => {
         if (name?.trim()) {
           useProgressStore.getState().setDisplayName(name.trim());
         }
+
+        // Sync with Firestore Cloud
+        cloudSyncService.syncOnAuthChange(user.uid).catch(() => {});
 
         return true;
       } catch (err: any) {
@@ -151,6 +161,9 @@ export const useAuthStore = create<AuthState>((set, get) => {
       authService.configure();
       return authService.onAuthStateChanged(user => {
         set({ currentUser: user });
+        if (user?.uid) {
+          cloudSyncService.syncOnAuthChange(user.uid).catch(() => {});
+        }
       });
     },
   };
