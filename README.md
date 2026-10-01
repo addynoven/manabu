@@ -58,18 +58,21 @@
 - Smart review queue strictly scoped to active/unlocked curriculum lessons
 - Vocabulary decks organized by curriculum unit
 
-### 🎮 Arcade (7 Games)
-| Game | Type |
-|------|------|
-| ⚔️ Kanji Duel | 1v1 battle vs AI bots with reaction-based critical hits |
-| 🎣 Kana Catch | Falling character catcher |
-| ⚡ Flash Survival | Rapid-fire timed rounds |
-| 🐍 Kana Snake | Classic snake with Japanese twist |
-| 🟩 Kotoba | Japanese Wordle |
-| 🧠 Memory Match | Card-flip matching pairs |
-| 🌧️ Falling Rain | Type falling characters before they land |
+### 🎮 Arcade (10 Playable Games & 9 Dedicated Engines)
+| Game | Type | Engine |
+|------|------|--------|
+| ⚔️ Kanji Duel | 1v1 battle vs AI bots with reaction-based critical hits | `kanjiDuelEngine.ts` |
+| 🎴 Karuta Battle | Japanese card-slap audio/visual duel | `karutaEngine.ts` |
+| 🔤 Shiritori Arena | AI word-chain duel with reading/meaning validation | `shiritoriEngine.ts` |
+| 🎣 Kana Catch | Falling character basket catcher with gravity physics | `catchEngine.ts` |
+| ⚡ Flash Survival | Rapid-fire timed rounds with lives & progressive difficulty | `survivalEngine.ts` |
+| ⏱️ Flash Rush | 60-second high-speed recognition sprint | Standalone view (`FlashRushView.tsx`) |
+| 🐍 Kana Snake | Classic snake eating kana characters with dynamic targets | `snakeEngine.ts` |
+| 🟩 Kotoba | 5-letter Japanese Wordle with color-coded feedback | `wordleEngine.ts` |
+| 🧠 Memory Match | Card-flip pair matching (kana-romaji, kanji-meaning) | `memoryEngine.ts` |
+| 🌧️ Falling Rain | Matrix-style vertical rain with character defense | `rainEngine.ts` |
 
-Plus **daily challenges** and high score tracking.
+Plus **Daily Gauntlet Challenges** (`dailyChallengeGenerator.ts`), stroke tracing integration, and high score tracking.
 
 ### 👤 Profile & Progression
 - Customizable avatar & display name
