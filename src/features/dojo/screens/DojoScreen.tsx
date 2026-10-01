@@ -127,6 +127,48 @@ export function DojoScreen() {
     setSessionActive(true);
   };
 
+  const handleLaunchDailyRevision = (unitId: string, dayNumber: number) => {
+    const revisionId = `${unitId}_day_${dayNumber}`;
+
+    // Collect revision items from all completed lessons across all units up to this point
+    const pool: LessonItem[] = [];
+    for (const unit of CURATED_DOJO_UNITS) {
+      for (const lesson of unit.lessons) {
+        if (completedLessons[lesson.id]) {
+          pool.push(...lesson.items);
+        }
+      }
+    }
+
+    if (pool.length < 5) {
+      pool.push(...CURATED_DOJO_UNITS[0].lessons[0].items);
+      if (CURATED_DOJO_UNITS[0].lessons[1]) {
+        pool.push(...CURATED_DOJO_UNITS[0].lessons[1].items);
+      }
+    }
+
+    const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, 5);
+
+    const syntheticLesson: DojoLesson = {
+      id: `daily_revision_${revisionId}`,
+      unitId,
+      lessonNumber: 0,
+      dayNumber,
+      category: 'Review Quiz',
+      title: `Day 0${dayNumber} Cumulative Checkpoint`,
+      titleJp: '総合復習テスト',
+      summary: `Test covering all vocabulary and expressions learned up to Day ${dayNumber}.`,
+      vocabKeywords: [],
+      kanjiKeywords: [],
+      items: shuffled,
+    };
+
+    setDrawerOpen(false);
+    setSessionLesson(syntheticLesson);
+    setSessionMode('comprehensive');
+    setSessionActive(true);
+  };
+
   return (
     <View style={[styles.container, { backgroundColor: theme.background, paddingTop: insets.top }]}>
       {/* Dojo Top Header with Floating Kana and Kanji Badges */}
@@ -166,6 +208,7 @@ export function DojoScreen() {
                 <DojoTimelineRail
                   lessons={unit.lessons}
                   onSelectLesson={handleSelectLesson}
+                  onSelectDailyRevision={handleLaunchDailyRevision}
                 />
               )}
 

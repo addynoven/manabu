@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import {
   Alert,
   Modal,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -13,16 +14,20 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import {
+  AlertTriangle,
   Award,
   BookOpen,
+  CheckCircle2,
   ChevronRight,
+  Cloud,
   Edit3,
   Flame,
   Languages,
+  Lock,
+  LogIn,
+  LogOut,
   Palette,
-  RotateCcw,
   Settings as SettingsIcon,
-  Sparkles,
   Target,
   Volume2,
   X,
@@ -32,13 +37,17 @@ import * as Haptics from 'expo-haptics';
 import { radii, shadows, spacing, useAppTheme } from '../../../core/theme';
 import { THEME_PALETTES } from '../../../core/theme/palettes';
 import { useProgressStore } from '../../progress/store/useProgressStore';
+import { useAuthStore } from '../../auth/store/useAuthStore';
 import { StreakBadge } from '../../progress/components/StreakBadge';
-import { AchievementCard } from '../../achievements/components/AchievementCard';
 import {
   ACHIEVEMENTS,
+  RARITY_COLORS,
+  type Achievement,
   type AchievementCategory,
 } from '../../achievements/models/achievement.model';
 import { useAchievementStore } from '../../achievements/store/useAchievementStore';
+import { useDojoStore } from '../../dojo/store/useDojoStore';
+import { useSetProgressStore } from '../../progress/store/useSetProgressStore';
 import { useSettingsStore } from '../../settings/store/useSettingsStore';
 import { SettingsModal } from '../../settings';
 import { ThemeSelectorModal } from '../../settings/components/ThemeSelectorModal';
@@ -74,6 +83,8 @@ export function ProfileScreen() {
   const [themeModalOpen, setThemeModalOpen] = useState(false);
   const [avatarModalOpen, setAvatarModalOpen] = useState(false);
   const [nameModalOpen, setNameModalOpen] = useState(false);
+  const [selectedAchievement, setSelectedAchievement] = useState<Achievement | null>(null);
+  const [resetModalStep, setResetModalStep] = useState<0 | 1 | 2>(0);
 
   // Stores
   const {
@@ -94,6 +105,26 @@ export function ProfileScreen() {
     resetAllStats,
     mastery,
   } = useProgressStore();
+
+  const { currentUser, signOut } = useAuthStore();
+
+  const handleSignOut = () => {
+    Alert.alert(
+      'Sign Out',
+      'Are you sure you want to sign out? Your progress on this device is safely saved.',
+      [
+        { text: 'Cancel', style: 'cancel' },
+        {
+          text: 'Sign Out',
+          style: 'destructive',
+          onPress: async () => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+            await signOut();
+          },
+        },
+      ],
+    );
+  };
 
   const {
     hapticsEnabled,
@@ -157,20 +188,15 @@ export function ProfileScreen() {
     [masteryRecords],
   );
 
-  // Priority weak items (needs work)
-  const weakestItems = useMemo(() => {
-    return masteryRecords
-      .filter(m => m.masteryLevel === 'needs-practice' || (m.total >= 3 && m.accuracy < 60))
-      .sort((a, b) => a.accuracy - b.accuracy || b.incorrect - a.incorrect)
-      .slice(0, 4);
-  }, [masteryRecords]);
 
-  // Achievements filter
+  // Achievements filter & sort (unlocked first)
   const [selectedAchievementCat, setSelectedAchievementCat] = useState<AchievementCategory | 'all'>('all');
-  const filteredAchievements = useMemo(() => {
-    if (selectedAchievementCat === 'all') return ACHIEVEMENTS;
-    return ACHIEVEMENTS.filter(a => a.category === selectedAchievementCat);
-  }, [selectedAchievementCat]);
+  const sortedAchievements = useMemo(() => {
+    const list = selectedAchievementCat === 'all'
+      ? ACHIEVEMENTS
+      : ACHIEVEMENTS.filter(a => a.category === selectedAchievementCat);
+    return [...list].sort((a, b) => (unlocked[b.id] ? 1 : 0) - (unlocked[a.id] ? 1 : 0));
+  }, [selectedAchievementCat, unlocked]);
 
   // Handlers
   const handleOpenSettings = () => {
@@ -198,22 +224,13 @@ export function ProfileScreen() {
     setDailyGoalXp(xp);
   };
 
-  const handleReset = () => {
-    Alert.alert(
-      'Reset All Study Progress',
-      'Are you sure you want to reset all your stats, drills, and streak history? This cannot be undone.',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Reset Everything',
-          style: 'destructive',
-          onPress: () => {
-            Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning).catch(() => {});
-            resetAllStats();
-          },
-        },
-      ],
-    );
+  const handleExecuteFullReset = () => {
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning).catch(() => {});
+    resetAllStats();
+    useDojoStore.getState().resetDojoProgress();
+    useAchievementStore.getState().resetAchievements();
+    useSetProgressStore.getState().clearSetProgress();
+    setResetModalStep(0);
   };
 
   const currentThemeName = THEME_PALETTES[activeThemeId]?.name || 'Tokyo Night';
@@ -302,20 +319,35 @@ export function ProfileScreen() {
                 </Text>
               </View>
 
+              {/* Joined info (Streak removed here to eliminate duplicate) */}
               <Text style={[styles.joinedText, { color: theme.textMuted }]}>
-                Active {currentStreak > 0 ? `${currentStreak}d streak` : 'today'} • Joined {joinedDate || 'Sept 2026'}
+                Joined {joinedDate || 'Sept 2026'} • Dojo Belt Rank #{levelInfo.level}
               </Text>
             </View>
           </View>
 
-          {/* Level Progress Bar */}
+          {/* Currency Clarification Pills */}
+          <View style={styles.currencyRow}>
+            <View style={[styles.currencyPill, { backgroundColor: 'rgba(249, 115, 22, 0.12)', borderColor: 'rgba(249, 115, 22, 0.25)' }]}>
+              <Text style={[styles.currencyText, { color: theme.primary }]}>
+                🥋 <Text style={{ fontWeight: '800' }}>{totalPoints}</Text> Belt Pts (Rank)
+              </Text>
+            </View>
+            <View style={[styles.currencyPill, { backgroundColor: 'rgba(245, 158, 11, 0.12)', borderColor: 'rgba(245, 158, 11, 0.25)' }]}>
+              <Text style={[styles.currencyText, { color: '#F59E0B' }]}>
+                ⚡ <Text style={{ fontWeight: '800' }}>{totalXp}</Text> Total XP (Effort)
+              </Text>
+            </View>
+          </View>
+
+          {/* Level Progress Bar with Exact Relative Math */}
           <View style={styles.levelProgressContainer}>
             <View style={styles.levelProgressMeta}>
               <Text style={[styles.levelProgressLabel, { color: theme.textSecondary }]}>
                 {levelInfo.progressPercent}% to Level {levelInfo.level + 1}
               </Text>
               <Text style={[styles.levelProgressPoints, { color: theme.accent }]}>
-                {totalPoints} / {levelInfo.nextLevelPoints} pts
+                {levelInfo.pointsInCurrentLevel} / {levelInfo.pointsNeededForNextLevel} to Level {levelInfo.level + 1}
               </Text>
             </View>
             <View style={[styles.progressTrack, { backgroundColor: theme.surfaceSubtle }]}>
@@ -329,7 +361,81 @@ export function ProfileScreen() {
           </View>
         </View>
 
-        {/* 2. Daily Study Goal Card */}
+        {/* Cloud Account & Backup Banner */}
+        <View style={[styles.card, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+          {currentUser ? (
+            <View style={styles.accountCardContent}>
+              <View style={styles.accountHeaderRow}>
+                <View style={styles.accountHeaderLeft}>
+                  <View style={[styles.accountIconBg, { backgroundColor: 'rgba(34, 197, 94, 0.15)' }]}>
+                    <Cloud size={18} color="#22C55E" />
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+                      <Text style={[styles.accountTitle, { color: theme.textPrimary }]} numberOfLines={1}>
+                        {currentUser.displayName || 'Manabu Learner'}
+                      </Text>
+                      <View style={[styles.providerBadge, { backgroundColor: 'rgba(59, 130, 246, 0.15)' }]}>
+                        <Text style={[styles.providerBadgeText, { color: '#3B82F6' }]}>
+                          {currentUser.authProvider === 'google' ? 'Google' : 'Email'}
+                        </Text>
+                      </View>
+                    </View>
+                    <Text style={[styles.accountSub, { color: theme.textSecondary }]} numberOfLines={1}>
+                      {currentUser.email || 'Cloud Account Connected'}
+                    </Text>
+                  </View>
+                </View>
+                <Pressable
+                  onPress={handleSignOut}
+                  style={[styles.signOutBtn, { borderColor: theme.border, backgroundColor: theme.surfaceSubtle }]}
+                  hitSlop={8}
+                >
+                  <LogOut size={13} color={theme.textMuted} style={{ marginRight: 4 }} />
+                  <Text style={[styles.signOutText, { color: theme.textSecondary }]}>Sign Out</Text>
+                </Pressable>
+              </View>
+
+              <View style={[styles.syncStatusRow, { backgroundColor: 'rgba(34, 197, 94, 0.08)', borderColor: 'rgba(34, 197, 94, 0.2)' }]}>
+                <CheckCircle2 size={13} color="#22C55E" />
+                <Text style={[styles.syncStatusText, { color: '#22C55E' }]}>
+                  Cloud Sync Active • Streak & Dojo Progress Protected
+                </Text>
+              </View>
+            </View>
+          ) : (
+            <View style={styles.guestCardContent}>
+              <View style={styles.guestRow}>
+                <View style={[styles.accountIconBg, { backgroundColor: 'rgba(249, 115, 22, 0.15)' }]}>
+                  <Cloud size={20} color={theme.primary} />
+                </View>
+                <View style={{ flex: 1 }}>
+                  <Text style={[styles.accountTitle, { color: theme.textPrimary }]}>
+                    Cloud Backup & Sync
+                  </Text>
+                  <Text style={[styles.accountSub, { color: theme.textSecondary }]}>
+                    Sign in with Google or Email to protect your streaks & sync across devices.
+                  </Text>
+                </View>
+              </View>
+
+              <Pressable
+                onPress={() => {
+                  Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+                  router.push('/auth');
+                }}
+                style={[styles.signInActionBtn, { backgroundColor: theme.primary }]}
+              >
+                <LogIn size={15} color={theme.textOnPrimary} style={{ marginRight: 6 }} />
+                <Text style={[styles.signInActionBtnText, { color: theme.textOnPrimary }]}>
+                  Sign In with Google or Email
+                </Text>
+              </Pressable>
+            </View>
+          )}
+        </View>
+
+        {/* Daily Study Goal Card */}
         <View style={[styles.card, { backgroundColor: theme.surface, borderColor: theme.border }]}>
           <View style={styles.cardHeaderRow}>
             <View style={styles.cardHeaderLeft}>
@@ -343,7 +449,7 @@ export function ProfileScreen() {
             </View>
           </View>
 
-          {/* Goal Progress Ring / Bar */}
+          {/* Goal Progress Bar */}
           <View style={{ marginTop: spacing.sm }}>
             <View style={styles.goalMetaRow}>
               <Text style={[styles.goalAmountText, { color: theme.textPrimary }]}>
@@ -404,65 +510,8 @@ export function ProfileScreen() {
           </View>
         </View>
 
-        {/* 3. Clearly Labeled Performance Statistics */}
-        <View style={styles.sectionHeaderRow}>
-          <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>Study Performance & Records</Text>
-          <Text style={[styles.sectionSub, { color: theme.textMuted }]}>Lifetime metrics</Text>
-        </View>
 
-        <View style={styles.statsGrid}>
-          {/* Total XP */}
-          <View style={[styles.statTile, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-            <View style={styles.statTileHeader}>
-              <Zap size={18} color="#F59E0B" />
-              <Text style={[styles.statTileTitle, { color: theme.textMuted }]}>Total XP</Text>
-            </View>
-            <Text style={[styles.statTileNumber, { color: theme.textPrimary }]}>{totalXp}</Text>
-            <Text style={[styles.statTileExplanation, { color: theme.textSecondary }]}>
-              Points earned across quizzes, games & drills
-            </Text>
-          </View>
-
-          {/* Accuracy */}
-          <View style={[styles.statTile, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-            <View style={styles.statTileHeader}>
-              <Target size={18} color="#10B981" />
-              <Text style={[styles.statTileTitle, { color: theme.textMuted }]}>Drill Accuracy</Text>
-            </View>
-            <Text style={[styles.statTileNumber, { color: theme.textPrimary }]}>{accuracy}%</Text>
-            <Text style={[styles.statTileExplanation, { color: theme.textSecondary }]}>
-              {totalCorrect} correct of {totalQuestionsAnswered} answered questions
-            </Text>
-          </View>
-
-          {/* Best Streak */}
-          <View style={[styles.statTile, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-            <View style={styles.statTileHeader}>
-              <Flame size={18} color="#EF4444" />
-              <Text style={[styles.statTileTitle, { color: theme.textMuted }]}>Streak Record</Text>
-            </View>
-            <Text style={[styles.statTileNumber, { color: theme.textPrimary }]}>{bestStreak}d</Text>
-            <Text style={[styles.statTileExplanation, { color: theme.textSecondary }]}>
-              Longest consecutive daily study record
-            </Text>
-          </View>
-
-          {/* Badges */}
-          <View style={[styles.statTile, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-            <View style={styles.statTileHeader}>
-              <Award size={18} color="#8B5CF6" />
-              <Text style={[styles.statTileTitle, { color: theme.textMuted }]}>Trophies</Text>
-            </View>
-            <Text style={[styles.statTileNumber, { color: theme.textPrimary }]}>
-              {unlockedCount} <Text style={{ fontSize: 13, color: theme.textMuted }}>/ {ACHIEVEMENTS.length}</Text>
-            </Text>
-            <Text style={[styles.statTileExplanation, { color: theme.textSecondary }]}>
-              Milestones and achievement badges unlocked
-            </Text>
-          </View>
-        </View>
-
-        {/* 4. Real Curriculum Mastery Progress */}
+        {/* 3. Real Curriculum Mastery Progress */}
         <View style={styles.sectionHeaderRow}>
           <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>Japanese Curriculum Progress</Text>
           <Text style={[styles.sectionSub, { color: theme.textMuted }]}>Real retention & coverage</Text>
@@ -567,66 +616,153 @@ export function ProfileScreen() {
           </Text>
         </View>
 
-        {/* 5. Priority Focus & Actionable Weaknesses */}
+        {/* 4. Clearly Labeled Performance Statistics */}
         <View style={styles.sectionHeaderRow}>
-          <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>Priority Focus Items</Text>
-          <Text style={[styles.sectionSub, { color: theme.textMuted }]}>Targeted reinforcement</Text>
+          <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>Study Performance & Records</Text>
+          <Text style={[styles.sectionSub, { color: theme.textMuted }]}>Lifetime metrics</Text>
         </View>
 
-        <View style={[styles.card, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-          {weakestItems.length === 0 ? (
-            <View style={styles.emptyFocusContainer}>
-              <Sparkles size={28} color={theme.primary} />
-              <Text style={[styles.emptyFocusTitle, { color: theme.textPrimary }]}>
-                No Critical Weaknesses Identified!
-              </Text>
-              <Text style={[styles.emptyFocusSub, { color: theme.textSecondary }]}>
-                All your practiced items are in good standing. Keep practicing in the Dojo to maintain muscle memory.
-              </Text>
+        <View style={styles.statsGrid}>
+          {/* Total XP */}
+          <View style={[styles.statTile, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+            <View style={styles.statTileHeader}>
+              <Zap size={18} color="#F59E0B" />
+              <Text style={[styles.statTileTitle, { color: theme.textMuted }]}>Total XP</Text>
             </View>
-          ) : (
-            <View>
-              <Text style={[styles.weakHeaderDesc, { color: theme.textSecondary }]}>
-                These items have frequent misses or lower recall rates. Reinforce them in Review:
-              </Text>
+            <Text style={[styles.statTileNumber, { color: theme.textPrimary }]}>{totalXp}</Text>
+            <Text style={[styles.statTileExplanation, { color: theme.textSecondary }]}>
+              Daily study effort from drills, quizzes & lessons
+            </Text>
+          </View>
 
-              <View style={styles.weakItemsGrid}>
-                {weakestItems.map(item => (
-                  <View
-                    key={item.character}
+          {/* Belt Points */}
+          <View style={[styles.statTile, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+            <View style={styles.statTileHeader}>
+              <Award size={18} color={theme.primary} />
+              <Text style={[styles.statTileTitle, { color: theme.textMuted }]}>Belt Points</Text>
+            </View>
+            <Text style={[styles.statTileNumber, { color: theme.textPrimary }]}>{totalPoints}</Text>
+            <Text style={[styles.statTileExplanation, { color: theme.textSecondary }]}>
+              Dojo rank currency earned from milestones & belts
+            </Text>
+          </View>
+
+          {/* Accuracy */}
+          <View style={[styles.statTile, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+            <View style={styles.statTileHeader}>
+              <Target size={18} color="#10B981" />
+              <Text style={[styles.statTileTitle, { color: theme.textMuted }]}>Drill Accuracy</Text>
+            </View>
+            <Text style={[styles.statTileNumber, { color: theme.textPrimary }]}>{accuracy}%</Text>
+            <Text style={[styles.statTileExplanation, { color: theme.textSecondary }]}>
+              {totalCorrect} correct of {totalQuestionsAnswered} answered questions
+            </Text>
+          </View>
+
+          {/* Best Streak */}
+          <View style={[styles.statTile, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+            <View style={styles.statTileHeader}>
+              <Flame size={18} color="#EF4444" />
+              <Text style={[styles.statTileTitle, { color: theme.textMuted }]}>Streak Record</Text>
+            </View>
+            <Text style={[styles.statTileNumber, { color: theme.textPrimary }]}>{bestStreak}d</Text>
+            <Text style={[styles.statTileExplanation, { color: theme.textSecondary }]}>
+              Longest consecutive daily study record
+            </Text>
+          </View>
+        </View>
+
+        {/* 5. Achievements Showcase (Compact 3-column badge grid, unlocked first) */}
+        <View style={styles.sectionHeaderRow}>
+          <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
+            Achievements ({unlockedCount} / {ACHIEVEMENTS.length})
+          </Text>
+          <Text style={[styles.sectionSub, { color: theme.textMuted }]}>Tap badge for details</Text>
+        </View>
+
+        {/* Category Filter Pills */}
+        <View style={styles.pillRow}>
+          {(['all', 'streak', 'milestones', 'mastery', 'dojos', 'challenges'] as const).map(cat => (
+            <Pressable
+              key={cat}
+              style={[
+                styles.filterPill,
+                { borderColor: theme.border, backgroundColor: theme.surface },
+                selectedAchievementCat === cat && { backgroundColor: theme.primary, borderColor: theme.primary },
+              ]}
+              onPress={() => setSelectedAchievementCat(cat)}
+            >
+              <Text
+                style={[
+                  styles.filterPillText,
+                  { color: theme.textSecondary },
+                  selectedAchievementCat === cat && { color: theme.textOnPrimary, fontWeight: '700' },
+                ]}
+              >
+                {cat.toUpperCase()}
+              </Text>
+            </Pressable>
+          ))}
+        </View>
+
+        {/* Compact 3-Column Badge Grid */}
+        <View style={styles.badgeGrid}>
+          {sortedAchievements.map(achievement => {
+            const isUnlocked = !!unlocked[achievement.id];
+            const rarityStyle = RARITY_COLORS[achievement.rarity];
+            return (
+              <Pressable
+                key={achievement.id}
+                onPress={() => {
+                  Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+                  setSelectedAchievement(achievement);
+                }}
+                style={[
+                  styles.badgeTile,
+                  {
+                    backgroundColor: isUnlocked ? theme.surface : theme.surfaceSubtle,
+                    borderColor: isUnlocked ? rarityStyle.border : theme.border,
+                    opacity: isUnlocked ? 1 : 0.65,
+                  },
+                ]}
+              >
+                <View style={[styles.badgeIconContainer, isUnlocked && { backgroundColor: rarityStyle.bg }]}>
+                  <Text style={[styles.badgeIcon, !isUnlocked && styles.badgeIconLocked]}>
+                    {achievement.icon}
+                  </Text>
+                  {!isUnlocked && (
+                    <View style={styles.lockBadgeOverlay}>
+                      <Lock size={10} color="#9CA3AF" />
+                    </View>
+                  )}
+                </View>
+                <Text
+                  style={[styles.badgeTileTitle, { color: isUnlocked ? theme.textPrimary : theme.textMuted }]}
+                  numberOfLines={2}
+                >
+                  {achievement.title}
+                </Text>
+                <View
+                  style={[
+                    styles.badgePointsTag,
+                    { backgroundColor: isUnlocked ? 'rgba(249, 115, 22, 0.15)' : 'rgba(156, 163, 175, 0.15)' },
+                  ]}
+                >
+                  <Text
                     style={[
-                      styles.weakTile,
-                      { backgroundColor: theme.surfaceSubtle, borderColor: theme.border },
+                      styles.badgePointsText,
+                      { color: isUnlocked ? theme.primary : theme.textMuted },
                     ]}
                   >
-                    <Text style={[styles.weakTileChar, { color: theme.textPrimary }]}>{item.character}</Text>
-                    <View style={styles.weakTileMeta}>
-                      <Text style={[styles.weakTileAcc, { color: theme.error }]}>
-                        {item.accuracy}% acc
-                      </Text>
-                      <Text style={[styles.weakTileMisses, { color: theme.textMuted }]}>
-                        {item.incorrect} misses
-                      </Text>
-                    </View>
-                  </View>
-                ))}
-              </View>
-
-              {/* Action Button */}
-              <Pressable
-                onPress={() => router.push('/(tabs)/review')}
-                style={[styles.trainWeakBtn, { backgroundColor: theme.primary }]}
-              >
-                <RotateCcw size={16} color={theme.textOnPrimary} />
-                <Text style={[styles.trainWeakBtnText, { color: theme.textOnPrimary }]}>
-                  Train Weaknesses in SRS Review
-                </Text>
+                    +{achievement.points} pts
+                  </Text>
+                </View>
               </Pressable>
-            </View>
-          )}
+            );
+          })}
         </View>
 
-        {/* 6. Quick Settings & App Preferences Directly in Profile */}
+        {/* 6. Quick Settings & App Preferences */}
         <View style={styles.sectionHeaderRow}>
           <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>App Preferences</Text>
           <Text style={[styles.sectionSub, { color: theme.textMuted }]}>Customization</Text>
@@ -670,6 +806,7 @@ export function ProfileScreen() {
               value={ttsEnabled}
               onValueChange={setTtsEnabled}
               trackColor={{ false: theme.border, true: theme.primary }}
+              thumbColor={Platform.OS === 'android' ? '#FFFFFF' : undefined}
             />
           </View>
 
@@ -688,6 +825,7 @@ export function ProfileScreen() {
               value={showFuriganaInDrills}
               onValueChange={setShowFuriganaInDrills}
               trackColor={{ false: theme.border, true: theme.primary }}
+              thumbColor={Platform.OS === 'android' ? '#FFFFFF' : undefined}
             />
           </View>
 
@@ -706,6 +844,7 @@ export function ProfileScreen() {
               value={showRomajiInCharts}
               onValueChange={setShowRomajiInCharts}
               trackColor={{ false: theme.border, true: theme.primary }}
+              thumbColor={Platform.OS === 'android' ? '#FFFFFF' : undefined}
             />
           </View>
 
@@ -724,6 +863,7 @@ export function ProfileScreen() {
               value={hapticsEnabled}
               onValueChange={setHapticsEnabled}
               trackColor={{ false: theme.border, true: theme.primary }}
+              thumbColor={Platform.OS === 'android' ? '#FFFFFF' : undefined}
             />
           </View>
 
@@ -739,61 +879,221 @@ export function ProfileScreen() {
           </Pressable>
         </View>
 
-        {/* 7. Achievements Showcase */}
-        <View style={styles.sectionHeaderRow}>
-          <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
-            Achievements ({unlockedCount} / {ACHIEVEMENTS.length})
-          </Text>
-          <Text style={[styles.sectionSub, { color: theme.textMuted }]}>{totalPoints} total points</Text>
-        </View>
-
-        {/* Category Pills */}
-        <View style={styles.pillRow}>
-          {(['all', 'streak', 'milestones', 'mastery', 'dojos', 'challenges'] as const).map(cat => (
-            <Pressable
-              key={cat}
-              style={[
-                styles.filterPill,
-                { borderColor: theme.border, backgroundColor: theme.surface },
-                selectedAchievementCat === cat && { backgroundColor: theme.primary, borderColor: theme.primary },
-              ]}
-              onPress={() => setSelectedAchievementCat(cat)}
-            >
-              <Text
-                style={[
-                  styles.filterPillText,
-                  { color: theme.textSecondary },
-                  selectedAchievementCat === cat && { color: theme.textOnPrimary, fontWeight: '700' },
-                ]}
-              >
-                {cat.toUpperCase()}
-              </Text>
-            </Pressable>
-          ))}
-        </View>
-
-        {/* Achievements List */}
-        <View style={styles.achievementList}>
-          {filteredAchievements.slice(0, 8).map(achievement => (
-            <AchievementCard
-              key={achievement.id}
-              achievement={achievement}
-              isUnlocked={!!unlocked[achievement.id]}
-              unlockedAt={unlocked[achievement.id]?.unlockedAt}
-            />
-          ))}
-        </View>
-
-        {/* Reset Button */}
+        {/* 7. Hardened Progress Reset (Two-step confirmation modal trigger) */}
         <View style={styles.resetContainer}>
           <Pressable
-            onPress={handleReset}
-            style={[styles.resetButton, { borderColor: 'rgba(239, 68, 68, 0.4)' }]}
+            onPress={() => setResetModalStep(1)}
+            style={[styles.resetButton, { borderColor: 'rgba(239, 68, 68, 0.4)', backgroundColor: 'rgba(239, 68, 68, 0.08)' }]}
           >
+            <AlertTriangle size={16} color={theme.error} style={{ marginRight: 6 }} />
             <Text style={[styles.resetButtonText, { color: theme.error }]}>Reset All Progress Data</Text>
           </Pressable>
         </View>
       </ScrollView>
+
+      {/* Achievement Inspector Modal */}
+      <Modal
+        visible={!!selectedAchievement}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setSelectedAchievement(null)}
+      >
+        <Pressable
+          style={styles.modalOverlay}
+          onPress={() => setSelectedAchievement(null)}
+        >
+          {selectedAchievement && (
+            <Pressable
+              style={[styles.modalCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
+              onPress={e => e.stopPropagation()}
+            >
+              <View style={styles.modalHeaderRow}>
+                <View style={styles.inspectHeaderLeft}>
+                  <View
+                    style={[
+                      styles.inspectIconCircle,
+                      {
+                        backgroundColor: unlocked[selectedAchievement.id]
+                          ? RARITY_COLORS[selectedAchievement.rarity].bg
+                          : theme.surfaceSubtle,
+                        borderColor: unlocked[selectedAchievement.id]
+                          ? RARITY_COLORS[selectedAchievement.rarity].border
+                          : theme.border,
+                      },
+                    ]}
+                  >
+                    <Text style={styles.inspectIconEmoji}>{selectedAchievement.icon}</Text>
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <Text style={[styles.inspectTitle, { color: theme.textPrimary }]}>
+                      {selectedAchievement.title}
+                    </Text>
+                    <View style={styles.inspectTagsRow}>
+                      <View
+                        style={[
+                          styles.rarityPill,
+                          {
+                            backgroundColor: RARITY_COLORS[selectedAchievement.rarity].bg,
+                            borderColor: RARITY_COLORS[selectedAchievement.rarity].border,
+                          },
+                        ]}
+                      >
+                        <Text
+                          style={[
+                            styles.rarityPillText,
+                            { color: RARITY_COLORS[selectedAchievement.rarity].text },
+                          ]}
+                        >
+                          {selectedAchievement.rarity.toUpperCase()}
+                        </Text>
+                      </View>
+                      <Text style={[styles.inspectCategoryText, { color: theme.textMuted }]}>
+                        • {selectedAchievement.category.toUpperCase()}
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+                <Pressable onPress={() => setSelectedAchievement(null)} hitSlop={8}>
+                  <X size={20} color={theme.textMuted} />
+                </Pressable>
+              </View>
+
+              <Text style={[styles.inspectDescription, { color: theme.textSecondary }]}>
+                {selectedAchievement.description}
+              </Text>
+
+              {/* Status Section */}
+              <View
+                style={[
+                  styles.inspectStatusCard,
+                  {
+                    backgroundColor: unlocked[selectedAchievement.id]
+                      ? 'rgba(34, 197, 94, 0.1)'
+                      : theme.surfaceSubtle,
+                    borderColor: unlocked[selectedAchievement.id]
+                      ? 'rgba(34, 197, 94, 0.3)'
+                      : theme.border,
+                  },
+                ]}
+              >
+                {unlocked[selectedAchievement.id] ? (
+                  <View style={styles.statusRow}>
+                    <CheckCircle2 size={18} color={theme.success} />
+                    <View style={{ flex: 1 }}>
+                      <Text style={[styles.statusTitleText, { color: theme.success }]}>
+                        Unlocked (+{selectedAchievement.points} Belt Points)
+                      </Text>
+                      <Text style={[styles.statusSubText, { color: theme.textMuted }]}>
+                        Earned on {new Date(unlocked[selectedAchievement.id].unlockedAt).toLocaleDateString()}
+                      </Text>
+                    </View>
+                  </View>
+                ) : (
+                  <View style={styles.statusRow}>
+                    <Lock size={18} color="#9CA3AF" />
+                    <View style={{ flex: 1 }}>
+                      <Text style={[styles.statusTitleText, { color: theme.textPrimary }]}>
+                        Locked • Worth +{selectedAchievement.points} Belt Points
+                      </Text>
+                      <Text style={[styles.statusSubText, { color: theme.textMuted }]}>
+                        Next up: Complete the requirements above in practice or drills to unlock this badge.
+                      </Text>
+                    </View>
+                  </View>
+                )}
+              </View>
+
+              <Pressable
+                onPress={() => setSelectedAchievement(null)}
+                style={[styles.inspectCloseBtn, { backgroundColor: theme.primary }]}
+              >
+                <Text style={[styles.inspectCloseBtnText, { color: theme.textOnPrimary }]}>Close</Text>
+              </Pressable>
+            </Pressable>
+          )}
+        </Pressable>
+      </Modal>
+
+      {/* Hardened 2-Step Reset Modal */}
+      <Modal
+        visible={resetModalStep > 0}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setResetModalStep(0)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={[styles.modalCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+            {resetModalStep === 1 ? (
+              <View>
+                <View style={styles.resetModalHeader}>
+                  <View style={[styles.warningIconBg, { backgroundColor: 'rgba(239, 68, 68, 0.15)' }]}>
+                    <AlertTriangle size={24} color="#EF4444" />
+                  </View>
+                  <Text style={[styles.modalTitle, { color: theme.textPrimary }]}>
+                    Reset Study Progress? (Step 1/2)
+                  </Text>
+                </View>
+                <Text style={[styles.resetWarningBody, { color: theme.textSecondary }]}>
+                  This action will clear all your active study sessions, curriculum unit completions, SRS review intervals, and streak records.
+                </Text>
+                <View style={[styles.resetItemizedBox, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}>
+                  <Text style={[styles.resetItemText, { color: theme.textPrimary }]}>• All SRS Review cards & intervals</Text>
+                  <Text style={[styles.resetItemText, { color: theme.textPrimary }]}>• Dojo unit locks & cumulative revision check</Text>
+                  <Text style={[styles.resetItemText, { color: theme.textPrimary }]}>• Daily streak count & total XP</Text>
+                  <Text style={[styles.resetItemText, { color: theme.textPrimary }]}>• Unlocked achievements & belt points</Text>
+                </View>
+
+                <View style={styles.modalActionRow}>
+                  <Pressable
+                    onPress={() => setResetModalStep(0)}
+                    style={[styles.modalCancelBtn, { borderColor: theme.border }]}
+                  >
+                    <Text style={{ color: theme.textSecondary, fontWeight: '700' }}>Cancel</Text>
+                  </Pressable>
+                  <Pressable
+                    onPress={() => setResetModalStep(2)}
+                    style={[styles.modalSaveBtn, { backgroundColor: theme.error }]}
+                  >
+                    <Text style={{ color: '#FFFFFF', fontWeight: '800' }}>I Understand, Proceed</Text>
+                  </Pressable>
+                </View>
+              </View>
+            ) : (
+              <View>
+                <View style={styles.resetModalHeader}>
+                  <View style={[styles.warningIconBg, { backgroundColor: 'rgba(239, 68, 68, 0.2)' }]}>
+                    <AlertTriangle size={26} color="#DC2626" />
+                  </View>
+                  <Text style={[styles.modalTitle, { color: theme.error }]}>
+                    Final Confirmation (Step 2/2)
+                  </Text>
+                </View>
+                <Text style={[styles.resetWarningBody, { color: theme.textPrimary, fontWeight: '700' }]}>
+                  Are you absolutely certain? This operation cannot be reversed.
+                </Text>
+                <Text style={[styles.resetWarningSub, { color: theme.textMuted }]}>
+                  All local data will be permanently wiped and your account will restart from Day 1 / Novice White Belt.
+                </Text>
+
+                <View style={styles.modalActionRow}>
+                  <Pressable
+                    onPress={() => setResetModalStep(1)}
+                    style={[styles.modalCancelBtn, { borderColor: theme.border }]}
+                  >
+                    <Text style={{ color: theme.textSecondary, fontWeight: '700' }}>Go Back</Text>
+                  </Pressable>
+                  <Pressable
+                    onPress={handleExecuteFullReset}
+                    style={[styles.modalSaveBtn, { backgroundColor: '#DC2626' }]}
+                  >
+                    <Text style={{ color: '#FFFFFF', fontWeight: '900' }}>Permanently Wipe All Data</Text>
+                  </Pressable>
+                </View>
+              </View>
+            )}
+          </View>
+        </View>
+      </Modal>
 
       {/* Avatar Picker Modal */}
       <Modal
@@ -1014,8 +1314,26 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     marginTop: 4,
   },
-  levelProgressContainer: {
+  currencyRow: {
+    flexDirection: 'row',
+    gap: spacing.sm,
     marginTop: spacing.md,
+  },
+  currencyPill: {
+    flex: 1,
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    borderRadius: radii.md,
+    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  currencyText: {
+    fontSize: 11,
+    fontWeight: '600',
+  },
+  levelProgressContainer: {
+    marginTop: spacing.sm,
     paddingTop: spacing.sm,
     borderTopWidth: 1,
     borderTopColor: 'rgba(255, 255, 255, 0.06)',
@@ -1141,7 +1459,7 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   statTileTitle: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: '700',
     textTransform: 'uppercase',
     letterSpacing: 0.4,
@@ -1201,65 +1519,80 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
 
-  // Priority Focus
-  emptyFocusContainer: {
-    alignItems: 'center',
-    paddingVertical: spacing.md,
+  // Priority Focus (2x2 Grid)
+
+
+  // Achievements Compact 3-Column Grid
+  pillRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     gap: spacing.xs,
   },
-  emptyFocusTitle: {
-    fontSize: 15,
-    fontWeight: '800',
-    marginTop: 6,
-  },
-  emptyFocusSub: {
-    fontSize: 12,
-    textAlign: 'center',
-    lineHeight: 18,
-    paddingHorizontal: spacing.base,
-  },
-  weakHeaderDesc: {
-    fontSize: 12,
-    marginBottom: spacing.sm,
-    lineHeight: 16,
-  },
-  weakItemsGrid: {
-    flexDirection: 'row',
-    gap: spacing.sm,
-    marginBottom: spacing.md,
-  },
-  weakTile: {
-    flex: 1,
-    borderRadius: radii.md,
-    padding: spacing.sm,
-    alignItems: 'center',
+  filterPill: {
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: radii.full,
     borderWidth: 1,
   },
-  weakTileChar: {
-    fontSize: 24,
-    fontWeight: '800',
-  },
-  weakTileMeta: {
-    alignItems: 'center',
-    marginTop: 2,
-  },
-  weakTileAcc: {
+  filterPillText: {
     fontSize: 11,
-    fontWeight: '800',
+    fontWeight: '600',
   },
-  weakTileMisses: {
-    fontSize: 10,
-  },
-  trainWeakBtn: {
+  badgeGrid: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: spacing.sm,
+    justifyContent: 'flex-start',
+  },
+  badgeTile: {
+    width: '31%',
+    borderRadius: radii.lg,
+    paddingVertical: spacing.sm,
+    paddingHorizontal: 6,
+    alignItems: 'center',
+    borderWidth: 1,
+    ...shadows.sm,
+  },
+  badgeIconContainer: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 8,
-    paddingVertical: 12,
-    borderRadius: radii.lg,
+    position: 'relative',
+    marginBottom: 4,
   },
-  trainWeakBtnText: {
-    fontSize: 14,
+  badgeIcon: {
+    fontSize: 22,
+  },
+  badgeIconLocked: {
+    opacity: 0.45,
+  },
+  lockBadgeOverlay: {
+    position: 'absolute',
+    bottom: -2,
+    right: -2,
+    backgroundColor: '#374151',
+    width: 16,
+    height: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  badgeTileTitle: {
+    fontSize: 11,
+    fontWeight: '700',
+    textAlign: 'center',
+    minHeight: 28,
+  },
+  badgePointsTag: {
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: radii.full,
+    marginTop: 4,
+  },
+  badgePointsText: {
+    fontSize: 9,
     fontWeight: '800',
   },
 
@@ -1314,40 +1647,22 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 
-  // Achievements
-  pillRow: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: spacing.xs,
-  },
-  filterPill: {
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    borderRadius: radii.full,
-    borderWidth: 1,
-  },
-  filterPillText: {
-    fontSize: 11,
-    fontWeight: '600',
-  },
-  achievementList: {
-    gap: spacing.sm,
-  },
-
   // Reset
   resetContainer: {
-    marginTop: spacing.md,
+    marginTop: spacing.sm,
     alignItems: 'center',
   },
   resetButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
     paddingVertical: 12,
-    paddingHorizontal: 24,
+    paddingHorizontal: 20,
     borderRadius: radii.lg,
     borderWidth: 1,
   },
   resetButtonText: {
     fontSize: 13,
-    fontWeight: '700',
+    fontWeight: '800',
   },
 
   // Modals
@@ -1411,6 +1726,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-end',
     gap: spacing.sm,
+    marginTop: spacing.md,
   },
   modalCancelBtn: {
     paddingVertical: 10,
@@ -1423,4 +1739,208 @@ const styles = StyleSheet.create({
     paddingHorizontal: 18,
     borderRadius: radii.md,
   },
+
+  // Achievement Inspector Modal
+  inspectHeaderLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    flex: 1,
+  },
+  inspectIconCircle: {
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    borderWidth: 2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  inspectIconEmoji: {
+    fontSize: 26,
+  },
+  inspectTitle: {
+    fontSize: 16,
+    fontWeight: '800',
+  },
+  inspectTagsRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    marginTop: 4,
+  },
+  rarityPill: {
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 6,
+    borderWidth: 1,
+  },
+  rarityPillText: {
+    fontSize: 9,
+    fontWeight: '800',
+  },
+  inspectCategoryText: {
+    fontSize: 10,
+    fontWeight: '700',
+  },
+  inspectDescription: {
+    fontSize: 14,
+    lineHeight: 20,
+    marginBottom: spacing.md,
+  },
+  inspectStatusCard: {
+    padding: spacing.md,
+    borderRadius: radii.lg,
+    borderWidth: 1,
+    marginBottom: spacing.md,
+  },
+  statusRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: 10,
+  },
+  statusTitleText: {
+    fontSize: 13,
+    fontWeight: '800',
+  },
+  statusSubText: {
+    fontSize: 12,
+    lineHeight: 16,
+    marginTop: 2,
+  },
+  inspectCloseBtn: {
+    paddingVertical: 12,
+    borderRadius: radii.lg,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  inspectCloseBtnText: {
+    fontSize: 14,
+    fontWeight: '800',
+  },
+
+  // Hardened Reset Modal
+  resetModalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    marginBottom: spacing.sm,
+  },
+  warningIconBg: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  resetWarningBody: {
+    fontSize: 13,
+    lineHeight: 18,
+    marginBottom: spacing.sm,
+  },
+  resetWarningSub: {
+    fontSize: 12,
+    lineHeight: 16,
+    marginTop: 4,
+  },
+  resetItemizedBox: {
+    padding: spacing.sm,
+    borderRadius: radii.md,
+    borderWidth: 1,
+    gap: 4,
+    marginBottom: spacing.sm,
+  },
+  resetItemText: {
+    fontSize: 12,
+    fontWeight: '600',
+  },
+
+  // Account & Cloud Sync Banner Styles
+  accountCardContent: {
+    gap: spacing.sm,
+  },
+  accountHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: spacing.sm,
+  },
+  accountHeaderLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    flex: 1,
+  },
+  accountIconBg: {
+    width: 38,
+    height: 38,
+    borderRadius: radii.md,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  accountTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+  },
+  accountSub: {
+    fontSize: 12,
+    fontWeight: '500',
+    marginTop: 2,
+    lineHeight: 16,
+  },
+  providerBadge: {
+    paddingHorizontal: 6,
+    paddingVertical: 1,
+    borderRadius: 4,
+  },
+  providerBadgeText: {
+    fontSize: 10,
+    fontWeight: '800',
+    textTransform: 'uppercase',
+  },
+  signOutBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: spacing.sm + 2,
+    paddingVertical: 6,
+    borderRadius: radii.md,
+    borderWidth: 1,
+  },
+  signOutText: {
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  syncStatusRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    paddingHorizontal: spacing.sm + 2,
+    paddingVertical: 6,
+    borderRadius: radii.md,
+    borderWidth: 1,
+  },
+  syncStatusText: {
+    fontSize: 11,
+    fontWeight: '600',
+  },
+  guestCardContent: {
+    gap: spacing.md,
+  },
+  guestRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm + 2,
+  },
+  signInActionBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 10,
+    paddingHorizontal: spacing.base,
+    borderRadius: radii.md,
+  },
+  signInActionBtnText: {
+    fontSize: 13,
+    fontWeight: '700',
+  },
 });
+

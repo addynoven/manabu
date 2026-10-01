@@ -8,12 +8,18 @@ import { QueryProvider } from '../core/query/QueryProvider';
 
 import { GlobalClipboardToast } from '../core/clipboard/GlobalClipboardToast';
 
+import { useAuthStore } from '../features/auth/store/useAuthStore';
+
 SplashScreen.preventAutoHideAsync().catch(() => {});
 
 export default function RootLayout() {
   useEffect(() => {
     // Hide splash screen after root layout mounts
     SplashScreen.hideAsync().catch(() => {});
+    const unsubscribe = useAuthStore.getState().initAuthListener();
+    return () => {
+      if (typeof unsubscribe === 'function') unsubscribe();
+    };
   }, []);
 
   return (
@@ -24,6 +30,7 @@ export default function RootLayout() {
           <Stack screenOptions={{ headerShown: false }}>
             <Stack.Screen name="index" />
             <Stack.Screen name="(tabs)" />
+            <Stack.Screen name="auth" options={{ presentation: 'modal', animation: 'slide_from_bottom' }} />
             <Stack.Screen name="conjugator" options={{ animation: 'slide_from_bottom' }} />
             <Stack.Screen name="arcade" options={{ animation: 'slide_from_bottom' }} />
             <Stack.Screen name="academy" options={{ animation: 'slide_from_bottom' }} />

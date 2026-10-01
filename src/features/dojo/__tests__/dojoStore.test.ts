@@ -53,13 +53,16 @@ describe('useDojoStore (Day-Based Pacing & Dev Mode)', () => {
       expect(status.reason).toBe('cooldown');
     });
 
-    it('clearing cooldown allows Day 2 (u1_l4) to be accessible', () => {
+    it('passing daily revision for Day 2 allows Day 2 (u1_l4) to be accessible', () => {
       useDojoStore.getState().completeLesson('u1_l1', 100);
       useDojoStore.getState().completeLesson('u1_l2', 100);
       useDojoStore.getState().completeLesson('u1_l3', 100);
 
-      // Trigger early unlock
-      useDojoStore.getState().clearCooldown();
+      // Locked before passing revision
+      expect(useDojoStore.getState().isLessonLocked('u1_l4').locked).toBe(true);
+
+      // Pass daily revision test for Day 2
+      useDojoStore.getState().passDailyRevision('unit_1_day_2');
 
       const status = useDojoStore.getState().isLessonLocked('u1_l4');
       expect(status.locked).toBe(false);

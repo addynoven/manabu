@@ -21,7 +21,7 @@ export function DojoLessonCard({ lesson, isActive, onPress }: DojoLessonCardProp
 
   const lockStatus = isLessonLocked(lesson.id);
   const isCompleted = !!completedLessons[lesson.id];
-  const isLocked = lockStatus.locked && !isCompleted;
+  const isLocked = !isActive && lockStatus.locked && !isCompleted;
   const isCooldown = isLocked && (lockStatus.reason === 'cooldown' || isCoolingDown);
 
   const handlePress = () => {

@@ -2,9 +2,14 @@ import { describe, it, expect } from 'vitest';
 import { getLearnedVocabWords, groupWordsByUnit } from '../services/vocabBank.service';
 
 describe('vocabBank.service', () => {
-  it('extracts real vocabulary words and phrases from dojo units', () => {
+  it('returns empty array when no lessons are completed', () => {
     const words = getLearnedVocabWords(new Set());
-    expect(words.length).toBeGreaterThan(10);
+    expect(words.length).toBe(0);
+  });
+
+  it('extracts real vocabulary words and phrases when lesson 1 is completed', () => {
+    const words = getLearnedVocabWords(new Set(['u1_l1']));
+    expect(words.length).toBeGreaterThan(0);
 
     const konnichiwa = words.find((w) => w.japanese === 'こんにちは');
     expect(konnichiwa).toBeDefined();
@@ -21,7 +26,7 @@ describe('vocabBank.service', () => {
         correct: 1,
         incorrect: 4,
         total: 5,
-        accuracy: 0.2,
+        accuracy: 20,
         masteryLevel: 'needs-practice' as const,
         lastPracticedAt: new Date().toISOString(),
         srsStage: 'apprentice-1' as const,
@@ -31,7 +36,7 @@ describe('vocabBank.service', () => {
       },
     };
 
-    const words = getLearnedVocabWords(new Set(), mockMastery, {
+    const words = getLearnedVocabWords(new Set(['u1_l1']), mockMastery, {
       statusFilter: 'needs-practice',
     });
     expect(words.some((w) => w.japanese === 'こんにちは')).toBe(true);
@@ -39,16 +44,16 @@ describe('vocabBank.service', () => {
   });
 
   it('filters by unitFilter', () => {
-    const unit1Words = getLearnedVocabWords(new Set(), {}, { unitFilter: 'unit_1' });
+    const unit1Words = getLearnedVocabWords(new Set(['u1_l1']), {}, { unitFilter: 'unit_1' });
     expect(unit1Words.length).toBeGreaterThan(0);
     expect(unit1Words.every((w) => w.unitId === 'unit_1')).toBe(true);
   });
 
   it('groups vocabulary words into unit bundles with mastery rates', () => {
-    const words = getLearnedVocabWords(new Set());
+    const words = getLearnedVocabWords(new Set(['u1_l1']));
     const bundles = groupWordsByUnit(words);
-    expect(bundles.length).toBeGreaterThan(0);
-    expect(bundles[0].unitNumber).toBeDefined();
+    expect(bundles.length).toBe(1);
+    expect(bundles[0].unitNumber).toBe(1);
     expect(bundles[0].words.length).toBe(bundles[0].totalCount);
     expect(bundles[0].masteryRate).toBeGreaterThanOrEqual(0);
     expect(bundles[0].masteryRate).toBeLessThanOrEqual(100);

@@ -21,7 +21,7 @@ describe('Cooldown Timer & Early Unlock', () => {
     expect(lock.reason).toBe('cooldown');
   });
 
-  it('clearCooldown immediately unlocks the next day lesson', () => {
+  it('passDailyRevision immediately clears cooldown and unlocks the next day lesson', () => {
     useDojoStore.getState().completeLesson('u1_l1', 100);
     useDojoStore.getState().completeLesson('u1_l2', 100);
     useDojoStore.getState().completeLesson('u1_l3', 100);
@@ -29,15 +29,15 @@ describe('Cooldown Timer & Early Unlock', () => {
     // Verify it is locked first
     expect(useDojoStore.getState().isLessonLocked('u1_l4').locked).toBe(true);
 
-    // Trigger Early Unlock / clearCooldown
-    useDojoStore.getState().clearCooldown();
+    // Pass daily revision for Day 2
+    useDojoStore.getState().passDailyRevision('unit_1_day_2');
 
     expect(useDojoStore.getState().getCooldownRemaining()).toBe(0);
     const lockAfter = useDojoStore.getState().isLessonLocked('u1_l4');
     expect(lockAfter.locked).toBe(false);
   });
 
-  it('auto-clears cooldown when timestamp is in the past', () => {
+  it('auto-clears cooldown when timestamp is in the past, transitioning to daily revision requirement', () => {
     // Set cooldown in the past
     useDojoStore.setState({
       completedLessons: {
@@ -52,7 +52,13 @@ describe('Cooldown Timer & Early Unlock', () => {
     expect(remaining).toBe(0);
     expect(useDojoStore.getState().cooldownUntil).toBeNull();
 
+    // Requires passing the daily revision
     const lock = useDojoStore.getState().isLessonLocked('u1_l4');
-    expect(lock.locked).toBe(false);
+    expect(lock.locked).toBe(true);
+    expect(lock.reason).toBe('daily_revision');
+
+    // Passing daily revision unlocks it
+    useDojoStore.getState().passDailyRevision('unit_1_day_2');
+    expect(useDojoStore.getState().isLessonLocked('u1_l4').locked).toBe(false);
   });
 });

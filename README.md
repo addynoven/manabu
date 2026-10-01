@@ -11,8 +11,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Expo_SDK-52-000020?logo=expo" alt="Expo SDK 52" />
-  <img src="https://img.shields.io/badge/React_Native-0.86-61DAFB?logo=react" alt="React Native" />
+  <img src="https://img.shields.io/badge/Expo_SDK-57-000020?logo=expo" alt="Expo SDK 57" />
+  <img src="https://img.shields.io/badge/React_Native-0.86.3-61DAFB?logo=react" alt="React Native 0.86.3" />
+  <img src="https://img.shields.io/badge/React-19.2.3-61DAFB?logo=react" alt="React 19.2.3" />
   <img src="https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript" alt="TypeScript" />
   <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License" />
   <img src="https://img.shields.io/badge/Tests-200%2B_passing-brightgreen" alt="Tests" />
@@ -40,6 +41,7 @@
 - **2,495 Kanji** across all JLPT levels (N5 → N1) with meanings, readings, and stroke order
 - **Vocabulary drills** with Japanese TTS pronunciation
 - **Verb conjugator** — Godan, Ichidan, and irregular forms
+- **7-day unit pacing & cumulative revision checkpoint** — validates retention across all prior units before unlocking new curriculum days
 
 ### ✍️ Stroke Tracing
 - Authentic **KanjiVG** vector data for every Kana and Kanji character
@@ -47,8 +49,13 @@
 - Visual stroke-by-stroke guided animation
 
 ### 🔁 Spaced Repetition (SRS)
-- 5-stage retention system: **Apprentice → Guru → Master → Enlightened → Burned**
-- Smart review queue that surfaces weak characters first
+- **5-stage WaniKani retention system**:
+  - **Apprentice (I–IV)**: 4 hours → 8 hours → 24 hours → 48 hours
+  - **Guru (I–II)**: 7 days → 14 days
+  - **Master**: 30 days
+  - **Enlightened**: 120 days
+  - **Burned**: Mastered / permanent retention
+- Smart review queue strictly scoped to active/unlocked curriculum lessons
 - Vocabulary decks organized by curriculum unit
 
 ### 🎮 Arcade (7 Games)
@@ -66,10 +73,13 @@ Plus **daily challenges** and high score tracking.
 
 ### 👤 Profile & Progression
 - Customizable avatar & display name
-- **Martial arts belt ranking** system (White Belt → Black Belt)
-- Daily XP study goals (Casual / Standard / Intense)
-- 25 unlockable achievement trophies
-- Curriculum mastery breakdown & weakness radar
+- **Martial arts belt ranking** system (Novice White Belt → Grandmaster) with exact level math
+- **Dual currency clarity**: Total Study XP (daily drill effort) vs Dojo Belt Points (rank progression)
+- Daily XP study goals (Casual 20 XP / Standard 50 XP / Intense 100 XP)
+- **Compact 3-column achievement showcase** with unlocked-first sorting and tap-to-inspect modal sheet
+- **2×2 Priority weakness grid** with direct 1-tap reinforcement into SRS review
+- Curriculum mastery breakdown for Kana, Kanji, and Core Vocabulary
+- **Two-step hardened reset confirmation** protecting all local study data
 
 ---
 
@@ -77,17 +87,17 @@ Plus **daily challenges** and high score tracking.
 
 | Layer | Tech |
 |-------|------|
-| Framework | React Native 0.86 + Expo SDK 52 (New Architecture / Fabric) |
+| Framework | React Native 0.86.3 + Expo SDK 57 (New Architecture / React 19.2.3) |
 | Language | TypeScript (strict mode, zero `any`) |
-| Navigation | Expo Router v4 (file-based routing) |
+| Navigation | Expo Router v57 (file-based routing) |
 | State | Zustand v5 + MMKV (synchronous persistence) |
 | Validation | Zod at all data boundaries |
 | Audio | expo-speech (Japanese TTS) |
-| Graphics | react-native-svg (stroke rendering) |
-| Animations | react-native-reanimated v4 |
+| Graphics | react-native-svg 15.15 (stroke rendering) |
+| Animations | react-native-reanimated v4.5.1 |
 | Haptics | expo-haptics |
 | Icons | lucide-react-native |
-| Testing | Vitest + happy-dom (33 suites, 200+ tests) |
+| Testing | Vitest + happy-dom (33 suites, 201 tests) |
 
 ---
 

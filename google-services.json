@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "415825009519",
+    "project_id": "manabu-japanese-9007",
+    "storage_bucket": "manabu-japanese-9007.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415825009519:android:d86614033b1c43252da69a",
+        "android_client_info": {
+          "package_name": "com.manabu.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415825009519-11kmmf618qjlob52ff3svuomsqike74m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manabu.app",
+            "certificate_hash": "01b3d3c400b1cdf522a5f281e3fc982f2f75c932"
+          }
+        },
+        {
+          "client_id": "415825009519-g73jsgq3es7q2n38tsq1oem371uhbrc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQGniNVrfD6sRhkICQr8vn0g-PsQj9eFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415825009519-g73jsgq3es7q2n38tsq1oem371uhbrc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

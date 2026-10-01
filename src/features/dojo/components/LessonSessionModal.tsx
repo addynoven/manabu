@@ -70,6 +70,7 @@ function LessonSessionContent({
   const { colors: theme } = useAppTheme();
   const completeLesson = useDojoStore(state => state.completeLesson);
   const clearCooldown = useDojoStore(state => state.clearCooldown);
+  const passDailyRevision = useDojoStore(state => state.passDailyRevision);
   const recordAnswer = useProgressStore(state => state.recordAnswer);
 
   const initialItems = useMemo(() => {
@@ -210,7 +211,10 @@ function LessonSessionContent({
     if (queue.length === 1 && evaluation === 'correct') {
       setIsCompleted(true);
       const finalScore = Math.round((correctCount / Math.max(1, totalInitial)) * 100);
-      if (lesson.id.startsWith('early_unlock_')) {
+      if (lesson.id.startsWith('daily_revision_')) {
+        const revId = lesson.id.replace('daily_revision_', '');
+        passDailyRevision(revId);
+      } else if (lesson.id.startsWith('early_unlock_')) {
         clearCooldown();
       } else {
         completeLesson(lesson.id, finalScore);

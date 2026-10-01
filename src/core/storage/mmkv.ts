@@ -42,7 +42,11 @@ class ClientStorageManager implements StateStorage {
 
   removeItem(name: string): void {
     if (mmkvInstance) {
-      mmkvInstance.delete(name);
+      if (typeof mmkvInstance.remove === 'function') {
+        mmkvInstance.remove(name);
+      } else if (typeof mmkvInstance.delete === 'function') {
+        mmkvInstance.delete(name);
+      }
       return;
     }
     this.memoryCache.delete(name);

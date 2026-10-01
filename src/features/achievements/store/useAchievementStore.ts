@@ -28,6 +28,7 @@ interface AchievementState {
   checkAchievements: (context: AchievementContext) => void;
   getTotalPoints: () => number;
   getPlayerLevelInfo: () => ReturnType<typeof calculatePlayerLevel>;
+  resetAchievements: () => void;
 }
 
 export const useAchievementStore = create<AchievementState>()(
@@ -35,6 +36,10 @@ export const useAchievementStore = create<AchievementState>()(
     (set, get) => ({
       unlocked: {},
       queue: [],
+
+      resetAchievements: () => {
+        set({ unlocked: {}, queue: [] });
+      },
 
       unlock: (id: string) => {
         const { unlocked } = get();

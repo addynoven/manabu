@@ -274,11 +274,9 @@ export function calculatePlayerLevel(totalPoints: number) {
   const level = Math.floor(Math.sqrt(totalPoints / 100)) + 1;
   const currentLevelMinPoints = Math.pow(level - 1, 2) * 100;
   const nextLevelPoints = Math.pow(level, 2) * 100;
-  const progressRatio =
-    nextLevelPoints > currentLevelMinPoints
-      ? (totalPoints - currentLevelMinPoints) /
-        (nextLevelPoints - currentLevelMinPoints)
-      : 1;
+  const pointsInCurrentLevel = Math.max(0, totalPoints - currentLevelMinPoints);
+  const pointsNeededForNextLevel = Math.max(1, nextLevelPoints - currentLevelMinPoints);
+  const progressRatio = pointsInCurrentLevel / pointsNeededForNextLevel;
 
   const titles: Record<number, string> = {
     1: 'Novice • 見習い',
@@ -295,6 +293,8 @@ export function calculatePlayerLevel(totalPoints: number) {
     title,
     currentLevelMinPoints,
     nextLevelPoints,
+    pointsInCurrentLevel,
+    pointsNeededForNextLevel,
     progressPercent: Math.min(100, Math.max(0, Math.round(progressRatio * 100))),
   };
 }

@@ -1,7 +1,7 @@
 import { ALL_DOJO_UNITS } from '../../dojo/data/curatedUnits';
 import type { CharacterMastery } from '../../progress/models/progress.model';
 
-export type WordStrength = 'strong' | 'review' | 'weak';
+export type WordStrength = 'strong' | 'review' | 'weak' | 'new';
 
 export interface VocabWord {
   id: string;
@@ -20,6 +20,8 @@ export interface VocabWord {
   totalAttempts: number;
   incorrectCount: number;
   lastPracticedAt: string | null;
+  srsStage?: string;
+  nextReviewAt?: string | null;
   distractors: string[];
 }
 
@@ -86,18 +88,20 @@ export function getLearnedVocabWords(
   mastery: Record<string, CharacterMastery> = {},
   options?: { maxUnits?: number; unitFilter?: string; statusFilter?: 'all' | 'needs-practice' | 'strong' },
 ): VocabWord[] {
+  // If no lessons are completed, return empty array immediately
+  if (!completedLessonIds || completedLessonIds.size === 0) {
+    return [];
+  }
+
   const wordMap = new Map<string, VocabWord>();
   const allMeanings: string[] = [];
 
-  const maxUnits = options?.maxUnits ?? 5; // Default inspect first 5 active units or unlocked
+  const maxUnits = options?.maxUnits ?? 30;
 
   ALL_DOJO_UNITS.slice(0, maxUnits).forEach(unit => {
     unit.lessons.forEach(lesson => {
-      // Include if lesson is completed OR if user is in unit 1/2
-      const isCompleted = completedLessonIds.has(lesson.id);
-      const isEarlyUnit = unit.unitNumber <= 2;
-
-      if (!isCompleted && !isEarlyUnit && completedLessonIds.size > 0) {
+      // STRICT: ONLY include vocabulary from lessons that the user has completed!
+      if (!completedLessonIds.has(lesson.id)) {
         return;
       }
 
@@ -112,8 +116,10 @@ export function getLearnedVocabWords(
             const total = masteryRecord?.total ?? 0;
             const accuracy = masteryRecord?.accuracy ?? (total > 0 ? Math.round(((total - incorrect) / total) * 100) : 100);
 
-            let status: WordStrength = 'review';
-            if (incorrect > 0 && accuracy < 75) {
+            let status: WordStrength = 'new';
+            if (total === 0) {
+              status = 'new';
+            } else if (incorrect > 0 && accuracy < 75) {
               status = 'weak';
             } else if (total >= 2 && accuracy >= 80) {
               status = 'strong';
@@ -138,6 +144,8 @@ export function getLearnedVocabWords(
               totalAttempts: total,
               incorrectCount: incorrect,
               lastPracticedAt: masteryRecord?.lastPracticedAt ?? null,
+              srsStage: masteryRecord?.srsStage || 'apprentice-1',
+              nextReviewAt: masteryRecord?.nextReviewAt ?? null,
               distractors: [],
             });
 
@@ -156,8 +164,10 @@ export function getLearnedVocabWords(
             const total = masteryRecord?.total ?? 0;
             const accuracy = masteryRecord?.accuracy ?? (total > 0 ? Math.round(((total - incorrect) / total) * 100) : 100);
 
-            let status: WordStrength = 'review';
-            if (incorrect > 0 && accuracy < 75) {
+            let status: WordStrength = 'new';
+            if (total === 0) {
+              status = 'new';
+            } else if (incorrect > 0 && accuracy < 75) {
               status = 'weak';
             } else if (total >= 2 && accuracy >= 80) {
               status = 'strong';
@@ -184,6 +194,8 @@ export function getLearnedVocabWords(
               totalAttempts: total,
               incorrectCount: incorrect,
               lastPracticedAt: masteryRecord?.lastPracticedAt ?? null,
+              srsStage: masteryRecord?.srsStage || 'apprentice-1',
+              nextReviewAt: masteryRecord?.nextReviewAt ?? null,
               distractors: [],
             });
 

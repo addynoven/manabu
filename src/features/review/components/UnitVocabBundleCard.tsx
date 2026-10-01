@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
-import { ChevronDown, ChevronUp, Zap, CheckCircle2, AlertCircle } from 'lucide-react-native';
+import { ChevronDown, ChevronUp, Zap, CheckCircle2, AlertCircle, Clock } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
 import { radii, shadows, useAppTheme } from '../../../core/theme';
 import type { UnitVocabBundle, VocabWord } from '../services/vocabBank.service';
@@ -64,11 +64,18 @@ export const UnitVocabBundleCard = React.memo(function UnitVocabBundleCard({
                     {bundle.weakCount} need practice
                   </Text>
                 </View>
-              ) : (
+              ) : bundle.strongCount === bundle.totalCount && bundle.totalCount > 0 ? (
                 <View style={[styles.statPill, { backgroundColor: '#10B98115' }]}>
                   <CheckCircle2 size={11} color="#10B981" />
                   <Text style={[styles.statPillText, { color: '#10B981' }]}>
                     All strong
+                  </Text>
+                </View>
+              ) : (
+                <View style={[styles.statPill, { backgroundColor: '#3B82F615' }]}>
+                  <Clock size={11} color="#3B82F6" />
+                  <Text style={[styles.statPillText, { color: '#3B82F6' }]}>
+                    {bundle.totalCount - bundle.strongCount} learning
                   </Text>
                 </View>
               )}

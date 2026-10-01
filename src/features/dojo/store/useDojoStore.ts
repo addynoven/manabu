@@ -10,16 +10,18 @@ interface DojoState {
   completedLessons: Record<string, LessonProgress>;
   cooldownUntil: string | null; // ISO string
   passedRevisionGates: Record<string, boolean>;
+  passedDailyRevisions: Record<string, boolean>;
   activeLessonId: string;
   devUnlockAll: boolean; // Development toggle to unlock all lessons
 
   completeLesson: (lessonId: string, score: number) => void;
   passRevisionGate: (unitId: string) => void;
+  passDailyRevision: (dailyRevisionId: string) => void;
   clearCooldown: () => void;
   setDevUnlockAll: (enabled: boolean) => void;
   isLessonLocked: (lessonId: string) => {
     locked: boolean;
-    reason?: 'cooldown' | 'prerequisite' | 'revision_gate';
+    reason?: 'cooldown' | 'prerequisite' | 'revision_gate' | 'daily_revision';
     remainingSeconds?: number;
   };
   getCooldownRemaining: () => number; // in seconds
@@ -32,8 +34,9 @@ export const useDojoStore = create<DojoState>()(
       completedLessons: {},
       cooldownUntil: null,
       passedRevisionGates: {},
+      passedDailyRevisions: {},
       activeLessonId: 'u1_l1',
-      devUnlockAll: true, // Turn off lock for now as we are developing the whole 30-week course
+      devUnlockAll: false, // Enforce realistic 7-day pacing, cooldowns, and prerequisites
 
       setDevUnlockAll: (enabled: boolean) => {
         set({ devUnlockAll: enabled });
@@ -83,6 +86,16 @@ export const useDojoStore = create<DojoState>()(
         }));
       },
 
+      passDailyRevision: (dailyRevisionId: string) => {
+        set(state => ({
+          passedDailyRevisions: {
+            ...state.passedDailyRevisions,
+            [dailyRevisionId]: true,
+          },
+          cooldownUntil: null,
+        }));
+      },
+
       clearCooldown: () => {
         set({ cooldownUntil: null });
       },
@@ -123,7 +136,7 @@ export const useDojoStore = create<DojoState>()(
         if (targetUnitIndex === -1) return { locked: false };
         if (targetUnitIndex === 0 && targetLessonIndex === 0) return { locked: false };
 
-        const { completedLessons, passedRevisionGates, getCooldownRemaining } = get();
+        const { completedLessons, passedRevisionGates, passedDailyRevisions, getCooldownRemaining } = get();
 
         // 1. Check if previous lesson in same unit was completed
         if (targetLessonIndex > 0) {
@@ -135,10 +148,22 @@ export const useDojoStore = create<DojoState>()(
           }
 
           // Same-day lessons: unlock immediately, no cooldown!
-          // New-day lesson: 24h cooldown applies from completion of previous day
+          // New-day lesson: Requires passing the Daily Revision Warmup of past lessons first!
           const isNewDay = currentLesson.dayNumber !== prevLesson.dayNumber;
-          const cooldownSecs = getCooldownRemaining();
+          if (isNewDay) {
+            const revisionId = `${CURATED_DOJO_UNITS[targetUnitIndex].id}_day_${currentLesson.dayNumber}`;
+            const isDailyRevisionPassed = !!passedDailyRevisions[revisionId];
 
+            if (!isDailyRevisionPassed) {
+              const cooldownSecs = getCooldownRemaining();
+              if (cooldownSecs > 0 && !completedLessons[lessonId]) {
+                return { locked: true, reason: 'cooldown', remainingSeconds: cooldownSecs };
+              }
+              return { locked: true, reason: 'daily_revision' };
+            }
+          }
+
+          const cooldownSecs = getCooldownRemaining();
           if (isNewDay && cooldownSecs > 0 && !completedLessons[lessonId]) {
             return { locked: true, reason: 'cooldown', remainingSeconds: cooldownSecs };
           }
@@ -169,6 +194,7 @@ export const useDojoStore = create<DojoState>()(
           completedLessons: {},
           cooldownUntil: null,
           passedRevisionGates: {},
+          passedDailyRevisions: {},
           activeLessonId: 'u1_l1',
         });
       },

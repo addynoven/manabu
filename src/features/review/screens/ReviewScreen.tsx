@@ -14,11 +14,13 @@ import {
   RotateCcw,
   Search,
   CheckCircle2,
-  BookOpen,
   Layers,
   ChevronDown,
   ChevronUp,
+  Flame,
+  ArrowRight,
 } from 'lucide-react-native';
+import { router } from 'expo-router';
 import * as Haptics from 'expo-haptics';
 import { radii, shadows, useAppTheme } from '../../../core/theme';
 import { useProgressStore } from '../../progress/store/useProgressStore';
@@ -30,6 +32,7 @@ import {
   type VocabWord,
   type UnitVocabBundle,
 } from '../services/vocabBank.service';
+import { getStageGroup } from '../services/srsEngine';
 import { VocabPracticeModal } from '../components/VocabPracticeModal';
 import { UnitVocabBundleCard } from '../components/UnitVocabBundleCard';
 import { CompactWordCard } from '../components/CompactWordCard';
@@ -59,9 +62,62 @@ export function ReviewScreen() {
     return getLearnedVocabWords(completedLessonIds, mastery, { maxUnits: 30 });
   }, [completedLessonIds, mastery]);
 
-  // Weak / Needs practice words
+  // 5 WaniKani SRS stage counts strictly for learned words
+  const srsCounts = useMemo(() => {
+    let apprentice = 0;
+    let guru = 0;
+    let master = 0;
+    let enlightened = 0;
+    let burned = 0;
+
+    allWords.forEach(w => {
+      const record = mastery[w.japanese];
+      const stage = record?.srsStage || 'apprentice-1';
+      const group = getStageGroup(stage as any);
+      if (group === 'burned') burned++;
+      else if (group === 'enlightened') enlightened++;
+      else if (group === 'master') master++;
+      else if (group === 'guru') guru++;
+      else apprentice++;
+    });
+
+    return { apprentice, guru, master, enlightened, burned };
+  }, [allWords, mastery]);
+
+  const [nowTimestamp] = useState(() => Date.now());
+
+  // Words currently due for SRS review (timers expired or newly learned)
+  const dueWords = useMemo(() => {
+    return allWords.filter(w => {
+      const record = mastery[w.japanese];
+      if (!record || !record.nextReviewAt) return true; // Newly learned from lesson
+      if (record.srsStage === 'burned') return false; // Retired from daily queue
+      return new Date(record.nextReviewAt).getTime() <= nowTimestamp;
+    });
+  }, [allWords, mastery, nowTimestamp]);
+
+  // Burned words for optional Anki-style retention check
+  const burnedWords = useMemo(() => {
+    return allWords.filter(w => {
+      const record = mastery[w.japanese];
+      return record?.srsStage === 'burned';
+    });
+  }, [allWords, mastery]);
+
+  // Active mistakes / Needs practice words (excludes burned and mastered words)
   const weakWords = useMemo(() => {
-    return allWords.filter(w => w.status === 'weak' || w.status === 'review');
+    return allWords.filter(w => {
+      // Burned words are permanently mastered and cannot be active mistakes
+      if (w.srsStage === 'burned') return false;
+      // If word reached Guru, Master, or Enlightened, the past mistake is resolved
+      if (w.srsStage?.startsWith('guru') || w.srsStage === 'master' || w.srsStage === 'enlightened') {
+        return false;
+      }
+      // If strong with good accuracy, mistake is resolved
+      if (w.status === 'strong' && w.accuracy >= 80) return false;
+      // Active mistake if explicitly weak or has sub-80% accuracy in Apprentice
+      return w.status === 'weak' || (w.incorrectCount > 0 && w.accuracy < 80);
+    });
   }, [allWords]);
 
   // Extract available unit numbers dynamically
@@ -108,17 +164,19 @@ export function ReviewScreen() {
     await speakJapanese(text, { rate: 0.85 });
   }, []);
 
-  const handleStartPractice = (mode: 'due' | 'mistakes') => {
+  const handleStartPractice = (mode: 'due' | 'mistakes' | 'burned') => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
     if (mode === 'mistakes') {
-      const mistakes = allWords.filter(w => w.incorrectCount > 0);
-      const queue = mistakes.length > 0 ? mistakes : weakWords.slice(0, 10);
-      setPracticeWords(queue.length > 0 ? queue : allWords.slice(0, 10));
+      const queue = weakWords.length > 0 ? weakWords : allWords.slice(0, 10);
+      setPracticeWords(queue);
       setPracticeTitle('Review Mistakes');
+    } else if (mode === 'burned') {
+      setPracticeWords(burnedWords);
+      setPracticeTitle('Burned Retention Check');
     } else {
-      const due = weakWords.length > 0 ? weakWords.slice(0, 10) : allWords.slice(0, 10);
-      setPracticeWords(due);
-      setPracticeTitle('Practice Due Words');
+      const queue = dueWords.length > 0 ? dueWords : allWords.slice(0, 10);
+      setPracticeWords(queue);
+      setPracticeTitle(dueWords.length > 0 ? 'SRS Review Session' : 'Practice Learned Words');
     }
     setPracticeModalVisible(true);
   };
@@ -159,166 +217,282 @@ export function ReviewScreen() {
 
   const renderHeader = () => (
     <View style={styles.headerContent}>
-      {/* Top Action Smart Decks Banner */}
-      <View style={[styles.actionBanner, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-        <View style={styles.bannerRow}>
-          <View style={[styles.bannerIconBox, { backgroundColor: theme.primaryLight }]}>
-            <BookOpen size={24} color={theme.primary} />
-          </View>
-          <View style={styles.bannerText}>
-            <Text style={[styles.bannerTitle, { color: theme.textPrimary }]}>
-              {weakWords.length > 0
-                ? `${weakWords.length} words need revision`
-                : 'All learned words are strong!'}
-            </Text>
-            <Text style={[styles.bannerSub, { color: theme.textSecondary }]}>
-              Reinforce pronunciation and translations through active recall.
-            </Text>
-          </View>
-        </View>
-
-        <View style={styles.buttonRow}>
-          <Pressable
-            style={({ pressed }) => [
-              styles.primaryBtn,
-              { backgroundColor: theme.primary, transform: [{ scale: pressed ? 0.96 : 1 }] },
-            ]}
-            android_ripple={{ color: 'rgba(255, 255, 255, 0.2)' }}
-            onPress={() => handleStartPractice('due')}
-            accessibilityLabel="Practice due words"
-          >
-            <Zap size={16} color={theme.textOnPrimary} />
-            <Text style={[styles.primaryBtnText, { color: theme.textOnPrimary }]}>
-              Practice Due ({weakWords.length})
-            </Text>
-          </Pressable>
-
-          <Pressable
-            style={({ pressed }) => [
-              styles.secondaryBtn,
-              {
-                backgroundColor: theme.surfaceSubtle,
-                borderColor: 'rgba(255, 255, 255, 0.08)',
-                transform: [{ scale: pressed ? 0.96 : 1 }],
-              },
-            ]}
-            android_ripple={{ color: 'rgba(255, 255, 255, 0.08)' }}
-            onPress={() => handleStartPractice('mistakes')}
-            accessibilityLabel="Review mistakes"
-          >
-            <RotateCcw size={16} color={theme.textPrimary} />
-            <Text style={[styles.secondaryBtnText, { color: theme.textPrimary }]}>
-              Review Mistakes
-            </Text>
-          </Pressable>
-        </View>
-      </View>
-
-      {/* Search Bar */}
-      <View style={[styles.searchBox, { backgroundColor: theme.surface, borderColor: 'rgba(255, 255, 255, 0.08)' }]}>
-        <Search size={18} color={theme.textMuted} />
-        <TextInput
-          style={[styles.searchInput, { color: theme.textPrimary }]}
-          placeholder="Search words, readings, or English meanings..."
-          placeholderTextColor={theme.textMuted}
-          value={searchQuery}
-          onChangeText={setSearchQuery}
-          autoCorrect={false}
-        />
-        {searchQuery.length > 0 && (
-          <Pressable onPress={() => setSearchQuery('')} hitSlop={8}>
-            <Text style={[styles.clearSearch, { color: theme.textMuted }]}>Clear</Text>
-          </Pressable>
-        )}
-      </View>
-
-      {/* Filter Chips Scroll */}
-      {!isSearchActive && (
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.filtersScroll}
-        >
-          {[
-            { id: 'all', label: `All Decks (${allBundles.length})` },
-            { id: 'needs-practice', label: `Needs Review (${visibleBundles.filter(b => b.weakCount > 0).length})` },
-            ...availableUnits.map(u => ({ id: `unit_${u}`, label: `Unit ${u}` })),
-          ].map(f => {
-            const isSelected = activeFilter === f.id;
-            return (
-              <Pressable
-                key={f.id}
-                style={({ pressed }) => [
-                  styles.filterChip,
-                  {
-                    backgroundColor: isSelected ? theme.primary : theme.surface,
-                    borderColor: isSelected ? theme.primary : 'rgba(255, 255, 255, 0.08)',
-                    transform: [{ scale: pressed ? 0.95 : 1 }],
-                  },
-                ]}
-                android_ripple={{ color: 'rgba(255, 255, 255, 0.1)' }}
-                onPress={() => {
-                  setActiveFilter(f.id);
-                  if (f.id.startsWith('unit_')) {
-                    const uNum = parseInt(f.id.replace('unit_', ''), 10);
-                    setExpandedUnits(new Set([uNum]));
-                  }
-                }}
-                accessibilityLabel={f.label}
-              >
-                <Text
-                  style={[
-                    styles.filterChipText,
-                    {
-                      color: isSelected ? theme.textOnPrimary : theme.textSecondary,
-                      fontWeight: isSelected ? '700' : '500',
-                    },
-                  ]}
-                >
-                  {f.label}
-                </Text>
-              </Pressable>
-            );
-          })}
-        </ScrollView>
-      )}
-
-      {/* Section Title & Collapse/Expand All Toggle */}
-      <View style={styles.listHeaderRow}>
-        <View style={styles.headerLeftTitle}>
-          <Layers size={14} color={theme.textSecondary} />
-          <Text style={[styles.listHeaderTitle, { color: theme.textSecondary }]}>
-            {isSearchActive
-              ? `Search Results (${searchResults.length})`
-              : `Unit Decks (${visibleBundles.length})`}
+      {/* WaniKani 5-Stage SRS Dashboard */}
+      <View style={[styles.srsDashboard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+        <View style={styles.srsHeaderRow}>
+          <Text style={[styles.srsHeaderTitle, { color: theme.textSecondary }]}>
+            SRS RETENTION STAGES
+          </Text>
+          <Text style={[styles.srsHeaderTotal, { color: theme.textMuted }]}>
+            {allWords.length} learned words
           </Text>
         </View>
 
-        {!isSearchActive && visibleBundles.length > 1 && (
-          <Pressable
-            style={styles.expandAllBtn}
-            onPress={handleToggleAllUnits}
-            hitSlop={8}
-            accessibilityLabel={
-              expandedUnits.size === visibleBundles.length
-                ? 'Collapse all unit decks'
-                : 'Expand all unit decks'
-            }
-          >
-            {expandedUnits.size === visibleBundles.length ? (
-              <>
-                <ChevronUp size={14} color={theme.primary} />
-                <Text style={[styles.expandAllText, { color: theme.primary }]}>Collapse All</Text>
-              </>
-            ) : (
-              <>
-                <ChevronDown size={14} color={theme.primary} />
-                <Text style={[styles.expandAllText, { color: theme.primary }]}>Expand All</Text>
-              </>
-            )}
-          </Pressable>
-        )}
+        <View style={styles.srsStagesRow}>
+          {/* Apprentice */}
+          <View style={[styles.srsStageCol, { backgroundColor: '#EC489915', borderColor: '#EC489940' }]}>
+            <Text style={[styles.srsCount, { color: '#EC4899' }]}>{srsCounts.apprentice}</Text>
+            <Text style={[styles.srsLabel, { color: '#EC4899' }]} numberOfLines={1}>Apprentice</Text>
+          </View>
+
+          {/* Guru */}
+          <View style={[styles.srsStageCol, { backgroundColor: '#8B5CF615', borderColor: '#8B5CF640' }]}>
+            <Text style={[styles.srsCount, { color: '#8B5CF6' }]}>{srsCounts.guru}</Text>
+            <Text style={[styles.srsLabel, { color: '#8B5CF6' }]} numberOfLines={1}>Guru</Text>
+          </View>
+
+          {/* Master */}
+          <View style={[styles.srsStageCol, { backgroundColor: '#3B82F615', borderColor: '#3B82F640' }]}>
+            <Text style={[styles.srsCount, { color: '#3B82F6' }]}>{srsCounts.master}</Text>
+            <Text style={[styles.srsLabel, { color: '#3B82F6' }]} numberOfLines={1}>Master</Text>
+          </View>
+
+          {/* Enlightened */}
+          <View style={[styles.srsStageCol, { backgroundColor: '#06B6D415', borderColor: '#06B6D440' }]}>
+            <Text style={[styles.srsCount, { color: '#06B6D4' }]}>{srsCounts.enlightened}</Text>
+            <Text style={[styles.srsLabel, { color: '#06B6D4' }]} numberOfLines={1}>Enlightened</Text>
+          </View>
+
+          {/* Burned */}
+          <View style={[styles.srsStageCol, { backgroundColor: '#F59E0B15', borderColor: '#F59E0B40' }]}>
+            <Text style={[styles.srsCount, { color: '#F59E0B' }]}>{srsCounts.burned}</Text>
+            <Text style={[styles.srsLabel, { color: '#F59E0B' }]} numberOfLines={1}>Burned</Text>
+          </View>
+        </View>
       </View>
+
+      {/* Top Action Smart Decks Banner */}
+      {allWords.length === 0 ? (
+        <View style={[styles.emptyDojoBanner, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+          <Text style={{ fontSize: 32, marginBottom: 8 }}>⛩️</Text>
+          <Text style={[styles.emptyDojoTitle, { color: theme.textPrimary }]}>No Words in Review Queue</Text>
+          <Text style={[styles.emptyDojoSub, { color: theme.textSecondary }]}>
+            Complete Lesson 1 in the Dojo to add your first batch of vocabulary to the SRS review queue!
+          </Text>
+          <Pressable
+            style={({ pressed }) => [
+              styles.goToDojoBtn,
+              { backgroundColor: theme.primary, transform: [{ scale: pressed ? 0.96 : 1 }] },
+            ]}
+            android_ripple={{ color: 'rgba(255, 255, 255, 0.2)' }}
+            onPress={() => {
+              Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+              router.push('/(tabs)');
+            }}
+            accessibilityLabel="Go to Dojo"
+          >
+            <Text style={[styles.goToDojoBtnText, { color: theme.textOnPrimary }]}>
+              Go to Dojo (Start Lesson 1)
+            </Text>
+            <ArrowRight size={16} color={theme.textOnPrimary} />
+          </Pressable>
+        </View>
+      ) : (
+        <View style={[styles.actionBanner, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+          <View style={styles.bannerRow}>
+            <View style={[styles.bannerIconBox, { backgroundColor: dueWords.length > 0 ? theme.primaryLight : '#10B98115' }]}>
+              {dueWords.length > 0 ? (
+                <Zap size={22} color={theme.primary} />
+              ) : (
+                <CheckCircle2 size={22} color="#10B981" />
+              )}
+            </View>
+            <View style={styles.bannerText}>
+              <Text style={[styles.bannerTitle, { color: theme.textPrimary }]}>
+                {dueWords.length > 0
+                  ? `${dueWords.length} ${dueWords.length === 1 ? 'word' : 'words'} due for SRS review`
+                  : 'All caught up! 🎉'}
+              </Text>
+              <Text style={[styles.bannerSub, { color: theme.textSecondary }]}>
+                {dueWords.length > 0
+                  ? 'Review on schedule to advance stages and cement long-term memory.'
+                  : 'Come back when review timers expire, or drill your learned deck below.'}
+              </Text>
+            </View>
+          </View>
+
+          <View style={styles.actionButtonsContainer}>
+            <Pressable
+              style={({ pressed }) => [
+                styles.primaryBtn,
+                {
+                  backgroundColor: dueWords.length > 0 ? theme.primary : theme.surfaceSubtle,
+                  transform: [{ scale: pressed ? 0.96 : 1 }],
+                },
+              ]}
+              android_ripple={{ color: 'rgba(255, 255, 255, 0.2)' }}
+              onPress={() => handleStartPractice('due')}
+              accessibilityLabel="Start SRS Review"
+            >
+              <Zap size={16} color={dueWords.length > 0 ? theme.textOnPrimary : theme.textPrimary} />
+              <Text
+                style={[
+                  styles.primaryBtnText,
+                  { color: dueWords.length > 0 ? theme.textOnPrimary : theme.textPrimary },
+                ]}
+              >
+                {dueWords.length > 0 ? `Start Review (${dueWords.length})` : 'Drill All Learned'}
+              </Text>
+            </Pressable>
+
+            {(weakWords.length > 0 || burnedWords.length > 0) && (
+              <View style={styles.secondaryButtonRow}>
+                {weakWords.length > 0 && (
+                  <Pressable
+                    style={({ pressed }) => [
+                      styles.secondaryBtn,
+                      {
+                        backgroundColor: theme.surfaceSubtle,
+                        borderColor: 'rgba(255, 255, 255, 0.08)',
+                        transform: [{ scale: pressed ? 0.96 : 1 }],
+                      },
+                    ]}
+                    android_ripple={{ color: 'rgba(255, 255, 255, 0.08)' }}
+                    onPress={() => handleStartPractice('mistakes')}
+                    accessibilityLabel="Review mistakes"
+                  >
+                    <RotateCcw size={15} color={theme.textPrimary} />
+                    <Text style={[styles.secondaryBtnText, { color: theme.textPrimary }]}>
+                      Mistakes ({weakWords.length})
+                    </Text>
+                  </Pressable>
+                )}
+
+                {burnedWords.length > 0 && (
+                  <Pressable
+                    style={({ pressed }) => [
+                      styles.secondaryBtn,
+                      {
+                        backgroundColor: '#F59E0B15',
+                        borderColor: '#F59E0B40',
+                        transform: [{ scale: pressed ? 0.96 : 1 }],
+                      },
+                    ]}
+                    android_ripple={{ color: 'rgba(245, 158, 11, 0.2)' }}
+                    onPress={() => handleStartPractice('burned')}
+                    accessibilityLabel="Burned Retention Check"
+                  >
+                    <Flame size={15} color="#F59E0B" />
+                    <Text style={[styles.secondaryBtnText, { color: '#F59E0B' }]}>
+                      Burned Check ({burnedWords.length})
+                    </Text>
+                  </Pressable>
+                )}
+              </View>
+            )}
+          </View>
+        </View>
+      )}
+
+      {allWords.length > 0 && (
+        <>
+          {/* Search Bar */}
+          <View style={[styles.searchBox, { backgroundColor: theme.surface, borderColor: 'rgba(255, 255, 255, 0.08)' }]}>
+            <Search size={18} color={theme.textMuted} />
+            <TextInput
+              style={[styles.searchInput, { color: theme.textPrimary }]}
+              placeholder="Search words, readings, or English meanings..."
+              placeholderTextColor={theme.textMuted}
+              value={searchQuery}
+              onChangeText={setSearchQuery}
+              autoCorrect={false}
+            />
+            {searchQuery.length > 0 && (
+              <Pressable onPress={() => setSearchQuery('')} hitSlop={8}>
+                <Text style={[styles.clearSearch, { color: theme.textMuted }]}>Clear</Text>
+              </Pressable>
+            )}
+          </View>
+
+          {/* Filter Chips Scroll */}
+          {!isSearchActive && (
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.filtersScroll}
+            >
+              {[
+                { id: 'all', label: `All Decks (${allBundles.length})` },
+                { id: 'needs-practice', label: `Needs Review (${visibleBundles.filter(b => b.weakCount > 0).length})` },
+                ...availableUnits.map(u => ({ id: `unit_${u}`, label: `Unit ${u}` })),
+              ].map(f => {
+                const isSelected = activeFilter === f.id;
+                return (
+                  <Pressable
+                    key={f.id}
+                    style={({ pressed }) => [
+                      styles.filterChip,
+                      {
+                        backgroundColor: isSelected ? theme.primary : theme.surface,
+                        borderColor: isSelected ? theme.primary : 'rgba(255, 255, 255, 0.08)',
+                        transform: [{ scale: pressed ? 0.95 : 1 }],
+                      },
+                    ]}
+                    android_ripple={{ color: 'rgba(255, 255, 255, 0.1)' }}
+                    onPress={() => {
+                      setActiveFilter(f.id);
+                      if (f.id.startsWith('unit_')) {
+                        const uNum = parseInt(f.id.replace('unit_', ''), 10);
+                        setExpandedUnits(new Set([uNum]));
+                      }
+                    }}
+                    accessibilityLabel={f.label}
+                  >
+                    <Text
+                      style={[
+                        styles.filterChipText,
+                        {
+                          color: isSelected ? theme.textOnPrimary : theme.textSecondary,
+                          fontWeight: isSelected ? '700' : '500',
+                        },
+                      ]}
+                    >
+                      {f.label}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </ScrollView>
+          )}
+
+          {/* Section Title & Collapse/Expand All Toggle */}
+          <View style={styles.listHeaderRow}>
+            <View style={styles.headerLeftTitle}>
+              <Layers size={14} color={theme.textSecondary} />
+              <Text style={[styles.listHeaderTitle, { color: theme.textSecondary }]}>
+                {isSearchActive
+                  ? `Search Results (${searchResults.length})`
+                  : `Unit Decks (${visibleBundles.length})`}
+              </Text>
+            </View>
+
+            {!isSearchActive && visibleBundles.length > 1 && (
+              <Pressable
+                style={styles.expandAllBtn}
+                onPress={handleToggleAllUnits}
+                hitSlop={8}
+                accessibilityLabel={
+                  expandedUnits.size === visibleBundles.length
+                    ? 'Collapse all unit decks'
+                    : 'Expand all unit decks'
+                }
+              >
+                {expandedUnits.size === visibleBundles.length ? (
+                  <>
+                    <ChevronUp size={14} color={theme.primary} />
+                    <Text style={[styles.expandAllText, { color: theme.primary }]}>Collapse All</Text>
+                  </>
+                ) : (
+                  <>
+                    <ChevronDown size={14} color={theme.primary} />
+                    <Text style={[styles.expandAllText, { color: theme.primary }]}>Expand All</Text>
+                  </>
+                )}
+              </Pressable>
+            )}
+          </View>
+        </>
+      )}
     </View>
   );
 
@@ -327,9 +501,9 @@ export function ReviewScreen() {
       {/* Header */}
       <View style={[styles.header, { backgroundColor: theme.surface, borderBottomColor: theme.border }]}>
         <View>
-          <Text style={[styles.title, { color: theme.textPrimary }]}>復習 • Vocabulary Decks</Text>
+          <Text style={[styles.title, { color: theme.textPrimary }]}>復習 • SRS Review & Decks</Text>
           <Text style={[styles.subtitle, { color: theme.textSecondary }]}>
-            Master words by unit bundles & SRS practice
+            Spaced Repetition System • 5 Stages
           </Text>
         </View>
 
@@ -384,13 +558,15 @@ export function ReviewScreen() {
           )}
           ListHeaderComponent={renderHeader}
           ListEmptyComponent={
-            <View style={[styles.emptyBox, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-              <CheckCircle2 size={36} color={theme.success} />
-              <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>No decks match filter</Text>
-              <Text style={[styles.emptySub, { color: theme.textSecondary }]}>
-                All words in this filter are reviewed or mastered.
-              </Text>
-            </View>
+            allWords.length === 0 ? null : (
+              <View style={[styles.emptyBox, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+                <CheckCircle2 size={36} color={theme.success} />
+                <Text style={[styles.emptyTitle, { color: theme.textPrimary }]}>No decks match filter</Text>
+                <Text style={[styles.emptySub, { color: theme.textSecondary }]}>
+                  All words in this filter are reviewed or mastered.
+                </Text>
+              </View>
+            )
           }
           contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + 32 }]}
           showsVerticalScrollIndicator={false}
@@ -451,6 +627,86 @@ const styles = StyleSheet.create({
     gap: 14,
     marginBottom: 10,
   },
+  srsDashboard: {
+    borderRadius: radii.xl,
+    borderWidth: 1,
+    padding: 14,
+    ...shadows.sm,
+  },
+  srsHeaderRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  srsHeaderTitle: {
+    fontSize: 11,
+    fontWeight: '800',
+    letterSpacing: 0.6,
+  },
+  srsHeaderTotal: {
+    fontSize: 11,
+    fontWeight: '600',
+  },
+  srsStagesRow: {
+    flexDirection: 'row',
+    gap: 6,
+  },
+  srsStageCol: {
+    flex: 1,
+    paddingVertical: 10,
+    paddingHorizontal: 4,
+    borderRadius: radii.md,
+    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  srsCount: {
+    fontSize: 16,
+    fontWeight: '900',
+  },
+  srsLabel: {
+    fontSize: 8,
+    fontWeight: '800',
+    marginTop: 2,
+    textTransform: 'uppercase',
+    letterSpacing: -0.2,
+  },
+  emptyDojoBanner: {
+    borderRadius: radii.xl,
+    borderWidth: 1,
+    padding: 24,
+    alignItems: 'center',
+    justifyContent: 'center',
+    ...shadows.sm,
+  },
+  emptyDojoTitle: {
+    fontSize: 16,
+    fontWeight: '800',
+    textAlign: 'center',
+    marginBottom: 6,
+  },
+  emptyDojoSub: {
+    fontSize: 12,
+    fontWeight: '500',
+    textAlign: 'center',
+    lineHeight: 18,
+    maxWidth: 280,
+  },
+  goToDojoBtn: {
+    marginTop: 16,
+    height: 44,
+    paddingHorizontal: 20,
+    borderRadius: radii.full,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+  },
+  goToDojoBtnText: {
+    fontSize: 13,
+    fontWeight: '800',
+  },
   actionBanner: {
     borderRadius: radii.xl,
     borderWidth: 1,
@@ -483,12 +739,15 @@ const styles = StyleSheet.create({
     marginTop: 2,
     lineHeight: 16,
   },
-  buttonRow: {
+  actionButtonsContainer: {
+    gap: 8,
+  },
+  secondaryButtonRow: {
     flexDirection: 'row',
-    gap: 10,
+    gap: 8,
   },
   primaryBtn: {
-    flex: 1,
+    width: '100%',
     height: 44,
     borderRadius: radii.lg,
     flexDirection: 'row',
@@ -502,7 +761,7 @@ const styles = StyleSheet.create({
   },
   secondaryBtn: {
     flex: 1,
-    height: 44,
+    height: 42,
     borderRadius: radii.lg,
     borderWidth: 1,
     flexDirection: 'row',

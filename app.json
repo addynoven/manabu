@@ -12,6 +12,7 @@
     },
     "android": {
       "package": "com.manabu.app",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "backgroundColor": "#12131C",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -34,7 +35,8 @@
           "imageWidth": 160
         }
       ],
-      "expo-secure-store"
+      "expo-secure-store",
+      "@react-native-google-signin/google-signin"
     ],
     "experiments": {
       "typedRoutes": true,
