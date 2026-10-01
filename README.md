@@ -22,9 +22,13 @@
 
 ## 📸 Screenshots
 
+<div align="center">
+
 | Dojo | Review | Arcade | Profile |
 |:----:|:------:|:------:|:-------:|
 | <img src=".github/screenshots/dojo.png" width="180" /> | <img src=".github/screenshots/review.png" width="180" /> | <img src=".github/screenshots/arcade.png" width="180" /> | <img src=".github/screenshots/profile.png" width="180" /> |
+
+</div>
 
 ---
 
