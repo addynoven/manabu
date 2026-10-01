@@ -30,7 +30,14 @@ export function DojoFloatingBadges() {
       <View style={styles.badgeContainer}>
         {/* あ Kana Badge */}
         <Pressable
-          style={[styles.badgeItem, { backgroundColor: '#F97316' }]}
+          style={({ pressed }) => [
+            styles.badgeItem,
+            {
+              backgroundColor: '#F97316',
+              transform: [{ scale: pressed ? 0.94 : 1 }],
+            },
+          ]}
+          android_ripple={{ color: 'rgba(255, 255, 255, 0.2)', borderless: false }}
           onPress={handleOpenKana}
           accessibilityLabel="Open Kana Charts"
         >
@@ -42,7 +49,14 @@ export function DojoFloatingBadges() {
 
         {/* 漢 Kanji Badge */}
         <Pressable
-          style={[styles.badgeItem, { backgroundColor: '#6366F1' }]}
+          style={({ pressed }) => [
+            styles.badgeItem,
+            {
+              backgroundColor: '#6366F1',
+              transform: [{ scale: pressed ? 0.94 : 1 }],
+            },
+          ]}
+          android_ripple={{ color: 'rgba(255, 255, 255, 0.2)', borderless: false }}
           onPress={handleOpenKanji}
           accessibilityLabel="Open Kanji Explorer"
         >

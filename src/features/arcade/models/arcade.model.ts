@@ -50,6 +50,38 @@ export interface DailyChallengeResult {
   date: string;
 }
 
+export type CatchMode = 'kanji' | 'kana' | 'vocab' | 'mixed';
+export type CatchDifficulty = 'chill' | 'normal' | 'turbo';
+
+export interface CatchTarget {
+  id: string;
+  glyph: string;
+  promptPrimary: string;
+  promptSecondary?: string;
+  category: 'kanji' | 'kana' | 'vocab';
+  hint?: string;
+}
+
+export interface CatchItemCandidate {
+  id: string;
+  glyph: string;
+  romaji: string;
+  meaning: string;
+  category: 'kanji' | 'kana' | 'vocab';
+}
+
+export interface CatchFallingItem {
+  id: string;
+  glyph: string;
+  romaji: string;
+  meaning?: string;
+  column: number;
+  yPosition: number;
+  speed: number;
+  isTarget: boolean;
+  isBonus?: boolean;
+}
+
 export interface ArcadeStats {
   wordlePlayed: number;
   wordleWins: number;
@@ -58,6 +90,7 @@ export interface ArcadeStats {
   memoryBestMoves: Record<MemoryDeckMode, number>;
   rainHighScore: number;
   snakeHighScore: number;
+  catchHighScore: number;
   survivalHighScores: Record<string, number>;
   zenMinutesTotal: number;
   zenCyclesTotal: number;

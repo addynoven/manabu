@@ -82,8 +82,14 @@ export function DojoTimelineRail({ lessons, onSelectLesson }: DojoTimelineRailPr
                     isCompleted
                       ? styles.nodeCompleted
                       : isActive
-                      ? [styles.nodeActive, { borderColor: '#10B981' }]
-                      : [styles.nodeLocked, { backgroundColor: theme.surfaceSubtle, borderColor: theme.borderSubtle }],
+                      ? styles.nodeActive
+                      : [
+                          styles.nodeLocked,
+                          {
+                            backgroundColor: theme.surfaceSubtle,
+                            borderColor: 'rgba(255, 255, 255, 0.08)',
+                          },
+                        ],
                   ]}
                 >
                   {isCompleted ? (
@@ -92,7 +98,7 @@ export function DojoTimelineRail({ lessons, onSelectLesson }: DojoTimelineRailPr
                     <Text
                       style={[
                         styles.nodeTextDay,
-                        { color: isActive ? '#10B981' : theme.textSecondary },
+                        { color: isActive ? '#34D399' : theme.textSecondary },
                       ]}
                     >
                       {formatDay(lesson.dayNumber)}
@@ -101,10 +107,10 @@ export function DojoTimelineRail({ lessons, onSelectLesson }: DojoTimelineRailPr
                     <Text
                       style={[
                         styles.nodeTextMuted,
-                        { color: isActive ? '#10B981' : theme.textSecondary },
+                        { color: isActive ? '#34D399' : theme.textSecondary },
                       ]}
                     >
-                      {isActive ? 'A' : `D0${lesson.dayNumber}`}
+                      {isActive ? '▶' : `D0${lesson.dayNumber}`}
                     </Text>
                   )}
                 </View>
@@ -138,14 +144,14 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.sm,
   },
   sectionTitle: {
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: '800',
     letterSpacing: -0.2,
   },
   itemRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 10,
   },
   railColumn: {
     width: 52,
@@ -159,31 +165,35 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     bottom: '50%',
-    width: 3,
+    width: 4,
+    borderRadius: 2,
     zIndex: 1,
   },
   verticalLineBottom: {
     position: 'absolute',
     top: '50%',
     bottom: 0,
-    width: 3,
+    width: 4,
+    borderRadius: 2,
     zIndex: 1,
   },
   nodeCircle: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
+    width: 46,
+    height: 46,
+    borderRadius: 23,
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 2,
     borderWidth: 2,
+    elevation: 3,
   },
   nodeCompleted: {
     backgroundColor: '#10B981',
     borderColor: '#059669',
   },
   nodeActive: {
-    backgroundColor: '#ECFDF5',
+    backgroundColor: '#064E3B',
+    borderColor: '#10B981',
     borderWidth: 2.5,
   },
   nodeLocked: {
@@ -201,7 +211,7 @@ const styles = StyleSheet.create({
     lineHeight: 11,
   },
   nodeTextMuted: {
-    fontSize: 11,
+    fontSize: 12,
     fontWeight: '800',
   },
 });

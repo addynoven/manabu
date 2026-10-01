@@ -23,6 +23,28 @@ npx expo install --fix      # fix incompatible package versions
 
 Run lint and typecheck before declaring any task done.
 
+## Screen Inspection & Verification (1-Step Direct Streams)
+
+Never use multi-step temporary file dumps (`adb shell ... /sdcard/dump.xml` + `adb pull`). Always use direct streams:
+
+```bash
+# 1. Full interactive elements + center coordinates for tapping:
+python3 scripts/read_screen.py
+
+# 2. Search element text/desc & get instant center tap (x, y):
+python3 scripts/read_screen.py --search "Stroke Tracing"
+
+# 3. Compact visible text values:
+adb exec-out uiautomator dump /dev/tty | grep -o 'text="[^"]*"'
+# or:
+python3 scripts/read_screen.py --text
+
+# 4. Instant visual screenshot stream (no adb pull needed):
+adb exec-out screencap -p > /tmp/screen.png
+# or:
+python3 scripts/read_screen.py --shot /tmp/screen.png
+```
+
 ## Navigation & Routing
 
 - Use **Expo Router** for all navigation. Routes live in `src/app/` — every file there is a screen, `_layout.tsx` files define navigators. Keep non-route code (components, hooks, utils) outside `src/app/`.

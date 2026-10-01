@@ -6,3 +6,4 @@ export * from './lib/kanaChecker';
 export * from './lib/kanaGenerator';
 export * from './screens/KanaDojoScreen';
 export * from './screens/KanaChartScreen';
+export * from './components/KanaCard';

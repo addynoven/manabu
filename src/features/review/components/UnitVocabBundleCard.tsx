@@ -112,9 +112,13 @@ export const UnitVocabBundleCard = React.memo(function UnitVocabBundleCard({
       </Pressable>
 
       {/* Action Buttons Row */}
-      <View style={[styles.actionRow, { borderTopColor: theme.border }]}>
+      <View style={[styles.actionRow, { borderTopColor: 'rgba(255, 255, 255, 0.06)' }]}>
         <Pressable
-          style={[styles.practiceBtn, { backgroundColor: theme.primary }]}
+          style={({ pressed }) => [
+            styles.practiceBtn,
+            { backgroundColor: theme.primary, transform: [{ scale: pressed ? 0.97 : 1 }] },
+          ]}
+          android_ripple={{ color: 'rgba(255, 255, 255, 0.15)' }}
           onPress={handlePractice}
           accessibilityLabel={`Practice Unit ${bundle.unitNumber} Deck`}
         >
@@ -125,7 +129,11 @@ export const UnitVocabBundleCard = React.memo(function UnitVocabBundleCard({
         </Pressable>
 
         <Pressable
-          style={[styles.toggleBtn, { backgroundColor: theme.surfaceSubtle }]}
+          style={({ pressed }) => [
+            styles.toggleBtn,
+            { backgroundColor: theme.surfaceSubtle, transform: [{ scale: pressed ? 0.97 : 1 }] },
+          ]}
+          android_ripple={{ color: 'rgba(255, 255, 255, 0.08)' }}
           onPress={handleToggle}
           accessibilityLabel={isExpanded ? 'Hide Words' : 'Show Words'}
         >

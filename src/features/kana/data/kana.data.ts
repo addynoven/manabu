@@ -279,6 +279,88 @@ export const RAW_KANA_DATA: Omit<KanaGroup, 'id'>[] = [
     kana: ['パ', 'ピ', 'プ', 'ペ', 'ポ'],
     romaji: ['pa', 'pi', 'pu', 'pe', 'po'],
   },
+
+  // Katakana Combos (Yōon)
+  {
+    groupName: 'キャ, キュ, キョ (Kya, Kyu, Kyo)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['キャ', 'キュ', 'キョ'],
+    romaji: ['kya', 'kyu', 'kyo'],
+  },
+  {
+    groupName: 'シャ, シュ, ショ (Sha, Shu, Sho)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['シャ', 'シュ', 'ショ'],
+    romaji: ['sha', 'shu', 'sho'],
+    altRomaji: [['sya'], ['syu'], ['syo']],
+  },
+  {
+    groupName: 'チャ, チュ, チョ (Cha, Chu, Cho)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['チャ', 'チュ', 'チョ'],
+    romaji: ['cha', 'chu', 'cho'],
+    altRomaji: [['tya'], ['tyu'], ['tyo']],
+  },
+  {
+    groupName: 'ニャ, ニュ, ニョ (Nya, Nyu, Nyo)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['ニャ', 'ニュ', 'ニョ'],
+    romaji: ['nya', 'nyu', 'nyo'],
+  },
+  {
+    groupName: 'ヒャ, ヒュ, ヒョ (Hya, Hyu, Hyo)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['ヒャ', 'ヒュ', 'ヒョ'],
+    romaji: ['hya', 'hyu', 'hyo'],
+  },
+  {
+    groupName: 'ミャ, ミュ, ミョ (Mya, Myu, Myo)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['ミャ', 'ミュ', 'ミョ'],
+    romaji: ['mya', 'myu', 'myo'],
+  },
+  {
+    groupName: 'リャ, リュ, リョ (Rya, Ryu, Ryo)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['リャ', 'リュ', 'リョ'],
+    romaji: ['rya', 'ryu', 'ryo'],
+  },
+  {
+    groupName: 'ギャ, ギュ, ギョ (Gya, Gyu, Gyo)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['ギャ', 'ギュ', 'ギョ'],
+    romaji: ['gya', 'gyu', 'gyo'],
+  },
+  {
+    groupName: 'ジャ, ジュ, ジョ (Ja, Ju, Jo)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['ジャ', 'ジュ', 'ジョ'],
+    romaji: ['ja', 'ju', 'jo'],
+    altRomaji: [['zya', 'jya'], ['zyu', 'jyu'], ['zyo', 'jyo']],
+  },
+  {
+    groupName: 'ビャ, ビュ, ビョ (Bya, Byu, Byo)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['ビャ', 'ビュ', 'ビョ'],
+    romaji: ['bya', 'byu', 'byo'],
+  },
+  {
+    groupName: 'ピャ, ピュ, ピョ (Pya, Pyu, Pyo)',
+    category: 'combos',
+    script: 'katakana',
+    kana: ['ピャ', 'ピュ', 'ピョ'],
+    romaji: ['pya', 'pyu', 'pyo'],
+  },
 ];
 
 export const KANA_GROUPS: KanaGroup[] = RAW_KANA_DATA.map((item, index) => ({

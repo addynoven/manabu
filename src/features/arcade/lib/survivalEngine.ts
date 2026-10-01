@@ -1,6 +1,18 @@
 import { RAW_KANA_DATA } from '../../kana/data/kana.data';
 import kanjiN5 from '../../kanji/data/N5.json';
+import kanjiN4 from '../../kanji/data/N4.json';
+import kanjiN3 from '../../kanji/data/N3.json';
+import kanjiN2 from '../../kanji/data/N2.json';
+import kanjiN1 from '../../kanji/data/N1.json';
 import vocabN5 from '../../vocabulary/data/n5.json';
+
+const ALL_SURVIVAL_KANJI = [
+  ...kanjiN5,
+  ...kanjiN4,
+  ...kanjiN3,
+  ...kanjiN2,
+  ...kanjiN1,
+];
 
 export type SurvivalMode = 'kana' | 'kanji' | 'vocab' | 'hell';
 
@@ -106,10 +118,12 @@ export function generateKanaSurvivalQuestion(): SurvivalQuestion {
 }
 
 export function generateKanjiSurvivalQuestion(): SurvivalQuestion {
-  const item = kanjiN5[Math.floor(Math.random() * kanjiN5.length)];
+  const item = ALL_SURVIVAL_KANJI[Math.floor(Math.random() * ALL_SURVIVAL_KANJI.length)];
   const correctMeaning = item.meanings[0];
 
-  const otherKanji = kanjiN5.filter(k => k.id !== item.id);
+  const otherKanji = ALL_SURVIVAL_KANJI.filter(
+    k => k.id !== item.id && k.kanjiChar !== item.kanjiChar && k.meanings[0] !== correctMeaning,
+  );
   const distractors = shuffleArray(otherKanji)
     .slice(0, 3)
     .map(k => k.meanings[0]);
@@ -123,7 +137,7 @@ export function generateKanjiSurvivalQuestion(): SurvivalQuestion {
     promptSub: 'Kanji Meaning',
     correctAnswer: correctMeaning,
     options,
-    ttsTarget: item.kunyomi[0]?.split(' ')[0] || item.kanjiChar,
+    ttsTarget: item.kunyomi[0]?.split(' ')[0] || item.onyomi[0]?.split(' ')[0] || item.kanjiChar,
   };
 }
 

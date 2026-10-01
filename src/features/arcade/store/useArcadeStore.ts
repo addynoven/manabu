@@ -8,6 +8,7 @@ interface ArcadeState extends ArcadeStats {
   recordMemoryScore: (deck: MemoryDeckMode, moves: number) => void;
   recordRainScore: (score: number) => { isNewHigh: boolean };
   recordSnakeScore: (score: number) => { isNewHigh: boolean };
+  recordCatchScore: (score: number) => { isNewHigh: boolean };
   recordSurvivalScore: (mode: string, score: number) => { isNewHigh: boolean };
   addZenSession: (seconds: number, cycles: number) => void;
   recordDailyChallenge: (score: number, timeSeconds: number, accuracy: number) => void;
@@ -26,6 +27,7 @@ const initialStats: ArcadeStats = {
   },
   rainHighScore: 0,
   snakeHighScore: 0,
+  catchHighScore: 0,
   survivalHighScores: {
     kana: 0,
     kanji: 0,
@@ -89,6 +91,15 @@ export const useArcadeStore = create<ArcadeState>()(
         const isNewHigh = score > state.snakeHighScore;
         if (isNewHigh) {
           set({ snakeHighScore: score });
+        }
+        return { isNewHigh };
+      },
+
+      recordCatchScore: (score: number) => {
+        const state = get();
+        const isNewHigh = score > state.catchHighScore;
+        if (isNewHigh) {
+          set({ catchHighScore: score });
         }
         return { isNewHigh };
       },

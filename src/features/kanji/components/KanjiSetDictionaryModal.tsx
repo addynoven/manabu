@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Modal,
   ScrollView,
@@ -8,12 +8,13 @@ import {
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { useAppTheme } from '../../../core/theme';
-import { radii, shadows, spacing } from '../../../core/theme';
+import { PenTool } from 'lucide-react-native';
+import { radii, shadows, spacing, useAppTheme } from '../../../core/theme';
 import { AudioButton } from '../../../core/audio/components/AudioButton';
 import { CopyableJapaneseText } from '../../../core/components/CopyableJapaneseText';
 import type { KanjiEntry } from '../models/kanji.model';
 import { extractKana } from '../lib/kanjiGenerator';
+import { KanaTraceView } from '../../kana/components/KanaTraceView';
 
 interface KanjiSetDictionaryModalProps {
   visible: boolean;
@@ -30,6 +31,7 @@ export function KanjiSetDictionaryModal({
 }: KanjiSetDictionaryModalProps) {
   const insets = useSafeAreaInsets();
   const { colors: theme } = useAppTheme();
+  const [tracingChar, setTracingChar] = useState<string | null>(null);
 
   return (
     <Modal
@@ -55,7 +57,7 @@ export function KanjiSetDictionaryModal({
               {setName} Dictionary
             </Text>
             <Text style={[styles.subtitle, { color: theme.textSecondary }]}>
-              {kanjiList.length} Characters • Tap 🔊 for pronunciation
+              {kanjiList.length} Characters • Tap 🔊 audio or ✍️ stroke trace
             </Text>
           </View>
           <Pressable
@@ -111,11 +113,25 @@ export function KanjiSetDictionaryModal({
                     </Text>
                   </CopyableJapaneseText>
                 </View>
-                <AudioButton
-                  text={extractKana(item.onyomi[0] || item.kunyomi[0] || '') || item.kanjiChar}
-                  size="sm"
-                  variant="icon"
-                />
+                <View style={styles.actionButtonsRow}>
+                  <AudioButton
+                    text={extractKana(item.onyomi[0] || item.kunyomi[0] || '') || item.kanjiChar}
+                    size="sm"
+                    variant="icon"
+                  />
+                  <Pressable
+                    onPress={() => setTracingChar(item.kanjiChar)}
+                    style={({ pressed }) => [
+                      styles.traceBtn,
+                      { backgroundColor: theme.surfaceSubtle, borderColor: theme.border },
+                      pressed && styles.traceBtnPressed,
+                    ]}
+                    accessibilityLabel={`Practice stroke order for ${item.kanjiChar}`}
+                    hitSlop={6}
+                  >
+                    <PenTool size={14} color={theme.primary} />
+                  </Pressable>
+                </View>
               </View>
 
               {/* Details Section */}
@@ -179,12 +195,44 @@ export function KanjiSetDictionaryModal({
             </View>
           ))}
         </ScrollView>
+
+        {tracingChar && (
+          <Modal
+            visible={!!tracingChar}
+            animationType="slide"
+            presentationStyle="fullScreen"
+            onRequestClose={() => setTracingChar(null)}
+          >
+            <KanaTraceView
+              initialChar={tracingChar}
+              onClose={() => setTracingChar(null)}
+            />
+          </Modal>
+        )}
       </View>
     </Modal>
   );
 }
 
 const styles = StyleSheet.create({
+  actionButtonsRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    marginTop: 4,
+  },
+  traceBtn: {
+    width: 32,
+    height: 32,
+    borderRadius: radii.full,
+    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  traceBtnPressed: {
+    opacity: 0.7,
+    transform: [{ scale: 0.94 }],
+  },
   container: {
     flex: 1,
   },

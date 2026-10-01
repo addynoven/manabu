@@ -12,12 +12,13 @@ import {
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AudioButton } from "../../../core/audio/components/AudioButton";
 import { speakJapanese } from "../../../core/audio/tts";
-import { X } from "lucide-react-native";
+import { PenTool, X } from "lucide-react-native";
 import { radii, shadows, spacing, useAppTheme } from "../../../core/theme";
 import { BlitzModal } from "../../challenges/components/BlitzModal";
 import { GauntletModal } from "../../challenges/components/GauntletModal";
 import type { ChallengeQuestion } from "../../challenges/models/challenge.model";
 import { KanaChoiceGrid } from "../../kana/components/KanaChoiceGrid";
+import { KanaTraceView } from "../../kana/components/KanaTraceView";
 import { useProgressStore } from "../../progress/store/useProgressStore";
 import { useSetProgressStore } from "../../progress/store/useSetProgressStore";
 import { useCrazyModeTrigger } from "../../settings/hooks/useCrazyModeTrigger";
@@ -29,7 +30,6 @@ import { generateKanjiQuestion } from "../lib/kanjiGenerator";
 import type {
   KanjiEntry,
   KanjiLevel,
-  KanjiQuestion,
 } from "../models/kanji.model";
 import { useKanjiStore } from "../store/useKanjiStore";
 
@@ -57,6 +57,9 @@ export function KanjiDojoScreen({ onClose }: KanjiDojoScreenProps = {}) {
     list: KanjiEntry[];
   } | null>(null);
 
+  // Stroke Order Tracing Modal
+  const [tracingChar, setTracingChar] = useState<string | null>(null);
+
   // Set completion celebration
   const [showCompletionModal, setShowCompletionModal] = useState(false);
   const [sessionResults, setSessionResults] = useState<{
@@ -64,7 +67,7 @@ export function KanjiDojoScreen({ onClose }: KanjiDojoScreenProps = {}) {
     total: number;
   }>({ correct: 0, total: 0 });
 
-  const [practiceWeakOnly, setPracticeWeakOnly] = useState(false);
+  const [practiceWeakOnly] = useState(false);
   const mastery = useProgressStore((state) => state.mastery);
   const weakKanji = useMemo(() => {
     return Object.values(mastery).filter(
@@ -102,9 +105,7 @@ export function KanjiDojoScreen({ onClose }: KanjiDojoScreenProps = {}) {
     return kanjiList;
   }, [kanjiList, activeSetIndex, kanjiSets, practiceWeakOnly, weakKanjiKeys]);
 
-  const [currentQuestion, setCurrentQuestion] = useState<KanjiQuestion | null>(
-    null,
-  );
+  const [questionKey, setQuestionKey] = useState(0);
   const [stats, setStats] = useState({ correct: 0, total: 0, streak: 0 });
   const [setDrillCount, setSetDrillCount] = useState(0);
   const [showBlitz, setShowBlitz] = useState(false);
@@ -125,19 +126,16 @@ export function KanjiDojoScreen({ onClose }: KanjiDojoScreenProps = {}) {
       };
     }, [activePool]);
 
-  const nextQuestion = useCallback(() => {
-    if (!activePool || activePool.length === 0) {
-      setCurrentQuestion(null);
-      return;
-    }
-    triggerCrazyMode();
-    const q = generateKanjiQuestion(activePool);
-    setCurrentQuestion(q);
-  }, [activePool, triggerCrazyMode]);
+  const currentQuestion = useMemo(() => {
+    void questionKey;
+    if (!activePool || activePool.length === 0) return null;
+    return generateKanjiQuestion(activePool);
+  }, [activePool, questionKey]);
 
-  useEffect(() => {
-    nextQuestion();
-  }, [nextQuestion]);
+  const nextQuestion = useCallback(() => {
+    triggerCrazyMode();
+    setQuestionKey((k) => k + 1);
+  }, [triggerCrazyMode]);
 
   const { ttsAutoPlay, ttsEnabled, ttsRate } = useSettingsStore();
 
@@ -145,7 +143,7 @@ export function KanjiDojoScreen({ onClose }: KanjiDojoScreenProps = {}) {
     if (ttsAutoPlay && ttsEnabled && currentQuestion?.ttsText) {
       speakJapanese(currentQuestion.ttsText, { rate: ttsRate });
     }
-  }, [currentQuestion?.id, ttsAutoPlay, ttsEnabled, ttsRate]);
+  }, [currentQuestion?.id, currentQuestion?.ttsText, ttsAutoPlay, ttsEnabled, ttsRate]);
 
   const handleAnswer = (selected: string, isCorrect: boolean) => {
     if (currentQuestion) {
@@ -563,11 +561,24 @@ export function KanjiDojoScreen({ onClose }: KanjiDojoScreenProps = {}) {
                       ? `SET ${activeSetIndex + 1}`
                       : `${selectedLevel} KANJI`}
                   </Text>
-                  <AudioButton
-                    text={currentQuestion.ttsText}
-                    size="sm"
-                    variant="solid"
-                  />
+                  <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+                    <TouchableOpacity
+                      onPress={() => setTracingChar(currentQuestion.prompt)}
+                      style={[
+                        styles.traceActionBtn,
+                        { backgroundColor: theme.primary },
+                      ]}
+                      accessibilityLabel={`Trace stroke order for ${currentQuestion.prompt}`}
+                    >
+                      <PenTool size={13} color="#FFFFFF" />
+                      <Text style={styles.traceActionBtnText}>Trace</Text>
+                    </TouchableOpacity>
+                    <AudioButton
+                      text={currentQuestion.ttsText}
+                      size="sm"
+                      variant="solid"
+                    />
+                  </View>
                 </View>
                 <Text style={[styles.kanjiChar, { color: theme.textPrimary }]}>
                   {currentQuestion.prompt}
@@ -695,6 +706,21 @@ export function KanjiDojoScreen({ onClose }: KanjiDojoScreenProps = {}) {
         category="kanji"
         questionGenerator={generateChallengeQuestion}
       />
+
+      {/* Full-Screen Stroke Tracing Modal */}
+      <Modal
+        visible={!!tracingChar}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={() => setTracingChar(null)}
+      >
+        {tracingChar && (
+          <KanaTraceView
+            initialChar={tracingChar}
+            onClose={() => setTracingChar(null)}
+          />
+        )}
+      </Modal>
     </View>
   );
 }
@@ -907,6 +933,20 @@ const styles = StyleSheet.create({
   completionBtnPrimaryText: {
     color: "#FFFFFF",
     fontSize: 13,
+    fontWeight: "700",
+  },
+  traceActionBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 5,
+    borderRadius: radii.md,
+    ...shadows.sm,
+  },
+  traceActionBtnText: {
+    color: "#FFFFFF",
+    fontSize: 11,
     fontWeight: "700",
   },
 });

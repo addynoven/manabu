@@ -4,6 +4,7 @@ import {
   KANJI_DUEL_BOTS,
   calculateDuelDamage,
   generateDuelMatch,
+  generateDynamicDuelQuestion,
 } from '../lib/kanjiDuelEngine';
 
 describe('kanjiDuelEngine', () => {
@@ -52,6 +53,24 @@ describe('kanjiDuelEngine', () => {
       expect(match).toHaveLength(KANJI_DUEL_BANK.length);
       const uniqueIds = new Set(match.map((q) => q.id));
       expect(uniqueIds.size).toBe(KANJI_DUEL_BANK.length);
+    });
+
+    it('returns expanded questions pool when includeDynamic is true', () => {
+      const match = generateDuelMatch(true);
+      expect(match.length).toBeGreaterThan(KANJI_DUEL_BANK.length);
+    });
+  });
+
+  describe('generateDynamicDuelQuestion', () => {
+    it('creates a valid question from full 2,495 Kanji dictionary', () => {
+      const q = generateDynamicDuelQuestion();
+      expect(q.id).toBeDefined();
+      expect(q.kanjiChar).toBeTruthy();
+      expect(q.options).toHaveLength(4);
+      expect(q.correctIndex).toBeGreaterThanOrEqual(0);
+      expect(q.correctIndex).toBeLessThan(4);
+      expect(q.options[q.correctIndex]).toBeTruthy();
+      expect(q.explanation).toBeTruthy();
     });
   });
 

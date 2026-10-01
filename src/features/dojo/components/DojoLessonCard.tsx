@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
 import { Lock, Clock, Check, HelpCircle, AlertCircle, Key, Trophy } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
-import { radii, shadows, useAppTheme } from '../../../core/theme';
+import { radii, useAppTheme } from '../../../core/theme';
 import type { DojoLesson } from '../models/dojo.model';
 import { useDojoStore } from '../store/useDojoStore';
 import { useCooldownTimer } from '../hooks/useCooldownTimer';
@@ -78,20 +78,31 @@ export function DojoLessonCard({ lesson, isActive, onPress }: DojoLessonCardProp
   return (
     <Pressable
       onPress={handlePress}
+      android_ripple={{
+        color: 'rgba(255, 255, 255, 0.08)',
+        foreground: true,
+      }}
       style={({ pressed }) => [
         styles.card,
         {
-          backgroundColor: theme.surface,
+          backgroundColor: isActive ? theme.surface : isLocked ? theme.surfaceSubtle : theme.surface,
           borderColor: isActive
-            ? '#10B981'
+            ? 'rgba(16, 185, 129, 0.35)'
             : isCompleted
-            ? theme.border
-            : isLocked
-            ? theme.borderSubtle
-            : theme.border,
-          borderWidth: isActive ? 2 : 1,
-          opacity: isLocked && !isCooldown ? 0.65 : 1,
-          transform: [{ scale: pressed && !isLocked ? 0.98 : 1 }],
+            ? 'rgba(255, 255, 255, 0.08)'
+            : 'rgba(255, 255, 255, 0.05)',
+          borderWidth: 1,
+          borderBottomWidth: pressed && !isLocked ? 1 : isActive ? 3 : 2,
+          borderBottomColor: isActive
+            ? '#059669'
+            : isCompleted
+            ? 'rgba(0, 0, 0, 0.4)'
+            : 'transparent',
+          opacity: isLocked && !isCooldown ? 0.6 : 1,
+          transform: [
+            { translateY: pressed && !isLocked ? 2 : 0 },
+            { scale: pressed && !isLocked ? 0.985 : 1 },
+          ],
         },
       ]}
       accessibilityRole="button"
@@ -103,11 +114,16 @@ export function DojoLessonCard({ lesson, isActive, onPress }: DojoLessonCardProp
       {/* Main Content */}
       <View style={styles.textContainer}>
         <View style={styles.categoryRow}>
-          <Text style={[styles.categoryTag, { color: theme.textSecondary }]}>
+          <Text
+            style={[
+              styles.categoryTag,
+              { color: isActive ? '#10B981' : theme.textSecondary },
+            ]}
+          >
             {lesson.category}
           </Text>
 
-          {/* Right badge: Key / Lock / Cooldown / Checkmark */}
+          {/* Right badge: Key / Lock / Cooldown / Checkmark / Ready */}
           {lesson.category === 'Unit Test' && isLocked && (
             <View style={styles.keyBadge}>
               <Key size={11} color="#0D9488" />
@@ -119,6 +135,13 @@ export function DojoLessonCard({ lesson, isActive, onPress }: DojoLessonCardProp
             <View style={[styles.statusBadge, { backgroundColor: '#DEF7EC' }]}>
               <Check size={12} color="#0E9F6E" />
               <Text style={[styles.statusText, { color: '#0E9F6E' }]}>Done</Text>
+            </View>
+          )}
+
+          {isActive && (
+            <View style={[styles.statusBadge, { backgroundColor: 'rgba(16, 185, 129, 0.15)' }]}>
+              <View style={styles.activeDot} />
+              <Text style={[styles.statusText, { color: '#10B981' }]}>Ready</Text>
             </View>
           )}
 
@@ -156,11 +179,12 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 12,
+    paddingVertical: 13,
     paddingHorizontal: 14,
     borderRadius: radii.xl,
     gap: 12,
-    ...shadows.sm,
+    elevation: 2,
+    overflow: 'hidden',
   },
   avatarCircle: {
     width: 48,
@@ -182,29 +206,37 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: 2,
+    marginBottom: 3,
   },
   categoryTag: {
     fontSize: 11,
-    fontWeight: '700',
-    letterSpacing: 0.5,
+    fontWeight: '800',
+    letterSpacing: 0.6,
     textTransform: 'uppercase',
   },
   title: {
     fontSize: 15,
     fontWeight: '800',
     marginBottom: 2,
+    letterSpacing: -0.1,
   },
   titleJp: {
     fontSize: 12,
     fontWeight: '600',
   },
+  activeDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: '#10B981',
+    marginRight: 2,
+  },
   statusBadge: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 3,
-    paddingHorizontal: 6,
-    paddingVertical: 2,
+    paddingHorizontal: 7,
+    paddingVertical: 3,
     borderRadius: radii.full,
   },
   statusText: {

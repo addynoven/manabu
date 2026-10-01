@@ -85,7 +85,7 @@ export function KanjiDuelView({ onClose }: KanjiDuelViewProps) {
       clearAllTimers();
 
       const activeBot = KANJI_DUEL_BOTS[diff];
-      const matchQuestions = generateDuelMatch();
+      const matchQuestions = generateDuelMatch(true);
 
       setQuestions(matchQuestions);
       setCurrentIndex(0);
@@ -234,10 +234,15 @@ export function KanjiDuelView({ onClose }: KanjiDuelViewProps) {
     curBotHp: number
   ) => {
     const nextIdx = index + 1;
+    let nextQueue = queue;
+    if (nextIdx >= queue.length) {
+      nextQueue = [...queue, ...generateDuelMatch(true)];
+      setQuestions(nextQueue);
+    }
     setCurrentIndex(nextIdx);
 
     nextRoundTimerRef.current = setTimeout(() => {
-      startRound(nextIdx, queue, diff, curPlayerHp, curBotHp);
+      startRound(nextIdx, nextQueue, diff, curPlayerHp, curBotHp);
     }, 1400);
   };
 

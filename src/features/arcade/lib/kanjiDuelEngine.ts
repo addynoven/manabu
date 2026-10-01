@@ -1,3 +1,28 @@
+import kanjiN5 from '../../kanji/data/N5.json';
+import kanjiN4 from '../../kanji/data/N4.json';
+import kanjiN3 from '../../kanji/data/N3.json';
+import kanjiN2 from '../../kanji/data/N2.json';
+import kanjiN1 from '../../kanji/data/N1.json';
+import { extractKana } from '../../kanji/lib/kanjiGenerator';
+export interface DuelKanjiItem {
+  id: number;
+  kanjiChar: string;
+  onyomi: string[];
+  kunyomi: string[];
+  meanings: string[];
+  level?: string;
+  strokeCount?: number;
+  strokes?: number;
+}
+
+export const ALL_DUEL_KANJI: DuelKanjiItem[] = [
+  ...kanjiN5,
+  ...kanjiN4,
+  ...kanjiN3,
+  ...kanjiN2,
+  ...kanjiN1,
+] as unknown as DuelKanjiItem[];
+
 export type KanjiDuelQuestionType =
   | 'onyomi'
   | 'kunyomi'
@@ -234,8 +259,135 @@ export function calculateDuelDamage(reactionMs: number): {
 }
 
 /**
- * Generates a randomized queue of questions for a duel.
+ * Generates a dynamic duel question from any Kanji in the JLPT N5–N1 dictionary.
  */
-export function generateDuelMatch(): KanjiDuelQuestion[] {
-  return [...KANJI_DUEL_BANK].sort(() => Math.random() - 0.5);
+export function generateDynamicDuelQuestion(pool: DuelKanjiItem[] = ALL_DUEL_KANJI): KanjiDuelQuestion {
+  const target = pool[Math.floor(Math.random() * pool.length)];
+  const strokeVal = target.strokeCount || target.strokes;
+  const questionTypes: ('meaning' | 'onyomi' | 'kunyomi' | 'stroke_count')[] = ['meaning'];
+  if (target.onyomi && target.onyomi.length > 0) questionTypes.push('onyomi');
+  if (target.kunyomi && target.kunyomi.length > 0) questionTypes.push('kunyomi');
+  if (strokeVal) questionTypes.push('stroke_count');
+
+  const chosenType = questionTypes[Math.floor(Math.random() * questionTypes.length)];
+
+  if (chosenType === 'meaning') {
+    const correct = target.meanings[0];
+    const distractors: string[] = [];
+    while (distractors.length < 3) {
+      const cand = pool[Math.floor(Math.random() * pool.length)]?.meanings[0];
+      if (cand && cand !== correct && !distractors.includes(cand)) {
+        distractors.push(cand);
+      }
+    }
+    const options = [correct, ...distractors].sort(() => Math.random() - 0.5);
+    return {
+      id: `duel_dyn_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+      type: 'meaning',
+      kanjiChar: target.kanjiChar,
+      questionTitle: `Which meaning belongs to ${target.kanjiChar}?`,
+      questionSubtitle: `JLPT ${target.level || 'Kanji'}`,
+      ttsAudio: extractKana(target.onyomi[0] || target.kunyomi[0] || '') || target.kanjiChar,
+      options,
+      correctIndex: options.indexOf(correct),
+      explanation: `${target.kanjiChar} means ${target.meanings.join(', ')}.`,
+    };
+  }
+
+  if (chosenType === 'onyomi') {
+    const rawCorrect = target.onyomi[0];
+    const correct = rawCorrect;
+    const distractors: string[] = [];
+    while (distractors.length < 3) {
+      const cand = pool[Math.floor(Math.random() * pool.length)]?.onyomi?.[0];
+      if (cand && cand !== correct && !distractors.includes(cand)) {
+        distractors.push(cand);
+      }
+    }
+    const fallbackOnyomi = ['スイ (sui)', 'カ (ka)', 'モク (moku)', 'キン (kin)'];
+    while (distractors.length < 3) {
+      const fb = fallbackOnyomi[distractors.length];
+      if (!distractors.includes(fb) && fb !== correct) distractors.push(fb);
+    }
+    const options = [correct, ...distractors.slice(0, 3)].sort(() => Math.random() - 0.5);
+    return {
+      id: `duel_dyn_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+      type: 'onyomi',
+      kanjiChar: target.kanjiChar,
+      questionTitle: `What is the ONYOMI (音読み) of ${target.kanjiChar}?`,
+      questionSubtitle: `Meaning: ${target.meanings[0]}`,
+      ttsAudio: extractKana(rawCorrect) || target.kanjiChar,
+      options,
+      correctIndex: options.indexOf(correct),
+      explanation: `${target.kanjiChar} Onyomi: ${target.onyomi.join(', ')}.`,
+    };
+  }
+
+  if (chosenType === 'kunyomi') {
+    const rawCorrect = target.kunyomi[0];
+    const correct = rawCorrect;
+    const distractors: string[] = [];
+    while (distractors.length < 3) {
+      const cand = pool[Math.floor(Math.random() * pool.length)]?.kunyomi?.[0];
+      if (cand && cand !== correct && !distractors.includes(cand)) {
+        distractors.push(cand);
+      }
+    }
+    const fallbackKunyomi = ['みず (mizu)', 'やま (yama)', 'かわ (kawa)', 'ひと (hito)'];
+    while (distractors.length < 3) {
+      const fb = fallbackKunyomi[distractors.length];
+      if (!distractors.includes(fb) && fb !== correct) distractors.push(fb);
+    }
+    const options = [correct, ...distractors.slice(0, 3)].sort(() => Math.random() - 0.5);
+    return {
+      id: `duel_dyn_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+      type: 'kunyomi',
+      kanjiChar: target.kanjiChar,
+      questionTitle: `What is the KUNYOMI (訓読み) of ${target.kanjiChar}?`,
+      questionSubtitle: `Meaning: ${target.meanings[0]}`,
+      ttsAudio: extractKana(rawCorrect) || target.kanjiChar,
+      options,
+      correctIndex: options.indexOf(correct),
+      explanation: `${target.kanjiChar} Kunyomi: ${target.kunyomi.join(', ')}.`,
+    };
+  }
+
+  // stroke_count
+  const count = strokeVal || 5;
+  const correct = `${count} strokes`;
+  const distCountSet = new Set<number>();
+  for (const delta of [-2, -1, 1, 2, 3]) {
+    const c = count + delta;
+    if (c > 0 && c !== count) distCountSet.add(c);
+  }
+  const distractors = Array.from(distCountSet).slice(0, 3).map((n) => `${n} strokes`);
+  const options = [correct, ...distractors].sort(() => Math.random() - 0.5);
+  return {
+    id: `duel_dyn_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+    type: 'stroke_count',
+    kanjiChar: target.kanjiChar,
+    questionTitle: `How many STROKES in ${target.kanjiChar}?`,
+    questionSubtitle: `${target.meanings[0]}`,
+    ttsAudio: target.kanjiChar,
+    options,
+    correctIndex: options.indexOf(correct),
+    explanation: `${target.kanjiChar} consists of ${count} strokes.`,
+  };
+}
+
+/**
+ * Generates a randomized queue of questions for a duel.
+ * Returns curated questions with option to append dynamic questions from all JLPT Kanji.
+ */
+export function generateDuelMatch(includeDynamic = false): KanjiDuelQuestion[] {
+  const shuffled = [...KANJI_DUEL_BANK].sort(() => Math.random() - 0.5);
+  if (!includeDynamic) {
+    return shuffled;
+  }
+  const dynamicCount = 8;
+  const dynamicQuestions: KanjiDuelQuestion[] = [];
+  for (let i = 0; i < dynamicCount; i++) {
+    dynamicQuestions.push(generateDynamicDuelQuestion());
+  }
+  return [...shuffled, ...dynamicQuestions].sort(() => Math.random() - 0.5);
 }

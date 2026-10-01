@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+  Modal,
   ScrollView,
   StyleSheet,
   Text,
@@ -8,10 +9,12 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
-import { X } from 'lucide-react-native';
-import { radii, spacing, typography, useAppTheme } from '../../../core/theme';
+import { PenTool, Volume2, X } from 'lucide-react-native';
+import { radii, shadows, spacing, useAppTheme } from '../../../core/theme';
+import { speakJapanese } from '../../../core/audio/tts';
 import { useKanaGroupsQuery } from '../hooks/useKanaQuery';
 import { KanaCard } from '../components/KanaCard';
+import { KanaTraceView } from '../components/KanaTraceView';
 import type { KanaCharacter } from '../models/kana.model';
 import { useProgressStore } from '../../progress/store/useProgressStore';
 
@@ -25,6 +28,7 @@ export function KanaChartScreen({ onClose }: KanaChartScreenProps = {}) {
   const { data: groups } = useKanaGroupsQuery();
   const [activeScript, setActiveScript] = useState<'hiragana' | 'katakana'>('hiragana');
   const [selectedChar, setSelectedChar] = useState<KanaCharacter | null>(null);
+  const [traceChar, setTraceChar] = useState<string | null>(null);
   const masteryMap = useProgressStore(state => state.mastery);
 
   const filteredGroups = (groups ?? []).filter(g => g.script === activeScript);
@@ -32,6 +36,11 @@ export function KanaChartScreen({ onClose }: KanaChartScreenProps = {}) {
   const handleCardPress = (char: KanaCharacter) => {
     Haptics.selectionAsync().catch(() => {});
     setSelectedChar(char);
+  };
+
+  const handleOpenTrace = (char: string) => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+    setTraceChar(char);
   };
 
   return (
@@ -44,6 +53,7 @@ export function KanaChartScreen({ onClose }: KanaChartScreenProps = {}) {
         },
       ]}
     >
+      {/* Header */}
       <View style={styles.header}>
         <View style={styles.headerTopRow}>
           <Text style={[styles.title, { color: theme.textPrimary }]}>Kana Charts</Text>
@@ -58,9 +68,14 @@ export function KanaChartScreen({ onClose }: KanaChartScreenProps = {}) {
             </Pressable>
           )}
         </View>
+
+        {/* Two Tabs: Left = Hiragana, Right = Katakana */}
         <View style={[styles.toggleRow, { backgroundColor: theme.surfaceSubtle }]}>
           <Pressable
-            onPress={() => setActiveScript('hiragana')}
+            onPress={() => {
+              setActiveScript('hiragana');
+              setSelectedChar(null);
+            }}
             style={[
               styles.toggleTab,
               activeScript === 'hiragana' && [styles.toggleTabActive, { backgroundColor: theme.surface }],
@@ -76,8 +91,12 @@ export function KanaChartScreen({ onClose }: KanaChartScreenProps = {}) {
               Hiragana
             </Text>
           </Pressable>
+
           <Pressable
-            onPress={() => setActiveScript('katakana')}
+            onPress={() => {
+              setActiveScript('katakana');
+              setSelectedChar(null);
+            }}
             style={[
               styles.toggleTab,
               activeScript === 'katakana' && [styles.toggleTabActive, { backgroundColor: theme.surface }],
@@ -96,7 +115,7 @@ export function KanaChartScreen({ onClose }: KanaChartScreenProps = {}) {
         </View>
       </View>
 
-      {/* Selected Inspector Detail */}
+      {/* Selected Inspector Detail with Stroke Tracing & Audio */}
       {selectedChar && (
         <View
           style={[
@@ -107,28 +126,59 @@ export function KanaChartScreen({ onClose }: KanaChartScreenProps = {}) {
             },
           ]}
         >
-          <Text style={[styles.inspectorKana, { color: theme.primary }]}>{selectedChar.kana}</Text>
+          {/* Large Glyph */}
+          <Text style={[styles.inspectorKana, { color: theme.primary }]}>
+            {selectedChar.kana}
+          </Text>
+
+          {/* Details */}
           <View style={styles.inspectorInfo}>
             <Text style={[styles.inspectorRomaji, { color: theme.textPrimary }]}>
-              Romaji: <Text style={{ fontWeight: '700' }}>{selectedChar.romaji}</Text>
+              Romaji: <Text style={{ fontWeight: '800' }}>{selectedChar.romaji}</Text>
             </Text>
             {selectedChar.altRomaji.length > 0 && (
               <Text style={[styles.inspectorAlt, { color: theme.textSecondary }]}>
                 Alt: {selectedChar.altRomaji.join(', ')}
               </Text>
             )}
-            <Text style={[styles.inspectorGroup, { color: theme.textMuted }]}>{selectedChar.group}</Text>
+            <Text style={[styles.inspectorGroup, { color: theme.textMuted }]} numberOfLines={1}>
+              {selectedChar.group}
+            </Text>
           </View>
+
+          {/* Action Buttons: Listen & Stroke Trace */}
+          <View style={styles.inspectorActions}>
+            <Pressable
+              onPress={() => speakJapanese(selectedChar.kana)}
+              style={[styles.audioActionBtn, { backgroundColor: theme.surfaceSubtle }]}
+              accessibilityLabel="Listen pronunciation"
+            >
+              <Volume2 size={16} color={theme.primary} />
+            </Pressable>
+
+            <Pressable
+              onPress={() => handleOpenTrace(selectedChar.kana)}
+              style={[styles.traceActionBtn, { backgroundColor: theme.primary }]}
+              accessibilityLabel={`Trace stroke order for ${selectedChar.kana}`}
+            >
+              <PenTool size={14} color="#FFFFFF" />
+              <Text style={styles.traceActionText}>Trace</Text>
+            </Pressable>
+          </View>
+
+          {/* Close Inspector */}
           <Pressable
             onPress={() => setSelectedChar(null)}
             hitSlop={10}
-            style={styles.closeBtn}
+            style={styles.closeInspectorBtn}
+            accessibilityLabel="Close selection inspector"
           >
-            <Text style={[styles.closeBtnText, { color: theme.textSecondary }]}>✕</Text>
+            <X size={16} color={theme.textMuted} />
           </Pressable>
         </View>
       )}
 
+      {/* Kana Grid for Active Script */}
       <ScrollView
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
@@ -163,6 +213,7 @@ export function KanaChartScreen({ onClose }: KanaChartScreenProps = {}) {
                         character={characterObj}
                         masteryLevel={mastery}
                         onPress={() => handleCardPress(characterObj)}
+                        onTrace={() => handleOpenTrace(char)}
                       />
                     );
                   }),
@@ -172,6 +223,21 @@ export function KanaChartScreen({ onClose }: KanaChartScreenProps = {}) {
           );
         })}
       </ScrollView>
+
+      {/* Full-Screen Stroke Tracing Modal */}
+      <Modal
+        visible={!!traceChar}
+        animationType="slide"
+        presentationStyle="fullScreen"
+        onRequestClose={() => setTraceChar(null)}
+      >
+        {traceChar && (
+          <KanaTraceView
+            initialChar={traceChar}
+            onClose={() => setTraceChar(null)}
+          />
+        )}
+      </Modal>
     </View>
   );
 }
@@ -215,19 +281,23 @@ const styles = StyleSheet.create({
     marginHorizontal: spacing.base,
     marginBottom: spacing.sm,
     padding: spacing.md,
-    borderRadius: radii.lg,
+    borderRadius: radii.xl,
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
+    position: 'relative',
+    ...shadows.sm,
   },
   inspectorKana: {
-    fontSize: 40,
-    fontWeight: '700',
+    fontSize: 38,
+    fontWeight: '800',
     marginRight: spacing.md,
+    lineHeight: 44,
   },
   inspectorInfo: {
     flex: 1,
     gap: 2,
+    justifyContent: 'center',
   },
   inspectorRomaji: {
     fontSize: 15,
@@ -238,11 +308,39 @@ const styles = StyleSheet.create({
   inspectorGroup: {
     fontSize: 11,
   },
-  closeBtn: {
+  inspectorActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginRight: spacing.sm,
+  },
+  audioActionBtn: {
+    width: 36,
+    height: 36,
+    borderRadius: radii.full,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  traceActionBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: radii.md,
+    ...shadows.sm,
+  },
+  traceActionText: {
+    color: '#FFFFFF',
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  closeInspectorBtn: {
     padding: spacing.xs,
   },
-  closeBtnText: {
-    fontSize: 16,
+  closeBtn: {
+    padding: spacing.xs,
+    borderRadius: radii.full,
   },
   scrollContent: {
     paddingHorizontal: spacing.base,

@@ -11,6 +11,7 @@ interface KanaCardProps {
   character: KanaCharacter;
   masteryLevel?: MasteryLevel | null;
   onPress?: () => void;
+  onTrace?: () => void;
   showRomaji?: boolean;
 }
 
@@ -18,6 +19,7 @@ export function KanaCard({
   character,
   masteryLevel,
   onPress,
+  onTrace,
   showRomaji,
 }: KanaCardProps) {
   const { colors } = useAppTheme();
@@ -48,6 +50,7 @@ export function KanaCard({
   return (
     <Pressable
       onPress={handlePress}
+      onLongPress={onTrace}
       style={[
         styles.card,
         {

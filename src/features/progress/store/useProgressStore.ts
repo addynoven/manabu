@@ -26,6 +26,9 @@ interface ProgressState extends UserStats {
     isCorrect: boolean,
     category: 'kana' | 'kanji' | 'vocab',
   ) => void;
+  setDisplayName: (name: string) => void;
+  setAvatarEmoji: (emoji: string) => void;
+  setDailyGoalXp: (goal: number) => void;
   getCharacterMastery: (characterKey: string) => CharacterMastery | null;
   getDueReviewItems: (
     category?: 'kana' | 'kanji' | 'vocab',
@@ -82,14 +85,24 @@ export const useProgressStore = create<ProgressState>()(
       totalQuestionsAnswered: 0,
       totalCorrect: 0,
       totalXp: 0,
+      todayXp: 0,
+      todayDate: null,
+      dailyGoalXp: 50,
+      displayName: 'Manabu Student',
+      avatarEmoji: '🥋',
+      joinedDate: '2026-09-28',
       kanaPracticedCount: 0,
       kanjiPracticedCount: 0,
       vocabPracticedCount: 0,
       mastery: {},
 
+      setDisplayName: name => set({ displayName: name }),
+      setAvatarEmoji: emoji => set({ avatarEmoji: emoji }),
+      setDailyGoalXp: goal => set({ dailyGoalXp: goal }),
+
       recordAnswer: (characterKey, isCorrect, category) => {
         const today = new Date().toISOString().slice(0, 10);
-        const { lastActiveDate, currentStreak, bestStreak, mastery } = get();
+        const { lastActiveDate, currentStreak, bestStreak, mastery, todayDate, todayXp } = get();
 
         let nextStreak = currentStreak;
         if (!lastActiveDate) {
@@ -153,10 +166,14 @@ export const useProgressStore = create<ProgressState>()(
           },
         };
 
+        const nextTodayXp = (todayDate === today ? (todayXp || 0) : 0) + xpGained;
+
         set(state => ({
           currentStreak: nextStreak,
           bestStreak: Math.max(nextStreak, bestStreak),
           lastActiveDate: today,
+          todayXp: nextTodayXp,
+          todayDate: today,
           totalQuestionsAnswered: state.totalQuestionsAnswered + 1,
           totalCorrect: isCorrect ? state.totalCorrect + 1 : state.totalCorrect,
           totalXp: state.totalXp + xpGained,
@@ -193,7 +210,7 @@ export const useProgressStore = create<ProgressState>()(
 
       recordSrsReview: (characterKey, isCorrect, category) => {
         const today = new Date().toISOString().slice(0, 10);
-        const { lastActiveDate, currentStreak, bestStreak, mastery } = get();
+        const { lastActiveDate, currentStreak, bestStreak, mastery, todayDate, todayXp } = get();
 
         let nextStreak = currentStreak;
         if (!lastActiveDate) {
@@ -255,10 +272,14 @@ export const useProgressStore = create<ProgressState>()(
           },
         };
 
+        const nextTodayXp = (todayDate === today ? (todayXp || 0) : 0) + xpGained;
+
         set(state => ({
           currentStreak: nextStreak,
           bestStreak: Math.max(nextStreak, bestStreak),
           lastActiveDate: today,
+          todayXp: nextTodayXp,
+          todayDate: today,
           totalQuestionsAnswered: state.totalQuestionsAnswered + 1,
           totalCorrect: isCorrect ? state.totalCorrect + 1 : state.totalCorrect,
           totalXp: state.totalXp + xpGained,
@@ -423,6 +444,12 @@ export const useProgressStore = create<ProgressState>()(
             totalQuestionsAnswered: state.totalQuestionsAnswered,
             totalCorrect: state.totalCorrect,
             totalXp: state.totalXp,
+            todayXp: state.todayXp,
+            todayDate: state.todayDate,
+            dailyGoalXp: state.dailyGoalXp,
+            displayName: state.displayName,
+            avatarEmoji: state.avatarEmoji,
+            joinedDate: state.joinedDate,
             kanaPracticedCount: state.kanaPracticedCount,
             kanjiPracticedCount: state.kanjiPracticedCount,
             vocabPracticedCount: state.vocabPracticedCount,
@@ -451,6 +478,12 @@ export const useProgressStore = create<ProgressState>()(
             totalQuestionsAnswered: stats.totalQuestionsAnswered,
             totalCorrect: stats.totalCorrect,
             totalXp: stats.totalXp,
+            todayXp: stats.todayXp,
+            todayDate: stats.todayDate,
+            dailyGoalXp: stats.dailyGoalXp,
+            displayName: stats.displayName,
+            avatarEmoji: stats.avatarEmoji,
+            joinedDate: stats.joinedDate,
             kanaPracticedCount: stats.kanaPracticedCount,
             kanjiPracticedCount: stats.kanjiPracticedCount,
             vocabPracticedCount: stats.vocabPracticedCount,
@@ -474,6 +507,8 @@ export const useProgressStore = create<ProgressState>()(
           totalQuestionsAnswered: 0,
           totalCorrect: 0,
           totalXp: 0,
+          todayXp: 0,
+          todayDate: null,
           kanaPracticedCount: 0,
           kanjiPracticedCount: 0,
           vocabPracticedCount: 0,

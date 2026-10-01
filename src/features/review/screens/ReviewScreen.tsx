@@ -179,7 +179,11 @@ export function ReviewScreen() {
 
         <View style={styles.buttonRow}>
           <Pressable
-            style={[styles.primaryBtn, { backgroundColor: theme.primary }]}
+            style={({ pressed }) => [
+              styles.primaryBtn,
+              { backgroundColor: theme.primary, transform: [{ scale: pressed ? 0.96 : 1 }] },
+            ]}
+            android_ripple={{ color: 'rgba(255, 255, 255, 0.2)' }}
             onPress={() => handleStartPractice('due')}
             accessibilityLabel="Practice due words"
           >
@@ -190,7 +194,15 @@ export function ReviewScreen() {
           </Pressable>
 
           <Pressable
-            style={[styles.secondaryBtn, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}
+            style={({ pressed }) => [
+              styles.secondaryBtn,
+              {
+                backgroundColor: theme.surfaceSubtle,
+                borderColor: 'rgba(255, 255, 255, 0.08)',
+                transform: [{ scale: pressed ? 0.96 : 1 }],
+              },
+            ]}
+            android_ripple={{ color: 'rgba(255, 255, 255, 0.08)' }}
             onPress={() => handleStartPractice('mistakes')}
             accessibilityLabel="Review mistakes"
           >
@@ -203,7 +215,7 @@ export function ReviewScreen() {
       </View>
 
       {/* Search Bar */}
-      <View style={[styles.searchBox, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+      <View style={[styles.searchBox, { backgroundColor: theme.surface, borderColor: 'rgba(255, 255, 255, 0.08)' }]}>
         <Search size={18} color={theme.textMuted} />
         <TextInput
           style={[styles.searchInput, { color: theme.textPrimary }]}
@@ -236,13 +248,15 @@ export function ReviewScreen() {
             return (
               <Pressable
                 key={f.id}
-                style={[
+                style={({ pressed }) => [
                   styles.filterChip,
                   {
                     backgroundColor: isSelected ? theme.primary : theme.surface,
-                    borderColor: isSelected ? theme.primary : theme.border,
+                    borderColor: isSelected ? theme.primary : 'rgba(255, 255, 255, 0.08)',
+                    transform: [{ scale: pressed ? 0.95 : 1 }],
                   },
                 ]}
+                android_ripple={{ color: 'rgba(255, 255, 255, 0.1)' }}
                 onPress={() => {
                   setActiveFilter(f.id);
                   if (f.id.startsWith('unit_')) {
@@ -275,8 +289,8 @@ export function ReviewScreen() {
           <Layers size={14} color={theme.textSecondary} />
           <Text style={[styles.listHeaderTitle, { color: theme.textSecondary }]}>
             {isSearchActive
-              ? `SEARCH RESULTS (${searchResults.length})`
-              : `UNIT DECKS & BUNDLES (${visibleBundles.length})`}
+              ? `Search Results (${searchResults.length})`
+              : `Unit Decks (${visibleBundles.length})`}
           </Text>
         </View>
 

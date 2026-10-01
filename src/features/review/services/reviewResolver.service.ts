@@ -2,6 +2,8 @@ import { RAW_KANA_DATA } from '../../kana/data/kana.data';
 import N5_KANJI from '../../kanji/data/N5.json';
 import N4_KANJI from '../../kanji/data/N4.json';
 import N3_KANJI from '../../kanji/data/N3.json';
+import N2_KANJI from '../../kanji/data/N2.json';
+import N1_KANJI from '../../kanji/data/N1.json';
 import N5_VOCAB from '../../vocabulary/data/n5.json';
 import N4_VOCAB from '../../vocabulary/data/n4.json';
 import N3_VOCAB from '../../vocabulary/data/n3.json';
@@ -54,7 +56,7 @@ RAW_KANA_DATA.forEach(group => {
 // Initialize Kanji dictionary
 const KANJI_DICT = new Map<string, DictEntry>();
 const ALL_KANJI_KEYS: string[] = [];
-[...N5_KANJI, ...N4_KANJI, ...N3_KANJI].forEach((k: any) => {
+[...N5_KANJI, ...N4_KANJI, ...N3_KANJI, ...N2_KANJI, ...N1_KANJI].forEach((k: any) => {
   if (k.kanjiChar && !KANJI_DICT.has(k.kanjiChar)) {
     const reading = [...(k.onyomi || []), ...(k.kunyomi || [])].join(' • ');
     const meaning = Array.isArray(k.meanings) ? k.meanings.join(', ') : String(k.meanings || '');

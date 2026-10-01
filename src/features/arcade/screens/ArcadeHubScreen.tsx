@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
   Modal,
   ScrollView,
@@ -11,16 +11,13 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import {
   ArrowLeft,
-  Wind,
   Target,
   Layers,
   CloudRain,
   Flame,
-  Clock,
   Trophy,
   Sparkles,
   Zap,
-  Shield,
   Users,
   Share2,
   Calendar,
@@ -29,16 +26,12 @@ import {
 import * as Haptics from 'expo-haptics';
 import { radii, typography, useAppTheme } from '../../../core/theme';
 import { useArcadeStore } from '../store/useArcadeStore';
-import { ZenBreathingView } from '../components/ZenBreathingView';
 import { KanaWordleView } from '../components/KanaWordleView';
 import { MemoryMatchView } from '../components/MemoryMatchView';
 import { KanaRainView } from '../components/KanaRainView';
-import { YokaiRunView } from '../components/YokaiRunView';
 import { KanaSnakeView } from '../components/KanaSnakeView';
 import { FlashSurvivalView } from '../components/FlashSurvivalView';
-import { HanabiView } from '../components/HanabiView';
 import { KanaCatchView } from '../components/KanaCatchView';
-import { KanaPopView } from '../components/KanaPopView';
 import { KanaTraceView } from '../../kana/components/KanaTraceView';
 import { ShiritoriArenaView } from '../components/ShiritoriArenaView';
 import { KarutaBattleView } from '../components/KarutaBattleView';
@@ -50,21 +43,17 @@ type ActiveGame =
   | 'shiritori'
   | 'karuta'
   | 'kanjiDuel'
-  | 'zen'
   | 'wordle'
   | 'memory'
   | 'rain'
-  | 'runner'
   | 'snake'
   | 'survival'
   | 'rush'
-  | 'hanabi'
   | 'catch'
-  | 'pop'
   | 'trace'
   | null;
 
-type ArcadeCategory = 'all' | 'battles' | 'challenges' | 'classics' | 'zen';
+type ArcadeCategory = 'all' | 'battles' | 'challenges' | 'classics';
 
 interface ArcadeHubScreenProps {
   hideBack?: boolean;
@@ -78,9 +67,9 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
   const {
     wordleCurrentStreak,
     wordleWins,
-    zenMinutesTotal,
-    zenCyclesTotal,
     rainHighScore,
+    snakeHighScore,
+    catchHighScore,
     memoryBestMoves,
     dailyChallengeDate,
     dailyChallengeStreak,
@@ -105,8 +94,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
       { id: 'all', label: 'All' },
       { id: 'battles', label: '⚔️ Battles (3)' },
       { id: 'challenges', label: '⚡ Survival' },
-      { id: 'classics', label: '🎮 Classics (9)' },
-      { id: 'zen', label: '🧘 Zen' },
+      { id: 'classics', label: '🎮 Classics (6)' },
     ],
     []
   );
@@ -140,10 +128,10 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
 
         <View style={styles.navTitles}>
           <Text style={[styles.navTitle, { color: theme.textPrimary }]}>
-            遊楽道場 • Arcade & Zen
+            遊楽道場 • Arcade
           </Text>
           <Text style={[styles.navSubtitle, { color: theme.textSecondary }]}>
-            Playful micro-games & mindfulness
+            Playful micro-games & challenges
           </Text>
         </View>
 
@@ -237,9 +225,9 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
           </View>
           <View style={[styles.statDivider, { backgroundColor: theme.border }]} />
           <View style={styles.statCol}>
-            <Clock size={18} color={theme.accent} />
-            <Text style={[styles.statValue, { color: theme.textPrimary }]}>{zenMinutesTotal}m</Text>
-            <Text style={[styles.statLabel, { color: theme.textSecondary }]}>Zen Mind</Text>
+            <Zap size={18} color="#EAB308" />
+            <Text style={[styles.statValue, { color: theme.textPrimary }]}>{bestSurvivalScore}</Text>
+            <Text style={[styles.statLabel, { color: theme.textSecondary }]}>Survival Best</Text>
           </View>
           <View style={[styles.statDivider, { backgroundColor: theme.border }]} />
           <View style={styles.statCol}>
@@ -332,7 +320,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
               </View>
 
               <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-                Turn-based Japanese word-chain duel vs AI bots (Tanuki, Kitsune, Tengu). Real-time turn timer, authentic 'ん' loss rule, Kana/Kanji input engine, and TTS audio recitation.
+                Turn-based Japanese word-chain duel vs AI bots (Tanuki, Kitsune, Tengu). Real-time turn timer, authentic &apos;ん&apos; loss rule, Kana/Kanji input engine, and TTS audio recitation.
               </Text>
 
               <View style={styles.cardFooter}>
@@ -595,40 +583,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
           </View>
         </Pressable>
 
-        {/* 5. Yokai Runner */}
-        <Pressable
-          onPress={() => launchGame('runner')}
-          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-        >
-          <View style={styles.cardHeader}>
-            <View style={[styles.iconWrap, { backgroundColor: '#3B82F618' }]}>
-              <Flame size={24} color="#3B82F6" />
-            </View>
-            <View style={styles.headerInfo}>
-              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
-                妖怪ラン • Yokai Runner
-              </Text>
-              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
-                2D Side-Scrolling Action
-              </Text>
-            </View>
-          </View>
-
-          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-            Jump over Yokai obstacles and collect target Kana glyphs in motion.
-          </Text>
-
-          <View style={styles.cardFooter}>
-            <Text style={[styles.cardStatBadge, { color: '#3B82F6' }]}>
-              🏃 Runner Mode
-            </Text>
-            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
-              <Text style={styles.playPillText}>Run Now</Text>
-            </View>
-          </View>
-        </Pressable>
-
-        {/* 6. Kana Snake */}
+        {/* 5. Kana Snake */}
         <Pressable
           onPress={() => launchGame('snake')}
           style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
@@ -653,7 +608,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
 
           <View style={styles.cardFooter}>
             <Text style={[styles.cardStatBadge, { color: '#84CC16' }]}>
-              🐍 Snake Mode
+              🐍 {snakeHighScore > 0 ? `Record: ${snakeHighScore} pts` : 'Snake Mode'}
             </Text>
             <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
               <Text style={styles.playPillText}>Play Snake</Text>
@@ -661,40 +616,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
           </View>
         </Pressable>
 
-        {/* 6. Kana Hanabi Fireworks */}
-        <Pressable
-          onPress={() => launchGame('hanabi')}
-          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-        >
-          <View style={styles.cardHeader}>
-            <View style={[styles.iconWrap, { backgroundColor: '#EF444418' }]}>
-              <Sparkles size={24} color="#EF4444" />
-            </View>
-            <View style={styles.headerInfo}>
-              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
-                花火 • Kana Hanabi
-              </Text>
-              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
-                Touch Fireworks Particle Display
-              </Text>
-            </View>
-          </View>
-
-          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-            Tap anywhere in the night sky to launch vibrant Japanese Kana fireworks.
-          </Text>
-
-          <View style={styles.cardFooter}>
-            <Text style={[styles.cardStatBadge, { color: '#EF4444' }]}>
-              🎆 Fireworks Mode
-            </Text>
-            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
-              <Text style={styles.playPillText}>Launch Fireworks</Text>
-            </View>
-          </View>
-        </Pressable>
-
-        {/* 9. Kana Catch */}
+        {/* 6. Kana Catch */}
         <Pressable
           onPress={() => launchGame('catch')}
           style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
@@ -714,53 +636,20 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
           </View>
 
           <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-            Catch target falling Kana tiles into your basket using left/right controls.
+            Catch falling Kanji matching the top target word into your paddle basket. Powered by dual Touch Drag &amp; Gyroscope tilt steering.
           </Text>
 
           <View style={styles.cardFooter}>
             <Text style={[styles.cardStatBadge, { color: '#F59E0B' }]}>
-              🧺 Catch Mode
+              🧺 {catchHighScore > 0 ? `Record: ${catchHighScore} pts` : 'Kanji & Kana Catch'}
             </Text>
             <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
-              <Text style={styles.playPillText}>Catch Kana</Text>
+              <Text style={styles.playPillText}>Catch Kanji</Text>
             </View>
           </View>
         </Pressable>
 
-        {/* 10. Kana Pop */}
-        <Pressable
-          onPress={() => launchGame('pop')}
-          style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-        >
-          <View style={styles.cardHeader}>
-            <View style={[styles.iconWrap, { backgroundColor: '#EC489918' }]}>
-              <Sparkles size={24} color="#EC4899" />
-            </View>
-            <View style={styles.headerInfo}>
-              <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
-                バブルポップ • Kana Pop
-              </Text>
-              <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
-                Bubble Popping Drill
-              </Text>
-            </View>
-          </View>
-
-          <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-            Pop floating Kana bubbles and listen to native pronunciations on pop.
-          </Text>
-
-          <View style={styles.cardFooter}>
-            <Text style={[styles.cardStatBadge, { color: '#EC4899' }]}>
-              🫧 Pop Mode
-            </Text>
-            <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
-              <Text style={styles.playPillText}>Pop Bubbles</Text>
-            </View>
-          </View>
-        </Pressable>
-
-        {/* 11. Stroke Tracing */}
+        {/* 7. Stroke Tracing */}
         <Pressable
           onPress={() => launchGame('trace')}
           style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
@@ -794,57 +683,6 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
         </Pressable>
           </>
         )}
-
-        {/* 4. Zen & Mindfulness */}
-        {(selectedCategory === 'all' || selectedCategory === 'zen') && (
-          <>
-            <View style={styles.sectionHeaderRow}>
-              <View style={[styles.sectionIconBadge, { backgroundColor: '#10B98120' }]}>
-                <Wind size={16} color="#10B981" />
-              </View>
-              <View style={styles.sectionHeaderTextWrap}>
-                <Text style={[styles.sectionTitle, { color: theme.textPrimary }]}>
-                  禅 • Mindfulness
-                </Text>
-                <Text style={[styles.sectionSubtitle, { color: theme.textSecondary }]}>
-                  Soothing breathing and contemplation
-                </Text>
-              </View>
-            </View>
-
-            <Pressable
-              onPress={() => launchGame('zen')}
-              style={[styles.gameCard, { backgroundColor: theme.surface, borderColor: theme.border }]}
-            >
-              <View style={styles.cardHeader}>
-                <View style={[styles.iconWrap, { backgroundColor: '#10B98118' }]}>
-                  <Wind size={24} color="#10B981" />
-                </View>
-                <View style={styles.headerInfo}>
-                  <Text style={[styles.gameTitle, { color: theme.textPrimary }]}>
-                    禅 • 呼吸法 (Zen Breathing)
-                  </Text>
-                  <Text style={[styles.gameSubtitle, { color: theme.textSecondary }]}>
-                    Mindfulness & Serenity
-                  </Text>
-                </View>
-              </View>
-
-              <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-                Soothing 4-4-4-2 breathing sphere synced to Japanese calligraphy, gentle haptic pulses, and contemplative audio.
-              </Text>
-
-              <View style={styles.cardFooter}>
-                <Text style={[styles.cardStatBadge, { color: '#10B981' }]}>
-                  🧘 {zenCyclesTotal} cycles completed
-                </Text>
-                <View style={[styles.playPill, { backgroundColor: theme.primary }]}>
-                  <Text style={styles.playPillText}>Begin Zen</Text>
-                </View>
-              </View>
-            </Pressable>
-          </>
-        )}
       </ScrollView>
 
       {/* Active Game Modals */}
@@ -873,14 +711,6 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
         onRequestClose={closeGame}
       >
         <KanjiDuelView onClose={closeGame} />
-      </Modal>
-      <Modal
-        visible={activeGame === 'zen'}
-        animationType="slide"
-        presentationStyle="fullScreen"
-        onRequestClose={closeGame}
-      >
-        <ZenBreathingView onClose={closeGame} />
       </Modal>
 
       <Modal
@@ -911,15 +741,6 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
       </Modal>
 
       <Modal
-        visible={activeGame === 'runner'}
-        animationType="slide"
-        presentationStyle="fullScreen"
-        onRequestClose={closeGame}
-      >
-        <YokaiRunView onClose={closeGame} />
-      </Modal>
-
-      <Modal
         visible={activeGame === 'snake'}
         animationType="slide"
         presentationStyle="fullScreen"
@@ -938,15 +759,6 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
       </Modal>
 
       <Modal
-        visible={activeGame === 'hanabi'}
-        animationType="slide"
-        presentationStyle="fullScreen"
-        onRequestClose={closeGame}
-      >
-        <HanabiView onClose={closeGame} />
-      </Modal>
-
-      <Modal
         visible={activeGame === 'catch'}
         animationType="slide"
         presentationStyle="fullScreen"
@@ -956,21 +768,12 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
       </Modal>
 
       <Modal
-        visible={activeGame === 'pop'}
-        animationType="slide"
-        presentationStyle="fullScreen"
-        onRequestClose={closeGame}
-      >
-        <KanaPopView onClose={closeGame} />
-      </Modal>
-
-      <Modal
         visible={activeGame === 'trace'}
         animationType="slide"
         presentationStyle="fullScreen"
         onRequestClose={closeGame}
       >
-        <KanaTraceView visible={activeGame === 'trace'} onClose={closeGame} />
+        <KanaTraceView onClose={closeGame} />
       </Modal>
 
       <DailyChallengeModal

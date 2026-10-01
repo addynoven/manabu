@@ -27,13 +27,20 @@ import {
   Zap,
   Sparkles,
   Touchpad,
+  Smartphone,
+  Compass,
 } from 'lucide-react-native';
+import { requireOptionalNativeModule, EventEmitter } from 'expo-modules-core';
 import * as Haptics from 'expo-haptics';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { radii, useAppTheme } from '../../../core/theme';
 import { speakJapanese } from '../../../core/audio/tts';
 import { useSettingsStore } from '../../settings/store/useSettingsStore';
 import { useArcadeStore } from '../store/useArcadeStore';
+
+const ExponentAccelerometer = requireOptionalNativeModule('ExponentAccelerometer');
+const ExponentGyroscope = requireOptionalNativeModule('ExponentGyroscope');
+const isHardwareSensorSupported = Boolean(ExponentAccelerometer || ExponentGyroscope);
 import {
   DIFFICULTY_SPEED_MS,
   getNextHeadPosition,
@@ -133,6 +140,21 @@ export function KanaSnakeView({ onClose }: KanaSnakeViewProps) {
   const isPausedRef = useRef(isPaused);
   isPausedRef.current = isPaused;
 
+  // Gyroscope / Tilt steering state
+  const [tiltEnabled, setTiltEnabled] = useState(isHardwareSensorSupported);
+  const [currentTiltDirection, setCurrentTiltDirection] = useState<Direction | 'CENTER'>('CENTER');
+  const baselineTiltRef = useRef<{ x: number; y: number }>({ x: 0, y: 0.65 });
+  const hasBaselineRef = useRef(false);
+  const lastTiltDirRef = useRef<Direction | null>(null);
+
+  // Calibrate neutral center from current holding angle
+  const calibrateTilt = useCallback(() => {
+    hasBaselineRef.current = false;
+    lastTiltDirRef.current = null;
+    setCurrentTiltDirection('CENTER');
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+  }, []);
+
   // Pulsing animation for food orb
   useEffect(() => {
     const pulse = Animated.loop(
@@ -191,6 +213,96 @@ export function KanaSnakeView({ onClose }: KanaSnakeViewProps) {
     }
   }, []);
 
+  // Gyroscope / Accelerometer hardware sensor steering
+  useEffect(() => {
+    if (!isPlaying || isPaused || gameOver || !tiltEnabled || !isHardwareSensorSupported) {
+      setCurrentTiltDirection('CENTER');
+      return;
+    }
+
+    let sub: { remove: () => void } | null = null;
+
+    if (ExponentAccelerometer) {
+      try {
+        ExponentAccelerometer.setUpdateInterval?.(50);
+        type SensorEvents = {
+          accelerometerDidUpdate: (data: { x: number; y: number; z: number }) => void;
+        };
+        const emitter = new EventEmitter<SensorEvents>(ExponentAccelerometer);
+        sub = emitter.addListener('accelerometerDidUpdate', (data: { x: number; y: number; z: number }) => {
+          if (!isPlayingRef.current || isPausedRef.current) return;
+
+          if (!hasBaselineRef.current) {
+            baselineTiltRef.current = { x: data.x, y: data.y };
+            hasBaselineRef.current = true;
+          }
+
+          const dx = data.x - baselineTiltRef.current.x;
+          const dy = data.y - baselineTiltRef.current.y;
+          const absX = Math.abs(dx);
+          const absY = Math.abs(dy);
+
+          if (absX < 0.08 && absY < 0.08) {
+            lastTiltDirRef.current = null;
+            setCurrentTiltDirection('CENTER');
+            return;
+          }
+
+          if (absX >= 0.20 || absY >= 0.20) {
+            const desiredDir: Direction = absX > absY
+              ? (dx > 0 ? 'RIGHT' : 'LEFT')
+              : (dy < 0 ? 'UP' : 'DOWN');
+
+            setCurrentTiltDirection(desiredDir);
+
+            if (lastTiltDirRef.current !== desiredDir) {
+              lastTiltDirRef.current = desiredDir;
+              queueDirection(desiredDir);
+            }
+          }
+        });
+      } catch {}
+    } else if (ExponentGyroscope) {
+      try {
+        ExponentGyroscope.setUpdateInterval?.(50);
+        type GyroEvents = {
+          gyroscopeDidUpdate: (data: { x: number; y: number; z: number }) => void;
+        };
+        const emitter = new EventEmitter<GyroEvents>(ExponentGyroscope);
+
+        sub = emitter.addListener('gyroscopeDidUpdate', (data: { x: number; y: number; z: number }) => {
+          if (!isPlayingRef.current || isPausedRef.current) return;
+
+          const absX = Math.abs(data.x);
+          const absY = Math.abs(data.y);
+
+          if (absX < 0.3 && absY < 0.3) {
+            lastTiltDirRef.current = null;
+            setCurrentTiltDirection('CENTER');
+            return;
+          }
+
+          if (absX >= 0.6 || absY >= 0.6) {
+            const desiredDir: Direction = absY > absX
+              ? (data.y > 0 ? 'RIGHT' : 'LEFT')
+              : (data.x < 0 ? 'UP' : 'DOWN');
+
+            setCurrentTiltDirection(desiredDir);
+
+            if (lastTiltDirRef.current !== desiredDir) {
+              lastTiltDirRef.current = desiredDir;
+              queueDirection(desiredDir);
+            }
+          }
+        });
+      } catch {}
+    }
+
+    return () => {
+      sub?.remove();
+    };
+  }, [isPlaying, isPaused, gameOver, tiltEnabled, queueDirection]);
+
   // End game cleanly
   const endGame = useCallback((finalScore: number) => {
     setIsPlaying(false);
@@ -225,8 +337,8 @@ export function KanaSnakeView({ onClose }: KanaSnakeViewProps) {
 
   // Start new game
   const startGame = useCallback(() => {
-    const startX = Math.floor(boundsRef.current.cols / 2);
-    const startY = Math.floor(boundsRef.current.rows / 2);
+    const startX = Math.max(1, Math.floor(boundsRef.current.cols / 2));
+    const startY = Math.max(3, Math.floor(boundsRef.current.rows / 2));
 
     const initialSnake: Coordinate[] = [
       { x: startX, y: startY },
@@ -238,15 +350,24 @@ export function KanaSnakeView({ onClose }: KanaSnakeViewProps) {
     wordQuestStateRef.current = { wordIndex: 0, syllableIndex: 0 };
     setWordQuestNotice(null);
     setSnake(initialSnake);
+    snakeRef.current = initialSnake;
     setDirection('UP');
+    directionRef.current = 'UP';
     setScore(0);
+    scoreRef.current = 0;
     setStreak(0);
+    streakRef.current = 0;
     setMaxStreak(0);
     setFoodEatenCount(0);
     setGameOver(false);
     setIsPaused(false);
+    isPausedRef.current = false;
     setIsNewHigh(false);
     setIsPlaying(true);
+    isPlayingRef.current = true;
+    hasBaselineRef.current = false;
+    lastTiltDirRef.current = null;
+    setCurrentTiltDirection('CENTER');
 
     spawnFood();
   }, [spawnFood]);
@@ -347,8 +468,9 @@ export function KanaSnakeView({ onClose }: KanaSnakeViewProps) {
   const panResponder = useMemo(
     () =>
       PanResponder.create({
-        onStartShouldSetPanResponder: () => true,
+        onStartShouldSetPanResponder: () => isPlayingRef.current && !isPausedRef.current,
         onMoveShouldSetPanResponder: (_e: GestureResponderEvent, gestureState: PanResponderGestureState) => {
+          if (!isPlayingRef.current || isPausedRef.current) return false;
           return Math.abs(gestureState.dx) > 8 || Math.abs(gestureState.dy) > 8;
         },
         onPanResponderGrant: () => {
@@ -458,6 +580,22 @@ export function KanaSnakeView({ onClose }: KanaSnakeViewProps) {
         </View>
 
         <View style={styles.headerRight}>
+          {isHardwareSensorSupported && (
+            <Pressable
+              onPress={() => {
+                Haptics.selectionAsync().catch(() => {});
+                setTiltEnabled(v => !v);
+              }}
+              style={[
+                styles.iconButton,
+                { backgroundColor: tiltEnabled ? '#38BDF825' : '#1E293B' },
+              ]}
+              accessibilityLabel="Toggle Gyroscope Steering"
+            >
+              <Smartphone size={18} color={tiltEnabled ? '#38BDF8' : '#64748B'} />
+            </Pressable>
+          )}
+
           <Pressable
             onPress={() => setSoundEnabled(v => !v)}
             style={[styles.iconButton, { backgroundColor: '#1E293B' }]}
@@ -678,9 +816,10 @@ export function KanaSnakeView({ onClose }: KanaSnakeViewProps) {
               </View>
             </View>
           )}
+        </View>
 
-          {/* Pre-Game Configuration Overlay */}
-          {!isPlaying && !gameOver && (
+        {/* Pre-Game Configuration Overlay */}
+        {!isPlaying && !gameOver && (
             <View style={styles.preGameOverlay}>
               <View style={styles.preGameCard}>
                 <View style={styles.heroBadge}>
@@ -769,6 +908,37 @@ export function KanaSnakeView({ onClose }: KanaSnakeViewProps) {
                   </View>
                 </View>
 
+                {/* Steering Mode Selector */}
+                {isHardwareSensorSupported && (
+                  <View style={styles.configGroup}>
+                    <Text style={styles.configHeader}>STEERING CONTROLS</Text>
+                    <View style={styles.pillRow}>
+                      <Pressable
+                        onPress={() => {
+                          Haptics.selectionAsync().catch(() => {});
+                          setTiltEnabled(true);
+                        }}
+                        style={[styles.pill, tiltEnabled && styles.pillActive]}
+                      >
+                        <Text style={[styles.pillText, tiltEnabled && styles.pillTextActive]}>
+                          📱 Tilt + Touch
+                        </Text>
+                      </Pressable>
+                      <Pressable
+                        onPress={() => {
+                          Haptics.selectionAsync().catch(() => {});
+                          setTiltEnabled(false);
+                        }}
+                        style={[styles.pill, !tiltEnabled && styles.pillActive]}
+                      >
+                        <Text style={[styles.pillText, !tiltEnabled && styles.pillTextActive]}>
+                          👆 Touch & Swipe Only
+                        </Text>
+                      </Pressable>
+                    </View>
+                  </View>
+                )}
+
                 <Pressable onPress={startGame} style={styles.startBtn}>
                   <Play size={20} color="#0F172A" fill="#0F172A" />
                   <Text style={styles.startBtnText}>START SNAKE ARCADE</Text>
@@ -776,7 +946,6 @@ export function KanaSnakeView({ onClose }: KanaSnakeViewProps) {
               </View>
             </View>
           )}
-        </View>
 
         {/* Edge Direction Status Chevrons */}
         {isPlaying && (
@@ -837,11 +1006,25 @@ export function KanaSnakeView({ onClose }: KanaSnakeViewProps) {
         )}
       </View>
 
-      {/* 4. Controls: Sleek Touch & Swipe Direction Guide */}
+      {/* 4. Controls: Sleek Touch & Swipe Direction Guide + Gyro Status */}
       <View style={styles.touchGuideDeck}>
         <View style={styles.touchGuideRow}>
           <Touchpad size={14} color="#34D399" />
-          <Text style={styles.touchGuideTitle}>TOUCH DIRECTION OR SWIPE TO STEER</Text>
+          <Text style={styles.touchGuideTitle}>
+            {tiltEnabled ? 'TILT PHONE OR SWIPE / TAP' : 'TOUCH DIRECTION OR SWIPE'}
+          </Text>
+          {tiltEnabled && (
+            <Pressable
+              onPress={calibrateTilt}
+              style={styles.recenterBadge}
+              accessibilityLabel="Recenter Tilt Sensor"
+            >
+              <Compass size={11} color="#38BDF8" />
+              <Text style={styles.recenterText}>
+                {currentTiltDirection === 'CENTER' ? 'CENTERED' : `TILT: ${currentTiltDirection}`}
+              </Text>
+            </Pressable>
+          )}
         </View>
         <Text style={styles.touchGuideSubtitle}>
           {wallMode === 'classic' ? '🧱 WALLS LETHAL' : '🌀 PORTAL WRAP-AROUND'} • TAP ANYWHERE RELATIVE TO SNAKE
@@ -1358,6 +1541,28 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     color: '#64748B',
     letterSpacing: 0.4,
+  },
+  tiltStatusRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  recenterBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: '#0F172A',
+    borderColor: '#38BDF860',
+    borderWidth: 1,
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 8,
+  },
+  recenterText: {
+    fontSize: 9,
+    fontWeight: '800',
+    color: '#38BDF8',
+    letterSpacing: 0.3,
   },
   edgeIndicator: {
     position: 'absolute',

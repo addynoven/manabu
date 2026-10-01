@@ -104,39 +104,56 @@ export function DojoUnitHeader({
         </View>
       </Pressable>
 
-      {/* Summary Button matching Teuida [📖 Summary >] */}
-      <Pressable
-        onPress={handleOpenSummary}
-        style={[styles.summaryBtn, { backgroundColor: theme.surface, borderColor: theme.border }]}
-        accessibilityLabel={`View summary for Unit ${unit.unitNumber}`}
-      >
-        <BookOpen size={14} color={theme.textSecondary} />
-        <Text style={[styles.summaryBtnText, { color: theme.textPrimary }]}>
-          Summary
-        </Text>
-        <ChevronRight size={14} color={theme.textSecondary} />
-      </Pressable>
-
-      {/* Optional Collapsible Chevron / Pill */}
-      {showExpandToggle && onToggleExpand && (
+      {/* Pill Controls Row: Summary & View/Hide Lessons */}
+      <View style={styles.actionsRow}>
         <Pressable
-          onPress={() => {
-            Haptics.selectionAsync().catch(() => {});
-            onToggleExpand();
-          }}
-          style={[styles.expandToggle, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}
-          hitSlop={12}
+          onPress={handleOpenSummary}
+          android_ripple={{ color: 'rgba(255, 255, 255, 0.08)' }}
+          style={({ pressed }) => [
+            styles.summaryBtn,
+            {
+              backgroundColor: theme.surface,
+              borderColor: 'rgba(255, 255, 255, 0.1)',
+              transform: [{ scale: pressed ? 0.95 : 1 }],
+            },
+          ]}
+          accessibilityLabel={`View summary for Unit ${unit.unitNumber}`}
         >
-          <Text style={[styles.expandToggleText, { color: theme.textSecondary }]}>
-            {isExpanded ? 'Hide Lessons' : 'View Lessons'}
+          <BookOpen size={14} color={theme.primary} />
+          <Text style={[styles.summaryBtnText, { color: theme.textPrimary }]}>
+            Summary
           </Text>
-          {isExpanded ? (
-            <ChevronUp size={16} color={theme.textSecondary} />
-          ) : (
-            <ChevronDown size={16} color={theme.textSecondary} />
-          )}
+          <ChevronRight size={14} color={theme.textSecondary} />
         </Pressable>
-      )}
+
+        {showExpandToggle && onToggleExpand && (
+          <Pressable
+            onPress={() => {
+              Haptics.selectionAsync().catch(() => {});
+              onToggleExpand();
+            }}
+            android_ripple={{ color: 'rgba(255, 255, 255, 0.08)' }}
+            style={({ pressed }) => [
+              styles.expandToggle,
+              {
+                backgroundColor: theme.surfaceSubtle,
+                borderColor: 'rgba(255, 255, 255, 0.08)',
+                transform: [{ scale: pressed ? 0.95 : 1 }],
+              },
+            ]}
+            hitSlop={8}
+          >
+            <Text style={[styles.expandToggleText, { color: theme.textSecondary }]}>
+              {isExpanded ? 'Hide' : 'Lessons'} ({totalCount})
+            </Text>
+            {isExpanded ? (
+              <ChevronUp size={15} color={theme.textSecondary} />
+            ) : (
+              <ChevronDown size={15} color={theme.textSecondary} />
+            )}
+          </Pressable>
+        )}
+      </View>
 
       {/* Summary Modal */}
       <UnitSummaryModal
@@ -205,16 +222,22 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '800',
   },
+  actionsRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+    marginTop: spacing.sm,
+  },
   summaryBtn: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
+    paddingHorizontal: 14,
+    paddingVertical: 7,
     borderRadius: radii.full,
     borderWidth: 1,
-    marginTop: spacing.sm,
-    ...shadows.sm,
+    elevation: 2,
   },
   summaryBtnText: {
     fontSize: 13,
@@ -224,11 +247,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,
-    paddingHorizontal: 14,
-    paddingVertical: 6,
+    paddingHorizontal: 13,
+    paddingVertical: 7,
     borderRadius: radii.full,
     borderWidth: 1,
-    marginTop: spacing.sm,
   },
   expandToggleText: {
     fontSize: 12,

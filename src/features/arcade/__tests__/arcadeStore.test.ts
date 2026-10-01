@@ -61,6 +61,23 @@ describe('arcadeStore', () => {
     expect(useArcadeStore.getState().rainHighScore).toBe(120);
   });
 
+  it('records catch high score', () => {
+    const store = useArcadeStore.getState();
+    expect(store.catchHighScore).toBe(0);
+
+    const res1 = store.recordCatchScore(250);
+    expect(res1.isNewHigh).toBe(true);
+    expect(useArcadeStore.getState().catchHighScore).toBe(250);
+
+    const res2 = store.recordCatchScore(150);
+    expect(res2.isNewHigh).toBe(false);
+    expect(useArcadeStore.getState().catchHighScore).toBe(250);
+
+    const res3 = store.recordCatchScore(400);
+    expect(res3.isNewHigh).toBe(true);
+    expect(useArcadeStore.getState().catchHighScore).toBe(400);
+  });
+
   it('records zen minutes and cycles', () => {
     const store = useArcadeStore.getState();
     store.addZenSession(120, 5); // 2 minutes, 5 cycles
