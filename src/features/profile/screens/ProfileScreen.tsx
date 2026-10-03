@@ -33,6 +33,7 @@ import {
   Volume2,
   X,
   Zap,
+  Users,
 } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
 import { radii, shadows, spacing, useAppTheme } from '../../../core/theme';
@@ -467,6 +468,33 @@ export function ProfileScreen() {
             </View>
           )}
         </View>
+
+        {/* Clan & Friends Card */}
+        <Pressable
+          onPress={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+            router.push('/friends' as any);
+          }}
+          style={({ pressed }) => [
+            styles.card,
+            {
+              backgroundColor: theme.surface,
+              borderColor: theme.border,
+              opacity: pressed ? 0.85 : 1,
+            },
+          ]}
+        >
+          <View style={styles.cardHeaderRow}>
+            <View style={styles.cardHeaderLeft}>
+              <Users size={18} color={theme.primary} />
+              <Text style={[styles.cardTitle, { color: theme.textPrimary }]}>Clan & Friends</Text>
+            </View>
+            <ChevronRight size={18} color={theme.textMuted} />
+          </View>
+          <Text style={{ fontSize: 13, color: theme.textSecondary, marginTop: 4 }}>
+            Share your friend code, check the weekly XP leaderboard, and connect with fellow learners.
+          </Text>
+        </Pressable>
 
         {/* Daily Study Goal Card */}
         <View style={[styles.card, { backgroundColor: theme.surface, borderColor: theme.border }]}>

@@ -60,16 +60,20 @@ export function DojoLessonCard({ lesson, isActive, onPress }: DojoLessonCardProp
       return (
         <View style={[styles.avatarCircle, { backgroundColor: '#E0E7FF' }]}>
           <Text style={[styles.avatarGlyph, { color: '#4338CA' }]}>
-            {lesson.kanjiKeywords[0] || '語'}
+            {lesson.kanjiKeywords?.[0] || '語'}
           </Text>
         </View>
       );
     }
     // Default Expression: Japanese character avatar badge
+    const initialChar = (lesson.titleJp && lesson.titleJp.length > 0)
+      ? lesson.titleJp.slice(0, 1)
+      : (lesson.title ? lesson.title.slice(0, 1) : '道');
+
     return (
       <View style={[styles.avatarCircle, { backgroundColor: '#D1FAE5' }]}>
         <Text style={[styles.avatarGlyph, { color: '#065F46' }]}>
-          {lesson.titleJp.slice(0, 1)}
+          {initialChar}
         </Text>
       </View>
     );

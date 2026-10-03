@@ -1,210 +1,73 @@
-import {
-  collection,
-  query,
-  orderBy,
-  limit,
-  getDocs,
-  doc,
-  setDoc,
-  where,
-  addDoc,
-  serverTimestamp,
-} from 'firebase/firestore';
-import { firebaseDb } from '../../../core/api/firebase';
-import {
-  type LeaderboardEntry,
-  type FriendRecord,
-  type FriendRequest,
-  type CommunityFeedItem,
-} from '../models/community.model';
+import { apiClient } from '../../../core/api/httpClient';
 import { ok, err, type Result } from '../../../core/errors/result';
+import { AppError } from '../../../core/errors/error-handler';
+import {
+  type FriendsResponse,
+  type UserLite,
+  FriendsResponseSchema,
+} from '../models/community.model';
 
-class CommunityService {
+export class CommunityService {
   /**
-   * Fetches global XP leaderboard across all registered learners.
+   * Fetches the full friends list, incoming/outgoing requests, and weekly board data
    */
-  public async getGlobalLeaderboard(limitCount = 50): Promise<Result<LeaderboardEntry[], Error>> {
-    try {
-      const usersRef = collection(firebaseDb, 'users');
-      const q = query(usersRef, orderBy('totalXp', 'desc'), limit(limitCount));
-      const snapshot = await getDocs(q);
-
-      const entries: LeaderboardEntry[] = [];
-      let rank = 1;
-
-      snapshot.forEach(docSnap => {
-        const data = docSnap.data();
-        entries.push({
-          uid: docSnap.id,
-          displayName: data.displayName || 'Manabu Learner',
-          photoURL: data.photoURL || null,
-          avatarEmoji: data.avatarEmoji || '🥋',
-          beltRank: data.beltRank || 'white',
-          level: data.level || 1,
-          totalXp: data.totalXp || 0,
-          currentStreak: data.currentStreak || 0,
-          rank: rank++,
-        });
-      });
-
-      return ok(entries);
-    } catch (error) {
-      const errObj = error instanceof Error ? error : new Error(String(error));
-      console.error('[CommunityService] getGlobalLeaderboard error:', errObj);
-      return err(errObj);
+  async getFriends(): Promise<Result<FriendsResponse, AppError>> {
+    const res = await apiClient.get<FriendsResponse>('/api/v1/friends');
+    if (!res.ok) {
+      return res;
     }
+
+    const parsed = FriendsResponseSchema.safeParse(res.data);
+    if (!parsed.success) {
+      return err(new AppError('Invalid friends response format from server', 'VALIDATION'));
+    }
+
+    return ok(parsed.data);
   }
 
   /**
-   * Fetches the user's friends list.
+   * Sends a friend request using an 8-character friend code (e.g. "K7MQ-2XRD")
    */
-  public async getFriends(userId: string): Promise<Result<FriendRecord[], Error>> {
-    if (!userId) return err(new Error('User ID is required'));
-
-    try {
-      const friendsRef = collection(firebaseDb, 'users', userId, 'friends');
-      const snapshot = await getDocs(friendsRef);
-
-      const friends: FriendRecord[] = [];
-      snapshot.forEach(docSnap => {
-        const data = docSnap.data() as FriendRecord;
-        friends.push(data);
-      });
-
-      return ok(friends);
-    } catch (error) {
-      const errObj = error instanceof Error ? error : new Error(String(error));
-      console.error('[CommunityService] getFriends error:', errObj);
-      return err(errObj);
+  async sendFriendRequest(
+    rawCode: string
+  ): Promise<Result<{ request: { id: number; status: string }; user: UserLite }, AppError>> {
+    const normalizedCode = rawCode.replace(/[\s-]/g, '').toUpperCase();
+    if (normalizedCode.length !== 8) {
+      return err(new AppError('Friend code must be 8 characters long', 'VALIDATION'));
     }
+
+    return await apiClient.post('/api/v1/friends/requests', { code: normalizedCode });
   }
 
   /**
-   * Fetches pending incoming friend requests for a user.
+   * Accepts or declines an incoming friend request
    */
-  public async getPendingFriendRequests(userId: string): Promise<Result<FriendRequest[], Error>> {
-    if (!userId) return err(new Error('User ID is required'));
-
-    try {
-      const reqRef = collection(firebaseDb, 'friend_requests');
-      const q = query(reqRef, where('toUid', '==', userId), where('status', '==', 'pending'));
-      const snapshot = await getDocs(q);
-
-      const requests: FriendRequest[] = [];
-      snapshot.forEach(docSnap => {
-        const data = docSnap.data() as Omit<FriendRequest, 'id'>;
-        requests.push({ id: docSnap.id, ...data });
-      });
-
-      return ok(requests);
-    } catch (error) {
-      const errObj = error instanceof Error ? error : new Error(String(error));
-      console.error('[CommunityService] getPendingFriendRequests error:', errObj);
-      return err(errObj);
-    }
+  async respondToFriendRequest(
+    requestId: number,
+    accept: boolean
+  ): Promise<Result<{ success: boolean; friendship?: unknown }, AppError>> {
+    return await apiClient.post(`/api/v1/friends/requests/${requestId}/respond`, { accept });
   }
 
   /**
-   * Sends a friend request from current user to target user.
+   * Cancels a pending outgoing friend request
    */
-  public async sendFriendRequest(
-    fromUser: { uid: string; displayName: string; photoURL?: string | null },
-    toUser: { uid: string; displayName: string; photoURL?: string | null },
-  ): Promise<Result<void, Error>> {
-    try {
-      const reqRef = collection(firebaseDb, 'friend_requests');
-      await addDoc(reqRef, {
-        fromUid: fromUser.uid,
-        fromName: fromUser.displayName,
-        fromPhoto: fromUser.photoURL || null,
-        toUid: toUser.uid,
-        toName: toUser.displayName,
-        toPhoto: toUser.photoURL || null,
-        status: 'pending',
-        createdAt: new Date().toISOString(),
-      });
-
-      return ok(undefined);
-    } catch (error) {
-      const errObj = error instanceof Error ? error : new Error(String(error));
-      console.error('[CommunityService] sendFriendRequest error:', errObj);
-      return err(errObj);
-    }
+  async cancelFriendRequest(requestId: number): Promise<Result<{ success: boolean }, AppError>> {
+    return await apiClient.delete(`/api/v1/friends/requests/${requestId}`);
   }
 
   /**
-   * Accepts a friend request and creates bidirectional records.
+   * Removes a friend from the friends list
    */
-  public async acceptFriendRequest(
-    currentUserId: string,
-    friend: FriendRecord,
-  ): Promise<Result<void, Error>> {
-    try {
-      const friendDocRef = doc(firebaseDb, 'users', currentUserId, 'friends', friend.friendUid);
-      await setDoc(friendDocRef, friend, { merge: true });
-
-      return ok(undefined);
-    } catch (error) {
-      const errObj = error instanceof Error ? error : new Error(String(error));
-      console.error('[CommunityService] acceptFriendRequest error:', errObj);
-      return err(errObj);
-    }
+  async removeFriend(friendUid: string): Promise<Result<{ success: boolean }, AppError>> {
+    return await apiClient.delete(`/api/v1/friends/${friendUid}`);
   }
 
   /**
-   * Publishes an achievement or milestone event to the community activity feed.
+   * Fetches the user's public profile from backend, including their unique friendCode
    */
-  public async broadcastActivity(
-    event: Omit<CommunityFeedItem, 'id' | 'timestamp' | 'likesCount'>,
-  ): Promise<Result<void, Error>> {
-    try {
-      const feedRef = collection(firebaseDb, 'community_feed');
-      await addDoc(feedRef, {
-        ...event,
-        timestamp: serverTimestamp(),
-        likesCount: 0,
-      });
-
-      return ok(undefined);
-    } catch (error) {
-      const errObj = error instanceof Error ? error : new Error(String(error));
-      console.error('[CommunityService] broadcastActivity error:', errObj);
-      return err(errObj);
-    }
-  }
-
-  /**
-   * Fetches recent community activity feed events.
-   */
-  public async getCommunityFeed(limitCount = 20): Promise<Result<CommunityFeedItem[], Error>> {
-    try {
-      const feedRef = collection(firebaseDb, 'community_feed');
-      const q = query(feedRef, orderBy('timestamp', 'desc'), limit(limitCount));
-      const snapshot = await getDocs(q);
-
-      const items: CommunityFeedItem[] = [];
-      snapshot.forEach(docSnap => {
-        const data = docSnap.data();
-        items.push({
-          id: docSnap.id,
-          actorUid: data.actorUid,
-          actorName: data.actorName || 'Learner',
-          actorPhoto: data.actorPhoto || null,
-          actorBelt: data.actorBelt || 'white',
-          eventType: data.eventType,
-          eventTitle: data.eventTitle,
-          eventDetails: data.eventDetails,
-          timestamp: data.timestamp?.toDate?.() ? data.timestamp.toDate().toISOString() : new Date().toISOString(),
-          likesCount: data.likesCount || 0,
-        });
-      });
-
-      return ok(items);
-    } catch (error) {
-      const errObj = error instanceof Error ? error : new Error(String(error));
-      console.error('[CommunityService] getCommunityFeed error:', errObj);
-      return err(errObj);
-    }
+  async getMyProfile(): Promise<Result<{ friendCode: string; displayName: string }, AppError>> {
+    return await apiClient.get('/api/v1/profile');
   }
 }
 

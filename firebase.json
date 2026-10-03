@@ -8,9 +8,5 @@
         "supportEmail": "dmcbaditya@gmail.com"
       }
     }
-  },
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
   }
 }

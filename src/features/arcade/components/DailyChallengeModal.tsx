@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import {
   Modal,
   StyleSheet,
@@ -6,6 +6,7 @@ import {
   Pressable,
   View,
   Share,
+  ScrollView,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
@@ -15,9 +16,8 @@ import {
   Flame,
   Clock,
   Share2,
-  CheckCircle,
-  XCircle,
   Volume2,
+  Users,
 } from 'lucide-react-native';
 import { radii, spacing, typography, useAppTheme } from '../../../core/theme';
 import { useArcadeStore } from '../store/useArcadeStore';
@@ -28,11 +28,17 @@ import {
 } from '../lib/dailyChallengeGenerator';
 import { speakJapanese } from '../../../core/audio/tts';
 import { useSettingsStore } from '../../settings/store/useSettingsStore';
+import { cloudSyncService } from '../../sync/services/cloudSync.service';
+import { useCommunityStore } from '../../community/store/useCommunityStore';
+import { useProgressStore } from '../../progress/store/useProgressStore';
+import { useAuthStore } from '../../auth/store/useAuthStore';
 
 interface DailyChallengeModalProps {
   visible: boolean;
   onClose: () => void;
 }
+
+const EMPTY_FRIENDS: NonNullable<ReturnType<typeof useCommunityStore.getState>['data']>['friends'] = [];
 
 export function DailyChallengeModal({ visible, onClose }: DailyChallengeModalProps) {
   const insets = useSafeAreaInsets();
@@ -41,8 +47,6 @@ export function DailyChallengeModal({ visible, onClose }: DailyChallengeModalPro
 
   const {
     dailyChallengeStreak,
-    dailyChallengeCompleted,
-    dailyChallengeLastResult,
     recordDailyChallenge,
   } = useArcadeStore();
 
@@ -57,9 +61,60 @@ export function DailyChallengeModal({ visible, onClose }: DailyChallengeModalPro
 
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
+  const friends = useCommunityStore(state => state.data?.friends) ?? EMPTY_FRIENDS;
+  const { displayName, avatarEmoji } = useProgressStore();
+  const { currentUser } = useAuthStore();
+  const todayStr = useMemo(() => new Date().toISOString().split('T')[0], []);
+
+  const friendsDailyBoard = useMemo(() => {
+    const correctCount = resultsLog.filter(Boolean).length;
+    const qCount = questions.length || 5;
+    const accuracy = qCount > 0 ? Math.round((correctCount / qCount) * 100) : 100;
+
+    const myEntry = {
+      uid: currentUser?.uid || 'me',
+      displayName: (displayName || 'You').trim(),
+      avatarEmoji: avatarEmoji || '🥋',
+      score: finalScore,
+      timeSeconds: elapsedSeconds,
+      accuracy,
+      isMe: true,
+    };
+
+    const friendEntries = friends
+      .filter(f => f.daily && f.daily.date === todayStr)
+      .map(f => ({
+        uid: f.uid,
+        displayName: f.displayName,
+        avatarEmoji: f.avatarEmoji,
+        score: f.daily!.score,
+        timeSeconds: f.daily!.timeSeconds,
+        accuracy: f.daily!.accuracy,
+        isMe: false,
+      }));
+
+    const combined = [myEntry, ...friendEntries];
+    return combined.sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return a.timeSeconds - b.timeSeconds;
+    });
+  }, [
+    friends,
+    currentUser?.uid,
+    displayName,
+    avatarEmoji,
+    finalScore,
+    elapsedSeconds,
+    resultsLog,
+    questions.length,
+    todayStr,
+  ]);
+
   useEffect(() => {
     if (visible) {
+      useCommunityStore.getState().fetchFriends().catch(() => {});
       const dailyQuestions = generateDailyChallenge();
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setQuestions(dailyQuestions);
       setCurrentIndex(0);
       setSelectedOption(null);
@@ -102,7 +157,7 @@ export function DailyChallengeModal({ visible, onClose }: DailyChallengeModalPro
       }, 120);
       return () => clearTimeout(timer);
     }
-  }, [visible, currentIndex, currentQ?.prompt, isFinished, feedback, ttsRate]);
+  }, [visible, currentIndex, currentQ, isFinished, feedback, ttsRate]);
 
   const handleSelectOption = (option: string) => {
     if (feedback !== 'idle' || isFinished || !currentQ) return;
@@ -140,6 +195,8 @@ export function DailyChallengeModal({ visible, onClose }: DailyChallengeModalPro
         setIsFinished(true);
 
         recordDailyChallenge(computedScore, elapsedSeconds, accuracy);
+        cloudSyncService.triggerThrottledSync(true);
+        useCommunityStore.getState().fetchFriends(true).catch(() => {});
         Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
       }
     }, 700);
@@ -315,7 +372,11 @@ export function DailyChallengeModal({ visible, onClose }: DailyChallengeModalPro
           </View>
         ) : isFinished ? (
           /* Completion Screen */
-          <View style={styles.resultsContainer}>
+          <ScrollView
+            style={styles.resultsScroll}
+            contentContainerStyle={styles.resultsScrollContent}
+            showsVerticalScrollIndicator={false}
+          >
             <View style={[styles.trophyWrap, { backgroundColor: theme.primaryLight }]}>
               <Trophy size={48} color={theme.primary} />
             </View>
@@ -324,7 +385,7 @@ export function DailyChallengeModal({ visible, onClose }: DailyChallengeModalPro
               Daily Challenge Complete!
             </Text>
             <Text style={[styles.resultsSubtitle, { color: theme.textSecondary }]}>
-              Day #{dayNumber} • Community Standing: Top 10%
+              Day #{dayNumber} • Daily Gauntlet Complete
             </Text>
 
             <View
@@ -378,6 +439,93 @@ export function DailyChallengeModal({ visible, onClose }: DailyChallengeModalPro
               </Text>
             </View>
 
+            {/* Clan & Friends Daily Standings */}
+            <View
+              style={[
+                styles.clanBoardCard,
+                { backgroundColor: theme.surface, borderColor: theme.border },
+              ]}
+            >
+              <View style={styles.clanBoardHeader}>
+                <View style={styles.clanBoardHeaderLeft}>
+                  <Users size={18} color={theme.accent} />
+                  <Text style={[styles.clanBoardTitle, { color: theme.textPrimary }]}>
+                    Clan & Friends Today
+                  </Text>
+                </View>
+                <View style={[styles.clanBoardPill, { backgroundColor: theme.surfaceSubtle }]}>
+                  <Text style={[styles.clanBoardPillText, { color: theme.accent }]}>
+                    {friendsDailyBoard.length} Completed
+                  </Text>
+                </View>
+              </View>
+
+              <View style={styles.clanBoardList}>
+                {friendsDailyBoard.map((entry, idx) => {
+                  const isTop1 = idx === 0;
+                  const isTop2 = idx === 1;
+                  const isTop3 = idx === 2;
+                  const rankColor = isTop1 ? '#EAB308' : isTop2 ? '#94A3B8' : isTop3 ? '#D97706' : theme.textSecondary;
+
+                  return (
+                    <View
+                      key={entry.uid}
+                      style={[
+                        styles.clanBoardRow,
+                        { borderColor: theme.border },
+                        entry.isMe && [
+                          styles.clanBoardRowMe,
+                          { backgroundColor: theme.primaryLight, borderColor: theme.primary },
+                        ],
+                      ]}
+                    >
+                      <View style={styles.clanBoardLeft}>
+                        <Text style={[styles.clanRankText, { color: rankColor }]}>
+                          #{idx + 1}
+                        </Text>
+                        <Text style={styles.clanAvatarEmoji}>{entry.avatarEmoji}</Text>
+                        <View style={styles.clanNameCol}>
+                          <View style={styles.clanNameRow}>
+                            <Text
+                              style={[
+                                styles.clanName,
+                                { color: theme.textPrimary },
+                                entry.isMe && { fontWeight: '700' },
+                              ]}
+                              numberOfLines={1}
+                            >
+                              {entry.displayName}
+                            </Text>
+                            {entry.isMe && (
+                              <View style={[styles.youBadge, { backgroundColor: theme.primary }]}>
+                                <Text style={styles.youBadgeText}>YOU</Text>
+                              </View>
+                            )}
+                          </View>
+                          <Text style={[styles.clanMeta, { color: theme.textSecondary }]}>
+                            {entry.timeSeconds}s • {entry.accuracy}% acc
+                          </Text>
+                        </View>
+                      </View>
+
+                      <View style={styles.clanBoardRight}>
+                        <Text style={[styles.clanScoreText, { color: theme.primary }]}>
+                          {entry.score}
+                        </Text>
+                        <Text style={[styles.clanScoreLabel, { color: theme.textSecondary }]}>pts</Text>
+                      </View>
+                    </View>
+                  );
+                })}
+              </View>
+
+              {friendsDailyBoard.length === 1 && (
+                <Text style={[styles.clanEmptyNote, { color: theme.textSecondary }]}>
+                  {"You're the first in your clan to complete today's challenge! 🥋 Share your score to challenge your friends."}
+                </Text>
+              )}
+            </View>
+
             <View style={styles.resultsActions}>
               <Pressable
                 onPress={handleShare}
@@ -399,7 +547,7 @@ export function DailyChallengeModal({ visible, onClose }: DailyChallengeModalPro
                 </Text>
               </Pressable>
             </View>
-          </View>
+          </ScrollView>
         ) : null}
       </View>
     </Modal>
@@ -518,6 +666,15 @@ const styles = StyleSheet.create({
     ...typography.h3,
     fontWeight: '600',
   },
+  resultsScroll: {
+    flex: 1,
+    width: '100%',
+  },
+  resultsScrollContent: {
+    alignItems: 'center',
+    paddingHorizontal: spacing.xs,
+    paddingBottom: spacing.xxl,
+  },
   resultsContainer: {
     flex: 1,
     alignItems: 'center',
@@ -582,6 +739,112 @@ const styles = StyleSheet.create({
   },
   emojiGridSub: {
     ...typography.caption,
+  },
+  clanBoardCard: {
+    width: '100%',
+    borderRadius: radii.xl,
+    borderWidth: 1,
+    padding: spacing.md,
+    marginBottom: spacing.xl,
+  },
+  clanBoardHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: spacing.sm,
+  },
+  clanBoardHeaderLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.xs,
+  },
+  clanBoardTitle: {
+    ...typography.bodyBold,
+    fontWeight: '700',
+  },
+  clanBoardPill: {
+    paddingHorizontal: spacing.sm,
+    paddingVertical: 2,
+    borderRadius: radii.full,
+  },
+  clanBoardPillText: {
+    ...typography.caption,
+    fontWeight: '600',
+  },
+  clanBoardList: {
+    gap: spacing.xs,
+  },
+  clanBoardRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: spacing.sm,
+    paddingHorizontal: spacing.sm,
+    borderRadius: radii.md,
+    borderWidth: 1,
+  },
+  clanBoardRowMe: {
+    borderWidth: 1.5,
+  },
+  clanBoardLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    flex: 1,
+  },
+  clanRankText: {
+    ...typography.bodyBold,
+    fontWeight: '800',
+    width: 24,
+    textAlign: 'center',
+  },
+  clanAvatarEmoji: {
+    fontSize: 22,
+  },
+  clanNameCol: {
+    flex: 1,
+  },
+  clanNameRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  clanName: {
+    ...typography.body,
+    fontWeight: '600',
+    flexShrink: 1,
+  },
+  youBadge: {
+    paddingHorizontal: 6,
+    paddingVertical: 1,
+    borderRadius: radii.full,
+  },
+  youBadgeText: {
+    fontSize: 9,
+    fontWeight: '800',
+    color: '#FFFFFF',
+    letterSpacing: 0.5,
+  },
+  clanMeta: {
+    ...typography.caption,
+    marginTop: 2,
+  },
+  clanBoardRight: {
+    alignItems: 'flex-end',
+    marginLeft: spacing.sm,
+  },
+  clanScoreText: {
+    ...typography.bodyBold,
+    fontWeight: '800',
+  },
+  clanScoreLabel: {
+    fontSize: 10,
+  },
+  clanEmptyNote: {
+    ...typography.caption,
+    textAlign: 'center',
+    marginTop: spacing.sm,
+    fontStyle: 'italic',
   },
   resultsActions: {
     width: '100%',

@@ -8,6 +8,7 @@ import {
   type VocabLevel,
 } from '../models/vocabulary.model';
 
+import { contentSyncService } from '../../../core/content/contentSync.service';
 import N5_VOCAB from '../data/n5.json';
 import N4_VOCAB from '../data/n4.json';
 import N3_VOCAB from '../data/n3.json';
@@ -37,12 +38,15 @@ export class VocabularyRepository implements IVocabularyRepository {
       return ok(cached);
     }
 
-    const raw = LEVEL_MAP[level];
-    if (!raw) {
+    const fallback = LEVEL_MAP[level];
+    if (!fallback) {
       return err(
         new AppError(`Vocab data for level ${level} not found`, 'NOT_FOUND'),
       );
     }
+
+    const bundleKey = `vocab-${level.toLowerCase()}`;
+    const raw = contentSyncService.getContentBundle(bundleKey, fallback);
 
     const validation = mapEntity(z.array(VocabEntrySchema), raw);
     if (!validation.ok) {

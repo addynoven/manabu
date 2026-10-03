@@ -14,6 +14,7 @@ import {
   isItemDue,
   getStageGroup,
 } from '../../review/services/srsEngine';
+import { getWeekId } from '../../community/models/social.model';
 
 interface ProgressState extends UserStats {
   recordAnswer: (
@@ -85,6 +86,8 @@ export const useProgressStore = create<ProgressState>()(
       totalQuestionsAnswered: 0,
       totalCorrect: 0,
       totalXp: 0,
+      weeklyXp: 0,
+      weekId: getWeekId(),
       todayXp: 0,
       todayDate: null,
       dailyGoalXp: 50,
@@ -167,6 +170,7 @@ export const useProgressStore = create<ProgressState>()(
         };
 
         const nextTodayXp = (todayDate === today ? (todayXp || 0) : 0) + xpGained;
+        const currentWeek = getWeekId();
 
         set(state => ({
           currentStreak: nextStreak,
@@ -177,6 +181,8 @@ export const useProgressStore = create<ProgressState>()(
           totalQuestionsAnswered: state.totalQuestionsAnswered + 1,
           totalCorrect: isCorrect ? state.totalCorrect + 1 : state.totalCorrect,
           totalXp: state.totalXp + xpGained,
+          weeklyXp: (state.weekId === currentWeek ? (state.weeklyXp || 0) : 0) + xpGained,
+          weekId: currentWeek,
           kanaPracticedCount:
             category === 'kana'
               ? state.kanaPracticedCount + 1
@@ -273,6 +279,7 @@ export const useProgressStore = create<ProgressState>()(
         };
 
         const nextTodayXp = (todayDate === today ? (todayXp || 0) : 0) + xpGained;
+        const currentWeek = getWeekId();
 
         set(state => ({
           currentStreak: nextStreak,
@@ -283,6 +290,8 @@ export const useProgressStore = create<ProgressState>()(
           totalQuestionsAnswered: state.totalQuestionsAnswered + 1,
           totalCorrect: isCorrect ? state.totalCorrect + 1 : state.totalCorrect,
           totalXp: state.totalXp + xpGained,
+          weeklyXp: (state.weekId === currentWeek ? (state.weeklyXp || 0) : 0) + xpGained,
+          weekId: currentWeek,
           kanaPracticedCount:
             category === 'kana'
               ? state.kanaPracticedCount + 1
@@ -444,6 +453,8 @@ export const useProgressStore = create<ProgressState>()(
             totalQuestionsAnswered: state.totalQuestionsAnswered,
             totalCorrect: state.totalCorrect,
             totalXp: state.totalXp,
+            weeklyXp: state.weeklyXp,
+            weekId: state.weekId,
             todayXp: state.todayXp,
             todayDate: state.todayDate,
             dailyGoalXp: state.dailyGoalXp,

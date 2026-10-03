@@ -21,24 +21,25 @@ vi.mock('@react-native-google-signin/google-signin', () => ({
   statusCodes: {},
 }));
 
-// Mock Firebase
+// Mock Firebase Auth only
 vi.mock('../../../core/api/firebase', () => ({
-  firebaseDb: {},
   firebaseAuth: {
     currentUser: { uid: 'user-123', email: 'test@example.com' },
   },
 }));
 
-const mockDocSnap = {
-  exists: vi.fn(),
-  data: vi.fn(),
-};
+let mockBackupResponse: any = { backup: null, syncedAt: null };
 
-vi.mock('firebase/firestore', () => ({
-  doc: vi.fn((_db, ...parts) => parts.join('/')),
-  setDoc: vi.fn().mockResolvedValue(undefined),
-  getDoc: vi.fn().mockImplementation(() => Promise.resolve(mockDocSnap)),
-  serverTimestamp: vi.fn(() => ({ _methodName: 'serverTimestamp' })),
+vi.mock('../../../core/api/httpClient', () => ({
+  apiClient: vi.fn().mockImplementation((path: string, options?: any) => {
+    if (path === '/api/v1/backup' && options?.method === 'PUT') {
+      return Promise.resolve({ ok: true, data: { ok: true, syncedAt: new Date().toISOString() } });
+    }
+    if (path === '/api/v1/backup') {
+      return Promise.resolve({ ok: true, data: mockBackupResponse });
+    }
+    return Promise.resolve({ ok: true, data: {} });
+  }),
 }));
 
 describe('CloudSync Models & Validation', () => {
@@ -98,6 +99,8 @@ describe('CloudSync Models & Validation', () => {
         totalQuestionsAnswered: 100,
         totalCorrect: 95,
         totalXp: 950,
+        weeklyXp: 950,
+        weekId: '2026-W40',
         todayXp: 50,
         todayDate: '2026-10-01',
         dailyGoalXp: 50,
@@ -215,6 +218,8 @@ describe('CloudSyncService restoration & integration', () => {
         totalQuestionsAnswered: 500,
         totalCorrect: 480,
         totalXp: 4800,
+        weeklyXp: 4800,
+        weekId: '2026-W40',
         todayXp: 120,
         todayDate: '2026-10-01',
         dailyGoalXp: 100,
@@ -273,8 +278,7 @@ describe('CloudSyncService restoration & integration', () => {
       },
     };
 
-    mockDocSnap.exists.mockReturnValue(true);
-    mockDocSnap.data.mockReturnValue(sampleBackup);
+    mockBackupResponse = { backup: sampleBackup, syncedAt: '2026-10-01T12:00:00.000Z' };
 
     const restoreRes = await cloudSyncService.loadUserProgressFromCloud('user-restored-123');
     expect(restoreRes.ok).toBe(true);

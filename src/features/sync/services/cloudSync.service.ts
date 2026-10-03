@@ -1,5 +1,6 @@
-import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
-import { firebaseDb, firebaseAuth } from '../../../core/api/firebase';
+import { AppState, type AppStateStatus } from 'react-native';
+import { firebaseAuth } from '../../../core/api/firebase';
+import { apiClient } from '../../../core/api/httpClient';
 import { useProgressStore } from '../../progress/store/useProgressStore';
 import { useDojoStore } from '../../dojo/store/useDojoStore';
 import { useAchievementStore } from '../../achievements/store/useAchievementStore';
@@ -7,11 +8,10 @@ import { useArcadeStore } from '../../arcade/store/useArcadeStore';
 import { useChallengeStore } from '../../challenges/store/useChallengeStore';
 import { useSettingsStore } from '../../settings/store/useSettingsStore';
 import { useThemeStore } from '../../../core/theme/useThemeStore';
-import { useAuthStore } from '../../auth/store/useAuthStore';
 import { calculatePlayerLevel } from '../../achievements/models/achievement.model';
+import { getWeekId } from '../../community/models/social.model';
+import { useCommunityStore } from '../../community/store/useCommunityStore';
 import {
-  type PublicUserProfile,
-  PublicUserProfileSchema,
   type CompleteCloudSyncSnapshot,
   CompleteCloudSyncSnapshotSchema,
   type SyncStatusState,
@@ -37,7 +37,9 @@ class CloudSyncService {
   };
 
   private listeners: Set<(status: SyncStatusState) => void> = new Set();
-  private debounceTimer: ReturnType<typeof setTimeout> | null = null;
+  private throttleTimer: ReturnType<typeof setTimeout> | null = null;
+  private lastSyncedTime = 0;
+  private readonly THROTTLE_MS = 3 * 60 * 1000; // 3 minutes while active
 
   public getStatus(): SyncStatusState {
     return { ...this.syncStatus };
@@ -68,8 +70,9 @@ class CloudSyncService {
   }
 
   /**
-   * Save current local progress to Firestore.
-   * Updates public profile `users/{userId}` and private complete backup `users/{userId}/private/sync`.
+   * Save current local progress:
+   * 1. Public profile -> Next.js API (/api/v1/profile on Vercel)
+   * 2. Complete backup -> Firestore private sync (users/{userId}/private/sync)
    */
   public async saveUserProgressToCloud(userId: string): Promise<Result<void, Error>> {
     if (!userId) {
@@ -86,37 +89,44 @@ class CloudSyncService {
       const challenges = useChallengeStore.getState();
       const settings = useSettingsStore.getState();
       const themeState = useThemeStore.getState();
-      const currentUser = useAuthStore.getState().currentUser;
 
       const totalPoints = achievements.getTotalPoints();
       const levelInfo = calculatePlayerLevel(totalPoints);
       const beltRank: BeltRank =
         BELT_ORDER[Math.min(Math.max(0, levelInfo.level - 1), BELT_ORDER.length - 1)];
 
-      // 1. Build & validate Public Profile matching firestore.rules whitelist
-      const rawPublicProfile: PublicUserProfile = {
-        uid: userId,
-        displayName: (currentUser?.displayName || stats.displayName || 'Manabu Learner').trim().slice(0, 100),
-        photoURL: currentUser?.avatarUrl || null,
-        totalXp: Math.max(0, stats.totalXp || 0),
-        avatarEmoji: (stats.avatarEmoji || '🥋').slice(0, 20),
+      // 1. Sync Public Profile to Next.js API (/api/v1/profile)
+      const currentWeek = getWeekId();
+      const apiProfilePayload = {
+        displayName: (stats.displayName || 'Manabu Student').trim().slice(0, 24),
+        avatarEmoji: (stats.avatarEmoji || '🥋').slice(0, 16),
         beltRank,
         level: Math.max(1, levelInfo.level || 1),
+        totalXp: Math.max(0, stats.totalXp || 0),
+        weeklyXp: Math.max(0, stats.weeklyXp || 0),
+        weekId: stats.weekId || currentWeek,
         currentStreak: Math.max(0, stats.currentStreak || 0),
-        bestStreak: Math.max(0, stats.bestStreak || 0),
-        dailyGoalXp: Math.max(10, stats.dailyGoalXp || 50),
-        todayXp: Math.max(0, stats.todayXp || 0),
-        todayDate: stats.todayDate || null,
-        joinedDate: stats.joinedDate || new Date().toISOString().split('T')[0],
         lastActiveDate: stats.lastActiveDate || null,
-        kanaPracticedCount: Math.max(0, stats.kanaPracticedCount || 0),
-        kanjiPracticedCount: Math.max(0, stats.kanjiPracticedCount || 0),
-        vocabPracticedCount: Math.max(0, stats.vocabPracticedCount || 0),
-        totalQuestionsAnswered: Math.max(0, stats.totalQuestionsAnswered || 0),
-        totalCorrect: Math.max(0, stats.totalCorrect || 0),
+        daily: arcade.dailyChallengeLastResult ? {
+          date: arcade.dailyChallengeDate || new Date().toISOString().split('T')[0],
+          score: arcade.dailyChallengeLastResult.score,
+          timeSeconds: arcade.dailyChallengeLastResult.timeSeconds,
+          accuracy: arcade.dailyChallengeLastResult.accuracy,
+        } : null,
       };
 
-      const validatedProfile = PublicUserProfileSchema.parse(rawPublicProfile);
+      // 1. Sync Public Profile to Next.js API (/api/v1/profile)
+      try {
+        const putProfileRes = await apiClient<{ profile?: { friendCode?: string } }>('/api/v1/profile', {
+          method: 'PUT',
+          body: JSON.stringify(apiProfilePayload),
+        });
+        if (putProfileRes.ok && putProfileRes.data?.profile?.friendCode) {
+          useCommunityStore.setState({ myFriendCode: putProfileRes.data.profile.friendCode });
+        }
+      } catch (err) {
+        console.warn('[CloudSync] API Profile sync notice:', err);
+      }
 
       // 2. Build & validate Complete Private Backup Data ("Lost Phone Guarantee")
       const rawPrivateSync: CompleteCloudSyncSnapshot = {
@@ -129,6 +139,8 @@ class CloudSyncService {
           totalQuestionsAnswered: stats.totalQuestionsAnswered,
           totalCorrect: stats.totalCorrect,
           totalXp: stats.totalXp,
+          weeklyXp: stats.weeklyXp,
+          weekId: stats.weekId || getWeekId(),
           todayXp: stats.todayXp,
           todayDate: stats.todayDate,
           dailyGoalXp: stats.dailyGoalXp,
@@ -184,24 +196,18 @@ class CloudSyncService {
 
       const validatedPrivateSync = CompleteCloudSyncSnapshotSchema.parse(rawPrivateSync);
 
-      // 3. Firestore doc references
-      const userDocRef = doc(firebaseDb, 'users', userId);
-      const privateSyncDocRef = doc(firebaseDb, 'users', userId, 'private', 'sync');
+      // 2. Write full private backup to PostgreSQL via API (/api/v1/backup)
+      const backupRes = await apiClient<{ ok: boolean; syncedAt: string }>('/api/v1/backup', {
+        method: 'PUT',
+        body: JSON.stringify(validatedPrivateSync),
+      });
 
-      // 4. Atomic writes
-      await Promise.all([
-        setDoc(
-          userDocRef,
-          {
-            ...validatedProfile,
-            updatedAt: serverTimestamp(),
-          },
-          { merge: true },
-        ),
-        setDoc(privateSyncDocRef, validatedPrivateSync, { merge: true }),
-      ]);
+      if (!backupRes.ok) {
+        throw new Error(backupRes.error?.message || 'Failed to save cloud backup to server');
+      }
 
       const nowIso = new Date().toISOString();
+      this.lastSyncedTime = Date.now();
       this.updateStatus({
         isSyncing: false,
         lastSyncedAt: nowIso,
@@ -221,8 +227,7 @@ class CloudSyncService {
   }
 
   /**
-   * Load and restore complete user progress from Firestore.
-   * Atomically restores progress, dojo curriculum, achievements, arcade scores, and settings.
+   * Load and restore complete user progress from PostgreSQL private backup.
    */
   public async loadUserProgressFromCloud(userId: string): Promise<Result<CompleteCloudSyncSnapshot | null, Error>> {
     if (!userId) {
@@ -232,15 +237,20 @@ class CloudSyncService {
     this.updateStatus({ isSyncing: true, lastError: null });
 
     try {
-      const privateSyncDocRef = doc(firebaseDb, 'users', userId, 'private', 'sync');
-      const snap = await getDoc(privateSyncDocRef);
+      const backupRes = await apiClient<{ backup: CompleteCloudSyncSnapshot | null; syncedAt: string | null }>(
+        '/api/v1/backup'
+      );
 
-      if (!snap.exists()) {
+      if (!backupRes.ok) {
+        throw new Error(backupRes.error?.message || 'Failed to load cloud backup from server');
+      }
+
+      if (!backupRes.data?.backup) {
         this.updateStatus({ isSyncing: false });
         return ok(null);
       }
 
-      const parsed = CompleteCloudSyncSnapshotSchema.safeParse(snap.data());
+      const parsed = CompleteCloudSyncSnapshotSchema.safeParse(backupRes.data.backup);
       if (!parsed.success) {
         throw new Error(`Corrupted cloud sync data: ${parsed.error.issues[0]?.message}`);
       }
@@ -248,49 +258,50 @@ class CloudSyncService {
       const data = parsed.data;
 
       // 1. Progress & SRS Mastery
-      useProgressStore.setState(data.stats);
+      useProgressStore.setState(prev => ({
+        ...prev,
+        ...data.stats,
+      }));
 
-      // 2. Dojo Curriculum
-      useDojoStore.setState({
-        completedLessons: data.dojo.completedLessons,
-        cooldownUntil: data.dojo.cooldownUntil,
-        passedRevisionGates: data.dojo.passedRevisionGates,
-        passedDailyRevisions: data.dojo.passedDailyRevisions,
-        activeLessonId: data.dojo.activeLessonId,
-      });
+      // 2. Dojo Curriculum State
+      useDojoStore.setState(prev => ({
+        ...prev,
+        ...data.dojo,
+      }));
 
       // 3. Achievements
-      useAchievementStore.setState({
+      useAchievementStore.setState(prev => ({
+        ...prev,
         unlocked: data.achievements.unlocked,
-      });
+      }));
 
-      // 4. Arcade Minigame Records
+      // 4. Arcade Scores
       if (data.arcade) {
-        useArcadeStore.setState({
-          rainHighScore: data.arcade.highScores['rain'] || 0,
-          snakeHighScore: data.arcade.highScores['snake'] || 0,
-          catchHighScore: data.arcade.highScores['catch'] || 0,
-          wordleWins: data.arcade.gamesWon,
-          wordlePlayed: data.arcade.totalGamesPlayed,
-        });
+        useArcadeStore.setState(prev => ({
+          ...prev,
+          rainHighScore: Math.max(prev.rainHighScore, data.arcade?.highScores?.rain || 0),
+          snakeHighScore: Math.max(prev.snakeHighScore, data.arcade?.highScores?.snake || 0),
+          catchHighScore: Math.max(prev.catchHighScore, data.arcade?.highScores?.catch || 0),
+          wordleWins: Math.max(prev.wordleWins, data.arcade?.highScores?.wordleWins || 0),
+          wordlePlayed: Math.max(prev.wordlePlayed, data.arcade?.totalGamesPlayed || 0),
+        }));
       }
 
-      // 5. Settings & Theme
+      // 5. Settings
       if (data.settings) {
-        useSettingsStore.setState({
-          hapticsEnabled: data.settings.hapticsEnabled,
-          ttsEnabled: data.settings.ttsEnabled,
-          ttsRate: data.settings.ttsRate,
-          showFuriganaInDrills: data.settings.showFuriganaInDrills,
-          showRomajiInCharts: data.settings.showRomajiInCharts,
-          themeId: data.settings.activeThemeId,
-        });
-        useThemeStore.setState({
-          activeThemeId: data.settings.activeThemeId,
-        });
+        useSettingsStore.setState(prev => ({
+          ...prev,
+          hapticsEnabled: data.settings?.hapticsEnabled ?? prev.hapticsEnabled,
+          ttsEnabled: data.settings?.ttsEnabled ?? prev.ttsEnabled,
+          ttsRate: data.settings?.ttsRate ?? prev.ttsRate,
+          showFuriganaInDrills: data.settings?.showFuriganaInDrills ?? prev.showFuriganaInDrills,
+          showRomajiInCharts: data.settings?.showRomajiInCharts ?? prev.showRomajiInCharts,
+          themeId: data.settings?.activeThemeId || prev.themeId,
+        }));
       }
 
       const nowIso = new Date().toISOString();
+      this.lastSyncedTime = Date.now();
       this.updateStatus({
         isSyncing: false,
         lastSyncedAt: nowIso,
@@ -310,55 +321,67 @@ class CloudSyncService {
   }
 
   /**
-   * Smart sync upon user authentication.
-   * Restores cloud backup if local device is empty, otherwise uploads current progress.
+   * Called on auth change (login / restore):
+   * Attempts to restore from cloud if local progress is completely blank;
+   * otherwise saves current local progress to cloud.
    */
   public async syncOnAuthChange(userId: string): Promise<void> {
     if (!userId) return;
+    const progress = useProgressStore.getState();
+    const isLocalBlank = progress.totalQuestionsAnswered === 0 && progress.totalXp === 0;
 
-    try {
-      const localStats = useProgressStore.getState();
-      const hasLocalProgress =
-        localStats.totalXp > 0 ||
-        localStats.totalQuestionsAnswered > 0 ||
-        Object.keys(localStats.mastery).length > 0;
-
-      if (!hasLocalProgress) {
-        // Try restoring from cloud first
-        const cloudDataRes = await this.loadUserProgressFromCloud(userId);
-        if (cloudDataRes.ok && cloudDataRes.data) {
-          console.log('[CloudSync] Restored existing cloud progress to local store.');
-          return;
-        }
+    if (isLocalBlank) {
+      const loadRes = await this.loadUserProgressFromCloud(userId);
+      if (loadRes.ok && loadRes.data) {
+        return;
       }
-
-      // Otherwise upload current local progress to cloud
-      await this.saveUserProgressToCloud(userId);
-    } catch (e) {
-      console.warn('[CloudSync] syncOnAuthChange warning:', e);
     }
+
+    await this.saveUserProgressToCloud(userId);
   }
 
   /**
-   * Triggers an invisible debounced sync if an authenticated user is currently active.
+   * Throttled sync: at most once every 3 minutes while active,
+   * or immediately when force is true (e.g. on backgrounding or after daily gauntlet).
    */
-  public triggerDebouncedSync(): void {
+  public triggerThrottledSync(force = false): void {
     const user = firebaseAuth.currentUser;
     if (!user || !user.uid) return;
 
-    if (this.debounceTimer) {
-      clearTimeout(this.debounceTimer);
+    const now = Date.now();
+    const elapsed = now - this.lastSyncedTime;
+
+    if (!force && elapsed < this.THROTTLE_MS) {
+      if (!this.throttleTimer) {
+        this.throttleTimer = setTimeout(() => {
+          this.throttleTimer = null;
+          this.triggerThrottledSync(true);
+        }, this.THROTTLE_MS - elapsed);
+      }
+      return;
     }
 
-    this.debounceTimer = setTimeout(() => {
-      this.saveUserProgressToCloud(user.uid).catch(() => {});
-    }, 2000);
+    if (this.throttleTimer) {
+      clearTimeout(this.throttleTimer);
+      this.throttleTimer = null;
+    }
+
+    this.lastSyncedTime = now;
+    this.saveUserProgressToCloud(user.uid).catch(() => {});
   }
 
   /**
-   * Initialize reactive listeners on local Zustand stores for invisible background sync.
+   * Initialize reactive listeners on local Zustand stores and AppState
+   * for invisible, throttled background sync.
    */
   public initializeReactiveSync(): () => void {
+    // Sync immediately when app transitions to background
+    const appStateSub = AppState.addEventListener('change', (nextState: AppStateStatus) => {
+      if (nextState === 'background' || nextState === 'inactive') {
+        this.triggerThrottledSync(true);
+      }
+    });
+
     const unsubProgress = useProgressStore.subscribe((state, prevState) => {
       if (
         state.totalXp !== prevState.totalXp ||
@@ -368,7 +391,7 @@ class CloudSyncService {
         state.avatarEmoji !== prevState.avatarEmoji ||
         Object.keys(state.mastery).length !== Object.keys(prevState.mastery).length
       ) {
-        this.triggerDebouncedSync();
+        this.triggerThrottledSync(false);
       }
     });
 
@@ -378,13 +401,13 @@ class CloudSyncService {
         state.passedRevisionGates !== prevState.passedRevisionGates ||
         state.passedDailyRevisions !== prevState.passedDailyRevisions
       ) {
-        this.triggerDebouncedSync();
+        this.triggerThrottledSync(false);
       }
     });
 
     const unsubAchievements = useAchievementStore.subscribe((state, prevState) => {
       if (state.unlocked !== prevState.unlocked) {
-        this.triggerDebouncedSync();
+        this.triggerThrottledSync(false);
       }
     });
 
@@ -393,9 +416,12 @@ class CloudSyncService {
         state.wordlePlayed !== prevState.wordlePlayed ||
         state.catchHighScore !== prevState.catchHighScore ||
         state.rainHighScore !== prevState.rainHighScore ||
-        state.snakeHighScore !== prevState.snakeHighScore
+        state.snakeHighScore !== prevState.snakeHighScore ||
+        state.dailyChallengeCompleted !== prevState.dailyChallengeCompleted
       ) {
-        this.triggerDebouncedSync();
+        // If daily challenge was just completed, force sync immediately
+        const isDailyDone = state.dailyChallengeCompleted && !prevState.dailyChallengeCompleted;
+        this.triggerThrottledSync(isDailyDone);
       }
     });
 
@@ -407,11 +433,12 @@ class CloudSyncService {
         state.showRomajiInCharts !== prevState.showRomajiInCharts ||
         state.themeId !== prevState.themeId
       ) {
-        this.triggerDebouncedSync();
+        this.triggerThrottledSync(false);
       }
     });
 
     return () => {
+      appStateSub.remove();
       unsubProgress();
       unsubDojo();
       unsubAchievements();

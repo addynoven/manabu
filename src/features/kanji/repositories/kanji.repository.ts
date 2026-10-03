@@ -8,6 +8,7 @@ import {
   type KanjiLevel,
 } from '../models/kanji.model';
 
+import { contentSyncService } from '../../../core/content/contentSync.service';
 import N5_DATA from '../data/N5.json';
 import N4_DATA from '../data/N4.json';
 import N3_DATA from '../data/N3.json';
@@ -35,12 +36,15 @@ export class KanjiRepository implements IKanjiRepository {
       return ok(cached);
     }
 
-    const raw = LEVEL_MAP[level];
-    if (!raw) {
+    const fallback = LEVEL_MAP[level];
+    if (!fallback) {
       return err(
         new AppError(`Kanji data for level ${level} not found`, 'NOT_FOUND'),
       );
     }
+
+    const bundleKey = `kanji-${level.toLowerCase()}`;
+    const raw = contentSyncService.getContentBundle(bundleKey, fallback);
 
     const validation = mapEntity(z.array(KanjiEntrySchema), raw);
     if (!validation.ok) {

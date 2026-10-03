@@ -80,27 +80,30 @@ export const useArcadeStore = create<ArcadeState>()(
       recordRainScore: (score: number) => {
         const state = get();
         const isNewHigh = score > state.rainHighScore;
-        if (isNewHigh) {
-          set({ rainHighScore: score });
-        }
+        set({
+          lastFinishedGameScore: { game: 'rain', score, timestamp: Date.now() },
+          ...(isNewHigh ? { rainHighScore: score } : {}),
+        });
         return { isNewHigh };
       },
 
       recordSnakeScore: (score: number) => {
         const state = get();
         const isNewHigh = score > state.snakeHighScore;
-        if (isNewHigh) {
-          set({ snakeHighScore: score });
-        }
+        set({
+          lastFinishedGameScore: { game: 'snake', score, timestamp: Date.now() },
+          ...(isNewHigh ? { snakeHighScore: score } : {}),
+        });
         return { isNewHigh };
       },
 
       recordCatchScore: (score: number) => {
         const state = get();
         const isNewHigh = score > state.catchHighScore;
-        if (isNewHigh) {
-          set({ catchHighScore: score });
-        }
+        set({
+          lastFinishedGameScore: { game: 'catch', score, timestamp: Date.now() },
+          ...(isNewHigh ? { catchHighScore: score } : {}),
+        });
         return { isNewHigh };
       },
 
@@ -108,14 +111,17 @@ export const useArcadeStore = create<ArcadeState>()(
         const state = get();
         const currentHigh = state.survivalHighScores?.[mode] || 0;
         const isNewHigh = score > currentHigh;
-        if (isNewHigh) {
-          set({
-            survivalHighScores: {
-              ...(state.survivalHighScores || {}),
-              [mode]: score,
-            },
-          });
-        }
+        set({
+          lastFinishedGameScore: { game: 'survival', score, timestamp: Date.now() },
+          ...(isNewHigh
+            ? {
+                survivalHighScores: {
+                  ...(state.survivalHighScores || {}),
+                  [mode]: score,
+                },
+              }
+            : {}),
+        });
         return { isNewHigh };
       },
 

@@ -9,6 +9,7 @@ import { QueryProvider } from '../core/query/QueryProvider';
 import { GlobalClipboardToast } from '../core/clipboard/GlobalClipboardToast';
 
 import { useAuthStore } from '../features/auth/store/useAuthStore';
+import { contentSyncService } from '../core/content/contentSync.service';
 
 SplashScreen.preventAutoHideAsync().catch(() => {});
 
@@ -17,6 +18,8 @@ export default function RootLayout() {
     // Hide splash screen after root layout mounts
     SplashScreen.hideAsync().catch(() => {});
     const unsubscribe = useAuthStore.getState().initAuthListener();
+    // Check backend Single Source of Truth for new curriculum/content updates
+    contentSyncService.checkForUpdates().catch(() => {});
     return () => {
       if (typeof unsubscribe === 'function') unsubscribe();
     };

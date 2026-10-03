@@ -72,3 +72,17 @@ class ClientStorageManager implements StateStorage {
 }
 
 export const clientStorage = new ClientStorageManager();
+export const appStorage = clientStorage;
+
+export const asyncClientStorage = {
+  getItem: async (name: string): Promise<string | null> => {
+    return clientStorage.getItem(name);
+  },
+  setItem: async (name: string, value: string): Promise<void> => {
+    clientStorage.setItem(name, value);
+  },
+  removeItem: async (name: string): Promise<void> => {
+    clientStorage.removeItem(name);
+  },
+};
+

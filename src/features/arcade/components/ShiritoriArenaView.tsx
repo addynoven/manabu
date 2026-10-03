@@ -7,6 +7,7 @@ import {
   ScrollView,
   TextInput,
   Animated,
+  ActivityIndicator,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
@@ -19,6 +20,7 @@ import {
   AlertTriangle,
   RotateCcw,
   Zap,
+  WifiOff,
 } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
 import * as wanakana from 'wanakana';
@@ -34,16 +36,31 @@ import {
   type ShiritoriDifficulty,
   type ShiritoriTurn,
   type ShiritoriWord,
+  SHIRITORI_DICTIONARY,
 } from '../lib/shiritoriEngine';
+import { duelService } from '../services/duel.service';
+import type { DuelState } from '../models/duel.model';
 
 interface ShiritoriArenaViewProps {
   onClose: () => void;
+  duelMatchId?: string;
+  initialDuelState?: DuelState;
 }
 
-export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
+export function ShiritoriArenaView({
+  onClose,
+  duelMatchId,
+  initialDuelState,
+}: ShiritoriArenaViewProps) {
   const insets = useSafeAreaInsets();
   const { colors: theme } = useAppTheme();
 
+  const isMultiplayer = Boolean(duelMatchId);
+
+  // Multiplayer State
+  const [duelState, setDuelState] = useState<DuelState | null>(initialDuelState || null);
+
+  // Difficulty & Bot (Solo)
   const [difficulty, setDifficulty] = useState<ShiritoriDifficulty>('medium');
   const bot = BOT_PROFILES[difficulty];
 
@@ -61,7 +78,13 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
   const [streak, setStreak] = useState(0);
 
   // Timer
-  const TURN_SECONDS = difficulty === 'hard' ? 12 : difficulty === 'medium' ? 20 : 30;
+  const TURN_SECONDS = isMultiplayer
+    ? 30
+    : difficulty === 'hard'
+    ? 12
+    : difficulty === 'medium'
+    ? 20
+    : 30;
   const [timeLeft, setTimeLeft] = useState(TURN_SECONDS);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -77,7 +100,25 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
   // Suggestions for player
   const suggestions = getPlayerSuggestions(requiredKana, usedKanaSet, 4);
 
-  // Start initial match
+  const opponentName = isMultiplayer
+    ? duelState?.opponent.displayName || 'Opponent'
+    : bot.name;
+
+  const opponentAvatar = isMultiplayer
+    ? duelState?.opponent.avatarEmoji || '🥷'
+    : bot.avatarEmoji;
+
+  const handleSafeClose = () => {
+    if (isMultiplayer && duelMatchId && duelState && (duelState.status === 'live' || duelState.status === 'waiting')) {
+      duelService.forfeitDuel(duelMatchId).catch(() => {});
+    }
+    if (timerRef.current) clearInterval(timerRef.current);
+    onClose();
+  };
+
+  // -------------------------------------------------------------
+  // SOLO BOT MODE LOGIC
+  // -------------------------------------------------------------
   const startNewGame = useCallback((diff: ShiritoriDifficulty = difficulty) => {
     const starterWords: ShiritoriWord[] = [
       { word: '猫', kana: 'ねこ', romaji: 'neko', english: 'Cat' },
@@ -111,13 +152,118 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
     setGameOver({ isOver: false, winner: null, reason: '' });
   }, [difficulty]);
 
+  // -------------------------------------------------------------
+  // MULTIPLAYER LIVE SYNCHRONIZATION
+  // -------------------------------------------------------------
   useEffect(() => {
-    startNewGame(difficulty);
-  }, []);
+    if (!isMultiplayer || !duelMatchId) {
+      const initTimer = setTimeout(() => {
+        startNewGame(difficulty);
+      }, 0);
+      return () => {
+        clearTimeout(initTimer);
+        if (timerRef.current) clearInterval(timerRef.current);
+      };
+    }
 
-  // Turn timer countdown
+    // Initial fetch
+    duelService.getDuelState(duelMatchId, true).then(res => {
+      if (res.ok) setDuelState(res.data);
+    });
+
+    const stopPolling = duelService.pollDuel(
+      duelMatchId,
+      (newState) => {
+        setDuelState(newState);
+
+        // Synchronize word chain
+        if (newState.words && newState.words.length > 0) {
+          const usedSet = new Set<string>();
+          const parsedHistory: ShiritoriTurn[] = newState.words.map((w, idx) => {
+            const dictMatch = SHIRITORI_DICTIONARY.find(
+              entry => entry.word === w.word || entry.kana === w.word
+            );
+            const kana = dictMatch?.kana || wanakana.toHiragana(w.word);
+            usedSet.add(kana);
+
+            return {
+              id: `move_${idx}_${w.timestamp}`,
+              player: w.by === 'me' ? 'player' : 'opponent',
+              word: dictMatch?.word || w.word,
+              kana,
+              romaji: dictMatch?.romaji || wanakana.toRomaji(kana),
+              english: dictMatch?.english || 'Custom Word',
+              timestamp: w.timestamp,
+            };
+          });
+
+          setHistory(parsedHistory);
+          setUsedKanaSet(usedSet);
+
+          const lastWord = parsedHistory[parsedHistory.length - 1];
+          if (lastWord) {
+            setRequiredKana(getShiritoriLastKana(lastWord.kana));
+          }
+
+          setTimeout(() => {
+            scrollRef.current?.scrollToEnd({ animated: true });
+          }, 100);
+        }
+
+        // Synchronize turn
+        if (newState.status === 'live') {
+          setCurrentTurn(newState.turn === 'me' ? 'player' : 'bot');
+          if (newState.turnDeadlineMs) {
+            const remSec = Math.max(0, Math.round((newState.turnDeadlineMs - Date.now()) / 1000));
+            setTimeLeft(remSec);
+          }
+        } else if (newState.status === 'finished' || newState.status === 'forfeit') {
+          const isMe = newState.result?.winner === 'me';
+          let reason = '';
+          if (newState.result?.reason === 'ended_with_n') {
+            reason = isMe
+              ? `${opponentName} played a word ending in「ん」!`
+              : 'You played a word ending in「ん」!';
+          } else if (newState.result?.reason === 'timeout') {
+            reason = isMe
+              ? `${opponentName} ran out of time!`
+              : 'You ran out of time!';
+          } else if (newState.result?.reason === 'forfeit') {
+            reason = isMe
+              ? `${opponentName} surrendered!`
+              : 'You surrendered.';
+          } else {
+            reason = isMe ? 'You won the match!' : `${opponentName} won!`;
+          }
+
+          setGameOver({
+            isOver: true,
+            winner: isMe ? 'player' : 'bot',
+            reason,
+          });
+
+          if (isMe) {
+            Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
+          } else {
+            Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error).catch(() => {});
+          }
+        }
+      },
+      (err) => {
+        console.warn('[ShiritoriArenaView] Poll error:', err);
+      },
+      700
+    );
+
+    return () => {
+      stopPolling();
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [isMultiplayer, duelMatchId]);
+
+  // Turn timer countdown (Solo mode only; in multiplayer, deadline is server-driven)
   useEffect(() => {
-    if (gameOver.isOver || isBotThinking) return;
+    if (isMultiplayer || gameOver.isOver || isBotThinking) return;
 
     timerRef.current = setInterval(() => {
       setTimeLeft(prev => {
@@ -135,7 +281,7 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [currentTurn, gameOver.isOver, isBotThinking]);
+  }, [currentTurn, gameOver.isOver, isBotThinking, isMultiplayer]);
 
   const handlePlayAudio = async (text: string) => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
@@ -151,7 +297,7 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
     setGameOver({ isOver: true, winner, reason });
   };
 
-  // Bot Turn Logic
+  // Bot Turn Logic (Solo mode)
   const triggerBotTurn = (nextKana: string, currentUsed: Set<string>) => {
     setCurrentTurn('bot');
     setIsBotThinking(true);
@@ -161,13 +307,11 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
       const botMove = getBotShiritoriMove(nextKana, currentUsed, difficulty);
 
       if (!botMove) {
-        // Bot is stumped!
         handleGameOver('player', `${bot.japaneseName} is stumped! You win!`);
         setIsBotThinking(false);
         return;
       }
 
-      // Check if bot ended in 'n'
       if (botMove.kana.endsWith('ん')) {
         const turn: ShiritoriTurn = {
           id: `turn_${Date.now()}`,
@@ -185,7 +329,6 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
         return;
       }
 
-      // Normal bot turn
       const turn: ShiritoriTurn = {
         id: `turn_${Date.now()}`,
         player: 'opponent',
@@ -214,7 +357,7 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
     }, bot.thinkTimeMs);
   };
 
-  // Player Word Submission
+  // Player Word Submission (Solo & Multiplayer)
   const handlePlayerMove = (wordToSubmit: string) => {
     if (currentTurn !== 'player' || gameOver.isOver || isBotThinking) return;
 
@@ -228,6 +371,20 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
     }
 
     const wordData = result.matchedWord!;
+
+    if (isMultiplayer && duelMatchId) {
+      setInputWord('');
+      duelService.submitMove(duelMatchId, wordData.word).then(res => {
+        if (!res.ok) {
+          setErrorMessage(res.error.message);
+        } else {
+          setDuelState(res.data);
+        }
+      });
+      return;
+    }
+
+    // Solo bot execution
     const playerTurn: ShiritoriTurn = {
       id: `turn_${Date.now()}`,
       player: 'player',
@@ -238,7 +395,6 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
       timestamp: Date.now(),
     };
 
-    // If player played a word ending in 'ん' -> Instant Loss!
     if (result.error === 'ends_in_n') {
       setHistory(prev => [...prev, playerTurn]);
       handlePlayAudio(wordData.word).catch(() => {});
@@ -246,7 +402,6 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
       return;
     }
 
-    // Valid move!
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
     handlePlayAudio(wordData.word).catch(() => {});
 
@@ -268,16 +423,59 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
       scrollRef.current?.scrollToEnd({ animated: true });
     }, 100);
 
-    // Pass turn to Bot
     triggerBotTurn(newNextKana, nextUsed);
   };
+
+  // Waiting room view if challenger is waiting for accept
+  if (isMultiplayer && duelState?.status === 'waiting') {
+    return (
+      <View style={[styles.container, { backgroundColor: theme.background, paddingTop: insets.top }]}>
+        <View style={[styles.navBar, { backgroundColor: theme.surface, borderBottomColor: theme.border }]}>
+          <Pressable
+            onPress={handleSafeClose}
+            style={[styles.closeBtn, { backgroundColor: theme.surfaceSubtle }]}
+            hitSlop={8}
+            accessibilityLabel="Close Shiritori"
+          >
+            <X size={20} color={theme.textPrimary} />
+          </Pressable>
+          <View style={styles.botProfileHeader}>
+            <Text style={[styles.botName, { color: theme.textPrimary }]}>
+              🗣️ しりとり • Live Duel
+            </Text>
+          </View>
+        </View>
+
+        <View style={styles.waitingContainer}>
+          <View style={[styles.waitingCard, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+            <Text style={styles.waitingEmoji}>{opponentAvatar}</Text>
+            <Text style={[styles.waitingTitle, { color: theme.textPrimary }]}>
+              Challenging {opponentName}
+            </Text>
+            <Text style={[styles.waitingSubtitle, { color: theme.textSecondary }]}>
+              Waiting for them to accept the Shiritori duel. Words will chain in real-time as turns flip back and forth!
+            </Text>
+            <ActivityIndicator size="large" color={theme.primary} style={{ marginVertical: 20 }} />
+            <Pressable
+              onPress={handleSafeClose}
+              style={[styles.cancelChallengeBtn, { borderColor: theme.border }]}
+            >
+              <Text style={[styles.cancelChallengeText, { color: theme.textSecondary }]}>
+                Cancel Challenge
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+      </View>
+    );
+  }
 
   return (
     <View style={[styles.container, { backgroundColor: theme.background, paddingTop: insets.top }]}>
       {/* Top Navigation & Status Bar */}
       <View style={[styles.navBar, { backgroundColor: theme.surface, borderBottomColor: theme.border }]}>
         <Pressable
-          onPress={onClose}
+          onPress={handleSafeClose}
           style={[styles.closeBtn, { backgroundColor: theme.surfaceSubtle }]}
           hitSlop={8}
           accessibilityLabel="Exit Shiritori"
@@ -286,18 +484,20 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
         </Pressable>
 
         <View style={styles.botProfileHeader}>
-          <Text style={styles.botAvatar}>{bot.avatarEmoji}</Text>
+          <Text style={styles.botAvatar}>{opponentAvatar}</Text>
           <View>
             <View style={styles.botNameRow}>
               <Text style={[styles.botName, { color: theme.textPrimary }]}>
-                {bot.name}
+                {opponentName} {isMultiplayer && '• LIVE'}
               </Text>
-              <Text style={[styles.botJpName, { color: theme.textSecondary }]}>
-                ({bot.japaneseName})
-              </Text>
+              {!isMultiplayer && (
+                <Text style={[styles.botJpName, { color: theme.textSecondary }]}>
+                  ({bot.japaneseName})
+                </Text>
+              )}
             </View>
             <Text style={[styles.botSubtitle, { color: theme.textMuted }]}>
-              {bot.title}
+              {isMultiplayer ? 'Turn-based Word Duel' : bot.title}
             </Text>
           </View>
         </View>
@@ -315,128 +515,118 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
         </View>
       </View>
 
-      {/* Difficulty Selector Row */}
-      <View style={[styles.diffRow, { backgroundColor: theme.surfaceSubtle, borderBottomColor: theme.border }]}>
-        {(['easy', 'medium', 'hard'] as const).map(d => {
-          const isSelected = difficulty === d;
-          return (
-            <Pressable
-              key={d}
-              onPress={() => {
-                Haptics.selectionAsync().catch(() => {});
-                setDifficulty(d);
-                startNewGame(d);
-              }}
-              style={[
-                styles.diffBtn,
-                isSelected && { backgroundColor: theme.surface, borderColor: theme.primary },
-              ]}
-            >
-              <Text
+      {/* Difficulty Selector Row (Solo mode only) */}
+      {!isMultiplayer && (
+        <View style={[styles.diffRow, { backgroundColor: theme.surfaceSubtle, borderBottomColor: theme.border }]}>
+          {(['easy', 'medium', 'hard'] as const).map(d => {
+            const p = BOT_PROFILES[d];
+            const isSelected = difficulty === d;
+            return (
+              <Pressable
+                key={d}
+                onPress={() => {
+                  if (difficulty !== d) {
+                    Haptics.selectionAsync().catch(() => {});
+                    setDifficulty(d);
+                    startNewGame(d);
+                  }
+                }}
                 style={[
-                  styles.diffBtnText,
-                  { color: isSelected ? theme.primary : theme.textMuted },
-                  isSelected && { fontWeight: '800' },
+                  styles.diffPill,
+                  isSelected && { backgroundColor: theme.primary },
                 ]}
               >
-                {d === 'easy' ? '🦝 Easy' : d === 'medium' ? '🦊 Medium' : '👺 Master'}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </View>
+                <Text style={styles.diffPillEmoji}>{p.avatarEmoji}</Text>
+                <Text
+                  style={[
+                    styles.diffPillText,
+                    { color: theme.textSecondary },
+                    isSelected && { color: theme.textOnPrimary, fontWeight: '700' },
+                  ]}
+                >
+                  {d.toUpperCase()}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      )}
 
-      {/* Required Next Kana Indicator & Turn Timer Banner */}
+      {/* Current Turn & Required Kana Banner */}
       <View style={[styles.turnBanner, { backgroundColor: theme.surface, borderBottomColor: theme.border }]}>
         <View style={styles.requiredKanaBox}>
-          <Text style={[styles.requiredLabel, { color: theme.textMuted }]}>NEXT KANA</Text>
-          <View style={[styles.targetKanaCircle, { backgroundColor: theme.primary }]}>
-            <Text style={[styles.targetKanaText, { color: theme.textOnPrimary }]}>
-              {requiredKana}
+          <Text style={[styles.requiredKanaLabel, { color: theme.textMuted }]}>
+            Next Starting Kana:
+          </Text>
+          <View style={[styles.requiredKanaBadge, { backgroundColor: '#8B0000' }]}>
+            <Text style={styles.requiredKanaChar}>{requiredKana}</Text>
+          </View>
+        </View>
+
+        <View style={styles.turnStatusWrap}>
+          {currentTurn === 'player' ? (
+            <View style={[styles.statusTag, { backgroundColor: '#48BB7820' }]}>
+              <Text style={[styles.statusTagText, { color: '#276749' }]}>
+                YOUR TURN
+              </Text>
+            </View>
+          ) : (
+            <View style={[styles.statusTag, { backgroundColor: theme.surfaceSubtle }]}>
+              <Text style={[styles.statusTagText, { color: theme.textSecondary }]}>
+                {isMultiplayer ? `${opponentName}'s TURN` : `${bot.name} is thinking...`}
+              </Text>
+            </View>
+          )}
+
+          <View style={[styles.timerTag, timeLeft <= 5 && { backgroundColor: '#E53E3E20' }]}>
+            <Text style={[styles.timerText, { color: timeLeft <= 5 ? '#E53E3E' : theme.textPrimary }]}>
+              ⏱️ {timeLeft}s
             </Text>
           </View>
         </View>
-
-        <View style={styles.turnStatusBox}>
-          <Text style={[styles.turnStatusText, { color: currentTurn === 'player' ? theme.primary : theme.textSecondary }]}>
-            {isBotThinking
-              ? `${bot.name} is thinking...`
-              : currentTurn === 'player'
-              ? 'Your Turn! Pick or type a word'
-              : `${bot.name}'s turn`}
-          </Text>
-
-          {/* Time Remaining Bar */}
-          <View style={[styles.timerBarBg, { backgroundColor: theme.surfaceSubtle }]}>
-            <View
-              style={[
-                styles.timerBarFill,
-                {
-                  width: `${(timeLeft / TURN_SECONDS) * 100}%`,
-                  backgroundColor: timeLeft <= 4 ? '#EF4444' : theme.primary,
-                },
-              ]}
-            />
-          </View>
-          <Text style={[styles.timerSecondsText, { color: timeLeft <= 4 ? '#EF4444' : theme.textMuted }]}>
-            ⏱️ {timeLeft}s remaining
-          </Text>
-        </View>
       </View>
 
-      {/* Word Chain History Stream */}
+      {/* Speech Chat Stream */}
       <ScrollView
         ref={scrollRef}
-        contentContainerStyle={styles.streamContent}
+        style={styles.chatScroll}
+        contentContainerStyle={styles.chatContent}
         showsVerticalScrollIndicator={false}
       >
-        {history.map((turn, idx) => {
+        {history.map((turn) => {
           const isPlayer = turn.player === 'player';
-          const lastChar = getShiritoriLastKana(turn.kana);
-
           return (
             <View
               key={turn.id}
               style={[
-                styles.turnRow,
-                isPlayer ? styles.turnRowPlayer : styles.turnRowBot,
+                styles.messageRow,
+                isPlayer ? styles.messageRowPlayer : styles.messageRowBot,
               ]}
             >
               {!isPlayer && (
-                <View style={[styles.chatAvatar, { backgroundColor: theme.surfaceSubtle }]}>
-                  <Text style={{ fontSize: 18 }}>{bot.avatarEmoji}</Text>
-                </View>
+                <Text style={styles.messageAvatar}>{opponentAvatar}</Text>
               )}
 
               <View
                 style={[
-                  styles.chatBubble,
-                  {
-                    backgroundColor: isPlayer ? theme.primary : theme.surface,
-                    borderColor: isPlayer ? theme.primary : theme.border,
-                  },
+                  styles.bubble,
+                  isPlayer
+                    ? [styles.bubblePlayer, { backgroundColor: theme.primary }]
+                    : [styles.bubbleBot, { backgroundColor: theme.surface, borderColor: theme.border }],
                 ]}
               >
-                <View style={styles.bubbleTop}>
-                  <CopyableJapaneseText text={turn.word}>
-                    <Text
-                      style={[
-                        styles.bubbleWord,
-                        { color: isPlayer ? theme.textOnPrimary : theme.textPrimary },
-                      ]}
-                    >
-                      {turn.word}
-                    </Text>
-                  </CopyableJapaneseText>
-
+                <View style={styles.bubbleWordHeader}>
+                  <CopyableJapaneseText
+                    text={turn.word}
+                    textStyle={[
+                      styles.bubbleWord,
+                      { color: isPlayer ? theme.textOnPrimary : theme.textPrimary },
+                    ]}
+                  />
                   <Pressable
                     onPress={() => handlePlayAudio(turn.word)}
-                    style={[
-                      styles.miniAudioBtn,
-                      { backgroundColor: isPlayer ? '#FFFFFF30' : theme.surfaceSubtle },
-                    ]}
-                    accessibilityLabel={`Pronounce ${turn.word}`}
-                    hitSlop={6}
+                    hitSlop={8}
+                    style={styles.speakerBtn}
                   >
                     <Volume2
                       size={14}
@@ -445,155 +635,141 @@ export function ShiritoriArenaView({ onClose }: ShiritoriArenaViewProps) {
                   </Pressable>
                 </View>
 
-                {turn.romaji ? (
-                  <Text
-                    style={[
-                      styles.bubbleRomaji,
-                      { color: isPlayer ? '#FFFFFFDD' : theme.textSecondary },
-                    ]}
-                  >
-                    {turn.kana} • {turn.romaji}
-                  </Text>
-                ) : null}
+                <Text
+                  style={[
+                    styles.bubbleKana,
+                    { color: isPlayer ? 'rgba(255,255,255,0.85)' : theme.textSecondary },
+                  ]}
+                >
+                  {turn.kana} • {turn.romaji}
+                </Text>
 
                 <Text
                   style={[
                     styles.bubbleEnglish,
-                    { color: isPlayer ? '#FFFFFFBB' : theme.textMuted },
+                    { color: isPlayer ? 'rgba(255,255,255,0.7)' : theme.textMuted },
                   ]}
-                  numberOfLines={1}
                 >
                   {turn.english}
                 </Text>
-
-                {/* Trailing next-character hint badge */}
-                <View
-                  style={[
-                    styles.chainNextBadge,
-                    { backgroundColor: isPlayer ? '#FFFFFF25' : theme.primaryLight },
-                  ]}
-                >
-                  <Text
-                    style={[
-                      styles.chainNextText,
-                      { color: isPlayer ? '#FFFFFF' : theme.primary },
-                    ]}
-                  >
-                    Ends with「{lastChar}」➔
-                  </Text>
-                </View>
               </View>
 
-              {isPlayer && (
-                <View style={[styles.chatAvatar, { backgroundColor: theme.primaryLight }]}>
-                  <Text style={{ fontSize: 18 }}>👤</Text>
-                </View>
-              )}
+              {isPlayer && <Text style={styles.messageAvatar}>🥋</Text>}
             </View>
           );
         })}
 
         {isBotThinking && (
-          <View style={[styles.turnRow, styles.turnRowBot]}>
-            <View style={[styles.chatAvatar, { backgroundColor: theme.surfaceSubtle }]}>
-              <Text style={{ fontSize: 18 }}>{bot.avatarEmoji}</Text>
-            </View>
-            <View style={[styles.chatBubble, styles.thinkingBubble, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-              <Text style={[styles.thinkingText, { color: theme.textSecondary }]}>
-                {bot.japaneseName} is thinking... 💭
+          <View style={[styles.messageRow, styles.messageRowBot]}>
+            <Text style={styles.messageAvatar}>{opponentAvatar}</Text>
+            <View style={[styles.bubble, styles.bubbleBot, { backgroundColor: theme.surface, borderColor: theme.border }]}>
+              <Text style={[styles.thinkingText, { color: theme.textMuted }]}>
+                {opponentName} is pondering words...
               </Text>
             </View>
           </View>
         )}
       </ScrollView>
 
-      {/* Error Message Notice */}
-      {errorMessage && (
-        <View style={styles.errorNotice}>
-          <AlertTriangle size={14} color="#EF4444" />
-          <Text style={styles.errorNoticeText}>{errorMessage}</Text>
+      {/* Suggestions Row (Quick helper chips) */}
+      {!gameOver.isOver && currentTurn === 'player' && suggestions.length > 0 && (
+        <View style={[styles.suggestRow, { backgroundColor: theme.surfaceSubtle }]}>
+          <Text style={[styles.suggestTitle, { color: theme.textMuted }]}>💡 Ideas:</Text>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.suggestScroll}>
+            {suggestions.map((w) => (
+              <Pressable
+                key={w.word}
+                onPress={() => handlePlayerMove(w.word)}
+                style={[styles.suggestChip, { backgroundColor: theme.surface, borderColor: theme.border }]}
+              >
+                <Text style={[styles.suggestChipWord, { color: theme.textPrimary }]}>{w.word}</Text>
+                <Text style={[styles.suggestChipEng, { color: theme.textSecondary }]}>({w.english})</Text>
+              </Pressable>
+            ))}
+          </ScrollView>
         </View>
       )}
 
-      {/* Bottom Controls / Player Input */}
-      {!gameOver.isOver ? (
-        <View style={[styles.bottomTray, { backgroundColor: theme.surface, borderTopColor: theme.border, paddingBottom: insets.bottom + 10 }]}>
-          {/* Quick Word Suggestion Chips */}
-          <View style={styles.suggestionsRow}>
-            <Text style={[styles.suggestionsLabel, { color: theme.textMuted }]}>
-              QUICK PICKS ({requiredKana}):
-            </Text>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chipsScroll}>
-              {suggestions.map(s => (
-                <Pressable
-                  key={s.kana}
-                  onPress={() => handlePlayerMove(s.word)}
-                  style={[styles.suggestChip, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}
-                  accessibilityLabel={`Pick ${s.word}`}
-                >
-                  <Text style={[styles.suggestChipJp, { color: theme.textPrimary }]}>
-                    {s.word}
-                  </Text>
-                  <Text style={[styles.suggestChipEng, { color: theme.textMuted }]}>
-                    {s.english}
-                  </Text>
-                </Pressable>
-              ))}
-            </ScrollView>
-          </View>
-
-          {/* Typing Input Bar */}
-          <View style={styles.inputBar}>
-            <TextInput
-              style={[styles.textInput, { backgroundColor: theme.surfaceSubtle, color: theme.textPrimary, borderColor: theme.border }]}
-              placeholder={`Word starting with「${requiredKana}」...`}
-              placeholderTextColor={theme.textMuted}
-              value={inputWord}
-              onChangeText={val => {
-                const converted = wanakana.toHiragana(val);
-                setInputWord(converted);
-                setErrorMessage(null);
-              }}
-              autoCapitalize="none"
-              autoCorrect={false}
-              returnKeyType="send"
-              onSubmitEditing={() => handlePlayerMove(inputWord)}
-            />
-
-            <Pressable
-              onPress={() => handlePlayerMove(inputWord)}
-              style={[styles.sendBtn, { backgroundColor: theme.primary }]}
-              accessibilityLabel="Send word"
-            >
-              <Send size={18} color={theme.textOnPrimary} />
-            </Pressable>
-          </View>
-        </View>
-      ) : (
-        /* Game Over Banner Overlay */
-        <View style={[styles.gameOverCard, { backgroundColor: theme.surface, borderTopColor: theme.border, paddingBottom: insets.bottom + 20 }]}>
-          <Text style={{ fontSize: 36, textAlign: 'center', marginBottom: 6 }}>
-            {gameOver.winner === 'player' ? '🎉' : '💥'}
-          </Text>
-          <Text style={[styles.gameOverTitle, { color: gameOver.winner === 'player' ? '#10B981' : '#EF4444' }]}>
-            {gameOver.winner === 'player' ? 'VICTORY!' : 'GAME OVER'}
+      {/* Input Bar or Game Over Panel */}
+      {gameOver.isOver ? (
+        <View style={[styles.gameOverCard, { backgroundColor: theme.surface, borderTopColor: theme.border }]}>
+          <Text style={[styles.gameOverTitle, { color: gameOver.winner === 'player' ? theme.primary : '#E53E3E' }]}>
+            {gameOver.winner === 'player' ? '🎉 勝負あり! YOU WIN!' : '💀 敗北... DEFEATED!'}
           </Text>
           <Text style={[styles.gameOverReason, { color: theme.textSecondary }]}>
             {gameOver.reason}
           </Text>
           <Text style={[styles.gameOverScore, { color: theme.textPrimary }]}>
-            Final Chain: {history.length} words • Score: {score} pts
+            Final Words Chained: {history.length}
           </Text>
 
-          <Pressable
-            onPress={() => startNewGame()}
-            style={[styles.playAgainBtn, { backgroundColor: theme.primary }]}
-          >
-            <RotateCcw size={18} color={theme.textOnPrimary} />
-            <Text style={[styles.playAgainBtnText, { color: theme.textOnPrimary }]}>
-              Play Next Match
-            </Text>
-          </Pressable>
+          {!isMultiplayer ? (
+            <Pressable
+              onPress={() => startNewGame(difficulty)}
+              style={[styles.playAgainBtn, { backgroundColor: theme.primary }]}
+            >
+              <RotateCcw size={16} color={theme.textOnPrimary} />
+              <Text style={[styles.playAgainBtnText, { color: theme.textOnPrimary }]}>
+                Play Again (再戦)
+              </Text>
+            </Pressable>
+          ) : (
+            <Pressable
+              onPress={handleSafeClose}
+              style={[styles.playAgainBtn, { backgroundColor: theme.primary }]}
+            >
+              <Text style={[styles.playAgainBtnText, { color: theme.textOnPrimary }]}>
+                Exit to Arcade
+              </Text>
+            </Pressable>
+          )}
+        </View>
+      ) : (
+        <View style={[styles.inputWrapper, { backgroundColor: theme.surface, borderTopColor: theme.border }]}>
+          {errorMessage && (
+            <View style={styles.errorNotice}>
+              <AlertTriangle size={14} color="#E53E3E" />
+              <Text style={styles.errorNoticeText}>{errorMessage}</Text>
+            </View>
+          )}
+
+          <View style={styles.inputBar}>
+            <TextInput
+              style={[
+                styles.textInput,
+                {
+                  backgroundColor: theme.background,
+                  borderColor: errorMessage ? '#E53E3E' : theme.border,
+                  color: theme.textPrimary,
+                },
+              ]}
+              placeholder={`Word starting with「${requiredKana}」...`}
+              placeholderTextColor={theme.textMuted}
+              value={inputWord}
+              onChangeText={setInputWord}
+              onSubmitEditing={() => handlePlayerMove(inputWord)}
+              editable={currentTurn === 'player'}
+              autoCapitalize="none"
+              autoCorrect={false}
+              returnKeyType="send"
+            />
+
+            <Pressable
+              onPress={() => handlePlayerMove(inputWord)}
+              disabled={currentTurn !== 'player' || !inputWord.trim()}
+              style={[
+                styles.sendBtn,
+                {
+                  backgroundColor: currentTurn === 'player' && inputWord.trim() ? theme.primary : theme.surfaceSubtle,
+                },
+              ]}
+            >
+              <Send
+                size={18}
+                color={currentTurn === 'player' && inputWord.trim() ? theme.textOnPrimary : theme.textMuted}
+              />
+            </Pressable>
+          </View>
         </View>
       )}
     </View>
@@ -610,19 +786,20 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 10,
     borderBottomWidth: 1,
-    justifyContent: 'space-between',
+    gap: 12,
   },
   closeBtn: {
     width: 36,
     height: 36,
-    borderRadius: 18,
+    borderRadius: radii.full,
     alignItems: 'center',
     justifyContent: 'center',
   },
   botProfileHeader: {
+    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
+    gap: 8,
   },
   botAvatar: {
     fontSize: 28,
@@ -633,16 +810,14 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   botName: {
-    fontSize: 15,
+    fontSize: 14,
     fontWeight: '800',
   },
   botJpName: {
     fontSize: 12,
-    fontWeight: '600',
   },
   botSubtitle: {
     fontSize: 11,
-    fontWeight: '500',
   },
   statsPillGroup: {
     flexDirection: 'row',
@@ -651,202 +826,189 @@ const styles = StyleSheet.create({
   statPill: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 4,
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: radii.full,
+    gap: 4,
   },
   statPillText: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: '800',
   },
   diffRow: {
     flexDirection: 'row',
     paddingHorizontal: 16,
     paddingVertical: 6,
-    gap: 8,
     borderBottomWidth: 1,
+    gap: 8,
   },
-  diffBtn: {
+  diffPill: {
     flex: 1,
-    paddingVertical: 6,
-    borderRadius: radii.md,
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: 'transparent',
+    paddingVertical: 6,
+    borderRadius: radii.full,
+    gap: 4,
   },
-  diffBtnText: {
+  diffPillEmoji: {
     fontSize: 12,
-    fontWeight: '600',
+  },
+  diffPillText: {
+    fontSize: 11,
   },
   turnBanner: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'space-between',
     paddingHorizontal: 16,
-    paddingVertical: 12,
+    paddingVertical: 10,
     borderBottomWidth: 1,
-    gap: 14,
   },
   requiredKanaBox: {
+    flexDirection: 'row',
     alignItems: 'center',
+    gap: 8,
   },
-  requiredLabel: {
-    fontSize: 9,
-    fontWeight: '800',
-    letterSpacing: 0.5,
-    marginBottom: 2,
-  },
-  targetKanaCircle: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    alignItems: 'center',
-    justifyContent: 'center',
-    ...shadows.sm,
-  },
-  targetKanaText: {
-    fontSize: 22,
-    fontWeight: '900',
-  },
-  turnStatusBox: {
-    flex: 1,
-  },
-  turnStatusText: {
-    fontSize: 13,
-    fontWeight: '700',
-    marginBottom: 6,
-  },
-  timerBarBg: {
-    height: 6,
-    borderRadius: 3,
-    overflow: 'hidden',
-    marginBottom: 4,
-  },
-  timerBarFill: {
-    height: '100%',
-    borderRadius: 3,
-  },
-  timerSecondsText: {
-    fontSize: 10,
+  requiredKanaLabel: {
+    fontSize: 12,
     fontWeight: '600',
   },
-  streamContent: {
+  requiredKanaBadge: {
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: radii.md,
+  },
+  requiredKanaChar: {
+    color: '#FFF',
+    fontSize: 16,
+    fontWeight: '900',
+  },
+  turnStatusWrap: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  statusTag: {
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: radii.full,
+  },
+  statusTagText: {
+    fontSize: 11,
+    fontWeight: '800',
+  },
+  timerTag: {
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: radii.full,
+  },
+  timerText: {
+    fontSize: 12,
+    fontWeight: '800',
+  },
+  chatScroll: {
+    flex: 1,
+  },
+  chatContent: {
     padding: 16,
     gap: 12,
   },
-  turnRow: {
+  messageRow: {
     flexDirection: 'row',
     alignItems: 'flex-end',
     gap: 8,
-    maxWidth: '85%',
   },
-  turnRowPlayer: {
-    alignSelf: 'flex-end',
+  messageRowPlayer: {
+    justifyContent: 'flex-end',
   },
-  turnRowBot: {
-    alignSelf: 'flex-start',
+  messageRowBot: {
+    justifyContent: 'flex-start',
   },
-  chatAvatar: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    alignItems: 'center',
-    justifyContent: 'center',
+  messageAvatar: {
+    fontSize: 22,
+    marginBottom: 4,
   },
-  chatBubble: {
-    borderRadius: radii.xl,
+  bubble: {
+    maxWidth: '75%',
     padding: 12,
+    borderRadius: radii.lg,
+    ...shadows.sm,
+  },
+  bubblePlayer: {
+    borderBottomRightRadius: 2,
+  },
+  bubbleBot: {
+    borderBottomLeftRadius: 2,
     borderWidth: 1,
   },
-  thinkingBubble: {
-    paddingVertical: 8,
-    paddingHorizontal: 14,
-  },
-  thinkingText: {
-    fontSize: 12,
-    fontStyle: 'italic',
-  },
-  bubbleTop: {
+  bubbleWordHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
-    gap: 8,
+    gap: 6,
     marginBottom: 2,
   },
   bubbleWord: {
     fontSize: 18,
     fontWeight: '900',
   },
-  miniAudioBtn: {
-    width: 24,
-    height: 24,
-    borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
+  speakerBtn: {
+    padding: 2,
   },
-  bubbleRomaji: {
-    fontSize: 12,
-    fontWeight: '600',
+  bubbleKana: {
+    fontSize: 11,
+    fontWeight: '700',
     marginBottom: 2,
   },
   bubbleEnglish: {
     fontSize: 11,
-    fontWeight: '500',
-    marginBottom: 6,
+    fontStyle: 'italic',
   },
-  chainNextBadge: {
-    alignSelf: 'flex-start',
-    paddingHorizontal: 6,
-    paddingVertical: 2,
-    borderRadius: radii.sm,
+  thinkingText: {
+    fontSize: 12,
+    fontStyle: 'italic',
   },
-  chainNextText: {
-    fontSize: 10,
-    fontWeight: '800',
+  inputWrapper: {
+    padding: 12,
+    borderTopWidth: 1,
   },
   errorNotice: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,
-    backgroundColor: '#EF444420',
-    paddingHorizontal: 16,
-    paddingVertical: 6,
-    justifyContent: 'center',
+    marginBottom: 8,
   },
   errorNoticeText: {
-    color: '#EF4444',
+    color: '#E53E3E',
     fontSize: 12,
-    fontWeight: '700',
+    fontWeight: '600',
   },
-  bottomTray: {
-    paddingHorizontal: 16,
-    paddingTop: 10,
-    borderTopWidth: 1,
-    gap: 10,
-  },
-  suggestionsRow: {
+  suggestRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 6,
+    paddingHorizontal: 12,
     gap: 6,
   },
-  suggestionsLabel: {
-    fontSize: 10,
-    fontWeight: '800',
-    letterSpacing: 0.5,
+  suggestTitle: {
+    fontSize: 11,
+    fontWeight: '700',
   },
-  chipsScroll: {
-    flexDirection: 'row',
-    gap: 8,
+  suggestScroll: {
+    gap: 6,
   },
   suggestChip: {
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    borderRadius: radii.lg,
-    borderWidth: 1,
+    flexDirection: 'row',
     alignItems: 'center',
+    gap: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: radii.full,
+    borderWidth: 1,
   },
-  suggestChipJp: {
-    fontSize: 13,
-    fontWeight: '800',
+  suggestChipWord: {
+    fontSize: 12,
+    fontWeight: '700',
   },
   suggestChipEng: {
     fontSize: 10,
@@ -905,5 +1067,45 @@ const styles = StyleSheet.create({
   playAgainBtnText: {
     fontSize: 14,
     fontWeight: '800',
+  },
+  waitingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 24,
+  },
+  waitingCard: {
+    width: '100%',
+    padding: 28,
+    borderRadius: radii.xl,
+    borderWidth: 1.5,
+    alignItems: 'center',
+    ...shadows.md,
+  },
+  waitingEmoji: {
+    fontSize: 48,
+    marginBottom: 12,
+  },
+  waitingTitle: {
+    fontSize: 20,
+    fontWeight: '900',
+    marginBottom: 8,
+    textAlign: 'center',
+  },
+  waitingSubtitle: {
+    fontSize: 13,
+    textAlign: 'center',
+    lineHeight: 18,
+    marginBottom: 16,
+  },
+  cancelChallengeBtn: {
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: radii.md,
+    borderWidth: 1,
+  },
+  cancelChallengeText: {
+    fontSize: 13,
+    fontWeight: '700',
   },
 });

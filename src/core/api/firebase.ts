@@ -1,10 +1,17 @@
 import { initializeApp, getApps, getApp, type FirebaseApp } from 'firebase/app';
-import { getAuth, type Auth } from 'firebase/auth';
-import { getFirestore, type Firestore } from 'firebase/firestore';
+import {
+  initializeAuth,
+  getAuth,
+  type Auth,
+} from 'firebase/auth';
+// @ts-expect-error getReactNativePersistence is exported via the react-native entrypoint in @firebase/auth
+import { getReactNativePersistence } from 'firebase/auth';
+import { Platform } from 'react-native';
+import { asyncClientStorage } from '../storage/mmkv';
 
 /**
  * Manabu Firebase Cloud Configuration.
- * Connected to project: manabu-japanese-9007
+ * Connected to project: manabu-japanese-9007 (Auth only)
  */
 export const FIREBASE_CONFIG = {
   apiKey: 'AIzaSyA1mDgiCk5WE93SIwsBTie1wiNcQ_n_21c',
@@ -30,5 +37,20 @@ function initFirebaseApp(): FirebaseApp {
 }
 
 export const firebaseApp: FirebaseApp = initFirebaseApp();
-export const firebaseAuth: Auth = getAuth(firebaseApp);
-export const firebaseDb: Firestore = getFirestore(firebaseApp);
+
+function initFirebaseAuth(app: FirebaseApp): Auth {
+  if (Platform.OS === 'web') {
+    return getAuth(app);
+  }
+  try {
+    return initializeAuth(app, {
+      persistence: getReactNativePersistence(asyncClientStorage),
+    });
+  } catch {
+    return getAuth(app);
+  }
+}
+
+export const firebaseAuth: Auth = initFirebaseAuth(firebaseApp);
+
+

@@ -39,6 +39,8 @@ export const UserStatsSchema = z.object({
   totalQuestionsAnswered: z.number().default(0),
   totalCorrect: z.number().default(0),
   totalXp: z.number().default(0),
+  weeklyXp: z.number().default(0),
+  weekId: z.string().default('2026-W40'),
   todayXp: z.number().default(0),
   todayDate: z.string().nullable().default(null),
   dailyGoalXp: z.number().default(50),

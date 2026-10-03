@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   Modal,
   ScrollView,
@@ -6,6 +6,7 @@ import {
   Text,
   Pressable,
   View,
+  Alert,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
@@ -22,6 +23,7 @@ import {
   Share2,
   Calendar,
   Swords,
+  ChevronRight,
 } from 'lucide-react-native';
 import * as Haptics from 'expo-haptics';
 import { radii, typography, useAppTheme } from '../../../core/theme';
@@ -37,7 +39,12 @@ import { ShiritoriArenaView } from '../components/ShiritoriArenaView';
 import { KarutaBattleView } from '../components/KarutaBattleView';
 import { KanjiDuelView } from '../components/KanjiDuelView';
 import { DailyChallengeModal } from '../components/DailyChallengeModal';
+import { ArcadeBattleLobbyModal, type BattleGameType } from '../components/ArcadeBattleLobbyModal';
 import { getDayOfYear } from '../lib/dailyChallengeGenerator';
+import { duelService } from '../services/duel.service';
+import { scoreChallengeService } from '../services/scoreChallenge.service';
+import type { DuelInvite, DuelState } from '../models/duel.model';
+import type { ScoreChallengeItem } from '../models/scoreChallenge.model';
 
 type ActiveGame =
   | 'shiritori'
@@ -81,6 +88,82 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
   const [activeGame, setActiveGame] = useState<ActiveGame>(null);
   const [selectedCategory, setSelectedCategory] = useState<ArcadeCategory>('all');
   const [showDailyChallenge, setShowDailyChallenge] = useState(false);
+  const [selectedBattleGame, setSelectedBattleGame] = useState<BattleGameType | null>(null);
+
+  // Live Duel State & Incoming Invites
+  const [duelInvites, setDuelInvites] = useState<DuelInvite[]>([]);
+  const [activeDuelMatchId, setActiveDuelMatchId] = useState<string | null>(null);
+  const [activeDuelInitialState, setActiveDuelInitialState] = useState<DuelState | null>(null);
+  const [isAcceptingDuel, setIsAcceptingDuel] = useState(false);
+
+  // Score Challenges State (V3.6)
+  const [scoreChallenges, setScoreChallenges] = useState<ScoreChallengeItem[]>([]);
+  const [activeScoreChallenge, setActiveScoreChallenge] = useState<ScoreChallengeItem | null>(null);
+  const [challengeStartTime, setChallengeStartTime] = useState<number>(0);
+
+  useEffect(() => {
+    let isMounted = true;
+    const fetchInbox = async () => {
+      try {
+        const [duelRes, chRes] = await Promise.all([
+          duelService.getInbox(),
+          scoreChallengeService.getChallenges(),
+        ]);
+        if (duelRes.ok && isMounted) {
+          setDuelInvites(duelRes.data);
+        }
+        if (chRes.ok && isMounted) {
+          setScoreChallenges(chRes.data);
+        }
+      } catch {}
+    };
+    fetchInbox();
+    const interval = setInterval(fetchInbox, 5000);
+    return () => {
+      isMounted = false;
+      clearInterval(interval);
+    };
+  }, []);
+
+  const handleAcceptDuel = async (invite: DuelInvite) => {
+    if (isAcceptingDuel) return;
+    setIsAcceptingDuel(true);
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy).catch(() => {});
+    try {
+      const res = await duelService.acceptDuel(invite.id);
+      if (res.ok) {
+        setActiveDuelInitialState(res.data);
+        setActiveDuelMatchId(invite.id);
+        if (invite.game === 'karuta') {
+          setActiveGame('karuta');
+        } else if (invite.game === 'shiritori') {
+          setActiveGame('shiritori');
+        } else {
+          setActiveGame('kanjiDuel');
+        }
+        setDuelInvites(prev => prev.filter(i => i.id !== invite.id));
+      } else {
+        Alert.alert('Cannot accept duel', res.error.message);
+      }
+    } catch (err: any) {
+      Alert.alert('Error', err?.message || 'Failed to accept duel');
+    } finally {
+      setIsAcceptingDuel(false);
+    }
+  };
+
+  const handleDeclineDuel = async (inviteId: string) => {
+    Haptics.selectionAsync().catch(() => {});
+    await duelService.declineDuel(inviteId);
+    setDuelInvites(prev => prev.filter(i => i.id !== inviteId));
+  };
+
+  const handleAcceptScoreChallenge = (challenge: ScoreChallengeItem) => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy).catch(() => {});
+    setActiveScoreChallenge(challenge);
+    setChallengeStartTime(Date.now());
+    setActiveGame(challenge.game);
+  };
 
   const bestSurvivalScore = Math.max(
     survivalHighScores?.kana || 0,
@@ -108,8 +191,35 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
     setActiveGame(game);
   };
 
-  const closeGame = () => {
+  const closeGame = async () => {
     setActiveGame(null);
+    if (activeScoreChallenge) {
+      const challenge = activeScoreChallenge;
+      setActiveScoreChallenge(null);
+      const lastScore = useArcadeStore.getState().lastFinishedGameScore;
+      if (
+        lastScore &&
+        lastScore.game === challenge.game &&
+        lastScore.timestamp >= challengeStartTime - 5000
+      ) {
+        try {
+          const res = await scoreChallengeService.respondToChallenge(challenge.id, lastScore.score);
+          if (res.ok) {
+            const data = res.data;
+            const title =
+              data.winner === 'target'
+                ? '🎉 VICTORY!'
+                : data.winner === 'creator'
+                ? '💔 DEFEAT!'
+                : '🤝 TIED MATCH!';
+            const msg = `Your score: ${data.targetScore}\n${challenge.creator.displayName}'s score: ${data.creatorScore}`;
+            Alert.alert(title, msg);
+            const updated = await scoreChallengeService.getChallenges();
+            if (updated.ok) setScoreChallenges(updated.data);
+          }
+        } catch {}
+      }
+    }
   };
 
   return (
@@ -143,6 +253,76 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
         showsVerticalScrollIndicator={false}
         keyboardShouldPersistTaps="handled"
       >
+        {/* Incoming Live Duel Invites Banner */}
+        {duelInvites.map(invite => (
+          <View
+            key={invite.id}
+            style={[styles.duelInviteCard, { backgroundColor: '#2D1515', borderColor: '#E53E3E' }]}
+          >
+            <View style={styles.duelInviteHeader}>
+              <Text style={styles.duelInviteAvatar}>{invite.sender.avatarEmoji}</Text>
+              <View style={{ flex: 1 }}>
+                <Text style={styles.duelInviteTitle}>⚔️ DUEL CHALLENGE!</Text>
+                <Text style={styles.duelInviteSender}>
+                  {invite.sender.displayName} ({invite.sender.beltRank} belt) challenged you!
+                </Text>
+              </View>
+            </View>
+            <View style={styles.duelInviteActions}>
+              <Pressable
+                onPress={() => handleAcceptDuel(invite)}
+                style={[styles.duelAcceptBtn, { backgroundColor: '#38A169' }]}
+                disabled={isAcceptingDuel}
+              >
+                <Swords size={14} color="#FFF" />
+                <Text style={styles.duelAcceptText}>Accept & Fight</Text>
+              </Pressable>
+              <Pressable
+                onPress={() => handleDeclineDuel(invite.id)}
+                style={[styles.duelDeclineBtn, { borderColor: '#E53E3E' }]}
+              >
+                <Text style={styles.duelDeclineText}>Decline</Text>
+              </Pressable>
+            </View>
+          </View>
+        ))}
+
+        {/* Incoming Score Challenges Banner (V3.6) */}
+        {scoreChallenges
+          .filter(c => c.isIncoming && c.status === 'pending')
+          .map(challenge => (
+            <View
+              key={challenge.id}
+              style={[styles.scoreChallengeCard, { backgroundColor: '#0B233A', borderColor: '#0284C7' }]}
+            >
+              <View style={styles.duelInviteHeader}>
+                <Text style={styles.duelInviteAvatar}>{challenge.creator.avatarEmoji}</Text>
+                <View style={{ flex: 1 }}>
+                  <Text style={[styles.duelInviteTitle, { color: '#38BDF8' }]}>⚡ BEAT MY SCORE!</Text>
+                  <Text style={styles.duelInviteSender}>
+                    {challenge.creator.displayName} challenged you in{' '}
+                    <Text style={{ color: '#38BDF8', fontWeight: '800' }}>
+                      {challenge.game.toUpperCase()}
+                    </Text>
+                    !
+                  </Text>
+                  <Text style={styles.scoreChallengeGoal}>
+                    🎯 Target to beat: {challenge.creator.score} pts
+                  </Text>
+                </View>
+              </View>
+              <View style={styles.duelInviteActions}>
+                <Pressable
+                  onPress={() => handleAcceptScoreChallenge(challenge)}
+                  style={[styles.duelAcceptBtn, { backgroundColor: '#0284C7' }]}
+                >
+                  <Zap size={14} color="#FFF" />
+                  <Text style={styles.duelAcceptText}>Play & Beat Score</Text>
+                </Pressable>
+              </View>
+            </View>
+          ))}
+
         {/* 0. Daily Community Challenge Hero Card */}
         <View
           style={[
@@ -237,6 +417,37 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
           </View>
         </View>
 
+        {/* Clan & Friends Banner */}
+        <Pressable
+          onPress={() => {
+            Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+            router.push('/friends' as any);
+          }}
+          style={({ pressed }) => [
+            styles.friendsBanner,
+            {
+              backgroundColor: theme.surface,
+              borderColor: theme.border,
+              opacity: pressed ? 0.85 : 1,
+            },
+          ]}
+        >
+          <View style={styles.friendsBannerLeft}>
+            <View style={[styles.iconWrap, { backgroundColor: 'rgba(239, 68, 68, 0.15)' }]}>
+              <Users size={22} color="#EF4444" />
+            </View>
+            <View style={{ marginLeft: 12, flex: 1 }}>
+              <Text style={[styles.friendsBannerTitle, { color: theme.textPrimary }]}>
+                Clan & Friends Board
+              </Text>
+              <Text style={[styles.friendsBannerSubtitle, { color: theme.textSecondary }]}>
+                Compare weekly XP, check study streaks & duels
+              </Text>
+            </View>
+          </View>
+          <ChevronRight size={18} color={theme.textSecondary} />
+        </Pressable>
+
         {/* Category Filter Pills */}
         <ScrollView
           horizontal
@@ -288,14 +499,14 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
                   対戦バトル • Battle Arena
                 </Text>
                 <Text style={[styles.sectionSubtitle, { color: theme.textSecondary }]}>
-                  Authentic Japanese multiplayer games vs AI opponents
+                  Authentic Japanese multiplayer games • Solo vs AI or Live PvP
                 </Text>
               </View>
             </View>
 
             {/* Shiritori Arena */}
             <Pressable
-              onPress={() => launchGame('shiritori')}
+              onPress={() => setSelectedBattleGame('shiritori')}
               style={[styles.battleCard, { backgroundColor: theme.surface, borderColor: '#EF444470' }]}
             >
               <View style={styles.cardHeader}>
@@ -306,7 +517,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
                   <View style={styles.battleTagRow}>
                     <View style={[styles.battleTag, { backgroundColor: '#EF444420' }]}>
                       <Text style={[styles.battleTagText, { color: '#EF4444' }]}>
-                        🎌 MULTIPLAYER READY
+                        🎌 SOLO & LIVE PVP
                       </Text>
                     </View>
                   </View>
@@ -320,22 +531,33 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
               </View>
 
               <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-                Turn-based Japanese word-chain duel vs AI bots (Tanuki, Kitsune, Tengu). Real-time turn timer, authentic &apos;ん&apos; loss rule, Kana/Kanji input engine, and TTS audio recitation.
+                Turn-based Japanese word-chain duel vs AI bots or live clan friends. Real-time turn timer, authentic &apos;ん&apos; loss rule, Kana/Kanji input engine, and TTS audio recitation.
               </Text>
 
               <View style={styles.cardFooter}>
                 <Text style={[styles.cardStatBadge, { color: '#EF4444' }]}>
                   ⏱️ 15s Turn Timer
                 </Text>
-                <View style={[styles.playPill, { backgroundColor: '#EF4444' }]}>
-                  <Text style={styles.playPillText}>Play Shiritori</Text>
+                <View style={styles.cardFooterActions}>
+                  <Pressable
+                    onPress={() => launchGame('shiritori')}
+                    style={[styles.smallPlayPill, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}
+                  >
+                    <Text style={[styles.smallPlayPillText, { color: theme.textSecondary }]}>🤖 Solo</Text>
+                  </Pressable>
+                  <Pressable
+                    onPress={() => setSelectedBattleGame('shiritori')}
+                    style={[styles.smallPlayPill, { backgroundColor: '#EF4444' }]}
+                  >
+                    <Text style={[styles.smallPlayPillText, { color: '#FFFFFF' }]}>⚔️ Live PvP</Text>
+                  </Pressable>
                 </View>
               </View>
             </Pressable>
 
             {/* Competitive Karuta */}
             <Pressable
-              onPress={() => launchGame('karuta')}
+              onPress={() => setSelectedBattleGame('karuta')}
               style={[styles.battleCard, { backgroundColor: theme.surface, borderColor: '#F59E0B70' }]}
             >
               <View style={styles.cardHeader}>
@@ -346,7 +568,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
                   <View style={styles.battleTagRow}>
                     <View style={[styles.battleTag, { backgroundColor: '#F59E0B20' }]}>
                       <Text style={[styles.battleTagText, { color: '#F59E0B' }]}>
-                        🎴 POEMS & VOCAB
+                        🎴 SOLO & LIVE PVP
                       </Text>
                     </View>
                   </View>
@@ -360,22 +582,33 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
               </View>
 
               <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-                Tatami mat reaction slap battle! Yomite reader pronounces Japanese classical poems or vocabulary. Race against AI bot to slap matching card before they snatch it. Watch out for Otetsuki!
+                Tatami mat reaction slap battle! Yomite reader pronounces Japanese classical poems or vocabulary. Race against AI bot or friends to slap matching card before they snatch it. Watch out for Otetsuki!
               </Text>
 
               <View style={styles.cardFooter}>
                 <Text style={[styles.cardStatBadge, { color: '#F59E0B' }]}>
                   🌸 12 Poems Mode
                 </Text>
-                <View style={[styles.playPill, { backgroundColor: '#F59E0B' }]}>
-                  <Text style={styles.playPillText}>Play Karuta</Text>
+                <View style={styles.cardFooterActions}>
+                  <Pressable
+                    onPress={() => launchGame('karuta')}
+                    style={[styles.smallPlayPill, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}
+                  >
+                    <Text style={[styles.smallPlayPillText, { color: theme.textSecondary }]}>🤖 Solo</Text>
+                  </Pressable>
+                  <Pressable
+                    onPress={() => setSelectedBattleGame('karuta')}
+                    style={[styles.smallPlayPill, { backgroundColor: '#F59E0B' }]}
+                  >
+                    <Text style={[styles.smallPlayPillText, { color: '#FFFFFF' }]}>⚔️ Live PvP</Text>
+                  </Pressable>
                 </View>
               </View>
             </Pressable>
 
             {/* Kanji Duel */}
             <Pressable
-              onPress={() => launchGame('kanjiDuel')}
+              onPress={() => setSelectedBattleGame('kanjiDuel')}
               style={[styles.battleCard, { backgroundColor: theme.surface, borderColor: '#8B5CF670' }]}
             >
               <View style={styles.cardHeader}>
@@ -386,7 +619,7 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
                   <View style={styles.battleTagRow}>
                     <View style={[styles.battleTag, { backgroundColor: '#8B5CF620' }]}>
                       <Text style={[styles.battleTagText, { color: '#8B5CF6' }]}>
-                        ⚔️ 1000 HP COMBAT
+                        ⚔️ SOLO & LIVE PVP
                       </Text>
                     </View>
                   </View>
@@ -400,15 +633,26 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
               </View>
 
               <Text style={[styles.gameDesc, { color: theme.textSecondary }]}>
-                High-speed martial arts combat! 1000 HP clash against Tanuki, Kitsune, or Tengu. Strike with Onyomi vs Kunyomi, Radicals, Stroke counts, and Compound words. Faster answers trigger Critical Hits!
+                High-speed martial arts combat! 1000 HP clash against bots or real opponents. Strike with Onyomi vs Kunyomi, Radicals, Stroke counts, and Compound words. Faster answers trigger Critical Hits!
               </Text>
 
               <View style={styles.cardFooter}>
                 <Text style={[styles.cardStatBadge, { color: '#8B5CF6' }]}>
                   ⚡ Critical Strikes
                 </Text>
-                <View style={[styles.playPill, { backgroundColor: '#8B5CF6' }]}>
-                  <Text style={styles.playPillText}>Start Duel</Text>
+                <View style={styles.cardFooterActions}>
+                  <Pressable
+                    onPress={() => launchGame('kanjiDuel')}
+                    style={[styles.smallPlayPill, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border }]}
+                  >
+                    <Text style={[styles.smallPlayPillText, { color: theme.textSecondary }]}>🤖 Solo</Text>
+                  </Pressable>
+                  <Pressable
+                    onPress={() => setSelectedBattleGame('kanjiDuel')}
+                    style={[styles.smallPlayPill, { backgroundColor: '#8B5CF6' }]}
+                  >
+                    <Text style={[styles.smallPlayPillText, { color: '#FFFFFF' }]}>⚔️ Live PvP</Text>
+                  </Pressable>
                 </View>
               </View>
             </Pressable>
@@ -690,27 +934,63 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
         visible={activeGame === 'shiritori'}
         animationType="slide"
         presentationStyle="fullScreen"
-        onRequestClose={closeGame}
+        onRequestClose={() => {
+          setActiveDuelMatchId(null);
+          setActiveDuelInitialState(null);
+          closeGame();
+        }}
       >
-        <ShiritoriArenaView onClose={closeGame} />
+        <ShiritoriArenaView
+          duelMatchId={activeDuelMatchId || undefined}
+          initialDuelState={activeDuelInitialState || undefined}
+          onClose={() => {
+            setActiveDuelMatchId(null);
+            setActiveDuelInitialState(null);
+            closeGame();
+          }}
+        />
       </Modal>
 
       <Modal
         visible={activeGame === 'karuta'}
         animationType="slide"
         presentationStyle="fullScreen"
-        onRequestClose={closeGame}
+        onRequestClose={() => {
+          setActiveDuelMatchId(null);
+          setActiveDuelInitialState(null);
+          closeGame();
+        }}
       >
-        <KarutaBattleView onClose={closeGame} />
+        <KarutaBattleView
+          duelMatchId={activeDuelMatchId || undefined}
+          initialDuelState={activeDuelInitialState || undefined}
+          onClose={() => {
+            setActiveDuelMatchId(null);
+            setActiveDuelInitialState(null);
+            closeGame();
+          }}
+        />
       </Modal>
 
       <Modal
         visible={activeGame === 'kanjiDuel'}
         animationType="slide"
         presentationStyle="fullScreen"
-        onRequestClose={closeGame}
+        onRequestClose={() => {
+          setActiveDuelMatchId(null);
+          setActiveDuelInitialState(null);
+          closeGame();
+        }}
       >
-        <KanjiDuelView onClose={closeGame} />
+        <KanjiDuelView
+          duelMatchId={activeDuelMatchId || undefined}
+          initialDuelState={activeDuelInitialState || undefined}
+          onClose={() => {
+            setActiveDuelMatchId(null);
+            setActiveDuelInitialState(null);
+            closeGame();
+          }}
+        />
       </Modal>
 
       <Modal
@@ -779,6 +1059,21 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
       <DailyChallengeModal
         visible={showDailyChallenge}
         onClose={() => setShowDailyChallenge(false)}
+      />
+
+      <ArcadeBattleLobbyModal
+        visible={Boolean(selectedBattleGame)}
+        game={selectedBattleGame}
+        onClose={() => setSelectedBattleGame(null)}
+        onStartSolo={game => {
+          setSelectedBattleGame(null);
+          launchGame(game);
+        }}
+        onStartMultiplayer={(game, matchId) => {
+          setSelectedBattleGame(null);
+          setActiveDuelMatchId(matchId);
+          setActiveGame(game);
+        }}
       />
     </View>
   );
@@ -850,6 +1145,27 @@ const styles = StyleSheet.create({
     width: 1,
     height: 32,
   },
+  friendsBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    borderRadius: 16,
+    borderWidth: 1,
+    padding: 14,
+  },
+  friendsBannerLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flex: 1,
+  },
+  friendsBannerTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+  },
+  friendsBannerSubtitle: {
+    fontSize: 12,
+    marginTop: 2,
+  },
   gameCard: {
     borderRadius: 20,
     borderWidth: 1,
@@ -907,6 +1223,22 @@ const styles = StyleSheet.create({
   playPillText: {
     color: '#FFFFFF',
     fontSize: 13,
+    fontWeight: '700',
+  },
+  cardFooterActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  smallPlayPill: {
+    paddingHorizontal: 14,
+    paddingVertical: 7,
+    borderRadius: radii.full,
+    borderWidth: 1,
+    borderColor: 'transparent',
+  },
+  smallPlayPillText: {
+    fontSize: 12,
     fontWeight: '700',
   },
   dailyHeroCard: {
@@ -1071,5 +1403,74 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '500',
     marginTop: 1,
+  },
+  duelInviteCard: {
+    padding: 16,
+    borderRadius: radii.xl,
+    borderWidth: 1.5,
+    marginBottom: 16,
+    gap: 12,
+  },
+  duelInviteHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  duelInviteAvatar: {
+    fontSize: 32,
+  },
+  duelInviteTitle: {
+    color: '#E53E3E',
+    fontSize: 13,
+    fontWeight: '900',
+    letterSpacing: 0.5,
+  },
+  duelInviteSender: {
+    color: '#FFF',
+    fontSize: 14,
+    fontWeight: '700',
+    marginTop: 2,
+  },
+  duelInviteActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  duelAcceptBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    borderRadius: radii.md,
+    gap: 6,
+  },
+  duelAcceptText: {
+    color: '#FFF',
+    fontSize: 13,
+    fontWeight: '800',
+  },
+  duelDeclineBtn: {
+    paddingHorizontal: 16,
+    paddingVertical: 9,
+    borderRadius: radii.md,
+    borderWidth: 1,
+  },
+  duelDeclineText: {
+    color: '#E53E3E',
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  scoreChallengeCard: {
+    padding: 16,
+    borderRadius: radii.xl,
+    borderWidth: 1.5,
+    marginBottom: 16,
+    gap: 12,
+  },
+  scoreChallengeGoal: {
+    color: '#38BDF8',
+    fontSize: 13,
+    fontWeight: '800',
+    marginTop: 4,
   },
 });
