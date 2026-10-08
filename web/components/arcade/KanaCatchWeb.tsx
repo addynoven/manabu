@@ -171,27 +171,27 @@ export function KanaCatchWeb({ onExit }: KanaCatchWebProps) {
   return (
     <div className="max-w-2xl mx-auto space-y-6">
       {/* Top Header */}
-      <div className="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-4 rounded-2xl">
+      <div className="flex items-center justify-between bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-lg">
             🧺
           </div>
           <div>
             <h1 className="text-sm font-bold text-white">収穫籠 • Kana Catch</h1>
-            <p className="text-[11px] text-neutral-400">Slide the basket to catch the requested Japanese character.</p>
+            <p className="text-[11px] text-[#8fa2aa]">Slide the basket to catch the requested Japanese character.</p>
           </div>
         </div>
 
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 text-xs">
             <Trophy size={14} className="text-amber-400" />
-            <span className="text-neutral-400">Best:</span>
+            <span className="text-[#8fa2aa]">Best:</span>
             <span className="font-bold text-white">{highScore} pts</span>
           </div>
 
           <button
             onClick={onExit}
-            className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition"
+            className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition"
           >
             Exit Game
           </button>
@@ -199,13 +199,13 @@ export function KanaCatchWeb({ onExit }: KanaCatchWebProps) {
       </div>
 
       {/* Target & Lives Bar */}
-      <div className="bg-neutral-900 border border-neutral-800 p-4 rounded-2xl flex items-center justify-between">
+      <div className="bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <span className="text-xs text-neutral-400 font-bold uppercase">Catch Target:</span>
+          <span className="text-xs text-[#8fa2aa] font-bold uppercase">Catch Target:</span>
           <span className="text-2xl font-black text-amber-400 font-serif">
             {currentTarget?.promptPrimary || 'Start'}
           </span>
-          <span className="text-xs text-neutral-400 font-mono">
+          <span className="text-xs text-[#8fa2aa] font-mono">
             {currentTarget?.promptSecondary ? `(${currentTarget.promptSecondary})` : ''}
           </span>
         </div>
@@ -217,13 +217,13 @@ export function KanaCatchWeb({ onExit }: KanaCatchWebProps) {
                 key={i}
                 size={18}
                 fill={i < lives ? '#ef4444' : 'none'}
-                className={i < lives ? 'text-red-500' : 'text-neutral-700'}
+                className={i < lives ? 'text-red-500' : 'text-[#455a64]'}
               />
             ))}
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="text-xs text-neutral-400 font-bold uppercase">Score:</span>
+            <span className="text-xs text-[#8fa2aa] font-bold uppercase">Score:</span>
             <span className="text-2xl font-black text-white font-mono">{score}</span>
           </div>
         </div>
@@ -232,13 +232,13 @@ export function KanaCatchWeb({ onExit }: KanaCatchWebProps) {
       {/* Catch Arena Canvas */}
       <div
         onMouseMove={handleMouseMove}
-        className="bg-neutral-950 border-2 border-neutral-800 rounded-3xl min-h-[380px] h-[380px] relative overflow-hidden shadow-2xl cursor-none select-none"
+        className="bg-[#051b22] border-2 border-[#17424f] rounded-xl min-h-[380px] h-[380px] relative overflow-hidden shadow-2xl cursor-none select-none"
       >
         {!isPlaying && !gameOver && (
           <div className="h-full flex flex-col items-center justify-center text-center space-y-4 p-8">
             <div className="text-5xl">🧺</div>
             <h2 className="text-xl font-black text-white">Kana Harvest Basket</h2>
-            <p className="text-xs text-neutral-400 max-w-sm mx-auto">
+            <p className="text-xs text-[#8fa2aa] max-w-sm mx-auto">
               Move your mouse or use Left/Right arrow keys to steer the basket. Catch the matching kana and dodge the rest!
             </p>
             <button
@@ -254,7 +254,7 @@ export function KanaCatchWeb({ onExit }: KanaCatchWebProps) {
           <div className="h-full flex flex-col items-center justify-center text-center space-y-4 p-8">
             <div className="text-5xl">💔</div>
             <h2 className="text-xl font-black text-white">Game Over!</h2>
-            <p className="text-xs text-neutral-400">Final Harvest: {score} pts</p>
+            <p className="text-xs text-[#8fa2aa]">Final Harvest: {score} pts</p>
             <button
               onClick={startGame}
               className="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black text-xs font-black transition flex items-center gap-2 mx-auto"
@@ -271,7 +271,7 @@ export function KanaCatchWeb({ onExit }: KanaCatchWebProps) {
             return (
               <div
                 key={item.id}
-                className="absolute -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-neutral-900 border border-neutral-700 flex items-center justify-center text-lg font-serif font-black text-white shadow-md pointer-events-none"
+                className="absolute -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-[#0a3240] border border-[#17424f] flex items-center justify-center text-lg font-serif font-black text-white shadow-md pointer-events-none"
                 style={{
                   left: `${leftPercent}%`,
                   top: `${item.yPosition}%`,
@@ -297,13 +297,13 @@ export function KanaCatchWeb({ onExit }: KanaCatchWebProps) {
       <div className="flex justify-center gap-4 pt-2">
         <button
           onClick={() => setBasketX(x => Math.max(8, x - 10))}
-          className="px-6 py-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-xs font-bold text-white flex items-center gap-2"
+          className="px-6 py-2.5 rounded-xl bg-[#0a3240] border border-[#17424f] text-xs font-bold text-white flex items-center gap-2"
         >
           <ArrowLeft size={16} /> Left
         </button>
         <button
           onClick={() => setBasketX(x => Math.min(92, x + 10))}
-          className="px-6 py-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-xs font-bold text-white flex items-center gap-2"
+          className="px-6 py-2.5 rounded-xl bg-[#0a3240] border border-[#17424f] text-xs font-bold text-white flex items-center gap-2"
         >
           Right <ArrowRight size={16} />
         </button>

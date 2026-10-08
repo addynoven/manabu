@@ -328,7 +328,7 @@ export function ShiritoriArenaWeb({
   return (
     <div className="max-w-4xl mx-auto space-y-6">
       {/* Top Banner */}
-      <div className="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-4 rounded-2xl">
+      <div className="flex items-center justify-between bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl">
         <div className="flex items-center gap-3">
           <div className="w-11 h-11 rounded-2xl bg-red-500/15 border border-red-500/30 text-2xl flex items-center justify-center font-bold shadow-inner">
             {isMultiplayer ? duelState?.opponent?.avatarEmoji || '🥷' : 'し'}
@@ -344,7 +344,7 @@ export function ShiritoriArenaWeb({
                 </span>
               )}
             </div>
-            <p className="text-[11px] text-neutral-400">
+            <p className="text-[11px] text-[#8fa2aa]">
               {isMultiplayer
                 ? `Rank: ${duelState?.opponent?.beltRank || 'White'} Belt • Level ${duelState?.opponent?.level || 1}`
                 : `🤖 Solo vs ${botProfile.name} (${botDifficulty})`}
@@ -358,7 +358,7 @@ export function ShiritoriArenaWeb({
               value={botDifficulty}
               onChange={e => setBotDifficulty(e.target.value as ShiritoriDifficulty)}
               disabled={turns.length > 1 && !gameOver}
-              className="bg-neutral-950 border border-neutral-800 rounded-xl px-3 py-1.5 text-xs text-neutral-300 font-bold focus:outline-none"
+              className="bg-[#051b22] border border-[#17424f] rounded-xl px-3 py-1.5 text-xs text-[#c1d0d6] font-bold focus:outline-none"
             >
               <option value="easy">🦝 Tanuki (Easy)</option>
               <option value="medium">🦊 Kitsune (Medium)</option>
@@ -368,7 +368,7 @@ export function ShiritoriArenaWeb({
 
           <button
             onClick={onExit}
-            className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition"
+            className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition"
           >
             Exit Game
           </button>
@@ -377,10 +377,10 @@ export function ShiritoriArenaWeb({
 
       {/* Duel Turn Bar & Timer */}
       <div
-        className={`border p-4 rounded-3xl flex items-center justify-between transition-colors ${
+        className={`border p-4 rounded-xl flex items-center justify-between transition-colors ${
           (isMultiplayer ? isMyTurnPvP : currentTurn === 'player')
             ? 'bg-emerald-950/20 border-emerald-500/50 shadow-lg shadow-emerald-950/30'
-            : 'bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950 border-neutral-800'
+            : 'bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950 border-[#17424f]'
         }`}
       >
         <div className="flex items-center gap-4">
@@ -392,7 +392,7 @@ export function ShiritoriArenaWeb({
             }`}
           />
           <div>
-            <div className="text-xs font-bold text-neutral-400 uppercase tracking-wider">Turn Status</div>
+            <div className="text-xs font-bold text-[#8fa2aa] uppercase tracking-wider">Turn Status</div>
             <div className="text-sm font-black text-white">
               {(isMultiplayer ? isMyTurnPvP : currentTurn === 'player') ? (
                 <span className="text-emerald-400 font-black">🎯 YOUR TURN</span>
@@ -407,7 +407,7 @@ export function ShiritoriArenaWeb({
 
         {/* Required Letter Display */}
         <div className="text-center">
-          <div className="text-[10px] uppercase font-bold text-neutral-400">
+          <div className="text-[10px] uppercase font-bold text-[#8fa2aa]">
             {(isMultiplayer ? isMyTurnPvP : currentTurn === 'player')
               ? 'Your Starting Kana'
               : 'Opponent Must Play'}
@@ -417,7 +417,7 @@ export function ShiritoriArenaWeb({
 
         {/* Timer */}
         <div className="flex items-center gap-2">
-          <Timer size={18} className={timeLeft <= 5 ? 'text-red-500 animate-bounce' : 'text-neutral-400'} />
+          <Timer size={18} className={timeLeft <= 5 ? 'text-red-500 animate-bounce' : 'text-[#8fa2aa]'} />
           <span
             className={`text-2xl font-mono font-black ${
               timeLeft <= 5 ? 'text-red-500' : 'text-white'
@@ -436,7 +436,7 @@ export function ShiritoriArenaWeb({
       )}
 
       {/* Scrollable Word Chain Board */}
-      <div className="bg-neutral-950 border border-neutral-800 rounded-3xl p-6 min-h-[320px] max-h-[420px] overflow-y-auto space-y-3">
+      <div className="bg-[#051b22] border border-[#17424f] rounded-xl p-6 min-h-[320px] max-h-[420px] overflow-y-auto space-y-3">
         {turns.map((turn, idx) => {
           const isPlayer = turn.player === 'player';
           const senderName = isPlayer
@@ -456,7 +456,7 @@ export function ShiritoriArenaWeb({
               className={`flex items-start gap-3 ${isPlayer ? 'justify-end' : 'justify-start'}`}
             >
               {!isPlayer && (
-                <div className="w-8 h-8 rounded-lg bg-neutral-800 text-base flex items-center justify-center shadow-inner mt-1">
+                <div className="w-8 h-8 rounded-lg bg-[#0f3947] text-base flex items-center justify-center shadow-inner mt-1">
                   {senderAvatar}
                 </div>
               )}
@@ -464,17 +464,17 @@ export function ShiritoriArenaWeb({
               <div
                 className={`max-w-[75%] p-4 rounded-2xl border ${
                   isPlayer
-                    ? 'bg-red-600/20 border-red-500/40 text-right'
-                    : 'bg-neutral-900 border-neutral-800 text-left'
+                    ? 'bg-[#c74a4a]/20 border-red-500/40 text-right'
+                    : 'bg-[#0a3240] border-[#17424f] text-left'
                 }`}
               >
                 <div className="flex items-center gap-2 justify-between">
-                  <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">
+                  <span className="text-[10px] font-bold text-[#8fa2aa] uppercase tracking-widest">
                     #{idx + 1} {senderName}
                   </span>
                   <button
                     onClick={() => speakJapanese(turn.word)}
-                    className="text-neutral-400 hover:text-white p-1"
+                    className="text-[#8fa2aa] hover:text-white p-1"
                     title="Speak pronunciation"
                   >
                     <Volume2 size={13} />
@@ -487,11 +487,11 @@ export function ShiritoriArenaWeb({
                 <div className="text-xs text-amber-400 font-mono">
                   {turn.kana} • {turn.romaji}
                 </div>
-                <div className="text-[11px] text-neutral-400 mt-1 italic">{turn.english}</div>
+                <div className="text-[11px] text-[#8fa2aa] mt-1 italic">{turn.english}</div>
               </div>
 
               {isPlayer && (
-                <div className="w-8 h-8 rounded-lg bg-red-600/30 text-white text-xs font-black flex items-center justify-center mt-1">
+                <div className="w-8 h-8 rounded-lg bg-[#c74a4a]/30 text-white text-xs font-black flex items-center justify-center mt-1">
                   🥋
                 </div>
               )}
@@ -503,20 +503,20 @@ export function ShiritoriArenaWeb({
 
       {/* Game Over Screen */}
       {gameOver && (
-        <div className="p-6 rounded-3xl bg-neutral-900 border border-neutral-800 text-center space-y-4 shadow-xl">
+        <div className="p-6 rounded-xl bg-[#0a3240] border border-[#17424f] text-center space-y-4 shadow-xl">
           <div className="text-4xl">{winner === 'player' ? '🏆' : '💀'}</div>
           <div>
             <h2 className="text-xl font-black text-white">
               {winner === 'player' ? 'Victory in Shiritori Arena!' : 'Defeated in Shiritori Arena'}
             </h2>
-            <p className="text-xs text-neutral-400 mt-1">{gameOverReason}</p>
+            <p className="text-xs text-[#8fa2aa] mt-1">{gameOverReason}</p>
           </div>
 
           <div className="flex items-center justify-center gap-3">
             {!isMultiplayer ? (
               <button
                 onClick={startNewSoloGame}
-                className="px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-black text-white transition flex items-center gap-2 shadow-lg shadow-red-950/40"
+                className="px-6 py-3 rounded-xl bg-[#c74a4a] hover:bg-[#d95a5a] text-xs font-black text-white transition flex items-center gap-2 shadow-lg shadow-red-950/40"
               >
                 <RotateCcw size={15} /> Play Again
               </button>
@@ -532,7 +532,7 @@ export function ShiritoriArenaWeb({
                 )}
                 <button
                   onClick={onExit}
-                  className="px-6 py-3 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-black text-neutral-300 transition"
+                  className="px-6 py-3 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-black text-[#c1d0d6] transition"
                 >
                   Exit to Arcade
                 </button>
@@ -546,19 +546,19 @@ export function ShiritoriArenaWeb({
       {!gameOver && (
         <form onSubmit={handlePlayerSubmit} className="space-y-3">
           {errorMessage && (
-            <div className="p-2.5 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold flex items-center gap-2">
+            <div className="p-2.5 rounded-xl bg-red-500/10 border border-red-500/30 text-[#ffb4ab] text-xs font-bold flex items-center gap-2">
               <AlertTriangle size={14} /> {errorMessage}
             </div>
           )}
 
           {/* Quick Lifeline Word Suggestions (1-Click Play) */}
           {(isMultiplayer ? isMyTurnPvP : currentTurn === 'player') && (
-            <div className="bg-neutral-900/80 border border-neutral-800/80 rounded-2xl p-3 space-y-2">
-              <div className="flex items-center justify-between text-xs font-bold text-neutral-400">
+            <div className="bg-[#0a3240]/80 border border-[#17424f]/80 rounded-2xl p-3 space-y-2">
+              <div className="flex items-center justify-between text-xs font-bold text-[#8fa2aa]">
                 <span className="flex items-center gap-1.5 text-amber-400">
                   <Sparkles size={13} /> Lifeline Words Starting with 「{requiredChar}」:
                 </span>
-                <span className="text-[10px] text-neutral-500">Tap word to play instantly</span>
+                <span className="text-[10px] text-[#627780]">Tap word to play instantly</span>
               </div>
               <div className="flex flex-wrap gap-2">
                 {getPlayerSuggestions(requiredChar, new Set(turns.map(t => t.kana)), 3).map(w => (
@@ -566,13 +566,13 @@ export function ShiritoriArenaWeb({
                     key={w.word}
                     type="button"
                     onClick={() => playChosenWord(w.word)}
-                    className="px-3.5 py-2 rounded-xl bg-neutral-800 hover:bg-neutral-700 active:scale-95 border border-neutral-700/60 text-left transition flex items-center gap-2 shadow-sm group"
+                    className="px-3.5 py-2 rounded-xl bg-[#0f3947] hover:bg-[#17424f] active:scale-95 border border-[#17424f]/60 text-left transition flex items-center gap-2 shadow-sm group"
                   >
                     <span className="text-sm font-black text-white font-serif group-hover:text-amber-300">
                       {w.word}
                     </span>
-                    <span className="text-[11px] text-neutral-400 font-mono">({w.kana})</span>
-                    <span className="text-[10px] text-neutral-500 italic">• {w.english}</span>
+                    <span className="text-[11px] text-[#8fa2aa] font-mono">({w.kana})</span>
+                    <span className="text-[10px] text-[#627780] italic">• {w.english}</span>
                   </button>
                 ))}
               </div>
@@ -590,17 +590,17 @@ export function ShiritoriArenaWeb({
                   ? `Enter Japanese noun starting with 「${requiredChar}」 (type romaji or kana)...`
                   : `Waiting for opponent's turn...`
               }
-              className="flex-1 bg-neutral-900 border border-neutral-800 rounded-2xl px-5 py-3.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 font-serif"
+              className="flex-1 bg-[#0a3240] border border-[#17424f] rounded-2xl px-5 py-3.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 font-serif"
             />
             <button
               type="submit"
               disabled={(isMultiplayer ? !isMyTurnPvP : currentTurn !== 'player') || !inputText.trim()}
-              className="px-6 py-3.5 rounded-2xl bg-red-600 hover:bg-red-500 disabled:opacity-40 text-xs font-black text-white transition flex items-center gap-2 shadow-lg shadow-red-950/40"
+              className="px-6 py-3.5 rounded-2xl bg-[#c74a4a] hover:bg-[#d95a5a] disabled:opacity-40 text-xs font-black text-white transition flex items-center gap-2 shadow-lg shadow-red-950/40"
             >
               <Send size={15} /> Play Word
             </button>
           </div>
-          <p className="text-[11px] text-neutral-500 pl-2">
+          <p className="text-[11px] text-[#627780] pl-2">
             💡 Type in Romaji or Kana (e.g. typing &quot;neko&quot; converts to &quot;ねこ&quot;). Words ending in 「ん」 lose immediately!
           </p>
         </form>

@@ -46,28 +46,28 @@ export function FsrsRetentionGraph({
   const y90 = getY(0.90);
 
   return (
-    <div className="bg-[#18181B] border border-neutral-800 rounded-2xl p-5 shadow-xl text-neutral-200">
+    <div className="bg-[#0a3240] border border-[#17424f] rounded-2xl p-5 shadow-xl text-[#c1d0d6]">
       {/* Header Metric Bar (Stitch Screen #10) */}
-      <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-neutral-800/80 mb-5">
+      <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-[#17424f]/80 mb-5">
         <div>
           <div className="flex items-center gap-2">
             <span className="text-xs font-bold uppercase tracking-wider text-pink-400 bg-pink-500/10 px-2 py-0.5 rounded border border-pink-500/20">
               FSRS-5 Algorithm
             </span>
-            <span className="text-xs text-neutral-400 font-mono">v5.0-Prod</span>
+            <span className="text-xs text-[#8fa2aa] font-mono">v5.0-Prod</span>
           </div>
           <h3 className="text-lg font-bold text-white mt-1">Memory Decay & Retention Curve</h3>
         </div>
 
         <div className="flex items-center gap-4 text-sm font-mono">
-          <div className="flex items-center gap-1.5 bg-neutral-900 px-3 py-1.5 rounded-lg border border-neutral-800">
+          <div className="flex items-center gap-1.5 bg-[#051b22] px-3 py-1.5 rounded-lg border border-[#17424f]">
             <Clock className="w-4 h-4 text-blue-400" />
-            <span className="text-neutral-400">Stability (S):</span>
+            <span className="text-[#8fa2aa]">Stability (S):</span>
             <span className="text-white font-bold">{stability.toFixed(1)}d</span>
           </div>
-          <div className="flex items-center gap-1.5 bg-neutral-900 px-3 py-1.5 rounded-lg border border-neutral-800">
+          <div className="flex items-center gap-1.5 bg-[#051b22] px-3 py-1.5 rounded-lg border border-[#17424f]">
             <Activity className="w-4 h-4 text-purple-400" />
-            <span className="text-neutral-400">Mean Diff (D):</span>
+            <span className="text-[#8fa2aa]">Mean Diff (D):</span>
             <span className="text-white font-bold">{difficulty.toFixed(1)}/10</span>
           </div>
           <div className="flex items-center gap-1.5 bg-emerald-500/10 px-3 py-1.5 rounded-lg border border-emerald-500/20 text-emerald-400 font-bold">
@@ -180,12 +180,12 @@ export function FsrsRetentionGraph({
       </div>
 
       {/* Footer Notes (Stitch Screen #10 telemetry) */}
-      <div className="mt-4 pt-3 border-t border-neutral-800/80 flex items-center justify-between text-xs text-neutral-400">
+      <div className="mt-4 pt-3 border-t border-[#17424f]/80 flex items-center justify-between text-xs text-[#8fa2aa]">
         <div className="flex items-center gap-1.5">
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
           <span>FSRS-5 optimizes reviews precisely before forgetting drops below 90%</span>
         </div>
-        <div className="font-mono text-neutral-500">
+        <div className="font-mono text-[#627780]">
           Target Retrievability: {Math.round(FSRS_FACTORS.targetRetention * 100)}%
         </div>
       </div>

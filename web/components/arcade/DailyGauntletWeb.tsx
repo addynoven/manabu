@@ -175,28 +175,28 @@ export function DailyGauntletWeb({ onExit }: DailyGauntletWebProps) {
   return (
     <div className="max-w-2xl mx-auto space-y-6">
       {/* Header */}
-      <div className="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-4 rounded-2xl">
+      <div className="flex items-center justify-between bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-lg">
             🏆
           </div>
           <div>
             <h1 className="text-sm font-bold text-white">今日の挑戦 • Daily Challenge Gauntlet</h1>
-            <p className="text-[11px] text-neutral-400">10 Daily Curated Questions across Kana, Kanji & Vocab.</p>
+            <p className="text-[11px] text-[#8fa2aa]">10 Daily Curated Questions across Kana, Kanji & Vocab.</p>
           </div>
         </div>
 
         <button
           onClick={onExit}
-          className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition"
+          className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition"
         >
           Exit Gauntlet
         </button>
       </div>
 
       {/* Progress & Timer Bar */}
-      <div className="bg-neutral-900 border border-neutral-800 p-4 rounded-2xl flex items-center justify-between">
-        <div className="text-xs font-bold text-neutral-400">
+      <div className="bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl flex items-center justify-between">
+        <div className="text-xs font-bold text-[#8fa2aa]">
           Question <span className="text-white font-mono">{currentIndex + 1}</span> of {questions.length}
         </div>
 
@@ -206,29 +206,29 @@ export function DailyGauntletWeb({ onExit }: DailyGauntletWebProps) {
       </div>
 
       {/* Arena Card */}
-      <div className="bg-gradient-to-b from-neutral-900 to-neutral-950 border border-neutral-800 rounded-3xl p-6 md:p-10 space-y-6 min-h-[380px] flex flex-col justify-center">
+      <div className="bg-gradient-to-b from-neutral-900 to-neutral-950 border border-[#17424f] rounded-xl p-6 md:p-10 space-y-6 min-h-[380px] flex flex-col justify-center">
         {isCompleted ? (
           <div className="text-center space-y-4">
             <Trophy size={48} className="mx-auto text-amber-400" />
             <h2 className="text-2xl font-black text-white">Daily Gauntlet Completed!</h2>
-            <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto bg-neutral-950 p-4 rounded-2xl border border-neutral-800">
+            <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto bg-[#051b22] p-4 rounded-2xl border border-[#17424f]">
               <div>
-                <div className="text-[10px] text-neutral-500 uppercase font-bold">Accuracy</div>
+                <div className="text-[10px] text-[#627780] uppercase font-bold">Accuracy</div>
                 <div className="text-xl font-black text-emerald-400 font-mono">
                   {Math.round((correctCount / questions.length) * 100)}%
                 </div>
               </div>
               <div>
-                <div className="text-[10px] text-neutral-500 uppercase font-bold">Time</div>
+                <div className="text-[10px] text-[#627780] uppercase font-bold">Time</div>
                 <div className="text-xl font-black text-white font-mono">{timeSeconds}s</div>
               </div>
               <div>
-                <div className="text-[10px] text-neutral-500 uppercase font-bold">Score</div>
+                <div className="text-[10px] text-[#627780] uppercase font-bold">Score</div>
                 <div className="text-xl font-black text-amber-400 font-mono">{correctCount * 50}</div>
               </div>
             </div>
 
-            <p className="text-xs text-neutral-400">
+            <p className="text-xs text-[#8fa2aa]">
               {isSubmitting ? 'Syncing score to Clan Leaderboard...' : 'Your score has been synchronized to the cloud!'}
             </p>
 
@@ -243,7 +243,7 @@ export function DailyGauntletWeb({ onExit }: DailyGauntletWebProps) {
           currentQ && (
             <div className="space-y-6">
               <div className="text-center space-y-2">
-                <span className="text-xs font-bold text-neutral-400">{currentQ.sub}</span>
+                <span className="text-xs font-bold text-[#8fa2aa]">{currentQ.sub}</span>
                 <div className="text-6xl md:text-7xl font-serif font-black text-white py-2 tracking-tight">
                   {currentQ.prompt}
                 </div>
@@ -254,11 +254,11 @@ export function DailyGauntletWeb({ onExit }: DailyGauntletWebProps) {
                   const isSelected = selectedOption === opt;
                   const isCorrect = opt === currentQ.correct;
 
-                  let style = 'bg-neutral-900 hover:bg-neutral-800 border-neutral-800 text-white';
+                  let style = 'bg-[#0a3240] hover:bg-[#0f3947] border-[#17424f] text-white';
                   if (selectedOption) {
                     if (isCorrect) style = 'bg-emerald-600 border-emerald-500 text-white';
-                    else if (isSelected) style = 'bg-red-600 border-red-500 text-white';
-                    else style = 'bg-neutral-950 border-neutral-900 text-neutral-600';
+                    else if (isSelected) style = 'bg-[#c74a4a] border-red-500 text-white';
+                    else style = 'bg-[#051b22] border-[#17424f] text-[#455a64]';
                   }
 
                   return (

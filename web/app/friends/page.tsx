@@ -282,7 +282,7 @@ export default function FriendsPage() {
             className={`p-4 rounded-2xl border text-xs font-bold flex items-center justify-between ${
               actionMessage.type === 'success'
                 ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400'
-                : 'bg-red-500/10 border-red-500/30 text-red-400'
+                : 'bg-red-500/10 border-red-500/30 text-[#ffb4ab]'
             }`}
           >
             <span>{actionMessage.text}</span>
@@ -292,78 +292,61 @@ export default function FriendsPage() {
           </div>
         )}
 
-        {/* Top Cards: Friend Code & Add Friend */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {/* Card 1: My Friend Code */}
-          <div className="bg-gradient-to-b from-neutral-900 to-neutral-950 border border-neutral-800 rounded-3xl p-6 flex flex-col justify-between relative overflow-hidden">
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-xs font-bold text-amber-400 uppercase tracking-wider">
-                <Sparkles size={14} /> Your Unique Friend Code
-              </div>
-              <div className="text-3xl md:text-4xl font-mono font-black text-white tracking-widest py-2">
-                {friendCode.length === 8 ? `${friendCode.slice(0, 4)}-${friendCode.slice(4)}` : friendCode}
-              </div>
-              <p className="text-xs text-neutral-400">
-                Share this code with fellow learners to connect and duel in live lockstep matches.
-              </p>
+        {/* Stitch Screen 12: Scholar Code & Add Friend Action Strip */}
+        <div className="bg-[#0a3240] border border-[#17424f] rounded-xl p-4 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3 w-full md:w-auto">
+            <div className="w-10 h-10 rounded-lg bg-[#051b22] border border-[#17424f] flex items-center justify-center text-amber-400 shrink-0">
+              <Sparkles size={18} />
             </div>
-
-            <div className="flex items-center gap-3 mt-6">
-              <button
-                onClick={handleCopyCode}
-                className="flex-1 py-2.5 px-4 rounded-xl bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 text-xs font-bold text-white transition flex items-center justify-center gap-2"
-              >
-                {copied ? <Check size={14} className="text-emerald-400" /> : <Copy size={14} />}
-                {copied ? 'Copied to Clipboard' : 'Copy Friend Code'}
-              </button>
-            </div>
-          </div>
-
-          {/* Card 2: Add Friend by Code */}
-          <div className="bg-gradient-to-b from-neutral-900 to-neutral-950 border border-neutral-800 rounded-3xl p-6 flex flex-col justify-between">
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-xs font-bold text-red-400 uppercase tracking-wider">
-                <UserPlus size={14} /> Add Friend by Code
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] uppercase font-bold tracking-wider text-[#8fa2aa]">Your Scholar Code</span>
+                <span className="text-[10px] text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-1.5 py-0.2 rounded font-mono font-semibold">Active</span>
               </div>
-              <p className="text-xs text-neutral-400">
-                Enter an 8-character friend code from a friend&apos;s mobile app or web profile.
-              </p>
-
-              <form onSubmit={handleAddFriend} className="flex gap-2 pt-2">
-                <input
-                  type="text"
-                  value={inputCode}
-                  onChange={e => setInputCode(e.target.value)}
-                  placeholder="e.g. R4B6-53B4"
-                  maxLength={10}
-                  className="flex-1 bg-neutral-950 border border-neutral-800 rounded-xl px-4 py-2.5 text-xs font-mono text-white placeholder-neutral-600 uppercase focus:outline-none focus:border-red-500"
-                />
+              <div className="flex items-center gap-3">
+                <span className="text-xl font-mono font-bold text-white tracking-widest">
+                  {friendCode.length === 8 ? `${friendCode.slice(0, 4)}-${friendCode.slice(4)}` : friendCode}
+                </span>
                 <button
-                  type="submit"
-                  disabled={isSubmitting || !inputCode.trim()}
-                  className="px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-50 text-xs font-bold text-white transition flex items-center gap-2 shadow-md shadow-red-950/40"
+                  onClick={handleCopyCode}
+                  className="px-2.5 py-1 rounded bg-[#0f3947] hover:bg-[#17424f] border border-[#17424f] text-[11px] font-semibold text-white transition flex items-center gap-1.5"
                 >
-                  <Send size={14} />
-                  {isSubmitting ? 'Sending...' : 'Add'}
+                  {copied ? <Check size={12} className="text-emerald-400" /> : <Copy size={12} />}
+                  <span>{copied ? 'Copied' : 'Copy'}</span>
                 </button>
-              </form>
-            </div>
-
-            <div className="text-[11px] text-neutral-500 mt-4 flex items-center gap-2">
-              <Shield size={12} className="text-neutral-400" />
-              Direct cross-platform connections between Android, iOS, and Web.
+              </div>
             </div>
           </div>
+
+          {/* Add Friend Input inline */}
+          <form onSubmit={handleAddFriend} className="flex items-center gap-2 w-full md:w-auto">
+            <input
+              type="text"
+              value={inputCode}
+              onChange={e => setInputCode(e.target.value)}
+              placeholder="Enter friend code (e.g. K7MQ-2XRD)"
+              maxLength={10}
+              className="bg-[#051b22] border border-[#17424f] rounded-lg px-3 py-2 text-xs font-mono text-white placeholder-[#627780] uppercase focus:outline-none focus:border-[#c74a4a] w-full md:w-64"
+            />
+            <button
+              type="submit"
+              disabled={isSubmitting || !inputCode.trim()}
+              className="px-4 py-2 rounded-lg bg-[#c74a4a] hover:bg-[#d95a5a] disabled:opacity-50 text-xs font-bold text-white transition flex items-center gap-1.5 shrink-0 shadow-sm"
+            >
+              <UserPlus size={13} />
+              <span>{isSubmitting ? '...' : 'Connect'}</span>
+            </button>
+          </form>
         </div>
 
         {/* Tabs: Weekly Board / Friends / Requests */}
-        <div className="flex gap-2 border-b border-neutral-800 pb-3">
+        <div className="flex gap-2 border-b border-[#17424f] pb-3">
           <button
             onClick={() => setActiveTab('board')}
             className={`px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 ${
               activeTab === 'board'
-                ? 'bg-red-600 text-white shadow-md shadow-red-950/40'
-                : 'text-neutral-400 hover:text-white bg-neutral-900 border border-neutral-800'
+                ? 'bg-[#c74a4a] text-white shadow-md shadow-red-950/40'
+                : 'text-[#8fa2aa] hover:text-white bg-[#0a3240] border border-[#17424f]'
             }`}
           >
             <Trophy size={14} /> Weekly Board ({weeklyBoard.length})
@@ -372,8 +355,8 @@ export default function FriendsPage() {
             onClick={() => setActiveTab('friends')}
             className={`px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 ${
               activeTab === 'friends'
-                ? 'bg-red-600 text-white shadow-md shadow-red-950/40'
-                : 'text-neutral-400 hover:text-white bg-neutral-900 border border-neutral-800'
+                ? 'bg-[#c74a4a] text-white shadow-md shadow-red-950/40'
+                : 'text-[#8fa2aa] hover:text-white bg-[#0a3240] border border-[#17424f]'
             }`}
           >
             <Users size={14} /> Clan Friends ({friends.length})
@@ -382,8 +365,8 @@ export default function FriendsPage() {
             onClick={() => setActiveTab('requests')}
             className={`px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-2 relative ${
               activeTab === 'requests'
-                ? 'bg-red-600 text-white shadow-md shadow-red-950/40'
-                : 'text-neutral-400 hover:text-white bg-neutral-900 border border-neutral-800'
+                ? 'bg-[#c74a4a] text-white shadow-md shadow-red-950/40'
+                : 'text-[#8fa2aa] hover:text-white bg-[#0a3240] border border-[#17424f]'
             }`}
           >
             <UserPlus size={14} /> Requests
@@ -410,18 +393,18 @@ export default function FriendsPage() {
                       <span className="text-xs font-bold text-blue-400 uppercase tracking-widest bg-blue-500/10 px-2 py-0.5 rounded border border-blue-500/20">
                         Tier V • Sapphire League
                       </span>
-                      <span className="text-xs font-mono text-neutral-400">Cohort #42</span>
+                      <span className="text-xs font-mono text-[#8fa2aa]">Cohort #42</span>
                     </div>
                     <h3 className="text-lg font-black text-white mt-1">Study Circle Weekly Standings</h3>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3 text-xs">
-                  <div className="bg-neutral-900/80 px-3 py-1.5 rounded-xl border border-neutral-800 text-neutral-300 flex items-center gap-1.5">
+                  <div className="bg-[#0a3240]/80 px-3 py-1.5 rounded-xl border border-[#17424f] text-[#c1d0d6] flex items-center gap-1.5">
                     <span className="text-emerald-400 font-bold">Top 3:</span>
                     <span>Promote to Diamond 👑</span>
                   </div>
-                  <div className="bg-neutral-900/80 px-3 py-1.5 rounded-xl border border-neutral-800 text-neutral-400 flex items-center gap-1.5">
+                  <div className="bg-[#0a3240]/80 px-3 py-1.5 rounded-xl border border-[#17424f] text-[#8fa2aa] flex items-center gap-1.5">
                     <span className="text-rose-400 font-bold">Bottom 3:</span>
                     <span>Relegate</span>
                   </div>
@@ -429,18 +412,18 @@ export default function FriendsPage() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between text-xs text-neutral-400 px-2">
+            <div className="flex items-center justify-between text-xs text-[#8fa2aa] px-2">
               <span>Weekly Standings • Resets Sunday 23:59 UTC</span>
-              <span className="font-mono text-neutral-500">{currentWeekId}</span>
+              <span className="font-mono text-[#627780]">{currentWeekId}</span>
             </div>
 
             {loading ? (
-              <div className="p-12 text-center text-xs text-neutral-500">Loading cohort standings...</div>
+              <div className="p-12 text-center text-xs text-[#627780]">Loading cohort standings...</div>
             ) : weeklyBoard.length === 0 ? (
-              <div className="p-12 text-center bg-neutral-900/40 border border-neutral-800 rounded-3xl space-y-2">
-                <Users size={28} className="mx-auto text-neutral-600" />
-                <p className="text-xs text-neutral-400 font-bold">No cohort activity yet this week.</p>
-                <p className="text-xs text-neutral-500">Practice vocabulary or duels to earn XP for your study circle!</p>
+              <div className="p-12 text-center bg-[#0a3240]/40 border border-[#17424f] rounded-xl space-y-2">
+                <Users size={28} className="mx-auto text-[#455a64]" />
+                <p className="text-xs text-[#8fa2aa] font-bold">No cohort activity yet this week.</p>
+                <p className="text-xs text-[#627780]">Practice vocabulary or duels to earn XP for your study circle!</p>
               </div>
             ) : (
               <div className="space-y-2">
@@ -459,7 +442,7 @@ export default function FriendsPage() {
                           ? 'bg-emerald-950/15 border-emerald-500/30 hover:border-emerald-500/50'
                           : isRelegation
                           ? 'bg-rose-950/10 border-rose-500/20 hover:border-rose-500/40'
-                          : 'bg-neutral-900/60 border-neutral-800 hover:border-neutral-700'
+                          : 'bg-[#0a3240]/60 border-[#17424f] hover:border-[#17424f]'
                       }`}
                     >
                       <div className="flex items-center gap-4">
@@ -468,16 +451,16 @@ export default function FriendsPage() {
                             idx === 0
                               ? 'text-amber-400'
                               : idx === 1
-                              ? 'text-neutral-300'
+                              ? 'text-[#c1d0d6]'
                               : idx === 2
                               ? 'text-amber-600'
-                              : 'text-neutral-500'
+                              : 'text-[#627780]'
                           }`}
                         >
                           #{idx + 1}
                         </span>
 
-                        <div className="w-10 h-10 rounded-xl bg-neutral-800 flex items-center justify-center text-xl shadow-inner">
+                        <div className="w-10 h-10 rounded-xl bg-[#0f3947] flex items-center justify-center text-xl shadow-inner">
                           {item.avatarEmoji || '🥋'}
                         </div>
 
@@ -500,7 +483,7 @@ export default function FriendsPage() {
                               </span>
                             )}
                           </div>
-                          <div className="flex items-center gap-3 text-[11px] text-neutral-400 mt-0.5">
+                          <div className="flex items-center gap-3 text-[11px] text-[#8fa2aa] mt-0.5">
                             <span className="capitalize">{item.beltRank} Belt</span>
                             <span>•</span>
                             <span className="flex items-center gap-1 text-orange-400">
@@ -514,7 +497,7 @@ export default function FriendsPage() {
                         <div className="text-base font-black text-amber-400 font-mono">
                           {item.weeklyXp.toLocaleString()} XP
                         </div>
-                        <div className="text-[10px] text-neutral-500 uppercase tracking-widest font-semibold">
+                        <div className="text-[10px] text-[#627780] uppercase tracking-widest font-semibold">
                           Weekly Effort
                         </div>
                       </div>
@@ -530,28 +513,28 @@ export default function FriendsPage() {
         {activeTab === 'friends' && (
           <div className="space-y-4">
             {loading ? (
-              <div className="p-12 text-center text-xs text-neutral-500">Loading friends...</div>
+              <div className="p-12 text-center text-xs text-[#627780]">Loading friends...</div>
             ) : friends.length === 0 ? (
-              <div className="p-12 text-center bg-neutral-900/40 border border-neutral-800 rounded-3xl space-y-2">
-                <Users size={28} className="mx-auto text-neutral-600" />
-                <p className="text-xs text-neutral-400 font-bold">No clan friends added yet.</p>
-                <p className="text-xs text-neutral-500">Enter a friend code above to challenge your classmates!</p>
+              <div className="p-12 text-center bg-[#0a3240]/40 border border-[#17424f] rounded-xl space-y-2">
+                <Users size={28} className="mx-auto text-[#455a64]" />
+                <p className="text-xs text-[#8fa2aa] font-bold">No clan friends added yet.</p>
+                <p className="text-xs text-[#627780]">Enter a friend code above to challenge your classmates!</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {friends.map(friend => (
                   <div
                     key={friend.uid}
-                    className="p-5 rounded-3xl bg-neutral-900/60 border border-neutral-800 flex flex-col justify-between gap-4"
+                    className="p-5 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between gap-4"
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 rounded-2xl bg-neutral-800 flex items-center justify-center text-2xl">
+                        <div className="w-12 h-12 rounded-2xl bg-[#0f3947] flex items-center justify-center text-2xl">
                           {friend.avatarEmoji || '🥋'}
                         </div>
                         <div>
                           <div className="text-sm font-bold text-white">{friend.displayName}</div>
-                          <div className="text-xs text-neutral-400 capitalize">
+                          <div className="text-xs text-[#8fa2aa] capitalize">
                             {friend.beltRank} Belt • LV {friend.level}
                           </div>
                         </div>
@@ -560,19 +543,19 @@ export default function FriendsPage() {
                       <button
                         onClick={() => handleRemoveFriend(friend.uid)}
                         title="Remove friend"
-                        className="text-neutral-500 hover:text-red-400 transition p-2"
+                        className="text-[#627780] hover:text-[#ffb4ab] transition p-2"
                       >
                         <Trash2 size={14} />
                       </button>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2 bg-neutral-950/60 p-3 rounded-2xl border border-neutral-800/80 text-xs">
+                    <div className="grid grid-cols-2 gap-2 bg-[#051b22]/60 p-3 rounded-2xl border border-[#17424f]/80 text-xs">
                       <div>
-                        <div className="text-neutral-500 text-[10px] uppercase font-bold">Weekly XP</div>
+                        <div className="text-[#627780] text-[10px] uppercase font-bold">Weekly XP</div>
                         <div className="font-mono font-bold text-amber-400">{friend.weeklyXp} XP</div>
                       </div>
                       <div>
-                        <div className="text-neutral-500 text-[10px] uppercase font-bold">Streak</div>
+                        <div className="text-[#627780] text-[10px] uppercase font-bold">Streak</div>
                         <div className="font-mono font-bold text-orange-400 flex items-center gap-1">
                           <Flame size={12} /> {friend.currentStreak} Days
                         </div>
@@ -594,7 +577,7 @@ export default function FriendsPage() {
                           setSelectedFriend(friend);
                           setChallengeMode('score');
                         }}
-                        className="flex-1 py-2 px-3 rounded-xl bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 text-xs font-bold text-neutral-200 transition flex items-center justify-center gap-1.5"
+                        className="flex-1 py-2 px-3 rounded-xl bg-[#0f3947] hover:bg-[#17424f] border border-[#17424f] text-xs font-bold text-neutral-200 transition flex items-center justify-center gap-1.5"
                       >
                         <Trophy size={13} className="text-amber-400" /> Challenge
                       </button>
@@ -611,11 +594,11 @@ export default function FriendsPage() {
           <div className="space-y-6">
             {/* Incoming */}
             <div className="space-y-3">
-              <h2 className="text-xs font-bold uppercase tracking-wider text-neutral-400">
+              <h2 className="text-xs font-bold uppercase tracking-wider text-[#8fa2aa]">
                 Incoming Requests ({incoming.length})
               </h2>
               {incoming.length === 0 ? (
-                <div className="p-8 text-center bg-neutral-900/30 border border-neutral-800 rounded-2xl text-xs text-neutral-500">
+                <div className="p-8 text-center bg-[#0a3240]/30 border border-[#17424f] rounded-2xl text-xs text-[#627780]">
                   No pending friend requests.
                 </div>
               ) : (
@@ -623,15 +606,15 @@ export default function FriendsPage() {
                   {incoming.map(req => (
                     <div
                       key={req.id}
-                      className="p-4 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-between"
+                      className="p-4 rounded-2xl bg-[#0a3240] border border-[#17424f] flex items-center justify-between"
                     >
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl bg-neutral-800 flex items-center justify-center text-xl">
+                        <div className="w-10 h-10 rounded-xl bg-[#0f3947] flex items-center justify-center text-xl">
                           {req.user.avatarEmoji || '🥋'}
                         </div>
                         <div>
                           <div className="text-xs font-bold text-white">{req.user.displayName}</div>
-                          <div className="text-[11px] text-neutral-400 capitalize">
+                          <div className="text-[11px] text-[#8fa2aa] capitalize">
                             {req.user.beltRank} Belt • LV {req.user.level}
                           </div>
                         </div>
@@ -646,7 +629,7 @@ export default function FriendsPage() {
                         </button>
                         <button
                           onClick={() => handleRespondRequest(req.id, false)}
-                          className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition flex items-center gap-1"
+                          className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition flex items-center gap-1"
                         >
                           <XCircle size={13} /> Decline
                         </button>
@@ -659,11 +642,11 @@ export default function FriendsPage() {
 
             {/* Outgoing */}
             <div className="space-y-3">
-              <h2 className="text-xs font-bold uppercase tracking-wider text-neutral-400">
+              <h2 className="text-xs font-bold uppercase tracking-wider text-[#8fa2aa]">
                 Outgoing Requests Sent ({outgoing.length})
               </h2>
               {outgoing.length === 0 ? (
-                <div className="p-8 text-center bg-neutral-900/30 border border-neutral-800 rounded-2xl text-xs text-neutral-500">
+                <div className="p-8 text-center bg-[#0a3240]/30 border border-[#17424f] rounded-2xl text-xs text-[#627780]">
                   No outgoing requests awaiting approval.
                 </div>
               ) : (
@@ -671,21 +654,21 @@ export default function FriendsPage() {
                   {outgoing.map(req => (
                     <div
                       key={req.id}
-                      className="p-4 rounded-2xl bg-neutral-900 border border-neutral-800 flex items-center justify-between"
+                      className="p-4 rounded-2xl bg-[#0a3240] border border-[#17424f] flex items-center justify-between"
                     >
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-xl bg-neutral-800 flex items-center justify-center text-xl">
+                        <div className="w-10 h-10 rounded-xl bg-[#0f3947] flex items-center justify-center text-xl">
                           {req.user.avatarEmoji || '🥋'}
                         </div>
                         <div>
                           <div className="text-xs font-bold text-white">{req.user.displayName}</div>
-                          <div className="text-[11px] text-neutral-400">Request Sent • Awaiting Response</div>
+                          <div className="text-[11px] text-[#8fa2aa]">Request Sent • Awaiting Response</div>
                         </div>
                       </div>
 
                       <button
                         onClick={() => handleCancelRequest(req.id)}
-                        className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-400 hover:text-white transition"
+                        className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#8fa2aa] hover:text-white transition"
                       >
                         Cancel
                       </button>
@@ -699,16 +682,16 @@ export default function FriendsPage() {
 
         {/* Modal: Challenge / Duel Picker */}
         {selectedFriend && (
-          <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-            <div className="bg-neutral-900 border border-neutral-800 rounded-3xl p-6 max-w-md w-full space-y-6 relative">
+          <div className="fixed inset-0 bg-[#051b22]/90 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+            <div className="bg-[#0a3240] border border-[#17424f] rounded-xl p-6 max-w-md w-full space-y-6 relative">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-neutral-800 flex items-center justify-center text-xl">
+                  <div className="w-10 h-10 rounded-xl bg-[#0f3947] flex items-center justify-center text-xl">
                     {selectedFriend.avatarEmoji || '🥋'}
                   </div>
                   <div>
                     <h2 className="text-sm font-bold text-white">Challenge {selectedFriend.displayName}</h2>
-                    <p className="text-xs text-neutral-400">
+                    <p className="text-xs text-[#8fa2aa]">
                       {challengeMode === 'duel' ? '⚔️ Pick a Live Lockstep Duel' : '🎯 Pick a High-Score Challenge'}
                     </p>
                   </div>
@@ -718,7 +701,7 @@ export default function FriendsPage() {
                     setSelectedFriend(null);
                     setChallengeSentMsg('');
                   }}
-                  className="text-neutral-500 hover:text-white p-1"
+                  className="text-[#627780] hover:text-white p-1"
                 >
                   ✕
                 </button>
@@ -732,33 +715,33 @@ export default function FriendsPage() {
                 <div className="space-y-3">
                   <button
                     onClick={() => handleSendDuel('shiritori')}
-                    className="w-full p-4 rounded-2xl bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-left transition flex items-center justify-between"
+                    className="w-full p-4 rounded-2xl bg-[#051b22] hover:bg-[#0f3947] border border-[#17424f] text-left transition flex items-center justify-between"
                   >
                     <div>
                       <div className="text-xs font-bold text-white">🎌 しりとり • Shiritori Arena</div>
-                      <div className="text-[11px] text-neutral-400">Word-chain turn duel with 15s timer</div>
+                      <div className="text-[11px] text-[#8fa2aa]">Word-chain turn duel with 15s timer</div>
                     </div>
-                    <span className="text-xs font-bold text-red-400">Duel →</span>
+                    <span className="text-xs font-bold text-[#ffb4ab]">Duel →</span>
                   </button>
 
                   <button
                     onClick={() => handleSendDuel('karuta')}
-                    className="w-full p-4 rounded-2xl bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-left transition flex items-center justify-between"
+                    className="w-full p-4 rounded-2xl bg-[#051b22] hover:bg-[#0f3947] border border-[#17424f] text-left transition flex items-center justify-between"
                   >
                     <div>
                       <div className="text-xs font-bold text-white">🎴 競技かるた • Competitive Karuta</div>
-                      <div className="text-[11px] text-neutral-400">Tatami slap battle with poem reader</div>
+                      <div className="text-[11px] text-[#8fa2aa]">Tatami slap battle with poem reader</div>
                     </div>
                     <span className="text-xs font-bold text-amber-400">Duel →</span>
                   </button>
 
                   <button
                     onClick={() => handleSendDuel('kanjiDuel')}
-                    className="w-full p-4 rounded-2xl bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-left transition flex items-center justify-between"
+                    className="w-full p-4 rounded-2xl bg-[#051b22] hover:bg-[#0f3947] border border-[#17424f] text-left transition flex items-center justify-between"
                   >
                     <div>
                       <div className="text-xs font-bold text-white">⚡ 漢字決闘 • Kanji Duel</div>
-                      <div className="text-[11px] text-neutral-400">1000 HP Speed Strike Combat</div>
+                      <div className="text-[11px] text-[#8fa2aa]">1000 HP Speed Strike Combat</div>
                     </div>
                     <span className="text-xs font-bold text-purple-400">Duel →</span>
                   </button>
@@ -767,46 +750,46 @@ export default function FriendsPage() {
                 <div className="space-y-3">
                   <button
                     onClick={() => handleSendScoreChallenge('rain')}
-                    className="w-full p-4 rounded-2xl bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-left transition flex items-center justify-between"
+                    className="w-full p-4 rounded-2xl bg-[#051b22] hover:bg-[#0f3947] border border-[#17424f] text-left transition flex items-center justify-between"
                   >
                     <div>
                       <div className="text-xs font-bold text-white">🌧️ Kana Rain Challenge</div>
-                      <div className="text-[11px] text-neutral-400">Challenge them to beat your rain record</div>
+                      <div className="text-[11px] text-[#8fa2aa]">Challenge them to beat your rain record</div>
                     </div>
                     <span className="text-xs font-bold text-blue-400">Send →</span>
                   </button>
 
                   <button
                     onClick={() => handleSendScoreChallenge('snake')}
-                    className="w-full p-4 rounded-2xl bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-left transition flex items-center justify-between"
+                    className="w-full p-4 rounded-2xl bg-[#051b22] hover:bg-[#0f3947] border border-[#17424f] text-left transition flex items-center justify-between"
                   >
                     <div>
                       <div className="text-xs font-bold text-white">🐍 Kana Snake Challenge</div>
-                      <div className="text-[11px] text-neutral-400">Challenge them on the directional grid</div>
+                      <div className="text-[11px] text-[#8fa2aa]">Challenge them on the directional grid</div>
                     </div>
                     <span className="text-xs font-bold text-emerald-400">Send →</span>
                   </button>
 
                   <button
                     onClick={() => handleSendScoreChallenge('catch')}
-                    className="w-full p-4 rounded-2xl bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-left transition flex items-center justify-between"
+                    className="w-full p-4 rounded-2xl bg-[#051b22] hover:bg-[#0f3947] border border-[#17424f] text-left transition flex items-center justify-between"
                   >
                     <div>
                       <div className="text-xs font-bold text-white">🧺 Kana Catch Challenge</div>
-                      <div className="text-[11px] text-neutral-400">Challenge them to catch the target glyphs</div>
+                      <div className="text-[11px] text-[#8fa2aa]">Challenge them to catch the target glyphs</div>
                     </div>
                     <span className="text-xs font-bold text-amber-400">Send →</span>
                   </button>
 
                   <button
                     onClick={() => handleSendScoreChallenge('survival')}
-                    className="w-full p-4 rounded-2xl bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-left transition flex items-center justify-between"
+                    className="w-full p-4 rounded-2xl bg-[#051b22] hover:bg-[#0f3947] border border-[#17424f] text-left transition flex items-center justify-between"
                   >
                     <div>
                       <div className="text-xs font-bold text-white">⚡ Bushido Survival Challenge</div>
-                      <div className="text-[11px] text-neutral-400">Time-attack endurance gauntlet</div>
+                      <div className="text-[11px] text-[#8fa2aa]">Time-attack endurance gauntlet</div>
                     </div>
-                    <span className="text-xs font-bold text-red-400">Send →</span>
+                    <span className="text-xs font-bold text-[#ffb4ab]">Send →</span>
                   </button>
                 </div>
               )}

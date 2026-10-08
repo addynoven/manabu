@@ -156,14 +156,14 @@ export function KanjiDuelWeb({ onExit }: KanjiDuelWebProps) {
   return (
     <div className="max-w-4xl mx-auto space-y-6">
       {/* Top Header */}
-      <div className="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-4 rounded-2xl">
+      <div className="flex items-center justify-between bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-lg">
             ⚡
           </div>
           <div>
             <h1 className="text-sm font-bold text-white">漢字決闘 • Kanji Duel</h1>
-            <p className="text-[11px] text-neutral-400">
+            <p className="text-[11px] text-[#8fa2aa]">
               1000 HP Speed Strike Combat • vs {botProfile.name}
             </p>
           </div>
@@ -173,7 +173,7 @@ export function KanjiDuelWeb({ onExit }: KanjiDuelWebProps) {
           <select
             value={difficulty}
             onChange={e => setDifficulty(e.target.value as any)}
-            className="bg-neutral-950 border border-neutral-800 rounded-xl px-3 py-1.5 text-xs text-neutral-300 font-bold focus:outline-none"
+            className="bg-[#051b22] border border-[#17424f] rounded-xl px-3 py-1.5 text-xs text-[#c1d0d6] font-bold focus:outline-none"
           >
             <option value="easy">🦝 Tanuki (Easy)</option>
             <option value="medium">🦊 Kitsune (Medium)</option>
@@ -182,7 +182,7 @@ export function KanjiDuelWeb({ onExit }: KanjiDuelWebProps) {
 
           <button
             onClick={onExit}
-            className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition"
+            className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition"
           >
             Exit Game
           </button>
@@ -192,7 +192,7 @@ export function KanjiDuelWeb({ onExit }: KanjiDuelWebProps) {
       {/* Health Bars: Player vs Bot */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Player Bar */}
-        <div className="bg-neutral-900 border border-neutral-800 p-4 rounded-3xl space-y-2">
+        <div className="bg-[#0a3240] border border-[#17424f] p-4 rounded-xl space-y-2">
           <div className="flex items-center justify-between text-xs">
             <span className="font-bold text-white flex items-center gap-1.5">
               🥋 You (Learner)
@@ -204,7 +204,7 @@ export function KanjiDuelWeb({ onExit }: KanjiDuelWebProps) {
             </span>
             <span className="font-mono font-bold text-emerald-400">{playerHp} / 1000 HP</span>
           </div>
-          <div className="w-full bg-neutral-950 h-3 rounded-full overflow-hidden border border-neutral-800">
+          <div className="w-full bg-[#051b22] h-3 rounded-full overflow-hidden border border-[#17424f]">
             <div
               className="bg-emerald-500 h-full transition-all duration-300 ease-out"
               style={{ width: `${(playerHp / 1000) * 100}%` }}
@@ -213,14 +213,14 @@ export function KanjiDuelWeb({ onExit }: KanjiDuelWebProps) {
         </div>
 
         {/* Bot Bar */}
-        <div className="bg-neutral-900 border border-neutral-800 p-4 rounded-3xl space-y-2">
+        <div className="bg-[#0a3240] border border-[#17424f] p-4 rounded-xl space-y-2">
           <div className="flex items-center justify-between text-xs">
             <span className="font-bold text-white flex items-center gap-1.5">
               {botProfile.avatarEmoji} {botProfile.name}
             </span>
-            <span className="font-mono font-bold text-red-400">{botHp} / 1000 HP</span>
+            <span className="font-mono font-bold text-[#ffb4ab]">{botHp} / 1000 HP</span>
           </div>
-          <div className="w-full bg-neutral-950 h-3 rounded-full overflow-hidden border border-neutral-800">
+          <div className="w-full bg-[#051b22] h-3 rounded-full overflow-hidden border border-[#17424f]">
             <div
               className="bg-red-500 h-full transition-all duration-300 ease-out"
               style={{ width: `${(botHp / 1000) * 100}%` }}
@@ -230,18 +230,18 @@ export function KanjiDuelWeb({ onExit }: KanjiDuelWebProps) {
       </div>
 
       {/* Combat Log */}
-      <div className="p-3 rounded-2xl bg-neutral-900/60 border border-neutral-800 text-center text-xs font-bold text-neutral-300">
+      <div className="p-3 rounded-2xl bg-[#0a3240]/60 border border-[#17424f] text-center text-xs font-bold text-[#c1d0d6]">
         {combatLog}
       </div>
 
       {/* Question Arena */}
       {gameOver ? (
-        <div className="bg-neutral-900 border border-neutral-800 p-8 rounded-3xl text-center space-y-4 shadow-2xl">
+        <div className="bg-[#0a3240] border border-[#17424f] p-8 rounded-xl text-center space-y-4 shadow-2xl">
           <div className="text-4xl">{winner === 'player' ? '🏆' : '💀'}</div>
           <h2 className="text-xl font-black text-white">
             {winner === 'player' ? 'Victory in Kanji Duel!' : 'Defeated in the Arena'}
           </h2>
-          <p className="text-xs text-neutral-400">
+          <p className="text-xs text-[#8fa2aa]">
             {winner === 'player'
               ? `You struck down ${botProfile.name} with master kanji knowledge!`
               : `${botProfile.name} overwhelmed your defense.`}
@@ -255,7 +255,7 @@ export function KanjiDuelWeb({ onExit }: KanjiDuelWebProps) {
         </div>
       ) : (
         currentQ && (
-          <div className="bg-gradient-to-b from-neutral-900 to-neutral-950 border border-neutral-800 rounded-3xl p-6 md:p-8 space-y-6">
+          <div className="bg-gradient-to-b from-neutral-900 to-neutral-950 border border-[#17424f] rounded-xl p-6 md:p-8 space-y-6">
             {/* Target Kanji Centerpiece */}
             <div className="text-center space-y-2">
               <div className="text-xs font-bold uppercase tracking-wider text-purple-400">
@@ -264,7 +264,7 @@ export function KanjiDuelWeb({ onExit }: KanjiDuelWebProps) {
               <div className="text-7xl md:text-8xl font-serif font-black text-white py-2 tracking-tight drop-shadow-[0_0_25px_rgba(168,85,247,0.3)]">
                 {currentQ.kanjiChar}
               </div>
-              <div className="text-xs text-neutral-400">{currentQ.questionSubtitle}</div>
+              <div className="text-xs text-[#8fa2aa]">{currentQ.questionSubtitle}</div>
             </div>
 
             {/* 4 Options Grid */}
@@ -273,14 +273,14 @@ export function KanjiDuelWeb({ onExit }: KanjiDuelWebProps) {
                 const isSelected = selectedOption === idx;
                 const isCorrect = idx === currentQ.correctIndex;
 
-                let btnStyle = 'bg-neutral-900 hover:bg-neutral-800 border-neutral-800 text-white';
+                let btnStyle = 'bg-[#0a3240] hover:bg-[#0f3947] border-[#17424f] text-white';
                 if (answered) {
                   if (isCorrect) {
                     btnStyle = 'bg-emerald-600 border-emerald-500 text-white shadow-lg shadow-emerald-950/40';
                   } else if (isSelected) {
-                    btnStyle = 'bg-red-600 border-red-500 text-white';
+                    btnStyle = 'bg-[#c74a4a] border-red-500 text-white';
                   } else {
-                    btnStyle = 'bg-neutral-950 border-neutral-900 text-neutral-600';
+                    btnStyle = 'bg-[#051b22] border-[#17424f] text-[#455a64]';
                   }
                 }
 

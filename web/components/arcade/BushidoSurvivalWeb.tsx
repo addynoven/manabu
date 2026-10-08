@@ -120,14 +120,14 @@ export function BushidoSurvivalWeb({ onExit }: BushidoSurvivalWebProps) {
   return (
     <div className="max-w-2xl mx-auto space-y-6">
       {/* Top Header */}
-      <div className="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-4 rounded-2xl">
+      <div className="flex items-center justify-between bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center font-bold text-lg">
+          <div className="w-10 h-10 rounded-xl bg-red-500/20 text-[#ffb4ab] flex items-center justify-center font-bold text-lg">
             ⚡
           </div>
           <div>
             <h1 className="text-sm font-bold text-white">武士道サバイバル • Bushido Survival</h1>
-            <p className="text-[11px] text-neutral-400">High-speed time-attack flash gauntlet.</p>
+            <p className="text-[11px] text-[#8fa2aa]">High-speed time-attack flash gauntlet.</p>
           </div>
         </div>
 
@@ -136,7 +136,7 @@ export function BushidoSurvivalWeb({ onExit }: BushidoSurvivalWebProps) {
             value={mode}
             onChange={e => setMode(e.target.value as SurvivalMode)}
             disabled={isPlaying}
-            className="bg-neutral-950 border border-neutral-800 rounded-xl px-3 py-1.5 text-xs text-neutral-300 font-bold focus:outline-none"
+            className="bg-[#051b22] border border-[#17424f] rounded-xl px-3 py-1.5 text-xs text-[#c1d0d6] font-bold focus:outline-none"
           >
             <option value="kana">あ Kana Speed</option>
             <option value="kanji">漢 Kanji Strike</option>
@@ -146,7 +146,7 @@ export function BushidoSurvivalWeb({ onExit }: BushidoSurvivalWebProps) {
 
           <button
             onClick={onExit}
-            className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition"
+            className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition"
           >
             Exit Game
           </button>
@@ -154,14 +154,14 @@ export function BushidoSurvivalWeb({ onExit }: BushidoSurvivalWebProps) {
       </div>
 
       {/* Lives, Streak & Timer Bar */}
-      <div className="bg-neutral-900 border border-neutral-800 p-4 rounded-2xl flex items-center justify-between">
+      <div className="bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl flex items-center justify-between">
         <div className="flex items-center gap-1">
           {[...Array(3)].map((_, i) => (
             <Heart
               key={i}
               size={18}
               fill={i < lives ? '#ef4444' : 'none'}
-              className={i < lives ? 'text-red-500' : 'text-neutral-700'}
+              className={i < lives ? 'text-red-500' : 'text-[#455a64]'}
             />
           ))}
         </div>
@@ -172,7 +172,7 @@ export function BushidoSurvivalWeb({ onExit }: BushidoSurvivalWebProps) {
               <Flame size={12} /> {streak}x Streak
             </span>
           )}
-          <span className="text-xs text-neutral-400 font-bold uppercase">Score:</span>
+          <span className="text-xs text-[#8fa2aa] font-bold uppercase">Score:</span>
           <span className="text-2xl font-black text-amber-400 font-mono">{score}</span>
         </div>
 
@@ -184,7 +184,7 @@ export function BushidoSurvivalWeb({ onExit }: BushidoSurvivalWebProps) {
 
       {/* Time Progress Bar */}
       {isPlaying && (
-        <div className="w-full bg-neutral-950 h-2 rounded-full overflow-hidden border border-neutral-800">
+        <div className="w-full bg-[#051b22] h-2 rounded-full overflow-hidden border border-[#17424f]">
           <div
             className={`h-full transition-all duration-100 ease-linear ${
               timeLeft <= 1.0 ? 'bg-red-500 animate-pulse' : 'bg-amber-400'
@@ -195,17 +195,17 @@ export function BushidoSurvivalWeb({ onExit }: BushidoSurvivalWebProps) {
       )}
 
       {/* Question Arena */}
-      <div className="bg-gradient-to-b from-neutral-900 to-neutral-950 border border-neutral-800 rounded-3xl p-6 md:p-10 space-y-8 min-h-[360px] flex flex-col items-center justify-center text-center">
+      <div className="bg-gradient-to-b from-neutral-900 to-neutral-950 border border-[#17424f] rounded-xl p-6 md:p-10 space-y-8 min-h-[360px] flex flex-col items-center justify-center text-center">
         {!isPlaying && !gameOver && (
           <div className="space-y-4 max-w-sm mx-auto">
             <div className="text-5xl">⚡</div>
             <h2 className="text-xl font-black text-white">Bushido Time-Attack</h2>
-            <p className="text-xs text-neutral-400">
+            <p className="text-xs text-[#8fa2aa]">
               Answer each flash question before the 3-second fuse burns out! Build your combo streak for massive point multipliers.
             </p>
             <button
               onClick={startGame}
-              className="px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-black text-white transition shadow-lg shadow-red-950/40"
+              className="px-6 py-3 rounded-xl bg-[#c74a4a] hover:bg-[#d95a5a] text-xs font-black text-white transition shadow-lg shadow-red-950/40"
             >
               Start Survival Run
             </button>
@@ -216,10 +216,10 @@ export function BushidoSurvivalWeb({ onExit }: BushidoSurvivalWebProps) {
           <div className="space-y-4 max-w-sm mx-auto">
             <div className="text-5xl">💀</div>
             <h2 className="text-xl font-black text-white">Gauntlet Over!</h2>
-            <p className="text-xs text-neutral-400">Final Bushido Score: {score} pts</p>
+            <p className="text-xs text-[#8fa2aa]">Final Bushido Score: {score} pts</p>
             <button
               onClick={startGame}
-              className="px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-black text-white transition flex items-center gap-2 mx-auto"
+              className="px-6 py-3 rounded-xl bg-[#c74a4a] hover:bg-[#d95a5a] text-xs font-black text-white transition flex items-center gap-2 mx-auto"
             >
               <RotateCcw size={15} /> Try Again
             </button>
@@ -229,7 +229,7 @@ export function BushidoSurvivalWeb({ onExit }: BushidoSurvivalWebProps) {
         {isPlaying && question && (
           <div className="w-full space-y-6">
             <div className="space-y-2">
-              <span className="text-[10px] text-neutral-500 uppercase tracking-widest font-bold">
+              <span className="text-[10px] text-[#627780] uppercase tracking-widest font-bold">
                 {question.promptSub || 'Rapid Recognition'}
               </span>
               <div className="text-6xl md:text-7xl font-serif font-black text-white tracking-tight drop-shadow-[0_0_20px_rgba(239,68,68,0.3)]">
@@ -242,11 +242,11 @@ export function BushidoSurvivalWeb({ onExit }: BushidoSurvivalWebProps) {
                 const isSelected = selectedOption === opt;
                 const isCorrect = opt === question.correctAnswer;
 
-                let btnStyle = 'bg-neutral-900 hover:bg-neutral-800 border-neutral-800 text-white';
+                let btnStyle = 'bg-[#0a3240] hover:bg-[#0f3947] border-[#17424f] text-white';
                 if (selectedOption) {
                   if (isCorrect) btnStyle = 'bg-emerald-600 border-emerald-500 text-white';
-                  else if (isSelected) btnStyle = 'bg-red-600 border-red-500 text-white';
-                  else btnStyle = 'bg-neutral-950 border-neutral-900 text-neutral-600';
+                  else if (isSelected) btnStyle = 'bg-[#c74a4a] border-red-500 text-white';
+                  else btnStyle = 'bg-[#051b22] border-[#17424f] text-[#455a64]';
                 }
 
                 return (

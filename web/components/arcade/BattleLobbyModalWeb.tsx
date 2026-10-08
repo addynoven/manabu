@@ -120,7 +120,7 @@ export function BattleLobbyModalWeb({
       title: 'しりとり • Shiritori Arena',
       subtitle: 'Authentic Japanese Word-Chain Duel',
       icon: MessageSquare,
-      color: 'text-red-400',
+      color: 'text-[#ffb4ab]',
     },
     karuta: {
       title: '競技かるた • Competitive Karuta',
@@ -140,35 +140,35 @@ export function BattleLobbyModalWeb({
   const IconComp = currentInfo.icon;
 
   return (
-    <div className="fixed inset-0 bg-black/85 backdrop-blur-md z-50 flex items-center justify-center p-4">
-      <div className="bg-neutral-900 border border-neutral-800 rounded-3xl max-w-lg w-full p-6 md:p-8 space-y-6 relative overflow-hidden shadow-2xl">
+    <div className="fixed inset-0 bg-[#051b22]/90 backdrop-blur-md z-50 flex items-center justify-center p-4">
+      <div className="bg-[#0a3240] border border-[#17424f] rounded-xl max-w-lg w-full p-6 md:p-8 space-y-6 relative overflow-hidden shadow-2xl">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 text-neutral-400 hover:text-white p-2 rounded-xl bg-neutral-800/60 transition"
+          className="absolute top-5 right-5 text-[#8fa2aa] hover:text-white p-2 rounded-xl bg-[#0f3947]/60 transition"
         >
           <X size={18} />
         </button>
 
         {/* Header */}
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-2xl bg-neutral-800 flex items-center justify-center text-2xl shadow-inner">
+          <div className="w-12 h-12 rounded-2xl bg-[#0f3947] flex items-center justify-center text-2xl shadow-inner">
             <IconComp size={24} className={currentInfo.color} />
           </div>
           <div>
             <h2 className="text-lg font-black text-white">{currentInfo.title}</h2>
-            <p className="text-xs text-neutral-400">{currentInfo.subtitle}</p>
+            <p className="text-xs text-[#8fa2aa]">{currentInfo.subtitle}</p>
           </div>
         </div>
 
         {/* Tab Selector: Live PvP vs Solo */}
-        <div className="flex bg-neutral-950 p-1.5 rounded-2xl border border-neutral-800">
+        <div className="flex bg-[#051b22] p-1.5 rounded-2xl border border-[#17424f]">
           <button
             onClick={() => setTab('pvp')}
             className={`flex-1 py-2 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 ${
               tab === 'pvp'
-                ? 'bg-red-600 text-white shadow-md shadow-red-950/40'
-                : 'text-neutral-400 hover:text-white'
+                ? 'bg-[#c74a4a] text-white shadow-md shadow-red-950/40'
+                : 'text-[#8fa2aa] hover:text-white'
             }`}
           >
             <Swords size={14} /> ⚔️ Live PvP Duel
@@ -177,8 +177,8 @@ export function BattleLobbyModalWeb({
             onClick={() => setTab('solo')}
             className={`flex-1 py-2 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 ${
               tab === 'solo'
-                ? 'bg-red-600 text-white shadow-md shadow-red-950/40'
-                : 'text-neutral-400 hover:text-white'
+                ? 'bg-[#c74a4a] text-white shadow-md shadow-red-950/40'
+                : 'text-[#8fa2aa] hover:text-white'
             }`}
           >
             <Bot size={14} /> 🤖 Solo vs AI Bot
@@ -186,7 +186,7 @@ export function BattleLobbyModalWeb({
         </div>
 
         {errorMsg && (
-          <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold">
+          <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-[#ffb4ab] text-xs font-bold">
             {errorMsg}
           </div>
         )}
@@ -195,28 +195,28 @@ export function BattleLobbyModalWeb({
         {tab === 'pvp' ? (
           <div className="space-y-4">
             {/* Quick Matchmaking Box */}
-            <div className="p-5 rounded-2xl bg-gradient-to-b from-neutral-950 to-neutral-900 border border-neutral-800 space-y-3">
+            <div className="p-5 rounded-2xl bg-gradient-to-b from-neutral-950 to-neutral-900 border border-[#17424f] space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
                   <Zap size={14} /> Instant Online Matchmaking
                 </span>
                 {isSearching && (
-                  <span className="text-xs font-mono text-neutral-400">{searchElapsed}s elapsed</span>
+                  <span className="text-xs font-mono text-[#8fa2aa]">{searchElapsed}s elapsed</span>
                 )}
               </div>
-              <p className="text-xs text-neutral-400">
+              <p className="text-xs text-[#8fa2aa]">
                 Puts you in the global Valkey queue to immediately battle an online learner in a live lockstep match.
               </p>
 
               {isSearching ? (
                 <div className="flex items-center gap-3 pt-2">
-                  <div className="flex-1 py-3 px-4 rounded-xl bg-neutral-900 border border-neutral-700 flex items-center justify-center gap-3 text-xs font-bold text-neutral-300">
+                  <div className="flex-1 py-3 px-4 rounded-xl bg-[#0a3240] border border-[#17424f] flex items-center justify-center gap-3 text-xs font-bold text-[#c1d0d6]">
                     <RefreshCw size={14} className="animate-spin text-amber-400" />
                     Searching for opponent...
                   </div>
                   <button
                     onClick={stopMatchmaking}
-                    className="py-3 px-5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition"
+                    className="py-3 px-5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition"
                   >
                     Cancel
                   </button>
@@ -232,11 +232,11 @@ export function BattleLobbyModalWeb({
             </div>
 
             {/* Direct Friend Code Duel */}
-            <div className="p-5 rounded-2xl bg-neutral-950 border border-neutral-800 space-y-3">
-              <span className="text-xs font-bold text-neutral-400 uppercase tracking-wider flex items-center gap-1.5">
+            <div className="p-5 rounded-2xl bg-[#051b22] border border-[#17424f] space-y-3">
+              <span className="text-xs font-bold text-[#8fa2aa] uppercase tracking-wider flex items-center gap-1.5">
                 <UserPlus size={14} /> Challenge by Friend Code
               </span>
-              <p className="text-xs text-neutral-400">
+              <p className="text-xs text-[#8fa2aa]">
                 Duel anyone on Android, iOS, or Web by entering their 8-character code.
               </p>
 
@@ -247,7 +247,7 @@ export function BattleLobbyModalWeb({
                   onChange={e => setDirectCode(e.target.value)}
                   placeholder="e.g. K7MQ-2XRD"
                   maxLength={10}
-                  className="flex-1 bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-2.5 text-xs font-mono text-white placeholder-neutral-600 uppercase focus:outline-none focus:border-red-500"
+                  className="flex-1 bg-[#0a3240] border border-[#17424f] rounded-xl px-4 py-2.5 text-xs font-mono text-white placeholder-neutral-600 uppercase focus:outline-none focus:border-red-500"
                 />
                 <button
                   type="submit"
@@ -262,11 +262,11 @@ export function BattleLobbyModalWeb({
         ) : (
           /* TAB 2: SOLO VS AI BOT */
           <div className="space-y-4">
-            <div className="p-5 rounded-2xl bg-neutral-950 border border-neutral-800 space-y-3">
-              <span className="text-xs font-bold text-neutral-300 uppercase tracking-wider flex items-center gap-1.5">
+            <div className="p-5 rounded-2xl bg-[#051b22] border border-[#17424f] space-y-3">
+              <span className="text-xs font-bold text-[#c1d0d6] uppercase tracking-wider flex items-center gap-1.5">
                 <Bot size={14} className="text-emerald-400" /> Offline Practice Arena
               </span>
-              <p className="text-xs text-neutral-400">
+              <p className="text-xs text-[#8fa2aa]">
                 Practice against authentic AI bots with adaptive reaction delays, custom mistake chances, and full TTS recitation.
               </p>
 
@@ -280,7 +280,7 @@ export function BattleLobbyModalWeb({
           </div>
         )}
 
-        <div className="text-[11px] text-neutral-500 text-center flex items-center justify-center gap-1.5">
+        <div className="text-[11px] text-[#627780] text-center flex items-center justify-center gap-1.5">
           <Shield size={12} /> Live lockstep state synchronized with Redis & PostgreSQL
         </div>
       </div>

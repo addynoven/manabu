@@ -113,14 +113,14 @@ export function KarutaBattleWeb({ onExit }: KarutaBattleWebProps) {
   return (
     <div className="max-w-4xl mx-auto space-y-6">
       {/* Header Bar */}
-      <div className="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-4 rounded-2xl">
+      <div className="flex items-center justify-between bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-lg">
             🎴
           </div>
           <div>
             <h1 className="text-sm font-bold text-white">競技かるた • Competitive Karuta</h1>
-            <p className="text-[11px] text-neutral-400">
+            <p className="text-[11px] text-[#8fa2aa]">
               {mode === 'poem' ? '百人一首 (100 Poems Mode)' : '日本語単語 (Vocabulary Mode)'} • vs {botProfile.name}
             </p>
           </div>
@@ -130,7 +130,7 @@ export function KarutaBattleWeb({ onExit }: KarutaBattleWebProps) {
           <select
             value={mode}
             onChange={e => setMode(e.target.value as KarutaGameMode)}
-            className="bg-neutral-950 border border-neutral-800 rounded-xl px-3 py-1.5 text-xs text-neutral-300 font-bold focus:outline-none"
+            className="bg-[#051b22] border border-[#17424f] rounded-xl px-3 py-1.5 text-xs text-[#c1d0d6] font-bold focus:outline-none"
           >
             <option value="poem">🌸 100 Classical Poems</option>
             <option value="vocab">📖 Core Vocabulary</option>
@@ -139,7 +139,7 @@ export function KarutaBattleWeb({ onExit }: KarutaBattleWebProps) {
           <select
             value={difficulty}
             onChange={e => setDifficulty(e.target.value as any)}
-            className="bg-neutral-950 border border-neutral-800 rounded-xl px-3 py-1.5 text-xs text-neutral-300 font-bold focus:outline-none"
+            className="bg-[#051b22] border border-[#17424f] rounded-xl px-3 py-1.5 text-xs text-[#c1d0d6] font-bold focus:outline-none"
           >
             <option value="easy">🦝 Tanuki (Beginner)</option>
             <option value="medium">🦊 Kitsune (Class B)</option>
@@ -148,7 +148,7 @@ export function KarutaBattleWeb({ onExit }: KarutaBattleWebProps) {
 
           <button
             onClick={onExit}
-            className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition"
+            className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition"
           >
             Exit Game
           </button>
@@ -156,7 +156,7 @@ export function KarutaBattleWeb({ onExit }: KarutaBattleWebProps) {
       </div>
 
       {/* Yomite Reader & Match Score Bar */}
-      <div className="bg-gradient-to-r from-amber-950/40 via-neutral-900 to-neutral-950 border border-amber-500/30 p-5 rounded-3xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-gradient-to-r from-amber-950/40 via-neutral-900 to-neutral-950 border border-amber-500/30 p-5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         {/* Yomite Reader Prompt */}
         <div className="flex items-center gap-4">
           <button
@@ -174,21 +174,21 @@ export function KarutaBattleWeb({ onExit }: KarutaBattleWebProps) {
               {currentTarget?.kamiNoKu || currentTarget?.english || 'Listening for next card...'}
             </div>
             {currentTarget?.poet && (
-              <div className="text-xs text-neutral-400 italic">Poet: {currentTarget.poet}</div>
+              <div className="text-xs text-[#8fa2aa] italic">Poet: {currentTarget.poet}</div>
             )}
           </div>
         </div>
 
         {/* Score Counters */}
-        <div className="flex items-center gap-6 border-t md:border-t-0 md:border-l border-neutral-800 pt-3 md:pt-0 md:pl-6">
+        <div className="flex items-center gap-6 border-t md:border-t-0 md:border-l border-[#17424f] pt-3 md:pt-0 md:pl-6">
           <div className="text-center">
-            <div className="text-[10px] text-neutral-400 font-bold uppercase">You</div>
+            <div className="text-[10px] text-[#8fa2aa] font-bold uppercase">You</div>
             <div className="text-2xl font-black text-emerald-400 font-mono">{playerScore}</div>
           </div>
-          <div className="text-sm font-bold text-neutral-600">VS</div>
+          <div className="text-sm font-bold text-[#455a64]">VS</div>
           <div className="text-center">
-            <div className="text-[10px] text-neutral-400 font-bold uppercase">{botProfile.name}</div>
-            <div className="text-2xl font-black text-red-400 font-mono">{botScore}</div>
+            <div className="text-[10px] text-[#8fa2aa] font-bold uppercase">{botProfile.name}</div>
+            <div className="text-2xl font-black text-[#ffb4ab] font-mono">{botScore}</div>
           </div>
         </div>
       </div>
@@ -198,8 +198,8 @@ export function KarutaBattleWeb({ onExit }: KarutaBattleWebProps) {
         <div
           className={`p-3 rounded-2xl border text-xs font-bold text-center ${
             otetsukiFrozen
-              ? 'bg-red-500/10 border-red-500/30 text-red-400 animate-pulse'
-              : 'bg-neutral-900 border-neutral-800 text-neutral-300'
+              ? 'bg-red-500/10 border-red-500/30 text-[#ffb4ab] animate-pulse'
+              : 'bg-[#0a3240] border-[#17424f] text-[#c1d0d6]'
           }`}
         >
           {lastEvent}
@@ -207,17 +207,17 @@ export function KarutaBattleWeb({ onExit }: KarutaBattleWebProps) {
       )}
 
       {/* Tatami Mat Arena */}
-      <div className="bg-[#2a3026] border-4 border-[#3c4636] rounded-3xl p-6 md:p-8 min-h-[400px] shadow-2xl relative overflow-hidden">
+      <div className="bg-[#2a3026] border-4 border-[#3c4636] rounded-xl p-6 md:p-8 min-h-[400px] shadow-2xl relative overflow-hidden">
         {/* Subtle Tatami Weave Overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
 
         {gameOver ? (
-          <div className="bg-neutral-950/90 border border-neutral-800 p-8 rounded-3xl text-center space-y-4 max-w-md mx-auto my-12 relative z-10">
+          <div className="bg-[#051b22]/90 border border-[#17424f] p-8 rounded-xl text-center space-y-4 max-w-md mx-auto my-12 relative z-10">
             <Trophy size={42} className="mx-auto text-amber-400" />
             <h2 className="text-xl font-black text-white">
               {playerScore > botScore ? 'Tatami Master Victory!' : 'Defeated on the Tatami!'}
             </h2>
-            <p className="text-xs text-neutral-400">
+            <p className="text-xs text-[#8fa2aa]">
               Final Score: You {playerScore} - {botScore} {botProfile.name}
             </p>
             <button
@@ -234,18 +234,18 @@ export function KarutaBattleWeb({ onExit }: KarutaBattleWebProps) {
                 key={card.id}
                 onClick={() => handleCardClick(card)}
                 disabled={otetsukiFrozen}
-                className="bg-[#f7f2e7] hover:bg-[#fffdf7] text-neutral-900 border-2 border-[#d9cca8] rounded-xl p-4 min-h-[120px] flex flex-col justify-between text-left shadow-lg hover:shadow-2xl transition hover:-translate-y-1 active:translate-y-0 active:scale-95 disabled:opacity-75 disabled:pointer-events-none group"
+                className="bg-[#f7f2e7] hover:bg-[#fffdf7] text-[#1f1e1d] border-2 border-[#d9cca8] rounded-xl p-4 min-h-[120px] flex flex-col justify-between text-left shadow-lg hover:shadow-2xl transition hover:-translate-y-1 active:translate-y-0 active:scale-95 disabled:opacity-75 disabled:pointer-events-none group"
               >
-                <div className="flex items-center justify-between text-[10px] text-neutral-500 font-mono">
+                <div className="flex items-center justify-between text-[10px] text-[#627780] font-mono">
                   <span>#{card.poemNumber || card.id}</span>
                   {card.kimariji && <span className="text-red-700 font-bold">{card.kimariji}</span>}
                 </div>
 
-                <div className="text-lg md:text-xl font-serif font-black text-neutral-900 py-2 leading-tight">
+                <div className="text-lg md:text-xl font-serif font-black text-[#1f1e1d] py-2 leading-tight">
                   {card.japanese}
                 </div>
 
-                <div className="text-[11px] text-neutral-600 font-medium">
+                <div className="text-[11px] text-[#455a64] font-medium">
                   {card.reading}
                 </div>
               </button>

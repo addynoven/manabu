@@ -94,29 +94,29 @@ export function JapaneseWordleWeb({ onExit }: JapaneseWordleWebProps) {
   return (
     <div className="max-w-2xl mx-auto space-y-6">
       {/* Top Header */}
-      <div className="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-4 rounded-2xl">
+      <div className="flex items-center justify-between bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg">
             語
           </div>
           <div>
             <h1 className="text-sm font-bold text-white">言葉のパズル • Japanese Wordle</h1>
-            <p className="text-[11px] text-neutral-400">Guess the secret {wordLength}-kana Japanese word in 6 tries.</p>
+            <p className="text-[11px] text-[#8fa2aa]">Guess the secret {wordLength}-kana Japanese word in 6 tries.</p>
           </div>
         </div>
 
         <button
           onClick={onExit}
-          className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition"
+          className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition"
         >
           Exit Game
         </button>
       </div>
 
       {/* Grid Display */}
-      <div className="bg-neutral-900/60 border border-neutral-800 rounded-3xl p-6 flex flex-col items-center gap-2">
+      <div className="bg-[#0a3240]/60 border border-[#17424f] rounded-xl p-6 flex flex-col items-center gap-2">
         {errorMessage && (
-          <div className="p-2 px-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold mb-2">
+          <div className="p-2 px-4 rounded-xl bg-red-500/10 border border-red-500/30 text-[#ffb4ab] text-xs font-bold mb-2">
             {errorMessage}
           </div>
         )}
@@ -130,7 +130,7 @@ export function JapaneseWordleWeb({ onExit }: JapaneseWordleWebProps) {
             <div key={rowIdx} className="flex gap-2">
               {[...Array(wordLength)].map((_, colIdx) => {
                 let char = '';
-                let tileStyle = 'bg-neutral-950 border-neutral-800 text-white';
+                let tileStyle = 'bg-[#051b22] border-[#17424f] text-white';
 
                 if (guess) {
                   char = Array.from(guess)[colIdx] || '';
@@ -140,12 +140,12 @@ export function JapaneseWordleWeb({ onExit }: JapaneseWordleWebProps) {
                   } else if (status === 'present') {
                     tileStyle = 'bg-amber-600 border-amber-500 text-white shadow-md shadow-amber-950/40';
                   } else {
-                    tileStyle = 'bg-neutral-800 border-neutral-700 text-neutral-400';
+                    tileStyle = 'bg-[#0f3947] border-[#17424f] text-[#8fa2aa]';
                   }
                 } else if (isCurrentRow) {
                   char = Array.from(currentGuess)[colIdx] || '';
                   if (char) {
-                    tileStyle = 'bg-neutral-900 border-neutral-600 text-white scale-105';
+                    tileStyle = 'bg-[#0a3240] border-[#17424f] text-white scale-105';
                   }
                 }
 
@@ -165,7 +165,7 @@ export function JapaneseWordleWeb({ onExit }: JapaneseWordleWebProps) {
 
       {/* Game Over Banner */}
       {gameOver && (
-        <div className="p-6 rounded-3xl bg-neutral-900 border border-neutral-800 text-center space-y-4 shadow-xl">
+        <div className="p-6 rounded-xl bg-[#0a3240] border border-[#17424f] text-center space-y-4 shadow-xl">
           <div className="text-3xl">{hasWon ? '🎉' : '📖'}</div>
           <div>
             <h2 className="text-xl font-black text-white">
@@ -173,15 +173,15 @@ export function JapaneseWordleWeb({ onExit }: JapaneseWordleWebProps) {
             </h2>
             <div className="text-2xl font-black text-amber-400 font-serif mt-2 flex items-center justify-center gap-3">
               <span>{targetWord.word}</span>
-              {targetWord.kanji && <span className="text-neutral-300">({targetWord.kanji})</span>}
+              {targetWord.kanji && <span className="text-[#c1d0d6]">({targetWord.kanji})</span>}
               <button
                 onClick={() => speakJapanese(targetWord.word)}
-                className="p-1.5 rounded-lg bg-neutral-800 text-white hover:text-amber-400"
+                className="p-1.5 rounded-lg bg-[#0f3947] text-white hover:text-amber-400"
               >
                 <Volume2 size={16} />
               </button>
             </div>
-            <div className="text-xs text-neutral-400 mt-1 italic">
+            <div className="text-xs text-[#8fa2aa] mt-1 italic">
               {targetWord.reading} • &quot;{targetWord.meaning}&quot;
             </div>
           </div>
@@ -197,14 +197,14 @@ export function JapaneseWordleWeb({ onExit }: JapaneseWordleWebProps) {
 
       {/* On-Screen Kana Keyboard */}
       {!gameOver && (
-        <div className="bg-neutral-950 border border-neutral-800 rounded-3xl p-4 space-y-2">
+        <div className="bg-[#051b22] border border-[#17424f] rounded-xl p-4 space-y-2">
           {KANA_KEYBOARD_ROWS.map((row, rIdx) => (
             <div key={rIdx} className="flex justify-center gap-1.5">
               {row.map(char => (
                 <button
                   key={char}
                   onClick={() => handleKeyPress(char)}
-                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-neutral-900 hover:bg-neutral-800 active:scale-95 border border-neutral-800 text-sm font-serif font-bold text-neutral-200 transition"
+                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-[#0a3240] hover:bg-[#0f3947] active:scale-95 border border-[#17424f] text-sm font-serif font-bold text-[#dbe6eb] transition"
                 >
                   {char}
                 </button>
@@ -223,7 +223,7 @@ export function JapaneseWordleWeb({ onExit }: JapaneseWordleWebProps) {
             </button>
             <button
               onClick={handleBackspace}
-              className="py-2.5 px-5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-black text-neutral-300 transition flex items-center gap-1.5"
+              className="py-2.5 px-5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-black text-[#c1d0d6] transition flex items-center gap-1.5"
             >
               <Delete size={14} /> Delete
             </button>

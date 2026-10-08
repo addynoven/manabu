@@ -261,25 +261,25 @@ function ArcadeContent() {
 
         {activeGame === 'rain' && (
           <div className="max-w-3xl mx-auto space-y-6">
-            <div className="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-4 rounded-2xl">
+            <div className="flex items-center justify-between bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">🌧️</span>
                 <div>
                   <h1 className="text-sm font-bold text-white">文字の雨 • Kana Rain</h1>
-                  <p className="text-[11px] text-neutral-400">Answer falling kana before your lives run out.</p>
+                  <p className="text-[11px] text-[#8fa2aa]">Answer falling kana before your lives run out.</p>
                 </div>
               </div>
               <button
                 onClick={() => setActiveGame(null)}
-                className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition"
+                className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition"
               >
                 Exit Game
               </button>
             </div>
 
-            <div className="bg-neutral-900 border border-neutral-800 rounded-3xl p-6 md:p-8 space-y-6">
+            <div className="bg-[#0a3240] border border-[#17424f] rounded-xl p-6 md:p-8 space-y-6">
               <div className="flex items-center justify-between">
-                <div className="text-xs font-bold text-neutral-400">
+                <div className="text-xs font-bold text-[#8fa2aa]">
                   Score: <span className="text-2xl font-black text-amber-400 font-mono">{rainScore}</span>
                 </div>
                 <div className="flex items-center gap-1">
@@ -288,13 +288,13 @@ function ArcadeContent() {
                       key={i}
                       size={18}
                       fill={i < rainLives ? '#ef4444' : 'none'}
-                      className={i < rainLives ? 'text-red-500' : 'text-neutral-700'}
+                      className={i < rainLives ? 'text-red-500' : 'text-[#455a64]'}
                     />
                   ))}
                 </div>
               </div>
 
-              <div className="min-h-[260px] bg-neutral-950 border border-neutral-800 rounded-2xl flex flex-col items-center justify-center p-8">
+              <div className="min-h-[260px] bg-[#051b22] border border-[#17424f] rounded-2xl flex flex-col items-center justify-center p-8">
                 {rainPlaying && currentDrop ? (
                   <div className="text-center animate-bounce">
                     <div className="text-7xl font-serif font-black text-white py-2">
@@ -304,7 +304,7 @@ function ArcadeContent() {
                 ) : (
                   <button
                     onClick={startKanaRain}
-                    className="px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-black text-white transition flex items-center gap-2"
+                    className="px-6 py-3 rounded-xl bg-[#c74a4a] hover:bg-[#d95a5a] text-xs font-black text-white transition flex items-center gap-2"
                   >
                     <Play size={16} /> Start Kana Rain
                   </button>
@@ -317,7 +317,7 @@ function ArcadeContent() {
                     <button
                       key={opt}
                       onClick={() => answerRain(opt)}
-                      className="p-4 rounded-xl bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-base font-bold text-white font-mono"
+                      className="p-4 rounded-xl bg-[#051b22] hover:bg-[#0f3947] border border-[#17424f] text-base font-bold text-white font-mono"
                     >
                       {opt}
                     </button>
@@ -330,31 +330,31 @@ function ArcadeContent() {
 
         {activeGame === 'match' && (
           <div className="max-w-3xl mx-auto space-y-6">
-            <div className="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-4 rounded-2xl">
+            <div className="flex items-center justify-between bg-[#0a3240] border border-[#17424f] p-4 rounded-2xl">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">⚡</span>
                 <div>
                   <h1 className="text-sm font-bold text-white">スピードマッチ • Speed Match</h1>
-                  <p className="text-[11px] text-neutral-400">Flip and pair Japanese kana with romaji.</p>
+                  <p className="text-[11px] text-[#8fa2aa]">Flip and pair Japanese kana with romaji.</p>
                 </div>
               </div>
               <button
                 onClick={() => setActiveGame(null)}
-                className="px-3 py-1.5 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-neutral-300 transition"
+                className="px-3 py-1.5 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-[#c1d0d6] transition"
               >
                 Exit Game
               </button>
             </div>
 
-            <div className="bg-neutral-900 border border-neutral-800 rounded-3xl p-6 md:p-8 space-y-6">
+            <div className="bg-[#0a3240] border border-[#17424f] rounded-xl p-6 md:p-8 space-y-6">
               <div className="flex items-center justify-between">
-                <div className="text-xs font-bold text-neutral-400">
+                <div className="text-xs font-bold text-[#8fa2aa]">
                   Score: <span className="text-2xl font-black text-amber-400 font-mono">{matchScore}</span>
                 </div>
                 {!matchPlaying && (
                   <button
                     onClick={startMatchGame}
-                    className="px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-bold text-white"
+                    className="px-4 py-2 rounded-xl bg-[#c74a4a] hover:bg-[#d95a5a] text-xs font-bold text-white"
                   >
                     Start Game
                   </button>
@@ -371,8 +371,8 @@ function ArcadeContent() {
                       c.isMatched
                         ? 'bg-emerald-950/40 border-emerald-500 text-emerald-400 opacity-60'
                         : selectedCards.includes(c.id)
-                        ? 'bg-neutral-800 border-red-500 text-white scale-105'
-                        : 'bg-neutral-950 border-neutral-800 text-neutral-300 hover:border-neutral-700'
+                        ? 'bg-[#0f3947] border-red-500 text-white scale-105'
+                        : 'bg-[#051b22] border-[#17424f] text-[#c1d0d6] hover:border-[#17424f]'
                     }`}
                   >
                     {c.isMatched || selectedCards.includes(c.id) ? c.text : '🎴'}
@@ -575,13 +575,13 @@ function ArcadeContent() {
             </section>
 
             {/* Filter Tabs */}
-            <div className="flex gap-2 border-b border-neutral-800 pb-3">
+            <div className="flex gap-2 border-b border-[#17424f] pb-3">
               <button
                 onClick={() => setActiveTab('all')}
                 className={`px-4 py-2 rounded-xl text-xs font-bold transition ${
                   activeTab === 'all'
-                    ? 'bg-red-600 text-white'
-                    : 'text-neutral-400 hover:text-white bg-neutral-900 border border-neutral-800'
+                    ? 'bg-[#c74a4a] text-white'
+                    : 'text-[#8fa2aa] hover:text-white bg-[#0a3240] border border-[#17424f]'
                 }`}
               >
                 All Games (9)
@@ -590,8 +590,8 @@ function ArcadeContent() {
                 onClick={() => setActiveTab('battles')}
                 className={`px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-1.5 ${
                   activeTab === 'battles'
-                    ? 'bg-red-600 text-white'
-                    : 'text-neutral-400 hover:text-white bg-neutral-900 border border-neutral-800'
+                    ? 'bg-[#c74a4a] text-white'
+                    : 'text-[#8fa2aa] hover:text-white bg-[#0a3240] border border-[#17424f]'
                 }`}
               >
                 <Swords size={13} /> ⚔️ Battles (3)
@@ -600,8 +600,8 @@ function ArcadeContent() {
                 onClick={() => setActiveTab('survival')}
                 className={`px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-1.5 ${
                   activeTab === 'survival'
-                    ? 'bg-red-600 text-white'
-                    : 'text-neutral-400 hover:text-white bg-neutral-900 border border-neutral-800'
+                    ? 'bg-[#c74a4a] text-white'
+                    : 'text-[#8fa2aa] hover:text-white bg-[#0a3240] border border-[#17424f]'
                 }`}
               >
                 <Zap size={13} /> ⚡ Survival
@@ -610,8 +610,8 @@ function ArcadeContent() {
                 onClick={() => setActiveTab('classics')}
                 className={`px-4 py-2 rounded-xl text-xs font-bold transition flex items-center gap-1.5 ${
                   activeTab === 'classics'
-                    ? 'bg-red-600 text-white'
-                    : 'text-neutral-400 hover:text-white bg-neutral-900 border border-neutral-800'
+                    ? 'bg-[#c74a4a] text-white'
+                    : 'text-[#8fa2aa] hover:text-white bg-[#0a3240] border border-[#17424f]'
                 }`}
               >
                 <Gamepad2 size={13} /> 🎮 Classics (6)
@@ -621,19 +621,19 @@ function ArcadeContent() {
             {/* SECTION 1: BATTLE ARENA (3 GAMES) */}
             {(activeTab === 'all' || activeTab === 'battles') && (
               <div className="space-y-4">
-                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-neutral-300">
-                  <Swords size={14} className="text-red-400" /> 対戦バトル • Battle Arena (Solo vs AI & Live PvP)
+                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#c1d0d6]">
+                  <Swords size={14} className="text-[#ffb4ab]" /> 対戦バトル • Battle Arena (Solo vs AI & Live PvP)
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {/* Card 1: Shiritori */}
-                  <div className="p-6 rounded-3xl bg-neutral-900/60 border border-neutral-800 flex flex-col justify-between space-y-4 hover:border-neutral-700 transition">
+                  <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
                     <div className="space-y-2">
-                      <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-500/10 text-red-400 text-[10px] font-bold">
+                      <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-500/10 text-[#ffb4ab] text-[10px] font-bold">
                         🎌 SOLO & LIVE PVP
                       </div>
                       <h3 className="text-base font-bold text-white">しりとり • Shiritori Arena</h3>
-                      <p className="text-xs text-neutral-400">
+                      <p className="text-xs text-[#8fa2aa]">
                         Authentic Japanese word-chain duel! 15s turn timer, dictionary verification, &apos;ん&apos; loss rule, and TTS recitation.
                       </p>
                     </div>
@@ -644,13 +644,13 @@ function ArcadeContent() {
                           setLiveMatchId(null);
                           setActiveGame('shiritori');
                         }}
-                        className="flex-1 py-2 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-white transition flex items-center justify-center gap-1"
+                        className="flex-1 py-2 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-white transition flex items-center justify-center gap-1"
                       >
                         <Bot size={13} /> Solo
                       </button>
                       <button
                         onClick={() => handleOpenLobby('shiritori')}
-                        className="flex-1 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-bold text-white transition flex items-center justify-center gap-1 shadow-md shadow-red-950/40"
+                        className="flex-1 py-2 rounded-xl bg-[#c74a4a] hover:bg-[#d95a5a] text-xs font-bold text-white transition flex items-center justify-center gap-1 shadow-md shadow-red-950/40"
                       >
                         <Swords size={13} /> Live PvP
                       </button>
@@ -658,13 +658,13 @@ function ArcadeContent() {
                   </div>
 
                   {/* Card 2: Karuta */}
-                  <div className="p-6 rounded-3xl bg-neutral-900/60 border border-neutral-800 flex flex-col justify-between space-y-4 hover:border-neutral-700 transition">
+                  <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
                     <div className="space-y-2">
                       <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 text-[10px] font-bold">
                         🎴 SOLO & LIVE PVP
                       </div>
                       <h3 className="text-base font-bold text-white">競技かるた • Competitive Karuta</h3>
-                      <p className="text-xs text-neutral-400">
+                      <p className="text-xs text-[#8fa2aa]">
                         Tatami mat reaction slap battle! Yomite reader recites poems or vocabulary. Slap the matching card before your opponent.
                       </p>
                     </div>
@@ -675,7 +675,7 @@ function ArcadeContent() {
                           setLiveMatchId(null);
                           setActiveGame('karuta');
                         }}
-                        className="flex-1 py-2 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-white transition flex items-center justify-center gap-1"
+                        className="flex-1 py-2 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-white transition flex items-center justify-center gap-1"
                       >
                         <Bot size={13} /> Solo
                       </button>
@@ -689,13 +689,13 @@ function ArcadeContent() {
                   </div>
 
                   {/* Card 3: Kanji Duel */}
-                  <div className="p-6 rounded-3xl bg-neutral-900/60 border border-neutral-800 flex flex-col justify-between space-y-4 hover:border-neutral-700 transition">
+                  <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
                     <div className="space-y-2">
                       <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 text-[10px] font-bold">
                         ⚡ SOLO & LIVE PVP
                       </div>
                       <h3 className="text-base font-bold text-white">漢字決闘 • Kanji Duel</h3>
-                      <p className="text-xs text-neutral-400">
+                      <p className="text-xs text-[#8fa2aa]">
                         1000 HP Speed Strike Combat! Rapid-fire kanji stroke count & readings battle. Fast answers deal critical damage.
                       </p>
                     </div>
@@ -706,7 +706,7 @@ function ArcadeContent() {
                           setLiveMatchId(null);
                           setActiveGame('kanjiDuel');
                         }}
-                        className="flex-1 py-2 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-bold text-white transition flex items-center justify-center gap-1"
+                        className="flex-1 py-2 rounded-xl bg-[#0f3947] hover:bg-[#17424f] text-xs font-bold text-white transition flex items-center justify-center gap-1"
                       >
                         <Bot size={13} /> Solo
                       </button>
@@ -725,17 +725,17 @@ function ArcadeContent() {
             {/* SECTION 2: CLASSICS & SURVIVAL (6 GAMES) */}
             {(activeTab === 'all' || activeTab === 'classics' || activeTab === 'survival') && (
               <div className="space-y-4">
-                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-neutral-300">
+                <div className="flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#c1d0d6]">
                   <Gamepad2 size={14} className="text-emerald-400" /> クラシック・道場 • Solo Classic Arcades
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {/* Japanese Wordle */}
-                  <div className="p-6 rounded-3xl bg-neutral-900/60 border border-neutral-800 flex flex-col justify-between space-y-4 hover:border-neutral-700 transition">
+                  <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
                     <div className="space-y-2">
                       <div className="text-2xl">🟩</div>
                       <h3 className="text-base font-bold text-white">言葉のパズル • Japanese Wordle</h3>
-                      <p className="text-xs text-neutral-400">
+                      <p className="text-xs text-[#8fa2aa]">
                         Guess the daily 5-kana Japanese word in 6 attempts with full Kana on-screen keyboard.
                       </p>
                     </div>
@@ -748,28 +748,28 @@ function ArcadeContent() {
                   </div>
 
                   {/* Bushido Survival */}
-                  <div className="p-6 rounded-3xl bg-neutral-900/60 border border-neutral-800 flex flex-col justify-between space-y-4 hover:border-neutral-700 transition">
+                  <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
                     <div className="space-y-2">
                       <div className="text-2xl">⚡</div>
                       <h3 className="text-base font-bold text-white">武士道サバイバル • Bushido Survival</h3>
-                      <p className="text-xs text-neutral-400">
+                      <p className="text-xs text-[#8fa2aa]">
                         Time-attack endurance gauntlet! 3-second flash timer, combo multipliers, and Hell mode.
                       </p>
                     </div>
                     <button
                       onClick={() => setActiveGame('survival')}
-                      className="w-full py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-bold text-white transition"
+                      className="w-full py-2.5 rounded-xl bg-[#c74a4a] hover:bg-[#d95a5a] text-xs font-bold text-white transition"
                     >
                       Play Survival
                     </button>
                   </div>
 
                   {/* Kana Snake */}
-                  <div className="p-6 rounded-3xl bg-neutral-900/60 border border-neutral-800 flex flex-col justify-between space-y-4 hover:border-neutral-700 transition">
+                  <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
                     <div className="space-y-2">
                       <div className="text-2xl">🐍</div>
                       <h3 className="text-base font-bold text-white">蛇行道 • Kana Snake</h3>
-                      <p className="text-xs text-neutral-400">
+                      <p className="text-xs text-[#8fa2aa]">
                         Classic retro snake on a Japanese grid. Steer the snake to eat the prompt character.
                       </p>
                     </div>
@@ -782,11 +782,11 @@ function ArcadeContent() {
                   </div>
 
                   {/* Kana Catch */}
-                  <div className="p-6 rounded-3xl bg-neutral-900/60 border border-neutral-800 flex flex-col justify-between space-y-4 hover:border-neutral-700 transition">
+                  <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
                     <div className="space-y-2">
                       <div className="text-2xl">🧺</div>
                       <h3 className="text-base font-bold text-white">収穫籠 • Kana Catch</h3>
-                      <p className="text-xs text-neutral-400">
+                      <p className="text-xs text-[#8fa2aa]">
                         Catch the falling target kana in your sliding basket before it touches the ground!
                       </p>
                     </div>
@@ -799,11 +799,11 @@ function ArcadeContent() {
                   </div>
 
                   {/* Kana Rain */}
-                  <div className="p-6 rounded-3xl bg-neutral-900/60 border border-neutral-800 flex flex-col justify-between space-y-4 hover:border-neutral-700 transition">
+                  <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
                     <div className="space-y-2">
                       <div className="text-2xl">🌧️</div>
                       <h3 className="text-base font-bold text-white">文字の雨 • Kana Rain</h3>
-                      <p className="text-xs text-neutral-400">
+                      <p className="text-xs text-[#8fa2aa]">
                         Defend the dojo by shooting down falling kana with rapid multiple-choice answers.
                       </p>
                     </div>
@@ -816,11 +816,11 @@ function ArcadeContent() {
                   </div>
 
                   {/* Speed Match */}
-                  <div className="p-6 rounded-3xl bg-neutral-900/60 border border-neutral-800 flex flex-col justify-between space-y-4 hover:border-neutral-700 transition">
+                  <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
                     <div className="space-y-2">
                       <div className="text-2xl">🎴</div>
                       <h3 className="text-base font-bold text-white">スピードマッチ • Speed Match</h3>
-                      <p className="text-xs text-neutral-400">
+                      <p className="text-xs text-[#8fa2aa]">
                         Card memory pairing game. Flip and match Japanese kana with their romaji reading.
                       </p>
                     </div>
@@ -855,7 +855,7 @@ export default function ArcadePage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen bg-black flex items-center justify-center text-neutral-500 text-sm">
+        <div className="min-h-screen bg-black flex items-center justify-center text-[#627780] text-sm">
           Loading Manabu Arcade...
         </div>
       }

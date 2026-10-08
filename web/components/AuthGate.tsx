@@ -11,8 +11,20 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
   const [signingInGoogle, setSigningInGoogle] = useState(false);
   const [authError, setAuthError] = useState<string | null>(null);
 
+  // Check if authenticated in React context or in local persistent storage
+  const [hasLocalSession, setHasLocalSession] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false;
+    try {
+      const u = localStorage.getItem('manabu_user');
+      const p = localStorage.getItem('manabu_auth_profile');
+      return !!(u || p);
+    } catch {
+      return false;
+    }
+  });
+
   // If already authenticated with user session or cached profile
-  if (user || profile) {
+  if (user || profile || hasLocalSession) {
     return <>{children}</>;
   }
 
@@ -48,7 +60,7 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
       <div className="absolute bottom-10 -right-20 w-[400px] h-[400px] bg-[#0f3e4f]/30 rounded-full blur-[100px] pointer-events-none" />
 
       {/* Main Stitch Welcome Card (Desktop & Mobile Responsive) */}
-      <div className="w-full max-w-[440px] bg-[#061820] border border-[#133541] rounded-3xl p-6 sm:p-8 flex flex-col shadow-2xl relative z-10">
+      <div className="w-full max-w-[440px] bg-[#061820] border border-[#133541] rounded-xl p-6 sm:p-8 flex flex-col shadow-2xl relative z-10">
         {/* Header Tag */}
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#0a3240]/65 border border-[#17424f] text-[11px] font-medium text-[#8fa2aa]">

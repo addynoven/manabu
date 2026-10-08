@@ -48,7 +48,7 @@ const STAGE_NAMES = [
 ];
 
 const STAGE_COLORS = [
-  'text-neutral-500 bg-neutral-900 border-neutral-800',
+  'text-[#627780] bg-[#0a3240] border-[#17424f]',
   'text-pink-400 bg-pink-500/10 border-pink-500/30',
   'text-pink-400 bg-pink-500/10 border-pink-500/30',
   'text-pink-400 bg-pink-500/10 border-pink-500/30',
@@ -282,7 +282,7 @@ export default function SrsReviewPage() {
         />
 
         {/* Review Queue Summary Card */}
-        <div className="bg-gradient-to-br from-neutral-900 to-neutral-950 border border-neutral-800 p-6 md:p-8 rounded-3xl relative overflow-hidden">
+        <div className="bg-gradient-to-br from-neutral-900 to-neutral-950 border border-[#17424f] p-6 md:p-8 rounded-xl relative overflow-hidden">
           <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -298,7 +298,7 @@ export default function SrsReviewPage() {
                   <>All caught up! Excellent discipline, warrior.</>
                 )}
               </h2>
-              <p className="text-xs text-neutral-400 mt-1 max-w-lg">
+              <p className="text-xs text-[#8fa2aa] mt-1 max-w-lg">
                 Completing your daily reviews prevents forgetting curves and advances your items from Apprentice toward Burned status.
               </p>
             </div>
@@ -306,7 +306,7 @@ export default function SrsReviewPage() {
             <button
               onClick={startSession}
               disabled={dueItems.length === 0}
-              className="px-6 py-4 rounded-2xl bg-red-600 hover:bg-red-500 disabled:opacity-40 disabled:hover:bg-red-600 text-white font-bold text-sm transition shadow-xl shadow-red-950/60 flex items-center justify-center gap-2 shrink-0"
+              className="px-6 py-4 rounded-2xl bg-[#c74a4a] hover:bg-[#d95a5a] disabled:opacity-40 disabled:hover:bg-[#c74a4a] text-white font-bold text-sm transition shadow-xl shadow-red-950/60 flex items-center justify-center gap-2 shrink-0"
             >
               <Zap size={16} fill="white" />
               Launch Review Session
@@ -317,10 +317,10 @@ export default function SrsReviewPage() {
         {/* Active Deck Explorer */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-sm font-bold text-neutral-300 uppercase tracking-wider">
+            <h3 className="text-sm font-bold text-[#c1d0d6] uppercase tracking-wider">
               Items in SRS Dojo ({deck.length})
             </h3>
-            <span className="text-xs text-neutral-500">Sorted by next review time</span>
+            <span className="text-xs text-[#627780]">Sorted by next review time</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
@@ -329,26 +329,26 @@ export default function SrsReviewPage() {
               return (
                 <div
                   key={item.id}
-                  className="bg-neutral-900/60 border border-neutral-800 p-4 rounded-2xl flex items-center justify-between"
+                  className="bg-[#0a3240]/60 border border-[#17424f] p-4 rounded-2xl flex items-center justify-between"
                 >
                   <div>
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-xs font-mono text-neutral-400">{item.kana}</span>
+                      <span className="text-xs font-mono text-[#8fa2aa]">{item.kana}</span>
                       <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold border ${STAGE_COLORS[item.stage]}`}>
                         {STAGE_NAMES[item.stage]}
                       </span>
                     </div>
                     <h4 className="text-lg font-bold text-white font-serif">{item.kanji || item.kana}</h4>
-                    <p className="text-xs text-neutral-400 truncate max-w-[180px]">{item.meaning}</p>
+                    <p className="text-xs text-[#8fa2aa] truncate max-w-[180px]">{item.meaning}</p>
                   </div>
 
                   <div className="text-right">
                     {isDue ? (
-                      <span className="text-[10px] font-bold text-red-400 bg-red-500/10 border border-red-500/30 px-2 py-1 rounded-lg">
+                      <span className="text-[10px] font-bold text-[#ffb4ab] bg-red-500/10 border border-red-500/30 px-2 py-1 rounded-lg">
                         Ready
                       </span>
                     ) : (
-                      <span className="text-[10px] text-neutral-500">
+                      <span className="text-[10px] text-[#627780]">
                         {item.stage === 9 ? 'Mastered' : 'Scheduled'}
                       </span>
                     )}
@@ -361,31 +361,31 @@ export default function SrsReviewPage() {
 
         {/* Modal: Fullscreen SRS Review Drill */}
         {isReviewing && (
-          <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
-            <div className="bg-neutral-900 border border-neutral-800 rounded-3xl p-6 md:p-8 max-w-lg w-full shadow-2xl space-y-6">
+          <div className="fixed inset-0 z-50 bg-[#051b22]/95 backdrop-blur-md flex items-center justify-center p-4">
+            <div className="bg-[#0a3240] border border-[#17424f] rounded-xl p-6 md:p-8 max-w-lg w-full shadow-2xl space-y-6">
               {currentIndex < dueItems.length ? (
                 <>
                   {/* Top Bar: Progress and Current Stage */}
                   <div className="flex items-center justify-between">
                     <div>
-                      <span className="text-xs text-neutral-400">
+                      <span className="text-xs text-[#8fa2aa]">
                         Review {currentIndex + 1} of {dueItems.length}
                       </span>
-                      <div className="text-xs font-bold text-red-400 mt-0.5">
+                      <div className="text-xs font-bold text-[#ffb4ab] mt-0.5">
                         Current: {STAGE_NAMES[currentItem.stage]}
                       </div>
                     </div>
                     <button
                       onClick={() => setIsReviewing(false)}
-                      className="p-2 text-neutral-400 hover:text-white rounded-xl hover:bg-neutral-800"
+                      className="p-2 text-[#8fa2aa] hover:text-white rounded-xl hover:bg-[#0f3947]"
                     >
                       ✕
                     </button>
                   </div>
 
                   {/* Target Card Face */}
-                  <div className="bg-neutral-950 border border-neutral-800 rounded-2xl p-8 text-center min-h-[220px] flex flex-col items-center justify-center shadow-inner">
-                    <span className="text-xs text-neutral-500 font-bold uppercase tracking-wider mb-2">
+                  <div className="bg-[#051b22] border border-[#17424f] rounded-2xl p-8 text-center min-h-[220px] flex flex-col items-center justify-center shadow-inner">
+                    <span className="text-xs text-[#627780] font-bold uppercase tracking-wider mb-2">
                       Prompt: What is the meaning?
                     </span>
                     <h2 className="text-5xl font-black text-white font-serif mb-4">
@@ -393,14 +393,14 @@ export default function SrsReviewPage() {
                     </h2>
                     <button
                       onClick={() => speakJapanese(currentItem.kanji || currentItem.kana)}
-                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-850 hover:bg-neutral-800 text-xs text-neutral-300"
+                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0f3947] hover:bg-[#0f3947] text-xs text-[#c1d0d6]"
                     >
                       <Volume2 size={13} /> Listen
                     </button>
 
                     {showAnswer && (
-                      <div className="mt-6 pt-6 border-t border-neutral-800 w-full animate-in fade-in duration-200">
-                        <p className="text-sm font-mono text-red-400 mb-1">Kana: {currentItem.kana}</p>
+                      <div className="mt-6 pt-6 border-t border-[#17424f] w-full animate-in fade-in duration-200">
+                        <p className="text-sm font-mono text-[#ffb4ab] mb-1">Kana: {currentItem.kana}</p>
                         <h3 className="text-xl font-bold text-white">{currentItem.meaning}</h3>
                       </div>
                     )}
@@ -410,7 +410,7 @@ export default function SrsReviewPage() {
                   {!showAnswer ? (
                     <button
                       onClick={() => setShowAnswer(true)}
-                      className="w-full py-3.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-sm transition shadow-lg shadow-red-950/50"
+                      className="w-full py-3.5 rounded-xl bg-[#c74a4a] hover:bg-[#d95a5a] text-white font-bold text-sm transition shadow-lg shadow-red-950/50"
                     >
                       Show Answer (Spacebar / Tap)
                     </button>
@@ -437,14 +437,14 @@ export default function SrsReviewPage() {
                     🥋
                   </div>
                   <h3 className="text-2xl font-black text-white">SRS Review Complete!</h3>
-                  <p className="text-xs text-neutral-300 max-w-sm mx-auto">
+                  <p className="text-xs text-[#c1d0d6] max-w-sm mx-auto">
                     You reviewed all due items with{' '}
                     <span className="font-bold text-emerald-400">{sessionResults.correct} correct</span> and{' '}
-                    <span className="font-bold text-red-400">{sessionResults.incorrect} to review again later</span>.
+                    <span className="font-bold text-[#ffb4ab]">{sessionResults.incorrect} to review again later</span>.
                   </p>
                   <button
                     onClick={() => setIsReviewing(false)}
-                    className="w-full py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs transition"
+                    className="w-full py-3 rounded-xl bg-[#c74a4a] hover:bg-[#d95a5a] text-white font-bold text-xs transition"
                   >
                     Done
                   </button>

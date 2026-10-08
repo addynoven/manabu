@@ -125,7 +125,7 @@ export default function CramStudioPage() {
         {!isSessionActive || currentIndex >= activeDeck.length ? (
           /* Cram Configuration Panel matching Stitch Screen #2 */
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <div className="lg:col-span-8 bg-neutral-900/90 border border-neutral-800 rounded-3xl p-6 md:p-8 shadow-xl space-y-8">
+            <div className="lg:col-span-8 bg-[#0a3240]/90 border border-[#17424f] rounded-xl p-6 md:p-8 shadow-xl space-y-8">
               <div className="space-y-4">
                 <h2 className="text-lg font-bold text-white flex items-center gap-2">
                   <Filter size={18} className="text-amber-400" />
@@ -144,11 +144,11 @@ export default function CramStudioPage() {
                       className={`p-4 rounded-2xl border text-left transition ${
                         selectedLevel === lvl.id
                           ? 'bg-amber-950/40 border-amber-500 text-white shadow-md'
-                          : 'bg-neutral-950 border-neutral-800 text-neutral-400 hover:border-neutral-700'
+                          : 'bg-[#051b22] border-[#17424f] text-[#8fa2aa] hover:border-[#17424f]'
                       }`}
                     >
                       <span className="font-bold text-sm block text-white">{lvl.label}</span>
-                      <span className="text-xs text-neutral-500">{lvl.desc}</span>
+                      <span className="text-xs text-[#627780]">{lvl.desc}</span>
                     </button>
                   ))}
                 </div>
@@ -167,8 +167,8 @@ export default function CramStudioPage() {
                       onClick={() => setSessionSize(size)}
                       className={`px-6 py-3 rounded-xl border text-sm font-bold transition ${
                         sessionSize === size
-                          ? 'bg-amber-500 text-neutral-950 border-amber-400 shadow-md'
-                          : 'bg-neutral-950 border-neutral-800 text-neutral-300 hover:border-neutral-700'
+                          ? 'bg-amber-500 text-[#051b22] border-amber-400 shadow-md'
+                          : 'bg-[#051b22] border-[#17424f] text-[#c1d0d6] hover:border-[#17424f]'
                       }`}
                     >
                       {size} Cards
@@ -178,13 +178,13 @@ export default function CramStudioPage() {
               </div>
 
               {/* Launch CTA */}
-              <div className="pt-4 border-t border-neutral-800 flex items-center justify-between">
-                <p className="text-xs text-neutral-400">
+              <div className="pt-4 border-t border-[#17424f] flex items-center justify-between">
+                <p className="text-xs text-[#8fa2aa]">
                   Reviews completed in Cram Studio do not affect regular SRS intervals.
                 </p>
                 <button
                   onClick={startCramSession}
-                  className="px-8 py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-neutral-950 font-bold rounded-2xl shadow-lg transition flex items-center gap-2"
+                  className="px-8 py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-[#051b22] font-bold rounded-2xl shadow-lg transition flex items-center gap-2"
                 >
                   <Zap size={18} />
                   <span>Launch Cram Session</span>
@@ -194,22 +194,22 @@ export default function CramStudioPage() {
 
             {/* Sidebar Summary Card */}
             <div className="lg:col-span-4 space-y-6">
-              <div className="bg-neutral-900/60 border border-neutral-800 rounded-3xl p-6 space-y-4">
+              <div className="bg-[#0a3240]/60 border border-[#17424f] rounded-xl p-6 space-y-4">
                 <h3 className="text-base font-bold text-white flex items-center gap-2">
                   <Clock size={16} className="text-amber-400" />
                   Study Session Breakdown
                 </h3>
                 <div className="space-y-3 text-xs">
-                  <div className="flex justify-between py-2 border-b border-neutral-800">
-                    <span className="text-neutral-400">Filter</span>
+                  <div className="flex justify-between py-2 border-b border-[#17424f]">
+                    <span className="text-[#8fa2aa]">Filter</span>
                     <span className="text-white font-mono uppercase">{selectedLevel}</span>
                   </div>
-                  <div className="flex justify-between py-2 border-b border-neutral-800">
-                    <span className="text-neutral-400">Batch Size</span>
+                  <div className="flex justify-between py-2 border-b border-[#17424f]">
+                    <span className="text-[#8fa2aa]">Batch Size</span>
                     <span className="text-white font-mono">{sessionSize} items</span>
                   </div>
-                  <div className="flex justify-between py-2 border-b border-neutral-800">
-                    <span className="text-neutral-400">SRS Impact</span>
+                  <div className="flex justify-between py-2 border-b border-[#17424f]">
+                    <span className="text-[#8fa2aa]">SRS Impact</span>
                     <span className="text-emerald-400 font-bold">Zero (Isolated)</span>
                   </div>
                 </div>
@@ -218,21 +218,21 @@ export default function CramStudioPage() {
           </div>
         ) : (
           /* Active Cram Flashcard Stage */
-          <div className="max-w-2xl mx-auto w-full bg-neutral-900 border border-neutral-800 rounded-3xl p-6 md:p-10 shadow-2xl space-y-8">
+          <div className="max-w-2xl mx-auto w-full bg-[#0a3240] border border-[#17424f] rounded-xl p-6 md:p-10 shadow-2xl space-y-8">
             <div className="flex items-center justify-between">
               <span className="text-xs font-mono font-bold text-amber-400">
                 Card {currentIndex + 1} of {activeDeck.length}
               </span>
               <button
                 onClick={() => setIsSessionActive(false)}
-                className="text-xs text-neutral-400 hover:text-white"
+                className="text-xs text-[#8fa2aa] hover:text-white"
               >
                 Exit Session
               </button>
             </div>
 
             {/* Stage Progress Bar */}
-            <div className="w-full bg-neutral-800 h-1.5 rounded-full overflow-hidden">
+            <div className="w-full bg-[#0f3947] h-1.5 rounded-full overflow-hidden">
               <div
                 className="bg-amber-500 h-full transition-all duration-300"
                 style={{ width: `${((currentIndex + 1) / activeDeck.length) * 100}%` }}
@@ -245,24 +245,24 @@ export default function CramStudioPage() {
                 <div className="text-5xl md:text-6xl font-black font-serif text-white tracking-widest">
                   {currentItem.kanji || currentItem.kana}
                 </div>
-                <div className="text-xl font-mono text-neutral-400">{currentItem.kana}</div>
+                <div className="text-xl font-mono text-[#8fa2aa]">{currentItem.kana}</div>
 
                 <button
                   onClick={() => speakJapanese(currentItem.kanji || currentItem.kana)}
-                  className="inline-flex items-center gap-2 px-3 py-1.5 bg-neutral-800 hover:bg-neutral-700 rounded-xl text-xs text-neutral-300 transition"
+                  className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#0f3947] hover:bg-[#17424f] rounded-xl text-xs text-[#c1d0d6] transition"
                 >
                   <Volume2 size={15} /> Listen
                 </button>
 
                 {showAnswer ? (
-                  <div className="p-6 bg-neutral-950 border border-neutral-800 rounded-2xl space-y-2 animate-in fade-in">
-                    <span className="text-xs uppercase font-mono text-neutral-500 block">Definition</span>
+                  <div className="p-6 bg-[#051b22] border border-[#17424f] rounded-2xl space-y-2 animate-in fade-in">
+                    <span className="text-xs uppercase font-mono text-[#627780] block">Definition</span>
                     <p className="text-xl font-bold text-emerald-400">{currentItem.meaning}</p>
                   </div>
                 ) : (
                   <button
                     onClick={() => setShowAnswer(true)}
-                    className="px-8 py-3 bg-neutral-800 hover:bg-neutral-700 text-white rounded-xl text-sm font-bold transition"
+                    className="px-8 py-3 bg-[#0f3947] hover:bg-[#17424f] text-white rounded-xl text-sm font-bold transition"
                   >
                     Show Answer
                   </button>
