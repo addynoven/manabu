@@ -94,7 +94,6 @@ export function AppShell({ children }: AppShellProps) {
     { href: '/arcade', label: 'Arcade', icon: Gamepad2, badge: 'Play' },
     { href: '/stroke', label: 'Stroke Master', icon: PenTool, badge: 'Draw' },
     { href: '/friends', label: 'Friends', icon: Users, badge: null },
-    { href: '/admin', label: 'Admin', icon: ShieldCheck, badge: 'Mission' },
   ];
 
   return (

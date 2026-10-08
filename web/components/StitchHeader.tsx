@@ -25,7 +25,6 @@ export function StitchHeader({ onSearchClick }: StitchHeaderProps) {
     { href: '/conjugator', label: 'Conjugator' },
     { href: '/arcade', label: 'Arcade' },
     { href: '/friends', label: 'Community' },
-    { href: '/admin', label: 'Settings' },
   ];
 
   return (
