@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "bun run ../scripts/export_curriculum_to_web.ts",
+    "prebuild": "node -e \"const fs = require('fs'); if (fs.existsSync('../scripts/export_curriculum_to_web.ts')) { require('child_process').execSync('bun run ../scripts/export_curriculum_to_web.ts', { stdio: 'inherit' }); } else { console.log('Using pre-bundled curriculum.json'); }\"",
     "sync:curriculum": "bun run ../scripts/export_curriculum_to_web.ts",
     "build": "next build",
     "start": "next start",
