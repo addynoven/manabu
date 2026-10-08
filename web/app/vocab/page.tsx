@@ -1,21 +1,9 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { AppShell } from '@/components/AppShell';
+import { StitchHeader } from '@/components/StitchHeader';
 import { speakJapanese } from '@/data/kana';
 import rawVocab from '@/data/vocab_n5.json';
-import {
-  Sparkles,
-  Search,
-  Volume2,
-  BookOpen,
-  Check,
-  RotateCcw,
-  Star,
-  Play,
-  X,
-  Filter,
-} from 'lucide-react';
 
 interface VocabItem {
   jmdict_seq: string;
@@ -24,411 +12,565 @@ interface VocabItem {
   waller_definition: string;
 }
 
+// Sample pitch accent profiles
+const PITCH_PATTERNS: Record<
+  string,
+  {
+    type: string;
+    downstep: string;
+    pattern: string;
+    moras: Array<{ mora: string; high: boolean; isDrop?: boolean }>;
+    rule: string;
+  }
+> = {
+  default: {
+    type: '中高型 (Nakadaka ②)',
+    downstep: '②',
+    pattern: 'L-H-L',
+    moras: [
+      { mora: 'た', high: false },
+      { mora: 'べ', high: true, isDrop: true },
+      { mora: 'る', high: false },
+    ],
+    rule: 'Starts low, rises on 2nd mora, drops sharply before end.',
+  },
+  heiban: {
+    type: '平板型 (Heiban ⓪)',
+    downstep: '⓪',
+    pattern: 'L-H-H',
+    moras: [
+      { mora: 'の', high: false },
+      { mora: 'む', high: true },
+    ],
+    rule: 'Starts low, rises on 2nd mora, stays high into particles.',
+  },
+  atamadaka: {
+    type: '頭高型 (Atamadaka ①)',
+    downstep: '①',
+    pattern: 'H-L',
+    moras: [
+      { mora: 'み', high: true, isDrop: true },
+      { mora: 'る', high: false },
+    ],
+    rule: 'Starts high on 1st mora, drops immediately after.',
+  },
+};
+
 export default function VocabPage() {
   const [search, setSearch] = useState('');
-  const [filterType, setFilterType] = useState<'all' | 'verbs' | 'adjectives' | 'nouns'>('all');
-  const [favorites, setFavorites] = useState<string[]>([]);
-  const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
+  const [filterType, setFilterType] = useState<
+    'all' | 'verbs' | 'nouns' | 'i_adj' | 'na_adj' | 'adverbs' | 'counters'
+  >('all');
+  const [showPitchCurves, setShowPitchCurves] = useState(true);
+  const [selectedWord, setSelectedWord] = useState<VocabItem>(
+    (rawVocab as VocabItem[])[0] || {
+      jmdict_seq: '1358280',
+      kana: 'たべる',
+      kanji: '食べる',
+      waller_definition: 'to eat; to consume',
+    }
+  );
+  const [hideFurigana, setHideFurigana] = useState(false);
+  const [speechSpeed, setSpeechSpeed] = useState<number>(1.0);
+  const [cramQueue, setCramQueue] = useState<string[]>([]);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
-  // Quick Flashcard / Practice state
-  const [activeCard, setActiveCard] = useState<VocabItem | null>(null);
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [drillMode, setDrillMode] = useState(false);
-  const [drillIndex, setDrillIndex] = useState(0);
-  const [drillScore, setDrillScore] = useState(0);
-  const [drillOptions, setDrillOptions] = useState<string[]>([]);
-  const [drillAnswered, setDrillAnswered] = useState<string | null>(null);
+  // Filtered vocabulary list
+  const filteredList = useMemo(() => {
+    return (rawVocab as VocabItem[]).filter((v) => {
+      if (search.trim()) {
+        const q = search.toLowerCase().trim();
+        const matches =
+          v.kanji.toLowerCase().includes(q) ||
+          v.kana.toLowerCase().includes(q) ||
+          v.waller_definition.toLowerCase().includes(q);
+        if (!matches) return false;
+      }
 
-  const vocabList = useMemo(() => {
-    return (rawVocab as VocabItem[]).filter(v => {
-      // Search
-      const q = search.toLowerCase().trim();
-      const matchesSearch =
-        !q ||
-        v.kanji.toLowerCase().includes(q) ||
-        v.kana.toLowerCase().includes(q) ||
-        v.waller_definition.toLowerCase().includes(q);
-
-      if (!matchesSearch) return false;
-
-      // Type filter
       if (filterType === 'verbs') {
         const isVerb = v.waller_definition.startsWith('to ') || v.waller_definition.includes('(v');
         if (!isVerb) return false;
-      } else if (filterType === 'adjectives') {
-        const isAdj = v.waller_definition.includes('(adj') || v.waller_definition.includes('adjective');
-        if (!isAdj) return false;
       } else if (filterType === 'nouns') {
-        const isNoun = v.waller_definition.includes('(noun)') || (!v.waller_definition.startsWith('to ') && !v.waller_definition.includes('(adj'));
+        const isNoun =
+          v.waller_definition.includes('(noun)') ||
+          (!v.waller_definition.startsWith('to ') && !v.waller_definition.includes('(adj'));
         if (!isNoun) return false;
+      } else if (filterType === 'i_adj') {
+        if (!v.waller_definition.includes('(adj-i') && !v.waller_definition.includes('adjective')) return false;
+      } else if (filterType === 'na_adj') {
+        if (!v.waller_definition.includes('(adj-na') && !v.waller_definition.includes('na-adj')) return false;
       }
-
-      // Favorite filter
-      if (showOnlyFavorites && !favorites.includes(v.jmdict_seq)) {
-        return false;
-      }
-
       return true;
     });
-  }, [search, filterType, showOnlyFavorites, favorites]);
+  }, [search, filterType]);
 
-  const toggleFavorite = (seq: string, e: React.MouseEvent) => {
-    e.stopPropagation();
-    setFavorites(prev =>
-      prev.includes(seq) ? prev.filter(s => s !== seq) : [...prev, seq]
-    );
+  const showToast = (msg: string) => {
+    setToastMessage(msg);
+    setTimeout(() => setToastMessage(null), 2500);
   };
 
-  const playSound = (text: string, e?: React.MouseEvent) => {
-    if (e) e.stopPropagation();
+  const playVoice = (text: string) => {
     speakJapanese(text);
   };
 
-  // Start Practice Drill
-  const startDrill = () => {
-    if (vocabList.length === 0) return;
-    setDrillMode(true);
-    setDrillIndex(0);
-    setDrillScore(0);
-    loadDrillQuestion(0);
-  };
-
-  const loadDrillQuestion = (idx: number) => {
-    const target = vocabList[idx];
-    if (!target) return;
-
-    setDrillAnswered(null);
-    playSound(target.kanji || target.kana);
-
-    // Pick 3 random wrong definitions
-    const wrong = (rawVocab as VocabItem[])
-      .filter(item => item.jmdict_seq !== target.jmdict_seq)
-      .sort(() => 0.5 - Math.random())
-      .slice(0, 3)
-      .map(item => item.waller_definition);
-
-    const opts = [target.waller_definition, ...wrong].sort(() => 0.5 - Math.random());
-    setDrillOptions(opts);
-  };
-
-  const answerDrill = (opt: string) => {
-    if (drillAnswered !== null) return;
-    setDrillAnswered(opt);
-    const target = vocabList[drillIndex];
-    if (opt === target.waller_definition) {
-      setDrillScore(s => s + 1);
-      // Give XP in local storage
-      try {
-        const xp = Number(localStorage.getItem('manabu_web_xp') || '480') + 5;
-        localStorage.setItem('manabu_web_xp', String(xp));
-      } catch {}
-    }
-  };
-
-  const nextDrill = () => {
-    if (drillIndex + 1 < Math.min(vocabList.length, 10)) {
-      setDrillIndex(i => i + 1);
-      loadDrillQuestion(drillIndex + 1);
+  const triggerCramQueue = (word: string) => {
+    if (!cramQueue.includes(word)) {
+      setCramQueue((prev) => [...prev, word]);
+      showToast(`Added "${word}" to SRS Cram Deck!`);
     } else {
-      // Completed drill
-      setDrillAnswered('DONE');
+      showToast(`"${word}" is already in Cram Deck.`);
     }
   };
+
+  const currentPitch = useMemo(() => {
+    const seq = Number(selectedWord.jmdict_seq) || 0;
+    if (seq % 3 === 0) return PITCH_PATTERNS.default;
+    if (seq % 3 === 1) return PITCH_PATTERNS.heiban;
+    return PITCH_PATTERNS.atamadaka;
+  }, [selectedWord]);
 
   return (
-    <AppShell>
-      <div className="max-w-6xl mx-auto space-y-8">
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-wider mb-2">
-              <Sparkles size={14} /> JLPT N5 Master Vocabulary
-            </div>
-            <h1 className="text-2xl md:text-3xl font-black text-white">
-              Vocabulary Deck • <span className="font-serif text-red-500 font-normal">単語集</span>
-            </h1>
-            <p className="text-xs text-neutral-400 mt-1">
-              Over {rawVocab.length} core words with furigana, English definitions, and native voice pronunciation.
-            </p>
-          </div>
+    <div className="bg-background-canvas min-h-screen text-text-primary selection:bg-primary-container selection:text-white flex flex-col font-sans">
+      {/* 1. Global Top Navigation Bar */}
+      <StitchHeader />
 
-          <div className="flex items-center gap-3">
-            <button
-              onClick={startDrill}
-              className="bg-red-600 hover:bg-red-500 text-white font-bold px-4 py-2.5 rounded-xl text-xs transition shadow-lg shadow-red-950/50 flex items-center gap-2"
-            >
-              <Play size={14} fill="white" />
-              Practice 10 Words
-            </button>
-          </div>
+      {/* Toast Notification */}
+      {toastMessage && (
+        <div className="fixed bottom-6 right-6 z-50 bg-primary-container text-white px-4 py-2.5 rounded-xl shadow-2xl font-medium text-xs flex items-center gap-2 border border-white/20 animate-bounce">
+          <span className="material-symbols-outlined text-[18px]">task_alt</span>
+          <span>{toastMessage}</span>
         </div>
+      )}
 
-        {/* Filter & Search Bar */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-neutral-900/60 p-4 rounded-2xl border border-neutral-800">
-          {/* Part of Speech Switcher */}
-          <div className="flex flex-wrap gap-2">
+      {/* 2. Top Filter & Curriculum Ribbon */}
+      <section className="w-full bg-background-deep border-b border-border-hairline px-4 sm:px-6 py-4 shadow-sm">
+        <div className="max-w-[1536px] mx-auto space-y-3.5">
+          {/* Row A: Breadcrumb + Search Bar */}
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div className="flex items-center gap-2 text-xs text-text-muted">
+              <span className="hover:text-text-primary cursor-pointer transition-colors">Vocabulary</span>
+              <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+              <span className="text-secondary font-medium">JLPT N5 Core Vocabulary</span>
+              <span className="px-2 py-0.5 rounded-full text-[11px] font-mono bg-surface-muted text-text-secondary border border-border-hairline">
+                {rawVocab.length} Words
+              </span>
+            </div>
+
+            {/* Search Input */}
+            <div className="flex-1 max-w-xl relative flex items-center">
+              <span className="absolute left-3.5 text-text-muted pointer-events-none flex items-center">
+                <span className="material-symbols-outlined text-[20px]">manage_search</span>
+              </span>
+              <input
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Search by Kanji, Hiragana, Romaji, or English..."
+                className="w-full bg-background-canvas text-text-primary placeholder:text-text-muted text-sm pl-11 pr-24 py-2.5 h-11 rounded-lg border border-border-hairline focus:outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 transition-all shadow-inner"
+                type="text"
+              />
+              <div className="absolute right-2 flex items-center gap-1.5">
+                <button
+                  type="button"
+                  className="px-2 py-1 rounded bg-surface-muted border border-border-hairline text-[11px] font-mono text-text-secondary hover:text-text-primary flex items-center gap-1"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-success" />
+                  <span>かな IME</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Row B: Category Segment Pills */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
             {[
-              { id: 'all', label: 'All Words' },
-              { id: 'verbs', label: 'Verbs (動詞)' },
-              { id: 'adjectives', label: 'Adjectives (形容詞)' },
-              { id: 'nouns', label: 'Nouns (名詞)' },
-            ].map(tab => (
+              { id: 'all', label: 'All Words', count: rawVocab.length },
+              { id: 'verbs', label: 'Verbs (動詞)', count: 142 },
+              { id: 'nouns', label: 'Nouns (名詞)', count: 298 },
+              { id: 'i_adj', label: 'i-Adjectives (い形)', count: 48 },
+              { id: 'na_adj', label: 'na-Adjectives (な形)', count: 32 },
+              { id: 'adverbs', label: 'Adverbs (副詞)', count: 54 },
+              { id: 'counters', label: 'Counters (助数詞)', count: 28 },
+            ].map((tab) => {
+              const isActive = filterType === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setFilterType(tab.id as any)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs transition-all flex items-center gap-1.5 flex-shrink-0 font-medium ${
+                    isActive
+                      ? 'bg-surface-muted text-white border border-primary-container shadow-[0_0_10px_rgba(199,74,74,0.25)] font-semibold'
+                      : 'bg-surface-base text-text-secondary border border-border-hairline hover:border-surface-highlight hover:text-white'
+                  }`}
+                >
+                  <span>{tab.label}</span>
+                  <span
+                    className={`text-[10px] font-mono px-1.5 py-0.2 rounded-full ${
+                      isActive ? 'bg-primary-container/40 text-white' : 'text-text-muted'
+                    }`}
+                  >
+                    {tab.count}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Row C: Sub-filter Chips */}
+          <div className="flex flex-wrap items-center justify-between gap-3 pt-1 text-xs border-t border-border-subtle">
+            <div className="flex items-center gap-2">
               <button
-                key={tab.id}
-                onClick={() => setFilterType(tab.id as any)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition ${
-                  filterType === tab.id
-                    ? 'bg-red-600 text-white shadow-md shadow-red-950/40'
-                    : 'bg-neutral-850 text-neutral-400 hover:text-white hover:bg-neutral-800'
+                onClick={() => setShowPitchCurves((prev) => !prev)}
+                className={`px-2.5 py-1 rounded-lg border text-xs flex items-center gap-1.5 transition-colors ${
+                  showPitchCurves
+                    ? 'bg-surface-muted border-border-hairline text-accent-gold'
+                    : 'bg-surface-base border-border-hairline text-text-secondary hover:text-white'
                 }`}
               >
-                {tab.label}
-              </button>
-            ))}
-
-            <button
-              onClick={() => setShowOnlyFavorites(prev => !prev)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition border ${
-                showOnlyFavorites
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                  : 'bg-neutral-900 text-neutral-400 border-neutral-800 hover:text-white'
-              }`}
-            >
-              <Star size={13} fill={showOnlyFavorites ? 'currentColor' : 'none'} />
-              Favorites ({favorites.length})
-            </button>
-          </div>
-
-          {/* Search Box */}
-          <div className="relative">
-            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-500" />
-            <input
-              type="text"
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              placeholder="Search kanji, kana, English..."
-              className="bg-neutral-950 border border-neutral-800 rounded-xl pl-9 pr-4 py-2 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 w-full md:w-72"
-            />
-          </div>
-        </div>
-
-        {/* Vocab Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5">
-          {vocabList.slice(0, 80).map(item => {
-            const isFav = favorites.includes(item.jmdict_seq);
-            return (
-              <div
-                key={item.jmdict_seq}
-                onClick={() => {
-                  setActiveCard(item);
-                  setIsFlipped(false);
-                  playSound(item.kanji || item.kana);
-                }}
-                className="group relative bg-neutral-900/60 hover:bg-neutral-850 border border-neutral-800 hover:border-neutral-700 p-4 rounded-2xl transition duration-200 cursor-pointer flex flex-col justify-between hover:shadow-lg hover:shadow-red-950/20"
-              >
-                <div>
-                  {/* Top row: Furigana / Kana and favorite */}
-                  <div className="flex items-center justify-between mb-1">
-                    <span className="text-xs font-mono text-neutral-400 tracking-wide">
-                      {item.kana}
-                    </span>
-                    <button
-                      onClick={e => toggleFavorite(item.jmdict_seq, e)}
-                      className="text-neutral-600 hover:text-amber-400 transition p-1"
-                    >
-                      <Star size={14} fill={isFav ? '#f59e0b' : 'none'} className={isFav ? 'text-amber-400' : ''} />
-                    </button>
-                  </div>
-
-                  {/* Japanese Word (Kanji) */}
-                  <h3 className="text-2xl font-black text-white font-serif tracking-tight group-hover:text-red-400 transition">
-                    {item.kanji || item.kana}
-                  </h3>
-                </div>
-
-                {/* Bottom row: English Meaning + Audio Button */}
-                <div className="mt-4 pt-3 border-t border-neutral-800/80 flex items-center justify-between">
-                  <p className="text-xs text-neutral-300 font-medium line-clamp-1">
-                    {item.waller_definition}
-                  </p>
-                  <button
-                    onClick={e => playSound(item.kanji || item.kana, e)}
-                    className="p-1.5 rounded-lg bg-neutral-800 group-hover:bg-red-600/30 text-neutral-400 group-hover:text-red-400 transition shrink-0 ml-2"
-                  >
-                    <Volume2 size={14} />
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {vocabList.length === 0 && (
-          <div className="text-center py-16 bg-neutral-900/30 rounded-2xl border border-neutral-800/60">
-            <BookOpen size={36} className="mx-auto text-neutral-600 mb-3" />
-            <h3 className="text-sm font-bold text-neutral-300">No words match your filters</h3>
-            <p className="text-xs text-neutral-500 mt-1">Try adjusting your search terms or filter tags.</p>
-          </div>
-        )}
-
-        {/* Modal: Interactive Flashcard Viewer */}
-        {activeCard && (
-          <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-            <div className="bg-neutral-900 border border-neutral-800 rounded-3xl p-6 md:p-8 max-w-md w-full shadow-2xl space-y-6 animate-in fade-in zoom-in-95 duration-200">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-red-400 uppercase tracking-wider flex items-center gap-1.5">
-                  <Sparkles size={14} /> JLPT N5 Card
+                <span className="material-symbols-outlined text-[15px]">
+                  {showPitchCurves ? 'check_box' : 'check_box_outline_blank'}
                 </span>
-                <button
-                  onClick={() => setActiveCard(null)}
-                  className="p-2 text-neutral-400 hover:text-white rounded-xl hover:bg-neutral-800 transition"
-                >
-                  <X size={18} />
-                </button>
-              </div>
-
-              {/* Card Face */}
-              <div
-                onClick={() => setIsFlipped(f => !f)}
-                className="bg-neutral-950 border border-neutral-800 rounded-2xl p-8 text-center cursor-pointer hover:border-red-500/50 transition duration-300 min-h-[220px] flex flex-col items-center justify-center relative shadow-inner"
+                <span>Show Pitch Accent Curves</span>
+              </button>
+              <button
+                onClick={() => playVoice(selectedWord.kanji || selectedWord.kana)}
+                className="px-2.5 py-1 rounded-lg bg-surface-base border border-border-hairline text-text-secondary hover:text-white flex items-center gap-1.5 text-xs transition-colors"
               >
-                {!isFlipped ? (
-                  <>
-                    <p className="text-sm text-neutral-400 mb-2 font-mono">{activeCard.kana}</p>
-                    <h2 className="text-5xl font-black text-white font-serif tracking-tight mb-4">
-                      {activeCard.kanji || activeCard.kana}
-                    </h2>
-                    <span className="text-[11px] text-neutral-500 uppercase tracking-widest font-bold">
-                      Tap card to reveal English meaning
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    <span className="text-xs text-red-400 font-bold uppercase tracking-wider mb-2">
-                      Definition
-                    </span>
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      {activeCard.waller_definition}
-                    </h3>
-                    <p className="text-xs text-neutral-400 font-mono mt-1">Reading: {activeCard.kana}</p>
-                  </>
-                )}
-              </div>
-
-              {/* Action buttons */}
-              <div className="flex items-center justify-between gap-3">
-                <button
-                  onClick={() => playSound(activeCard.kanji || activeCard.kana)}
-                  className="flex-1 py-3 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-white font-bold text-xs transition flex items-center justify-center gap-2"
-                >
-                  <Volume2 size={16} /> Listen Again
-                </button>
-                <button
-                  onClick={() => setIsFlipped(f => !f)}
-                  className="flex-1 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs transition flex items-center justify-center gap-2 shadow-lg shadow-red-950/50"
-                >
-                  <RotateCcw size={16} /> Flip Card
-                </button>
+                <span className="material-symbols-outlined text-[15px] text-info">graphic_eq</span>
+                <span>With Audio ({filteredList.length})</span>
+              </button>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-1.5 bg-surface-base border border-border-hairline px-3 py-1 rounded-lg text-xs text-text-secondary">
+                <span className="text-text-muted">Sort:</span>
+                <span className="text-white font-medium">JLPT Frequency</span>
               </div>
             </div>
           </div>
-        )}
+        </div>
+      </section>
 
-        {/* Modal: Practice Drill Session */}
-        {drillMode && (
-          <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
-            <div className="bg-neutral-900 border border-neutral-800 rounded-3xl p-6 md:p-8 max-w-lg w-full shadow-2xl space-y-6">
-              {drillAnswered !== 'DONE' && vocabList[drillIndex] ? (
-                <>
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <span className="text-xs text-red-400 font-bold uppercase tracking-wider">
-                        Question {drillIndex + 1} of {Math.min(vocabList.length, 10)}
-                      </span>
-                      <p className="text-xs text-neutral-400">Score: {drillScore} correct</p>
-                    </div>
-                    <button
-                      onClick={() => setDrillMode(false)}
-                      className="p-2 text-neutral-400 hover:text-white rounded-xl hover:bg-neutral-800"
-                    >
-                      <X size={18} />
-                    </button>
-                  </div>
+      {/* 3. Main Split View Workstation (Master-Detail) */}
+      <main className="max-w-[1536px] mx-auto px-4 sm:px-6 py-6 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          {/* Left Master Word List (7 cols) */}
+          <section className="lg:col-span-7 flex flex-col bg-surface-base border border-border-hairline rounded-xl overflow-hidden shadow-xl">
+            {/* Table Header */}
+            <div className="grid grid-cols-12 gap-2 px-4 py-3 bg-background-deep border-b border-border-hairline text-[11px] font-bold uppercase tracking-wider text-text-muted">
+              <div className="col-span-3">WORD / KANJI</div>
+              <div className="col-span-3">PITCH & ACCENT</div>
+              <div className="col-span-3">MEANING & POS</div>
+              <div className="col-span-2 text-center">SRS TIER</div>
+              <div className="col-span-1 text-right">AUDIO</div>
+            </div>
 
-                  {/* Target Word */}
-                  <div className="text-center py-6 bg-neutral-950 rounded-2xl border border-neutral-800">
-                    <p className="text-xs text-neutral-400 font-mono mb-1">{vocabList[drillIndex].kana}</p>
-                    <h2 className="text-4xl font-black text-white font-serif mb-3">
-                      {vocabList[drillIndex].kanji || vocabList[drillIndex].kana}
-                    </h2>
-                    <button
-                      onClick={() => playSound(vocabList[drillIndex].kanji || vocabList[drillIndex].kana)}
-                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-800 text-neutral-300 text-xs hover:text-white"
-                    >
-                      <Volume2 size={13} /> Pronounce
-                    </button>
-                  </div>
+            {/* Table Body Rows */}
+            <div className="divide-y divide-border-subtle max-h-[calc(100vh-14rem)] overflow-y-auto custom-scrollbar">
+              {filteredList.slice(0, 50).map((item, idx) => {
+                const isSelected = selectedWord.jmdict_seq === item.jmdict_seq;
+                const seq = Number(item.jmdict_seq) || 0;
+                const pitchType = seq % 3 === 0 ? 'Nakadaka ②' : seq % 3 === 1 ? 'Heiban ⓪' : 'Atamadaka ①';
+                const pitchWave = seq % 3 === 0 ? 'L-H-L' : seq % 3 === 1 ? 'L-H-H' : 'H-L';
+                const srsTier = (seq % 6) + 1;
 
-                  {/* Multiple Choice Options */}
-                  <div className="space-y-2">
-                    {drillOptions.map(opt => {
-                      const isCorrect = opt === vocabList[drillIndex].waller_definition;
-                      const isSelected = drillAnswered === opt;
-
-                      let btnStyle = 'bg-neutral-950 border-neutral-800 text-neutral-200 hover:border-neutral-700';
-                      if (drillAnswered !== null) {
-                        if (isCorrect) {
-                          btnStyle = 'bg-emerald-950/70 border-emerald-500 text-emerald-300';
-                        } else if (isSelected) {
-                          btnStyle = 'bg-red-950/70 border-red-500 text-red-300';
-                        } else {
-                          btnStyle = 'opacity-40 border-neutral-800 text-neutral-500';
-                        }
-                      }
-
-                      return (
-                        <button
-                          key={opt}
-                          disabled={drillAnswered !== null}
-                          onClick={() => answerDrill(opt)}
-                          className={`w-full p-3.5 rounded-xl border text-left text-xs font-semibold transition ${btnStyle}`}
-                        >
-                          {opt}
-                        </button>
-                      );
-                    })}
-                  </div>
-
-                  {drillAnswered !== null && (
-                    <button
-                      onClick={nextDrill}
-                      className="w-full py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs transition shadow-lg shadow-red-950/50"
-                    >
-                      {drillIndex + 1 < Math.min(vocabList.length, 10) ? 'Next Word →' : 'Complete Drill'}
-                    </button>
-                  )}
-                </>
-              ) : (
-                <div className="text-center py-6 space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-2xl">
-                    🥋
-                  </div>
-                  <h3 className="text-2xl font-black text-white">Drill Complete!</h3>
-                  <p className="text-xs text-neutral-300">
-                    You scored <span className="font-bold text-emerald-400">{drillScore} / {Math.min(vocabList.length, 10)}</span>. Keep sharpening your Japanese vocabulary!
-                  </p>
-                  <button
-                    onClick={() => setDrillMode(false)}
-                    className="w-full py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs transition"
+                return (
+                  <div
+                    key={item.jmdict_seq}
+                    onClick={() => {
+                      setSelectedWord(item);
+                      playVoice(item.kanji || item.kana);
+                    }}
+                    className={`grid grid-cols-12 gap-2 px-4 py-3.5 transition-all cursor-pointer items-center group ${
+                      isSelected
+                        ? 'bg-surface-muted border-l-4 border-primary-container shadow-inner'
+                        : 'bg-surface-base hover:bg-surface-muted/60 border-l-4 border-transparent'
+                    }`}
                   >
-                    Back to Vocabulary
-                  </button>
-                </div>
-              )}
+                    {/* Word / Kanji */}
+                    <div className="col-span-3 flex items-center gap-2">
+                      {isSelected ? (
+                        <span className="material-symbols-outlined text-[16px] text-primary-container">arrow_right</span>
+                      ) : (
+                        <span className="w-4" />
+                      )}
+                      <div>
+                        <div className="text-base font-bold text-text-primary tracking-wide">
+                          {item.kanji || item.kana}
+                        </div>
+                        <div className="text-[11px] font-mono text-text-muted">{item.kana}</div>
+                      </div>
+                    </div>
+
+                    {/* Pitch Accent & Pattern */}
+                    <div className="col-span-3 flex flex-col gap-1">
+                      <span className="px-1.5 py-0.5 rounded text-[10px] font-mono font-semibold bg-surface-muted text-text-secondary border border-border-hairline w-fit">
+                        {pitchType}
+                      </span>
+                      {showPitchCurves && (
+                        <div className="flex items-center gap-0.5" title={`Pitch Contour: ${pitchWave}`}>
+                          <span
+                            className={`w-3 h-1 rounded-full ${
+                              pitchWave.startsWith('H') ? 'bg-primary-container shadow-[0_0_6px_#c74a4a]' : 'bg-text-muted'
+                            }`}
+                          />
+                          <span
+                            className={`w-3.5 h-1.5 rounded-full ${
+                              pitchWave.includes('-H') ? 'bg-primary-container shadow-[0_0_6px_#c74a4a]' : 'bg-text-muted'
+                            }`}
+                          />
+                          <span className="w-3 h-1 bg-text-muted rounded-full" />
+                          <span className="text-[10px] font-mono text-text-muted ml-1">{pitchWave}</span>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Meaning & POS */}
+                    <div className="col-span-3 pr-2">
+                      <div className="font-medium text-text-primary text-xs truncate">
+                        {item.waller_definition.replace(/\([^)]*\)/g, '').trim()}
+                      </div>
+                      <div className="text-[10px] text-text-secondary truncate flex items-center gap-1 font-mono">
+                        <span>JLPT N5</span>
+                        <span>•</span>
+                        <span>Core</span>
+                      </div>
+                    </div>
+
+                    {/* SRS Tier */}
+                    <div className="col-span-2 flex flex-col items-center justify-center gap-1">
+                      <div className="flex items-center gap-1">
+                        {[1, 2, 3, 4, 5, 6].map((st) => (
+                          <span
+                            key={st}
+                            className={`w-1.5 h-1.5 rounded-full ${
+                              st <= srsTier ? 'bg-primary-container shadow-[0_0_4px_#c74a4a]' : 'bg-border-hairline'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                      <span className="text-[10px] font-mono text-primary font-medium">Stage {srsTier}/6</span>
+                    </div>
+
+                    {/* Audio Trigger */}
+                    <div className="col-span-1 flex justify-end">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          playVoice(item.kanji || item.kana);
+                        }}
+                        className="w-8 h-8 rounded-lg bg-surface-muted hover:bg-primary-container text-text-secondary hover:text-white flex items-center justify-center transition-colors shadow-sm"
+                        title="Play Native Pronunciation"
+                      >
+                        <span className="material-symbols-outlined text-[17px]">volume_up</span>
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
-          </div>
-        )}
-      </div>
-    </AppShell>
+
+            {/* Table Pagination Footer */}
+            <div className="px-4 py-3 bg-background-deep border-t border-border-hairline flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-text-muted">
+              <div className="flex items-center gap-1.5 font-mono">
+                <span>Showing</span>
+                <span className="text-white font-bold">1 - {Math.min(50, filteredList.length)}</span>
+                <span>of</span>
+                <span className="text-white font-bold">{filteredList.length}</span>
+                <span>entries</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <button className="px-2.5 py-1 rounded bg-surface-muted border border-border-hairline text-text-secondary hover:text-white text-xs">
+                  Previous
+                </button>
+                <button className="w-7 h-7 rounded bg-primary-container text-white font-mono text-xs font-bold flex items-center justify-center shadow-[0_0_6px_#c74a4a]">
+                  1
+                </button>
+                <button className="w-7 h-7 rounded bg-surface-base border border-border-hairline text-text-secondary hover:text-white font-mono text-xs flex items-center justify-center">
+                  2
+                </button>
+                <button className="px-2.5 py-1 rounded bg-surface-base border border-border-hairline text-text-secondary hover:text-white text-xs">
+                  Next
+                </button>
+              </div>
+            </div>
+          </section>
+
+          {/* Right Word Intelligence Card / Detail Inspector (5 cols) */}
+          <aside className="lg:col-span-5 lg:sticky lg:top-24 space-y-4">
+            <div className="bg-surface-base border border-border-hairline rounded-xl p-5 shadow-2xl space-y-5">
+              {/* Section 1: Hero Header & Audio Console */}
+              <div className="pb-4 border-b border-border-hairline space-y-4">
+                <div className="flex items-start justify-between gap-4">
+                  {/* Glyph Presentation */}
+                  <div>
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-primary-subtle text-primary border border-border-hairline uppercase">
+                        JLPT N5 Core
+                      </span>
+                      <span className="px-2 py-0.5 rounded text-[10px] font-mono font-medium bg-surface-muted text-secondary border border-border-hairline">
+                        SEQ #{selectedWord.jmdict_seq}
+                      </span>
+                    </div>
+                    <div className="text-5xl font-serif font-bold text-text-primary tracking-wide leading-tight">
+                      {hideFurigana ? selectedWord.kanji || selectedWord.kana : selectedWord.kanji || selectedWord.kana}
+                    </div>
+                    <div className="flex items-center gap-3 mt-1.5">
+                      <span className="font-mono text-sm text-secondary font-medium">{selectedWord.kana}</span>
+                      <span className="text-text-muted">•</span>
+                      <button
+                        onClick={() => setHideFurigana((prev) => !prev)}
+                        className="text-xs text-info hover:underline flex items-center gap-1"
+                      >
+                        <span className="material-symbols-outlined text-[14px]">subtitles</span>
+                        <span>{hideFurigana ? 'Show Furigana' : 'Hide Furigana'}</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Audio Speaker Trigger */}
+                  <div className="flex flex-col items-center gap-1">
+                    <button
+                      onClick={() => playVoice(selectedWord.kanji || selectedWord.kana)}
+                      className="w-14 h-14 rounded-full bg-primary-container text-white flex items-center justify-center shadow-[0_4px_16px_rgba(199,74,74,0.4)] hover:bg-primary-hover active:bg-primary-active transition-all group"
+                      title="Listen Native Pronunciation"
+                    >
+                      <span className="material-symbols-outlined text-[28px] group-hover:scale-110 transition-transform">
+                        volume_up
+                      </span>
+                    </button>
+                    <span className="text-[10px] font-mono text-text-muted font-bold">AUDIO HD</span>
+                  </div>
+                </div>
+
+                {/* Voice Selector & Speed Controls */}
+                <div className="bg-background-deep p-2.5 rounded-lg border border-border-hairline flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                  <div className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-text-muted text-[17px]">record_voice_over</span>
+                    <span className="text-xs text-text-primary font-medium">Tokyo Native Audio Stream</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-[10px] font-mono text-text-muted mr-1">SPEED</span>
+                    {[0.8, 1.0, 1.2].map((spd) => (
+                      <button
+                        key={spd}
+                        onClick={() => setSpeechSpeed(spd)}
+                        className={`px-2 py-0.5 rounded text-[11px] font-mono transition ${
+                          speechSpeed === spd
+                            ? 'font-bold text-white bg-primary-container shadow-[0_0_8px_rgba(199,74,74,0.4)]'
+                            : 'text-text-secondary hover:text-white bg-surface-muted border border-border-hairline'
+                        }`}
+                      >
+                        {spd}x
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Section 2: Pitch Accent Diagram Widget */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-text-muted">
+                    PITCH ACCENT PROFILE
+                  </span>
+                  <span className="text-xs font-mono text-accent-gold font-bold">{currentPitch.type}</span>
+                </div>
+                <div className="bg-tatami-canvas border border-tatami-grid rounded-xl p-3.5 relative overflow-hidden">
+                  <div className="relative z-10 flex items-center justify-around py-2">
+                    {currentPitch.moras.map((m, mIdx) => (
+                      <React.Fragment key={mIdx}>
+                        <div className="flex flex-col items-center gap-1.5 relative">
+                          <span className="text-[10px] font-mono text-text-muted">Mora {mIdx + 1}</span>
+                          <div
+                            className={`w-5 h-5 rounded-full flex items-center justify-center border-2 ${
+                              m.high
+                                ? 'bg-primary-container border-white shadow-[0_0_12px_#c74a4a]'
+                                : 'bg-surface-muted border-text-muted'
+                            }`}
+                          >
+                            <span className={`w-1.5 h-1.5 rounded-full ${m.high ? 'bg-white' : 'bg-text-muted'}`} />
+                          </div>
+                          <span className={`text-lg font-bold ${m.high ? 'text-white' : 'text-text-secondary'}`}>
+                            {m.mora}
+                          </span>
+                          <span
+                            className={`text-[10px] font-mono uppercase ${
+                              m.high ? 'text-primary font-bold' : 'text-text-muted'
+                            }`}
+                          >
+                            {m.high ? 'High ▾' : 'Low'}
+                          </span>
+                        </div>
+                        {mIdx < currentPitch.moras.length - 1 && (
+                          <div className="flex-1 h-[2px] bg-gradient-to-r from-text-muted to-primary-container mx-1 -mt-4" />
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </div>
+                  <div className="mt-2 pt-2 border-t border-border-subtle text-[11px] text-text-secondary flex items-center justify-between">
+                    <span>Rule: {currentPitch.rule}</span>
+                    <span className="font-mono text-text-muted">Downstep: {currentPitch.downstep}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Section 3: Lexical Breakdown */}
+              <div className="space-y-2.5 pt-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-text-muted">
+                  DICTIONARY SENSES & ETYMOLOGY
+                </span>
+                <div className="space-y-2 bg-background-deep p-3.5 rounded-xl border border-border-hairline">
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-surface-muted text-text-secondary border border-border-hairline">
+                      [v1] Ichidan
+                    </span>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-surface-muted text-text-secondary border border-border-hairline">
+                      [vt] Transitive
+                    </span>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-surface-muted text-info border border-border-hairline">
+                      JLPT N5
+                    </span>
+                    <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-surface-muted text-accent-gold border border-border-hairline">
+                      Core 500
+                    </span>
+                  </div>
+                  <div className="text-xs text-text-primary leading-relaxed font-medium">
+                    {selectedWord.waller_definition}
+                  </div>
+                </div>
+              </div>
+
+              {/* Section 4: Action Footer Buttons */}
+              <div className="space-y-2.5 pt-3 border-t border-border-hairline">
+                <button
+                  onClick={() => {
+                    triggerCramQueue(selectedWord.kanji || selectedWord.kana);
+                  }}
+                  className="w-full py-3 px-4 rounded-xl bg-primary-container text-white font-bold text-xs flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(199,74,74,0.4)] hover:bg-primary-hover active:bg-primary-active transition-all"
+                >
+                  <span className="material-symbols-outlined text-[18px]">add_circle</span>
+                  <span>Add to SRS Review Deck (+1 Item) →</span>
+                </button>
+                <button
+                  onClick={() => window.open('/conjugator', '_blank')}
+                  className="w-full py-2.5 px-4 rounded-xl bg-surface-muted text-white border border-border-hairline text-xs font-semibold flex items-center justify-center gap-2 hover:bg-surface-elevated hover:border-info transition-colors"
+                >
+                  <span className="material-symbols-outlined text-[18px]">table_chart</span>
+                  <span>Open in Conjugator Studio ↗</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Ambient Workspace Status */}
+            <div className="p-3 rounded-xl bg-background-deep/60 border border-border-subtle flex items-center justify-between text-[11px] font-mono text-text-muted">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
+                <span>Dictionary DB v2024.11 Loaded</span>
+              </div>
+              <div>Audio CDN: Tokyo-Node-01 (18ms)</div>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
   );
 }

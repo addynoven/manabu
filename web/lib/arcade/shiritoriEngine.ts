@@ -408,14 +408,28 @@ export function getBotShiritoriMove(
 }
 
 /**
- * Returns quick suggestions for player from available dictionary
+ * Returns quick suggestions for player from available dictionary.
+ * Includes safe chaining words by default, and optionally includes words ending in 'ん'
+ * for quick testing and decisive moves.
  */
 export function getPlayerSuggestions(
   requiredKana: string,
   usedWords: Set<string>,
-  limit = 4,
+  limit = 3,
+  includeNWord = true,
 ): ShiritoriWord[] {
-  return SHIRITORI_DICTIONARY.filter(
+  const safe = SHIRITORI_DICTIONARY.filter(
     w => w.kana.startsWith(requiredKana) && !w.kana.endsWith('ん') && !usedWords.has(w.kana),
   ).slice(0, limit);
+
+  if (includeNWord) {
+    const nWord = SHIRITORI_DICTIONARY.find(
+      w => w.kana.startsWith(requiredKana) && w.kana.endsWith('ん') && !usedWords.has(w.kana),
+    );
+    if (nWord && !safe.some(s => s.kana === nWord.kana)) {
+      safe.push(nWord);
+    }
+  }
+
+  return safe;
 }

@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-surface-muted: #0f3947;
+  --color-on-primary-fixed: #410005;
+  --color-tatami-grid: #133e4c;
+  --color-tertiary: #f9bd22;
+  --color-on-background: #cae7f4;
+  --color-info: #38bdf8;
+  --color-text-muted: #5c727d;
+  --color-primary-hover: #d95a5a;
+  --color-inverse-primary: #aa3436;
+  --color-error-container: #93000a;
+  --color-surface-elevated: #134454;
+  --color-border-hairline: #17424f;
+  --color-surface-variant: #1d3843;
+  --color-text-primary: #f0f0f0;
+  --color-success-subtle: #063b28;
+  --color-surface-base: #0a3240;
+  --color-text-secondary: #8fa2aa;
+  --color-surface-container-lowest: #001017;
+  --color-primary: #ffb3af;
+  --color-surface-container-highest: #1d3843;
+  --color-accent-gold: #fbbf24;
+  --color-washi-card: #fcfcfc;
+  --color-surface-container-low: #011f29;
+  --color-washi-text: #1f1e1d;
+  --color-background-canvas: #082630;
+  --color-tatami-canvas: #071f27;
+  --color-background-deep: #051b22;
+  --color-accent-gold-subtle: #2a2415;
+  --color-surface-container: #04232d;
+  --color-surface-highlight: #1a5163;
+  --color-primary-active: #b33d3d;
+  --color-primary-container: #c74a4a;
+  --color-on-primary-container: #fffbff;
+  --color-success: #34d399;
+  --color-warning: #f59e0b;
+  --color-primary-subtle: #2d1b22;
+  --color-border-subtle: #12333e;
+  --color-surface-container-high: #112d38;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom Stitch Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #051b22;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #17424f;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #284b5a;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Noto Sans JP', var(--font-geist-sans), sans-serif;
+  background-color: #082630;
+  color: #f0f0f0;
 }
+

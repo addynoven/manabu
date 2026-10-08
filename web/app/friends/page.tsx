@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import { AppShell } from '@/components/AppShell';
+import { StitchHeader } from '@/components/StitchHeader';
+import { AuthGate } from '@/components/AuthGate';
 import { useAuth } from '@/lib/AuthContext';
 import { fetchWithAuth } from '@/lib/api';
 import { duelClient, DuelGameType } from '@/lib/duelClient';
@@ -242,31 +243,38 @@ export default function FriendsPage() {
   }, [friends, profile]);
 
   return (
-    <AppShell>
-      <div className="max-w-5xl mx-auto space-y-8 pb-12">
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-wider mb-2">
-              <Users size={14} /> Clan & Community
-            </div>
-            <h1 className="text-2xl md:text-3xl font-black text-white">
-              Clan & Friends • <span className="font-serif text-red-500 font-normal">門弟・好敵手</span>
-            </h1>
-            <p className="text-xs text-neutral-400 mt-1">
-              Connect with fellow Japanese learners, compare weekly study effort, and challenge clan rivals.
-            </p>
-          </div>
+    <AuthGate>
+      <div className="bg-background-canvas text-text-primary min-h-screen flex flex-col font-body-md antialiased selection:bg-primary-container selection:text-white">
+        <StitchHeader />
+        <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
+          {/* COMMAND & TOPIC FILTER RIBBON (Stitch Screen 12) */}
+          <section className="bg-surface-base border border-border-hairline rounded-xl p-5 shadow-sm">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-border-subtle">
+              <div className="space-y-1">
+                <div className="flex items-center gap-2">
+                  <span className="inline-flex items-center gap-1.5 text-xs text-accent-gold bg-accent-gold-subtle border border-accent-gold/30 px-2.5 py-0.5 rounded-full font-bold">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent-gold animate-pulse" />
+                    Manabu Community • Deliberate Language Discussions
+                  </span>
+                  <span className="text-text-muted text-xs">• {friends.length + 42} Scholars in Dojo</span>
+                </div>
+                <h1 className="text-xl sm:text-2xl font-bold text-text-primary tracking-tight">
+                  Exchange mnemonics, challenge rivals, and compete in weekly cohorts.
+                </h1>
+              </div>
 
-          <button
-            onClick={() => fetchCommunityData(true)}
-            disabled={refreshing}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-neutral-900 border border-neutral-800 text-xs font-bold text-neutral-300 hover:text-white transition w-fit"
-          >
-            <RefreshCw size={14} className={refreshing ? 'animate-spin' : ''} />
-            {refreshing ? 'Syncing...' : 'Refresh Clan'}
-          </button>
-        </div>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => fetchCommunityData(true)}
+                  disabled={refreshing}
+                  className="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-muted border border-border-hairline text-xs font-semibold text-text-primary hover:bg-surface-elevated transition"
+                >
+                  <RefreshCw size={13} className={refreshing ? 'animate-spin' : ''} />
+                  <span>{refreshing ? 'Syncing...' : 'Sync'}</span>
+                </button>
+              </div>
+            </div>
+          </section>
 
         {/* Action Message */}
         {actionMessage && (
@@ -387,32 +395,70 @@ export default function FriendsPage() {
           </button>
         </div>
 
-        {/* TAB 1: WEEKLY LEADERBOARD */}
+        {/* TAB 1: SAPPHIRE LEAGUE & WEEKLY STANDINGS (Stitch Screen #11) */}
         {activeTab === 'board' && (
           <div className="space-y-4">
+            {/* Sapphire League Cohort Banner */}
+            <div className="relative overflow-hidden bg-gradient-to-r from-blue-950/60 via-indigo-950/40 to-neutral-900 border border-blue-500/30 rounded-2xl p-5 shadow-xl">
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/20 text-white font-black text-xl">
+                    💎
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-bold text-blue-400 uppercase tracking-widest bg-blue-500/10 px-2 py-0.5 rounded border border-blue-500/20">
+                        Tier V • Sapphire League
+                      </span>
+                      <span className="text-xs font-mono text-neutral-400">Cohort #42</span>
+                    </div>
+                    <h3 className="text-lg font-black text-white mt-1">Study Circle Weekly Standings</h3>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 text-xs">
+                  <div className="bg-neutral-900/80 px-3 py-1.5 rounded-xl border border-neutral-800 text-neutral-300 flex items-center gap-1.5">
+                    <span className="text-emerald-400 font-bold">Top 3:</span>
+                    <span>Promote to Diamond 👑</span>
+                  </div>
+                  <div className="bg-neutral-900/80 px-3 py-1.5 rounded-xl border border-neutral-800 text-neutral-400 flex items-center gap-1.5">
+                    <span className="text-rose-400 font-bold">Bottom 3:</span>
+                    <span>Relegate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="flex items-center justify-between text-xs text-neutral-400 px-2">
-              <span>Weekly Standings • Resets Monday 00:00 UTC</span>
+              <span>Weekly Standings • Resets Sunday 23:59 UTC</span>
               <span className="font-mono text-neutral-500">{currentWeekId}</span>
             </div>
 
             {loading ? (
-              <div className="p-12 text-center text-xs text-neutral-500">Loading clan standings...</div>
+              <div className="p-12 text-center text-xs text-neutral-500">Loading cohort standings...</div>
             ) : weeklyBoard.length === 0 ? (
               <div className="p-12 text-center bg-neutral-900/40 border border-neutral-800 rounded-3xl space-y-2">
                 <Users size={28} className="mx-auto text-neutral-600" />
-                <p className="text-xs text-neutral-400 font-bold">No clan activity yet this week.</p>
-                <p className="text-xs text-neutral-500">Share your friend code to start competing!</p>
+                <p className="text-xs text-neutral-400 font-bold">No cohort activity yet this week.</p>
+                <p className="text-xs text-neutral-500">Practice vocabulary or duels to earn XP for your study circle!</p>
               </div>
             ) : (
               <div className="space-y-2">
                 {weeklyBoard.map((item, idx) => {
                   const isMe = item.uid === profile?.uid;
+                  const isPromotion = idx < 3;
+                  const isRelegation = weeklyBoard.length >= 6 && idx >= weeklyBoard.length - 3;
+
                   return (
                     <div
                       key={item.uid}
                       className={`flex items-center justify-between p-4 rounded-2xl border transition ${
                         isMe
-                          ? 'bg-gradient-to-r from-red-950/30 to-neutral-900 border-red-500/40 shadow-sm shadow-red-950/30'
+                          ? 'bg-gradient-to-r from-blue-950/40 to-neutral-900 border-blue-500/50 shadow-md shadow-blue-950/30 ring-1 ring-blue-500/30'
+                          : isPromotion
+                          ? 'bg-emerald-950/15 border-emerald-500/30 hover:border-emerald-500/50'
+                          : isRelegation
+                          ? 'bg-rose-950/10 border-rose-500/20 hover:border-rose-500/40'
                           : 'bg-neutral-900/60 border-neutral-800 hover:border-neutral-700'
                       }`}
                     >
@@ -439,8 +485,18 @@ export default function FriendsPage() {
                           <div className="flex items-center gap-2">
                             <span className="text-xs font-bold text-white">{item.displayName}</span>
                             {isMe && (
-                              <span className="px-2 py-0.5 rounded-full bg-red-500/20 text-red-400 text-[10px] font-bold">
+                              <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-400 text-[10px] font-bold">
                                 YOU
+                              </span>
+                            )}
+                            {isPromotion && (
+                              <span className="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[9px] font-extrabold uppercase border border-emerald-500/20">
+                                Promotion Zone
+                              </span>
+                            )}
+                            {isRelegation && (
+                              <span className="px-1.5 py-0.5 rounded bg-rose-500/10 text-rose-400 text-[9px] font-extrabold uppercase border border-rose-500/20">
+                                Relegation Zone
                               </span>
                             )}
                           </div>
@@ -757,7 +813,8 @@ export default function FriendsPage() {
             </div>
           </div>
         )}
-      </div>
-    </AppShell>
+      </main>
+    </div>
+  </AuthGate>
   );
 }

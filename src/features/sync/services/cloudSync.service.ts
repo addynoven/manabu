@@ -38,8 +38,10 @@ class CloudSyncService {
 
   private listeners: Set<(status: SyncStatusState) => void> = new Set();
   private throttleTimer: ReturnType<typeof setTimeout> | null = null;
+  private pollTimer: ReturnType<typeof setInterval> | null = null;
   private lastSyncedTime = 0;
-  private readonly THROTTLE_MS = 3 * 60 * 1000; // 3 minutes while active
+  private readonly THROTTLE_MS = 15 * 1000; // 15 seconds debounce when local learning changes occur
+  private readonly POLL_INTERVAL_MS = 30 * 1000; // 30 seconds background check when app is active (WhatsApp/Discord style)
 
   public getStatus(): SyncStatusState {
     return { ...this.syncStatus };
@@ -257,25 +259,43 @@ class CloudSyncService {
 
       const data = parsed.data;
 
-      // 1. Progress & SRS Mastery
+      // 1. Progress & SRS Mastery - Merge with high-water marks
       useProgressStore.setState(prev => ({
         ...prev,
-        ...data.stats,
+        totalXp: Math.max(prev.totalXp, data.stats.totalXp),
+        weeklyXp: Math.max(prev.weeklyXp, data.stats.weeklyXp),
+        todayXp: Math.max(prev.todayXp, data.stats.todayXp),
+        currentStreak: Math.max(prev.currentStreak, data.stats.currentStreak),
+        bestStreak: Math.max(prev.bestStreak, data.stats.bestStreak),
+        totalQuestionsAnswered: Math.max(prev.totalQuestionsAnswered, data.stats.totalQuestionsAnswered),
+        totalCorrect: Math.max(prev.totalCorrect, data.stats.totalCorrect),
+        displayName: data.stats.displayName || prev.displayName,
+        avatarEmoji: data.stats.avatarEmoji || prev.avatarEmoji,
+        lastActiveDate: data.stats.lastActiveDate || prev.lastActiveDate,
+        joinedDate: data.stats.joinedDate || prev.joinedDate,
+        kanaPracticedCount: Math.max(prev.kanaPracticedCount, data.stats.kanaPracticedCount || 0),
+        kanjiPracticedCount: Math.max(prev.kanjiPracticedCount, data.stats.kanjiPracticedCount || 0),
+        vocabPracticedCount: Math.max(prev.vocabPracticedCount, data.stats.vocabPracticedCount || 0),
+        mastery: { ...prev.mastery, ...data.stats.mastery },
       }));
 
-      // 2. Dojo Curriculum State
+      // 2. Dojo Curriculum State - Union of completed lessons & gates
       useDojoStore.setState(prev => ({
         ...prev,
-        ...data.dojo,
+        completedLessons: { ...prev.completedLessons, ...data.dojo.completedLessons },
+        passedRevisionGates: { ...prev.passedRevisionGates, ...data.dojo.passedRevisionGates },
+        passedDailyRevisions: { ...prev.passedDailyRevisions, ...data.dojo.passedDailyRevisions },
+        activeLessonId: data.dojo.activeLessonId || prev.activeLessonId,
+        cooldownUntil: data.dojo.cooldownUntil ?? prev.cooldownUntil,
       }));
 
-      // 3. Achievements
+      // 3. Achievements - Union of unlocked achievements
       useAchievementStore.setState(prev => ({
         ...prev,
-        unlocked: data.achievements.unlocked,
+        unlocked: { ...prev.unlocked, ...data.achievements.unlocked },
       }));
 
-      // 4. Arcade Scores
+      // 4. Arcade Scores - High water marks
       if (data.arcade) {
         useArcadeStore.setState(prev => ({
           ...prev,
@@ -320,23 +340,17 @@ class CloudSyncService {
     }
   }
 
-  /**
-   * Called on auth change (login / restore):
-   * Attempts to restore from cloud if local progress is completely blank;
-   * otherwise saves current local progress to cloud.
-   */
   public async syncOnAuthChange(userId: string): Promise<void> {
     if (!userId) return;
-    const progress = useProgressStore.getState();
-    const isLocalBlank = progress.totalQuestionsAnswered === 0 && progress.totalXp === 0;
-
-    if (isLocalBlank) {
+    try {
+      // 1. Fetch latest backup from server
       const loadRes = await this.loadUserProgressFromCloud(userId);
       if (loadRes.ok && loadRes.data) {
         return;
       }
-    }
+    } catch {}
 
+    // Fallback: If no server backup exists yet, save current local progress
     await this.saveUserProgressToCloud(userId);
   }
 
@@ -375,9 +389,40 @@ class CloudSyncService {
    * for invisible, throttled background sync.
    */
   public initializeReactiveSync(): () => void {
-    // Sync immediately when app transitions to background
+    const startPolling = () => {
+      if (this.pollTimer) clearInterval(this.pollTimer);
+      this.pollTimer = setInterval(() => {
+        const user = firebaseAuth.currentUser;
+        if (user?.uid && !this.syncStatus.isSyncing) {
+          this.loadUserProgressFromCloud(user.uid).catch(() => {});
+        }
+      }, this.POLL_INTERVAL_MS);
+    };
+
+    const stopPolling = () => {
+      if (this.pollTimer) {
+        clearInterval(this.pollTimer);
+        this.pollTimer = null;
+      }
+    };
+
+    // Initial check and start active polling
+    startPolling();
+    const initialUser = firebaseAuth.currentUser;
+    if (initialUser?.uid) {
+      this.loadUserProgressFromCloud(initialUser.uid).catch(() => {});
+    }
+
+    // Sync on app state changes: pull on active, push on background/inactive
     const appStateSub = AppState.addEventListener('change', (nextState: AppStateStatus) => {
-      if (nextState === 'background' || nextState === 'inactive') {
+      const user = firebaseAuth.currentUser;
+      if (nextState === 'active') {
+        startPolling();
+        if (user?.uid) {
+          this.loadUserProgressFromCloud(user.uid).catch(() => {});
+        }
+      } else if (nextState === 'background' || nextState === 'inactive') {
+        stopPolling();
         this.triggerThrottledSync(true);
       }
     });
@@ -438,6 +483,7 @@ class CloudSyncService {
     });
 
     return () => {
+      stopPolling();
       appStateSub.remove();
       unsubProgress();
       unsubDojo();

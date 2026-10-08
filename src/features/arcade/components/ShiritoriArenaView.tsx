@@ -8,6 +8,8 @@ import {
   TextInput,
   Animated,
   ActivityIndicator,
+  Keyboard,
+  Platform,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
@@ -45,12 +47,14 @@ interface ShiritoriArenaViewProps {
   onClose: () => void;
   duelMatchId?: string;
   initialDuelState?: DuelState;
+  onRematch?: () => void;
 }
 
 export function ShiritoriArenaView({
   onClose,
   duelMatchId,
   initialDuelState,
+  onRematch,
 }: ShiritoriArenaViewProps) {
   const insets = useSafeAreaInsets();
   const { colors: theme } = useAppTheme();
@@ -97,6 +101,32 @@ export function ShiritoriArenaView({
 
   const scrollRef = useRef<ScrollView>(null);
 
+  // Keyboard avoidance height tracking
+  const [keyboardHeight, setKeyboardHeight] = useState(0);
+
+  useEffect(() => {
+    const showSub = Keyboard.addListener(
+      Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDidShow',
+      (e) => {
+        setKeyboardHeight(e.endCoordinates.height);
+        setTimeout(() => {
+          scrollRef.current?.scrollToEnd({ animated: true });
+        }, 80);
+      }
+    );
+    const hideSub = Keyboard.addListener(
+      Platform.OS === 'ios' ? 'keyboardWillHide' : 'keyboardDidHide',
+      () => {
+        setKeyboardHeight(0);
+      }
+    );
+
+    return () => {
+      showSub.remove();
+      hideSub.remove();
+    };
+  }, []);
+
   // Suggestions for player
   const suggestions = getPlayerSuggestions(requiredKana, usedKanaSet, 4);
 
@@ -120,6 +150,10 @@ export function ShiritoriArenaView({
   // SOLO BOT MODE LOGIC
   // -------------------------------------------------------------
   const startNewGame = useCallback((diff: ShiritoriDifficulty = difficulty) => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
     const starterWords: ShiritoriWord[] = [
       { word: '猫', kana: 'ねこ', romaji: 'neko', english: 'Cat' },
       { word: '桜', kana: 'さくら', romaji: 'sakura', english: 'Cherry blossom' },
@@ -471,7 +505,16 @@ export function ShiritoriArenaView({
   }
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.background, paddingTop: insets.top }]}>
+    <View
+      style={[
+        styles.container,
+        {
+          backgroundColor: theme.background,
+          paddingTop: insets.top,
+          paddingBottom: keyboardHeight > 0 ? keyboardHeight : insets.bottom,
+        },
+      ]}
+    >
       {/* Top Navigation & Status Bar */}
       <View style={[styles.navBar, { backgroundColor: theme.surface, borderBottomColor: theme.border }]}>
         <Pressable
@@ -553,27 +596,40 @@ export function ShiritoriArenaView({
       )}
 
       {/* Current Turn & Required Kana Banner */}
-      <View style={[styles.turnBanner, { backgroundColor: theme.surface, borderBottomColor: theme.border }]}>
+      <View
+        style={[
+          styles.turnBanner,
+          {
+            backgroundColor: currentTurn === 'player' ? 'rgba(72, 187, 120, 0.08)' : theme.surface,
+            borderBottomColor: currentTurn === 'player' ? '#48BB7840' : theme.border,
+          },
+        ]}
+      >
         <View style={styles.requiredKanaBox}>
-          <Text style={[styles.requiredKanaLabel, { color: theme.textMuted }]}>
-            Next Starting Kana:
+          <Text style={[styles.requiredKanaLabel, { color: currentTurn === 'player' ? '#276749' : theme.textMuted }]}>
+            {currentTurn === 'player' ? 'Your Start Kana:' : 'Opponent Start:'}
           </Text>
-          <View style={[styles.requiredKanaBadge, { backgroundColor: '#8B0000' }]}>
+          <View
+            style={[
+              styles.requiredKanaBadge,
+              { backgroundColor: currentTurn === 'player' ? '#10B981' : '#8B0000' },
+            ]}
+          >
             <Text style={styles.requiredKanaChar}>{requiredKana}</Text>
           </View>
         </View>
 
         <View style={styles.turnStatusWrap}>
           {currentTurn === 'player' ? (
-            <View style={[styles.statusTag, { backgroundColor: '#48BB7820' }]}>
-              <Text style={[styles.statusTagText, { color: '#276749' }]}>
-                YOUR TURN
+            <View style={[styles.statusTag, { backgroundColor: '#48BB7825', borderColor: '#48BB78', borderWidth: 1 }]}>
+              <Text style={[styles.statusTagText, { color: '#276749', fontWeight: '900' }]}>
+                🎯 YOUR TURN
               </Text>
             </View>
           ) : (
             <View style={[styles.statusTag, { backgroundColor: theme.surfaceSubtle }]}>
               <Text style={[styles.statusTagText, { color: theme.textSecondary }]}>
-                {isMultiplayer ? `${opponentName}'s TURN` : `${bot.name} is thinking...`}
+                {isMultiplayer ? `⏳ ${opponentName}'s Turn` : `⏳ ${bot.name} is thinking...`}
               </Text>
             </View>
           )}
@@ -592,6 +648,7 @@ export function ShiritoriArenaView({
         style={styles.chatScroll}
         contentContainerStyle={styles.chatContent}
         showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
       >
         {history.map((turn) => {
           const isPlayer = turn.player === 'player';
@@ -714,14 +771,29 @@ export function ShiritoriArenaView({
               </Text>
             </Pressable>
           ) : (
-            <Pressable
-              onPress={handleSafeClose}
-              style={[styles.playAgainBtn, { backgroundColor: theme.primary }]}
-            >
-              <Text style={[styles.playAgainBtnText, { color: theme.textOnPrimary }]}>
-                Exit to Arcade
-              </Text>
-            </Pressable>
+            <View style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}>
+              {onRematch && (
+                <Pressable
+                  onPress={() => {
+                    handleSafeClose();
+                    onRematch();
+                  }}
+                  style={[styles.playAgainBtn, { backgroundColor: '#10B981' }]}
+                >
+                  <Text style={[styles.playAgainBtnText, { color: '#FFF' }]}>
+                    ⚔️ Find Another Match
+                  </Text>
+                </Pressable>
+              )}
+              <Pressable
+                onPress={handleSafeClose}
+                style={[styles.playAgainBtn, { backgroundColor: theme.surfaceSubtle, borderWidth: 1, borderColor: theme.border }]}
+              >
+                <Text style={[styles.playAgainBtnText, { color: theme.textPrimary }]}>
+                  Exit to Arcade
+                </Text>
+              </Pressable>
+            </View>
           )}
         </View>
       ) : (
@@ -743,7 +815,11 @@ export function ShiritoriArenaView({
                   color: theme.textPrimary,
                 },
               ]}
-              placeholder={`Word starting with「${requiredKana}」...`}
+              placeholder={
+                currentTurn === 'player'
+                  ? `Word starting with「${requiredKana}」...`
+                  : `Waiting for ${opponentName}...`
+              }
               placeholderTextColor={theme.textMuted}
               value={inputWord}
               onChangeText={setInputWord}

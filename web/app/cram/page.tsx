@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useMemo, useEffect } from 'react';
-import { AppShell } from '@/components/AppShell';
+import { StitchHeader } from '@/components/StitchHeader';
+import { AuthGate } from '@/components/AuthGate';
 import { speakJapanese } from '@/data/kana';
 import rawVocab from '@/data/vocab_n5.json';
 import {
@@ -90,34 +91,36 @@ export default function CramStudioPage() {
   };
 
   return (
-    <AppShell>
-      <div className="flex-1 p-6 md:p-10 max-w-7xl mx-auto w-full space-y-8">
-        {/* Header matching Stitch Screen #2 */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-neutral-800 pb-6">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="px-2.5 py-1 bg-amber-950/80 text-amber-400 border border-amber-800/60 rounded-full text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5">
-                <Zap size={13} />
-                Cram Studio
-              </span>
-              <span className="text-xs text-neutral-400 font-mono">Zero-Penalty Practice Mode</span>
-            </div>
-            <h1 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight flex items-center gap-3 font-serif">
-              <span>集中特訓</span>
-              <span className="text-neutral-400 font-sans font-medium text-2xl">Custom Cram Studio</span>
-            </h1>
-            <p className="text-neutral-400 text-sm mt-1 max-w-xl">
-              Study any dataset on demand without affecting your SRS intervals or forgetting schedules. Ideal for pre-exam blitzes.
-            </p>
-          </div>
+    <AuthGate>
+      <div className="bg-background-canvas text-text-primary min-h-screen flex flex-col font-body-md antialiased selection:bg-primary-container selection:text-white">
+        <StitchHeader />
 
-          <div className="flex items-center gap-3">
-            <div className="bg-neutral-900 border border-neutral-800 px-4 py-2 rounded-xl text-center">
-              <span className="text-[10px] text-neutral-500 uppercase font-mono block">Available Items</span>
-              <span className="text-lg font-bold font-mono text-amber-400">{allCramItems.length}</span>
+        <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 py-6 space-y-6">
+          {/* Header */}
+          <div className="bg-surface-base border border-border-hairline rounded-xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="px-2.5 py-0.5 bg-accent-gold-subtle text-accent-gold border border-accent-gold/40 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <Zap size={13} />
+                  Cram Studio
+                </span>
+                <span className="text-xs text-text-muted font-mono">Zero-Penalty Practice Mode</span>
+              </div>
+              <h1 className="text-2xl sm:text-3xl font-bold text-text-primary tracking-tight flex items-center gap-3">
+                <span>集中特訓 • Custom Cram Studio</span>
+              </h1>
+              <p className="text-text-secondary text-xs sm:text-sm mt-1 max-w-xl">
+                Study any dataset on demand without affecting your SRS intervals or forgetting schedules. Ideal for pre-exam blitzes.
+              </p>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="bg-background-deep border border-border-hairline px-4 py-2 rounded-xl text-center">
+                <span className="text-[10px] text-text-muted uppercase font-mono block">Available Items</span>
+                <span className="text-lg font-bold font-mono text-accent-gold">{allCramItems.length}</span>
+              </div>
             </div>
           </div>
-        </div>
 
         {!isSessionActive || currentIndex >= activeDeck.length ? (
           /* Cram Configuration Panel matching Stitch Screen #2 */
@@ -286,7 +289,8 @@ export default function CramStudioPage() {
             )}
           </div>
         )}
+        </main>
       </div>
-    </AppShell>
+    </AuthGate>
   );
 }

@@ -55,16 +55,25 @@ export function RevisionGateModal({
         <Pressable style={styles.backdrop} onPress={onClose} />
 
         <View style={[styles.card, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-          <Pressable
-            onPress={onClose}
-            style={[styles.closeBtn, { backgroundColor: theme.surfaceSubtle }]}
-            hitSlop={8}
-          >
-            <X size={18} color={theme.textPrimary} />
-          </Pressable>
+          {/* Stitch Top Drag Pill */}
+          <View style={[styles.dragPill, { backgroundColor: theme.borderSubtle }]} />
 
-          <View style={[styles.flagCircle, { backgroundColor: unit.themeColor + '20' }]}>
-            <Flag size={36} color={unit.themeColor} />
+          {/* Top Row: Hanko Seal & Close Button */}
+          <View style={styles.topBar}>
+            <View style={[styles.hankoSeal, { borderColor: unit.themeColor || '#EF4444' }]}>
+              <Text style={[styles.hankoText, { color: unit.themeColor || '#EF4444' }]}>試</Text>
+            </View>
+            <Pressable
+              onPress={onClose}
+              style={[styles.closeBtn, { backgroundColor: theme.surfaceSubtle }]}
+              hitSlop={8}
+            >
+              <X size={18} color={theme.textPrimary} />
+            </Pressable>
+          </View>
+
+          <View style={[styles.flagCircle, { backgroundColor: (unit.themeColor || '#EF4444') + '20' }]}>
+            <Flag size={36} color={unit.themeColor || '#EF4444'} />
           </View>
 
           <Text style={[styles.title, { color: theme.textPrimary }]}>
@@ -78,7 +87,7 @@ export function RevisionGateModal({
             Cumulative revision check. Pass with at least 80% accuracy to clear the checkpoint and unlock the next unit.
           </Text>
 
-          <View style={[styles.statusBox, { backgroundColor: theme.surfaceSubtle }]}>
+          <View style={[styles.statusBox, { backgroundColor: theme.surfaceSubtle, borderColor: theme.border, borderWidth: 1 }]}>
             <Text style={[styles.statusLabel, { color: theme.textSecondary }]}>
               Prerequisite Lessons:
             </Text>
@@ -88,7 +97,7 @@ export function RevisionGateModal({
           </View>
 
           {isGatePassed ? (
-            <View style={[styles.clearedBanner, { backgroundColor: '#DEF7EC' }]}>
+            <View style={[styles.clearedBanner, { backgroundColor: '#DEF7EC', borderColor: '#0E9F6E', borderWidth: 1 }]}>
               <CheckCircle2 size={20} color="#0E9F6E" />
               <Text style={styles.clearedText}>Checkpoint Cleared! Next unit is unlocked.</Text>
             </View>
@@ -98,7 +107,7 @@ export function RevisionGateModal({
               disabled={!allLessonsCompleted}
               style={[
                 styles.actionBtn,
-                { backgroundColor: allLessonsCompleted ? unit.themeColor : theme.border },
+                { backgroundColor: allLessonsCompleted ? (unit.themeColor || '#EF4444') : theme.border },
               ]}
             >
               <Text
@@ -138,10 +147,32 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
     ...shadows.md,
   },
+  dragPill: {
+    width: 40,
+    height: 4,
+    borderRadius: 2,
+    marginBottom: spacing.xs,
+  },
+  topBar: {
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: spacing.xs,
+  },
+  hankoSeal: {
+    width: 28,
+    height: 28,
+    borderWidth: 1.5,
+    borderRadius: 4,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  hankoText: {
+    fontSize: 14,
+    fontWeight: '900',
+  },
   closeBtn: {
-    position: 'absolute',
-    top: spacing.md,
-    right: spacing.md,
     width: 32,
     height: 32,
     borderRadius: radii.full,

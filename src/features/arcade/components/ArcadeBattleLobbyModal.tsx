@@ -184,7 +184,12 @@ export function ArcadeBattleLobbyModal({
         onStartMultiplayer(game, initRes.data.id);
         return;
       }
-    } catch {}
+      if (!initRes.ok) {
+        console.warn('[QuickMatch] Initial queue error:', initRes.error);
+      }
+    } catch (err) {
+      console.error('[QuickMatch] Network exception:', err);
+    }
 
     // Start timer counter
     searchTimerRef.current = setInterval(() => {
@@ -203,7 +208,12 @@ export function ArcadeBattleLobbyModal({
           onStartMultiplayer(game, res.data.id);
           return;
         }
-      } catch {}
+        if (!res.ok) {
+          console.warn('[QuickMatch] Polling response error:', res.error);
+        }
+      } catch (pollErr) {
+        console.error('[QuickMatch] Polling exception:', pollErr);
+      }
 
       if (isSearchingRef.current) {
         searchPollRef.current = setTimeout(pollMatchmaking, 1500);

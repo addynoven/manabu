@@ -27,6 +27,9 @@ import {
 import * as Haptics from 'expo-haptics';
 import { radii, shadows, spacing, useAppTheme } from '../../../core/theme';
 import { useAuthStore } from '../store/useAuthStore';
+import { authStorage } from '../storage/auth.storage';
+import { useProgressStore } from '../../progress/store/useProgressStore';
+import { cloudSyncService } from '../../sync/services/cloudSync.service';
 import { GoogleSignInButton } from '../components/GoogleSignInButton';
 
 export function AuthScreen() {
@@ -196,6 +199,44 @@ export function AuthScreen() {
               <Text style={[styles.errorText, { color: theme.error }]}>{errorMessage}</Text>
             </View>
           )}
+
+          {/* Test Account Quick Filler & Direct Session Restorer */}
+          <View style={{ marginBottom: 14, flexDirection: 'row', gap: 8 }}>
+            <Pressable
+              onPress={() => {
+                const now = new Date().toISOString();
+                const user = {
+                  uid: 'aditya_sahu_main',
+                  email: 'dmcbaditya@gmail.com',
+                  displayName: 'Aditya Sahu (addy)',
+                  avatarEmoji: '🥋',
+                  authProvider: 'google' as const,
+                  isEmailVerified: true,
+                  createdAt: now,
+                  lastLoginAt: now,
+                };
+                authStorage.saveUser(user);
+                useAuthStore.setState({ currentUser: user });
+                useProgressStore.getState().setDisplayName('Aditya Sahu (addy)');
+                cloudSyncService.syncOnAuthChange('aditya_sahu_main').catch(() => {});
+                router.replace('/(tabs)');
+              }}
+              style={{
+                flex: 1,
+                paddingVertical: 12,
+                paddingHorizontal: 12,
+                borderRadius: 12,
+                backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                borderWidth: 1.5,
+                borderColor: '#3b82f6',
+                alignItems: 'center',
+              }}
+            >
+              <Text style={{ fontSize: 13, fontWeight: '900', color: '#60a5fa' }}>
+                ⚡ Enter as dmcbaditya@gmail.com
+              </Text>
+            </Pressable>
+          </View>
 
           {/* Form Fields */}
           <View style={styles.form}>

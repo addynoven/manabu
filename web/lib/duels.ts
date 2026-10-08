@@ -58,6 +58,10 @@ export async function createMatch(
   targetUid: string,
   deck: unknown
 ): Promise<{ id: string }> {
+  if (creatorUid === targetUid) {
+    throw new Error('Self-play forbidden: Creator and target must be distinct users');
+  }
+
   const valkey = getValkey();
   const id = crypto.randomUUID();
 
@@ -502,9 +506,32 @@ export async function getDuelState(
   const updated = (await valkey.hgetall(matchKey)) || raw;
   const opponentUid = isPlayerA ? updated.b : updated.a;
 
-  // Heartbeat check for opponent
+  // Heartbeat check for opponent (caller sets 15s TTL seen key)
   const opponentSeen = await valkey.exists(`manabu:seen:${opponentUid}`);
-  const opponentGone = updated.status === 'live' && opponentSeen === 0;
+  let opponentGone = updated.status === 'live' && opponentSeen === 0;
+
+  // If opponent has stopped polling, check disconnect grace (15s)
+  if (opponentGone && updated.status === 'live') {
+    const disconnectKey = `manabu:match:${id}:disconnect:${opponentUid}`;
+    const disconnectStartStr = await valkey.get(disconnectKey);
+    const now = Date.now();
+    if (!disconnectStartStr) {
+      await valkey.set(disconnectKey, String(now), 'EX', 60);
+    } else {
+      const elapsed = now - Number(disconnectStartStr);
+      if (elapsed >= 15000) {
+        // 15 seconds elapsed without heartbeat - forfeit match in favor of current user
+        await finishMatch(id, uid, 'forfeit');
+        const finishedRaw = await valkey.hgetall(matchKey);
+        if (finishedRaw) {
+          Object.assign(updated, finishedRaw);
+        }
+      }
+    }
+  } else if (!opponentGone) {
+    // Clear disconnect timer if opponent resumed heartbeat
+    await valkey.del(`manabu:match:${id}:disconnect:${opponentUid}`);
+  }
 
   // Load opponent profile
   const oppProfileRes = await query(
@@ -630,17 +657,27 @@ export async function matchOrQueue(
   const alreadyMatched = await valkey.get(`manabu:matchmaking_result:${playerUid}`);
   if (alreadyMatched) {
     await valkey.del(`manabu:matchmaking_result:${playerUid}`);
-    return { id: alreadyMatched, matched: true };
+    // Verify match is not self-match
+    const raw = await valkey.hgetall(`manabu:match:${alreadyMatched}`);
+    if (raw && raw.a && raw.b && raw.a !== raw.b) {
+      return { id: alreadyMatched, matched: true };
+    }
   }
 
-  // Look for waiting opponent in queue
+  // Look for waiting opponent in queue, discarding expired or self entries
   while (true) {
     const waiterData = await valkey.lpop(queueKey);
     if (!waiterData) break;
 
     try {
       const waiter = JSON.parse(waiterData);
-      if (waiter.uid && waiter.uid !== playerUid && Date.now() - (waiter.time || 0) < 60000) {
+      // Skip and drop if waiter is same user (never allow self-match)
+      if (waiter.uid === playerUid) {
+        continue;
+      }
+
+      // Valid opponent found
+      if (waiter.uid && Date.now() - (waiter.time || 0) < 60000) {
         // Create match between waiter (Player A) and current user (Player B)
         const matchRes = await createMatch(game, waiter.uid, playerUid, waiter.deck || deck);
         // Player B immediately accepts so match becomes live
@@ -652,7 +689,18 @@ export async function matchOrQueue(
     } catch {}
   }
 
-  // If no match yet, add self to queue
+  // If no opponent found, ensure no duplicate self entry exists before enqueuing
+  const queueItems = await valkey.lrange(queueKey, 0, -1);
+  for (const item of queueItems) {
+    try {
+      const parsed = JSON.parse(item);
+      if (parsed.uid === playerUid) {
+        await valkey.lrem(queueKey, 0, item);
+      }
+    } catch {}
+  }
+
+  // Add self to queue
   const queuePayload = JSON.stringify({
     uid: playerUid,
     deck,

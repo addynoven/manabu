@@ -110,7 +110,7 @@ export function ProfileScreen() {
   } = useProgressStore();
 
   const { currentUser, signOut } = useAuthStore();
-  const { isSyncing, lastError } = useCloudSync();
+  const { isSyncing, lastError, syncNow, restoreFromCloud } = useCloudSync();
 
   const handleSignOut = () => {
     Alert.alert(
@@ -376,100 +376,74 @@ export function ProfileScreen() {
 
         {/* Cloud Account & Backup Banner */}
         <View style={[styles.card, { backgroundColor: theme.surface, borderColor: theme.border }]}>
-          {currentUser ? (
-            <View style={styles.accountCardContent}>
-              <View style={styles.accountHeaderRow}>
-                <View style={styles.accountHeaderLeft}>
-                  <View style={[styles.accountIconBg, { backgroundColor: 'rgba(34, 197, 94, 0.15)' }]}>
-                    <Cloud size={18} color="#22C55E" />
-                  </View>
-                  <View style={{ flex: 1 }}>
-                    <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
-                      <Text style={[styles.accountTitle, { color: theme.textPrimary }]} numberOfLines={1}>
-                        {currentUser.displayName || 'Manabu Learner'}
-                      </Text>
-                      <View style={[styles.providerBadge, { backgroundColor: 'rgba(59, 130, 246, 0.15)' }]}>
-                        <Text style={[styles.providerBadgeText, { color: '#3B82F6' }]}>
-                          {currentUser.authProvider === 'google' ? 'Google' : 'Email'}
-                        </Text>
-                      </View>
-                    </View>
-                    <Text style={[styles.accountSub, { color: theme.textSecondary }]} numberOfLines={1}>
-                      {currentUser.email || 'Cloud Account Connected'}
-                    </Text>
-                  </View>
-                </View>
-                <Pressable
-                  onPress={handleSignOut}
-                  style={[styles.signOutBtn, { borderColor: theme.border, backgroundColor: theme.surfaceSubtle }]}
-                  hitSlop={8}
-                >
-                  <LogOut size={13} color={theme.textMuted} style={{ marginRight: 4 }} />
-                  <Text style={[styles.signOutText, { color: theme.textSecondary }]}>Sign Out</Text>
-                </Pressable>
-              </View>
-
-              <View
-                style={[
-                  styles.syncStatusRow,
-                  {
-                    backgroundColor: lastError ? 'rgba(239, 68, 68, 0.08)' : 'rgba(34, 197, 94, 0.08)',
-                    borderColor: lastError ? 'rgba(239, 68, 68, 0.2)' : 'rgba(34, 197, 94, 0.2)',
-                  },
-                ]}
-              >
-                {lastError ? (
-                  <>
-                    <AlertTriangle size={13} color="#EF4444" />
-                    <Text style={[styles.syncStatusText, { color: '#EF4444' }]} numberOfLines={1}>
-                      Cloud sync issue: {lastError}
-                    </Text>
-                  </>
-                ) : (
-                  <>
-                    <CheckCircle2 size={13} color="#22C55E" />
-                    <Text style={[styles.syncStatusText, { color: '#22C55E' }]}>
-                      {isSyncing
-                        ? 'Syncing with Cloud...'
-                        : 'Cloud Protected • Synced Automatically'}
-                    </Text>
-                  </>
-                )}
-              </View>
-            </View>
-          ) : (
-            <View style={styles.guestCardContent}>
-              <View style={styles.guestRow}>
-                <View style={[styles.accountIconBg, { backgroundColor: 'rgba(249, 115, 22, 0.15)' }]}>
-                  <Cloud size={20} color={theme.primary} />
+          <View style={styles.accountCardContent}>
+            <View style={styles.accountHeaderRow}>
+              <View style={styles.accountHeaderLeft}>
+                <View style={[styles.accountIconBg, { backgroundColor: 'rgba(34, 197, 94, 0.15)' }]}>
+                  <Cloud size={18} color="#22C55E" />
                 </View>
                 <View style={{ flex: 1 }}>
-                  <Text style={[styles.accountTitle, { color: theme.textPrimary }]}>
-                    Cloud Backup & Sync
-                  </Text>
-                  <Text style={[styles.accountSub, { color: theme.textSecondary }]}>
-                    Sign in with Google or Email to protect your streaks & sync across devices.
+                  <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+                    <Text style={[styles.accountTitle, { color: theme.textPrimary }]} numberOfLines={1}>
+                      {currentUser?.displayName || 'Manabu Learner'}
+                    </Text>
+                    <View style={[styles.providerBadge, { backgroundColor: 'rgba(59, 130, 246, 0.15)' }]}>
+                      <Text style={[styles.providerBadgeText, { color: '#3B82F6' }]}>
+                        {currentUser?.authProvider === 'google' ? 'Google' : 'Email'}
+                      </Text>
+                    </View>
+                  </View>
+                  <Text style={[styles.accountSub, { color: theme.textSecondary }]} numberOfLines={1}>
+                    {currentUser?.email || 'Cloud Account Connected'}
                   </Text>
                 </View>
               </View>
-
               <Pressable
-                onPress={() => {
-                  Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
-                  router.push('/auth');
-                }}
-                style={[styles.signInActionBtn, { backgroundColor: theme.primary }]}
+                onPress={handleSignOut}
+                style={[styles.signOutBtn, { borderColor: theme.border, backgroundColor: theme.surfaceSubtle }]}
+                hitSlop={8}
               >
-                <LogIn size={15} color={theme.textOnPrimary} style={{ marginRight: 6 }} />
-                <Text style={[styles.signInActionBtnText, { color: theme.textOnPrimary }]}>
-                  Sign In with Google or Email
-                </Text>
+                <LogOut size={13} color={theme.textMuted} style={{ marginRight: 4 }} />
+                <Text style={[styles.signOutText, { color: theme.textSecondary }]}>Sign Out</Text>
               </Pressable>
             </View>
-          )}
+
+            <Pressable
+              onPress={async () => {
+                Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+                await restoreFromCloud();
+              }}
+              style={({ pressed }) => [
+                styles.syncStatusRow,
+                {
+                  backgroundColor: lastError ? 'rgba(239, 68, 68, 0.08)' : 'rgba(34, 197, 94, 0.08)',
+                  borderColor: lastError ? 'rgba(239, 68, 68, 0.2)' : 'rgba(34, 197, 94, 0.2)',
+                  opacity: pressed ? 0.75 : 1,
+                },
+              ]}
+            >
+              {lastError ? (
+                <>
+                  <AlertTriangle size={13} color="#EF4444" />
+                  <Text style={[styles.syncStatusText, { color: '#EF4444' }]} numberOfLines={1}>
+                    Cloud sync issue: {lastError} (Tap to retry)
+                  </Text>
+                </>
+              ) : (
+                <>
+                  <CheckCircle2 size={13} color="#22C55E" />
+                  <Text style={[styles.syncStatusText, { color: '#22C55E' }]}>
+                    {isSyncing
+                      ? 'Syncing with Cloud...'
+                      : 'Cloud Protected • Synced Automatically (Tap to sync)'}
+                  </Text>
+                </>
+              )}
+            </Pressable>
+          </View>
         </View>
 
-        {/* Clan & Friends Card */}
+        {/* Sapphire League Study Circles Card (Stitch Screen #11) */}
         <Pressable
           onPress={() => {
             Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
@@ -479,20 +453,25 @@ export function ProfileScreen() {
             styles.card,
             {
               backgroundColor: theme.surface,
-              borderColor: theme.border,
+              borderColor: 'rgba(59, 130, 246, 0.4)',
               opacity: pressed ? 0.85 : 1,
             },
           ]}
         >
           <View style={styles.cardHeaderRow}>
             <View style={styles.cardHeaderLeft}>
-              <Users size={18} color={theme.primary} />
-              <Text style={[styles.cardTitle, { color: theme.textPrimary }]}>Clan & Friends</Text>
+              <View style={[styles.leagueShieldPill, { backgroundColor: 'rgba(59, 130, 246, 0.15)' }]}>
+                <Text style={{ fontSize: 13 }}>💎</Text>
+              </View>
+              <View>
+                <Text style={[styles.cardTitle, { color: theme.textPrimary }]}>Sapphire League • Study Circles</Text>
+                <Text style={{ fontSize: 11, color: theme.primary, fontWeight: '700' }}>Tier V Cohort #42 Standings</Text>
+              </View>
             </View>
             <ChevronRight size={18} color={theme.textMuted} />
           </View>
-          <Text style={{ fontSize: 13, color: theme.textSecondary, marginTop: 4 }}>
-            Share your friend code, check the weekly XP leaderboard, and connect with fellow learners.
+          <Text style={{ fontSize: 13, color: theme.textSecondary, marginTop: 8 }}>
+            Compete in weekly 15-member cohorts. Top 3 promote to Diamond League, bottom 3 relegate.
           </Text>
         </Pressable>
 
@@ -1669,6 +1648,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingVertical: 12,
     borderBottomWidth: 1,
+  },
+  leagueShieldPill: {
+    width: 28,
+    height: 28,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 6,
   },
   settingRowLeft: {
     flexDirection: 'row',

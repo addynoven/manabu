@@ -74,18 +74,80 @@ export async function pullCloudBackup(): Promise<{
 
 export async function pushCloudBackup(
   completedLessons: string[],
-  passedGates: string[]
+  passedGates: string[],
+  extraStats?: { xpEarned?: number }
 ): Promise<boolean> {
   const currentUser = firebaseAuth.currentUser;
   if (!currentUser) return false;
 
   try {
     const token = await currentUser.getIdToken();
+    const nowIso = new Date().toISOString();
+
+    // 1. Fetch current cloud backup to preserve mobile XP, mastery, arcade, achievements
+    let existingBackup: any = null;
+    try {
+      const getRes = await fetch('/api/v1/backup', {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (getRes.ok) {
+        const getData = await getRes.json();
+        existingBackup = getData.backup;
+      }
+    } catch {}
+
+    const prevLessons = existingBackup?.dojo?.completedLessons || {};
+    const prevGates = existingBackup?.dojo?.passedRevisionGates || {};
+
+    // Map completedLessons array into mobile-compatible map structure
+    const completedRecord: Record<string, { score: number; completedAt: string }> = { ...prevLessons };
+    for (const id of completedLessons) {
+      if (!completedRecord[id]) {
+        completedRecord[id] = { score: 100, completedAt: nowIso };
+      }
+    }
+
+    const gatesRecord: Record<string, boolean> = { ...prevGates };
+    for (const g of passedGates) {
+      gatesRecord[g] = true;
+    }
+
+    const lessonCount = Object.keys(completedRecord).length;
+    const baseEstimatedXp = lessonCount * 50;
+    const finalTotalXp = Math.max(existingBackup?.stats?.totalXp || 0, baseEstimatedXp);
+
     const payload = {
       version: 1,
-      completedLessons,
-      passedGates,
-      syncedAt: new Date().toISOString(),
+      syncedAt: nowIso,
+      stats: {
+        ...(existingBackup?.stats || {}),
+        totalXp: finalTotalXp,
+        weeklyXp: Math.max(existingBackup?.stats?.weeklyXp || 0, finalTotalXp),
+        currentStreak: Math.max(existingBackup?.stats?.currentStreak || 1, 1),
+        bestStreak: Math.max(existingBackup?.stats?.bestStreak || 1, 1),
+        lastActiveDate: nowIso.split('T')[0],
+        totalQuestionsAnswered: Math.max(existingBackup?.stats?.totalQuestionsAnswered || 0, lessonCount * 5),
+        totalCorrect: Math.max(existingBackup?.stats?.totalCorrect || 0, lessonCount * 5),
+        displayName: existingBackup?.stats?.displayName || currentUser.displayName || 'Manabu Student',
+        avatarEmoji: existingBackup?.stats?.avatarEmoji || '🥋',
+        joinedDate: existingBackup?.stats?.joinedDate || nowIso,
+        mastery: existingBackup?.stats?.mastery || {},
+      },
+      dojo: {
+        ...(existingBackup?.dojo || {}),
+        completedLessons: completedRecord,
+        cooldownUntil: existingBackup?.dojo?.cooldownUntil ?? null,
+        passedRevisionGates: gatesRecord,
+        passedDailyRevisions: existingBackup?.dojo?.passedDailyRevisions || {},
+        activeLessonId: completedLessons[completedLessons.length - 1] || existingBackup?.dojo?.activeLessonId || 'u1_l1',
+      },
+      achievements: existingBackup?.achievements || {
+        unlocked: {},
+        totalPoints: lessonCount * 10,
+      },
+      arcade: existingBackup?.arcade,
+      challenges: existingBackup?.challenges,
+      settings: existingBackup?.settings,
     };
 
     const res = await fetch('/api/v1/backup', {

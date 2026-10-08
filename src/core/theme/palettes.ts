@@ -414,6 +414,38 @@ export const THEME_PALETTES: Record<string, ThemePalette> = {
       tabBarBorder: '#1F1F1F',
     },
   },
+
+  'bunpro-dark': {
+    id: 'bunpro-dark',
+    name: 'Bunpro Dark Learning',
+    japaneseName: '文法道場',
+    description: 'Authentic Bunpro/Stitch deep learning indigo with tatami borders and warm crimson',
+    isDark: true,
+    colors: {
+      background: '#00161E',
+      surface: '#04232D',
+      surfaceSubtle: '#0F3947',
+      surfaceHighlight: '#1A5163',
+      border: '#12333E',
+      borderSubtle: '#17424F',
+      textPrimary: '#F0F0F0',
+      textSecondary: '#8FA2AA',
+      textMuted: '#5C727D',
+      primary: '#FFB3AF',
+      textOnPrimary: '#68000E',
+      primaryLight: '#2D1B22',
+      primaryDark: '#C74A4A',
+      accent: '#F9BD22',
+      accentLight: '#2A2415',
+      success: '#34D399',
+      successLight: '#063B28',
+      error: '#FFB4AB',
+      errorLight: '#450A0A',
+      card: '#04232D',
+      tabBar: '#00161E',
+      tabBarBorder: '#12333E',
+    },
+  },
 };
 
 export const DEFAULT_THEME_ID = 'torii-crimson';

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Stack } from 'expo-router';
+import { Stack, useRouter, useSegments } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -12,6 +12,27 @@ import { useAuthStore } from '../features/auth/store/useAuthStore';
 import { contentSyncService } from '../core/content/contentSync.service';
 
 SplashScreen.preventAutoHideAsync().catch(() => {});
+
+function AuthNavigationGate() {
+  const currentUser = useAuthStore(state => state.currentUser);
+  const segments = useSegments();
+  const router = useRouter();
+
+  useEffect(() => {
+    const currentSegment = (segments[0] as string) || '';
+    const inAuthGroup = currentSegment === 'welcome' || currentSegment === 'auth';
+
+    if (!currentUser && !inAuthGroup) {
+      // User is logged out and trying to access app content -> redirect to welcome
+      router.replace('/welcome' as any);
+    } else if (currentUser && currentSegment === 'welcome') {
+      // User is logged in and sitting on welcome screen -> redirect to tabs
+      router.replace('/(tabs)');
+    }
+  }, [currentUser, segments]);
+
+  return null;
+}
 
 export default function RootLayout() {
   useEffect(() => {
@@ -29,9 +50,11 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <ErrorBoundary>
         <QueryProvider>
-          <StatusBar style="dark" />
+          <StatusBar style="light" />
+          <AuthNavigationGate />
           <Stack screenOptions={{ headerShown: false }}>
             <Stack.Screen name="index" />
+            <Stack.Screen name="welcome" />
             <Stack.Screen name="(tabs)" />
             <Stack.Screen name="auth" options={{ presentation: 'modal', animation: 'slide_from_bottom' }} />
             <Stack.Screen name="conjugator" options={{ animation: 'slide_from_bottom' }} />

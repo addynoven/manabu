@@ -619,12 +619,42 @@ export function FriendsScreen() {
               )}
             </View>
 
-            <View style={styles.boardHeader}>
-              <Text style={[styles.boardTitle, { color: theme.colors.textPrimary }]}>
-                Weekly XP Standings
-              </Text>
-              <Text style={[styles.boardSubtitle, { color: theme.colors.textMuted }]}>
-                Resets Monday 00:00 UTC (05:30 IST)
+            {/* Sapphire League Cohort Card (Stitch Screen #11) */}
+            <View
+              style={[
+                styles.sapphireLeagueCard,
+                { backgroundColor: theme.colors.card, borderColor: 'rgba(59, 130, 246, 0.4)' },
+              ]}
+            >
+              <View style={styles.sapphireHeaderRow}>
+                <View style={styles.sapphireHeaderLeft}>
+                  <View style={styles.sapphireIconBadge}>
+                    <Text style={{ fontSize: 18 }}>💎</Text>
+                  </View>
+                  <View>
+                    <View style={styles.sapphireTagRow}>
+                      <Text style={[styles.sapphireTierTag, { color: '#3b82f6' }]}>
+                        SAPPHIRE LEAGUE
+                      </Text>
+                      <Text style={[styles.sapphireCohortTag, { color: theme.colors.textMuted }]}>
+                        COHORT #42
+                      </Text>
+                    </View>
+                    <Text style={[styles.sapphireTitle, { color: theme.colors.textPrimary }]}>
+                      Study Circle Standings
+                    </Text>
+                  </View>
+                </View>
+
+                <View style={styles.zoneLegends}>
+                  <View style={[styles.zoneLegendPill, { backgroundColor: 'rgba(16, 185, 129, 0.15)' }]}>
+                    <Text style={[styles.zoneLegendText, { color: '#10b981' }]}>Top 3: Promote 👑</Text>
+                  </View>
+                </View>
+              </View>
+
+              <Text style={[styles.boardSubtitle, { color: theme.colors.textMuted, marginTop: 8 }]}>
+                Weekly Standings • Resets Sunday 23:59 UTC (05:30 IST)
               </Text>
             </View>
 
@@ -671,6 +701,16 @@ export function FriendsScreen() {
                         {isMe && (
                           <View style={[styles.youTag, { backgroundColor: theme.colors.accent }]}>
                             <Text style={styles.youTagText}>YOU</Text>
+                          </View>
+                        )}
+                        {index < 3 && (
+                          <View style={[styles.zoneBadge, { backgroundColor: 'rgba(16, 185, 129, 0.15)' }]}>
+                            <Text style={[styles.zoneBadgeText, { color: '#10b981' }]}>PROMOTION</Text>
+                          </View>
+                        )}
+                        {sortedBoard.length >= 6 && index >= sortedBoard.length - 3 && (
+                          <View style={[styles.zoneBadge, { backgroundColor: 'rgba(239, 68, 68, 0.15)' }]}>
+                            <Text style={[styles.zoneBadgeText, { color: '#ef4444' }]}>RELEGATION</Text>
                           </View>
                         )}
                       </View>
@@ -1039,6 +1079,72 @@ const styles = StyleSheet.create({
   },
   tabContent: {
     gap: spacing.sm,
+  },
+  sapphireLeagueCard: {
+    borderWidth: 1,
+    borderRadius: radii.xl,
+    padding: spacing.md,
+    marginBottom: spacing.xs,
+  },
+  sapphireHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  sapphireHeaderLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+  },
+  sapphireIconBadge: {
+    width: 36,
+    height: 36,
+    borderRadius: radii.md,
+    backgroundColor: 'rgba(59, 130, 246, 0.15)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  sapphireTagRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  sapphireTierTag: {
+    fontSize: 10,
+    fontWeight: '900',
+    letterSpacing: 0.5,
+  },
+  sapphireCohortTag: {
+    fontSize: 10,
+    fontWeight: '700',
+  },
+  sapphireTitle: {
+    fontSize: 15,
+    fontWeight: '800',
+    marginTop: 1,
+  },
+  zoneLegends: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  zoneLegendPill: {
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: radii.sm,
+  },
+  zoneLegendText: {
+    fontSize: 11,
+    fontWeight: '800',
+  },
+  zoneBadge: {
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: radii.xs,
+  },
+  zoneBadgeText: {
+    fontSize: 9,
+    fontWeight: '900',
+    letterSpacing: 0.3,
   },
   boardHeader: {
     marginBottom: 4,

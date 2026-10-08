@@ -19,6 +19,7 @@ import { radii, shadows, useAppTheme } from '../../../core/theme';
 import { speakJapanese } from '../../../core/audio/tts';
 import type { CharacterMastery } from '../../progress/models/progress.model';
 import { getStageColor, SRS_CONFIG } from '../services/srsEngine';
+import { calculateRetrievability } from '../services/fsrsEngine';
 import { resolveReviewItem } from '../services/reviewResolver.service';
 
 interface ItemMasteryModalProps {
@@ -51,6 +52,19 @@ function ItemMasteryContent({
 
   const [mountTime] = useState(() => Date.now());
 
+  // FSRS-5 Retrievability Calculation
+  const stabilityDays = srsConfig.intervalDays || 1.0;
+  const elapsedDays = useMemo(() => {
+    if (!masteryItem.lastPracticedAt) return 0.5;
+    const diffMs = mountTime - new Date(masteryItem.lastPracticedAt).getTime();
+    return Math.max(0, diffMs / (1000 * 3600 * 24));
+  }, [masteryItem.lastPracticedAt, mountTime]);
+
+  const retrievabilityPercent = useMemo(() => {
+    const r = calculateRetrievability(elapsedDays, stabilityDays);
+    return Math.round(r * 100);
+  }, [elapsedDays, stabilityDays]);
+
   const dueText = useMemo(() => {
     if (!masteryItem.nextReviewAt) return 'Ready for initial review';
     const dueTime = new Date(masteryItem.nextReviewAt).getTime();
@@ -79,17 +93,28 @@ function ItemMasteryContent({
           },
         ]}
       >
+        <View style={styles.sheetHandleContainer}>
+          <View style={[styles.dragPill, { backgroundColor: theme.borderSubtle }]} />
+        </View>
+
         {/* Header */}
         <View style={styles.header}>
-          <View
-            style={[
-              styles.categoryBadge,
-              { backgroundColor: theme.primary + '20' },
-            ]}
-          >
-            <Text style={[styles.categoryBadgeText, { color: theme.primary }]}>
-              {masteryItem.category.toUpperCase()}
-            </Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+            <View style={[styles.hankoSeal, { borderColor: theme.primary }]}>
+              <Text style={[styles.hankoText, { color: theme.primary }]}>
+                {(masteryItem.category as string) === 'kanji' ? '漢' : (masteryItem.category as string) === 'grammar' ? '文' : '語'}
+              </Text>
+            </View>
+            <View
+              style={[
+                styles.categoryBadge,
+                { backgroundColor: theme.primary + '20' },
+              ]}
+            >
+              <Text style={[styles.categoryBadgeText, { color: theme.primary }]}>
+                {masteryItem.category.toUpperCase()}
+              </Text>
+            </View>
           </View>
 
           <Pressable
@@ -151,6 +176,62 @@ function ItemMasteryContent({
             <Clock size={14} color={theme.textMuted} />
             <Text style={[styles.dueText, { color: theme.textSecondary }]}>
               {dueText}
+            </Text>
+          </View>
+        </View>
+
+        {/* FSRS-5 Retrievability & Memory Intelligence (Stitch Screen #23) */}
+        <View
+          style={[
+            styles.fsrsTelemetryCard,
+            { backgroundColor: theme.surfaceSubtle, borderColor: theme.border },
+          ]}
+        >
+          <View style={styles.fsrsTelemetryHeader}>
+            <Text style={[styles.fsrsTelemetryTitle, { color: theme.textPrimary }]}>
+              FSRS Memory Retention
+            </Text>
+            <Text
+              style={[
+                styles.retrievabilityValue,
+                {
+                  color:
+                    retrievabilityPercent >= 90
+                      ? theme.success
+                      : retrievabilityPercent >= 70
+                      ? theme.primary
+                      : theme.error,
+                },
+              ]}
+            >
+              {retrievabilityPercent}% Recall
+            </Text>
+          </View>
+
+          {/* Progress bar */}
+          <View style={[styles.retrievabilityTrack, { backgroundColor: theme.border }]}>
+            <View
+              style={[
+                styles.retrievabilityFill,
+                {
+                  width: `${Math.max(5, Math.min(100, retrievabilityPercent))}%`,
+                  backgroundColor:
+                    retrievabilityPercent >= 90
+                      ? theme.success
+                      : retrievabilityPercent >= 70
+                      ? theme.primary
+                      : theme.error,
+                },
+              ]}
+            />
+          </View>
+
+          <View style={styles.fsrsTelemetryRow}>
+            <Text style={[styles.fsrsTelemetryMuted, { color: theme.textMuted }]}>
+              Stability: {stabilityDays.toFixed(1)}d
+            </Text>
+            <Text style={[styles.fsrsTelemetryMuted, { color: theme.textMuted }]}>
+              Optimal Threshold: 90%
             </Text>
           </View>
         </View>
@@ -241,6 +322,27 @@ const styles = StyleSheet.create({
     padding: 24,
     ...shadows.md,
   },
+  sheetHandleContainer: {
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  dragPill: {
+    width: 40,
+    height: 4,
+    borderRadius: 2,
+  },
+  hankoSeal: {
+    width: 26,
+    height: 26,
+    borderWidth: 1.5,
+    borderRadius: 4,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  hankoText: {
+    fontSize: 13,
+    fontWeight: '900',
+  },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -330,6 +432,44 @@ const styles = StyleSheet.create({
   dueText: {
     fontSize: 12,
     fontWeight: '600',
+  },
+  fsrsTelemetryCard: {
+    borderWidth: 1,
+    borderRadius: radii.lg,
+    padding: 12,
+    marginBottom: 16,
+  },
+  fsrsTelemetryHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 8,
+  },
+  fsrsTelemetryTitle: {
+    fontSize: 12,
+    fontWeight: '700',
+  },
+  retrievabilityValue: {
+    fontSize: 13,
+    fontWeight: '800',
+  },
+  retrievabilityTrack: {
+    height: 6,
+    borderRadius: 3,
+    overflow: 'hidden',
+    marginBottom: 8,
+  },
+  retrievabilityFill: {
+    height: '100%',
+    borderRadius: 3,
+  },
+  fsrsTelemetryRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  fsrsTelemetryMuted: {
+    fontSize: 11,
+    fontWeight: '500',
   },
   statsGrid: {
     flexDirection: 'row',

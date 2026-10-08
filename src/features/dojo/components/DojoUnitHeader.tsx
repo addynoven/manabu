@@ -44,10 +44,17 @@ export function DojoUnitHeader({
 
   return (
     <View style={styles.container}>
-      {/* Unit Number Tag */}
-      <Text style={[styles.unitNumber, { color: theme.textSecondary }]}>
-        Unit {unit.unitNumber}
-      </Text>
+      {/* Unit Number & Textbook Syllabus Tag (Stitch Screen #2) */}
+      <View style={styles.unitHeaderBadgeRow}>
+        <Text style={[styles.unitNumber, { color: theme.textSecondary }]}>
+          Unit {unit.unitNumber}
+        </Text>
+        <View style={[styles.textbookBadge, { backgroundColor: theme.surfaceSubtle }]}>
+          <Text style={[styles.textbookBadgeText, { color: theme.primary }]}>
+            {unit.textbook?.title || (unit.unitNumber <= 12 ? `Genki I Ch.${unit.unitNumber}` : unit.unitNumber <= 23 ? `Genki II Ch.${unit.unitNumber - 12}` : `Tobira Ch.${unit.unitNumber - 23}`)}
+          </Text>
+        </View>
+      </View>
 
       {/* English Title & Japanese Title */}
       <Text style={[styles.title, { color: theme.textPrimary }]}>
@@ -171,11 +178,26 @@ const styles = StyleSheet.create({
     paddingVertical: spacing.md,
     paddingHorizontal: spacing.base,
   },
+  unitHeaderBadgeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 4,
+  },
   unitNumber: {
     fontSize: 13,
     fontWeight: '700',
     letterSpacing: 0.5,
-    marginBottom: 4,
+  },
+  textbookBadge: {
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: radii.sm,
+  },
+  textbookBadgeText: {
+    fontSize: 11,
+    fontWeight: '800',
+    letterSpacing: 0.3,
   },
   title: {
     fontSize: 22,

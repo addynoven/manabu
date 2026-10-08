@@ -2,7 +2,8 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import confetti from 'canvas-confetti';
-import { AppShell } from '@/components/AppShell';
+import { AuthGate } from '@/components/AuthGate';
+import { StitchHeader } from '@/components/StitchHeader';
 import { MANABU_CURRICULUM, CurriculumUnit, UnitLesson, LessonExercise } from '@/data/curriculum';
 import { speakJapanese } from '@/data/kana';
 import { syncContentWithBackend, getCachedBundle } from '@/lib/contentStore';
@@ -93,18 +94,41 @@ export default function LearnPathPage() {
     });
 
     // Pull cloud backup from PostgreSQL (/api/v1/backup) if authenticated
-    import('@/lib/syncClient').then(({ pullCloudBackup }) => {
-      pullCloudBackup().then((cloudData) => {
-        if (cloudData) {
-          if (cloudData.completedLessons?.length) {
-            setCompletedLessonIds((prev) => Array.from(new Set([...prev, ...cloudData.completedLessons])));
+    const syncFromCloud = () => {
+      import('@/lib/syncClient').then(({ pullCloudBackup }) => {
+        pullCloudBackup().then((cloudData) => {
+          if (cloudData) {
+            if (cloudData.completedLessons?.length) {
+              setCompletedLessonIds((prev) => Array.from(new Set([...prev, ...cloudData.completedLessons])));
+            }
+            if (cloudData.passedGates?.length) {
+              setPassedGates((prev) => Array.from(new Set([...prev, ...cloudData.passedGates])));
+            }
           }
-          if (cloudData.passedGates?.length) {
-            setPassedGates((prev) => Array.from(new Set([...prev, ...cloudData.passedGates])));
-          }
-        }
+        });
       });
+    };
+
+    syncFromCloud();
+
+    // Background periodic poll every 30 seconds (Discord / WhatsApp pattern)
+    const pollInterval = setInterval(() => {
+      syncFromCloud();
+    }, 30000);
+
+    // Sync immediately whenever the tab or window comes into focus
+    const onFocus = () => syncFromCloud();
+    window.addEventListener('focus', onFocus);
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') {
+        syncFromCloud();
+      }
     });
+
+    return () => {
+      clearInterval(pollInterval);
+      window.removeEventListener('focus', onFocus);
+    };
   }, []);
 
   const saveCompletedLesson = (id: string, unitId: string) => {
@@ -199,27 +223,30 @@ export default function LearnPathPage() {
   const currentExercise: LessonExercise | undefined = activeLesson?.exercises[exerciseIndex];
 
   return (
-    <AppShell>
-      <div className="flex-1 p-6 md:p-10 max-w-7xl mx-auto w-full space-y-8">
-        {/* Top Header matching Stitch Screen #1 */}
-        <div className="bg-gradient-to-r from-red-950/40 via-neutral-900 to-neutral-950 border border-neutral-800 rounded-3xl p-6 md:p-8 relative overflow-hidden shadow-2xl">
-          <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <div className="space-y-2">
-              <div className="flex items-center gap-2">
-                <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-red-600/20 text-red-400 border border-red-500/30 flex items-center gap-1.5">
-                  <Compass size={12} />
-                  Curriculum Tree
-                </span>
-                <span className="text-xs text-neutral-400 font-mono">Dojo Learning Path</span>
+    <AuthGate>
+      <div className="bg-[#082630] text-[#f0f0f0] min-h-screen flex flex-col font-sans antialiased selection:bg-[#c74a4a] selection:text-[#f0f0f0]">
+        <StitchHeader />
+
+        <div className="flex-1 p-6 md:p-10 max-w-7xl mx-auto w-full space-y-8">
+          {/* Top Header matching Stitch Screen #1 & #11 */}
+          <div className="bg-[#0a3240] border border-[#17424f] rounded-3xl p-6 md:p-8 relative overflow-hidden shadow-2xl">
+            <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#2d1b22] text-[#ffb3af] border border-[#c74a4a]/40 flex items-center gap-1.5">
+                    <Compass size={12} />
+                    Curriculum Tree
+                  </span>
+                  <span className="text-xs text-[#8fa2aa] font-mono">Dojo Learning Path</span>
+                </div>
+                <h1 className="text-3xl md:text-4xl font-black text-[#f0f0f0] tracking-tight flex items-center gap-3 font-serif">
+                  <span>学習ロードマップ</span>
+                  <span className="text-[#8fa2aa] font-sans font-medium text-2xl">Dojo Curriculum</span>
+                </h1>
+                <p className="text-sm text-[#8fa2aa] max-w-xl">
+                  Master Japanese across 30 comprehensive study units with 450 structured interactive lessons, authentic pronunciation, vocabulary, and checkpoint revision gates.
+                </p>
               </div>
-              <h1 className="text-3xl md:text-4xl font-black text-white tracking-tight flex items-center gap-3 font-serif">
-                <span>学習ロードマップ</span>
-                <span className="text-neutral-400 font-sans font-medium text-2xl">Dojo Curriculum</span>
-              </h1>
-              <p className="text-sm text-neutral-400 max-w-xl">
-                Master Japanese across 30 comprehensive study units with 450 structured interactive lessons, authentic pronunciation, vocabulary, and checkpoint revision gates.
-              </p>
-            </div>
 
             <div className="flex items-center gap-4 shrink-0">
               <div className="bg-neutral-950/80 border border-neutral-800 rounded-2xl px-5 py-3 text-center shadow-lg">
@@ -660,6 +687,7 @@ export default function LearnPathPage() {
           </div>
         </div>
       )}
-    </AppShell>
+      </div>
+    </AuthGate>
   );
 }

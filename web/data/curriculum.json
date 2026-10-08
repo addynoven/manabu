@@ -7,6 +7,13 @@
     "description": "Master first impressions, daily greetings, self-introductions, polite responses, and essential courtesies.",
     "icon": "🌸",
     "color": "#10B981",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 1,
+      "title": "Genki I Ch.1"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u1_l1",
@@ -1983,6 +1990,13 @@
     "description": "Express personal preferences, talk about favorite foods and drinks, describe pastimes, and ask others what they enjoy.",
     "icon": "❤️",
     "color": "#F43F5E",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 2,
+      "title": "Genki I Ch.2"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u2_l1",
@@ -3959,6 +3973,13 @@
     "description": "Describe your daily routine, morning to night habits, time expressions, commuting, and using action particles.",
     "icon": "🏃",
     "color": "#3B82F6",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 3,
+      "title": "Genki I Ch.3"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u3_l1",
@@ -5935,6 +5956,13 @@
     "description": "Master ordering drinks and treats, using counters, requesting customizations, and paying the bill at Japanese cafés.",
     "icon": "☕",
     "color": "#EC4899",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 4,
+      "title": "Genki I Ch.4"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u4_l1",
@@ -7911,6 +7939,13 @@
     "description": "Navigate Tokyo stations, street corners, famous landmarks, and ask locals for directions.",
     "icon": "🗺️",
     "color": "#3B82F6",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 5,
+      "title": "Genki I Ch.5"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u5_l1",
@@ -9887,6 +9922,13 @@
     "description": "Inquire about prices, try on clothes, ask for other sizes and colors, and handle payments smoothly.",
     "icon": "🛍️",
     "color": "#8B5CF6",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 6,
+      "title": "Genki I Ch.6"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u6_l1",
@@ -11863,6 +11905,13 @@
     "description": "Enjoy Japanese pub culture, order drinks and shared dishes, cheers, and split the bill.",
     "icon": "🍻",
     "color": "#F59E0B",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 7,
+      "title": "Genki I Ch.7"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u7_l1",
@@ -13839,6 +13888,13 @@
     "description": "Check into traditional hot spring inns, understand onsen etiquette, and enjoy seasonal kaiseki.",
     "icon": "♨️",
     "color": "#10B981",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 8,
+      "title": "Genki I Ch.8"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u8_l1",
@@ -15815,6 +15871,13 @@
     "description": "Explain physical symptoms to doctors, fill prescriptions at pharmacies, and understand dosing instructions.",
     "icon": "🏥",
     "color": "#EF4444",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 9,
+      "title": "Genki I Ch.9"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u9_l1",
@@ -17791,6 +17854,13 @@
     "description": "Check forecasts, plan weekend trips, buy Shinkansen bullet train tickets, and prepare for seasonal weather.",
     "icon": "🚅",
     "color": "#06B6D4",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 10,
+      "title": "Genki I Ch.10"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u10_l1",
@@ -19767,6 +19837,13 @@
     "description": "Express what you can and cannot do, share personal pastimes, and discuss past experiences.",
     "icon": "🎸",
     "color": "#6366F1",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 11,
+      "title": "Genki I Ch.11"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u11_l1",
@@ -21743,6 +21820,13 @@
     "description": "Master giving and receiving favors (ageru, kureru, morau), making gentle requests, and asking permissions.",
     "icon": "🤝",
     "color": "#14B8A6",
+    "textbook": {
+      "series": "genki",
+      "volume": 1,
+      "chapter": 12,
+      "title": "Genki I Ch.12"
+    },
+    "jlptLevel": "N5",
     "lessons": [
       {
         "id": "u12_l1",
@@ -23719,6 +23803,13 @@
     "description": "Understand real estate terms, leasing conditions (reikin, shikikin), layout types, and signing rental contracts.",
     "icon": "🏢",
     "color": "#F97316",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 1,
+      "title": "Genki II Ch.1"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u13_l1",
@@ -25695,6 +25786,13 @@
     "description": "Navigate Japanese office hierarchy, honorifics (Sonkeigo/Kenjougo), and professional phone and email etiquette.",
     "icon": "💼",
     "color": "#4F46E5",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 2,
+      "title": "Genki II Ch.2"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u14_l1",
@@ -27671,6 +27769,13 @@
     "description": "Master nuanced conjunctions and sentence endings: ~wake da, ~sei de (blame), ~okage de (gratitude), and ~no da.",
     "icon": "💡",
     "color": "#0284C7",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 3,
+      "title": "Genki II Ch.3"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u15_l1",
@@ -29647,6 +29752,13 @@
     "description": "Distinguish to, ba, tara, and nara, express hypothetical regrets (~ba yokatta), and construct conditional advice.",
     "icon": "⚖️",
     "color": "#7C3AED",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 4,
+      "title": "Genki II Ch.4"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u16_l1",
@@ -31623,6 +31735,13 @@
     "description": "Appreciate cultural rituals, shrine visits (Sanpai), tea ceremony, seasonal festivals, and passive descriptions.",
     "icon": "⛩️",
     "color": "#D97706",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 5,
+      "title": "Genki II Ch.5"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u17_l1",
@@ -33599,6 +33718,13 @@
     "description": "Handle unexpected mishaps (lost items, transit delays), ask for counsel, and offer tactful suggestions.",
     "icon": "🛠️",
     "color": "#059669",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 6,
+      "title": "Genki II Ch.6"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u18_l1",
@@ -35575,6 +35701,13 @@
     "description": "Formulate eloquent self-introductions, articulate career motivation (Shibou Douki), and demonstrate corporate poise.",
     "icon": "👔",
     "color": "#2563EB",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 7,
+      "title": "Genki II Ch.7"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u19_l1",
@@ -37551,6 +37684,13 @@
     "description": "Comprehend newspaper headlines, market indicators, inflation, and objective journalistic expressions.",
     "icon": "📰",
     "color": "#DC2626",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 8,
+      "title": "Genki II Ch.8"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u20_l1",
@@ -39527,6 +39667,13 @@
     "description": "Negotiate trade contracts, present new proposals, navigate polite pushback, and reach corporate agreements.",
     "icon": "📊",
     "color": "#7C2D12",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 9,
+      "title": "Genki II Ch.9"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u21_l1",
@@ -41503,6 +41650,13 @@
     "description": "Convey layered feelings and psychological tensions using ~tamaranai, ~te naranai, and ~zaru o enai.",
     "icon": "🎭",
     "color": "#DB2777",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 10,
+      "title": "Genki II Ch.10"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u22_l1",
@@ -43479,6 +43633,13 @@
     "description": "Discuss artificial intelligence, automation in healthcare, cashless society, and socioeconomic transitions.",
     "icon": "🤖",
     "color": "#0D9488",
+    "textbook": {
+      "series": "genki",
+      "volume": 2,
+      "chapter": 11,
+      "title": "Genki II Ch.11"
+    },
+    "jlptLevel": "N4",
     "lessons": [
       {
         "id": "u23_l1",
@@ -45455,6 +45616,12 @@
     "description": "Construct rigorous argumentative prose with ~ni mo kakawarazu, ~dokoroka, and ~ni hanshite.",
     "icon": "🖋️",
     "color": "#9333EA",
+    "textbook": {
+      "series": "tobira",
+      "chapter": 1,
+      "title": "Tobira Ch.1"
+    },
+    "jlptLevel": "N3",
     "lessons": [
       {
         "id": "u24_l1",
@@ -47431,6 +47598,12 @@
     "description": "Master classical idioms: Ichigo Ichie, Ishin Denshin, Juunin Toiro, Sessatakuma, and Rinki Ouhen.",
     "icon": "📜",
     "color": "#B45309",
+    "textbook": {
+      "series": "tobira",
+      "chapter": 2,
+      "title": "Tobira Ch.2"
+    },
+    "jlptLevel": "N3",
     "lessons": [
       {
         "id": "u25_l1",
@@ -49407,6 +49580,12 @@
     "description": "Deliver congratulations, formal farewell addresses, wedding salutations, and official banquets in high register.",
     "icon": "🎙️",
     "color": "#1E3A8A",
+    "textbook": {
+      "series": "tobira",
+      "chapter": 3,
+      "title": "Tobira Ch.3"
+    },
+    "jlptLevel": "N3",
     "lessons": [
       {
         "id": "u26_l1",
@@ -51383,6 +51562,12 @@
     "description": "Decode unstated intentions, Kuuki o Yomu, group harmony (Wa), and master polite indirect refusals.",
     "icon": "🍵",
     "color": "#4338CA",
+    "textbook": {
+      "series": "tobira",
+      "chapter": 4,
+      "title": "Tobira Ch.4"
+    },
+    "jlptLevel": "N3",
     "lessons": [
       {
         "id": "u27_l1",
@@ -53359,6 +53544,12 @@
     "description": "Appreciate literary prose, sensory aesthetics, classic endings (~de aru, ~gotoshi), and metaphoric imagery.",
     "icon": "📚",
     "color": "#831843",
+    "textbook": {
+      "series": "tobira",
+      "chapter": 5,
+      "title": "Tobira Ch.5"
+    },
+    "jlptLevel": "N3",
     "lessons": [
       {
         "id": "u28_l1",
@@ -55335,6 +55526,12 @@
     "description": "Analyze formal contractual clauses (Kou/Otsu), academic papers, regulatory requirements, and rigorous deduction.",
     "icon": "⚖️",
     "color": "#312E81",
+    "textbook": {
+      "series": "tobira",
+      "chapter": 6,
+      "title": "Tobira Ch.6"
+    },
+    "jlptLevel": "N3",
     "lessons": [
       {
         "id": "u29_l1",
@@ -57311,6 +57508,12 @@
     "description": "The ultimate milestone: full cumulative mastery across all 30 weeks, synthesis of JLPT N5 through N1, and true Japanese fluency.",
     "icon": "🥋",
     "color": "#E11D48",
+    "textbook": {
+      "series": "tobira",
+      "chapter": 7,
+      "title": "Tobira Ch.7"
+    },
+    "jlptLevel": "N3",
     "lessons": [
       {
         "id": "u30_l1",

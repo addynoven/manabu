@@ -10,6 +10,7 @@ import {
   validateShiritoriMove,
   getShiritoriLastKana,
   getBotShiritoriMove,
+  getPlayerSuggestions,
 } from '@/lib/arcade/shiritoriEngine';
 import { speakJapanese } from '@/data/kana';
 import { duelClient, DuelState } from '@/lib/duelClient';
@@ -25,18 +26,21 @@ import {
   AlertTriangle,
   ArrowRight,
   Flame,
+  Sparkles,
 } from 'lucide-react';
 
 interface ShiritoriArenaWebProps {
   isMultiplayer?: boolean;
   matchId?: string;
   onExit: () => void;
+  onRematch?: () => void;
 }
 
 export function ShiritoriArenaWeb({
   isMultiplayer = false,
   matchId,
   onExit,
+  onRematch,
 }: ShiritoriArenaWebProps) {
   const { user, profile } = useAuth();
 
@@ -55,7 +59,7 @@ export function ShiritoriArenaWeb({
 
   // Live Duel state
   const [duelState, setDuelState] = useState<DuelState | null>(null);
-  const isMyTurnPvP = duelState ? duelState.turnUid === user?.uid : false;
+  const isMyTurnPvP = duelState ? (duelState.turn ? duelState.turn === 'me' : duelState.turnUid === user?.uid) : false;
 
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const turnsEndRef = useRef<HTMLDivElement | null>(null);
@@ -67,12 +71,44 @@ export function ShiritoriArenaWeb({
     }
   }, [isMultiplayer, botDifficulty]);
 
+  // Handle window unload / exit forfeit
+  useEffect(() => {
+    if (!isMultiplayer || !matchId) return;
+
+    const handleBeforeUnload = () => {
+      duelClient.forfeitDuel(matchId).catch(() => {});
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, [isMultiplayer, matchId]);
+
   // Live Duel polling
   useEffect(() => {
     if (isMultiplayer && matchId) {
       const unsub = duelClient.pollDuel(matchId, state => {
         setDuelState(state);
-        if (state.shiritoriHistory) {
+
+        // Update turn timer from server deadline
+        if (state.turnDeadlineMs) {
+          const rem = Math.max(0, Math.round((state.turnDeadlineMs - Date.now()) / 1000));
+          setTimeLeft(rem);
+        }
+
+        if (state.words && state.words.length > 0) {
+          const mapped: ShiritoriTurn[] = state.words.map((w, i) => ({
+            id: `turn_${i}_${w.timestamp}`,
+            player: w.by === 'me' ? 'player' : 'opponent',
+            word: w.word,
+            kana: wanakana.toHiragana(w.word),
+            romaji: wanakana.toRomaji(wanakana.toHiragana(w.word)),
+            english: 'Japanese Word',
+            timestamp: w.timestamp,
+          }));
+          setTurns(mapped);
+        } else if (state.shiritoriHistory) {
           const mapped: ShiritoriTurn[] = state.shiritoriHistory.map((h, i) => ({
             id: `turn_${i}`,
             player: h.byUid === user?.uid ? 'player' : 'opponent',
@@ -87,9 +123,21 @@ export function ShiritoriArenaWeb({
 
         if (state.status === 'finished' || state.status === 'forfeit') {
           setGameOver(true);
-          const didIWin = state.winnerUid === user?.uid;
-          setWinner(didIWin ? 'player' : 'opponent');
-          setGameOverReason(state.winnerReason || (didIWin ? 'Opponent forfeit or timed out!' : 'You lost!'));
+          const isWinner = (state as any).result?.winner === 'me' || state.winnerUid === user?.uid;
+          setWinner(isWinner ? 'player' : 'opponent');
+          let reason = '';
+          const serverReason = (state as any).result?.reason || state.winnerReason;
+          const oppName = state.opponent?.displayName || 'Opponent';
+          if (serverReason === 'timeout') {
+            reason = isWinner ? `${oppName} ran out of time!` : 'You ran out of time!';
+          } else if (serverReason === 'ended_with_n') {
+            reason = isWinner ? `${oppName} played a word ending in「ん」!` : 'You played a word ending in「ん」!';
+          } else if (serverReason === 'forfeit') {
+            reason = isWinner ? `${oppName} disconnected or surrendered!` : 'You surrendered.';
+          } else {
+            reason = isWinner ? 'You won the match!' : `${oppName} won!`;
+          }
+          setGameOverReason(reason);
         }
       });
       return unsub;
@@ -162,11 +210,10 @@ export function ShiritoriArenaWeb({
     setErrorMessage('');
   };
 
-  const handlePlayerSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const playChosenWord = async (wordToPlay: string) => {
     if (gameOver) return;
 
-    const word = inputText.trim();
+    const word = wordToPlay.trim();
     if (!word) return;
 
     const lastTurn = turns[turns.length - 1];
@@ -183,10 +230,15 @@ export function ShiritoriArenaWeb({
 
     // RULE: Ends in 'ん' = Instant Loss!
     if (kana.endsWith('ん') || kana.endsWith('ン')) {
+      speakJapanese(word);
+      if (isMultiplayer && matchId) {
+        setInputText('');
+        await duelClient.submitShiritoriMove(matchId, word);
+        return;
+      }
       setGameOver(true);
       setWinner('opponent');
       setGameOverReason('💀 Ended with 「ん」! Instant Shiritori Loss!');
-      speakJapanese(word);
       return;
     }
 
@@ -222,6 +274,11 @@ export function ShiritoriArenaWeb({
     setTimeout(() => {
       runBotMove(nextTurns);
     }, botProfile.thinkTimeMs);
+  };
+
+  const handlePlayerSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    await playChosenWord(inputText);
   };
 
   const runBotMove = (history: ShiritoriTurn[]) => {
@@ -273,13 +330,24 @@ export function ShiritoriArenaWeb({
       {/* Top Banner */}
       <div className="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-4 rounded-2xl">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center font-bold text-lg">
-            し
+          <div className="w-11 h-11 rounded-2xl bg-red-500/15 border border-red-500/30 text-2xl flex items-center justify-center font-bold shadow-inner">
+            {isMultiplayer ? duelState?.opponent?.avatarEmoji || '🥷' : 'し'}
           </div>
           <div>
-            <h1 className="text-sm font-bold text-white">しりとり • Shiritori Arena</h1>
+            <div className="flex items-center gap-2">
+              <h1 className="text-sm font-bold text-white">
+                {isMultiplayer ? (duelState?.opponent?.displayName || 'Opponent') : 'しりとり • Shiritori Arena'}
+              </h1>
+              {isMultiplayer && (
+                <span className="flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" /> Live Duel
+                </span>
+              )}
+            </div>
             <p className="text-[11px] text-neutral-400">
-              {isMultiplayer ? '⚔️ Live Multiplayer Duel' : `🤖 Solo vs ${botProfile.name} (${botDifficulty})`}
+              {isMultiplayer
+                ? `Rank: ${duelState?.opponent?.beltRank || 'White'} Belt • Level ${duelState?.opponent?.level || 1}`
+                : `🤖 Solo vs ${botProfile.name} (${botDifficulty})`}
             </p>
           </div>
         </div>
@@ -308,7 +376,13 @@ export function ShiritoriArenaWeb({
       </div>
 
       {/* Duel Turn Bar & Timer */}
-      <div className="bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950 border border-neutral-800 p-4 rounded-3xl flex items-center justify-between">
+      <div
+        className={`border p-4 rounded-3xl flex items-center justify-between transition-colors ${
+          (isMultiplayer ? isMyTurnPvP : currentTurn === 'player')
+            ? 'bg-emerald-950/20 border-emerald-500/50 shadow-lg shadow-emerald-950/30'
+            : 'bg-gradient-to-r from-neutral-950 via-neutral-900 to-neutral-950 border-neutral-800'
+        }`}
+      >
         <div className="flex items-center gap-4">
           <div
             className={`w-3.5 h-3.5 rounded-full ${
@@ -318,20 +392,30 @@ export function ShiritoriArenaWeb({
             }`}
           />
           <div>
-            <div className="text-xs font-bold text-neutral-400 uppercase tracking-wider">Current Turn</div>
+            <div className="text-xs font-bold text-neutral-400 uppercase tracking-wider">Turn Status</div>
             <div className="text-sm font-black text-white">
-              {(isMultiplayer ? isMyTurnPvP : currentTurn === 'player') ? 'Your Turn' : 'Opponent Thinking...'}
+              {(isMultiplayer ? isMyTurnPvP : currentTurn === 'player') ? (
+                <span className="text-emerald-400 font-black">🎯 YOUR TURN</span>
+              ) : (
+                <span className="text-amber-400">
+                  ⏳ Waiting for {isMultiplayer ? (duelState?.opponent?.displayName || 'Opponent') : botProfile.name}...
+                </span>
+              )}
             </div>
           </div>
         </div>
 
         {/* Required Letter Display */}
         <div className="text-center">
-          <div className="text-[10px] uppercase font-bold text-neutral-500">Next Word Must Start With</div>
+          <div className="text-[10px] uppercase font-bold text-neutral-400">
+            {(isMultiplayer ? isMyTurnPvP : currentTurn === 'player')
+              ? 'Your Starting Kana'
+              : 'Opponent Must Play'}
+          </div>
           <div className="text-2xl font-black text-amber-400 font-serif">「{requiredChar}」</div>
         </div>
 
-        {/* 15s Timer */}
+        {/* Timer */}
         <div className="flex items-center gap-2">
           <Timer size={18} className={timeLeft <= 5 ? 'text-red-500 animate-bounce' : 'text-neutral-400'} />
           <span
@@ -344,10 +428,28 @@ export function ShiritoriArenaWeb({
         </div>
       </div>
 
+      {/* Opponent Disconnect Banner if opponent stopped polling */}
+      {isMultiplayer && duelState?.opponentGone && !gameOver && (
+        <div className="p-3 bg-amber-500/15 border border-amber-500/30 rounded-2xl flex items-center justify-between text-xs text-amber-300 font-bold animate-pulse">
+          <span>⚠️ {duelState.opponent?.displayName || 'Opponent'} seems disconnected. Forfeiting in 15s if they don't return...</span>
+        </div>
+      )}
+
       {/* Scrollable Word Chain Board */}
       <div className="bg-neutral-950 border border-neutral-800 rounded-3xl p-6 min-h-[320px] max-h-[420px] overflow-y-auto space-y-3">
         {turns.map((turn, idx) => {
           const isPlayer = turn.player === 'player';
+          const senderName = isPlayer
+            ? 'YOU'
+            : isMultiplayer
+            ? (duelState?.opponent?.displayName || 'Opponent')
+            : botProfile.name;
+          const senderAvatar = isPlayer
+            ? '🥋'
+            : isMultiplayer
+            ? (duelState?.opponent?.avatarEmoji || '🥷')
+            : botProfile.avatarEmoji;
+
           return (
             <div
               key={turn.id}
@@ -355,7 +457,7 @@ export function ShiritoriArenaWeb({
             >
               {!isPlayer && (
                 <div className="w-8 h-8 rounded-lg bg-neutral-800 text-base flex items-center justify-center shadow-inner mt-1">
-                  {botProfile.avatarEmoji}
+                  {senderAvatar}
                 </div>
               )}
 
@@ -368,7 +470,7 @@ export function ShiritoriArenaWeb({
               >
                 <div className="flex items-center gap-2 justify-between">
                   <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">
-                    #{idx + 1} {isPlayer ? 'YOU' : botProfile.name}
+                    #{idx + 1} {senderName}
                   </span>
                   <button
                     onClick={() => speakJapanese(turn.word)}
@@ -410,21 +512,70 @@ export function ShiritoriArenaWeb({
             <p className="text-xs text-neutral-400 mt-1">{gameOverReason}</p>
           </div>
 
-          <button
-            onClick={startNewSoloGame}
-            className="px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-black text-white transition flex items-center gap-2 mx-auto shadow-lg shadow-red-950/40"
-          >
-            <RotateCcw size={15} /> Play Again
-          </button>
+          <div className="flex items-center justify-center gap-3">
+            {!isMultiplayer ? (
+              <button
+                onClick={startNewSoloGame}
+                className="px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-black text-white transition flex items-center gap-2 shadow-lg shadow-red-950/40"
+              >
+                <RotateCcw size={15} /> Play Again
+              </button>
+            ) : (
+              <>
+                {onRematch && (
+                  <button
+                    onClick={onRematch}
+                    className="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-black text-white transition flex items-center gap-2 shadow-lg shadow-emerald-950/40"
+                  >
+                    <Swords size={15} /> Find Another Match
+                  </button>
+                )}
+                <button
+                  onClick={onExit}
+                  className="px-6 py-3 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-black text-neutral-300 transition"
+                >
+                  Exit to Arcade
+                </button>
+              </>
+            )}
+          </div>
         </div>
       )}
 
-      {/* Input Bar */}
+      {/* Input Bar & Lifeline Word Suggestions */}
       {!gameOver && (
-        <form onSubmit={handlePlayerSubmit} className="space-y-2">
+        <form onSubmit={handlePlayerSubmit} className="space-y-3">
           {errorMessage && (
             <div className="p-2.5 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold flex items-center gap-2">
               <AlertTriangle size={14} /> {errorMessage}
+            </div>
+          )}
+
+          {/* Quick Lifeline Word Suggestions (1-Click Play) */}
+          {(isMultiplayer ? isMyTurnPvP : currentTurn === 'player') && (
+            <div className="bg-neutral-900/80 border border-neutral-800/80 rounded-2xl p-3 space-y-2">
+              <div className="flex items-center justify-between text-xs font-bold text-neutral-400">
+                <span className="flex items-center gap-1.5 text-amber-400">
+                  <Sparkles size={13} /> Lifeline Words Starting with 「{requiredChar}」:
+                </span>
+                <span className="text-[10px] text-neutral-500">Tap word to play instantly</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {getPlayerSuggestions(requiredChar, new Set(turns.map(t => t.kana)), 3).map(w => (
+                  <button
+                    key={w.word}
+                    type="button"
+                    onClick={() => playChosenWord(w.word)}
+                    className="px-3.5 py-2 rounded-xl bg-neutral-800 hover:bg-neutral-700 active:scale-95 border border-neutral-700/60 text-left transition flex items-center gap-2 shadow-sm group"
+                  >
+                    <span className="text-sm font-black text-white font-serif group-hover:text-amber-300">
+                      {w.word}
+                    </span>
+                    <span className="text-[11px] text-neutral-400 font-mono">({w.kana})</span>
+                    <span className="text-[10px] text-neutral-500 italic">• {w.english}</span>
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
@@ -434,7 +585,11 @@ export function ShiritoriArenaWeb({
               value={inputText}
               onChange={handleInputChange}
               disabled={isMultiplayer ? !isMyTurnPvP : currentTurn !== 'player'}
-              placeholder={`Enter Japanese noun starting with 「${requiredChar}」 (type romaji or kana)...`}
+              placeholder={
+                (isMultiplayer ? isMyTurnPvP : currentTurn === 'player')
+                  ? `Enter Japanese noun starting with 「${requiredChar}」 (type romaji or kana)...`
+                  : `Waiting for opponent's turn...`
+              }
               className="flex-1 bg-neutral-900 border border-neutral-800 rounded-2xl px-5 py-3.5 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-red-500 font-serif"
             />
             <button

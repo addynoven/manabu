@@ -4,6 +4,7 @@ import { authService } from '../services/auth.service';
 import { type AuthMode, type UserProfile } from '../models/auth.model';
 import { useProgressStore } from '../../progress/store/useProgressStore';
 import { cloudSyncService } from '../../sync/services/cloudSync.service';
+import { purgeLocalUserData } from '../services/purgeUserData';
 
 export interface AuthState {
   currentUser: UserProfile | null;
@@ -153,6 +154,7 @@ export const useAuthStore = create<AuthState>((set, get) => {
         await authService.signOut();
       } finally {
         authStorage.clearSession();
+        purgeLocalUserData();
         set({ currentUser: null, isLoading: false, errorMessage: null });
       }
     },

@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { AppShell } from '@/components/AppShell';
+import { StitchHeader } from '@/components/StitchHeader';
+import { AuthGate } from '@/components/AuthGate';
 import { BattleLobbyModalWeb } from '@/components/arcade/BattleLobbyModalWeb';
 import { ShiritoriArenaWeb } from '@/components/arcade/ShiritoriArenaWeb';
 import { KarutaBattleWeb } from '@/components/arcade/KarutaBattleWeb';
@@ -199,8 +200,10 @@ function ArcadeContent() {
   };
 
   return (
-    <AppShell>
-      <div className="max-w-6xl mx-auto space-y-8 pb-12">
+    <AuthGate>
+      <div className="bg-background-canvas text-text-primary min-h-screen flex flex-col font-body-md antialiased selection:bg-primary-container selection:text-white">
+        <StitchHeader />
+        <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 py-6 flex flex-col gap-6">
         {/* Render Active Game View */}
         {activeGame === 'shiritori' && (
           <ShiritoriArenaWeb
@@ -209,6 +212,11 @@ function ArcadeContent() {
             onExit={() => {
               setActiveGame(null);
               setLiveMatchId(null);
+            }}
+            onRematch={() => {
+              setActiveGame(null);
+              setLiveMatchId(null);
+              handleOpenLobby('shiritori');
             }}
           />
         )}
@@ -377,67 +385,194 @@ function ArcadeContent() {
 
         {/* ---------------- MAIN ARCADE HUB ---------------- */}
         {activeGame === null && (
-          <div className="space-y-8">
-            {/* Top Header */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-wider mb-2">
-                  <Gamepad2 size={14} /> Japanese Arcade Dojo
+          <div className="space-y-6">
+            {/* 1. HERO ARENA HEADER RIBBON (Stitch Screen 16) */}
+            <section className="w-full bg-surface-base border border-border-hairline rounded-xl p-6 relative overflow-hidden shadow-sm">
+              <div className="absolute -right-16 -top-16 w-80 h-80 bg-primary-container/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute right-4 bottom-0 text-[120px] font-bold text-border-hairline/25 select-none leading-none pointer-events-none font-mono">
+                闘
+              </div>
+
+              <div className="relative z-10 flex flex-col gap-4">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div className="flex items-center gap-2">
+                    <span className="material-symbols-outlined text-primary-container text-[20px]">
+                      sports_esports
+                    </span>
+                    <span className="font-mono text-[11px] text-text-secondary tracking-widest uppercase font-bold">
+                      MANABU ARCADE • LINGUISTIC BATTLE STATIONS
+                    </span>
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-accent-gold-subtle text-accent-gold border border-accent-gold/40">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-gold mr-1.5 animate-ping" />
+                      SEASON 04 LIVE
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs text-text-muted font-mono">
+                    <span className="material-symbols-outlined text-sm">schedule</span>
+                    <span>Reflex Drills Sync: Active</span>
+                  </div>
                 </div>
-                <h1 className="text-2xl md:text-3xl font-black text-white">
-                  Arcade Arena • <span className="font-serif text-red-500 font-normal">遊技場</span>
-                </h1>
-                <p className="text-xs text-neutral-400 mt-1">
-                  1:1 Parity with Mobile: Solo vs AI Bots, Cross-Platform Live PvP, and Flash Gauntlets.
+
+                <div className="max-w-3xl">
+                  <h1 className="text-2xl sm:text-3xl font-bold text-text-primary tracking-tight flex items-center gap-3">
+                    <span>The Dojo Arcade & Linguistic Colosseum</span>
+                  </h1>
+                  <p className="text-sm text-text-secondary mt-1">
+                    Transform high-intensity JLPT drills into deliberate reflex mastery. High scores feed directly into your SRS retention matrix.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 mt-2 border-t border-border-subtle">
+                  <div className="bg-background-deep border border-border-subtle rounded-lg px-3.5 py-2.5 flex items-center gap-3">
+                    <div className="p-2 rounded bg-surface-muted text-info">
+                      <span className="material-symbols-outlined text-[20px]">check_circle</span>
+                    </div>
+                    <div>
+                      <div className="text-[11px] text-text-muted uppercase font-semibold">Rain High</div>
+                      <div className="text-sm font-bold text-text-primary font-mono">{rainHigh} pts</div>
+                    </div>
+                  </div>
+                  <div className="bg-background-deep border border-border-subtle rounded-lg px-3.5 py-2.5 flex items-center gap-3">
+                    <div className="p-2 rounded bg-accent-gold-subtle text-accent-gold border border-accent-gold/20">
+                      <span className="material-symbols-outlined text-[20px]">local_fire_department</span>
+                    </div>
+                    <div>
+                      <div className="text-[11px] text-text-muted uppercase font-semibold">Snake High</div>
+                      <div className="text-sm font-bold text-accent-gold font-mono">{snakeHigh} pts</div>
+                    </div>
+                  </div>
+                  <div className="bg-background-deep border border-border-subtle rounded-lg px-3.5 py-2.5 flex items-center gap-3">
+                    <div className="p-2 rounded bg-surface-muted text-primary-fixed-dim">
+                      <span className="material-symbols-outlined text-[20px]">bolt</span>
+                    </div>
+                    <div>
+                      <div className="text-[11px] text-text-muted uppercase font-semibold">Catch High</div>
+                      <div className="text-sm font-bold text-text-primary font-mono">{catchHigh} pts</div>
+                    </div>
+                  </div>
+                  <div className="bg-background-deep border border-border-subtle rounded-lg px-3.5 py-2.5 flex items-center gap-3">
+                    <div className="p-2 rounded bg-surface-muted text-secondary">
+                      <span className="material-symbols-outlined text-[20px]">military_tech</span>
+                    </div>
+                    <div>
+                      <div className="text-[11px] text-text-muted uppercase font-semibold">Survival High</div>
+                      <div className="text-sm font-bold text-secondary font-mono">{survivalHigh} pts</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* FEATURED BATTLE STAGE: "Kaijugation: Monster Inflection Defense" */}
+            <section className="bg-surface-base border border-border-hairline rounded-xl overflow-hidden flex flex-col shadow-sm">
+              <div className="px-5 py-3 bg-surface-muted border-b border-border-hairline flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse" />
+                  <span className="text-base font-semibold text-text-primary">Kaijugation: Monster Inflection Defense</span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-background-deep text-text-secondary border border-border-hairline">DEFENSE BOSS</span>
+                </div>
+                <div className="flex items-center gap-2 font-mono text-xs text-accent-gold">
+                  <span className="material-symbols-outlined text-[16px]">swords</span>
+                  <span>WAVE 07 / 10</span>
+                </div>
+              </div>
+
+              <div className="relative w-full h-72 bg-tatami-canvas border-b border-border-hairline overflow-hidden flex flex-col justify-between p-5">
+                <div className="relative z-10 flex items-start justify-between">
+                  <div className="bg-background-deep/90 backdrop-blur-sm border border-border-hairline p-3 rounded-lg min-w-[260px]">
+                    <div className="flex justify-between items-center mb-1 text-xs font-mono">
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-primary-container font-bold">ゴジラ</span>
+                        <span className="text-text-muted">| KAIJU-05 &apos;GODAN DRAGON&apos;</span>
+                      </div>
+                      <span className="text-text-primary font-bold">8,400 / 12,000 HP</span>
+                    </div>
+                    <div className="w-full h-2.5 bg-surface-muted rounded-full overflow-hidden border border-border-subtle p-0.5">
+                      <div className="h-full bg-gradient-to-r from-warning to-primary-container rounded-full w-[70%]" />
+                    </div>
+                    <div className="flex justify-between text-[10px] font-mono text-text-muted mt-1">
+                      <span>SHIELD: 70%</span>
+                      <span className="text-warning font-semibold">RAMPAGE PHASE 2</span>
+                    </div>
+                  </div>
+
+                  <div className="bg-background-deep/90 backdrop-blur-sm border border-border-hairline px-3 py-2 rounded-lg text-right font-mono">
+                    <div className="text-[10px] text-text-muted uppercase">Active Multiplier</div>
+                    <div className="text-base font-bold text-accent-gold">3.4x COMBO</div>
+                  </div>
+                </div>
+
+                <div className="relative z-10 flex items-center justify-between px-6 py-2">
+                  <div className="flex flex-col items-center">
+                    <div className="relative">
+                      <div className="w-16 h-16 rounded-full border-2 border-dashed border-info/60 flex items-center justify-center bg-info-subtle/30 backdrop-blur-sm">
+                        <span className="font-mono text-xs font-bold text-info">守護</span>
+                      </div>
+                      <div className="absolute -bottom-2 -left-2 text-[9px] font-mono bg-background-deep px-1.5 py-0.5 rounded border border-info/40 text-info">
+                        TOWER BARRIER
+                      </div>
+                    </div>
+                    <span className="text-[11px] text-text-secondary mt-2 font-mono">Tokyo Arc 03</span>
+                  </div>
+
+                  <div className="flex-1 mx-6 flex items-center relative">
+                    <div className="w-full h-1 bg-border-hairline relative">
+                      <div className="absolute inset-y-0 left-1/4 right-1/4 bg-primary-container animate-pulse shadow-[0_0_12px_#c74a4a]" />
+                    </div>
+                    <div className="absolute left-1/2 -translate-x-1/2 -top-3.5 bg-background-deep px-2 py-0.5 rounded text-[10px] font-mono border border-primary-container text-primary">
+                      BEAM INBOUND: 02.4s
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-20 h-20 rounded-lg bg-background-deep/80 border border-primary-container/50 flex flex-col items-center justify-center p-2 shadow-[0_0_20px_rgba(199,74,74,0.2)]">
+                      <span className="text-3xl text-primary font-bold">龍</span>
+                      <span className="text-[10px] font-mono text-accent-gold mt-1">84% CHARGE</span>
+                    </div>
+                    <span className="text-[11px] text-primary-fixed-dim mt-2 font-mono">Godan Dragon</span>
+                  </div>
+                </div>
+
+                <div className="relative z-10 bg-primary-subtle border border-primary-container/60 rounded-lg p-2.5 flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <span className="px-2 py-0.5 rounded bg-primary-container text-white font-mono text-xs font-bold animate-pulse">
+                      ATTACK
+                    </span>
+                    <div className="text-xs">
+                      <span className="text-text-muted">Target:</span>
+                      <span className="text-white font-bold text-sm mx-1">食べる</span>
+                      <span className="text-text-secondary font-mono">(To Eat / Ichidan)</span>
+                      <span className="text-primary-fixed ml-2 font-semibold">— Kaiju casts CAUSATIVE-PASSIVE Beam!</span>
+                    </div>
+                  </div>
+                  <div className="text-xs font-mono text-accent-gold font-bold">
+                    Deflect prompt: [食べさせられる]
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p className="text-xs sm:text-sm text-text-secondary max-w-xl">
+                  Rapid-fire morphological defense. Answer before the countdown bar depletes to trigger an electric counter-strike and shield Neo-Tokyo.
                 </p>
-              </div>
-
-              {/* Records Pill Box */}
-              <div className="flex flex-wrap gap-2 text-xs">
-                <div className="bg-neutral-900 border border-neutral-800 px-3.5 py-1.5 rounded-xl flex items-center gap-2">
-                  <Trophy size={14} className="text-amber-400" />
-                  <span className="text-neutral-400">Rain:</span>
-                  <span className="font-bold text-white">{rainHigh}</span>
-                </div>
-                <div className="bg-neutral-900 border border-neutral-800 px-3.5 py-1.5 rounded-xl flex items-center gap-2">
-                  <Trophy size={14} className="text-amber-400" />
-                  <span className="text-neutral-400">Snake:</span>
-                  <span className="font-bold text-white">{snakeHigh}</span>
-                </div>
-                <div className="bg-neutral-900 border border-neutral-800 px-3.5 py-1.5 rounded-xl flex items-center gap-2">
-                  <Trophy size={14} className="text-amber-400" />
-                  <span className="text-neutral-400">Catch:</span>
-                  <span className="font-bold text-white">{catchHigh}</span>
-                </div>
-                <div className="bg-neutral-900 border border-neutral-800 px-3.5 py-1.5 rounded-xl flex items-center gap-2">
-                  <Trophy size={14} className="text-amber-400" />
-                  <span className="text-neutral-400">Survival:</span>
-                  <span className="font-bold text-white">{survivalHigh}</span>
+                <div className="flex items-center gap-3 shrink-0">
+                  <button
+                    onClick={() => setActiveGame('daily')}
+                    className="px-5 py-2.5 rounded-lg bg-primary-container hover:bg-primary-hover active:bg-primary-active text-white text-xs font-bold flex items-center gap-2 shadow-[0_4px_14px_rgba(199,74,74,0.35)] transition-all"
+                  >
+                    <span>Enter Kaijugation Arena</span>
+                    <span className="material-symbols-outlined text-[16px]">swords</span>
+                  </button>
+                  <button
+                    onClick={() => setActiveGame('survival')}
+                    className="px-4 py-2.5 rounded-lg bg-surface-muted hover:bg-surface-elevated text-text-primary border border-border-hairline text-xs font-semibold flex items-center gap-2 transition-all"
+                  >
+                    <span className="material-symbols-outlined text-[16px]">model_training</span>
+                    <span>Practice Gauntlet</span>
+                  </button>
                 </div>
               </div>
-            </div>
-
-            {/* Daily Challenge Hero Banner */}
-            <div className="bg-gradient-to-r from-amber-950/60 via-neutral-900 to-neutral-900 border border-amber-500/40 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-xl">
-              <div className="space-y-2">
-                <div className="inline-flex items-center gap-2 text-xs font-bold text-amber-400 uppercase tracking-wider">
-                  <Sparkles size={14} /> Ranked Gauntlet
-                </div>
-                <h2 className="text-xl md:text-2xl font-black text-white">
-                  Today&apos;s Daily Challenge • <span className="font-serif text-amber-400 font-normal">日替わり試練</span>
-                </h2>
-                <p className="text-xs text-neutral-400 max-w-xl">
-                  Test your daily Japanese speed across 10 curated questions. Your score automatically syncs to the Clan Leaderboard!
-                </p>
-              </div>
-
-              <button
-                onClick={() => setActiveGame('daily')}
-                className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black text-xs font-black transition flex items-center justify-center gap-2 shadow-lg shadow-amber-950/50 whitespace-nowrap"
-              >
-                <Flame size={16} /> Start Daily Challenge
-              </button>
-            </div>
+            </section>
 
             {/* Filter Tabs */}
             <div className="flex gap-2 border-b border-neutral-800 pb-3">
@@ -710,8 +845,9 @@ function ArcadeContent() {
           onStartSolo={handleStartSoloFromLobby}
           onStartLiveDuel={handleStartLiveDuelFromLobby}
         />
+        </main>
       </div>
-    </AppShell>
+    </AuthGate>
   );
 }
 

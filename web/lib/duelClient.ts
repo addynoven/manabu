@@ -32,15 +32,30 @@ export interface DuelRoundHistory {
 export interface DuelState {
   id: string;
   game: DuelGameType;
-  playerA: DuelPlayer;
-  playerB: DuelPlayer;
+  playerA?: DuelPlayer;
+  playerB?: DuelPlayer;
+  opponent?: {
+    uid: string;
+    displayName: string;
+    avatarEmoji: string;
+    beltRank: string;
+    level: number;
+  };
   status: DuelStatus;
-  currentRound: number;
-  totalRounds: number;
+  currentRound?: number;
+  totalRounds?: number;
   turnUid?: string;
+  turn?: 'me' | 'them';
+  turnDeadlineMs?: number | null;
+  opponentGone?: boolean;
+  result?: {
+    winner: 'me' | 'them' | 'draw';
+    reason: 'rounds' | 'forfeit' | 'timeout' | 'ended_with_n';
+  };
   lastTurnTime?: number;
-  submissions: DuelSubmission[];
-  roundHistory: DuelRoundHistory[];
+  submissions?: DuelSubmission[];
+  roundHistory?: DuelRoundHistory[];
+  words?: Array<{ word: string; by: 'me' | 'them'; timestamp: number }>;
   shiritoriHistory?: {
     word: string;
     kana: string;
@@ -49,11 +64,12 @@ export interface DuelState {
     byUid: string;
     timestamp: number;
   }[];
-  winnerUid: string | null;
-  winnerReason: string | null;
+  winnerUid?: string | null;
+  winnerReason?: string | null;
   deck?: any;
-  createdAt: number;
-  updatedAt: number;
+  createdAt?: number;
+  updatedAt?: number;
+  serverTime?: number;
 }
 
 export class DuelClient {

@@ -17,6 +17,23 @@ const answersList = Array.from(allEnglishAnswers);
 
 export function mapUnits() {
   return ALL_DOJO_UNITS.map(unit => {
+    // Map units to textbook syllabus (Genki, Minna no Nihongo, Tobira)
+    let textbook = unit.textbook;
+    let jlptLevel = unit.jlptLevel || 'N5';
+
+    if (!textbook) {
+      if (unit.unitNumber <= 12) {
+        textbook = { series: 'genki', volume: 1, chapter: unit.unitNumber, title: `Genki I Ch.${unit.unitNumber}` };
+        jlptLevel = 'N5';
+      } else if (unit.unitNumber <= 23) {
+        textbook = { series: 'genki', volume: 2, chapter: unit.unitNumber - 12, title: `Genki II Ch.${unit.unitNumber - 12}` };
+        jlptLevel = 'N4';
+      } else {
+        textbook = { series: 'tobira', chapter: unit.unitNumber - 23, title: `Tobira Ch.${unit.unitNumber - 23}` };
+        jlptLevel = 'N3';
+      }
+    }
+
     return {
       id: unit.id,
       number: unit.unitNumber,
@@ -25,6 +42,8 @@ export function mapUnits() {
       description: unit.description,
       icon: unit.icon || '🌸',
       color: unit.themeColor || '#10B981',
+      textbook,
+      jlptLevel,
       lessons: unit.lessons.map(lesson => {
         return {
           id: lesson.id,

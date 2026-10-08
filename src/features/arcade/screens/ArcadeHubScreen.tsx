@@ -948,6 +948,14 @@ export function ArcadeHubScreen({ hideBack = false }: ArcadeHubScreenProps = {})
             setActiveDuelInitialState(null);
             closeGame();
           }}
+          onRematch={() => {
+            setActiveDuelMatchId(null);
+            setActiveDuelInitialState(null);
+            closeGame();
+            setTimeout(() => {
+              setSelectedBattleGame('shiritori');
+            }, 100);
+          }}
         />
       </Modal>
 

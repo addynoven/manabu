@@ -10,10 +10,21 @@ import {
   type User,
 } from 'firebase/auth';
 import { Platform } from 'react-native';
-import { GoogleSignin, statusCodes } from '@react-native-google-signin/google-signin';
 import { firebaseAuth, GOOGLE_WEB_CLIENT_ID } from '../../../core/api/firebase';
 import { authStorage } from '../storage/auth.storage';
 import { type UserProfile } from '../models/auth.model';
+import { purgeLocalUserData } from './purgeUserData';
+
+// Safely resolve GoogleSignin without throwing if TurboModuleRegistry cannot find native binary
+let GoogleSignin: any = null;
+let statusCodes: any = {};
+try {
+  const gSignin = require('@react-native-google-signin/google-signin');
+  GoogleSignin = gSignin.GoogleSignin;
+  statusCodes = gSignin.statusCodes || {};
+} catch (e) {
+  // Native GoogleSignin not linked in current runtime
+}
 
 export function configureGoogleSignIn(): void {
   if (Platform.OS !== 'web' && GoogleSignin && typeof GoogleSignin.configure === 'function') {
@@ -115,6 +126,7 @@ export const authService = {
       }
     } finally {
       authStorage.clearSession();
+      purgeLocalUserData();
     }
   },
 
@@ -126,8 +138,15 @@ export const authService = {
           authStorage.saveUser(profile);
           callback(profile);
         } else {
-          authStorage.clearSession();
-          callback(null);
+          // Check if local storage has existing verified session before wiping
+          const existing = authStorage.getCurrentUser();
+          if (!existing) {
+            authStorage.clearSession();
+            purgeLocalUserData();
+            callback(null);
+          } else {
+            callback(existing);
+          }
         }
       });
     } catch (e) {

@@ -100,12 +100,32 @@ export async function apiClient<T>(
     ...((options.headers as Record<string, string>) || {}),
   };
 
-  if (!options.skipAuth && firebaseAuth.currentUser && typeof firebaseAuth.currentUser.getIdToken === 'function') {
-    try {
-      const token = await firebaseAuth.currentUser.getIdToken();
+  if (!options.skipAuth) {
+    let token: string | null = null;
+    if (firebaseAuth.currentUser && typeof firebaseAuth.currentUser.getIdToken === 'function') {
+      try {
+        token = await firebaseAuth.currentUser.getIdToken();
+      } catch (e) {
+        console.warn('[ApiClient] Failed to acquire ID token from firebaseAuth.currentUser:', e);
+      }
+    }
+
+    // Fallback: Check MMKV if firebaseAuth.currentUser is not yet initialized
+    if (!token) {
+      try {
+        const { clientStorage } = require('../storage/mmkv');
+        const { FIREBASE_CONFIG } = require('./firebase');
+        const authKey = `firebase:authUser:${FIREBASE_CONFIG.apiKey}:[DEFAULT]`;
+        const cachedRaw = clientStorage.getItem(authKey);
+        if (cachedRaw) {
+          const cachedAuth = JSON.parse(cachedRaw);
+          token = cachedAuth?.stsTokenManager?.accessToken || null;
+        }
+      } catch {}
+    }
+
+    if (token) {
       headers['Authorization'] = `Bearer ${token}`;
-    } catch (e) {
-      console.warn('[ApiClient] Failed to acquire ID token:', e);
     }
   }
 

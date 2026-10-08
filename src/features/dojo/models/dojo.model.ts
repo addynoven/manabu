@@ -87,6 +87,13 @@ export interface DojoLesson {
   iconType?: 'expression' | 'vocabulary' | 'practice' | 'quiz' | 'test';
 }
 
+export interface TextbookRef {
+  series: 'genki' | 'minna' | 'tobira';
+  volume?: 1 | 2;
+  chapter: number;
+  title?: string;
+}
+
 export interface RevisionGate {
   id: string;
   unitId: string;
@@ -107,6 +114,8 @@ export interface DojoUnit {
   summaryPoints?: string[];
   lessons: DojoLesson[];
   revisionGate: RevisionGate;
+  textbook?: TextbookRef;
+  jlptLevel?: 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
 }
 
 export interface LessonProgress {

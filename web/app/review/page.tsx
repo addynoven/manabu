@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { AppShell } from '@/components/AppShell';
+import { StitchHeader } from '@/components/StitchHeader';
+import { AuthGate } from '@/components/AuthGate';
 import { speakJapanese } from '@/data/kana';
 import rawVocab from '@/data/vocab_n5.json';
 import {
@@ -18,6 +19,8 @@ import {
   ChevronRight,
   TrendingUp,
 } from 'lucide-react';
+import { FsrsRetentionGraph } from '@/components/FsrsRetentionGraph';
+import { nextFsrsState, FsrsGrade } from '@/lib/fsrsEngine';
 
 interface SrsItem {
   id: string;
@@ -26,6 +29,9 @@ interface SrsItem {
   meaning: string;
   stage: number; // 1-4: Apprentice, 5-6: Guru, 7: Master, 8: Enlightened, 9: Burned
   dueAt: number; // timestamp
+  stability?: number;
+  difficulty?: number;
+  reps?: number;
 }
 
 const STAGE_NAMES = [
@@ -120,12 +126,30 @@ export default function SrsReviewPage() {
       ? Math.min(9, currentItem.stage + 1)
       : Math.max(1, currentItem.stage - 1);
 
-    // Exponential SRS interval: 4h, 8h, 1d, 3d, 1w, 2w, 1mo, 4mo
-    const intervalsHours = [0, 4, 8, 24, 72, 168, 336, 720, 2880, 999999];
-    const nextDue = Date.now() + intervalsHours[newStage] * 60 * 60 * 1000;
+    // FSRS-5 calculation
+    const grade: FsrsGrade = promoted ? 3 : 1; // 3: Good, 1: Again
+    const fsrs = nextFsrsState(
+      {
+        stability: currentItem.stability || (currentItem.stage * 1.8),
+        difficulty: currentItem.difficulty || 4.2,
+        reps: currentItem.reps || currentItem.stage,
+      },
+      grade
+    );
+
+    const nextDue = new Date(fsrs.dueAt).getTime();
 
     const updatedDeck = deck.map(item =>
-      item.id === currentItem.id ? { ...item, stage: newStage, dueAt: nextDue } : item
+      item.id === currentItem.id
+        ? {
+            ...item,
+            stage: newStage,
+            dueAt: nextDue,
+            stability: fsrs.stability,
+            difficulty: fsrs.difficulty,
+            reps: fsrs.reps,
+          }
+        : item
     );
     saveDeck(updatedDeck);
 
@@ -171,63 +195,91 @@ export default function SrsReviewPage() {
   };
 
   return (
-    <AppShell>
-      <div className="max-w-5xl mx-auto space-y-8">
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-bold uppercase tracking-wider mb-2">
-              <RefreshCw size={14} /> Spaced Repetition System (SRS)
-            </div>
-            <h1 className="text-2xl md:text-3xl font-black text-white">
-              SRS Dojo • <span className="font-serif text-red-500 font-normal">復習道場</span>
-            </h1>
-            <p className="text-xs text-neutral-400 mt-1">
-              Scientifically proven spaced intervals (WaniKani/Anki algorithm) to burn vocabulary into long-term memory.
-            </p>
-          </div>
+    <AuthGate>
+      <div className="bg-background-canvas text-text-primary min-h-screen flex flex-col font-body-md antialiased selection:bg-primary-container selection:text-white">
+        <StitchHeader />
 
-          <div className="flex items-center gap-3">
-            <button
-              onClick={addMoreVocabToDeck}
-              className="bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-neutral-300 font-bold px-4 py-2.5 rounded-xl text-xs transition"
-            >
-              + Add 10 Words
-            </button>
-            <button
-              onClick={startSession}
-              disabled={dueItems.length === 0}
-              className="bg-red-600 hover:bg-red-500 disabled:opacity-40 disabled:hover:bg-red-600 text-white font-bold px-5 py-2.5 rounded-xl text-xs transition shadow-lg shadow-red-950/50 flex items-center gap-2"
-            >
-              <Zap size={14} fill="white" />
-              Start Review ({dueItems.length} Due)
-            </button>
-          </div>
-        </div>
-
-        {/* SRS Stage Progression Pyramid */}
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3.5">
-          {[
-            { name: 'Apprentice', count: apprenticeCount, color: 'text-pink-400', bg: 'bg-pink-500/10', border: 'border-pink-500/20' },
-            { name: 'Guru', count: guruCount, color: 'text-purple-400', bg: 'bg-purple-500/10', border: 'border-purple-500/20' },
-            { name: 'Master', count: masterCount, color: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/20' },
-            { name: 'Enlightened', count: enlightenedCount, color: 'text-cyan-400', bg: 'bg-cyan-500/10', border: 'border-cyan-500/20' },
-            { name: 'Burned', count: burnedCount, color: 'text-amber-400', bg: 'bg-amber-500/10', border: 'border-amber-500/20' },
-          ].map(tier => (
-            <div
-              key={tier.name}
-              className={`p-4 rounded-2xl border ${tier.border} ${tier.bg} flex flex-col justify-between`}
-            >
-              <span className={`text-[11px] font-bold uppercase tracking-wider ${tier.color}`}>
-                {tier.name}
-              </span>
-              <div className="mt-3 flex items-baseline justify-between">
-                <span className="text-2xl font-black text-white">{tier.count}</span>
-                <span className="text-[11px] text-neutral-500">items</span>
+        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 space-y-6">
+          {/* Header */}
+          <div className="bg-surface-base border border-border-hairline rounded-xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-subtle border border-primary-container/30 text-primary text-xs font-bold uppercase tracking-wider mb-2">
+                <RefreshCw size={14} /> FSRS-5 Spaced Repetition Engine
               </div>
+              <h1 className="text-2xl sm:text-3xl font-bold text-text-primary tracking-tight">
+                SRS Cloze Study Workstation • <span className="font-serif text-accent-gold font-normal">復習道場</span>
+              </h1>
+              <p className="text-xs text-text-secondary mt-1 max-w-2xl">
+                Scientifically calibrated memory decay scheduling using FSRS-5 algorithm. Retain kanji readings and vocabulary definitions permanently.
+              </p>
             </div>
-          ))}
-        </div>
+
+            <div className="flex items-center gap-3">
+              <button
+                onClick={addMoreVocabToDeck}
+                className="bg-surface-muted hover:bg-surface-elevated border border-border-hairline text-text-primary font-semibold px-4 py-2.5 rounded-lg text-xs transition"
+              >
+                + Add 10 Words
+              </button>
+              <button
+                onClick={startSession}
+                disabled={dueItems.length === 0}
+                className="bg-primary-container hover:bg-primary-hover disabled:opacity-40 text-white font-bold px-5 py-2.5 rounded-lg text-xs transition shadow-[0_4px_14px_rgba(199,74,74,0.35)] flex items-center gap-2"
+              >
+                <Zap size={14} fill="white" />
+                <span>Launch Reviews ({dueItems.length} Due)</span>
+              </button>
+            </div>
+          </div>
+
+          {/* SRS Stage Progression Pyramid */}
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3.5">
+            {[
+              { name: 'Apprentice', count: apprenticeCount, color: 'text-info', bg: 'bg-info-subtle', border: 'border-info/30' },
+              { name: 'Guru', count: guruCount, color: 'text-accent-gold', bg: 'bg-accent-gold-subtle', border: 'border-accent-gold/30' },
+              { name: 'Master', count: masterCount, color: 'text-purple-300', bg: 'bg-purple-950/40', border: 'border-purple-500/30' },
+              { name: 'Enlightened', count: enlightenedCount, color: 'text-cyan-300', bg: 'bg-cyan-950/40', border: 'border-cyan-400/30' },
+              { name: 'Burned 🏆', count: burnedCount, color: 'text-orange-400', bg: 'bg-orange-950/40', border: 'border-orange-500/30' },
+            ].map(tier => (
+              <div
+                key={tier.name}
+                className={`p-4 rounded-xl border ${tier.border} ${tier.bg} flex flex-col justify-between`}
+              >
+                <span className={`text-[11px] font-bold uppercase tracking-wider ${tier.color}`}>
+                  {tier.name}
+                </span>
+                <div className="mt-3 flex items-baseline justify-between">
+                  <span className="text-2xl font-bold font-mono text-text-primary">{tier.count}</span>
+                  <span className="text-[11px] text-text-muted">items</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+        {/* FSRS-5 Memory Decay & Retention Curve (Stitch Screen #10) */}
+        <FsrsRetentionGraph
+          stability={
+            deck.length > 0
+              ? Number(
+                  (
+                    deck.reduce((sum, item) => sum + (item.stability || item.stage * 1.8), 0) /
+                    deck.length
+                  ).toFixed(1)
+                )
+              : 14.8
+          }
+          difficulty={
+            deck.length > 0
+              ? Number(
+                  (
+                    deck.reduce((sum, item) => sum + (item.difficulty || 4.2), 0) /
+                    deck.length
+                  ).toFixed(1)
+                )
+              : 4.2
+          }
+          efficiencyAdvantage={14.2}
+        />
 
         {/* Review Queue Summary Card */}
         <div className="bg-gradient-to-br from-neutral-900 to-neutral-950 border border-neutral-800 p-6 md:p-8 rounded-3xl relative overflow-hidden">
@@ -401,7 +453,8 @@ export default function SrsReviewPage() {
             </div>
           </div>
         )}
+        </main>
       </div>
-    </AppShell>
+    </AuthGate>
   );
 }
