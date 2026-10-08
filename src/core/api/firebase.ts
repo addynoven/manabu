@@ -4,10 +4,13 @@ import {
   getAuth,
   type Auth,
 } from 'firebase/auth';
-// @ts-expect-error getReactNativePersistence is exported via the react-native entrypoint in @firebase/auth
-import { getReactNativePersistence } from 'firebase/auth';
 import { Platform } from 'react-native';
 import { asyncClientStorage } from '../storage/mmkv';
+
+// Safely access getReactNativePersistence if available on the runtime entrypoint
+// @ts-ignore
+import * as FirebaseAuthModule from 'firebase/auth';
+const getReactNativePersistence = (FirebaseAuthModule as any).getReactNativePersistence;
 
 /**
  * Manabu Firebase Cloud Configuration.

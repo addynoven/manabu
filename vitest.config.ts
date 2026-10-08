@@ -9,5 +9,6 @@ export default defineConfig({
   test: {
     include: ['src/**/__tests__/**/*.{test,spec}.{ts,tsx}'],
     exclude: ['node_modules', 'vision'],
+    setupFiles: ['./vitest.setup.ts'],
   },
 });
