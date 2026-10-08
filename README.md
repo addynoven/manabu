@@ -117,7 +117,7 @@ manabu/
 │       ├── sync/                # CloudSync service & conflict resolution
 │       └── profile/             # Stats, achievements, belt ranking
 │
-└── admin/                       # Next.js 16 Web Application (1:1 Web Client & API)
+└── web/                         # Next.js 16 Web Application (1:1 Web Client & API)
     ├── app/                     # App Router pages (/arcade, /friends, /stroke, etc.)
     │   └── api/v1/              # REST & Duel matchmaking endpoints
     ├── components/arcade/       # 9 React web game components & lobby modal

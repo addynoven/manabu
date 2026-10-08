@@ -55,6 +55,8 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
+    "sync:curriculum": "bun run scripts/export_curriculum_to_web.ts",
+    "export:curriculum": "bun run scripts/export_curriculum_to_web.ts",
     "lint": "expo lint",
     "test": "vitest run"
   },

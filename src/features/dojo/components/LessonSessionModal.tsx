@@ -34,6 +34,7 @@ import { DialogueChatView } from './DialogueChatView';
 import { SpeechDrillView } from './SpeechDrillView';
 import { DictationExerciseView } from './DictationExerciseView';
 import { EvaluationCardSheet } from './EvaluationCardSheet';
+import { ALL_DOJO_UNITS } from '../data/curatedUnits';
 
 interface LessonSessionModalProps {
   visible: boolean;
@@ -74,9 +75,11 @@ function LessonSessionContent({
   const recordAnswer = useProgressStore(state => state.recordAnswer);
 
   const initialItems = useMemo(() => {
-    if (mode === 'comprehensive') return [...lesson.items];
-    const filtered = lesson.items.filter(item => item.type === mode);
-    return filtered.length > 0 ? filtered : [...lesson.items];
+    const rawItems = lesson?.items || [];
+    if (!Array.isArray(rawItems) || rawItems.length === 0) return [];
+    if (mode === 'comprehensive') return [...rawItems];
+    const filtered = rawItems.filter(item => item && item.type === mode);
+    return filtered.length > 0 ? filtered : [...rawItems];
   }, [lesson, mode]);
 
   const [queue, setQueue] = useState<LessonItem[]>(() => initialItems);
@@ -540,6 +543,15 @@ function LessonSessionContent({
   );
 }
 
+function findFallbackLesson(lessonId: string): DojoLesson | null {
+  for (const unit of ALL_DOJO_UNITS) {
+    for (const l of unit.lessons) {
+      if (l.id === lessonId) return l;
+    }
+  }
+  return null;
+}
+
 export function LessonSessionModal({
   visible,
   lesson,
@@ -547,6 +559,14 @@ export function LessonSessionModal({
   onClose,
 }: LessonSessionModalProps) {
   if (!visible || !lesson) return null;
+
+  const resolvedLesson = (Array.isArray(lesson.items) && lesson.items.length > 0)
+    ? lesson
+    : (findFallbackLesson(lesson.id) || lesson);
+
+  if (!resolvedLesson || !Array.isArray(resolvedLesson.items) || resolvedLesson.items.length === 0) {
+    return null;
+  }
 
   return (
     <Modal
@@ -556,8 +576,8 @@ export function LessonSessionModal({
       onRequestClose={onClose}
     >
       <LessonSessionContent
-        key={`${lesson.id}-${mode}`}
-        lesson={lesson}
+        key={`${resolvedLesson.id}-${mode}`}
+        lesson={resolvedLesson}
         mode={mode}
         onClose={onClose}
       />

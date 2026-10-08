@@ -9,10 +9,21 @@ import { contentSyncService } from '../../../core/content/contentSync.service';
  */
 export function getCuratedUnits(): DojoUnit[] {
   try {
-    return contentSyncService.getContentBundle<DojoUnit[]>('curriculum', ALL_DOJO_UNITS);
+    const cached = contentSyncService.getContentBundle<DojoUnit[]>('curriculum', ALL_DOJO_UNITS);
+    if (
+      Array.isArray(cached) &&
+      cached.length > 0 &&
+      Array.isArray(cached[0]?.lessons) &&
+      cached[0].lessons.length > 0 &&
+      Array.isArray(cached[0].lessons[0]?.items) &&
+      cached[0].lessons[0].items.length > 0
+    ) {
+      return cached;
+    }
   } catch {
-    return ALL_DOJO_UNITS;
+    // Fallback to static units
   }
+  return ALL_DOJO_UNITS;
 }
 
 export const CURATED_DOJO_UNITS: DojoUnit[] = getCuratedUnits();

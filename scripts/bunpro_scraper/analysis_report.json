@@ -1,0 +1,5752 @@
+{
+  "summary": {
+    "desktop_categories": {
+      "decks_and_curriculum": 22,
+      "miscellaneous": 41,
+      "dashboard_home": 33,
+      "study_and_reviews": 33,
+      "grammar_and_vocab_library": 46,
+      "gamification_and_arcade": 1,
+      "community_and_social": 1,
+      "settings_and_preferences": 4
+    },
+    "mobile_categories": {
+      "grammar_and_vocab_library": 58,
+      "dashboard_home": 47,
+      "miscellaneous": 32,
+      "study_and_reviews": 29,
+      "settings_and_preferences": 4,
+      "decks_and_curriculum": 3,
+      "gamification_and_arcade": 6
+    }
+  },
+  "results": {
+    "desktop": [
+      {
+        "filename": "01_path_steps_Sean_1360x1422.png",
+        "platform": "desktop",
+        "dimensions": "1360x1422",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "x Steps taken so far",
+          "Sep 9, 2026",
+          "Needs Must TT",
+          "You've learned all the Grammar needed for this",
+          "Topic!",
+          "\\)-Adjective drills &\u00a7"
+        ]
+      },
+      {
+        "filename": "02_path_steps_Sean_478x500.png",
+        "platform": "desktop",
+        "dimensions": "478x500",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "x Steps taken so far",
+          "Sep 9, 2026",
+          "Needs Must cad",
+          "\u2018You've lame allthe Grammar needed fr this",
+          "Topi!",
+          "UsAdjective dis &"
+        ]
+      },
+      {
+        "filename": "03_path_steps_Sean_1926x511.png",
+        "platform": "desktop",
+        "dimensions": "1926x511",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Next Steps",
+          "Take the N5 Mock Test That Is My Intention But... cad Reading Practice for LPT NS",
+          "y tesson9 \u00ae)",
+          "A practice run based on JLPT NS You've learned all the Grammar needed for : :",
+          ". Fl Getsomereading practice from yourtatest",
+          "this Topic! '"
+        ]
+      },
+      {
+        "filename": "04_path_steps_sunomuno_787x567.png",
+        "platform": "desktop",
+        "dimensions": "787x567",
+        "category": "decks_and_curriculum",
+        "detected_elements": [],
+        "sample_text": [
+          "< The end of N4",
+          "N4 SE!) 185/185",
+          "N5 is basically done!",
+          "Bunpro recommends you take a Mock Test.",
+          "They're the same shape and pacing as the JLPT \u2014 but optional, with none of the",
+          "stakes. It'll give you a clear gauge of where you actually are."
+        ]
+      },
+      {
+        "filename": "05_path_steps_mvs1tb_1314x323.png",
+        "platform": "desktop",
+        "dimensions": "1314x323",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "Next Steps",
+          "Take the N2 Mock Test Ea",
+          "practice run based on JLPT N2",
+          "skip Details \u00a9",
+          "Insights",
+          "Reading Practice for JLPTN1 gia"
+        ]
+      },
+      {
+        "filename": "06_path_steps_mvs1tb_639x532.png",
+        "platform": "desktop",
+        "dimensions": "639x532",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "Reading Practice for JLPT N1",
+          "Lesson 2",
+          "Get some reading practice from your latest",
+          "Lesson!",
+          "Reading Practice for JLPT N1.",
+          "Lesson 4"
+        ]
+      },
+      {
+        "filename": "07_decks_redesign_Sean_1680x588.png",
+        "platform": "desktop",
+        "dimensions": "1680x588",
+        "category": "decks_and_curriculum",
+        "detected_elements": [],
+        "sample_text": [
+          "Featured Deck",
+          "Keigo aaa",
+          "A Grammar + Vocab Deck that features all the Keigo you could ever need while",
+          "learning Japanese.",
+          "Check it out! >",
+          "Keigo tis"
+        ]
+      },
+      {
+        "filename": "082_information-in-the-wild-week-4_ThousandJP_1920x1286.jpg",
+        "platform": "desktop",
+        "dimensions": "1920x1286",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "WHIFF 9+ WVADMEBlIZIWT",
+          "WIS SES CRBUR EE RICE URLS OLUET,",
+          "RE. Sih CRRA THY ESmwBaoFy",
+          "AFORE SHLTEVEF,",
+          "DIWALIWT. KYVINEDVCIS",
+          "(SS OMN MOREE TREES. CARE LTRLRO SUED."
+        ]
+      },
+      {
+        "filename": "083_information-in-the-wild-week-4_ThousandJP_517x346.jpg",
+        "platform": "desktop",
+        "dimensions": "517x346",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "MBAS, WAOWBIEIOT",
+          "DOSMRECRMURKEMICeURLS CEUET,",
+          "FEE. SO CRRA THY ETHBIIIG WAT. KYNKOWTE",
+          "MrONMmERBLTEVET. .",
+          "UES COM ALMORESETMERT, ORME BH LTRLRCE READ,",
+          "BRENDEN AMBRE TRNT, bY TCOTHBEEMURLES."
+        ]
+      },
+      {
+        "filename": "084_the-new-insights-section-on-th_KiyoKatu_936x328.png",
+        "platform": "desktop",
+        "dimensions": "936x328",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Insights",
+          "Forecast <> Activity <>",
+          "383413",
+          ". ei aN",
+          "\u201c5 SS nna)",
+          "A o & S o ."
+        ]
+      },
+      {
+        "filename": "085_the-new-insights-section-on-th_KiyoKatu_1606x925.png",
+        "platform": "desktop",
+        "dimensions": "1606x925",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Forecast",
+          "\u20ac > & GED oy",
+          "GD Vocab GREED Grammar",
+          "10 PM 11PM 12AM",
+          "Activity \u00e9\u20ac> 2",
+          "CD) vocab C) Grammar"
+        ]
+      },
+      {
+        "filename": "086_the-new-insights-section-on-th_KiyoKatu_690x397.png",
+        "platform": "desktop",
+        "dimensions": "690x397",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Forecast. \u20ac > & GD oi,",
+          " V0<2b GD Grammar",
+          "PM 0PM LPM 2AM a",
+          "Activity <> 8",
+          "Drea SD crammor",
+          "= \u2014\u2014\u2014\u2014"
+        ]
+      },
+      {
+        "filename": "087_kana-gokana-new-onboarding-mor_Sean_2434x1592.png",
+        "platform": "desktop",
+        "dimensions": "2434x1592",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Welcome to Bunpro!",
+          "Your account was successfully created. #",
+          "Now, let\u2019s get everything set up.",
+          "This quick process (less than 5 minutes) will",
+          "help you tune Bunpro to your current level and",
+          "goals!"
+        ]
+      },
+      {
+        "filename": "088_kana-gokana-new-onboarding-mor_Sean_517x337.png",
+        "platform": "desktop",
+        "dimensions": "517x337",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": []
+      },
+      {
+        "filename": "089_kana-gokana-new-onboarding-mor_Sean_2436x1592.png",
+        "platform": "desktop",
+        "dimensions": "2436x1592",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons"
+        ],
+        "sample_text": [
+          "Input Box",
+          "Whatever you think that answer is, type",
+          "it here in the Answer Box!",
+          "Bunpro automatically converts your",
+          "input into basic kana, so \u2018desu\u2019 turns",
+          "into CF without a Japanese keyboard!"
+        ]
+      },
+      {
+        "filename": "08_decks_redesign_Sean_1920x739.jpg",
+        "platform": "desktop",
+        "dimensions": "1920x739",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "search_filter_bar",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "My Decks",
+          "\u20ac Explore",
+          "Search for Decks",
+          "Deck Type",
+          "Grammar } | Vocab ) | Textbook",
+          "Anime) QED (came ) | TWMovie"
+        ]
+      },
+      {
+        "filename": "090_kana-gokana-new-onboarding-mor_Sean_620x500.png",
+        "platform": "desktop",
+        "dimensions": "620x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Words that use'>'",
+          "Mark as Read Y",
+          "Below are some examples. Tr listening for yourself and see if you can notice the \">\" sound",
+          "Bors",
+          "Wolk)",
+          "nobe"
+        ]
+      },
+      {
+        "filename": "091_kana-gokana-new-onboarding-mor_Sean_2438x1590.png",
+        "platform": "desktop",
+        "dimensions": "2438x1590",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons"
+        ],
+        "sample_text": [
+          "Particle",
+          "Fill-in-the-blank",
+          "The missing part of the sentence is the",
+          "answer that Bunpro is looking for.",
+          "Ask yourself, given the translation,",
+          "\u201cWhat goes best in the blank?\u201d"
+        ]
+      },
+      {
+        "filename": "092_kana-gokana-new-onboarding-mor_Sean_2746x1106.png",
+        "platform": "desktop",
+        "dimensions": "2746x1106",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "v @ Hiragana",
+          "Introduction",
+          "Y Basic Hiragana",
+          "BWUDA5",
+          "DEUS",
+          "ELIE"
+        ]
+      },
+      {
+        "filename": "093_kana-gokana-new-onboarding-mor_Sean_517x338.png",
+        "platform": "desktop",
+        "dimensions": "517x338",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "o\u2014\u2014_ o\u2014\u2014 e\u2014\u2014_0",
+          "What's your study pace?",
+          "[Etna sveasrinsasiy O",
+          "ih is pce, youl complete Bunpro Ain 4 months!"
+        ]
+      },
+      {
+        "filename": "094_kana-gokana-new-onboarding-mor_Sean_690x423.png",
+        "platform": "desktop",
+        "dimensions": "690x423",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "ee voo Os iko",
+          "C37)",
+          "Undo Showinlo YA a",
+          "\u00b0 ey > e",
+          "What you wrote \u2018The answer was",
+          "BED canneupedonyortenamias(s1eTa TED | canvaypedonourkaboudes ELT"
+        ]
+      },
+      {
+        "filename": "095_kana-gokana-new-onboarding-mor_Sean_1256x489.webp",
+        "platform": "desktop",
+        "dimensions": "1256x489",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Like the 'a' in"
+        ]
+      },
+      {
+        "filename": "096_kana-gokana-new-onboarding-mor_Sean_2438x1594.png",
+        "platform": "desktop",
+        "dimensions": "2438x1594",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          ") rs) ; .",
+          "What do you want to study?",
+          "Grammar Vocabulary Both Grammar and Vocab",
+          "Don\u2019t stress too much about these options.",
+          "You can easily change between them at any time."
+        ]
+      },
+      {
+        "filename": "097_kana-gokana-new-onboarding-mor_Sean_1664x1424.jpg",
+        "platform": "desktop",
+        "dimensions": "1664x1424",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "VY Combinations: *\u00ae, \u00a9. & 6/36 Read | Practice",
+          "Great news, you've mastered all of the hiragana, and how they can be modified with dakuten",
+          "and handakuten! Now there's just a few small things left to cover.",
+          "In this section, we will have a look at what happens when different hiragana are combined.",
+          "There are no new letters to learn, but we will see some of the ones that we have already learned",
+          "shrink!"
+        ]
+      },
+      {
+        "filename": "098_kana-gokana-new-onboarding-mor_Sean_690x383.png",
+        "platform": "desktop",
+        "dimensions": "690x383",
+        "category": "decks_and_curriculum",
+        "detected_elements": [],
+        "sample_text": [
+          "YB Hiragana",
+          "Introduction",
+          "> Basic Hiragana",
+          "Buses",
+          "mace",
+          "eure"
+        ]
+      },
+      {
+        "filename": "099_kana-gokana-new-onboarding-mor_Sean_1686x1286.png",
+        "platform": "desktop",
+        "dimensions": "1686x1286",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "00:29",
+          "46/46"
+        ]
+      },
+      {
+        "filename": "09_decks_redesign_Sean_480x500.png",
+        "platform": "desktop",
+        "dimensions": "480x500",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "action_buttons",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "x Knowledge Check",
+          "You're about to check 2items.",
+          "You'l rte how confident you are with each tem in 4 levels:",
+          "Unknown, First review now",
+          "You have never seen this, or want to treat itas such",
+          "Familiar GETS First review in 2 days"
+        ]
+      },
+      {
+        "filename": "100_kana-gokana-new-onboarding-mor_Sean_1684x1286.png",
+        "platform": "desktop",
+        "dimensions": "1684x1286",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Showing high scores for hiragana with monographs only.",
+          "Hiragana Katakana",
+          "Monographs Diacritics Digraphs",
+          "RANK HAME TIME",
+          "1. UJSAMA O9:40 O88",
+          "2. VRTAS OO: 46 93"
+        ]
+      },
+      {
+        "filename": "101_kana-gokana-new-onboarding-mor_Sean_517x338.png",
+        "platform": "desktop",
+        "dimensions": "517x338",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "What's your current level?",
+          "egnner 5)",
+          "Ieanhold avery basi conversation andeanuse abitof",
+          "undamentl ganar"
+        ]
+      },
+      {
+        "filename": "102_kana-gokana-new-onboarding-mor_Sean_1686x1286.png",
+        "platform": "desktop",
+        "dimensions": "1686x1286",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "YOU DID IT!",
+          "You completed a deck of hiragana with monographs only.",
+          "01:17 46 98%",
+          "Time Cards First guess",
+          "taken reviewed correct",
+          "| PLAY AGAIN |"
+        ]
+      },
+      {
+        "filename": "103_kana-gokana-new-onboarding-mor_Sean_2438x1495.png",
+        "platform": "desktop",
+        "dimensions": "2438x1495",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "eS @ yoo Oe 0",
+          "ikl yfa)",
+          "Undo =~ Show Info WY lternatives []",
+          "\u00a9 gya >",
+          "What you wrote The answer was",
+          "rc} oo) Can be typed on your keyboard as:{g | y | a | rc} od Can be typed on your keyboard as:"
+        ]
+      },
+      {
+        "filename": "104_kana-gokana-new-onboarding-mor_Sean_1280x720.png",
+        "platform": "desktop",
+        "dimensions": "1280x720",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": []
+      },
+      {
+        "filename": "105_kana-gokana-new-onboarding-mor_Sean_2438x1594.png",
+        "platform": "desktop",
+        "dimensions": "2438x1594",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "What\u2019s your study pace?",
+          "Relaxed O",
+          "1 Grammar + 5 Vocab Points daily",
+          "Determined \u00a9",
+          "2 Grammar + 10 Vocab Points daily",
+          "Rigorous O"
+        ]
+      },
+      {
+        "filename": "106_kana-gokana-new-onboarding-mor_Sean_1686x1286.png",
+        "platform": "desktop",
+        "dimensions": "1686x1286",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "HRITING SYSTEM",
+          "Katakana",
+          "VARIANTS",
+          "yay ap",
+          "Diacritics Digraphs",
+          "START"
+        ]
+      },
+      {
+        "filename": "107_kana-gokana-new-onboarding-mor_Sean_1686x1286.png",
+        "platform": "desktop",
+        "dimensions": "1686x1286",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Dismiss"
+        ]
+      },
+      {
+        "filename": "108_kana-gokana-new-onboarding-mor_Sean_517x338.png",
+        "platform": "desktop",
+        "dimensions": "517x338",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "\u00b0 \u00b0o tC) \u00b0 \u00b0",
+          "Setup complete",
+          "You'reatt areata!",
+          "\u2018Youre gongto strat Adept (4) stuying Both Grammar and Vocab st Determined pce",
+          "Ready to get sate?"
+        ]
+      },
+      {
+        "filename": "109_kana-gokana-new-onboarding-mor_Sean_1672x1348.png",
+        "platform": "desktop",
+        "dimensions": "1672x1348",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Y Wordsthatuse's'",
+          "Below are some examples. Try listening for yourself and see if you can notice the '>' sound",
+          "Meaning 'three items'.",
+          "a} iD | i) Can be typed on your keyboard as:| mj i|t|t|s|ujor(m|",
+          "itty)",
+          "yA), i) \u2014 iD | Meaning 'school\u2019."
+        ]
+      },
+      {
+        "filename": "10_decks_redesign_Sean_630x672.png",
+        "platform": "desktop",
+        "dimensions": "630x672",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Recent",
+          "Recent Reviews Recent Lessons",
+          "Progress Level",
+          "New to you Beginner Adept",
+          "Seasoned Expert Master",
+          "System"
+        ]
+      },
+      {
+        "filename": "110_kana-gokana-new-onboarding-mor_Sean_2438x1594.png",
+        "platform": "desktop",
+        "dimensions": "2438x1594",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "Setup complete #&",
+          "You\u2019re off to a great start!",
+          "You\u2019re going to start at Adept (N4), studying Both Grammar and Vocab at a Determined pace.",
+          "Ready to get started?",
+          "Don\u2019t stress too much about these options.",
+          "Start Learning"
+        ]
+      },
+      {
+        "filename": "111_kana-gokana-new-onboarding-mor_Sean_517x337.png",
+        "platform": "desktop",
+        "dimensions": "517x337",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "tna hour",
+          "Bunp!",
+          "te 00900",
+          "sanecs!",
+          "ERorsves.",
+          "und."
+        ]
+      },
+      {
+        "filename": "112_kana-gokana-new-onboarding-mor_Sean_654x500.png",
+        "platform": "desktop",
+        "dimensions": "654x500",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "LEADERBOARD",
+          "\u2018Showing high scores for hiragana with monographs only.",
+          "oie arapne",
+          "RANK NAME TIME %",
+          "1. JSAMA 00:40 98",
+          "2. VRTAS 00:46 93"
+        ]
+      },
+      {
+        "filename": "113_kana-gokana-new-onboarding-mor_Sean_2402x1334.png",
+        "platform": "desktop",
+        "dimensions": "2402x1334",
+        "category": "decks_and_curriculum",
+        "detected_elements": [],
+        "sample_text": [
+          "\\ & Hiragana \\ @ Hiragana 6/115 Read Practice | x",
+          "Introduction",
+          "Y Basic Hiragana",
+          "Vv Introduction",
+          "BWALAS",
+          "Welcome to Bunpro's guide to hiragana!"
+        ]
+      },
+      {
+        "filename": "114_kana-gokana-new-onboarding-mor_Sean_517x338.png",
+        "platform": "desktop",
+        "dimensions": "517x338",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "poout",
+          "\u2018merit ope ater nr ty rein tes",
+          "{panmorgotnealed Soe oa mens ereng emp",
+          "BieehysELs oO.",
+          "KtRe. slices c,",
+          "en emsed wah asian ate, set soning enn"
+        ]
+      },
+      {
+        "filename": "115_kana-gokana-new-onboarding-mor_Sean_2438x1594.png",
+        "platform": "desktop",
+        "dimensions": "2438x1594",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "What\u2019s your current level?",
+          "Absolute Zero O",
+          "Beginner (N5) O",
+          "Adept (N4) \u00a9",
+          "Seasoned (N3) O",
+          "I can hold a very basic conversation, and can use a bit of"
+        ]
+      },
+      {
+        "filename": "116_kana-gokana-new-onboarding-mor_Sean_2436x1590.png",
+        "platform": "desktop",
+        "dimensions": "2436x1590",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Learn (ii Review | 0 Decks Content ~ Practice ~",
+          "Review y",
+          "All caught up! hee mbnbmnmbn",
+          "a  89XPtoLv2 Share @",
+          "~< \u00a5 @",
+          "Learn Button <> 2 :"
+        ]
+      },
+      {
+        "filename": "117_kana-gokana-new-onboarding-mor_Sean_1660x1424.png",
+        "platform": "desktop",
+        "dimensions": "1660x1424",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Y Combinations: 2 0/8 Read",
+          "To round out the hiragana section, we have one more familiar character that will take on a",
+          "completely new role.",
+          "new sound, the small 2 indicates a glottal stop, a tiny pause/skipping a beat between sounds.",
+          "When typing, 2 can be indicated by repeating the first letter of the following sound. For",
+          "example, to type L\u2018>T you would type itte. To type 4 a7 you would type atta. Here are some"
+        ]
+      },
+      {
+        "filename": "118_kana-gokana-new-onboarding-mor_Sean_2436x1590.png",
+        "platform": "desktop",
+        "dimensions": "2436x1590",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar",
+          "action_buttons",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "11 Review Decks Conte!",
+          "Practice ~",
+          "mbnbmnmbn",
+          "Next Review",
+          "In 3 hours",
+          "XP Earned"
+        ]
+      },
+      {
+        "filename": "119_kana-gokana-new-onboarding-mor_Sean_690x277.png",
+        "platform": "desktop",
+        "dimensions": "690x277",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "YB Hiragane",
+          "v ausae (warariee 7",
+          "Introduction",
+          "\u2018Theft column ofhiagana coves the Japanese vowel sounds. The est ofthe columns wilbe the combination of",
+          "Y asc Hagana {Consonant sound and one ol hese ve vowel sounds Leste a loge ores gaa",
+          "ausae"
+        ]
+      },
+      {
+        "filename": "11_decks_redesign_Sean_1920x1025.jpg",
+        "platform": "desktop",
+        "dimensions": "1920x1025",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "search_filter_bar",
+          "segmented_tab_bar",
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "\u2014 = [clone 8 Settings Learning @D",
+          "Bunpro N1 Bunpro N1 [Grammar] 4",
+          "Grammar This deck includes all of the most common JLPT N1 grammar, arranged in Bunpro's custom order.",
+          "\u00a9 Details =",
+          "i = ,",
+          "JLPT Composition Your Progress 187 items (& Select Items Y Filters Q"
+        ]
+      },
+      {
+        "filename": "120_kana-gokana-new-onboarding-mor_Sean_1920x1255.jpg",
+        "platform": "desktop",
+        "dimensions": "1920x1255",
+        "category": "decks_and_curriculum",
+        "detected_elements": [],
+        "sample_text": [
+          "@ \u00b0 : .",
+          "Please select your Textbook",
+          "O GENK RO",
+          "Genki | 2nd Edition Genki | 3rd Edition",
+          "Japanese",
+          "Grammar"
+        ]
+      },
+      {
+        "filename": "121_kana-gokana-new-onboarding-mor_Sean_584x500.jpg",
+        "platform": "desktop",
+        "dimensions": "584x500",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "VY Combinations: \u00ae, @. & 6/36 Read Practice",
+          "Great news, you've mastered all ofthe hiragana, and how they can be modified with dakuten",
+          "and handakuten! Now there's usta few small things left to cover.",
+          "In this section, we will have a look at what happens when different hiragana are combined.",
+          "There are no new letters to learn, but we will see some of the ones that we have already learned",
+          "shrink!"
+        ]
+      },
+      {
+        "filename": "122_kana-gokana-new-onboarding-mor_Sean_2438x1594.png",
+        "platform": "desktop",
+        "dimensions": "2438x1594",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "About C\u00ae",
+          "Ch is one of many adverbial particles in Japanese. These are particles that behave like a",
+          "regular (in that they appear after the words that they are referencing), but their role is",
+          "alittle bit more specific. cb itself has several uses, and the use that we will examine in this",
+          "grammar point is called fim. Basically this means 'presenting examples\u2019.",
+          "In English, this results in a translation similar to \u2018even\u2019, or \u2018or something\u2019. To use this"
+        ]
+      },
+      {
+        "filename": "123_kana-gokana-new-onboarding-mor_Sean_582x500.png",
+        "platform": "desktop",
+        "dimensions": "582x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Combinations: 2 0/8 Read",
+          "To round out the hiragana section, we have one more familiar character that will take on a",
+          "completely new role.",
+          "\u2018Dy like *, 1, and 4, can be seen in a minimized version: >. However, rather than indicating a",
+          "\u2018new sound, the small > indicates a glottal stop, a tiny pause/skipping a beat between sounds.",
+          "When typing, > can be indicated by repeating the firs leter of the following sound. For"
+        ]
+      },
+      {
+        "filename": "124_kana-gokana-new-onboarding-mor_Sean_655x500.png",
+        "platform": "desktop",
+        "dimensions": "655x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Dismiss"
+        ]
+      },
+      {
+        "filename": "125_kana-gokana-new-onboarding-mor_Sean_655x500.png",
+        "platform": "desktop",
+        "dimensions": "655x500",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "YOU DID IT!",
+          "You completed a deck of hiragana with monographs only.",
+          "01:17 46 98%",
+          "Time Cards First guess",
+          "taken reviewed correct",
+          "PLAY AGAIN"
+        ]
+      },
+      {
+        "filename": "126_kana-gokana-new-onboarding-mor_Sean_517x337.png",
+        "platform": "desktop",
+        "dimensions": "517x337",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Forecast a)",
+          "am a a \u00b0",
+          "pesity = ay",
+          "Progress"
+        ]
+      },
+      {
+        "filename": "127_kana-gokana-new-onboarding-mor_Sean_2434x1588.png",
+        "platform": "desktop",
+        "dimensions": "2434x1588",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "mbnbmnmbn",
+          "Learn | 11 Review Decks Content ~ wi",
+          "Learn Review",
+          "aa All caught up! mbnbmnmbn",
+          "89 XP to Lv2 Share @",
+          "Forecast so"
+        ]
+      },
+      {
+        "filename": "128_kana-gokana-new-onboarding-mor_Sean_517x338.jpg",
+        "platform": "desktop",
+        "dimensions": "517x338",
+        "category": "decks_and_curriculum",
+        "detected_elements": [],
+        "sample_text": [
+          "o\u2014\u2014_o",
+          "Please select your Textbook",
+          "\u00b0 GENK! Od",
+          "oeeren",
+          "orgs Str)"
+        ]
+      },
+      {
+        "filename": "129_minor-update-may-2nd-2022-days_Jake_1594x504.jpg",
+        "platform": "desktop",
+        "dimensions": "1594x504",
+        "category": "gamification_and_arcade",
+        "detected_elements": [],
+        "sample_text": [
+          "Days Studied Badges",
+          "Days Studied 15",
+          "\u2018Study for 15 days",
+          "WHLUEBL FLEALOBED\u00bb J",
+          "Days Studied 30",
+          "\u2018Study for 30 days"
+        ]
+      },
+      {
+        "filename": "12_decks_redesign_Sean_1920x972.jpg",
+        "platform": "desktop",
+        "dimensions": "1920x972",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "My Decks Explore",
+          "Q | Advanced Search",
+          "Browse by Type",
+          "Grammar Textbook",
+          "TV/Movie Novel Music",
+          "Grammar"
+        ]
+      },
+      {
+        "filename": "130_5-minutes-for-6-days-every-7-d_PowerAWBS_1798x861.png",
+        "platform": "desktop",
+        "dimensions": "1798x861",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "All: 29/37 Normal: 27/35 Self Study Ghost: 2/2",
+          "78.38%",
+          "CORRECT",
+          "Correct",
+          "CURBS Question-phrase + d* WEES CRE eS ~ld~DO\u2014DEE",
+          "EBWS TUE EEAD BST CEMTES = ~CHS"
+        ]
+      },
+      {
+        "filename": "131_5-minutes-for-6-days-every-7-d_PowerAWBS_690x330.png",
+        "platform": "desktop",
+        "dimensions": "690x330",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Cou ors ssp oon",
+          "78.38%",
+          "\u2018CORRECT",
+          "snes Qe see weenie nea a3 soe",
+          "ou. cwenuaenn ace cemcas = wea",
+          "eee en \u00a9 romun oe nN meme we:"
+        ]
+      },
+      {
+        "filename": "132_5-minutes-for-6-days-every-7-d_PowerAWBS_690x337.png",
+        "platform": "desktop",
+        "dimensions": "690x337",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "85.0%",
+          "CORRECT",
+          "Ford etAD enTH BO bA BB ele",
+          "Particle + ARE ATH ESS \u00a7&(0) Noun ~k5CBS + ~",
+          "ESS ~SSCBS~ Transitive +"
+        ]
+      },
+      {
+        "filename": "133_5-minutes-for-6-days-every-7-d_PowerAWBS_1227x601.png",
+        "platform": "desktop",
+        "dimensions": "1227x601",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "All: 17/20 Normal: 9/12 Self Study Ghost: 8/8",
+          "85.0%",
+          "CORRECT",
+          "Correct",
+          "\u00bb COS Tew | kl\u00e9yo | | KSICUOS | | THITS",
+          "For\u00ae@ EtAD ENTDH | BD-dA | | BS | | cls"
+        ]
+      },
+      {
+        "filename": "134_5-minutes-for-6-days-every-7-d_PowerAWBS_1226x586.png",
+        "platform": "desktop",
+        "dimensions": "1226x586",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Balxza",
+          "Study Review:239. Cram Grammar ~",
+          "~ | PowerAWBS",
+          "Paths Level 52",
+          "All: 9/11 Normal: 4/6 Self Study Ghost: 5/5",
+          "81.82%"
+        ]
+      },
+      {
+        "filename": "135_5-minutes-for-6-days-every-7-d_PowerAWBS_690x329.png",
+        "platform": "desktop",
+        "dimensions": "690x329",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Bax7a \u2018Study Review:239 Cram = Grammar~ Paths ~",
+          "81.82%",
+          "CORRECT",
+          "BUS (>)"
+        ]
+      },
+      {
+        "filename": "136_grammer-progress-seems-to-be-o__HA472_1631x645.png",
+        "platform": "desktop",
+        "dimensions": "1631x645",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Bite S jcc,",
+          "fs < ges",
+          "CN 12057) EGET 100, 254055)",
+          "to hear",
+          "to listen (e.g. to music)",
+          "to ask"
+        ]
+      },
+      {
+        "filename": "137_bunpro-changelog_Jake_2340x696.png",
+        "platform": "desktop",
+        "dimensions": "2340x696",
+        "category": "community_and_social",
+        "detected_elements": [
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "yA Add Note ~\u2014p Community Discussion O",
+          "ES Structure",
+          "denotes sentence topic Sentence topic + /&",
+          "as for... Pronounced \"4\"",
+          "Structure Legend",
+          "[l& is known as a non-logical particle as it does not change the logic of the sentence depending on what noun it is appended to]"
+        ]
+      },
+      {
+        "filename": "138_bunpro-changelog_Jake_690x255.png",
+        "platform": "desktop",
+        "dimensions": "690x255",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "Select mail Pree cam.",
+          "NB. Na. NB N2 NL",
+          "\u2018AtGrammar Studied Grammar \u2018Sud Sentences Troubles Grammar",
+          "RCTRUDED BC THREBEY te me",
+          "Sao) (gL CHS es",
+          "oe) Era) BUT BIW"
+        ]
+      },
+      {
+        "filename": "139_bunpro-changelog_Jake_1812x672.png",
+        "platform": "desktop",
+        "dimensions": "1812x672",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Select multiple JLPT levels!",
+          "Cram",
+          "Choose whatto cram:",
+          "N5 N4 N3. N2",
+          "All Grammar Studied Grammar Studied Sentences",
+          "TES TIEUMFBL TES TEESE CH"
+        ]
+      },
+      {
+        "filename": "13_decks_redesign_Sean_690x368.jpg",
+        "platform": "desktop",
+        "dimensions": "690x368",
+        "category": "decks_and_curriculum",
+        "detected_elements": [],
+        "sample_text": [
+          "Bunpro Ni [Grammar]",
+          "\u2018Wisner all he or oemin JTL pana nein Bing cae oes",
+          "Dew) Bein Laing",
+          "GED cer",
+          "scecrtems  Yrites  &",
+          "kmaatconcee"
+        ]
+      },
+      {
+        "filename": "140_bunpro-changelog_Jake_1792x681.png",
+        "platform": "desktop",
+        "dimensions": "1792x681",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "Cram",
+          "N2 N1",
+          "Choose what to cram:",
+          "N5 N4 N3.",
+          "All Grammar Studied Grammar",
+          "N3, N4 All Grammar"
+        ]
+      },
+      {
+        "filename": "141_bunpro-changelog_Jake_2420x768.png",
+        "platform": "desktop",
+        "dimensions": "2420x768",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "R12 @srsS3 100% 2/2",
+          "TE WOW DB ls ao",
+          "md ; TS 25 (k5g [formal - literary] 9 J",
+          "\u201cNy Title: \"I am a cat.\"",
+          "[can be used instead of % and \u00ae when modifying nouns in formal writing]",
+          "Hide Your Answer Submit"
+        ]
+      },
+      {
+        "filename": "142_bunpro-changelog_Jake_690x262.png",
+        "platform": "desktop",
+        "dimensions": "690x262",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "Cram",
+          "NS. Na NB. N2 NL",
+          "AlGrommae studed Grammar Sui Setences Toles Grammar",
+          "Maton = Selectindividual grammar points tocram!_",
+          "BC TOITED BETSEY",
+          "2oU (EL"
+        ]
+      },
+      {
+        "filename": "143_bunpro-changelog_Jake_2420x768.png",
+        "platform": "desktop",
+        "dimensions": "2420x768",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Hide",
+          "[formal - literary]",
+          "TE WV DB lk cones",
+          "R12 @srs3 \u00a9 100% 2/2",
+          "mn: (Baldi CHS 0 |",
+          "Title: \"| am a cat.\""
+        ]
+      },
+      {
+        "filename": "144_bunpro-changelog_Jake_574x358.png",
+        "platform": "desktop",
+        "dimensions": "574x358",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "search_filter_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "SAROBABI Review:25 Cram  Grammar~ Community",
+          "All Bunpro Grammar & Search",
+          "Lessons",
+          "Bunpro Grammar Order",
+          "studied Sentences Paths ubled Gram",
+          "Genki | 2nd Edition"
+        ]
+      },
+      {
+        "filename": "145_bunpro-changelog_Jake_900x434.png",
+        "platform": "desktop",
+        "dimensions": "900x434",
+        "category": "settings_and_preferences",
+        "detected_elements": [],
+        "sample_text": [
+          "Copy Japanese",
+          "Copy Japanese",
+          "SR. S7",
+          "Audio \u00ab",
+          "It started to sn",
+          "RRA DS. AA"
+        ]
+      },
+      {
+        "filename": "146_bunpro-changelog_Jake_1344x276.png",
+        "platform": "desktop",
+        "dimensions": "1344x276",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": []
+      },
+      {
+        "filename": "147_bunpro-changelog_Jake_963x492.png",
+        "platform": "desktop",
+        "dimensions": "963x492",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "N5 Lesson 1: 1/8 |",
+          "Readings Self-Study",
+          "Community Discussion",
+          "Structure",
+          "Noun + 7\u00e9",
+          "%Adjective + 7="
+        ]
+      },
+      {
+        "filename": "148_bunpro-changelog_Jake_1231x659.png",
+        "platform": "desktop",
+        "dimensions": "1231x659",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "BAax7a Study Lessons Reviews:6 Grammar Summary Account ~",
+          "e@Is Reviews: 6",
+          "AAS CLES",
+          "It will probably rain today. [polite - assertive]",
+          "Click Here/Press \u2018a\u2019 for alternate grammar!",
+          "Report Error"
+        ]
+      },
+      {
+        "filename": "149_bunpro-changelog_Jake_1179x577.png",
+        "platform": "desktop",
+        "dimensions": "1179x577",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "+GUIDE N5 Lesson 2: 1/8",
+          "CLED",
+          "Examples Readings Self Study",
+          "Q) -",
+          "CLES Structure",
+          "> Noun+ CL&5"
+        ]
+      },
+      {
+        "filename": "14_decks_redesign_Sean_690x349.jpg",
+        "platform": "desktop",
+        "dimensions": "690x349",
+        "category": "decks_and_curriculum",
+        "detected_elements": [],
+        "sample_text": [
+          "Browse by Type",
+          "til aie]",
+          "1 a i Q 1 o 1 )",
+          "4 1 L L",
+          "sinprons [Gammon Sano emma septa (Gane Tepenaicomna Tuopo haem"
+        ]
+      },
+      {
+        "filename": "150_bunpro-changelog_Jake_690x337.png",
+        "platform": "desktop",
+        "dimensions": "690x337",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "N5 Lesson 2: 1/8",
+          "CLES",
+          "Examples Readings Self Study",
+          "Q ihisisanote...cLa5? <=",
+          "CLES Structure",
+          "Noun+TL&5"
+        ]
+      },
+      {
+        "filename": "151_bunpro-changelog_Jake_689x369.png",
+        "platform": "desktop",
+        "dimensions": "689x369",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "pica \u2018Study Lessons Reviews:6 Grammar Summary Account ~",
+          "ta} ds =) BH .",
+          "SASH CLES.",
+          "It will probably rain today. [polite - assertive]",
+          "Click Here/Press 'a' for alternate grammar!",
+          "\u2018Show Grammar Info"
+        ]
+      },
+      {
+        "filename": "152_bunpro-changelog_Pushindawood_2282x1194.png",
+        "platform": "desktop",
+        "dimensions": "2282x1194",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "+GUIDE N4 Lesson 1: 12/14",
+          "\u00a2 ArTzl\u2019 )",
+          "Examples Readings Self Study",
+          "+f Add Note",
+          "ATAU Structure",
+          "Foi VA)"
+        ]
+      },
+      {
+        "filename": "153_bunpro-changelog_Pushindawood_690x361.png",
+        "platform": "desktop",
+        "dimensions": "690x361",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "oad N4 Lesson 1: 12/14",
+          "Cy) Structure",
+          ": Verb + #7eU",
+          "like + similar to Noun + #7e)",
+          "resembling Adj + BTW",
+          "\u00a9 Conversational"
+        ]
+      },
+      {
+        "filename": "154_immersion-mode-beta-8-19_Jake_690x342.jpg",
+        "platform": "desktop",
+        "dimensions": "690x342",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Baleup0",
+          "xHONR",
+          "wUvueE a",
+          "BLomueemrs!",
+          "anea",
+          "som dma mw ayzyy~ RAM Foe OB) ES"
+        ]
+      },
+      {
+        "filename": "155_immersion-mode-beta-8-19_Jake_1920x954.jpg",
+        "platform": "desktop",
+        "dimensions": "1920x954",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Bal Bunpro",
+          "MEOES",
+          "HOBBES",
+          "FLW ILPTS HK",
+          "FLUSREMETS |",
+          "Gara"
+        ]
+      },
+      {
+        "filename": "156_gradually-incorporate-the-voca_Makishimu_730x348.png",
+        "platform": "desktop",
+        "dimensions": "730x348",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Progression JLPT (Grammaire) @",
+          "es) 130/130",
+          "ee) 179/179",
+          "rf} 111/219",
+          "0/218",
+          "0/184"
+        ]
+      },
+      {
+        "filename": "157_gradually-incorporate-the-voca_Makishimu_738x350.jpg",
+        "platform": "desktop",
+        "dimensions": "738x350",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": []
+      },
+      {
+        "filename": "158_bunpro-beta-updated-jan-23rd-2_Jake_1281x403.png",
+        "platform": "desktop",
+        "dimensions": "1281x403",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "[N5] Lesson 5 Readings",
+          "Toggle Vertical Highlight Grammar @)",
+          "(HBMOBATSCUICOWTHLTVET. )",
+          "RSE MWTWAET . LIS EQ SUNKSTSE TEES.",
+          "Ash BE MWIWES . SSN HS ORS EGESS.",
+          "fabs H3HUOCTMENWTH. EHWUTI A. NAWCH. SABHED\u2014A lt CH"
+        ]
+      },
+      {
+        "filename": "159_bunpro-beta-updated-jan-23rd-2_Jake_1841x715.png",
+        "platform": "desktop",
+        "dimensions": "1841x715",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar",
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "oe |",
+          "Examples Readings Self Study",
+          "QO eestnotet Community bscssion 2)",
+          "or Structure",
+          "to be/is Noun+ Co",
+          "Adjective + CS"
+        ]
+      },
+      {
+        "filename": "15_decks_redesign_Sean_1342x1396.png",
+        "platform": "desktop",
+        "dimensions": "1342x1396",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "action_buttons",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "x Knowledge Check",
+          "You're about to check 2 items.",
+          "You'll rate how confident you are with each item in 4 levels:",
+          "Unknown First review now",
+          "You have never seen this, or want to treat it as such.",
+          "Familiar First review in 2 days"
+        ]
+      },
+      {
+        "filename": "160_bunpro-beta-updated-jan-23rd-2_Jake_690x393.png",
+        "platform": "desktop",
+        "dimensions": "690x393",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "< BunproN5 [Grammar]",
+          "\u201cWs deiner atmo common JTS pana arangdln rpc ot",
+          "HE osc meaing",
+          "HE Prscxcsponesscn",
+          "8 ea"
+        ]
+      },
+      {
+        "filename": "161_bunpro-beta-updated-jan-23rd-2_Jake_1280x500.png",
+        "platform": "desktop",
+        "dimensions": "1280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "\u00ab2INVD)",
+          "BOAR LN DARN ORAW",
+          "PAINE DAR ? ORB AING",
+          "NaH PPR",
+          "PRIN YI WAP HEI SAILING",
+          "ke HE"
+        ]
+      },
+      {
+        "filename": "162_bunpro-beta-updated-jan-23rd-2_Jake_690x407.jpg",
+        "platform": "desktop",
+        "dimensions": "690x407",
+        "category": "decks_and_curriculum",
+        "detected_elements": [],
+        "sample_text": [
+          "Genki Decks",
+          "Genki |",
+          "| Complete",
+          "Genki and Edition",
+          "Reeeeete",
+          "Path Decks"
+        ]
+      },
+      {
+        "filename": "163_bunpro-beta-updated-jan-23rd-2_Jake_1801x281.png",
+        "platform": "desktop",
+        "dimensions": "1801x281",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "1- The suffix 8 A. is often added to indicate a person who sells something or works as something. In casual language it can also express a person with",
+          "particular trait - A, BBA, - an easygoing person.",
+          "2- Bread is a very general translation of /. Usually the most accurate translation is \u2018baked goods\u2019.",
+          "3-380 LU is a very versatile word in Japanese. Sometimes in English \u2018nice\u2019, \u2018delicious\u2019, or \u2018tasty\u2019, can sound strange if it\u2019s the wrong situation. 385% LU can",
+          "beused almost any time!",
+          "4- The \u201c particle usually has the feeling of the trip being important, not the destination. This is why \u2018headed\u2019 sounds a bit more natural here. In everyday"
+        ]
+      },
+      {
+        "filename": "164_bunpro-beta-updated-jan-23rd-2_Jake_1817x395.png",
+        "platform": "desktop",
+        "dimensions": "1817x395",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "Selecting Grammar.. | | Cancel | { warkknown | { AddToReviews | { study | | Hide tuted Grammar",
+          "TLES",
+          "Options ~",
+          "i ES)",
+          "uu b",
+          "tn -Verbs"
+        ]
+      },
+      {
+        "filename": "165_bunpro-beta-updated-jan-23rd-2_Jake_690x386.png",
+        "platform": "desktop",
+        "dimensions": "690x386",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "a vam oot",
+          "TD ee"
+        ]
+      },
+      {
+        "filename": "166_bunpro-beta-updated-jan-23rd-2_Jake_1397x826.jpg",
+        "platform": "desktop",
+        "dimensions": "1397x826",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Genki Decks",
+          "H cy)",
+          "senki! MCCUILCR",
+          "Ea\u00a7 Complete",
+          "Genki | 2nd Edition",
+          "(655 Vocab Items | 100 Grammar Items"
+        ]
+      },
+      {
+        "filename": "167_bunpro-beta-updated-jan-23rd-2_Jake_1556x465.png",
+        "platform": "desktop",
+        "dimensions": "1556x465",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Bunpro Grammar Decks",
+          "Bunpro N5 [Grammar]",
+          "126 Grammar Items",
+          "\"This deck includes all of the most common",
+          "JLPT N5 grammar, arranged in B...\"",
+          "123/126 (87%) Studied"
+        ]
+      },
+      {
+        "filename": "168_bunpro-beta-updated-jan-23rd-2_Jake_1284x507.png",
+        "platform": "desktop",
+        "dimensions": "1284x507",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "Grammar Point Info",
+          "is + am - are~ing",
+          "Structure:",
+          "Verb[T] +S",
+          "View Grammar Point",
+          "[In casual spoken Japanese the is often dropped (AN TWS > BATS)"
+        ]
+      },
+      {
+        "filename": "169_bunpro-beta-updated-jan-23rd-2_Jake_1413x791.png",
+        "platform": "desktop",
+        "dimensions": "1413x791",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Vocab Info",
+          "N5:Noun",
+          "Details",
+          "Actions.",
+          "Details",
+          "Your Progress"
+        ]
+      },
+      {
+        "filename": "16_cram_redesign_Fernando-Bunpro_3412x1752.png",
+        "platform": "desktop",
+        "dimensions": "3412x1752",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "search_filter_bar",
+          "action_buttons",
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Ei] sunpro Learn (@) Review (BY content ~ _ Practice ~ w2s nO)",
+          "[\u00a7 cram > Cram Builder",
+          "\u00a9 Build Your Cram Session",
+          "All > Grammar 17items selected @ Remove All",
+          "BunproNsi[Grammarl Select All Y Filter Q 3% 16Grammar 2 aVvocab",
+          "\u00a9 tessona 1 of 12 items added > aE"
+        ]
+      },
+      {
+        "filename": "170_bunpro-beta-updated-jan-23rd-2_Jake_1393x383.png",
+        "platform": "desktop",
+        "dimensions": "1393x383",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "younger sister",
+          "younger brother, little brother, kid brother",
+          "Tobe, Is",
+          "Question marking particle",
+          "this, this one",
+          "@ st"
+        ]
+      },
+      {
+        "filename": "171_bunpro-beta-updated-jan-23rd-2_Jake_1445x825.png",
+        "platform": "desktop",
+        "dimensions": "1445x825",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar",
+          "action_buttons",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "< Bunpro N5 [Grammar]",
+          "Official Bunpro Deck] 0 Vocab tems | 125 Grammar tems",
+          "This deck includes all of the most common JLPT N5 grammar, arranged in Bunpro's custom order.",
+          "Search for Vocab or Grammar a] Next \u00bb",
+          "| Grammar B ops Sasa",
+          "zy T. ca"
+        ]
+      },
+      {
+        "filename": "172_bunpro-beta-updated-jan-23rd-2_Jake_1280x408.png",
+        "platform": "desktop",
+        "dimensions": "1280x408",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Options ~",
+          "ie), / ie), / A",
+          "@ * c : :",
+          "a Jp a /",
+          "ea) cn 2) UYU) D"
+        ]
+      },
+      {
+        "filename": "173_bunpro-beta-updated-jan-23rd-2_Evueimeimei_1470x1010.jpg",
+        "platform": "desktop",
+        "dimensions": "1470x1010",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Level 43",
+          "Evueimeimei",
+          "Paths ~",
+          "Cram = Grammar ~",
+          "Review: 0",
+          "BABOAAE Il"
+        ]
+      },
+      {
+        "filename": "174_bunpro-beta-updated-jan-23rd-2_Evueimeimei_690x474.jpg",
+        "platform": "desktop",
+        "dimensions": "690x474",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "SACOBRE Reveco cam Grammars rates |",
+          "Baxzo",
+          "INS] Lesson 5 Readings",
+          "(Stan)",
+          "iC ARiOEE eeuNc ARO RSS",
+          "Boxcankore Seucawarwee"
+        ]
+      },
+      {
+        "filename": "175_update-july-13th-2021_Jake_1365x541.png",
+        "platform": "desktop",
+        "dimensions": "1365x541",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar",
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "N5 Lesson 1: 6/8",
+          "indicates possession",
+          "Examples Readings Self Study",
+          "Community isasion 2)",
+          "Structure",
+          "Nounl + \u00ae + Noun2"
+        ]
+      },
+      {
+        "filename": "176_update-july-13th-2021_Jake_1359x613.png",
+        "platform": "desktop",
+        "dimensions": "1359x613",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "[N5] Lesson 5 Readings",
+          "Toggle Vertical Highlight Grammar",
+          "(HRMOBAFSCUICOWTHLTWES. )",
+          "RSBA CHUTES. LMS EORUNAEHCHTSET.",
+          "SARTO TUES. HSBMHSOSHCHTEET.",
+          "PRSSIAWTIVENUTI, EMUTTIAL NEWUTH, SASHED-AKU TS."
+        ]
+      },
+      {
+        "filename": "177_update-july-13th-2021_Jake_2685x1253.png",
+        "platform": "desktop",
+        "dimensions": "2685x1253",
+        "category": "settings_and_preferences",
+        "detected_elements": [],
+        "sample_text": [
+          "> \u00ae@ Hl @ Be",
+          "Account",
+          "General",
+          "Subscription",
+          "Styling",
+          "Notifications"
+        ]
+      },
+      {
+        "filename": "178_update-july-13th-2021_Jake_2701x1053.png",
+        "platform": "desktop",
+        "dimensions": "2701x1053",
+        "category": "settings_and_preferences",
+        "detected_elements": [],
+        "sample_text": [
+          "Account",
+          "What would you like to contact us about?",
+          "Subscription Bug/Technical Issue Feature Request",
+          "Web app",
+          "Something Else",
+          "Where did you experience the bug?"
+        ]
+      },
+      {
+        "filename": "179_update-july-13th-2021_Jake_2605x769.png",
+        "platform": "desktop",
+        "dimensions": "2605x769",
+        "category": "settings_and_preferences",
+        "detected_elements": [],
+        "sample_text": [
+          "What would you like to contact us about?",
+          "= r= ik Q ?",
+          "Account Subscription Bug/Technical Issue Feature Request Something Else"
+        ]
+      },
+      {
+        "filename": "17_cram_redesign_Fernando-Bunpro_3412x1752.png",
+        "platform": "desktop",
+        "dimensions": "3412x1752",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Balsunpro Learn (@@) Review GB) content ~ Practice ~ ex",
+          "{6 cram > CramBuilder > Final Settings",
+          "\u00a9 How do you want to Cram?",
+          "gq loze (Manual) Grammar",
+          "See a blank space in a sentence, and type what's missing,",
+          "ey Cloze (Manual) Vocab"
+        ]
+      },
+      {
+        "filename": "180_update-july-13th-2021_Kappa420_1080x399.jpg",
+        "platform": "desktop",
+        "dimensions": "1080x399",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons"
+        ],
+        "sample_text": [
+          "Hide Your Answer Submit",
+          "PE 7450/1040"
+        ]
+      },
+      {
+        "filename": "181_where-am-i-told-srs-status-of-_matt_in_mito_690x291.png",
+        "platform": "desktop",
+        "dimensions": "690x291",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "teen: 1070",
+          "BoTO",
+          "97 sina",
+          "Bot Structure",
+          "exist only because offdueto Nount + (19) + 52\u00b0C + Noun2",
+          "\u2018owe everythingto"
+        ]
+      },
+      {
+        "filename": "18_cram_redesign_Fernando-Bunpro_3412x1752.jpg",
+        "platform": "desktop",
+        "dimensions": "3412x1752",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Bleunpro",
+          "\u00a9Crame",
+          "Open sessions @@)",
+          "@ 07/29/26",
+          "G 07/29/26",
+          "@ 07/10/26"
+        ]
+      },
+      {
+        "filename": "19_cram_redesign_Fernando-Bunpro_690x354.jpg",
+        "platform": "desktop",
+        "dimensions": "690x354",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "Scrame",
+          "open sls =",
+          "8 mre Xetatomoy Movietone >",
+          "1 orn Ae Omies ost res > a",
+          "5 omane ee \u2014y",
+          "1 orn 7460 es aA aes >"
+        ]
+      },
+      {
+        "filename": "20_cram_redesign_Fernando-Bunpro_690x354.png",
+        "platform": "desktop",
+        "dimensions": "690x354",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "\u00a9 cme) comnatr",
+          "Secromniie",
+          "a al",
+          "Dm ae >",
+          "(Ber ions >",
+          "(qja= eae \u00b0"
+        ]
+      },
+      {
+        "filename": "21_cram_redesign_Sean_1462x446.png",
+        "platform": "desktop",
+        "dimensions": "1462x446",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "Bunpro Beta",
+          "Get access to cutting-edge features before they are officially launched.",
+          "Beta Mod",
+          "eta Mode On",
+          "All future Beta features are automatically opted in to.",
+          "Features in Beta & Cram Setup Rework"
+        ]
+      },
+      {
+        "filename": "22_grammar_topics_JamesBunpro_2110x816.png",
+        "platform": "desktop",
+        "dimensions": "2110x816",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "S Topics > L3: Particular Particles",
+          "5 : > Overview",
+          "Tt Particular Particles 4)",
+          "@ Introduction",
+          "In this Bonus Topic, we're going to learn more about the different types of particles, and discuss the logic of particles in 3) Grammar",
+          "general. Up until now, we've seen a wide variety of particles and, sometimes, we've even given them more specific names, :"
+        ]
+      },
+      {
+        "filename": "23_grammar_topics_JamesBunpro_690x354.png",
+        "platform": "desktop",
+        "dimensions": "690x354",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "\u00b0 WRETT.",
+          "HORETT !",
+          "Overview"
+        ]
+      },
+      {
+        "filename": "24_grammar_topics_JamesBunpro_2050x1792.png",
+        "platform": "desktop",
+        "dimensions": "2050x1792",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "8 Details Overview",
+          "ba\u00ae Introduction",
+          "In the previous Topic, we learned that words like 'I', 'you', 'he/she/they' can often be left out of Japanese sentences. But in",
+          "this Topic, we've been adding them back in by using (&. Let\u2019s see why. Bg Grammar",
+          ". (=) Details",
+          "Let's Talk About Me for a Minute"
+        ]
+      },
+      {
+        "filename": "25_grammar_topics_JamesBunpro_2055x1006.png",
+        "platform": "desktop",
+        "dimensions": "2055x1006",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Renn A Overview",
+          "x Grammar in this Topic",
+          "Introduction",
+          "ld Grammar",
+          "As for... (Highlights sentence topic)",
+          "(8) Details"
+        ]
+      },
+      {
+        "filename": "26_grammar_topics_JamesBunpro_2046x1716.png",
+        "platform": "desktop",
+        "dimensions": "2046x1716",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "8 Details Overview",
+          "ta\u00ae !ntroduction",
+          "In Japanese, particles are called 8934), literally meaning 'helper word\" As we already know, they come directly after the thing Oy ammar",
+          "they are marking.",
+          "Let\u2019s look at the main classifications. (ED Details",
+          "6 ) Practice"
+        ]
+      },
+      {
+        "filename": "27_grammar_topics_JamesBunpro_942x800.png",
+        "platform": "desktop",
+        "dimensions": "942x800",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar",
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "\u00a9 Decks",
+          "Official and user-created Decks",
+          "4 Grammar Library",
+          "Grammar organized by level and theme",
+          "ad Topics",
+          "Comprehensive articles grouped by Lesson"
+        ]
+      },
+      {
+        "filename": "28_grammar_topics_JamesBunpro_2092x1075.png",
+        "platform": "desktop",
+        "dimensions": "2092x1075",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "What Are You Talking About?",
+          "1 What Are You Talking About?",
+          "In this Topic, we're going to learn about two particles\u2019. [\u00e9 (pronounced 4 \u2019wa\u2019) and .",
+          "Particles are indicators that follow other words, in order to show their role in a sentence.",
+          "(& is the 'topic marker\u2019. It tells the listener what the overall statement is about. On the other hand, \u00ae allows us to add",
+          "something to a topic. It replaces [& to add an \u2018also\u2019 or 'too' meaning."
+        ]
+      },
+      {
+        "filename": "29_grammar_topics_JamesBunpro_596x500.png",
+        "platform": "desktop",
+        "dimensions": "596x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "overview",
+          "Details",
+          "Insane pares rece ealy ening per wor: Asean how hey come ey aes hein \u2014_",
+          "erence",
+          "ase-Marking Particles",
+          "Into choo ganimarandmany ite tones ane ming pace (BNI namaniveumbacepry ae"
+        ]
+      },
+      {
+        "filename": "30_grammar_topics_JamesBunpro_571x500.png",
+        "platform": "desktop",
+        "dimensions": "571x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "petaits",
+          "ote prev Tepenlend ht wth he: Neh an chee etl apne ata",
+          "\u2018step wevetensengtmbocnby wings Lesace why,",
+          "Lets Talk About Me fora Minute",
+          "\u2018sce np ptepsteonrenton when evened aonsnhathespeakr aking sat tee nt ed",
+          "seems lt. tsohenatequeta sy ome is ee iene ahatet ounce lt"
+        ]
+      },
+      {
+        "filename": "31_grammar_topics_JamesBunpro_574x499.jpg",
+        "platform": "desktop",
+        "dimensions": "574x499",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "overview",
+          "5 Introductions Galore"
+        ]
+      },
+      {
+        "filename": "32_grammar_topics_JamesBunpro_1920x1670.jpg",
+        "platform": "desktop",
+        "dimensions": "1920x1670",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "& Introductions Galore",
+          "HE: (PRSTBUCT. BBE",
+          "AS: KESAKATH. HSBOATH. KATH. MSMAWTH. KEHE | 5",
+          "BE BIER S",
+          "ECS. BEECH. RSHMATS. MSAETH!",
+          "Overview"
+        ]
+      },
+      {
+        "filename": "33_grammar_topics_JamesBunpro_690x337.png",
+        "platform": "desktop",
+        "dimensions": "690x337",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "\u2018Aso. (Wht sentence toi)",
+          "18 (pronounced) often considered ta be neo the mos dificult particles to masern Japanese, alongside 18",
+          "sma the top the sentence and describes the whole sentence bray Howeve primary mars single",
+          "ED (arora @ show oeais",
+          "\u2018so Te, As wel Even Ete, Neither",
+          "\u20188 canmean teoasorevenornetherether, depending ifthe sentences affirmative or negate. Multiple"
+        ]
+      },
+      {
+        "filename": "34_grammar_topics_bunnypro_1170x1181.jpg",
+        "platform": "desktop",
+        "dimensions": "1170x1181",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar",
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Content",
+          "\u00a9 Decks",
+          "Official and user-created Decks",
+          "x Grammar Library",
+          "Grammar organized by level and theme",
+          "Topics"
+        ]
+      },
+      {
+        "filename": "35_grammar_topics_bunnypro_495x500.jpg",
+        "platform": "desktop",
+        "dimensions": "495x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar",
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Content",
+          "@ Decks",
+          "Official and user-created Decks",
+          "x Grammar Library",
+          "Grammar organized by level and theme",
+          "Topics"
+        ]
+      },
+      {
+        "filename": "36_dashboard_2_0_Sean_1356x758.png",
+        "platform": "desktop",
+        "dimensions": "1356x758",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "x Forecast Settings",
+          "Content to Display",
+          "Grammar",
+          "Count",
+          "Total Reviews O New Only"
+        ]
+      },
+      {
+        "filename": "37_dashboard_2_0_Sean_2720x674.png",
+        "platform": "desktop",
+        "dimensions": "2720x674",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Latest Community Discussions Go to Community 4",
+          "Haruna's short story (reading and listening practice) Let's play Shiritori! LOCO@LELES ! Exiting and leaving review session incorrect answers",
+          "@ Japanese 57m ago @ Japanese 2h ago \u00a9 Bunpro 3h ago",
+          "Grammar and vocab reviews always mixed Dashboard 2.0 Beta Shifting review layout on iPad?",
+          "\u00a9 Bunpro 3h ago 1@ Bunpro 3h ago @ Bunpro 12h ago",
+          "Haruna's daily diary (reading practice) Lost streak Can | have the \"Rare\" Kanji always be displayed?"
+        ]
+      },
+      {
+        "filename": "38_dashboard_2_0_Sean_2718x564.png",
+        "platform": "desktop",
+        "dimensions": "2718x564",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Your Progress",
+          "Beginner Adept Seasoned 5] Master",
+          "1 41 yyt:) 142"
+        ]
+      },
+      {
+        "filename": "39_dashboard_2_0_Sean_606x410.png",
+        "platform": "desktop",
+        "dimensions": "606x410",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Tomorrow",
+          "ey Grammar: 13",
+          "43 reviews total",
+          "Later Tomorrow 09 Wed"
+        ]
+      },
+      {
+        "filename": "40_dashboard_2_0_Sean_390x375.png",
+        "platform": "desktop",
+        "dimensions": "390x375",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "x Your Progress",
+          "\u20ac seasoned",
+          "Beper",
+          "usarle",
+          "Nistne-butBisnot,ifts~thenitisok. bu",
+          "zaug,"
+        ]
+      },
+      {
+        "filename": "41_dashboard_2_0_Sean_910x546.png",
+        "platform": "desktop",
+        "dimensions": "910x546",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Review",
+          "Grammar & Vocab",
+          "All Reviews",
+          "Grammar Only",
+          "Vocab Only"
+        ]
+      },
+      {
+        "filename": "42_dashboard_2_0_Sean_1560x746.png",
+        "platform": "desktop",
+        "dimensions": "1560x746",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Forecast Daily [>] x",
+          "GERD Vocab GERD Grammar",
+          "____",
+          "Later Tomorrow 09 Wed 10 Thu 11 Fri 12 Sat 13 Sun"
+        ]
+      },
+      {
+        "filename": "43_dashboard_2_0_Sean_1368x1314.png",
+        "platform": "desktop",
+        "dimensions": "1368x1314",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "x Your Progress",
+          "< Seasoned",
+          "Expert 1",
+          "BSEELH",
+          "Ais fine...but B is not;, if it's ~ then it is ok...bu...",
+          "CIKWA"
+        ]
+      },
+      {
+        "filename": "44_dashboard_2_0_Sean_610x362.png",
+        "platform": "desktop",
+        "dimensions": "610x362",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Tomorrow",
+          "BS Grammar: 33",
+          "25 18 reviews added",
+          "Today Tomorrow 09 Wed"
+        ]
+      },
+      {
+        "filename": "45_dashboard_2_0_Sean_910x492.png",
+        "platform": "desktop",
+        "dimensions": "910x492",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Learn",
+          "New batch of Bunpro N5 [Vocab] items!",
+          "Bunpro N5 [Vocab]",
+          "Main Deck",
+          "Bunpro N4 [Vocab]",
+          "Secondary Deck"
+        ]
+      },
+      {
+        "filename": "46_dashboard_2_0_Sean_1556x750.png",
+        "platform": "desktop",
+        "dimensions": "1556x750",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Activity >",
+          "GSB Vocab GS) Grammar",
+          "25Tue 26Wed 27Thu 28Fri 29Sat 30Sun 31Mon O1Tue 02Wed O3Thu 04Fri O5Sat O6Sun 07Mon"
+        ]
+      },
+      {
+        "filename": "47_dashboard_2_0_Sean_1334x460.png",
+        "platform": "desktop",
+        "dimensions": "1334x460",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "x Activity Settings",
+          "Content to Display",
+          "Grammar"
+        ]
+      },
+      {
+        "filename": "48_dashboard_2_0_Slysoft_1393x942.png",
+        "platform": "desktop",
+        "dimensions": "1393x942",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Broxano7: om @ Wn",
+          "BFR <> &",
+          "2 GD ct",
+          "1 L|",
+          "am emma eee ee ee ea a=",
+          "-pimebs \u2014 FAPORS \u00ab\u2014 SFATLONG | FAILING \u00a9 FEROBS FARIS FERIBG | FERORS FRM FERSRG | FERORG | PERTIG"
+        ]
+      },
+      {
+        "filename": "49_dashboard_2_0_Slysoft_690x466.png",
+        "platform": "desktop",
+        "dimensions": "690x466",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Moxey 7",
+          "\u2018OUR @)<\u00ab>s",
+          "reves 0% &",
+          "BELOBTER a="
+        ]
+      },
+      {
+        "filename": "50_dashboard_2_0_eefara_690x348.png",
+        "platform": "desktop",
+        "dimensions": "690x348",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "G@ New badee:Levet co",
+          "Forecast o New Hint Level Setings",
+          "New badge: 200k XP",
+          "x) Vocab Alt Answers Update",
+          "Activity e"
+        ]
+      },
+      {
+        "filename": "51_dashboard_2_0_eefara_1751x884.png",
+        "platform": "desktop",
+        "dimensions": "1751x884",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "PY] Bunpro",
+          "Forecast",
+          "GED Vocab",
+          "8AM 9AM 10AM 11AM 12PM PM",
+          "Activity",
+          "SSD vorad"
+        ]
+      },
+      {
+        "filename": "52_reviews_2_0_Sean_1732x652.png",
+        "platform": "desktop",
+        "dimensions": "1732x652",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Details",
+          "A Unlike #, CF is often used wi",
+          "Voice Preferences",
+          "Male",
+          "Female",
+          "Use Slow Playback"
+        ]
+      },
+      {
+        "filename": "53_reviews_2_0_Sean_363x375.png",
+        "platform": "desktop",
+        "dimensions": "363x375",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "Ba General",
+          "sume > Pysudio",
+          "\u2018StetReturtoAnouerinp seeing shits pacebor",
+          "eerans: care, Pahieanue",
+          "Undo actopoe/oeiene tie uid EB",
+          "po rin fr ransote"
+        ]
+      },
+      {
+        "filename": "54_reviews_2_0_Sean_410x375.png",
+        "platform": "desktop",
+        "dimensions": "410x375",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "Readings Use Furigana",
+          "REE UDC EU",
+          "Vocab",
+          "AF university student, college",
+          "student v bi",
+          "Adept 3"
+        ]
+      },
+      {
+        "filename": "55_reviews_2_0_Sean_756x690.png",
+        "platform": "desktop",
+        "dimensions": "756x690",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "Readings Use Furigana",
+          "AHE EAS HU",
+          "Vocab",
+          "A+ university student, college",
+          "student .",
+          "Adept 3"
+        ]
+      },
+      {
+        "filename": "56_reviews_2_0_Sean_833x857.png",
+        "platform": "desktop",
+        "dimensions": "833x857",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons"
+        ],
+        "sample_text": [
+          "Ba General",
+          "Submit > Play Audio >",
+          "Select/Return to Answer Input See Hint \u00b0\u00b0 Shift + Spacebar",
+          "Item Info ri}",
+          "Change Item Tabs",
+          "Finish Session/Wrap Up [\u00a2"
+        ]
+      },
+      {
+        "filename": "57_mobile_ui_refactor_cjhey_2160x502.jpg",
+        "platform": "desktop",
+        "dimensions": "2160x502",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Fe 32%)",
+          "Dashboard a",
+          "00:53 Tue 4 Apr",
+          "Learn",
+          "New batch of JLPT3 Grammar",
+          "Review oO"
+        ]
+      },
+      {
+        "filename": "58_mobile_ui_refactor_cjhey_2160x406.jpg",
+        "platform": "desktop",
+        "dimensions": "2160x406",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "cjhe",
+          "BZ] eunpro Learn (Review GB content- Practice - a: } ie",
+          "\u2014\u2014\u2014> i",
+          "New JLPT3 Grammar",
+          "Learn a batch of new grammar!"
+        ]
+      },
+      {
+        "filename": "59_mobile_ui_refactor_nekoyama_1170x342.jpg",
+        "platform": "desktop",
+        "dimensions": "1170x342",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "BF! DITCBREITC. SBREAHDROTWSO?",
+          "Li DAc ROTS Ho. CIWVAIH MSH 1BRED SHEMUKSS",
+          "ISROTWSM, RECEDKI GRIST SOD?",
+          "SF EHEO MADR WUETICBISEDBWKE, LDDRENHS",
+          "CEH SEUFHWSL. HCW CHIARA SAAN HS",
+          "do HANK CUODS !"
+        ]
+      },
+      {
+        "filename": "60_mobile_ui_refactor_nekoyama_1170x411.jpg",
+        "platform": "desktop",
+        "dimensions": "1170x411",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "SdECTHBUM, QE BMBECHMAR CL",
+          "THEECE TAR. >?",
+          "It goes without saying, but something like",
+          "misappropriation of public funds is an act",
+          "unbecoming of a statesman."
+        ]
+      },
+      {
+        "filename": "61_mobile_ui_refactor_nekoyama_690x487.jpg",
+        "platform": "desktop",
+        "dimensions": "690x487",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "NS N4 N3 N2 N1",
+          "NN2LbYAV 1",
+          "Elections",
+          "NN2LbYyAZvV 1",
+          "Country Life"
+        ]
+      },
+      {
+        "filename": "62_mobile_ui_refactor_nekoyama_1514x1632.jpg",
+        "platform": "desktop",
+        "dimensions": "1514x1632",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "MMS : DIN FO PRAPW DV LKVLDINKSY So.",
+          "{2 INR\u00b0 KO MnO? NING eth {ORI 18 HBA OSKHE",
+          "AK edit 116 OY SOQ? IHU NY O46 IN SHIH ONS",
+          "TiM> : WR HOBK ASS WD WHE HB AH S46 DAWH",
+          "HbA ISRWNNP ROG SMS RBOVS MH WWE",
+          "INO AiSnets? HRVUSCRHK\u2014"
+        ]
+      },
+      {
+        "filename": "63_mobile_ui_refactor_nekoyama_1170x1025.jpg",
+        "platform": "desktop",
+        "dimensions": "1170x1025",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "IDRRR VAM PI BOKREREB",
+          ": DVB DY MoGRF LSM AF",
+          "51TH Ft HtTSlt SHBHIAS*",
+          "BLIBRO SUC MARIE ASD",
+          "UTS BE ETE DO BM, >",
+          "LADICH FES HSER [ADE HT"
+        ]
+      },
+      {
+        "filename": "64_mobile_ui_refactor_nekoyama_1170x390.jpg",
+        "platform": "desktop",
+        "dimensions": "1170x390",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "SWUCWSMCHECICMRAOMDSHESIC, 2]",
+          "SHLOPS ls ee BiLTTECI.",
+          "Let's tidy up the contents of the drawers so",
+          "that you can find things straight away, even",
+          "on mornings that you're in a rush."
+        ]
+      },
+      {
+        "filename": "65_mobile_ui_refactor_nekoyama_463x500.jpg",
+        "platform": "desktop",
+        "dimensions": "463x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Nh: PINOY PALE BK HV-LPINKSYSOOe",
+          "HK INR? ROMO? INS me HC few 18 BVA OSH",
+          "RKC HLS OM SOR? IRIN S610 SHEA to eS",
+          "Wd : MISHORBRW SUE NIEHIBAWS46\u00b0 DWH",
+          "MRISWNNPROLSHPSVWI RON SM sPHRIORY",
+          "NOE RISN4\u00b0 HEV 0S CR"
+        ]
+      },
+      {
+        "filename": "66_mobile_ui_refactor_nekoyama_570x500.jpg",
+        "platform": "desktop",
+        "dimensions": "570x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "DBR RRL AM DI AORSERES",
+          "LDH Ds Do BMF SSM AF",
+          "BITCH FSCS SHHID\u201d",
+          "BLT BP SNCMA BIS ASS",
+          "UTS BE STUDS BER, RO",
+          "kb ES SHREK DE RHF"
+        ]
+      },
+      {
+        "filename": "67_mobile_ui_refactor_nekoyama_1170x826.jpg",
+        "platform": "desktop",
+        "dimensions": "1170x826",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "RORE",
+          "N5 N4 N3 N2 N1",
+          "NN2LbYyAZY 1",
+          "Elections",
+          "NN2bYAY 1",
+          "Country Life"
+        ]
+      },
+      {
+        "filename": "68_mobile_ui_refactor_JCalandr_2360x1640.png",
+        "platform": "desktop",
+        "dimensions": "2360x1640",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "13:09 coe",
+          "Fee 40%n%)",
+          "Dashboard a",
+          "Learn",
+          "New batch of JLPT3 Grammar",
+          "Review Fo |"
+        ]
+      },
+      {
+        "filename": "69_official_mobile_apps_Jake_308x313.jpg",
+        "platform": "desktop",
+        "dimensions": "308x313",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": []
+      },
+      {
+        "filename": "70_official_mobile_apps_Jake_1242x854.jpg",
+        "platform": "desktop",
+        "dimensions": "1242x854",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "9:30",
+          "(@ Bunpro srs",
+          "Don't forget to review!",
+          "Tap here to start studying",
+          "Local Notifications",
+          "Review notifications"
+        ]
+      },
+      {
+        "filename": "71_official_mobile_apps_Jake_1920x380.png",
+        "platform": "desktop",
+        "dimensions": "1920x380",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Bunpro"
+        ]
+      },
+      {
+        "filename": "72_official_mobile_apps_Jake_586x500.jpg",
+        "platform": "desktop",
+        "dimensions": "586x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "THE ALPHA VERSION IS GOOD"
+        ]
+      },
+      {
+        "filename": "73_grammar_page_update_Jake_1552x499.png",
+        "platform": "desktop",
+        "dimensions": "1552x499",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "N5 Lesson 1: 1/2 Q",
+          "to be/is",
+          "ADo not use 7= with U -Adjectives",
+          "Meaning Examples Resources",
+          "Online Mark all as read Books Mark all as read",
+          "Declaring something is so and so using [72] @ BAISOBASE | @"
+        ]
+      },
+      {
+        "filename": "74_grammar_page_update_Jake_1555x797.png",
+        "platform": "desktop",
+        "dimensions": "1555x797",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar",
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Meaning. Examples",
+          "to be/is",
+          "& Do not use 7\u00e9 with \\\\-Adjectives",
+          "[Casual non-past tense]",
+          "[78 shows assertion, that is confidence of the speaker that something is the case. Therefore in spoken, casual",
+          "conjecture like &72U),]"
+        ]
+      },
+      {
+        "filename": "75_grammar_page_update_Jake_897x587.png",
+        "platform": "desktop",
+        "dimensions": "897x587",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "Add Custom Sentence",
+          "Japanese",
+          "Add the Japanese here.",
+          "Include four underscores\u2018 where the answer should go. Use Japanese 0 affer a kanjito add furigana.",
+          "Answer",
+          "Add the answer here."
+        ]
+      },
+      {
+        "filename": "76_grammar_page_update_Jake_1533x866.png",
+        "platform": "desktop",
+        "dimensions": "1533x866",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "N5 Lesson 1: 1/2",
+          "} NY",
+          "to be/is",
+          "ADo not use 72 with U -Adjectives",
+          "Meaning Examples",
+          "Structure Details"
+        ]
+      },
+      {
+        "filename": "77_grammar_page_update_Jake_1552x589.png",
+        "platform": "desktop",
+        "dimensions": "1552x589",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "N5 Lesson 1: 1/2",
+          "Meaning",
+          "p &<5ie.",
+          "(I) am Sakura.",
+          "Hide All \u00ae",
+          "to be/is"
+        ]
+      },
+      {
+        "filename": "78_grammar_page_update_Jake_690x353.png",
+        "platform": "desktop",
+        "dimensions": "690x353",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "NS Lesson :1/8",
+          "= = oie: sets",
+          "te structure",
+          "Noun +72",
+          "bas [ee] Adjective +e",
+          "\u2018donotuse2 with Adjectives \u2014_"
+        ]
+      },
+      {
+        "filename": "79_dashboard_landing_Jake_1606x992.png",
+        "platform": "desktop",
+        "dimensions": "1606x992",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Japanese 101",
+          "Bunpro Academy + Jun 2024 to Dec 2024",
+          "Copy Invite",
+          "Sara",
+          "Your Courses Dashboard Students Settings",
+          "Create Course"
+        ]
+      },
+      {
+        "filename": "80_dashboard_landing_Jake_517x319.png",
+        "platform": "desktop",
+        "dimensions": "517x319",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": []
+      },
+      {
+        "filename": "81_dashboard_landing_Jake_586x500.jpg",
+        "platform": "desktop",
+        "dimensions": "586x500",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "\u2014 ea",
+          "%. BUNPROIS cna",
+          "BUT tT \u2018in",
+          "jmatiip.com"
+        ]
+      }
+    ],
+    "mobile": [
+      {
+        "filename": "01_grammar_topics_Viki_1080x2340.jpg",
+        "platform": "mobile",
+        "dimensions": "1080x2340",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar",
+          "action_buttons"
+        ],
+        "sample_text": [
+          "1995 sine) oP 53 )",
+          "Learn",
+          "Reviews",
+          "Profile",
+          "B-Point Shop",
+          "Stats"
+        ]
+      },
+      {
+        "filename": "01_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "Notifications",
+          "(n) Vocab Update",
+          "1 day ago",
+          "@) New badge: Gourmet Race",
+          "2 weeks ago",
+          "(~) Vocab Reviews in Beta 2.0"
+        ]
+      },
+      {
+        "filename": "01_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "Right?, Probably, Isn't it?",
+          "~OLRSID",
+          "| wonder...",
+          "DCBWES SD",
+          "| think ... isn't it?, It might be that..., don't you",
+          "agree?"
+        ]
+      },
+      {
+        "filename": "02_dashboard_2_0_eefara_596x848.png",
+        "platform": "mobile",
+        "dimensions": "596x848",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "br) OD tcpy @\u00a9 | Filter Default levels \u00a5",
+          "1 Issue: 21",
+          "\u00a9 >syntaxError: Unexpected token dashboard-e373c6288520d85.",
+          "\u2018s', \u201cstats:fore\"... is not valid JSON",
+          "at JSON.parse (<anonymous>)",
+          "at dashboard-e373c6288520d85c.j,"
+        ]
+      },
+      {
+        "filename": "02_mobile_ui_refactor_1190x2120.png",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "1:30 & A",
+          "\u20ac (cBSET",
+          "Meaning Examples Resources",
+          "@ Meaning and use \u2018e",
+          "Learn Japanese Daily",
+          "Offline Mark All as Read"
+        ]
+      },
+      {
+        "filename": "02_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "Information",
+          "7 acts as an expression of determination or strong",
+          "assertion in Japanese, and simply states that something \u2018is\u2019",
+          "a certain way. It is the casual equivalent of CF (another",
+          "auxiliary verb)."
+        ]
+      },
+      {
+        "filename": "03_dashboard_2_0_bunnypro_1080x2192.png",
+        "platform": "mobile",
+        "dimensions": "1080x2192",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "BA Bunpro Q",
+          "Learn",
+          "bunnypro",
+          "12366 XP to Lv 89",
+          "Forecast <> 8",
+          "(2  @Q bunpro.jp/dashboard"
+        ]
+      },
+      {
+        "filename": "03_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "Learn",
+          "New batch of JLPT1 Grammar",
+          "Review",
+          "Vocab",
+          "(a) Dominic"
+        ]
+      },
+      {
+        "filename": "03_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "KNelaley UIdliiiiial",
+          "@ cw COBWET",
+          "\u00a9) ras CHS",
+          "@ror \"Cle",
+          "@ Cer"
+        ]
+      },
+      {
+        "filename": "04_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Boa Biiseasoned 1 vy 0/0 (591",
+          "(@xia)",
+          "several~some~a few",
+          "ow 8 & - \u00a5",
+          "q wert y ui\u2019 o\u201d p",
+          "apsladptl@ pal j i]t"
+        ]
+      },
+      {
+        "filename": "04_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "Ay Teo",
+          "Itis me.",
+          "Show English",
+          "38 Eo",
+          "Show English"
+        ]
+      },
+      {
+        "filename": "04_reviews_2_0_NearlyRemy_1080x1898.jpg",
+        "platform": "mobile",
+        "dimensions": "1080x1898",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "Se oe @aQa \\ Beginner1 Y 6/6 (J) 15",
+          "[subjective \u00bb low confidence]",
+          "A: CALTEABIC MERE O ?",
+          "B: AASBRE7IaRR. BRL TATE",
+          "Kb! [ae]",
+          "A: Why are you giving off the appearance of being so satisfied?"
+        ]
+      },
+      {
+        "filename": "05_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "1308 &",
+          "\u20ac (cBSET",
+          "amples Resource",
+          "VIDS",
+          "BETUBUS",
+          "> EL eeAar"
+        ]
+      },
+      {
+        "filename": "05_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "Notifications",
+          "(n) Vocab Update",
+          "1 day ago",
+          "@) New badge: Gourmet Race",
+          "2 weeks ago",
+          "(~) Vocab Reviews in Beta 2.0"
+        ]
+      },
+      {
+        "filename": "05_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "settings_and_preferences",
+        "detected_elements": [],
+        "sample_text": [
+          "Settings",
+          "Account",
+          "Manage your personal and opt-in to",
+          "Beta access",
+          "General",
+          "Customize your Dashboard, Study"
+        ]
+      },
+      {
+        "filename": "06_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "1:32 BA VA",
+          "<\u20ac {<= Submit a new report",
+          "What is the report about?",
+          "Meaning",
+          "A bug or typo",
+          "(Noun (A)"
+        ]
+      },
+      {
+        "filename": "06_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "1:25 2A VA",
+          "fe ea Bilseasoned1 v 0/0 (J 591",
+          "pos iat",
+          "(4% 221k) [general counter DEBENSNSBUS",
+          "KDB.",
+          "several~some~a few"
+        ]
+      },
+      {
+        "filename": "06_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "ia Bunpro",
+          "Login",
+          "Email |",
+          "Password oO |",
+          "Remember me",
+          "FS ow Ue"
+        ]
+      },
+      {
+        "filename": "07_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "1:29 BA",
+          "N1 Lesson 1",
+          "(CESET",
+          "(everything) from...to..., from...up until..., starting",
+          "with...ending with...",
+          "Meaning Examples Resources"
+        ]
+      },
+      {
+        "filename": "07_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "1:26 2A 7 tt |",
+          "fe ea BZlseasoned1 v 0/0 (J 591",
+          "[general counter]",
+          "yh Fh (ae",
+          "(LI) U<op DEBENSNSHUS",
+          "EDI D ies"
+        ]
+      },
+      {
+        "filename": "07_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "F e feof",
+          "Z Plain Speech: Stop at Past Tense [72372]",
+          "Zw Declaring something is so and so using '7<2)",
+          "z 7\u00e9 cannot be used with L\\-Adjectives",
+          "The copula 7\u00e9"
+        ]
+      },
+      {
+        "filename": "080_unmastering-wanikani-vocab_IcyIceBear_1440x2898.jpg",
+        "platform": "mobile",
+        "dimensions": "1440x2898",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Q Bunpro \u2014",
+          "@w snare cm Supscripuon w stung",
+          "a Notifications Sa Bunpro API A Reset",
+          "ane,",
+          "Reset Grammar",
+          "Wipe clean your grammar progress in Bunpro. SRS"
+        ]
+      },
+      {
+        "filename": "081_information-in-the-wild-week-4_ThousandJP_276x375.jpg",
+        "platform": "mobile",
+        "dimensions": "276x375",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "in, FORMER CHET.",
+          "\u2018anowe. sau@Lst",
+          "Z2AISORA |",
+          "os aa"
+        ]
+      },
+      {
+        "filename": "082_information-in-the-wild-week-4_ThousandJP_276x375.jpg",
+        "platform": "mobile",
+        "dimensions": "276x375",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "BRRBIC DUT",
+          "nao?\" \u2018AzmarRote, urommaeRaLzauET.",
+          "\u2018pe Socum: Sanoue. savaLLeT.",
+          "VAISORA"
+        ]
+      },
+      {
+        "filename": "083_information-in-the-wild-week-4_ThousandJP_1672x2260.jpg",
+        "platform": "mobile",
+        "dimensions": "1672x2260",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "VAVEORA",
+          "(Ei)",
+          "BRPMNKD,. ARV TVAPSERALTHVET.",
+          "CREORISVATORBAESMUULLET.",
+          "BB. AZIIRAIYS-ATKAMBME SH TWLE<K TEMBVESF,",
+          "eh i"
+        ]
+      },
+      {
+        "filename": "084_information-in-the-wild-week-4_ThousandJP_1672x2260.jpg",
+        "platform": "mobile",
+        "dimensions": "1672x2260",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "BRPMOED,. ARV TSVAPSERALTHVETF.",
+          "CREORMSVAIOBAESMUUELET.",
+          "BB. ALYTIRAIY 2 -ATKAMMBE St THLEK TEMHVET.",
+          "JR=Cross)"
+        ]
+      },
+      {
+        "filename": "085_5-minutes-for-6-days-every-7-d_Stay_coolXD_310x499.jpg",
+        "platform": "mobile",
+        "dimensions": "310x499",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "81.82%",
+          "CORRECT",
+          "Correct",
+          "ete E50",
+          "THS\u00ae h",
+          "SEU TH"
+        ]
+      },
+      {
+        "filename": "086_5-minutes-for-6-days-every-7-d_Stay_coolXD_720x1160.jpg",
+        "platform": "mobile",
+        "dimensions": "720x1160",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "81.82%",
+          "CORRECT",
+          "Correct",
+          "were",
+          "TWS\u00ae",
+          "WEW~ [ETE TAS"
+        ]
+      },
+      {
+        "filename": "087_grammer-vs-vocab-jlpt-level_Asher_1099x1695.jpg",
+        "platform": "mobile",
+        "dimensions": "1099x1695",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "<a & &",
+          "FRO (7) 73",
+          "ATRE 15 YIFA(SFS) 87 S717",
+          "\u201cShe 111 YOA 58 BES 126",
+          "met 86 Ed 2 SASS) 50",
+          "RSENS (is) 114 111 et 7"
+        ]
+      },
+      {
+        "filename": "088_grammer-vs-vocab-jlpt-level_Asher_328x500.jpg",
+        "platform": "mobile",
+        "dimensions": "328x500",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": []
+      },
+      {
+        "filename": "089_grammer-vs-vocab-jlpt-level_Asher_329x500.jpg",
+        "platform": "mobile",
+        "dimensions": "329x500",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Erererry",
+          "He >",
+          "ae=reabe"
+        ]
+      },
+      {
+        "filename": "08_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Boa Bilseasoned 1 7 0/0 (551",
+          "(iezchd) ERDRIEUS",
+          "faints =>) | Undo Info",
+          "u<om \u00a9>?",
+          ">) for and 1 y",
+          "qwer. vault iP Orp"
+        ]
+      },
+      {
+        "filename": "08_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "Review Activity",
+          "P2M 67",
+          "an 8%",
+          "UOW LZ",
+          "uns 97"
+        ]
+      },
+      {
+        "filename": "08_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "7\u00e9 cannot be used with L\\-Adjectives",
+          "Noun + 7\u00e9",
+          "[%] Adjective + 72",
+          "Information",
+          "7 acts as an expression of determination or strong"
+        ]
+      },
+      {
+        "filename": "090_grammer-vs-vocab-jlpt-level_Asher_1104x1690.jpg",
+        "platform": "mobile",
+        "dimensions": "1104x1690",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "AS eaEs",
+          "Fa (1) 123 5 fait 72, 119 EATHB 106",
+          "th =",
+          "== = & Ps",
+          "Hi (tk) 33, 123 YP- 40",
+          "BALE ah > 3 BOLs"
+        ]
+      },
+      {
+        "filename": "091_grammer-vs-vocab-jlpt-level_Asher_1113x1695.jpg",
+        "platform": "mobile",
+        "dimensions": "1113x1695",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "cesue",
+          "A(T S) 54 WHOYk 54",
+          "RASS) 58 \u00a322 98",
+          "RS 14 z 73",
+          "81 iB 28, 86",
+          "Ea 33 #3 86"
+        ]
+      },
+      {
+        "filename": "092_grammer-vs-vocab-jlpt-level_Asher_1126x1705.jpg",
+        "platform": "mobile",
+        "dimensions": "1126x1705",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "RS 6, 32",
+          "BOS 54",
+          "POBS 122, 126",
+          "Rs) 55, 107",
+          "Renu 14",
+          "Syv+\u2014(B) 73"
+        ]
+      },
+      {
+        "filename": "093_grammer-vs-vocab-jlpt-level_Asher_326x500.jpg",
+        "platform": "mobile",
+        "dimensions": "326x500",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "ZASBEN oa"
+        ]
+      },
+      {
+        "filename": "094_grammer-vs-vocab-jlpt-level_Asher_324x500.jpg",
+        "platform": "mobile",
+        "dimensions": "324x500",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "ROOD)"
+        ]
+      },
+      {
+        "filename": "095_grammer-vs-vocab-jlpt-level_Asher_1114x1693.jpg",
+        "platform": "mobile",
+        "dimensions": "1114x1693",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Lnes",
+          "hit 28 Ps 25 25 tenis S) 25",
+          "LAE(SS) 115 BR(FS) 102 28",
+          "YY TIL) a 3 z fee 8",
+          "_ 37, 123 ee 400 HWE Soa 63",
+          "RL | He 69 Siw 127 RRS) 32"
+        ]
+      },
+      {
+        "filename": "096_grammer-vs-vocab-jlpt-level_Asher_330x500.jpg",
+        "platform": "mobile",
+        "dimensions": "330x500",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "5 emery)",
+          "axe n BE",
+          "Goce Hive",
+          "aie) @",
+          "ire)",
+          "YOMTD,"
+        ]
+      },
+      {
+        "filename": "097_post-review-cram-seems-to-repe_The111_1166x2554.jpg",
+        "platform": "mobile",
+        "dimensions": "1166x2554",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "GL 65%",
+          "Results",
+          "| came from America.",
+          "Y thd, RVBOEHATLE. FD",
+          "That was not cheap.",
+          "BE ."
+        ]
+      },
+      {
+        "filename": "098_is-it-possible-to-cram-vocabul_btluppi_1080x2340.jpg",
+        "platform": "mobile",
+        "dimensions": "1080x2340",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "lesson_list_accordion",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "17:42 OME \u00ab %& 56+ ul BD",
+          "\u2014 F3Z] Bunpro Q @",
+          "| Show 12 More (46 left) |",
+          "Troubled Content",
+          "Grammar & Vocab (~) Last Month Overall",
+          "Items that you have a gotten wrong frequently"
+        ]
+      },
+      {
+        "filename": "099_teacher-dashboard-release-new-_Jake_325x505.png",
+        "platform": "mobile",
+        "dimensions": "325x505",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "rss study se wstsesson",
+          "an 1 5",
+          "Activity C290",
+          "Recently Learned",
+          "cna 2",
+          "Tope me) ZB Guest maringparice"
+        ]
+      },
+      {
+        "filename": "09_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "Learn e",
+          "New batch of JLPT3 Grammar",
+          "Review aD",
+          "Vocab a",
+          "isi) Dominic"
+        ]
+      },
+      {
+        "filename": "09_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "1:30 & A",
+          "\u20ac (cBSET Q",
+          "Meaning Examples Resources",
+          "\u00bb KK LEEAIN-FLS\u2014S",
+          "KEBOHEICESECUSUS",
+          "iE Re REE L Teo"
+        ]
+      },
+      {
+        "filename": "09_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "Grammar",
+          "To be, Is",
+          "To be, Is",
+          "As for... (highlights sentence topic)",
+          "Also, Too, As well, Even, Either, Neither",
+          "This"
+        ]
+      },
+      {
+        "filename": "100_feedback-bug-reports_Anthropos888_1080x1920.png",
+        "platform": "mobile",
+        "dimensions": "1080x1920",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "+ GUIDE 3 / 3",
+          "Examples",
+          "Readings",
+          "| el oy aia)",
+          "why don\u2019t you",
+          "Structure"
+        ]
+      },
+      {
+        "filename": "101_feedback-bug-reports_Anthropos888_281x500.png",
+        "platform": "mobile",
+        "dimensions": "281x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "+GUIDE 3/3",
+          "Examples",
+          "Readings",
+          "why don\u2019t you",
+          "Structure",
+          "Verb[7z + 5] +5 \u00b0C"
+        ]
+      },
+      {
+        "filename": "102_feedback-bug-reports_Anthropos888_1080x1920.png",
+        "platform": "mobile",
+        "dimensions": "1080x1920",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Ral sz70",
+          "+ GUIDE",
+          "O PY A 35% Q 20:54",
+          "New Grammar: 3",
+          "AY ICTT STEW AD?",
+          "?~[masculine]"
+        ]
+      },
+      {
+        "filename": "103_feedback-bug-reports_Anthropos888_281x500.png",
+        "platform": "mobile",
+        "dimensions": "281x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "Baxza",
+          "AMIATERUADU?",
+          "?~{masculine]",
+          "Click Here/Press 'a' for alternate",
+          "\u2018Show Grammar Info",
+          "News Help FAQ. About Contact"
+        ]
+      },
+      {
+        "filename": "104_reviews-2-0-released_NearlyRemy_1080x1898.jpg",
+        "platform": "mobile",
+        "dimensions": "1080x1898",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "Se oe @aQa \\ Beginner1 Y 6/6 (J) 15",
+          "[subjective \u00bb low confidence]",
+          "A: CALTEABIC MERE O ?",
+          "B: AASBRE7IaRR. BRL TATE",
+          "Kb! [ae]",
+          "A: Why are you giving off the appearance of being so satisfied?"
+        ]
+      },
+      {
+        "filename": "105_reviews-2-0-released_NearlyRemy_284x500.jpg",
+        "platform": "mobile",
+        "dimensions": "284x500",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "Y Beginner v 6/6 C15",
+          "{subjective \u00ablow confidence]",
+          "COLTEABIE MERE D?",
+          "B: BASBRE7ISER, QIBLEATE",
+          "& ! Fae]",
+          "ny are you pvingoff the appea"
+        ]
+      },
+      {
+        "filename": "106_learn-3-0-released_Sean_750x1334.png",
+        "platform": "mobile",
+        "dimensions": "750x1334",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "{SG = 4/50",
+          "fe From Deck QO <",
+          "Bunpro N5 [Grammar]",
+          "Also, Too, As well, Even, Either, Neither",
+          "4 %'s translation will change, depending on",
+          "if the sentence is positive, or negative"
+        ]
+      },
+      {
+        "filename": "107_learn-3-0-released_Sean_281x499.png",
+        "platform": "mobile",
+        "dimensions": "281x499",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "ic 4/50",
+          "\u00a9 punprons {Gramma} A <",
+          "Also, Too, As well, Even, Either, Neither",
+          "is positive, or ne",
+          "Details Example",
+          "Structure \u00ae"
+        ]
+      },
+      {
+        "filename": "108_learn-3-0-released_Sean_750x1334.png",
+        "platform": "mobile",
+        "dimensions": "750x1334",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "(Gc am",
+          "From Deck",
+          "[s Bunpro N3 [Vocab] QH<",
+          "yawn, yawning (and stretching), kanji",
+          "\u2018yawning\u2019 radical (radical 76)",
+          "Details"
+        ]
+      },
+      {
+        "filename": "109_learn-3-0-released_Sean_281x499.png",
+        "platform": "mobile",
+        "dimensions": "281x499",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Gc \u2014\u2014",
+          "From Deck",
+          "\u00a9 Bunpro ns [vocab] Qa<",
+          "yawn, yawning (and stretching), kanji",
+          "\"yawning' radical (radical 76)",
+          "Netflix Top"
+        ]
+      },
+      {
+        "filename": "10_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "1:25 2A VA",
+          "fe ea Bilseasoned1 v 0/0 (J 591",
+          "pos iat",
+          "(4% 221k) [general counter DEBENSNSBUS",
+          "KDB.",
+          "several~some~a few"
+        ]
+      },
+      {
+        "filename": "10_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "1:32 BA VA",
+          "<\u20ac {<= Submit a new report",
+          "What is the report about?",
+          "Meaning",
+          "A bug or typo",
+          "(Noun (A)"
+        ]
+      },
+      {
+        "filename": "10_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "TheGreatestZenMaster",
+          "Lvl 47 (294 XP until Lvl 48)",
+          "N5 126/126",
+          "N4 12/176",
+          "N3 6/219"
+        ]
+      },
+      {
+        "filename": "110_extensive-reading-log_sunomuno_317x466.jpg",
+        "platform": "mobile",
+        "dimensions": "317x466",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": []
+      },
+      {
+        "filename": "111_how-to-redeem-free-month-codes_amberglade_474x1178.jpg",
+        "platform": "mobile",
+        "dimensions": "474x1178",
+        "category": "settings_and_preferences",
+        "detected_elements": [
+          "action_buttons"
+        ],
+        "sample_text": [
+          "MY BUNPRO",
+          "8 Profile",
+          "f) B-Points Shop",
+          ":= Summary",
+          "i) Subscription",
+          "HELP"
+        ]
+      },
+      {
+        "filename": "112_any-way-to-make-one-review-ses_IcyIceBear_1440x3040.jpg",
+        "platform": "mobile",
+        "dimensions": "1440x3040",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "6:02 CaF ull a",
+          "Content",
+          "Vocab",
+          "All Bunpro Vocab ?",
+          "Reading Practice",
+          "Graded Readers >"
+        ]
+      },
+      {
+        "filename": "113_any-way-to-make-one-review-ses_IcyIceBear_1440x3040.jpg",
+        "platform": "mobile",
+        "dimensions": "1440x3040",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "6:02 & Co ull",
+          "Style",
+          "Review fe)",
+          "Practice by inputting the answer",
+          "Reading \u00a9",
+          "Practice by reading sentences"
+        ]
+      },
+      {
+        "filename": "114_problems-with-progress-on-bunp_lucasrddalmas_427x622.png",
+        "platform": "mobile",
+        "dimensions": "427x622",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Bunpro N4",
+          "Grammar",
+          "Bunpro N4 [Grammar]",
+          "3 Manual Input",
+          "This deck includes all of the",
+          "most common JLPT N4"
+        ]
+      },
+      {
+        "filename": "115_problems-with-progress-on-bunp_lucasrddalmas_343x500.png",
+        "platform": "mobile",
+        "dimensions": "343x500",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "he Bunpro N4",
+          "Grammar",
+          "Bunpro N4 [Grammar]",
+          "3 Manual Input",
+          "This deck includes all of the",
+          "most common JLPT N4"
+        ]
+      },
+      {
+        "filename": "116_problems-with-progress-on-bunp_lucasrddalmas_383x568.png",
+        "platform": "mobile",
+        "dimensions": "383x568",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "\u20ac Return",
+          "Good Job!",
+          "These items are now in",
+          "your review queue.",
+          "Remember to pace yourself",
+          "so you don\u2019t get"
+        ]
+      },
+      {
+        "filename": "117_considering-getting-wanikani-w_imsamuka_1296x2228.jpg",
+        "platform": "mobile",
+        "dimensions": "1296x2228",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "00- Kanji Readings ~ \u00a9",
+          "Statistics",
+          "OVERVIEW FORECAST REVIEW COUNT REVIEW TIME IN",
+          "Deck Life",
+          "FORECAST",
+          "Total: 2429 reviews"
+        ]
+      },
+      {
+        "filename": "118_how-does-remove-from-reviews-w_JandroSantiago_561x867.png",
+        "platform": "mobile",
+        "dimensions": "561x867",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "genau",
+          "@\u00ae \u00aba",
+          " gtEe~S",
+          "seem",
+          " ~eRote",
+          "cour"
+        ]
+      },
+      {
+        "filename": "119_how-does-remove-from-reviews-w_JandroSantiago_323x500.png",
+        "platform": "mobile",
+        "dimensions": "323x500",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "keer",
+          "town",
+          " we~e",
+          " eeesnns",
+          "(memo",
+          "cone)"
+        ]
+      },
+      {
+        "filename": "11_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning",
+          "Your Synonyms",
+          "i love bunpro",
+          "and trains",
+          "Add synonym @ J",
+          "Your Notes"
+        ]
+      },
+      {
+        "filename": "11_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples",
+          "Your Synonyms",
+          "i love bunpro 7 6",
+          "and trains 7 tu",
+          "[ Add synonym +) ]",
+          "Your Notes"
+        ]
+      },
+      {
+        "filename": "11_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "9:35 al > @)",
+          "Bunpro a os",
+          "Dashboard N2",
+          "Lessons 4",
+          "Reviews 160",
+          "Community"
+        ]
+      },
+      {
+        "filename": "120_big-update-profile-cosmetics-s_Jake_405x689.jpg",
+        "platform": "mobile",
+        "dimensions": "405x689",
+        "category": "gamification_and_arcade",
+        "detected_elements": [],
+        "sample_text": [
+          "Jake-Bunpro \u00ae",
+          "Osaka > Tokyo tv.11",
+          "JLPT Progress (Grammar) [~)",
+          "NS el 15/126",
+          "i Na | ia",
+          "TE 88 9A 10K 1k LDA BE"
+        ]
+      },
+      {
+        "filename": "121_big-update-profile-cosmetics-s_Jake_293x500.jpg",
+        "platform": "mobile",
+        "dimensions": "293x500",
+        "category": "gamification_and_arcade",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Jake-Bunpro",
+          "Osaka ere wat \u00ae",
+          "stpTProgress (Grammar) @",
+          "Ns mm 157225",
+          "Na | ant",
+          "3 ons"
+        ]
+      },
+      {
+        "filename": "122_big-update-profile-cosmetics-s_Jake_415x769.jpg",
+        "platform": "mobile",
+        "dimensions": "415x769",
+        "category": "gamification_and_arcade",
+        "detected_elements": [],
+        "sample_text": [
+          "Jake-Bufpro",
+          "\u2018Osaka > Tokyo tv.11",
+          "< Share @show / Edit"
+        ]
+      },
+      {
+        "filename": "123_big-update-profile-cosmetics-s_Jake_269x499.jpg",
+        "platform": "mobile",
+        "dimensions": "269x499",
+        "category": "gamification_and_arcade",
+        "detected_elements": [],
+        "sample_text": [
+          "Jake-Buffpro",
+          "\u2018Osaka > Tokyo tv.1",
+          "share @show / Edit"
+        ]
+      },
+      {
+        "filename": "124_big-update-profile-cosmetics-s_EdBunpro_405x687.jpg",
+        "platform": "mobile",
+        "dimensions": "405x687",
+        "category": "gamification_and_arcade",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "fa \u00ae ih",
+          "1240 100% 122",
+          "Days Studied Last Session Items Studied",
+          "JLPT Progress (Grammar) @",
+          "122/126",
+          "o/.77"
+        ]
+      },
+      {
+        "filename": "125_big-update-profile-cosmetics-s_EdBunpro_294x500.jpg",
+        "platform": "mobile",
+        "dimensions": "294x500",
+        "category": "gamification_and_arcade",
+        "detected_elements": [],
+        "sample_text": [
+          "JLPTProgress (Grammar) @",
+          "TN 122/125",
+          "Na oar?",
+          "7H SH 9A Wk Tk PR oe",
+          "<SsShare @show # Edit"
+        ]
+      },
+      {
+        "filename": "126_re-order-deck_IcyIceBear_1057x2172.jpg",
+        "platform": "mobile",
+        "dimensions": "1057x2172",
+        "category": "decks_and_curriculum",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Kee tB",
+          "destructive blast, explosion, blow up",
+          "Dictionary Definition",
+          "Noun, Suru verb, Transitive verb",
+          "1. destructive blast, blowing up,",
+          "explosion"
+        ]
+      },
+      {
+        "filename": "127_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "TheGreatestZenMaster",
+          "Lvl 47 (294 XP until Lvl 48)",
+          "N5 126/126",
+          "N4 12/176",
+          "N3 6/219"
+        ]
+      },
+      {
+        "filename": "128_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "Context",
+          "Dependent Word ft Bae",
+          "Auxiliary Verb Bye zal",
+          "Casual OXGB",
+          "Your Notes"
+        ]
+      },
+      {
+        "filename": "129_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "Information",
+          "7 acts as an expression of determination or strong",
+          "assertion in Japanese, and simply states that something \u2018is\u2019",
+          "a certain way. It is the casual equivalent of CF (another",
+          "auxiliary verb)."
+        ]
+      },
+      {
+        "filename": "12_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Results",
+          "SRUETS !",
+          "Good job",
+          "+0 XP",
+          "Lvl 87",
+          "Accuracy"
+        ]
+      },
+      {
+        "filename": "12_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "1:29 BA",
+          "N1 Lesson 1",
+          "(CESET",
+          "(everything) from...to..., from...up until..., starting",
+          "with...ending with...",
+          "Meaning Examples Resources"
+        ]
+      },
+      {
+        "filename": "12_official_mobile_apps_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "Context",
+          "Dependent Word ft Bae",
+          "Auxiliary Verb Bye zal",
+          "Casual OXGB",
+          "Your Notes"
+        ]
+      },
+      {
+        "filename": "130_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "KNelaley UIdliiiiial",
+          "@ cw COBWET",
+          "\u00a9) ras CHS",
+          "@ror \"Cle",
+          "@ Cer"
+        ]
+      },
+      {
+        "filename": "131_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "F e feof",
+          "Z Plain Speech: Stop at Past Tense [72372]",
+          "Zw Declaring something is so and so using '7<2)",
+          "z 7\u00e9 cannot be used with L\\-Adjectives",
+          "The copula 7\u00e9"
+        ]
+      },
+      {
+        "filename": "132_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "settings_and_preferences",
+        "detected_elements": [],
+        "sample_text": [
+          "Settings",
+          "Account",
+          "Manage your personal and opt-in to",
+          "Beta access",
+          "General",
+          "Customize your Dashboard, Study"
+        ]
+      },
+      {
+        "filename": "133_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "Ay Teo",
+          "Itis me.",
+          "Show English",
+          "38 Eo",
+          "Show English"
+        ]
+      },
+      {
+        "filename": "134_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "7\u00e9 cannot be used with L\\-Adjectives",
+          "Noun + 7\u00e9",
+          "[%] Adjective + 72",
+          "Information",
+          "7 acts as an expression of determination or strong"
+        ]
+      },
+      {
+        "filename": "135_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "9:35 al > @)",
+          "Bunpro a os",
+          "Dashboard N2",
+          "Lessons 4",
+          "Reviews 160",
+          "Community"
+        ]
+      },
+      {
+        "filename": "136_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "Grammar",
+          "To be, Is",
+          "To be, Is",
+          "As for... (highlights sentence topic)",
+          "Also, Too, As well, Even, Either, Neither",
+          "This"
+        ]
+      },
+      {
+        "filename": "137_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "Right?, Probably, Isn't it?",
+          "~OLRSID",
+          "| wonder...",
+          "DCBWES SD",
+          "| think ... isn't it?, It might be that..., don't you",
+          "agree?"
+        ]
+      },
+      {
+        "filename": "138_new-bunpro-mobile-apps-v0-4-0-_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "ia Bunpro",
+          "Login",
+          "Email |",
+          "Password oO |",
+          "Remember me",
+          "FS ow Ue"
+        ]
+      },
+      {
+        "filename": "139_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "1358 4%",
+          "Learn",
+          "New batch of",
+          "Review",
+          "Grammar",
+          "Dashboard"
+        ]
+      },
+      {
+        "filename": "13_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "SRT |!",
+          "Good job",
+          "\u2018Accuracy",
+          "1 31.58%",
+          "\u2014 ee",
+          "x Nvt Taxwuskeeue 5"
+        ]
+      },
+      {
+        "filename": "13_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "Learn",
+          "New batch of JLPT1 Grammar",
+          "Review",
+          "Vocab",
+          "(a) Dominic"
+        ]
+      },
+      {
+        "filename": "140_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning",
+          "(Noun (A)",
+          "+@+No",
+          "Details",
+          "Standard",
+          "About tc"
+        ]
+      },
+      {
+        "filename": "141_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Dashboard",
+          "Learn e",
+          "New batch of JLPT3 Grammar",
+          "Review aD",
+          "Vocab a",
+          "Review Activity"
+        ]
+      },
+      {
+        "filename": "142_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Boa Biiseasoned 1 vy 0/0 (591",
+          "(@xia)",
+          "several~some~a few",
+          "ow 8 & - \u00a5",
+          "q wert y ui\u2019 o\u201d p",
+          "apsladptl@ pal j i]t"
+        ]
+      },
+      {
+        "filename": "143_mobile-app-ui-refactor_mrnoone_1190x2120.png",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "1:30 & A",
+          "\u20ac (cBSET",
+          "Meaning Examples Resources",
+          "@ Meaning and use \u2018e",
+          "Learn Japanese Daily",
+          "Offline Mark All as Read"
+        ]
+      },
+      {
+        "filename": "144_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Boa Biiseasoned 1 vy 0/0 (591",
+          "(iis) son",
+          "ESE OK.",
+          "several~some~a few",
+          "undo info Ans"
+        ]
+      },
+      {
+        "filename": "145_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Details",
+          "<2) Thankyou for contacting ust",
+          "We've successfully received your",
+          "\u2018message and answer as soon as we're",
+          "able,",
+          "About Ic]"
+        ]
+      },
+      {
+        "filename": "146_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "\u20ac [c= Submit anew report",
+          "What isthe report about?",
+          "bug or po)",
+          "\u2018A suagetion",
+          "\u2018Audio",
+          "Standard"
+        ]
+      },
+      {
+        "filename": "147_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "SRT |!",
+          "Good job",
+          "\u2018Accuracy",
+          "1 31.58%",
+          "\u2014 ee",
+          "x Nvt Taxwuskeeue 5"
+        ]
+      },
+      {
+        "filename": "148_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "1:30 & A",
+          "\u20ac (cBSET Q",
+          "Meaning Examples Resources",
+          "\u00bb KK LEEAIN-FLS\u2014S",
+          "KEBOHEICESECUSUS",
+          "iE Re REE L Teo"
+        ]
+      },
+      {
+        "filename": "149_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "1:29 BA",
+          "N1 Lesson 1",
+          "(CESET",
+          "(everything) from...to..., from...up until..., starting",
+          "with...ending with...",
+          "Meaning Examples Resources"
+        ]
+      },
+      {
+        "filename": "14_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Boa Biiseasoned 1 vy 0/0 (591",
+          "(iis) son",
+          "ESE OK.",
+          "several~some~a few",
+          "undo info Ans"
+        ]
+      },
+      {
+        "filename": "14_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "< (HORT: (RiROGH. )) >",
+          "(hLOB? )",
+          "AldKACH. MISBETT.",
+          "CHISMORETCH. HORBORMIAITATE",
+          "CH. WAKES FETT,",
+          "CHISHPEECT. BHAEISHUO AARBO"
+        ]
+      },
+      {
+        "filename": "150_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "1:25 2A VA",
+          "fe ea Bilseasoned1 v 0/0 (J 591",
+          "[general counter]",
+          "pO WAZ _ __ late",
+          "(REIS) WK OD DBBeENINIMES",
+          "a5 DEA See"
+        ]
+      },
+      {
+        "filename": "151_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "1308 &",
+          "\u20ac (cBSET",
+          "amples Resource",
+          "VIDS",
+          "BETUBUS",
+          "> EL eeAar"
+        ]
+      },
+      {
+        "filename": "152_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "Learn e",
+          "New batch of JLPT3 Grammar",
+          "Review aD",
+          "Vocab a",
+          "isi) Dominic"
+        ]
+      },
+      {
+        "filename": "153_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "1298",
+          "Ni Lesson 1",
+          "ICBSET",
+          "(everything) from.",
+          "Meaning",
+          "Structure @"
+        ]
+      },
+      {
+        "filename": "154_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "Learn",
+          "New batch of JLPT1 Grammar",
+          "Review",
+          "Vocab",
+          "(a) Dominic"
+        ]
+      },
+      {
+        "filename": "155_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning",
+          "Your Synonyms",
+          "i love bunpro",
+          "and trains",
+          "Add synonym @ J",
+          "Your Notes"
+        ]
+      },
+      {
+        "filename": "156_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Boa Bilseasoned 1 7 0/0 (551",
+          "(iezchd) ERDRIEUS",
+          "faints =>) | Undo Info",
+          "u<om \u00a9>?",
+          ">) for and 1 y",
+          "qwer. vault iP Orp"
+        ]
+      },
+      {
+        "filename": "157_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "1:25 2A VA",
+          "fe ea Bilseasoned1 v 0/0 (J 591",
+          "pos iat",
+          "(4% 221k) [general counter DEBENSNSBUS",
+          "KDB.",
+          "several~some~a few"
+        ]
+      },
+      {
+        "filename": "158_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "1:26 2A 7 tt |",
+          "fe ea BZlseasoned1 v 0/0 (J 591",
+          "[general counter]",
+          "yh Fh (ae",
+          "(LI) U<op DEBENSNSHUS",
+          "EDI D ies"
+        ]
+      },
+      {
+        "filename": "159_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "< (HORT: (RiROGH. )) >",
+          "(hLOB? )",
+          "AldKACH. MISBETT.",
+          "CHISMORETCH. HORBORMIAITATE",
+          "CH. WAKES FETT,",
+          "CHISHPEECT. BHAEISHUO AARBO"
+        ]
+      },
+      {
+        "filename": "15_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "1:25 2A VA",
+          "fe ea Bilseasoned1 v 0/0 (J 591",
+          "[general counter]",
+          "pO WAZ _ __ late",
+          "(REIS) WK OD DBBeENINIMES",
+          "a5 DEA See"
+        ]
+      },
+      {
+        "filename": "15_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Results",
+          "SRUETS !",
+          "Good job",
+          "+0 XP",
+          "Lvl 87",
+          "Accuracy"
+        ]
+      },
+      {
+        "filename": "160_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples",
+          "Your Synonyms",
+          "i love bunpro 7 6",
+          "and trains 7 tu",
+          "[ Add synonym +) ]",
+          "Your Notes"
+        ]
+      },
+      {
+        "filename": "161_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "Notifications",
+          "(yy) Vocab Update",
+          "New badge: Gourmet Race",
+          "Vocab Reviews in Beta 2.0",
+          "N2.Grammar Explanations - Final",
+          "api \"2 Writeups Part a"
+        ]
+      },
+      {
+        "filename": "162_mobile-app-ui-refactor_mrnoone_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "< tows: RROBR. >",
+          "(hAoiRh. D",
+          "MIGKATH. MAR ETH.",
+          "CNGMORBTT. MORRORMILITAT",
+          "TH. WARERETT.",
+          "CNRHPRETT. Bhs"
+        ]
+      },
+      {
+        "filename": "163_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Results",
+          "SRUETS !",
+          "Good job",
+          "+0 XP",
+          "Lvl 87",
+          "Accuracy"
+        ]
+      },
+      {
+        "filename": "164_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "1:32 BA VA",
+          "<\u20ac {<= Submit a new report",
+          "What is the report about?",
+          "Meaning",
+          "A bug or typo",
+          "(Noun (A)"
+        ]
+      },
+      {
+        "filename": "165_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "Review Activity",
+          "P2M 67",
+          "an 8%",
+          "UOW LZ",
+          "uns 97"
+        ]
+      },
+      {
+        "filename": "166_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "1:35 BA VA",
+          "Dashboard a",
+          "Learn Vocab Update",
+          "New batch of 1 day ago",
+          "New badge: ---",
+          "poviey 2 weeks ago"
+        ]
+      },
+      {
+        "filename": "167_mobile-app-ui-refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "Notifications",
+          "(n) Vocab Update",
+          "1 day ago",
+          "@) New badge: Gourmet Race",
+          "2 weeks ago",
+          "(~) Vocab Reviews in Beta 2.0"
+        ]
+      },
+      {
+        "filename": "168_mobile-app-ui-refactor_apaul_1080x2400.jpg",
+        "platform": "mobile",
+        "dimensions": "1080x2400",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "8:08 ma A\u00ae",
+          "TL TEA",
+          "Hints \u00b0\u00b0",
+          "Cant+ han amnt",
+          "<< () ciF",
+          "12 3 4"
+        ]
+      },
+      {
+        "filename": "169_mobile-app-ui-refactor_Atheon_1440x2494.jpg",
+        "platform": "mobile",
+        "dimensions": "1440x2494",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Ay Yamh\u2014-F",
+          "HIRT S",
+          "JLPTAD ROMAN Y Fo",
+          "Now Tmw AAS A fe AB PAA eA",
+          "\u2014 kK =\u2014 Ha",
+          "Or Or ON"
+        ]
+      },
+      {
+        "filename": "16_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples",
+          "Your Synonyms",
+          "i love bunpro 7 6",
+          "and trains 7 tu",
+          "[ Add synonym +) ]",
+          "Your Notes"
+        ]
+      },
+      {
+        "filename": "16_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "1:35 BA VA",
+          "Dashboard a",
+          "Learn Vocab Update",
+          "New batch of 1 day ago",
+          "New badge: ---",
+          "poviey 2 weeks ago"
+        ]
+      },
+      {
+        "filename": "170_mobile-app-ui-refactor_Atheon_327x500.jpg",
+        "platform": "mobile",
+        "dimensions": "327x500",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "AIS an I a",
+          "SLPTADEHROSGENY Fo [|",
+          "Atheon",
+          "Lvl 58 (Lvl 59 XP #TH\u00a5D8310)",
+          "NS 126/126",
+          "i \u2014 141/176"
+        ]
+      },
+      {
+        "filename": "171_mobile-app-ui-refactor_Atheon_1440x2200.jpg",
+        "platform": "mobile",
+        "dimensions": "1440x2200",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "= BE 2 SLAB |S a",
+          "Has S",
+          "JLPT4D BRIO ISGENY Fo",
+          "Atheon",
+          "Lvl 58 (Lvl 59 XP &C5\u00a5 5 8310 )",
+          "N5 126/126"
+        ]
+      },
+      {
+        "filename": "172_mobile-app-ui-refactor_Atheon_288x500.jpg",
+        "platform": "mobile",
+        "dimensions": "288x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "= Byyak-k",
+          "SGT S",
+          "ILPTAD BROKEN Y Fe [> |",
+          "Now Tmw AREES@a Bo BSH EAB",
+          "- xk = ae"
+        ]
+      },
+      {
+        "filename": "173_mobile-app-ui-refactor_lupine_1440x3120.png",
+        "platform": "mobile",
+        "dimensions": "1440x3120",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "10:43 PB",
+          "Dashboard",
+          "Learn",
+          "New batch of JLPT5 Grammar",
+          "Review Activity",
+          "SeUZE HES LUSE HSS KUaT HESS KVaTreEeSY"
+        ]
+      },
+      {
+        "filename": "174_easily-cram-missed-items_mrnoone_1170x2532.png",
+        "platform": "mobile",
+        "dimensions": "1170x2532",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "< @ Content to Cram",
+          "Vocab Textbooks Special Unfinished",
+          "> My Bookmarks + Adda",
+          "> SRS beginner + Adda",
+          "> SRS adept + Adda",
+          "> SRS seasoned \u2014 Removea"
+        ]
+      },
+      {
+        "filename": "175_easily-cram-missed-items_mrnoone_1170x2532.png",
+        "platform": "mobile",
+        "dimensions": "1170x2532",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "action_buttons",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "BRMUETS !",
+          "Good job",
+          "This Session",
+          "Accuracy",
+          "Correct 0 Incorrect 3",
+          "0% 100%"
+        ]
+      },
+      {
+        "filename": "176_ios-app-official-release_Blubberings_1170x2391.jpg",
+        "platform": "mobile",
+        "dimensions": "1170x2391",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "Learn",
+          "@Quugucueccuccge0cgngnega",
+          "Bunpro N5 [Vocab]",
+          "eeessesesn",
+          "Bunpro N4 [Grammar]"
+        ]
+      },
+      {
+        "filename": "177_information-in-the-wild-week-1_ThousandJP_1920x2745.jpg",
+        "platform": "mobile",
+        "dimensions": "1920x2745",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": []
+      },
+      {
+        "filename": "178_information-in-the-wild-week-1_ThousandJP_271x375.jpg",
+        "platform": "mobile",
+        "dimensions": "271x375",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "seat",
+          "202347 1B EY",
+          "praca room",
+          "* secon",
+          "ae Les"
+        ]
+      },
+      {
+        "filename": "179_information-in-the-wild-week-1_ThousandJP_349x499.jpg",
+        "platform": "mobile",
+        "dimensions": "349x499",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": []
+      },
+      {
+        "filename": "17_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "< (HORT: (RiROGH. )) >",
+          "(hLOB? )",
+          "AldKACH. MISBETT.",
+          "CHISMORETCH. HORBORMIAITATE",
+          "CH. WAKES FETT,",
+          "CHISHPEECT. BHAEISHUO AARBO"
+        ]
+      },
+      {
+        "filename": "17_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "1:25 2A VA",
+          "fe ea Bilseasoned1 v 0/0 (J 591",
+          "[general counter]",
+          "pO WAZ _ __ late",
+          "(REIS) WK OD DBBeENINIMES",
+          "a5 DEA See"
+        ]
+      },
+      {
+        "filename": "18_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "1298",
+          "Ni Lesson 1",
+          "ICBSET",
+          "(everything) from.",
+          "Meaning",
+          "Structure @"
+        ]
+      },
+      {
+        "filename": "18_mobile_ui_refactor_mrnoone_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning",
+          "(Noun (A)",
+          "+@+No",
+          "Details",
+          "Standard",
+          "About tc"
+        ]
+      },
+      {
+        "filename": "19_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Details",
+          "<2) Thankyou for contacting ust",
+          "We've successfully received your",
+          "\u2018message and answer as soon as we're",
+          "able,",
+          "About Ic]"
+        ]
+      },
+      {
+        "filename": "19_mobile_ui_refactor_mrnoone_1190x2120.png",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "1:30 & A",
+          "\u20ac (cBSET",
+          "Meaning Examples Resources",
+          "@ Meaning and use \u2018e",
+          "Learn Japanese Daily",
+          "Offline Mark All as Read"
+        ]
+      },
+      {
+        "filename": "20_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "1:35 BA VA",
+          "Dashboard a",
+          "Learn Vocab Update",
+          "New batch of 1 day ago",
+          "New badge: ---",
+          "poviey 2 weeks ago"
+        ]
+      },
+      {
+        "filename": "20_mobile_ui_refactor_apaul_1080x2400.jpg",
+        "platform": "mobile",
+        "dimensions": "1080x2400",
+        "category": "study_and_reviews",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "8:08 ma A\u00ae",
+          "TL TEA",
+          "Hints \u00b0\u00b0",
+          "Cant+ han amnt",
+          "<< () ciF",
+          "12 3 4"
+        ]
+      },
+      {
+        "filename": "21_mobile_ui_refactor_280x500.png",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "@ Meaning and use",
+          "Offline Markallas Read }",
+          "Tobira"
+        ]
+      },
+      {
+        "filename": "21_mobile_ui_refactor_Atheon_327x500.jpg",
+        "platform": "mobile",
+        "dimensions": "327x500",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "AIS an I a",
+          "SLPTADEHROSGENY Fo [|",
+          "Atheon",
+          "Lvl 58 (Lvl 59 XP #TH\u00a5D8310)",
+          "NS 126/126",
+          "i \u2014 141/176"
+        ]
+      },
+      {
+        "filename": "22_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "Review Activity",
+          "P2M 67",
+          "an 8%",
+          "UOW LZ",
+          "uns 97"
+        ]
+      },
+      {
+        "filename": "22_mobile_ui_refactor_Atheon_1440x2200.jpg",
+        "platform": "mobile",
+        "dimensions": "1440x2200",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "= BE 2 SLAB |S a",
+          "Has S",
+          "JLPT4D BRIO ISGENY Fo",
+          "Atheon",
+          "Lvl 58 (Lvl 59 XP &C5\u00a5 5 8310 )",
+          "N5 126/126"
+        ]
+      },
+      {
+        "filename": "23_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "1:30 & A",
+          "\u20ac (cBSET Q",
+          "Meaning Examples Resources",
+          "\u00bb KK LEEAIN-FLS\u2014S",
+          "KEBOHEICESECUSUS",
+          "iE Re REE L Teo"
+        ]
+      },
+      {
+        "filename": "23_mobile_ui_refactor_Atheon_1440x2494.jpg",
+        "platform": "mobile",
+        "dimensions": "1440x2494",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "Ay Yamh\u2014-F",
+          "HIRT S",
+          "JLPTAD ROMAN Y Fo",
+          "Now Tmw AAS A fe AB PAA eA",
+          "\u2014 kK =\u2014 Ha",
+          "Or Or ON"
+        ]
+      },
+      {
+        "filename": "24_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "Dashboard",
+          "Learn e",
+          "New batch of JLPT3 Grammar",
+          "Review aD",
+          "Vocab a",
+          "Review Activity"
+        ]
+      },
+      {
+        "filename": "24_mobile_ui_refactor_lupine_1440x3120.png",
+        "platform": "mobile",
+        "dimensions": "1440x3120",
+        "category": "dashboard_home",
+        "detected_elements": [],
+        "sample_text": [
+          "10:43 PB",
+          "Dashboard",
+          "Learn",
+          "New batch of JLPT5 Grammar",
+          "Review Activity",
+          "SeUZE HES LUSE HSS KUaT HESS KVaTreEeSY"
+        ]
+      },
+      {
+        "filename": "25_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "study_and_reviews",
+        "detected_elements": [],
+        "sample_text": [
+          "1:26 2A 7 tt |",
+          "fe ea BZlseasoned1 v 0/0 (J 591",
+          "[general counter]",
+          "yh Fh (ae",
+          "(LI) U<op DEBENSNSHUS",
+          "EDI D ies"
+        ]
+      },
+      {
+        "filename": "25_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "KNelaley UIdliiiiial",
+          "@ cw COBWET",
+          "\u00a9) ras CHS",
+          "@ror \"Cle",
+          "@ Cer"
+        ]
+      },
+      {
+        "filename": "26_mobile_ui_refactor_1190x2120.jpg",
+        "platform": "mobile",
+        "dimensions": "1190x2120",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning",
+          "(Noun (A)",
+          "+@+No",
+          "Details",
+          "Standard",
+          "About tc"
+        ]
+      },
+      {
+        "filename": "26_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Dashboard",
+          "TheGreatestZenMaster",
+          "Lvl 47 (294 XP until Lvl 48)",
+          "N5 126/126",
+          "N4 12/176",
+          "N3 6/219"
+        ]
+      },
+      {
+        "filename": "27_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "< tows: RROBR. >",
+          "(hAoiRh. D",
+          "MIGKATH. MAR ETH.",
+          "CNGMORBTT. MORRORMILITAT",
+          "TH. WARERETT.",
+          "CNRHPRETT. Bhs"
+        ]
+      },
+      {
+        "filename": "27_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "settings_and_preferences",
+        "detected_elements": [],
+        "sample_text": [
+          "Settings",
+          "Account",
+          "Manage your personal and opt-in to",
+          "Beta access",
+          "General",
+          "Customize your Dashboard, Study"
+        ]
+      },
+      {
+        "filename": "28_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "action_buttons",
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "\u20ac [c= Submit anew report",
+          "What isthe report about?",
+          "bug or po)",
+          "\u2018A suagetion",
+          "\u2018Audio",
+          "Standard"
+        ]
+      },
+      {
+        "filename": "28_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "Grammar",
+          "To be, Is",
+          "To be, Is",
+          "As for... (highlights sentence topic)",
+          "Also, Too, As well, Even, Either, Neither",
+          "This"
+        ]
+      },
+      {
+        "filename": "29_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [],
+        "sample_text": [
+          "Notifications",
+          "(yy) Vocab Update",
+          "New badge: Gourmet Race",
+          "Vocab Reviews in Beta 2.0",
+          "N2.Grammar Explanations - Final",
+          "api \"2 Writeups Part a"
+        ]
+      },
+      {
+        "filename": "29_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "miscellaneous",
+        "detected_elements": [
+          "search_filter_bar"
+        ],
+        "sample_text": [
+          "Right?, Probably, Isn't it?",
+          "~OLRSID",
+          "| wonder...",
+          "DCBWES SD",
+          "| think ... isn't it?, It might be that..., don't you",
+          "agree?"
+        ]
+      },
+      {
+        "filename": "30_mobile_ui_refactor_280x500.jpg",
+        "platform": "mobile",
+        "dimensions": "280x500",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "1358 4%",
+          "Learn",
+          "New batch of",
+          "Review",
+          "Grammar",
+          "Dashboard"
+        ]
+      },
+      {
+        "filename": "30_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "7\u00e9 cannot be used with L\\-Adjectives",
+          "Noun + 7\u00e9",
+          "[%] Adjective + 72",
+          "Information",
+          "7 acts as an expression of determination or strong"
+        ]
+      },
+      {
+        "filename": "31_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "F e feof",
+          "Z Plain Speech: Stop at Past Tense [72372]",
+          "Zw Declaring something is so and so using '7<2)",
+          "z 7\u00e9 cannot be used with L\\-Adjectives",
+          "The copula 7\u00e9"
+        ]
+      },
+      {
+        "filename": "32_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "Context",
+          "Dependent Word ft Bae",
+          "Auxiliary Verb Bye zal",
+          "Casual OXGB",
+          "Your Notes"
+        ]
+      },
+      {
+        "filename": "33_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "Ay Teo",
+          "Itis me.",
+          "Show English",
+          "38 Eo",
+          "Show English"
+        ]
+      },
+      {
+        "filename": "34_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "segmented_tab_bar",
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "Meaning Examples Resources",
+          "Information",
+          "7 acts as an expression of determination or strong",
+          "assertion in Japanese, and simply states that something \u2018is\u2019",
+          "a certain way. It is the casual equivalent of CF (another",
+          "auxiliary verb)."
+        ]
+      },
+      {
+        "filename": "35_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "miscellaneous",
+        "detected_elements": [],
+        "sample_text": [
+          "ia Bunpro",
+          "Login",
+          "Email |",
+          "Password oO |",
+          "Remember me",
+          "FS ow Ue"
+        ]
+      },
+      {
+        "filename": "36_official_mobile_apps_Jake_1242x2688.jpg",
+        "platform": "mobile",
+        "dimensions": "1242x2688",
+        "category": "grammar_and_vocab_library",
+        "detected_elements": [
+          "search_filter_bar",
+          "lesson_list_accordion"
+        ],
+        "sample_text": [
+          "9:35 al > @)",
+          "Bunpro a os",
+          "Dashboard N2",
+          "Lessons 4",
+          "Reviews 160",
+          "Community"
+        ]
+      },
+      {
+        "filename": "37_dashboard_landing_Jake_325x505.png",
+        "platform": "mobile",
+        "dimensions": "325x505",
+        "category": "dashboard_home",
+        "detected_elements": [
+          "stats_metrics_display"
+        ],
+        "sample_text": [
+          "rss study se wstsesson",
+          "an 1 5",
+          "Activity C290",
+          "Recently Learned",
+          "cna 2",
+          "Tope me) ZB Guest maringparice"
+        ]
+      }
+    ]
+  }
+}

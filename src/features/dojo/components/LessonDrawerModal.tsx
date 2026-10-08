@@ -114,7 +114,7 @@ export function LessonDrawerModal({
                   {lesson.title}
                 </Text>
                 <Text style={[styles.lessonKeywords, { color: theme.textMuted }]}>
-                  {lesson.vocabKeywords.join(' • ')}
+                  {lesson.vocabKeywords?.join(' • ') || ''}
                 </Text>
               </View>
 

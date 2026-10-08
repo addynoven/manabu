@@ -80,7 +80,7 @@ export function DojoScreen() {
       summary: 'Cumulative unit review test',
       vocabKeywords: [],
       kanjiKeywords: [],
-      items: unit.revisionGate.items,
+      items: unit.revisionGate?.items || [],
     };
 
     setSessionLesson(syntheticLesson);
@@ -95,13 +95,13 @@ export function DojoScreen() {
     const pool: LessonItem[] = [];
     for (const unit of CURATED_DOJO_UNITS) {
       for (const lesson of unit.lessons) {
-        if (completedLessons[lesson.id]) {
+        if (completedLessons[lesson.id] && Array.isArray(lesson.items)) {
           pool.push(...lesson.items);
         }
       }
     }
 
-    if (pool.length < 3) {
+    if (pool.length < 3 && Array.isArray(CURATED_DOJO_UNITS[0]?.lessons[0]?.items)) {
       pool.push(...CURATED_DOJO_UNITS[0].lessons[0].items);
     }
 
@@ -134,15 +134,15 @@ export function DojoScreen() {
     const pool: LessonItem[] = [];
     for (const unit of CURATED_DOJO_UNITS) {
       for (const lesson of unit.lessons) {
-        if (completedLessons[lesson.id]) {
+        if (completedLessons[lesson.id] && Array.isArray(lesson.items)) {
           pool.push(...lesson.items);
         }
       }
     }
 
-    if (pool.length < 5) {
+    if (pool.length < 5 && Array.isArray(CURATED_DOJO_UNITS[0]?.lessons[0]?.items)) {
       pool.push(...CURATED_DOJO_UNITS[0].lessons[0].items);
-      if (CURATED_DOJO_UNITS[0].lessons[1]) {
+      if (Array.isArray(CURATED_DOJO_UNITS[0]?.lessons[1]?.items)) {
         pool.push(...CURATED_DOJO_UNITS[0].lessons[1].items);
       }
     }

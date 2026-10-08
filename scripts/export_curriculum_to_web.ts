@@ -81,7 +81,8 @@ export function mapUnits() {
 }
 
 const mapped = mapUnits();
-const targetPath = path.resolve(process.cwd(), 'admin/data/curriculum.json');
+const projectRoot = path.resolve(__dirname, '..');
+const targetPath = path.resolve(projectRoot, 'web/data/curriculum.json');
 fs.writeFileSync(targetPath, JSON.stringify(mapped, null, 2), 'utf8');
 
 console.log(`Successfully exported ${mapped.length} units to ${targetPath}`);
