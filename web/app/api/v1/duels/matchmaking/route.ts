@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { verifyAuthToken } from '@/lib/auth';
-import { matchOrQueue, cancelMatchmaking, type DuelGameType } from '@/lib/duels';
-import { checkRateLimit } from '@/lib/rateLimit';
+import { verifyAuthToken } from '@/features/auth/repositories/auth';
+import { matchOrQueue, cancelMatchmaking, type DuelGameType } from '@/features/duels/repositories/duels';
+import { checkRateLimit } from '@/core/network/rateLimit';
 
 export const dynamic = 'force-dynamic';
 

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAuthToken } from '@/lib/auth';
-import { query } from '@/lib/db';
-import { getWeekId } from '@/lib/helpers';
+import { verifyAuthToken } from '@/features/auth/repositories/auth';
+import { query } from '@/core/db/postgres';
+import { getWeekId } from '@/core/utils/helpers';
 
 export const dynamic = 'force-dynamic';
 

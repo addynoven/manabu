@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { verifyAuthToken } from '@/lib/auth';
-import { query } from '@/lib/db';
-import { normalizeFriendCode } from '@/lib/helpers';
-import { checkRateLimit } from '@/lib/rateLimit';
+import { verifyAuthToken } from '@/features/auth/repositories/auth';
+import { query } from '@/core/db/postgres';
+import { normalizeFriendCode } from '@/core/utils/helpers';
+import { checkRateLimit } from '@/core/network/rateLimit';
 
 export const dynamic = 'force-dynamic';
 

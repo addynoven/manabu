@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAuthToken } from '@/lib/auth';
-import { declineMatch } from '@/lib/duels';
+import { verifyAuthToken } from '@/features/auth/repositories/auth';
+import { declineMatch } from '@/features/duels/repositories/duels';
 
 export const dynamic = 'force-dynamic';
 

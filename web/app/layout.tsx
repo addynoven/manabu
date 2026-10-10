@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-import { Providers } from "@/components/Providers";
+import { Providers } from "@/core/components/Providers";
 
 export const metadata: Metadata = {
   title: "Manabu - Japanese Dojo & Curriculum",

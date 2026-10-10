@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getValkey } from '@/lib/valkey';
-import { MANABU_CURRICULUM } from '@/data/curriculum';
-import { HIRAGANA_DATA, KATAKANA_DATA } from '@/data/kana';
+import { getValkey } from '@/core/db/valkey';
+import { MANABU_CURRICULUM } from '@/features/content/models/curriculum';
+import { HIRAGANA_DATA, KATAKANA_DATA } from '@/features/content/models/kana';
 import kanjiN5 from '@/data/kanji_n5.json';
 import kanjiN4 from '@/data/kanji_n4.json';
 import kanjiN3 from '@/data/kanji_n3.json';

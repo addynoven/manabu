@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { verifyAuthToken } from '@/lib/auth';
-import { query } from '@/lib/db';
-import { createMatch, getInboxMatches } from '@/lib/duels';
-import { checkRateLimit } from '@/lib/rateLimit';
+import { verifyAuthToken } from '@/features/auth/repositories/auth';
+import { query } from '@/core/db/postgres';
+import { createMatch, getInboxMatches } from '@/features/duels/repositories/duels';
+import { checkRateLimit } from '@/core/network/rateLimit';
 
 export const dynamic = 'force-dynamic';
 
@@ -65,7 +65,7 @@ export async function POST(req: NextRequest) {
   const parsed = CreateDuelSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
-      { error: { code: 'validation_failed', message: parsed.error.message } },
+      { error: { code: 'validation_failed', message: parsed.error.issues?.[0]?.message || 'Validation failed' } },
       { status: 422 }
     );
   }

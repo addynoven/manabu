@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { verifyAuthToken } from '@/lib/auth';
-import { query } from '@/lib/db';
-import { generateFriendCode } from '@/lib/helpers';
-import { checkRateLimit } from '@/lib/rateLimit';
+import { verifyAuthToken } from '@/features/auth/repositories/auth';
+import { query } from '@/core/db/postgres';
+import { generateFriendCode } from '@/core/utils/helpers';
+import { checkRateLimit } from '@/core/network/rateLimit';
 
 export const dynamic = 'force-dynamic';
 
@@ -88,7 +88,7 @@ export async function PUT(req: NextRequest) {
 
   const parsed = ProfilePutSchema.safeParse(body);
   if (!parsed.success) {
-    return NextResponse.json({ error: { code: 'validation_failed', message: parsed.error.message } }, { status: 422 });
+    return NextResponse.json({ error: { code: 'validation_failed', message: parsed.error.issues?.[0]?.message || 'Validation failed' } }, { status: 422 });
   }
 
   const p = parsed.data;

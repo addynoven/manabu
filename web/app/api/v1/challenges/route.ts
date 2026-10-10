@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { verifyAuthToken } from '@/lib/auth';
-import { query } from '@/lib/db';
+import { verifyAuthToken } from '@/features/auth/repositories/auth';
+import { query } from '@/core/db/postgres';
 
 export const dynamic = 'force-dynamic';
 
@@ -34,7 +34,7 @@ export async function GET(req: NextRequest) {
       LIMIT 20;
     `, [user.uid]);
 
-    const challenges = res.rows.map(row => {
+    const challenges = res.rows.map((row: any) => {
       let status = row.status;
       if (status === 'pending' && new Date(row.expires_at).getTime() < Date.now()) {
         status = 'expired';
@@ -94,7 +94,7 @@ export async function POST(req: NextRequest) {
 
   const parsed = CreateChallengeSchema.safeParse(body);
   if (!parsed.success) {
-    return NextResponse.json({ error: { code: 'validation_failed', message: parsed.error.message } }, { status: 422 });
+    return NextResponse.json({ error: { code: 'validation_failed', message: parsed.error.issues?.[0]?.message || 'Validation failed' } }, { status: 422 });
   }
 
   const { game, mode, targetUid, creatorScore } = parsed.data;

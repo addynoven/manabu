@@ -12,7 +12,7 @@ import vocabN3 from '@/data/vocab_n3.json';
 import vocabN2 from '@/data/vocab_n2.json';
 import vocabN1 from '@/data/vocab_n1.json';
 
-import { getValkey } from '@/lib/valkey';
+import { getValkey } from '@/core/db/valkey';
 
 export const runtime = 'nodejs';
 

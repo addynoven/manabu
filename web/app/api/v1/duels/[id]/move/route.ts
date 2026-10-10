@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { verifyAuthToken } from '@/lib/auth';
-import { submitShiritoriMove } from '@/lib/duels';
+import { verifyAuthToken } from '@/features/auth/repositories/auth';
+import { submitShiritoriMove } from '@/features/duels/repositories/duels';
 
 export const dynamic = 'force-dynamic';
 
