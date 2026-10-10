@@ -1,0 +1,3354 @@
+{
+  "id": "unit_18",
+  "unitNumber": 18,
+  "title": "Troubleshooting & Seeking Advice",
+  "titleJp": "トラブル解決と相談",
+  "description": "Handle unexpected mishaps (lost items, transit delays), ask for counsel, and offer tactful suggestions.",
+  "icon": "🛠️",
+  "themeColor": "#059669",
+  "summaryPoints": [
+    "重要語彙35語以上の習得 (Over 35 Core Vocabulary Items)",
+    "日常・実用対話表現のマスター (Mastery of Practical Dialogues)",
+    "聴解と文字綴りのトレーニング (Listening & 4x2 Tile Spelling)",
+    "JLPT基準文法パターンの定着 (Grammar Patterns & Nuances)",
+    "7日間の段階的カリキュラム (Structured 7-Day Progressive Bundle)"
+  ],
+  "lessons": [
+    {
+      "id": "u18_l1",
+      "unitId": "unit_18",
+      "lessonNumber": 1,
+      "dayNumber": 1,
+      "category": "Expression",
+      "sectionTitle": "Core Expressions (Part 1)",
+      "iconType": "expression",
+      "title": "Trouble / incident & Lost property",
+      "titleJp": "トラブル・落とし物",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "トラブル",
+        "落とし物",
+        "遅延"
+      ],
+      "kanjiKeywords": [
+        "落",
+        "物",
+        "遅",
+        "延"
+      ],
+      "items": [
+        {
+          "id": "u18_l1_1",
+          "type": "listen",
+          "prompt": "トラブル",
+          "furigana": "トラブル",
+          "romaji": "toraburu",
+          "english": "Trouble / incident",
+          "audioText": "トラブル",
+          "options": [
+            "Confirming Advice",
+            "Trouble / incident",
+            "Confirming Official certificate",
+            "Police"
+          ],
+          "correctAnswer": "Trouble / incident"
+        },
+        {
+          "id": "u18_l1_2",
+          "type": "spell",
+          "prompt": "トラブル",
+          "furigana": "トラブル",
+          "romaji": "toraburu",
+          "english": "Build 'Trouble / incident'",
+          "audioText": "トラブル",
+          "tileBank": [
+            "ラ",
+            "ブ",
+            "ふ",
+            "ト",
+            "ル",
+            "ん",
+            "ぬ",
+            "ら"
+          ],
+          "correctAnswer": "トラブル"
+        },
+        {
+          "id": "u18_l1_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な落とし物です。",
+          "furigana": "これはいちばんたいせつなおとしものです。",
+          "romaji": "Kore wa ichiban taisetsu na otoshimono desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Lost property.",
+          "audioText": "これは落とし物です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な落とし物です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l1_4",
+          "type": "scramble",
+          "prompt": "これは落とし物です",
+          "furigana": "これはおとしものです",
+          "romaji": "Kore wa otoshimono desu.",
+          "english": "This is Lost property.",
+          "audioText": "これは落とし物です",
+          "scrambleTokens": [
+            "それ",
+            "です",
+            "これは",
+            "落とし物",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "落とし物",
+            "です"
+          ],
+          "correctAnswer": "これは落とし物です"
+        },
+        {
+          "id": "u18_l1_5",
+          "type": "speak",
+          "prompt": "遅延",
+          "furigana": "ちえん",
+          "romaji": "chien",
+          "english": "Pronounce: Train / flight delay",
+          "audioText": "ちえん",
+          "targetSpeech": "遅延",
+          "options": [
+            "Train / flight delay",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "遅延"
+        },
+        {
+          "id": "u18_l1_6",
+          "type": "dictate",
+          "prompt": "遅延です",
+          "furigana": "ちえんです",
+          "romaji": "chien desu.",
+          "english": "It is Train / flight delay.",
+          "audioText": "遅延です",
+          "dictateTokens": [
+            "ではありません",
+            "遅延",
+            "です",
+            "これ"
+          ],
+          "dictateSolution": [
+            "遅延",
+            "です"
+          ],
+          "correctAnswer": "遅延です"
+        },
+        {
+          "id": "u18_l1_7",
+          "type": "match",
+          "prompt": "トラブル・落とし物・遅延・紛失",
+          "furigana": "トラブル・おとしもの・ちえん・ふんしつ",
+          "romaji": "toraburu, otoshimono, chien, funshitsu",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "トラブル",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "トラブル",
+              "right": "Trouble / incident",
+              "furigana": "トラブル",
+              "romaji": "toraburu"
+            },
+            {
+              "id": "p_1",
+              "left": "落とし物",
+              "right": "Lost property",
+              "furigana": "おとしもの",
+              "romaji": "otoshimono"
+            },
+            {
+              "id": "p_2",
+              "left": "遅延",
+              "right": "Train / flight delay",
+              "furigana": "ちえん",
+              "romaji": "chien"
+            },
+            {
+              "id": "p_3",
+              "left": "紛失",
+              "right": "Loss / misplacement",
+              "furigana": "ふんしつ",
+              "romaji": "funshitsu"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l1_8",
+          "type": "dialogue",
+          "prompt": "トラブルについて教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "トラブルについて教えていただけますか？",
+          "furigana": "トラブルについて教えていただけますか？",
+          "romaji": "toraburu ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Trouble / incident?",
+          "audioText": "トラブルについて教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u18_l2",
+      "unitId": "unit_18",
+      "lessonNumber": 2,
+      "dayNumber": 1,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Loss / misplacement & Resolution / solution",
+      "titleJp": "紛失・解決",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "紛失",
+        "解決",
+        "相談"
+      ],
+      "kanjiKeywords": [
+        "紛",
+        "失",
+        "解",
+        "決",
+        "相",
+        "談"
+      ],
+      "items": [
+        {
+          "id": "u18_l2_1",
+          "type": "listen",
+          "prompt": "紛失",
+          "furigana": "ふんしつ",
+          "romaji": "funshitsu",
+          "english": "Loss / misplacement",
+          "audioText": "ふんしつ",
+          "options": [
+            "Loss / misplacement",
+            "Police",
+            "To be in trouble / at a loss",
+            "Train / flight delay"
+          ],
+          "correctAnswer": "Loss / misplacement"
+        },
+        {
+          "id": "u18_l2_2",
+          "type": "spell",
+          "prompt": "紛失",
+          "furigana": "ふんしつ",
+          "romaji": "funshitsu",
+          "english": "Build 'Loss / misplacement'",
+          "audioText": "ふんしつ",
+          "tileBank": [
+            "ち",
+            "ふ",
+            "し",
+            "つ",
+            "の",
+            "ん",
+            "あ",
+            "ゆ"
+          ],
+          "correctAnswer": "ふんしつ"
+        },
+        {
+          "id": "u18_l2_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な解決です。",
+          "furigana": "これはいちばんたいせつなかいけつです。",
+          "romaji": "Kore wa ichiban taisetsu na kaiketsu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Resolution / solution.",
+          "audioText": "これは解決です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な解決です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l2_4",
+          "type": "scramble",
+          "prompt": "これは解決です",
+          "furigana": "これはかいけつです",
+          "romaji": "Kore wa kaiketsu desu.",
+          "english": "This is Resolution / solution.",
+          "audioText": "これは解決です",
+          "scrambleTokens": [
+            "それ",
+            "です",
+            "これは",
+            "解決",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "解決",
+            "です"
+          ],
+          "correctAnswer": "これは解決です"
+        },
+        {
+          "id": "u18_l2_5",
+          "type": "speak",
+          "prompt": "相談",
+          "furigana": "そうだん",
+          "romaji": "soudan",
+          "english": "Pronounce: Consultation",
+          "audioText": "そうだん",
+          "targetSpeech": "相談",
+          "options": [
+            "Consultation",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "相談"
+        },
+        {
+          "id": "u18_l2_6",
+          "type": "dictate",
+          "prompt": "相談です",
+          "furigana": "そうだんです",
+          "romaji": "soudan desu.",
+          "english": "It is Consultation.",
+          "audioText": "相談です",
+          "dictateTokens": [
+            "ではありません",
+            "です",
+            "これ",
+            "相談"
+          ],
+          "dictateSolution": [
+            "相談",
+            "です"
+          ],
+          "correctAnswer": "相談です"
+        },
+        {
+          "id": "u18_l2_7",
+          "type": "match",
+          "prompt": "紛失・解決・相談・助言",
+          "furigana": "ふんしつ・かいけつ・そうだん・じょげん",
+          "romaji": "funshitsu, kaiketsu, soudan, jogen",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ふんしつ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "紛失",
+              "right": "Loss / misplacement",
+              "furigana": "ふんしつ",
+              "romaji": "funshitsu"
+            },
+            {
+              "id": "p_1",
+              "left": "解決",
+              "right": "Resolution / solution",
+              "furigana": "かいけつ",
+              "romaji": "kaiketsu"
+            },
+            {
+              "id": "p_2",
+              "left": "相談",
+              "right": "Consultation",
+              "furigana": "そうだん",
+              "romaji": "soudan"
+            },
+            {
+              "id": "p_3",
+              "left": "助言",
+              "right": "Advice",
+              "furigana": "じょげん",
+              "romaji": "jogen"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l2_8",
+          "type": "dialogue",
+          "prompt": "落とし物の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "落とし物の準備はできていますか？",
+          "furigana": "落とし物の準備はできていますか？",
+          "romaji": "otoshimono no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Lost property ready?",
+          "audioText": "落とし物の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u18_l3",
+      "unitId": "unit_18",
+      "lessonNumber": 3,
+      "dayNumber": 1,
+      "category": "Practice",
+      "sectionTitle": "Sentence Patterns & Fluency",
+      "iconType": "practice",
+      "title": "Advice & Emergency",
+      "titleJp": "助言・緊急",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "助言",
+        "緊急",
+        "問い合わせ"
+      ],
+      "kanjiKeywords": [
+        "助",
+        "言",
+        "緊",
+        "急",
+        "問",
+        "合"
+      ],
+      "items": [
+        {
+          "id": "u18_l3_1",
+          "type": "listen",
+          "prompt": "助言",
+          "furigana": "じょげん",
+          "romaji": "jogen",
+          "english": "Advice",
+          "audioText": "じょげん",
+          "options": [
+            "Peace of mind / relief",
+            "Advice",
+            "Confirming Train / flight delay",
+            "Confirming Consultation"
+          ],
+          "correctAnswer": "Advice"
+        },
+        {
+          "id": "u18_l3_2",
+          "type": "spell",
+          "prompt": "助言",
+          "furigana": "じょげん",
+          "romaji": "jogen",
+          "english": "Build 'Advice'",
+          "audioText": "じょげん",
+          "tileBank": [
+            "れ",
+            "せ",
+            "じ",
+            "つ",
+            "ん",
+            "う",
+            "ょ",
+            "げ"
+          ],
+          "correctAnswer": "じょげん"
+        },
+        {
+          "id": "u18_l3_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な緊急です。",
+          "furigana": "これはいちばんたいせつなきんきゅうです。",
+          "romaji": "Kore wa ichiban taisetsu na kinkyuu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Emergency.",
+          "audioText": "これは緊急です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な緊急です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l3_4",
+          "type": "scramble",
+          "prompt": "これは緊急です",
+          "furigana": "これはきんきゅうです",
+          "romaji": "Kore wa kinkyuu desu.",
+          "english": "This is Emergency.",
+          "audioText": "これは緊急です",
+          "scrambleTokens": [
+            "ではありません",
+            "これは",
+            "緊急",
+            "それ",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "緊急",
+            "です"
+          ],
+          "correctAnswer": "これは緊急です"
+        },
+        {
+          "id": "u18_l3_5",
+          "type": "speak",
+          "prompt": "問い合わせ",
+          "furigana": "といあわせ",
+          "romaji": "toiawase",
+          "english": "Pronounce: Inquiry / contact",
+          "audioText": "といあわせ",
+          "targetSpeech": "問い合わせ",
+          "options": [
+            "Inquiry / contact",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "問い合わせ"
+        },
+        {
+          "id": "u18_l3_6",
+          "type": "dictate",
+          "prompt": "問い合わせです",
+          "furigana": "といあわせです",
+          "romaji": "toiawase desu.",
+          "english": "It is Inquiry / contact.",
+          "audioText": "問い合わせです",
+          "dictateTokens": [
+            "です",
+            "問い合わせ",
+            "ではありません",
+            "これ"
+          ],
+          "dictateSolution": [
+            "問い合わせ",
+            "です"
+          ],
+          "correctAnswer": "問い合わせです"
+        },
+        {
+          "id": "u18_l3_7",
+          "type": "match",
+          "prompt": "助言・緊急・問い合わせ・警察",
+          "furigana": "じょげん・きんきゅう・といあわせ・けいさつ",
+          "romaji": "jogen, kinkyuu, toiawase, keisatsu",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "じょげん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "助言",
+              "right": "Advice",
+              "furigana": "じょげん",
+              "romaji": "jogen"
+            },
+            {
+              "id": "p_1",
+              "left": "緊急",
+              "right": "Emergency",
+              "furigana": "きんきゅう",
+              "romaji": "kinkyuu"
+            },
+            {
+              "id": "p_2",
+              "left": "問い合わせ",
+              "right": "Inquiry / contact",
+              "furigana": "といあわせ",
+              "romaji": "toiawase"
+            },
+            {
+              "id": "p_3",
+              "left": "警察",
+              "right": "Police",
+              "furigana": "けいさつ",
+              "romaji": "keisatsu"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l3_8",
+          "type": "dialogue",
+          "prompt": "遅延についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "遅延についてどう思われますか？",
+          "furigana": "遅延についてどう思われますか？",
+          "romaji": "chien ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Train / flight delay?",
+          "audioText": "遅延についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u18_l4",
+      "unitId": "unit_18",
+      "lessonNumber": 4,
+      "dayNumber": 2,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Police & Official certificate",
+      "titleJp": "警察・証明書",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "警察",
+        "証明書",
+        "修理"
+      ],
+      "kanjiKeywords": [
+        "警",
+        "察",
+        "証",
+        "明",
+        "書",
+        "修",
+        "理"
+      ],
+      "items": [
+        {
+          "id": "u18_l4_1",
+          "type": "listen",
+          "prompt": "警察",
+          "furigana": "けいさつ",
+          "romaji": "keisatsu",
+          "english": "Police",
+          "audioText": "けいさつ",
+          "options": [
+            "Confirming Advice",
+            "Confirming Consultation",
+            "Police",
+            "Confirming Consultation"
+          ],
+          "correctAnswer": "Police"
+        },
+        {
+          "id": "u18_l4_2",
+          "type": "spell",
+          "prompt": "警察",
+          "furigana": "けいさつ",
+          "romaji": "keisatsu",
+          "english": "Build 'Police'",
+          "audioText": "けいさつ",
+          "tileBank": [
+            "と",
+            "ほ",
+            "い",
+            "さ",
+            "み",
+            "つ",
+            "め",
+            "け"
+          ],
+          "correctAnswer": "けいさつ"
+        },
+        {
+          "id": "u18_l4_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な証明書です。",
+          "furigana": "これはいちばんたいせつなしょうめいしょです。",
+          "romaji": "Kore wa ichiban taisetsu na shoumeisho desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Official certificate.",
+          "audioText": "これは証明書です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な証明書です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l4_4",
+          "type": "scramble",
+          "prompt": "これは証明書です",
+          "furigana": "これはしょうめいしょです",
+          "romaji": "Kore wa shoumeisho desu.",
+          "english": "This is Official certificate.",
+          "audioText": "これは証明書です",
+          "scrambleTokens": [
+            "ではありません",
+            "これは",
+            "です",
+            "証明書",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "証明書",
+            "です"
+          ],
+          "correctAnswer": "これは証明書です"
+        },
+        {
+          "id": "u18_l4_5",
+          "type": "speak",
+          "prompt": "修理",
+          "furigana": "しゅうり",
+          "romaji": "shuuri",
+          "english": "Pronounce: Repair",
+          "audioText": "しゅうり",
+          "targetSpeech": "修理",
+          "options": [
+            "Repair",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "修理"
+        },
+        {
+          "id": "u18_l4_6",
+          "type": "dictate",
+          "prompt": "修理です",
+          "furigana": "しゅうりです",
+          "romaji": "shuuri desu.",
+          "english": "It is Repair.",
+          "audioText": "修理です",
+          "dictateTokens": [
+            "これ",
+            "修理",
+            "ではありません",
+            "です"
+          ],
+          "dictateSolution": [
+            "修理",
+            "です"
+          ],
+          "correctAnswer": "修理です"
+        },
+        {
+          "id": "u18_l4_7",
+          "type": "match",
+          "prompt": "警察・証明書・修理・再発行",
+          "furigana": "けいさつ・しょうめいしょ・しゅうり・さいはっこう",
+          "romaji": "keisatsu, shoumeisho, shuuri, sai hakkou",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "けいさつ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "警察",
+              "right": "Police",
+              "furigana": "けいさつ",
+              "romaji": "keisatsu"
+            },
+            {
+              "id": "p_1",
+              "left": "証明書",
+              "right": "Official certificate",
+              "furigana": "しょうめいしょ",
+              "romaji": "shoumeisho"
+            },
+            {
+              "id": "p_2",
+              "left": "修理",
+              "right": "Repair",
+              "furigana": "しゅうり",
+              "romaji": "shuuri"
+            },
+            {
+              "id": "p_3",
+              "left": "再発行",
+              "right": "Reissue (card/ticket)",
+              "furigana": "さいはっこう",
+              "romaji": "sai hakkou"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l4_8",
+          "type": "dialogue",
+          "prompt": "次は紛失に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は紛失に進みましょう。",
+          "furigana": "次は紛失に進みましょう。",
+          "romaji": "Tsugi wa funshitsu ni susumimashou.",
+          "english": "Speaker: Let's proceed to Loss / misplacement next.",
+          "audioText": "次は紛失に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u18_l5",
+      "unitId": "unit_18",
+      "lessonNumber": 5,
+      "dayNumber": 2,
+      "category": "Expression",
+      "sectionTitle": "Situational Dialogues",
+      "iconType": "expression",
+      "title": "Reissue (card/ticket) & To be in trouble / at a loss",
+      "titleJp": "再発行・困る",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "再発行",
+        "困る",
+        "安心"
+      ],
+      "kanjiKeywords": [
+        "再",
+        "発",
+        "行",
+        "困",
+        "安",
+        "心"
+      ],
+      "items": [
+        {
+          "id": "u18_l5_1",
+          "type": "listen",
+          "prompt": "再発行",
+          "furigana": "さいはっこう",
+          "romaji": "sai hakkou",
+          "english": "Reissue (card/ticket)",
+          "audioText": "さいはっこう",
+          "options": [
+            "Inquiry / contact",
+            "Reissue (card/ticket)",
+            "Lost property",
+            "Trouble / incident"
+          ],
+          "correctAnswer": "Reissue (card/ticket)"
+        },
+        {
+          "id": "u18_l5_2",
+          "type": "spell",
+          "prompt": "再発行",
+          "furigana": "さいはっこう",
+          "romaji": "sai hakkou",
+          "english": "Build 'Reissue (card/ticket)'",
+          "audioText": "さいはっこう",
+          "tileBank": [
+            "い",
+            "っ",
+            "さ",
+            "も",
+            "つ",
+            "は",
+            "こ",
+            "う"
+          ],
+          "correctAnswer": "さいはっこう"
+        },
+        {
+          "id": "u18_l5_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な困るです。",
+          "furigana": "これはいちばんたいせつなこまるです。",
+          "romaji": "Kore wa ichiban taisetsu na komaru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important To be in trouble / at a loss.",
+          "audioText": "これは困るです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な困るです。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l5_4",
+          "type": "scramble",
+          "prompt": "これは困るです",
+          "furigana": "これはこまるです",
+          "romaji": "Kore wa komaru desu.",
+          "english": "This is To be in trouble / at a loss.",
+          "audioText": "これは困るです",
+          "scrambleTokens": [
+            "これは",
+            "困る",
+            "ではありません",
+            "それ",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "困る",
+            "です"
+          ],
+          "correctAnswer": "これは困るです"
+        },
+        {
+          "id": "u18_l5_5",
+          "type": "speak",
+          "prompt": "安心",
+          "furigana": "あんしん",
+          "romaji": "anshin",
+          "english": "Pronounce: Peace of mind / relief",
+          "audioText": "あんしん",
+          "targetSpeech": "安心",
+          "options": [
+            "Peace of mind / relief",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "安心"
+        },
+        {
+          "id": "u18_l5_6",
+          "type": "dictate",
+          "prompt": "安心です",
+          "furigana": "あんしんです",
+          "romaji": "anshin desu.",
+          "english": "It is Peace of mind / relief.",
+          "audioText": "安心です",
+          "dictateTokens": [
+            "ではありません",
+            "安心",
+            "です",
+            "これ"
+          ],
+          "dictateSolution": [
+            "安心",
+            "です"
+          ],
+          "correctAnswer": "安心です"
+        },
+        {
+          "id": "u18_l5_7",
+          "type": "match",
+          "prompt": "再発行・困る・安心・トラブルの確認",
+          "furigana": "さいはっこう・こまる・あんしん・トラブルのかくにん",
+          "romaji": "sai hakkou, komaru, anshin, toraburu no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "さいはっこう",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "再発行",
+              "right": "Reissue (card/ticket)",
+              "furigana": "さいはっこう",
+              "romaji": "sai hakkou"
+            },
+            {
+              "id": "p_1",
+              "left": "困る",
+              "right": "To be in trouble / at a loss",
+              "furigana": "こまる",
+              "romaji": "komaru"
+            },
+            {
+              "id": "p_2",
+              "left": "安心",
+              "right": "Peace of mind / relief",
+              "furigana": "あんしん",
+              "romaji": "anshin"
+            },
+            {
+              "id": "p_3",
+              "left": "トラブルの確認",
+              "right": "Confirming Trouble / incident",
+              "furigana": "トラブルのかくにん",
+              "romaji": "toraburu no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l5_8",
+          "type": "dialogue",
+          "prompt": "トラブルについて教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "トラブルについて教えていただけますか？",
+          "furigana": "トラブルについて教えていただけますか？",
+          "romaji": "toraburu ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Trouble / incident?",
+          "audioText": "トラブルについて教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u18_l6",
+      "unitId": "unit_18",
+      "lessonNumber": 6,
+      "dayNumber": 3,
+      "category": "Conversation",
+      "sectionTitle": null,
+      "iconType": "expression",
+      "title": "Confirming Trouble / incident & Confirming Lost property",
+      "titleJp": "トラブルの確認・落とし物の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "トラブルの確認",
+        "落とし物の確認",
+        "遅延の確認"
+      ],
+      "kanjiKeywords": [
+        "確",
+        "認",
+        "落",
+        "物",
+        "確",
+        "認",
+        "遅",
+        "延",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u18_l6_1",
+          "type": "listen",
+          "prompt": "トラブルの確認",
+          "furigana": "トラブルのかくにん",
+          "romaji": "toraburu no kakunin",
+          "english": "Confirming Trouble / incident",
+          "audioText": "トラブルのかくにん",
+          "options": [
+            "Confirming Trouble / incident",
+            "Confirming Peace of mind / relief",
+            "Confirming Train / flight delay",
+            "Confirming Official certificate"
+          ],
+          "correctAnswer": "Confirming Trouble / incident"
+        },
+        {
+          "id": "u18_l6_2",
+          "type": "spell",
+          "prompt": "トラブルの確認",
+          "furigana": "トラブルのかくにん",
+          "romaji": "toraburu no kakunin",
+          "english": "Build 'Confirming Trouble / incident'",
+          "audioText": "トラブルのかくにん",
+          "tileBank": [
+            "の",
+            "か",
+            "に",
+            "ブ",
+            "ル",
+            "ト",
+            "ラ",
+            "く"
+          ],
+          "correctAnswer": "トラブルのかくにん"
+        },
+        {
+          "id": "u18_l6_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な落とし物の確認です。",
+          "furigana": "これはいちばんたいせつなおとしもののかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na otoshimono no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Lost property.",
+          "audioText": "これは落とし物の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な落とし物の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l6_4",
+          "type": "scramble",
+          "prompt": "これは落とし物の確認です",
+          "furigana": "これはおとしもののかくにんです",
+          "romaji": "Kore wa otoshimono no kakunin desu.",
+          "english": "This is Confirming Lost property.",
+          "audioText": "これは落とし物の確認です",
+          "scrambleTokens": [
+            "これは",
+            "それ",
+            "ではありません",
+            "です",
+            "落とし物の確認"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "落とし物の確認",
+            "です"
+          ],
+          "correctAnswer": "これは落とし物の確認です"
+        },
+        {
+          "id": "u18_l6_5",
+          "type": "speak",
+          "prompt": "遅延の確認",
+          "furigana": "ちえんのかくにん",
+          "romaji": "chien no kakunin",
+          "english": "Pronounce: Confirming Train / flight delay",
+          "audioText": "ちえんのかくにん",
+          "targetSpeech": "遅延の確認",
+          "options": [
+            "Confirming Train / flight delay",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "遅延の確認"
+        },
+        {
+          "id": "u18_l6_6",
+          "type": "dictate",
+          "prompt": "遅延の確認です",
+          "furigana": "ちえんのかくにんです",
+          "romaji": "chien no kakunin desu.",
+          "english": "It is Confirming Train / flight delay.",
+          "audioText": "遅延の確認です",
+          "dictateTokens": [
+            "遅延の確認",
+            "これ",
+            "ではありません",
+            "です"
+          ],
+          "dictateSolution": [
+            "遅延の確認",
+            "です"
+          ],
+          "correctAnswer": "遅延の確認です"
+        },
+        {
+          "id": "u18_l6_7",
+          "type": "match",
+          "prompt": "トラブルの確認・落とし物の確認・遅延の確認・紛失の確認",
+          "furigana": "トラブルのかくにん・おとしもののかくにん・ちえんのかくにん・ふんしつのかくにん",
+          "romaji": "toraburu no kakunin, otoshimono no kakunin, chien no kakunin, funshitsu no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "トラブルのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "トラブルの確認",
+              "right": "Confirming Trouble / incident",
+              "furigana": "トラブルのかくにん",
+              "romaji": "toraburu no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "落とし物の確認",
+              "right": "Confirming Lost property",
+              "furigana": "おとしもののかくにん",
+              "romaji": "otoshimono no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "遅延の確認",
+              "right": "Confirming Train / flight delay",
+              "furigana": "ちえんのかくにん",
+              "romaji": "chien no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "紛失の確認",
+              "right": "Confirming Loss / misplacement",
+              "furigana": "ふんしつのかくにん",
+              "romaji": "funshitsu no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l6_8",
+          "type": "dialogue",
+          "prompt": "落とし物の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "落とし物の準備はできていますか？",
+          "furigana": "落とし物の準備はできていますか？",
+          "romaji": "otoshimono no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Lost property ready?",
+          "audioText": "落とし物の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u18_l7",
+      "unitId": "unit_18",
+      "lessonNumber": 7,
+      "dayNumber": 3,
+      "category": "Practice",
+      "sectionTitle": "Grammar & Listening Drill",
+      "iconType": "practice",
+      "title": "Confirming Loss / misplacement & Confirming Resolution / solution",
+      "titleJp": "紛失の確認・解決の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "紛失の確認",
+        "解決の確認",
+        "相談の確認"
+      ],
+      "kanjiKeywords": [
+        "紛",
+        "失",
+        "確",
+        "認",
+        "解",
+        "決",
+        "確",
+        "認",
+        "相",
+        "談",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u18_l7_1",
+          "type": "listen",
+          "prompt": "紛失の確認",
+          "furigana": "ふんしつのかくにん",
+          "romaji": "funshitsu no kakunin",
+          "english": "Confirming Loss / misplacement",
+          "audioText": "ふんしつのかくにん",
+          "options": [
+            "Repair",
+            "Confirming Inquiry / contact",
+            "Confirming Advice",
+            "Confirming Loss / misplacement"
+          ],
+          "correctAnswer": "Confirming Loss / misplacement"
+        },
+        {
+          "id": "u18_l7_2",
+          "type": "spell",
+          "prompt": "紛失の確認",
+          "furigana": "ふんしつのかくにん",
+          "romaji": "funshitsu no kakunin",
+          "english": "Build 'Confirming Loss / misplacement'",
+          "audioText": "ふんしつのかくにん",
+          "tileBank": [
+            "ふ",
+            "に",
+            "つ",
+            "の",
+            "く",
+            "か",
+            "し",
+            "ん"
+          ],
+          "correctAnswer": "ふんしつのかくにん"
+        },
+        {
+          "id": "u18_l7_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な解決の確認です。",
+          "furigana": "これはいちばんたいせつなかいけつのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kaiketsu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Resolution / solution.",
+          "audioText": "これは解決の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な解決の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l7_4",
+          "type": "scramble",
+          "prompt": "これは解決の確認です",
+          "furigana": "これはかいけつのかくにんです",
+          "romaji": "Kore wa kaiketsu no kakunin desu.",
+          "english": "This is Confirming Resolution / solution.",
+          "audioText": "これは解決の確認です",
+          "scrambleTokens": [
+            "それ",
+            "これは",
+            "ではありません",
+            "です",
+            "解決の確認"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "解決の確認",
+            "です"
+          ],
+          "correctAnswer": "これは解決の確認です"
+        },
+        {
+          "id": "u18_l7_5",
+          "type": "speak",
+          "prompt": "相談の確認",
+          "furigana": "そうだんのかくにん",
+          "romaji": "soudan no kakunin",
+          "english": "Pronounce: Confirming Consultation",
+          "audioText": "そうだんのかくにん",
+          "targetSpeech": "相談の確認",
+          "options": [
+            "Confirming Consultation",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "相談の確認"
+        },
+        {
+          "id": "u18_l7_6",
+          "type": "dictate",
+          "prompt": "相談の確認です",
+          "furigana": "そうだんのかくにんです",
+          "romaji": "soudan no kakunin desu.",
+          "english": "It is Confirming Consultation.",
+          "audioText": "相談の確認です",
+          "dictateTokens": [
+            "です",
+            "相談の確認",
+            "これ",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "相談の確認",
+            "です"
+          ],
+          "correctAnswer": "相談の確認です"
+        },
+        {
+          "id": "u18_l7_7",
+          "type": "match",
+          "prompt": "紛失の確認・解決の確認・相談の確認・助言の確認",
+          "furigana": "ふんしつのかくにん・かいけつのかくにん・そうだんのかくにん・じょげんのかくにん",
+          "romaji": "funshitsu no kakunin, kaiketsu no kakunin, soudan no kakunin, jogen no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ふんしつのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "紛失の確認",
+              "right": "Confirming Loss / misplacement",
+              "furigana": "ふんしつのかくにん",
+              "romaji": "funshitsu no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "解決の確認",
+              "right": "Confirming Resolution / solution",
+              "furigana": "かいけつのかくにん",
+              "romaji": "kaiketsu no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "相談の確認",
+              "right": "Confirming Consultation",
+              "furigana": "そうだんのかくにん",
+              "romaji": "soudan no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "助言の確認",
+              "right": "Confirming Advice",
+              "furigana": "じょげんのかくにん",
+              "romaji": "jogen no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l7_8",
+          "type": "dialogue",
+          "prompt": "遅延についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "遅延についてどう思われますか？",
+          "furigana": "遅延についてどう思われますか？",
+          "romaji": "chien ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Train / flight delay?",
+          "audioText": "遅延についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u18_l8",
+      "unitId": "unit_18",
+      "lessonNumber": 8,
+      "dayNumber": 4,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Confirming Advice & Confirming Emergency",
+      "titleJp": "助言の確認・緊急の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "助言の確認",
+        "緊急の確認",
+        "問い合わせの確認"
+      ],
+      "kanjiKeywords": [
+        "助",
+        "言",
+        "確",
+        "認",
+        "緊",
+        "急",
+        "確",
+        "認",
+        "問",
+        "合",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u18_l8_1",
+          "type": "listen",
+          "prompt": "助言の確認",
+          "furigana": "じょげんのかくにん",
+          "romaji": "jogen no kakunin",
+          "english": "Confirming Advice",
+          "audioText": "じょげんのかくにん",
+          "options": [
+            "Confirming Advice",
+            "Confirming To be in trouble / at a loss",
+            "Inquiry / contact",
+            "Emergency"
+          ],
+          "correctAnswer": "Confirming Advice"
+        },
+        {
+          "id": "u18_l8_2",
+          "type": "spell",
+          "prompt": "助言の確認",
+          "furigana": "じょげんのかくにん",
+          "romaji": "jogen no kakunin",
+          "english": "Build 'Confirming Advice'",
+          "audioText": "じょげんのかくにん",
+          "tileBank": [
+            "ん",
+            "げ",
+            "ょ",
+            "に",
+            "か",
+            "じ",
+            "の",
+            "く"
+          ],
+          "correctAnswer": "じょげんのかくにん"
+        },
+        {
+          "id": "u18_l8_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な緊急の確認です。",
+          "furigana": "これはいちばんたいせつなきんきゅうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kinkyuu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Emergency.",
+          "audioText": "これは緊急の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な緊急の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l8_4",
+          "type": "scramble",
+          "prompt": "これは緊急の確認です",
+          "furigana": "これはきんきゅうのかくにんです",
+          "romaji": "Kore wa kinkyuu no kakunin desu.",
+          "english": "This is Confirming Emergency.",
+          "audioText": "これは緊急の確認です",
+          "scrambleTokens": [
+            "それ",
+            "です",
+            "これは",
+            "緊急の確認",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "緊急の確認",
+            "です"
+          ],
+          "correctAnswer": "これは緊急の確認です"
+        },
+        {
+          "id": "u18_l8_5",
+          "type": "speak",
+          "prompt": "問い合わせの確認",
+          "furigana": "といあわせのかくにん",
+          "romaji": "toiawase no kakunin",
+          "english": "Pronounce: Confirming Inquiry / contact",
+          "audioText": "といあわせのかくにん",
+          "targetSpeech": "問い合わせの確認",
+          "options": [
+            "Confirming Inquiry / contact",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "問い合わせの確認"
+        },
+        {
+          "id": "u18_l8_6",
+          "type": "dictate",
+          "prompt": "問い合わせの確認です",
+          "furigana": "といあわせのかくにんです",
+          "romaji": "toiawase no kakunin desu.",
+          "english": "It is Confirming Inquiry / contact.",
+          "audioText": "問い合わせの確認です",
+          "dictateTokens": [
+            "です",
+            "ではありません",
+            "これ",
+            "問い合わせの確認"
+          ],
+          "dictateSolution": [
+            "問い合わせの確認",
+            "です"
+          ],
+          "correctAnswer": "問い合わせの確認です"
+        },
+        {
+          "id": "u18_l8_7",
+          "type": "match",
+          "prompt": "助言の確認・緊急の確認・問い合わせの確認・警察の確認",
+          "furigana": "じょげんのかくにん・きんきゅうのかくにん・といあわせのかくにん・けいさつのかくにん",
+          "romaji": "jogen no kakunin, kinkyuu no kakunin, toiawase no kakunin, keisatsu no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "じょげんのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "助言の確認",
+              "right": "Confirming Advice",
+              "furigana": "じょげんのかくにん",
+              "romaji": "jogen no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "緊急の確認",
+              "right": "Confirming Emergency",
+              "furigana": "きんきゅうのかくにん",
+              "romaji": "kinkyuu no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "問い合わせの確認",
+              "right": "Confirming Inquiry / contact",
+              "furigana": "といあわせのかくにん",
+              "romaji": "toiawase no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "警察の確認",
+              "right": "Confirming Police",
+              "furigana": "けいさつのかくにん",
+              "romaji": "keisatsu no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l8_8",
+          "type": "dialogue",
+          "prompt": "次は紛失に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は紛失に進みましょう。",
+          "furigana": "次は紛失に進みましょう。",
+          "romaji": "Tsugi wa funshitsu ni susumimashou.",
+          "english": "Speaker: Let's proceed to Loss / misplacement next.",
+          "audioText": "次は紛失に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u18_l9",
+      "unitId": "unit_18",
+      "lessonNumber": 9,
+      "dayNumber": 4,
+      "category": "Expression",
+      "sectionTitle": "Nuance, Pitch & Intonation",
+      "iconType": "expression",
+      "title": "Confirming Police & Confirming Official certificate",
+      "titleJp": "警察の確認・証明書の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "警察の確認",
+        "証明書の確認",
+        "修理の確認"
+      ],
+      "kanjiKeywords": [
+        "警",
+        "察",
+        "確",
+        "認",
+        "証",
+        "明",
+        "書",
+        "確",
+        "認",
+        "修",
+        "理",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u18_l9_1",
+          "type": "listen",
+          "prompt": "警察の確認",
+          "furigana": "けいさつのかくにん",
+          "romaji": "keisatsu no kakunin",
+          "english": "Confirming Police",
+          "audioText": "けいさつのかくにん",
+          "options": [
+            "Confirming Repair",
+            "Loss / misplacement",
+            "Confirming Police",
+            "Confirming Resolution / solution"
+          ],
+          "correctAnswer": "Confirming Police"
+        },
+        {
+          "id": "u18_l9_2",
+          "type": "spell",
+          "prompt": "警察の確認",
+          "furigana": "けいさつのかくにん",
+          "romaji": "keisatsu no kakunin",
+          "english": "Build 'Confirming Police'",
+          "audioText": "けいさつのかくにん",
+          "tileBank": [
+            "に",
+            "い",
+            "つ",
+            "さ",
+            "か",
+            "の",
+            "く",
+            "け"
+          ],
+          "correctAnswer": "けいさつのかくにん"
+        },
+        {
+          "id": "u18_l9_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な証明書の確認です。",
+          "furigana": "これはいちばんたいせつなしょうめいしょのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na shoumeisho no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Official certificate.",
+          "audioText": "これは証明書の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な証明書の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l9_4",
+          "type": "scramble",
+          "prompt": "これは証明書の確認です",
+          "furigana": "これはしょうめいしょのかくにんです",
+          "romaji": "Kore wa shoumeisho no kakunin desu.",
+          "english": "This is Confirming Official certificate.",
+          "audioText": "これは証明書の確認です",
+          "scrambleTokens": [
+            "ではありません",
+            "それ",
+            "これは",
+            "証明書の確認",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "証明書の確認",
+            "です"
+          ],
+          "correctAnswer": "これは証明書の確認です"
+        },
+        {
+          "id": "u18_l9_5",
+          "type": "speak",
+          "prompt": "修理の確認",
+          "furigana": "しゅうりのかくにん",
+          "romaji": "shuuri no kakunin",
+          "english": "Pronounce: Confirming Repair",
+          "audioText": "しゅうりのかくにん",
+          "targetSpeech": "修理の確認",
+          "options": [
+            "Confirming Repair",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "修理の確認"
+        },
+        {
+          "id": "u18_l9_6",
+          "type": "dictate",
+          "prompt": "修理の確認です",
+          "furigana": "しゅうりのかくにんです",
+          "romaji": "shuuri no kakunin desu.",
+          "english": "It is Confirming Repair.",
+          "audioText": "修理の確認です",
+          "dictateTokens": [
+            "ではありません",
+            "修理の確認",
+            "これ",
+            "です"
+          ],
+          "dictateSolution": [
+            "修理の確認",
+            "です"
+          ],
+          "correctAnswer": "修理の確認です"
+        },
+        {
+          "id": "u18_l9_7",
+          "type": "match",
+          "prompt": "警察の確認・証明書の確認・修理の確認・再発行の確認",
+          "furigana": "けいさつのかくにん・しょうめいしょのかくにん・しゅうりのかくにん・さいはっこうのかくにん",
+          "romaji": "keisatsu no kakunin, shoumeisho no kakunin, shuuri no kakunin, sai hakkou no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "けいさつのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "警察の確認",
+              "right": "Confirming Police",
+              "furigana": "けいさつのかくにん",
+              "romaji": "keisatsu no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "証明書の確認",
+              "right": "Confirming Official certificate",
+              "furigana": "しょうめいしょのかくにん",
+              "romaji": "shoumeisho no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "修理の確認",
+              "right": "Confirming Repair",
+              "furigana": "しゅうりのかくにん",
+              "romaji": "shuuri no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "再発行の確認",
+              "right": "Confirming Reissue (card/ticket)",
+              "furigana": "さいはっこうのかくにん",
+              "romaji": "sai hakkou no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l9_8",
+          "type": "dialogue",
+          "prompt": "トラブルについて教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "トラブルについて教えていただけますか？",
+          "furigana": "トラブルについて教えていただけますか？",
+          "romaji": "toraburu ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Trouble / incident?",
+          "audioText": "トラブルについて教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u18_l10",
+      "unitId": "unit_18",
+      "lessonNumber": 10,
+      "dayNumber": 5,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Confirming Reissue (card/ticket) & Confirming To be in trouble / at a loss",
+      "titleJp": "再発行の確認・困るの確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "再発行の確認",
+        "困るの確認",
+        "安心の確認"
+      ],
+      "kanjiKeywords": [
+        "再",
+        "発",
+        "行",
+        "確",
+        "認",
+        "困",
+        "確",
+        "認",
+        "安",
+        "心",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u18_l10_1",
+          "type": "listen",
+          "prompt": "再発行の確認",
+          "furigana": "さいはっこうのかくにん",
+          "romaji": "sai hakkou no kakunin",
+          "english": "Confirming Reissue (card/ticket)",
+          "audioText": "さいはっこうのかくにん",
+          "options": [
+            "Confirming Reissue (card/ticket)",
+            "Official certificate",
+            "Confirming Resolution / solution",
+            "Confirming Lost property"
+          ],
+          "correctAnswer": "Confirming Reissue (card/ticket)"
+        },
+        {
+          "id": "u18_l10_2",
+          "type": "spell",
+          "prompt": "再発行の確認",
+          "furigana": "さいはっこうのかくにん",
+          "romaji": "sai hakkou no kakunin",
+          "english": "Build 'Confirming Reissue (card/ticket)'",
+          "audioText": "さいはっこうのかくにん",
+          "tileBank": [
+            "さ",
+            "い",
+            "こ",
+            "の",
+            "う",
+            "っ",
+            "は",
+            "か"
+          ],
+          "correctAnswer": "さいはっこうのかくにん"
+        },
+        {
+          "id": "u18_l10_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な困るの確認です。",
+          "furigana": "これはいちばんたいせつなこまるのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na komaru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming To be in trouble / at a loss.",
+          "audioText": "これは困るの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な困るの確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l10_4",
+          "type": "scramble",
+          "prompt": "これは困るの確認です",
+          "furigana": "これはこまるのかくにんです",
+          "romaji": "Kore wa komaru no kakunin desu.",
+          "english": "This is Confirming To be in trouble / at a loss.",
+          "audioText": "これは困るの確認です",
+          "scrambleTokens": [
+            "困るの確認",
+            "です",
+            "これは",
+            "ではありません",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "困るの確認",
+            "です"
+          ],
+          "correctAnswer": "これは困るの確認です"
+        },
+        {
+          "id": "u18_l10_5",
+          "type": "speak",
+          "prompt": "安心の確認",
+          "furigana": "あんしんのかくにん",
+          "romaji": "anshin no kakunin",
+          "english": "Pronounce: Confirming Peace of mind / relief",
+          "audioText": "あんしんのかくにん",
+          "targetSpeech": "安心の確認",
+          "options": [
+            "Confirming Peace of mind / relief",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "安心の確認"
+        },
+        {
+          "id": "u18_l10_6",
+          "type": "dictate",
+          "prompt": "安心の確認です",
+          "furigana": "あんしんのかくにんです",
+          "romaji": "anshin no kakunin desu.",
+          "english": "It is Confirming Peace of mind / relief.",
+          "audioText": "安心の確認です",
+          "dictateTokens": [
+            "です",
+            "ではありません",
+            "これ",
+            "安心の確認"
+          ],
+          "dictateSolution": [
+            "安心の確認",
+            "です"
+          ],
+          "correctAnswer": "安心の確認です"
+        },
+        {
+          "id": "u18_l10_7",
+          "type": "match",
+          "prompt": "再発行の確認・困るの確認・安心の確認・トラブルの確認",
+          "furigana": "さいはっこうのかくにん・こまるのかくにん・あんしんのかくにん・トラブルのかくにん",
+          "romaji": "sai hakkou no kakunin, komaru no kakunin, anshin no kakunin, toraburu no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "さいはっこうのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "再発行の確認",
+              "right": "Confirming Reissue (card/ticket)",
+              "furigana": "さいはっこうのかくにん",
+              "romaji": "sai hakkou no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "困るの確認",
+              "right": "Confirming To be in trouble / at a loss",
+              "furigana": "こまるのかくにん",
+              "romaji": "komaru no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "安心の確認",
+              "right": "Confirming Peace of mind / relief",
+              "furigana": "あんしんのかくにん",
+              "romaji": "anshin no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "トラブルの確認",
+              "right": "Confirming Trouble / incident",
+              "furigana": "トラブルのかくにん",
+              "romaji": "toraburu no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l10_8",
+          "type": "dialogue",
+          "prompt": "落とし物の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "落とし物の準備はできていますか？",
+          "furigana": "落とし物の準備はできていますか？",
+          "romaji": "otoshimono no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Lost property ready?",
+          "audioText": "落とし物の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u18_l11",
+      "unitId": "unit_18",
+      "lessonNumber": 11,
+      "dayNumber": 5,
+      "category": "Practice",
+      "sectionTitle": "Speed Assembly & Fluency",
+      "iconType": "practice",
+      "title": "Confirming Trouble / incident & Confirming Lost property",
+      "titleJp": "トラブルの確認・落とし物の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "トラブルの確認",
+        "落とし物の確認",
+        "遅延の確認"
+      ],
+      "kanjiKeywords": [
+        "確",
+        "認",
+        "落",
+        "物",
+        "確",
+        "認",
+        "遅",
+        "延",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u18_l11_1",
+          "type": "listen",
+          "prompt": "トラブルの確認",
+          "furigana": "トラブルのかくにん",
+          "romaji": "toraburu no kakunin",
+          "english": "Confirming Trouble / incident",
+          "audioText": "トラブルのかくにん",
+          "options": [
+            "Confirming Official certificate",
+            "Confirming Advice",
+            "Confirming Trouble / incident",
+            "Lost property"
+          ],
+          "correctAnswer": "Confirming Trouble / incident"
+        },
+        {
+          "id": "u18_l11_2",
+          "type": "spell",
+          "prompt": "トラブルの確認",
+          "furigana": "トラブルのかくにん",
+          "romaji": "toraburu no kakunin",
+          "english": "Build 'Confirming Trouble / incident'",
+          "audioText": "トラブルのかくにん",
+          "tileBank": [
+            "ブ",
+            "に",
+            "ラ",
+            "か",
+            "の",
+            "ル",
+            "く",
+            "ト"
+          ],
+          "correctAnswer": "トラブルのかくにん"
+        },
+        {
+          "id": "u18_l11_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な落とし物の確認です。",
+          "furigana": "これはいちばんたいせつなおとしもののかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na otoshimono no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Lost property.",
+          "audioText": "これは落とし物の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な落とし物の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l11_4",
+          "type": "scramble",
+          "prompt": "これは落とし物の確認です",
+          "furigana": "これはおとしもののかくにんです",
+          "romaji": "Kore wa otoshimono no kakunin desu.",
+          "english": "This is Confirming Lost property.",
+          "audioText": "これは落とし物の確認です",
+          "scrambleTokens": [
+            "ではありません",
+            "それ",
+            "これは",
+            "です",
+            "落とし物の確認"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "落とし物の確認",
+            "です"
+          ],
+          "correctAnswer": "これは落とし物の確認です"
+        },
+        {
+          "id": "u18_l11_5",
+          "type": "speak",
+          "prompt": "遅延の確認",
+          "furigana": "ちえんのかくにん",
+          "romaji": "chien no kakunin",
+          "english": "Pronounce: Confirming Train / flight delay",
+          "audioText": "ちえんのかくにん",
+          "targetSpeech": "遅延の確認",
+          "options": [
+            "Confirming Train / flight delay",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "遅延の確認"
+        },
+        {
+          "id": "u18_l11_6",
+          "type": "dictate",
+          "prompt": "遅延の確認です",
+          "furigana": "ちえんのかくにんです",
+          "romaji": "chien no kakunin desu.",
+          "english": "It is Confirming Train / flight delay.",
+          "audioText": "遅延の確認です",
+          "dictateTokens": [
+            "遅延の確認",
+            "ではありません",
+            "これ",
+            "です"
+          ],
+          "dictateSolution": [
+            "遅延の確認",
+            "です"
+          ],
+          "correctAnswer": "遅延の確認です"
+        },
+        {
+          "id": "u18_l11_7",
+          "type": "match",
+          "prompt": "トラブルの確認・落とし物の確認・遅延の確認・紛失の確認",
+          "furigana": "トラブルのかくにん・おとしもののかくにん・ちえんのかくにん・ふんしつのかくにん",
+          "romaji": "toraburu no kakunin, otoshimono no kakunin, chien no kakunin, funshitsu no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "トラブルのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "トラブルの確認",
+              "right": "Confirming Trouble / incident",
+              "furigana": "トラブルのかくにん",
+              "romaji": "toraburu no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "落とし物の確認",
+              "right": "Confirming Lost property",
+              "furigana": "おとしもののかくにん",
+              "romaji": "otoshimono no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "遅延の確認",
+              "right": "Confirming Train / flight delay",
+              "furigana": "ちえんのかくにん",
+              "romaji": "chien no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "紛失の確認",
+              "right": "Confirming Loss / misplacement",
+              "furigana": "ふんしつのかくにん",
+              "romaji": "funshitsu no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l11_8",
+          "type": "dialogue",
+          "prompt": "遅延についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "遅延についてどう思われますか？",
+          "furigana": "遅延についてどう思われますか？",
+          "romaji": "chien ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Train / flight delay?",
+          "audioText": "遅延についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u18_l12",
+      "unitId": "unit_18",
+      "lessonNumber": 12,
+      "dayNumber": 6,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Confirming Loss / misplacement & Confirming Resolution / solution",
+      "titleJp": "紛失の確認・解決の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "紛失の確認",
+        "解決の確認",
+        "相談の確認"
+      ],
+      "kanjiKeywords": [
+        "紛",
+        "失",
+        "確",
+        "認",
+        "解",
+        "決",
+        "確",
+        "認",
+        "相",
+        "談",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u18_l12_1",
+          "type": "listen",
+          "prompt": "紛失の確認",
+          "furigana": "ふんしつのかくにん",
+          "romaji": "funshitsu no kakunin",
+          "english": "Confirming Loss / misplacement",
+          "audioText": "ふんしつのかくにん",
+          "options": [
+            "Confirming Consultation",
+            "Confirming Official certificate",
+            "Confirming Loss / misplacement",
+            "Official certificate"
+          ],
+          "correctAnswer": "Confirming Loss / misplacement"
+        },
+        {
+          "id": "u18_l12_2",
+          "type": "spell",
+          "prompt": "紛失の確認",
+          "furigana": "ふんしつのかくにん",
+          "romaji": "funshitsu no kakunin",
+          "english": "Build 'Confirming Loss / misplacement'",
+          "audioText": "ふんしつのかくにん",
+          "tileBank": [
+            "く",
+            "ふ",
+            "の",
+            "に",
+            "し",
+            "か",
+            "ん",
+            "つ"
+          ],
+          "correctAnswer": "ふんしつのかくにん"
+        },
+        {
+          "id": "u18_l12_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な解決の確認です。",
+          "furigana": "これはいちばんたいせつなかいけつのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kaiketsu no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Resolution / solution.",
+          "audioText": "これは解決の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な解決の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l12_4",
+          "type": "scramble",
+          "prompt": "これは解決の確認です",
+          "furigana": "これはかいけつのかくにんです",
+          "romaji": "Kore wa kaiketsu no kakunin desu.",
+          "english": "This is Confirming Resolution / solution.",
+          "audioText": "これは解決の確認です",
+          "scrambleTokens": [
+            "それ",
+            "これは",
+            "ではありません",
+            "解決の確認",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "解決の確認",
+            "です"
+          ],
+          "correctAnswer": "これは解決の確認です"
+        },
+        {
+          "id": "u18_l12_5",
+          "type": "speak",
+          "prompt": "相談の確認",
+          "furigana": "そうだんのかくにん",
+          "romaji": "soudan no kakunin",
+          "english": "Pronounce: Confirming Consultation",
+          "audioText": "そうだんのかくにん",
+          "targetSpeech": "相談の確認",
+          "options": [
+            "Confirming Consultation",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "相談の確認"
+        },
+        {
+          "id": "u18_l12_6",
+          "type": "dictate",
+          "prompt": "相談の確認です",
+          "furigana": "そうだんのかくにんです",
+          "romaji": "soudan no kakunin desu.",
+          "english": "It is Confirming Consultation.",
+          "audioText": "相談の確認です",
+          "dictateTokens": [
+            "です",
+            "ではありません",
+            "相談の確認",
+            "これ"
+          ],
+          "dictateSolution": [
+            "相談の確認",
+            "です"
+          ],
+          "correctAnswer": "相談の確認です"
+        },
+        {
+          "id": "u18_l12_7",
+          "type": "match",
+          "prompt": "紛失の確認・解決の確認・相談の確認・トラブル",
+          "furigana": "ふんしつのかくにん・かいけつのかくにん・そうだんのかくにん・トラブル",
+          "romaji": "funshitsu no kakunin, kaiketsu no kakunin, soudan no kakunin, toraburu",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ふんしつのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "紛失の確認",
+              "right": "Confirming Loss / misplacement",
+              "furigana": "ふんしつのかくにん",
+              "romaji": "funshitsu no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "解決の確認",
+              "right": "Confirming Resolution / solution",
+              "furigana": "かいけつのかくにん",
+              "romaji": "kaiketsu no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "相談の確認",
+              "right": "Confirming Consultation",
+              "furigana": "そうだんのかくにん",
+              "romaji": "soudan no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "トラブル",
+              "right": "Trouble / incident",
+              "furigana": "トラブル",
+              "romaji": "toraburu"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l12_8",
+          "type": "dialogue",
+          "prompt": "次は紛失に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は紛失に進みましょう。",
+          "furigana": "次は紛失に進みましょう。",
+          "romaji": "Tsugi wa funshitsu ni susumimashou.",
+          "english": "Speaker: Let's proceed to Loss / misplacement next.",
+          "audioText": "次は紛失に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u18_l13",
+      "unitId": "unit_18",
+      "lessonNumber": 13,
+      "dayNumber": 6,
+      "category": "Expression",
+      "sectionTitle": null,
+      "iconType": "expression",
+      "title": "Trouble / incident & Lost property",
+      "titleJp": "トラブル・落とし物",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "トラブル",
+        "落とし物",
+        "遅延"
+      ],
+      "kanjiKeywords": [
+        "落",
+        "物",
+        "遅",
+        "延"
+      ],
+      "items": [
+        {
+          "id": "u18_l13_1",
+          "type": "listen",
+          "prompt": "トラブル",
+          "furigana": "トラブル",
+          "romaji": "toraburu",
+          "english": "Trouble / incident",
+          "audioText": "トラブル",
+          "options": [
+            "Consultation",
+            "Confirming Reissue (card/ticket)",
+            "Trouble / incident",
+            "Confirming Consultation"
+          ],
+          "correctAnswer": "Trouble / incident"
+        },
+        {
+          "id": "u18_l13_2",
+          "type": "spell",
+          "prompt": "トラブル",
+          "furigana": "トラブル",
+          "romaji": "toraburu",
+          "english": "Build 'Trouble / incident'",
+          "audioText": "トラブル",
+          "tileBank": [
+            "ル",
+            "ブ",
+            "か",
+            "ラ",
+            "ト",
+            "え",
+            "ら",
+            "む"
+          ],
+          "correctAnswer": "トラブル"
+        },
+        {
+          "id": "u18_l13_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な落とし物です。",
+          "furigana": "これはいちばんたいせつなおとしものです。",
+          "romaji": "Kore wa ichiban taisetsu na otoshimono desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Lost property.",
+          "audioText": "これは落とし物です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な落とし物です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l13_4",
+          "type": "scramble",
+          "prompt": "これは落とし物です",
+          "furigana": "これはおとしものです",
+          "romaji": "Kore wa otoshimono desu.",
+          "english": "This is Lost property.",
+          "audioText": "これは落とし物です",
+          "scrambleTokens": [
+            "落とし物",
+            "それ",
+            "です",
+            "これは",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "落とし物",
+            "です"
+          ],
+          "correctAnswer": "これは落とし物です"
+        },
+        {
+          "id": "u18_l13_5",
+          "type": "speak",
+          "prompt": "遅延",
+          "furigana": "ちえん",
+          "romaji": "chien",
+          "english": "Pronounce: Train / flight delay",
+          "audioText": "ちえん",
+          "targetSpeech": "遅延",
+          "options": [
+            "Train / flight delay",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "遅延"
+        },
+        {
+          "id": "u18_l13_6",
+          "type": "dictate",
+          "prompt": "遅延です",
+          "furigana": "ちえんです",
+          "romaji": "chien desu.",
+          "english": "It is Train / flight delay.",
+          "audioText": "遅延です",
+          "dictateTokens": [
+            "これ",
+            "ではありません",
+            "です",
+            "遅延"
+          ],
+          "dictateSolution": [
+            "遅延",
+            "です"
+          ],
+          "correctAnswer": "遅延です"
+        },
+        {
+          "id": "u18_l13_7",
+          "type": "match",
+          "prompt": "トラブル・落とし物・遅延・紛失",
+          "furigana": "トラブル・おとしもの・ちえん・ふんしつ",
+          "romaji": "toraburu, otoshimono, chien, funshitsu",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "トラブル",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "トラブル",
+              "right": "Trouble / incident",
+              "furigana": "トラブル",
+              "romaji": "toraburu"
+            },
+            {
+              "id": "p_1",
+              "left": "落とし物",
+              "right": "Lost property",
+              "furigana": "おとしもの",
+              "romaji": "otoshimono"
+            },
+            {
+              "id": "p_2",
+              "left": "遅延",
+              "right": "Train / flight delay",
+              "furigana": "ちえん",
+              "romaji": "chien"
+            },
+            {
+              "id": "p_3",
+              "left": "紛失",
+              "right": "Loss / misplacement",
+              "furigana": "ふんしつ",
+              "romaji": "funshitsu"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l13_8",
+          "type": "dialogue",
+          "prompt": "トラブルについて教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "トラブルについて教えていただけますか？",
+          "furigana": "トラブルについて教えていただけますか？",
+          "romaji": "toraburu ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Trouble / incident?",
+          "audioText": "トラブルについて教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u18_l14",
+      "unitId": "unit_18",
+      "lessonNumber": 14,
+      "dayNumber": 6,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Loss / misplacement & Resolution / solution",
+      "titleJp": "紛失・解決",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "紛失",
+        "解決",
+        "相談"
+      ],
+      "kanjiKeywords": [
+        "紛",
+        "失",
+        "解",
+        "決",
+        "相",
+        "談"
+      ],
+      "items": [
+        {
+          "id": "u18_l14_1",
+          "type": "listen",
+          "prompt": "紛失",
+          "furigana": "ふんしつ",
+          "romaji": "funshitsu",
+          "english": "Loss / misplacement",
+          "audioText": "ふんしつ",
+          "options": [
+            "Confirming Peace of mind / relief",
+            "Confirming Official certificate",
+            "Peace of mind / relief",
+            "Loss / misplacement"
+          ],
+          "correctAnswer": "Loss / misplacement"
+        },
+        {
+          "id": "u18_l14_2",
+          "type": "spell",
+          "prompt": "紛失",
+          "furigana": "ふんしつ",
+          "romaji": "funshitsu",
+          "english": "Build 'Loss / misplacement'",
+          "audioText": "ふんしつ",
+          "tileBank": [
+            "ん",
+            "よ",
+            "う",
+            "し",
+            "ふ",
+            "か",
+            "つ",
+            "ろ"
+          ],
+          "correctAnswer": "ふんしつ"
+        },
+        {
+          "id": "u18_l14_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な解決です。",
+          "furigana": "これはいちばんたいせつなかいけつです。",
+          "romaji": "Kore wa ichiban taisetsu na kaiketsu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Resolution / solution.",
+          "audioText": "これは解決です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な解決です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l14_4",
+          "type": "scramble",
+          "prompt": "これは解決です",
+          "furigana": "これはかいけつです",
+          "romaji": "Kore wa kaiketsu desu.",
+          "english": "This is Resolution / solution.",
+          "audioText": "これは解決です",
+          "scrambleTokens": [
+            "解決",
+            "です",
+            "それ",
+            "これは",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "解決",
+            "です"
+          ],
+          "correctAnswer": "これは解決です"
+        },
+        {
+          "id": "u18_l14_5",
+          "type": "speak",
+          "prompt": "相談",
+          "furigana": "そうだん",
+          "romaji": "soudan",
+          "english": "Pronounce: Consultation",
+          "audioText": "そうだん",
+          "targetSpeech": "相談",
+          "options": [
+            "Consultation",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "相談"
+        },
+        {
+          "id": "u18_l14_6",
+          "type": "dictate",
+          "prompt": "相談です",
+          "furigana": "そうだんです",
+          "romaji": "soudan desu.",
+          "english": "It is Consultation.",
+          "audioText": "相談です",
+          "dictateTokens": [
+            "ではありません",
+            "これ",
+            "です",
+            "相談"
+          ],
+          "dictateSolution": [
+            "相談",
+            "です"
+          ],
+          "correctAnswer": "相談です"
+        },
+        {
+          "id": "u18_l14_7",
+          "type": "match",
+          "prompt": "紛失・解決・相談・助言",
+          "furigana": "ふんしつ・かいけつ・そうだん・じょげん",
+          "romaji": "funshitsu, kaiketsu, soudan, jogen",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ふんしつ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "紛失",
+              "right": "Loss / misplacement",
+              "furigana": "ふんしつ",
+              "romaji": "funshitsu"
+            },
+            {
+              "id": "p_1",
+              "left": "解決",
+              "right": "Resolution / solution",
+              "furigana": "かいけつ",
+              "romaji": "kaiketsu"
+            },
+            {
+              "id": "p_2",
+              "left": "相談",
+              "right": "Consultation",
+              "furigana": "そうだん",
+              "romaji": "soudan"
+            },
+            {
+              "id": "p_3",
+              "left": "助言",
+              "right": "Advice",
+              "furigana": "じょげん",
+              "romaji": "jogen"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l14_8",
+          "type": "dialogue",
+          "prompt": "落とし物の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "落とし物の準備はできていますか？",
+          "furigana": "落とし物の準備はできていますか？",
+          "romaji": "otoshimono no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Lost property ready?",
+          "audioText": "落とし物の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u18_l15",
+      "unitId": "unit_18",
+      "lessonNumber": 15,
+      "dayNumber": 7,
+      "category": "Unit Test",
+      "sectionTitle": "Unit 18 Master Exam",
+      "iconType": "test",
+      "title": "Unit 18 Master Exam",
+      "titleJp": "第18週 総合試験",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "助言",
+        "緊急",
+        "問い合わせ"
+      ],
+      "kanjiKeywords": [
+        "助",
+        "言",
+        "緊",
+        "急",
+        "問",
+        "合"
+      ],
+      "items": [
+        {
+          "id": "u18_l15_1",
+          "type": "listen",
+          "prompt": "助言",
+          "furigana": "じょげん",
+          "romaji": "jogen",
+          "english": "Advice",
+          "audioText": "じょげん",
+          "options": [
+            "Confirming Trouble / incident",
+            "Confirming Official certificate",
+            "Advice",
+            "Confirming To be in trouble / at a loss"
+          ],
+          "correctAnswer": "Advice"
+        },
+        {
+          "id": "u18_l15_2",
+          "type": "spell",
+          "prompt": "助言",
+          "furigana": "じょげん",
+          "romaji": "jogen",
+          "english": "Build 'Advice'",
+          "audioText": "じょげん",
+          "tileBank": [
+            "を",
+            "れ",
+            "ょ",
+            "げ",
+            "じ",
+            "ん",
+            "に",
+            "そ"
+          ],
+          "correctAnswer": "じょげん"
+        },
+        {
+          "id": "u18_l15_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な緊急です。",
+          "furigana": "これはいちばんたいせつなきんきゅうです。",
+          "romaji": "Kore wa ichiban taisetsu na kinkyuu desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Emergency.",
+          "audioText": "これは緊急です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な緊急です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u18_l15_4",
+          "type": "scramble",
+          "prompt": "これは緊急です",
+          "furigana": "これはきんきゅうです",
+          "romaji": "Kore wa kinkyuu desu.",
+          "english": "This is Emergency.",
+          "audioText": "これは緊急です",
+          "scrambleTokens": [
+            "です",
+            "緊急",
+            "ではありません",
+            "それ",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "緊急",
+            "です"
+          ],
+          "correctAnswer": "これは緊急です"
+        },
+        {
+          "id": "u18_l15_5",
+          "type": "speak",
+          "prompt": "問い合わせ",
+          "furigana": "といあわせ",
+          "romaji": "toiawase",
+          "english": "Pronounce: Inquiry / contact",
+          "audioText": "といあわせ",
+          "targetSpeech": "問い合わせ",
+          "options": [
+            "Inquiry / contact",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "問い合わせ"
+        },
+        {
+          "id": "u18_l15_6",
+          "type": "dictate",
+          "prompt": "問い合わせです",
+          "furigana": "といあわせです",
+          "romaji": "toiawase desu.",
+          "english": "It is Inquiry / contact.",
+          "audioText": "問い合わせです",
+          "dictateTokens": [
+            "問い合わせ",
+            "ではありません",
+            "これ",
+            "です"
+          ],
+          "dictateSolution": [
+            "問い合わせ",
+            "です"
+          ],
+          "correctAnswer": "問い合わせです"
+        },
+        {
+          "id": "u18_l15_7",
+          "type": "match",
+          "prompt": "助言・緊急・問い合わせ・警察",
+          "furigana": "じょげん・きんきゅう・といあわせ・けいさつ",
+          "romaji": "jogen, kinkyuu, toiawase, keisatsu",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "じょげん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "助言",
+              "right": "Advice",
+              "furigana": "じょげん",
+              "romaji": "jogen"
+            },
+            {
+              "id": "p_1",
+              "left": "緊急",
+              "right": "Emergency",
+              "furigana": "きんきゅう",
+              "romaji": "kinkyuu"
+            },
+            {
+              "id": "p_2",
+              "left": "問い合わせ",
+              "right": "Inquiry / contact",
+              "furigana": "といあわせ",
+              "romaji": "toiawase"
+            },
+            {
+              "id": "p_3",
+              "left": "警察",
+              "right": "Police",
+              "furigana": "けいさつ",
+              "romaji": "keisatsu"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u18_l15_8",
+          "type": "dialogue",
+          "prompt": "遅延についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "遅延についてどう思われますか？",
+          "furigana": "遅延についてどう思われますか？",
+          "romaji": "chien ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Train / flight delay?",
+          "audioText": "遅延についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    }
+  ],
+  "revisionGate": {
+    "id": "gate_unit_18",
+    "unitId": "unit_18",
+    "title": "Unit 18 Mastery Checkpoint",
+    "titleJp": "第18週 総復習テスト",
+    "requiredScorePercent": 80,
+    "items": [
+      {
+        "id": "u18_l1_1",
+        "type": "listen",
+        "prompt": "トラブル",
+        "furigana": "トラブル",
+        "romaji": "toraburu",
+        "english": "Trouble / incident",
+        "audioText": "トラブル",
+        "options": [
+          "Confirming Advice",
+          "Trouble / incident",
+          "Confirming Official certificate",
+          "Police"
+        ],
+        "correctAnswer": "Trouble / incident"
+      },
+      {
+        "id": "u18_l1_2",
+        "type": "spell",
+        "prompt": "トラブル",
+        "furigana": "トラブル",
+        "romaji": "toraburu",
+        "english": "Build 'Trouble / incident'",
+        "audioText": "トラブル",
+        "tileBank": [
+          "ラ",
+          "ブ",
+          "ふ",
+          "ト",
+          "ル",
+          "ん",
+          "ぬ",
+          "ら"
+        ],
+        "correctAnswer": "トラブル"
+      },
+      {
+        "id": "u18_l3_1",
+        "type": "listen",
+        "prompt": "助言",
+        "furigana": "じょげん",
+        "romaji": "jogen",
+        "english": "Advice",
+        "audioText": "じょげん",
+        "options": [
+          "Peace of mind / relief",
+          "Advice",
+          "Confirming Train / flight delay",
+          "Confirming Consultation"
+        ],
+        "correctAnswer": "Advice"
+      },
+      {
+        "id": "u18_l3_2",
+        "type": "spell",
+        "prompt": "助言",
+        "furigana": "じょげん",
+        "romaji": "jogen",
+        "english": "Build 'Advice'",
+        "audioText": "じょげん",
+        "tileBank": [
+          "れ",
+          "せ",
+          "じ",
+          "つ",
+          "ん",
+          "う",
+          "ょ",
+          "げ"
+        ],
+        "correctAnswer": "じょげん"
+      },
+      {
+        "id": "u18_l5_1",
+        "type": "listen",
+        "prompt": "再発行",
+        "furigana": "さいはっこう",
+        "romaji": "sai hakkou",
+        "english": "Reissue (card/ticket)",
+        "audioText": "さいはっこう",
+        "options": [
+          "Inquiry / contact",
+          "Reissue (card/ticket)",
+          "Lost property",
+          "Trouble / incident"
+        ],
+        "correctAnswer": "Reissue (card/ticket)"
+      },
+      {
+        "id": "u18_l5_2",
+        "type": "spell",
+        "prompt": "再発行",
+        "furigana": "さいはっこう",
+        "romaji": "sai hakkou",
+        "english": "Build 'Reissue (card/ticket)'",
+        "audioText": "さいはっこう",
+        "tileBank": [
+          "い",
+          "っ",
+          "さ",
+          "も",
+          "つ",
+          "は",
+          "こ",
+          "う"
+        ],
+        "correctAnswer": "さいはっこう"
+      },
+      {
+        "id": "u18_l7_1",
+        "type": "listen",
+        "prompt": "紛失の確認",
+        "furigana": "ふんしつのかくにん",
+        "romaji": "funshitsu no kakunin",
+        "english": "Confirming Loss / misplacement",
+        "audioText": "ふんしつのかくにん",
+        "options": [
+          "Repair",
+          "Confirming Inquiry / contact",
+          "Confirming Advice",
+          "Confirming Loss / misplacement"
+        ],
+        "correctAnswer": "Confirming Loss / misplacement"
+      },
+      {
+        "id": "u18_l7_2",
+        "type": "spell",
+        "prompt": "紛失の確認",
+        "furigana": "ふんしつのかくにん",
+        "romaji": "funshitsu no kakunin",
+        "english": "Build 'Confirming Loss / misplacement'",
+        "audioText": "ふんしつのかくにん",
+        "tileBank": [
+          "ふ",
+          "に",
+          "つ",
+          "の",
+          "く",
+          "か",
+          "し",
+          "ん"
+        ],
+        "correctAnswer": "ふんしつのかくにん"
+      },
+      {
+        "id": "u18_l9_1",
+        "type": "listen",
+        "prompt": "警察の確認",
+        "furigana": "けいさつのかくにん",
+        "romaji": "keisatsu no kakunin",
+        "english": "Confirming Police",
+        "audioText": "けいさつのかくにん",
+        "options": [
+          "Confirming Repair",
+          "Loss / misplacement",
+          "Confirming Police",
+          "Confirming Resolution / solution"
+        ],
+        "correctAnswer": "Confirming Police"
+      },
+      {
+        "id": "u18_l9_2",
+        "type": "spell",
+        "prompt": "警察の確認",
+        "furigana": "けいさつのかくにん",
+        "romaji": "keisatsu no kakunin",
+        "english": "Build 'Confirming Police'",
+        "audioText": "けいさつのかくにん",
+        "tileBank": [
+          "に",
+          "い",
+          "つ",
+          "さ",
+          "か",
+          "の",
+          "く",
+          "け"
+        ],
+        "correctAnswer": "けいさつのかくにん"
+      },
+      {
+        "id": "u18_l11_1",
+        "type": "listen",
+        "prompt": "トラブルの確認",
+        "furigana": "トラブルのかくにん",
+        "romaji": "toraburu no kakunin",
+        "english": "Confirming Trouble / incident",
+        "audioText": "トラブルのかくにん",
+        "options": [
+          "Confirming Official certificate",
+          "Confirming Advice",
+          "Confirming Trouble / incident",
+          "Lost property"
+        ],
+        "correctAnswer": "Confirming Trouble / incident"
+      },
+      {
+        "id": "u18_l11_2",
+        "type": "spell",
+        "prompt": "トラブルの確認",
+        "furigana": "トラブルのかくにん",
+        "romaji": "toraburu no kakunin",
+        "english": "Build 'Confirming Trouble / incident'",
+        "audioText": "トラブルのかくにん",
+        "tileBank": [
+          "ブ",
+          "に",
+          "ラ",
+          "か",
+          "の",
+          "ル",
+          "く",
+          "ト"
+        ],
+        "correctAnswer": "トラブルのかくにん"
+      }
+    ]
+  }
+}

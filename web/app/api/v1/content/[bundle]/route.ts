@@ -15,6 +15,8 @@ import vocabN1 from '@/data/vocab_n1.json';
 
 export const runtime = 'nodejs';
 
+const BUNDLE_VERSION = 10;
+
 const BUNDLE_MAP: Record<string, () => unknown> = {
   curriculum: () => MANABU_CURRICULUM,
   kana: () => ({ hiragana: HIRAGANA_DATA, katakana: KATAKANA_DATA }),
@@ -44,14 +46,14 @@ export async function GET(
     );
   }
 
-  const bundleEtag = `"bundle-${bundle}-v2"`;
+  const bundleEtag = `"bundle-${bundle}-v${BUNDLE_VERSION}"`;
   const ifNoneMatch = req.headers.get('if-none-match');
 
   if (ifNoneMatch === bundleEtag) {
     return new NextResponse(null, { status: 304 });
   }
 
-  const cacheKey = `content:bundle:${bundle}:v2`;
+  const cacheKey = `content:bundle:${bundle}:v${BUNDLE_VERSION}`;
 
   // 1. Try Valkey in-memory Redis cache first
   try {
@@ -76,7 +78,7 @@ export async function GET(
   const data = loader();
   const payload = JSON.stringify({
     bundle,
-    version: 2,
+    version: BUNDLE_VERSION,
     data,
   });
 

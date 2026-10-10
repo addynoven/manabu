@@ -1,4 +1,4 @@
-import { AdminScreen } from '@/features/admin/screens/AdminScreen';
+import { AdminScreen } from '@/features/admin/screens';
 
 export default function Page() {
   return <AdminScreen />;

@@ -1,0 +1,3367 @@
+{
+  "id": "unit_28",
+  "unitNumber": 28,
+  "title": "Modern Literature & Essayistic Japanese",
+  "titleJp": "近代文学と随筆の文体",
+  "description": "Appreciate literary prose, sensory aesthetics, classic endings (~de aru, ~gotoshi), and metaphoric imagery.",
+  "icon": "📚",
+  "themeColor": "#831843",
+  "summaryPoints": [
+    "重要語彙35語以上の習得 (Over 35 Core Vocabulary Items)",
+    "日常・実用対話表現のマスター (Mastery of Practical Dialogues)",
+    "聴解と文字綴りのトレーニング (Listening & 4x2 Tile Spelling)",
+    "JLPT基準文法パターンの定着 (Grammar Patterns & Nuances)",
+    "7日間の段階的カリキュラム (Structured 7-Day Progressive Bundle)"
+  ],
+  "lessons": [
+    {
+      "id": "u28_l1",
+      "unitId": "unit_28",
+      "lessonNumber": 1,
+      "dayNumber": 1,
+      "category": "Expression",
+      "sectionTitle": "Core Expressions (Part 1)",
+      "iconType": "expression",
+      "title": "Personal essay / literary miscellany & Depiction / vivid description",
+      "titleJp": "随筆・描写",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "随筆",
+        "描写",
+        "叙情的"
+      ],
+      "kanjiKeywords": [
+        "随",
+        "筆",
+        "描",
+        "写",
+        "叙",
+        "情",
+        "的"
+      ],
+      "items": [
+        {
+          "id": "u28_l1_1",
+          "type": "listen",
+          "prompt": "随筆",
+          "furigana": "ずいひつ",
+          "romaji": "zuihitsu",
+          "english": "Personal essay / literary miscellany",
+          "audioText": "ずいひつ",
+          "options": [
+            "Confirming Lyrical / poetic emotionalism",
+            "Confirming Depiction / vivid description",
+            "Personal essay / literary miscellany",
+            "Sentimentality"
+          ],
+          "correctAnswer": "Personal essay / literary miscellany"
+        },
+        {
+          "id": "u28_l1_2",
+          "type": "spell",
+          "prompt": "随筆",
+          "furigana": "ずいひつ",
+          "romaji": "zuihitsu",
+          "english": "Build 'Personal essay / literary miscellany'",
+          "audioText": "ずいひつ",
+          "tileBank": [
+            "ら",
+            "あ",
+            "む",
+            "た",
+            "ず",
+            "い",
+            "ひ",
+            "つ"
+          ],
+          "correctAnswer": "ずいひつ"
+        },
+        {
+          "id": "u28_l1_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な描写です。",
+          "furigana": "これはいちばんたいせつなびょうしゃです。",
+          "romaji": "Kore wa ichiban taisetsu na byousha desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Depiction / vivid description.",
+          "audioText": "これは描写です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な描写です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l1_4",
+          "type": "scramble",
+          "prompt": "これは描写です",
+          "furigana": "これはびょうしゃです",
+          "romaji": "Kore wa byousha desu.",
+          "english": "This is Depiction / vivid description.",
+          "audioText": "これは描写です",
+          "scrambleTokens": [
+            "です",
+            "ではありません",
+            "それ",
+            "これは",
+            "描写"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "描写",
+            "です"
+          ],
+          "correctAnswer": "これは描写です"
+        },
+        {
+          "id": "u28_l1_5",
+          "type": "speak",
+          "prompt": "叙情的",
+          "furigana": "じょじょうてき",
+          "romaji": "jojouteki",
+          "english": "Pronounce: Lyrical / poetic emotionalism",
+          "audioText": "じょじょうてき",
+          "targetSpeech": "叙情的",
+          "options": [
+            "Lyrical / poetic emotionalism",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "叙情的"
+        },
+        {
+          "id": "u28_l1_6",
+          "type": "dictate",
+          "prompt": "叙情的です",
+          "furigana": "じょじょうてきです",
+          "romaji": "jojouteki desu.",
+          "english": "It is Lyrical / poetic emotionalism.",
+          "audioText": "叙情的です",
+          "dictateTokens": [
+            "これ",
+            "叙情的",
+            "ではありません",
+            "です"
+          ],
+          "dictateSolution": [
+            "叙情的",
+            "です"
+          ],
+          "correctAnswer": "叙情的です"
+        },
+        {
+          "id": "u28_l1_7",
+          "type": "match",
+          "prompt": "随筆・描写・叙情的・比喩",
+          "furigana": "ずいひつ・びょうしゃ・じょじょうてき・ひゆ",
+          "romaji": "zuihitsu, byousha, jojouteki, hiyu",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ずいひつ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "随筆",
+              "right": "Personal essay / literary miscellany",
+              "furigana": "ずいひつ",
+              "romaji": "zuihitsu"
+            },
+            {
+              "id": "p_1",
+              "left": "描写",
+              "right": "Depiction / vivid description",
+              "furigana": "びょうしゃ",
+              "romaji": "byousha"
+            },
+            {
+              "id": "p_2",
+              "left": "叙情的",
+              "right": "Lyrical / poetic emotionalism",
+              "furigana": "じょじょうてき",
+              "romaji": "jojouteki"
+            },
+            {
+              "id": "p_3",
+              "left": "比喩",
+              "right": "Metaphor / simile",
+              "furigana": "ひゆ",
+              "romaji": "hiyu"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l1_8",
+          "type": "dialogue",
+          "prompt": "随筆について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "随筆について教えていただけますか？",
+          "furigana": "随筆について教えていただけますか？",
+          "romaji": "zuihitsu ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Personal essay / literary miscellany?",
+          "audioText": "随筆について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u28_l2",
+      "unitId": "unit_28",
+      "lessonNumber": 2,
+      "dayNumber": 1,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Metaphor / simile & Atmosphere / evocative mood",
+      "titleJp": "比喩・情緒",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "比喩",
+        "情緒",
+        "哀愁"
+      ],
+      "kanjiKeywords": [
+        "比",
+        "喩",
+        "情",
+        "緒",
+        "哀",
+        "愁"
+      ],
+      "items": [
+        {
+          "id": "u28_l2_1",
+          "type": "listen",
+          "prompt": "比喩",
+          "furigana": "ひゆ",
+          "romaji": "hiyu",
+          "english": "Metaphor / simile",
+          "audioText": "ひゆ",
+          "options": [
+            "Metaphor / simile",
+            "Subtle grace and hidden beauty",
+            "Confirming Abyss / profound depth",
+            "Confirming Masterpiece"
+          ],
+          "correctAnswer": "Metaphor / simile"
+        },
+        {
+          "id": "u28_l2_2",
+          "type": "spell",
+          "prompt": "比喩",
+          "furigana": "ひゆ",
+          "romaji": "hiyu",
+          "english": "Build 'Metaphor / simile'",
+          "audioText": "ひゆ",
+          "tileBank": [
+            "ゆ",
+            "こ",
+            "ひ",
+            "す",
+            "い",
+            "ん",
+            "て",
+            "え"
+          ],
+          "correctAnswer": "ひゆ"
+        },
+        {
+          "id": "u28_l2_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な情緒です。",
+          "furigana": "これはいちばんたいせつなじょうちょです。",
+          "romaji": "Kore wa ichiban taisetsu na joutcho desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Atmosphere / evocative mood.",
+          "audioText": "これは情緒です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な情緒です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l2_4",
+          "type": "scramble",
+          "prompt": "これは情緒です",
+          "furigana": "これはじょうちょです",
+          "romaji": "Kore wa joutcho desu.",
+          "english": "This is Atmosphere / evocative mood.",
+          "audioText": "これは情緒です",
+          "scrambleTokens": [
+            "ではありません",
+            "それ",
+            "これは",
+            "です",
+            "情緒"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "情緒",
+            "です"
+          ],
+          "correctAnswer": "これは情緒です"
+        },
+        {
+          "id": "u28_l2_5",
+          "type": "speak",
+          "prompt": "哀愁",
+          "furigana": "あいしゅう",
+          "romaji": "aishuu",
+          "english": "Pronounce: Melancholy / sorrowful charm",
+          "audioText": "あいしゅう",
+          "targetSpeech": "哀愁",
+          "options": [
+            "Melancholy / sorrowful charm",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "哀愁"
+        },
+        {
+          "id": "u28_l2_6",
+          "type": "dictate",
+          "prompt": "哀愁です",
+          "furigana": "あいしゅうです",
+          "romaji": "aishuu desu.",
+          "english": "It is Melancholy / sorrowful charm.",
+          "audioText": "哀愁です",
+          "dictateTokens": [
+            "哀愁",
+            "これ",
+            "です",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "哀愁",
+            "です"
+          ],
+          "correctAnswer": "哀愁です"
+        },
+        {
+          "id": "u28_l2_7",
+          "type": "match",
+          "prompt": "比喩・情緒・哀愁・余韻",
+          "furigana": "ひゆ・じょうちょ・あいしゅう・よいん",
+          "romaji": "hiyu, joutcho, aishuu, yoin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ひゆ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "比喩",
+              "right": "Metaphor / simile",
+              "furigana": "ひゆ",
+              "romaji": "hiyu"
+            },
+            {
+              "id": "p_1",
+              "left": "情緒",
+              "right": "Atmosphere / evocative mood",
+              "furigana": "じょうちょ",
+              "romaji": "joutcho"
+            },
+            {
+              "id": "p_2",
+              "left": "哀愁",
+              "right": "Melancholy / sorrowful charm",
+              "furigana": "あいしゅう",
+              "romaji": "aishuu"
+            },
+            {
+              "id": "p_3",
+              "left": "余韻",
+              "right": "Lingering resonance / aftertaste",
+              "furigana": "よいん",
+              "romaji": "yoin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l2_8",
+          "type": "dialogue",
+          "prompt": "描写の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "描写の準備はできていますか？",
+          "furigana": "描写の準備はできていますか？",
+          "romaji": "byousha no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Depiction / vivid description ready?",
+          "audioText": "描写の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u28_l3",
+      "unitId": "unit_28",
+      "lessonNumber": 3,
+      "dayNumber": 1,
+      "category": "Practice",
+      "sectionTitle": "Sentence Patterns & Fluency",
+      "iconType": "practice",
+      "title": "Lingering resonance / aftertaste & Sentimentality",
+      "titleJp": "余韻・感傷",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "余韻",
+        "感傷",
+        "無常観"
+      ],
+      "kanjiKeywords": [
+        "余",
+        "韻",
+        "感",
+        "傷",
+        "無",
+        "常",
+        "観"
+      ],
+      "items": [
+        {
+          "id": "u28_l3_1",
+          "type": "listen",
+          "prompt": "余韻",
+          "furigana": "よいん",
+          "romaji": "yoin",
+          "english": "Lingering resonance / aftertaste",
+          "audioText": "よいん",
+          "options": [
+            "Confirming Literary style",
+            "Confirming Subtle grace and hidden beauty",
+            "Lingering resonance / aftertaste",
+            "Confirming Atmosphere / evocative mood"
+          ],
+          "correctAnswer": "Lingering resonance / aftertaste"
+        },
+        {
+          "id": "u28_l3_2",
+          "type": "spell",
+          "prompt": "余韻",
+          "furigana": "よいん",
+          "romaji": "yoin",
+          "english": "Build 'Lingering resonance / aftertaste'",
+          "audioText": "よいん",
+          "tileBank": [
+            "は",
+            "く",
+            "よ",
+            "に",
+            "れ",
+            "ん",
+            "い",
+            "り"
+          ],
+          "correctAnswer": "よいん"
+        },
+        {
+          "id": "u28_l3_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な感傷です。",
+          "furigana": "これはいちばんたいせつなかんしょうです。",
+          "romaji": "Kore wa ichiban taisetsu na kanshou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Sentimentality.",
+          "audioText": "これは感傷です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な感傷です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l3_4",
+          "type": "scramble",
+          "prompt": "これは感傷です",
+          "furigana": "これはかんしょうです",
+          "romaji": "Kore wa kanshou desu.",
+          "english": "This is Sentimentality.",
+          "audioText": "これは感傷です",
+          "scrambleTokens": [
+            "です",
+            "ではありません",
+            "それ",
+            "これは",
+            "感傷"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "感傷",
+            "です"
+          ],
+          "correctAnswer": "これは感傷です"
+        },
+        {
+          "id": "u28_l3_5",
+          "type": "speak",
+          "prompt": "無常観",
+          "furigana": "むじょうかん",
+          "romaji": "mujoukan",
+          "english": "Pronounce: Buddhist sense of impermanence",
+          "audioText": "むじょうかん",
+          "targetSpeech": "無常観",
+          "options": [
+            "Buddhist sense of impermanence",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "無常観"
+        },
+        {
+          "id": "u28_l3_6",
+          "type": "dictate",
+          "prompt": "無常観です",
+          "furigana": "むじょうかんです",
+          "romaji": "mujoukan desu.",
+          "english": "It is Buddhist sense of impermanence.",
+          "audioText": "無常観です",
+          "dictateTokens": [
+            "これ",
+            "無常観",
+            "です",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "無常観",
+            "です"
+          ],
+          "correctAnswer": "無常観です"
+        },
+        {
+          "id": "u28_l3_7",
+          "type": "match",
+          "prompt": "余韻・感傷・無常観・文体",
+          "furigana": "よいん・かんしょう・むじょうかん・ぶんたい",
+          "romaji": "yoin, kanshou, mujoukan, buntai",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "よいん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "余韻",
+              "right": "Lingering resonance / aftertaste",
+              "furigana": "よいん",
+              "romaji": "yoin"
+            },
+            {
+              "id": "p_1",
+              "left": "感傷",
+              "right": "Sentimentality",
+              "furigana": "かんしょう",
+              "romaji": "kanshou"
+            },
+            {
+              "id": "p_2",
+              "left": "無常観",
+              "right": "Buddhist sense of impermanence",
+              "furigana": "むじょうかん",
+              "romaji": "mujoukan"
+            },
+            {
+              "id": "p_3",
+              "left": "文体",
+              "right": "Literary style",
+              "furigana": "ぶんたい",
+              "romaji": "buntai"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l3_8",
+          "type": "dialogue",
+          "prompt": "叙情的についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "叙情的についてどう思われますか？",
+          "furigana": "叙情的についてどう思われますか？",
+          "romaji": "jojouteki ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Lyrical / poetic emotionalism?",
+          "audioText": "叙情的についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u28_l4",
+      "unitId": "unit_28",
+      "lessonNumber": 4,
+      "dayNumber": 2,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Literary style & Between the lines",
+      "titleJp": "文体・行間",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "文体",
+        "行間",
+        "深淵"
+      ],
+      "kanjiKeywords": [
+        "文",
+        "体",
+        "行",
+        "間",
+        "深",
+        "淵"
+      ],
+      "items": [
+        {
+          "id": "u28_l4_1",
+          "type": "listen",
+          "prompt": "文体",
+          "furigana": "ぶんたい",
+          "romaji": "buntai",
+          "english": "Literary style",
+          "audioText": "ぶんたい",
+          "options": [
+            "Literary style",
+            "Melancholy / sorrowful charm",
+            "Confirming Abyss / profound depth",
+            "Confirming Metaphor / simile"
+          ],
+          "correctAnswer": "Literary style"
+        },
+        {
+          "id": "u28_l4_2",
+          "type": "spell",
+          "prompt": "文体",
+          "furigana": "ぶんたい",
+          "romaji": "buntai",
+          "english": "Build 'Literary style'",
+          "audioText": "ぶんたい",
+          "tileBank": [
+            "い",
+            "せ",
+            "お",
+            "ん",
+            "れ",
+            "か",
+            "ぶ",
+            "た"
+          ],
+          "correctAnswer": "ぶんたい"
+        },
+        {
+          "id": "u28_l4_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な行間です。",
+          "furigana": "これはいちばんたいせつなぎょうかんです。",
+          "romaji": "Kore wa ichiban taisetsu na gyoukan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Between the lines.",
+          "audioText": "これは行間です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な行間です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l4_4",
+          "type": "scramble",
+          "prompt": "これは行間です",
+          "furigana": "これはぎょうかんです",
+          "romaji": "Kore wa gyoukan desu.",
+          "english": "This is Between the lines.",
+          "audioText": "これは行間です",
+          "scrambleTokens": [
+            "それ",
+            "です",
+            "行間",
+            "ではありません",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "行間",
+            "です"
+          ],
+          "correctAnswer": "これは行間です"
+        },
+        {
+          "id": "u28_l4_5",
+          "type": "speak",
+          "prompt": "深淵",
+          "furigana": "しんえん",
+          "romaji": "shin-en",
+          "english": "Pronounce: Abyss / profound depth",
+          "audioText": "しんえん",
+          "targetSpeech": "深淵",
+          "options": [
+            "Abyss / profound depth",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "深淵"
+        },
+        {
+          "id": "u28_l4_6",
+          "type": "dictate",
+          "prompt": "深淵です",
+          "furigana": "しんえんです",
+          "romaji": "shin-en desu.",
+          "english": "It is Abyss / profound depth.",
+          "audioText": "深淵です",
+          "dictateTokens": [
+            "です",
+            "ではありません",
+            "これ",
+            "深淵"
+          ],
+          "dictateSolution": [
+            "深淵",
+            "です"
+          ],
+          "correctAnswer": "深淵です"
+        },
+        {
+          "id": "u28_l4_7",
+          "type": "match",
+          "prompt": "文体・行間・深淵・幽玄",
+          "furigana": "ぶんたい・ぎょうかん・しんえん・ゆうげん",
+          "romaji": "buntai, gyoukan, shin-en, yuugen",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ぶんたい",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "文体",
+              "right": "Literary style",
+              "furigana": "ぶんたい",
+              "romaji": "buntai"
+            },
+            {
+              "id": "p_1",
+              "left": "行間",
+              "right": "Between the lines",
+              "furigana": "ぎょうかん",
+              "romaji": "gyoukan"
+            },
+            {
+              "id": "p_2",
+              "left": "深淵",
+              "right": "Abyss / profound depth",
+              "furigana": "しんえん",
+              "romaji": "shin-en"
+            },
+            {
+              "id": "p_3",
+              "left": "幽玄",
+              "right": "Subtle grace and hidden beauty",
+              "furigana": "ゆうげん",
+              "romaji": "yuugen"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l4_8",
+          "type": "dialogue",
+          "prompt": "次は比喩に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は比喩に進みましょう。",
+          "furigana": "次は比喩に進みましょう。",
+          "romaji": "Tsugi wa hiyu ni susumimashou.",
+          "english": "Speaker: Let's proceed to Metaphor / simile next.",
+          "audioText": "次は比喩に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u28_l5",
+      "unitId": "unit_28",
+      "lessonNumber": 5,
+      "dayNumber": 2,
+      "category": "Expression",
+      "sectionTitle": "Situational Dialogues",
+      "iconType": "expression",
+      "title": "Subtle grace and hidden beauty & Scenic taste / tasteful atmosphere",
+      "titleJp": "幽玄・風情",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "幽玄",
+        "風情",
+        "傑作"
+      ],
+      "kanjiKeywords": [
+        "幽",
+        "玄",
+        "風",
+        "情",
+        "傑",
+        "作"
+      ],
+      "items": [
+        {
+          "id": "u28_l5_1",
+          "type": "listen",
+          "prompt": "幽玄",
+          "furigana": "ゆうげん",
+          "romaji": "yuugen",
+          "english": "Subtle grace and hidden beauty",
+          "audioText": "ゆうげん",
+          "options": [
+            "Confirming Personal essay / literary miscellany",
+            "Confirming Scenic taste / tasteful atmosphere",
+            "Subtle grace and hidden beauty",
+            "Confirming Personal essay / literary miscellany"
+          ],
+          "correctAnswer": "Subtle grace and hidden beauty"
+        },
+        {
+          "id": "u28_l5_2",
+          "type": "spell",
+          "prompt": "幽玄",
+          "furigana": "ゆうげん",
+          "romaji": "yuugen",
+          "english": "Build 'Subtle grace and hidden beauty'",
+          "audioText": "ゆうげん",
+          "tileBank": [
+            "ゆ",
+            "し",
+            "に",
+            "の",
+            "げ",
+            "う",
+            "す",
+            "ん"
+          ],
+          "correctAnswer": "ゆうげん"
+        },
+        {
+          "id": "u28_l5_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な風情です。",
+          "furigana": "これはいちばんたいせつなふぜいです。",
+          "romaji": "Kore wa ichiban taisetsu na fuzei desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Scenic taste / tasteful atmosphere.",
+          "audioText": "これは風情です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な風情です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l5_4",
+          "type": "scramble",
+          "prompt": "これは風情です",
+          "furigana": "これはふぜいです",
+          "romaji": "Kore wa fuzei desu.",
+          "english": "This is Scenic taste / tasteful atmosphere.",
+          "audioText": "これは風情です",
+          "scrambleTokens": [
+            "これは",
+            "です",
+            "風情",
+            "ではありません",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "風情",
+            "です"
+          ],
+          "correctAnswer": "これは風情です"
+        },
+        {
+          "id": "u28_l5_5",
+          "type": "speak",
+          "prompt": "傑作",
+          "furigana": "けっさく",
+          "romaji": "kessaku",
+          "english": "Pronounce: Masterpiece",
+          "audioText": "けっさく",
+          "targetSpeech": "傑作",
+          "options": [
+            "Masterpiece",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "傑作"
+        },
+        {
+          "id": "u28_l5_6",
+          "type": "dictate",
+          "prompt": "傑作です",
+          "furigana": "けっさくです",
+          "romaji": "kessaku desu.",
+          "english": "It is Masterpiece.",
+          "audioText": "傑作です",
+          "dictateTokens": [
+            "これ",
+            "ではありません",
+            "です",
+            "傑作"
+          ],
+          "dictateSolution": [
+            "傑作",
+            "です"
+          ],
+          "correctAnswer": "傑作です"
+        },
+        {
+          "id": "u28_l5_7",
+          "type": "match",
+          "prompt": "幽玄・風情・傑作・随筆の確認",
+          "furigana": "ゆうげん・ふぜい・けっさく・ずいひつのかくにん",
+          "romaji": "yuugen, fuzei, kessaku, zuihitsu no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ゆうげん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "幽玄",
+              "right": "Subtle grace and hidden beauty",
+              "furigana": "ゆうげん",
+              "romaji": "yuugen"
+            },
+            {
+              "id": "p_1",
+              "left": "風情",
+              "right": "Scenic taste / tasteful atmosphere",
+              "furigana": "ふぜい",
+              "romaji": "fuzei"
+            },
+            {
+              "id": "p_2",
+              "left": "傑作",
+              "right": "Masterpiece",
+              "furigana": "けっさく",
+              "romaji": "kessaku"
+            },
+            {
+              "id": "p_3",
+              "left": "随筆の確認",
+              "right": "Confirming Personal essay / literary miscellany",
+              "furigana": "ずいひつのかくにん",
+              "romaji": "zuihitsu no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l5_8",
+          "type": "dialogue",
+          "prompt": "随筆について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "随筆について教えていただけますか？",
+          "furigana": "随筆について教えていただけますか？",
+          "romaji": "zuihitsu ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Personal essay / literary miscellany?",
+          "audioText": "随筆について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u28_l6",
+      "unitId": "unit_28",
+      "lessonNumber": 6,
+      "dayNumber": 3,
+      "category": "Conversation",
+      "sectionTitle": null,
+      "iconType": "expression",
+      "title": "Confirming Personal essay / literary miscellany & Confirming Depiction / vivid description",
+      "titleJp": "随筆の確認・描写の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "随筆の確認",
+        "描写の確認",
+        "叙情的の確認"
+      ],
+      "kanjiKeywords": [
+        "随",
+        "筆",
+        "確",
+        "認",
+        "描",
+        "写",
+        "確",
+        "認",
+        "叙",
+        "情",
+        "的",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u28_l6_1",
+          "type": "listen",
+          "prompt": "随筆の確認",
+          "furigana": "ずいひつのかくにん",
+          "romaji": "zuihitsu no kakunin",
+          "english": "Confirming Personal essay / literary miscellany",
+          "audioText": "ずいひつのかくにん",
+          "options": [
+            "Confirming Atmosphere / evocative mood",
+            "Confirming Lingering resonance / aftertaste",
+            "Confirming Personal essay / literary miscellany",
+            "Confirming Masterpiece"
+          ],
+          "correctAnswer": "Confirming Personal essay / literary miscellany"
+        },
+        {
+          "id": "u28_l6_2",
+          "type": "spell",
+          "prompt": "随筆の確認",
+          "furigana": "ずいひつのかくにん",
+          "romaji": "zuihitsu no kakunin",
+          "english": "Build 'Confirming Personal essay / literary miscellany'",
+          "audioText": "ずいひつのかくにん",
+          "tileBank": [
+            "か",
+            "ず",
+            "ひ",
+            "に",
+            "く",
+            "つ",
+            "の",
+            "い"
+          ],
+          "correctAnswer": "ずいひつのかくにん"
+        },
+        {
+          "id": "u28_l6_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な描写の確認です。",
+          "furigana": "これはいちばんたいせつなびょうしゃのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na byousha no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Depiction / vivid description.",
+          "audioText": "これは描写の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な描写の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l6_4",
+          "type": "scramble",
+          "prompt": "これは描写の確認です",
+          "furigana": "これはびょうしゃのかくにんです",
+          "romaji": "Kore wa byousha no kakunin desu.",
+          "english": "This is Confirming Depiction / vivid description.",
+          "audioText": "これは描写の確認です",
+          "scrambleTokens": [
+            "それ",
+            "描写の確認",
+            "ではありません",
+            "です",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "描写の確認",
+            "です"
+          ],
+          "correctAnswer": "これは描写の確認です"
+        },
+        {
+          "id": "u28_l6_5",
+          "type": "speak",
+          "prompt": "叙情的の確認",
+          "furigana": "じょじょうてきのかくにん",
+          "romaji": "jojouteki no kakunin",
+          "english": "Pronounce: Confirming Lyrical / poetic emotionalism",
+          "audioText": "じょじょうてきのかくにん",
+          "targetSpeech": "叙情的の確認",
+          "options": [
+            "Confirming Lyrical / poetic emotionalism",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "叙情的の確認"
+        },
+        {
+          "id": "u28_l6_6",
+          "type": "dictate",
+          "prompt": "叙情的の確認です",
+          "furigana": "じょじょうてきのかくにんです",
+          "romaji": "jojouteki no kakunin desu.",
+          "english": "It is Confirming Lyrical / poetic emotionalism.",
+          "audioText": "叙情的の確認です",
+          "dictateTokens": [
+            "ではありません",
+            "叙情的の確認",
+            "これ",
+            "です"
+          ],
+          "dictateSolution": [
+            "叙情的の確認",
+            "です"
+          ],
+          "correctAnswer": "叙情的の確認です"
+        },
+        {
+          "id": "u28_l6_7",
+          "type": "match",
+          "prompt": "随筆の確認・描写の確認・叙情的の確認・比喩の確認",
+          "furigana": "ずいひつのかくにん・びょうしゃのかくにん・じょじょうてきのかくにん・ひゆのかくにん",
+          "romaji": "zuihitsu no kakunin, byousha no kakunin, jojouteki no kakunin, hiyu no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ずいひつのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "随筆の確認",
+              "right": "Confirming Personal essay / literary miscellany",
+              "furigana": "ずいひつのかくにん",
+              "romaji": "zuihitsu no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "描写の確認",
+              "right": "Confirming Depiction / vivid description",
+              "furigana": "びょうしゃのかくにん",
+              "romaji": "byousha no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "叙情的の確認",
+              "right": "Confirming Lyrical / poetic emotionalism",
+              "furigana": "じょじょうてきのかくにん",
+              "romaji": "jojouteki no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "比喩の確認",
+              "right": "Confirming Metaphor / simile",
+              "furigana": "ひゆのかくにん",
+              "romaji": "hiyu no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l6_8",
+          "type": "dialogue",
+          "prompt": "描写の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "描写の準備はできていますか？",
+          "furigana": "描写の準備はできていますか？",
+          "romaji": "byousha no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Depiction / vivid description ready?",
+          "audioText": "描写の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u28_l7",
+      "unitId": "unit_28",
+      "lessonNumber": 7,
+      "dayNumber": 3,
+      "category": "Practice",
+      "sectionTitle": "Grammar & Listening Drill",
+      "iconType": "practice",
+      "title": "Confirming Metaphor / simile & Confirming Atmosphere / evocative mood",
+      "titleJp": "比喩の確認・情緒の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "比喩の確認",
+        "情緒の確認",
+        "哀愁の確認"
+      ],
+      "kanjiKeywords": [
+        "比",
+        "喩",
+        "確",
+        "認",
+        "情",
+        "緒",
+        "確",
+        "認",
+        "哀",
+        "愁",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u28_l7_1",
+          "type": "listen",
+          "prompt": "比喩の確認",
+          "furigana": "ひゆのかくにん",
+          "romaji": "hiyu no kakunin",
+          "english": "Confirming Metaphor / simile",
+          "audioText": "ひゆのかくにん",
+          "options": [
+            "Confirming Metaphor / simile",
+            "Buddhist sense of impermanence",
+            "Subtle grace and hidden beauty",
+            "Confirming Subtle grace and hidden beauty"
+          ],
+          "correctAnswer": "Confirming Metaphor / simile"
+        },
+        {
+          "id": "u28_l7_2",
+          "type": "spell",
+          "prompt": "比喩の確認",
+          "furigana": "ひゆのかくにん",
+          "romaji": "hiyu no kakunin",
+          "english": "Build 'Confirming Metaphor / simile'",
+          "audioText": "ひゆのかくにん",
+          "tileBank": [
+            "に",
+            "く",
+            "の",
+            "ひ",
+            "ゆ",
+            "か",
+            "む",
+            "ん"
+          ],
+          "correctAnswer": "ひゆのかくにん"
+        },
+        {
+          "id": "u28_l7_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な情緒の確認です。",
+          "furigana": "これはいちばんたいせつなじょうちょのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na joutcho no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Atmosphere / evocative mood.",
+          "audioText": "これは情緒の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な情緒の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l7_4",
+          "type": "scramble",
+          "prompt": "これは情緒の確認です",
+          "furigana": "これはじょうちょのかくにんです",
+          "romaji": "Kore wa joutcho no kakunin desu.",
+          "english": "This is Confirming Atmosphere / evocative mood.",
+          "audioText": "これは情緒の確認です",
+          "scrambleTokens": [
+            "ではありません",
+            "情緒の確認",
+            "です",
+            "それ",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "情緒の確認",
+            "です"
+          ],
+          "correctAnswer": "これは情緒の確認です"
+        },
+        {
+          "id": "u28_l7_5",
+          "type": "speak",
+          "prompt": "哀愁の確認",
+          "furigana": "あいしゅうのかくにん",
+          "romaji": "aishuu no kakunin",
+          "english": "Pronounce: Confirming Melancholy / sorrowful charm",
+          "audioText": "あいしゅうのかくにん",
+          "targetSpeech": "哀愁の確認",
+          "options": [
+            "Confirming Melancholy / sorrowful charm",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "哀愁の確認"
+        },
+        {
+          "id": "u28_l7_6",
+          "type": "dictate",
+          "prompt": "哀愁の確認です",
+          "furigana": "あいしゅうのかくにんです",
+          "romaji": "aishuu no kakunin desu.",
+          "english": "It is Confirming Melancholy / sorrowful charm.",
+          "audioText": "哀愁の確認です",
+          "dictateTokens": [
+            "です",
+            "ではありません",
+            "これ",
+            "哀愁の確認"
+          ],
+          "dictateSolution": [
+            "哀愁の確認",
+            "です"
+          ],
+          "correctAnswer": "哀愁の確認です"
+        },
+        {
+          "id": "u28_l7_7",
+          "type": "match",
+          "prompt": "比喩の確認・情緒の確認・哀愁の確認・余韻の確認",
+          "furigana": "ひゆのかくにん・じょうちょのかくにん・あいしゅうのかくにん・よいんのかくにん",
+          "romaji": "hiyu no kakunin, joutcho no kakunin, aishuu no kakunin, yoin no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ひゆのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "比喩の確認",
+              "right": "Confirming Metaphor / simile",
+              "furigana": "ひゆのかくにん",
+              "romaji": "hiyu no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "情緒の確認",
+              "right": "Confirming Atmosphere / evocative mood",
+              "furigana": "じょうちょのかくにん",
+              "romaji": "joutcho no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "哀愁の確認",
+              "right": "Confirming Melancholy / sorrowful charm",
+              "furigana": "あいしゅうのかくにん",
+              "romaji": "aishuu no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "余韻の確認",
+              "right": "Confirming Lingering resonance / aftertaste",
+              "furigana": "よいんのかくにん",
+              "romaji": "yoin no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l7_8",
+          "type": "dialogue",
+          "prompt": "叙情的についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "叙情的についてどう思われますか？",
+          "furigana": "叙情的についてどう思われますか？",
+          "romaji": "jojouteki ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Lyrical / poetic emotionalism?",
+          "audioText": "叙情的についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u28_l8",
+      "unitId": "unit_28",
+      "lessonNumber": 8,
+      "dayNumber": 4,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Confirming Lingering resonance / aftertaste & Confirming Sentimentality",
+      "titleJp": "余韻の確認・感傷の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "余韻の確認",
+        "感傷の確認",
+        "無常観の確認"
+      ],
+      "kanjiKeywords": [
+        "余",
+        "韻",
+        "確",
+        "認",
+        "感",
+        "傷",
+        "確",
+        "認",
+        "無",
+        "常",
+        "観",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u28_l8_1",
+          "type": "listen",
+          "prompt": "余韻の確認",
+          "furigana": "よいんのかくにん",
+          "romaji": "yoin no kakunin",
+          "english": "Confirming Lingering resonance / aftertaste",
+          "audioText": "よいんのかくにん",
+          "options": [
+            "Confirming Lingering resonance / aftertaste",
+            "Lingering resonance / aftertaste",
+            "Buddhist sense of impermanence",
+            "Confirming Melancholy / sorrowful charm"
+          ],
+          "correctAnswer": "Confirming Lingering resonance / aftertaste"
+        },
+        {
+          "id": "u28_l8_2",
+          "type": "spell",
+          "prompt": "余韻の確認",
+          "furigana": "よいんのかくにん",
+          "romaji": "yoin no kakunin",
+          "english": "Build 'Confirming Lingering resonance / aftertaste'",
+          "audioText": "よいんのかくにん",
+          "tileBank": [
+            "ん",
+            "か",
+            "に",
+            "い",
+            "よ",
+            "く",
+            "の",
+            "ん"
+          ],
+          "correctAnswer": "よいんのかくにん"
+        },
+        {
+          "id": "u28_l8_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な感傷の確認です。",
+          "furigana": "これはいちばんたいせつなかんしょうのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na kanshou no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Sentimentality.",
+          "audioText": "これは感傷の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な感傷の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l8_4",
+          "type": "scramble",
+          "prompt": "これは感傷の確認です",
+          "furigana": "これはかんしょうのかくにんです",
+          "romaji": "Kore wa kanshou no kakunin desu.",
+          "english": "This is Confirming Sentimentality.",
+          "audioText": "これは感傷の確認です",
+          "scrambleTokens": [
+            "感傷の確認",
+            "それ",
+            "これは",
+            "です",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "感傷の確認",
+            "です"
+          ],
+          "correctAnswer": "これは感傷の確認です"
+        },
+        {
+          "id": "u28_l8_5",
+          "type": "speak",
+          "prompt": "無常観の確認",
+          "furigana": "むじょうかんのかくにん",
+          "romaji": "mujoukan no kakunin",
+          "english": "Pronounce: Confirming Buddhist sense of impermanence",
+          "audioText": "むじょうかんのかくにん",
+          "targetSpeech": "無常観の確認",
+          "options": [
+            "Confirming Buddhist sense of impermanence",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "無常観の確認"
+        },
+        {
+          "id": "u28_l8_6",
+          "type": "dictate",
+          "prompt": "無常観の確認です",
+          "furigana": "むじょうかんのかくにんです",
+          "romaji": "mujoukan no kakunin desu.",
+          "english": "It is Confirming Buddhist sense of impermanence.",
+          "audioText": "無常観の確認です",
+          "dictateTokens": [
+            "です",
+            "これ",
+            "ではありません",
+            "無常観の確認"
+          ],
+          "dictateSolution": [
+            "無常観の確認",
+            "です"
+          ],
+          "correctAnswer": "無常観の確認です"
+        },
+        {
+          "id": "u28_l8_7",
+          "type": "match",
+          "prompt": "余韻の確認・感傷の確認・無常観の確認・文体の確認",
+          "furigana": "よいんのかくにん・かんしょうのかくにん・むじょうかんのかくにん・ぶんたいのかくにん",
+          "romaji": "yoin no kakunin, kanshou no kakunin, mujoukan no kakunin, buntai no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "よいんのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "余韻の確認",
+              "right": "Confirming Lingering resonance / aftertaste",
+              "furigana": "よいんのかくにん",
+              "romaji": "yoin no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "感傷の確認",
+              "right": "Confirming Sentimentality",
+              "furigana": "かんしょうのかくにん",
+              "romaji": "kanshou no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "無常観の確認",
+              "right": "Confirming Buddhist sense of impermanence",
+              "furigana": "むじょうかんのかくにん",
+              "romaji": "mujoukan no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "文体の確認",
+              "right": "Confirming Literary style",
+              "furigana": "ぶんたいのかくにん",
+              "romaji": "buntai no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l8_8",
+          "type": "dialogue",
+          "prompt": "次は比喩に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は比喩に進みましょう。",
+          "furigana": "次は比喩に進みましょう。",
+          "romaji": "Tsugi wa hiyu ni susumimashou.",
+          "english": "Speaker: Let's proceed to Metaphor / simile next.",
+          "audioText": "次は比喩に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u28_l9",
+      "unitId": "unit_28",
+      "lessonNumber": 9,
+      "dayNumber": 4,
+      "category": "Expression",
+      "sectionTitle": "Nuance, Pitch & Intonation",
+      "iconType": "expression",
+      "title": "Confirming Literary style & Confirming Between the lines",
+      "titleJp": "文体の確認・行間の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "文体の確認",
+        "行間の確認",
+        "深淵の確認"
+      ],
+      "kanjiKeywords": [
+        "文",
+        "体",
+        "確",
+        "認",
+        "行",
+        "間",
+        "確",
+        "認",
+        "深",
+        "淵",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u28_l9_1",
+          "type": "listen",
+          "prompt": "文体の確認",
+          "furigana": "ぶんたいのかくにん",
+          "romaji": "buntai no kakunin",
+          "english": "Confirming Literary style",
+          "audioText": "ぶんたいのかくにん",
+          "options": [
+            "Confirming Literary style",
+            "Confirming Depiction / vivid description",
+            "Confirming Atmosphere / evocative mood",
+            "Confirming Personal essay / literary miscellany"
+          ],
+          "correctAnswer": "Confirming Literary style"
+        },
+        {
+          "id": "u28_l9_2",
+          "type": "spell",
+          "prompt": "文体の確認",
+          "furigana": "ぶんたいのかくにん",
+          "romaji": "buntai no kakunin",
+          "english": "Build 'Confirming Literary style'",
+          "audioText": "ぶんたいのかくにん",
+          "tileBank": [
+            "た",
+            "の",
+            "に",
+            "く",
+            "か",
+            "い",
+            "ん",
+            "ぶ"
+          ],
+          "correctAnswer": "ぶんたいのかくにん"
+        },
+        {
+          "id": "u28_l9_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な行間の確認です。",
+          "furigana": "これはいちばんたいせつなぎょうかんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na gyoukan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Between the lines.",
+          "audioText": "これは行間の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な行間の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l9_4",
+          "type": "scramble",
+          "prompt": "これは行間の確認です",
+          "furigana": "これはぎょうかんのかくにんです",
+          "romaji": "Kore wa gyoukan no kakunin desu.",
+          "english": "This is Confirming Between the lines.",
+          "audioText": "これは行間の確認です",
+          "scrambleTokens": [
+            "これは",
+            "です",
+            "行間の確認",
+            "ではありません",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "行間の確認",
+            "です"
+          ],
+          "correctAnswer": "これは行間の確認です"
+        },
+        {
+          "id": "u28_l9_5",
+          "type": "speak",
+          "prompt": "深淵の確認",
+          "furigana": "しんえんのかくにん",
+          "romaji": "shin-en no kakunin",
+          "english": "Pronounce: Confirming Abyss / profound depth",
+          "audioText": "しんえんのかくにん",
+          "targetSpeech": "深淵の確認",
+          "options": [
+            "Confirming Abyss / profound depth",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "深淵の確認"
+        },
+        {
+          "id": "u28_l9_6",
+          "type": "dictate",
+          "prompt": "深淵の確認です",
+          "furigana": "しんえんのかくにんです",
+          "romaji": "shin-en no kakunin desu.",
+          "english": "It is Confirming Abyss / profound depth.",
+          "audioText": "深淵の確認です",
+          "dictateTokens": [
+            "ではありません",
+            "これ",
+            "深淵の確認",
+            "です"
+          ],
+          "dictateSolution": [
+            "深淵の確認",
+            "です"
+          ],
+          "correctAnswer": "深淵の確認です"
+        },
+        {
+          "id": "u28_l9_7",
+          "type": "match",
+          "prompt": "文体の確認・行間の確認・深淵の確認・幽玄の確認",
+          "furigana": "ぶんたいのかくにん・ぎょうかんのかくにん・しんえんのかくにん・ゆうげんのかくにん",
+          "romaji": "buntai no kakunin, gyoukan no kakunin, shin-en no kakunin, yuugen no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ぶんたいのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "文体の確認",
+              "right": "Confirming Literary style",
+              "furigana": "ぶんたいのかくにん",
+              "romaji": "buntai no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "行間の確認",
+              "right": "Confirming Between the lines",
+              "furigana": "ぎょうかんのかくにん",
+              "romaji": "gyoukan no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "深淵の確認",
+              "right": "Confirming Abyss / profound depth",
+              "furigana": "しんえんのかくにん",
+              "romaji": "shin-en no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "幽玄の確認",
+              "right": "Confirming Subtle grace and hidden beauty",
+              "furigana": "ゆうげんのかくにん",
+              "romaji": "yuugen no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l9_8",
+          "type": "dialogue",
+          "prompt": "随筆について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "随筆について教えていただけますか？",
+          "furigana": "随筆について教えていただけますか？",
+          "romaji": "zuihitsu ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Personal essay / literary miscellany?",
+          "audioText": "随筆について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u28_l10",
+      "unitId": "unit_28",
+      "lessonNumber": 10,
+      "dayNumber": 5,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Confirming Subtle grace and hidden beauty & Confirming Scenic taste / tasteful atmosphere",
+      "titleJp": "幽玄の確認・風情の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "幽玄の確認",
+        "風情の確認",
+        "傑作の確認"
+      ],
+      "kanjiKeywords": [
+        "幽",
+        "玄",
+        "確",
+        "認",
+        "風",
+        "情",
+        "確",
+        "認",
+        "傑",
+        "作",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u28_l10_1",
+          "type": "listen",
+          "prompt": "幽玄の確認",
+          "furigana": "ゆうげんのかくにん",
+          "romaji": "yuugen no kakunin",
+          "english": "Confirming Subtle grace and hidden beauty",
+          "audioText": "ゆうげんのかくにん",
+          "options": [
+            "Confirming Subtle grace and hidden beauty",
+            "Buddhist sense of impermanence",
+            "Melancholy / sorrowful charm",
+            "Confirming Scenic taste / tasteful atmosphere"
+          ],
+          "correctAnswer": "Confirming Subtle grace and hidden beauty"
+        },
+        {
+          "id": "u28_l10_2",
+          "type": "spell",
+          "prompt": "幽玄の確認",
+          "furigana": "ゆうげんのかくにん",
+          "romaji": "yuugen no kakunin",
+          "english": "Build 'Confirming Subtle grace and hidden beauty'",
+          "audioText": "ゆうげんのかくにん",
+          "tileBank": [
+            "ゆ",
+            "の",
+            "う",
+            "か",
+            "く",
+            "に",
+            "げ",
+            "ん"
+          ],
+          "correctAnswer": "ゆうげんのかくにん"
+        },
+        {
+          "id": "u28_l10_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な風情の確認です。",
+          "furigana": "これはいちばんたいせつなふぜいのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na fuzei no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Scenic taste / tasteful atmosphere.",
+          "audioText": "これは風情の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な風情の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l10_4",
+          "type": "scramble",
+          "prompt": "これは風情の確認です",
+          "furigana": "これはふぜいのかくにんです",
+          "romaji": "Kore wa fuzei no kakunin desu.",
+          "english": "This is Confirming Scenic taste / tasteful atmosphere.",
+          "audioText": "これは風情の確認です",
+          "scrambleTokens": [
+            "です",
+            "ではありません",
+            "風情の確認",
+            "これは",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "風情の確認",
+            "です"
+          ],
+          "correctAnswer": "これは風情の確認です"
+        },
+        {
+          "id": "u28_l10_5",
+          "type": "speak",
+          "prompt": "傑作の確認",
+          "furigana": "けっさくのかくにん",
+          "romaji": "kessaku no kakunin",
+          "english": "Pronounce: Confirming Masterpiece",
+          "audioText": "けっさくのかくにん",
+          "targetSpeech": "傑作の確認",
+          "options": [
+            "Confirming Masterpiece",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "傑作の確認"
+        },
+        {
+          "id": "u28_l10_6",
+          "type": "dictate",
+          "prompt": "傑作の確認です",
+          "furigana": "けっさくのかくにんです",
+          "romaji": "kessaku no kakunin desu.",
+          "english": "It is Confirming Masterpiece.",
+          "audioText": "傑作の確認です",
+          "dictateTokens": [
+            "これ",
+            "ではありません",
+            "傑作の確認",
+            "です"
+          ],
+          "dictateSolution": [
+            "傑作の確認",
+            "です"
+          ],
+          "correctAnswer": "傑作の確認です"
+        },
+        {
+          "id": "u28_l10_7",
+          "type": "match",
+          "prompt": "幽玄の確認・風情の確認・傑作の確認・随筆の確認",
+          "furigana": "ゆうげんのかくにん・ふぜいのかくにん・けっさくのかくにん・ずいひつのかくにん",
+          "romaji": "yuugen no kakunin, fuzei no kakunin, kessaku no kakunin, zuihitsu no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ゆうげんのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "幽玄の確認",
+              "right": "Confirming Subtle grace and hidden beauty",
+              "furigana": "ゆうげんのかくにん",
+              "romaji": "yuugen no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "風情の確認",
+              "right": "Confirming Scenic taste / tasteful atmosphere",
+              "furigana": "ふぜいのかくにん",
+              "romaji": "fuzei no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "傑作の確認",
+              "right": "Confirming Masterpiece",
+              "furigana": "けっさくのかくにん",
+              "romaji": "kessaku no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "随筆の確認",
+              "right": "Confirming Personal essay / literary miscellany",
+              "furigana": "ずいひつのかくにん",
+              "romaji": "zuihitsu no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l10_8",
+          "type": "dialogue",
+          "prompt": "描写の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "描写の準備はできていますか？",
+          "furigana": "描写の準備はできていますか？",
+          "romaji": "byousha no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Depiction / vivid description ready?",
+          "audioText": "描写の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u28_l11",
+      "unitId": "unit_28",
+      "lessonNumber": 11,
+      "dayNumber": 5,
+      "category": "Practice",
+      "sectionTitle": "Speed Assembly & Fluency",
+      "iconType": "practice",
+      "title": "Confirming Personal essay / literary miscellany & Confirming Depiction / vivid description",
+      "titleJp": "随筆の確認・描写の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "随筆の確認",
+        "描写の確認",
+        "叙情的の確認"
+      ],
+      "kanjiKeywords": [
+        "随",
+        "筆",
+        "確",
+        "認",
+        "描",
+        "写",
+        "確",
+        "認",
+        "叙",
+        "情",
+        "的",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u28_l11_1",
+          "type": "listen",
+          "prompt": "随筆の確認",
+          "furigana": "ずいひつのかくにん",
+          "romaji": "zuihitsu no kakunin",
+          "english": "Confirming Personal essay / literary miscellany",
+          "audioText": "ずいひつのかくにん",
+          "options": [
+            "Confirming Personal essay / literary miscellany",
+            "Confirming Masterpiece",
+            "Buddhist sense of impermanence",
+            "Confirming Buddhist sense of impermanence"
+          ],
+          "correctAnswer": "Confirming Personal essay / literary miscellany"
+        },
+        {
+          "id": "u28_l11_2",
+          "type": "spell",
+          "prompt": "随筆の確認",
+          "furigana": "ずいひつのかくにん",
+          "romaji": "zuihitsu no kakunin",
+          "english": "Build 'Confirming Personal essay / literary miscellany'",
+          "audioText": "ずいひつのかくにん",
+          "tileBank": [
+            "く",
+            "い",
+            "ひ",
+            "つ",
+            "ず",
+            "に",
+            "の",
+            "か"
+          ],
+          "correctAnswer": "ずいひつのかくにん"
+        },
+        {
+          "id": "u28_l11_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な描写の確認です。",
+          "furigana": "これはいちばんたいせつなびょうしゃのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na byousha no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Depiction / vivid description.",
+          "audioText": "これは描写の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な描写の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l11_4",
+          "type": "scramble",
+          "prompt": "これは描写の確認です",
+          "furigana": "これはびょうしゃのかくにんです",
+          "romaji": "Kore wa byousha no kakunin desu.",
+          "english": "This is Confirming Depiction / vivid description.",
+          "audioText": "これは描写の確認です",
+          "scrambleTokens": [
+            "それ",
+            "ではありません",
+            "描写の確認",
+            "です",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "描写の確認",
+            "です"
+          ],
+          "correctAnswer": "これは描写の確認です"
+        },
+        {
+          "id": "u28_l11_5",
+          "type": "speak",
+          "prompt": "叙情的の確認",
+          "furigana": "じょじょうてきのかくにん",
+          "romaji": "jojouteki no kakunin",
+          "english": "Pronounce: Confirming Lyrical / poetic emotionalism",
+          "audioText": "じょじょうてきのかくにん",
+          "targetSpeech": "叙情的の確認",
+          "options": [
+            "Confirming Lyrical / poetic emotionalism",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "叙情的の確認"
+        },
+        {
+          "id": "u28_l11_6",
+          "type": "dictate",
+          "prompt": "叙情的の確認です",
+          "furigana": "じょじょうてきのかくにんです",
+          "romaji": "jojouteki no kakunin desu.",
+          "english": "It is Confirming Lyrical / poetic emotionalism.",
+          "audioText": "叙情的の確認です",
+          "dictateTokens": [
+            "叙情的の確認",
+            "です",
+            "これ",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "叙情的の確認",
+            "です"
+          ],
+          "correctAnswer": "叙情的の確認です"
+        },
+        {
+          "id": "u28_l11_7",
+          "type": "match",
+          "prompt": "随筆の確認・描写の確認・叙情的の確認・比喩の確認",
+          "furigana": "ずいひつのかくにん・びょうしゃのかくにん・じょじょうてきのかくにん・ひゆのかくにん",
+          "romaji": "zuihitsu no kakunin, byousha no kakunin, jojouteki no kakunin, hiyu no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ずいひつのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "随筆の確認",
+              "right": "Confirming Personal essay / literary miscellany",
+              "furigana": "ずいひつのかくにん",
+              "romaji": "zuihitsu no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "描写の確認",
+              "right": "Confirming Depiction / vivid description",
+              "furigana": "びょうしゃのかくにん",
+              "romaji": "byousha no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "叙情的の確認",
+              "right": "Confirming Lyrical / poetic emotionalism",
+              "furigana": "じょじょうてきのかくにん",
+              "romaji": "jojouteki no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "比喩の確認",
+              "right": "Confirming Metaphor / simile",
+              "furigana": "ひゆのかくにん",
+              "romaji": "hiyu no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l11_8",
+          "type": "dialogue",
+          "prompt": "叙情的についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "叙情的についてどう思われますか？",
+          "furigana": "叙情的についてどう思われますか？",
+          "romaji": "jojouteki ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Lyrical / poetic emotionalism?",
+          "audioText": "叙情的についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u28_l12",
+      "unitId": "unit_28",
+      "lessonNumber": 12,
+      "dayNumber": 6,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Confirming Metaphor / simile & Confirming Atmosphere / evocative mood",
+      "titleJp": "比喩の確認・情緒の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "比喩の確認",
+        "情緒の確認",
+        "哀愁の確認"
+      ],
+      "kanjiKeywords": [
+        "比",
+        "喩",
+        "確",
+        "認",
+        "情",
+        "緒",
+        "確",
+        "認",
+        "哀",
+        "愁",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u28_l12_1",
+          "type": "listen",
+          "prompt": "比喩の確認",
+          "furigana": "ひゆのかくにん",
+          "romaji": "hiyu no kakunin",
+          "english": "Confirming Metaphor / simile",
+          "audioText": "ひゆのかくにん",
+          "options": [
+            "Melancholy / sorrowful charm",
+            "Masterpiece",
+            "Confirming Metaphor / simile",
+            "Subtle grace and hidden beauty"
+          ],
+          "correctAnswer": "Confirming Metaphor / simile"
+        },
+        {
+          "id": "u28_l12_2",
+          "type": "spell",
+          "prompt": "比喩の確認",
+          "furigana": "ひゆのかくにん",
+          "romaji": "hiyu no kakunin",
+          "english": "Build 'Confirming Metaphor / simile'",
+          "audioText": "ひゆのかくにん",
+          "tileBank": [
+            "か",
+            "に",
+            "ひ",
+            "く",
+            "の",
+            "ゆ",
+            "ん",
+            "お"
+          ],
+          "correctAnswer": "ひゆのかくにん"
+        },
+        {
+          "id": "u28_l12_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な情緒の確認です。",
+          "furigana": "これはいちばんたいせつなじょうちょのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na joutcho no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Atmosphere / evocative mood.",
+          "audioText": "これは情緒の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な情緒の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l12_4",
+          "type": "scramble",
+          "prompt": "これは情緒の確認です",
+          "furigana": "これはじょうちょのかくにんです",
+          "romaji": "Kore wa joutcho no kakunin desu.",
+          "english": "This is Confirming Atmosphere / evocative mood.",
+          "audioText": "これは情緒の確認です",
+          "scrambleTokens": [
+            "それ",
+            "これは",
+            "情緒の確認",
+            "ではありません",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "情緒の確認",
+            "です"
+          ],
+          "correctAnswer": "これは情緒の確認です"
+        },
+        {
+          "id": "u28_l12_5",
+          "type": "speak",
+          "prompt": "哀愁の確認",
+          "furigana": "あいしゅうのかくにん",
+          "romaji": "aishuu no kakunin",
+          "english": "Pronounce: Confirming Melancholy / sorrowful charm",
+          "audioText": "あいしゅうのかくにん",
+          "targetSpeech": "哀愁の確認",
+          "options": [
+            "Confirming Melancholy / sorrowful charm",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "哀愁の確認"
+        },
+        {
+          "id": "u28_l12_6",
+          "type": "dictate",
+          "prompt": "哀愁の確認です",
+          "furigana": "あいしゅうのかくにんです",
+          "romaji": "aishuu no kakunin desu.",
+          "english": "It is Confirming Melancholy / sorrowful charm.",
+          "audioText": "哀愁の確認です",
+          "dictateTokens": [
+            "これ",
+            "です",
+            "ではありません",
+            "哀愁の確認"
+          ],
+          "dictateSolution": [
+            "哀愁の確認",
+            "です"
+          ],
+          "correctAnswer": "哀愁の確認です"
+        },
+        {
+          "id": "u28_l12_7",
+          "type": "match",
+          "prompt": "比喩の確認・情緒の確認・哀愁の確認・随筆",
+          "furigana": "ひゆのかくにん・じょうちょのかくにん・あいしゅうのかくにん・ずいひつ",
+          "romaji": "hiyu no kakunin, joutcho no kakunin, aishuu no kakunin, zuihitsu",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ひゆのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "比喩の確認",
+              "right": "Confirming Metaphor / simile",
+              "furigana": "ひゆのかくにん",
+              "romaji": "hiyu no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "情緒の確認",
+              "right": "Confirming Atmosphere / evocative mood",
+              "furigana": "じょうちょのかくにん",
+              "romaji": "joutcho no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "哀愁の確認",
+              "right": "Confirming Melancholy / sorrowful charm",
+              "furigana": "あいしゅうのかくにん",
+              "romaji": "aishuu no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "随筆",
+              "right": "Personal essay / literary miscellany",
+              "furigana": "ずいひつ",
+              "romaji": "zuihitsu"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l12_8",
+          "type": "dialogue",
+          "prompt": "次は比喩に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は比喩に進みましょう。",
+          "furigana": "次は比喩に進みましょう。",
+          "romaji": "Tsugi wa hiyu ni susumimashou.",
+          "english": "Speaker: Let's proceed to Metaphor / simile next.",
+          "audioText": "次は比喩に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u28_l13",
+      "unitId": "unit_28",
+      "lessonNumber": 13,
+      "dayNumber": 6,
+      "category": "Expression",
+      "sectionTitle": null,
+      "iconType": "expression",
+      "title": "Personal essay / literary miscellany & Depiction / vivid description",
+      "titleJp": "随筆・描写",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "随筆",
+        "描写",
+        "叙情的"
+      ],
+      "kanjiKeywords": [
+        "随",
+        "筆",
+        "描",
+        "写",
+        "叙",
+        "情",
+        "的"
+      ],
+      "items": [
+        {
+          "id": "u28_l13_1",
+          "type": "listen",
+          "prompt": "随筆",
+          "furigana": "ずいひつ",
+          "romaji": "zuihitsu",
+          "english": "Personal essay / literary miscellany",
+          "audioText": "ずいひつ",
+          "options": [
+            "Lingering resonance / aftertaste",
+            "Confirming Subtle grace and hidden beauty",
+            "Personal essay / literary miscellany",
+            "Lyrical / poetic emotionalism"
+          ],
+          "correctAnswer": "Personal essay / literary miscellany"
+        },
+        {
+          "id": "u28_l13_2",
+          "type": "spell",
+          "prompt": "随筆",
+          "furigana": "ずいひつ",
+          "romaji": "zuihitsu",
+          "english": "Build 'Personal essay / literary miscellany'",
+          "audioText": "ずいひつ",
+          "tileBank": [
+            "ず",
+            "め",
+            "も",
+            "い",
+            "ひ",
+            "つ",
+            "け",
+            "て"
+          ],
+          "correctAnswer": "ずいひつ"
+        },
+        {
+          "id": "u28_l13_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な描写です。",
+          "furigana": "これはいちばんたいせつなびょうしゃです。",
+          "romaji": "Kore wa ichiban taisetsu na byousha desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Depiction / vivid description.",
+          "audioText": "これは描写です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な描写です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l13_4",
+          "type": "scramble",
+          "prompt": "これは描写です",
+          "furigana": "これはびょうしゃです",
+          "romaji": "Kore wa byousha desu.",
+          "english": "This is Depiction / vivid description.",
+          "audioText": "これは描写です",
+          "scrambleTokens": [
+            "ではありません",
+            "これは",
+            "それ",
+            "です",
+            "描写"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "描写",
+            "です"
+          ],
+          "correctAnswer": "これは描写です"
+        },
+        {
+          "id": "u28_l13_5",
+          "type": "speak",
+          "prompt": "叙情的",
+          "furigana": "じょじょうてき",
+          "romaji": "jojouteki",
+          "english": "Pronounce: Lyrical / poetic emotionalism",
+          "audioText": "じょじょうてき",
+          "targetSpeech": "叙情的",
+          "options": [
+            "Lyrical / poetic emotionalism",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "叙情的"
+        },
+        {
+          "id": "u28_l13_6",
+          "type": "dictate",
+          "prompt": "叙情的です",
+          "furigana": "じょじょうてきです",
+          "romaji": "jojouteki desu.",
+          "english": "It is Lyrical / poetic emotionalism.",
+          "audioText": "叙情的です",
+          "dictateTokens": [
+            "叙情的",
+            "です",
+            "これ",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "叙情的",
+            "です"
+          ],
+          "correctAnswer": "叙情的です"
+        },
+        {
+          "id": "u28_l13_7",
+          "type": "match",
+          "prompt": "随筆・描写・叙情的・比喩",
+          "furigana": "ずいひつ・びょうしゃ・じょじょうてき・ひゆ",
+          "romaji": "zuihitsu, byousha, jojouteki, hiyu",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ずいひつ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "随筆",
+              "right": "Personal essay / literary miscellany",
+              "furigana": "ずいひつ",
+              "romaji": "zuihitsu"
+            },
+            {
+              "id": "p_1",
+              "left": "描写",
+              "right": "Depiction / vivid description",
+              "furigana": "びょうしゃ",
+              "romaji": "byousha"
+            },
+            {
+              "id": "p_2",
+              "left": "叙情的",
+              "right": "Lyrical / poetic emotionalism",
+              "furigana": "じょじょうてき",
+              "romaji": "jojouteki"
+            },
+            {
+              "id": "p_3",
+              "left": "比喩",
+              "right": "Metaphor / simile",
+              "furigana": "ひゆ",
+              "romaji": "hiyu"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l13_8",
+          "type": "dialogue",
+          "prompt": "随筆について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "随筆について教えていただけますか？",
+          "furigana": "随筆について教えていただけますか？",
+          "romaji": "zuihitsu ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Personal essay / literary miscellany?",
+          "audioText": "随筆について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u28_l14",
+      "unitId": "unit_28",
+      "lessonNumber": 14,
+      "dayNumber": 6,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Metaphor / simile & Atmosphere / evocative mood",
+      "titleJp": "比喩・情緒",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "比喩",
+        "情緒",
+        "哀愁"
+      ],
+      "kanjiKeywords": [
+        "比",
+        "喩",
+        "情",
+        "緒",
+        "哀",
+        "愁"
+      ],
+      "items": [
+        {
+          "id": "u28_l14_1",
+          "type": "listen",
+          "prompt": "比喩",
+          "furigana": "ひゆ",
+          "romaji": "hiyu",
+          "english": "Metaphor / simile",
+          "audioText": "ひゆ",
+          "options": [
+            "Between the lines",
+            "Metaphor / simile",
+            "Literary style",
+            "Confirming Literary style"
+          ],
+          "correctAnswer": "Metaphor / simile"
+        },
+        {
+          "id": "u28_l14_2",
+          "type": "spell",
+          "prompt": "比喩",
+          "furigana": "ひゆ",
+          "romaji": "hiyu",
+          "english": "Build 'Metaphor / simile'",
+          "audioText": "ひゆ",
+          "tileBank": [
+            "を",
+            "あ",
+            "ま",
+            "ゆ",
+            "は",
+            "り",
+            "め",
+            "ひ"
+          ],
+          "correctAnswer": "ひゆ"
+        },
+        {
+          "id": "u28_l14_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な情緒です。",
+          "furigana": "これはいちばんたいせつなじょうちょです。",
+          "romaji": "Kore wa ichiban taisetsu na joutcho desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Atmosphere / evocative mood.",
+          "audioText": "これは情緒です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な情緒です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l14_4",
+          "type": "scramble",
+          "prompt": "これは情緒です",
+          "furigana": "これはじょうちょです",
+          "romaji": "Kore wa joutcho desu.",
+          "english": "This is Atmosphere / evocative mood.",
+          "audioText": "これは情緒です",
+          "scrambleTokens": [
+            "情緒",
+            "ではありません",
+            "それ",
+            "これは",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "情緒",
+            "です"
+          ],
+          "correctAnswer": "これは情緒です"
+        },
+        {
+          "id": "u28_l14_5",
+          "type": "speak",
+          "prompt": "哀愁",
+          "furigana": "あいしゅう",
+          "romaji": "aishuu",
+          "english": "Pronounce: Melancholy / sorrowful charm",
+          "audioText": "あいしゅう",
+          "targetSpeech": "哀愁",
+          "options": [
+            "Melancholy / sorrowful charm",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "哀愁"
+        },
+        {
+          "id": "u28_l14_6",
+          "type": "dictate",
+          "prompt": "哀愁です",
+          "furigana": "あいしゅうです",
+          "romaji": "aishuu desu.",
+          "english": "It is Melancholy / sorrowful charm.",
+          "audioText": "哀愁です",
+          "dictateTokens": [
+            "ではありません",
+            "哀愁",
+            "です",
+            "これ"
+          ],
+          "dictateSolution": [
+            "哀愁",
+            "です"
+          ],
+          "correctAnswer": "哀愁です"
+        },
+        {
+          "id": "u28_l14_7",
+          "type": "match",
+          "prompt": "比喩・情緒・哀愁・余韻",
+          "furigana": "ひゆ・じょうちょ・あいしゅう・よいん",
+          "romaji": "hiyu, joutcho, aishuu, yoin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "ひゆ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "比喩",
+              "right": "Metaphor / simile",
+              "furigana": "ひゆ",
+              "romaji": "hiyu"
+            },
+            {
+              "id": "p_1",
+              "left": "情緒",
+              "right": "Atmosphere / evocative mood",
+              "furigana": "じょうちょ",
+              "romaji": "joutcho"
+            },
+            {
+              "id": "p_2",
+              "left": "哀愁",
+              "right": "Melancholy / sorrowful charm",
+              "furigana": "あいしゅう",
+              "romaji": "aishuu"
+            },
+            {
+              "id": "p_3",
+              "left": "余韻",
+              "right": "Lingering resonance / aftertaste",
+              "furigana": "よいん",
+              "romaji": "yoin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l14_8",
+          "type": "dialogue",
+          "prompt": "描写の準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "描写の準備はできていますか？",
+          "furigana": "描写の準備はできていますか？",
+          "romaji": "byousha no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Depiction / vivid description ready?",
+          "audioText": "描写の準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u28_l15",
+      "unitId": "unit_28",
+      "lessonNumber": 15,
+      "dayNumber": 7,
+      "category": "Unit Test",
+      "sectionTitle": "Unit 28 Master Exam",
+      "iconType": "test",
+      "title": "Unit 28 Master Exam",
+      "titleJp": "第28週 総合試験",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "余韻",
+        "感傷",
+        "無常観"
+      ],
+      "kanjiKeywords": [
+        "余",
+        "韻",
+        "感",
+        "傷",
+        "無",
+        "常",
+        "観"
+      ],
+      "items": [
+        {
+          "id": "u28_l15_1",
+          "type": "listen",
+          "prompt": "余韻",
+          "furigana": "よいん",
+          "romaji": "yoin",
+          "english": "Lingering resonance / aftertaste",
+          "audioText": "よいん",
+          "options": [
+            "Confirming Sentimentality",
+            "Scenic taste / tasteful atmosphere",
+            "Masterpiece",
+            "Lingering resonance / aftertaste"
+          ],
+          "correctAnswer": "Lingering resonance / aftertaste"
+        },
+        {
+          "id": "u28_l15_2",
+          "type": "spell",
+          "prompt": "余韻",
+          "furigana": "よいん",
+          "romaji": "yoin",
+          "english": "Build 'Lingering resonance / aftertaste'",
+          "audioText": "よいん",
+          "tileBank": [
+            "る",
+            "な",
+            "い",
+            "よ",
+            "つ",
+            "と",
+            "ぬ",
+            "ん"
+          ],
+          "correctAnswer": "よいん"
+        },
+        {
+          "id": "u28_l15_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な感傷です。",
+          "furigana": "これはいちばんたいせつなかんしょうです。",
+          "romaji": "Kore wa ichiban taisetsu na kanshou desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Sentimentality.",
+          "audioText": "これは感傷です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な感傷です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u28_l15_4",
+          "type": "scramble",
+          "prompt": "これは感傷です",
+          "furigana": "これはかんしょうです",
+          "romaji": "Kore wa kanshou desu.",
+          "english": "This is Sentimentality.",
+          "audioText": "これは感傷です",
+          "scrambleTokens": [
+            "それ",
+            "感傷",
+            "です",
+            "ではありません",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "感傷",
+            "です"
+          ],
+          "correctAnswer": "これは感傷です"
+        },
+        {
+          "id": "u28_l15_5",
+          "type": "speak",
+          "prompt": "無常観",
+          "furigana": "むじょうかん",
+          "romaji": "mujoukan",
+          "english": "Pronounce: Buddhist sense of impermanence",
+          "audioText": "むじょうかん",
+          "targetSpeech": "無常観",
+          "options": [
+            "Buddhist sense of impermanence",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "無常観"
+        },
+        {
+          "id": "u28_l15_6",
+          "type": "dictate",
+          "prompt": "無常観です",
+          "furigana": "むじょうかんです",
+          "romaji": "mujoukan desu.",
+          "english": "It is Buddhist sense of impermanence.",
+          "audioText": "無常観です",
+          "dictateTokens": [
+            "無常観",
+            "ではありません",
+            "です",
+            "これ"
+          ],
+          "dictateSolution": [
+            "無常観",
+            "です"
+          ],
+          "correctAnswer": "無常観です"
+        },
+        {
+          "id": "u28_l15_7",
+          "type": "match",
+          "prompt": "余韻・感傷・無常観・文体",
+          "furigana": "よいん・かんしょう・むじょうかん・ぶんたい",
+          "romaji": "yoin, kanshou, mujoukan, buntai",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "よいん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "余韻",
+              "right": "Lingering resonance / aftertaste",
+              "furigana": "よいん",
+              "romaji": "yoin"
+            },
+            {
+              "id": "p_1",
+              "left": "感傷",
+              "right": "Sentimentality",
+              "furigana": "かんしょう",
+              "romaji": "kanshou"
+            },
+            {
+              "id": "p_2",
+              "left": "無常観",
+              "right": "Buddhist sense of impermanence",
+              "furigana": "むじょうかん",
+              "romaji": "mujoukan"
+            },
+            {
+              "id": "p_3",
+              "left": "文体",
+              "right": "Literary style",
+              "furigana": "ぶんたい",
+              "romaji": "buntai"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u28_l15_8",
+          "type": "dialogue",
+          "prompt": "叙情的についてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "叙情的についてどう思われますか？",
+          "furigana": "叙情的についてどう思われますか？",
+          "romaji": "jojouteki ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on Lyrical / poetic emotionalism?",
+          "audioText": "叙情的についてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    }
+  ],
+  "revisionGate": {
+    "id": "gate_unit_28",
+    "unitId": "unit_28",
+    "title": "Unit 28 Mastery Checkpoint",
+    "titleJp": "第28週 総復習テスト",
+    "requiredScorePercent": 80,
+    "items": [
+      {
+        "id": "u28_l1_1",
+        "type": "listen",
+        "prompt": "随筆",
+        "furigana": "ずいひつ",
+        "romaji": "zuihitsu",
+        "english": "Personal essay / literary miscellany",
+        "audioText": "ずいひつ",
+        "options": [
+          "Confirming Lyrical / poetic emotionalism",
+          "Confirming Depiction / vivid description",
+          "Personal essay / literary miscellany",
+          "Sentimentality"
+        ],
+        "correctAnswer": "Personal essay / literary miscellany"
+      },
+      {
+        "id": "u28_l1_2",
+        "type": "spell",
+        "prompt": "随筆",
+        "furigana": "ずいひつ",
+        "romaji": "zuihitsu",
+        "english": "Build 'Personal essay / literary miscellany'",
+        "audioText": "ずいひつ",
+        "tileBank": [
+          "ら",
+          "あ",
+          "む",
+          "た",
+          "ず",
+          "い",
+          "ひ",
+          "つ"
+        ],
+        "correctAnswer": "ずいひつ"
+      },
+      {
+        "id": "u28_l3_1",
+        "type": "listen",
+        "prompt": "余韻",
+        "furigana": "よいん",
+        "romaji": "yoin",
+        "english": "Lingering resonance / aftertaste",
+        "audioText": "よいん",
+        "options": [
+          "Confirming Literary style",
+          "Confirming Subtle grace and hidden beauty",
+          "Lingering resonance / aftertaste",
+          "Confirming Atmosphere / evocative mood"
+        ],
+        "correctAnswer": "Lingering resonance / aftertaste"
+      },
+      {
+        "id": "u28_l3_2",
+        "type": "spell",
+        "prompt": "余韻",
+        "furigana": "よいん",
+        "romaji": "yoin",
+        "english": "Build 'Lingering resonance / aftertaste'",
+        "audioText": "よいん",
+        "tileBank": [
+          "は",
+          "く",
+          "よ",
+          "に",
+          "れ",
+          "ん",
+          "い",
+          "り"
+        ],
+        "correctAnswer": "よいん"
+      },
+      {
+        "id": "u28_l5_1",
+        "type": "listen",
+        "prompt": "幽玄",
+        "furigana": "ゆうげん",
+        "romaji": "yuugen",
+        "english": "Subtle grace and hidden beauty",
+        "audioText": "ゆうげん",
+        "options": [
+          "Confirming Personal essay / literary miscellany",
+          "Confirming Scenic taste / tasteful atmosphere",
+          "Subtle grace and hidden beauty",
+          "Confirming Personal essay / literary miscellany"
+        ],
+        "correctAnswer": "Subtle grace and hidden beauty"
+      },
+      {
+        "id": "u28_l5_2",
+        "type": "spell",
+        "prompt": "幽玄",
+        "furigana": "ゆうげん",
+        "romaji": "yuugen",
+        "english": "Build 'Subtle grace and hidden beauty'",
+        "audioText": "ゆうげん",
+        "tileBank": [
+          "ゆ",
+          "し",
+          "に",
+          "の",
+          "げ",
+          "う",
+          "す",
+          "ん"
+        ],
+        "correctAnswer": "ゆうげん"
+      },
+      {
+        "id": "u28_l7_1",
+        "type": "listen",
+        "prompt": "比喩の確認",
+        "furigana": "ひゆのかくにん",
+        "romaji": "hiyu no kakunin",
+        "english": "Confirming Metaphor / simile",
+        "audioText": "ひゆのかくにん",
+        "options": [
+          "Confirming Metaphor / simile",
+          "Buddhist sense of impermanence",
+          "Subtle grace and hidden beauty",
+          "Confirming Subtle grace and hidden beauty"
+        ],
+        "correctAnswer": "Confirming Metaphor / simile"
+      },
+      {
+        "id": "u28_l7_2",
+        "type": "spell",
+        "prompt": "比喩の確認",
+        "furigana": "ひゆのかくにん",
+        "romaji": "hiyu no kakunin",
+        "english": "Build 'Confirming Metaphor / simile'",
+        "audioText": "ひゆのかくにん",
+        "tileBank": [
+          "に",
+          "く",
+          "の",
+          "ひ",
+          "ゆ",
+          "か",
+          "む",
+          "ん"
+        ],
+        "correctAnswer": "ひゆのかくにん"
+      },
+      {
+        "id": "u28_l9_1",
+        "type": "listen",
+        "prompt": "文体の確認",
+        "furigana": "ぶんたいのかくにん",
+        "romaji": "buntai no kakunin",
+        "english": "Confirming Literary style",
+        "audioText": "ぶんたいのかくにん",
+        "options": [
+          "Confirming Literary style",
+          "Confirming Depiction / vivid description",
+          "Confirming Atmosphere / evocative mood",
+          "Confirming Personal essay / literary miscellany"
+        ],
+        "correctAnswer": "Confirming Literary style"
+      },
+      {
+        "id": "u28_l9_2",
+        "type": "spell",
+        "prompt": "文体の確認",
+        "furigana": "ぶんたいのかくにん",
+        "romaji": "buntai no kakunin",
+        "english": "Build 'Confirming Literary style'",
+        "audioText": "ぶんたいのかくにん",
+        "tileBank": [
+          "た",
+          "の",
+          "に",
+          "く",
+          "か",
+          "い",
+          "ん",
+          "ぶ"
+        ],
+        "correctAnswer": "ぶんたいのかくにん"
+      },
+      {
+        "id": "u28_l11_1",
+        "type": "listen",
+        "prompt": "随筆の確認",
+        "furigana": "ずいひつのかくにん",
+        "romaji": "zuihitsu no kakunin",
+        "english": "Confirming Personal essay / literary miscellany",
+        "audioText": "ずいひつのかくにん",
+        "options": [
+          "Confirming Personal essay / literary miscellany",
+          "Confirming Masterpiece",
+          "Buddhist sense of impermanence",
+          "Confirming Buddhist sense of impermanence"
+        ],
+        "correctAnswer": "Confirming Personal essay / literary miscellany"
+      },
+      {
+        "id": "u28_l11_2",
+        "type": "spell",
+        "prompt": "随筆の確認",
+        "furigana": "ずいひつのかくにん",
+        "romaji": "zuihitsu no kakunin",
+        "english": "Build 'Confirming Personal essay / literary miscellany'",
+        "audioText": "ずいひつのかくにん",
+        "tileBank": [
+          "く",
+          "い",
+          "ひ",
+          "つ",
+          "ず",
+          "に",
+          "の",
+          "か"
+        ],
+        "correctAnswer": "ずいひつのかくにん"
+      }
+    ]
+  }
+}

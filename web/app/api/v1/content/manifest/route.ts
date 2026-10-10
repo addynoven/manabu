@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { MANABU_CURRICULUM } from '@/data/curriculum';
-import { HIRAGANA_DATA, KATAKANA_DATA } from '@/data/kana';
+import { MANABU_CURRICULUM } from '@/features/content/models/curriculum';
+import { HIRAGANA_DATA, KATAKANA_DATA } from '@/features/content/models/kana';
 import kanjiN5 from '@/data/kanji_n5.json';
 import kanjiN4 from '@/data/kanji_n4.json';
 import kanjiN3 from '@/data/kanji_n3.json';
@@ -17,8 +17,8 @@ import { getValkey } from '@/core/db/valkey';
 export const runtime = 'nodejs';
 
 // Content schema version — increment when content is updated to trigger client drops & resync
-export const CURRENT_CONTENT_VERSION = 2;
-export const CONTENT_UPDATED_AT = '2026-10-03T07:20:00.000Z';
+export const CURRENT_CONTENT_VERSION = 10;
+export const CONTENT_UPDATED_AT = '2026-10-04T12:00:00.000Z';
 
 export async function GET(req: NextRequest) {
   const ifNoneMatch = req.headers.get('if-none-match');

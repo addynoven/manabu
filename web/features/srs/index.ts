@@ -4,6 +4,5 @@ export * from './repositories/srsRepository';
 export * from './components/FsrsRetentionGraph';
 export * from './hooks/useSrsQueue';
 export * from './store/srsStore';
-export * from './screens/ReviewScreen';
-export * from './screens/CramScreen';
+export * from './screens';
 export * from './keys';

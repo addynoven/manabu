@@ -1,0 +1,3336 @@
+{
+  "id": "unit_7",
+  "unitNumber": 7,
+  "title": "Dining at an Izakaya",
+  "titleJp": "居酒屋で乾杯",
+  "description": "Enjoy Japanese pub culture, order drinks and shared dishes, cheers, and split the bill.",
+  "icon": "🍻",
+  "themeColor": "#F59E0B",
+  "summaryPoints": [
+    "重要語彙35語以上の習得 (Over 35 Core Vocabulary Items)",
+    "日常・実用対話表現のマスター (Mastery of Practical Dialogues)",
+    "聴解と文字綴りのトレーニング (Listening & 4x2 Tile Spelling)",
+    "JLPT基準文法パターンの定着 (Grammar Patterns & Nuances)",
+    "7日間の段階的カリキュラム (Structured 7-Day Progressive Bundle)"
+  ],
+  "lessons": [
+    {
+      "id": "u7_l1",
+      "unitId": "unit_7",
+      "lessonNumber": 1,
+      "dayNumber": 1,
+      "category": "Expression",
+      "sectionTitle": "Core Expressions (Part 1)",
+      "iconType": "expression",
+      "title": "Cheers! & Draft beer",
+      "titleJp": "乾杯・生ビール",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "乾杯",
+        "生ビール",
+        "とりあえず"
+      ],
+      "kanjiKeywords": [
+        "乾",
+        "杯",
+        "生"
+      ],
+      "items": [
+        {
+          "id": "u7_l1_1",
+          "type": "listen",
+          "prompt": "乾杯",
+          "furigana": "かんぱい",
+          "romaji": "kanpai",
+          "english": "Cheers!",
+          "audioText": "かんぱい",
+          "options": [
+            "Confirming Another serving / refill",
+            "Confirming Cheers!",
+            "Cheers!",
+            "Sashimi / sliced raw fish"
+          ],
+          "correctAnswer": "Cheers!"
+        },
+        {
+          "id": "u7_l1_2",
+          "type": "spell",
+          "prompt": "乾杯",
+          "furigana": "かんぱい",
+          "romaji": "kanpai",
+          "english": "Build 'Cheers!'",
+          "audioText": "かんぱい",
+          "tileBank": [
+            "ね",
+            "い",
+            "か",
+            "ん",
+            "せ",
+            "み",
+            "ろ",
+            "ぱ"
+          ],
+          "correctAnswer": "かんぱい"
+        },
+        {
+          "id": "u7_l1_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な生ビールです。",
+          "furigana": "これはいちばんたいせつななまビールです。",
+          "romaji": "Kore wa ichiban taisetsu na nama biiru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Draft beer.",
+          "audioText": "これは生ビールです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な生ビールです。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l1_4",
+          "type": "scramble",
+          "prompt": "これは生ビールです",
+          "furigana": "これはなまビールです",
+          "romaji": "Kore wa nama biiru desu.",
+          "english": "This is Draft beer.",
+          "audioText": "これは生ビールです",
+          "scrambleTokens": [
+            "生ビール",
+            "これは",
+            "ではありません",
+            "です",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "生ビール",
+            "です"
+          ],
+          "correctAnswer": "これは生ビールです"
+        },
+        {
+          "id": "u7_l1_5",
+          "type": "speak",
+          "prompt": "とりあえず",
+          "furigana": "とりあえず",
+          "romaji": "toriaezu",
+          "english": "Pronounce: For now / to start with",
+          "audioText": "とりあえず",
+          "targetSpeech": "とりあえず",
+          "options": [
+            "For now / to start with",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "とりあえず"
+        },
+        {
+          "id": "u7_l1_6",
+          "type": "dictate",
+          "prompt": "とりあえずです",
+          "furigana": "とりあえずです",
+          "romaji": "toriaezu desu.",
+          "english": "It is For now / to start with.",
+          "audioText": "とりあえずです",
+          "dictateTokens": [
+            "です",
+            "これ",
+            "ではありません",
+            "とりあえず"
+          ],
+          "dictateSolution": [
+            "とりあえず",
+            "です"
+          ],
+          "correctAnswer": "とりあえずです"
+        },
+        {
+          "id": "u7_l1_7",
+          "type": "match",
+          "prompt": "乾杯・生ビール・とりあえず・枝豆",
+          "furigana": "かんぱい・なまビール・とりあえず・えだまめ",
+          "romaji": "kanpai, nama biiru, toriaezu, edamame",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "かんぱい",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "乾杯",
+              "right": "Cheers!",
+              "furigana": "かんぱい",
+              "romaji": "kanpai"
+            },
+            {
+              "id": "p_1",
+              "left": "生ビール",
+              "right": "Draft beer",
+              "furigana": "なまビール",
+              "romaji": "nama biiru"
+            },
+            {
+              "id": "p_2",
+              "left": "とりあえず",
+              "right": "For now / to start with",
+              "furigana": "とりあえず",
+              "romaji": "toriaezu"
+            },
+            {
+              "id": "p_3",
+              "left": "枝豆",
+              "right": "Edamame soybeans",
+              "furigana": "えだまめ",
+              "romaji": "edamame"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l1_8",
+          "type": "dialogue",
+          "prompt": "乾杯について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "乾杯について教えていただけますか？",
+          "furigana": "乾杯について教えていただけますか？",
+          "romaji": "kanpai ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Cheers!?",
+          "audioText": "乾杯について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u7_l2",
+      "unitId": "unit_7",
+      "lessonNumber": 2,
+      "dayNumber": 1,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Edamame soybeans & Grilled chicken skewers",
+      "titleJp": "枝豆・焼き鳥",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "枝豆",
+        "焼き鳥",
+        "唐揚げ"
+      ],
+      "kanjiKeywords": [
+        "枝",
+        "豆",
+        "焼",
+        "鳥",
+        "唐",
+        "揚"
+      ],
+      "items": [
+        {
+          "id": "u7_l2_1",
+          "type": "listen",
+          "prompt": "枝豆",
+          "furigana": "えだまめ",
+          "romaji": "edamame",
+          "english": "Edamame soybeans",
+          "audioText": "えだまめ",
+          "options": [
+            "Splitting the bill",
+            "Confirming Grilled chicken skewers",
+            "Edamame soybeans",
+            "Confirming For now / to start with"
+          ],
+          "correctAnswer": "Edamame soybeans"
+        },
+        {
+          "id": "u7_l2_2",
+          "type": "spell",
+          "prompt": "枝豆",
+          "furigana": "えだまめ",
+          "romaji": "edamame",
+          "english": "Build 'Edamame soybeans'",
+          "audioText": "えだまめ",
+          "tileBank": [
+            "ん",
+            "ひ",
+            "ま",
+            "は",
+            "え",
+            "め",
+            "だ",
+            "の"
+          ],
+          "correctAnswer": "えだまめ"
+        },
+        {
+          "id": "u7_l2_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な焼き鳥です。",
+          "furigana": "これはいちばんたいせつなやきとりです。",
+          "romaji": "Kore wa ichiban taisetsu na yakitori desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Grilled chicken skewers.",
+          "audioText": "これは焼き鳥です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焼き鳥です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l2_4",
+          "type": "scramble",
+          "prompt": "これは焼き鳥です",
+          "furigana": "これはやきとりです",
+          "romaji": "Kore wa yakitori desu.",
+          "english": "This is Grilled chicken skewers.",
+          "audioText": "これは焼き鳥です",
+          "scrambleTokens": [
+            "です",
+            "焼き鳥",
+            "それ",
+            "ではありません",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "焼き鳥",
+            "です"
+          ],
+          "correctAnswer": "これは焼き鳥です"
+        },
+        {
+          "id": "u7_l2_5",
+          "type": "speak",
+          "prompt": "唐揚げ",
+          "furigana": "からあげ",
+          "romaji": "karaage",
+          "english": "Pronounce: Japanese fried chicken",
+          "audioText": "からあげ",
+          "targetSpeech": "唐揚げ",
+          "options": [
+            "Japanese fried chicken",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "唐揚げ"
+        },
+        {
+          "id": "u7_l2_6",
+          "type": "dictate",
+          "prompt": "唐揚げです",
+          "furigana": "からあげです",
+          "romaji": "karaage desu.",
+          "english": "It is Japanese fried chicken.",
+          "audioText": "唐揚げです",
+          "dictateTokens": [
+            "これ",
+            "唐揚げ",
+            "ではありません",
+            "です"
+          ],
+          "dictateSolution": [
+            "唐揚げ",
+            "です"
+          ],
+          "correctAnswer": "唐揚げです"
+        },
+        {
+          "id": "u7_l2_7",
+          "type": "match",
+          "prompt": "枝豆・焼き鳥・唐揚げ・お代わり",
+          "furigana": "えだまめ・やきとり・からあげ・おかわり",
+          "romaji": "edamame, yakitori, karaage, okawari",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "えだまめ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "枝豆",
+              "right": "Edamame soybeans",
+              "furigana": "えだまめ",
+              "romaji": "edamame"
+            },
+            {
+              "id": "p_1",
+              "left": "焼き鳥",
+              "right": "Grilled chicken skewers",
+              "furigana": "やきとり",
+              "romaji": "yakitori"
+            },
+            {
+              "id": "p_2",
+              "left": "唐揚げ",
+              "right": "Japanese fried chicken",
+              "furigana": "からあげ",
+              "romaji": "karaage"
+            },
+            {
+              "id": "p_3",
+              "left": "お代わり",
+              "right": "Another serving / refill",
+              "furigana": "おかわり",
+              "romaji": "okawari"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l2_8",
+          "type": "dialogue",
+          "prompt": "生ビールの準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "生ビールの準備はできていますか？",
+          "furigana": "生ビールの準備はできていますか？",
+          "romaji": "nama biiru no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Draft beer ready?",
+          "audioText": "生ビールの準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u7_l3",
+      "unitId": "unit_7",
+      "lessonNumber": 3,
+      "dayNumber": 1,
+      "category": "Practice",
+      "sectionTitle": "Sentence Patterns & Fluency",
+      "iconType": "practice",
+      "title": "Another serving / refill & Splitting the bill",
+      "titleJp": "お代わり・割り勘",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "お代わり",
+        "割り勘",
+        "居酒屋"
+      ],
+      "kanjiKeywords": [
+        "代",
+        "割",
+        "勘",
+        "居",
+        "酒",
+        "屋"
+      ],
+      "items": [
+        {
+          "id": "u7_l3_1",
+          "type": "listen",
+          "prompt": "お代わり",
+          "furigana": "おかわり",
+          "romaji": "okawari",
+          "english": "Another serving / refill",
+          "audioText": "おかわり",
+          "options": [
+            "Confirming Pub snacks / appetizers",
+            "Confirming Oolong tea",
+            "Another serving / refill",
+            "Confirming Grilled chicken skewers"
+          ],
+          "correctAnswer": "Another serving / refill"
+        },
+        {
+          "id": "u7_l3_2",
+          "type": "spell",
+          "prompt": "お代わり",
+          "furigana": "おかわり",
+          "romaji": "okawari",
+          "english": "Build 'Another serving / refill'",
+          "audioText": "おかわり",
+          "tileBank": [
+            "か",
+            "く",
+            "つ",
+            "り",
+            "そ",
+            "お",
+            "わ",
+            "ね"
+          ],
+          "correctAnswer": "おかわり"
+        },
+        {
+          "id": "u7_l3_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な割り勘です。",
+          "furigana": "これはいちばんたいせつなわりかんです。",
+          "romaji": "Kore wa ichiban taisetsu na warikan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Splitting the bill.",
+          "audioText": "これは割り勘です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な割り勘です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l3_4",
+          "type": "scramble",
+          "prompt": "これは割り勘です",
+          "furigana": "これはわりかんです",
+          "romaji": "Kore wa warikan desu.",
+          "english": "This is Splitting the bill.",
+          "audioText": "これは割り勘です",
+          "scrambleTokens": [
+            "です",
+            "これは",
+            "ではありません",
+            "それ",
+            "割り勘"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "割り勘",
+            "です"
+          ],
+          "correctAnswer": "これは割り勘です"
+        },
+        {
+          "id": "u7_l3_5",
+          "type": "speak",
+          "prompt": "居酒屋",
+          "furigana": "いざかや",
+          "romaji": "izakaya",
+          "english": "Pronounce: Japanese pub / Izakaya",
+          "audioText": "いざかや",
+          "targetSpeech": "居酒屋",
+          "options": [
+            "Japanese pub / Izakaya",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "居酒屋"
+        },
+        {
+          "id": "u7_l3_6",
+          "type": "dictate",
+          "prompt": "居酒屋です",
+          "furigana": "いざかやです",
+          "romaji": "izakaya desu.",
+          "english": "It is Japanese pub / Izakaya.",
+          "audioText": "居酒屋です",
+          "dictateTokens": [
+            "ではありません",
+            "です",
+            "居酒屋",
+            "これ"
+          ],
+          "dictateSolution": [
+            "居酒屋",
+            "です"
+          ],
+          "correctAnswer": "居酒屋です"
+        },
+        {
+          "id": "u7_l3_7",
+          "type": "match",
+          "prompt": "お代わり・割り勘・居酒屋・おつまみ",
+          "furigana": "おかわり・わりかん・いざかや・おつまみ",
+          "romaji": "okawari, warikan, izakaya, otsumami",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "おかわり",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "お代わり",
+              "right": "Another serving / refill",
+              "furigana": "おかわり",
+              "romaji": "okawari"
+            },
+            {
+              "id": "p_1",
+              "left": "割り勘",
+              "right": "Splitting the bill",
+              "furigana": "わりかん",
+              "romaji": "warikan"
+            },
+            {
+              "id": "p_2",
+              "left": "居酒屋",
+              "right": "Japanese pub / Izakaya",
+              "furigana": "いざかや",
+              "romaji": "izakaya"
+            },
+            {
+              "id": "p_3",
+              "left": "おつまみ",
+              "right": "Pub snacks / appetizers",
+              "furigana": "おつまみ",
+              "romaji": "otsumami"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l3_8",
+          "type": "dialogue",
+          "prompt": "とりあえずについてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "とりあえずについてどう思われますか？",
+          "furigana": "とりあえずについてどう思われますか？",
+          "romaji": "toriaezu ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on For now / to start with?",
+          "audioText": "とりあえずについてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u7_l4",
+      "unitId": "unit_7",
+      "lessonNumber": 4,
+      "dayNumber": 2,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Pub snacks / appetizers & Whisky highball",
+      "titleJp": "おつまみ・ハイボール",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "おつまみ",
+        "ハイボール",
+        "ウーロン茶"
+      ],
+      "kanjiKeywords": [
+        "茶"
+      ],
+      "items": [
+        {
+          "id": "u7_l4_1",
+          "type": "listen",
+          "prompt": "おつまみ",
+          "furigana": "おつまみ",
+          "romaji": "otsumami",
+          "english": "Pub snacks / appetizers",
+          "audioText": "おつまみ",
+          "options": [
+            "Confirming Splitting the bill",
+            "Pub snacks / appetizers",
+            "Confirming No smoking",
+            "Sashimi / sliced raw fish"
+          ],
+          "correctAnswer": "Pub snacks / appetizers"
+        },
+        {
+          "id": "u7_l4_2",
+          "type": "spell",
+          "prompt": "おつまみ",
+          "furigana": "おつまみ",
+          "romaji": "otsumami",
+          "english": "Build 'Pub snacks / appetizers'",
+          "audioText": "おつまみ",
+          "tileBank": [
+            "も",
+            "つ",
+            "や",
+            "め",
+            "み",
+            "お",
+            "ま",
+            "う"
+          ],
+          "correctAnswer": "おつまみ"
+        },
+        {
+          "id": "u7_l4_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切なハイボールです。",
+          "furigana": "これはいちばんたいせつなハイボールです。",
+          "romaji": "Kore wa ichiban taisetsu na haibooru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Whisky highball.",
+          "audioText": "これはハイボールです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なハイボールです。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l4_4",
+          "type": "scramble",
+          "prompt": "これはハイボールです",
+          "furigana": "これはハイボールです",
+          "romaji": "Kore wa haibooru desu.",
+          "english": "This is Whisky highball.",
+          "audioText": "これはハイボールです",
+          "scrambleTokens": [
+            "です",
+            "これは",
+            "それ",
+            "ハイボール",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "ハイボール",
+            "です"
+          ],
+          "correctAnswer": "これはハイボールです"
+        },
+        {
+          "id": "u7_l4_5",
+          "type": "speak",
+          "prompt": "ウーロン茶",
+          "furigana": "ウーロンちゃ",
+          "romaji": "uuroncha",
+          "english": "Pronounce: Oolong tea",
+          "audioText": "ウーロンちゃ",
+          "targetSpeech": "ウーロン茶",
+          "options": [
+            "Oolong tea",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "ウーロン茶"
+        },
+        {
+          "id": "u7_l4_6",
+          "type": "dictate",
+          "prompt": "ウーロン茶です",
+          "furigana": "ウーロンちゃです",
+          "romaji": "uuroncha desu.",
+          "english": "It is Oolong tea.",
+          "audioText": "ウーロン茶です",
+          "dictateTokens": [
+            "これ",
+            "です",
+            "ウーロン茶",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "ウーロン茶",
+            "です"
+          ],
+          "correctAnswer": "ウーロン茶です"
+        },
+        {
+          "id": "u7_l4_7",
+          "type": "match",
+          "prompt": "おつまみ・ハイボール・ウーロン茶・刺身",
+          "furigana": "おつまみ・ハイボール・ウーロンちゃ・さしみ",
+          "romaji": "otsumami, haibooru, uuroncha, sashimi",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "おつまみ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "おつまみ",
+              "right": "Pub snacks / appetizers",
+              "furigana": "おつまみ",
+              "romaji": "otsumami"
+            },
+            {
+              "id": "p_1",
+              "left": "ハイボール",
+              "right": "Whisky highball",
+              "furigana": "ハイボール",
+              "romaji": "haibooru"
+            },
+            {
+              "id": "p_2",
+              "left": "ウーロン茶",
+              "right": "Oolong tea",
+              "furigana": "ウーロンちゃ",
+              "romaji": "uuroncha"
+            },
+            {
+              "id": "p_3",
+              "left": "刺身",
+              "right": "Sashimi / sliced raw fish",
+              "furigana": "さしみ",
+              "romaji": "sashimi"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l4_8",
+          "type": "dialogue",
+          "prompt": "次は枝豆に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は枝豆に進みましょう。",
+          "furigana": "次は枝豆に進みましょう。",
+          "romaji": "Tsugi wa edamame ni susumimashou.",
+          "english": "Speaker: Let's proceed to Edamame soybeans next.",
+          "audioText": "次は枝豆に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u7_l5",
+      "unitId": "unit_7",
+      "lessonNumber": 5,
+      "dayNumber": 2,
+      "category": "Expression",
+      "sectionTitle": "Situational Dialogues",
+      "iconType": "expression",
+      "title": "Sashimi / sliced raw fish & Seat / table",
+      "titleJp": "刺身・席",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "刺身",
+        "席",
+        "禁煙"
+      ],
+      "kanjiKeywords": [
+        "刺",
+        "身",
+        "席",
+        "禁",
+        "煙"
+      ],
+      "items": [
+        {
+          "id": "u7_l5_1",
+          "type": "listen",
+          "prompt": "刺身",
+          "furigana": "さしみ",
+          "romaji": "sashimi",
+          "english": "Sashimi / sliced raw fish",
+          "audioText": "さしみ",
+          "options": [
+            "Whisky highball",
+            "Sashimi / sliced raw fish",
+            "Confirming Oolong tea",
+            "Confirming For now / to start with"
+          ],
+          "correctAnswer": "Sashimi / sliced raw fish"
+        },
+        {
+          "id": "u7_l5_2",
+          "type": "spell",
+          "prompt": "刺身",
+          "furigana": "さしみ",
+          "romaji": "sashimi",
+          "english": "Build 'Sashimi / sliced raw fish'",
+          "audioText": "さしみ",
+          "tileBank": [
+            "よ",
+            "と",
+            "さ",
+            "み",
+            "ろ",
+            "し",
+            "ん",
+            "た"
+          ],
+          "correctAnswer": "さしみ"
+        },
+        {
+          "id": "u7_l5_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な席です。",
+          "furigana": "これはいちばんたいせつなせきです。",
+          "romaji": "Kore wa ichiban taisetsu na seki desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Seat / table.",
+          "audioText": "これは席です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な席です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l5_4",
+          "type": "scramble",
+          "prompt": "これは席です",
+          "furigana": "これはせきです",
+          "romaji": "Kore wa seki desu.",
+          "english": "This is Seat / table.",
+          "audioText": "これは席です",
+          "scrambleTokens": [
+            "席",
+            "それ",
+            "ではありません",
+            "これは",
+            "です"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "席",
+            "です"
+          ],
+          "correctAnswer": "これは席です"
+        },
+        {
+          "id": "u7_l5_5",
+          "type": "speak",
+          "prompt": "禁煙",
+          "furigana": "きんえん",
+          "romaji": "kin-en",
+          "english": "Pronounce: No smoking",
+          "audioText": "きんえん",
+          "targetSpeech": "禁煙",
+          "options": [
+            "No smoking",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "禁煙"
+        },
+        {
+          "id": "u7_l5_6",
+          "type": "dictate",
+          "prompt": "禁煙です",
+          "furigana": "きんえんです",
+          "romaji": "kin-en desu.",
+          "english": "It is No smoking.",
+          "audioText": "禁煙です",
+          "dictateTokens": [
+            "ではありません",
+            "です",
+            "これ",
+            "禁煙"
+          ],
+          "dictateSolution": [
+            "禁煙",
+            "です"
+          ],
+          "correctAnswer": "禁煙です"
+        },
+        {
+          "id": "u7_l5_7",
+          "type": "match",
+          "prompt": "刺身・席・禁煙・乾杯の確認",
+          "furigana": "さしみ・せき・きんえん・かんぱいのかくにん",
+          "romaji": "sashimi, seki, kin-en, kanpai no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "さしみ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "刺身",
+              "right": "Sashimi / sliced raw fish",
+              "furigana": "さしみ",
+              "romaji": "sashimi"
+            },
+            {
+              "id": "p_1",
+              "left": "席",
+              "right": "Seat / table",
+              "furigana": "せき",
+              "romaji": "seki"
+            },
+            {
+              "id": "p_2",
+              "left": "禁煙",
+              "right": "No smoking",
+              "furigana": "きんえん",
+              "romaji": "kin-en"
+            },
+            {
+              "id": "p_3",
+              "left": "乾杯の確認",
+              "right": "Confirming Cheers!",
+              "furigana": "かんぱいのかくにん",
+              "romaji": "kanpai no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l5_8",
+          "type": "dialogue",
+          "prompt": "乾杯について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "乾杯について教えていただけますか？",
+          "furigana": "乾杯について教えていただけますか？",
+          "romaji": "kanpai ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Cheers!?",
+          "audioText": "乾杯について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u7_l6",
+      "unitId": "unit_7",
+      "lessonNumber": 6,
+      "dayNumber": 3,
+      "category": "Conversation",
+      "sectionTitle": null,
+      "iconType": "expression",
+      "title": "Confirming Cheers! & Confirming Draft beer",
+      "titleJp": "乾杯の確認・生ビールの確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "乾杯の確認",
+        "生ビールの確認",
+        "とりあえずの確認"
+      ],
+      "kanjiKeywords": [
+        "乾",
+        "杯",
+        "確",
+        "認",
+        "生",
+        "確",
+        "認",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u7_l6_1",
+          "type": "listen",
+          "prompt": "乾杯の確認",
+          "furigana": "かんぱいのかくにん",
+          "romaji": "kanpai no kakunin",
+          "english": "Confirming Cheers!",
+          "audioText": "かんぱいのかくにん",
+          "options": [
+            "Whisky highball",
+            "Confirming Grilled chicken skewers",
+            "Confirming Cheers!",
+            "Pub snacks / appetizers"
+          ],
+          "correctAnswer": "Confirming Cheers!"
+        },
+        {
+          "id": "u7_l6_2",
+          "type": "spell",
+          "prompt": "乾杯の確認",
+          "furigana": "かんぱいのかくにん",
+          "romaji": "kanpai no kakunin",
+          "english": "Build 'Confirming Cheers!'",
+          "audioText": "かんぱいのかくにん",
+          "tileBank": [
+            "に",
+            "か",
+            "く",
+            "ぱ",
+            "ん",
+            "い",
+            "の",
+            "か"
+          ],
+          "correctAnswer": "かんぱいのかくにん"
+        },
+        {
+          "id": "u7_l6_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な生ビールの確認です。",
+          "furigana": "これはいちばんたいせつななまビールのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na nama biiru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Draft beer.",
+          "audioText": "これは生ビールの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な生ビールの確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l6_4",
+          "type": "scramble",
+          "prompt": "これは生ビールの確認です",
+          "furigana": "これはなまビールのかくにんです",
+          "romaji": "Kore wa nama biiru no kakunin desu.",
+          "english": "This is Confirming Draft beer.",
+          "audioText": "これは生ビールの確認です",
+          "scrambleTokens": [
+            "これは",
+            "ではありません",
+            "それ",
+            "です",
+            "生ビールの確認"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "生ビールの確認",
+            "です"
+          ],
+          "correctAnswer": "これは生ビールの確認です"
+        },
+        {
+          "id": "u7_l6_5",
+          "type": "speak",
+          "prompt": "とりあえずの確認",
+          "furigana": "とりあえずのかくにん",
+          "romaji": "toriaezu no kakunin",
+          "english": "Pronounce: Confirming For now / to start with",
+          "audioText": "とりあえずのかくにん",
+          "targetSpeech": "とりあえずの確認",
+          "options": [
+            "Confirming For now / to start with",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "とりあえずの確認"
+        },
+        {
+          "id": "u7_l6_6",
+          "type": "dictate",
+          "prompt": "とりあえずの確認です",
+          "furigana": "とりあえずのかくにんです",
+          "romaji": "toriaezu no kakunin desu.",
+          "english": "It is Confirming For now / to start with.",
+          "audioText": "とりあえずの確認です",
+          "dictateTokens": [
+            "とりあえずの確認",
+            "これ",
+            "です",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "とりあえずの確認",
+            "です"
+          ],
+          "correctAnswer": "とりあえずの確認です"
+        },
+        {
+          "id": "u7_l6_7",
+          "type": "match",
+          "prompt": "乾杯の確認・生ビールの確認・とりあえずの確認・枝豆の確認",
+          "furigana": "かんぱいのかくにん・なまビールのかくにん・とりあえずのかくにん・えだまめのかくにん",
+          "romaji": "kanpai no kakunin, nama biiru no kakunin, toriaezu no kakunin, edamame no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "かんぱいのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "乾杯の確認",
+              "right": "Confirming Cheers!",
+              "furigana": "かんぱいのかくにん",
+              "romaji": "kanpai no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "生ビールの確認",
+              "right": "Confirming Draft beer",
+              "furigana": "なまビールのかくにん",
+              "romaji": "nama biiru no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "とりあえずの確認",
+              "right": "Confirming For now / to start with",
+              "furigana": "とりあえずのかくにん",
+              "romaji": "toriaezu no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "枝豆の確認",
+              "right": "Confirming Edamame soybeans",
+              "furigana": "えだまめのかくにん",
+              "romaji": "edamame no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l6_8",
+          "type": "dialogue",
+          "prompt": "生ビールの準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "生ビールの準備はできていますか？",
+          "furigana": "生ビールの準備はできていますか？",
+          "romaji": "nama biiru no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Draft beer ready?",
+          "audioText": "生ビールの準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u7_l7",
+      "unitId": "unit_7",
+      "lessonNumber": 7,
+      "dayNumber": 3,
+      "category": "Practice",
+      "sectionTitle": "Grammar & Listening Drill",
+      "iconType": "practice",
+      "title": "Confirming Edamame soybeans & Confirming Grilled chicken skewers",
+      "titleJp": "枝豆の確認・焼き鳥の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "枝豆の確認",
+        "焼き鳥の確認",
+        "唐揚げの確認"
+      ],
+      "kanjiKeywords": [
+        "枝",
+        "豆",
+        "確",
+        "認",
+        "焼",
+        "鳥",
+        "確",
+        "認",
+        "唐",
+        "揚",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u7_l7_1",
+          "type": "listen",
+          "prompt": "枝豆の確認",
+          "furigana": "えだまめのかくにん",
+          "romaji": "edamame no kakunin",
+          "english": "Confirming Edamame soybeans",
+          "audioText": "えだまめのかくにん",
+          "options": [
+            "Confirming Edamame soybeans",
+            "Japanese fried chicken",
+            "Confirming For now / to start with",
+            "Confirming For now / to start with"
+          ],
+          "correctAnswer": "Confirming Edamame soybeans"
+        },
+        {
+          "id": "u7_l7_2",
+          "type": "spell",
+          "prompt": "枝豆の確認",
+          "furigana": "えだまめのかくにん",
+          "romaji": "edamame no kakunin",
+          "english": "Build 'Confirming Edamame soybeans'",
+          "audioText": "えだまめのかくにん",
+          "tileBank": [
+            "の",
+            "え",
+            "だ",
+            "く",
+            "ま",
+            "に",
+            "め",
+            "か"
+          ],
+          "correctAnswer": "えだまめのかくにん"
+        },
+        {
+          "id": "u7_l7_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な焼き鳥の確認です。",
+          "furigana": "これはいちばんたいせつなやきとりのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na yakitori no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Grilled chicken skewers.",
+          "audioText": "これは焼き鳥の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焼き鳥の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l7_4",
+          "type": "scramble",
+          "prompt": "これは焼き鳥の確認です",
+          "furigana": "これはやきとりのかくにんです",
+          "romaji": "Kore wa yakitori no kakunin desu.",
+          "english": "This is Confirming Grilled chicken skewers.",
+          "audioText": "これは焼き鳥の確認です",
+          "scrambleTokens": [
+            "ではありません",
+            "です",
+            "これは",
+            "それ",
+            "焼き鳥の確認"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "焼き鳥の確認",
+            "です"
+          ],
+          "correctAnswer": "これは焼き鳥の確認です"
+        },
+        {
+          "id": "u7_l7_5",
+          "type": "speak",
+          "prompt": "唐揚げの確認",
+          "furigana": "からあげのかくにん",
+          "romaji": "karaage no kakunin",
+          "english": "Pronounce: Confirming Japanese fried chicken",
+          "audioText": "からあげのかくにん",
+          "targetSpeech": "唐揚げの確認",
+          "options": [
+            "Confirming Japanese fried chicken",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "唐揚げの確認"
+        },
+        {
+          "id": "u7_l7_6",
+          "type": "dictate",
+          "prompt": "唐揚げの確認です",
+          "furigana": "からあげのかくにんです",
+          "romaji": "karaage no kakunin desu.",
+          "english": "It is Confirming Japanese fried chicken.",
+          "audioText": "唐揚げの確認です",
+          "dictateTokens": [
+            "ではありません",
+            "唐揚げの確認",
+            "これ",
+            "です"
+          ],
+          "dictateSolution": [
+            "唐揚げの確認",
+            "です"
+          ],
+          "correctAnswer": "唐揚げの確認です"
+        },
+        {
+          "id": "u7_l7_7",
+          "type": "match",
+          "prompt": "枝豆の確認・焼き鳥の確認・唐揚げの確認・お代わりの確認",
+          "furigana": "えだまめのかくにん・やきとりのかくにん・からあげのかくにん・おかわりのかくにん",
+          "romaji": "edamame no kakunin, yakitori no kakunin, karaage no kakunin, okawari no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "えだまめのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "枝豆の確認",
+              "right": "Confirming Edamame soybeans",
+              "furigana": "えだまめのかくにん",
+              "romaji": "edamame no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "焼き鳥の確認",
+              "right": "Confirming Grilled chicken skewers",
+              "furigana": "やきとりのかくにん",
+              "romaji": "yakitori no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "唐揚げの確認",
+              "right": "Confirming Japanese fried chicken",
+              "furigana": "からあげのかくにん",
+              "romaji": "karaage no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "お代わりの確認",
+              "right": "Confirming Another serving / refill",
+              "furigana": "おかわりのかくにん",
+              "romaji": "okawari no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l7_8",
+          "type": "dialogue",
+          "prompt": "とりあえずについてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "とりあえずについてどう思われますか？",
+          "furigana": "とりあえずについてどう思われますか？",
+          "romaji": "toriaezu ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on For now / to start with?",
+          "audioText": "とりあえずについてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u7_l8",
+      "unitId": "unit_7",
+      "lessonNumber": 8,
+      "dayNumber": 4,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Confirming Another serving / refill & Confirming Splitting the bill",
+      "titleJp": "お代わりの確認・割り勘の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "お代わりの確認",
+        "割り勘の確認",
+        "居酒屋の確認"
+      ],
+      "kanjiKeywords": [
+        "代",
+        "確",
+        "認",
+        "割",
+        "勘",
+        "確",
+        "認",
+        "居",
+        "酒",
+        "屋",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u7_l8_1",
+          "type": "listen",
+          "prompt": "お代わりの確認",
+          "furigana": "おかわりのかくにん",
+          "romaji": "okawari no kakunin",
+          "english": "Confirming Another serving / refill",
+          "audioText": "おかわりのかくにん",
+          "options": [
+            "Confirming Oolong tea",
+            "For now / to start with",
+            "Confirming Another serving / refill",
+            "Confirming Japanese pub / Izakaya"
+          ],
+          "correctAnswer": "Confirming Another serving / refill"
+        },
+        {
+          "id": "u7_l8_2",
+          "type": "spell",
+          "prompt": "お代わりの確認",
+          "furigana": "おかわりのかくにん",
+          "romaji": "okawari no kakunin",
+          "english": "Build 'Confirming Another serving / refill'",
+          "audioText": "おかわりのかくにん",
+          "tileBank": [
+            "り",
+            "か",
+            "お",
+            "に",
+            "く",
+            "か",
+            "わ",
+            "の"
+          ],
+          "correctAnswer": "おかわりのかくにん"
+        },
+        {
+          "id": "u7_l8_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な割り勘の確認です。",
+          "furigana": "これはいちばんたいせつなわりかんのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na warikan no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Splitting the bill.",
+          "audioText": "これは割り勘の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な割り勘の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l8_4",
+          "type": "scramble",
+          "prompt": "これは割り勘の確認です",
+          "furigana": "これはわりかんのかくにんです",
+          "romaji": "Kore wa warikan no kakunin desu.",
+          "english": "This is Confirming Splitting the bill.",
+          "audioText": "これは割り勘の確認です",
+          "scrambleTokens": [
+            "これは",
+            "です",
+            "それ",
+            "割り勘の確認",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "割り勘の確認",
+            "です"
+          ],
+          "correctAnswer": "これは割り勘の確認です"
+        },
+        {
+          "id": "u7_l8_5",
+          "type": "speak",
+          "prompt": "居酒屋の確認",
+          "furigana": "いざかやのかくにん",
+          "romaji": "izakaya no kakunin",
+          "english": "Pronounce: Confirming Japanese pub / Izakaya",
+          "audioText": "いざかやのかくにん",
+          "targetSpeech": "居酒屋の確認",
+          "options": [
+            "Confirming Japanese pub / Izakaya",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "居酒屋の確認"
+        },
+        {
+          "id": "u7_l8_6",
+          "type": "dictate",
+          "prompt": "居酒屋の確認です",
+          "furigana": "いざかやのかくにんです",
+          "romaji": "izakaya no kakunin desu.",
+          "english": "It is Confirming Japanese pub / Izakaya.",
+          "audioText": "居酒屋の確認です",
+          "dictateTokens": [
+            "これ",
+            "居酒屋の確認",
+            "です",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "居酒屋の確認",
+            "です"
+          ],
+          "correctAnswer": "居酒屋の確認です"
+        },
+        {
+          "id": "u7_l8_7",
+          "type": "match",
+          "prompt": "お代わりの確認・割り勘の確認・居酒屋の確認・おつまみの確認",
+          "furigana": "おかわりのかくにん・わりかんのかくにん・いざかやのかくにん・おつまみのかくにん",
+          "romaji": "okawari no kakunin, warikan no kakunin, izakaya no kakunin, otsumami no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "おかわりのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "お代わりの確認",
+              "right": "Confirming Another serving / refill",
+              "furigana": "おかわりのかくにん",
+              "romaji": "okawari no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "割り勘の確認",
+              "right": "Confirming Splitting the bill",
+              "furigana": "わりかんのかくにん",
+              "romaji": "warikan no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "居酒屋の確認",
+              "right": "Confirming Japanese pub / Izakaya",
+              "furigana": "いざかやのかくにん",
+              "romaji": "izakaya no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "おつまみの確認",
+              "right": "Confirming Pub snacks / appetizers",
+              "furigana": "おつまみのかくにん",
+              "romaji": "otsumami no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l8_8",
+          "type": "dialogue",
+          "prompt": "次は枝豆に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は枝豆に進みましょう。",
+          "furigana": "次は枝豆に進みましょう。",
+          "romaji": "Tsugi wa edamame ni susumimashou.",
+          "english": "Speaker: Let's proceed to Edamame soybeans next.",
+          "audioText": "次は枝豆に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u7_l9",
+      "unitId": "unit_7",
+      "lessonNumber": 9,
+      "dayNumber": 4,
+      "category": "Expression",
+      "sectionTitle": "Nuance, Pitch & Intonation",
+      "iconType": "expression",
+      "title": "Confirming Pub snacks / appetizers & Confirming Whisky highball",
+      "titleJp": "おつまみの確認・ハイボールの確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "おつまみの確認",
+        "ハイボールの確認",
+        "ウーロン茶の確認"
+      ],
+      "kanjiKeywords": [
+        "確",
+        "認",
+        "確",
+        "認",
+        "茶",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u7_l9_1",
+          "type": "listen",
+          "prompt": "おつまみの確認",
+          "furigana": "おつまみのかくにん",
+          "romaji": "otsumami no kakunin",
+          "english": "Confirming Pub snacks / appetizers",
+          "audioText": "おつまみのかくにん",
+          "options": [
+            "Confirming Edamame soybeans",
+            "Confirming Japanese pub / Izakaya",
+            "Sashimi / sliced raw fish",
+            "Confirming Pub snacks / appetizers"
+          ],
+          "correctAnswer": "Confirming Pub snacks / appetizers"
+        },
+        {
+          "id": "u7_l9_2",
+          "type": "spell",
+          "prompt": "おつまみの確認",
+          "furigana": "おつまみのかくにん",
+          "romaji": "otsumami no kakunin",
+          "english": "Build 'Confirming Pub snacks / appetizers'",
+          "audioText": "おつまみのかくにん",
+          "tileBank": [
+            "み",
+            "の",
+            "ま",
+            "か",
+            "お",
+            "く",
+            "に",
+            "つ"
+          ],
+          "correctAnswer": "おつまみのかくにん"
+        },
+        {
+          "id": "u7_l9_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切なハイボールの確認です。",
+          "furigana": "これはいちばんたいせつなハイボールのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na haibooru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Whisky highball.",
+          "audioText": "これはハイボールの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切なハイボールの確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l9_4",
+          "type": "scramble",
+          "prompt": "これはハイボールの確認です",
+          "furigana": "これはハイボールのかくにんです",
+          "romaji": "Kore wa haibooru no kakunin desu.",
+          "english": "This is Confirming Whisky highball.",
+          "audioText": "これはハイボールの確認です",
+          "scrambleTokens": [
+            "ハイボールの確認",
+            "ではありません",
+            "です",
+            "これは",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "ハイボールの確認",
+            "です"
+          ],
+          "correctAnswer": "これはハイボールの確認です"
+        },
+        {
+          "id": "u7_l9_5",
+          "type": "speak",
+          "prompt": "ウーロン茶の確認",
+          "furigana": "ウーロンちゃのかくにん",
+          "romaji": "uuroncha no kakunin",
+          "english": "Pronounce: Confirming Oolong tea",
+          "audioText": "ウーロンちゃのかくにん",
+          "targetSpeech": "ウーロン茶の確認",
+          "options": [
+            "Confirming Oolong tea",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "ウーロン茶の確認"
+        },
+        {
+          "id": "u7_l9_6",
+          "type": "dictate",
+          "prompt": "ウーロン茶の確認です",
+          "furigana": "ウーロンちゃのかくにんです",
+          "romaji": "uuroncha no kakunin desu.",
+          "english": "It is Confirming Oolong tea.",
+          "audioText": "ウーロン茶の確認です",
+          "dictateTokens": [
+            "これ",
+            "ウーロン茶の確認",
+            "です",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "ウーロン茶の確認",
+            "です"
+          ],
+          "correctAnswer": "ウーロン茶の確認です"
+        },
+        {
+          "id": "u7_l9_7",
+          "type": "match",
+          "prompt": "おつまみの確認・ハイボールの確認・ウーロン茶の確認・刺身の確認",
+          "furigana": "おつまみのかくにん・ハイボールのかくにん・ウーロンちゃのかくにん・さしみのかくにん",
+          "romaji": "otsumami no kakunin, haibooru no kakunin, uuroncha no kakunin, sashimi no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "おつまみのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "おつまみの確認",
+              "right": "Confirming Pub snacks / appetizers",
+              "furigana": "おつまみのかくにん",
+              "romaji": "otsumami no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "ハイボールの確認",
+              "right": "Confirming Whisky highball",
+              "furigana": "ハイボールのかくにん",
+              "romaji": "haibooru no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "ウーロン茶の確認",
+              "right": "Confirming Oolong tea",
+              "furigana": "ウーロンちゃのかくにん",
+              "romaji": "uuroncha no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "刺身の確認",
+              "right": "Confirming Sashimi / sliced raw fish",
+              "furigana": "さしみのかくにん",
+              "romaji": "sashimi no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l9_8",
+          "type": "dialogue",
+          "prompt": "乾杯について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "乾杯について教えていただけますか？",
+          "furigana": "乾杯について教えていただけますか？",
+          "romaji": "kanpai ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Cheers!?",
+          "audioText": "乾杯について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u7_l10",
+      "unitId": "unit_7",
+      "lessonNumber": 10,
+      "dayNumber": 5,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Confirming Sashimi / sliced raw fish & Confirming Seat / table",
+      "titleJp": "刺身の確認・席の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "刺身の確認",
+        "席の確認",
+        "禁煙の確認"
+      ],
+      "kanjiKeywords": [
+        "刺",
+        "身",
+        "確",
+        "認",
+        "席",
+        "確",
+        "認",
+        "禁",
+        "煙",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u7_l10_1",
+          "type": "listen",
+          "prompt": "刺身の確認",
+          "furigana": "さしみのかくにん",
+          "romaji": "sashimi no kakunin",
+          "english": "Confirming Sashimi / sliced raw fish",
+          "audioText": "さしみのかくにん",
+          "options": [
+            "Confirming Cheers!",
+            "For now / to start with",
+            "Confirming Sashimi / sliced raw fish",
+            "Confirming Another serving / refill"
+          ],
+          "correctAnswer": "Confirming Sashimi / sliced raw fish"
+        },
+        {
+          "id": "u7_l10_2",
+          "type": "spell",
+          "prompt": "刺身の確認",
+          "furigana": "さしみのかくにん",
+          "romaji": "sashimi no kakunin",
+          "english": "Build 'Confirming Sashimi / sliced raw fish'",
+          "audioText": "さしみのかくにん",
+          "tileBank": [
+            "く",
+            "か",
+            "さ",
+            "に",
+            "み",
+            "し",
+            "の",
+            "ん"
+          ],
+          "correctAnswer": "さしみのかくにん"
+        },
+        {
+          "id": "u7_l10_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な席の確認です。",
+          "furigana": "これはいちばんたいせつなせきのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na seki no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Seat / table.",
+          "audioText": "これは席の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な席の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l10_4",
+          "type": "scramble",
+          "prompt": "これは席の確認です",
+          "furigana": "これはせきのかくにんです",
+          "romaji": "Kore wa seki no kakunin desu.",
+          "english": "This is Confirming Seat / table.",
+          "audioText": "これは席の確認です",
+          "scrambleTokens": [
+            "席の確認",
+            "です",
+            "ではありません",
+            "それ",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "席の確認",
+            "です"
+          ],
+          "correctAnswer": "これは席の確認です"
+        },
+        {
+          "id": "u7_l10_5",
+          "type": "speak",
+          "prompt": "禁煙の確認",
+          "furigana": "きんえんのかくにん",
+          "romaji": "kin-en no kakunin",
+          "english": "Pronounce: Confirming No smoking",
+          "audioText": "きんえんのかくにん",
+          "targetSpeech": "禁煙の確認",
+          "options": [
+            "Confirming No smoking",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "禁煙の確認"
+        },
+        {
+          "id": "u7_l10_6",
+          "type": "dictate",
+          "prompt": "禁煙の確認です",
+          "furigana": "きんえんのかくにんです",
+          "romaji": "kin-en no kakunin desu.",
+          "english": "It is Confirming No smoking.",
+          "audioText": "禁煙の確認です",
+          "dictateTokens": [
+            "ではありません",
+            "禁煙の確認",
+            "です",
+            "これ"
+          ],
+          "dictateSolution": [
+            "禁煙の確認",
+            "です"
+          ],
+          "correctAnswer": "禁煙の確認です"
+        },
+        {
+          "id": "u7_l10_7",
+          "type": "match",
+          "prompt": "刺身の確認・席の確認・禁煙の確認・乾杯の確認",
+          "furigana": "さしみのかくにん・せきのかくにん・きんえんのかくにん・かんぱいのかくにん",
+          "romaji": "sashimi no kakunin, seki no kakunin, kin-en no kakunin, kanpai no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "さしみのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "刺身の確認",
+              "right": "Confirming Sashimi / sliced raw fish",
+              "furigana": "さしみのかくにん",
+              "romaji": "sashimi no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "席の確認",
+              "right": "Confirming Seat / table",
+              "furigana": "せきのかくにん",
+              "romaji": "seki no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "禁煙の確認",
+              "right": "Confirming No smoking",
+              "furigana": "きんえんのかくにん",
+              "romaji": "kin-en no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "乾杯の確認",
+              "right": "Confirming Cheers!",
+              "furigana": "かんぱいのかくにん",
+              "romaji": "kanpai no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l10_8",
+          "type": "dialogue",
+          "prompt": "生ビールの準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "生ビールの準備はできていますか？",
+          "furigana": "生ビールの準備はできていますか？",
+          "romaji": "nama biiru no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Draft beer ready?",
+          "audioText": "生ビールの準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u7_l11",
+      "unitId": "unit_7",
+      "lessonNumber": 11,
+      "dayNumber": 5,
+      "category": "Practice",
+      "sectionTitle": "Speed Assembly & Fluency",
+      "iconType": "practice",
+      "title": "Confirming Cheers! & Confirming Draft beer",
+      "titleJp": "乾杯の確認・生ビールの確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "乾杯の確認",
+        "生ビールの確認",
+        "とりあえずの確認"
+      ],
+      "kanjiKeywords": [
+        "乾",
+        "杯",
+        "確",
+        "認",
+        "生",
+        "確",
+        "認",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u7_l11_1",
+          "type": "listen",
+          "prompt": "乾杯の確認",
+          "furigana": "かんぱいのかくにん",
+          "romaji": "kanpai no kakunin",
+          "english": "Confirming Cheers!",
+          "audioText": "かんぱいのかくにん",
+          "options": [
+            "Confirming Sashimi / sliced raw fish",
+            "Confirming Cheers!",
+            "Confirming Japanese fried chicken",
+            "Confirming Draft beer"
+          ],
+          "correctAnswer": "Confirming Cheers!"
+        },
+        {
+          "id": "u7_l11_2",
+          "type": "spell",
+          "prompt": "乾杯の確認",
+          "furigana": "かんぱいのかくにん",
+          "romaji": "kanpai no kakunin",
+          "english": "Build 'Confirming Cheers!'",
+          "audioText": "かんぱいのかくにん",
+          "tileBank": [
+            "い",
+            "か",
+            "の",
+            "に",
+            "か",
+            "く",
+            "ぱ",
+            "ん"
+          ],
+          "correctAnswer": "かんぱいのかくにん"
+        },
+        {
+          "id": "u7_l11_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な生ビールの確認です。",
+          "furigana": "これはいちばんたいせつななまビールのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na nama biiru no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Draft beer.",
+          "audioText": "これは生ビールの確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な生ビールの確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l11_4",
+          "type": "scramble",
+          "prompt": "これは生ビールの確認です",
+          "furigana": "これはなまビールのかくにんです",
+          "romaji": "Kore wa nama biiru no kakunin desu.",
+          "english": "This is Confirming Draft beer.",
+          "audioText": "これは生ビールの確認です",
+          "scrambleTokens": [
+            "ではありません",
+            "これは",
+            "です",
+            "生ビールの確認",
+            "それ"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "生ビールの確認",
+            "です"
+          ],
+          "correctAnswer": "これは生ビールの確認です"
+        },
+        {
+          "id": "u7_l11_5",
+          "type": "speak",
+          "prompt": "とりあえずの確認",
+          "furigana": "とりあえずのかくにん",
+          "romaji": "toriaezu no kakunin",
+          "english": "Pronounce: Confirming For now / to start with",
+          "audioText": "とりあえずのかくにん",
+          "targetSpeech": "とりあえずの確認",
+          "options": [
+            "Confirming For now / to start with",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "とりあえずの確認"
+        },
+        {
+          "id": "u7_l11_6",
+          "type": "dictate",
+          "prompt": "とりあえずの確認です",
+          "furigana": "とりあえずのかくにんです",
+          "romaji": "toriaezu no kakunin desu.",
+          "english": "It is Confirming For now / to start with.",
+          "audioText": "とりあえずの確認です",
+          "dictateTokens": [
+            "です",
+            "とりあえずの確認",
+            "ではありません",
+            "これ"
+          ],
+          "dictateSolution": [
+            "とりあえずの確認",
+            "です"
+          ],
+          "correctAnswer": "とりあえずの確認です"
+        },
+        {
+          "id": "u7_l11_7",
+          "type": "match",
+          "prompt": "乾杯の確認・生ビールの確認・とりあえずの確認・枝豆の確認",
+          "furigana": "かんぱいのかくにん・なまビールのかくにん・とりあえずのかくにん・えだまめのかくにん",
+          "romaji": "kanpai no kakunin, nama biiru no kakunin, toriaezu no kakunin, edamame no kakunin",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "かんぱいのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "乾杯の確認",
+              "right": "Confirming Cheers!",
+              "furigana": "かんぱいのかくにん",
+              "romaji": "kanpai no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "生ビールの確認",
+              "right": "Confirming Draft beer",
+              "furigana": "なまビールのかくにん",
+              "romaji": "nama biiru no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "とりあえずの確認",
+              "right": "Confirming For now / to start with",
+              "furigana": "とりあえずのかくにん",
+              "romaji": "toriaezu no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "枝豆の確認",
+              "right": "Confirming Edamame soybeans",
+              "furigana": "えだまめのかくにん",
+              "romaji": "edamame no kakunin"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l11_8",
+          "type": "dialogue",
+          "prompt": "とりあえずについてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "とりあえずについてどう思われますか？",
+          "furigana": "とりあえずについてどう思われますか？",
+          "romaji": "toriaezu ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on For now / to start with?",
+          "audioText": "とりあえずについてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    },
+    {
+      "id": "u7_l12",
+      "unitId": "unit_7",
+      "lessonNumber": 12,
+      "dayNumber": 6,
+      "category": "Vocabulary",
+      "sectionTitle": null,
+      "iconType": "vocabulary",
+      "title": "Confirming Edamame soybeans & Confirming Grilled chicken skewers",
+      "titleJp": "枝豆の確認・焼き鳥の確認",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "枝豆の確認",
+        "焼き鳥の確認",
+        "唐揚げの確認"
+      ],
+      "kanjiKeywords": [
+        "枝",
+        "豆",
+        "確",
+        "認",
+        "焼",
+        "鳥",
+        "確",
+        "認",
+        "唐",
+        "揚",
+        "確",
+        "認"
+      ],
+      "items": [
+        {
+          "id": "u7_l12_1",
+          "type": "listen",
+          "prompt": "枝豆の確認",
+          "furigana": "えだまめのかくにん",
+          "romaji": "edamame no kakunin",
+          "english": "Confirming Edamame soybeans",
+          "audioText": "えだまめのかくにん",
+          "options": [
+            "Whisky highball",
+            "Sashimi / sliced raw fish",
+            "Confirming Edamame soybeans",
+            "For now / to start with"
+          ],
+          "correctAnswer": "Confirming Edamame soybeans"
+        },
+        {
+          "id": "u7_l12_2",
+          "type": "spell",
+          "prompt": "枝豆の確認",
+          "furigana": "えだまめのかくにん",
+          "romaji": "edamame no kakunin",
+          "english": "Build 'Confirming Edamame soybeans'",
+          "audioText": "えだまめのかくにん",
+          "tileBank": [
+            "の",
+            "だ",
+            "か",
+            "ま",
+            "め",
+            "く",
+            "に",
+            "え"
+          ],
+          "correctAnswer": "えだまめのかくにん"
+        },
+        {
+          "id": "u7_l12_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な焼き鳥の確認です。",
+          "furigana": "これはいちばんたいせつなやきとりのかくにんです。",
+          "romaji": "Kore wa ichiban taisetsu na yakitori no kakunin desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Confirming Grilled chicken skewers.",
+          "audioText": "これは焼き鳥の確認です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焼き鳥の確認です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l12_4",
+          "type": "scramble",
+          "prompt": "これは焼き鳥の確認です",
+          "furigana": "これはやきとりのかくにんです",
+          "romaji": "Kore wa yakitori no kakunin desu.",
+          "english": "This is Confirming Grilled chicken skewers.",
+          "audioText": "これは焼き鳥の確認です",
+          "scrambleTokens": [
+            "です",
+            "それ",
+            "これは",
+            "焼き鳥の確認",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "焼き鳥の確認",
+            "です"
+          ],
+          "correctAnswer": "これは焼き鳥の確認です"
+        },
+        {
+          "id": "u7_l12_5",
+          "type": "speak",
+          "prompt": "唐揚げの確認",
+          "furigana": "からあげのかくにん",
+          "romaji": "karaage no kakunin",
+          "english": "Pronounce: Confirming Japanese fried chicken",
+          "audioText": "からあげのかくにん",
+          "targetSpeech": "唐揚げの確認",
+          "options": [
+            "Confirming Japanese fried chicken",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "唐揚げの確認"
+        },
+        {
+          "id": "u7_l12_6",
+          "type": "dictate",
+          "prompt": "唐揚げの確認です",
+          "furigana": "からあげのかくにんです",
+          "romaji": "karaage no kakunin desu.",
+          "english": "It is Confirming Japanese fried chicken.",
+          "audioText": "唐揚げの確認です",
+          "dictateTokens": [
+            "これ",
+            "唐揚げの確認",
+            "です",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "唐揚げの確認",
+            "です"
+          ],
+          "correctAnswer": "唐揚げの確認です"
+        },
+        {
+          "id": "u7_l12_7",
+          "type": "match",
+          "prompt": "枝豆の確認・焼き鳥の確認・唐揚げの確認・乾杯",
+          "furigana": "えだまめのかくにん・やきとりのかくにん・からあげのかくにん・かんぱい",
+          "romaji": "edamame no kakunin, yakitori no kakunin, karaage no kakunin, kanpai",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "えだまめのかくにん",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "枝豆の確認",
+              "right": "Confirming Edamame soybeans",
+              "furigana": "えだまめのかくにん",
+              "romaji": "edamame no kakunin"
+            },
+            {
+              "id": "p_1",
+              "left": "焼き鳥の確認",
+              "right": "Confirming Grilled chicken skewers",
+              "furigana": "やきとりのかくにん",
+              "romaji": "yakitori no kakunin"
+            },
+            {
+              "id": "p_2",
+              "left": "唐揚げの確認",
+              "right": "Confirming Japanese fried chicken",
+              "furigana": "からあげのかくにん",
+              "romaji": "karaage no kakunin"
+            },
+            {
+              "id": "p_3",
+              "left": "乾杯",
+              "right": "Cheers!",
+              "furigana": "かんぱい",
+              "romaji": "kanpai"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l12_8",
+          "type": "dialogue",
+          "prompt": "次は枝豆に進みましょう。",
+          "dialogueSpeaker": "話者D",
+          "dialoguePrompt": "次は枝豆に進みましょう。",
+          "furigana": "次は枝豆に進みましょう。",
+          "romaji": "Tsugi wa edamame ni susumimashou.",
+          "english": "Speaker: Let's proceed to Edamame soybeans next.",
+          "audioText": "次は枝豆に進みましょう。",
+          "dialogueOptions": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "options": [
+            "了解いたしました！",
+            "いただきます",
+            "ごめんなさい",
+            "私は学生です"
+          ],
+          "correctAnswer": "了解いたしました！"
+        }
+      ]
+    },
+    {
+      "id": "u7_l13",
+      "unitId": "unit_7",
+      "lessonNumber": 13,
+      "dayNumber": 6,
+      "category": "Expression",
+      "sectionTitle": null,
+      "iconType": "expression",
+      "title": "Cheers! & Draft beer",
+      "titleJp": "乾杯・生ビール",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "乾杯",
+        "生ビール",
+        "とりあえず"
+      ],
+      "kanjiKeywords": [
+        "乾",
+        "杯",
+        "生"
+      ],
+      "items": [
+        {
+          "id": "u7_l13_1",
+          "type": "listen",
+          "prompt": "乾杯",
+          "furigana": "かんぱい",
+          "romaji": "kanpai",
+          "english": "Cheers!",
+          "audioText": "かんぱい",
+          "options": [
+            "Confirming Seat / table",
+            "Cheers!",
+            "Draft beer",
+            "Confirming Japanese pub / Izakaya"
+          ],
+          "correctAnswer": "Cheers!"
+        },
+        {
+          "id": "u7_l13_2",
+          "type": "spell",
+          "prompt": "乾杯",
+          "furigana": "かんぱい",
+          "romaji": "kanpai",
+          "english": "Build 'Cheers!'",
+          "audioText": "かんぱい",
+          "tileBank": [
+            "ぱ",
+            "ひ",
+            "て",
+            "わ",
+            "ん",
+            "ね",
+            "い",
+            "か"
+          ],
+          "correctAnswer": "かんぱい"
+        },
+        {
+          "id": "u7_l13_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な生ビールです。",
+          "furigana": "これはいちばんたいせつななまビールです。",
+          "romaji": "Kore wa ichiban taisetsu na nama biiru desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Draft beer.",
+          "audioText": "これは生ビールです。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な生ビールです。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l13_4",
+          "type": "scramble",
+          "prompt": "これは生ビールです",
+          "furigana": "これはなまビールです",
+          "romaji": "Kore wa nama biiru desu.",
+          "english": "This is Draft beer.",
+          "audioText": "これは生ビールです",
+          "scrambleTokens": [
+            "ではありません",
+            "です",
+            "生ビール",
+            "それ",
+            "これは"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "生ビール",
+            "です"
+          ],
+          "correctAnswer": "これは生ビールです"
+        },
+        {
+          "id": "u7_l13_5",
+          "type": "speak",
+          "prompt": "とりあえず",
+          "furigana": "とりあえず",
+          "romaji": "toriaezu",
+          "english": "Pronounce: For now / to start with",
+          "audioText": "とりあえず",
+          "targetSpeech": "とりあえず",
+          "options": [
+            "For now / to start with",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "とりあえず"
+        },
+        {
+          "id": "u7_l13_6",
+          "type": "dictate",
+          "prompt": "とりあえずです",
+          "furigana": "とりあえずです",
+          "romaji": "toriaezu desu.",
+          "english": "It is For now / to start with.",
+          "audioText": "とりあえずです",
+          "dictateTokens": [
+            "とりあえず",
+            "です",
+            "ではありません",
+            "これ"
+          ],
+          "dictateSolution": [
+            "とりあえず",
+            "です"
+          ],
+          "correctAnswer": "とりあえずです"
+        },
+        {
+          "id": "u7_l13_7",
+          "type": "match",
+          "prompt": "乾杯・生ビール・とりあえず・枝豆",
+          "furigana": "かんぱい・なまビール・とりあえず・えだまめ",
+          "romaji": "kanpai, nama biiru, toriaezu, edamame",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "かんぱい",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "乾杯",
+              "right": "Cheers!",
+              "furigana": "かんぱい",
+              "romaji": "kanpai"
+            },
+            {
+              "id": "p_1",
+              "left": "生ビール",
+              "right": "Draft beer",
+              "furigana": "なまビール",
+              "romaji": "nama biiru"
+            },
+            {
+              "id": "p_2",
+              "left": "とりあえず",
+              "right": "For now / to start with",
+              "furigana": "とりあえず",
+              "romaji": "toriaezu"
+            },
+            {
+              "id": "p_3",
+              "left": "枝豆",
+              "right": "Edamame soybeans",
+              "furigana": "えだまめ",
+              "romaji": "edamame"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l13_8",
+          "type": "dialogue",
+          "prompt": "乾杯について教えていただけますか？",
+          "dialogueSpeaker": "話者A",
+          "dialoguePrompt": "乾杯について教えていただけますか？",
+          "furigana": "乾杯について教えていただけますか？",
+          "romaji": "kanpai ni tsuite oshiete itadakemasu ka?",
+          "english": "Speaker: Could you tell me about Cheers!?",
+          "audioText": "乾杯について教えていただけますか？",
+          "dialogueOptions": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "options": [
+            "はい、詳しくご説明いたします。",
+            "さようなら",
+            "いいえ、日本人です",
+            "はじめまして"
+          ],
+          "correctAnswer": "はい、詳しくご説明いたします。"
+        }
+      ]
+    },
+    {
+      "id": "u7_l14",
+      "unitId": "unit_7",
+      "lessonNumber": 14,
+      "dayNumber": 6,
+      "category": "Review Quiz",
+      "sectionTitle": null,
+      "iconType": "quiz",
+      "title": "Edamame soybeans & Grilled chicken skewers",
+      "titleJp": "枝豆・焼き鳥",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "枝豆",
+        "焼き鳥",
+        "唐揚げ"
+      ],
+      "kanjiKeywords": [
+        "枝",
+        "豆",
+        "焼",
+        "鳥",
+        "唐",
+        "揚"
+      ],
+      "items": [
+        {
+          "id": "u7_l14_1",
+          "type": "listen",
+          "prompt": "枝豆",
+          "furigana": "えだまめ",
+          "romaji": "edamame",
+          "english": "Edamame soybeans",
+          "audioText": "えだまめ",
+          "options": [
+            "For now / to start with",
+            "Confirming Edamame soybeans",
+            "Edamame soybeans",
+            "Japanese pub / Izakaya"
+          ],
+          "correctAnswer": "Edamame soybeans"
+        },
+        {
+          "id": "u7_l14_2",
+          "type": "spell",
+          "prompt": "枝豆",
+          "furigana": "えだまめ",
+          "romaji": "edamame",
+          "english": "Build 'Edamame soybeans'",
+          "audioText": "えだまめ",
+          "tileBank": [
+            "ら",
+            "め",
+            "ま",
+            "だ",
+            "よ",
+            "し",
+            "え",
+            "つ"
+          ],
+          "correctAnswer": "えだまめ"
+        },
+        {
+          "id": "u7_l14_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な焼き鳥です。",
+          "furigana": "これはいちばんたいせつなやきとりです。",
+          "romaji": "Kore wa ichiban taisetsu na yakitori desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Grilled chicken skewers.",
+          "audioText": "これは焼き鳥です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な焼き鳥です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l14_4",
+          "type": "scramble",
+          "prompt": "これは焼き鳥です",
+          "furigana": "これはやきとりです",
+          "romaji": "Kore wa yakitori desu.",
+          "english": "This is Grilled chicken skewers.",
+          "audioText": "これは焼き鳥です",
+          "scrambleTokens": [
+            "それ",
+            "です",
+            "焼き鳥",
+            "これは",
+            "ではありません"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "焼き鳥",
+            "です"
+          ],
+          "correctAnswer": "これは焼き鳥です"
+        },
+        {
+          "id": "u7_l14_5",
+          "type": "speak",
+          "prompt": "唐揚げ",
+          "furigana": "からあげ",
+          "romaji": "karaage",
+          "english": "Pronounce: Japanese fried chicken",
+          "audioText": "からあげ",
+          "targetSpeech": "唐揚げ",
+          "options": [
+            "Japanese fried chicken",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "唐揚げ"
+        },
+        {
+          "id": "u7_l14_6",
+          "type": "dictate",
+          "prompt": "唐揚げです",
+          "furigana": "からあげです",
+          "romaji": "karaage desu.",
+          "english": "It is Japanese fried chicken.",
+          "audioText": "唐揚げです",
+          "dictateTokens": [
+            "これ",
+            "唐揚げ",
+            "です",
+            "ではありません"
+          ],
+          "dictateSolution": [
+            "唐揚げ",
+            "です"
+          ],
+          "correctAnswer": "唐揚げです"
+        },
+        {
+          "id": "u7_l14_7",
+          "type": "match",
+          "prompt": "枝豆・焼き鳥・唐揚げ・お代わり",
+          "furigana": "えだまめ・やきとり・からあげ・おかわり",
+          "romaji": "edamame, yakitori, karaage, okawari",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "えだまめ",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "枝豆",
+              "right": "Edamame soybeans",
+              "furigana": "えだまめ",
+              "romaji": "edamame"
+            },
+            {
+              "id": "p_1",
+              "left": "焼き鳥",
+              "right": "Grilled chicken skewers",
+              "furigana": "やきとり",
+              "romaji": "yakitori"
+            },
+            {
+              "id": "p_2",
+              "left": "唐揚げ",
+              "right": "Japanese fried chicken",
+              "furigana": "からあげ",
+              "romaji": "karaage"
+            },
+            {
+              "id": "p_3",
+              "left": "お代わり",
+              "right": "Another serving / refill",
+              "furigana": "おかわり",
+              "romaji": "okawari"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l14_8",
+          "type": "dialogue",
+          "prompt": "生ビールの準備はできていますか？",
+          "dialogueSpeaker": "話者B",
+          "dialoguePrompt": "生ビールの準備はできていますか？",
+          "furigana": "生ビールの準備はできていますか？",
+          "romaji": "nama biiru no junbi wa dekite imasu ka?",
+          "english": "Speaker: Is the preparation for Draft beer ready?",
+          "audioText": "生ビールの準備はできていますか？",
+          "dialogueOptions": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "options": [
+            "はい、万全です！",
+            "お水をお願いします",
+            "ごちそうさまでした",
+            "駅はどこですか"
+          ],
+          "correctAnswer": "はい、万全です！"
+        }
+      ]
+    },
+    {
+      "id": "u7_l15",
+      "unitId": "unit_7",
+      "lessonNumber": 15,
+      "dayNumber": 7,
+      "category": "Unit Test",
+      "sectionTitle": "Unit 7 Master Exam",
+      "iconType": "test",
+      "title": "Unit 7 Master Exam",
+      "titleJp": "第7週 総合試験",
+      "summary": "Practice 3 essential terms and real dialogue context.",
+      "vocabKeywords": [
+        "お代わり",
+        "割り勘",
+        "居酒屋"
+      ],
+      "kanjiKeywords": [
+        "代",
+        "割",
+        "勘",
+        "居",
+        "酒",
+        "屋"
+      ],
+      "items": [
+        {
+          "id": "u7_l15_1",
+          "type": "listen",
+          "prompt": "お代わり",
+          "furigana": "おかわり",
+          "romaji": "okawari",
+          "english": "Another serving / refill",
+          "audioText": "おかわり",
+          "options": [
+            "Another serving / refill",
+            "For now / to start with",
+            "Confirming Whisky highball",
+            "Confirming Pub snacks / appetizers"
+          ],
+          "correctAnswer": "Another serving / refill"
+        },
+        {
+          "id": "u7_l15_2",
+          "type": "spell",
+          "prompt": "お代わり",
+          "furigana": "おかわり",
+          "romaji": "okawari",
+          "english": "Build 'Another serving / refill'",
+          "audioText": "おかわり",
+          "tileBank": [
+            "か",
+            "う",
+            "と",
+            "わ",
+            "ち",
+            "お",
+            "た",
+            "り"
+          ],
+          "correctAnswer": "おかわり"
+        },
+        {
+          "id": "u7_l15_3",
+          "type": "cloze",
+          "prompt": "これはいちばん大切な割り勘です。",
+          "furigana": "これはいちばんたいせつなわりかんです。",
+          "romaji": "Kore wa ichiban taisetsu na warikan desu.",
+          "english": "Fill in topic particle 'は' (wa): This is the most important Splitting the bill.",
+          "audioText": "これは割り勘です。",
+          "clozeSentence": "これ {{BLANK}} いちばん大切な割り勘です。",
+          "clozeTarget": "は",
+          "clozeOptions": [
+            "は",
+            "が",
+            "を",
+            "に"
+          ],
+          "correctAnswer": "は",
+          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+        },
+        {
+          "id": "u7_l15_4",
+          "type": "scramble",
+          "prompt": "これは割り勘です",
+          "furigana": "これはわりかんです",
+          "romaji": "Kore wa warikan desu.",
+          "english": "This is Splitting the bill.",
+          "audioText": "これは割り勘です",
+          "scrambleTokens": [
+            "ではありません",
+            "です",
+            "これは",
+            "それ",
+            "割り勘"
+          ],
+          "scrambleSolution": [
+            "これは",
+            "割り勘",
+            "です"
+          ],
+          "correctAnswer": "これは割り勘です"
+        },
+        {
+          "id": "u7_l15_5",
+          "type": "speak",
+          "prompt": "居酒屋",
+          "furigana": "いざかや",
+          "romaji": "izakaya",
+          "english": "Pronounce: Japanese pub / Izakaya",
+          "audioText": "いざかや",
+          "targetSpeech": "居酒屋",
+          "options": [
+            "Japanese pub / Izakaya",
+            "Incorrect pronunciation",
+            "Different meaning",
+            "Antonym phrase"
+          ],
+          "correctAnswer": "居酒屋"
+        },
+        {
+          "id": "u7_l15_6",
+          "type": "dictate",
+          "prompt": "居酒屋です",
+          "furigana": "いざかやです",
+          "romaji": "izakaya desu.",
+          "english": "It is Japanese pub / Izakaya.",
+          "audioText": "居酒屋です",
+          "dictateTokens": [
+            "ではありません",
+            "居酒屋",
+            "です",
+            "これ"
+          ],
+          "dictateSolution": [
+            "居酒屋",
+            "です"
+          ],
+          "correctAnswer": "居酒屋です"
+        },
+        {
+          "id": "u7_l15_7",
+          "type": "match",
+          "prompt": "お代わり・割り勘・居酒屋・おつまみ",
+          "furigana": "おかわり・わりかん・いざかや・おつまみ",
+          "romaji": "okawari, warikan, izakaya, otsumami",
+          "english": "Match each Japanese word to its English meaning.",
+          "audioText": "おかわり",
+          "matchPairs": [
+            {
+              "id": "p_0",
+              "left": "お代わり",
+              "right": "Another serving / refill",
+              "furigana": "おかわり",
+              "romaji": "okawari"
+            },
+            {
+              "id": "p_1",
+              "left": "割り勘",
+              "right": "Splitting the bill",
+              "furigana": "わりかん",
+              "romaji": "warikan"
+            },
+            {
+              "id": "p_2",
+              "left": "居酒屋",
+              "right": "Japanese pub / Izakaya",
+              "furigana": "いざかや",
+              "romaji": "izakaya"
+            },
+            {
+              "id": "p_3",
+              "left": "おつまみ",
+              "right": "Pub snacks / appetizers",
+              "furigana": "おつまみ",
+              "romaji": "otsumami"
+            }
+          ],
+          "correctAnswer": "all"
+        },
+        {
+          "id": "u7_l15_8",
+          "type": "dialogue",
+          "prompt": "とりあえずについてどう思われますか？",
+          "dialogueSpeaker": "話者C",
+          "dialoguePrompt": "とりあえずについてどう思われますか？",
+          "furigana": "とりあえずについてどう思われますか？",
+          "romaji": "toriaezu ni tsuite dou omowaremasu ka?",
+          "english": "Speaker: What are your thoughts on For now / to start with?",
+          "audioText": "とりあえずについてどう思われますか？",
+          "dialogueOptions": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "options": [
+            "大変重要だと思います。",
+            "こんにちは",
+            "美味しいです",
+            "いいえ、結構です"
+          ],
+          "correctAnswer": "大変重要だと思います。"
+        }
+      ]
+    }
+  ],
+  "revisionGate": {
+    "id": "gate_unit_7",
+    "unitId": "unit_7",
+    "title": "Unit 7 Mastery Checkpoint",
+    "titleJp": "第7週 総復習テスト",
+    "requiredScorePercent": 80,
+    "items": [
+      {
+        "id": "u7_l1_1",
+        "type": "listen",
+        "prompt": "乾杯",
+        "furigana": "かんぱい",
+        "romaji": "kanpai",
+        "english": "Cheers!",
+        "audioText": "かんぱい",
+        "options": [
+          "Confirming Another serving / refill",
+          "Confirming Cheers!",
+          "Cheers!",
+          "Sashimi / sliced raw fish"
+        ],
+        "correctAnswer": "Cheers!"
+      },
+      {
+        "id": "u7_l1_2",
+        "type": "spell",
+        "prompt": "乾杯",
+        "furigana": "かんぱい",
+        "romaji": "kanpai",
+        "english": "Build 'Cheers!'",
+        "audioText": "かんぱい",
+        "tileBank": [
+          "ね",
+          "い",
+          "か",
+          "ん",
+          "せ",
+          "み",
+          "ろ",
+          "ぱ"
+        ],
+        "correctAnswer": "かんぱい"
+      },
+      {
+        "id": "u7_l3_1",
+        "type": "listen",
+        "prompt": "お代わり",
+        "furigana": "おかわり",
+        "romaji": "okawari",
+        "english": "Another serving / refill",
+        "audioText": "おかわり",
+        "options": [
+          "Confirming Pub snacks / appetizers",
+          "Confirming Oolong tea",
+          "Another serving / refill",
+          "Confirming Grilled chicken skewers"
+        ],
+        "correctAnswer": "Another serving / refill"
+      },
+      {
+        "id": "u7_l3_2",
+        "type": "spell",
+        "prompt": "お代わり",
+        "furigana": "おかわり",
+        "romaji": "okawari",
+        "english": "Build 'Another serving / refill'",
+        "audioText": "おかわり",
+        "tileBank": [
+          "か",
+          "く",
+          "つ",
+          "り",
+          "そ",
+          "お",
+          "わ",
+          "ね"
+        ],
+        "correctAnswer": "おかわり"
+      },
+      {
+        "id": "u7_l5_1",
+        "type": "listen",
+        "prompt": "刺身",
+        "furigana": "さしみ",
+        "romaji": "sashimi",
+        "english": "Sashimi / sliced raw fish",
+        "audioText": "さしみ",
+        "options": [
+          "Whisky highball",
+          "Sashimi / sliced raw fish",
+          "Confirming Oolong tea",
+          "Confirming For now / to start with"
+        ],
+        "correctAnswer": "Sashimi / sliced raw fish"
+      },
+      {
+        "id": "u7_l5_2",
+        "type": "spell",
+        "prompt": "刺身",
+        "furigana": "さしみ",
+        "romaji": "sashimi",
+        "english": "Build 'Sashimi / sliced raw fish'",
+        "audioText": "さしみ",
+        "tileBank": [
+          "よ",
+          "と",
+          "さ",
+          "み",
+          "ろ",
+          "し",
+          "ん",
+          "た"
+        ],
+        "correctAnswer": "さしみ"
+      },
+      {
+        "id": "u7_l7_1",
+        "type": "listen",
+        "prompt": "枝豆の確認",
+        "furigana": "えだまめのかくにん",
+        "romaji": "edamame no kakunin",
+        "english": "Confirming Edamame soybeans",
+        "audioText": "えだまめのかくにん",
+        "options": [
+          "Confirming Edamame soybeans",
+          "Japanese fried chicken",
+          "Confirming For now / to start with",
+          "Confirming For now / to start with"
+        ],
+        "correctAnswer": "Confirming Edamame soybeans"
+      },
+      {
+        "id": "u7_l7_2",
+        "type": "spell",
+        "prompt": "枝豆の確認",
+        "furigana": "えだまめのかくにん",
+        "romaji": "edamame no kakunin",
+        "english": "Build 'Confirming Edamame soybeans'",
+        "audioText": "えだまめのかくにん",
+        "tileBank": [
+          "の",
+          "え",
+          "だ",
+          "く",
+          "ま",
+          "に",
+          "め",
+          "か"
+        ],
+        "correctAnswer": "えだまめのかくにん"
+      },
+      {
+        "id": "u7_l9_1",
+        "type": "listen",
+        "prompt": "おつまみの確認",
+        "furigana": "おつまみのかくにん",
+        "romaji": "otsumami no kakunin",
+        "english": "Confirming Pub snacks / appetizers",
+        "audioText": "おつまみのかくにん",
+        "options": [
+          "Confirming Edamame soybeans",
+          "Confirming Japanese pub / Izakaya",
+          "Sashimi / sliced raw fish",
+          "Confirming Pub snacks / appetizers"
+        ],
+        "correctAnswer": "Confirming Pub snacks / appetizers"
+      },
+      {
+        "id": "u7_l9_2",
+        "type": "spell",
+        "prompt": "おつまみの確認",
+        "furigana": "おつまみのかくにん",
+        "romaji": "otsumami no kakunin",
+        "english": "Build 'Confirming Pub snacks / appetizers'",
+        "audioText": "おつまみのかくにん",
+        "tileBank": [
+          "み",
+          "の",
+          "ま",
+          "か",
+          "お",
+          "く",
+          "に",
+          "つ"
+        ],
+        "correctAnswer": "おつまみのかくにん"
+      },
+      {
+        "id": "u7_l11_1",
+        "type": "listen",
+        "prompt": "乾杯の確認",
+        "furigana": "かんぱいのかくにん",
+        "romaji": "kanpai no kakunin",
+        "english": "Confirming Cheers!",
+        "audioText": "かんぱいのかくにん",
+        "options": [
+          "Confirming Sashimi / sliced raw fish",
+          "Confirming Cheers!",
+          "Confirming Japanese fried chicken",
+          "Confirming Draft beer"
+        ],
+        "correctAnswer": "Confirming Cheers!"
+      },
+      {
+        "id": "u7_l11_2",
+        "type": "spell",
+        "prompt": "乾杯の確認",
+        "furigana": "かんぱいのかくにん",
+        "romaji": "kanpai no kakunin",
+        "english": "Build 'Confirming Cheers!'",
+        "audioText": "かんぱいのかくにん",
+        "tileBank": [
+          "い",
+          "か",
+          "の",
+          "に",
+          "か",
+          "く",
+          "ぱ",
+          "ん"
+        ],
+        "correctAnswer": "かんぱいのかくにん"
+      }
+    ]
+  }
+}

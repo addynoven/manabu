@@ -2,13 +2,15 @@ import curriculumData from '@/data/curriculum.json';
 
 export interface LessonExercise {
   id: string;
-  type: 'select' | 'translate' | 'audio' | 'order';
+  type: 'select' | 'translate' | 'audio' | 'order' | 'scramble' | 'dialogue' | 'dictation' | 'speak' | 'match';
   prompt: string;
   subPrompt?: string;
   character?: string;
   correctAnswer: string;
   options: string[];
-  explanation: string;
+  explanation?: string;
+  matchPairs?: Array<{ id: string; left: string; right: string }>;
+  wordTiles?: string[];
 }
 
 export interface UnitLesson {
@@ -17,6 +19,8 @@ export interface UnitLesson {
   subtitle: string;
   xpReward: number;
   exercises: LessonExercise[];
+  lessonNumber?: number;
+  vocabKeywords?: string[];
 }
 
 export interface CurriculumUnit {

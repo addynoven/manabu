@@ -1,4 +1,4 @@
-import { KanjiScreen } from '@/features/content/screens/KanjiScreen';
+import { KanjiScreen } from '@/features/content/screens';
 
 export default function Page() {
   return <KanjiScreen />;
