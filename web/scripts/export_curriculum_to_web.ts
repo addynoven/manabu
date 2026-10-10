@@ -1,6 +1,14 @@
 import fs from 'fs';
 import path from 'path';
-import { ALL_DOJO_UNITS } from '../../data/units';
+
+const unitsJsonPath = path.resolve(__dirname, '../../data/units/units.json');
+
+if (!fs.existsSync(unitsJsonPath)) {
+  console.log('Using pre-bundled curriculum.json (data/units/units.json not present in build sandbox)');
+  process.exit(0);
+}
+
+const ALL_DOJO_UNITS = JSON.parse(fs.readFileSync(unitsJsonPath, 'utf8'));
 
 const PLACEHOLDER_FILTER = /antonym|different meaning|incorrect pronunciation|similar meaning|distractor|placeholder/i;
 const INVALID_GRAMMAR_FILTER = /来るです|するです|これは聞くです/i;
@@ -49,9 +57,9 @@ const japaneseList = Array.from(japanesePool);
 const englishList = Array.from(englishPool);
 
 export function mapUnits() {
-  return ALL_DOJO_UNITS.map(unit => {
-    let textbook = (unit as any).textbook;
-    let jlptLevel = (unit as any).jlptLevel || 'N5';
+  return ALL_DOJO_UNITS.map((unit: any) => {
+    let textbook = unit.textbook;
+    let jlptLevel = unit.jlptLevel || 'N5';
 
     if (!textbook) {
       if (unit.unitNumber <= 12) {
@@ -76,7 +84,7 @@ export function mapUnits() {
       color: unit.themeColor || '#10B981',
       textbook,
       jlptLevel,
-      lessons: unit.lessons.map(lesson => {
+      lessons: unit.lessons.map((lesson: any) => {
         return {
           id: lesson.id,
           lessonNumber: lesson.lessonNumber,
@@ -86,7 +94,7 @@ export function mapUnits() {
           xpReward: 20,
           category: lesson.category,
           dayNumber: lesson.dayNumber,
-          exercises: lesson.items.map((item, itemIdx) => {
+          exercises: lesson.items.map((item: any, itemIdx: number) => {
             const rawType = (item.type || '').toLowerCase();
             const targetAnswer = (item.correctAnswer || item.english || '').trim();
             const isJapaneseTarget = /[\u3040-\u30ff\u4e00-\u9faf]/.test(targetAnswer);
@@ -144,7 +152,7 @@ export function mapUnits() {
             return {
               id: item.id,
               type: exType,
-              prompt: item.english || (item as any).contextSentence || 'Choose the correct answer:',
+              prompt: item.english || item.contextSentence || 'Choose the correct answer:',
               subPrompt: item.romaji
                 ? `${item.romaji}${item.furigana ? ` • ${item.furigana}` : ''}`
                 : undefined,
