@@ -5,7 +5,7 @@ import { StitchHeader } from '@/core/components/StitchHeader';
 import { AuthGate } from '@/features/auth/components/AuthGate';
 import { speakJapanese } from '@/features/content/models/kana';
 import rawVocab from '@/data/vocab_n5.json';
-import { Zap } from 'lucide-react';
+import { Zap, RefreshCw } from 'lucide-react';
 import { FsrsRetentionGraph } from '../../components/FsrsRetentionGraph';
 import { useSrsQueue } from '../../hooks/useSrsQueue';
 import {
@@ -41,7 +41,7 @@ const STAGE_COLORS = [
 ];
 
 export function ReviewScreen() {
-  const { dueQueue, allCards, stageSummary, submitReview, refetch } = useSrsQueue();
+  const { dueQueue, allCards, stageSummary, loading: queueLoading, submitReview, refetch } = useSrsQueue();
 
   const [isReviewing, setIsReviewing] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -93,6 +93,7 @@ export function ReviewScreen() {
         <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 space-y-6">
           <ReviewHeader
             dueCount={dueQueue.length}
+            loading={queueLoading}
             onAddMoreVocab={() => {}}
             onStartSession={startSession}
           />
@@ -140,7 +141,12 @@ export function ReviewScreen() {
                   </span>
                 </div>
                 <h2 className="text-2xl font-black text-white">
-                  {dueQueue.length > 0 ? (
+                  {queueLoading ? (
+                    <span className="text-[#8fa2aa] flex items-center gap-2">
+                      <RefreshCw size={20} className="animate-spin text-emerald-400" />
+                      Synchronizing active SRS queue...
+                    </span>
+                  ) : dueQueue.length > 0 ? (
                     <>
                       You have <span className="text-red-500">{dueQueue.length} items</span> due for review right now.
                     </>
@@ -155,11 +161,11 @@ export function ReviewScreen() {
 
               <button
                 onClick={startSession}
-                disabled={dueQueue.length === 0}
+                disabled={queueLoading || dueQueue.length === 0}
                 className="px-6 py-4 rounded-2xl bg-[#c74a4a] hover:bg-[#d95a5a] disabled:opacity-40 disabled:hover:bg-[#c74a4a] text-white font-bold text-sm transition shadow-xl shadow-red-950/60 flex items-center justify-center gap-2 shrink-0"
               >
                 <Zap size={16} fill="white" />
-                Launch Review Session
+                <span>{queueLoading ? 'Syncing...' : 'Launch Review Session'}</span>
               </button>
             </div>
           </div>
@@ -167,45 +173,52 @@ export function ReviewScreen() {
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h3 className="text-sm font-bold text-[#c1d0d6] uppercase tracking-wider">
-                Active Items in PostgreSQL SRS Dojo ({allCards.length})
+                Active Items in PostgreSQL SRS Dojo ({queueLoading ? '...' : allCards.length})
               </h3>
               <span className="text-xs text-[#627780]">Live Database Feed</span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-              {allCards.slice(0, 30).map((item) => {
-                const isDue = item.dueAt <= Date.now() && item.stage < 9;
-                return (
-                  <div
-                    key={item.id}
-                    className="bg-[#0a3240]/60 border border-[#17424f] p-4 rounded-2xl flex items-center justify-between"
-                  >
-                    <div>
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="text-xs font-mono text-[#8fa2aa]">{item.kana}</span>
-                        <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold border ${STAGE_COLORS[item.stage]}`}>
-                          {STAGE_NAMES[item.stage]}
-                        </span>
+            {queueLoading ? (
+              <div className="p-8 text-center text-xs text-[#627780] bg-[#0a3240]/40 border border-[#17424f] rounded-2xl flex items-center justify-center gap-2 font-mono">
+                <RefreshCw size={14} className="animate-spin text-emerald-400" />
+                <span>Loading PostgreSQL SRS Dojo items...</span>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                {allCards.slice(0, 30).map((item) => {
+                  const isDue = item.dueAt <= Date.now() && item.stage < 9;
+                  return (
+                    <div
+                      key={item.id}
+                      className="bg-[#0a3240]/60 border border-[#17424f] p-4 rounded-2xl flex items-center justify-between"
+                    >
+                      <div>
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-xs font-mono text-[#8fa2aa]">{item.kana}</span>
+                          <span className={`text-[10px] px-2 py-0.5 rounded-full font-bold border ${STAGE_COLORS[item.stage]}`}>
+                            {STAGE_NAMES[item.stage]}
+                          </span>
+                        </div>
+                        <h4 className="text-lg font-bold text-white font-serif">{item.kanji || item.kana}</h4>
+                        <p className="text-xs text-[#8fa2aa] truncate max-w-[180px]">{item.meaning}</p>
                       </div>
-                      <h4 className="text-lg font-bold text-white font-serif">{item.kanji || item.kana}</h4>
-                      <p className="text-xs text-[#8fa2aa] truncate max-w-[180px]">{item.meaning}</p>
-                    </div>
 
-                    <div className="text-right">
-                      {isDue ? (
-                        <span className="text-[10px] font-bold text-[#ffb4ab] bg-red-500/10 border border-red-500/30 px-2 py-1 rounded-lg">
-                          Ready
-                        </span>
-                      ) : (
-                        <span className="text-[10px] text-[#627780]">
-                          {item.stage === 9 ? 'Mastered' : 'Scheduled'}
-                        </span>
-                      )}
+                      <div className="text-right">
+                        {isDue ? (
+                          <span className="text-[10px] font-bold text-[#ffb4ab] bg-red-500/10 border border-red-500/30 px-2 py-1 rounded-lg">
+                            Ready
+                          </span>
+                        ) : (
+                          <span className="text-[10px] text-[#627780]">
+                            {item.stage === 9 ? 'Mastered' : 'Scheduled'}
+                          </span>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
-            </div>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           <ReviewSessionModal
