@@ -18,13 +18,13 @@ export function ReviewHeader({
     <div className="bg-surface-base border border-border-hairline rounded-xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
       <div>
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-subtle border border-primary-container/30 text-primary text-xs font-bold uppercase tracking-wider mb-2">
-          <RefreshCw size={14} /> FSRS-5 Spaced Repetition Engine
+          <RefreshCw size={14} /> FSRS-6 Spaced Repetition Engine
         </div>
         <h1 className="text-2xl sm:text-3xl font-bold text-text-primary tracking-tight">
           SRS Cloze Study Workstation • <span className="font-serif text-accent-gold font-normal">復習道場</span>
         </h1>
         <p className="text-xs text-text-secondary mt-1 max-w-2xl">
-          Scientifically calibrated memory decay scheduling using FSRS-5 algorithm. Retain kanji readings and vocabulary definitions permanently.
+          Scientifically calibrated memory decay scheduling using FSRS-6 algorithm. Retain kanji readings and vocabulary definitions permanently.
         </p>
       </div>
 

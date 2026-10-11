@@ -130,7 +130,7 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
             </div>
             <div className="min-w-0">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-white">FSRS-5 Spaced Repetition</span>
+                <span className="text-xs font-bold text-white">FSRS-6 Spaced Repetition</span>
                 <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/20 px-1.5 py-0.5 rounded">Memory</span>
               </div>
               <p className="text-[11px] text-[#8fa2aa] leading-tight mt-0.5">
