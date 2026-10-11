@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import confetti from 'canvas-confetti';
 import { speakJapanese } from '@/features/content/models/kana';
 import { Volume2, CheckCircle2, XCircle } from 'lucide-react';
 
@@ -54,6 +55,13 @@ export function ReviewSessionModal({
 
   const currentItem = dueItems[currentIndex];
 
+  const handleRatingSubmit = (promoted: boolean) => {
+    if (promoted) {
+      confetti({ particleCount: 40, spread: 50, origin: { y: 0.7 } });
+    }
+    onRate(promoted);
+  };
+
   return (
     <div className="fixed inset-0 z-50 bg-[#051b22]/95 backdrop-blur-md flex items-center justify-center p-4">
       <div className="bg-[#0a3240] border border-[#17424f] rounded-xl p-6 md:p-8 max-w-lg w-full shadow-2xl space-y-6">
@@ -76,26 +84,33 @@ export function ReviewSessionModal({
               </button>
             </div>
 
-            <div className="bg-[#051b22] border border-[#17424f] rounded-2xl p-8 text-center min-h-[220px] flex flex-col items-center justify-center shadow-inner">
-              <span className="text-xs text-[#627780] font-bold uppercase tracking-wider mb-2">
-                Prompt: What is the meaning?
-              </span>
-              <h2 className="text-5xl font-black text-white font-serif mb-4">
-                {currentItem.kanji || currentItem.kana}
-              </h2>
-              <button
-                onClick={() => speakJapanese(currentItem.kanji || currentItem.kana)}
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0f3947] hover:bg-[#0f3947] text-xs text-[#c1d0d6]"
+            {/* 3D Perspective Card Container */}
+            <div className="[perspective:1000px] w-full">
+              <div
+                className={`bg-[#051b22] border border-[#17424f] rounded-2xl p-8 text-center min-h-[220px] flex flex-col items-center justify-center shadow-inner transition-transform duration-300 [transform-style:preserve-3d] ${
+                  showAnswer ? '[transform:rotateX(0deg)]' : ''
+                }`}
               >
-                <Volume2 size={13} /> Listen
-              </button>
+                <span className="text-xs text-[#627780] font-bold uppercase tracking-wider mb-2">
+                  Prompt: What is the meaning?
+                </span>
+                <h2 className="text-5xl font-black text-white font-serif mb-4">
+                  {currentItem.kanji || currentItem.kana}
+                </h2>
+                <button
+                  onClick={() => speakJapanese(currentItem.kanji || currentItem.kana)}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#0f3947] hover:bg-[#134454] text-xs text-[#c1d0d6] transition border border-[#17424f]"
+                >
+                  <Volume2 size={14} /> Listen Pronunciation
+                </button>
 
-              {showAnswer && (
-                <div className="mt-6 pt-6 border-t border-[#17424f] w-full animate-in fade-in duration-200">
-                  <p className="text-sm font-mono text-[#ffb4ab] mb-1">Kana: {currentItem.kana}</p>
-                  <h3 className="text-xl font-bold text-white">{currentItem.meaning}</h3>
-                </div>
-              )}
+                {showAnswer && (
+                  <div className="mt-6 pt-6 border-t border-[#17424f] w-full animate-in fade-in zoom-in-95 duration-200">
+                    <p className="text-sm font-mono text-[#ffb4ab] mb-1">Kana: {currentItem.kana}</p>
+                    <h3 className="text-xl font-bold text-white">{currentItem.meaning}</h3>
+                  </div>
+                )}
+              </div>
             </div>
 
             {!showAnswer ? (
@@ -108,14 +123,14 @@ export function ReviewSessionModal({
             ) : (
               <div className="grid grid-cols-2 gap-3">
                 <button
-                  onClick={() => onRate(false)}
+                  onClick={() => handleRatingSubmit(false)}
                   className="py-3.5 rounded-xl bg-red-950/40 hover:bg-red-950/70 border border-red-500/40 text-red-300 font-bold text-xs transition flex items-center justify-center gap-2"
                 >
                   <XCircle size={16} /> Incorrect (Drop Stage)
                 </button>
                 <button
-                  onClick={() => onRate(true)}
-                  className="py-3.5 rounded-xl bg-emerald-950/40 hover:bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 font-bold text-xs transition flex items-center justify-center gap-2"
+                  onClick={() => handleRatingSubmit(true)}
+                  className="py-3.5 rounded-xl bg-emerald-950/40 hover:bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 font-bold text-xs transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/40"
                 >
                   <CheckCircle2 size={16} /> Correct (+10 XP)
                 </button>

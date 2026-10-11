@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useMemo } from 'react';
-import { Clock, ShieldCheck, Zap, BarChart2, Layers, Flame, Trophy } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { Clock, ShieldCheck, Zap, BarChart2, Layers, Calendar, Flame, Activity } from 'lucide-react';
 
 export interface SrsCardProp {
   id: string;
@@ -23,6 +23,7 @@ export function FsrsRetentionGraph({
   efficiencyAdvantage = 14.2,
 }: FsrsRetentionGraphProps) {
   const now = Date.now();
+  const [hoveredBucket, setHoveredBucket] = useState<string | null>(null);
 
   // 1. Calculate Bunpro 24-Hour & 7-Day Review Forecast Buckets
   const forecast = useMemo(() => {
@@ -102,6 +103,23 @@ export function FsrsRetentionGraph({
     return { apprentice, guru, master, enlightened, burned, total: cards.length };
   }, [cards]);
 
+  // 3. Simulated 14-Day Activity Heatmap Grid Data
+  const heatmapDays = useMemo(() => {
+    return Array.from({ length: 14 }).map((_, idx) => {
+      const dayOffset = 13 - idx;
+      const d = new Date(now - dayOffset * 86400 * 1000);
+      const dayName = d.toLocaleDateString('en-US', { weekday: 'narrow' });
+      // Calculate activity intensity
+      const count = dayOffset === 0 ? counts.total : Math.floor((idx * 7) % 18) + (idx % 2 === 0 ? 5 : 0);
+      let intensity: 'none' | 'low' | 'med' | 'high' = 'none';
+      if (count >= 15) intensity = 'high';
+      else if (count >= 8) intensity = 'med';
+      else if (count > 0) intensity = 'low';
+
+      return { dayName, dateStr: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }), count, intensity };
+    });
+  }, [now, counts.total]);
+
   return (
     <div className="bg-[#0a3240] border border-[#17424f] rounded-2xl p-6 shadow-xl space-y-6 text-[#c1d0d6]">
       {/* Header Bar */}
@@ -119,7 +137,7 @@ export function FsrsRetentionGraph({
           </h2>
         </div>
 
-        <div className="flex items-center gap-3 text-xs font-mono">
+        <div className="flex items-center gap-3 text-xs font-mono flex-wrap">
           <div className="bg-[#051b22] px-3.5 py-2 rounded-xl border border-[#17424f]">
             <span className="text-[#8fa2aa] block text-[10px] uppercase font-bold">Active Items</span>
             <span className="text-white font-bold text-sm">{counts.total}</span>
@@ -131,14 +149,14 @@ export function FsrsRetentionGraph({
         </div>
       </div>
 
-      {/* 1. Bunpro Stacked Review Forecast Bar Chart */}
+      {/* 1. Bunpro Interactive Stacked Review Forecast Bar Chart */}
       <div className="space-y-3">
-        <div className="flex items-center justify-between text-xs">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
           <span className="font-bold text-white uppercase tracking-wider font-mono flex items-center gap-1.5">
             <Clock size={14} className="text-pink-400" />
             Upcoming Review Workload Forecast (Next 24h &amp; 7 Days)
           </span>
-          <div className="flex items-center gap-3 text-[11px] font-mono">
+          <div className="flex items-center gap-3 text-[11px] font-mono flex-wrap">
             <span className="flex items-center gap-1 text-pink-400">
               <span className="w-2.5 h-2.5 rounded-sm bg-pink-500" /> Apprentice (Tiers 1-4)
             </span>
@@ -154,23 +172,43 @@ export function FsrsRetentionGraph({
           </div>
         </div>
 
-        <div className="bg-[#051b22] border border-[#17424f] rounded-2xl p-5 relative">
-          <div className="h-44 flex items-end justify-between gap-3 pt-6 pb-2 px-2 border-b border-[#17424f]/80">
+        <div className="bg-[#051b22] border border-[#17424f] rounded-2xl p-5 relative overflow-visible">
+          <div className="h-48 flex items-end justify-between gap-3 pt-6 pb-2 px-2 border-b border-[#17424f]/80 relative">
             {forecast.map((b) => {
               const hApprentice = (b.apprentice / maxForecastCount) * 100;
               const hGuru = (b.guru / maxForecastCount) * 100;
               const hMaster = (b.master / maxForecastCount) * 100;
               const hEnlightened = (b.enlightened / maxForecastCount) * 100;
+              const isHovered = hoveredBucket === b.id;
 
               return (
-                <div key={b.id} className="flex-1 flex flex-col items-center gap-1.5 group h-full justify-end">
+                <div
+                  key={b.id}
+                  onMouseEnter={() => setHoveredBucket(b.id)}
+                  onMouseLeave={() => setHoveredBucket(null)}
+                  className="flex-1 flex flex-col items-center gap-1.5 group h-full justify-end relative cursor-pointer"
+                >
+                  {/* Interactive Tooltip Card */}
+                  {isHovered && b.total > 0 && (
+                    <div className="absolute -top-24 z-30 bg-[#001017] border border-[#38bdf8]/50 rounded-xl p-3 shadow-2xl text-[11px] font-mono space-y-1 whitespace-nowrap animate-in fade-in zoom-in-95 pointer-events-none">
+                      <div className="font-bold text-white border-b border-[#17424f] pb-1 flex justify-between gap-4">
+                        <span>{b.label} Slot</span>
+                        <span className="text-amber-400">{b.total} Total Due</span>
+                      </div>
+                      {b.apprentice > 0 && <div className="text-pink-400 flex justify-between gap-3"><span>Apprentice:</span><span>{b.apprentice}</span></div>}
+                      {b.guru > 0 && <div className="text-purple-400 flex justify-between gap-3"><span>Guru:</span><span>{b.guru}</span></div>}
+                      {b.master > 0 && <div className="text-blue-400 flex justify-between gap-3"><span>Master:</span><span>{b.master}</span></div>}
+                      {b.enlightened > 0 && <div className="text-cyan-400 flex justify-between gap-3"><span>Enlightened:</span><span>{b.enlightened}</span></div>}
+                    </div>
+                  )}
+
                   {/* Top total label */}
-                  <span className="text-[10px] font-mono font-bold text-white opacity-80 group-hover:opacity-100 transition">
+                  <span className={`text-[10px] font-mono font-bold transition-colors ${isHovered ? 'text-amber-400 scale-110' : 'text-white/80'}`}>
                     {b.total > 0 ? b.total : '0'}
                   </span>
 
                   {/* Stacked Bar Container */}
-                  <div className="w-full max-w-[42px] bg-[#0a3240] rounded-t-lg overflow-hidden flex flex-col justify-end transition-all h-full">
+                  <div className={`w-full max-w-[42px] bg-[#0a3240] rounded-t-lg overflow-hidden flex flex-col justify-end transition-all h-full ${isHovered ? 'ring-2 ring-[#38bdf8] scale-105' : ''}`}>
                     {b.total === 0 ? (
                       <div className="h-1 bg-[#17424f]/50 w-full" />
                     ) : (
@@ -178,28 +216,28 @@ export function FsrsRetentionGraph({
                         {b.enlightened > 0 && (
                           <div
                             style={{ height: `${hEnlightened}%` }}
-                            className="bg-cyan-400 w-full transition-all"
+                            className="bg-cyan-400 w-full transition-all duration-500"
                             title={`Enlightened: ${b.enlightened}`}
                           />
                         )}
                         {b.master > 0 && (
                           <div
                             style={{ height: `${hMaster}%` }}
-                            className="bg-blue-500 w-full transition-all"
+                            className="bg-blue-500 w-full transition-all duration-500"
                             title={`Master: ${b.master}`}
                           />
                         )}
                         {b.guru > 0 && (
                           <div
                             style={{ height: `${hGuru}%` }}
-                            className="bg-purple-500 w-full transition-all"
+                            className="bg-purple-500 w-full transition-all duration-500"
                             title={`Guru: ${b.guru}`}
                           />
                         )}
                         {b.apprentice > 0 && (
                           <div
                             style={{ height: `${hApprentice}%` }}
-                            className="bg-pink-500 w-full transition-all"
+                            className="bg-pink-500 w-full transition-all duration-500"
                             title={`Apprentice: ${b.apprentice}`}
                           />
                         )}
@@ -231,7 +269,7 @@ export function FsrsRetentionGraph({
 
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
           {/* Apprentice */}
-          <div className="bg-[#051b22] border border-pink-500/30 rounded-xl p-3.5 space-y-1.5">
+          <div className="bg-[#051b22] border border-pink-500/30 rounded-xl p-3.5 space-y-1.5 hover:border-pink-500 transition">
             <div className="flex items-center justify-between text-xs font-bold text-pink-400 uppercase">
               <span>Apprentice</span>
               <span className="font-mono text-sm text-white">{counts.apprentice}</span>
@@ -241,7 +279,7 @@ export function FsrsRetentionGraph({
             </p>
             <div className="w-full bg-[#0a3240] h-1.5 rounded-full overflow-hidden">
               <div
-                className="bg-pink-500 h-full transition-all"
+                className="bg-pink-500 h-full transition-all duration-500"
                 style={{
                   width: `${counts.total > 0 ? (counts.apprentice / counts.total) * 100 : 0}%`,
                 }}
@@ -250,7 +288,7 @@ export function FsrsRetentionGraph({
           </div>
 
           {/* Guru */}
-          <div className="bg-[#051b22] border border-purple-500/30 rounded-xl p-3.5 space-y-1.5">
+          <div className="bg-[#051b22] border border-purple-500/30 rounded-xl p-3.5 space-y-1.5 hover:border-purple-500 transition">
             <div className="flex items-center justify-between text-xs font-bold text-purple-400 uppercase">
               <span>Guru</span>
               <span className="font-mono text-sm text-white">{counts.guru}</span>
@@ -260,7 +298,7 @@ export function FsrsRetentionGraph({
             </p>
             <div className="w-full bg-[#0a3240] h-1.5 rounded-full overflow-hidden">
               <div
-                className="bg-purple-500 h-full transition-all"
+                className="bg-purple-500 h-full transition-all duration-500"
                 style={{
                   width: `${counts.total > 0 ? (counts.guru / counts.total) * 100 : 0}%`,
                 }}
@@ -269,7 +307,7 @@ export function FsrsRetentionGraph({
           </div>
 
           {/* Master */}
-          <div className="bg-[#051b22] border border-blue-500/30 rounded-xl p-3.5 space-y-1.5">
+          <div className="bg-[#051b22] border border-blue-500/30 rounded-xl p-3.5 space-y-1.5 hover:border-blue-500 transition">
             <div className="flex items-center justify-between text-xs font-bold text-blue-400 uppercase">
               <span>Master</span>
               <span className="font-mono text-sm text-white">{counts.master}</span>
@@ -279,7 +317,7 @@ export function FsrsRetentionGraph({
             </p>
             <div className="w-full bg-[#0a3240] h-1.5 rounded-full overflow-hidden">
               <div
-                className="bg-blue-500 h-full transition-all"
+                className="bg-blue-500 h-full transition-all duration-500"
                 style={{
                   width: `${counts.total > 0 ? (counts.master / counts.total) * 100 : 0}%`,
                 }}
@@ -288,7 +326,7 @@ export function FsrsRetentionGraph({
           </div>
 
           {/* Enlightened */}
-          <div className="bg-[#051b22] border border-cyan-500/30 rounded-xl p-3.5 space-y-1.5">
+          <div className="bg-[#051b22] border border-cyan-500/30 rounded-xl p-3.5 space-y-1.5 hover:border-cyan-400 transition">
             <div className="flex items-center justify-between text-xs font-bold text-cyan-400 uppercase">
               <span>Enlightened</span>
               <span className="font-mono text-sm text-white">{counts.enlightened}</span>
@@ -298,7 +336,7 @@ export function FsrsRetentionGraph({
             </p>
             <div className="w-full bg-[#0a3240] h-1.5 rounded-full overflow-hidden">
               <div
-                className="bg-cyan-400 h-full transition-all"
+                className="bg-cyan-400 h-full transition-all duration-500"
                 style={{
                   width: `${counts.total > 0 ? (counts.enlightened / counts.total) * 100 : 0}%`,
                 }}
@@ -307,7 +345,7 @@ export function FsrsRetentionGraph({
           </div>
 
           {/* Burned */}
-          <div className="bg-[#051b22] border border-amber-500/30 rounded-xl p-3.5 space-y-1.5">
+          <div className="bg-[#051b22] border border-amber-500/30 rounded-xl p-3.5 space-y-1.5 hover:border-amber-400 transition">
             <div className="flex items-center justify-between text-xs font-bold text-amber-400 uppercase">
               <span>Burned 🏆</span>
               <span className="font-mono text-sm text-white">{counts.burned}</span>
@@ -317,13 +355,48 @@ export function FsrsRetentionGraph({
             </p>
             <div className="w-full bg-[#0a3240] h-1.5 rounded-full overflow-hidden">
               <div
-                className="bg-amber-400 h-full transition-all"
+                className="bg-amber-400 h-full transition-all duration-500"
                 style={{
                   width: `${counts.total > 0 ? (counts.burned / counts.total) * 100 : 0}%`,
                 }}
               />
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* 3. 14-Day Study Activity & Review Heatmap Grid */}
+      <div className="space-y-3 pt-2 border-t border-[#17424f]">
+        <div className="flex items-center justify-between text-xs">
+          <span className="font-bold text-white uppercase tracking-wider font-mono flex items-center gap-1.5">
+            <Calendar size={14} className="text-[#34d399]" />
+            14-Day Study Activity &amp; Review Streak Matrix
+          </span>
+          <span className="text-[11px] font-mono text-amber-400 font-bold flex items-center gap-1">
+            <Flame size={13} /> Active Dojo Streak: 1 Day
+          </span>
+        </div>
+
+        <div className="bg-[#051b22] border border-[#17424f] rounded-2xl p-4 flex items-center justify-between gap-2 overflow-x-auto scrollbar-none">
+          {heatmapDays.map((d, idx) => (
+            <div key={idx} className="flex flex-col items-center gap-1.5 flex-1 min-w-[36px]" title={`${d.dateStr}: ${d.count} reviews`}>
+              <span className="text-[10px] font-mono text-[#8fa2aa]">{d.dayName}</span>
+              <div
+                className={`w-8 h-8 rounded-lg flex items-center justify-center font-mono text-[10px] font-bold transition-all ${
+                  d.intensity === 'high'
+                    ? 'bg-emerald-500 text-black shadow-md shadow-emerald-950/60 font-black'
+                    : d.intensity === 'med'
+                    ? 'bg-emerald-600/80 text-white'
+                    : d.intensity === 'low'
+                    ? 'bg-emerald-900/60 text-emerald-300 border border-emerald-500/30'
+                    : 'bg-[#0a3240] text-[#5c727d] border border-[#17424f]'
+                }`}
+              >
+                {d.count > 0 ? d.count : '·'}
+              </div>
+              <span className="text-[9px] font-mono text-[#5c727d]">{d.dateStr.split(' ')[1]}</span>
+            </div>
+          ))}
         </div>
       </div>
 
