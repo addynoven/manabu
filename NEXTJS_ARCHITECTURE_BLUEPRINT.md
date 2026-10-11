@@ -164,6 +164,35 @@ To eliminate client-side auth delays and flashes on page reload:
   - In the background, React Query quietly revalidates with PostgreSQL via Valkey Redis (`stale-while-revalidate`).
   - If server data has changed, the UI smoothly updates in place without layout shifts or flickering.
 
+### 4.3 Zero-Flash Hydration Protection Pattern (`AuthGate.tsx`)
+Never render a full-screen loading spinner during initial hydration (`!mounted`). Returning a full-screen loading spinner before `useEffect` fires destroys SSR HTML and causes a 1ms black/blank flash on route transitions.
+
+```tsx
+// core/components/AuthGate.tsx
+export function AuthGate({ children }: { children: React.ReactNode }) {
+  const { user, profile } = useAuth();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => { setMounted(true); }, []);
+
+  const hasLocalSession = (() => {
+    if (typeof window === 'undefined') return true; // Pre-render during SSR
+    try {
+      return !!(localStorage.getItem('app_user') || localStorage.getItem('app_profile'));
+    } catch {
+      return true;
+    }
+  })();
+
+  // Pre-render children by default during SSR and initial hydration (!mounted)
+  if (!mounted || user || profile || hasLocalSession) {
+    return <>{children}</>;
+  }
+
+  return <AuthModalOverlay />;
+}
+```
+
 ---
 
 ## ⚡ 5. Clean 2-Layer Data Caching & Invalidation Architecture
@@ -218,6 +247,7 @@ Follow this domain-agnostic 3-Tier Architecture Blueprint:
 
 2. Core Architectural Rules:
    - Page Routes (app/**/*.tsx): Thin 3-line adapters ONLY importing <FeatureScreen /> from features/<feature>/screens. NEVER write inline business logic or heavy UI templates inside app/*.tsx.
+   - Zero-Flash Auth Gate: Pre-render children by default during SSR and initial hydration (!mounted) to eliminate 1ms full-screen loading flashes.
    - File Size Limit: Max 150 lines per sub-component file, max 180 lines per screen assembler file.
    - Data Layer: Use Repository Pattern with Zod mappers. UI components must never execute raw SQL or un-sanitized API fetches directly.
    - Caching: Use 2-Layer Caching (React Query Client + Valkey Redis Distributed Cache). Atomic invalidation via valkey.del().
