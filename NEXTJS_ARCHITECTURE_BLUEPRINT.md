@@ -121,7 +121,33 @@ features/<feature_name>/
 
 ---
 
-## 🔒 4. Authentication, Middleware & Session Hydration
+## 🔒 4. Enterprise 4-Tier Hydration & Auth-Guarded Layout Shell
+
+```text
+┌─────────────────────────────────────────────────────────────────────────┐
+│ TIER 1: Next.js Server Cookie Auth (HTTP-Only)                          │
+│  • Browser attaches 'app_session' HTTP-Only cookie on every request.    │
+│  • Next.js Edge Middleware verifies token in <1ms BEFORE sending HTML.  │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+┌────────────────────────────────────▼────────────────────────────────────┐
+│ TIER 2: Instant 0ms Auth Pre-Rendered Layout Shell                      │
+│  • HTML arrives at the browser ALREADY authenticated.                   │
+│  • ZERO client-side auth delay or holding time (0ms client hold).       │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+┌────────────────────────────────────▼────────────────────────────────────┐
+│ TIER 3: React Query / SWR Stale-While-Revalidate Cache Lifecycle        │
+│  • 1st Visit / Cold Load: Shows Shimmering Skeleton Screen (~200ms).     │
+│  • Subsequent Visits / Reloads: Instant 0ms render from React Query!    │
+│  • Background Revalidation: Quietly updates state without flickering.   │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │
+┌────────────────────────────────────▼────────────────────────────────────┐
+│ TIER 4: Shimmering Skeleton Screen Placeholders                         │
+│  • Slate skeleton loader matching exact screen layout on cold loads.    │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
 ### 4.1 Server-Side HTTP-Only Cookie Authentication
 To eliminate client-side auth delays and flashes on page reload:
@@ -129,9 +155,14 @@ To eliminate client-side auth delays and flashes on page reload:
 2. Next.js Edge Proxy Middleware (`middleware.ts`) verifies the session cookie in $<1\text{ms}$ on the server *before* rendering HTML.
 3. The server pre-renders the authenticated layout shell directly into the initial HTTP payload ($0\text{ms}$ client auth wait time).
 
-### 4.2 Instant Server Redirects for Protected Routes
-If an unauthenticated request hits a protected route (`/dashboard`, `/settings`, `/billing`):
-- Middleware issues an immediate **HTTP 307 Server Redirect** to `/auth` before generating protected page HTML.
+### 4.2 React Query Cold Load vs. Warm Load Lifecycle
+- **Cold Load (1st Visit / Fresh Cache)**:
+  - React Query has no cached data yet.
+  - The UI displays **Tier 4 (Shimmering Skeleton Screen)** matching the exact layout dimensions while the initial network request completes (~200ms).
+- **Warm Load (Subsequent Visits / Page Reloads / Tab Switch)**:
+  - React Query **instantly renders the cached data ($0\text{ms}$ delay)**—the user does **NOT** see the skeleton screen!
+  - In the background, React Query quietly revalidates with PostgreSQL via Valkey Redis (`stale-while-revalidate`).
+  - If server data has changed, the UI smoothly updates in place without layout shifts or flickering.
 
 ---
 
