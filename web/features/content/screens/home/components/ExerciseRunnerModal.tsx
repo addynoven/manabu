@@ -153,9 +153,6 @@ export function ExerciseRunnerModal({
 
                   return (
                     <div className="text-center space-y-2">
-                      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#082f49] text-[#38bdf8] border border-[#38bdf8]/30 text-xs font-bold uppercase tracking-wider mb-2">
-                        {topBadge}
-                      </div>
 
                       <div className={`text-3xl md:text-5xl font-black text-[#f0f0f0] tracking-wide my-2 ${isJapaneseMainText ? 'font-serif' : ''}`}>
                         {mainText}

@@ -108,12 +108,6 @@ export function FsrsRetentionGraph({
       {/* Header Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#17424f]">
         <div>
-          <div className="flex items-center gap-2 mb-1">
-            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-pink-500/10 text-pink-400 border border-pink-500/30">
-              Manabu SRS Forecast Model
-            </span>
-            <span className="text-xs text-[#8fa2aa] font-mono">FSRS-6 Engine</span>
-          </div>
           <h2 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
             <BarChart2 size={20} className="text-amber-400" />
             <span>Dojo Review Workload &amp; Progression Dashboard</span>

@@ -11,29 +11,6 @@ export function AcademyGrammarDetail({ onSpeak }: AcademyGrammarDetailProps) {
     <section className="col-span-12 lg:col-span-8 xl:col-span-9 bg-surface-base border border-border-hairline rounded-xl p-6 flex flex-col space-y-6 shadow-sm">
       <div className="flex flex-col md:flex-row md:items-start justify-between pb-6 border-b border-border-hairline gap-4">
         <div>
-          <div className="flex flex-wrap items-center gap-2 mb-3">
-            <span className="px-2.5 py-0.5 rounded-full bg-primary-subtle border border-primary-container/50 text-primary text-[11px] font-bold">
-              JLPT N5 Core
-            </span>
-            <span className="px-2.5 py-0.5 rounded-full bg-surface-muted border border-border-hairline text-text-secondary text-xs">
-              Lesson 15
-            </span>
-            <span className="px-2.5 py-0.5 rounded-full bg-surface-muted border border-border-hairline text-text-secondary text-xs">
-              Verb Te-Form
-            </span>
-            <div className="flex items-center space-x-1 bg-surface-container px-2.5 py-0.5 rounded-full border border-border-hairline">
-              <span className="text-[10px] text-text-muted mr-1 font-medium">SRS</span>
-              <span className="w-2 h-2 rounded-full bg-primary-container"></span>
-              <span className="w-2 h-2 rounded-full bg-primary-container"></span>
-              <span className="w-2 h-2 rounded-full bg-primary-container"></span>
-              <span className="w-2 h-2 rounded-full bg-border-hairline"></span>
-              <span className="w-2 h-2 rounded-full bg-border-hairline"></span>
-              <span className="text-xs text-text-secondary font-mono ml-1 font-bold">Adept 3/5</span>
-            </div>
-            <span className="px-2.5 py-0.5 rounded-full bg-accent-gold-subtle border border-accent-gold/30 text-accent-gold text-xs font-mono font-medium">
-              Difficulty: ★★☆☆☆
-            </span>
-          </div>
 
           <div className="flex items-baseline space-x-4">
             <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-white font-serif">

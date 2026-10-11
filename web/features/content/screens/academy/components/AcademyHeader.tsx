@@ -96,9 +96,6 @@ export function AcademyHeader({
               <h1 className="text-2xl font-bold text-text-primary tracking-tight">
                 JLPT {selectedTier} Grammar Encyclopedia
               </h1>
-              <span className="px-2.5 py-0.5 rounded-full bg-accent-gold-subtle border border-accent-gold/40 text-accent-gold text-xs font-semibold">
-                Beginner Core
-              </span>
             </div>
             <p className="text-xs text-text-secondary mt-1 flex flex-wrap items-center gap-2">
               <span>130 Essential Structures</span>

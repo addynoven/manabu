@@ -23,9 +23,6 @@ export function StrokeHeaderControls({
             <h1 className="text-xl md:text-2xl font-bold text-[#f0f0f0] tracking-tight">
               五十音 Kana Matrix &amp; Stroke Sandbox
             </h1>
-            <span className="bg-[#0f3947] text-[#38bdf8] border border-[#17424f] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
-              v3.4 Nocturnal
-            </span>
           </div>
           <p className="text-xs text-[#8fa2aa] mt-0.5">
             Deliberate phonetic acquisition and stroke muscle memory with KanjiVG vectors

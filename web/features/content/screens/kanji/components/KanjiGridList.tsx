@@ -35,9 +35,6 @@ export function KanjiGridList({
           <div>
             <div className="flex items-center gap-2">
               <h1 className="text-xl font-bold text-text-primary">JLPT N5 Core Kanji</h1>
-              <span className="px-2 py-0.5 rounded-full bg-accent-gold-subtle border border-accent-gold text-accent-gold text-[10px] font-bold">
-                FOUNDATIONAL DECK
-              </span>
             </div>
             <p className="text-xs text-text-secondary mt-0.5">84 / 103 Mastered (81% retention matrix)</p>
           </div>

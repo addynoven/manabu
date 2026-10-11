@@ -30,10 +30,7 @@ export function VocabHeaderFilter({
           <div className="flex items-center gap-2 text-xs text-text-muted">
             <span className="hover:text-text-primary cursor-pointer transition-colors">Vocabulary</span>
             <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-            <span className="text-secondary font-medium">JLPT N5 Core Vocabulary</span>
-            <span className="px-2 py-0.5 rounded-full text-[11px] font-mono bg-surface-muted text-text-secondary border border-border-hairline">
-              {totalWords} Words
-            </span>
+            <span className="text-secondary font-medium">JLPT N5 Core Vocabulary ({totalWords} Words)</span>
           </div>
 
           <div className="flex-1 max-w-xl relative flex items-center">

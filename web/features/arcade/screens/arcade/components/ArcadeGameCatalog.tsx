@@ -71,9 +71,6 @@ export function ArcadeGameCatalog({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
               <div className="space-y-2">
-                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-500/10 text-[#ffb4ab] text-[10px] font-bold">
-                  🎌 SOLO &amp; LIVE PVP
-                </div>
                 <h3 className="text-base font-bold text-white">しりとり • Shiritori Arena</h3>
                 <p className="text-xs text-[#8fa2aa]">
                   Authentic Japanese word-chain duel! 15s turn timer, dictionary verification, &apos;ん&apos; loss rule, and TTS recitation.
@@ -98,9 +95,6 @@ export function ArcadeGameCatalog({
 
             <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
               <div className="space-y-2">
-                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 text-[10px] font-bold">
-                  🎴 SOLO &amp; LIVE PVP
-                </div>
                 <h3 className="text-base font-bold text-white">競技かるた • Competitive Karuta</h3>
                 <p className="text-xs text-[#8fa2aa]">
                   Tatami mat reaction slap battle! Yomite reader recites poems or vocabulary. Slap the matching card before your opponent.
@@ -125,9 +119,6 @@ export function ArcadeGameCatalog({
 
             <div className="p-6 rounded-xl bg-[#0a3240]/60 border border-[#17424f] flex flex-col justify-between space-y-4 hover:border-[#17424f] transition">
               <div className="space-y-2">
-                <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 text-[10px] font-bold">
-                  ⚡ SOLO &amp; LIVE PVP
-                </div>
                 <h3 className="text-base font-bold text-white">漢字決闘 • Kanji Duel</h3>
                 <p className="text-xs text-[#8fa2aa]">
                   1000 HP speed strike combat across Onyomi, Kunyomi, and radicals! Correct answers strike your opponent.

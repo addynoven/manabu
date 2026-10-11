@@ -112,12 +112,8 @@ export function FriendsScreen() {
           <section className="bg-surface-base border border-border-hairline rounded-xl p-5 shadow-sm">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-border-subtle">
               <div className="space-y-1">
-                <div className="flex items-center gap-2">
-                  <span className="inline-flex items-center gap-1.5 text-xs text-accent-gold bg-accent-gold-subtle border border-accent-gold/30 px-2.5 py-0.5 rounded-full font-bold">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent-gold animate-pulse" />
-                    Manabu Community • Deliberate Language Discussions
-                  </span>
-                  <span className="text-text-muted text-xs">• {friends.length + 42} Scholars in Dojo</span>
+                <div className="flex items-center gap-2 text-xs text-text-muted">
+                  <span>{friends.length + 42} Scholars in Dojo</span>
                 </div>
                 <h1 className="text-xl sm:text-2xl font-bold text-text-primary tracking-tight">
                   Exchange mnemonics, challenge rivals, and compete in weekly cohorts.

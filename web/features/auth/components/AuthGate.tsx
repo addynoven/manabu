@@ -71,11 +71,7 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
       <div className="absolute bottom-10 -right-20 w-[400px] h-[400px] bg-[#0f3e4f]/30 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="w-full max-w-[440px] bg-[#061820] border border-[#133541] rounded-xl p-6 sm:p-8 flex flex-col shadow-2xl relative z-10">
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#0a3240]/65 border border-[#17424f] text-[11px] font-medium text-[#8fa2aa]">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            <span>JLPT N5 – N1 STUDIO</span>
-          </div>
+        <div className="flex items-center justify-end mb-4">
           <span className="text-[11px] font-mono text-[#eab308] font-bold">STRICT ACCESS</span>
         </div>
 

@@ -35,9 +35,6 @@ export function StrokeCanvasPanel({
       <div className="bg-[#0a3240] rounded-xl border border-[#17424f] p-5 shadow-sm">
         <div className="flex items-center justify-between border-b border-[#17424f] pb-3 mb-4">
           <div className="flex items-center gap-2">
-            <span className="px-2 py-0.5 rounded-full bg-[#0f3947] text-[#a8ccde] text-[10px] font-bold uppercase tracking-wider border border-[#17424f]">
-              JLPT N5
-            </span>
             <span className="text-[10px] text-[#8fa2aa] font-mono uppercase">
               {currentChar.romaji}
             </span>

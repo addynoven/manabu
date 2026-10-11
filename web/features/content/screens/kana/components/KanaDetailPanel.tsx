@@ -13,9 +13,6 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
       <div className="bg-surface-base rounded-xl border border-border-hairline p-5 shadow-xl">
         <div className="flex items-center justify-between border-b border-border-hairline pb-3 mb-4">
           <div className="flex items-center gap-2">
-            <span className="px-2 py-0.5 rounded-full bg-surface-muted text-secondary text-[10px] font-mono border border-border-hairline">
-              JLPT N5 / Beginner
-            </span>
             <span className="text-[10px] font-bold uppercase text-text-muted">{selectedKana.romaji}</span>
           </div>
           <span className="text-[10px] font-mono text-accent-gold font-bold px-2 py-0.5 bg-accent-gold-subtle rounded border border-accent-gold/40">

@@ -37,10 +37,7 @@ export function SapphireLeagueBoard({
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-blue-400 uppercase tracking-widest bg-blue-500/10 px-2 py-0.5 rounded border border-blue-500/20">
-                  Tier V • Sapphire League
-                </span>
-                <span className="text-xs font-mono text-[#8fa2aa]">Cohort #42</span>
+                <span className="text-xs font-mono text-[#8fa2aa]">Tier V • Sapphire League (Cohort #42)</span>
               </div>
               <h3 className="text-lg font-black text-white mt-1">Study Circle Weekly Standings</h3>
             </div>

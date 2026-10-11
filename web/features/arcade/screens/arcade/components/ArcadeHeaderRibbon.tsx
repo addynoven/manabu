@@ -31,10 +31,6 @@ export function ArcadeHeaderRibbon({
             <span className="font-mono text-[11px] text-text-secondary tracking-widest uppercase font-bold">
               MANABU ARCADE • LINGUISTIC BATTLE STATIONS
             </span>
-            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-accent-gold-subtle text-accent-gold border border-accent-gold/40">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent-gold mr-1.5 animate-ping" />
-              SEASON 04 LIVE
-            </span>
           </div>
           <div className="flex items-center gap-2 text-xs text-text-muted font-mono">
             <span className="material-symbols-outlined text-sm">schedule</span>

@@ -29,9 +29,6 @@ export function KanaHeader({
         <div>
           <div className="flex items-center gap-2">
             <h1 className="text-2xl font-bold tracking-tight text-white">五十音 Kana Matrix &amp; Stroke Sandbox</h1>
-            <span className="bg-surface-muted text-info border border-border-hairline text-[10px] font-mono px-2 py-0.5 rounded-full font-bold">
-              v3.4 Nocturnal
-            </span>
           </div>
           <p className="text-xs text-text-secondary mt-0.5">Deliberate phonetic acquisition and stroke muscle memory</p>
         </div>
@@ -81,17 +78,6 @@ export function KanaHeader({
             </button>
           </div>
 
-          <div className="flex items-center gap-2.5 px-3 py-1.5 bg-surface-base rounded-xl border border-border-hairline">
-            <div className="w-6 h-6 rounded-full bg-success/20 border border-success/40 flex items-center justify-center text-success">
-              <span className="material-symbols-outlined text-[15px]">check</span>
-            </div>
-            <div className="text-left">
-              <div className="text-[10px] uppercase font-bold text-text-muted leading-tight">Mastery</div>
-              <div className="text-xs text-text-primary font-bold">
-                46 / 46 <span className="text-success font-medium">(100%)</span>
-              </div>
-            </div>
-          </div>
 
           <div className="flex items-center gap-1 bg-background-deep p-1 rounded-xl border border-border-hairline">
             <button
