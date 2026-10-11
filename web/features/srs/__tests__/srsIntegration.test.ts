@@ -20,6 +20,7 @@ try {
 } catch {}
 
 import { SrsRepository } from '../repositories/srsRepository';
+import { invalidateSrsCache } from '../repositories/srsCache';
 import { query } from '../../../core/db/postgres';
 
 describe('FSRS-6 End-to-End Core Backend Integration Test', () => {
@@ -36,6 +37,7 @@ describe('FSRS-6 End-to-End Core Backend Integration Test', () => {
 
     // 2. Clean previous test card states and review logs
     await query(`DELETE FROM manabu.card_states WHERE uid = $1`, [testUid]);
+    await invalidateSrsCache(testUid);
   });
 
   afterAll(async () => {

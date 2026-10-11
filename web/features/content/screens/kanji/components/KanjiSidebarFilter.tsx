@@ -8,18 +8,24 @@ interface KanjiSidebarFilterProps {
   search: string;
   selectedLevel: string;
   selectedRadical: string | null;
+  sortOption: string;
+  levelCounts: Record<string, number>;
   onSearchChange: (val: string) => void;
   onSelectLevel: (lvl: string) => void;
   onSelectRadical: (rad: string | null) => void;
+  onSortChange: (sort: string) => void;
 }
 
 export function KanjiSidebarFilter({
   search,
   selectedLevel,
   selectedRadical,
+  sortOption,
+  levelCounts,
   onSearchChange,
   onSelectLevel,
   onSelectRadical,
+  onSortChange,
 }: KanjiSidebarFilterProps) {
   return (
     <aside className="w-full lg:w-[260px] flex-shrink-0 bg-surface-base border border-border-hairline rounded-xl p-4 flex flex-col gap-4 lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar shadow-lg">
@@ -52,7 +58,7 @@ export function KanjiSidebarFilter({
             }`}
           >
             <span>All</span>
-            <span className="text-[10px] text-text-muted">2,136</span>
+            <span className="text-[10px] text-text-muted">{levelCounts.All?.toLocaleString() || '2,495'}</span>
           </button>
           <button
             onClick={() => onSelectLevel('N5')}
@@ -63,7 +69,7 @@ export function KanjiSidebarFilter({
             }`}
           >
             <span>N5</span>
-            <span className="text-[10px] font-bold text-primary">103</span>
+            <span className="text-[10px] font-bold text-primary">{levelCounts.N5 || 80}</span>
           </button>
           {['N4', 'N3', 'N2', 'N1'].map((lvl) => (
             <button
@@ -76,9 +82,7 @@ export function KanjiSidebarFilter({
               }`}
             >
               <span>{lvl}</span>
-              <span className="text-[10px] text-text-muted">
-                {lvl === 'N4' ? '181' : lvl === 'N3' ? '361' : lvl === 'N2' ? '415' : '1,076'}
-              </span>
+              <span className="text-[10px] text-text-muted">{levelCounts[lvl]?.toLocaleString() || 0}</span>
             </button>
           ))}
         </div>
@@ -87,58 +91,19 @@ export function KanjiSidebarFilter({
       <div className="flex flex-col gap-1.5">
         <span className="text-[11px] font-bold uppercase tracking-wider text-text-muted">CURRICULUM SORT</span>
         <div className="relative">
-          <select className="w-full bg-background-deep border border-border-hairline rounded-lg px-2.5 py-1.5 text-xs text-text-primary appearance-none cursor-pointer focus:outline-none focus:border-primary-container">
+          <select
+            value={sortOption}
+            onChange={(e) => onSortChange(e.target.value)}
+            className="w-full bg-background-deep border border-border-hairline rounded-lg px-2.5 py-1.5 text-xs text-text-primary appearance-none cursor-pointer focus:outline-none focus:border-primary-container font-medium"
+          >
             <option>JLPT Curriculum (Ascending)</option>
             <option>Stroke Count (Fewest first)</option>
             <option>Stroke Count (Most first)</option>
-            <option>Mastery SRS (Low to High)</option>
-            <option>Frequency in Media</option>
+            <option>Alphabetical (English Meaning)</option>
           </select>
           <span className="material-symbols-outlined absolute right-2 top-2 text-text-muted text-[16px] pointer-events-none">
             expand_more
           </span>
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-1.5">
-        <span className="text-[11px] font-bold uppercase tracking-wider text-text-muted">SRS RETENTION STATUS</span>
-        <div className="flex flex-col gap-2 bg-background-deep border border-border-hairline rounded-lg p-2.5">
-          <label className="flex items-center justify-between cursor-pointer group">
-            <div className="flex items-center gap-2">
-              <input
-                defaultChecked
-                className="w-4 h-4 rounded bg-tatami-canvas border-border-hairline text-primary-container cursor-pointer"
-                type="checkbox"
-              />
-              <span className="w-2 h-2 rounded-full bg-success" />
-              <span className="text-xs text-text-primary group-hover:text-white">Mastered</span>
-            </div>
-            <span className="text-[10px] text-text-muted font-mono">84 items</span>
-          </label>
-          <label className="flex items-center justify-between cursor-pointer group">
-            <div className="flex items-center gap-2">
-              <input
-                defaultChecked
-                className="w-4 h-4 rounded bg-tatami-canvas border-border-hairline text-primary-container cursor-pointer"
-                type="checkbox"
-              />
-              <span className="w-2 h-2 rounded-full bg-accent-gold" />
-              <span className="text-xs text-text-primary group-hover:text-white">Learning</span>
-            </div>
-            <span className="text-[10px] text-text-muted font-mono">12 items</span>
-          </label>
-          <label className="flex items-center justify-between cursor-pointer group">
-            <div className="flex items-center gap-2">
-              <input
-                defaultChecked
-                className="w-4 h-4 rounded bg-tatami-canvas border-border-hairline text-primary-container cursor-pointer"
-                type="checkbox"
-              />
-              <span className="w-2 h-2 rounded-full bg-text-muted" />
-              <span className="text-xs text-text-secondary group-hover:text-text-primary">New / Unseen</span>
-            </div>
-            <span className="text-[10px] text-text-muted font-mono">7 items</span>
-          </label>
         </div>
       </div>
 
@@ -176,10 +141,10 @@ export function KanjiSidebarFilter({
       <div className="mt-auto p-3 bg-tatami-canvas border border-border-hairline rounded-lg flex flex-col gap-1.5">
         <div className="flex items-center gap-2">
           <span className="material-symbols-outlined text-accent-gold text-[18px]">verified</span>
-          <span className="text-xs text-text-primary font-bold">N5 Milestone Track</span>
+          <span className="text-xs text-text-primary font-bold">JLPT {selectedLevel} Directory</span>
         </div>
         <p className="text-[11px] text-text-muted leading-tight">
-          Master 19 more glyphs to unlock the JLPT N4 Workstation tier.
+          Browse and practice stroke order across {levelCounts[selectedLevel]?.toLocaleString() || levelCounts.All?.toLocaleString()} authenticated kanji entries.
         </p>
       </div>
     </aside>

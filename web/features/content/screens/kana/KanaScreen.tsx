@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { StitchHeader } from '@/core/components/StitchHeader';
 import { HIRAGANA_DATA, KATAKANA_DATA, KanaItem, speakJapanese } from '../../models/kana';
+import { useKanaProgress } from '../../hooks/useKanaProgress';
 import { KanaHeader, KanaGojuonMatrix, KanaDetailPanel } from './components';
 
 export function KanaScreen() {
@@ -17,10 +18,16 @@ export function KanaScreen() {
     category: 'main',
   });
 
+  const { progressMap, markPracticed, getStats } = useKanaProgress();
+
   const dataset = script === 'hiragana' ? HIRAGANA_DATA : KATAKANA_DATA;
+  const activeCategory = subGroup === 'main' ? 'main' : subGroup === 'dakuten' ? 'dakuten' : 'combo';
+  const activeSubgroupDataset = dataset.filter((k) => k.category === activeCategory);
+  const currentStats = getStats(activeSubgroupDataset);
 
   const handleSelectKana = (item: KanaItem) => {
     setSelectedKana(item);
+    markPracticed(item.kana, item.script);
     if (audioEnabled) {
       speakJapanese(item.kana);
     }
@@ -35,6 +42,7 @@ export function KanaScreen() {
         subGroup={subGroup}
         audioEnabled={audioEnabled}
         romajiVisible={romajiVisible}
+        percentageText={currentStats.percentageText}
         onSetScript={setScript}
         onSetSubGroup={setSubGroup}
         onToggleAudio={() => setAudioEnabled((prev) => !prev)}
@@ -46,9 +54,11 @@ export function KanaScreen() {
           <section className="lg:col-span-8 flex flex-col gap-4">
             <KanaGojuonMatrix
               script={script}
+              subGroup={subGroup}
               dataset={dataset}
               selectedKana={selectedKana}
               romajiVisible={romajiVisible}
+              progressMap={progressMap}
               onSelectKana={handleSelectKana}
             />
           </section>

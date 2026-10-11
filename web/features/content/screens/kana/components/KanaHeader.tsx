@@ -7,6 +7,7 @@ interface KanaHeaderProps {
   subGroup: 'main' | 'dakuten' | 'yoon';
   audioEnabled: boolean;
   romajiVisible: boolean;
+  percentageText: string;
   onSetScript: (script: 'hiragana' | 'katakana') => void;
   onSetSubGroup: (group: 'main' | 'dakuten' | 'yoon') => void;
   onToggleAudio: () => void;
@@ -18,6 +19,7 @@ export function KanaHeader({
   subGroup,
   audioEnabled,
   romajiVisible,
+  percentageText,
   onSetScript,
   onSetSubGroup,
   onToggleAudio,
@@ -76,8 +78,25 @@ export function KanaHeader({
             >
               Dakuten (が・ぱ 25)
             </button>
+            <button
+              onClick={() => onSetSubGroup('yoon')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition ${
+                subGroup === 'yoon' ? 'bg-surface-elevated text-white' : 'text-text-secondary hover:text-white'
+              }`}
+            >
+              Yōon Combos (きゃ 36)
+            </button>
           </div>
 
+          <div className="flex items-center gap-2.5 px-3 py-1.5 bg-surface-base rounded-xl border border-border-hairline">
+            <div className="w-6 h-6 rounded-full bg-primary-container/20 border border-primary-container/40 flex items-center justify-center text-primary-container">
+              <span className="material-symbols-outlined text-[15px]">workspace_premium</span>
+            </div>
+            <div className="text-left">
+              <div className="text-[10px] uppercase font-bold text-text-muted leading-tight">Mastery</div>
+              <div className="text-xs text-text-primary font-bold">{percentageText}</div>
+            </div>
+          </div>
 
           <div className="flex items-center gap-1 bg-background-deep p-1 rounded-xl border border-border-hairline">
             <button

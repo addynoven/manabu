@@ -9,24 +9,35 @@ export interface KanjiEntry {
   onyomi: string[];
   kunyomi: string[];
   meanings: string[];
+  level?: string;
   strokes?: number;
   radical?: string;
 }
 
 interface KanjiGridListProps {
   kanjiList: KanjiEntry[];
+  totalFilteredCount: number;
   activeKanji: KanjiEntry;
   viewMode: 'grid' | 'table';
+  selectedLevel: string;
+  currentPage: number;
+  totalPages: number;
   onSelectKanji: (kanji: KanjiEntry) => void;
   onSetViewMode: (mode: 'grid' | 'table') => void;
+  onSetPage: (page: number) => void;
 }
 
 export function KanjiGridList({
   kanjiList,
+  totalFilteredCount,
   activeKanji,
   viewMode,
+  selectedLevel,
+  currentPage,
+  totalPages,
   onSelectKanji,
   onSetViewMode,
+  onSetPage,
 }: KanjiGridListProps) {
   return (
     <section className="flex-1 min-w-0 flex flex-col gap-4">
@@ -34,13 +45,17 @@ export function KanjiGridList({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-xl font-bold text-text-primary">JLPT N5 Core Kanji</h1>
+              <h1 className="text-xl font-bold text-text-primary">
+                JLPT {selectedLevel} Kanji Directory
+              </h1>
             </div>
-            <p className="text-xs text-text-secondary mt-0.5">84 / 103 Mastered (81% retention matrix)</p>
+            <p className="text-xs text-text-secondary mt-0.5">
+              Showing Page {currentPage} of {totalPages} ({totalFilteredCount.toLocaleString()} Total Matches)
+            </p>
           </div>
           <div className="flex items-center gap-2">
             <span className="text-[10px] font-mono text-text-muted bg-background-deep px-2 py-1 rounded border border-border-subtle">
-              {kanjiList.length} Glyphs Total
+              {totalFilteredCount.toLocaleString()} Glyphs Total
             </span>
             <div className="flex bg-background-deep border border-border-hairline rounded-lg p-0.5">
               <button
@@ -68,20 +83,18 @@ export function KanjiGridList({
         <div className="w-full bg-background-deep h-2 rounded-full overflow-hidden border border-border-hairline">
           <div
             className="bg-primary-container h-full rounded-full shadow-[0_0_8px_rgba(199,74,74,0.5)] transition-all"
-            style={{ width: '81%' }}
+            style={{ width: `${Math.min(100, Math.round((currentPage / totalPages) * 100))}%` }}
           />
         </div>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2.5">
         {kanjiList.map((k) => {
-          const isSelected = activeKanji.id === k.id;
-          const strokeCount = (k.id % 9) + 4;
-          const isMastered = k.id % 7 !== 0;
+          const isSelected = activeKanji.kanjiChar === k.kanjiChar;
 
           return (
             <div
-              key={k.id}
+              key={k.id || k.kanjiChar}
               onClick={() => {
                 onSelectKanji(k);
                 speakJapanese(k.kanjiChar);
@@ -93,11 +106,12 @@ export function KanjiGridList({
               }`}
             >
               <div className="flex items-start justify-between">
-                <span
-                  className={`w-2 h-2 rounded-full ${isMastered ? 'bg-success' : 'bg-accent-gold'}`}
-                  title={isMastered ? 'Mastered' : 'Learning'}
-                />
-                <span className="text-[10px] font-mono text-accent-gold font-semibold">{strokeCount} st.</span>
+                <span className="px-1.5 py-0.2 rounded bg-surface-muted text-[9px] font-mono text-[#38bdf8] border border-[#17424f]">
+                  {k.level || 'JLPT'}
+                </span>
+                <span className="text-[10px] font-mono text-accent-gold font-semibold">
+                  {k.strokes ? `${k.strokes} st.` : 'Glyph'}
+                </span>
               </div>
               <div className="py-2.5 text-center">
                 <span className="text-3xl font-serif font-bold text-text-primary group-hover:scale-105 transition-transform inline-block">
@@ -105,9 +119,11 @@ export function KanjiGridList({
                 </span>
               </div>
               <div className="border-t border-border-hairline pt-1.5 flex flex-col">
-                <span className="text-[11px] font-bold text-text-primary truncate">{k.meanings[0]}</span>
+                <span className="text-[11px] font-bold text-text-primary truncate">
+                  {k.meanings[0] || 'Meaning'}
+                </span>
                 <span className="text-[10px] text-text-secondary truncate font-mono">
-                  {k.onyomi[0]?.split(' ')[0] || k.kunyomi[0]?.split(' ')[0]}
+                  {k.onyomi[0]?.split(' ')[0] || k.kunyomi[0]?.split(' ')[0] || '—'}
                 </span>
               </div>
             </div>
@@ -115,19 +131,27 @@ export function KanjiGridList({
         })}
       </div>
 
-      <div className="bg-surface-base border border-border-hairline rounded-xl p-3 flex items-center justify-between">
-        <span className="text-xs text-text-muted">Showing 1 - {kanjiList.length} of 103 items</span>
+      {/* Working Pagination Controls */}
+      <div className="bg-surface-base border border-border-hairline rounded-xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+        <span className="text-text-muted font-mono">
+          Page {currentPage} of {totalPages} ({totalFilteredCount.toLocaleString()} Entries)
+        </span>
         <div className="flex items-center gap-1.5">
-          <button className="px-2.5 py-1 rounded-lg bg-surface-muted border border-border-subtle text-xs text-text-muted cursor-not-allowed">
+          <button
+            onClick={() => onSetPage(Math.max(1, currentPage - 1))}
+            disabled={currentPage === 1}
+            className="px-3 py-1.5 rounded-lg bg-surface-muted border border-border-hairline text-xs text-text-primary disabled:opacity-40 hover:bg-surface-elevated transition"
+          >
             Previous
           </button>
-          <button className="px-2.5 py-1 rounded-lg bg-surface-elevated border border-primary-container text-xs text-white font-bold">
-            1
-          </button>
-          <button className="px-2.5 py-1 rounded-lg bg-surface-muted border border-border-subtle text-xs text-text-secondary hover:text-white">
-            2
-          </button>
-          <button className="px-2.5 py-1 rounded-lg bg-surface-muted border border-border-subtle text-xs text-text-secondary hover:text-white">
+          <span className="px-3 py-1.5 rounded-lg bg-primary-container text-white text-xs font-mono font-bold shadow-sm">
+            {currentPage} / {totalPages}
+          </span>
+          <button
+            onClick={() => onSetPage(Math.min(totalPages, currentPage + 1))}
+            disabled={currentPage === totalPages}
+            className="px-3 py-1.5 rounded-lg bg-surface-muted border border-border-hairline text-xs text-text-primary disabled:opacity-40 hover:bg-surface-elevated transition"
+          >
             Next
           </button>
         </div>
