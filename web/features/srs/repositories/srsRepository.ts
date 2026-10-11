@@ -42,7 +42,7 @@ export class SrsRepository {
   /**
    * Fetches active due review queue for a student (WHERE due_at <= NOW())
    */
-  static async getDueReviewQueue(uid: string, limit = 20): Promise<DbCardState[]> {
+  static async getDueReviewQueue(uid: string, limit = 50): Promise<DbCardState[]> {
     const res = await query<RawCardStateRow>(
       `SELECT uid, card_id, card_type, state, stability, difficulty, reps, lapses, last_review, due_at
        FROM manabu.card_states
@@ -52,7 +52,7 @@ export class SrsRepository {
       [uid, limit]
     );
 
-    return res.rows.map(row => ({
+    return res.rows.map((row) => ({
       uid: row.uid,
       cardId: row.card_id,
       cardType: row.card_type,
@@ -64,6 +64,70 @@ export class SrsRepository {
       lastReview: row.last_review ? new Date(row.last_review) : null,
       dueAt: new Date(row.due_at),
     }));
+  }
+
+  /**
+   * Fetches ALL card states for a student
+   */
+  static async getAllUserCards(uid: string): Promise<DbCardState[]> {
+    const res = await query<RawCardStateRow>(
+      `SELECT uid, card_id, card_type, state, stability, difficulty, reps, lapses, last_review, due_at
+       FROM manabu.card_states
+       WHERE uid = $1
+       ORDER BY due_at ASC`,
+      [uid]
+    );
+
+    return res.rows.map((row) => ({
+      uid: row.uid,
+      cardId: row.card_id,
+      cardType: row.card_type,
+      state: row.state,
+      stability: Number(row.stability),
+      difficulty: Number(row.difficulty),
+      reps: Number(row.reps),
+      lapses: Number(row.lapses),
+      lastReview: row.last_review ? new Date(row.last_review) : null,
+      dueAt: new Date(row.due_at),
+    }));
+  }
+
+  /**
+   * Seeds new cards into manabu.card_states if not already present
+   */
+  static async seedUserCards(
+    uid: string,
+    cards: Array<{ cardId: string; cardType?: CardType }>
+  ): Promise<number> {
+    if (!cards || cards.length === 0) return 0;
+
+    let seededCount = 0;
+    const pool = getDbPool();
+    const client = await pool.connect();
+
+    try {
+      await client.query('BEGIN');
+      for (const card of cards) {
+        const res = await client.query(
+          `INSERT INTO manabu.card_states
+             (uid, card_id, card_type, state, stability, difficulty, reps, lapses, due_at)
+           VALUES ($1, $2, $3, 'new', 0.4, 5.0, 0, 0, NOW())
+           ON CONFLICT (uid, card_id) DO NOTHING`,
+          [uid, card.cardId, card.cardType || 'vocab']
+        );
+        if (res.rowCount && res.rowCount > 0) {
+          seededCount++;
+        }
+      }
+      await client.query('COMMIT');
+      return seededCount;
+    } catch (err) {
+      await client.query('ROLLBACK');
+      console.error('[SrsRepository] Failed to seed cards:', err);
+      return 0;
+    } finally {
+      client.release();
+    }
   }
 
   /**
@@ -96,11 +160,6 @@ export class SrsRepository {
 
   /**
    * Executes an Atomic Review Transaction (BEGIN ... COMMIT)
-   * 1. Fetches current card_state & profile desired_retention
-   * 2. Calculates FSRS-6 state transition
-   * 3. Upserts manabu.card_states
-   * 4. Appends to manabu.review_logs
-   * 5. Updates manabu.profiles (XP + Streak)
    */
   static async executeReviewTransaction(
     uid: string,

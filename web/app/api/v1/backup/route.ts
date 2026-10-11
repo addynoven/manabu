@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAuthToken } from '@/features/auth/repositories/auth';
 import { query } from '@/core/db/postgres';
+import { SrsRepository } from '@/features/srs/repositories/srsRepository';
 
 export const dynamic = 'force-dynamic';
 
@@ -82,7 +83,25 @@ export async function PUT(req: NextRequest) {
       ]
     );
 
-    // 2. Insert or update backup data
+    // 2. Extract completed lesson exercise IDs and seed card states into manabu.card_states
+    const completedLessons = body.dojo?.completedLessons;
+    if (completedLessons && typeof completedLessons === 'object') {
+      const lessonIds = Array.isArray(completedLessons)
+        ? completedLessons
+        : Object.keys(completedLessons);
+
+      const cardsToSeed: Array<{ cardId: string; cardType: 'vocab' | 'kanji' | 'grammar' }> = [];
+      for (const lId of lessonIds) {
+        cardsToSeed.push({ cardId: `${lId}_1`, cardType: 'vocab' });
+        cardsToSeed.push({ cardId: `${lId}_2`, cardType: 'vocab' });
+        cardsToSeed.push({ cardId: `${lId}_3`, cardType: 'vocab' });
+        cardsToSeed.push({ cardId: `${lId}_4`, cardType: 'grammar' });
+      }
+
+      await SrsRepository.seedUserCards(user.uid, cardsToSeed);
+    }
+
+    // 3. Insert or update backup data
     const res = await query(
       `
       INSERT INTO manabu.user_backups (uid, backup_data, version, synced_at)
