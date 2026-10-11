@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { StitchHeader } from '@/core/components/StitchHeader';
 import { AuthGate } from '@/features/auth/components/AuthGate';
 import { speakJapanese } from '@/features/content/models/kana';
-import rawVocab from '@/data/vocab_n5.json';
 import { Zap, RefreshCw } from 'lucide-react';
 import { FsrsRetentionGraph } from '../../components/FsrsRetentionGraph';
 import { useSrsQueue } from '../../hooks/useSrsQueue';
@@ -131,57 +130,33 @@ export function ReviewScreen() {
             efficiencyAdvantage={14.2}
           />
 
-          <div className="bg-gradient-to-br from-neutral-900 to-neutral-950 border border-[#17424f] p-6 md:p-8 rounded-xl relative overflow-hidden">
-            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="space-y-4 pt-2">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-[#0a3240] border border-[#17424f] p-4 rounded-xl">
               <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                  <span className="text-xs text-emerald-400 font-bold uppercase tracking-wider">
-                    PostgreSQL FSRS-6 Review Queue
-                  </span>
-                </div>
-                <h2 className="text-2xl font-black text-white">
-                  {queueLoading ? (
-                    <span className="text-[#8fa2aa] flex items-center gap-2">
-                      <RefreshCw size={20} className="animate-spin text-emerald-400" />
-                      Synchronizing active SRS queue...
-                    </span>
-                  ) : dueQueue.length > 0 ? (
-                    <>
-                      You have <span className="text-red-500">{dueQueue.length} items</span> due for review right now.
-                    </>
-                  ) : (
-                    <>All caught up! Excellent discipline, warrior.</>
-                  )}
-                </h2>
-                <p className="text-xs text-[#8fa2aa] mt-1 max-w-lg">
-                  Completing your daily reviews prevents forgetting curves and advances your items from Apprentice toward Burned status.
+                <h3 className="text-base font-bold text-white tracking-wide">
+                  Active Items in SRS Dojo ({queueLoading ? '...' : allCards.length})
+                </h3>
+                <p className="text-xs text-[#8fa2aa]">
+                  {dueQueue.length > 0
+                    ? `You have ${dueQueue.length} items due for review right now.`
+                    : 'All caught up for today!'}
                 </p>
               </div>
 
               <button
                 onClick={startSession}
                 disabled={queueLoading || dueQueue.length === 0}
-                className="px-6 py-4 rounded-2xl bg-[#c74a4a] hover:bg-[#d95a5a] disabled:opacity-40 disabled:hover:bg-[#c74a4a] text-white font-bold text-sm transition shadow-xl shadow-red-950/60 flex items-center justify-center gap-2 shrink-0"
+                className="px-5 py-2.5 rounded-xl bg-[#c74a4a] hover:bg-[#d95a5a] disabled:opacity-40 text-white font-bold text-xs transition shadow-md shadow-red-950/50 flex items-center justify-center gap-2 shrink-0"
               >
-                <Zap size={16} fill="white" />
-                <span>{queueLoading ? 'Syncing...' : 'Launch Review Session'}</span>
+                <Zap size={14} fill="white" />
+                <span>{queueLoading ? 'Syncing...' : `Launch Review Session (${dueQueue.length} Due)`}</span>
               </button>
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <h3 className="text-sm font-bold text-[#c1d0d6] uppercase tracking-wider">
-                Active Items in PostgreSQL SRS Dojo ({queueLoading ? '...' : allCards.length})
-              </h3>
-              <span className="text-xs text-[#627780]">Live Database Feed</span>
             </div>
 
             {queueLoading ? (
               <div className="p-8 text-center text-xs text-[#627780] bg-[#0a3240]/40 border border-[#17424f] rounded-2xl flex items-center justify-center gap-2 font-mono">
                 <RefreshCw size={14} className="animate-spin text-emerald-400" />
-                <span>Loading PostgreSQL SRS Dojo items...</span>
+                <span>Loading SRS Dojo items...</span>
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">

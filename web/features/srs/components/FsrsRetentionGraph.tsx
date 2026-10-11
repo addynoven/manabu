@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Clock, ShieldCheck, Zap, BarChart2, Layers, Calendar, Flame, Activity } from 'lucide-react';
+import { Clock, ShieldCheck, BarChart2, Layers } from 'lucide-react';
 
 export interface SrsCardProp {
   id: string;
@@ -25,7 +25,7 @@ export function FsrsRetentionGraph({
   const now = Date.now();
   const [hoveredBucket, setHoveredBucket] = useState<string | null>(null);
 
-  // 1. Calculate Bunpro 24-Hour & 7-Day Review Forecast Buckets
+  // 1. Calculate 24-Hour & 7-Day Review Forecast Buckets
   const forecast = useMemo(() => {
     const buckets = [
       { id: 'now', label: 'Now', maxOffsetMs: 0 },
@@ -84,7 +84,7 @@ export function FsrsRetentionGraph({
     return Math.max(10, Math.ceil(maxVal / 5) * 5);
   }, [forecast]);
 
-  // 2. Bunpro 5-Tier SRS Stage Counts
+  // 2. 5-Tier SRS Stage Counts
   const counts = useMemo(() => {
     let apprentice = 0;
     let guru = 0;
@@ -103,23 +103,6 @@ export function FsrsRetentionGraph({
     return { apprentice, guru, master, enlightened, burned, total: cards.length };
   }, [cards]);
 
-  // 3. Simulated 14-Day Activity Heatmap Grid Data
-  const heatmapDays = useMemo(() => {
-    return Array.from({ length: 14 }).map((_, idx) => {
-      const dayOffset = 13 - idx;
-      const d = new Date(now - dayOffset * 86400 * 1000);
-      const dayName = d.toLocaleDateString('en-US', { weekday: 'narrow' });
-      // Calculate activity intensity
-      const count = dayOffset === 0 ? counts.total : Math.floor((idx * 7) % 18) + (idx % 2 === 0 ? 5 : 0);
-      let intensity: 'none' | 'low' | 'med' | 'high' = 'none';
-      if (count >= 15) intensity = 'high';
-      else if (count >= 8) intensity = 'med';
-      else if (count > 0) intensity = 'low';
-
-      return { dayName, dateStr: d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }), count, intensity };
-    });
-  }, [now, counts.total]);
-
   return (
     <div className="bg-[#0a3240] border border-[#17424f] rounded-2xl p-6 shadow-xl space-y-6 text-[#c1d0d6]">
       {/* Header Bar */}
@@ -127,13 +110,13 @@ export function FsrsRetentionGraph({
         <div>
           <div className="flex items-center gap-2 mb-1">
             <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-pink-500/10 text-pink-400 border border-pink-500/30">
-              Bunpro SRS Forecast Model
+              Manabu SRS Forecast Model
             </span>
             <span className="text-xs text-[#8fa2aa] font-mono">FSRS-6 Engine</span>
           </div>
           <h2 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
             <BarChart2 size={20} className="text-amber-400" />
-            <span>Bunpro Review Workload &amp; Progression Dashboard</span>
+            <span>Dojo Review Workload &amp; Progression Dashboard</span>
           </h2>
         </div>
 
@@ -149,7 +132,7 @@ export function FsrsRetentionGraph({
         </div>
       </div>
 
-      {/* 1. Bunpro Interactive Stacked Review Forecast Bar Chart */}
+      {/* 1. Interactive Stacked Review Forecast Bar Chart */}
       <div className="space-y-3">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
           <span className="font-bold text-white uppercase tracking-wider font-mono flex items-center gap-1.5">
@@ -260,11 +243,11 @@ export function FsrsRetentionGraph({
         </div>
       </div>
 
-      {/* 2. Bunpro 5-Tier SRS Stage Progression Pyramid */}
+      {/* 2. 5-Tier SRS Stage Progression Pyramid */}
       <div className="space-y-3 pt-2 border-t border-[#17424f]">
         <span className="font-bold text-white uppercase tracking-wider text-xs font-mono flex items-center gap-1.5">
           <Layers size={14} className="text-amber-400" />
-          Bunpro SRS Level Progression Pyramid
+          SRS Level Progression Pyramid
         </span>
 
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
@@ -362,41 +345,6 @@ export function FsrsRetentionGraph({
               />
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* 3. 14-Day Study Activity & Review Heatmap Grid */}
-      <div className="space-y-3 pt-2 border-t border-[#17424f]">
-        <div className="flex items-center justify-between text-xs">
-          <span className="font-bold text-white uppercase tracking-wider font-mono flex items-center gap-1.5">
-            <Calendar size={14} className="text-[#34d399]" />
-            14-Day Study Activity &amp; Review Streak Matrix
-          </span>
-          <span className="text-[11px] font-mono text-amber-400 font-bold flex items-center gap-1">
-            <Flame size={13} /> Active Dojo Streak: 1 Day
-          </span>
-        </div>
-
-        <div className="bg-[#051b22] border border-[#17424f] rounded-2xl p-4 flex items-center justify-between gap-2 overflow-x-auto scrollbar-none">
-          {heatmapDays.map((d, idx) => (
-            <div key={idx} className="flex flex-col items-center gap-1.5 flex-1 min-w-[36px]" title={`${d.dateStr}: ${d.count} reviews`}>
-              <span className="text-[10px] font-mono text-[#8fa2aa]">{d.dayName}</span>
-              <div
-                className={`w-8 h-8 rounded-lg flex items-center justify-center font-mono text-[10px] font-bold transition-all ${
-                  d.intensity === 'high'
-                    ? 'bg-emerald-500 text-black shadow-md shadow-emerald-950/60 font-black'
-                    : d.intensity === 'med'
-                    ? 'bg-emerald-600/80 text-white'
-                    : d.intensity === 'low'
-                    ? 'bg-emerald-900/60 text-emerald-300 border border-emerald-500/30'
-                    : 'bg-[#0a3240] text-[#5c727d] border border-[#17424f]'
-                }`}
-              >
-                {d.count > 0 ? d.count : '·'}
-              </div>
-              <span className="text-[9px] font-mono text-[#5c727d]">{d.dateStr.split(' ')[1]}</span>
-            </div>
-          ))}
         </div>
       </div>
 
