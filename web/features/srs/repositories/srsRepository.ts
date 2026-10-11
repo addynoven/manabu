@@ -1,6 +1,7 @@
 import { query, getDbPool } from '@/core/db/postgres';
 import { transitionFsrs6, CardState, FsrsRating, DEFAULT_FSRS6_WEIGHTS } from '../engine/fsrs6Engine';
 import { CardType, CardLifecycleState } from '../models/srs.types';
+import { getCachedSrsPayload, setCachedSrsPayload, invalidateSrsCache } from './srsCache';
 
 export interface DbCardState {
   uid: string;
@@ -43,6 +44,16 @@ export class SrsRepository {
    * Fetches active due review queue for a student (WHERE due_at <= NOW())
    */
   static async getDueReviewQueue(uid: string, limit = 50): Promise<DbCardState[]> {
+    const cacheKey = `due:${limit}`;
+    const cached = await getCachedSrsPayload<DbCardState[]>(`${uid}:${cacheKey}`);
+    if (cached) {
+      return cached.map((c) => ({
+        ...c,
+        lastReview: c.lastReview ? new Date(c.lastReview) : null,
+        dueAt: new Date(c.dueAt),
+      }));
+    }
+
     const res = await query<RawCardStateRow>(
       `SELECT uid, card_id, card_type, state, stability, difficulty, reps, lapses, last_review, due_at
        FROM manabu.card_states
@@ -52,7 +63,7 @@ export class SrsRepository {
       [uid, limit]
     );
 
-    return res.rows.map((row) => ({
+    const result = res.rows.map((row) => ({
       uid: row.uid,
       cardId: row.card_id,
       cardType: row.card_type,
@@ -64,12 +75,25 @@ export class SrsRepository {
       lastReview: row.last_review ? new Date(row.last_review) : null,
       dueAt: new Date(row.due_at),
     }));
+
+    await setCachedSrsPayload(`${uid}:${cacheKey}`, result);
+    return result;
   }
 
   /**
    * Fetches ALL card states for a student
    */
   static async getAllUserCards(uid: string): Promise<DbCardState[]> {
+    const cacheKey = 'all';
+    const cached = await getCachedSrsPayload<DbCardState[]>(`${uid}:${cacheKey}`);
+    if (cached) {
+      return cached.map((c) => ({
+        ...c,
+        lastReview: c.lastReview ? new Date(c.lastReview) : null,
+        dueAt: new Date(c.dueAt),
+      }));
+    }
+
     const res = await query<RawCardStateRow>(
       `SELECT uid, card_id, card_type, state, stability, difficulty, reps, lapses, last_review, due_at
        FROM manabu.card_states
@@ -78,7 +102,7 @@ export class SrsRepository {
       [uid]
     );
 
-    return res.rows.map((row) => ({
+    const result = res.rows.map((row) => ({
       uid: row.uid,
       cardId: row.card_id,
       cardType: row.card_type,
@@ -90,6 +114,9 @@ export class SrsRepository {
       lastReview: row.last_review ? new Date(row.last_review) : null,
       dueAt: new Date(row.due_at),
     }));
+
+    await setCachedSrsPayload(`${uid}:${cacheKey}`, result);
+    return result;
   }
 
   /**
@@ -120,6 +147,9 @@ export class SrsRepository {
         }
       }
       await client.query('COMMIT');
+      if (seededCount > 0) {
+        await invalidateSrsCache(uid);
+      }
       return seededCount;
     } catch (err) {
       await client.query('ROLLBACK');
@@ -270,6 +300,9 @@ export class SrsRepository {
       );
 
       await client.query('COMMIT');
+
+      // Purge Valkey Redis Cache for this user across all serverless instances
+      await invalidateSrsCache(uid);
 
       const updatedDbCardState: DbCardState = {
         uid,
