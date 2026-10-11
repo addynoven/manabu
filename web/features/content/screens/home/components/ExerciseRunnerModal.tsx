@@ -57,7 +57,7 @@ export function ExerciseRunnerModal({
         {!lessonCompleted ? (
           <>
             <div className="space-y-2">
-              <div className="flex items-center justify-between text-xs font-mono text-[#8fa2aa]">
+              <div className="flex items-center justify-between text-xs font-mono text-[#8fa2aa] pr-12">
                 <span>
                   Question {exerciseIndex + 1} of {activeLesson.exercises.length}
                 </span>
