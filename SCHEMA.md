@@ -1,53 +1,188 @@
-# Manabu Production-Ready FSRS-6 Database Schema
+# 🏛️ Manabu Production PostgreSQL & Valkey Database Schema
 
-```mermaid
-erDiagram
-    profiles ||--o{ card_states : "manages memory of"
-    card_states ||--o{ review_logs : "records history in"
+This document details the live production database schema running on **Aiven PostgreSQL** (`manabu` schema) and **Valkey / Redis** for real-time PvP matchmaking.
 
-    profiles {
-        text uid PK "Firebase Auth UID"
-        text display_name
-        text email
-        text belt_rank
-        integer level
-        bigint total_xp
-        integer weekly_xp
-        integer current_streak
-        real desired_retention "Target recall (0.90)"
-        timestamptz created_at
-        timestamptz updated_at
-    }
+---
 
-    card_states {
-        text uid PK, FK "User ID"
-        text card_id PK "e.g. kanji_水"
-        text card_type "kanji | vocab | grammar"
-        text state "new | learning | review | relearning"
-        real stability "FSRS-6 S (days)"
-        real difficulty "FSRS-6 D (1.0 to 10.0)"
-        integer reps "Total repetitions"
-        integer lapses "Total mistakes (Rating 1)"
-        timestamptz last_review
-        timestamptz due_at "Next review due"
-    }
+## 🎨 ASCII Art Database Architecture & Entity Relationship Diagram
 
-    review_logs {
-        bigserial id PK
-        text uid FK "User ID"
-        text card_id FK "Card ID"
-        smallint rating "1: Again, 2: Hard, 3: Good, 4: Easy"
-        text state "State at review time"
-        real elapsed_days "Days since last review"
-        real scheduled_days "Target interval assigned"
-        timestamptz reviewed_at
-    }
+```text
+===================================================================================================
+                                MANABU PRODUCTION DATABASE ARCHITECTURE
+===================================================================================================
 
-    app_config {
-        text key PK "e.g. fsrs6_weights"
-        jsonb value "21 parameters [w0...w20]"
-        timestamptz updated_at
-    }
+       +-----------------------------------------------------------------------------------+
+       |                                 MANABU.PROFILES                                   |
+       |  (Stores student accounts, XP, belt rank, scholar friend codes & FSRS retention) |
+       +-----------------------------------------+-----------------------------------------+
+                                                 |
+                +--------------------------------+--------------------------------+
+                | 1:N                            | 1:N                            | 1:1
+                v                                v                                v
+   +--------------------------+    +--------------------------+    +--------------------------+
+   |    MANABU.CARD_STATES    |    |   MANABU.USER_BACKUPS    |    |    MANABU.FRIENDSHIPS    |
+   | (FSRS-6 S, D, Reps, Due) |    |  (JSONB Cloud Sync Data) |    | (Scholar Friend Links)   |
+   +------------+-------------+    +--------------------------+    +--------------------------+
+                | 1:N                                                             ^
+                v                                                                 |
+   +--------------------------+                                    +--------------+-----------+
+   |    MANABU.REVIEW_LOGS    |                                    | MANABU.FRIEND_REQUESTS   |
+   | (Historical Rating Logs) |                                    | (Pending/Accepted)       |
+   +--------------------------+                                    +--------------------------+
+
+                +-----------------------------------------------------------------+
+                | 1:N                                                             | 1:N
+                v                                                                 v
+   +--------------------------+                                    +--------------------------+
+   |   MANABU.MATCH_RESULTS   |                                    | MANABU.SCORE_CHALLENGES  |
+   | (PvP Arcade Duels Record)|                                    | (Async High-Score Duels) |
+   +--------------------------+                                    +--------------------------+
+
+                                    +--------------------------+
+                                    |    MANABU.APP_CONFIG     |
+                                    |  (FSRS-6 Weights Vector) |
+                                    +--------------------------+
+```
+
+---
+
+## 📋 Live Table Definitions
+
+### 1. `manabu.profiles`
+> Learner accounts, XP progression, martial arts belt rank, scholar friend code, and FSRS target retention preference.
+
+```text
++---------------------+--------------------------+----------+---------------------------------+
+| Column Name         | Data Type                | Nullable | Default / Constraints           |
++---------------------+--------------------------+----------+---------------------------------+
+| uid                 | text                     | NOT NULL | PRIMARY KEY (Firebase Auth UID) |
+| display_name        | text                     | NOT NULL |                                 |
+| email               | text                     | NULL     | UNIQUE                          |
+| avatar_emoji        | text                     | NOT NULL | '🥋'                            |
+| belt_rank           | text                     | NOT NULL | 'white'                         |
+| level               | integer                  | NOT NULL | 1                               |
+| total_xp            | integer                  | NOT NULL | 0                               |
+| weekly_xp           | integer                  | NOT NULL | 0                               |
+| week_id             | text                     | NOT NULL | (e.g. '2026-W41')               |
+| current_streak      | integer                  | NOT NULL | 0                               |
+| last_active_date    | date                     | NULL     |                                 |
+| friend_code         | text                     | NOT NULL | UNIQUE (e.g. 'R4B6-53B4')       |
+| banned              | boolean                  | NOT NULL | false                           |
+| desired_retention   | real                     | NOT NULL | 0.90 (FSRS-6 Target 0.70..0.97) |
+| created_at          | timestamp with time zone | NOT NULL | now()                           |
+| updated_at          | timestamp with time zone | NOT NULL | now()                           |
++---------------------+--------------------------+----------+---------------------------------+
+```
+
+---
+
+### 2. `manabu.card_states`
+> Active FSRS-5 / FSRS-6 spaced repetition memory state per item per user ($S$: Stability, $D$: Difficulty, $R$: Repetitions, $L$: Lapses).
+
+```text
++---------------------+--------------------------+----------+---------------------------------+
+| Column Name         | Data Type                | Nullable | Default / Constraints           |
++---------------------+--------------------------+----------+---------------------------------+
+| uid                 | text                     | NOT NULL | PRIMARY KEY (uid, card_id)      |
+| card_id             | text                     | NOT NULL | PRIMARY KEY (e.g. 'u1_l1_1')    |
+| card_type           | text                     | NOT NULL | ('kanji', 'vocab', 'grammar')   |
+| state               | text                     | NOT NULL | ('new','learning','review',...) |
+| stability           | real                     | NOT NULL | 0.0 (FSRS Stability S in days)  |
+| difficulty          | real                     | NOT NULL | 5.0 (FSRS Difficulty D 1.0..10) |
+| reps                | integer                  | NOT NULL | 0                               |
+| lapses              | integer                  | NOT NULL | 0                               |
+| last_review         | timestamp with time zone | NULL     |                                 |
+| due_at              | timestamp with time zone | NOT NULL | now() (Indexed ASC)             |
++---------------------+--------------------------+----------+---------------------------------+
+```
+
+---
+
+### 3. `manabu.review_logs`
+> Immutable historical review event logs for FSRS optimization and memory analytics.
+
+```text
++---------------------+--------------------------+----------+---------------------------------+
+| Column Name         | Data Type                | Nullable | Default / Constraints           |
++---------------------+--------------------------+----------+---------------------------------+
+| id                  | bigint                   | NOT NULL | PRIMARY KEY (DEFAULT seq)       |
+| uid                 | text                     | NOT NULL | FK -> card_states(uid, card_id) |
+| card_id             | text                     | NOT NULL | FK -> card_states(uid, card_id) |
+| rating              | smallint                 | NOT NULL | 1:Again, 2:Hard, 3:Good, 4:Easy |
+| state               | text                     | NOT NULL | ('new','learning','review',...) |
+| elapsed_days        | real                     | NOT NULL | 0.0                             |
+| scheduled_days      | real                     | NOT NULL | 0.0                             |
+| reviewed_at         | timestamp with time zone | NOT NULL | now()                           |
++---------------------+--------------------------+----------+---------------------------------+
+```
+
+---
+
+### 4. `manabu.user_backups`
+> JSONB cloud backup payload storing progress (`completedLessons`, `passedGates`) for cross-device synchronization.
+
+```text
++---------------------+--------------------------+----------+---------------------------------+
+| Column Name         | Data Type                | Nullable | Default / Constraints           |
++---------------------+--------------------------+----------+---------------------------------+
+| uid                 | text                     | NOT NULL | PRIMARY KEY                     |
+| backup_data         | jsonb                    | NOT NULL | (Complete JSON progress blob)   |
+| version             | integer                  | NOT NULL | 1                               |
+| synced_at           | timestamp with time zone | NOT NULL | now()                           |
++---------------------+--------------------------+----------+---------------------------------+
+```
+
+---
+
+### 5. `manabu.match_results`
+> Live PvP Arcade match outcomes and game logs.
+
+```text
++---------------------+--------------------------+----------+---------------------------------+
+| Column Name         | Data Type                | Nullable | Default / Constraints           |
++---------------------+--------------------------+----------+---------------------------------+
+| id                  | uuid                     | NOT NULL | PRIMARY KEY                     |
+| game                | text                     | NOT NULL | ('shiritori','karuta','duel')   |
+| player_a            | text                     | NOT NULL |                                 |
+| player_b            | text                     | NOT NULL |                                 |
+| wins_a              | integer                  | NOT NULL | 0                               |
+| wins_b              | integer                  | NOT NULL | 0                               |
+| winner              | text                     | NULL     |                                 |
+| reason              | text                     | NOT NULL | ('forfeit','timeout','score')   |
+| rounds              | integer                  | NOT NULL | 0                               |
+| started_at          | timestamp with time zone | NOT NULL |                                 |
+| ended_at            | timestamp with time zone | NOT NULL |                                 |
++---------------------+--------------------------+----------+---------------------------------+
+```
+
+---
+
+### 6. `manabu.friendships` & `manabu.friend_requests`
+> Social connections and pending friend invitations between scholars.
+
+```text
++---------------------+--------------------------+----------+---------------------------------+
+| Column Name         | Data Type                | Nullable | Default / Constraints           |
++---------------------+--------------------------+----------+---------------------------------+
+| user_a              | text                     | NOT NULL | PRIMARY KEY (user_a, user_b)    |
+| user_b              | text                     | NOT NULL | PRIMARY KEY (user_a, user_b)    |
+| created_at          | timestamp with time zone | NOT NULL | now()                           |
++---------------------+--------------------------+----------+---------------------------------+
+```
+
+---
+
+### 7. `manabu.app_config`
+> Global application configuration storing FSRS-6 parameter weights vector $w$ and remote feature flags.
+
+```text
++---------------------+--------------------------+----------+---------------------------------+
+| Column Name         | Data Type                | Nullable | Default / Constraints           |
++---------------------+--------------------------+----------+---------------------------------+
+| key                 | text                     | NOT NULL | PRIMARY KEY (e.g. 'fsrs6_w')    |
+| value               | jsonb                    | NOT NULL | (Array of 21 weights parameters)|
+| updated_at          | timestamp with time zone | NOT NULL | now()                           |
++---------------------+--------------------------+----------+---------------------------------+
 ```
 
 ---
@@ -57,77 +192,71 @@ erDiagram
 ```sql
 CREATE SCHEMA IF NOT EXISTS manabu;
 
--- 1. Learner Profiles & Settings
+-- 1. Profiles Table
 CREATE TABLE manabu.profiles (
-    uid                TEXT PRIMARY KEY,                     -- User ID from Firebase Auth
+    uid                TEXT PRIMARY KEY,
     display_name       TEXT NOT NULL,
     email              TEXT UNIQUE,
+    avatar_emoji       TEXT NOT NULL DEFAULT '🥋',
     belt_rank          TEXT NOT NULL DEFAULT 'white',
     level              INT NOT NULL DEFAULT 1,
-    total_xp           BIGINT NOT NULL DEFAULT 0,
+    total_xp           INT NOT NULL DEFAULT 0,
     weekly_xp          INT NOT NULL DEFAULT 0,
+    week_id            TEXT NOT NULL,
     current_streak     INT NOT NULL DEFAULT 0,
+    last_active_date   DATE,
+    friend_code        TEXT UNIQUE NOT NULL,
+    banned             BOOLEAN NOT NULL DEFAULT false,
     desired_retention  REAL NOT NULL DEFAULT 0.90 CHECK (desired_retention >= 0.70 AND desired_retention <= 0.97),
     created_at         TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at         TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- 2. Current Card State (FSRS-6 Memory Engine)
+-- 2. Card States Table
 CREATE TABLE manabu.card_states (
     uid          TEXT NOT NULL REFERENCES manabu.profiles(uid) ON DELETE CASCADE,
-    card_id      TEXT NOT NULL,                               -- e.g. "kanji_水" or "vocab_1483185"
+    card_id      TEXT NOT NULL,
     card_type    TEXT NOT NULL CHECK (card_type IN ('kanji', 'vocab', 'grammar')),
     state        TEXT NOT NULL CHECK (state IN ('new', 'learning', 'review', 'relearning')),
-    stability    REAL NOT NULL DEFAULT 0.0,                   -- FSRS-6 Stability S (days)
-    difficulty   REAL NOT NULL DEFAULT 5.0 CHECK (difficulty >= 1.0 AND difficulty <= 10.0), -- D
-    reps         INT NOT NULL DEFAULT 0,                      -- Total repetition count
-    lapses       INT NOT NULL DEFAULT 0,                      -- Total memory lapses (Rating 1)
+    stability    REAL NOT NULL DEFAULT 0.0,
+    difficulty   REAL NOT NULL DEFAULT 5.0 CHECK (difficulty >= 1.0 AND difficulty <= 10.0),
+    reps         INT NOT NULL DEFAULT 0,
+    lapses       INT NOT NULL DEFAULT 0,
     last_review  TIMESTAMPTZ,
     due_at       TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     PRIMARY KEY (uid, card_id)
 );
 
--- Index for fetching active review queue (WHERE uid = $1 AND due_at <= NOW())
 CREATE INDEX idx_card_states_due ON manabu.card_states (uid, due_at ASC);
 
--- 3. FSRS-6 Review History Logs
+-- 3. Review History Logs
 CREATE TABLE manabu.review_logs (
     id             BIGSERIAL PRIMARY KEY,
     uid            TEXT NOT NULL,
     card_id        TEXT NOT NULL,
-    rating         SMALLINT NOT NULL CHECK (rating BETWEEN 1 AND 4), -- 1:Again, 2:Hard, 3:Good, 4:Easy
+    rating         SMALLINT NOT NULL CHECK (rating BETWEEN 1 AND 4),
     state          TEXT NOT NULL CHECK (state IN ('new', 'learning', 'review', 'relearning')),
-    elapsed_days   REAL NOT NULL DEFAULT 0.0,                 -- Interval since previous review
-    scheduled_days REAL NOT NULL DEFAULT 0.0,                 -- Target interval assigned
+    elapsed_days   REAL NOT NULL DEFAULT 0.0,
+    scheduled_days REAL NOT NULL DEFAULT 0.0,
     reviewed_at    TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     CONSTRAINT fk_user_card FOREIGN KEY (uid, card_id) 
         REFERENCES manabu.card_states(uid, card_id) ON DELETE CASCADE
 );
 
--- Index for review history queries and weight optimization
 CREATE INDEX idx_review_logs_card_history ON manabu.review_logs (uid, card_id, reviewed_at ASC);
 
--- 4. Global App Configuration & FSRS-6 Weights
+-- 4. User Cloud Backups
+CREATE TABLE manabu.user_backups (
+    uid            TEXT PRIMARY KEY REFERENCES manabu.profiles(uid) ON DELETE CASCADE,
+    backup_data    JSONB NOT NULL,
+    version        INT NOT NULL DEFAULT 1,
+    synced_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+-- 5. Global App Configuration & FSRS-6 Weights
 CREATE TABLE manabu.app_config (
-    key        TEXT PRIMARY KEY,                              -- e.g. "fsrs6_weights"
-    value      JSONB NOT NULL,                                -- Array of 21 parameters [w0 ... w20]
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    key            TEXT PRIMARY KEY,
+    value          JSONB NOT NULL,
+    updated_at     TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 ```
-
----
-
-## 📐 Schema Architectural Highlights
-
-1. **Composite Foreign Key (`fk_user_card`)**:
-   - `review_logs` links directly to `card_states(uid, card_id)` with `ON DELETE CASCADE` to prevent orphaned review logs.
-2. **Indexed Review Queue (`idx_card_states_due`)**:
-   - Fast $O(\log N)$ query performance for daily review queues (`WHERE uid = $1 AND due_at <= NOW()`).
-3. **Data Integrity Check Constraints**:
-   - `difficulty` enforced between `1.0` and `10.0`.
-   - `rating` enforced between `1` (Again) and `4` (Easy).
-   - `desired_retention` enforced between `0.70` and `0.97` (default `0.90`).
-4. **Optimized Storage Types**:
-   - Uses `REAL` (`FLOAT4`) for FSRS $S, D$, and interval days, cutting RAM/disk footprint in half while maintaining full single-precision float accuracy.
-5. **Decoupled Content**:
-   - `card_id` joins directly with client-side content bundles (`curriculum.json`, `kanji_n5.json`, `vocab_n5.json`), so content updates never tangle or corrupt user SRS progress.
