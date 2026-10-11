@@ -3,17 +3,105 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { KanaItem, speakJapanese, getKanaStrokeCount } from '../../../models/kana';
 import { getKanaMnemonic } from '../../../data/kanaMnemonics';
+import { getCharacterStrokeData } from '../../../models/strokeData';
+
+interface AnimatedSVGPathProps {
+  d: string;
+  strokeColor: string;
+  strokeWidth: string;
+  isDrawingActive: boolean;
+  isCompleted: boolean;
+  durationMs?: number;
+}
+
+function AnimatedSVGPath({
+  d,
+  strokeColor,
+  strokeWidth,
+  isDrawingActive,
+  isCompleted,
+  durationMs = 900,
+}: AnimatedSVGPathProps) {
+  const pathRef = useRef<SVGPathElement | null>(null);
+  const [totalLength, setTotalLength] = useState<number>(300);
+
+  useEffect(() => {
+    if (pathRef.current) {
+      try {
+        const len = pathRef.current.getTotalLength();
+        if (len > 0) {
+          setTotalLength(len);
+        }
+      } catch (err) {
+        // Fallback default length
+      }
+    }
+  }, [d]);
+
+  const dashOffset = isCompleted ? 0 : isDrawingActive ? 0 : totalLength;
+
+  return (
+    <path
+      ref={pathRef}
+      d={d}
+      fill="none"
+      stroke={strokeColor}
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      style={{
+        strokeDasharray: totalLength,
+        strokeDashoffset: dashOffset,
+        transition: isDrawingActive
+          ? `stroke-dashoffset ${durationMs}ms cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s ease`
+          : isCompleted
+          ? 'stroke-dashoffset 0s, stroke 0.3s ease'
+          : 'stroke-dashoffset 0.2s ease, stroke 0.3s ease',
+      }}
+    />
+  );
+}
 
 interface KanaDetailPanelProps {
   selectedKana: KanaItem;
 }
 
 export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
+  const [padMode, setPadMode] = useState<'anim' | 'teacher'>('anim');
+  const [activeStrokeIndex, setActiveStrokeIndex] = useState(0);
+
+  // Looping stroke animation state
+  const [animStep, setAnimStep] = useState(0);
+
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [isDrawing, setIsDrawing] = useState(false);
   const [hasDrawn, setHasDrawn] = useState(false);
 
-  // Clear canvas whenever selectedKana changes or clear button clicked
+  // Fetch vector stroke data for active Kana character
+  const strokeData = getCharacterStrokeData(selectedKana.kana);
+  const strokeCount = strokeData?.strokeCount || getKanaStrokeCount(selectedKana.kana);
+  const mnemonicText = getKanaMnemonic(selectedKana.kana, selectedKana.romaji);
+  const unicodeHex = `U+${selectedKana.kana.charCodeAt(0).toString(16).toUpperCase()}`;
+
+  // Infinite looping stroke-by-stroke animation effect in 'anim' mode
+  useEffect(() => {
+    if (padMode !== 'anim' || !strokeData) return;
+
+    const total = strokeData.strokes.length;
+    const interval = setInterval(() => {
+      setAnimStep((prev) => (prev + 1) % (total + 1));
+    }, 1200);
+
+    return () => clearInterval(interval);
+  }, [padMode, strokeData, selectedKana.kana]);
+
+  // Reset state when selectedKana or padMode changes
+  useEffect(() => {
+    clearCanvas();
+    setActiveStrokeIndex(0);
+    setAnimStep(0);
+  }, [selectedKana.kana, padMode]);
+
   const clearCanvas = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -22,10 +110,6 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     setHasDrawn(false);
   };
-
-  useEffect(() => {
-    clearCanvas();
-  }, [selectedKana.kana]);
 
   const startDrawing = (e: React.MouseEvent<HTMLCanvasElement> | React.TouchEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
@@ -42,7 +126,7 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
 
     ctx.beginPath();
     ctx.moveTo(x, y);
-    ctx.strokeStyle = '#c74a4a'; // Primary red stroke
+    ctx.strokeStyle = '#c74a4a';
     ctx.lineWidth = 10;
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
@@ -69,12 +153,15 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
   };
 
   const stopDrawing = () => {
+    if (!isDrawing) return;
     setIsDrawing(false);
+
+    if (strokeData && activeStrokeIndex < strokeData.strokes.length - 1) {
+      setActiveStrokeIndex((prev) => prev + 1);
+    }
   };
 
-  const strokeCount = getKanaStrokeCount(selectedKana.kana);
-  const mnemonicText = getKanaMnemonic(selectedKana.kana, selectedKana.romaji);
-  const unicodeHex = `U+${selectedKana.kana.charCodeAt(0).toString(16).toUpperCase()}`;
+  const currentStroke = strokeData?.strokes[activeStrokeIndex];
 
   return (
     <aside className="lg:col-span-4 flex flex-col gap-5 lg:sticky lg:top-24">
@@ -118,59 +205,179 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
         </div>
       </div>
 
-      {/* Interactive Stroke Tracing Canvas */}
+      {/* Interactive Stroke Pad Card */}
       <div className="bg-surface-base rounded-xl border border-border-hairline p-5 shadow-xl">
-        <div className="flex items-center justify-between pb-3 mb-3 border-b border-border-hairline">
-          <div className="flex items-center gap-1.5">
-            <span className="material-symbols-outlined text-[18px] text-primary-container">draw</span>
-            <h3 className="text-sm font-bold text-text-primary">Interactive Stroke Pad</h3>
+        {/* Header & Mode Switcher */}
+        <div className="flex flex-col gap-2 pb-3 mb-3 border-b border-border-hairline">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-1.5">
+              <span className="material-symbols-outlined text-[18px] text-primary-container">draw</span>
+              <h3 className="text-sm font-bold text-text-primary">Stroke Order Teacher</h3>
+            </div>
+            <span className="text-[10px] font-mono text-text-muted">{unicodeHex} KanjiVG</span>
           </div>
-          <span className="text-[10px] font-mono text-text-muted">{unicodeHex} Vector Guide</span>
+
+          <div className="bg-background-deep p-1 rounded-lg border border-border-hairline grid grid-cols-2 gap-1 text-xs">
+            <button
+              onClick={() => setPadMode('anim')}
+              className={`py-1 rounded font-bold transition flex items-center justify-center gap-1 ${
+                padMode === 'anim'
+                  ? 'bg-primary-container text-white shadow'
+                  : 'text-text-secondary hover:text-white'
+              }`}
+            >
+              <span className="material-symbols-outlined text-[14px]">play_circle</span>
+              <span>Watch &amp; Learn</span>
+            </button>
+            <button
+              onClick={() => setPadMode('teacher')}
+              className={`py-1 rounded font-bold transition flex items-center justify-center gap-1 ${
+                padMode === 'teacher'
+                  ? 'bg-primary-container text-white shadow'
+                  : 'text-text-secondary hover:text-white'
+              }`}
+            >
+              <span className="material-symbols-outlined text-[14px]">gesture</span>
+              <span>Teacher Mode</span>
+            </button>
+          </div>
         </div>
 
+        {/* Teacher Mode Hint Banner */}
+        {padMode === 'teacher' && currentStroke && (
+          <div className="mb-3 px-3 py-1.5 rounded-lg bg-accent-gold-subtle border border-accent-gold/30 text-[11px] font-medium text-accent-gold flex items-center justify-between">
+            <span>
+              Stroke {activeStrokeIndex + 1} / {strokeCount}: {currentStroke.directionHint || 'Sweep smoothly'}
+            </span>
+            <span className="w-2 h-2 rounded-full bg-accent-gold animate-ping" />
+          </div>
+        )}
+
+        {/* Tatami Canvas & Progressive SVG Vector Guide */}
         <div className="relative w-full max-w-[280px] h-[260px] mx-auto bg-tatami-canvas rounded-xl border-2 border-border-hairline overflow-hidden flex items-center justify-center select-none">
           {/* Tatami Grid Lines */}
           <div className="absolute inset-x-0 top-1/2 border-t border-dashed border-tatami-grid pointer-events-none" />
           <div className="absolute inset-y-0 left-1/2 border-l border-dashed border-tatami-grid pointer-events-none" />
 
-          {/* Faint Character Tracing Guide */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-            <span className="text-[160px] font-serif text-text-muted/15 font-bold leading-none">
-              {selectedKana.kana}
-            </span>
-          </div>
+          {/* SVG Vector Layer */}
+          {strokeData ? (
+            <svg viewBox="0 0 109 109" className="absolute inset-0 w-full h-full p-2 pointer-events-none select-none z-0">
+              {/* Background faint guide for unreached strokes */}
+              {strokeData.strokes.map((stroke) => (
+                <path
+                  key={`bg-${stroke.strokeNumber}`}
+                  d={stroke.path}
+                  fill="none"
+                  stroke="rgba(255,255,255,0.08)"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              ))}
 
-          {/* User Touch / Mouse Canvas */}
-          <canvas
-            ref={canvasRef}
-            width={280}
-            height={260}
-            onMouseDown={startDrawing}
-            onMouseMove={draw}
-            onMouseUp={stopDrawing}
-            onMouseLeave={stopDrawing}
-            onTouchStart={startDrawing}
-            onTouchMove={draw}
-            onTouchEnd={stopDrawing}
-            className="absolute inset-0 w-full h-full cursor-crosshair touch-none z-10"
-          />
+              {/* Progressive Point A-to-B Animated Strokes */}
+              {strokeData.strokes.map((stroke, idx) => {
+                const isPast = padMode === 'teacher' ? idx < activeStrokeIndex : idx < animStep;
+                const isCurrent = padMode === 'teacher' ? idx === activeStrokeIndex : idx === animStep;
+
+                const strokeColor =
+                  padMode === 'anim'
+                    ? idx === animStep
+                      ? '#fbbf24' // Current animating stroke in gold
+                      : '#c74a4a' // Completed stroke in red
+                    : isCurrent
+                    ? '#c74a4a' // Active target stroke in bright red
+                    : '#38bdf8'; // Completed stroke in blue
+
+                return (
+                  <g key={stroke.strokeNumber}>
+                    <AnimatedSVGPath
+                      d={stroke.path}
+                      strokeColor={strokeColor}
+                      strokeWidth={isCurrent ? '7' : '5'}
+                      isDrawingActive={isCurrent}
+                      isCompleted={isPast}
+                      durationMs={1000}
+                    />
+
+                    {/* Numbered Badge */}
+                    <text
+                      x={stroke.numberPos.x}
+                      y={stroke.numberPos.y}
+                      fill={isCurrent ? '#fbbf24' : '#8fa2aa'}
+                      fontSize="9"
+                      fontWeight="bold"
+                    >
+                      {stroke.strokeNumber}
+                    </text>
+
+                    {/* Pulsing Starting Point Beacon (Point A) */}
+                    {((padMode === 'teacher' && isCurrent) || (padMode === 'anim' && isCurrent)) && (
+                      <g>
+                        <circle
+                          cx={stroke.startPoint.x}
+                          cy={stroke.startPoint.y}
+                          r="6"
+                          fill="#fbbf24"
+                          className="animate-pulse"
+                        />
+                        <circle
+                          cx={stroke.startPoint.x}
+                          cy={stroke.startPoint.y}
+                          r="3"
+                          fill="#ffffff"
+                        />
+                      </g>
+                    )}
+                  </g>
+                );
+              })}
+            </svg>
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+              <span className="text-[160px] font-serif text-text-muted/15 font-bold leading-none">
+                {selectedKana.kana}
+              </span>
+            </div>
+          )}
+
+          {/* User Touch / Mouse Canvas (Active in Teacher Mode) */}
+          {padMode === 'teacher' && (
+            <canvas
+              ref={canvasRef}
+              width={280}
+              height={260}
+              onMouseDown={startDrawing}
+              onMouseMove={draw}
+              onMouseUp={stopDrawing}
+              onMouseLeave={stopDrawing}
+              onTouchStart={startDrawing}
+              onTouchMove={draw}
+              onTouchEnd={stopDrawing}
+              className="absolute inset-0 w-full h-full cursor-crosshair touch-none z-10"
+            />
+          )}
         </div>
 
-        <div className="mt-3 grid grid-cols-2 gap-2">
+        {/* Footer Action Buttons */}
+        <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
           <button
             onClick={() => speakJapanese(selectedKana.kana)}
-            className="py-2 rounded-lg bg-surface-muted border border-border-hairline text-xs font-semibold text-white hover:bg-surface-elevated flex items-center justify-center gap-1"
+            className="py-2 rounded-lg bg-surface-muted border border-border-hairline font-semibold text-white hover:bg-surface-elevated flex items-center justify-center gap-1 transition"
+            title="Play Audio"
           >
             <span className="material-symbols-outlined text-[16px] text-accent-gold">play_arrow</span>
             <span>Play Sound</span>
           </button>
+
           <button
             onClick={clearCanvas}
-            className={`py-2 rounded-lg border text-xs font-semibold transition flex items-center justify-center gap-1 ${
+            className={`py-2 rounded-lg border font-semibold transition flex items-center justify-center gap-1 ${
               hasDrawn
-                ? 'bg-primary-container text-white border-primary-container shadow-md'
+                ? 'bg-primary-container text-white border-primary-container shadow'
                 : 'bg-surface-muted border-border-hairline text-text-secondary hover:text-white'
             }`}
+            title="Clear canvas"
           >
             <span className="material-symbols-outlined text-[16px]">refresh</span>
             <span>Clear Pad</span>
