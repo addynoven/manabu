@@ -49,7 +49,8 @@
             "Confirming To give (to someone else)",
             "To help / assist"
           ],
-          "correctAnswer": "To help / assist"
+          "correctAnswer": "To help / assist",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝う」 (tetsudau) expresses 'To help / assist'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝う (tetsudau) — To help / assist"
         },
         {
           "id": "u12_l1_2",
@@ -69,7 +70,8 @@
             "ほ",
             "あ"
           ],
-          "correctAnswer": "てつだう"
+          "correctAnswer": "てつだう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝う」 (tetsudau) expresses 'Build 'To help / assist''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝う (tetsudau) — Build 'To help / assist'"
         },
         {
           "id": "u12_l1_3",
@@ -88,7 +90,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なあげるです。」 (Kore wa ichiban taisetsu na ageru desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important To give (to someone else).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なあげるです。 (Kore wa ichiban taisetsu na ageru desu.) — Fill in topic particle 'は' (wa): This is the most important To give (to someone else)."
         },
         {
           "id": "u12_l1_4",
@@ -110,7 +112,8 @@
             "あげる",
             "です"
           ],
-          "correctAnswer": "これはあげるです"
+          "correctAnswer": "これはあげるです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはあげるです」 (Kore wa ageru desu.) expresses 'This is To give (to someone else).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはあげるです (Kore wa ageru desu.) — This is To give (to someone else)."
         },
         {
           "id": "u12_l1_5",
@@ -127,7 +130,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "くれる"
+          "correctAnswer": "くれる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれる」 (kureru) expresses 'Pronounce: To give (to speaker)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれる (kureru) — Pronounce: To give (to speaker)"
         },
         {
           "id": "u12_l1_6",
@@ -147,7 +151,8 @@
             "くれる",
             "です"
           ],
-          "correctAnswer": "くれるです"
+          "correctAnswer": "くれるです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれるです」 (kureru desu.) expresses 'It is To give (to speaker).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれるです (kureru desu.) — It is To give (to speaker)."
         },
         {
           "id": "u12_l1_7",
@@ -187,7 +192,8 @@
               "romaji": "morau"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝う・あげる・くれる・もらう」 (tetsudau, ageru, kureru, morau) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝う・あげる・くれる・もらう (tetsudau, ageru, kureru, morau) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l1_8",
@@ -211,7 +217,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝うについて教えていただけますか？」 (tetsudau ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about To help / assist?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝うについて教えていただけますか？ (tetsudau ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about To help / assist?"
         }
       ]
     },
@@ -250,7 +257,8 @@
             "Confirming To be saved / helpful",
             "To help / assist"
           ],
-          "correctAnswer": "To receive"
+          "correctAnswer": "To receive",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらう」 (morau) expresses 'To receive'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらう (morau) — To receive"
         },
         {
           "id": "u12_l2_2",
@@ -270,7 +278,8 @@
             "う",
             "よ"
           ],
-          "correctAnswer": "もらう"
+          "correctAnswer": "もらう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらう」 (morau) expresses 'Build 'To receive''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらう (morau) — Build 'To receive'"
         },
         {
           "id": "u12_l2_3",
@@ -289,7 +298,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な教えてです。」 (Kore wa ichiban taisetsu na oshiete desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Please teach / tell.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な教えてです。 (Kore wa ichiban taisetsu na oshiete desu.) — Fill in topic particle 'は' (wa): This is the most important Please teach / tell."
         },
         {
           "id": "u12_l2_4",
@@ -311,7 +320,8 @@
             "教えて",
             "です"
           ],
-          "correctAnswer": "これは教えてです"
+          "correctAnswer": "これは教えてです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは教えてです」 (Kore wa oshiete desu.) expresses 'This is Please teach / tell.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは教えてです (Kore wa oshiete desu.) — This is Please teach / tell."
         },
         {
           "id": "u12_l2_5",
@@ -328,7 +338,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "貸す"
+          "correctAnswer": "貸す",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貸す」 (kasu) expresses 'Pronounce: To lend'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貸す (kasu) — Pronounce: To lend"
         },
         {
           "id": "u12_l2_6",
@@ -348,7 +359,8 @@
             "貸す",
             "です"
           ],
-          "correctAnswer": "貸すです"
+          "correctAnswer": "貸すです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貸すです」 (kasu desu.) expresses 'It is To lend.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貸すです (kasu desu.) — It is To lend."
         },
         {
           "id": "u12_l2_7",
@@ -388,7 +400,8 @@
               "romaji": "kariru"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらう・教えて・貸す・借りる」 (morau, oshiete, kasu, kariru) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらう・教えて・貸す・借りる (morau, oshiete, kasu, kariru) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l2_8",
@@ -412,7 +425,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あげるの準備はできていますか？」 (ageru no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for To give (to someone else) ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あげるの準備はできていますか？ (ageru no junbi wa dekite imasu ka?) — Speaker: Is the preparation for To give (to someone else) ready?"
         }
       ]
     },
@@ -453,7 +467,8 @@
             "Confirming Rude / excuse me",
             "To borrow"
           ],
-          "correctAnswer": "To borrow"
+          "correctAnswer": "To borrow",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「借りる」 (kariru) expresses 'To borrow'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・借りる (kariru) — To borrow"
         },
         {
           "id": "u12_l3_2",
@@ -473,7 +488,8 @@
             "か",
             "な"
           ],
-          "correctAnswer": "かりる"
+          "correctAnswer": "かりる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「借りる」 (kariru) expresses 'Build 'To borrow''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・借りる (kariru) — Build 'To borrow'"
         },
         {
           "id": "u12_l3_3",
@@ -492,7 +508,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な送るです。」 (Kore wa ichiban taisetsu na okuru desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important To send / see someone off.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な送るです。 (Kore wa ichiban taisetsu na okuru desu.) — Fill in topic particle 'は' (wa): This is the most important To send / see someone off."
         },
         {
           "id": "u12_l3_4",
@@ -514,7 +530,8 @@
             "送る",
             "です"
           ],
-          "correctAnswer": "これは送るです"
+          "correctAnswer": "これは送るです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは送るです」 (Kore wa okuru desu.) expresses 'This is To send / see someone off.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは送るです (Kore wa okuru desu.) — This is To send / see someone off."
         },
         {
           "id": "u12_l3_5",
@@ -531,7 +548,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "親切"
+          "correctAnswer": "親切",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「親切」 (shinsetsu) expresses 'Pronounce: Kind / hospitable'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・親切 (shinsetsu) — Pronounce: Kind / hospitable"
         },
         {
           "id": "u12_l3_6",
@@ -551,7 +569,8 @@
             "親切",
             "です"
           ],
-          "correctAnswer": "親切です"
+          "correctAnswer": "親切です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「親切です」 (shinsetsu desu.) expresses 'It is Kind / hospitable.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・親切です (shinsetsu desu.) — It is Kind / hospitable."
         },
         {
           "id": "u12_l3_7",
@@ -591,7 +610,8 @@
               "romaji": "onegai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「借りる・送る・親切・お願い」 (kariru, okuru, shinsetsu, onegai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・借りる・送る・親切・お願い (kariru, okuru, shinsetsu, onegai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l3_8",
@@ -615,7 +635,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれるについてどう思われますか？」 (kureru ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on To give (to speaker)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれるについてどう思われますか？ (kureru ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on To give (to speaker)?"
         }
       ]
     },
@@ -656,7 +677,8 @@
             "To give (to speaker)",
             "Confirming To help / assist"
           ],
-          "correctAnswer": "Favor / request"
+          "correctAnswer": "Favor / request",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お願い」 (onegai) expresses 'Favor / request'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お願い (onegai) — Favor / request"
         },
         {
           "id": "u12_l4_2",
@@ -676,7 +698,8 @@
             "ひ",
             "い"
           ],
-          "correctAnswer": "おねがい"
+          "correctAnswer": "おねがい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お願い」 (onegai) expresses 'Build 'Favor / request''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お願い (onegai) — Build 'Favor / request'"
         },
         {
           "id": "u12_l4_3",
@@ -695,7 +718,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な迷惑です。」 (Kore wa ichiban taisetsu na meiwaku desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Nuisance / inconvenience.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な迷惑です。 (Kore wa ichiban taisetsu na meiwaku desu.) — Fill in topic particle 'は' (wa): This is the most important Nuisance / inconvenience."
         },
         {
           "id": "u12_l4_4",
@@ -717,7 +740,8 @@
             "迷惑",
             "です"
           ],
-          "correctAnswer": "これは迷惑です"
+          "correctAnswer": "これは迷惑です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは迷惑です」 (Kore wa meiwaku desu.) expresses 'This is Nuisance / inconvenience.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは迷惑です (Kore wa meiwaku desu.) — This is Nuisance / inconvenience."
         },
         {
           "id": "u12_l4_5",
@@ -734,7 +758,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "助かる"
+          "correctAnswer": "助かる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「助かる」 (tasukaru) expresses 'Pronounce: To be saved / helpful'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・助かる (tasukaru) — Pronounce: To be saved / helpful"
         },
         {
           "id": "u12_l4_6",
@@ -754,7 +779,8 @@
             "助かる",
             "です"
           ],
-          "correctAnswer": "助かるです"
+          "correctAnswer": "助かるです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「助かるです」 (tasukaru desu.) expresses 'It is To be saved / helpful.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・助かるです (tasukaru desu.) — It is To be saved / helpful."
         },
         {
           "id": "u12_l4_7",
@@ -794,7 +820,8 @@
               "romaji": "enryo"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お願い・迷惑・助かる・遠慮」 (onegai, meiwaku, tasukaru, enryo) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お願い・迷惑・助かる・遠慮 (onegai, meiwaku, tasukaru, enryo) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l4_8",
@@ -818,7 +845,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次はもらうに進みましょう。」 (Tsugi wa morau ni susumimashou.) expresses 'Speaker: Let's proceed to To receive next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次はもらうに進みましょう。 (Tsugi wa morau ni susumimashou.) — Speaker: Let's proceed to To receive next."
         }
       ]
     },
@@ -861,7 +889,8 @@
             "Confirming To borrow",
             "Confirming Nuisance / inconvenience"
           ],
-          "correctAnswer": "Hesitation / holding back"
+          "correctAnswer": "Hesitation / holding back",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「遠慮」 (enryo) expresses 'Hesitation / holding back'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・遠慮 (enryo) — Hesitation / holding back"
         },
         {
           "id": "u12_l5_2",
@@ -881,7 +910,8 @@
             "な",
             "ま"
           ],
-          "correctAnswer": "えんりょ"
+          "correctAnswer": "えんりょ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「遠慮」 (enryo) expresses 'Build 'Hesitation / holding back''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・遠慮 (enryo) — Build 'Hesitation / holding back'"
         },
         {
           "id": "u12_l5_3",
@@ -900,7 +930,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な失礼です。」 (Kore wa ichiban taisetsu na shitsurei desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Rude / excuse me.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な失礼です。 (Kore wa ichiban taisetsu na shitsurei desu.) — Fill in topic particle 'は' (wa): This is the most important Rude / excuse me."
         },
         {
           "id": "u12_l5_4",
@@ -922,7 +952,8 @@
             "失礼",
             "です"
           ],
-          "correctAnswer": "これは失礼です"
+          "correctAnswer": "これは失礼です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは失礼です」 (Kore wa shitsurei desu.) expresses 'This is Rude / excuse me.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは失礼です (Kore wa shitsurei desu.) — This is Rude / excuse me."
         },
         {
           "id": "u12_l5_5",
@@ -939,7 +970,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "感謝"
+          "correctAnswer": "感謝",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「感謝」 (kansha) expresses 'Pronounce: Gratitude / appreciation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・感謝 (kansha) — Pronounce: Gratitude / appreciation"
         },
         {
           "id": "u12_l5_6",
@@ -959,7 +991,8 @@
             "感謝",
             "です"
           ],
-          "correctAnswer": "感謝です"
+          "correctAnswer": "感謝です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「感謝です」 (kansha desu.) expresses 'It is Gratitude / appreciation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・感謝です (kansha desu.) — It is Gratitude / appreciation."
         },
         {
           "id": "u12_l5_7",
@@ -999,7 +1032,8 @@
               "romaji": "tetsudau no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「遠慮・失礼・感謝・手伝うの確認」 (enryo, shitsurei, kansha, tetsudau no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・遠慮・失礼・感謝・手伝うの確認 (enryo, shitsurei, kansha, tetsudau no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l5_8",
@@ -1023,7 +1057,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝うについて教えていただけますか？」 (tetsudau ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about To help / assist?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝うについて教えていただけますか？ (tetsudau ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about To help / assist?"
         }
       ]
     },
@@ -1068,7 +1103,8 @@
             "Favor / request",
             "Confirming To help / assist"
           ],
-          "correctAnswer": "Confirming To help / assist"
+          "correctAnswer": "Confirming To help / assist",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝うの確認」 (tetsudau no kakunin) expresses 'Confirming To help / assist'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝うの確認 (tetsudau no kakunin) — Confirming To help / assist"
         },
         {
           "id": "u12_l6_2",
@@ -1088,7 +1124,8 @@
             "だ",
             "て"
           ],
-          "correctAnswer": "てつだうのかくにん"
+          "correctAnswer": "てつだうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝うの確認」 (tetsudau no kakunin) expresses 'Build 'Confirming To help / assist''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝うの確認 (tetsudau no kakunin) — Build 'Confirming To help / assist'"
         },
         {
           "id": "u12_l6_3",
@@ -1107,7 +1144,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なあげるの確認です。」 (Kore wa ichiban taisetsu na ageru no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming To give (to someone else).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なあげるの確認です。 (Kore wa ichiban taisetsu na ageru no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming To give (to someone else)."
         },
         {
           "id": "u12_l6_4",
@@ -1129,7 +1166,8 @@
             "あげるの確認",
             "です"
           ],
-          "correctAnswer": "これはあげるの確認です"
+          "correctAnswer": "これはあげるの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはあげるの確認です」 (Kore wa ageru no kakunin desu.) expresses 'This is Confirming To give (to someone else).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはあげるの確認です (Kore wa ageru no kakunin desu.) — This is Confirming To give (to someone else)."
         },
         {
           "id": "u12_l6_5",
@@ -1146,7 +1184,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "くれるの確認"
+          "correctAnswer": "くれるの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれるの確認」 (kureru no kakunin) expresses 'Pronounce: Confirming To give (to speaker)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれるの確認 (kureru no kakunin) — Pronounce: Confirming To give (to speaker)"
         },
         {
           "id": "u12_l6_6",
@@ -1166,7 +1205,8 @@
             "くれるの確認",
             "です"
           ],
-          "correctAnswer": "くれるの確認です"
+          "correctAnswer": "くれるの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれるの確認です」 (kureru no kakunin desu.) expresses 'It is Confirming To give (to speaker).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれるの確認です (kureru no kakunin desu.) — It is Confirming To give (to speaker)."
         },
         {
           "id": "u12_l6_7",
@@ -1206,7 +1246,8 @@
               "romaji": "morau no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝うの確認・あげるの確認・くれるの確認・もらうの確認」 (tetsudau no kakunin, ageru no kakunin, kureru no kakunin, morau no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝うの確認・あげるの確認・くれるの確認・もらうの確認 (tetsudau no kakunin, ageru no kakunin, kureru no kakunin, morau no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l6_8",
@@ -1230,7 +1271,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あげるの準備はできていますか？」 (ageru no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for To give (to someone else) ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あげるの準備はできていますか？ (ageru no junbi wa dekite imasu ka?) — Speaker: Is the preparation for To give (to someone else) ready?"
         }
       ]
     },
@@ -1275,7 +1317,8 @@
             "Kind / hospitable",
             "Confirming To receive"
           ],
-          "correctAnswer": "Confirming To receive"
+          "correctAnswer": "Confirming To receive",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらうの確認」 (morau no kakunin) expresses 'Confirming To receive'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらうの確認 (morau no kakunin) — Confirming To receive"
         },
         {
           "id": "u12_l7_2",
@@ -1295,7 +1338,8 @@
             "か",
             "ら"
           ],
-          "correctAnswer": "もらうのかくにん"
+          "correctAnswer": "もらうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらうの確認」 (morau no kakunin) expresses 'Build 'Confirming To receive''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらうの確認 (morau no kakunin) — Build 'Confirming To receive'"
         },
         {
           "id": "u12_l7_3",
@@ -1314,7 +1358,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な教えての確認です。」 (Kore wa ichiban taisetsu na oshiete no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Please teach / tell.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な教えての確認です。 (Kore wa ichiban taisetsu na oshiete no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Please teach / tell."
         },
         {
           "id": "u12_l7_4",
@@ -1336,7 +1380,8 @@
             "教えての確認",
             "です"
           ],
-          "correctAnswer": "これは教えての確認です"
+          "correctAnswer": "これは教えての確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは教えての確認です」 (Kore wa oshiete no kakunin desu.) expresses 'This is Confirming Please teach / tell.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは教えての確認です (Kore wa oshiete no kakunin desu.) — This is Confirming Please teach / tell."
         },
         {
           "id": "u12_l7_5",
@@ -1353,7 +1398,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "貸すの確認"
+          "correctAnswer": "貸すの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貸すの確認」 (kasu no kakunin) expresses 'Pronounce: Confirming To lend'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貸すの確認 (kasu no kakunin) — Pronounce: Confirming To lend"
         },
         {
           "id": "u12_l7_6",
@@ -1373,7 +1419,8 @@
             "貸すの確認",
             "です"
           ],
-          "correctAnswer": "貸すの確認です"
+          "correctAnswer": "貸すの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貸すの確認です」 (kasu no kakunin desu.) expresses 'It is Confirming To lend.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貸すの確認です (kasu no kakunin desu.) — It is Confirming To lend."
         },
         {
           "id": "u12_l7_7",
@@ -1413,7 +1460,8 @@
               "romaji": "kariru no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらうの確認・教えての確認・貸すの確認・借りるの確認」 (morau no kakunin, oshiete no kakunin, kasu no kakunin, kariru no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらうの確認・教えての確認・貸すの確認・借りるの確認 (morau no kakunin, oshiete no kakunin, kasu no kakunin, kariru no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l7_8",
@@ -1437,7 +1485,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれるについてどう思われますか？」 (kureru ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on To give (to speaker)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれるについてどう思われますか？ (kureru ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on To give (to speaker)?"
         }
       ]
     },
@@ -1484,7 +1533,8 @@
             "Kind / hospitable",
             "Confirming To give (to speaker)"
           ],
-          "correctAnswer": "Confirming To borrow"
+          "correctAnswer": "Confirming To borrow",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「借りるの確認」 (kariru no kakunin) expresses 'Confirming To borrow'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・借りるの確認 (kariru no kakunin) — Confirming To borrow"
         },
         {
           "id": "u12_l8_2",
@@ -1504,7 +1554,8 @@
             "か",
             "り"
           ],
-          "correctAnswer": "かりるのかくにん"
+          "correctAnswer": "かりるのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「借りるの確認」 (kariru no kakunin) expresses 'Build 'Confirming To borrow''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・借りるの確認 (kariru no kakunin) — Build 'Confirming To borrow'"
         },
         {
           "id": "u12_l8_3",
@@ -1523,7 +1574,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な送るの確認です。」 (Kore wa ichiban taisetsu na okuru no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming To send / see someone off.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な送るの確認です。 (Kore wa ichiban taisetsu na okuru no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming To send / see someone off."
         },
         {
           "id": "u12_l8_4",
@@ -1545,7 +1596,8 @@
             "送るの確認",
             "です"
           ],
-          "correctAnswer": "これは送るの確認です"
+          "correctAnswer": "これは送るの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは送るの確認です」 (Kore wa okuru no kakunin desu.) expresses 'This is Confirming To send / see someone off.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは送るの確認です (Kore wa okuru no kakunin desu.) — This is Confirming To send / see someone off."
         },
         {
           "id": "u12_l8_5",
@@ -1562,7 +1614,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "親切の確認"
+          "correctAnswer": "親切の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「親切の確認」 (shinsetsu no kakunin) expresses 'Pronounce: Confirming Kind / hospitable'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・親切の確認 (shinsetsu no kakunin) — Pronounce: Confirming Kind / hospitable"
         },
         {
           "id": "u12_l8_6",
@@ -1582,7 +1635,8 @@
             "親切の確認",
             "です"
           ],
-          "correctAnswer": "親切の確認です"
+          "correctAnswer": "親切の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「親切の確認です」 (shinsetsu no kakunin desu.) expresses 'It is Confirming Kind / hospitable.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・親切の確認です (shinsetsu no kakunin desu.) — It is Confirming Kind / hospitable."
         },
         {
           "id": "u12_l8_7",
@@ -1622,7 +1676,8 @@
               "romaji": "onegai no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「借りるの確認・送るの確認・親切の確認・お願いの確認」 (kariru no kakunin, okuru no kakunin, shinsetsu no kakunin, onegai no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・借りるの確認・送るの確認・親切の確認・お願いの確認 (kariru no kakunin, okuru no kakunin, shinsetsu no kakunin, onegai no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l8_8",
@@ -1646,7 +1701,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次はもらうに進みましょう。」 (Tsugi wa morau ni susumimashou.) expresses 'Speaker: Let's proceed to To receive next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次はもらうに進みましょう。 (Tsugi wa morau ni susumimashou.) — Speaker: Let's proceed to To receive next."
         }
       ]
     },
@@ -1693,7 +1749,8 @@
             "To help / assist",
             "Confirming Favor / request"
           ],
-          "correctAnswer": "Confirming Favor / request"
+          "correctAnswer": "Confirming Favor / request",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お願いの確認」 (onegai no kakunin) expresses 'Confirming Favor / request'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お願いの確認 (onegai no kakunin) — Confirming Favor / request"
         },
         {
           "id": "u12_l9_2",
@@ -1713,7 +1770,8 @@
             "ね",
             "い"
           ],
-          "correctAnswer": "おねがいのかくにん"
+          "correctAnswer": "おねがいのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お願いの確認」 (onegai no kakunin) expresses 'Build 'Confirming Favor / request''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お願いの確認 (onegai no kakunin) — Build 'Confirming Favor / request'"
         },
         {
           "id": "u12_l9_3",
@@ -1732,7 +1790,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な迷惑の確認です。」 (Kore wa ichiban taisetsu na meiwaku no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Nuisance / inconvenience.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な迷惑の確認です。 (Kore wa ichiban taisetsu na meiwaku no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Nuisance / inconvenience."
         },
         {
           "id": "u12_l9_4",
@@ -1754,7 +1812,8 @@
             "迷惑の確認",
             "です"
           ],
-          "correctAnswer": "これは迷惑の確認です"
+          "correctAnswer": "これは迷惑の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは迷惑の確認です」 (Kore wa meiwaku no kakunin desu.) expresses 'This is Confirming Nuisance / inconvenience.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは迷惑の確認です (Kore wa meiwaku no kakunin desu.) — This is Confirming Nuisance / inconvenience."
         },
         {
           "id": "u12_l9_5",
@@ -1771,7 +1830,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "助かるの確認"
+          "correctAnswer": "助かるの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「助かるの確認」 (tasukaru no kakunin) expresses 'Pronounce: Confirming To be saved / helpful'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・助かるの確認 (tasukaru no kakunin) — Pronounce: Confirming To be saved / helpful"
         },
         {
           "id": "u12_l9_6",
@@ -1791,7 +1851,8 @@
             "助かるの確認",
             "です"
           ],
-          "correctAnswer": "助かるの確認です"
+          "correctAnswer": "助かるの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「助かるの確認です」 (tasukaru no kakunin desu.) expresses 'It is Confirming To be saved / helpful.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・助かるの確認です (tasukaru no kakunin desu.) — It is Confirming To be saved / helpful."
         },
         {
           "id": "u12_l9_7",
@@ -1831,7 +1892,8 @@
               "romaji": "enryo no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お願いの確認・迷惑の確認・助かるの確認・遠慮の確認」 (onegai no kakunin, meiwaku no kakunin, tasukaru no kakunin, enryo no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お願いの確認・迷惑の確認・助かるの確認・遠慮の確認 (onegai no kakunin, meiwaku no kakunin, tasukaru no kakunin, enryo no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l9_8",
@@ -1855,7 +1917,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝うについて教えていただけますか？」 (tetsudau ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about To help / assist?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝うについて教えていただけますか？ (tetsudau ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about To help / assist?"
         }
       ]
     },
@@ -1904,7 +1967,8 @@
             "Confirming To receive",
             "To give (to speaker)"
           ],
-          "correctAnswer": "Confirming Hesitation / holding back"
+          "correctAnswer": "Confirming Hesitation / holding back",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「遠慮の確認」 (enryo no kakunin) expresses 'Confirming Hesitation / holding back'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・遠慮の確認 (enryo no kakunin) — Confirming Hesitation / holding back"
         },
         {
           "id": "u12_l10_2",
@@ -1924,7 +1988,8 @@
             "に",
             "り"
           ],
-          "correctAnswer": "えんりょのかくにん"
+          "correctAnswer": "えんりょのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「遠慮の確認」 (enryo no kakunin) expresses 'Build 'Confirming Hesitation / holding back''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・遠慮の確認 (enryo no kakunin) — Build 'Confirming Hesitation / holding back'"
         },
         {
           "id": "u12_l10_3",
@@ -1943,7 +2008,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な失礼の確認です。」 (Kore wa ichiban taisetsu na shitsurei no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Rude / excuse me.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な失礼の確認です。 (Kore wa ichiban taisetsu na shitsurei no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Rude / excuse me."
         },
         {
           "id": "u12_l10_4",
@@ -1965,7 +2030,8 @@
             "失礼の確認",
             "です"
           ],
-          "correctAnswer": "これは失礼の確認です"
+          "correctAnswer": "これは失礼の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは失礼の確認です」 (Kore wa shitsurei no kakunin desu.) expresses 'This is Confirming Rude / excuse me.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは失礼の確認です (Kore wa shitsurei no kakunin desu.) — This is Confirming Rude / excuse me."
         },
         {
           "id": "u12_l10_5",
@@ -1982,7 +2048,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "感謝の確認"
+          "correctAnswer": "感謝の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「感謝の確認」 (kansha no kakunin) expresses 'Pronounce: Confirming Gratitude / appreciation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・感謝の確認 (kansha no kakunin) — Pronounce: Confirming Gratitude / appreciation"
         },
         {
           "id": "u12_l10_6",
@@ -2002,7 +2069,8 @@
             "感謝の確認",
             "です"
           ],
-          "correctAnswer": "感謝の確認です"
+          "correctAnswer": "感謝の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「感謝の確認です」 (kansha no kakunin desu.) expresses 'It is Confirming Gratitude / appreciation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・感謝の確認です (kansha no kakunin desu.) — It is Confirming Gratitude / appreciation."
         },
         {
           "id": "u12_l10_7",
@@ -2042,7 +2110,8 @@
               "romaji": "tetsudau no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「遠慮の確認・失礼の確認・感謝の確認・手伝うの確認」 (enryo no kakunin, shitsurei no kakunin, kansha no kakunin, tetsudau no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・遠慮の確認・失礼の確認・感謝の確認・手伝うの確認 (enryo no kakunin, shitsurei no kakunin, kansha no kakunin, tetsudau no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l10_8",
@@ -2066,7 +2135,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あげるの準備はできていますか？」 (ageru no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for To give (to someone else) ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あげるの準備はできていますか？ (ageru no junbi wa dekite imasu ka?) — Speaker: Is the preparation for To give (to someone else) ready?"
         }
       ]
     },
@@ -2111,7 +2181,8 @@
             "Confirming Rude / excuse me",
             "Confirming To help / assist"
           ],
-          "correctAnswer": "Confirming To help / assist"
+          "correctAnswer": "Confirming To help / assist",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝うの確認」 (tetsudau no kakunin) expresses 'Confirming To help / assist'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝うの確認 (tetsudau no kakunin) — Confirming To help / assist"
         },
         {
           "id": "u12_l11_2",
@@ -2131,7 +2202,8 @@
             "つ",
             "に"
           ],
-          "correctAnswer": "てつだうのかくにん"
+          "correctAnswer": "てつだうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝うの確認」 (tetsudau no kakunin) expresses 'Build 'Confirming To help / assist''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝うの確認 (tetsudau no kakunin) — Build 'Confirming To help / assist'"
         },
         {
           "id": "u12_l11_3",
@@ -2150,7 +2222,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なあげるの確認です。」 (Kore wa ichiban taisetsu na ageru no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming To give (to someone else).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なあげるの確認です。 (Kore wa ichiban taisetsu na ageru no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming To give (to someone else)."
         },
         {
           "id": "u12_l11_4",
@@ -2172,7 +2244,8 @@
             "あげるの確認",
             "です"
           ],
-          "correctAnswer": "これはあげるの確認です"
+          "correctAnswer": "これはあげるの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはあげるの確認です」 (Kore wa ageru no kakunin desu.) expresses 'This is Confirming To give (to someone else).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはあげるの確認です (Kore wa ageru no kakunin desu.) — This is Confirming To give (to someone else)."
         },
         {
           "id": "u12_l11_5",
@@ -2189,7 +2262,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "くれるの確認"
+          "correctAnswer": "くれるの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれるの確認」 (kureru no kakunin) expresses 'Pronounce: Confirming To give (to speaker)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれるの確認 (kureru no kakunin) — Pronounce: Confirming To give (to speaker)"
         },
         {
           "id": "u12_l11_6",
@@ -2209,7 +2283,8 @@
             "くれるの確認",
             "です"
           ],
-          "correctAnswer": "くれるの確認です"
+          "correctAnswer": "くれるの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれるの確認です」 (kureru no kakunin desu.) expresses 'It is Confirming To give (to speaker).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれるの確認です (kureru no kakunin desu.) — It is Confirming To give (to speaker)."
         },
         {
           "id": "u12_l11_7",
@@ -2249,7 +2324,8 @@
               "romaji": "morau no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝うの確認・あげるの確認・くれるの確認・もらうの確認」 (tetsudau no kakunin, ageru no kakunin, kureru no kakunin, morau no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝うの確認・あげるの確認・くれるの確認・もらうの確認 (tetsudau no kakunin, ageru no kakunin, kureru no kakunin, morau no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l11_8",
@@ -2273,7 +2349,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれるについてどう思われますか？」 (kureru ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on To give (to speaker)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれるについてどう思われますか？ (kureru ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on To give (to speaker)?"
         }
       ]
     },
@@ -2318,7 +2395,8 @@
             "Confirming Favor / request",
             "Confirming To receive"
           ],
-          "correctAnswer": "Confirming To receive"
+          "correctAnswer": "Confirming To receive",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらうの確認」 (morau no kakunin) expresses 'Confirming To receive'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらうの確認 (morau no kakunin) — Confirming To receive"
         },
         {
           "id": "u12_l12_2",
@@ -2338,7 +2416,8 @@
             "く",
             "も"
           ],
-          "correctAnswer": "もらうのかくにん"
+          "correctAnswer": "もらうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらうの確認」 (morau no kakunin) expresses 'Build 'Confirming To receive''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらうの確認 (morau no kakunin) — Build 'Confirming To receive'"
         },
         {
           "id": "u12_l12_3",
@@ -2357,7 +2436,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な教えての確認です。」 (Kore wa ichiban taisetsu na oshiete no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Please teach / tell.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な教えての確認です。 (Kore wa ichiban taisetsu na oshiete no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Please teach / tell."
         },
         {
           "id": "u12_l12_4",
@@ -2379,7 +2458,8 @@
             "教えての確認",
             "です"
           ],
-          "correctAnswer": "これは教えての確認です"
+          "correctAnswer": "これは教えての確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは教えての確認です」 (Kore wa oshiete no kakunin desu.) expresses 'This is Confirming Please teach / tell.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは教えての確認です (Kore wa oshiete no kakunin desu.) — This is Confirming Please teach / tell."
         },
         {
           "id": "u12_l12_5",
@@ -2396,7 +2476,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "貸すの確認"
+          "correctAnswer": "貸すの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貸すの確認」 (kasu no kakunin) expresses 'Pronounce: Confirming To lend'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貸すの確認 (kasu no kakunin) — Pronounce: Confirming To lend"
         },
         {
           "id": "u12_l12_6",
@@ -2416,7 +2497,8 @@
             "貸すの確認",
             "です"
           ],
-          "correctAnswer": "貸すの確認です"
+          "correctAnswer": "貸すの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貸すの確認です」 (kasu no kakunin desu.) expresses 'It is Confirming To lend.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貸すの確認です (kasu no kakunin desu.) — It is Confirming To lend."
         },
         {
           "id": "u12_l12_7",
@@ -2456,7 +2538,8 @@
               "romaji": "tetsudau"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらうの確認・教えての確認・貸すの確認・手伝う」 (morau no kakunin, oshiete no kakunin, kasu no kakunin, tetsudau) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらうの確認・教えての確認・貸すの確認・手伝う (morau no kakunin, oshiete no kakunin, kasu no kakunin, tetsudau) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l12_8",
@@ -2480,7 +2563,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次はもらうに進みましょう。」 (Tsugi wa morau ni susumimashou.) expresses 'Speaker: Let's proceed to To receive next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次はもらうに進みましょう。 (Tsugi wa morau ni susumimashou.) — Speaker: Let's proceed to To receive next."
         }
       ]
     },
@@ -2519,7 +2603,8 @@
             "Confirming Nuisance / inconvenience",
             "To help / assist"
           ],
-          "correctAnswer": "To help / assist"
+          "correctAnswer": "To help / assist",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝う」 (tetsudau) expresses 'To help / assist'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝う (tetsudau) — To help / assist"
         },
         {
           "id": "u12_l13_2",
@@ -2539,7 +2624,8 @@
             "も",
             "て"
           ],
-          "correctAnswer": "てつだう"
+          "correctAnswer": "てつだう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝う」 (tetsudau) expresses 'Build 'To help / assist''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝う (tetsudau) — Build 'To help / assist'"
         },
         {
           "id": "u12_l13_3",
@@ -2558,7 +2644,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なあげるです。」 (Kore wa ichiban taisetsu na ageru desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important To give (to someone else).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なあげるです。 (Kore wa ichiban taisetsu na ageru desu.) — Fill in topic particle 'は' (wa): This is the most important To give (to someone else)."
         },
         {
           "id": "u12_l13_4",
@@ -2580,7 +2666,8 @@
             "あげる",
             "です"
           ],
-          "correctAnswer": "これはあげるです"
+          "correctAnswer": "これはあげるです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはあげるです」 (Kore wa ageru desu.) expresses 'This is To give (to someone else).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはあげるです (Kore wa ageru desu.) — This is To give (to someone else)."
         },
         {
           "id": "u12_l13_5",
@@ -2597,7 +2684,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "くれる"
+          "correctAnswer": "くれる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれる」 (kureru) expresses 'Pronounce: To give (to speaker)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれる (kureru) — Pronounce: To give (to speaker)"
         },
         {
           "id": "u12_l13_6",
@@ -2617,7 +2705,8 @@
             "くれる",
             "です"
           ],
-          "correctAnswer": "くれるです"
+          "correctAnswer": "くれるです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれるです」 (kureru desu.) expresses 'It is To give (to speaker).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれるです (kureru desu.) — It is To give (to speaker)."
         },
         {
           "id": "u12_l13_7",
@@ -2657,7 +2746,8 @@
               "romaji": "morau"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝う・あげる・くれる・もらう」 (tetsudau, ageru, kureru, morau) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝う・あげる・くれる・もらう (tetsudau, ageru, kureru, morau) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l13_8",
@@ -2681,7 +2771,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手伝うについて教えていただけますか？」 (tetsudau ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about To help / assist?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手伝うについて教えていただけますか？ (tetsudau ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about To help / assist?"
         }
       ]
     },
@@ -2720,7 +2811,8 @@
             "Confirming To send / see someone off",
             "To receive"
           ],
-          "correctAnswer": "To receive"
+          "correctAnswer": "To receive",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらう」 (morau) expresses 'To receive'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらう (morau) — To receive"
         },
         {
           "id": "u12_l14_2",
@@ -2740,7 +2832,8 @@
             "つ",
             "ら"
           ],
-          "correctAnswer": "もらう"
+          "correctAnswer": "もらう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらう」 (morau) expresses 'Build 'To receive''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらう (morau) — Build 'To receive'"
         },
         {
           "id": "u12_l14_3",
@@ -2759,7 +2852,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な教えてです。」 (Kore wa ichiban taisetsu na oshiete desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Please teach / tell.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な教えてです。 (Kore wa ichiban taisetsu na oshiete desu.) — Fill in topic particle 'は' (wa): This is the most important Please teach / tell."
         },
         {
           "id": "u12_l14_4",
@@ -2781,7 +2874,8 @@
             "教えて",
             "です"
           ],
-          "correctAnswer": "これは教えてです"
+          "correctAnswer": "これは教えてです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは教えてです」 (Kore wa oshiete desu.) expresses 'This is Please teach / tell.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは教えてです (Kore wa oshiete desu.) — This is Please teach / tell."
         },
         {
           "id": "u12_l14_5",
@@ -2798,7 +2892,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "貸す"
+          "correctAnswer": "貸す",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貸す」 (kasu) expresses 'Pronounce: To lend'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貸す (kasu) — Pronounce: To lend"
         },
         {
           "id": "u12_l14_6",
@@ -2818,7 +2913,8 @@
             "貸す",
             "です"
           ],
-          "correctAnswer": "貸すです"
+          "correctAnswer": "貸すです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貸すです」 (kasu desu.) expresses 'It is To lend.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貸すです (kasu desu.) — It is To lend."
         },
         {
           "id": "u12_l14_7",
@@ -2858,7 +2954,8 @@
               "romaji": "kariru"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もらう・教えて・貸す・借りる」 (morau, oshiete, kasu, kariru) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もらう・教えて・貸す・借りる (morau, oshiete, kasu, kariru) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l14_8",
@@ -2882,7 +2979,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あげるの準備はできていますか？」 (ageru no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for To give (to someone else) ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あげるの準備はできていますか？ (ageru no junbi wa dekite imasu ka?) — Speaker: Is the preparation for To give (to someone else) ready?"
         }
       ]
     },
@@ -2923,7 +3021,8 @@
             "Confirming Rude / excuse me",
             "Confirming To lend"
           ],
-          "correctAnswer": "To borrow"
+          "correctAnswer": "To borrow",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「借りる」 (kariru) expresses 'To borrow'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・借りる (kariru) — To borrow"
         },
         {
           "id": "u12_l15_2",
@@ -2943,7 +3042,8 @@
             "け",
             "ひ"
           ],
-          "correctAnswer": "かりる"
+          "correctAnswer": "かりる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「借りる」 (kariru) expresses 'Build 'To borrow''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・借りる (kariru) — Build 'To borrow'"
         },
         {
           "id": "u12_l15_3",
@@ -2962,7 +3062,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な送るです。」 (Kore wa ichiban taisetsu na okuru desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important To send / see someone off.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な送るです。 (Kore wa ichiban taisetsu na okuru desu.) — Fill in topic particle 'は' (wa): This is the most important To send / see someone off."
         },
         {
           "id": "u12_l15_4",
@@ -2984,7 +3084,8 @@
             "送る",
             "です"
           ],
-          "correctAnswer": "これは送るです"
+          "correctAnswer": "これは送るです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは送るです」 (Kore wa okuru desu.) expresses 'This is To send / see someone off.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは送るです (Kore wa okuru desu.) — This is To send / see someone off."
         },
         {
           "id": "u12_l15_5",
@@ -3001,7 +3102,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "親切"
+          "correctAnswer": "親切",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「親切」 (shinsetsu) expresses 'Pronounce: Kind / hospitable'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・親切 (shinsetsu) — Pronounce: Kind / hospitable"
         },
         {
           "id": "u12_l15_6",
@@ -3021,7 +3123,8 @@
             "親切",
             "です"
           ],
-          "correctAnswer": "親切です"
+          "correctAnswer": "親切です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「親切です」 (shinsetsu desu.) expresses 'It is Kind / hospitable.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・親切です (shinsetsu desu.) — It is Kind / hospitable."
         },
         {
           "id": "u12_l15_7",
@@ -3061,7 +3164,8 @@
               "romaji": "onegai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「借りる・送る・親切・お願い」 (kariru, okuru, shinsetsu, onegai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・借りる・送る・親切・お願い (kariru, okuru, shinsetsu, onegai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u12_l15_8",
@@ -3085,7 +3189,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「くれるについてどう思われますか？」 (kureru ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on To give (to speaker)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・くれるについてどう思われますか？ (kureru ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on To give (to speaker)?"
         }
       ]
     }

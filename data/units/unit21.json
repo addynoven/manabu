@@ -53,7 +53,8 @@
             "Confirming Agreement / consensus",
             "Cost / expense"
           ],
-          "correctAnswer": "Negotiation"
+          "correctAnswer": "Negotiation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉」 (koushou) expresses 'Negotiation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉 (koushou) — Negotiation"
         },
         {
           "id": "u21_l1_2",
@@ -73,7 +74,8 @@
             "し",
             "く"
           ],
-          "correctAnswer": "こうしょう"
+          "correctAnswer": "こうしょう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉」 (koushou) expresses 'Build 'Negotiation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉 (koushou) — Build 'Negotiation'"
         },
         {
           "id": "u21_l1_3",
@@ -92,7 +94,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な提案です。」 (Kore wa ichiban taisetsu na teian desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Proposal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な提案です。 (Kore wa ichiban taisetsu na teian desu.) — Fill in topic particle 'は' (wa): This is the most important Proposal."
         },
         {
           "id": "u21_l1_4",
@@ -114,7 +116,8 @@
             "提案",
             "です"
           ],
-          "correctAnswer": "これは提案です"
+          "correctAnswer": "これは提案です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは提案です」 (Kore wa teian desu.) expresses 'This is Proposal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは提案です (Kore wa teian desu.) — This is Proposal."
         },
         {
           "id": "u21_l1_5",
@@ -131,7 +134,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "妥協"
+          "correctAnswer": "妥協",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協」 (dakyou) expresses 'Pronounce: Compromise'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協 (dakyou) — Pronounce: Compromise"
         },
         {
           "id": "u21_l1_6",
@@ -151,7 +155,8 @@
             "妥協",
             "です"
           ],
-          "correctAnswer": "妥協です"
+          "correctAnswer": "妥協です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協です」 (dakyou desu.) expresses 'It is Compromise.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協です (dakyou desu.) — It is Compromise."
         },
         {
           "id": "u21_l1_7",
@@ -191,7 +196,8 @@
               "romaji": "goui"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉・提案・妥協・合意」 (koushou, teian, dakyou, goui) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉・提案・妥協・合意 (koushou, teian, dakyou, goui) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l1_8",
@@ -215,7 +221,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉について教えていただけますか？」 (koushou ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Negotiation?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉について教えていただけますか？ (koushou ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Negotiation?"
         }
       ]
     },
@@ -258,7 +265,8 @@
             "Consideration / deliberation",
             "Confirming Proposal"
           ],
-          "correctAnswer": "Agreement / consensus"
+          "correctAnswer": "Agreement / consensus",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意」 (goui) expresses 'Agreement / consensus'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意 (goui) — Agreement / consensus"
         },
         {
           "id": "u21_l2_2",
@@ -278,7 +286,8 @@
             "え",
             "ろ"
           ],
-          "correctAnswer": "ごうい"
+          "correctAnswer": "ごうい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意」 (goui) expresses 'Build 'Agreement / consensus''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意 (goui) — Build 'Agreement / consensus'"
         },
         {
           "id": "u21_l2_3",
@@ -297,7 +306,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な取引です。」 (Kore wa ichiban taisetsu na torihiki desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Transaction / business deal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な取引です。 (Kore wa ichiban taisetsu na torihiki desu.) — Fill in topic particle 'は' (wa): This is the most important Transaction / business deal."
         },
         {
           "id": "u21_l2_4",
@@ -319,7 +328,8 @@
             "取引",
             "です"
           ],
-          "correctAnswer": "これは取引です"
+          "correctAnswer": "これは取引です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは取引です」 (Kore wa torihiki desu.) expresses 'This is Transaction / business deal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは取引です (Kore wa torihiki desu.) — This is Transaction / business deal."
         },
         {
           "id": "u21_l2_5",
@@ -336,7 +346,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "納期"
+          "correctAnswer": "納期",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「納期」 (nouki) expresses 'Pronounce: Delivery deadline'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・納期 (nouki) — Pronounce: Delivery deadline"
         },
         {
           "id": "u21_l2_6",
@@ -356,7 +367,8 @@
             "納期",
             "です"
           ],
-          "correctAnswer": "納期です"
+          "correctAnswer": "納期です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「納期です」 (nouki desu.) expresses 'It is Delivery deadline.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・納期です (nouki desu.) — It is Delivery deadline."
         },
         {
           "id": "u21_l2_7",
@@ -396,7 +408,8 @@
               "romaji": "mitsumorisho"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意・取引・納期・見積書」 (goui, torihiki, nouki, mitsumorisho) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意・取引・納期・見積書 (goui, torihiki, nouki, mitsumorisho) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l2_8",
@@ -420,7 +433,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「提案の準備はできていますか？」 (teian no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Proposal ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・提案の準備はできていますか？ (teian no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Proposal ready?"
         }
       ]
     },
@@ -464,7 +478,8 @@
             "Compromise",
             "Proposal"
           ],
-          "correctAnswer": "Price quotation"
+          "correctAnswer": "Price quotation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見積書」 (mitsumorisho) expresses 'Price quotation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見積書 (mitsumorisho) — Price quotation"
         },
         {
           "id": "u21_l3_2",
@@ -484,7 +499,8 @@
             "り",
             "み"
           ],
-          "correctAnswer": "みつもりしょ"
+          "correctAnswer": "みつもりしょ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見積書」 (mitsumorisho) expresses 'Build 'Price quotation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見積書 (mitsumorisho) — Build 'Price quotation'"
         },
         {
           "id": "u21_l3_3",
@@ -503,7 +519,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な検討です。」 (Kore wa ichiban taisetsu na kentou desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Consideration / deliberation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な検討です。 (Kore wa ichiban taisetsu na kentou desu.) — Fill in topic particle 'は' (wa): This is the most important Consideration / deliberation."
         },
         {
           "id": "u21_l3_4",
@@ -525,7 +541,8 @@
             "検討",
             "です"
           ],
-          "correctAnswer": "これは検討です"
+          "correctAnswer": "これは検討です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは検討です」 (Kore wa kentou desu.) expresses 'This is Consideration / deliberation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは検討です (Kore wa kentou desu.) — This is Consideration / deliberation."
         },
         {
           "id": "u21_l3_5",
@@ -542,7 +559,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "恐縮"
+          "correctAnswer": "恐縮",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「恐縮」 (kyoushuku) expresses 'Pronounce: Humbly obliged / apologetic'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・恐縮 (kyoushuku) — Pronounce: Humbly obliged / apologetic"
         },
         {
           "id": "u21_l3_6",
@@ -562,7 +580,8 @@
             "恐縮",
             "です"
           ],
-          "correctAnswer": "恐縮です"
+          "correctAnswer": "恐縮です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「恐縮です」 (kyoushuku desu.) expresses 'It is Humbly obliged / apologetic.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・恐縮です (kyoushuku desu.) — It is Humbly obliged / apologetic."
         },
         {
           "id": "u21_l3_7",
@@ -602,7 +621,8 @@
               "romaji": "shoudaku"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見積書・検討・恐縮・承諾」 (mitsumorisho, kentou, kyoushuku, shoudaku) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見積書・検討・恐縮・承諾 (mitsumorisho, kentou, kyoushuku, shoudaku) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l3_8",
@@ -626,7 +646,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協についてどう思われますか？」 (dakyou ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Compromise?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協についてどう思われますか？ (dakyou ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Compromise?"
         }
       ]
     },
@@ -669,7 +690,8 @@
             "Concluding a contract",
             "Holding in reserve / pending"
           ],
-          "correctAnswer": "Consent / approval"
+          "correctAnswer": "Consent / approval",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「承諾」 (shoudaku) expresses 'Consent / approval'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・承諾 (shoudaku) — Consent / approval"
         },
         {
           "id": "u21_l4_2",
@@ -689,7 +711,8 @@
             "し",
             "ょ"
           ],
-          "correctAnswer": "しょうだく"
+          "correctAnswer": "しょうだく",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「承諾」 (shoudaku) expresses 'Build 'Consent / approval''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・承諾 (shoudaku) — Build 'Consent / approval'"
         },
         {
           "id": "u21_l4_3",
@@ -708,7 +731,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な提携です。」 (Kore wa ichiban taisetsu na teikei desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Partnership / alliance.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な提携です。 (Kore wa ichiban taisetsu na teikei desu.) — Fill in topic particle 'は' (wa): This is the most important Partnership / alliance."
         },
         {
           "id": "u21_l4_4",
@@ -730,7 +753,8 @@
             "提携",
             "です"
           ],
-          "correctAnswer": "これは提携です"
+          "correctAnswer": "これは提携です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは提携です」 (Kore wa teikei desu.) expresses 'This is Partnership / alliance.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは提携です (Kore wa teikei desu.) — This is Partnership / alliance."
         },
         {
           "id": "u21_l4_5",
@@ -747,7 +771,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "利益"
+          "correctAnswer": "利益",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「利益」 (rieki) expresses 'Pronounce: Profit / margin'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・利益 (rieki) — Pronounce: Profit / margin"
         },
         {
           "id": "u21_l4_6",
@@ -767,7 +792,8 @@
             "利益",
             "です"
           ],
-          "correctAnswer": "利益です"
+          "correctAnswer": "利益です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「利益です」 (rieki desu.) expresses 'It is Profit / margin.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・利益です (rieki desu.) — It is Profit / margin."
         },
         {
           "id": "u21_l4_7",
@@ -807,7 +833,8 @@
               "romaji": "hiyou"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「承諾・提携・利益・費用」 (shoudaku, teikei, rieki, hiyou) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・承諾・提携・利益・費用 (shoudaku, teikei, rieki, hiyou) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l4_8",
@@ -831,7 +858,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は合意に進みましょう。」 (Tsugi wa goui ni susumimashou.) expresses 'Speaker: Let's proceed to Agreement / consensus next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は合意に進みましょう。 (Tsugi wa goui ni susumimashou.) — Speaker: Let's proceed to Agreement / consensus next."
         }
       ]
     },
@@ -874,7 +902,8 @@
             "Concluding a contract",
             "Confirming Transaction / business deal"
           ],
-          "correctAnswer": "Cost / expense"
+          "correctAnswer": "Cost / expense",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「費用」 (hiyou) expresses 'Cost / expense'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・費用 (hiyou) — Cost / expense"
         },
         {
           "id": "u21_l5_2",
@@ -894,7 +923,8 @@
             "つ",
             "う"
           ],
-          "correctAnswer": "ひよう"
+          "correctAnswer": "ひよう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「費用」 (hiyou) expresses 'Build 'Cost / expense''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・費用 (hiyou) — Build 'Cost / expense'"
         },
         {
           "id": "u21_l5_3",
@@ -913,7 +943,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な保留です。」 (Kore wa ichiban taisetsu na horyuu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Holding in reserve / pending.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な保留です。 (Kore wa ichiban taisetsu na horyuu desu.) — Fill in topic particle 'は' (wa): This is the most important Holding in reserve / pending."
         },
         {
           "id": "u21_l5_4",
@@ -935,7 +965,8 @@
             "保留",
             "です"
           ],
-          "correctAnswer": "これは保留です"
+          "correctAnswer": "これは保留です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは保留です」 (Kore wa horyuu desu.) expresses 'This is Holding in reserve / pending.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは保留です (Kore wa horyuu desu.) — This is Holding in reserve / pending."
         },
         {
           "id": "u21_l5_5",
@@ -952,7 +983,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "締結"
+          "correctAnswer": "締結",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「締結」 (teiketsu) expresses 'Pronounce: Concluding a contract'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・締結 (teiketsu) — Pronounce: Concluding a contract"
         },
         {
           "id": "u21_l5_6",
@@ -972,7 +1004,8 @@
             "締結",
             "です"
           ],
-          "correctAnswer": "締結です"
+          "correctAnswer": "締結です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「締結です」 (teiketsu desu.) expresses 'It is Concluding a contract.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・締結です (teiketsu desu.) — It is Concluding a contract."
         },
         {
           "id": "u21_l5_7",
@@ -1012,7 +1045,8 @@
               "romaji": "koushou no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「費用・保留・締結・交渉の確認」 (hiyou, horyuu, teiketsu, koushou no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・費用・保留・締結・交渉の確認 (hiyou, horyuu, teiketsu, koushou no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l5_8",
@@ -1036,7 +1070,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉について教えていただけますか？」 (koushou ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Negotiation?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉について教えていただけますか？ (koushou ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Negotiation?"
         }
       ]
     },
@@ -1085,7 +1120,8 @@
             "Transaction / business deal",
             "Negotiation"
           ],
-          "correctAnswer": "Confirming Negotiation"
+          "correctAnswer": "Confirming Negotiation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉の確認」 (koushou no kakunin) expresses 'Confirming Negotiation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉の確認 (koushou no kakunin) — Confirming Negotiation"
         },
         {
           "id": "u21_l6_2",
@@ -1105,7 +1141,8 @@
             "う",
             "う"
           ],
-          "correctAnswer": "こうしょうのかくにん"
+          "correctAnswer": "こうしょうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉の確認」 (koushou no kakunin) expresses 'Build 'Confirming Negotiation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉の確認 (koushou no kakunin) — Build 'Confirming Negotiation'"
         },
         {
           "id": "u21_l6_3",
@@ -1124,7 +1161,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な提案の確認です。」 (Kore wa ichiban taisetsu na teian no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Proposal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な提案の確認です。 (Kore wa ichiban taisetsu na teian no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Proposal."
         },
         {
           "id": "u21_l6_4",
@@ -1146,7 +1183,8 @@
             "提案の確認",
             "です"
           ],
-          "correctAnswer": "これは提案の確認です"
+          "correctAnswer": "これは提案の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは提案の確認です」 (Kore wa teian no kakunin desu.) expresses 'This is Confirming Proposal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは提案の確認です (Kore wa teian no kakunin desu.) — This is Confirming Proposal."
         },
         {
           "id": "u21_l6_5",
@@ -1163,7 +1201,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "妥協の確認"
+          "correctAnswer": "妥協の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協の確認」 (dakyou no kakunin) expresses 'Pronounce: Confirming Compromise'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協の確認 (dakyou no kakunin) — Pronounce: Confirming Compromise"
         },
         {
           "id": "u21_l6_6",
@@ -1183,7 +1222,8 @@
             "妥協の確認",
             "です"
           ],
-          "correctAnswer": "妥協の確認です"
+          "correctAnswer": "妥協の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協の確認です」 (dakyou no kakunin desu.) expresses 'It is Confirming Compromise.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協の確認です (dakyou no kakunin desu.) — It is Confirming Compromise."
         },
         {
           "id": "u21_l6_7",
@@ -1223,7 +1263,8 @@
               "romaji": "goui no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉の確認・提案の確認・妥協の確認・合意の確認」 (koushou no kakunin, teian no kakunin, dakyou no kakunin, goui no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉の確認・提案の確認・妥協の確認・合意の確認 (koushou no kakunin, teian no kakunin, dakyou no kakunin, goui no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l6_8",
@@ -1247,7 +1288,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「提案の準備はできていますか？」 (teian no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Proposal ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・提案の準備はできていますか？ (teian no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Proposal ready?"
         }
       ]
     },
@@ -1296,7 +1338,8 @@
             "Confirming Profit / margin",
             "Confirming Partnership / alliance"
           ],
-          "correctAnswer": "Confirming Agreement / consensus"
+          "correctAnswer": "Confirming Agreement / consensus",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意の確認」 (goui no kakunin) expresses 'Confirming Agreement / consensus'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意の確認 (goui no kakunin) — Confirming Agreement / consensus"
         },
         {
           "id": "u21_l7_2",
@@ -1316,7 +1359,8 @@
             "か",
             "う"
           ],
-          "correctAnswer": "ごういのかくにん"
+          "correctAnswer": "ごういのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意の確認」 (goui no kakunin) expresses 'Build 'Confirming Agreement / consensus''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意の確認 (goui no kakunin) — Build 'Confirming Agreement / consensus'"
         },
         {
           "id": "u21_l7_3",
@@ -1335,7 +1379,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な取引の確認です。」 (Kore wa ichiban taisetsu na torihiki no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Transaction / business deal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な取引の確認です。 (Kore wa ichiban taisetsu na torihiki no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Transaction / business deal."
         },
         {
           "id": "u21_l7_4",
@@ -1357,7 +1401,8 @@
             "取引の確認",
             "です"
           ],
-          "correctAnswer": "これは取引の確認です"
+          "correctAnswer": "これは取引の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは取引の確認です」 (Kore wa torihiki no kakunin desu.) expresses 'This is Confirming Transaction / business deal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは取引の確認です (Kore wa torihiki no kakunin desu.) — This is Confirming Transaction / business deal."
         },
         {
           "id": "u21_l7_5",
@@ -1374,7 +1419,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "納期の確認"
+          "correctAnswer": "納期の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「納期の確認」 (nouki no kakunin) expresses 'Pronounce: Confirming Delivery deadline'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・納期の確認 (nouki no kakunin) — Pronounce: Confirming Delivery deadline"
         },
         {
           "id": "u21_l7_6",
@@ -1394,7 +1440,8 @@
             "納期の確認",
             "です"
           ],
-          "correctAnswer": "納期の確認です"
+          "correctAnswer": "納期の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「納期の確認です」 (nouki no kakunin desu.) expresses 'It is Confirming Delivery deadline.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・納期の確認です (nouki no kakunin desu.) — It is Confirming Delivery deadline."
         },
         {
           "id": "u21_l7_7",
@@ -1434,7 +1481,8 @@
               "romaji": "mitsumorisho no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意の確認・取引の確認・納期の確認・見積書の確認」 (goui no kakunin, torihiki no kakunin, nouki no kakunin, mitsumorisho no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意の確認・取引の確認・納期の確認・見積書の確認 (goui no kakunin, torihiki no kakunin, nouki no kakunin, mitsumorisho no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l7_8",
@@ -1458,7 +1506,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協についてどう思われますか？」 (dakyou ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Compromise?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協についてどう思われますか？ (dakyou ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Compromise?"
         }
       ]
     },
@@ -1508,7 +1557,8 @@
             "Confirming Price quotation",
             "Holding in reserve / pending"
           ],
-          "correctAnswer": "Confirming Price quotation"
+          "correctAnswer": "Confirming Price quotation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見積書の確認」 (mitsumorisho no kakunin) expresses 'Confirming Price quotation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見積書の確認 (mitsumorisho no kakunin) — Confirming Price quotation"
         },
         {
           "id": "u21_l8_2",
@@ -1528,7 +1578,8 @@
             "の",
             "り"
           ],
-          "correctAnswer": "みつもりしょのかくにん"
+          "correctAnswer": "みつもりしょのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見積書の確認」 (mitsumorisho no kakunin) expresses 'Build 'Confirming Price quotation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見積書の確認 (mitsumorisho no kakunin) — Build 'Confirming Price quotation'"
         },
         {
           "id": "u21_l8_3",
@@ -1547,7 +1598,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な検討の確認です。」 (Kore wa ichiban taisetsu na kentou no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Consideration / deliberation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な検討の確認です。 (Kore wa ichiban taisetsu na kentou no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Consideration / deliberation."
         },
         {
           "id": "u21_l8_4",
@@ -1569,7 +1620,8 @@
             "検討の確認",
             "です"
           ],
-          "correctAnswer": "これは検討の確認です"
+          "correctAnswer": "これは検討の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは検討の確認です」 (Kore wa kentou no kakunin desu.) expresses 'This is Confirming Consideration / deliberation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは検討の確認です (Kore wa kentou no kakunin desu.) — This is Confirming Consideration / deliberation."
         },
         {
           "id": "u21_l8_5",
@@ -1586,7 +1638,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "恐縮の確認"
+          "correctAnswer": "恐縮の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「恐縮の確認」 (kyoushuku no kakunin) expresses 'Pronounce: Confirming Humbly obliged / apologetic'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・恐縮の確認 (kyoushuku no kakunin) — Pronounce: Confirming Humbly obliged / apologetic"
         },
         {
           "id": "u21_l8_6",
@@ -1606,7 +1659,8 @@
             "恐縮の確認",
             "です"
           ],
-          "correctAnswer": "恐縮の確認です"
+          "correctAnswer": "恐縮の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「恐縮の確認です」 (kyoushuku no kakunin desu.) expresses 'It is Confirming Humbly obliged / apologetic.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・恐縮の確認です (kyoushuku no kakunin desu.) — It is Confirming Humbly obliged / apologetic."
         },
         {
           "id": "u21_l8_7",
@@ -1646,7 +1700,8 @@
               "romaji": "shoudaku no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見積書の確認・検討の確認・恐縮の確認・承諾の確認」 (mitsumorisho no kakunin, kentou no kakunin, kyoushuku no kakunin, shoudaku no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見積書の確認・検討の確認・恐縮の確認・承諾の確認 (mitsumorisho no kakunin, kentou no kakunin, kyoushuku no kakunin, shoudaku no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l8_8",
@@ -1670,7 +1725,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は合意に進みましょう。」 (Tsugi wa goui ni susumimashou.) expresses 'Speaker: Let's proceed to Agreement / consensus next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は合意に進みましょう。 (Tsugi wa goui ni susumimashou.) — Speaker: Let's proceed to Agreement / consensus next."
         }
       ]
     },
@@ -1719,7 +1775,8 @@
             "Confirming Delivery deadline",
             "Partnership / alliance"
           ],
-          "correctAnswer": "Confirming Consent / approval"
+          "correctAnswer": "Confirming Consent / approval",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「承諾の確認」 (shoudaku no kakunin) expresses 'Confirming Consent / approval'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・承諾の確認 (shoudaku no kakunin) — Confirming Consent / approval"
         },
         {
           "id": "u21_l9_2",
@@ -1739,7 +1796,8 @@
             "ょ",
             "く"
           ],
-          "correctAnswer": "しょうだくのかくにん"
+          "correctAnswer": "しょうだくのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「承諾の確認」 (shoudaku no kakunin) expresses 'Build 'Confirming Consent / approval''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・承諾の確認 (shoudaku no kakunin) — Build 'Confirming Consent / approval'"
         },
         {
           "id": "u21_l9_3",
@@ -1758,7 +1816,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な提携の確認です。」 (Kore wa ichiban taisetsu na teikei no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Partnership / alliance.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な提携の確認です。 (Kore wa ichiban taisetsu na teikei no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Partnership / alliance."
         },
         {
           "id": "u21_l9_4",
@@ -1780,7 +1838,8 @@
             "提携の確認",
             "です"
           ],
-          "correctAnswer": "これは提携の確認です"
+          "correctAnswer": "これは提携の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは提携の確認です」 (Kore wa teikei no kakunin desu.) expresses 'This is Confirming Partnership / alliance.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは提携の確認です (Kore wa teikei no kakunin desu.) — This is Confirming Partnership / alliance."
         },
         {
           "id": "u21_l9_5",
@@ -1797,7 +1856,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "利益の確認"
+          "correctAnswer": "利益の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「利益の確認」 (rieki no kakunin) expresses 'Pronounce: Confirming Profit / margin'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・利益の確認 (rieki no kakunin) — Pronounce: Confirming Profit / margin"
         },
         {
           "id": "u21_l9_6",
@@ -1817,7 +1877,8 @@
             "利益の確認",
             "です"
           ],
-          "correctAnswer": "利益の確認です"
+          "correctAnswer": "利益の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「利益の確認です」 (rieki no kakunin desu.) expresses 'It is Confirming Profit / margin.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・利益の確認です (rieki no kakunin desu.) — It is Confirming Profit / margin."
         },
         {
           "id": "u21_l9_7",
@@ -1857,7 +1918,8 @@
               "romaji": "hiyou no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「承諾の確認・提携の確認・利益の確認・費用の確認」 (shoudaku no kakunin, teikei no kakunin, rieki no kakunin, hiyou no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・承諾の確認・提携の確認・利益の確認・費用の確認 (shoudaku no kakunin, teikei no kakunin, rieki no kakunin, hiyou no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l9_8",
@@ -1881,7 +1943,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉について教えていただけますか？」 (koushou ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Negotiation?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉について教えていただけますか？ (koushou ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Negotiation?"
         }
       ]
     },
@@ -1930,7 +1993,8 @@
             "Confirming Proposal",
             "Partnership / alliance"
           ],
-          "correctAnswer": "Confirming Cost / expense"
+          "correctAnswer": "Confirming Cost / expense",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「費用の確認」 (hiyou no kakunin) expresses 'Confirming Cost / expense'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・費用の確認 (hiyou no kakunin) — Confirming Cost / expense"
         },
         {
           "id": "u21_l10_2",
@@ -1950,7 +2014,8 @@
             "く",
             "の"
           ],
-          "correctAnswer": "ひようのかくにん"
+          "correctAnswer": "ひようのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「費用の確認」 (hiyou no kakunin) expresses 'Build 'Confirming Cost / expense''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・費用の確認 (hiyou no kakunin) — Build 'Confirming Cost / expense'"
         },
         {
           "id": "u21_l10_3",
@@ -1969,7 +2034,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な保留の確認です。」 (Kore wa ichiban taisetsu na horyuu no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Holding in reserve / pending.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な保留の確認です。 (Kore wa ichiban taisetsu na horyuu no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Holding in reserve / pending."
         },
         {
           "id": "u21_l10_4",
@@ -1991,7 +2056,8 @@
             "保留の確認",
             "です"
           ],
-          "correctAnswer": "これは保留の確認です"
+          "correctAnswer": "これは保留の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは保留の確認です」 (Kore wa horyuu no kakunin desu.) expresses 'This is Confirming Holding in reserve / pending.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは保留の確認です (Kore wa horyuu no kakunin desu.) — This is Confirming Holding in reserve / pending."
         },
         {
           "id": "u21_l10_5",
@@ -2008,7 +2074,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "締結の確認"
+          "correctAnswer": "締結の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「締結の確認」 (teiketsu no kakunin) expresses 'Pronounce: Confirming Concluding a contract'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・締結の確認 (teiketsu no kakunin) — Pronounce: Confirming Concluding a contract"
         },
         {
           "id": "u21_l10_6",
@@ -2028,7 +2095,8 @@
             "締結の確認",
             "です"
           ],
-          "correctAnswer": "締結の確認です"
+          "correctAnswer": "締結の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「締結の確認です」 (teiketsu no kakunin desu.) expresses 'It is Confirming Concluding a contract.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・締結の確認です (teiketsu no kakunin desu.) — It is Confirming Concluding a contract."
         },
         {
           "id": "u21_l10_7",
@@ -2068,7 +2136,8 @@
               "romaji": "koushou no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「費用の確認・保留の確認・締結の確認・交渉の確認」 (hiyou no kakunin, horyuu no kakunin, teiketsu no kakunin, koushou no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・費用の確認・保留の確認・締結の確認・交渉の確認 (hiyou no kakunin, horyuu no kakunin, teiketsu no kakunin, koushou no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l10_8",
@@ -2092,7 +2161,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「提案の準備はできていますか？」 (teian no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Proposal ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・提案の準備はできていますか？ (teian no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Proposal ready?"
         }
       ]
     },
@@ -2141,7 +2211,8 @@
             "Humbly obliged / apologetic",
             "Confirming Cost / expense"
           ],
-          "correctAnswer": "Confirming Negotiation"
+          "correctAnswer": "Confirming Negotiation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉の確認」 (koushou no kakunin) expresses 'Confirming Negotiation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉の確認 (koushou no kakunin) — Confirming Negotiation"
         },
         {
           "id": "u21_l11_2",
@@ -2161,7 +2232,8 @@
             "ょ",
             "く"
           ],
-          "correctAnswer": "こうしょうのかくにん"
+          "correctAnswer": "こうしょうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉の確認」 (koushou no kakunin) expresses 'Build 'Confirming Negotiation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉の確認 (koushou no kakunin) — Build 'Confirming Negotiation'"
         },
         {
           "id": "u21_l11_3",
@@ -2180,7 +2252,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な提案の確認です。」 (Kore wa ichiban taisetsu na teian no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Proposal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な提案の確認です。 (Kore wa ichiban taisetsu na teian no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Proposal."
         },
         {
           "id": "u21_l11_4",
@@ -2202,7 +2274,8 @@
             "提案の確認",
             "です"
           ],
-          "correctAnswer": "これは提案の確認です"
+          "correctAnswer": "これは提案の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは提案の確認です」 (Kore wa teian no kakunin desu.) expresses 'This is Confirming Proposal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは提案の確認です (Kore wa teian no kakunin desu.) — This is Confirming Proposal."
         },
         {
           "id": "u21_l11_5",
@@ -2219,7 +2292,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "妥協の確認"
+          "correctAnswer": "妥協の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協の確認」 (dakyou no kakunin) expresses 'Pronounce: Confirming Compromise'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協の確認 (dakyou no kakunin) — Pronounce: Confirming Compromise"
         },
         {
           "id": "u21_l11_6",
@@ -2239,7 +2313,8 @@
             "妥協の確認",
             "です"
           ],
-          "correctAnswer": "妥協の確認です"
+          "correctAnswer": "妥協の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協の確認です」 (dakyou no kakunin desu.) expresses 'It is Confirming Compromise.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協の確認です (dakyou no kakunin desu.) — It is Confirming Compromise."
         },
         {
           "id": "u21_l11_7",
@@ -2279,7 +2354,8 @@
               "romaji": "goui no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉の確認・提案の確認・妥協の確認・合意の確認」 (koushou no kakunin, teian no kakunin, dakyou no kakunin, goui no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉の確認・提案の確認・妥協の確認・合意の確認 (koushou no kakunin, teian no kakunin, dakyou no kakunin, goui no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l11_8",
@@ -2303,7 +2379,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協についてどう思われますか？」 (dakyou ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Compromise?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協についてどう思われますか？ (dakyou ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Compromise?"
         }
       ]
     },
@@ -2352,7 +2429,8 @@
             "Confirming Agreement / consensus",
             "Negotiation"
           ],
-          "correctAnswer": "Confirming Agreement / consensus"
+          "correctAnswer": "Confirming Agreement / consensus",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意の確認」 (goui no kakunin) expresses 'Confirming Agreement / consensus'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意の確認 (goui no kakunin) — Confirming Agreement / consensus"
         },
         {
           "id": "u21_l12_2",
@@ -2372,7 +2450,8 @@
             "の",
             "い"
           ],
-          "correctAnswer": "ごういのかくにん"
+          "correctAnswer": "ごういのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意の確認」 (goui no kakunin) expresses 'Build 'Confirming Agreement / consensus''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意の確認 (goui no kakunin) — Build 'Confirming Agreement / consensus'"
         },
         {
           "id": "u21_l12_3",
@@ -2391,7 +2470,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な取引の確認です。」 (Kore wa ichiban taisetsu na torihiki no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Transaction / business deal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な取引の確認です。 (Kore wa ichiban taisetsu na torihiki no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Transaction / business deal."
         },
         {
           "id": "u21_l12_4",
@@ -2413,7 +2492,8 @@
             "取引の確認",
             "です"
           ],
-          "correctAnswer": "これは取引の確認です"
+          "correctAnswer": "これは取引の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは取引の確認です」 (Kore wa torihiki no kakunin desu.) expresses 'This is Confirming Transaction / business deal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは取引の確認です (Kore wa torihiki no kakunin desu.) — This is Confirming Transaction / business deal."
         },
         {
           "id": "u21_l12_5",
@@ -2430,7 +2510,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "納期の確認"
+          "correctAnswer": "納期の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「納期の確認」 (nouki no kakunin) expresses 'Pronounce: Confirming Delivery deadline'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・納期の確認 (nouki no kakunin) — Pronounce: Confirming Delivery deadline"
         },
         {
           "id": "u21_l12_6",
@@ -2450,7 +2531,8 @@
             "納期の確認",
             "です"
           ],
-          "correctAnswer": "納期の確認です"
+          "correctAnswer": "納期の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「納期の確認です」 (nouki no kakunin desu.) expresses 'It is Confirming Delivery deadline.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・納期の確認です (nouki no kakunin desu.) — It is Confirming Delivery deadline."
         },
         {
           "id": "u21_l12_7",
@@ -2490,7 +2572,8 @@
               "romaji": "koushou"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意の確認・取引の確認・納期の確認・交渉」 (goui no kakunin, torihiki no kakunin, nouki no kakunin, koushou) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意の確認・取引の確認・納期の確認・交渉 (goui no kakunin, torihiki no kakunin, nouki no kakunin, koushou) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l12_8",
@@ -2514,7 +2597,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は合意に進みましょう。」 (Tsugi wa goui ni susumimashou.) expresses 'Speaker: Let's proceed to Agreement / consensus next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は合意に進みましょう。 (Tsugi wa goui ni susumimashou.) — Speaker: Let's proceed to Agreement / consensus next."
         }
       ]
     },
@@ -2557,7 +2641,8 @@
             "Profit / margin",
             "Holding in reserve / pending"
           ],
-          "correctAnswer": "Negotiation"
+          "correctAnswer": "Negotiation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉」 (koushou) expresses 'Negotiation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉 (koushou) — Negotiation"
         },
         {
           "id": "u21_l13_2",
@@ -2577,7 +2662,8 @@
             "に",
             "ょ"
           ],
-          "correctAnswer": "こうしょう"
+          "correctAnswer": "こうしょう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉」 (koushou) expresses 'Build 'Negotiation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉 (koushou) — Build 'Negotiation'"
         },
         {
           "id": "u21_l13_3",
@@ -2596,7 +2682,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な提案です。」 (Kore wa ichiban taisetsu na teian desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Proposal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な提案です。 (Kore wa ichiban taisetsu na teian desu.) — Fill in topic particle 'は' (wa): This is the most important Proposal."
         },
         {
           "id": "u21_l13_4",
@@ -2618,7 +2704,8 @@
             "提案",
             "です"
           ],
-          "correctAnswer": "これは提案です"
+          "correctAnswer": "これは提案です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは提案です」 (Kore wa teian desu.) expresses 'This is Proposal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは提案です (Kore wa teian desu.) — This is Proposal."
         },
         {
           "id": "u21_l13_5",
@@ -2635,7 +2722,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "妥協"
+          "correctAnswer": "妥協",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協」 (dakyou) expresses 'Pronounce: Compromise'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協 (dakyou) — Pronounce: Compromise"
         },
         {
           "id": "u21_l13_6",
@@ -2655,7 +2743,8 @@
             "妥協",
             "です"
           ],
-          "correctAnswer": "妥協です"
+          "correctAnswer": "妥協です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協です」 (dakyou desu.) expresses 'It is Compromise.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協です (dakyou desu.) — It is Compromise."
         },
         {
           "id": "u21_l13_7",
@@ -2695,7 +2784,8 @@
               "romaji": "goui"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉・提案・妥協・合意」 (koushou, teian, dakyou, goui) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉・提案・妥協・合意 (koushou, teian, dakyou, goui) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l13_8",
@@ -2719,7 +2809,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交渉について教えていただけますか？」 (koushou ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Negotiation?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交渉について教えていただけますか？ (koushou ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Negotiation?"
         }
       ]
     },
@@ -2762,7 +2853,8 @@
             "Cost / expense",
             "Agreement / consensus"
           ],
-          "correctAnswer": "Agreement / consensus"
+          "correctAnswer": "Agreement / consensus",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意」 (goui) expresses 'Agreement / consensus'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意 (goui) — Agreement / consensus"
         },
         {
           "id": "u21_l14_2",
@@ -2782,7 +2874,8 @@
             "う",
             "こ"
           ],
-          "correctAnswer": "ごうい"
+          "correctAnswer": "ごうい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意」 (goui) expresses 'Build 'Agreement / consensus''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意 (goui) — Build 'Agreement / consensus'"
         },
         {
           "id": "u21_l14_3",
@@ -2801,7 +2894,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な取引です。」 (Kore wa ichiban taisetsu na torihiki desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Transaction / business deal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な取引です。 (Kore wa ichiban taisetsu na torihiki desu.) — Fill in topic particle 'は' (wa): This is the most important Transaction / business deal."
         },
         {
           "id": "u21_l14_4",
@@ -2823,7 +2916,8 @@
             "取引",
             "です"
           ],
-          "correctAnswer": "これは取引です"
+          "correctAnswer": "これは取引です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは取引です」 (Kore wa torihiki desu.) expresses 'This is Transaction / business deal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは取引です (Kore wa torihiki desu.) — This is Transaction / business deal."
         },
         {
           "id": "u21_l14_5",
@@ -2840,7 +2934,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "納期"
+          "correctAnswer": "納期",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「納期」 (nouki) expresses 'Pronounce: Delivery deadline'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・納期 (nouki) — Pronounce: Delivery deadline"
         },
         {
           "id": "u21_l14_6",
@@ -2860,7 +2955,8 @@
             "納期",
             "です"
           ],
-          "correctAnswer": "納期です"
+          "correctAnswer": "納期です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「納期です」 (nouki desu.) expresses 'It is Delivery deadline.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・納期です (nouki desu.) — It is Delivery deadline."
         },
         {
           "id": "u21_l14_7",
@@ -2900,7 +2996,8 @@
               "romaji": "mitsumorisho"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「合意・取引・納期・見積書」 (goui, torihiki, nouki, mitsumorisho) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・合意・取引・納期・見積書 (goui, torihiki, nouki, mitsumorisho) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l14_8",
@@ -2924,7 +3021,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「提案の準備はできていますか？」 (teian no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Proposal ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・提案の準備はできていますか？ (teian no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Proposal ready?"
         }
       ]
     },
@@ -2968,7 +3066,8 @@
             "Price quotation",
             "Confirming Agreement / consensus"
           ],
-          "correctAnswer": "Price quotation"
+          "correctAnswer": "Price quotation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見積書」 (mitsumorisho) expresses 'Price quotation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見積書 (mitsumorisho) — Price quotation"
         },
         {
           "id": "u21_l15_2",
@@ -2988,7 +3087,8 @@
             "り",
             "し"
           ],
-          "correctAnswer": "みつもりしょ"
+          "correctAnswer": "みつもりしょ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見積書」 (mitsumorisho) expresses 'Build 'Price quotation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見積書 (mitsumorisho) — Build 'Price quotation'"
         },
         {
           "id": "u21_l15_3",
@@ -3007,7 +3107,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な検討です。」 (Kore wa ichiban taisetsu na kentou desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Consideration / deliberation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な検討です。 (Kore wa ichiban taisetsu na kentou desu.) — Fill in topic particle 'は' (wa): This is the most important Consideration / deliberation."
         },
         {
           "id": "u21_l15_4",
@@ -3029,7 +3129,8 @@
             "検討",
             "です"
           ],
-          "correctAnswer": "これは検討です"
+          "correctAnswer": "これは検討です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは検討です」 (Kore wa kentou desu.) expresses 'This is Consideration / deliberation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは検討です (Kore wa kentou desu.) — This is Consideration / deliberation."
         },
         {
           "id": "u21_l15_5",
@@ -3046,7 +3147,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "恐縮"
+          "correctAnswer": "恐縮",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「恐縮」 (kyoushuku) expresses 'Pronounce: Humbly obliged / apologetic'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・恐縮 (kyoushuku) — Pronounce: Humbly obliged / apologetic"
         },
         {
           "id": "u21_l15_6",
@@ -3066,7 +3168,8 @@
             "恐縮",
             "です"
           ],
-          "correctAnswer": "恐縮です"
+          "correctAnswer": "恐縮です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「恐縮です」 (kyoushuku desu.) expresses 'It is Humbly obliged / apologetic.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・恐縮です (kyoushuku desu.) — It is Humbly obliged / apologetic."
         },
         {
           "id": "u21_l15_7",
@@ -3106,7 +3209,8 @@
               "romaji": "shoudaku"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見積書・検討・恐縮・承諾」 (mitsumorisho, kentou, kyoushuku, shoudaku) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見積書・検討・恐縮・承諾 (mitsumorisho, kentou, kyoushuku, shoudaku) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u21_l15_8",
@@ -3130,7 +3234,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「妥協についてどう思われますか？」 (dakyou ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Compromise?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・妥協についてどう思われますか？ (dakyou ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Compromise?"
         }
       ]
     }

@@ -50,7 +50,8 @@
             "Cheers!",
             "Sashimi / sliced raw fish"
           ],
-          "correctAnswer": "Cheers!"
+          "correctAnswer": "Cheers!",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯」 (kanpai) expresses 'Cheers!'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯 (kanpai) — Cheers!"
         },
         {
           "id": "u7_l1_2",
@@ -70,7 +71,8 @@
             "ろ",
             "ぱ"
           ],
-          "correctAnswer": "かんぱい"
+          "correctAnswer": "かんぱい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯」 (kanpai) expresses 'Build 'Cheers!''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯 (kanpai) — Build 'Cheers!'"
         },
         {
           "id": "u7_l1_3",
@@ -89,7 +91,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な生ビールです。」 (Kore wa ichiban taisetsu na nama biiru desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Draft beer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な生ビールです。 (Kore wa ichiban taisetsu na nama biiru desu.) — Fill in topic particle 'は' (wa): This is the most important Draft beer."
         },
         {
           "id": "u7_l1_4",
@@ -111,7 +113,8 @@
             "生ビール",
             "です"
           ],
-          "correctAnswer": "これは生ビールです"
+          "correctAnswer": "これは生ビールです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは生ビールです」 (Kore wa nama biiru desu.) expresses 'This is Draft beer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは生ビールです (Kore wa nama biiru desu.) — This is Draft beer."
         },
         {
           "id": "u7_l1_5",
@@ -128,7 +131,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "とりあえず"
+          "correctAnswer": "とりあえず",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえず」 (toriaezu) expresses 'Pronounce: For now / to start with'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえず (toriaezu) — Pronounce: For now / to start with"
         },
         {
           "id": "u7_l1_6",
@@ -148,7 +152,8 @@
             "とりあえず",
             "です"
           ],
-          "correctAnswer": "とりあえずです"
+          "correctAnswer": "とりあえずです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえずです」 (toriaezu desu.) expresses 'It is For now / to start with.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえずです (toriaezu desu.) — It is For now / to start with."
         },
         {
           "id": "u7_l1_7",
@@ -188,7 +193,8 @@
               "romaji": "edamame"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯・生ビール・とりあえず・枝豆」 (kanpai, nama biiru, toriaezu, edamame) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯・生ビール・とりあえず・枝豆 (kanpai, nama biiru, toriaezu, edamame) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l1_8",
@@ -212,7 +218,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯について教えていただけますか？」 (kanpai ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Cheers!?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯について教えていただけますか？ (kanpai ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Cheers!?"
         }
       ]
     },
@@ -255,7 +262,8 @@
             "Edamame soybeans",
             "Confirming For now / to start with"
           ],
-          "correctAnswer": "Edamame soybeans"
+          "correctAnswer": "Edamame soybeans",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆」 (edamame) expresses 'Edamame soybeans'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆 (edamame) — Edamame soybeans"
         },
         {
           "id": "u7_l2_2",
@@ -275,7 +283,8 @@
             "だ",
             "の"
           ],
-          "correctAnswer": "えだまめ"
+          "correctAnswer": "えだまめ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆」 (edamame) expresses 'Build 'Edamame soybeans''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆 (edamame) — Build 'Edamame soybeans'"
         },
         {
           "id": "u7_l2_3",
@@ -294,7 +303,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な焼き鳥です。」 (Kore wa ichiban taisetsu na yakitori desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Grilled chicken skewers.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な焼き鳥です。 (Kore wa ichiban taisetsu na yakitori desu.) — Fill in topic particle 'は' (wa): This is the most important Grilled chicken skewers."
         },
         {
           "id": "u7_l2_4",
@@ -316,7 +325,8 @@
             "焼き鳥",
             "です"
           ],
-          "correctAnswer": "これは焼き鳥です"
+          "correctAnswer": "これは焼き鳥です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは焼き鳥です」 (Kore wa yakitori desu.) expresses 'This is Grilled chicken skewers.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは焼き鳥です (Kore wa yakitori desu.) — This is Grilled chicken skewers."
         },
         {
           "id": "u7_l2_5",
@@ -333,7 +343,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "唐揚げ"
+          "correctAnswer": "唐揚げ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「唐揚げ」 (karaage) expresses 'Pronounce: Japanese fried chicken'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・唐揚げ (karaage) — Pronounce: Japanese fried chicken"
         },
         {
           "id": "u7_l2_6",
@@ -353,7 +364,8 @@
             "唐揚げ",
             "です"
           ],
-          "correctAnswer": "唐揚げです"
+          "correctAnswer": "唐揚げです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「唐揚げです」 (karaage desu.) expresses 'It is Japanese fried chicken.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・唐揚げです (karaage desu.) — It is Japanese fried chicken."
         },
         {
           "id": "u7_l2_7",
@@ -393,7 +405,8 @@
               "romaji": "okawari"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆・焼き鳥・唐揚げ・お代わり」 (edamame, yakitori, karaage, okawari) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆・焼き鳥・唐揚げ・お代わり (edamame, yakitori, karaage, okawari) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l2_8",
@@ -417,7 +430,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「生ビールの準備はできていますか？」 (nama biiru no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Draft beer ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・生ビールの準備はできていますか？ (nama biiru no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Draft beer ready?"
         }
       ]
     },
@@ -460,7 +474,8 @@
             "Another serving / refill",
             "Confirming Grilled chicken skewers"
           ],
-          "correctAnswer": "Another serving / refill"
+          "correctAnswer": "Another serving / refill",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お代わり」 (okawari) expresses 'Another serving / refill'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お代わり (okawari) — Another serving / refill"
         },
         {
           "id": "u7_l3_2",
@@ -480,7 +495,8 @@
             "わ",
             "ね"
           ],
-          "correctAnswer": "おかわり"
+          "correctAnswer": "おかわり",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お代わり」 (okawari) expresses 'Build 'Another serving / refill''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お代わり (okawari) — Build 'Another serving / refill'"
         },
         {
           "id": "u7_l3_3",
@@ -499,7 +515,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な割り勘です。」 (Kore wa ichiban taisetsu na warikan desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Splitting the bill.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な割り勘です。 (Kore wa ichiban taisetsu na warikan desu.) — Fill in topic particle 'は' (wa): This is the most important Splitting the bill."
         },
         {
           "id": "u7_l3_4",
@@ -521,7 +537,8 @@
             "割り勘",
             "です"
           ],
-          "correctAnswer": "これは割り勘です"
+          "correctAnswer": "これは割り勘です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは割り勘です」 (Kore wa warikan desu.) expresses 'This is Splitting the bill.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは割り勘です (Kore wa warikan desu.) — This is Splitting the bill."
         },
         {
           "id": "u7_l3_5",
@@ -538,7 +555,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "居酒屋"
+          "correctAnswer": "居酒屋",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「居酒屋」 (izakaya) expresses 'Pronounce: Japanese pub / Izakaya'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・居酒屋 (izakaya) — Pronounce: Japanese pub / Izakaya"
         },
         {
           "id": "u7_l3_6",
@@ -558,7 +576,8 @@
             "居酒屋",
             "です"
           ],
-          "correctAnswer": "居酒屋です"
+          "correctAnswer": "居酒屋です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「居酒屋です」 (izakaya desu.) expresses 'It is Japanese pub / Izakaya.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・居酒屋です (izakaya desu.) — It is Japanese pub / Izakaya."
         },
         {
           "id": "u7_l3_7",
@@ -598,7 +617,8 @@
               "romaji": "otsumami"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お代わり・割り勘・居酒屋・おつまみ」 (okawari, warikan, izakaya, otsumami) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お代わり・割り勘・居酒屋・おつまみ (okawari, warikan, izakaya, otsumami) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l3_8",
@@ -622,7 +642,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえずについてどう思われますか？」 (toriaezu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on For now / to start with?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえずについてどう思われますか？ (toriaezu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on For now / to start with?"
         }
       ]
     },
@@ -660,7 +681,8 @@
             "Confirming No smoking",
             "Sashimi / sliced raw fish"
           ],
-          "correctAnswer": "Pub snacks / appetizers"
+          "correctAnswer": "Pub snacks / appetizers",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おつまみ」 (otsumami) expresses 'Pub snacks / appetizers'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おつまみ (otsumami) — Pub snacks / appetizers"
         },
         {
           "id": "u7_l4_2",
@@ -680,7 +702,8 @@
             "ま",
             "う"
           ],
-          "correctAnswer": "おつまみ"
+          "correctAnswer": "おつまみ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おつまみ」 (otsumami) expresses 'Build 'Pub snacks / appetizers''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おつまみ (otsumami) — Build 'Pub snacks / appetizers'"
         },
         {
           "id": "u7_l4_3",
@@ -699,7 +722,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なハイボールです。」 (Kore wa ichiban taisetsu na haibooru desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Whisky highball.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なハイボールです。 (Kore wa ichiban taisetsu na haibooru desu.) — Fill in topic particle 'は' (wa): This is the most important Whisky highball."
         },
         {
           "id": "u7_l4_4",
@@ -721,7 +744,8 @@
             "ハイボール",
             "です"
           ],
-          "correctAnswer": "これはハイボールです"
+          "correctAnswer": "これはハイボールです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはハイボールです」 (Kore wa haibooru desu.) expresses 'This is Whisky highball.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはハイボールです (Kore wa haibooru desu.) — This is Whisky highball."
         },
         {
           "id": "u7_l4_5",
@@ -738,7 +762,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "ウーロン茶"
+          "correctAnswer": "ウーロン茶",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ウーロン茶」 (uuroncha) expresses 'Pronounce: Oolong tea'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ウーロン茶 (uuroncha) — Pronounce: Oolong tea"
         },
         {
           "id": "u7_l4_6",
@@ -758,7 +783,8 @@
             "ウーロン茶",
             "です"
           ],
-          "correctAnswer": "ウーロン茶です"
+          "correctAnswer": "ウーロン茶です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ウーロン茶です」 (uuroncha desu.) expresses 'It is Oolong tea.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ウーロン茶です (uuroncha desu.) — It is Oolong tea."
         },
         {
           "id": "u7_l4_7",
@@ -798,7 +824,8 @@
               "romaji": "sashimi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おつまみ・ハイボール・ウーロン茶・刺身」 (otsumami, haibooru, uuroncha, sashimi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おつまみ・ハイボール・ウーロン茶・刺身 (otsumami, haibooru, uuroncha, sashimi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l4_8",
@@ -822,7 +849,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は枝豆に進みましょう。」 (Tsugi wa edamame ni susumimashou.) expresses 'Speaker: Let's proceed to Edamame soybeans next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は枝豆に進みましょう。 (Tsugi wa edamame ni susumimashou.) — Speaker: Let's proceed to Edamame soybeans next."
         }
       ]
     },
@@ -864,7 +892,8 @@
             "Confirming Oolong tea",
             "Confirming For now / to start with"
           ],
-          "correctAnswer": "Sashimi / sliced raw fish"
+          "correctAnswer": "Sashimi / sliced raw fish",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「刺身」 (sashimi) expresses 'Sashimi / sliced raw fish'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・刺身 (sashimi) — Sashimi / sliced raw fish"
         },
         {
           "id": "u7_l5_2",
@@ -884,7 +913,8 @@
             "ん",
             "た"
           ],
-          "correctAnswer": "さしみ"
+          "correctAnswer": "さしみ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「刺身」 (sashimi) expresses 'Build 'Sashimi / sliced raw fish''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・刺身 (sashimi) — Build 'Sashimi / sliced raw fish'"
         },
         {
           "id": "u7_l5_3",
@@ -903,7 +933,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な席です。」 (Kore wa ichiban taisetsu na seki desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Seat / table.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な席です。 (Kore wa ichiban taisetsu na seki desu.) — Fill in topic particle 'は' (wa): This is the most important Seat / table."
         },
         {
           "id": "u7_l5_4",
@@ -925,7 +955,8 @@
             "席",
             "です"
           ],
-          "correctAnswer": "これは席です"
+          "correctAnswer": "これは席です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは席です」 (Kore wa seki desu.) expresses 'This is Seat / table.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは席です (Kore wa seki desu.) — This is Seat / table."
         },
         {
           "id": "u7_l5_5",
@@ -942,7 +973,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "禁煙"
+          "correctAnswer": "禁煙",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「禁煙」 (kin-en) expresses 'Pronounce: No smoking'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・禁煙 (kin-en) — Pronounce: No smoking"
         },
         {
           "id": "u7_l5_6",
@@ -962,7 +994,8 @@
             "禁煙",
             "です"
           ],
-          "correctAnswer": "禁煙です"
+          "correctAnswer": "禁煙です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「禁煙です」 (kin-en desu.) expresses 'It is No smoking.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・禁煙です (kin-en desu.) — It is No smoking."
         },
         {
           "id": "u7_l5_7",
@@ -1002,7 +1035,8 @@
               "romaji": "kanpai no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「刺身・席・禁煙・乾杯の確認」 (sashimi, seki, kin-en, kanpai no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・刺身・席・禁煙・乾杯の確認 (sashimi, seki, kin-en, kanpai no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l5_8",
@@ -1026,7 +1060,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯について教えていただけますか？」 (kanpai ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Cheers!?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯について教えていただけますか？ (kanpai ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Cheers!?"
         }
       ]
     },
@@ -1072,7 +1107,8 @@
             "Confirming Cheers!",
             "Pub snacks / appetizers"
           ],
-          "correctAnswer": "Confirming Cheers!"
+          "correctAnswer": "Confirming Cheers!",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯の確認」 (kanpai no kakunin) expresses 'Confirming Cheers!'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯の確認 (kanpai no kakunin) — Confirming Cheers!"
         },
         {
           "id": "u7_l6_2",
@@ -1092,7 +1128,8 @@
             "の",
             "か"
           ],
-          "correctAnswer": "かんぱいのかくにん"
+          "correctAnswer": "かんぱいのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯の確認」 (kanpai no kakunin) expresses 'Build 'Confirming Cheers!''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯の確認 (kanpai no kakunin) — Build 'Confirming Cheers!'"
         },
         {
           "id": "u7_l6_3",
@@ -1111,7 +1148,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な生ビールの確認です。」 (Kore wa ichiban taisetsu na nama biiru no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Draft beer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な生ビールの確認です。 (Kore wa ichiban taisetsu na nama biiru no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Draft beer."
         },
         {
           "id": "u7_l6_4",
@@ -1133,7 +1170,8 @@
             "生ビールの確認",
             "です"
           ],
-          "correctAnswer": "これは生ビールの確認です"
+          "correctAnswer": "これは生ビールの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは生ビールの確認です」 (Kore wa nama biiru no kakunin desu.) expresses 'This is Confirming Draft beer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは生ビールの確認です (Kore wa nama biiru no kakunin desu.) — This is Confirming Draft beer."
         },
         {
           "id": "u7_l6_5",
@@ -1150,7 +1188,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "とりあえずの確認"
+          "correctAnswer": "とりあえずの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえずの確認」 (toriaezu no kakunin) expresses 'Pronounce: Confirming For now / to start with'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえずの確認 (toriaezu no kakunin) — Pronounce: Confirming For now / to start with"
         },
         {
           "id": "u7_l6_6",
@@ -1170,7 +1209,8 @@
             "とりあえずの確認",
             "です"
           ],
-          "correctAnswer": "とりあえずの確認です"
+          "correctAnswer": "とりあえずの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえずの確認です」 (toriaezu no kakunin desu.) expresses 'It is Confirming For now / to start with.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえずの確認です (toriaezu no kakunin desu.) — It is Confirming For now / to start with."
         },
         {
           "id": "u7_l6_7",
@@ -1210,7 +1250,8 @@
               "romaji": "edamame no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯の確認・生ビールの確認・とりあえずの確認・枝豆の確認」 (kanpai no kakunin, nama biiru no kakunin, toriaezu no kakunin, edamame no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯の確認・生ビールの確認・とりあえずの確認・枝豆の確認 (kanpai no kakunin, nama biiru no kakunin, toriaezu no kakunin, edamame no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l6_8",
@@ -1234,7 +1275,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「生ビールの準備はできていますか？」 (nama biiru no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Draft beer ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・生ビールの準備はできていますか？ (nama biiru no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Draft beer ready?"
         }
       ]
     },
@@ -1283,7 +1325,8 @@
             "Confirming For now / to start with",
             "Confirming For now / to start with"
           ],
-          "correctAnswer": "Confirming Edamame soybeans"
+          "correctAnswer": "Confirming Edamame soybeans",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆の確認」 (edamame no kakunin) expresses 'Confirming Edamame soybeans'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆の確認 (edamame no kakunin) — Confirming Edamame soybeans"
         },
         {
           "id": "u7_l7_2",
@@ -1303,7 +1346,8 @@
             "め",
             "か"
           ],
-          "correctAnswer": "えだまめのかくにん"
+          "correctAnswer": "えだまめのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆の確認」 (edamame no kakunin) expresses 'Build 'Confirming Edamame soybeans''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆の確認 (edamame no kakunin) — Build 'Confirming Edamame soybeans'"
         },
         {
           "id": "u7_l7_3",
@@ -1322,7 +1366,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な焼き鳥の確認です。」 (Kore wa ichiban taisetsu na yakitori no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Grilled chicken skewers.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な焼き鳥の確認です。 (Kore wa ichiban taisetsu na yakitori no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Grilled chicken skewers."
         },
         {
           "id": "u7_l7_4",
@@ -1344,7 +1388,8 @@
             "焼き鳥の確認",
             "です"
           ],
-          "correctAnswer": "これは焼き鳥の確認です"
+          "correctAnswer": "これは焼き鳥の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは焼き鳥の確認です」 (Kore wa yakitori no kakunin desu.) expresses 'This is Confirming Grilled chicken skewers.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは焼き鳥の確認です (Kore wa yakitori no kakunin desu.) — This is Confirming Grilled chicken skewers."
         },
         {
           "id": "u7_l7_5",
@@ -1361,7 +1406,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "唐揚げの確認"
+          "correctAnswer": "唐揚げの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「唐揚げの確認」 (karaage no kakunin) expresses 'Pronounce: Confirming Japanese fried chicken'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・唐揚げの確認 (karaage no kakunin) — Pronounce: Confirming Japanese fried chicken"
         },
         {
           "id": "u7_l7_6",
@@ -1381,7 +1427,8 @@
             "唐揚げの確認",
             "です"
           ],
-          "correctAnswer": "唐揚げの確認です"
+          "correctAnswer": "唐揚げの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「唐揚げの確認です」 (karaage no kakunin desu.) expresses 'It is Confirming Japanese fried chicken.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・唐揚げの確認です (karaage no kakunin desu.) — It is Confirming Japanese fried chicken."
         },
         {
           "id": "u7_l7_7",
@@ -1421,7 +1468,8 @@
               "romaji": "okawari no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆の確認・焼き鳥の確認・唐揚げの確認・お代わりの確認」 (edamame no kakunin, yakitori no kakunin, karaage no kakunin, okawari no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆の確認・焼き鳥の確認・唐揚げの確認・お代わりの確認 (edamame no kakunin, yakitori no kakunin, karaage no kakunin, okawari no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l7_8",
@@ -1445,7 +1493,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえずについてどう思われますか？」 (toriaezu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on For now / to start with?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえずについてどう思われますか？ (toriaezu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on For now / to start with?"
         }
       ]
     },
@@ -1494,7 +1543,8 @@
             "Confirming Another serving / refill",
             "Confirming Japanese pub / Izakaya"
           ],
-          "correctAnswer": "Confirming Another serving / refill"
+          "correctAnswer": "Confirming Another serving / refill",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お代わりの確認」 (okawari no kakunin) expresses 'Confirming Another serving / refill'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お代わりの確認 (okawari no kakunin) — Confirming Another serving / refill"
         },
         {
           "id": "u7_l8_2",
@@ -1514,7 +1564,8 @@
             "わ",
             "の"
           ],
-          "correctAnswer": "おかわりのかくにん"
+          "correctAnswer": "おかわりのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お代わりの確認」 (okawari no kakunin) expresses 'Build 'Confirming Another serving / refill''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お代わりの確認 (okawari no kakunin) — Build 'Confirming Another serving / refill'"
         },
         {
           "id": "u7_l8_3",
@@ -1533,7 +1584,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な割り勘の確認です。」 (Kore wa ichiban taisetsu na warikan no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Splitting the bill.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な割り勘の確認です。 (Kore wa ichiban taisetsu na warikan no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Splitting the bill."
         },
         {
           "id": "u7_l8_4",
@@ -1555,7 +1606,8 @@
             "割り勘の確認",
             "です"
           ],
-          "correctAnswer": "これは割り勘の確認です"
+          "correctAnswer": "これは割り勘の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは割り勘の確認です」 (Kore wa warikan no kakunin desu.) expresses 'This is Confirming Splitting the bill.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは割り勘の確認です (Kore wa warikan no kakunin desu.) — This is Confirming Splitting the bill."
         },
         {
           "id": "u7_l8_5",
@@ -1572,7 +1624,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "居酒屋の確認"
+          "correctAnswer": "居酒屋の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「居酒屋の確認」 (izakaya no kakunin) expresses 'Pronounce: Confirming Japanese pub / Izakaya'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・居酒屋の確認 (izakaya no kakunin) — Pronounce: Confirming Japanese pub / Izakaya"
         },
         {
           "id": "u7_l8_6",
@@ -1592,7 +1645,8 @@
             "居酒屋の確認",
             "です"
           ],
-          "correctAnswer": "居酒屋の確認です"
+          "correctAnswer": "居酒屋の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「居酒屋の確認です」 (izakaya no kakunin desu.) expresses 'It is Confirming Japanese pub / Izakaya.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・居酒屋の確認です (izakaya no kakunin desu.) — It is Confirming Japanese pub / Izakaya."
         },
         {
           "id": "u7_l8_7",
@@ -1632,7 +1686,8 @@
               "romaji": "otsumami no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お代わりの確認・割り勘の確認・居酒屋の確認・おつまみの確認」 (okawari no kakunin, warikan no kakunin, izakaya no kakunin, otsumami no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お代わりの確認・割り勘の確認・居酒屋の確認・おつまみの確認 (okawari no kakunin, warikan no kakunin, izakaya no kakunin, otsumami no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l8_8",
@@ -1656,7 +1711,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は枝豆に進みましょう。」 (Tsugi wa edamame ni susumimashou.) expresses 'Speaker: Let's proceed to Edamame soybeans next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は枝豆に進みましょう。 (Tsugi wa edamame ni susumimashou.) — Speaker: Let's proceed to Edamame soybeans next."
         }
       ]
     },
@@ -1700,7 +1756,8 @@
             "Sashimi / sliced raw fish",
             "Confirming Pub snacks / appetizers"
           ],
-          "correctAnswer": "Confirming Pub snacks / appetizers"
+          "correctAnswer": "Confirming Pub snacks / appetizers",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おつまみの確認」 (otsumami no kakunin) expresses 'Confirming Pub snacks / appetizers'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おつまみの確認 (otsumami no kakunin) — Confirming Pub snacks / appetizers"
         },
         {
           "id": "u7_l9_2",
@@ -1720,7 +1777,8 @@
             "に",
             "つ"
           ],
-          "correctAnswer": "おつまみのかくにん"
+          "correctAnswer": "おつまみのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おつまみの確認」 (otsumami no kakunin) expresses 'Build 'Confirming Pub snacks / appetizers''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おつまみの確認 (otsumami no kakunin) — Build 'Confirming Pub snacks / appetizers'"
         },
         {
           "id": "u7_l9_3",
@@ -1739,7 +1797,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なハイボールの確認です。」 (Kore wa ichiban taisetsu na haibooru no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Whisky highball.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なハイボールの確認です。 (Kore wa ichiban taisetsu na haibooru no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Whisky highball."
         },
         {
           "id": "u7_l9_4",
@@ -1761,7 +1819,8 @@
             "ハイボールの確認",
             "です"
           ],
-          "correctAnswer": "これはハイボールの確認です"
+          "correctAnswer": "これはハイボールの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはハイボールの確認です」 (Kore wa haibooru no kakunin desu.) expresses 'This is Confirming Whisky highball.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはハイボールの確認です (Kore wa haibooru no kakunin desu.) — This is Confirming Whisky highball."
         },
         {
           "id": "u7_l9_5",
@@ -1778,7 +1837,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "ウーロン茶の確認"
+          "correctAnswer": "ウーロン茶の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ウーロン茶の確認」 (uuroncha no kakunin) expresses 'Pronounce: Confirming Oolong tea'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ウーロン茶の確認 (uuroncha no kakunin) — Pronounce: Confirming Oolong tea"
         },
         {
           "id": "u7_l9_6",
@@ -1798,7 +1858,8 @@
             "ウーロン茶の確認",
             "です"
           ],
-          "correctAnswer": "ウーロン茶の確認です"
+          "correctAnswer": "ウーロン茶の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ウーロン茶の確認です」 (uuroncha no kakunin desu.) expresses 'It is Confirming Oolong tea.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ウーロン茶の確認です (uuroncha no kakunin desu.) — It is Confirming Oolong tea."
         },
         {
           "id": "u7_l9_7",
@@ -1838,7 +1899,8 @@
               "romaji": "sashimi no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おつまみの確認・ハイボールの確認・ウーロン茶の確認・刺身の確認」 (otsumami no kakunin, haibooru no kakunin, uuroncha no kakunin, sashimi no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おつまみの確認・ハイボールの確認・ウーロン茶の確認・刺身の確認 (otsumami no kakunin, haibooru no kakunin, uuroncha no kakunin, sashimi no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l9_8",
@@ -1862,7 +1924,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯について教えていただけますか？」 (kanpai ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Cheers!?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯について教えていただけますか？ (kanpai ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Cheers!?"
         }
       ]
     },
@@ -1910,7 +1973,8 @@
             "Confirming Sashimi / sliced raw fish",
             "Confirming Another serving / refill"
           ],
-          "correctAnswer": "Confirming Sashimi / sliced raw fish"
+          "correctAnswer": "Confirming Sashimi / sliced raw fish",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「刺身の確認」 (sashimi no kakunin) expresses 'Confirming Sashimi / sliced raw fish'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・刺身の確認 (sashimi no kakunin) — Confirming Sashimi / sliced raw fish"
         },
         {
           "id": "u7_l10_2",
@@ -1930,7 +1994,8 @@
             "の",
             "ん"
           ],
-          "correctAnswer": "さしみのかくにん"
+          "correctAnswer": "さしみのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「刺身の確認」 (sashimi no kakunin) expresses 'Build 'Confirming Sashimi / sliced raw fish''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・刺身の確認 (sashimi no kakunin) — Build 'Confirming Sashimi / sliced raw fish'"
         },
         {
           "id": "u7_l10_3",
@@ -1949,7 +2014,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な席の確認です。」 (Kore wa ichiban taisetsu na seki no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Seat / table.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な席の確認です。 (Kore wa ichiban taisetsu na seki no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Seat / table."
         },
         {
           "id": "u7_l10_4",
@@ -1971,7 +2036,8 @@
             "席の確認",
             "です"
           ],
-          "correctAnswer": "これは席の確認です"
+          "correctAnswer": "これは席の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは席の確認です」 (Kore wa seki no kakunin desu.) expresses 'This is Confirming Seat / table.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは席の確認です (Kore wa seki no kakunin desu.) — This is Confirming Seat / table."
         },
         {
           "id": "u7_l10_5",
@@ -1988,7 +2054,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "禁煙の確認"
+          "correctAnswer": "禁煙の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「禁煙の確認」 (kin-en no kakunin) expresses 'Pronounce: Confirming No smoking'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・禁煙の確認 (kin-en no kakunin) — Pronounce: Confirming No smoking"
         },
         {
           "id": "u7_l10_6",
@@ -2008,7 +2075,8 @@
             "禁煙の確認",
             "です"
           ],
-          "correctAnswer": "禁煙の確認です"
+          "correctAnswer": "禁煙の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「禁煙の確認です」 (kin-en no kakunin desu.) expresses 'It is Confirming No smoking.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・禁煙の確認です (kin-en no kakunin desu.) — It is Confirming No smoking."
         },
         {
           "id": "u7_l10_7",
@@ -2048,7 +2116,8 @@
               "romaji": "kanpai no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「刺身の確認・席の確認・禁煙の確認・乾杯の確認」 (sashimi no kakunin, seki no kakunin, kin-en no kakunin, kanpai no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・刺身の確認・席の確認・禁煙の確認・乾杯の確認 (sashimi no kakunin, seki no kakunin, kin-en no kakunin, kanpai no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l10_8",
@@ -2072,7 +2141,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「生ビールの準備はできていますか？」 (nama biiru no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Draft beer ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・生ビールの準備はできていますか？ (nama biiru no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Draft beer ready?"
         }
       ]
     },
@@ -2118,7 +2188,8 @@
             "Confirming Japanese fried chicken",
             "Confirming Draft beer"
           ],
-          "correctAnswer": "Confirming Cheers!"
+          "correctAnswer": "Confirming Cheers!",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯の確認」 (kanpai no kakunin) expresses 'Confirming Cheers!'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯の確認 (kanpai no kakunin) — Confirming Cheers!"
         },
         {
           "id": "u7_l11_2",
@@ -2138,7 +2209,8 @@
             "ぱ",
             "ん"
           ],
-          "correctAnswer": "かんぱいのかくにん"
+          "correctAnswer": "かんぱいのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯の確認」 (kanpai no kakunin) expresses 'Build 'Confirming Cheers!''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯の確認 (kanpai no kakunin) — Build 'Confirming Cheers!'"
         },
         {
           "id": "u7_l11_3",
@@ -2157,7 +2229,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な生ビールの確認です。」 (Kore wa ichiban taisetsu na nama biiru no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Draft beer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な生ビールの確認です。 (Kore wa ichiban taisetsu na nama biiru no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Draft beer."
         },
         {
           "id": "u7_l11_4",
@@ -2179,7 +2251,8 @@
             "生ビールの確認",
             "です"
           ],
-          "correctAnswer": "これは生ビールの確認です"
+          "correctAnswer": "これは生ビールの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは生ビールの確認です」 (Kore wa nama biiru no kakunin desu.) expresses 'This is Confirming Draft beer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは生ビールの確認です (Kore wa nama biiru no kakunin desu.) — This is Confirming Draft beer."
         },
         {
           "id": "u7_l11_5",
@@ -2196,7 +2269,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "とりあえずの確認"
+          "correctAnswer": "とりあえずの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえずの確認」 (toriaezu no kakunin) expresses 'Pronounce: Confirming For now / to start with'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえずの確認 (toriaezu no kakunin) — Pronounce: Confirming For now / to start with"
         },
         {
           "id": "u7_l11_6",
@@ -2216,7 +2290,8 @@
             "とりあえずの確認",
             "です"
           ],
-          "correctAnswer": "とりあえずの確認です"
+          "correctAnswer": "とりあえずの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえずの確認です」 (toriaezu no kakunin desu.) expresses 'It is Confirming For now / to start with.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえずの確認です (toriaezu no kakunin desu.) — It is Confirming For now / to start with."
         },
         {
           "id": "u7_l11_7",
@@ -2256,7 +2331,8 @@
               "romaji": "edamame no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯の確認・生ビールの確認・とりあえずの確認・枝豆の確認」 (kanpai no kakunin, nama biiru no kakunin, toriaezu no kakunin, edamame no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯の確認・生ビールの確認・とりあえずの確認・枝豆の確認 (kanpai no kakunin, nama biiru no kakunin, toriaezu no kakunin, edamame no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l11_8",
@@ -2280,7 +2356,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえずについてどう思われますか？」 (toriaezu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on For now / to start with?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえずについてどう思われますか？ (toriaezu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on For now / to start with?"
         }
       ]
     },
@@ -2329,7 +2406,8 @@
             "Confirming Edamame soybeans",
             "For now / to start with"
           ],
-          "correctAnswer": "Confirming Edamame soybeans"
+          "correctAnswer": "Confirming Edamame soybeans",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆の確認」 (edamame no kakunin) expresses 'Confirming Edamame soybeans'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆の確認 (edamame no kakunin) — Confirming Edamame soybeans"
         },
         {
           "id": "u7_l12_2",
@@ -2349,7 +2427,8 @@
             "に",
             "え"
           ],
-          "correctAnswer": "えだまめのかくにん"
+          "correctAnswer": "えだまめのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆の確認」 (edamame no kakunin) expresses 'Build 'Confirming Edamame soybeans''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆の確認 (edamame no kakunin) — Build 'Confirming Edamame soybeans'"
         },
         {
           "id": "u7_l12_3",
@@ -2368,7 +2447,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な焼き鳥の確認です。」 (Kore wa ichiban taisetsu na yakitori no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Grilled chicken skewers.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な焼き鳥の確認です。 (Kore wa ichiban taisetsu na yakitori no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Grilled chicken skewers."
         },
         {
           "id": "u7_l12_4",
@@ -2390,7 +2469,8 @@
             "焼き鳥の確認",
             "です"
           ],
-          "correctAnswer": "これは焼き鳥の確認です"
+          "correctAnswer": "これは焼き鳥の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは焼き鳥の確認です」 (Kore wa yakitori no kakunin desu.) expresses 'This is Confirming Grilled chicken skewers.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは焼き鳥の確認です (Kore wa yakitori no kakunin desu.) — This is Confirming Grilled chicken skewers."
         },
         {
           "id": "u7_l12_5",
@@ -2407,7 +2487,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "唐揚げの確認"
+          "correctAnswer": "唐揚げの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「唐揚げの確認」 (karaage no kakunin) expresses 'Pronounce: Confirming Japanese fried chicken'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・唐揚げの確認 (karaage no kakunin) — Pronounce: Confirming Japanese fried chicken"
         },
         {
           "id": "u7_l12_6",
@@ -2427,7 +2508,8 @@
             "唐揚げの確認",
             "です"
           ],
-          "correctAnswer": "唐揚げの確認です"
+          "correctAnswer": "唐揚げの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「唐揚げの確認です」 (karaage no kakunin desu.) expresses 'It is Confirming Japanese fried chicken.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・唐揚げの確認です (karaage no kakunin desu.) — It is Confirming Japanese fried chicken."
         },
         {
           "id": "u7_l12_7",
@@ -2467,7 +2549,8 @@
               "romaji": "kanpai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆の確認・焼き鳥の確認・唐揚げの確認・乾杯」 (edamame no kakunin, yakitori no kakunin, karaage no kakunin, kanpai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆の確認・焼き鳥の確認・唐揚げの確認・乾杯 (edamame no kakunin, yakitori no kakunin, karaage no kakunin, kanpai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l12_8",
@@ -2491,7 +2574,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は枝豆に進みましょう。」 (Tsugi wa edamame ni susumimashou.) expresses 'Speaker: Let's proceed to Edamame soybeans next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は枝豆に進みましょう。 (Tsugi wa edamame ni susumimashou.) — Speaker: Let's proceed to Edamame soybeans next."
         }
       ]
     },
@@ -2531,7 +2615,8 @@
             "Draft beer",
             "Confirming Japanese pub / Izakaya"
           ],
-          "correctAnswer": "Cheers!"
+          "correctAnswer": "Cheers!",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯」 (kanpai) expresses 'Cheers!'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯 (kanpai) — Cheers!"
         },
         {
           "id": "u7_l13_2",
@@ -2551,7 +2636,8 @@
             "い",
             "か"
           ],
-          "correctAnswer": "かんぱい"
+          "correctAnswer": "かんぱい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯」 (kanpai) expresses 'Build 'Cheers!''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯 (kanpai) — Build 'Cheers!'"
         },
         {
           "id": "u7_l13_3",
@@ -2570,7 +2656,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な生ビールです。」 (Kore wa ichiban taisetsu na nama biiru desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Draft beer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な生ビールです。 (Kore wa ichiban taisetsu na nama biiru desu.) — Fill in topic particle 'は' (wa): This is the most important Draft beer."
         },
         {
           "id": "u7_l13_4",
@@ -2592,7 +2678,8 @@
             "生ビール",
             "です"
           ],
-          "correctAnswer": "これは生ビールです"
+          "correctAnswer": "これは生ビールです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは生ビールです」 (Kore wa nama biiru desu.) expresses 'This is Draft beer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは生ビールです (Kore wa nama biiru desu.) — This is Draft beer."
         },
         {
           "id": "u7_l13_5",
@@ -2609,7 +2696,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "とりあえず"
+          "correctAnswer": "とりあえず",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえず」 (toriaezu) expresses 'Pronounce: For now / to start with'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえず (toriaezu) — Pronounce: For now / to start with"
         },
         {
           "id": "u7_l13_6",
@@ -2629,7 +2717,8 @@
             "とりあえず",
             "です"
           ],
-          "correctAnswer": "とりあえずです"
+          "correctAnswer": "とりあえずです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえずです」 (toriaezu desu.) expresses 'It is For now / to start with.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえずです (toriaezu desu.) — It is For now / to start with."
         },
         {
           "id": "u7_l13_7",
@@ -2669,7 +2758,8 @@
               "romaji": "edamame"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯・生ビール・とりあえず・枝豆」 (kanpai, nama biiru, toriaezu, edamame) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯・生ビール・とりあえず・枝豆 (kanpai, nama biiru, toriaezu, edamame) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l13_8",
@@ -2693,7 +2783,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「乾杯について教えていただけますか？」 (kanpai ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Cheers!?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・乾杯について教えていただけますか？ (kanpai ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Cheers!?"
         }
       ]
     },
@@ -2736,7 +2827,8 @@
             "Edamame soybeans",
             "Japanese pub / Izakaya"
           ],
-          "correctAnswer": "Edamame soybeans"
+          "correctAnswer": "Edamame soybeans",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆」 (edamame) expresses 'Edamame soybeans'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆 (edamame) — Edamame soybeans"
         },
         {
           "id": "u7_l14_2",
@@ -2756,7 +2848,8 @@
             "え",
             "つ"
           ],
-          "correctAnswer": "えだまめ"
+          "correctAnswer": "えだまめ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆」 (edamame) expresses 'Build 'Edamame soybeans''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆 (edamame) — Build 'Edamame soybeans'"
         },
         {
           "id": "u7_l14_3",
@@ -2775,7 +2868,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な焼き鳥です。」 (Kore wa ichiban taisetsu na yakitori desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Grilled chicken skewers.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な焼き鳥です。 (Kore wa ichiban taisetsu na yakitori desu.) — Fill in topic particle 'は' (wa): This is the most important Grilled chicken skewers."
         },
         {
           "id": "u7_l14_4",
@@ -2797,7 +2890,8 @@
             "焼き鳥",
             "です"
           ],
-          "correctAnswer": "これは焼き鳥です"
+          "correctAnswer": "これは焼き鳥です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは焼き鳥です」 (Kore wa yakitori desu.) expresses 'This is Grilled chicken skewers.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは焼き鳥です (Kore wa yakitori desu.) — This is Grilled chicken skewers."
         },
         {
           "id": "u7_l14_5",
@@ -2814,7 +2908,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "唐揚げ"
+          "correctAnswer": "唐揚げ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「唐揚げ」 (karaage) expresses 'Pronounce: Japanese fried chicken'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・唐揚げ (karaage) — Pronounce: Japanese fried chicken"
         },
         {
           "id": "u7_l14_6",
@@ -2834,7 +2929,8 @@
             "唐揚げ",
             "です"
           ],
-          "correctAnswer": "唐揚げです"
+          "correctAnswer": "唐揚げです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「唐揚げです」 (karaage desu.) expresses 'It is Japanese fried chicken.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・唐揚げです (karaage desu.) — It is Japanese fried chicken."
         },
         {
           "id": "u7_l14_7",
@@ -2874,7 +2970,8 @@
               "romaji": "okawari"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「枝豆・焼き鳥・唐揚げ・お代わり」 (edamame, yakitori, karaage, okawari) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・枝豆・焼き鳥・唐揚げ・お代わり (edamame, yakitori, karaage, okawari) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l14_8",
@@ -2898,7 +2995,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「生ビールの準備はできていますか？」 (nama biiru no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Draft beer ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・生ビールの準備はできていますか？ (nama biiru no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Draft beer ready?"
         }
       ]
     },
@@ -2941,7 +3039,8 @@
             "Confirming Whisky highball",
             "Confirming Pub snacks / appetizers"
           ],
-          "correctAnswer": "Another serving / refill"
+          "correctAnswer": "Another serving / refill",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お代わり」 (okawari) expresses 'Another serving / refill'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お代わり (okawari) — Another serving / refill"
         },
         {
           "id": "u7_l15_2",
@@ -2961,7 +3060,8 @@
             "た",
             "り"
           ],
-          "correctAnswer": "おかわり"
+          "correctAnswer": "おかわり",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お代わり」 (okawari) expresses 'Build 'Another serving / refill''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お代わり (okawari) — Build 'Another serving / refill'"
         },
         {
           "id": "u7_l15_3",
@@ -2980,7 +3080,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な割り勘です。」 (Kore wa ichiban taisetsu na warikan desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Splitting the bill.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な割り勘です。 (Kore wa ichiban taisetsu na warikan desu.) — Fill in topic particle 'は' (wa): This is the most important Splitting the bill."
         },
         {
           "id": "u7_l15_4",
@@ -3002,7 +3102,8 @@
             "割り勘",
             "です"
           ],
-          "correctAnswer": "これは割り勘です"
+          "correctAnswer": "これは割り勘です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは割り勘です」 (Kore wa warikan desu.) expresses 'This is Splitting the bill.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは割り勘です (Kore wa warikan desu.) — This is Splitting the bill."
         },
         {
           "id": "u7_l15_5",
@@ -3019,7 +3120,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "居酒屋"
+          "correctAnswer": "居酒屋",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「居酒屋」 (izakaya) expresses 'Pronounce: Japanese pub / Izakaya'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・居酒屋 (izakaya) — Pronounce: Japanese pub / Izakaya"
         },
         {
           "id": "u7_l15_6",
@@ -3039,7 +3141,8 @@
             "居酒屋",
             "です"
           ],
-          "correctAnswer": "居酒屋です"
+          "correctAnswer": "居酒屋です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「居酒屋です」 (izakaya desu.) expresses 'It is Japanese pub / Izakaya.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・居酒屋です (izakaya desu.) — It is Japanese pub / Izakaya."
         },
         {
           "id": "u7_l15_7",
@@ -3079,7 +3182,8 @@
               "romaji": "otsumami"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お代わり・割り勘・居酒屋・おつまみ」 (okawari, warikan, izakaya, otsumami) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お代わり・割り勘・居酒屋・おつまみ (okawari, warikan, izakaya, otsumami) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u7_l15_8",
@@ -3103,7 +3207,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「とりあえずについてどう思われますか？」 (toriaezu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on For now / to start with?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・とりあえずについてどう思われますか？ (toriaezu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on For now / to start with?"
         }
       ]
     }

@@ -1,10 +1,10 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import * as wanakana from 'wanakana';
 import { speakJapanese } from '../models/kana';
 import { LessonExercise } from '../models/curriculum';
-import { CheckCircle2, XCircle, Volume2, Sparkles, ArrowRight } from 'lucide-react';
+import { CheckCircle2, XCircle, Volume2, ArrowRight, ChevronDown } from 'lucide-react';
 
 export interface EvaluationCardSheetWebProps {
   evaluation: 'correct' | 'incorrect' | null;
@@ -52,6 +52,8 @@ export function EvaluationCardSheetWeb({
   hintText,
   onContinue,
 }: EvaluationCardSheetWebProps) {
+  const [isExplanationExpanded, setIsExplanationExpanded] = useState(false);
+
   if (!evaluation || !exercise) return null;
 
   const isCorrect = evaluation === 'correct';
@@ -136,12 +138,32 @@ export function EvaluationCardSheetWeb({
       </div>
 
       {explanation && (
-        <div className="bg-[#2a2415] border border-[#fbbf24]/50 rounded-xl p-3.5 flex items-start gap-2.5 text-xs text-[#fbbf24]">
-          <Sparkles size={16} className="shrink-0 mt-0.5" />
-          <div className="space-y-0.5">
-            <span className="font-bold uppercase font-mono tracking-wider text-[10px] block">Grammar Explanation &amp; Context</span>
-            <p className="text-[#f0f0f0] font-medium leading-relaxed">{explanation}</p>
-          </div>
+        <div className="bg-[#1c180e] border border-[#fbbf24]/40 rounded-xl overflow-hidden text-xs">
+          <button
+            onClick={() => setIsExplanationExpanded((prev) => !prev)}
+            className="w-full px-4 py-3 bg-[#2a2415] hover:bg-[#342c19] text-[#fbbf24] flex items-center justify-between transition text-left cursor-pointer"
+          >
+            <span className="font-bold uppercase font-mono tracking-wider text-[11px]">
+              Grammar Explanation &amp; Cultural Context
+            </span>
+            <span className="text-[11px] font-mono font-bold flex items-center gap-1 text-[#fbbf24]">
+              <span>{isExplanationExpanded ? 'Hide Details' : 'View Deep Context'}</span>
+              <ChevronDown
+                size={14}
+                className={`transition-transform duration-200 ${isExplanationExpanded ? 'rotate-180' : ''}`}
+              />
+            </span>
+          </button>
+
+          {isExplanationExpanded && (
+            <div className="p-4 bg-[#14110a] text-[#f0f0f0] font-medium leading-relaxed border-t border-[#fbbf24]/20 space-y-2.5 animate-in fade-in duration-200">
+              {explanation.split('\n\n').map((paragraph, pIdx) => (
+                <p key={pIdx} className="text-xs text-[#e2e8f0] leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          )}
         </div>
       )}
 

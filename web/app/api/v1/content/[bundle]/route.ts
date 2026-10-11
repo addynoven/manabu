@@ -15,7 +15,7 @@ import vocabN1 from '@/data/vocab_n1.json';
 
 export const runtime = 'nodejs';
 
-const BUNDLE_VERSION = 10;
+const BUNDLE_VERSION = 11;
 
 const BUNDLE_MAP: Record<string, () => unknown> = {
   curriculum: () => MANABU_CURRICULUM,

@@ -50,7 +50,8 @@
             "Yesterday",
             "Night / evening"
           ],
-          "correctAnswer": "To wake up / get up"
+          "correctAnswer": "To wake up / get up",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「起きる」 (okiru) expresses 'To wake up / get up'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・起きる (okiru) — To wake up / get up"
         },
         {
           "id": "u3_l1_2",
@@ -70,7 +71,8 @@
             "ぬ",
             "ん"
           ],
-          "correctAnswer": "おきる"
+          "correctAnswer": "おきる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「起きる」 (okiru) expresses 'Build 'To wake up / get up''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・起きる (okiru) — Build 'To wake up / get up'"
         },
         {
           "id": "u3_l1_3",
@@ -89,7 +91,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the object of the action verb."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎日、日本語を寝る。」 (Mainichi, nihongo o neru.) expresses 'Fill in direct object particle 'を' (o): To sleep / go to bed Japanese every day.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎日、日本語を寝る。 (Mainichi, nihongo o neru.) — Fill in direct object particle 'を' (o): To sleep / go to bed Japanese every day."
         },
         {
           "id": "u3_l1_4",
@@ -111,7 +113,8 @@
             "寝る",
             "です"
           ],
-          "correctAnswer": "これは寝るです"
+          "correctAnswer": "これは寝るです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは寝るです」 (Kore wa neru desu.) expresses 'This is To sleep / go to bed.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは寝るです (Kore wa neru desu.) — This is To sleep / go to bed."
         },
         {
           "id": "u3_l1_5",
@@ -128,7 +131,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "食べる"
+          "correctAnswer": "食べる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食べる」 (taberu) expresses 'Pronounce: To eat'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食べる (taberu) — Pronounce: To eat"
         },
         {
           "id": "u3_l1_6",
@@ -148,7 +152,8 @@
             "食べる",
             "です"
           ],
-          "correctAnswer": "食べるです"
+          "correctAnswer": "食べるです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食べるです」 (taberu desu.) expresses 'It is To eat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食べるです (taberu desu.) — It is To eat."
         },
         {
           "id": "u3_l1_7",
@@ -188,7 +193,8 @@
               "romaji": "nomu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「起きる・寝る・食べる・飲む」 (okiru, neru, taberu, nomu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・起きる・寝る・食べる・飲む (okiru, neru, taberu, nomu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l1_8",
@@ -212,7 +218,8 @@
             "アメリカ出身です",
             "はい、元気です"
           ],
-          "correctAnswer": "7時半に起きます。"
+          "correctAnswer": "7時半に起きます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎朝、何時に起きますか？」 (Maiasa, nanji ni okimasu ka?) expresses 'Tanaka: What time do you wake up every morning?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎朝、何時に起きますか？ (Maiasa, nanji ni okimasu ka?) — Tanaka: What time do you wake up every morning?"
         }
       ]
     },
@@ -252,7 +259,8 @@
             "Holiday / day off",
             "Yesterday"
           ],
-          "correctAnswer": "To drink"
+          "correctAnswer": "To drink",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「飲む」 (nomu) expresses 'To drink'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・飲む (nomu) — To drink"
         },
         {
           "id": "u3_l2_2",
@@ -272,7 +280,8 @@
             "ら",
             "わ"
           ],
-          "correctAnswer": "のむ"
+          "correctAnswer": "のむ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「飲む」 (nomu) expresses 'Build 'To drink''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・飲む (nomu) — Build 'To drink'"
         },
         {
           "id": "u3_l2_3",
@@ -291,7 +300,7 @@
             "で"
           ],
           "correctAnswer": "へ",
-          "explanation": "助詞「へ」 (e) marks direction of travel towards a destination."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「電車で学校へ行く。」 (Densha de gakkou e iku.) expresses 'Fill in direction particle 'へ' (e): Go to school by train.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・電車で学校へ行く。 (Densha de gakkou e iku.) — Fill in direction particle 'へ' (e): Go to school by train."
         },
         {
           "id": "u3_l2_4",
@@ -313,7 +322,8 @@
             "行く",
             "です"
           ],
-          "correctAnswer": "これは行くです"
+          "correctAnswer": "これは行くです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは行くです」 (Kore wa iku desu.) expresses 'This is To go.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは行くです (Kore wa iku desu.) — This is To go."
         },
         {
           "id": "u3_l2_5",
@@ -330,7 +340,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "来る"
+          "correctAnswer": "来る",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「来る」 (kuru) expresses 'Pronounce: To come'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・来る (kuru) — Pronounce: To come"
         },
         {
           "id": "u3_l2_6",
@@ -350,7 +361,8 @@
             "来",
             "ます"
           ],
-          "correctAnswer": "来ます"
+          "correctAnswer": "来ます",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「来ます」 (kimasu.) expresses 'I come / will come.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・来ます (kimasu.) — I come / will come."
         },
         {
           "id": "u3_l2_7",
@@ -390,7 +402,8 @@
               "romaji": "kaeru"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「飲む・行く・来る・帰る」 (nomu, iku, kuru, kaeru) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・飲む・行く・来る・帰る (nomu, iku, kuru, kaeru) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l2_8",
@@ -414,7 +427,8 @@
             "夜寝ます",
             "こんにちは"
           ],
-          "correctAnswer": "電車で30分くらいかけて行きます。"
+          "correctAnswer": "電車で30分くらいかけて行きます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「会社へはどうやって行きますか？」 (Kaisha e wa dou yatte ikimasu ka?) expresses 'Ken: How do you get to your office?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・会社へはどうやって行きますか？ (Kaisha e wa dou yatte ikimasu ka?) — Ken: How do you get to your office?"
         }
       ]
     },
@@ -454,7 +468,8 @@
             "Always",
             "To return home"
           ],
-          "correctAnswer": "To return home"
+          "correctAnswer": "To return home",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「帰る」 (kaeru) expresses 'To return home'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・帰る (kaeru) — To return home"
         },
         {
           "id": "u3_l3_2",
@@ -474,7 +489,8 @@
             "え",
             "る"
           ],
-          "correctAnswer": "かえる"
+          "correctAnswer": "かえる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「帰る」 (kaeru) expresses 'Build 'To return home''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・帰る (kaeru) — Build 'To return home'"
         },
         {
           "id": "u3_l3_3",
@@ -493,7 +509,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the object of the action verb."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎日、日本語を買う。」 (Mainichi, nihongo o kau.) expresses 'Fill in direct object particle 'を' (o): To buy Japanese every day.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎日、日本語を買う。 (Mainichi, nihongo o kau.) — Fill in direct object particle 'を' (o): To buy Japanese every day."
         },
         {
           "id": "u3_l3_4",
@@ -515,7 +531,8 @@
             "買う",
             "です"
           ],
-          "correctAnswer": "これは買うです"
+          "correctAnswer": "これは買うです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは買うです」 (Kore wa kau desu.) expresses 'This is To buy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは買うです (Kore wa kau desu.) — This is To buy."
         },
         {
           "id": "u3_l3_5",
@@ -532,7 +549,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "朝"
+          "correctAnswer": "朝",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「朝」 (asa) expresses 'Pronounce: Morning'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・朝 (asa) — Pronounce: Morning"
         },
         {
           "id": "u3_l3_6",
@@ -552,7 +570,8 @@
             "朝",
             "です"
           ],
-          "correctAnswer": "朝です"
+          "correctAnswer": "朝です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「朝です」 (asa desu.) expresses 'It is Morning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・朝です (asa desu.) — It is Morning."
         },
         {
           "id": "u3_l3_7",
@@ -592,7 +611,8 @@
               "romaji": "hiru"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「帰る・買う・朝・昼」 (kaeru, kau, asa, hiru) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・帰る・買う・朝・昼 (kaeru, kau, asa, hiru) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l3_8",
@@ -616,7 +636,8 @@
             "私は学生です",
             "朝7時です"
           ],
-          "correctAnswer": "いいですね！行きましょう！"
+          "correctAnswer": "いいですね！行きましょう！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「一緒に晩ごはんを食べませんか？」 (Issho ni bangohan o tabemasen ka?) expresses 'Friend: Would you like to have dinner together tonight?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・一緒に晩ごはんを食べませんか？ (Issho ni bangohan o tabemasen ka?) — Friend: Would you like to have dinner together tonight?"
         }
       ]
     },
@@ -656,7 +677,8 @@
             "Noon / daytime",
             "Lunch"
           ],
-          "correctAnswer": "Noon / daytime"
+          "correctAnswer": "Noon / daytime",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「昼」 (hiru) expresses 'Noon / daytime'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・昼 (hiru) — Noon / daytime"
         },
         {
           "id": "u3_l4_2",
@@ -676,7 +698,8 @@
             "わ",
             "し"
           ],
-          "correctAnswer": "ひる"
+          "correctAnswer": "ひる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「昼」 (hiru) expresses 'Build 'Noon / daytime''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・昼 (hiru) — Build 'Noon / daytime'"
         },
         {
           "id": "u3_l4_3",
@@ -695,7 +718,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な夜です。」 (Kore wa ichiban taisetsu na yoru desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Night / evening.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な夜です。 (Kore wa ichiban taisetsu na yoru desu.) — Fill in topic particle 'は' (wa): This is the most important Night / evening."
         },
         {
           "id": "u3_l4_4",
@@ -717,7 +740,8 @@
             "夜",
             "です"
           ],
-          "correctAnswer": "これは夜です"
+          "correctAnswer": "これは夜です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは夜です」 (Kore wa yoru desu.) expresses 'This is Night / evening.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは夜です (Kore wa yoru desu.) — This is Night / evening."
         },
         {
           "id": "u3_l4_5",
@@ -734,7 +758,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "朝ごはん"
+          "correctAnswer": "朝ごはん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「朝ごはん」 (asagohan) expresses 'Pronounce: Breakfast'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・朝ごはん (asagohan) — Pronounce: Breakfast"
         },
         {
           "id": "u3_l4_6",
@@ -754,7 +779,8 @@
             "朝ごはん",
             "です"
           ],
-          "correctAnswer": "朝ごはんです"
+          "correctAnswer": "朝ごはんです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「朝ごはんです」 (asagohan desu.) expresses 'It is Breakfast.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・朝ごはんです (asagohan desu.) — It is Breakfast."
         },
         {
           "id": "u3_l4_7",
@@ -794,7 +820,8 @@
               "romaji": "hirugohan"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「昼・夜・朝ごはん・昼ごはん」 (hiru, yoru, asagohan, hirugohan) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・昼・夜・朝ごはん・昼ごはん (hiru, yoru, asagohan, hirugohan) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l4_8",
@@ -818,7 +845,8 @@
             "お茶を飲みます",
             "初めまして"
           ],
-          "correctAnswer": "日本語の漢字と文法を勉強しました。"
+          "correctAnswer": "日本語の漢字と文法を勉強しました。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「今日は学校で何を勉強したの？」 (Kyou wa gakkou de nani o benkyou shita no?) expresses 'Mom: What did you study at school today?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・今日は学校で何を勉強したの？ (Kyou wa gakkou de nani o benkyou shita no?) — Mom: What did you study at school today?"
         }
       ]
     },
@@ -858,7 +886,8 @@
             "Lunch",
             "Job / work"
           ],
-          "correctAnswer": "Lunch"
+          "correctAnswer": "Lunch",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「昼ごはん」 (hirugohan) expresses 'Lunch'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・昼ごはん (hirugohan) — Lunch"
         },
         {
           "id": "u3_l5_2",
@@ -878,7 +907,8 @@
             "せ",
             "ん"
           ],
-          "correctAnswer": "ひるごはん"
+          "correctAnswer": "ひるごはん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「昼ごはん」 (hirugohan) expresses 'Build 'Lunch''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・昼ごはん (hirugohan) — Build 'Lunch'"
         },
         {
           "id": "u3_l5_3",
@@ -897,7 +927,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な晩ごはんです。」 (Kore wa ichiban taisetsu na bangohan desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Dinner.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な晩ごはんです。 (Kore wa ichiban taisetsu na bangohan desu.) — Fill in topic particle 'は' (wa): This is the most important Dinner."
         },
         {
           "id": "u3_l5_4",
@@ -919,7 +949,8 @@
             "晩ごはん",
             "です"
           ],
-          "correctAnswer": "これは晩ごはんです"
+          "correctAnswer": "これは晩ごはんです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは晩ごはんです」 (Kore wa bangohan desu.) expresses 'This is Dinner.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは晩ごはんです (Kore wa bangohan desu.) — This is Dinner."
         },
         {
           "id": "u3_l5_5",
@@ -936,7 +967,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "今"
+          "correctAnswer": "今",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「今」 (ima) expresses 'Pronounce: Now'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・今 (ima) — Pronounce: Now"
         },
         {
           "id": "u3_l5_6",
@@ -956,7 +988,8 @@
             "今",
             "です"
           ],
-          "correctAnswer": "今です"
+          "correctAnswer": "今です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「今です」 (ima desu.) expresses 'It is Now.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・今です (ima desu.) — It is Now."
         },
         {
           "id": "u3_l5_7",
@@ -996,7 +1029,8 @@
               "romaji": "nanji"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「昼ごはん・晩ごはん・今・何時」 (hirugohan, bangohan, ima, nanji) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・昼ごはん・晩ごはん・今・何時 (hirugohan, bangohan, ima, nanji) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l5_8",
@@ -1020,7 +1054,8 @@
             "アメリカ出身です",
             "はい、元気です"
           ],
-          "correctAnswer": "7時半に起きます。"
+          "correctAnswer": "7時半に起きます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎朝、何時に起きますか？」 (Maiasa, nanji ni okimasu ka?) expresses 'Tanaka: What time do you wake up every morning?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎朝、何時に起きますか？ (Maiasa, nanji ni okimasu ka?) — Tanaka: What time do you wake up every morning?"
         }
       ]
     },
@@ -1063,7 +1098,8 @@
             "What time",
             "Friend"
           ],
-          "correctAnswer": "What time"
+          "correctAnswer": "What time",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「何時」 (nanji) expresses 'What time'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・何時 (nanji) — What time"
         },
         {
           "id": "u3_l6_2",
@@ -1083,7 +1119,8 @@
             "じ",
             "ん"
           ],
-          "correctAnswer": "なんじ"
+          "correctAnswer": "なんじ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「何時」 (nanji) expresses 'Build 'What time''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・何時 (nanji) — Build 'What time'"
         },
         {
           "id": "u3_l6_3",
@@ -1102,7 +1139,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な今日です。」 (Kore wa ichiban taisetsu na kyou desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Today.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な今日です。 (Kore wa ichiban taisetsu na kyou desu.) — Fill in topic particle 'は' (wa): This is the most important Today."
         },
         {
           "id": "u3_l6_4",
@@ -1124,7 +1161,8 @@
             "今日",
             "です"
           ],
-          "correctAnswer": "これは今日です"
+          "correctAnswer": "これは今日です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは今日です」 (Kore wa kyou desu.) expresses 'This is Today.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは今日です (Kore wa kyou desu.) — This is Today."
         },
         {
           "id": "u3_l6_5",
@@ -1141,7 +1179,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "明日"
+          "correctAnswer": "明日",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「明日」 (ashita) expresses 'Pronounce: Tomorrow'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・明日 (ashita) — Pronounce: Tomorrow"
         },
         {
           "id": "u3_l6_6",
@@ -1161,7 +1200,8 @@
             "明日",
             "です"
           ],
-          "correctAnswer": "明日です"
+          "correctAnswer": "明日です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「明日です」 (ashita desu.) expresses 'It is Tomorrow.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・明日です (ashita desu.) — It is Tomorrow."
         },
         {
           "id": "u3_l6_7",
@@ -1201,7 +1241,8 @@
               "romaji": "kinou"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「何時・今日・明日・昨日」 (nanji, kyou, ashita, kinou) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・何時・今日・明日・昨日 (nanji, kyou, ashita, kinou) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l6_8",
@@ -1225,7 +1266,8 @@
             "夜寝ます",
             "こんにちは"
           ],
-          "correctAnswer": "電車で30分くらいかけて行きます。"
+          "correctAnswer": "電車で30分くらいかけて行きます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「会社へはどうやって行きますか？」 (Kaisha e wa dou yatte ikimasu ka?) expresses 'Ken: How do you get to your office?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・会社へはどうやって行きますか？ (Kaisha e wa dou yatte ikimasu ka?) — Ken: How do you get to your office?"
         }
       ]
     },
@@ -1266,7 +1308,8 @@
             "To wake up / get up",
             "Friend"
           ],
-          "correctAnswer": "Yesterday"
+          "correctAnswer": "Yesterday",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「昨日」 (kinou) expresses 'Yesterday'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・昨日 (kinou) — Yesterday"
         },
         {
           "id": "u3_l7_2",
@@ -1286,7 +1329,8 @@
             "え",
             "け"
           ],
-          "correctAnswer": "きのう"
+          "correctAnswer": "きのう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「昨日」 (kinou) expresses 'Build 'Yesterday''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・昨日 (kinou) — Build 'Yesterday'"
         },
         {
           "id": "u3_l7_3",
@@ -1305,7 +1349,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な毎日です。」 (Kore wa ichiban taisetsu na mainichi desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Every day.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な毎日です。 (Kore wa ichiban taisetsu na mainichi desu.) — Fill in topic particle 'は' (wa): This is the most important Every day."
         },
         {
           "id": "u3_l7_4",
@@ -1327,7 +1371,8 @@
             "毎日",
             "です"
           ],
-          "correctAnswer": "これは毎日です"
+          "correctAnswer": "これは毎日です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは毎日です」 (Kore wa mainichi desu.) expresses 'This is Every day.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは毎日です (Kore wa mainichi desu.) — This is Every day."
         },
         {
           "id": "u3_l7_5",
@@ -1344,7 +1389,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "いつも"
+          "correctAnswer": "いつも",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いつも」 (itsumo) expresses 'Pronounce: Always'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いつも (itsumo) — Pronounce: Always"
         },
         {
           "id": "u3_l7_6",
@@ -1364,7 +1410,8 @@
             "いつも",
             "です"
           ],
-          "correctAnswer": "いつもです"
+          "correctAnswer": "いつもです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いつもです」 (itsumo desu.) expresses 'It is Always.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いつもです (itsumo desu.) — It is Always."
         },
         {
           "id": "u3_l7_7",
@@ -1404,7 +1451,8 @@
               "romaji": "tokidoki"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「昨日・毎日・いつも・時々」 (kinou, mainichi, itsumo, tokidoki) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・昨日・毎日・いつも・時々 (kinou, mainichi, itsumo, tokidoki) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l7_8",
@@ -1428,7 +1476,8 @@
             "私は学生です",
             "朝7時です"
           ],
-          "correctAnswer": "いいですね！行きましょう！"
+          "correctAnswer": "いいですね！行きましょう！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「一緒に晩ごはんを食べませんか？」 (Issho ni bangohan o tabemasen ka?) expresses 'Friend: Would you like to have dinner together tonight?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・一緒に晩ごはんを食べませんか？ (Issho ni bangohan o tabemasen ka?) — Friend: Would you like to have dinner together tonight?"
         }
       ]
     },
@@ -1469,7 +1518,8 @@
             "Yesterday",
             "Sometimes"
           ],
-          "correctAnswer": "Sometimes"
+          "correctAnswer": "Sometimes",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「時々」 (tokidoki) expresses 'Sometimes'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・時々 (tokidoki) — Sometimes"
         },
         {
           "id": "u3_l8_2",
@@ -1489,7 +1539,8 @@
             "き",
             "と"
           ],
-          "correctAnswer": "ときどき"
+          "correctAnswer": "ときどき",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「時々」 (tokidoki) expresses 'Build 'Sometimes''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・時々 (tokidoki) — Build 'Sometimes'"
         },
         {
           "id": "u3_l8_3",
@@ -1508,7 +1559,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な週末です。」 (Kore wa ichiban taisetsu na shuumatsu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Weekend.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な週末です。 (Kore wa ichiban taisetsu na shuumatsu desu.) — Fill in topic particle 'は' (wa): This is the most important Weekend."
         },
         {
           "id": "u3_l8_4",
@@ -1530,7 +1581,8 @@
             "週末",
             "です"
           ],
-          "correctAnswer": "これは週末です"
+          "correctAnswer": "これは週末です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは週末です」 (Kore wa shuumatsu desu.) expresses 'This is Weekend.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは週末です (Kore wa shuumatsu desu.) — This is Weekend."
         },
         {
           "id": "u3_l8_5",
@@ -1547,7 +1599,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "休み"
+          "correctAnswer": "休み",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「休み」 (yasumi) expresses 'Pronounce: Holiday / day off'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・休み (yasumi) — Pronounce: Holiday / day off"
         },
         {
           "id": "u3_l8_6",
@@ -1567,7 +1620,8 @@
             "休み",
             "です"
           ],
-          "correctAnswer": "休みです"
+          "correctAnswer": "休みです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「休みです」 (yasumi desu.) expresses 'It is Holiday / day off.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・休みです (yasumi desu.) — It is Holiday / day off."
         },
         {
           "id": "u3_l8_7",
@@ -1607,7 +1661,8 @@
               "romaji": "benkyou suru"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「時々・週末・休み・勉強する」 (tokidoki, shuumatsu, yasumi, benkyou suru) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・時々・週末・休み・勉強する (tokidoki, shuumatsu, yasumi, benkyou suru) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l8_8",
@@ -1631,7 +1686,8 @@
             "お茶を飲みます",
             "初めまして"
           ],
-          "correctAnswer": "日本語の漢字と文法を勉強しました。"
+          "correctAnswer": "日本語の漢字と文法を勉強しました。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「今日は学校で何を勉強したの？」 (Kyou wa gakkou de nani o benkyou shita no?) expresses 'Mom: What did you study at school today?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・今日は学校で何を勉強したの？ (Kyou wa gakkou de nani o benkyou shita no?) — Mom: What did you study at school today?"
         }
       ]
     },
@@ -1673,7 +1729,8 @@
             "To write",
             "To work"
           ],
-          "correctAnswer": "To study"
+          "correctAnswer": "To study",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「勉強する」 (benkyou suru) expresses 'To study'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・勉強する (benkyou suru) — To study"
         },
         {
           "id": "u3_l9_2",
@@ -1693,7 +1750,8 @@
             "ら",
             "た"
           ],
-          "correctAnswer": "はたらく"
+          "correctAnswer": "はたらく",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「働く」 (hataraku) expresses 'Build 'To work''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・働く (hataraku) — Build 'To work'"
         },
         {
           "id": "u3_l9_3",
@@ -1712,7 +1770,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the object of the action verb."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎日、日本語を働く。」 (Mainichi, nihongo o hataraku.) expresses 'Fill in direct object particle 'を' (o): To work Japanese every day.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎日、日本語を働く。 (Mainichi, nihongo o hataraku.) — Fill in direct object particle 'を' (o): To work Japanese every day."
         },
         {
           "id": "u3_l9_4",
@@ -1734,7 +1792,8 @@
             "働く",
             "です"
           ],
-          "correctAnswer": "これは働くです"
+          "correctAnswer": "これは働くです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは働くです」 (Kore wa hataraku desu.) expresses 'This is To work.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは働くです (Kore wa hataraku desu.) — This is To work."
         },
         {
           "id": "u3_l9_5",
@@ -1751,7 +1810,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "仕事"
+          "correctAnswer": "仕事",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仕事」 (shigoto) expresses 'Pronounce: Job / work'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仕事 (shigoto) — Pronounce: Job / work"
         },
         {
           "id": "u3_l9_6",
@@ -1773,7 +1833,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "仕事をお願いします"
+          "correctAnswer": "仕事をお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仕事をお願いします」 (shigoto o onegaishimasu.) expresses 'Job / work, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仕事をお願いします (shigoto o onegaishimasu.) — Job / work, please."
         },
         {
           "id": "u3_l9_7",
@@ -1813,7 +1874,8 @@
               "romaji": "gakkou"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「勉強する・働く・仕事・学校」 (benkyou suru, hataraku, shigoto, gakkou) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・勉強する・働く・仕事・学校 (benkyou suru, hataraku, shigoto, gakkou) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l9_8",
@@ -1837,7 +1899,8 @@
             "アメリカ出身です",
             "はい、元気です"
           ],
-          "correctAnswer": "7時半に起きます。"
+          "correctAnswer": "7時半に起きます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎朝、何時に起きますか？」 (Maiasa, nanji ni okimasu ka?) expresses 'Tanaka: What time do you wake up every morning?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎朝、何時に起きますか？ (Maiasa, nanji ni okimasu ka?) — Tanaka: What time do you wake up every morning?"
         }
       ]
     },
@@ -1879,7 +1942,8 @@
             "To buy",
             "Yesterday"
           ],
-          "correctAnswer": "School"
+          "correctAnswer": "School",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「学校」 (gakkou) expresses 'School'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・学校 (gakkou) — School"
         },
         {
           "id": "u3_l10_2",
@@ -1899,7 +1963,8 @@
             "を",
             "ゆ"
           ],
-          "correctAnswer": "がっこう"
+          "correctAnswer": "がっこう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「学校」 (gakkou) expresses 'Build 'School''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・学校 (gakkou) — Build 'School'"
         },
         {
           "id": "u3_l10_3",
@@ -1918,7 +1983,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な会社です。」 (Kore wa ichiban taisetsu na kaisha desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Company / office.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な会社です。 (Kore wa ichiban taisetsu na kaisha desu.) — Fill in topic particle 'は' (wa): This is the most important Company / office."
         },
         {
           "id": "u3_l10_4",
@@ -1940,7 +2005,8 @@
             "会社",
             "です"
           ],
-          "correctAnswer": "これは会社です"
+          "correctAnswer": "これは会社です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは会社です」 (Kore wa kaisha desu.) expresses 'This is Company / office.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは会社です (Kore wa kaisha desu.) — This is Company / office."
         },
         {
           "id": "u3_l10_5",
@@ -1957,7 +2023,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "家"
+          "correctAnswer": "家",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家」 (ie) expresses 'Pronounce: House / home'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家 (ie) — Pronounce: House / home"
         },
         {
           "id": "u3_l10_6",
@@ -1977,7 +2044,8 @@
             "家",
             "です"
           ],
-          "correctAnswer": "家です"
+          "correctAnswer": "家です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家です」 (ie desu.) expresses 'It is House / home.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家です (ie desu.) — It is House / home."
         },
         {
           "id": "u3_l10_7",
@@ -2017,7 +2085,8 @@
               "romaji": "densha"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「学校・会社・家・電車」 (gakkou, kaisha, ie, densha) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・学校・会社・家・電車 (gakkou, kaisha, ie, densha) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l10_8",
@@ -2041,7 +2110,8 @@
             "夜寝ます",
             "こんにちは"
           ],
-          "correctAnswer": "電車で30分くらいかけて行きます。"
+          "correctAnswer": "電車で30分くらいかけて行きます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「会社へはどうやって行きますか？」 (Kaisha e wa dou yatte ikimasu ka?) expresses 'Ken: How do you get to your office?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・会社へはどうやって行きますか？ (Kaisha e wa dou yatte ikimasu ka?) — Ken: How do you get to your office?"
         }
       ]
     },
@@ -2081,7 +2151,8 @@
             "To return home",
             "Always"
           ],
-          "correctAnswer": "Train"
+          "correctAnswer": "Train",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「電車」 (densha) expresses 'Train'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・電車 (densha) — Train"
         },
         {
           "id": "u3_l11_2",
@@ -2101,7 +2172,8 @@
             "ま",
             "ゃ"
           ],
-          "correctAnswer": "でんしゃ"
+          "correctAnswer": "でんしゃ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「電車」 (densha) expresses 'Build 'Train''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・電車 (densha) — Build 'Train'"
         },
         {
           "id": "u3_l11_3",
@@ -2120,7 +2192,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なバスです。」 (Kore wa ichiban taisetsu na basu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Bus.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なバスです。 (Kore wa ichiban taisetsu na basu desu.) — Fill in topic particle 'は' (wa): This is the most important Bus."
         },
         {
           "id": "u3_l11_4",
@@ -2142,7 +2214,8 @@
             "バス",
             "です"
           ],
-          "correctAnswer": "これはバスです"
+          "correctAnswer": "これはバスです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはバスです」 (Kore wa basu desu.) expresses 'This is Bus.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはバスです (Kore wa basu desu.) — This is Bus."
         },
         {
           "id": "u3_l11_5",
@@ -2159,7 +2232,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "話す"
+          "correctAnswer": "話す",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「話す」 (hanasu) expresses 'Pronounce: To talk / speak'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・話す (hanasu) — Pronounce: To talk / speak"
         },
         {
           "id": "u3_l11_6",
@@ -2179,7 +2253,8 @@
             "話す",
             "です"
           ],
-          "correctAnswer": "話すです"
+          "correctAnswer": "話すです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「話すです」 (hanasu desu.) expresses 'It is To talk / speak.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・話すです (hanasu desu.) — It is To talk / speak."
         },
         {
           "id": "u3_l11_7",
@@ -2219,7 +2294,8 @@
               "romaji": "kaku"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「電車・バス・話す・書く」 (densha, basu, hanasu, kaku) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・電車・バス・話す・書く (densha, basu, hanasu, kaku) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l11_8",
@@ -2243,7 +2319,8 @@
             "私は学生です",
             "朝7時です"
           ],
-          "correctAnswer": "いいですね！行きましょう！"
+          "correctAnswer": "いいですね！行きましょう！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「一緒に晩ごはんを食べませんか？」 (Issho ni bangohan o tabemasen ka?) expresses 'Friend: Would you like to have dinner together tonight?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・一緒に晩ごはんを食べませんか？ (Issho ni bangohan o tabemasen ka?) — Friend: Would you like to have dinner together tonight?"
         }
       ]
     },
@@ -2283,7 +2360,8 @@
             "Lunch",
             "To work"
           ],
-          "correctAnswer": "To write"
+          "correctAnswer": "To write",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「書く」 (kaku) expresses 'To write'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・書く (kaku) — To write"
         },
         {
           "id": "u3_l12_2",
@@ -2303,7 +2381,8 @@
             "せ",
             "ほ"
           ],
-          "correctAnswer": "かく"
+          "correctAnswer": "かく",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「書く」 (kaku) expresses 'Build 'To write''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・書く (kaku) — Build 'To write'"
         },
         {
           "id": "u3_l12_3",
@@ -2322,7 +2401,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the object of the action verb."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎日、日本語を読む。」 (Mainichi, nihongo o yomu.) expresses 'Fill in direct object particle 'を' (o): To read Japanese every day.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎日、日本語を読む。 (Mainichi, nihongo o yomu.) — Fill in direct object particle 'を' (o): To read Japanese every day."
         },
         {
           "id": "u3_l12_4",
@@ -2344,7 +2423,8 @@
             "読む",
             "です"
           ],
-          "correctAnswer": "これは読むです"
+          "correctAnswer": "これは読むです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは読むです」 (Kore wa yomu desu.) expresses 'This is To read.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは読むです (Kore wa yomu desu.) — This is To read."
         },
         {
           "id": "u3_l12_5",
@@ -2361,7 +2441,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "会う"
+          "correctAnswer": "会う",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「会う」 (au) expresses 'Pronounce: To meet'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・会う (au) — Pronounce: To meet"
         },
         {
           "id": "u3_l12_6",
@@ -2381,7 +2462,8 @@
             "会う",
             "です"
           ],
-          "correctAnswer": "会うです"
+          "correctAnswer": "会うです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「会うです」 (au desu.) expresses 'It is To meet.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・会うです (au desu.) — It is To meet."
         },
         {
           "id": "u3_l12_7",
@@ -2421,7 +2503,8 @@
               "romaji": "tomodachi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「書く・読む・会う・友達」 (kaku, yomu, au, tomodachi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・書く・読む・会う・友達 (kaku, yomu, au, tomodachi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l12_8",
@@ -2445,7 +2528,8 @@
             "お茶を飲みます",
             "初めまして"
           ],
-          "correctAnswer": "日本語の漢字と文法を勉強しました。"
+          "correctAnswer": "日本語の漢字と文法を勉強しました。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「今日は学校で何を勉強したの？」 (Kyou wa gakkou de nani o benkyou shita no?) expresses 'Mom: What did you study at school today?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・今日は学校で何を勉強したの？ (Kyou wa gakkou de nani o benkyou shita no?) — Mom: What did you study at school today?"
         }
       ]
     },
@@ -2487,7 +2571,8 @@
             "Friend",
             "Today"
           ],
-          "correctAnswer": "Friend"
+          "correctAnswer": "Friend",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「友達」 (tomodachi) expresses 'Friend'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・友達 (tomodachi) — Friend"
         },
         {
           "id": "u3_l13_2",
@@ -2507,7 +2592,8 @@
             "は",
             "も"
           ],
-          "correctAnswer": "ともだち"
+          "correctAnswer": "ともだち",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「友達」 (tomodachi) expresses 'Build 'Friend''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・友達 (tomodachi) — Build 'Friend'"
         },
         {
           "id": "u3_l13_3",
@@ -2526,7 +2612,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な本です。」 (Kore wa ichiban taisetsu na hon desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Book.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な本です。 (Kore wa ichiban taisetsu na hon desu.) — Fill in topic particle 'は' (wa): This is the most important Book."
         },
         {
           "id": "u3_l13_4",
@@ -2548,7 +2634,8 @@
             "本",
             "です"
           ],
-          "correctAnswer": "これは本です"
+          "correctAnswer": "これは本です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは本です」 (Kore wa hon desu.) expresses 'This is Book.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは本です (Kore wa hon desu.) — This is Book."
         },
         {
           "id": "u3_l13_5",
@@ -2565,7 +2652,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "新聞"
+          "correctAnswer": "新聞",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「新聞」 (shinbun) expresses 'Pronounce: Newspaper'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・新聞 (shinbun) — Pronounce: Newspaper"
         },
         {
           "id": "u3_l13_6",
@@ -2587,7 +2675,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "新聞をお願いします"
+          "correctAnswer": "新聞をお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「新聞をお願いします」 (shinbun o onegaishimasu.) expresses 'Newspaper, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・新聞をお願いします (shinbun o onegaishimasu.) — Newspaper, please."
         },
         {
           "id": "u3_l13_7",
@@ -2627,7 +2716,8 @@
               "romaji": "tegami"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「友達・本・新聞・手紙」 (tomodachi, hon, shinbun, tegami) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・友達・本・新聞・手紙 (tomodachi, hon, shinbun, tegami) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l13_8",
@@ -2651,7 +2741,8 @@
             "アメリカ出身です",
             "はい、元気です"
           ],
-          "correctAnswer": "7時半に起きます。"
+          "correctAnswer": "7時半に起きます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎朝、何時に起きますか？」 (Maiasa, nanji ni okimasu ka?) expresses 'Tanaka: What time do you wake up every morning?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎朝、何時に起きますか？ (Maiasa, nanji ni okimasu ka?) — Tanaka: What time do you wake up every morning?"
         }
       ]
     },
@@ -2692,7 +2783,8 @@
             "To talk / speak",
             "To wake up / get up"
           ],
-          "correctAnswer": "Letter"
+          "correctAnswer": "Letter",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手紙」 (tegami) expresses 'Letter'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手紙 (tegami) — Letter"
         },
         {
           "id": "u3_l14_2",
@@ -2712,7 +2804,8 @@
             "か",
             "て"
           ],
-          "correctAnswer": "てがみ"
+          "correctAnswer": "てがみ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手紙」 (tegami) expresses 'Build 'Letter''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手紙 (tegami) — Build 'Letter'"
         },
         {
           "id": "u3_l14_3",
@@ -2731,7 +2824,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the object of the action verb."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎日、日本語を起きる。」 (Mainichi, nihongo o okiru.) expresses 'Fill in direct object particle 'を' (o): To wake up / get up Japanese every day.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎日、日本語を起きる。 (Mainichi, nihongo o okiru.) — Fill in direct object particle 'を' (o): To wake up / get up Japanese every day."
         },
         {
           "id": "u3_l14_4",
@@ -2753,7 +2846,8 @@
             "起きる",
             "です"
           ],
-          "correctAnswer": "これは起きるです"
+          "correctAnswer": "これは起きるです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは起きるです」 (Kore wa okiru desu.) expresses 'This is To wake up / get up.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは起きるです (Kore wa okiru desu.) — This is To wake up / get up."
         },
         {
           "id": "u3_l14_5",
@@ -2770,7 +2864,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "寝る"
+          "correctAnswer": "寝る",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「寝る」 (neru) expresses 'Pronounce: To sleep / go to bed'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・寝る (neru) — Pronounce: To sleep / go to bed"
         },
         {
           "id": "u3_l14_6",
@@ -2790,7 +2885,8 @@
             "寝る",
             "です"
           ],
-          "correctAnswer": "寝るです"
+          "correctAnswer": "寝るです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「寝るです」 (neru desu.) expresses 'It is To sleep / go to bed.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・寝るです (neru desu.) — It is To sleep / go to bed."
         },
         {
           "id": "u3_l14_7",
@@ -2830,7 +2926,8 @@
               "romaji": "taberu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「手紙・起きる・寝る・食べる」 (tegami, okiru, neru, taberu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・手紙・起きる・寝る・食べる (tegami, okiru, neru, taberu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l14_8",
@@ -2854,7 +2951,8 @@
             "夜寝ます",
             "こんにちは"
           ],
-          "correctAnswer": "電車で30分くらいかけて行きます。"
+          "correctAnswer": "電車で30分くらいかけて行きます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「会社へはどうやって行きますか？」 (Kaisha e wa dou yatte ikimasu ka?) expresses 'Ken: How do you get to your office?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・会社へはどうやって行きますか？ (Kaisha e wa dou yatte ikimasu ka?) — Ken: How do you get to your office?"
         }
       ]
     },
@@ -2894,7 +2992,8 @@
             "Lunch",
             "Every day"
           ],
-          "correctAnswer": "To eat"
+          "correctAnswer": "To eat",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食べる」 (taberu) expresses 'To eat'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食べる (taberu) — To eat"
         },
         {
           "id": "u3_l15_2",
@@ -2914,7 +3013,8 @@
             "た",
             "め"
           ],
-          "correctAnswer": "たべる"
+          "correctAnswer": "たべる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食べる」 (taberu) expresses 'Build 'To eat''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食べる (taberu) — Build 'To eat'"
         },
         {
           "id": "u3_l15_3",
@@ -2933,7 +3033,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the object of the action verb."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎日、日本語を飲む。」 (Mainichi, nihongo o nomu.) expresses 'Fill in direct object particle 'を' (o): To drink Japanese every day.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎日、日本語を飲む。 (Mainichi, nihongo o nomu.) — Fill in direct object particle 'を' (o): To drink Japanese every day."
         },
         {
           "id": "u3_l15_4",
@@ -2955,7 +3055,8 @@
             "飲む",
             "です"
           ],
-          "correctAnswer": "これは飲むです"
+          "correctAnswer": "これは飲むです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは飲むです」 (Kore wa nomu desu.) expresses 'This is To drink.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは飲むです (Kore wa nomu desu.) — This is To drink."
         },
         {
           "id": "u3_l15_5",
@@ -2972,7 +3073,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "行く"
+          "correctAnswer": "行く",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「行く」 (iku) expresses 'Pronounce: To go'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・行く (iku) — Pronounce: To go"
         },
         {
           "id": "u3_l15_6",
@@ -2992,7 +3094,8 @@
             "行く",
             "です"
           ],
-          "correctAnswer": "行くです"
+          "correctAnswer": "行くです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「行くです」 (iku desu.) expresses 'It is To go.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・行くです (iku desu.) — It is To go."
         },
         {
           "id": "u3_l15_7",
@@ -3032,7 +3135,8 @@
               "romaji": "kuru"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食べる・飲む・行く・来る」 (taberu, nomu, iku, kuru) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食べる・飲む・行く・来る (taberu, nomu, iku, kuru) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u3_l15_8",
@@ -3056,7 +3160,8 @@
             "私は学生です",
             "朝7時です"
           ],
-          "correctAnswer": "いいですね！行きましょう！"
+          "correctAnswer": "いいですね！行きましょう！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「一緒に晩ごはんを食べませんか？」 (Issho ni bangohan o tabemasen ka?) expresses 'Friend: Would you like to have dinner together tonight?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・一緒に晩ごはんを食べませんか？ (Issho ni bangohan o tabemasen ka?) — Friend: Would you like to have dinner together tonight?"
         }
       ]
     }

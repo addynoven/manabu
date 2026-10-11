@@ -46,7 +46,8 @@
             "Please / I request...",
             "Cheesecake"
           ],
-          "correctAnswer": "Coffee"
+          "correctAnswer": "Coffee",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「コーヒー」 (koohii) expresses 'Coffee'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・コーヒー (koohii) — Coffee"
         },
         {
           "id": "u4_l1_2",
@@ -66,7 +67,8 @@
             "り",
             "ー"
           ],
-          "correctAnswer": "コーヒー"
+          "correctAnswer": "コーヒー",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「コーヒー」 (koohii) expresses 'Build 'Coffee''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・コーヒー (koohii) — Build 'Coffee'"
         },
         {
           "id": "u4_l1_3",
@@ -85,7 +87,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the direct object of action verb 「飲みます」 (drink)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎朝、冷たいホットコーヒーを飲みます。」 (Maiasa, tsumetai hotto koohii o nomimasu.) expresses 'Fill in object particle 'を' (o): I drink cold Hot coffee every morning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎朝、冷たいホットコーヒーを飲みます。 (Maiasa, tsumetai hotto koohii o nomimasu.) — Fill in object particle 'を' (o): I drink cold Hot coffee every morning."
         },
         {
           "id": "u4_l1_4",
@@ -107,7 +109,8 @@
             "ホットコーヒーを",
             "飲みます"
           ],
-          "correctAnswer": "冷たいホットコーヒーを飲みます"
+          "correctAnswer": "冷たいホットコーヒーを飲みます",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「冷たいホットコーヒーを飲みます」 (Tsumetai hotto koohii o nomimasu.) expresses 'Drink cold Hot coffee.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・冷たいホットコーヒーを飲みます (Tsumetai hotto koohii o nomimasu.) — Drink cold Hot coffee."
         },
         {
           "id": "u4_l1_5",
@@ -124,7 +127,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "アイスティー"
+          "correctAnswer": "アイスティー",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「アイスティー」 (aisu tii) expresses 'Pronounce: Iced tea'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・アイスティー (aisu tii) — Pronounce: Iced tea"
         },
         {
           "id": "u4_l1_6",
@@ -146,7 +150,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "アイスティーをお願いします"
+          "correctAnswer": "アイスティーをお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「アイスティーをお願いします」 (aisu tii o onegaishimasu.) expresses 'Iced tea, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・アイスティーをお願いします (aisu tii o onegaishimasu.) — Iced tea, please."
         },
         {
           "id": "u4_l1_7",
@@ -186,7 +191,8 @@
               "romaji": "koucha"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「コーヒー・ホットコーヒー・アイスティー・紅茶」 (koohii, hotto koohii, aisu tii, koucha) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・コーヒー・ホットコーヒー・アイスティー・紅茶 (koohii, hotto koohii, aisu tii, koucha) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l1_8",
@@ -210,7 +216,8 @@
             "私は学生です",
             "駅はあそこです"
           ],
-          "correctAnswer": "ホットコーヒーのMサイズを一つお願いします。"
+          "correctAnswer": "ホットコーヒーのMサイズを一つお願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご注文はお決まりですか？」 (Gochuumon wa okimari desu ka?) expresses 'Clerk: Welcome! Are you ready to order?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご注文はお決まりですか？ (Gochuumon wa okimari desu ka?) — Clerk: Welcome! Are you ready to order?"
         }
       ]
     },
@@ -251,7 +258,8 @@
             "Black tea",
             "Coffee"
           ],
-          "correctAnswer": "Black tea"
+          "correctAnswer": "Black tea",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「紅茶」 (koucha) expresses 'Black tea'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・紅茶 (koucha) — Black tea"
         },
         {
           "id": "u4_l2_2",
@@ -271,7 +279,8 @@
             "ゆ",
             "ゃ"
           ],
-          "correctAnswer": "こうちゃ"
+          "correctAnswer": "こうちゃ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「紅茶」 (koucha) expresses 'Build 'Black tea''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・紅茶 (koucha) — Build 'Black tea'"
         },
         {
           "id": "u4_l2_3",
@@ -290,7 +299,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the direct object of action verb 「飲みます」 (drink)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎朝、冷たいカフェラテを飲みます。」 (Maiasa, tsumetai kafe rate o nomimasu.) expresses 'Fill in object particle 'を' (o): I drink cold Café latte every morning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎朝、冷たいカフェラテを飲みます。 (Maiasa, tsumetai kafe rate o nomimasu.) — Fill in object particle 'を' (o): I drink cold Café latte every morning."
         },
         {
           "id": "u4_l2_4",
@@ -312,7 +321,8 @@
             "カフェラテを",
             "飲みます"
           ],
-          "correctAnswer": "冷たいカフェラテを飲みます"
+          "correctAnswer": "冷たいカフェラテを飲みます",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「冷たいカフェラテを飲みます」 (Tsumetai kafe rate o nomimasu.) expresses 'Drink cold Café latte.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・冷たいカフェラテを飲みます (Tsumetai kafe rate o nomimasu.) — Drink cold Café latte."
         },
         {
           "id": "u4_l2_5",
@@ -329,7 +339,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "抹茶ラテ"
+          "correctAnswer": "抹茶ラテ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「抹茶ラテ」 (matcha rate) expresses 'Pronounce: Matcha green tea latte'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・抹茶ラテ (matcha rate) — Pronounce: Matcha green tea latte"
         },
         {
           "id": "u4_l2_6",
@@ -351,7 +362,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "抹茶ラテをお願いします"
+          "correctAnswer": "抹茶ラテをお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「抹茶ラテをお願いします」 (matcha rate o onegaishimasu.) expresses 'Matcha green tea latte, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・抹茶ラテをお願いします (matcha rate o onegaishimasu.) — Matcha green tea latte, please."
         },
         {
           "id": "u4_l2_7",
@@ -391,7 +403,8 @@
               "romaji": "kudasai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「紅茶・カフェラテ・抹茶ラテ・ください」 (koucha, kafe rate, matcha rate, kudasai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・紅茶・カフェラテ・抹茶ラテ・ください (koucha, kafe rate, matcha rate, kudasai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l2_8",
@@ -415,7 +428,8 @@
             "美味しかったです",
             "ごめんなさい"
           ],
-          "correctAnswer": "テイクアウトでお願いします。"
+          "correctAnswer": "テイクアウトでお願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「店内でお召し上がりですか？」 (Tennai de omeshiagari desu ka?) expresses 'Clerk: Will you be having that in-store?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・店内でお召し上がりですか？ (Tennai de omeshiagari desu ka?) — Clerk: Will you be having that in-store?"
         }
       ]
     },
@@ -454,7 +468,8 @@
             "Two items (counter)",
             "Please give me..."
           ],
-          "correctAnswer": "Please give me..."
+          "correctAnswer": "Please give me...",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ください」 (kudasai) expresses 'Please give me...'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ください (kudasai) — Please give me..."
         },
         {
           "id": "u4_l3_2",
@@ -474,7 +489,8 @@
             "こ",
             "だ"
           ],
-          "correctAnswer": "ください"
+          "correctAnswer": "ください",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ください」 (kudasai) expresses 'Build 'Please give me...''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ください (kudasai) — Build 'Please give me...'"
         },
         {
           "id": "u4_l3_3",
@@ -493,7 +509,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なお願いしますです。」 (Kore wa ichiban taisetsu na onegaishimasu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Please / I request....'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なお願いしますです。 (Kore wa ichiban taisetsu na onegaishimasu desu.) — Fill in topic particle 'は' (wa): This is the most important Please / I request...."
         },
         {
           "id": "u4_l3_4",
@@ -515,7 +531,8 @@
             "お願いします",
             "です"
           ],
-          "correctAnswer": "これはお願いしますです"
+          "correctAnswer": "これはお願いしますです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはお願いしますです」 (Kore wa onegaishimasu desu.) expresses 'This is Please / I request....'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはお願いしますです (Kore wa onegaishimasu desu.) — This is Please / I request...."
         },
         {
           "id": "u4_l3_5",
@@ -532,7 +549,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "一つ"
+          "correctAnswer": "一つ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「一つ」 (hitotsu) expresses 'Pronounce: One item (counter)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・一つ (hitotsu) — Pronounce: One item (counter)"
         },
         {
           "id": "u4_l3_6",
@@ -552,7 +570,8 @@
             "一つ",
             "です"
           ],
-          "correctAnswer": "一つです"
+          "correctAnswer": "一つです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「一つです」 (hitotsu desu.) expresses 'It is One item (counter).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・一つです (hitotsu desu.) — It is One item (counter)."
         },
         {
           "id": "u4_l3_7",
@@ -592,7 +611,8 @@
               "romaji": "futatsu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ください・お願いします・一つ・二つ」 (kudasai, onegaishimasu, hitotsu, futatsu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ください・お願いします・一つ・二つ (kudasai, onegaishimasu, hitotsu, futatsu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l3_8",
@@ -616,7 +636,8 @@
             "お水をお願いします",
             "初めまして"
           ],
-          "correctAnswer": "いいえ、ナッツは入っておりません。"
+          "correctAnswer": "いいえ、ナッツは入っておりません。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ナッツが入っていますか？」 (Nattsu ga haitte imasu ka?) expresses 'Customer: Excuse me, does this cake contain nuts?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ナッツが入っていますか？ (Nattsu ga haitte imasu ka?) — Customer: Excuse me, does this cake contain nuts?"
         }
       ]
     },
@@ -656,7 +677,8 @@
             "Non-smoking seat",
             "Hot coffee"
           ],
-          "correctAnswer": "Two items (counter)"
+          "correctAnswer": "Two items (counter)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「二つ」 (futatsu) expresses 'Two items (counter)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・二つ (futatsu) — Two items (counter)"
         },
         {
           "id": "u4_l4_2",
@@ -676,7 +698,8 @@
             "よ",
             "た"
           ],
-          "correctAnswer": "ふたつ"
+          "correctAnswer": "ふたつ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「二つ」 (futatsu) expresses 'Build 'Two items (counter)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・二つ (futatsu) — Build 'Two items (counter)'"
         },
         {
           "id": "u4_l4_3",
@@ -695,7 +718,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な三つです。」 (Kore wa ichiban taisetsu na mittsu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Three items (counter).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な三つです。 (Kore wa ichiban taisetsu na mittsu desu.) — Fill in topic particle 'は' (wa): This is the most important Three items (counter)."
         },
         {
           "id": "u4_l4_4",
@@ -717,7 +740,8 @@
             "三つ",
             "です"
           ],
-          "correctAnswer": "これは三つです"
+          "correctAnswer": "これは三つです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは三つです」 (Kore wa mittsu desu.) expresses 'This is Three items (counter).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは三つです (Kore wa mittsu desu.) — This is Three items (counter)."
         },
         {
           "id": "u4_l4_5",
@@ -734,7 +758,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "四つ"
+          "correctAnswer": "四つ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「四つ」 (yottsu) expresses 'Pronounce: Four items (counter)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・四つ (yottsu) — Pronounce: Four items (counter)"
         },
         {
           "id": "u4_l4_6",
@@ -754,7 +779,8 @@
             "四つ",
             "です"
           ],
-          "correctAnswer": "四つです"
+          "correctAnswer": "四つです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「四つです」 (yottsu desu.) expresses 'It is Four items (counter).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・四つです (yottsu desu.) — It is Four items (counter)."
         },
         {
           "id": "u4_l4_7",
@@ -794,7 +820,8 @@
               "romaji": "saizu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「二つ・三つ・四つ・サイズ」 (futatsu, mittsu, yottsu, saizu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・二つ・三つ・四つ・サイズ (futatsu, mittsu, yottsu, saizu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l4_8",
@@ -818,7 +845,8 @@
             "お腹が痛いです",
             "また来ます"
           ],
-          "correctAnswer": "はい、各種クレジットカードご利用いただけます！"
+          "correctAnswer": "はい、各種クレジットカードご利用いただけます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「カードは使えますか？」 (Kaado wa tsukaemasu ka?) expresses 'Customer: Check please. Do you accept credit cards?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・カードは使えますか？ (Kaado wa tsukaemasu ka?) — Customer: Check please. Do you accept credit cards?"
         }
       ]
     },
@@ -854,7 +882,8 @@
             "Menu",
             "Milk / creamer"
           ],
-          "correctAnswer": "Cup size"
+          "correctAnswer": "Cup size",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「サイズ」 (saizu) expresses 'Cup size'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・サイズ (saizu) — Cup size"
         },
         {
           "id": "u4_l5_2",
@@ -874,7 +903,8 @@
             "ゆ",
             "し"
           ],
-          "correctAnswer": "サイズ"
+          "correctAnswer": "サイズ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「サイズ」 (saizu) expresses 'Build 'Cup size''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・サイズ (saizu) — Build 'Cup size'"
         },
         {
           "id": "u4_l5_3",
@@ -893,7 +923,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なSサイズです。」 (Kore wa ichiban taisetsu na esu saizu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Small size.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なSサイズです。 (Kore wa ichiban taisetsu na esu saizu desu.) — Fill in topic particle 'は' (wa): This is the most important Small size."
         },
         {
           "id": "u4_l5_4",
@@ -915,7 +945,8 @@
             "Sサイズ",
             "です"
           ],
-          "correctAnswer": "これはSサイズです"
+          "correctAnswer": "これはSサイズです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはSサイズです」 (Kore wa esu saizu desu.) expresses 'This is Small size.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはSサイズです (Kore wa esu saizu desu.) — This is Small size."
         },
         {
           "id": "u4_l5_5",
@@ -932,7 +963,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "Mサイズ"
+          "correctAnswer": "Mサイズ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「Mサイズ」 (emu saizu) expresses 'Pronounce: Medium size'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・Mサイズ (emu saizu) — Pronounce: Medium size"
         },
         {
           "id": "u4_l5_6",
@@ -954,7 +986,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "Mサイズをお願いします"
+          "correctAnswer": "Mサイズをお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「Mサイズをお願いします」 (emu saizu o onegaishimasu.) expresses 'Medium size, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・Mサイズをお願いします (emu saizu o onegaishimasu.) — Medium size, please."
         },
         {
           "id": "u4_l5_7",
@@ -994,7 +1027,8 @@
               "romaji": "eru saizu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「サイズ・Sサイズ・Mサイズ・Lサイズ」 (saizu, esu saizu, emu saizu, eru saizu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・サイズ・Sサイズ・Mサイズ・Lサイズ (saizu, esu saizu, emu saizu, eru saizu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l5_8",
@@ -1018,7 +1052,8 @@
             "私は学生です",
             "駅はあそこです"
           ],
-          "correctAnswer": "ホットコーヒーのMサイズを一つお願いします。"
+          "correctAnswer": "ホットコーヒーのMサイズを一つお願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご注文はお決まりですか？」 (Gochuumon wa okimari desu ka?) expresses 'Clerk: Welcome! Are you ready to order?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご注文はお決まりですか？ (Gochuumon wa okimari desu ka?) — Clerk: Welcome! Are you ready to order?"
         }
       ]
     },
@@ -1054,7 +1089,8 @@
             "Large size",
             "Sugar"
           ],
-          "correctAnswer": "Large size"
+          "correctAnswer": "Large size",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「Lサイズ」 (eru saizu) expresses 'Large size'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・Lサイズ (eru saizu) — Large size"
         },
         {
           "id": "u4_l6_2",
@@ -1074,7 +1110,8 @@
             "き",
             "ル"
           ],
-          "correctAnswer": "エルサイズ"
+          "correctAnswer": "エルサイズ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「Lサイズ」 (eru saizu) expresses 'Build 'Large size''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・Lサイズ (eru saizu) — Build 'Large size'"
         },
         {
           "id": "u4_l6_3",
@@ -1093,7 +1130,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なケーキです。」 (Kore wa ichiban taisetsu na keeki desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Cake.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なケーキです。 (Kore wa ichiban taisetsu na keeki desu.) — Fill in topic particle 'は' (wa): This is the most important Cake."
         },
         {
           "id": "u4_l6_4",
@@ -1115,7 +1152,8 @@
             "ケーキ",
             "です"
           ],
-          "correctAnswer": "これはケーキです"
+          "correctAnswer": "これはケーキです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはケーキです」 (Kore wa keeki desu.) expresses 'This is Cake.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはケーキです (Kore wa keeki desu.) — This is Cake."
         },
         {
           "id": "u4_l6_5",
@@ -1132,7 +1170,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "チーズケーキ"
+          "correctAnswer": "チーズケーキ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「チーズケーキ」 (chiizu keeki) expresses 'Pronounce: Cheesecake'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・チーズケーキ (chiizu keeki) — Pronounce: Cheesecake"
         },
         {
           "id": "u4_l6_6",
@@ -1154,7 +1193,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "チーズケーキをお願いします"
+          "correctAnswer": "チーズケーキをお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「チーズケーキをお願いします」 (chiizu keeki o onegaishimasu.) expresses 'Cheesecake, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・チーズケーキをお願いします (chiizu keeki o onegaishimasu.) — Cheesecake, please."
         },
         {
           "id": "u4_l6_7",
@@ -1194,7 +1234,8 @@
               "romaji": "sandoitchi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「Lサイズ・ケーキ・チーズケーキ・サンドイッチ」 (eru saizu, keeki, chiizu keeki, sandoitchi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・Lサイズ・ケーキ・チーズケーキ・サンドイッチ (eru saizu, keeki, chiizu keeki, sandoitchi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l6_8",
@@ -1218,7 +1259,8 @@
             "美味しかったです",
             "ごめんなさい"
           ],
-          "correctAnswer": "テイクアウトでお願いします。"
+          "correctAnswer": "テイクアウトでお願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「店内でお召し上がりですか？」 (Tennai de omeshiagari desu ka?) expresses 'Clerk: Will you be having that in-store?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・店内でお召し上がりですか？ (Tennai de omeshiagari desu ka?) — Clerk: Will you be having that in-store?"
         }
       ]
     },
@@ -1254,7 +1296,8 @@
             "Drinking straw",
             "Sandwich"
           ],
-          "correctAnswer": "Sandwich"
+          "correctAnswer": "Sandwich",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「サンドイッチ」 (sandoitchi) expresses 'Sandwich'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・サンドイッチ (sandoitchi) — Sandwich"
         },
         {
           "id": "u4_l7_2",
@@ -1274,7 +1317,8 @@
             "ッ",
             "さ"
           ],
-          "correctAnswer": "サンドイッチ"
+          "correctAnswer": "サンドイッチ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「サンドイッチ」 (sandoitchi) expresses 'Build 'Sandwich''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・サンドイッチ (sandoitchi) — Build 'Sandwich'"
         },
         {
           "id": "u4_l7_3",
@@ -1293,7 +1337,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なトーストです。」 (Kore wa ichiban taisetsu na toosuto desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Toast.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なトーストです。 (Kore wa ichiban taisetsu na toosuto desu.) — Fill in topic particle 'は' (wa): This is the most important Toast."
         },
         {
           "id": "u4_l7_4",
@@ -1315,7 +1359,8 @@
             "トースト",
             "です"
           ],
-          "correctAnswer": "これはトーストです"
+          "correctAnswer": "これはトーストです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはトーストです」 (Kore wa toosuto desu.) expresses 'This is Toast.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはトーストです (Kore wa toosuto desu.) — This is Toast."
         },
         {
           "id": "u4_l7_5",
@@ -1332,7 +1377,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "クロワッサン"
+          "correctAnswer": "クロワッサン",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「クロワッサン」 (kurowassan) expresses 'Pronounce: Croissant'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・クロワッサン (kurowassan) — Pronounce: Croissant"
         },
         {
           "id": "u4_l7_6",
@@ -1352,7 +1398,8 @@
             "クロワッサン",
             "です"
           ],
-          "correctAnswer": "クロワッサンです"
+          "correctAnswer": "クロワッサンです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「クロワッサンです」 (kurowassan desu.) expresses 'It is Croissant.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・クロワッサンです (kurowassan desu.) — It is Croissant."
         },
         {
           "id": "u4_l7_7",
@@ -1392,7 +1439,8 @@
               "romaji": "menyuu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「サンドイッチ・トースト・クロワッサン・メニュー」 (sandoitchi, toosuto, kurowassan, menyuu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・サンドイッチ・トースト・クロワッサン・メニュー (sandoitchi, toosuto, kurowassan, menyuu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l7_8",
@@ -1416,7 +1464,8 @@
             "お水をお願いします",
             "初めまして"
           ],
-          "correctAnswer": "いいえ、ナッツは入っておりません。"
+          "correctAnswer": "いいえ、ナッツは入っておりません。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ナッツが入っていますか？」 (Nattsu ga haitte imasu ka?) expresses 'Customer: Excuse me, does this cake contain nuts?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ナッツが入っていますか？ (Nattsu ga haitte imasu ka?) — Customer: Excuse me, does this cake contain nuts?"
         }
       ]
     },
@@ -1457,7 +1506,8 @@
             "Coffee",
             "Without ice"
           ],
-          "correctAnswer": "Menu"
+          "correctAnswer": "Menu",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「メニュー」 (menyuu) expresses 'Menu'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・メニュー (menyuu) — Menu"
         },
         {
           "id": "u4_l8_2",
@@ -1477,7 +1527,8 @@
             "れ",
             "い"
           ],
-          "correctAnswer": "メニュー"
+          "correctAnswer": "メニュー",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「メニュー」 (menyuu) expresses 'Build 'Menu''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・メニュー (menyuu) — Build 'Menu'"
         },
         {
           "id": "u4_l8_3",
@@ -1496,7 +1547,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なおすすめです。」 (Kore wa ichiban taisetsu na osusume desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Recommendation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なおすすめです。 (Kore wa ichiban taisetsu na osusume desu.) — Fill in topic particle 'は' (wa): This is the most important Recommendation."
         },
         {
           "id": "u4_l8_4",
@@ -1518,7 +1569,8 @@
             "おすすめ",
             "です"
           ],
-          "correctAnswer": "これはおすすめです"
+          "correctAnswer": "これはおすすめです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはおすすめです」 (Kore wa osusume desu.) expresses 'This is Recommendation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはおすすめです (Kore wa osusume desu.) — This is Recommendation."
         },
         {
           "id": "u4_l8_5",
@@ -1535,7 +1587,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "季節限定"
+          "correctAnswer": "季節限定",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「季節限定」 (kisetsu gentei) expresses 'Pronounce: Seasonal limited edition'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・季節限定 (kisetsu gentei) — Pronounce: Seasonal limited edition"
         },
         {
           "id": "u4_l8_6",
@@ -1557,7 +1610,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "季節限定をお願いします"
+          "correctAnswer": "季節限定をお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「季節限定をお願いします」 (kisetsu gentei o onegaishimasu.) expresses 'Seasonal limited edition, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・季節限定をお願いします (kisetsu gentei o onegaishimasu.) — Seasonal limited edition, please."
         },
         {
           "id": "u4_l8_7",
@@ -1597,7 +1651,8 @@
               "romaji": "tennai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「メニュー・おすすめ・季節限定・店内」 (menyuu, osusume, kisetsu gentei, tennai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・メニュー・おすすめ・季節限定・店内 (menyuu, osusume, kisetsu gentei, tennai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l8_8",
@@ -1621,7 +1676,8 @@
             "お腹が痛いです",
             "また来ます"
           ],
-          "correctAnswer": "はい、各種クレジットカードご利用いただけます！"
+          "correctAnswer": "はい、各種クレジットカードご利用いただけます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「カードは使えますか？」 (Kaado wa tsukaemasu ka?) expresses 'Customer: Check please. Do you accept credit cards?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・カードは使えますか？ (Kaado wa tsukaemasu ka?) — Customer: Check please. Do you accept credit cards?"
         }
       ]
     },
@@ -1662,7 +1718,8 @@
             "Medium size",
             "Dine-in / in-store"
           ],
-          "correctAnswer": "Dine-in / in-store"
+          "correctAnswer": "Dine-in / in-store",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「店内」 (tennai) expresses 'Dine-in / in-store'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・店内 (tennai) — Dine-in / in-store"
         },
         {
           "id": "u4_l9_2",
@@ -1682,7 +1739,8 @@
             "な",
             "い"
           ],
-          "correctAnswer": "てんない"
+          "correctAnswer": "てんない",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「店内」 (tennai) expresses 'Build 'Dine-in / in-store''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・店内 (tennai) — Build 'Dine-in / in-store'"
         },
         {
           "id": "u4_l9_3",
@@ -1701,7 +1759,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なテイクアウトです。」 (Kore wa ichiban taisetsu na teikuauto desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Takeout / to-go.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なテイクアウトです。 (Kore wa ichiban taisetsu na teikuauto desu.) — Fill in topic particle 'は' (wa): This is the most important Takeout / to-go."
         },
         {
           "id": "u4_l9_4",
@@ -1723,7 +1781,8 @@
             "テイクアウト",
             "です"
           ],
-          "correctAnswer": "これはテイクアウトです"
+          "correctAnswer": "これはテイクアウトです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはテイクアウトです」 (Kore wa teikuauto desu.) expresses 'This is Takeout / to-go.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはテイクアウトです (Kore wa teikuauto desu.) — This is Takeout / to-go."
         },
         {
           "id": "u4_l9_5",
@@ -1740,7 +1799,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "持ち帰り"
+          "correctAnswer": "持ち帰り",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「持ち帰り」 (mochikaeri) expresses 'Pronounce: Takeout (Japanese term)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・持ち帰り (mochikaeri) — Pronounce: Takeout (Japanese term)"
         },
         {
           "id": "u4_l9_6",
@@ -1762,7 +1822,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "持ち帰りをお願いします"
+          "correctAnswer": "持ち帰りをお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「持ち帰りをお願いします」 (mochikaeri o onegaishimasu.) expresses 'Takeout (Japanese term), please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・持ち帰りをお願いします (mochikaeri o onegaishimasu.) — Takeout (Japanese term), please."
         },
         {
           "id": "u4_l9_7",
@@ -1802,7 +1863,8 @@
               "romaji": "koori nashi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「店内・テイクアウト・持ち帰り・氷なし」 (tennai, teikuauto, mochikaeri, koori nashi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・店内・テイクアウト・持ち帰り・氷なし (tennai, teikuauto, mochikaeri, koori nashi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l9_8",
@@ -1826,7 +1888,8 @@
             "私は学生です",
             "駅はあそこです"
           ],
-          "correctAnswer": "ホットコーヒーのMサイズを一つお願いします。"
+          "correctAnswer": "ホットコーヒーのMサイズを一つお願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご注文はお決まりですか？」 (Gochuumon wa okimari desu ka?) expresses 'Clerk: Welcome! Are you ready to order?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご注文はお決まりですか？ (Gochuumon wa okimari desu ka?) — Clerk: Welcome! Are you ready to order?"
         }
       ]
     },
@@ -1866,7 +1929,8 @@
             "Seat / table",
             "Syrup"
           ],
-          "correctAnswer": "Without ice"
+          "correctAnswer": "Without ice",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「氷なし」 (koori nashi) expresses 'Without ice'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・氷なし (koori nashi) — Without ice"
         },
         {
           "id": "u4_l10_2",
@@ -1886,7 +1950,8 @@
             "し",
             "は"
           ],
-          "correctAnswer": "こおりなし"
+          "correctAnswer": "こおりなし",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「氷なし」 (koori nashi) expresses 'Build 'Without ice''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・氷なし (koori nashi) — Build 'Without ice'"
         },
         {
           "id": "u4_l10_3",
@@ -1905,7 +1970,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な砂糖です。」 (Kore wa ichiban taisetsu na satou desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Sugar.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な砂糖です。 (Kore wa ichiban taisetsu na satou desu.) — Fill in topic particle 'は' (wa): This is the most important Sugar."
         },
         {
           "id": "u4_l10_4",
@@ -1927,7 +1992,8 @@
             "砂糖",
             "です"
           ],
-          "correctAnswer": "これは砂糖です"
+          "correctAnswer": "これは砂糖です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは砂糖です」 (Kore wa satou desu.) expresses 'This is Sugar.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは砂糖です (Kore wa satou desu.) — This is Sugar."
         },
         {
           "id": "u4_l10_5",
@@ -1944,7 +2010,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "ミルク"
+          "correctAnswer": "ミルク",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ミルク」 (miruku) expresses 'Pronounce: Milk / creamer'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ミルク (miruku) — Pronounce: Milk / creamer"
         },
         {
           "id": "u4_l10_6",
@@ -1964,7 +2031,8 @@
             "ミルク",
             "です"
           ],
-          "correctAnswer": "ミルクです"
+          "correctAnswer": "ミルクです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ミルクです」 (miruku desu.) expresses 'It is Milk / creamer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ミルクです (miruku desu.) — It is Milk / creamer."
         },
         {
           "id": "u4_l10_7",
@@ -2004,7 +2072,8 @@
               "romaji": "shiroppu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「氷なし・砂糖・ミルク・シロップ」 (koori nashi, satou, miruku, shiroppu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・氷なし・砂糖・ミルク・シロップ (koori nashi, satou, miruku, shiroppu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l10_8",
@@ -2028,7 +2097,8 @@
             "美味しかったです",
             "ごめんなさい"
           ],
-          "correctAnswer": "テイクアウトでお願いします。"
+          "correctAnswer": "テイクアウトでお願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「店内でお召し上がりですか？」 (Tennai de omeshiagari desu ka?) expresses 'Clerk: Will you be having that in-store?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・店内でお召し上がりですか？ (Tennai de omeshiagari desu ka?) — Clerk: Will you be having that in-store?"
         }
       ]
     },
@@ -2064,7 +2134,8 @@
             "Syrup",
             "Croissant"
           ],
-          "correctAnswer": "Syrup"
+          "correctAnswer": "Syrup",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「シロップ」 (shiroppu) expresses 'Syrup'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・シロップ (shiroppu) — Syrup"
         },
         {
           "id": "u4_l11_2",
@@ -2084,7 +2155,8 @@
             "ッ",
             "プ"
           ],
-          "correctAnswer": "シロップ"
+          "correctAnswer": "シロップ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「シロップ」 (shiroppu) expresses 'Build 'Syrup''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・シロップ (shiroppu) — Build 'Syrup'"
         },
         {
           "id": "u4_l11_3",
@@ -2103,7 +2175,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なストローです。」 (Kore wa ichiban taisetsu na sutoroo desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Drinking straw.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なストローです。 (Kore wa ichiban taisetsu na sutoroo desu.) — Fill in topic particle 'は' (wa): This is the most important Drinking straw."
         },
         {
           "id": "u4_l11_4",
@@ -2125,7 +2197,8 @@
             "ストロー",
             "です"
           ],
-          "correctAnswer": "これはストローです"
+          "correctAnswer": "これはストローです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはストローです」 (Kore wa sutoroo desu.) expresses 'This is Drinking straw.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはストローです (Kore wa sutoroo desu.) — This is Drinking straw."
         },
         {
           "id": "u4_l11_5",
@@ -2142,7 +2215,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "いらっしゃいませ"
+          "correctAnswer": "いらっしゃいませ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いらっしゃいませ」 (irasshaimase) expresses 'Pronounce: Welcome (store greeting)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いらっしゃいませ (irasshaimase) — Pronounce: Welcome (store greeting)"
         },
         {
           "id": "u4_l11_6",
@@ -2162,7 +2236,8 @@
             "いらっしゃいませ",
             "です"
           ],
-          "correctAnswer": "いらっしゃいませです"
+          "correctAnswer": "いらっしゃいませです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いらっしゃいませです」 (irasshaimase desu.) expresses 'It is Welcome (store greeting).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いらっしゃいませです (irasshaimase desu.) — It is Welcome (store greeting)."
         },
         {
           "id": "u4_l11_7",
@@ -2202,7 +2277,8 @@
               "romaji": "gochuumon"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「シロップ・ストロー・いらっしゃいませ・ご注文」 (shiroppu, sutoroo, irasshaimase, gochuumon) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・シロップ・ストロー・いらっしゃいませ・ご注文 (shiroppu, sutoroo, irasshaimase, gochuumon) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l11_8",
@@ -2226,7 +2302,8 @@
             "お水をお願いします",
             "初めまして"
           ],
-          "correctAnswer": "いいえ、ナッツは入っておりません。"
+          "correctAnswer": "いいえ、ナッツは入っておりません。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ナッツが入っていますか？」 (Nattsu ga haitte imasu ka?) expresses 'Customer: Excuse me, does this cake contain nuts?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ナッツが入っていますか？ (Nattsu ga haitte imasu ka?) — Customer: Excuse me, does this cake contain nuts?"
         }
       ]
     },
@@ -2267,7 +2344,8 @@
             "Milk / creamer",
             "Your order"
           ],
-          "correctAnswer": "Your order"
+          "correctAnswer": "Your order",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご注文」 (gochuumon) expresses 'Your order'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご注文 (gochuumon) — Your order"
         },
         {
           "id": "u4_l12_2",
@@ -2287,7 +2365,8 @@
             "ん",
             "も"
           ],
-          "correctAnswer": "ごちゅうもん"
+          "correctAnswer": "ごちゅうもん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご注文」 (gochuumon) expresses 'Build 'Your order''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご注文 (gochuumon) — Build 'Your order'"
         },
         {
           "id": "u4_l12_3",
@@ -2306,7 +2385,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なお会計です。」 (Kore wa ichiban taisetsu na okaikei desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important The bill / payment.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なお会計です。 (Kore wa ichiban taisetsu na okaikei desu.) — Fill in topic particle 'は' (wa): This is the most important The bill / payment."
         },
         {
           "id": "u4_l12_4",
@@ -2328,7 +2407,8 @@
             "お会計",
             "です"
           ],
-          "correctAnswer": "これはお会計です"
+          "correctAnswer": "これはお会計です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはお会計です」 (Kore wa okaikei desu.) expresses 'This is The bill / payment.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはお会計です (Kore wa okaikei desu.) — This is The bill / payment."
         },
         {
           "id": "u4_l12_5",
@@ -2345,7 +2425,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "レシート"
+          "correctAnswer": "レシート",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「レシート」 (reshiito) expresses 'Pronounce: Receipt'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・レシート (reshiito) — Pronounce: Receipt"
         },
         {
           "id": "u4_l12_6",
@@ -2365,7 +2446,8 @@
             "レシート",
             "です"
           ],
-          "correctAnswer": "レシートです"
+          "correctAnswer": "レシートです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「レシートです」 (reshiito desu.) expresses 'It is Receipt.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・レシートです (reshiito desu.) — It is Receipt."
         },
         {
           "id": "u4_l12_7",
@@ -2405,7 +2487,8 @@
               "romaji": "seki"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご注文・お会計・レシート・席」 (gochuumon, okaikei, reshiito, seki) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご注文・お会計・レシート・席 (gochuumon, okaikei, reshiito, seki) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l12_8",
@@ -2429,7 +2512,8 @@
             "お腹が痛いです",
             "また来ます"
           ],
-          "correctAnswer": "はい、各種クレジットカードご利用いただけます！"
+          "correctAnswer": "はい、各種クレジットカードご利用いただけます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「カードは使えますか？」 (Kaado wa tsukaemasu ka?) expresses 'Customer: Check please. Do you accept credit cards?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・カードは使えますか？ (Kaado wa tsukaemasu ka?) — Customer: Check please. Do you accept credit cards?"
         }
       ]
     },
@@ -2470,7 +2554,8 @@
             "Coffee",
             "Seat / table"
           ],
-          "correctAnswer": "Seat / table"
+          "correctAnswer": "Seat / table",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「席」 (seki) expresses 'Seat / table'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・席 (seki) — Seat / table"
         },
         {
           "id": "u4_l13_2",
@@ -2490,7 +2575,8 @@
             "み",
             "き"
           ],
-          "correctAnswer": "せき"
+          "correctAnswer": "せき",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「席」 (seki) expresses 'Build 'Seat / table''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・席 (seki) — Build 'Seat / table'"
         },
         {
           "id": "u4_l13_3",
@@ -2509,7 +2595,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な禁煙席です。」 (Kore wa ichiban taisetsu na kin-enseki desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Non-smoking seat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な禁煙席です。 (Kore wa ichiban taisetsu na kin-enseki desu.) — Fill in topic particle 'は' (wa): This is the most important Non-smoking seat."
         },
         {
           "id": "u4_l13_4",
@@ -2531,7 +2617,8 @@
             "禁煙席",
             "です"
           ],
-          "correctAnswer": "これは禁煙席です"
+          "correctAnswer": "これは禁煙席です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは禁煙席です」 (Kore wa kin-enseki desu.) expresses 'This is Non-smoking seat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは禁煙席です (Kore wa kin-enseki desu.) — This is Non-smoking seat."
         },
         {
           "id": "u4_l13_5",
@@ -2548,7 +2635,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "カード"
+          "correctAnswer": "カード",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「カード」 (kaado) expresses 'Pronounce: Credit / IC card'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・カード (kaado) — Pronounce: Credit / IC card"
         },
         {
           "id": "u4_l13_6",
@@ -2568,7 +2656,8 @@
             "カード",
             "です"
           ],
-          "correctAnswer": "カードです"
+          "correctAnswer": "カードです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「カードです」 (kaado desu.) expresses 'It is Credit / IC card.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・カードです (kaado desu.) — It is Credit / IC card."
         },
         {
           "id": "u4_l13_7",
@@ -2608,7 +2697,8 @@
               "romaji": "shoushou omachi kudasai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「席・禁煙席・カード・少々お待ちください」 (seki, kin-enseki, kaado, shoushou omachi kudasai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・席・禁煙席・カード・少々お待ちください (seki, kin-enseki, kaado, shoushou omachi kudasai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l13_8",
@@ -2632,7 +2722,8 @@
             "私は学生です",
             "駅はあそこです"
           ],
-          "correctAnswer": "ホットコーヒーのMサイズを一つお願いします。"
+          "correctAnswer": "ホットコーヒーのMサイズを一つお願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご注文はお決まりですか？」 (Gochuumon wa okimari desu ka?) expresses 'Clerk: Welcome! Are you ready to order?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご注文はお決まりですか？ (Gochuumon wa okimari desu ka?) — Clerk: Welcome! Are you ready to order?"
         }
       ]
     },
@@ -2671,7 +2762,8 @@
             "Please wait a moment",
             "Non-smoking seat"
           ],
-          "correctAnswer": "Please wait a moment"
+          "correctAnswer": "Please wait a moment",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少々お待ちください」 (shoushou omachi kudasai) expresses 'Please wait a moment'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少々お待ちください (shoushou omachi kudasai) — Please wait a moment"
         },
         {
           "id": "u4_l14_2",
@@ -2691,7 +2783,8 @@
             "ゆ",
             "る"
           ],
-          "correctAnswer": "コーヒー"
+          "correctAnswer": "コーヒー",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「コーヒー」 (koohii) expresses 'Build 'Coffee''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・コーヒー (koohii) — Build 'Coffee'"
         },
         {
           "id": "u4_l14_3",
@@ -2710,7 +2803,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the direct object of action verb 「飲みます」 (drink)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎朝、冷たいコーヒーを飲みます。」 (Maiasa, tsumetai koohii o nomimasu.) expresses 'Fill in object particle 'を' (o): I drink cold Coffee every morning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎朝、冷たいコーヒーを飲みます。 (Maiasa, tsumetai koohii o nomimasu.) — Fill in object particle 'を' (o): I drink cold Coffee every morning."
         },
         {
           "id": "u4_l14_4",
@@ -2732,7 +2825,8 @@
             "コーヒーを",
             "飲みます"
           ],
-          "correctAnswer": "冷たいコーヒーを飲みます"
+          "correctAnswer": "冷たいコーヒーを飲みます",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「冷たいコーヒーを飲みます」 (Tsumetai koohii o nomimasu.) expresses 'Drink cold Coffee.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・冷たいコーヒーを飲みます (Tsumetai koohii o nomimasu.) — Drink cold Coffee."
         },
         {
           "id": "u4_l14_5",
@@ -2749,7 +2843,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "ホットコーヒー"
+          "correctAnswer": "ホットコーヒー",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ホットコーヒー」 (hotto koohii) expresses 'Pronounce: Hot coffee'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ホットコーヒー (hotto koohii) — Pronounce: Hot coffee"
         },
         {
           "id": "u4_l14_6",
@@ -2771,7 +2866,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "ホットコーヒーをお願いします"
+          "correctAnswer": "ホットコーヒーをお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ホットコーヒーをお願いします」 (hotto koohii o onegaishimasu.) expresses 'Hot coffee, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ホットコーヒーをお願いします (hotto koohii o onegaishimasu.) — Hot coffee, please."
         },
         {
           "id": "u4_l14_7",
@@ -2811,7 +2907,8 @@
               "romaji": "aisu tii"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少々お待ちください・コーヒー・ホットコーヒー・アイスティー」 (shoushou omachi kudasai, koohii, hotto koohii, aisu tii) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少々お待ちください・コーヒー・ホットコーヒー・アイスティー (shoushou omachi kudasai, koohii, hotto koohii, aisu tii) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l14_8",
@@ -2835,7 +2932,8 @@
             "美味しかったです",
             "ごめんなさい"
           ],
-          "correctAnswer": "テイクアウトでお願いします。"
+          "correctAnswer": "テイクアウトでお願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「店内でお召し上がりですか？」 (Tennai de omeshiagari desu ka?) expresses 'Clerk: Will you be having that in-store?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・店内でお召し上がりですか？ (Tennai de omeshiagari desu ka?) — Clerk: Will you be having that in-store?"
         }
       ]
     },
@@ -2874,7 +2972,8 @@
             "Dine-in / in-store",
             "Syrup"
           ],
-          "correctAnswer": "Iced tea"
+          "correctAnswer": "Iced tea",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「アイスティー」 (aisu tii) expresses 'Iced tea'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・アイスティー (aisu tii) — Iced tea"
         },
         {
           "id": "u4_l15_2",
@@ -2894,7 +2993,8 @@
             "り",
             "テ"
           ],
-          "correctAnswer": "アイスティー"
+          "correctAnswer": "アイスティー",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「アイスティー」 (aisu tii) expresses 'Build 'Iced tea''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・アイスティー (aisu tii) — Build 'Iced tea'"
         },
         {
           "id": "u4_l15_3",
@@ -2913,7 +3013,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the direct object of action verb 「飲みます」 (drink)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎朝、冷たい紅茶を飲みます。」 (Maiasa, tsumetai koucha o nomimasu.) expresses 'Fill in object particle 'を' (o): I drink cold Black tea every morning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎朝、冷たい紅茶を飲みます。 (Maiasa, tsumetai koucha o nomimasu.) — Fill in object particle 'を' (o): I drink cold Black tea every morning."
         },
         {
           "id": "u4_l15_4",
@@ -2935,7 +3035,8 @@
             "紅茶を",
             "飲みます"
           ],
-          "correctAnswer": "冷たい紅茶を飲みます"
+          "correctAnswer": "冷たい紅茶を飲みます",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「冷たい紅茶を飲みます」 (Tsumetai koucha o nomimasu.) expresses 'Drink cold Black tea.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・冷たい紅茶を飲みます (Tsumetai koucha o nomimasu.) — Drink cold Black tea."
         },
         {
           "id": "u4_l15_5",
@@ -2952,7 +3053,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "カフェラテ"
+          "correctAnswer": "カフェラテ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「カフェラテ」 (kafe rate) expresses 'Pronounce: Café latte'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・カフェラテ (kafe rate) — Pronounce: Café latte"
         },
         {
           "id": "u4_l15_6",
@@ -2974,7 +3076,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "カフェラテをお願いします"
+          "correctAnswer": "カフェラテをお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「カフェラテをお願いします」 (kafe rate o onegaishimasu.) expresses 'Café latte, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・カフェラテをお願いします (kafe rate o onegaishimasu.) — Café latte, please."
         },
         {
           "id": "u4_l15_7",
@@ -3014,7 +3117,8 @@
               "romaji": "matcha rate"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「アイスティー・紅茶・カフェラテ・抹茶ラテ」 (aisu tii, koucha, kafe rate, matcha rate) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・アイスティー・紅茶・カフェラテ・抹茶ラテ (aisu tii, koucha, kafe rate, matcha rate) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u4_l15_8",
@@ -3038,7 +3142,8 @@
             "お水をお願いします",
             "初めまして"
           ],
-          "correctAnswer": "いいえ、ナッツは入っておりません。"
+          "correctAnswer": "いいえ、ナッツは入っておりません。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ナッツが入っていますか？」 (Nattsu ga haitte imasu ka?) expresses 'Customer: Excuse me, does this cake contain nuts?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ナッツが入っていますか？ (Nattsu ga haitte imasu ka?) — Customer: Excuse me, does this cake contain nuts?"
         }
       ]
     }

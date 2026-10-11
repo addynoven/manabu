@@ -46,7 +46,8 @@
             "Discount",
             "Black"
           ],
-          "correctAnswer": "How much (cost)"
+          "correctAnswer": "How much (cost)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いくら」 (ikura) expresses 'How much (cost)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いくら (ikura) — How much (cost)"
         },
         {
           "id": "u6_l1_2",
@@ -66,7 +67,8 @@
             "く",
             "い"
           ],
-          "correctAnswer": "いくら"
+          "correctAnswer": "いくら",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いくら」 (ikura) expresses 'Build 'How much (cost)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いくら (ikura) — Build 'How much (cost)'"
         },
         {
           "id": "u6_l1_3",
@@ -85,7 +87,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なこれです。」 (Kore wa ichiban taisetsu na kore desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important This (near speaker).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なこれです。 (Kore wa ichiban taisetsu na kore desu.) — Fill in topic particle 'は' (wa): This is the most important This (near speaker)."
         },
         {
           "id": "u6_l1_4",
@@ -107,7 +109,8 @@
             "これ",
             "です"
           ],
-          "correctAnswer": "これはこれです"
+          "correctAnswer": "これはこれです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはこれです」 (Kore wa kore desu.) expresses 'This is This (near speaker).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはこれです (Kore wa kore desu.) — This is This (near speaker)."
         },
         {
           "id": "u6_l1_5",
@@ -124,7 +127,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "それ"
+          "correctAnswer": "それ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「それ」 (sore) expresses 'Pronounce: That (near listener)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・それ (sore) — Pronounce: That (near listener)"
         },
         {
           "id": "u6_l1_6",
@@ -144,7 +148,8 @@
             "それ",
             "です"
           ],
-          "correctAnswer": "それです"
+          "correctAnswer": "それです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「それです」 (sore desu.) expresses 'It is That (near listener).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・それです (sore desu.) — It is That (near listener)."
         },
         {
           "id": "u6_l1_7",
@@ -184,7 +189,8 @@
               "romaji": "are"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いくら・これ・それ・あれ」 (ikura, kore, sore, are) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いくら・これ・それ・あれ (ikura, kore, sore, are) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l1_8",
@@ -208,7 +214,8 @@
             "お水をお願いします",
             "はい、そうです"
           ],
-          "correctAnswer": "税込で3,500円でございます。"
+          "correctAnswer": "税込で3,500円でございます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これいくらですか？」 (Kore ikura desu ka?) expresses 'Customer: Excuse me, how much is this?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これいくらですか？ (Kore ikura desu ka?) — Customer: Excuse me, how much is this?"
         }
       ]
     },
@@ -246,7 +253,8 @@
             "Small",
             "That over there"
           ],
-          "correctAnswer": "That over there"
+          "correctAnswer": "That over there",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あれ」 (are) expresses 'That over there'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あれ (are) — That over there"
         },
         {
           "id": "u6_l2_2",
@@ -266,7 +274,8 @@
             "る",
             "し"
           ],
-          "correctAnswer": "あれ"
+          "correctAnswer": "あれ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あれ」 (are) expresses 'Build 'That over there''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あれ (are) — Build 'That over there'"
         },
         {
           "id": "u6_l2_3",
@@ -285,7 +294,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切などれです。」 (Kore wa ichiban taisetsu na dore desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Which one.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切などれです。 (Kore wa ichiban taisetsu na dore desu.) — Fill in topic particle 'は' (wa): This is the most important Which one."
         },
         {
           "id": "u6_l2_4",
@@ -307,7 +316,8 @@
             "どれ",
             "です"
           ],
-          "correctAnswer": "これはどれです"
+          "correctAnswer": "これはどれです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはどれです」 (Kore wa dore desu.) expresses 'This is Which one.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはどれです (Kore wa dore desu.) — This is Which one."
         },
         {
           "id": "u6_l2_5",
@@ -324,7 +334,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "高い"
+          "correctAnswer": "高い",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高い」 (takai) expresses 'Pronounce: Expensive'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高い (takai) — Pronounce: Expensive"
         },
         {
           "id": "u6_l2_6",
@@ -344,7 +355,8 @@
             "高い",
             "です"
           ],
-          "correctAnswer": "高いです"
+          "correctAnswer": "高いです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高いです」 (takai desu.) expresses 'It is Expensive.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高いです (takai desu.) — It is Expensive."
         },
         {
           "id": "u6_l2_7",
@@ -384,7 +396,8 @@
               "romaji": "yasui"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あれ・どれ・高い・安い」 (are, dore, takai, yasui) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あれ・どれ・高い・安い (are, dore, takai, yasui) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l2_8",
@@ -408,7 +421,8 @@
             "ごちそうさまでした",
             "いいえ、知りません"
           ],
-          "correctAnswer": "はい、試着室はこちらでございます！"
+          "correctAnswer": "はい、試着室はこちらでございます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「着てみてもいいですか？」 (Kite mite mo ii desu ka?) expresses 'Customer: May I try on this shirt?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・着てみてもいいですか？ (Kite mite mo ii desu ka?) — Customer: May I try on this shirt?"
         }
       ]
     },
@@ -448,7 +462,8 @@
             "That over there",
             "How much (cost)"
           ],
-          "correctAnswer": "Cheap / inexpensive"
+          "correctAnswer": "Cheap / inexpensive",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「安い」 (yasui) expresses 'Cheap / inexpensive'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・安い (yasui) — Cheap / inexpensive"
         },
         {
           "id": "u6_l3_2",
@@ -468,7 +483,8 @@
             "い",
             "ん"
           ],
-          "correctAnswer": "やすい"
+          "correctAnswer": "やすい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「安い」 (yasui) expresses 'Build 'Cheap / inexpensive''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・安い (yasui) — Build 'Cheap / inexpensive'"
         },
         {
           "id": "u6_l3_3",
@@ -487,7 +503,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な大きいです。」 (Kore wa ichiban taisetsu na ookii desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Big / large.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な大きいです。 (Kore wa ichiban taisetsu na ookii desu.) — Fill in topic particle 'は' (wa): This is the most important Big / large."
         },
         {
           "id": "u6_l3_4",
@@ -509,7 +525,8 @@
             "大きい",
             "です"
           ],
-          "correctAnswer": "これは大きいです"
+          "correctAnswer": "これは大きいです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは大きいです」 (Kore wa ookii desu.) expresses 'This is Big / large.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは大きいです (Kore wa ookii desu.) — This is Big / large."
         },
         {
           "id": "u6_l3_5",
@@ -526,7 +543,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "小さい"
+          "correctAnswer": "小さい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「小さい」 (chiisai) expresses 'Pronounce: Small'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・小さい (chiisai) — Pronounce: Small"
         },
         {
           "id": "u6_l3_6",
@@ -546,7 +564,8 @@
             "小さい",
             "です"
           ],
-          "correctAnswer": "小さいです"
+          "correctAnswer": "小さいです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「小さいです」 (chiisai desu.) expresses 'It is Small.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・小さいです (chiisai desu.) — It is Small."
         },
         {
           "id": "u6_l3_7",
@@ -586,7 +605,8 @@
               "romaji": "atarashii"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「安い・大きい・小さい・新しい」 (yasui, ookii, chiisai, atarashii) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・安い・大きい・小さい・新しい (yasui, ookii, chiisai, atarashii) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l3_8",
@@ -610,7 +630,8 @@
             "はじめまして",
             "また来ます"
           ],
-          "correctAnswer": "少々お待ちください、在庫をお調べいたします。"
+          "correctAnswer": "少々お待ちください、在庫をお調べいたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大きいサイズはありますか？」 (Ookii saizu wa arimasu ka?) expresses 'Customer: Do you have a slightly larger size?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大きいサイズはありますか？ (Ookii saizu wa arimasu ka?) — Customer: Do you have a slightly larger size?"
         }
       ]
     },
@@ -650,7 +671,8 @@
             "I will take this one",
             "Passport"
           ],
-          "correctAnswer": "New"
+          "correctAnswer": "New",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「新しい」 (atarashii) expresses 'New'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・新しい (atarashii) — New"
         },
         {
           "id": "u6_l4_2",
@@ -670,7 +692,8 @@
             "や",
             "ら"
           ],
-          "correctAnswer": "あたらしい"
+          "correctAnswer": "あたらしい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「新しい」 (atarashii) expresses 'Build 'New''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・新しい (atarashii) — Build 'New'"
         },
         {
           "id": "u6_l4_3",
@@ -689,7 +712,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な古いです。」 (Kore wa ichiban taisetsu na furui desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Old.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な古いです。 (Kore wa ichiban taisetsu na furui desu.) — Fill in topic particle 'は' (wa): This is the most important Old."
         },
         {
           "id": "u6_l4_4",
@@ -711,7 +734,8 @@
             "古い",
             "です"
           ],
-          "correctAnswer": "これは古いです"
+          "correctAnswer": "これは古いです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは古いです」 (Kore wa furui desu.) expresses 'This is Old.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは古いです (Kore wa furui desu.) — This is Old."
         },
         {
           "id": "u6_l4_5",
@@ -728,7 +752,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "赤"
+          "correctAnswer": "赤",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「赤」 (aka) expresses 'Pronounce: Red'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・赤 (aka) — Pronounce: Red"
         },
         {
           "id": "u6_l4_6",
@@ -748,7 +773,8 @@
             "赤",
             "です"
           ],
-          "correctAnswer": "赤です"
+          "correctAnswer": "赤です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「赤です」 (aka desu.) expresses 'It is Red.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・赤です (aka desu.) — It is Red."
         },
         {
           "id": "u6_l4_7",
@@ -788,7 +814,8 @@
               "romaji": "ao"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「新しい・古い・赤・青」 (atarashii, furui, aka, ao) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・新しい・古い・赤・青 (atarashii, furui, aka, ao) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l4_8",
@@ -812,7 +839,8 @@
             "いいえ、日本人です",
             "お腹が痛いです"
           ],
-          "correctAnswer": "はい、1枚お願いします。"
+          "correctAnswer": "はい、1枚お願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「袋はお付けしますか？」 (Fukuro wa otsuke shimasu ka?) expresses 'Clerk: Would you like a bag?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・袋はお付けしますか？ (Fukuro wa otsuke shimasu ka?) — Clerk: Would you like a bag?"
         }
       ]
     },
@@ -852,7 +880,8 @@
             "Cash",
             "Small"
           ],
-          "correctAnswer": "Blue"
+          "correctAnswer": "Blue",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「青」 (ao) expresses 'Blue'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・青 (ao) — Blue"
         },
         {
           "id": "u6_l5_2",
@@ -872,7 +901,8 @@
             "よ",
             "ち"
           ],
-          "correctAnswer": "あお"
+          "correctAnswer": "あお",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「青」 (ao) expresses 'Build 'Blue''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・青 (ao) — Build 'Blue'"
         },
         {
           "id": "u6_l5_3",
@@ -891,7 +921,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な黒です。」 (Kore wa ichiban taisetsu na kuro desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Black.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な黒です。 (Kore wa ichiban taisetsu na kuro desu.) — Fill in topic particle 'は' (wa): This is the most important Black."
         },
         {
           "id": "u6_l5_4",
@@ -913,7 +943,8 @@
             "黒",
             "です"
           ],
-          "correctAnswer": "これは黒です"
+          "correctAnswer": "これは黒です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは黒です」 (Kore wa kuro desu.) expresses 'This is Black.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは黒です (Kore wa kuro desu.) — This is Black."
         },
         {
           "id": "u6_l5_5",
@@ -930,7 +961,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "白"
+          "correctAnswer": "白",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「白」 (shiro) expresses 'Pronounce: White'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・白 (shiro) — Pronounce: White"
         },
         {
           "id": "u6_l5_6",
@@ -950,7 +982,8 @@
             "白",
             "です"
           ],
-          "correctAnswer": "白です"
+          "correctAnswer": "白です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「白です」 (shiro desu.) expresses 'It is White.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・白です (shiro desu.) — It is White."
         },
         {
           "id": "u6_l5_7",
@@ -990,7 +1023,8 @@
               "romaji": "fuku"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「青・黒・白・服」 (ao, kuro, shiro, fuku) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・青・黒・白・服 (ao, kuro, shiro, fuku) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l5_8",
@@ -1014,7 +1048,8 @@
             "お水をお願いします",
             "はい、そうです"
           ],
-          "correctAnswer": "税込で3,500円でございます。"
+          "correctAnswer": "税込で3,500円でございます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これいくらですか？」 (Kore ikura desu ka?) expresses 'Customer: Excuse me, how much is this?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これいくらですか？ (Kore ikura desu ka?) — Customer: Excuse me, how much is this?"
         }
       ]
     },
@@ -1053,7 +1088,8 @@
             "Credit card",
             "Clothes / clothing"
           ],
-          "correctAnswer": "Clothes / clothing"
+          "correctAnswer": "Clothes / clothing",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「服」 (fuku) expresses 'Clothes / clothing'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・服 (fuku) — Clothes / clothing"
         },
         {
           "id": "u6_l6_2",
@@ -1073,7 +1109,8 @@
             "く",
             "す"
           ],
-          "correctAnswer": "ふく"
+          "correctAnswer": "ふく",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「服」 (fuku) expresses 'Build 'Clothes / clothing''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・服 (fuku) — Build 'Clothes / clothing'"
         },
         {
           "id": "u6_l6_3",
@@ -1092,7 +1129,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なシャツです。」 (Kore wa ichiban taisetsu na shatsu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Shirt.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なシャツです。 (Kore wa ichiban taisetsu na shatsu desu.) — Fill in topic particle 'は' (wa): This is the most important Shirt."
         },
         {
           "id": "u6_l6_4",
@@ -1114,7 +1151,8 @@
             "シャツ",
             "です"
           ],
-          "correctAnswer": "これはシャツです"
+          "correctAnswer": "これはシャツです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはシャツです」 (Kore wa shatsu desu.) expresses 'This is Shirt.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはシャツです (Kore wa shatsu desu.) — This is Shirt."
         },
         {
           "id": "u6_l6_5",
@@ -1131,7 +1169,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "靴"
+          "correctAnswer": "靴",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「靴」 (kutsu) expresses 'Pronounce: Shoes'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・靴 (kutsu) — Pronounce: Shoes"
         },
         {
           "id": "u6_l6_6",
@@ -1153,7 +1192,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "靴をお願いします"
+          "correctAnswer": "靴をお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「靴をお願いします」 (kutsu o onegaishimasu.) expresses 'Shoes, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・靴をお願いします (kutsu o onegaishimasu.) — Shoes, please."
         },
         {
           "id": "u6_l6_7",
@@ -1193,7 +1233,8 @@
               "romaji": "kaban"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「服・シャツ・靴・鞄」 (fuku, shatsu, kutsu, kaban) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・服・シャツ・靴・鞄 (fuku, shatsu, kutsu, kaban) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l6_8",
@@ -1217,7 +1258,8 @@
             "ごちそうさまでした",
             "いいえ、知りません"
           ],
-          "correctAnswer": "はい、試着室はこちらでございます！"
+          "correctAnswer": "はい、試着室はこちらでございます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「着てみてもいいですか？」 (Kite mite mo ii desu ka?) expresses 'Customer: May I try on this shirt?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・着てみてもいいですか？ (Kite mite mo ii desu ka?) — Customer: May I try on this shirt?"
         }
       ]
     },
@@ -1259,7 +1301,8 @@
             "Size",
             "Shirt"
           ],
-          "correctAnswer": "Bag / backpack"
+          "correctAnswer": "Bag / backpack",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「鞄」 (kaban) expresses 'Bag / backpack'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・鞄 (kaban) — Bag / backpack"
         },
         {
           "id": "u6_l7_2",
@@ -1279,7 +1322,8 @@
             "み",
             "あ"
           ],
-          "correctAnswer": "かばん"
+          "correctAnswer": "かばん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「鞄」 (kaban) expresses 'Build 'Bag / backpack''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・鞄 (kaban) — Build 'Bag / backpack'"
         },
         {
           "id": "u6_l7_3",
@@ -1298,7 +1342,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な時計です。」 (Kore wa ichiban taisetsu na tokei desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Watch / clock.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な時計です。 (Kore wa ichiban taisetsu na tokei desu.) — Fill in topic particle 'は' (wa): This is the most important Watch / clock."
         },
         {
           "id": "u6_l7_4",
@@ -1320,7 +1364,8 @@
             "時計",
             "です"
           ],
-          "correctAnswer": "これは時計です"
+          "correctAnswer": "これは時計です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは時計です」 (Kore wa tokei desu.) expresses 'This is Watch / clock.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは時計です (Kore wa tokei desu.) — This is Watch / clock."
         },
         {
           "id": "u6_l7_5",
@@ -1337,7 +1382,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "試着"
+          "correctAnswer": "試着",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「試着」 (shichaku) expresses 'Pronounce: Trying on clothes'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・試着 (shichaku) — Pronounce: Trying on clothes"
         },
         {
           "id": "u6_l7_6",
@@ -1359,7 +1405,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "試着をお願いします"
+          "correctAnswer": "試着をお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「試着をお願いします」 (shichaku o onegaishimasu.) expresses 'Trying on clothes, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・試着をお願いします (shichaku o onegaishimasu.) — Trying on clothes, please."
         },
         {
           "id": "u6_l7_7",
@@ -1399,7 +1446,8 @@
               "romaji": "shichakushitsu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「鞄・時計・試着・試着室」 (kaban, tokei, shichaku, shichakushitsu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・鞄・時計・試着・試着室 (kaban, tokei, shichaku, shichakushitsu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l7_8",
@@ -1423,7 +1471,8 @@
             "はじめまして",
             "また来ます"
           ],
-          "correctAnswer": "少々お待ちください、在庫をお調べいたします。"
+          "correctAnswer": "少々お待ちください、在庫をお調べいたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大きいサイズはありますか？」 (Ookii saizu wa arimasu ka?) expresses 'Customer: Do you have a slightly larger size?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大きいサイズはありますか？ (Ookii saizu wa arimasu ka?) — Customer: Do you have a slightly larger size?"
         }
       ]
     },
@@ -1464,7 +1513,8 @@
             "Fitting room",
             "Shopping bag"
           ],
-          "correctAnswer": "Fitting room"
+          "correctAnswer": "Fitting room",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「試着室」 (shichakushitsu) expresses 'Fitting room'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・試着室 (shichakushitsu) — Fitting room"
         },
         {
           "id": "u6_l8_2",
@@ -1484,7 +1534,8 @@
             "ち",
             "ゃ"
           ],
-          "correctAnswer": "しちゃくしつ"
+          "correctAnswer": "しちゃくしつ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「試着室」 (shichakushitsu) expresses 'Build 'Fitting room''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・試着室 (shichakushitsu) — Build 'Fitting room'"
         },
         {
           "id": "u6_l8_3",
@@ -1503,7 +1554,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なサイズです。」 (Kore wa ichiban taisetsu na saizu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Size.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なサイズです。 (Kore wa ichiban taisetsu na saizu desu.) — Fill in topic particle 'は' (wa): This is the most important Size."
         },
         {
           "id": "u6_l8_4",
@@ -1525,7 +1576,8 @@
             "サイズ",
             "です"
           ],
-          "correctAnswer": "これはサイズです"
+          "correctAnswer": "これはサイズです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはサイズです」 (Kore wa saizu desu.) expresses 'This is Size.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはサイズです (Kore wa saizu desu.) — This is Size."
         },
         {
           "id": "u6_l8_5",
@@ -1542,7 +1594,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "見せる"
+          "correctAnswer": "見せる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見せる」 (miseru) expresses 'Pronounce: To show'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見せる (miseru) — Pronounce: To show"
         },
         {
           "id": "u6_l8_6",
@@ -1562,7 +1615,8 @@
             "見せる",
             "です"
           ],
-          "correctAnswer": "見せるです"
+          "correctAnswer": "見せるです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見せるです」 (miseru desu.) expresses 'It is To show.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見せるです (miseru desu.) — It is To show."
         },
         {
           "id": "u6_l8_7",
@@ -1602,7 +1656,8 @@
               "romaji": "kiru"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「試着室・サイズ・見せる・着る」 (shichakushitsu, saizu, miseru, kiru) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・試着室・サイズ・見せる・着る (shichakushitsu, saizu, miseru, kiru) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l8_8",
@@ -1626,7 +1681,8 @@
             "いいえ、日本人です",
             "お腹が痛いです"
           ],
-          "correctAnswer": "はい、1枚お願いします。"
+          "correctAnswer": "はい、1枚お願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「袋はお付けしますか？」 (Fukuro wa otsuke shimasu ka?) expresses 'Clerk: Would you like a bag?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・袋はお付けしますか？ (Fukuro wa otsuke shimasu ka?) — Clerk: Would you like a bag?"
         }
       ]
     },
@@ -1665,7 +1721,8 @@
             "To wear (upper body)",
             "Shoes"
           ],
-          "correctAnswer": "To wear (upper body)"
+          "correctAnswer": "To wear (upper body)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「着る」 (kiru) expresses 'To wear (upper body)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・着る (kiru) — To wear (upper body)"
         },
         {
           "id": "u6_l9_2",
@@ -1685,7 +1742,8 @@
             "こ",
             "せ"
           ],
-          "correctAnswer": "きる"
+          "correctAnswer": "きる",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「着る」 (kiru) expresses 'Build 'To wear (upper body)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・着る (kiru) — Build 'To wear (upper body)'"
         },
         {
           "id": "u6_l9_3",
@@ -1704,7 +1762,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the object of the action verb."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎日、日本語を履く。」 (Mainichi, nihongo o haku.) expresses 'Fill in direct object particle 'を' (o): To wear (feet/legs) Japanese every day.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎日、日本語を履く。 (Mainichi, nihongo o haku.) — Fill in direct object particle 'を' (o): To wear (feet/legs) Japanese every day."
         },
         {
           "id": "u6_l9_4",
@@ -1726,7 +1784,8 @@
             "履く",
             "です"
           ],
-          "correctAnswer": "これは履くです"
+          "correctAnswer": "これは履くです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは履くです」 (Kore wa haku desu.) expresses 'This is To wear (feet/legs).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは履くです (Kore wa haku desu.) — This is To wear (feet/legs)."
         },
         {
           "id": "u6_l9_5",
@@ -1743,7 +1802,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "レジ"
+          "correctAnswer": "レジ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「レジ」 (reji) expresses 'Pronounce: Cash register'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・レジ (reji) — Pronounce: Cash register"
         },
         {
           "id": "u6_l9_6",
@@ -1763,7 +1823,8 @@
             "レジ",
             "です"
           ],
-          "correctAnswer": "レジです"
+          "correctAnswer": "レジです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「レジです」 (reji desu.) expresses 'It is Cash register.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・レジです (reji desu.) — It is Cash register."
         },
         {
           "id": "u6_l9_7",
@@ -1803,7 +1864,8 @@
               "romaji": "fukuro"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「着る・履く・レジ・袋」 (kiru, haku, reji, fukuro) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・着る・履く・レジ・袋 (kiru, haku, reji, fukuro) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l9_8",
@@ -1827,7 +1889,8 @@
             "お水をお願いします",
             "はい、そうです"
           ],
-          "correctAnswer": "税込で3,500円でございます。"
+          "correctAnswer": "税込で3,500円でございます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これいくらですか？」 (Kore ikura desu ka?) expresses 'Customer: Excuse me, how much is this?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これいくらですか？ (Kore ikura desu ka?) — Customer: Excuse me, how much is this?"
         }
       ]
     },
@@ -1867,7 +1930,8 @@
             "Cash",
             "To show"
           ],
-          "correctAnswer": "Shopping bag"
+          "correctAnswer": "Shopping bag",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「袋」 (fukuro) expresses 'Shopping bag'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・袋 (fukuro) — Shopping bag"
         },
         {
           "id": "u6_l10_2",
@@ -1887,7 +1951,8 @@
             "せ",
             "そ"
           ],
-          "correctAnswer": "ふくろ"
+          "correctAnswer": "ふくろ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「袋」 (fukuro) expresses 'Build 'Shopping bag''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・袋 (fukuro) — Build 'Shopping bag'"
         },
         {
           "id": "u6_l10_3",
@@ -1906,7 +1971,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な免税です。」 (Kore wa ichiban taisetsu na menzei desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Tax-free / duty-free.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な免税です。 (Kore wa ichiban taisetsu na menzei desu.) — Fill in topic particle 'は' (wa): This is the most important Tax-free / duty-free."
         },
         {
           "id": "u6_l10_4",
@@ -1928,7 +1993,8 @@
             "免税",
             "です"
           ],
-          "correctAnswer": "これは免税です"
+          "correctAnswer": "これは免税です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは免税です」 (Kore wa menzei desu.) expresses 'This is Tax-free / duty-free.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは免税です (Kore wa menzei desu.) — This is Tax-free / duty-free."
         },
         {
           "id": "u6_l10_5",
@@ -1945,7 +2011,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "パスポート"
+          "correctAnswer": "パスポート",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「パスポート」 (pasupooto) expresses 'Pronounce: Passport'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・パスポート (pasupooto) — Pronounce: Passport"
         },
         {
           "id": "u6_l10_6",
@@ -1967,7 +2034,8 @@
             "パスポート",
             "です"
           ],
-          "correctAnswer": "私はパスポートです"
+          "correctAnswer": "私はパスポートです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「私はパスポートです」 (Watashi wa pasupooto desu.) expresses 'I am a Passport.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・私はパスポートです (Watashi wa pasupooto desu.) — I am a Passport."
         },
         {
           "id": "u6_l10_7",
@@ -2007,7 +2075,8 @@
               "romaji": "genkin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「袋・免税・パスポート・現金」 (fukuro, menzei, pasupooto, genkin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・袋・免税・パスポート・現金 (fukuro, menzei, pasupooto, genkin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l10_8",
@@ -2031,7 +2100,8 @@
             "ごちそうさまでした",
             "いいえ、知りません"
           ],
-          "correctAnswer": "はい、試着室はこちらでございます！"
+          "correctAnswer": "はい、試着室はこちらでございます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「着てみてもいいですか？」 (Kite mite mo ii desu ka?) expresses 'Customer: May I try on this shirt?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・着てみてもいいですか？ (Kite mite mo ii desu ka?) — Customer: May I try on this shirt?"
         }
       ]
     },
@@ -2072,7 +2142,8 @@
             "That (near listener)",
             "Cash"
           ],
-          "correctAnswer": "Cash"
+          "correctAnswer": "Cash",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「現金」 (genkin) expresses 'Cash'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・現金 (genkin) — Cash"
         },
         {
           "id": "u6_l11_2",
@@ -2092,7 +2163,8 @@
             "に",
             "げ"
           ],
-          "correctAnswer": "げんきん"
+          "correctAnswer": "げんきん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「現金」 (genkin) expresses 'Build 'Cash''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・現金 (genkin) — Build 'Cash'"
         },
         {
           "id": "u6_l11_3",
@@ -2111,7 +2183,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なクレジットカードです。」 (Kore wa ichiban taisetsu na kurejitto kaado desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Credit card.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なクレジットカードです。 (Kore wa ichiban taisetsu na kurejitto kaado desu.) — Fill in topic particle 'は' (wa): This is the most important Credit card."
         },
         {
           "id": "u6_l11_4",
@@ -2133,7 +2205,8 @@
             "クレジットカード",
             "です"
           ],
-          "correctAnswer": "これはクレジットカードです"
+          "correctAnswer": "これはクレジットカードです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはクレジットカードです」 (Kore wa kurejitto kaado desu.) expresses 'This is Credit card.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはクレジットカードです (Kore wa kurejitto kaado desu.) — This is Credit card."
         },
         {
           "id": "u6_l11_5",
@@ -2150,7 +2223,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "割引"
+          "correctAnswer": "割引",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「割引」 (waribiki) expresses 'Pronounce: Discount'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・割引 (waribiki) — Pronounce: Discount"
         },
         {
           "id": "u6_l11_6",
@@ -2170,7 +2244,8 @@
             "割引",
             "です"
           ],
-          "correctAnswer": "割引です"
+          "correctAnswer": "割引です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「割引です」 (waribiki desu.) expresses 'It is Discount.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・割引です (waribiki desu.) — It is Discount."
         },
         {
           "id": "u6_l11_7",
@@ -2210,7 +2285,8 @@
               "romaji": "seeru"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「現金・クレジットカード・割引・セール」 (genkin, kurejitto kaado, waribiki, seeru) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・現金・クレジットカード・割引・セール (genkin, kurejitto kaado, waribiki, seeru) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l11_8",
@@ -2234,7 +2310,8 @@
             "はじめまして",
             "また来ます"
           ],
-          "correctAnswer": "少々お待ちください、在庫をお調べいたします。"
+          "correctAnswer": "少々お待ちください、在庫をお調べいたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大きいサイズはありますか？」 (Ookii saizu wa arimasu ka?) expresses 'Customer: Do you have a slightly larger size?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大きいサイズはありますか？ (Ookii saizu wa arimasu ka?) — Customer: Do you have a slightly larger size?"
         }
       ]
     },
@@ -2273,7 +2350,8 @@
             "Bag / backpack",
             "Shoes"
           ],
-          "correctAnswer": "Sale"
+          "correctAnswer": "Sale",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「セール」 (seeru) expresses 'Sale'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・セール (seeru) — Sale"
         },
         {
           "id": "u6_l12_2",
@@ -2293,7 +2371,8 @@
             "あ",
             "セ"
           ],
-          "correctAnswer": "セール"
+          "correctAnswer": "セール",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「セール」 (seeru) expresses 'Build 'Sale''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・セール (seeru) — Build 'Sale'"
         },
         {
           "id": "u6_l12_3",
@@ -2312,7 +2391,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なお土産です。」 (Kore wa ichiban taisetsu na omiyage desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Souvenir / gift.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なお土産です。 (Kore wa ichiban taisetsu na omiyage desu.) — Fill in topic particle 'は' (wa): This is the most important Souvenir / gift."
         },
         {
           "id": "u6_l12_4",
@@ -2334,7 +2413,8 @@
             "お土産",
             "です"
           ],
-          "correctAnswer": "これはお土産です"
+          "correctAnswer": "これはお土産です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはお土産です」 (Kore wa omiyage desu.) expresses 'This is Souvenir / gift.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはお土産です (Kore wa omiyage desu.) — This is Souvenir / gift."
         },
         {
           "id": "u6_l12_5",
@@ -2351,7 +2431,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "これにします"
+          "correctAnswer": "これにします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これにします」 (kore ni shimasu) expresses 'Pronounce: I will take this one'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これにします (kore ni shimasu) — Pronounce: I will take this one"
         },
         {
           "id": "u6_l12_6",
@@ -2371,7 +2452,8 @@
             "これにします",
             "です"
           ],
-          "correctAnswer": "これにしますです"
+          "correctAnswer": "これにしますです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これにしますです」 (kore ni shimasu desu.) expresses 'It is I will take this one.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これにしますです (kore ni shimasu desu.) — It is I will take this one."
         },
         {
           "id": "u6_l12_7",
@@ -2411,7 +2493,8 @@
               "romaji": "ikura"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「セール・お土産・これにします・いくら」 (seeru, omiyage, kore ni shimasu, ikura) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・セール・お土産・これにします・いくら (seeru, omiyage, kore ni shimasu, ikura) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l12_8",
@@ -2435,7 +2518,8 @@
             "いいえ、日本人です",
             "お腹が痛いです"
           ],
-          "correctAnswer": "はい、1枚お願いします。"
+          "correctAnswer": "はい、1枚お願いします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「袋はお付けしますか？」 (Fukuro wa otsuke shimasu ka?) expresses 'Clerk: Would you like a bag?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・袋はお付けしますか？ (Fukuro wa otsuke shimasu ka?) — Clerk: Would you like a bag?"
         }
       ]
     },
@@ -2471,7 +2555,8 @@
             "How much (cost)",
             "To show"
           ],
-          "correctAnswer": "How much (cost)"
+          "correctAnswer": "How much (cost)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いくら」 (ikura) expresses 'How much (cost)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いくら (ikura) — How much (cost)"
         },
         {
           "id": "u6_l13_2",
@@ -2491,7 +2576,8 @@
             "え",
             "か"
           ],
-          "correctAnswer": "いくら"
+          "correctAnswer": "いくら",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いくら」 (ikura) expresses 'Build 'How much (cost)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いくら (ikura) — Build 'How much (cost)'"
         },
         {
           "id": "u6_l13_3",
@@ -2510,7 +2596,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なこれです。」 (Kore wa ichiban taisetsu na kore desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important This (near speaker).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なこれです。 (Kore wa ichiban taisetsu na kore desu.) — Fill in topic particle 'は' (wa): This is the most important This (near speaker)."
         },
         {
           "id": "u6_l13_4",
@@ -2532,7 +2618,8 @@
             "これ",
             "です"
           ],
-          "correctAnswer": "これはこれです"
+          "correctAnswer": "これはこれです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはこれです」 (Kore wa kore desu.) expresses 'This is This (near speaker).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはこれです (Kore wa kore desu.) — This is This (near speaker)."
         },
         {
           "id": "u6_l13_5",
@@ -2549,7 +2636,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "それ"
+          "correctAnswer": "それ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「それ」 (sore) expresses 'Pronounce: That (near listener)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・それ (sore) — Pronounce: That (near listener)"
         },
         {
           "id": "u6_l13_6",
@@ -2569,7 +2657,8 @@
             "それ",
             "です"
           ],
-          "correctAnswer": "それです"
+          "correctAnswer": "それです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「それです」 (sore desu.) expresses 'It is That (near listener).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・それです (sore desu.) — It is That (near listener)."
         },
         {
           "id": "u6_l13_7",
@@ -2609,7 +2698,8 @@
               "romaji": "are"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いくら・これ・それ・あれ」 (ikura, kore, sore, are) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いくら・これ・それ・あれ (ikura, kore, sore, are) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l13_8",
@@ -2633,7 +2723,8 @@
             "お水をお願いします",
             "はい、そうです"
           ],
-          "correctAnswer": "税込で3,500円でございます。"
+          "correctAnswer": "税込で3,500円でございます。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これいくらですか？」 (Kore ikura desu ka?) expresses 'Customer: Excuse me, how much is this?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これいくらですか？ (Kore ikura desu ka?) — Customer: Excuse me, how much is this?"
         }
       ]
     },
@@ -2671,7 +2762,8 @@
             "To show",
             "Sale"
           ],
-          "correctAnswer": "That over there"
+          "correctAnswer": "That over there",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あれ」 (are) expresses 'That over there'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あれ (are) — That over there"
         },
         {
           "id": "u6_l14_2",
@@ -2691,7 +2783,8 @@
             "よ",
             "あ"
           ],
-          "correctAnswer": "あれ"
+          "correctAnswer": "あれ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あれ」 (are) expresses 'Build 'That over there''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あれ (are) — Build 'That over there'"
         },
         {
           "id": "u6_l14_3",
@@ -2710,7 +2803,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切などれです。」 (Kore wa ichiban taisetsu na dore desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Which one.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切などれです。 (Kore wa ichiban taisetsu na dore desu.) — Fill in topic particle 'は' (wa): This is the most important Which one."
         },
         {
           "id": "u6_l14_4",
@@ -2732,7 +2825,8 @@
             "どれ",
             "です"
           ],
-          "correctAnswer": "これはどれです"
+          "correctAnswer": "これはどれです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはどれです」 (Kore wa dore desu.) expresses 'This is Which one.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはどれです (Kore wa dore desu.) — This is Which one."
         },
         {
           "id": "u6_l14_5",
@@ -2749,7 +2843,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "高い"
+          "correctAnswer": "高い",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高い」 (takai) expresses 'Pronounce: Expensive'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高い (takai) — Pronounce: Expensive"
         },
         {
           "id": "u6_l14_6",
@@ -2769,7 +2864,8 @@
             "高い",
             "です"
           ],
-          "correctAnswer": "高いです"
+          "correctAnswer": "高いです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高いです」 (takai desu.) expresses 'It is Expensive.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高いです (takai desu.) — It is Expensive."
         },
         {
           "id": "u6_l14_7",
@@ -2809,7 +2905,8 @@
               "romaji": "yasui"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あれ・どれ・高い・安い」 (are, dore, takai, yasui) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あれ・どれ・高い・安い (are, dore, takai, yasui) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l14_8",
@@ -2833,7 +2930,8 @@
             "ごちそうさまでした",
             "いいえ、知りません"
           ],
-          "correctAnswer": "はい、試着室はこちらでございます！"
+          "correctAnswer": "はい、試着室はこちらでございます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「着てみてもいいですか？」 (Kite mite mo ii desu ka?) expresses 'Customer: May I try on this shirt?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・着てみてもいいですか？ (Kite mite mo ii desu ka?) — Customer: May I try on this shirt?"
         }
       ]
     },
@@ -2873,7 +2971,8 @@
             "Cheap / inexpensive",
             "Sale"
           ],
-          "correctAnswer": "Cheap / inexpensive"
+          "correctAnswer": "Cheap / inexpensive",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「安い」 (yasui) expresses 'Cheap / inexpensive'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・安い (yasui) — Cheap / inexpensive"
         },
         {
           "id": "u6_l15_2",
@@ -2893,7 +2992,8 @@
             "ほ",
             "す"
           ],
-          "correctAnswer": "やすい"
+          "correctAnswer": "やすい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「安い」 (yasui) expresses 'Build 'Cheap / inexpensive''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・安い (yasui) — Build 'Cheap / inexpensive'"
         },
         {
           "id": "u6_l15_3",
@@ -2912,7 +3012,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な大きいです。」 (Kore wa ichiban taisetsu na ookii desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Big / large.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な大きいです。 (Kore wa ichiban taisetsu na ookii desu.) — Fill in topic particle 'は' (wa): This is the most important Big / large."
         },
         {
           "id": "u6_l15_4",
@@ -2934,7 +3034,8 @@
             "大きい",
             "です"
           ],
-          "correctAnswer": "これは大きいです"
+          "correctAnswer": "これは大きいです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは大きいです」 (Kore wa ookii desu.) expresses 'This is Big / large.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは大きいです (Kore wa ookii desu.) — This is Big / large."
         },
         {
           "id": "u6_l15_5",
@@ -2951,7 +3052,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "小さい"
+          "correctAnswer": "小さい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「小さい」 (chiisai) expresses 'Pronounce: Small'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・小さい (chiisai) — Pronounce: Small"
         },
         {
           "id": "u6_l15_6",
@@ -2971,7 +3073,8 @@
             "小さい",
             "です"
           ],
-          "correctAnswer": "小さいです"
+          "correctAnswer": "小さいです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「小さいです」 (chiisai desu.) expresses 'It is Small.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・小さいです (chiisai desu.) — It is Small."
         },
         {
           "id": "u6_l15_7",
@@ -3011,7 +3114,8 @@
               "romaji": "atarashii"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「安い・大きい・小さい・新しい」 (yasui, ookii, chiisai, atarashii) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・安い・大きい・小さい・新しい (yasui, ookii, chiisai, atarashii) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u6_l15_8",
@@ -3035,7 +3139,8 @@
             "はじめまして",
             "また来ます"
           ],
-          "correctAnswer": "少々お待ちください、在庫をお調べいたします。"
+          "correctAnswer": "少々お待ちください、在庫をお調べいたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大きいサイズはありますか？」 (Ookii saizu wa arimasu ka?) expresses 'Customer: Do you have a slightly larger size?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大きいサイズはありますか？ (Ookii saizu wa arimasu ka?) — Customer: Do you have a slightly larger size?"
         }
       ]
     }

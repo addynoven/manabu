@@ -51,7 +51,8 @@
             "Bullet train",
             "Weather"
           ],
-          "correctAnswer": "Weather"
+          "correctAnswer": "Weather",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気」 (tenki) expresses 'Weather'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気 (tenki) — Weather"
         },
         {
           "id": "u10_l1_2",
@@ -71,7 +72,8 @@
             "ん",
             "き"
           ],
-          "correctAnswer": "てんき"
+          "correctAnswer": "てんき",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気」 (tenki) expresses 'Build 'Weather''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気 (tenki) — Build 'Weather'"
         },
         {
           "id": "u10_l1_3",
@@ -90,7 +92,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な晴れです。」 (Kore wa ichiban taisetsu na hare desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Sunny / clear.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な晴れです。 (Kore wa ichiban taisetsu na hare desu.) — Fill in topic particle 'は' (wa): This is the most important Sunny / clear."
         },
         {
           "id": "u10_l1_4",
@@ -112,7 +114,8 @@
             "晴れ",
             "です"
           ],
-          "correctAnswer": "これは晴れです"
+          "correctAnswer": "これは晴れです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは晴れです」 (Kore wa hare desu.) expresses 'This is Sunny / clear.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは晴れです (Kore wa hare desu.) — This is Sunny / clear."
         },
         {
           "id": "u10_l1_5",
@@ -129,7 +132,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "雨"
+          "correctAnswer": "雨",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨」 (ame) expresses 'Pronounce: Rain'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨 (ame) — Pronounce: Rain"
         },
         {
           "id": "u10_l1_6",
@@ -149,7 +153,8 @@
             "雨",
             "です"
           ],
-          "correctAnswer": "雨です"
+          "correctAnswer": "雨です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨です」 (ame desu.) expresses 'It is Rain.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨です (ame desu.) — It is Rain."
         },
         {
           "id": "u10_l1_7",
@@ -189,7 +194,8 @@
               "romaji": "taifuu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気・晴れ・雨・台風」 (tenki, hare, ame, taifuu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気・晴れ・雨・台風 (tenki, hare, ame, taifuu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l1_8",
@@ -213,7 +219,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気について教えていただけますか？」 (tenki ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Weather?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気について教えていただけますか？ (tenki ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Weather?"
         }
       ]
     },
@@ -257,7 +264,8 @@
             "Confirming Bullet train",
             "Typhoon"
           ],
-          "correctAnswer": "Typhoon"
+          "correctAnswer": "Typhoon",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風」 (taifuu) expresses 'Typhoon'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風 (taifuu) — Typhoon"
         },
         {
           "id": "u10_l2_2",
@@ -277,7 +285,8 @@
             "り",
             "ふ"
           ],
-          "correctAnswer": "たいふう"
+          "correctAnswer": "たいふう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風」 (taifuu) expresses 'Build 'Typhoon''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風 (taifuu) — Build 'Typhoon'"
         },
         {
           "id": "u10_l2_3",
@@ -296,7 +305,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な新幹線です。」 (Kore wa ichiban taisetsu na shinkansen desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Bullet train.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な新幹線です。 (Kore wa ichiban taisetsu na shinkansen desu.) — Fill in topic particle 'は' (wa): This is the most important Bullet train."
         },
         {
           "id": "u10_l2_4",
@@ -318,7 +327,8 @@
             "新幹線",
             "です"
           ],
-          "correctAnswer": "これは新幹線です"
+          "correctAnswer": "これは新幹線です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは新幹線です」 (Kore wa shinkansen desu.) expresses 'This is Bullet train.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは新幹線です (Kore wa shinkansen desu.) — This is Bullet train."
         },
         {
           "id": "u10_l2_5",
@@ -335,7 +345,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "切符"
+          "correctAnswer": "切符",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「切符」 (kippu) expresses 'Pronounce: Ticket'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・切符 (kippu) — Pronounce: Ticket"
         },
         {
           "id": "u10_l2_6",
@@ -355,7 +366,8 @@
             "切符",
             "です"
           ],
-          "correctAnswer": "切符です"
+          "correctAnswer": "切符です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「切符です」 (kippu desu.) expresses 'It is Ticket.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・切符です (kippu desu.) — It is Ticket."
         },
         {
           "id": "u10_l2_7",
@@ -395,7 +407,8 @@
               "romaji": "shiteiseki"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風・新幹線・切符・指定席」 (taifuu, shinkansen, kippu, shiteiseki) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風・新幹線・切符・指定席 (taifuu, shinkansen, kippu, shiteiseki) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l2_8",
@@ -419,7 +432,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「晴れの準備はできていますか？」 (hare no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Sunny / clear ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・晴れの準備はできていますか？ (hare no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Sunny / clear ready?"
         }
       ]
     },
@@ -464,7 +478,8 @@
             "Weather",
             "Umbrella"
           ],
-          "correctAnswer": "Reserved seat"
+          "correctAnswer": "Reserved seat",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「指定席」 (shiteiseki) expresses 'Reserved seat'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・指定席 (shiteiseki) — Reserved seat"
         },
         {
           "id": "u10_l3_2",
@@ -484,7 +499,8 @@
             "き",
             "ゆ"
           ],
-          "correctAnswer": "していせき"
+          "correctAnswer": "していせき",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「指定席」 (shiteiseki) expresses 'Build 'Reserved seat''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・指定席 (shiteiseki) — Build 'Reserved seat'"
         },
         {
           "id": "u10_l3_3",
@@ -503,7 +519,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な自由席です。」 (Kore wa ichiban taisetsu na jiyuuseki desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Non-reserved seat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な自由席です。 (Kore wa ichiban taisetsu na jiyuuseki desu.) — Fill in topic particle 'は' (wa): This is the most important Non-reserved seat."
         },
         {
           "id": "u10_l3_4",
@@ -525,7 +541,8 @@
             "自由席",
             "です"
           ],
-          "correctAnswer": "これは自由席です"
+          "correctAnswer": "これは自由席です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは自由席です」 (Kore wa jiyuuseki desu.) expresses 'This is Non-reserved seat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは自由席です (Kore wa jiyuuseki desu.) — This is Non-reserved seat."
         },
         {
           "id": "u10_l3_5",
@@ -542,7 +559,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "旅行"
+          "correctAnswer": "旅行",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「旅行」 (ryokou) expresses 'Pronounce: Travel / trip'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・旅行 (ryokou) — Pronounce: Travel / trip"
         },
         {
           "id": "u10_l3_6",
@@ -562,7 +580,8 @@
             "旅行",
             "です"
           ],
-          "correctAnswer": "旅行です"
+          "correctAnswer": "旅行です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「旅行です」 (ryokou desu.) expresses 'It is Travel / trip.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・旅行です (ryokou desu.) — It is Travel / trip."
         },
         {
           "id": "u10_l3_7",
@@ -602,7 +621,8 @@
               "romaji": "sakura"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「指定席・自由席・旅行・桜」 (shiteiseki, jiyuuseki, ryokou, sakura) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・指定席・自由席・旅行・桜 (shiteiseki, jiyuuseki, ryokou, sakura) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l3_8",
@@ -626,7 +646,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨についてどう思われますか？」 (ame ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Rain?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨についてどう思われますか？ (ame ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Rain?"
         }
       ]
     },
@@ -668,7 +689,8 @@
             "Confirming Rain",
             "Autumn foliage"
           ],
-          "correctAnswer": "Cherry blossom"
+          "correctAnswer": "Cherry blossom",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「桜」 (sakura) expresses 'Cherry blossom'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・桜 (sakura) — Cherry blossom"
         },
         {
           "id": "u10_l4_2",
@@ -688,7 +710,8 @@
             "さ",
             "く"
           ],
-          "correctAnswer": "さくら"
+          "correctAnswer": "さくら",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「桜」 (sakura) expresses 'Build 'Cherry blossom''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・桜 (sakura) — Build 'Cherry blossom'"
         },
         {
           "id": "u10_l4_3",
@@ -707,7 +730,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な紅葉です。」 (Kore wa ichiban taisetsu na kouyou desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Autumn foliage.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な紅葉です。 (Kore wa ichiban taisetsu na kouyou desu.) — Fill in topic particle 'は' (wa): This is the most important Autumn foliage."
         },
         {
           "id": "u10_l4_4",
@@ -729,7 +752,8 @@
             "紅葉",
             "です"
           ],
-          "correctAnswer": "これは紅葉です"
+          "correctAnswer": "これは紅葉です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは紅葉です」 (Kore wa kouyou desu.) expresses 'This is Autumn foliage.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは紅葉です (Kore wa kouyou desu.) — This is Autumn foliage."
         },
         {
           "id": "u10_l4_5",
@@ -746,7 +770,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "気温"
+          "correctAnswer": "気温",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「気温」 (kion) expresses 'Pronounce: Temperature'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・気温 (kion) — Pronounce: Temperature"
         },
         {
           "id": "u10_l4_6",
@@ -766,7 +791,8 @@
             "気温",
             "です"
           ],
-          "correctAnswer": "気温です"
+          "correctAnswer": "気温です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「気温です」 (kion desu.) expresses 'It is Temperature.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・気温です (kion desu.) — It is Temperature."
         },
         {
           "id": "u10_l4_7",
@@ -806,7 +832,8 @@
               "romaji": "kasa"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「桜・紅葉・気温・傘」 (sakura, kouyou, kion, kasa) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・桜・紅葉・気温・傘 (sakura, kouyou, kion, kasa) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l4_8",
@@ -830,7 +857,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は台風に進みましょう。」 (Tsugi wa taifuu ni susumimashou.) expresses 'Speaker: Let's proceed to Typhoon next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は台風に進みましょう。 (Tsugi wa taifuu ni susumimashou.) — Speaker: Let's proceed to Typhoon next."
         }
       ]
     },
@@ -871,7 +899,8 @@
             "Cool / refreshing",
             "Non-reserved seat"
           ],
-          "correctAnswer": "Umbrella"
+          "correctAnswer": "Umbrella",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「傘」 (kasa) expresses 'Umbrella'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・傘 (kasa) — Umbrella"
         },
         {
           "id": "u10_l5_2",
@@ -891,7 +920,8 @@
             "む",
             "か"
           ],
-          "correctAnswer": "かさ"
+          "correctAnswer": "かさ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「傘」 (kasa) expresses 'Build 'Umbrella''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・傘 (kasa) — Build 'Umbrella'"
         },
         {
           "id": "u10_l5_3",
@@ -910,7 +940,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な涼しいです。」 (Kore wa ichiban taisetsu na suzushii desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Cool / refreshing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な涼しいです。 (Kore wa ichiban taisetsu na suzushii desu.) — Fill in topic particle 'は' (wa): This is the most important Cool / refreshing."
         },
         {
           "id": "u10_l5_4",
@@ -932,7 +962,8 @@
             "涼しい",
             "です"
           ],
-          "correctAnswer": "これは涼しいです"
+          "correctAnswer": "これは涼しいです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは涼しいです」 (Kore wa suzushii desu.) expresses 'This is Cool / refreshing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは涼しいです (Kore wa suzushii desu.) — This is Cool / refreshing."
         },
         {
           "id": "u10_l5_5",
@@ -949,7 +980,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "荷物"
+          "correctAnswer": "荷物",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「荷物」 (nimotsu) expresses 'Pronounce: Luggage / baggage'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・荷物 (nimotsu) — Pronounce: Luggage / baggage"
         },
         {
           "id": "u10_l5_6",
@@ -969,7 +1001,8 @@
             "荷物",
             "です"
           ],
-          "correctAnswer": "荷物です"
+          "correctAnswer": "荷物です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「荷物です」 (nimotsu desu.) expresses 'It is Luggage / baggage.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・荷物です (nimotsu desu.) — It is Luggage / baggage."
         },
         {
           "id": "u10_l5_7",
@@ -1009,7 +1042,8 @@
               "romaji": "tenki no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「傘・涼しい・荷物・天気の確認」 (kasa, suzushii, nimotsu, tenki no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・傘・涼しい・荷物・天気の確認 (kasa, suzushii, nimotsu, tenki no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l5_8",
@@ -1033,7 +1067,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気について教えていただけますか？」 (tenki ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Weather?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気について教えていただけますか？ (tenki ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Weather?"
         }
       ]
     },
@@ -1080,7 +1115,8 @@
             "Confirming Typhoon",
             "Rain"
           ],
-          "correctAnswer": "Confirming Weather"
+          "correctAnswer": "Confirming Weather",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気の確認」 (tenki no kakunin) expresses 'Confirming Weather'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気の確認 (tenki no kakunin) — Confirming Weather"
         },
         {
           "id": "u10_l6_2",
@@ -1100,7 +1136,8 @@
             "て",
             "ん"
           ],
-          "correctAnswer": "てんきのかくにん"
+          "correctAnswer": "てんきのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気の確認」 (tenki no kakunin) expresses 'Build 'Confirming Weather''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気の確認 (tenki no kakunin) — Build 'Confirming Weather'"
         },
         {
           "id": "u10_l6_3",
@@ -1119,7 +1156,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な晴れの確認です。」 (Kore wa ichiban taisetsu na hare no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Sunny / clear.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な晴れの確認です。 (Kore wa ichiban taisetsu na hare no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Sunny / clear."
         },
         {
           "id": "u10_l6_4",
@@ -1141,7 +1178,8 @@
             "晴れの確認",
             "です"
           ],
-          "correctAnswer": "これは晴れの確認です"
+          "correctAnswer": "これは晴れの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは晴れの確認です」 (Kore wa hare no kakunin desu.) expresses 'This is Confirming Sunny / clear.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは晴れの確認です (Kore wa hare no kakunin desu.) — This is Confirming Sunny / clear."
         },
         {
           "id": "u10_l6_5",
@@ -1158,7 +1196,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "雨の確認"
+          "correctAnswer": "雨の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨の確認」 (ame no kakunin) expresses 'Pronounce: Confirming Rain'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨の確認 (ame no kakunin) — Pronounce: Confirming Rain"
         },
         {
           "id": "u10_l6_6",
@@ -1178,7 +1217,8 @@
             "雨の確認",
             "です"
           ],
-          "correctAnswer": "雨の確認です"
+          "correctAnswer": "雨の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨の確認です」 (ame no kakunin desu.) expresses 'It is Confirming Rain.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨の確認です (ame no kakunin desu.) — It is Confirming Rain."
         },
         {
           "id": "u10_l6_7",
@@ -1218,7 +1258,8 @@
               "romaji": "taifuu no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気の確認・晴れの確認・雨の確認・台風の確認」 (tenki no kakunin, hare no kakunin, ame no kakunin, taifuu no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気の確認・晴れの確認・雨の確認・台風の確認 (tenki no kakunin, hare no kakunin, ame no kakunin, taifuu no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l6_8",
@@ -1242,7 +1283,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「晴れの準備はできていますか？」 (hare no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Sunny / clear ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・晴れの準備はできていますか？ (hare no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Sunny / clear ready?"
         }
       ]
     },
@@ -1292,7 +1334,8 @@
             "Confirming Typhoon",
             "Confirming Bullet train"
           ],
-          "correctAnswer": "Confirming Typhoon"
+          "correctAnswer": "Confirming Typhoon",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風の確認」 (taifuu no kakunin) expresses 'Confirming Typhoon'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風の確認 (taifuu no kakunin) — Confirming Typhoon"
         },
         {
           "id": "u10_l7_2",
@@ -1312,7 +1355,8 @@
             "に",
             "く"
           ],
-          "correctAnswer": "たいふうのかくにん"
+          "correctAnswer": "たいふうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風の確認」 (taifuu no kakunin) expresses 'Build 'Confirming Typhoon''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風の確認 (taifuu no kakunin) — Build 'Confirming Typhoon'"
         },
         {
           "id": "u10_l7_3",
@@ -1331,7 +1375,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な新幹線の確認です。」 (Kore wa ichiban taisetsu na shinkansen no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Bullet train.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な新幹線の確認です。 (Kore wa ichiban taisetsu na shinkansen no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Bullet train."
         },
         {
           "id": "u10_l7_4",
@@ -1353,7 +1397,8 @@
             "新幹線の確認",
             "です"
           ],
-          "correctAnswer": "これは新幹線の確認です"
+          "correctAnswer": "これは新幹線の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは新幹線の確認です」 (Kore wa shinkansen no kakunin desu.) expresses 'This is Confirming Bullet train.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは新幹線の確認です (Kore wa shinkansen no kakunin desu.) — This is Confirming Bullet train."
         },
         {
           "id": "u10_l7_5",
@@ -1370,7 +1415,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "切符の確認"
+          "correctAnswer": "切符の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「切符の確認」 (kippu no kakunin) expresses 'Pronounce: Confirming Ticket'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・切符の確認 (kippu no kakunin) — Pronounce: Confirming Ticket"
         },
         {
           "id": "u10_l7_6",
@@ -1390,7 +1436,8 @@
             "切符の確認",
             "です"
           ],
-          "correctAnswer": "切符の確認です"
+          "correctAnswer": "切符の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「切符の確認です」 (kippu no kakunin desu.) expresses 'It is Confirming Ticket.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・切符の確認です (kippu no kakunin desu.) — It is Confirming Ticket."
         },
         {
           "id": "u10_l7_7",
@@ -1430,7 +1477,8 @@
               "romaji": "shiteiseki no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風の確認・新幹線の確認・切符の確認・指定席の確認」 (taifuu no kakunin, shinkansen no kakunin, kippu no kakunin, shiteiseki no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風の確認・新幹線の確認・切符の確認・指定席の確認 (taifuu no kakunin, shinkansen no kakunin, kippu no kakunin, shiteiseki no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l7_8",
@@ -1454,7 +1502,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨についてどう思われますか？」 (ame ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Rain?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨についてどう思われますか？ (ame ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Rain?"
         }
       ]
     },
@@ -1505,7 +1554,8 @@
             "Rain",
             "Confirming Reserved seat"
           ],
-          "correctAnswer": "Confirming Reserved seat"
+          "correctAnswer": "Confirming Reserved seat",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「指定席の確認」 (shiteiseki no kakunin) expresses 'Confirming Reserved seat'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・指定席の確認 (shiteiseki no kakunin) — Confirming Reserved seat"
         },
         {
           "id": "u10_l8_2",
@@ -1525,7 +1575,8 @@
             "て",
             "の"
           ],
-          "correctAnswer": "していせきのかくにん"
+          "correctAnswer": "していせきのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「指定席の確認」 (shiteiseki no kakunin) expresses 'Build 'Confirming Reserved seat''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・指定席の確認 (shiteiseki no kakunin) — Build 'Confirming Reserved seat'"
         },
         {
           "id": "u10_l8_3",
@@ -1544,7 +1595,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な自由席の確認です。」 (Kore wa ichiban taisetsu na jiyuuseki no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Non-reserved seat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な自由席の確認です。 (Kore wa ichiban taisetsu na jiyuuseki no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Non-reserved seat."
         },
         {
           "id": "u10_l8_4",
@@ -1566,7 +1617,8 @@
             "自由席の確認",
             "です"
           ],
-          "correctAnswer": "これは自由席の確認です"
+          "correctAnswer": "これは自由席の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは自由席の確認です」 (Kore wa jiyuuseki no kakunin desu.) expresses 'This is Confirming Non-reserved seat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは自由席の確認です (Kore wa jiyuuseki no kakunin desu.) — This is Confirming Non-reserved seat."
         },
         {
           "id": "u10_l8_5",
@@ -1583,7 +1635,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "旅行の確認"
+          "correctAnswer": "旅行の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「旅行の確認」 (ryokou no kakunin) expresses 'Pronounce: Confirming Travel / trip'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・旅行の確認 (ryokou no kakunin) — Pronounce: Confirming Travel / trip"
         },
         {
           "id": "u10_l8_6",
@@ -1603,7 +1656,8 @@
             "旅行の確認",
             "です"
           ],
-          "correctAnswer": "旅行の確認です"
+          "correctAnswer": "旅行の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「旅行の確認です」 (ryokou no kakunin desu.) expresses 'It is Confirming Travel / trip.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・旅行の確認です (ryokou no kakunin desu.) — It is Confirming Travel / trip."
         },
         {
           "id": "u10_l8_7",
@@ -1643,7 +1697,8 @@
               "romaji": "sakura no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「指定席の確認・自由席の確認・旅行の確認・桜の確認」 (shiteiseki no kakunin, jiyuuseki no kakunin, ryokou no kakunin, sakura no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・指定席の確認・自由席の確認・旅行の確認・桜の確認 (shiteiseki no kakunin, jiyuuseki no kakunin, ryokou no kakunin, sakura no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l8_8",
@@ -1667,7 +1722,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は台風に進みましょう。」 (Tsugi wa taifuu ni susumimashou.) expresses 'Speaker: Let's proceed to Typhoon next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は台風に進みましょう。 (Tsugi wa taifuu ni susumimashou.) — Speaker: Let's proceed to Typhoon next."
         }
       ]
     },
@@ -1715,7 +1771,8 @@
             "Confirming Rain",
             "Autumn foliage"
           ],
-          "correctAnswer": "Confirming Cherry blossom"
+          "correctAnswer": "Confirming Cherry blossom",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「桜の確認」 (sakura no kakunin) expresses 'Confirming Cherry blossom'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・桜の確認 (sakura no kakunin) — Confirming Cherry blossom"
         },
         {
           "id": "u10_l9_2",
@@ -1735,7 +1792,8 @@
             "く",
             "に"
           ],
-          "correctAnswer": "さくらのかくにん"
+          "correctAnswer": "さくらのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「桜の確認」 (sakura no kakunin) expresses 'Build 'Confirming Cherry blossom''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・桜の確認 (sakura no kakunin) — Build 'Confirming Cherry blossom'"
         },
         {
           "id": "u10_l9_3",
@@ -1754,7 +1812,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な紅葉の確認です。」 (Kore wa ichiban taisetsu na kouyou no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Autumn foliage.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な紅葉の確認です。 (Kore wa ichiban taisetsu na kouyou no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Autumn foliage."
         },
         {
           "id": "u10_l9_4",
@@ -1776,7 +1834,8 @@
             "紅葉の確認",
             "です"
           ],
-          "correctAnswer": "これは紅葉の確認です"
+          "correctAnswer": "これは紅葉の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは紅葉の確認です」 (Kore wa kouyou no kakunin desu.) expresses 'This is Confirming Autumn foliage.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは紅葉の確認です (Kore wa kouyou no kakunin desu.) — This is Confirming Autumn foliage."
         },
         {
           "id": "u10_l9_5",
@@ -1793,7 +1852,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "気温の確認"
+          "correctAnswer": "気温の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「気温の確認」 (kion no kakunin) expresses 'Pronounce: Confirming Temperature'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・気温の確認 (kion no kakunin) — Pronounce: Confirming Temperature"
         },
         {
           "id": "u10_l9_6",
@@ -1813,7 +1873,8 @@
             "気温の確認",
             "です"
           ],
-          "correctAnswer": "気温の確認です"
+          "correctAnswer": "気温の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「気温の確認です」 (kion no kakunin desu.) expresses 'It is Confirming Temperature.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・気温の確認です (kion no kakunin desu.) — It is Confirming Temperature."
         },
         {
           "id": "u10_l9_7",
@@ -1853,7 +1914,8 @@
               "romaji": "kasa no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「桜の確認・紅葉の確認・気温の確認・傘の確認」 (sakura no kakunin, kouyou no kakunin, kion no kakunin, kasa no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・桜の確認・紅葉の確認・気温の確認・傘の確認 (sakura no kakunin, kouyou no kakunin, kion no kakunin, kasa no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l9_8",
@@ -1877,7 +1939,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気について教えていただけますか？」 (tenki ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Weather?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気について教えていただけますか？ (tenki ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Weather?"
         }
       ]
     },
@@ -1924,7 +1987,8 @@
             "Confirming Temperature",
             "Confirming Umbrella"
           ],
-          "correctAnswer": "Confirming Umbrella"
+          "correctAnswer": "Confirming Umbrella",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「傘の確認」 (kasa no kakunin) expresses 'Confirming Umbrella'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・傘の確認 (kasa no kakunin) — Confirming Umbrella"
         },
         {
           "id": "u10_l10_2",
@@ -1944,7 +2008,8 @@
             "に",
             "ん"
           ],
-          "correctAnswer": "かさのかくにん"
+          "correctAnswer": "かさのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「傘の確認」 (kasa no kakunin) expresses 'Build 'Confirming Umbrella''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・傘の確認 (kasa no kakunin) — Build 'Confirming Umbrella'"
         },
         {
           "id": "u10_l10_3",
@@ -1963,7 +2028,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な涼しいの確認です。」 (Kore wa ichiban taisetsu na suzushii no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Cool / refreshing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な涼しいの確認です。 (Kore wa ichiban taisetsu na suzushii no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Cool / refreshing."
         },
         {
           "id": "u10_l10_4",
@@ -1985,7 +2050,8 @@
             "涼しいの確認",
             "です"
           ],
-          "correctAnswer": "これは涼しいの確認です"
+          "correctAnswer": "これは涼しいの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは涼しいの確認です」 (Kore wa suzushii no kakunin desu.) expresses 'This is Confirming Cool / refreshing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは涼しいの確認です (Kore wa suzushii no kakunin desu.) — This is Confirming Cool / refreshing."
         },
         {
           "id": "u10_l10_5",
@@ -2002,7 +2068,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "荷物の確認"
+          "correctAnswer": "荷物の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「荷物の確認」 (nimotsu no kakunin) expresses 'Pronounce: Confirming Luggage / baggage'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・荷物の確認 (nimotsu no kakunin) — Pronounce: Confirming Luggage / baggage"
         },
         {
           "id": "u10_l10_6",
@@ -2022,7 +2089,8 @@
             "荷物の確認",
             "です"
           ],
-          "correctAnswer": "荷物の確認です"
+          "correctAnswer": "荷物の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「荷物の確認です」 (nimotsu no kakunin desu.) expresses 'It is Confirming Luggage / baggage.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・荷物の確認です (nimotsu no kakunin desu.) — It is Confirming Luggage / baggage."
         },
         {
           "id": "u10_l10_7",
@@ -2062,7 +2130,8 @@
               "romaji": "tenki no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「傘の確認・涼しいの確認・荷物の確認・天気の確認」 (kasa no kakunin, suzushii no kakunin, nimotsu no kakunin, tenki no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・傘の確認・涼しいの確認・荷物の確認・天気の確認 (kasa no kakunin, suzushii no kakunin, nimotsu no kakunin, tenki no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l10_8",
@@ -2086,7 +2155,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「晴れの準備はできていますか？」 (hare no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Sunny / clear ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・晴れの準備はできていますか？ (hare no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Sunny / clear ready?"
         }
       ]
     },
@@ -2133,7 +2203,8 @@
             "Non-reserved seat",
             "Confirming Cool / refreshing"
           ],
-          "correctAnswer": "Confirming Weather"
+          "correctAnswer": "Confirming Weather",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気の確認」 (tenki no kakunin) expresses 'Confirming Weather'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気の確認 (tenki no kakunin) — Confirming Weather"
         },
         {
           "id": "u10_l11_2",
@@ -2153,7 +2224,8 @@
             "ん",
             "く"
           ],
-          "correctAnswer": "てんきのかくにん"
+          "correctAnswer": "てんきのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気の確認」 (tenki no kakunin) expresses 'Build 'Confirming Weather''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気の確認 (tenki no kakunin) — Build 'Confirming Weather'"
         },
         {
           "id": "u10_l11_3",
@@ -2172,7 +2244,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な晴れの確認です。」 (Kore wa ichiban taisetsu na hare no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Sunny / clear.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な晴れの確認です。 (Kore wa ichiban taisetsu na hare no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Sunny / clear."
         },
         {
           "id": "u10_l11_4",
@@ -2194,7 +2266,8 @@
             "晴れの確認",
             "です"
           ],
-          "correctAnswer": "これは晴れの確認です"
+          "correctAnswer": "これは晴れの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは晴れの確認です」 (Kore wa hare no kakunin desu.) expresses 'This is Confirming Sunny / clear.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは晴れの確認です (Kore wa hare no kakunin desu.) — This is Confirming Sunny / clear."
         },
         {
           "id": "u10_l11_5",
@@ -2211,7 +2284,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "雨の確認"
+          "correctAnswer": "雨の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨の確認」 (ame no kakunin) expresses 'Pronounce: Confirming Rain'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨の確認 (ame no kakunin) — Pronounce: Confirming Rain"
         },
         {
           "id": "u10_l11_6",
@@ -2231,7 +2305,8 @@
             "雨の確認",
             "です"
           ],
-          "correctAnswer": "雨の確認です"
+          "correctAnswer": "雨の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨の確認です」 (ame no kakunin desu.) expresses 'It is Confirming Rain.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨の確認です (ame no kakunin desu.) — It is Confirming Rain."
         },
         {
           "id": "u10_l11_7",
@@ -2271,7 +2346,8 @@
               "romaji": "taifuu no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気の確認・晴れの確認・雨の確認・台風の確認」 (tenki no kakunin, hare no kakunin, ame no kakunin, taifuu no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気の確認・晴れの確認・雨の確認・台風の確認 (tenki no kakunin, hare no kakunin, ame no kakunin, taifuu no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l11_8",
@@ -2295,7 +2371,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨についてどう思われますか？」 (ame ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Rain?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨についてどう思われますか？ (ame ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Rain?"
         }
       ]
     },
@@ -2345,7 +2422,8 @@
             "Confirming Reserved seat",
             "Temperature"
           ],
-          "correctAnswer": "Confirming Typhoon"
+          "correctAnswer": "Confirming Typhoon",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風の確認」 (taifuu no kakunin) expresses 'Confirming Typhoon'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風の確認 (taifuu no kakunin) — Confirming Typhoon"
         },
         {
           "id": "u10_l12_2",
@@ -2365,7 +2443,8 @@
             "ふ",
             "た"
           ],
-          "correctAnswer": "たいふうのかくにん"
+          "correctAnswer": "たいふうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風の確認」 (taifuu no kakunin) expresses 'Build 'Confirming Typhoon''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風の確認 (taifuu no kakunin) — Build 'Confirming Typhoon'"
         },
         {
           "id": "u10_l12_3",
@@ -2384,7 +2463,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な新幹線の確認です。」 (Kore wa ichiban taisetsu na shinkansen no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Bullet train.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な新幹線の確認です。 (Kore wa ichiban taisetsu na shinkansen no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Bullet train."
         },
         {
           "id": "u10_l12_4",
@@ -2406,7 +2485,8 @@
             "新幹線の確認",
             "です"
           ],
-          "correctAnswer": "これは新幹線の確認です"
+          "correctAnswer": "これは新幹線の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは新幹線の確認です」 (Kore wa shinkansen no kakunin desu.) expresses 'This is Confirming Bullet train.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは新幹線の確認です (Kore wa shinkansen no kakunin desu.) — This is Confirming Bullet train."
         },
         {
           "id": "u10_l12_5",
@@ -2423,7 +2503,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "切符の確認"
+          "correctAnswer": "切符の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「切符の確認」 (kippu no kakunin) expresses 'Pronounce: Confirming Ticket'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・切符の確認 (kippu no kakunin) — Pronounce: Confirming Ticket"
         },
         {
           "id": "u10_l12_6",
@@ -2443,7 +2524,8 @@
             "切符の確認",
             "です"
           ],
-          "correctAnswer": "切符の確認です"
+          "correctAnswer": "切符の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「切符の確認です」 (kippu no kakunin desu.) expresses 'It is Confirming Ticket.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・切符の確認です (kippu no kakunin desu.) — It is Confirming Ticket."
         },
         {
           "id": "u10_l12_7",
@@ -2483,7 +2565,8 @@
               "romaji": "tenki"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風の確認・新幹線の確認・切符の確認・天気」 (taifuu no kakunin, shinkansen no kakunin, kippu no kakunin, tenki) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風の確認・新幹線の確認・切符の確認・天気 (taifuu no kakunin, shinkansen no kakunin, kippu no kakunin, tenki) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l12_8",
@@ -2507,7 +2590,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は台風に進みましょう。」 (Tsugi wa taifuu ni susumimashou.) expresses 'Speaker: Let's proceed to Typhoon next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は台風に進みましょう。 (Tsugi wa taifuu ni susumimashou.) — Speaker: Let's proceed to Typhoon next."
         }
       ]
     },
@@ -2548,7 +2632,8 @@
             "Confirming Rain",
             "Autumn foliage"
           ],
-          "correctAnswer": "Weather"
+          "correctAnswer": "Weather",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気」 (tenki) expresses 'Weather'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気 (tenki) — Weather"
         },
         {
           "id": "u10_l13_2",
@@ -2568,7 +2653,8 @@
             "ん",
             "き"
           ],
-          "correctAnswer": "てんき"
+          "correctAnswer": "てんき",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気」 (tenki) expresses 'Build 'Weather''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気 (tenki) — Build 'Weather'"
         },
         {
           "id": "u10_l13_3",
@@ -2587,7 +2673,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な晴れです。」 (Kore wa ichiban taisetsu na hare desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Sunny / clear.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な晴れです。 (Kore wa ichiban taisetsu na hare desu.) — Fill in topic particle 'は' (wa): This is the most important Sunny / clear."
         },
         {
           "id": "u10_l13_4",
@@ -2609,7 +2695,8 @@
             "晴れ",
             "です"
           ],
-          "correctAnswer": "これは晴れです"
+          "correctAnswer": "これは晴れです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは晴れです」 (Kore wa hare desu.) expresses 'This is Sunny / clear.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは晴れです (Kore wa hare desu.) — This is Sunny / clear."
         },
         {
           "id": "u10_l13_5",
@@ -2626,7 +2713,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "雨"
+          "correctAnswer": "雨",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨」 (ame) expresses 'Pronounce: Rain'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨 (ame) — Pronounce: Rain"
         },
         {
           "id": "u10_l13_6",
@@ -2646,7 +2734,8 @@
             "雨",
             "です"
           ],
-          "correctAnswer": "雨です"
+          "correctAnswer": "雨です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨です」 (ame desu.) expresses 'It is Rain.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨です (ame desu.) — It is Rain."
         },
         {
           "id": "u10_l13_7",
@@ -2686,7 +2775,8 @@
               "romaji": "taifuu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気・晴れ・雨・台風」 (tenki, hare, ame, taifuu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気・晴れ・雨・台風 (tenki, hare, ame, taifuu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l13_8",
@@ -2710,7 +2800,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「天気について教えていただけますか？」 (tenki ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Weather?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・天気について教えていただけますか？ (tenki ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Weather?"
         }
       ]
     },
@@ -2754,7 +2845,8 @@
             "Cherry blossom",
             "Typhoon"
           ],
-          "correctAnswer": "Typhoon"
+          "correctAnswer": "Typhoon",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風」 (taifuu) expresses 'Typhoon'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風 (taifuu) — Typhoon"
         },
         {
           "id": "u10_l14_2",
@@ -2774,7 +2866,8 @@
             "い",
             "さ"
           ],
-          "correctAnswer": "たいふう"
+          "correctAnswer": "たいふう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風」 (taifuu) expresses 'Build 'Typhoon''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風 (taifuu) — Build 'Typhoon'"
         },
         {
           "id": "u10_l14_3",
@@ -2793,7 +2886,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な新幹線です。」 (Kore wa ichiban taisetsu na shinkansen desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Bullet train.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な新幹線です。 (Kore wa ichiban taisetsu na shinkansen desu.) — Fill in topic particle 'は' (wa): This is the most important Bullet train."
         },
         {
           "id": "u10_l14_4",
@@ -2815,7 +2908,8 @@
             "新幹線",
             "です"
           ],
-          "correctAnswer": "これは新幹線です"
+          "correctAnswer": "これは新幹線です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは新幹線です」 (Kore wa shinkansen desu.) expresses 'This is Bullet train.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは新幹線です (Kore wa shinkansen desu.) — This is Bullet train."
         },
         {
           "id": "u10_l14_5",
@@ -2832,7 +2926,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "切符"
+          "correctAnswer": "切符",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「切符」 (kippu) expresses 'Pronounce: Ticket'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・切符 (kippu) — Pronounce: Ticket"
         },
         {
           "id": "u10_l14_6",
@@ -2852,7 +2947,8 @@
             "切符",
             "です"
           ],
-          "correctAnswer": "切符です"
+          "correctAnswer": "切符です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「切符です」 (kippu desu.) expresses 'It is Ticket.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・切符です (kippu desu.) — It is Ticket."
         },
         {
           "id": "u10_l14_7",
@@ -2892,7 +2988,8 @@
               "romaji": "shiteiseki"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「台風・新幹線・切符・指定席」 (taifuu, shinkansen, kippu, shiteiseki) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・台風・新幹線・切符・指定席 (taifuu, shinkansen, kippu, shiteiseki) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l14_8",
@@ -2916,7 +3013,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「晴れの準備はできていますか？」 (hare no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Sunny / clear ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・晴れの準備はできていますか？ (hare no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Sunny / clear ready?"
         }
       ]
     },
@@ -2961,7 +3059,8 @@
             "Ticket",
             "Confirming Luggage / baggage"
           ],
-          "correctAnswer": "Reserved seat"
+          "correctAnswer": "Reserved seat",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「指定席」 (shiteiseki) expresses 'Reserved seat'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・指定席 (shiteiseki) — Reserved seat"
         },
         {
           "id": "u10_l15_2",
@@ -2981,7 +3080,8 @@
             "き",
             "て"
           ],
-          "correctAnswer": "していせき"
+          "correctAnswer": "していせき",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「指定席」 (shiteiseki) expresses 'Build 'Reserved seat''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・指定席 (shiteiseki) — Build 'Reserved seat'"
         },
         {
           "id": "u10_l15_3",
@@ -3000,7 +3100,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な自由席です。」 (Kore wa ichiban taisetsu na jiyuuseki desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Non-reserved seat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な自由席です。 (Kore wa ichiban taisetsu na jiyuuseki desu.) — Fill in topic particle 'は' (wa): This is the most important Non-reserved seat."
         },
         {
           "id": "u10_l15_4",
@@ -3022,7 +3122,8 @@
             "自由席",
             "です"
           ],
-          "correctAnswer": "これは自由席です"
+          "correctAnswer": "これは自由席です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは自由席です」 (Kore wa jiyuuseki desu.) expresses 'This is Non-reserved seat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは自由席です (Kore wa jiyuuseki desu.) — This is Non-reserved seat."
         },
         {
           "id": "u10_l15_5",
@@ -3039,7 +3140,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "旅行"
+          "correctAnswer": "旅行",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「旅行」 (ryokou) expresses 'Pronounce: Travel / trip'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・旅行 (ryokou) — Pronounce: Travel / trip"
         },
         {
           "id": "u10_l15_6",
@@ -3059,7 +3161,8 @@
             "旅行",
             "です"
           ],
-          "correctAnswer": "旅行です"
+          "correctAnswer": "旅行です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「旅行です」 (ryokou desu.) expresses 'It is Travel / trip.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・旅行です (ryokou desu.) — It is Travel / trip."
         },
         {
           "id": "u10_l15_7",
@@ -3099,7 +3202,8 @@
               "romaji": "sakura"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「指定席・自由席・旅行・桜」 (shiteiseki, jiyuuseki, ryokou, sakura) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・指定席・自由席・旅行・桜 (shiteiseki, jiyuuseki, ryokou, sakura) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u10_l15_8",
@@ -3123,7 +3227,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「雨についてどう思われますか？」 (ame ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Rain?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・雨についてどう思われますか？ (ame ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Rain?"
         }
       ]
     }

@@ -46,7 +46,8 @@
             "See you later (casual)",
             "Hello / Good afternoon"
           ],
-          "correctAnswer": "Hello / Good afternoon"
+          "correctAnswer": "Hello / Good afternoon",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんにちは」 (konnichiwa) expresses 'Hello / Good afternoon'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんにちは (konnichiwa) — Hello / Good afternoon"
         },
         {
           "id": "u1_l1_2",
@@ -66,7 +67,8 @@
             "さ",
             "ん"
           ],
-          "correctAnswer": "こんにちは"
+          "correctAnswer": "こんにちは",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんにちは」 (konnichiwa) expresses 'Build 'Hello / Good afternoon''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんにちは (konnichiwa) — Build 'Hello / Good afternoon'"
         },
         {
           "id": "u1_l1_3",
@@ -85,7 +87,7 @@
             "さようなら"
           ],
           "correctAnswer": "おはようございます",
-          "explanation": "Use 「おはようございます」 in the morning until around 10:30 AM."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「朝、先生に会いました。「おはようございます！」」 (Asa, sensei ni aimashita. 'Ohayou gozaimasu!') expresses 'Morning greeting to teacher: 'Good morning!''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・朝、先生に会いました。「おはようございます！」 (Asa, sensei ni aimashita. 'Ohayou gozaimasu!') — Morning greeting to teacher: 'Good morning!'"
         },
         {
           "id": "u1_l1_4",
@@ -107,7 +109,8 @@
             "、",
             "おはようございます"
           ],
-          "correctAnswer": "田中さん、おはようございます"
+          "correctAnswer": "田中さん、おはようございます",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「田中さん、おはようございます」 (Tanaka-san, ohayou gozaimasu) expresses 'Good morning, Mr. Tanaka.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・田中さん、おはようございます (Tanaka-san, ohayou gozaimasu) — Good morning, Mr. Tanaka."
         },
         {
           "id": "u1_l1_5",
@@ -124,7 +127,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "こんばんは"
+          "correctAnswer": "こんばんは",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんばんは」 (konbanwa) expresses 'Pronounce: Good evening'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんばんは (konbanwa) — Pronounce: Good evening"
         },
         {
           "id": "u1_l1_6",
@@ -142,7 +146,8 @@
           "dictateSolution": [
             "こんばんは"
           ],
-          "correctAnswer": "こんばんは"
+          "correctAnswer": "こんばんは",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんばんは」 (konbanwa) expresses 'Good evening'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんばんは (konbanwa) — Good evening"
         },
         {
           "id": "u1_l1_7",
@@ -182,7 +187,8 @@
               "romaji": "sayounara"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんにちは・おはようございます・こんばんは・さようなら」 (konnichiwa, ohayou gozaimasu, konbanwa, sayounara) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんにちは・おはようございます・こんばんは・さようなら (konnichiwa, ohayou gozaimasu, konbanwa, sayounara) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l1_8",
@@ -206,7 +212,8 @@
             "いいえ、学生です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、元気です！"
+          "correctAnswer": "はい、元気です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんにちは！お元気ですか？」 (Konnichiwa! Ogenki desu ka?) expresses 'Tanaka: Hello! How are you?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんにちは！お元気ですか？ (Konnichiwa! Ogenki desu ka?) — Tanaka: Hello! How are you?"
         }
       ]
     },
@@ -242,7 +249,8 @@
             "Goodbye",
             "It's all right / no problem"
           ],
-          "correctAnswer": "Goodbye"
+          "correctAnswer": "Goodbye",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「さようなら」 (sayounara) expresses 'Goodbye'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・さようなら (sayounara) — Goodbye"
         },
         {
           "id": "u1_l2_2",
@@ -262,7 +270,8 @@
             "め",
             "さ"
           ],
-          "correctAnswer": "さようなら"
+          "correctAnswer": "さようなら",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「さようなら」 (sayounara) expresses 'Build 'Goodbye''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・さようなら (sayounara) — Build 'Goodbye'"
         },
         {
           "id": "u1_l2_3",
@@ -281,7 +290,7 @@
             "さようなら"
           ],
           "correctAnswer": "ありがとうございます",
-          "explanation": "「ありがとうございます」 expresses polite gratitude."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「親切にしてもらいました。「ありがとうございます！」」 (Shinsetsu ni shite moraimashita. 'Arigatou gozaimasu!') expresses 'Expressing gratitude: 'Thank you very much!''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・親切にしてもらいました。「ありがとうございます！」 (Shinsetsu ni shite moraimashita. 'Arigatou gozaimasu!') — Expressing gratitude: 'Thank you very much!'"
         },
         {
           "id": "u1_l2_4",
@@ -303,7 +312,8 @@
             "ありがとう",
             "ございます"
           ],
-          "correctAnswer": "どうもありがとうございます"
+          "correctAnswer": "どうもありがとうございます",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「どうもありがとうございます」 (Doumo arigatou gozaimasu) expresses 'Thank you very much.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・どうもありがとうございます (Doumo arigatou gozaimasu) — Thank you very much."
         },
         {
           "id": "u1_l2_5",
@@ -320,7 +330,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "どういたしまして"
+          "correctAnswer": "どういたしまして",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「どういたしまして」 (douitashimashite) expresses 'Pronounce: You are welcome'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・どういたしまして (douitashimashite) — Pronounce: You are welcome"
         },
         {
           "id": "u1_l2_6",
@@ -338,7 +349,8 @@
           "dictateSolution": [
             "どういたしまして"
           ],
-          "correctAnswer": "どういたしまして"
+          "correctAnswer": "どういたしまして",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「どういたしまして」 (douitashimashite) expresses 'You are welcome'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・どういたしまして (douitashimashite) — You are welcome"
         },
         {
           "id": "u1_l2_7",
@@ -378,7 +390,8 @@
               "romaji": "hai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「さようなら・ありがとうございます・どういたしまして・はい」 (sayounara, arigatou gozaimasu, douitashimashite, hai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・さようなら・ありがとうございます・どういたしまして・はい (sayounara, arigatou gozaimasu, douitashimashite, hai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l2_8",
@@ -402,7 +415,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はじめまして、スミスです。こちらこそ！"
+          "correctAnswer": "はじめまして、スミスです。こちらこそ！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はじめまして、山田です。」 (Hajimemashite, Yamada desu.) expresses 'Yamada: Nice to meet you, I'm Yamada.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はじめまして、山田です。 (Hajimemashite, Yamada desu.) — Yamada: Nice to meet you, I'm Yamada."
         }
       ]
     },
@@ -438,7 +452,8 @@
             "Where / which direction (polite)",
             "Have a good day / take care"
           ],
-          "correctAnswer": "Yes"
+          "correctAnswer": "Yes",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はい」 (hai) expresses 'Yes'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はい (hai) — Yes"
         },
         {
           "id": "u1_l3_2",
@@ -458,7 +473,8 @@
             "さ",
             "み"
           ],
-          "correctAnswer": "はい"
+          "correctAnswer": "はい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はい」 (hai) expresses 'Build 'Yes''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はい (hai) — Build 'Yes'"
         },
         {
           "id": "u1_l3_3",
@@ -477,7 +493,7 @@
             "だれ"
           ],
           "correctAnswer": "いいえ",
-          "explanation": "「いいえ」 means 'No' in polite speech."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「「日本人ですか？」「いいえ、アメリカ人です。」」 ('Nihonjin desu ka?' 'Iie, Amerikajin desu.') expresses ''Are you Japanese?' 'No, I am American.''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・「日本人ですか？」「いいえ、アメリカ人です。」 ('Nihonjin desu ka?' 'Iie, Amerikajin desu.') — 'Are you Japanese?' 'No, I am American.'"
         },
         {
           "id": "u1_l3_4",
@@ -500,7 +516,8 @@
             "元気",
             "ではありません"
           ],
-          "correctAnswer": "いいえ、元気ではありません"
+          "correctAnswer": "いいえ、元気ではありません",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いいえ、元気ではありません」 (Iie, genki dewa arimasen) expresses 'No, I am not well.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いいえ、元気ではありません (Iie, genki dewa arimasen) — No, I am not well."
         },
         {
           "id": "u1_l3_5",
@@ -517,7 +534,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "はじめまして"
+          "correctAnswer": "はじめまして",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はじめまして」 (hajimemashite) expresses 'Pronounce: Nice to meet you'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はじめまして (hajimemashite) — Pronounce: Nice to meet you"
         },
         {
           "id": "u1_l3_6",
@@ -535,7 +553,8 @@
           "dictateSolution": [
             "はじめまして"
           ],
-          "correctAnswer": "はじめまして"
+          "correctAnswer": "はじめまして",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はじめまして」 (hajimemashite) expresses 'Nice to meet you'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はじめまして (hajimemashite) — Nice to meet you"
         },
         {
           "id": "u1_l3_7",
@@ -575,7 +594,8 @@
               "romaji": "yoroshiku onegaishimasu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はい・いいえ・はじめまして・よろしくお願いします」 (hai, iie, hajimemashite, yoroshiku onegaishimasu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はい・いいえ・はじめまして・よろしくお願いします (hai, iie, hajimemashite, yoroshiku onegaishimasu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l3_8",
@@ -599,7 +619,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "アメリカのニューヨークです。"
+          "correctAnswer": "アメリカのニューヨークです。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご出身はどちらですか？」 (Goshusshin wa dochira desu ka?) expresses 'Host: Where are you from?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご出身はどちらですか？ (Goshusshin wa dochira desu ka?) — Host: Where are you from?"
         }
       ]
     },
@@ -641,7 +662,8 @@
             "It's all right / no problem",
             "Please treat me well"
           ],
-          "correctAnswer": "Please treat me well"
+          "correctAnswer": "Please treat me well",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「よろしくお願いします」 (yoroshiku onegaishimasu) expresses 'Please treat me well'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・よろしくお願いします (yoroshiku onegaishimasu) — Please treat me well"
         },
         {
           "id": "u1_l4_2",
@@ -661,7 +683,8 @@
             "な",
             "た"
           ],
-          "correctAnswer": "たなか"
+          "correctAnswer": "たなか",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「田中」 (tanaka) expresses 'Build 'Tanaka (common name)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・田中 (tanaka) — Build 'Tanaka (common name)'"
         },
         {
           "id": "u1_l4_3",
@@ -680,7 +703,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the topic of the sentence."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「田中さんは田中です。」 (Tanaka-san wa tanaka desu.) expresses 'Fill in topic particle 'は' (wa): Mr. Tanaka is a Tanaka (common name).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・田中さんは田中です。 (Tanaka-san wa tanaka desu.) — Fill in topic particle 'は' (wa): Mr. Tanaka is a Tanaka (common name)."
         },
         {
           "id": "u1_l4_4",
@@ -702,7 +725,8 @@
             "田中",
             "です"
           ],
-          "correctAnswer": "田中さんは田中です"
+          "correctAnswer": "田中さんは田中です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「田中さんは田中です」 (Tanaka-san wa tanaka desu.) expresses 'Mr. Tanaka is a Tanaka (common name).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・田中さんは田中です (Tanaka-san wa tanaka desu.) — Mr. Tanaka is a Tanaka (common name)."
         },
         {
           "id": "u1_l4_5",
@@ -719,7 +743,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "学生"
+          "correctAnswer": "学生",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「学生」 (gakusei) expresses 'Pronounce: Student'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・学生 (gakusei) — Pronounce: Student"
         },
         {
           "id": "u1_l4_6",
@@ -741,7 +766,8 @@
             "学生",
             "です"
           ],
-          "correctAnswer": "私は学生です"
+          "correctAnswer": "私は学生です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「私は学生です」 (Watashi wa gakusei desu.) expresses 'I am a Student.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・私は学生です (Watashi wa gakusei desu.) — I am a Student."
         },
         {
           "id": "u1_l4_7",
@@ -781,7 +807,8 @@
               "romaji": "sensei"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「よろしくお願いします・田中・学生・先生」 (yoroshiku onegaishimasu, tanaka, gakusei, sensei) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・よろしくお願いします・田中・学生・先生 (yoroshiku onegaishimasu, tanaka, gakusei, sensei) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l4_8",
@@ -805,7 +832,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "はい、じゃあまたね！"
+          "correctAnswer": "はい、じゃあまたね！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「明日また会いましょう！」 (Ashita mata aimashou!) expresses 'Friend: Let's meet again tomorrow!'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・明日また会いましょう！ (Ashita mata aimashou!) — Friend: Let's meet again tomorrow!"
         }
       ]
     },
@@ -850,7 +878,8 @@
             "Welcome home",
             "Name"
           ],
-          "correctAnswer": "Teacher / Professor"
+          "correctAnswer": "Teacher / Professor",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「先生」 (sensei) expresses 'Teacher / Professor'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・先生 (sensei) — Teacher / Professor"
         },
         {
           "id": "u1_l5_2",
@@ -870,7 +899,8 @@
             "せ",
             "ら"
           ],
-          "correctAnswer": "せんせい"
+          "correctAnswer": "せんせい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「先生」 (sensei) expresses 'Build 'Teacher / Professor''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・先生 (sensei) — Build 'Teacher / Professor'"
         },
         {
           "id": "u1_l5_3",
@@ -889,7 +919,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the topic of the sentence."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「田中さんは会社員です。」 (Tanaka-san wa kaishain desu.) expresses 'Fill in topic particle 'は' (wa): Mr. Tanaka is a Company employee.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・田中さんは会社員です。 (Tanaka-san wa kaishain desu.) — Fill in topic particle 'は' (wa): Mr. Tanaka is a Company employee."
         },
         {
           "id": "u1_l5_4",
@@ -911,7 +941,8 @@
             "会社員",
             "です"
           ],
-          "correctAnswer": "田中さんは会社員です"
+          "correctAnswer": "田中さんは会社員です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「田中さんは会社員です」 (Tanaka-san wa kaishain desu.) expresses 'Mr. Tanaka is a Company employee.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・田中さんは会社員です (Tanaka-san wa kaishain desu.) — Mr. Tanaka is a Company employee."
         },
         {
           "id": "u1_l5_5",
@@ -928,7 +959,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "日本人"
+          "correctAnswer": "日本人",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「日本人」 (nihonjin) expresses 'Pronounce: Japanese person'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・日本人 (nihonjin) — Pronounce: Japanese person"
         },
         {
           "id": "u1_l5_6",
@@ -950,7 +982,8 @@
             "日本人",
             "です"
           ],
-          "correctAnswer": "私は日本人です"
+          "correctAnswer": "私は日本人です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「私は日本人です」 (Watashi wa nihonjin desu.) expresses 'I am a Japanese person.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・私は日本人です (Watashi wa nihonjin desu.) — I am a Japanese person."
         },
         {
           "id": "u1_l5_7",
@@ -990,7 +1023,8 @@
               "romaji": "ryuugakusei"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「先生・会社員・日本人・留学生」 (sensei, kaishain, nihonjin, ryuugakusei) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・先生・会社員・日本人・留学生 (sensei, kaishain, nihonjin, ryuugakusei) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l5_8",
@@ -1014,7 +1048,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、元気です！"
+          "correctAnswer": "はい、元気です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんにちは！お元気ですか？」 (Konnichiwa! Ogenki desu ka?) expresses 'Tanaka: Hello! How are you?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんにちは！お元気ですか？ (Konnichiwa! Ogenki desu ka?) — Tanaka: Hello! How are you?"
         }
       ]
     },
@@ -1058,7 +1093,8 @@
             "Hometown / origin",
             "Pardon me / Goodbye (polite)"
           ],
-          "correctAnswer": "International student"
+          "correctAnswer": "International student",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「留学生」 (ryuugakusei) expresses 'International student'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・留学生 (ryuugakusei) — International student"
         },
         {
           "id": "u1_l6_2",
@@ -1078,7 +1114,8 @@
             "す",
             "で"
           ],
-          "correctAnswer": "げんきです"
+          "correctAnswer": "げんきです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「元気です」 (genki desu) expresses 'Build 'I am well / healthy''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・元気です (genki desu) — Build 'I am well / healthy'"
         },
         {
           "id": "u1_l6_3",
@@ -1097,7 +1134,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なお元気ですかです。」 (Kore wa ichiban taisetsu na ogenki desu ka desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important How are you?.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なお元気ですかです。 (Kore wa ichiban taisetsu na ogenki desu ka desu.) — Fill in topic particle 'は' (wa): This is the most important How are you?."
         },
         {
           "id": "u1_l6_4",
@@ -1119,7 +1156,8 @@
             "お元気ですか",
             "です"
           ],
-          "correctAnswer": "これはお元気ですかです"
+          "correctAnswer": "これはお元気ですかです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはお元気ですかです」 (Kore wa ogenki desu ka desu.) expresses 'This is How are you?.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはお元気ですかです (Kore wa ogenki desu ka desu.) — This is How are you?."
         },
         {
           "id": "u1_l6_5",
@@ -1136,7 +1174,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "元気です"
+          "correctAnswer": "元気です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「元気です」 (genki desu) expresses 'Pronounce: I am well / healthy'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・元気です (genki desu) — Pronounce: I am well / healthy"
         },
         {
           "id": "u1_l6_6",
@@ -1156,7 +1195,8 @@
             "元気です",
             "です"
           ],
-          "correctAnswer": "元気ですです"
+          "correctAnswer": "元気ですです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「元気ですです」 (genki desu desu.) expresses 'It is I am well / healthy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・元気ですです (genki desu desu.) — It is I am well / healthy."
         },
         {
           "id": "u1_l6_7",
@@ -1196,7 +1236,8 @@
               "romaji": "shusshin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「留学生・お元気ですか・元気です・出身」 (ryuugakusei, ogenki desu ka, genki desu, shusshin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・留学生・お元気ですか・元気です・出身 (ryuugakusei, ogenki desu ka, genki desu, shusshin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l6_8",
@@ -1220,7 +1261,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はじめまして、スミスです。こちらこそ！"
+          "correctAnswer": "はじめまして、スミスです。こちらこそ！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はじめまして、山田です。」 (Hajimemashite, Yamada desu.) expresses 'Yamada: Nice to meet you, I'm Yamada.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はじめまして、山田です。 (Hajimemashite, Yamada desu.) — Yamada: Nice to meet you, I'm Yamada."
         }
       ]
     },
@@ -1259,7 +1301,8 @@
             "Goodbye",
             "Where / which direction (polite)"
           ],
-          "correctAnswer": "Hometown / origin"
+          "correctAnswer": "Hometown / origin",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「出身」 (shusshin) expresses 'Hometown / origin'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・出身 (shusshin) — Hometown / origin"
         },
         {
           "id": "u1_l7_2",
@@ -1279,7 +1322,8 @@
             "お",
             "っ"
           ],
-          "correctAnswer": "しゅっしん"
+          "correctAnswer": "しゅっしん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「出身」 (shusshin) expresses 'Build 'Hometown / origin''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・出身 (shusshin) — Build 'Hometown / origin'"
         },
         {
           "id": "u1_l7_3",
@@ -1298,7 +1342,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切などちらです。」 (Kore wa ichiban taisetsu na dochira desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Where / which direction (polite).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切などちらです。 (Kore wa ichiban taisetsu na dochira desu.) — Fill in topic particle 'は' (wa): This is the most important Where / which direction (polite)."
         },
         {
           "id": "u1_l7_4",
@@ -1320,7 +1364,8 @@
             "どちら",
             "です"
           ],
-          "correctAnswer": "これはどちらです"
+          "correctAnswer": "これはどちらです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはどちらです」 (Kore wa dochira desu.) expresses 'This is Where / which direction (polite).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはどちらです (Kore wa dochira desu.) — This is Where / which direction (polite)."
         },
         {
           "id": "u1_l7_5",
@@ -1337,7 +1382,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "アメリカ"
+          "correctAnswer": "アメリカ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「アメリカ」 (amerika) expresses 'Pronounce: America / USA'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・アメリカ (amerika) — Pronounce: America / USA"
         },
         {
           "id": "u1_l7_6",
@@ -1357,7 +1403,8 @@
             "アメリカ",
             "です"
           ],
-          "correctAnswer": "アメリカです"
+          "correctAnswer": "アメリカです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「アメリカです」 (amerika desu.) expresses 'It is America / USA.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・アメリカです (amerika desu.) — It is America / USA."
         },
         {
           "id": "u1_l7_7",
@@ -1397,7 +1444,8 @@
               "romaji": "namae"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「出身・どちら・アメリカ・名前」 (shusshin, dochira, amerika, namae) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・出身・どちら・アメリカ・名前 (shusshin, dochira, amerika, namae) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l7_8",
@@ -1421,7 +1469,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "アメリカのニューヨークです。"
+          "correctAnswer": "アメリカのニューヨークです。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご出身はどちらですか？」 (Goshusshin wa dochira desu ka?) expresses 'Host: Where are you from?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご出身はどちらですか？ (Goshusshin wa dochira desu ka?) — Host: Where are you from?"
         }
       ]
     },
@@ -1462,7 +1511,8 @@
             "Name",
             "Good night"
           ],
-          "correctAnswer": "Name"
+          "correctAnswer": "Name",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「名前」 (namae) expresses 'Name'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・名前 (namae) — Name"
         },
         {
           "id": "u1_l8_2",
@@ -1482,7 +1532,8 @@
             "あ",
             "そ"
           ],
-          "correctAnswer": "なまえ"
+          "correctAnswer": "なまえ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「名前」 (namae) expresses 'Build 'Name''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・名前 (namae) — Build 'Name'"
         },
         {
           "id": "u1_l8_3",
@@ -1501,7 +1552,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な誰です。」 (Kore wa ichiban taisetsu na dare desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Who.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な誰です。 (Kore wa ichiban taisetsu na dare desu.) — Fill in topic particle 'は' (wa): This is the most important Who."
         },
         {
           "id": "u1_l8_4",
@@ -1523,7 +1574,8 @@
             "誰",
             "です"
           ],
-          "correctAnswer": "これは誰です"
+          "correctAnswer": "これは誰です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは誰です」 (Kore wa dare desu.) expresses 'This is Who.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは誰です (Kore wa dare desu.) — This is Who."
         },
         {
           "id": "u1_l8_5",
@@ -1540,7 +1592,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "私"
+          "correctAnswer": "私",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「私」 (watashi) expresses 'Pronounce: I / me'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・私 (watashi) — Pronounce: I / me"
         },
         {
           "id": "u1_l8_6",
@@ -1562,7 +1615,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "私をお願いします"
+          "correctAnswer": "私をお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「私をお願いします」 (watashi o onegaishimasu.) expresses 'I / me, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・私をお願いします (watashi o onegaishimasu.) — I / me, please."
         },
         {
           "id": "u1_l8_7",
@@ -1602,7 +1656,8 @@
               "romaji": "sumimasen"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「名前・誰・私・すみません」 (namae, dare, watashi, sumimasen) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・名前・誰・私・すみません (namae, dare, watashi, sumimasen) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l8_8",
@@ -1626,7 +1681,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "はい、じゃあまたね！"
+          "correctAnswer": "はい、じゃあまたね！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「明日また会いましょう！」 (Ashita mata aimashou!) expresses 'Friend: Let's meet again tomorrow!'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・明日また会いましょう！ (Ashita mata aimashou!) — Friend: Let's meet again tomorrow!"
         }
       ]
     },
@@ -1666,7 +1722,8 @@
             "Where / which direction (polite)",
             "Thank you very much"
           ],
-          "correctAnswer": "Excuse me / I'm sorry"
+          "correctAnswer": "Excuse me / I'm sorry",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「すみません」 (sumimasen) expresses 'Excuse me / I'm sorry'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・すみません (sumimasen) — Excuse me / I'm sorry"
         },
         {
           "id": "u1_l9_2",
@@ -1686,7 +1743,8 @@
             "ほ",
             "み"
           ],
-          "correctAnswer": "すみません"
+          "correctAnswer": "すみません",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「すみません」 (sumimasen) expresses 'Build 'Excuse me / I'm sorry''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・すみません (sumimasen) — Build 'Excuse me / I'm sorry'"
         },
         {
           "id": "u1_l9_3",
@@ -1705,7 +1763,7 @@
             "どういたしまして"
           ],
           "correctAnswer": "ごめんなさい",
-          "explanation": "Casual polite apology between friends."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「友達に謝るとき: 「本当にごめんなさい。」」 (Tomodachi ni ayamaru toki: 'Hontou ni gomennasai.') expresses 'Apologizing to friend: 'I am truly sorry.''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・友達に謝るとき: 「本当にごめんなさい。」 (Tomodachi ni ayamaru toki: 'Hontou ni gomennasai.') — Apologizing to friend: 'I am truly sorry.'"
         },
         {
           "id": "u1_l9_4",
@@ -1727,7 +1785,8 @@
             "ごめんなさい",
             "です"
           ],
-          "correctAnswer": "これはごめんなさいです"
+          "correctAnswer": "これはごめんなさいです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはごめんなさいです」 (Kore wa gomennasai desu.) expresses 'This is I'm sorry (casual polite).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはごめんなさいです (Kore wa gomennasai desu.) — This is I'm sorry (casual polite)."
         },
         {
           "id": "u1_l9_5",
@@ -1744,7 +1803,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "大丈夫です"
+          "correctAnswer": "大丈夫です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大丈夫です」 (daijoubu desu) expresses 'Pronounce: It's all right / no problem'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大丈夫です (daijoubu desu) — Pronounce: It's all right / no problem"
         },
         {
           "id": "u1_l9_6",
@@ -1764,7 +1824,8 @@
             "大丈夫です",
             "です"
           ],
-          "correctAnswer": "大丈夫ですです"
+          "correctAnswer": "大丈夫ですです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大丈夫ですです」 (daijoubu desu desu.) expresses 'It is It's all right / no problem.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大丈夫ですです (daijoubu desu desu.) — It is It's all right / no problem."
         },
         {
           "id": "u1_l9_7",
@@ -1804,7 +1865,8 @@
               "romaji": "douzo"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「すみません・ごめんなさい・大丈夫です・どうぞ」 (sumimasen, gomennasai, daijoubu desu, douzo) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・すみません・ごめんなさい・大丈夫です・どうぞ (sumimasen, gomennasai, daijoubu desu, douzo) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l9_8",
@@ -1828,7 +1890,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、元気です！"
+          "correctAnswer": "はい、元気です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんにちは！お元気ですか？」 (Konnichiwa! Ogenki desu ka?) expresses 'Tanaka: Hello! How are you?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんにちは！お元気ですか？ (Konnichiwa! Ogenki desu ka?) — Tanaka: Hello! How are you?"
         }
       ]
     },
@@ -1867,7 +1930,8 @@
             "Thank you for the meal",
             "Please / go ahead"
           ],
-          "correctAnswer": "Please / go ahead"
+          "correctAnswer": "Please / go ahead",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「どうぞ」 (douzo) expresses 'Please / go ahead'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・どうぞ (douzo) — Please / go ahead"
         },
         {
           "id": "u1_l10_2",
@@ -1887,7 +1951,8 @@
             "ち",
             "う"
           ],
-          "correctAnswer": "どうぞ"
+          "correctAnswer": "どうぞ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「どうぞ」 (douzo) expresses 'Build 'Please / go ahead''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・どうぞ (douzo) — Build 'Please / go ahead'"
         },
         {
           "id": "u1_l10_3",
@@ -1906,7 +1971,7 @@
             "どういたしまして"
           ],
           "correctAnswer": "こちらこそ",
-          "explanation": "「こちらこそ」 means 'likewise / the pleasure is mine'."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「「よろしくお願いします。」「こちらこそよろしくお願いします。」」 ('Yoroshiku onegaishimasu.' 'Kochirakoso yoroshiku onegaishimasu.') expresses ''Pleased to meet you.' 'Likewise, pleased to meet you.''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・「よろしくお願いします。」「こちらこそよろしくお願いします。」 ('Yoroshiku onegaishimasu.' 'Kochirakoso yoroshiku onegaishimasu.') — 'Pleased to meet you.' 'Likewise, pleased to meet you.'"
         },
         {
           "id": "u1_l10_4",
@@ -1928,7 +1993,8 @@
             "こちらこそ",
             "です"
           ],
-          "correctAnswer": "これはこちらこそです"
+          "correctAnswer": "これはこちらこそです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはこちらこそです」 (Kore wa kochirakoso desu.) expresses 'This is Likewise / the pleasure is mine.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはこちらこそです (Kore wa kochirakoso desu.) — This is Likewise / the pleasure is mine."
         },
         {
           "id": "u1_l10_5",
@@ -1945,7 +2011,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "失礼します"
+          "correctAnswer": "失礼します",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「失礼します」 (shitsureishimasu) expresses 'Pronounce: Pardon me / Goodbye (polite)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・失礼します (shitsureishimasu) — Pronounce: Pardon me / Goodbye (polite)"
         },
         {
           "id": "u1_l10_6",
@@ -1965,7 +2032,8 @@
             "失礼します",
             "です"
           ],
-          "correctAnswer": "失礼しますです"
+          "correctAnswer": "失礼しますです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「失礼しますです」 (shitsureishimasu desu.) expresses 'It is Pardon me / Goodbye (polite).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・失礼しますです (shitsureishimasu desu.) — It is Pardon me / Goodbye (polite)."
         },
         {
           "id": "u1_l10_7",
@@ -2005,7 +2073,8 @@
               "romaji": "itadakimasu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「どうぞ・こちらこそ・失礼します・いただきます」 (douzo, kochirakoso, shitsureishimasu, itadakimasu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・どうぞ・こちらこそ・失礼します・いただきます (douzo, kochirakoso, shitsureishimasu, itadakimasu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l10_8",
@@ -2029,7 +2098,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はじめまして、スミスです。こちらこそ！"
+          "correctAnswer": "はじめまして、スミスです。こちらこそ！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はじめまして、山田です。」 (Hajimemashite, Yamada desu.) expresses 'Yamada: Nice to meet you, I'm Yamada.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はじめまして、山田です。 (Hajimemashite, Yamada desu.) — Yamada: Nice to meet you, I'm Yamada."
         }
       ]
     },
@@ -2067,7 +2137,8 @@
             "Likewise / the pleasure is mine",
             "You are welcome"
           ],
-          "correctAnswer": "Let's eat (before meal)"
+          "correctAnswer": "Let's eat (before meal)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いただきます」 (itadakimasu) expresses 'Let's eat (before meal)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いただきます (itadakimasu) — Let's eat (before meal)"
         },
         {
           "id": "u1_l11_2",
@@ -2087,7 +2158,8 @@
             "き",
             "さ"
           ],
-          "correctAnswer": "いただきます"
+          "correctAnswer": "いただきます",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いただきます」 (itadakimasu) expresses 'Build 'Let's eat (before meal)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いただきます (itadakimasu) — Build 'Let's eat (before meal)'"
         },
         {
           "id": "u1_l11_3",
@@ -2106,7 +2178,7 @@
             "いってらっしゃい"
           ],
           "correctAnswer": "ごちそうさまでした",
-          "explanation": "Said after a meal to thank the host or chef."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご飯を食べ終えたとき: 「ごちそうさまでした！」」 (Gohan o tabeoeta toki: 'Gochisousamadeshita!') expresses 'After finishing a meal: 'Thank you for the meal!''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご飯を食べ終えたとき: 「ごちそうさまでした！」 (Gohan o tabeoeta toki: 'Gochisousamadeshita!') — After finishing a meal: 'Thank you for the meal!'"
         },
         {
           "id": "u1_l11_4",
@@ -2127,7 +2199,8 @@
             "、",
             "ごちそうさまでした"
           ],
-          "correctAnswer": "おいしかったです、ごちそうさまでした"
+          "correctAnswer": "おいしかったです、ごちそうさまでした",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おいしかったです、ごちそうさまでした」 (Oishikatta desu, gochisousamadeshita) expresses 'It was delicious, thank you for the meal.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おいしかったです、ごちそうさまでした (Oishikatta desu, gochisousamadeshita) — It was delicious, thank you for the meal."
         },
         {
           "id": "u1_l11_5",
@@ -2144,7 +2217,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "行ってきます"
+          "correctAnswer": "行ってきます",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「行ってきます」 (ittekimasu) expresses 'Pronounce: I'm leaving (home)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・行ってきます (ittekimasu) — Pronounce: I'm leaving (home)"
         },
         {
           "id": "u1_l11_6",
@@ -2164,7 +2238,8 @@
             "行ってきます",
             "です"
           ],
-          "correctAnswer": "行ってきますです"
+          "correctAnswer": "行ってきますです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「行ってきますです」 (ittekimasu desu.) expresses 'It is I'm leaving (home).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・行ってきますです (ittekimasu desu.) — It is I'm leaving (home)."
         },
         {
           "id": "u1_l11_7",
@@ -2204,7 +2279,8 @@
               "romaji": "itterasshai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いただきます・ごちそうさまでした・行ってきます・いってらっしゃい」 (itadakimasu, gochisousamadeshita, ittekimasu, itterasshai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いただきます・ごちそうさまでした・行ってきます・いってらっしゃい (itadakimasu, gochisousamadeshita, ittekimasu, itterasshai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l11_8",
@@ -2228,7 +2304,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "アメリカのニューヨークです。"
+          "correctAnswer": "アメリカのニューヨークです。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご出身はどちらですか？」 (Goshusshin wa dochira desu ka?) expresses 'Host: Where are you from?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご出身はどちらですか？ (Goshusshin wa dochira desu ka?) — Host: Where are you from?"
         }
       ]
     },
@@ -2264,7 +2341,8 @@
             "Teacher / Professor",
             "Hometown / origin"
           ],
-          "correctAnswer": "Have a good day / take care"
+          "correctAnswer": "Have a good day / take care",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いってらっしゃい」 (itterasshai) expresses 'Have a good day / take care'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いってらっしゃい (itterasshai) — Have a good day / take care"
         },
         {
           "id": "u1_l12_2",
@@ -2284,7 +2362,8 @@
             "ひ",
             "さ"
           ],
-          "correctAnswer": "ただいま"
+          "correctAnswer": "ただいま",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ただいま」 (tadaima) expresses 'Build 'I'm home''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ただいま (tadaima) — Build 'I'm home'"
         },
         {
           "id": "u1_l12_3",
@@ -2303,7 +2382,7 @@
             "いってらっしゃい"
           ],
           "correctAnswer": "ただいま",
-          "explanation": "Said when you arrive home."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家に帰ってきたとき: 「ただいま！」」 (Ie ni kaette kita toki: 'Tadaima!') expresses 'Returning home: 'I am home!''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家に帰ってきたとき: 「ただいま！」 (Ie ni kaette kita toki: 'Tadaima!') — Returning home: 'I am home!'"
         },
         {
           "id": "u1_l12_4",
@@ -2325,7 +2404,8 @@
             "ただいま",
             "です"
           ],
-          "correctAnswer": "これはただいまです"
+          "correctAnswer": "これはただいまです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはただいまです」 (Kore wa tadaima desu.) expresses 'This is I'm home.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはただいまです (Kore wa tadaima desu.) — This is I'm home."
         },
         {
           "id": "u1_l12_5",
@@ -2342,7 +2422,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "おかえりなさい"
+          "correctAnswer": "おかえりなさい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おかえりなさい」 (okaerinasai) expresses 'Pronounce: Welcome home'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おかえりなさい (okaerinasai) — Pronounce: Welcome home"
         },
         {
           "id": "u1_l12_6",
@@ -2362,7 +2443,8 @@
             "おかえりなさい",
             "です"
           ],
-          "correctAnswer": "おかえりなさいです"
+          "correctAnswer": "おかえりなさいです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おかえりなさいです」 (okaerinasai desu.) expresses 'It is Welcome home.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おかえりなさいです (okaerinasai desu.) — It is Welcome home."
         },
         {
           "id": "u1_l12_7",
@@ -2402,7 +2484,8 @@
               "romaji": "oyasuminasai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いってらっしゃい・ただいま・おかえりなさい・おやすみなさい」 (itterasshai, tadaima, okaerinasai, oyasuminasai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いってらっしゃい・ただいま・おかえりなさい・おやすみなさい (itterasshai, tadaima, okaerinasai, oyasuminasai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l12_8",
@@ -2426,7 +2509,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "はい、じゃあまたね！"
+          "correctAnswer": "はい、じゃあまたね！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「明日また会いましょう！」 (Ashita mata aimashou!) expresses 'Friend: Let's meet again tomorrow!'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・明日また会いましょう！ (Ashita mata aimashou!) — Friend: Let's meet again tomorrow!"
         }
       ]
     },
@@ -2462,7 +2546,8 @@
             "Let's eat (before meal)",
             "Company employee"
           ],
-          "correctAnswer": "Good night"
+          "correctAnswer": "Good night",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おやすみなさい」 (oyasuminasai) expresses 'Good night'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おやすみなさい (oyasuminasai) — Good night"
         },
         {
           "id": "u1_l13_2",
@@ -2482,7 +2567,8 @@
             "ね",
             "た"
           ],
-          "correctAnswer": "またね"
+          "correctAnswer": "またね",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「またね」 (matane) expresses 'Build 'See you later (casual)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・またね (matane) — Build 'See you later (casual)'"
         },
         {
           "id": "u1_l13_3",
@@ -2501,7 +2587,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なまたねです。」 (Kore wa ichiban taisetsu na matane desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important See you later (casual).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なまたねです。 (Kore wa ichiban taisetsu na matane desu.) — Fill in topic particle 'は' (wa): This is the most important See you later (casual)."
         },
         {
           "id": "u1_l13_4",
@@ -2523,7 +2609,8 @@
             "またね",
             "です"
           ],
-          "correctAnswer": "これはまたねです"
+          "correctAnswer": "これはまたねです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはまたねです」 (Kore wa matane desu.) expresses 'This is See you later (casual).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはまたねです (Kore wa matane desu.) — This is See you later (casual)."
         },
         {
           "id": "u1_l13_5",
@@ -2540,7 +2627,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "こんにちは"
+          "correctAnswer": "こんにちは",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんにちは」 (konnichiwa) expresses 'Pronounce: Hello / Good afternoon'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんにちは (konnichiwa) — Pronounce: Hello / Good afternoon"
         },
         {
           "id": "u1_l13_6",
@@ -2560,7 +2648,8 @@
             "こんにちは",
             "です"
           ],
-          "correctAnswer": "こんにちはです"
+          "correctAnswer": "こんにちはです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんにちはです」 (konnichiwa desu.) expresses 'It is Hello / Good afternoon.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんにちはです (konnichiwa desu.) — It is Hello / Good afternoon."
         },
         {
           "id": "u1_l13_7",
@@ -2600,7 +2689,8 @@
               "romaji": "ohayou gozaimasu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おやすみなさい・またね・こんにちは・おはようございます」 (oyasuminasai, matane, konnichiwa, ohayou gozaimasu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おやすみなさい・またね・こんにちは・おはようございます (oyasuminasai, matane, konnichiwa, ohayou gozaimasu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l13_8",
@@ -2624,7 +2714,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、元気です！"
+          "correctAnswer": "はい、元気です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんにちは！お元気ですか？」 (Konnichiwa! Ogenki desu ka?) expresses 'Tanaka: Hello! How are you?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんにちは！お元気ですか？ (Konnichiwa! Ogenki desu ka?) — Tanaka: Hello! How are you?"
         }
       ]
     },
@@ -2660,7 +2751,8 @@
             "Name",
             "Student"
           ],
-          "correctAnswer": "Good morning (polite)"
+          "correctAnswer": "Good morning (polite)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おはようございます」 (ohayou gozaimasu) expresses 'Good morning (polite)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おはようございます (ohayou gozaimasu) — Good morning (polite)"
         },
         {
           "id": "u1_l14_2",
@@ -2680,7 +2772,8 @@
             "せ",
             "ん"
           ],
-          "correctAnswer": "こんばんは"
+          "correctAnswer": "こんばんは",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「こんばんは」 (konbanwa) expresses 'Build 'Good evening''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・こんばんは (konbanwa) — Build 'Good evening'"
         },
         {
           "id": "u1_l14_3",
@@ -2699,7 +2792,7 @@
             "さようなら"
           ],
           "correctAnswer": "こんばんは",
-          "explanation": "Use 「こんばんは」 in the evening after sunset."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「夜、同僚に会いました。「こんばんは！」」 (Yoru, douryou ni aimashita. 'Konbanwa!') expresses 'Evening greeting to colleague: 'Good evening!''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・夜、同僚に会いました。「こんばんは！」 (Yoru, douryou ni aimashita. 'Konbanwa!') — Evening greeting to colleague: 'Good evening!'"
         },
         {
           "id": "u1_l14_4",
@@ -2721,7 +2814,8 @@
             "、",
             "こんばんは"
           ],
-          "correctAnswer": "先生、こんばんは"
+          "correctAnswer": "先生、こんばんは",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「先生、こんばんは」 (Sensei, konbanwa) expresses 'Good evening, teacher.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・先生、こんばんは (Sensei, konbanwa) — Good evening, teacher."
         },
         {
           "id": "u1_l14_5",
@@ -2738,7 +2832,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "さようなら"
+          "correctAnswer": "さようなら",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「さようなら」 (sayounara) expresses 'Pronounce: Goodbye'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・さようなら (sayounara) — Pronounce: Goodbye"
         },
         {
           "id": "u1_l14_6",
@@ -2756,7 +2851,8 @@
           "dictateSolution": [
             "さようなら"
           ],
-          "correctAnswer": "さようなら"
+          "correctAnswer": "さようなら",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「さようなら」 (sayounara) expresses 'Goodbye'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・さようなら (sayounara) — Goodbye"
         },
         {
           "id": "u1_l14_7",
@@ -2796,7 +2892,8 @@
               "romaji": "arigatou gozaimasu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「おはようございます・こんばんは・さようなら・ありがとうございます」 (ohayou gozaimasu, konbanwa, sayounara, arigatou gozaimasu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・おはようございます・こんばんは・さようなら・ありがとうございます (ohayou gozaimasu, konbanwa, sayounara, arigatou gozaimasu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l14_8",
@@ -2820,7 +2917,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はじめまして、スミスです。こちらこそ！"
+          "correctAnswer": "はじめまして、スミスです。こちらこそ！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はじめまして、山田です。」 (Hajimemashite, Yamada desu.) expresses 'Yamada: Nice to meet you, I'm Yamada.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はじめまして、山田です。 (Hajimemashite, Yamada desu.) — Yamada: Nice to meet you, I'm Yamada."
         }
       ]
     },
@@ -2856,7 +2954,8 @@
             "Please treat me well",
             "Thank you very much"
           ],
-          "correctAnswer": "Thank you very much"
+          "correctAnswer": "Thank you very much",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ありがとうございます」 (arigatou gozaimasu) expresses 'Thank you very much'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ありがとうございます (arigatou gozaimasu) — Thank you very much"
         },
         {
           "id": "u1_l15_2",
@@ -2876,7 +2975,8 @@
             "ぬ",
             "れ"
           ],
-          "correctAnswer": "はい"
+          "correctAnswer": "はい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はい」 (hai) expresses 'Build 'Yes''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はい (hai) — Build 'Yes'"
         },
         {
           "id": "u1_l15_3",
@@ -2895,7 +2995,7 @@
             "おやすみなさい"
           ],
           "correctAnswer": "どういたしまして",
-          "explanation": "「どういたしまして」 is used to say 'you are welcome'."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「「ありがとうございます！」「いいえ、どういたしまして。」」 ('Arigatou gozaimasu!' 'Iie, douitashimashite.') expresses ''Thank you very much!' 'You are welcome.''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・「ありがとうございます！」「いいえ、どういたしまして。」 ('Arigatou gozaimasu!' 'Iie, douitashimashite.') — 'Thank you very much!' 'You are welcome.'"
         },
         {
           "id": "u1_l15_4",
@@ -2916,7 +3016,8 @@
             "、",
             "どういたしまして"
           ],
-          "correctAnswer": "いいえ、どういたしまして"
+          "correctAnswer": "いいえ、どういたしまして",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「いいえ、どういたしまして」 (Iie, douitashimashite) expresses 'No, you are welcome.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・いいえ、どういたしまして (Iie, douitashimashite) — No, you are welcome."
         },
         {
           "id": "u1_l15_5",
@@ -2933,7 +3034,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "はい"
+          "correctAnswer": "はい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はい」 (hai) expresses 'Pronounce: Yes'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はい (hai) — Pronounce: Yes"
         },
         {
           "id": "u1_l15_6",
@@ -2953,7 +3055,8 @@
             "はい",
             "です"
           ],
-          "correctAnswer": "はいです"
+          "correctAnswer": "はいです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「はいです」 (hai desu.) expresses 'It is Yes.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・はいです (hai desu.) — It is Yes."
         },
         {
           "id": "u1_l15_7",
@@ -2993,7 +3096,8 @@
               "romaji": "iie"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ありがとうございます・どういたしまして・はい・いいえ」 (arigatou gozaimasu, douitashimashite, hai, iie) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ありがとうございます・どういたしまして・はい・いいえ (arigatou gozaimasu, douitashimashite, hai, iie) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u1_l15_8",
@@ -3017,7 +3121,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "アメリカのニューヨークです。"
+          "correctAnswer": "アメリカのニューヨークです。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「ご出身はどちらですか？」 (Goshusshin wa dochira desu ka?) expresses 'Host: Where are you from?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・ご出身はどちらですか？ (Goshusshin wa dochira desu ka?) — Host: Where are you from?"
         }
       ]
     }

@@ -17,8 +17,8 @@ import { getValkey } from '@/core/db/valkey';
 export const runtime = 'nodejs';
 
 // Content schema version — increment when content is updated to trigger client drops & resync
-export const CURRENT_CONTENT_VERSION = 10;
-export const CONTENT_UPDATED_AT = '2026-10-04T12:00:00.000Z';
+export const CURRENT_CONTENT_VERSION = 11;
+export const CONTENT_UPDATED_AT = '2026-10-10T15:00:00.000Z';
 
 export async function GET(req: NextRequest) {
   const ifNoneMatch = req.headers.get('if-none-match');

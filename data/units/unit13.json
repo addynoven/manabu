@@ -53,7 +53,8 @@
             "Monthly rent",
             "Confirming Security deposit"
           ],
-          "correctAnswer": "Monthly rent"
+          "correctAnswer": "Monthly rent",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃」 (yachin) expresses 'Monthly rent'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃 (yachin) — Monthly rent"
         },
         {
           "id": "u13_l1_2",
@@ -73,7 +74,8 @@
             "り",
             "す"
           ],
-          "correctAnswer": "やちん"
+          "correctAnswer": "やちん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃」 (yachin) expresses 'Build 'Monthly rent''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃 (yachin) — Build 'Monthly rent'"
         },
         {
           "id": "u13_l1_3",
@@ -92,7 +94,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な敷金です。」 (Kore wa ichiban taisetsu na shikikin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Security deposit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な敷金です。 (Kore wa ichiban taisetsu na shikikin desu.) — Fill in topic particle 'は' (wa): This is the most important Security deposit."
         },
         {
           "id": "u13_l1_4",
@@ -114,7 +116,8 @@
             "敷金",
             "です"
           ],
-          "correctAnswer": "これは敷金です"
+          "correctAnswer": "これは敷金です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは敷金です」 (Kore wa shikikin desu.) expresses 'This is Security deposit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは敷金です (Kore wa shikikin desu.) — This is Security deposit."
         },
         {
           "id": "u13_l1_5",
@@ -131,7 +134,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "礼金"
+          "correctAnswer": "礼金",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金」 (reikin) expresses 'Pronounce: Key money (gratuity)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金 (reikin) — Pronounce: Key money (gratuity)"
         },
         {
           "id": "u13_l1_6",
@@ -151,7 +155,8 @@
             "礼金",
             "です"
           ],
-          "correctAnswer": "礼金です"
+          "correctAnswer": "礼金です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金です」 (reikin desu.) expresses 'It is Key money (gratuity).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金です (reikin desu.) — It is Key money (gratuity)."
         },
         {
           "id": "u13_l1_7",
@@ -191,7 +196,8 @@
               "romaji": "madori"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃・敷金・礼金・間取り」 (yachin, shikikin, reikin, madori) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃・敷金・礼金・間取り (yachin, shikikin, reikin, madori) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l1_8",
@@ -215,7 +221,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃について教えていただけますか？」 (yachin ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Monthly rent?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃について教えていただけますか？ (yachin ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Monthly rent?"
         }
       ]
     },
@@ -259,7 +266,8 @@
             "Sunlight exposure",
             "Security deposit"
           ],
-          "correctAnswer": "Floor plan layout"
+          "correctAnswer": "Floor plan layout",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取り」 (madori) expresses 'Floor plan layout'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取り (madori) — Floor plan layout"
         },
         {
           "id": "u13_l2_2",
@@ -279,7 +287,8 @@
             "ま",
             "ゆ"
           ],
-          "correctAnswer": "まどり"
+          "correctAnswer": "まどり",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取り」 (madori) expresses 'Build 'Floor plan layout''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取り (madori) — Build 'Floor plan layout'"
         },
         {
           "id": "u13_l2_3",
@@ -298,7 +307,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な不動産です。」 (Kore wa ichiban taisetsu na fudousan desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Real estate agency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な不動産です。 (Kore wa ichiban taisetsu na fudousan desu.) — Fill in topic particle 'は' (wa): This is the most important Real estate agency."
         },
         {
           "id": "u13_l2_4",
@@ -320,7 +329,8 @@
             "不動産",
             "です"
           ],
-          "correctAnswer": "これは不動産です"
+          "correctAnswer": "これは不動産です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは不動産です」 (Kore wa fudousan desu.) expresses 'This is Real estate agency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは不動産です (Kore wa fudousan desu.) — This is Real estate agency."
         },
         {
           "id": "u13_l2_5",
@@ -337,7 +347,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "契約"
+          "correctAnswer": "契約",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「契約」 (keiyaku) expresses 'Pronounce: Contract / lease agreement'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・契約 (keiyaku) — Pronounce: Contract / lease agreement"
         },
         {
           "id": "u13_l2_6",
@@ -357,7 +368,8 @@
             "契約",
             "です"
           ],
-          "correctAnswer": "契約です"
+          "correctAnswer": "契約です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「契約です」 (keiyaku desu.) expresses 'It is Contract / lease agreement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・契約です (keiyaku desu.) — It is Contract / lease agreement."
         },
         {
           "id": "u13_l2_7",
@@ -397,7 +409,8 @@
               "romaji": "hoshounin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取り・不動産・契約・保証人」 (madori, fudousan, keiyaku, hoshounin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取り・不動産・契約・保証人 (madori, fudousan, keiyaku, hoshounin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l2_8",
@@ -421,7 +434,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「敷金の準備はできていますか？」 (shikikin no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Security deposit ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・敷金の準備はできていますか？ (shikikin no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Security deposit ready?"
         }
       ]
     },
@@ -465,7 +479,8 @@
             "Confirming Lease renewal fee",
             "Initial upfront costs"
           ],
-          "correctAnswer": "Guarantor"
+          "correctAnswer": "Guarantor",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「保証人」 (hoshounin) expresses 'Guarantor'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・保証人 (hoshounin) — Guarantor"
         },
         {
           "id": "u13_l3_2",
@@ -485,7 +500,8 @@
             "う",
             "ん"
           ],
-          "correctAnswer": "ほしょうにん"
+          "correctAnswer": "ほしょうにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「保証人」 (hoshounin) expresses 'Build 'Guarantor''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・保証人 (hoshounin) — Build 'Guarantor'"
         },
         {
           "id": "u13_l3_3",
@@ -504,7 +520,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な日当たりです。」 (Kore wa ichiban taisetsu na hiatari desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Sunlight exposure.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な日当たりです。 (Kore wa ichiban taisetsu na hiatari desu.) — Fill in topic particle 'は' (wa): This is the most important Sunlight exposure."
         },
         {
           "id": "u13_l3_4",
@@ -526,7 +542,8 @@
             "日当たり",
             "です"
           ],
-          "correctAnswer": "これは日当たりです"
+          "correctAnswer": "これは日当たりです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは日当たりです」 (Kore wa hiatari desu.) expresses 'This is Sunlight exposure.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは日当たりです (Kore wa hiatari desu.) — This is Sunlight exposure."
         },
         {
           "id": "u13_l3_5",
@@ -543,7 +560,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "駅近"
+          "correctAnswer": "駅近",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅近」 (ekichika) expresses 'Pronounce: Close to train station'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅近 (ekichika) — Pronounce: Close to train station"
         },
         {
           "id": "u13_l3_6",
@@ -563,7 +581,8 @@
             "駅近",
             "です"
           ],
-          "correctAnswer": "駅近です"
+          "correctAnswer": "駅近です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅近です」 (ekichika desu.) expresses 'It is Close to train station.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅近です (ekichika desu.) — It is Close to train station."
         },
         {
           "id": "u13_l3_7",
@@ -603,7 +622,8 @@
               "romaji": "bouon"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「保証人・日当たり・駅近・防音」 (hoshounin, hiatari, ekichika, bouon) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・保証人・日当たり・駅近・防音 (hoshounin, hiatari, ekichika, bouon) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l3_8",
@@ -627,7 +647,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金についてどう思われますか？」 (reikin ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Key money (gratuity)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金についてどう思われますか？ (reikin ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Key money (gratuity)?"
         }
       ]
     },
@@ -671,7 +692,8 @@
             "Confirming Walking distance",
             "Confirming Security deposit"
           ],
-          "correctAnswer": "Soundproof"
+          "correctAnswer": "Soundproof",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「防音」 (bouon) expresses 'Soundproof'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・防音 (bouon) — Soundproof"
         },
         {
           "id": "u13_l4_2",
@@ -691,7 +713,8 @@
             "ね",
             "う"
           ],
-          "correctAnswer": "ぼうおん"
+          "correctAnswer": "ぼうおん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「防音」 (bouon) expresses 'Build 'Soundproof''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・防音 (bouon) — Build 'Soundproof'"
         },
         {
           "id": "u13_l4_3",
@@ -710,7 +733,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な更新料です。」 (Kore wa ichiban taisetsu na koushinryou desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Lease renewal fee.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な更新料です。 (Kore wa ichiban taisetsu na koushinryou desu.) — Fill in topic particle 'は' (wa): This is the most important Lease renewal fee."
         },
         {
           "id": "u13_l4_4",
@@ -732,7 +755,8 @@
             "更新料",
             "です"
           ],
-          "correctAnswer": "これは更新料です"
+          "correctAnswer": "これは更新料です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは更新料です」 (Kore wa koushinryou desu.) expresses 'This is Lease renewal fee.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは更新料です (Kore wa koushinryou desu.) — This is Lease renewal fee."
         },
         {
           "id": "u13_l4_5",
@@ -749,7 +773,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "引越し"
+          "correctAnswer": "引越し",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「引越し」 (hikkoshi) expresses 'Pronounce: Moving residence'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・引越し (hikkoshi) — Pronounce: Moving residence"
         },
         {
           "id": "u13_l4_6",
@@ -769,7 +794,8 @@
             "引越し",
             "です"
           ],
-          "correctAnswer": "引越しです"
+          "correctAnswer": "引越しです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「引越しです」 (hikkoshi desu.) expresses 'It is Moving residence.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・引越しです (hikkoshi desu.) — It is Moving residence."
         },
         {
           "id": "u13_l4_7",
@@ -809,7 +835,8 @@
               "romaji": "ooya"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「防音・更新料・引越し・大家」 (bouon, koushinryou, hikkoshi, ooya) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・防音・更新料・引越し・大家 (bouon, koushinryou, hikkoshi, ooya) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l4_8",
@@ -833,7 +860,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は間取りに進みましょう。」 (Tsugi wa madori ni susumimashou.) expresses 'Speaker: Let's proceed to Floor plan layout next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は間取りに進みましょう。 (Tsugi wa madori ni susumimashou.) — Speaker: Let's proceed to Floor plan layout next."
         }
       ]
     },
@@ -878,7 +906,8 @@
             "Confirming Monthly rent",
             "Confirming Key money (gratuity)"
           ],
-          "correctAnswer": "Landlord"
+          "correctAnswer": "Landlord",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大家」 (ooya) expresses 'Landlord'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大家 (ooya) — Landlord"
         },
         {
           "id": "u13_l5_2",
@@ -898,7 +927,8 @@
             "ふ",
             "お"
           ],
-          "correctAnswer": "おおや"
+          "correctAnswer": "おおや",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大家」 (ooya) expresses 'Build 'Landlord''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大家 (ooya) — Build 'Landlord'"
         },
         {
           "id": "u13_l5_3",
@@ -917,7 +947,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な徒歩です。」 (Kore wa ichiban taisetsu na toho desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Walking distance.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な徒歩です。 (Kore wa ichiban taisetsu na toho desu.) — Fill in topic particle 'は' (wa): This is the most important Walking distance."
         },
         {
           "id": "u13_l5_4",
@@ -939,7 +969,8 @@
             "徒歩",
             "です"
           ],
-          "correctAnswer": "これは徒歩です"
+          "correctAnswer": "これは徒歩です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは徒歩です」 (Kore wa toho desu.) expresses 'This is Walking distance.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは徒歩です (Kore wa toho desu.) — This is Walking distance."
         },
         {
           "id": "u13_l5_5",
@@ -956,7 +987,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "初期費用"
+          "correctAnswer": "初期費用",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「初期費用」 (shoki hiyou) expresses 'Pronounce: Initial upfront costs'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・初期費用 (shoki hiyou) — Pronounce: Initial upfront costs"
         },
         {
           "id": "u13_l5_6",
@@ -976,7 +1008,8 @@
             "初期費用",
             "です"
           ],
-          "correctAnswer": "初期費用です"
+          "correctAnswer": "初期費用です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「初期費用です」 (shoki hiyou desu.) expresses 'It is Initial upfront costs.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・初期費用です (shoki hiyou desu.) — It is Initial upfront costs."
         },
         {
           "id": "u13_l5_7",
@@ -1016,7 +1049,8 @@
               "romaji": "yachin no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大家・徒歩・初期費用・家賃の確認」 (ooya, toho, shoki hiyou, yachin no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大家・徒歩・初期費用・家賃の確認 (ooya, toho, shoki hiyou, yachin no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l5_8",
@@ -1040,7 +1074,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃について教えていただけますか？」 (yachin ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Monthly rent?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃について教えていただけますか？ (yachin ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Monthly rent?"
         }
       ]
     },
@@ -1089,7 +1124,8 @@
             "Security deposit",
             "Contract / lease agreement"
           ],
-          "correctAnswer": "Confirming Monthly rent"
+          "correctAnswer": "Confirming Monthly rent",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃の確認」 (yachin no kakunin) expresses 'Confirming Monthly rent'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃の確認 (yachin no kakunin) — Confirming Monthly rent"
         },
         {
           "id": "u13_l6_2",
@@ -1109,7 +1145,8 @@
             "く",
             "ん"
           ],
-          "correctAnswer": "やちんのかくにん"
+          "correctAnswer": "やちんのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃の確認」 (yachin no kakunin) expresses 'Build 'Confirming Monthly rent''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃の確認 (yachin no kakunin) — Build 'Confirming Monthly rent'"
         },
         {
           "id": "u13_l6_3",
@@ -1128,7 +1165,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な敷金の確認です。」 (Kore wa ichiban taisetsu na shikikin no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Security deposit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な敷金の確認です。 (Kore wa ichiban taisetsu na shikikin no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Security deposit."
         },
         {
           "id": "u13_l6_4",
@@ -1150,7 +1187,8 @@
             "敷金の確認",
             "です"
           ],
-          "correctAnswer": "これは敷金の確認です"
+          "correctAnswer": "これは敷金の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは敷金の確認です」 (Kore wa shikikin no kakunin desu.) expresses 'This is Confirming Security deposit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは敷金の確認です (Kore wa shikikin no kakunin desu.) — This is Confirming Security deposit."
         },
         {
           "id": "u13_l6_5",
@@ -1167,7 +1205,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "礼金の確認"
+          "correctAnswer": "礼金の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金の確認」 (reikin no kakunin) expresses 'Pronounce: Confirming Key money (gratuity)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金の確認 (reikin no kakunin) — Pronounce: Confirming Key money (gratuity)"
         },
         {
           "id": "u13_l6_6",
@@ -1187,7 +1226,8 @@
             "礼金の確認",
             "です"
           ],
-          "correctAnswer": "礼金の確認です"
+          "correctAnswer": "礼金の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金の確認です」 (reikin no kakunin desu.) expresses 'It is Confirming Key money (gratuity).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金の確認です (reikin no kakunin desu.) — It is Confirming Key money (gratuity)."
         },
         {
           "id": "u13_l6_7",
@@ -1227,7 +1267,8 @@
               "romaji": "madori no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃の確認・敷金の確認・礼金の確認・間取りの確認」 (yachin no kakunin, shikikin no kakunin, reikin no kakunin, madori no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃の確認・敷金の確認・礼金の確認・間取りの確認 (yachin no kakunin, shikikin no kakunin, reikin no kakunin, madori no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l6_8",
@@ -1251,7 +1292,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「敷金の準備はできていますか？」 (shikikin no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Security deposit ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・敷金の準備はできていますか？ (shikikin no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Security deposit ready?"
         }
       ]
     },
@@ -1301,7 +1343,8 @@
             "Confirming Floor plan layout",
             "Confirming Monthly rent"
           ],
-          "correctAnswer": "Confirming Floor plan layout"
+          "correctAnswer": "Confirming Floor plan layout",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取りの確認」 (madori no kakunin) expresses 'Confirming Floor plan layout'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取りの確認 (madori no kakunin) — Confirming Floor plan layout"
         },
         {
           "id": "u13_l7_2",
@@ -1321,7 +1364,8 @@
             "に",
             "ん"
           ],
-          "correctAnswer": "まどりのかくにん"
+          "correctAnswer": "まどりのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取りの確認」 (madori no kakunin) expresses 'Build 'Confirming Floor plan layout''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取りの確認 (madori no kakunin) — Build 'Confirming Floor plan layout'"
         },
         {
           "id": "u13_l7_3",
@@ -1340,7 +1384,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な不動産の確認です。」 (Kore wa ichiban taisetsu na fudousan no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Real estate agency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な不動産の確認です。 (Kore wa ichiban taisetsu na fudousan no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Real estate agency."
         },
         {
           "id": "u13_l7_4",
@@ -1362,7 +1406,8 @@
             "不動産の確認",
             "です"
           ],
-          "correctAnswer": "これは不動産の確認です"
+          "correctAnswer": "これは不動産の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは不動産の確認です」 (Kore wa fudousan no kakunin desu.) expresses 'This is Confirming Real estate agency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは不動産の確認です (Kore wa fudousan no kakunin desu.) — This is Confirming Real estate agency."
         },
         {
           "id": "u13_l7_5",
@@ -1379,7 +1424,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "契約の確認"
+          "correctAnswer": "契約の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「契約の確認」 (keiyaku no kakunin) expresses 'Pronounce: Confirming Contract / lease agreement'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・契約の確認 (keiyaku no kakunin) — Pronounce: Confirming Contract / lease agreement"
         },
         {
           "id": "u13_l7_6",
@@ -1399,7 +1445,8 @@
             "契約の確認",
             "です"
           ],
-          "correctAnswer": "契約の確認です"
+          "correctAnswer": "契約の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「契約の確認です」 (keiyaku no kakunin desu.) expresses 'It is Confirming Contract / lease agreement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・契約の確認です (keiyaku no kakunin desu.) — It is Confirming Contract / lease agreement."
         },
         {
           "id": "u13_l7_7",
@@ -1439,7 +1486,8 @@
               "romaji": "hoshounin no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取りの確認・不動産の確認・契約の確認・保証人の確認」 (madori no kakunin, fudousan no kakunin, keiyaku no kakunin, hoshounin no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取りの確認・不動産の確認・契約の確認・保証人の確認 (madori no kakunin, fudousan no kakunin, keiyaku no kakunin, hoshounin no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l7_8",
@@ -1463,7 +1511,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金についてどう思われますか？」 (reikin ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Key money (gratuity)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金についてどう思われますか？ (reikin ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Key money (gratuity)?"
         }
       ]
     },
@@ -1513,7 +1562,8 @@
             "Confirming Initial upfront costs",
             "Confirming Guarantor"
           ],
-          "correctAnswer": "Confirming Guarantor"
+          "correctAnswer": "Confirming Guarantor",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「保証人の確認」 (hoshounin no kakunin) expresses 'Confirming Guarantor'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・保証人の確認 (hoshounin no kakunin) — Confirming Guarantor"
         },
         {
           "id": "u13_l8_2",
@@ -1533,7 +1583,8 @@
             "ほ",
             "う"
           ],
-          "correctAnswer": "ほしょうにんのかくにん"
+          "correctAnswer": "ほしょうにんのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「保証人の確認」 (hoshounin no kakunin) expresses 'Build 'Confirming Guarantor''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・保証人の確認 (hoshounin no kakunin) — Build 'Confirming Guarantor'"
         },
         {
           "id": "u13_l8_3",
@@ -1552,7 +1603,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な日当たりの確認です。」 (Kore wa ichiban taisetsu na hiatari no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Sunlight exposure.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な日当たりの確認です。 (Kore wa ichiban taisetsu na hiatari no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Sunlight exposure."
         },
         {
           "id": "u13_l8_4",
@@ -1574,7 +1625,8 @@
             "日当たりの確認",
             "です"
           ],
-          "correctAnswer": "これは日当たりの確認です"
+          "correctAnswer": "これは日当たりの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは日当たりの確認です」 (Kore wa hiatari no kakunin desu.) expresses 'This is Confirming Sunlight exposure.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは日当たりの確認です (Kore wa hiatari no kakunin desu.) — This is Confirming Sunlight exposure."
         },
         {
           "id": "u13_l8_5",
@@ -1591,7 +1643,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "駅近の確認"
+          "correctAnswer": "駅近の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅近の確認」 (ekichika no kakunin) expresses 'Pronounce: Confirming Close to train station'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅近の確認 (ekichika no kakunin) — Pronounce: Confirming Close to train station"
         },
         {
           "id": "u13_l8_6",
@@ -1611,7 +1664,8 @@
             "駅近の確認",
             "です"
           ],
-          "correctAnswer": "駅近の確認です"
+          "correctAnswer": "駅近の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅近の確認です」 (ekichika no kakunin desu.) expresses 'It is Confirming Close to train station.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅近の確認です (ekichika no kakunin desu.) — It is Confirming Close to train station."
         },
         {
           "id": "u13_l8_7",
@@ -1651,7 +1705,8 @@
               "romaji": "bouon no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「保証人の確認・日当たりの確認・駅近の確認・防音の確認」 (hoshounin no kakunin, hiatari no kakunin, ekichika no kakunin, bouon no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・保証人の確認・日当たりの確認・駅近の確認・防音の確認 (hoshounin no kakunin, hiatari no kakunin, ekichika no kakunin, bouon no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l8_8",
@@ -1675,7 +1730,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は間取りに進みましょう。」 (Tsugi wa madori ni susumimashou.) expresses 'Speaker: Let's proceed to Floor plan layout next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は間取りに進みましょう。 (Tsugi wa madori ni susumimashou.) — Speaker: Let's proceed to Floor plan layout next."
         }
       ]
     },
@@ -1725,7 +1781,8 @@
             "Security deposit",
             "Soundproof"
           ],
-          "correctAnswer": "Confirming Soundproof"
+          "correctAnswer": "Confirming Soundproof",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「防音の確認」 (bouon no kakunin) expresses 'Confirming Soundproof'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・防音の確認 (bouon no kakunin) — Confirming Soundproof"
         },
         {
           "id": "u13_l9_2",
@@ -1745,7 +1802,8 @@
             "ぼ",
             "お"
           ],
-          "correctAnswer": "ぼうおんのかくにん"
+          "correctAnswer": "ぼうおんのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「防音の確認」 (bouon no kakunin) expresses 'Build 'Confirming Soundproof''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・防音の確認 (bouon no kakunin) — Build 'Confirming Soundproof'"
         },
         {
           "id": "u13_l9_3",
@@ -1764,7 +1822,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な更新料の確認です。」 (Kore wa ichiban taisetsu na koushinryou no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Lease renewal fee.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な更新料の確認です。 (Kore wa ichiban taisetsu na koushinryou no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Lease renewal fee."
         },
         {
           "id": "u13_l9_4",
@@ -1786,7 +1844,8 @@
             "更新料の確認",
             "です"
           ],
-          "correctAnswer": "これは更新料の確認です"
+          "correctAnswer": "これは更新料の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは更新料の確認です」 (Kore wa koushinryou no kakunin desu.) expresses 'This is Confirming Lease renewal fee.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは更新料の確認です (Kore wa koushinryou no kakunin desu.) — This is Confirming Lease renewal fee."
         },
         {
           "id": "u13_l9_5",
@@ -1803,7 +1862,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "引越しの確認"
+          "correctAnswer": "引越しの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「引越しの確認」 (hikkoshi no kakunin) expresses 'Pronounce: Confirming Moving residence'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・引越しの確認 (hikkoshi no kakunin) — Pronounce: Confirming Moving residence"
         },
         {
           "id": "u13_l9_6",
@@ -1823,7 +1883,8 @@
             "引越しの確認",
             "です"
           ],
-          "correctAnswer": "引越しの確認です"
+          "correctAnswer": "引越しの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「引越しの確認です」 (hikkoshi no kakunin desu.) expresses 'It is Confirming Moving residence.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・引越しの確認です (hikkoshi no kakunin desu.) — It is Confirming Moving residence."
         },
         {
           "id": "u13_l9_7",
@@ -1863,7 +1924,8 @@
               "romaji": "ooya no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「防音の確認・更新料の確認・引越しの確認・大家の確認」 (bouon no kakunin, koushinryou no kakunin, hikkoshi no kakunin, ooya no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・防音の確認・更新料の確認・引越しの確認・大家の確認 (bouon no kakunin, koushinryou no kakunin, hikkoshi no kakunin, ooya no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l9_8",
@@ -1887,7 +1949,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃について教えていただけますか？」 (yachin ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Monthly rent?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃について教えていただけますか？ (yachin ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Monthly rent?"
         }
       ]
     },
@@ -1938,7 +2001,8 @@
             "Confirming Monthly rent",
             "Confirming Landlord"
           ],
-          "correctAnswer": "Confirming Landlord"
+          "correctAnswer": "Confirming Landlord",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大家の確認」 (ooya no kakunin) expresses 'Confirming Landlord'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大家の確認 (ooya no kakunin) — Confirming Landlord"
         },
         {
           "id": "u13_l10_2",
@@ -1958,7 +2022,8 @@
             "ん",
             "の"
           ],
-          "correctAnswer": "おおやのかくにん"
+          "correctAnswer": "おおやのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大家の確認」 (ooya no kakunin) expresses 'Build 'Confirming Landlord''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大家の確認 (ooya no kakunin) — Build 'Confirming Landlord'"
         },
         {
           "id": "u13_l10_3",
@@ -1977,7 +2042,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な徒歩の確認です。」 (Kore wa ichiban taisetsu na toho no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Walking distance.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な徒歩の確認です。 (Kore wa ichiban taisetsu na toho no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Walking distance."
         },
         {
           "id": "u13_l10_4",
@@ -1999,7 +2064,8 @@
             "徒歩の確認",
             "です"
           ],
-          "correctAnswer": "これは徒歩の確認です"
+          "correctAnswer": "これは徒歩の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは徒歩の確認です」 (Kore wa toho no kakunin desu.) expresses 'This is Confirming Walking distance.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは徒歩の確認です (Kore wa toho no kakunin desu.) — This is Confirming Walking distance."
         },
         {
           "id": "u13_l10_5",
@@ -2016,7 +2082,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "初期費用の確認"
+          "correctAnswer": "初期費用の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「初期費用の確認」 (shoki hiyou no kakunin) expresses 'Pronounce: Confirming Initial upfront costs'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・初期費用の確認 (shoki hiyou no kakunin) — Pronounce: Confirming Initial upfront costs"
         },
         {
           "id": "u13_l10_6",
@@ -2036,7 +2103,8 @@
             "初期費用の確認",
             "です"
           ],
-          "correctAnswer": "初期費用の確認です"
+          "correctAnswer": "初期費用の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「初期費用の確認です」 (shoki hiyou no kakunin desu.) expresses 'It is Confirming Initial upfront costs.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・初期費用の確認です (shoki hiyou no kakunin desu.) — It is Confirming Initial upfront costs."
         },
         {
           "id": "u13_l10_7",
@@ -2076,7 +2144,8 @@
               "romaji": "yachin no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「大家の確認・徒歩の確認・初期費用の確認・家賃の確認」 (ooya no kakunin, toho no kakunin, shoki hiyou no kakunin, yachin no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・大家の確認・徒歩の確認・初期費用の確認・家賃の確認 (ooya no kakunin, toho no kakunin, shoki hiyou no kakunin, yachin no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l10_8",
@@ -2100,7 +2169,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「敷金の準備はできていますか？」 (shikikin no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Security deposit ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・敷金の準備はできていますか？ (shikikin no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Security deposit ready?"
         }
       ]
     },
@@ -2149,7 +2219,8 @@
             "Confirming Monthly rent",
             "Monthly rent"
           ],
-          "correctAnswer": "Confirming Monthly rent"
+          "correctAnswer": "Confirming Monthly rent",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃の確認」 (yachin no kakunin) expresses 'Confirming Monthly rent'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃の確認 (yachin no kakunin) — Confirming Monthly rent"
         },
         {
           "id": "u13_l11_2",
@@ -2169,7 +2240,8 @@
             "く",
             "の"
           ],
-          "correctAnswer": "やちんのかくにん"
+          "correctAnswer": "やちんのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃の確認」 (yachin no kakunin) expresses 'Build 'Confirming Monthly rent''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃の確認 (yachin no kakunin) — Build 'Confirming Monthly rent'"
         },
         {
           "id": "u13_l11_3",
@@ -2188,7 +2260,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な敷金の確認です。」 (Kore wa ichiban taisetsu na shikikin no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Security deposit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な敷金の確認です。 (Kore wa ichiban taisetsu na shikikin no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Security deposit."
         },
         {
           "id": "u13_l11_4",
@@ -2210,7 +2282,8 @@
             "敷金の確認",
             "です"
           ],
-          "correctAnswer": "これは敷金の確認です"
+          "correctAnswer": "これは敷金の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは敷金の確認です」 (Kore wa shikikin no kakunin desu.) expresses 'This is Confirming Security deposit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは敷金の確認です (Kore wa shikikin no kakunin desu.) — This is Confirming Security deposit."
         },
         {
           "id": "u13_l11_5",
@@ -2227,7 +2300,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "礼金の確認"
+          "correctAnswer": "礼金の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金の確認」 (reikin no kakunin) expresses 'Pronounce: Confirming Key money (gratuity)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金の確認 (reikin no kakunin) — Pronounce: Confirming Key money (gratuity)"
         },
         {
           "id": "u13_l11_6",
@@ -2247,7 +2321,8 @@
             "礼金の確認",
             "です"
           ],
-          "correctAnswer": "礼金の確認です"
+          "correctAnswer": "礼金の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金の確認です」 (reikin no kakunin desu.) expresses 'It is Confirming Key money (gratuity).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金の確認です (reikin no kakunin desu.) — It is Confirming Key money (gratuity)."
         },
         {
           "id": "u13_l11_7",
@@ -2287,7 +2362,8 @@
               "romaji": "madori no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃の確認・敷金の確認・礼金の確認・間取りの確認」 (yachin no kakunin, shikikin no kakunin, reikin no kakunin, madori no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃の確認・敷金の確認・礼金の確認・間取りの確認 (yachin no kakunin, shikikin no kakunin, reikin no kakunin, madori no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l11_8",
@@ -2311,7 +2387,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金についてどう思われますか？」 (reikin ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Key money (gratuity)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金についてどう思われますか？ (reikin ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Key money (gratuity)?"
         }
       ]
     },
@@ -2361,7 +2438,8 @@
             "Confirming Lease renewal fee",
             "Confirming Floor plan layout"
           ],
-          "correctAnswer": "Confirming Floor plan layout"
+          "correctAnswer": "Confirming Floor plan layout",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取りの確認」 (madori no kakunin) expresses 'Confirming Floor plan layout'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取りの確認 (madori no kakunin) — Confirming Floor plan layout"
         },
         {
           "id": "u13_l12_2",
@@ -2381,7 +2459,8 @@
             "の",
             "く"
           ],
-          "correctAnswer": "まどりのかくにん"
+          "correctAnswer": "まどりのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取りの確認」 (madori no kakunin) expresses 'Build 'Confirming Floor plan layout''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取りの確認 (madori no kakunin) — Build 'Confirming Floor plan layout'"
         },
         {
           "id": "u13_l12_3",
@@ -2400,7 +2479,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な不動産の確認です。」 (Kore wa ichiban taisetsu na fudousan no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Real estate agency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な不動産の確認です。 (Kore wa ichiban taisetsu na fudousan no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Real estate agency."
         },
         {
           "id": "u13_l12_4",
@@ -2422,7 +2501,8 @@
             "不動産の確認",
             "です"
           ],
-          "correctAnswer": "これは不動産の確認です"
+          "correctAnswer": "これは不動産の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは不動産の確認です」 (Kore wa fudousan no kakunin desu.) expresses 'This is Confirming Real estate agency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは不動産の確認です (Kore wa fudousan no kakunin desu.) — This is Confirming Real estate agency."
         },
         {
           "id": "u13_l12_5",
@@ -2439,7 +2519,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "契約の確認"
+          "correctAnswer": "契約の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「契約の確認」 (keiyaku no kakunin) expresses 'Pronounce: Confirming Contract / lease agreement'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・契約の確認 (keiyaku no kakunin) — Pronounce: Confirming Contract / lease agreement"
         },
         {
           "id": "u13_l12_6",
@@ -2459,7 +2540,8 @@
             "契約の確認",
             "です"
           ],
-          "correctAnswer": "契約の確認です"
+          "correctAnswer": "契約の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「契約の確認です」 (keiyaku no kakunin desu.) expresses 'It is Confirming Contract / lease agreement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・契約の確認です (keiyaku no kakunin desu.) — It is Confirming Contract / lease agreement."
         },
         {
           "id": "u13_l12_7",
@@ -2499,7 +2581,8 @@
               "romaji": "yachin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取りの確認・不動産の確認・契約の確認・家賃」 (madori no kakunin, fudousan no kakunin, keiyaku no kakunin, yachin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取りの確認・不動産の確認・契約の確認・家賃 (madori no kakunin, fudousan no kakunin, keiyaku no kakunin, yachin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l12_8",
@@ -2523,7 +2606,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は間取りに進みましょう。」 (Tsugi wa madori ni susumimashou.) expresses 'Speaker: Let's proceed to Floor plan layout next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は間取りに進みましょう。 (Tsugi wa madori ni susumimashou.) — Speaker: Let's proceed to Floor plan layout next."
         }
       ]
     },
@@ -2566,7 +2650,8 @@
             "Soundproof",
             "Walking distance"
           ],
-          "correctAnswer": "Monthly rent"
+          "correctAnswer": "Monthly rent",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃」 (yachin) expresses 'Monthly rent'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃 (yachin) — Monthly rent"
         },
         {
           "id": "u13_l13_2",
@@ -2586,7 +2671,8 @@
             "や",
             "き"
           ],
-          "correctAnswer": "やちん"
+          "correctAnswer": "やちん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃」 (yachin) expresses 'Build 'Monthly rent''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃 (yachin) — Build 'Monthly rent'"
         },
         {
           "id": "u13_l13_3",
@@ -2605,7 +2691,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な敷金です。」 (Kore wa ichiban taisetsu na shikikin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Security deposit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な敷金です。 (Kore wa ichiban taisetsu na shikikin desu.) — Fill in topic particle 'は' (wa): This is the most important Security deposit."
         },
         {
           "id": "u13_l13_4",
@@ -2627,7 +2713,8 @@
             "敷金",
             "です"
           ],
-          "correctAnswer": "これは敷金です"
+          "correctAnswer": "これは敷金です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは敷金です」 (Kore wa shikikin desu.) expresses 'This is Security deposit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは敷金です (Kore wa shikikin desu.) — This is Security deposit."
         },
         {
           "id": "u13_l13_5",
@@ -2644,7 +2731,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "礼金"
+          "correctAnswer": "礼金",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金」 (reikin) expresses 'Pronounce: Key money (gratuity)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金 (reikin) — Pronounce: Key money (gratuity)"
         },
         {
           "id": "u13_l13_6",
@@ -2664,7 +2752,8 @@
             "礼金",
             "です"
           ],
-          "correctAnswer": "礼金です"
+          "correctAnswer": "礼金です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金です」 (reikin desu.) expresses 'It is Key money (gratuity).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金です (reikin desu.) — It is Key money (gratuity)."
         },
         {
           "id": "u13_l13_7",
@@ -2704,7 +2793,8 @@
               "romaji": "madori"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃・敷金・礼金・間取り」 (yachin, shikikin, reikin, madori) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃・敷金・礼金・間取り (yachin, shikikin, reikin, madori) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l13_8",
@@ -2728,7 +2818,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「家賃について教えていただけますか？」 (yachin ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Monthly rent?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・家賃について教えていただけますか？ (yachin ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Monthly rent?"
         }
       ]
     },
@@ -2772,7 +2863,8 @@
             "Confirming Security deposit",
             "Floor plan layout"
           ],
-          "correctAnswer": "Floor plan layout"
+          "correctAnswer": "Floor plan layout",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取り」 (madori) expresses 'Floor plan layout'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取り (madori) — Floor plan layout"
         },
         {
           "id": "u13_l14_2",
@@ -2792,7 +2884,8 @@
             "し",
             "け"
           ],
-          "correctAnswer": "まどり"
+          "correctAnswer": "まどり",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取り」 (madori) expresses 'Build 'Floor plan layout''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取り (madori) — Build 'Floor plan layout'"
         },
         {
           "id": "u13_l14_3",
@@ -2811,7 +2904,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な不動産です。」 (Kore wa ichiban taisetsu na fudousan desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Real estate agency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な不動産です。 (Kore wa ichiban taisetsu na fudousan desu.) — Fill in topic particle 'は' (wa): This is the most important Real estate agency."
         },
         {
           "id": "u13_l14_4",
@@ -2833,7 +2926,8 @@
             "不動産",
             "です"
           ],
-          "correctAnswer": "これは不動産です"
+          "correctAnswer": "これは不動産です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは不動産です」 (Kore wa fudousan desu.) expresses 'This is Real estate agency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは不動産です (Kore wa fudousan desu.) — This is Real estate agency."
         },
         {
           "id": "u13_l14_5",
@@ -2850,7 +2944,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "契約"
+          "correctAnswer": "契約",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「契約」 (keiyaku) expresses 'Pronounce: Contract / lease agreement'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・契約 (keiyaku) — Pronounce: Contract / lease agreement"
         },
         {
           "id": "u13_l14_6",
@@ -2870,7 +2965,8 @@
             "契約",
             "です"
           ],
-          "correctAnswer": "契約です"
+          "correctAnswer": "契約です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「契約です」 (keiyaku desu.) expresses 'It is Contract / lease agreement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・契約です (keiyaku desu.) — It is Contract / lease agreement."
         },
         {
           "id": "u13_l14_7",
@@ -2910,7 +3006,8 @@
               "romaji": "hoshounin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「間取り・不動産・契約・保証人」 (madori, fudousan, keiyaku, hoshounin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・間取り・不動産・契約・保証人 (madori, fudousan, keiyaku, hoshounin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l14_8",
@@ -2934,7 +3031,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「敷金の準備はできていますか？」 (shikikin no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Security deposit ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・敷金の準備はできていますか？ (shikikin no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Security deposit ready?"
         }
       ]
     },
@@ -2978,7 +3076,8 @@
             "Guarantor",
             "Lease renewal fee"
           ],
-          "correctAnswer": "Guarantor"
+          "correctAnswer": "Guarantor",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「保証人」 (hoshounin) expresses 'Guarantor'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・保証人 (hoshounin) — Guarantor"
         },
         {
           "id": "u13_l15_2",
@@ -2998,7 +3097,8 @@
             "ょ",
             "に"
           ],
-          "correctAnswer": "ほしょうにん"
+          "correctAnswer": "ほしょうにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「保証人」 (hoshounin) expresses 'Build 'Guarantor''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・保証人 (hoshounin) — Build 'Guarantor'"
         },
         {
           "id": "u13_l15_3",
@@ -3017,7 +3117,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な日当たりです。」 (Kore wa ichiban taisetsu na hiatari desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Sunlight exposure.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な日当たりです。 (Kore wa ichiban taisetsu na hiatari desu.) — Fill in topic particle 'は' (wa): This is the most important Sunlight exposure."
         },
         {
           "id": "u13_l15_4",
@@ -3039,7 +3139,8 @@
             "日当たり",
             "です"
           ],
-          "correctAnswer": "これは日当たりです"
+          "correctAnswer": "これは日当たりです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは日当たりです」 (Kore wa hiatari desu.) expresses 'This is Sunlight exposure.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは日当たりです (Kore wa hiatari desu.) — This is Sunlight exposure."
         },
         {
           "id": "u13_l15_5",
@@ -3056,7 +3157,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "駅近"
+          "correctAnswer": "駅近",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅近」 (ekichika) expresses 'Pronounce: Close to train station'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅近 (ekichika) — Pronounce: Close to train station"
         },
         {
           "id": "u13_l15_6",
@@ -3076,7 +3178,8 @@
             "駅近",
             "です"
           ],
-          "correctAnswer": "駅近です"
+          "correctAnswer": "駅近です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅近です」 (ekichika desu.) expresses 'It is Close to train station.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅近です (ekichika desu.) — It is Close to train station."
         },
         {
           "id": "u13_l15_7",
@@ -3116,7 +3219,8 @@
               "romaji": "bouon"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「保証人・日当たり・駅近・防音」 (hoshounin, hiatari, ekichika, bouon) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・保証人・日当たり・駅近・防音 (hoshounin, hiatari, ekichika, bouon) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u13_l15_8",
@@ -3140,7 +3244,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「礼金についてどう思われますか？」 (reikin ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Key money (gratuity)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・礼金についてどう思われますか？ (reikin ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Key money (gratuity)?"
         }
       ]
     }

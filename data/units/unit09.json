@@ -52,7 +52,8 @@
             "Common cold",
             "Hospital / clinic"
           ],
-          "correctAnswer": "Hospital / clinic"
+          "correctAnswer": "Hospital / clinic",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院」 (byouin) expresses 'Hospital / clinic'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院 (byouin) — Hospital / clinic"
         },
         {
           "id": "u9_l1_2",
@@ -72,7 +73,8 @@
             "と",
             "び"
           ],
-          "correctAnswer": "びょういん"
+          "correctAnswer": "びょういん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院」 (byouin) expresses 'Build 'Hospital / clinic''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院 (byouin) — Build 'Hospital / clinic'"
         },
         {
           "id": "u9_l1_3",
@@ -91,7 +93,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な薬局です。」 (Kore wa ichiban taisetsu na yakkyoku desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Pharmacy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な薬局です。 (Kore wa ichiban taisetsu na yakkyoku desu.) — Fill in topic particle 'は' (wa): This is the most important Pharmacy."
         },
         {
           "id": "u9_l1_4",
@@ -113,7 +115,8 @@
             "薬局",
             "です"
           ],
-          "correctAnswer": "これは薬局です"
+          "correctAnswer": "これは薬局です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは薬局です」 (Kore wa yakkyoku desu.) expresses 'This is Pharmacy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは薬局です (Kore wa yakkyoku desu.) — This is Pharmacy."
         },
         {
           "id": "u9_l1_5",
@@ -130,7 +133,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "熱"
+          "correctAnswer": "熱",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱」 (netsu) expresses 'Pronounce: Fever'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱 (netsu) — Pronounce: Fever"
         },
         {
           "id": "u9_l1_6",
@@ -150,7 +154,8 @@
             "熱",
             "です"
           ],
-          "correctAnswer": "熱です"
+          "correctAnswer": "熱です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱です」 (netsu desu.) expresses 'It is Fever.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱です (netsu desu.) — It is Fever."
         },
         {
           "id": "u9_l1_7",
@@ -190,7 +195,8 @@
               "romaji": "zutsuu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院・薬局・熱・頭痛」 (byouin, yakkyoku, netsu, zutsuu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院・薬局・熱・頭痛 (byouin, yakkyoku, netsu, zutsuu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l1_8",
@@ -214,7 +220,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院について教えていただけますか？」 (byouin ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Hospital / clinic?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院について教えていただけますか？ (byouin ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Hospital / clinic?"
         }
       ]
     },
@@ -255,7 +262,8 @@
             "Confirming Throat",
             "Headache"
           ],
-          "correctAnswer": "Headache"
+          "correctAnswer": "Headache",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛」 (zutsuu) expresses 'Headache'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛 (zutsuu) — Headache"
         },
         {
           "id": "u9_l2_2",
@@ -275,7 +283,8 @@
             "つ",
             "ず"
           ],
-          "correctAnswer": "ずつう"
+          "correctAnswer": "ずつう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛」 (zutsuu) expresses 'Build 'Headache''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛 (zutsuu) — Build 'Headache'"
         },
         {
           "id": "u9_l2_3",
@@ -294,7 +303,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な喉です。」 (Kore wa ichiban taisetsu na nodo desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Throat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な喉です。 (Kore wa ichiban taisetsu na nodo desu.) — Fill in topic particle 'は' (wa): This is the most important Throat."
         },
         {
           "id": "u9_l2_4",
@@ -316,7 +325,8 @@
             "喉",
             "です"
           ],
-          "correctAnswer": "これは喉です"
+          "correctAnswer": "これは喉です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは喉です」 (Kore wa nodo desu.) expresses 'This is Throat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは喉です (Kore wa nodo desu.) — This is Throat."
         },
         {
           "id": "u9_l2_5",
@@ -333,7 +343,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "お腹"
+          "correctAnswer": "お腹",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お腹」 (onaka) expresses 'Pronounce: Stomach / belly'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お腹 (onaka) — Pronounce: Stomach / belly"
         },
         {
           "id": "u9_l2_6",
@@ -353,7 +364,8 @@
             "お腹",
             "です"
           ],
-          "correctAnswer": "お腹です"
+          "correctAnswer": "お腹です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お腹です」 (onaka desu.) expresses 'It is Stomach / belly.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お腹です (onaka desu.) — It is Stomach / belly."
         },
         {
           "id": "u9_l2_7",
@@ -393,7 +405,8 @@
               "romaji": "itai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛・喉・お腹・痛い」 (zutsuu, nodo, onaka, itai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛・喉・お腹・痛い (zutsuu, nodo, onaka, itai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l2_8",
@@ -417,7 +430,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「薬局の準備はできていますか？」 (yakkyoku no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Pharmacy ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・薬局の準備はできていますか？ (yakkyoku no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Pharmacy ready?"
         }
       ]
     },
@@ -458,7 +472,8 @@
             "Painful / hurts",
             "Headache"
           ],
-          "correctAnswer": "Painful / hurts"
+          "correctAnswer": "Painful / hurts",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「痛い」 (itai) expresses 'Painful / hurts'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・痛い (itai) — Painful / hurts"
         },
         {
           "id": "u9_l3_2",
@@ -478,7 +493,8 @@
             "た",
             "り"
           ],
-          "correctAnswer": "いたい"
+          "correctAnswer": "いたい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「痛い」 (itai) expresses 'Build 'Painful / hurts''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・痛い (itai) — Build 'Painful / hurts'"
         },
         {
           "id": "u9_l3_3",
@@ -497,7 +513,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な風邪です。」 (Kore wa ichiban taisetsu na kaze desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Common cold.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な風邪です。 (Kore wa ichiban taisetsu na kaze desu.) — Fill in topic particle 'は' (wa): This is the most important Common cold."
         },
         {
           "id": "u9_l3_4",
@@ -519,7 +535,8 @@
             "風邪",
             "です"
           ],
-          "correctAnswer": "これは風邪です"
+          "correctAnswer": "これは風邪です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは風邪です」 (Kore wa kaze desu.) expresses 'This is Common cold.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは風邪です (Kore wa kaze desu.) — This is Common cold."
         },
         {
           "id": "u9_l3_5",
@@ -536,7 +553,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "咳"
+          "correctAnswer": "咳",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「咳」 (seki) expresses 'Pronounce: Cough'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・咳 (seki) — Pronounce: Cough"
         },
         {
           "id": "u9_l3_6",
@@ -556,7 +574,8 @@
             "咳",
             "です"
           ],
-          "correctAnswer": "咳です"
+          "correctAnswer": "咳です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「咳です」 (seki desu.) expresses 'It is Cough.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・咳です (seki desu.) — It is Cough."
         },
         {
           "id": "u9_l3_7",
@@ -596,7 +615,8 @@
               "romaji": "kusuri"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「痛い・風邪・咳・薬」 (itai, kaze, seki, kusuri) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・痛い・風邪・咳・薬 (itai, kaze, seki, kusuri) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l3_8",
@@ -620,7 +640,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱についてどう思われますか？」 (netsu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Fever?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱についてどう思われますか？ (netsu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Fever?"
         }
       ]
     },
@@ -664,7 +685,8 @@
             "Take care / get well soon",
             "Cough"
           ],
-          "correctAnswer": "Medicine"
+          "correctAnswer": "Medicine",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「薬」 (kusuri) expresses 'Medicine'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・薬 (kusuri) — Medicine"
         },
         {
           "id": "u9_l4_2",
@@ -684,7 +706,8 @@
             "ほ",
             "み"
           ],
-          "correctAnswer": "くすり"
+          "correctAnswer": "くすり",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「薬」 (kusuri) expresses 'Build 'Medicine''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・薬 (kusuri) — Build 'Medicine'"
         },
         {
           "id": "u9_l4_3",
@@ -703,7 +726,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な保険証です。」 (Kore wa ichiban taisetsu na hokenshou desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Health insurance card.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な保険証です。 (Kore wa ichiban taisetsu na hokenshou desu.) — Fill in topic particle 'は' (wa): This is the most important Health insurance card."
         },
         {
           "id": "u9_l4_4",
@@ -725,7 +748,8 @@
             "保険証",
             "です"
           ],
-          "correctAnswer": "これは保険証です"
+          "correctAnswer": "これは保険証です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは保険証です」 (Kore wa hokenshou desu.) expresses 'This is Health insurance card.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは保険証です (Kore wa hokenshou desu.) — This is Health insurance card."
         },
         {
           "id": "u9_l4_5",
@@ -742,7 +766,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "処方箋"
+          "correctAnswer": "処方箋",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「処方箋」 (shohousen) expresses 'Pronounce: Doctor's prescription'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・処方箋 (shohousen) — Pronounce: Doctor's prescription"
         },
         {
           "id": "u9_l4_6",
@@ -762,7 +787,8 @@
             "処方箋",
             "です"
           ],
-          "correctAnswer": "処方箋です"
+          "correctAnswer": "処方箋です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「処方箋です」 (shohousen desu.) expresses 'It is Doctor's prescription.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・処方箋です (shohousen desu.) — It is Doctor's prescription."
         },
         {
           "id": "u9_l4_7",
@@ -802,7 +828,8 @@
               "romaji": "shokugo"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「薬・保険証・処方箋・食後」 (kusuri, hokenshou, shohousen, shokugo) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・薬・保険証・処方箋・食後 (kusuri, hokenshou, shohousen, shokugo) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l4_8",
@@ -826,7 +853,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は頭痛に進みましょう。」 (Tsugi wa zutsuu ni susumimashou.) expresses 'Speaker: Let's proceed to Headache next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は頭痛に進みましょう。 (Tsugi wa zutsuu ni susumimashou.) — Speaker: Let's proceed to Headache next."
         }
       ]
     },
@@ -867,7 +895,8 @@
             "Confirming Pharmacy",
             "After meal"
           ],
-          "correctAnswer": "After meal"
+          "correctAnswer": "After meal",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食後」 (shokugo) expresses 'After meal'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食後 (shokugo) — After meal"
         },
         {
           "id": "u9_l5_2",
@@ -887,7 +916,8 @@
             "て",
             "ほ"
           ],
-          "correctAnswer": "しょくご"
+          "correctAnswer": "しょくご",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食後」 (shokugo) expresses 'Build 'After meal''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食後 (shokugo) — Build 'After meal'"
         },
         {
           "id": "u9_l5_3",
@@ -906,7 +936,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なアレルギーです。」 (Kore wa ichiban taisetsu na arerugii desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Allergy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なアレルギーです。 (Kore wa ichiban taisetsu na arerugii desu.) — Fill in topic particle 'は' (wa): This is the most important Allergy."
         },
         {
           "id": "u9_l5_4",
@@ -928,7 +958,8 @@
             "アレルギー",
             "です"
           ],
-          "correctAnswer": "これはアレルギーです"
+          "correctAnswer": "これはアレルギーです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはアレルギーです」 (Kore wa arerugii desu.) expresses 'This is Allergy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはアレルギーです (Kore wa arerugii desu.) — This is Allergy."
         },
         {
           "id": "u9_l5_5",
@@ -945,7 +976,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "お大事に"
+          "correctAnswer": "お大事に",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お大事に」 (odaiji ni) expresses 'Pronounce: Take care / get well soon'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お大事に (odaiji ni) — Pronounce: Take care / get well soon"
         },
         {
           "id": "u9_l5_6",
@@ -965,7 +997,8 @@
             "お大事に",
             "です"
           ],
-          "correctAnswer": "お大事にです"
+          "correctAnswer": "お大事にです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お大事にです」 (odaiji ni desu.) expresses 'It is Take care / get well soon.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お大事にです (odaiji ni desu.) — It is Take care / get well soon."
         },
         {
           "id": "u9_l5_7",
@@ -1005,7 +1038,8 @@
               "romaji": "byouin no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食後・アレルギー・お大事に・病院の確認」 (shokugo, arerugii, odaiji ni, byouin no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食後・アレルギー・お大事に・病院の確認 (shokugo, arerugii, odaiji ni, byouin no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l5_8",
@@ -1029,7 +1063,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院について教えていただけますか？」 (byouin ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Hospital / clinic?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院について教えていただけますか？ (byouin ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Hospital / clinic?"
         }
       ]
     },
@@ -1077,7 +1112,8 @@
             "Headache",
             "Confirming Stomach / belly"
           ],
-          "correctAnswer": "Confirming Hospital / clinic"
+          "correctAnswer": "Confirming Hospital / clinic",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院の確認」 (byouin no kakunin) expresses 'Confirming Hospital / clinic'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院の確認 (byouin no kakunin) — Confirming Hospital / clinic"
         },
         {
           "id": "u9_l6_2",
@@ -1097,7 +1133,8 @@
             "い",
             "か"
           ],
-          "correctAnswer": "びょういんのかくにん"
+          "correctAnswer": "びょういんのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院の確認」 (byouin no kakunin) expresses 'Build 'Confirming Hospital / clinic''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院の確認 (byouin no kakunin) — Build 'Confirming Hospital / clinic'"
         },
         {
           "id": "u9_l6_3",
@@ -1116,7 +1153,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な薬局の確認です。」 (Kore wa ichiban taisetsu na yakkyoku no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Pharmacy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な薬局の確認です。 (Kore wa ichiban taisetsu na yakkyoku no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Pharmacy."
         },
         {
           "id": "u9_l6_4",
@@ -1138,7 +1175,8 @@
             "薬局の確認",
             "です"
           ],
-          "correctAnswer": "これは薬局の確認です"
+          "correctAnswer": "これは薬局の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは薬局の確認です」 (Kore wa yakkyoku no kakunin desu.) expresses 'This is Confirming Pharmacy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは薬局の確認です (Kore wa yakkyoku no kakunin desu.) — This is Confirming Pharmacy."
         },
         {
           "id": "u9_l6_5",
@@ -1155,7 +1193,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "熱の確認"
+          "correctAnswer": "熱の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱の確認」 (netsu no kakunin) expresses 'Pronounce: Confirming Fever'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱の確認 (netsu no kakunin) — Pronounce: Confirming Fever"
         },
         {
           "id": "u9_l6_6",
@@ -1175,7 +1214,8 @@
             "熱の確認",
             "です"
           ],
-          "correctAnswer": "熱の確認です"
+          "correctAnswer": "熱の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱の確認です」 (netsu no kakunin desu.) expresses 'It is Confirming Fever.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱の確認です (netsu no kakunin desu.) — It is Confirming Fever."
         },
         {
           "id": "u9_l6_7",
@@ -1215,7 +1255,8 @@
               "romaji": "zutsuu no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院の確認・薬局の確認・熱の確認・頭痛の確認」 (byouin no kakunin, yakkyoku no kakunin, netsu no kakunin, zutsuu no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院の確認・薬局の確認・熱の確認・頭痛の確認 (byouin no kakunin, yakkyoku no kakunin, netsu no kakunin, zutsuu no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l6_8",
@@ -1239,7 +1280,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「薬局の準備はできていますか？」 (yakkyoku no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Pharmacy ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・薬局の準備はできていますか？ (yakkyoku no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Pharmacy ready?"
         }
       ]
     },
@@ -1286,7 +1328,8 @@
             "Hospital / clinic",
             "Allergy"
           ],
-          "correctAnswer": "Confirming Headache"
+          "correctAnswer": "Confirming Headache",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛の確認」 (zutsuu no kakunin) expresses 'Confirming Headache'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛の確認 (zutsuu no kakunin) — Confirming Headache"
         },
         {
           "id": "u9_l7_2",
@@ -1306,7 +1349,8 @@
             "つ",
             "ず"
           ],
-          "correctAnswer": "ずつうのかくにん"
+          "correctAnswer": "ずつうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛の確認」 (zutsuu no kakunin) expresses 'Build 'Confirming Headache''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛の確認 (zutsuu no kakunin) — Build 'Confirming Headache'"
         },
         {
           "id": "u9_l7_3",
@@ -1325,7 +1369,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な喉の確認です。」 (Kore wa ichiban taisetsu na nodo no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Throat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な喉の確認です。 (Kore wa ichiban taisetsu na nodo no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Throat."
         },
         {
           "id": "u9_l7_4",
@@ -1347,7 +1391,8 @@
             "喉の確認",
             "です"
           ],
-          "correctAnswer": "これは喉の確認です"
+          "correctAnswer": "これは喉の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは喉の確認です」 (Kore wa nodo no kakunin desu.) expresses 'This is Confirming Throat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは喉の確認です (Kore wa nodo no kakunin desu.) — This is Confirming Throat."
         },
         {
           "id": "u9_l7_5",
@@ -1364,7 +1409,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "お腹の確認"
+          "correctAnswer": "お腹の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お腹の確認」 (onaka no kakunin) expresses 'Pronounce: Confirming Stomach / belly'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お腹の確認 (onaka no kakunin) — Pronounce: Confirming Stomach / belly"
         },
         {
           "id": "u9_l7_6",
@@ -1384,7 +1430,8 @@
             "お腹の確認",
             "です"
           ],
-          "correctAnswer": "お腹の確認です"
+          "correctAnswer": "お腹の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お腹の確認です」 (onaka no kakunin desu.) expresses 'It is Confirming Stomach / belly.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お腹の確認です (onaka no kakunin desu.) — It is Confirming Stomach / belly."
         },
         {
           "id": "u9_l7_7",
@@ -1424,7 +1471,8 @@
               "romaji": "itai no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛の確認・喉の確認・お腹の確認・痛いの確認」 (zutsuu no kakunin, nodo no kakunin, onaka no kakunin, itai no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛の確認・喉の確認・お腹の確認・痛いの確認 (zutsuu no kakunin, nodo no kakunin, onaka no kakunin, itai no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l7_8",
@@ -1448,7 +1496,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱についてどう思われますか？」 (netsu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Fever?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱についてどう思われますか？ (netsu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Fever?"
         }
       ]
     },
@@ -1495,7 +1544,8 @@
             "Headache",
             "Hospital / clinic"
           ],
-          "correctAnswer": "Confirming Painful / hurts"
+          "correctAnswer": "Confirming Painful / hurts",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「痛いの確認」 (itai no kakunin) expresses 'Confirming Painful / hurts'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・痛いの確認 (itai no kakunin) — Confirming Painful / hurts"
         },
         {
           "id": "u9_l8_2",
@@ -1515,7 +1565,8 @@
             "か",
             "た"
           ],
-          "correctAnswer": "いたいのかくにん"
+          "correctAnswer": "いたいのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「痛いの確認」 (itai no kakunin) expresses 'Build 'Confirming Painful / hurts''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・痛いの確認 (itai no kakunin) — Build 'Confirming Painful / hurts'"
         },
         {
           "id": "u9_l8_3",
@@ -1534,7 +1585,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な風邪の確認です。」 (Kore wa ichiban taisetsu na kaze no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Common cold.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な風邪の確認です。 (Kore wa ichiban taisetsu na kaze no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Common cold."
         },
         {
           "id": "u9_l8_4",
@@ -1556,7 +1607,8 @@
             "風邪の確認",
             "です"
           ],
-          "correctAnswer": "これは風邪の確認です"
+          "correctAnswer": "これは風邪の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは風邪の確認です」 (Kore wa kaze no kakunin desu.) expresses 'This is Confirming Common cold.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは風邪の確認です (Kore wa kaze no kakunin desu.) — This is Confirming Common cold."
         },
         {
           "id": "u9_l8_5",
@@ -1573,7 +1625,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "咳の確認"
+          "correctAnswer": "咳の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「咳の確認」 (seki no kakunin) expresses 'Pronounce: Confirming Cough'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・咳の確認 (seki no kakunin) — Pronounce: Confirming Cough"
         },
         {
           "id": "u9_l8_6",
@@ -1593,7 +1646,8 @@
             "咳の確認",
             "です"
           ],
-          "correctAnswer": "咳の確認です"
+          "correctAnswer": "咳の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「咳の確認です」 (seki no kakunin desu.) expresses 'It is Confirming Cough.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・咳の確認です (seki no kakunin desu.) — It is Confirming Cough."
         },
         {
           "id": "u9_l8_7",
@@ -1633,7 +1687,8 @@
               "romaji": "kusuri no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「痛いの確認・風邪の確認・咳の確認・薬の確認」 (itai no kakunin, kaze no kakunin, seki no kakunin, kusuri no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・痛いの確認・風邪の確認・咳の確認・薬の確認 (itai no kakunin, kaze no kakunin, seki no kakunin, kusuri no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l8_8",
@@ -1657,7 +1712,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は頭痛に進みましょう。」 (Tsugi wa zutsuu ni susumimashou.) expresses 'Speaker: Let's proceed to Headache next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は頭痛に進みましょう。 (Tsugi wa zutsuu ni susumimashou.) — Speaker: Let's proceed to Headache next."
         }
       ]
     },
@@ -1707,7 +1763,8 @@
             "Allergy",
             "Painful / hurts"
           ],
-          "correctAnswer": "Confirming Medicine"
+          "correctAnswer": "Confirming Medicine",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「薬の確認」 (kusuri no kakunin) expresses 'Confirming Medicine'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・薬の確認 (kusuri no kakunin) — Confirming Medicine"
         },
         {
           "id": "u9_l9_2",
@@ -1727,7 +1784,8 @@
             "く",
             "か"
           ],
-          "correctAnswer": "くすりのかくにん"
+          "correctAnswer": "くすりのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「薬の確認」 (kusuri no kakunin) expresses 'Build 'Confirming Medicine''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・薬の確認 (kusuri no kakunin) — Build 'Confirming Medicine'"
         },
         {
           "id": "u9_l9_3",
@@ -1746,7 +1804,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な保険証の確認です。」 (Kore wa ichiban taisetsu na hokenshou no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Health insurance card.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な保険証の確認です。 (Kore wa ichiban taisetsu na hokenshou no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Health insurance card."
         },
         {
           "id": "u9_l9_4",
@@ -1768,7 +1826,8 @@
             "保険証の確認",
             "です"
           ],
-          "correctAnswer": "これは保険証の確認です"
+          "correctAnswer": "これは保険証の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは保険証の確認です」 (Kore wa hokenshou no kakunin desu.) expresses 'This is Confirming Health insurance card.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは保険証の確認です (Kore wa hokenshou no kakunin desu.) — This is Confirming Health insurance card."
         },
         {
           "id": "u9_l9_5",
@@ -1785,7 +1844,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "処方箋の確認"
+          "correctAnswer": "処方箋の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「処方箋の確認」 (shohousen no kakunin) expresses 'Pronounce: Confirming Doctor's prescription'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・処方箋の確認 (shohousen no kakunin) — Pronounce: Confirming Doctor's prescription"
         },
         {
           "id": "u9_l9_6",
@@ -1805,7 +1865,8 @@
             "処方箋の確認",
             "です"
           ],
-          "correctAnswer": "処方箋の確認です"
+          "correctAnswer": "処方箋の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「処方箋の確認です」 (shohousen no kakunin desu.) expresses 'It is Confirming Doctor's prescription.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・処方箋の確認です (shohousen no kakunin desu.) — It is Confirming Doctor's prescription."
         },
         {
           "id": "u9_l9_7",
@@ -1845,7 +1906,8 @@
               "romaji": "shokugo no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「薬の確認・保険証の確認・処方箋の確認・食後の確認」 (kusuri no kakunin, hokenshou no kakunin, shohousen no kakunin, shokugo no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・薬の確認・保険証の確認・処方箋の確認・食後の確認 (kusuri no kakunin, hokenshou no kakunin, shohousen no kakunin, shokugo no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l9_8",
@@ -1869,7 +1931,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院について教えていただけますか？」 (byouin ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Hospital / clinic?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院について教えていただけますか？ (byouin ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Hospital / clinic?"
         }
       ]
     },
@@ -1916,7 +1979,8 @@
             "Confirming After meal",
             "Hospital / clinic"
           ],
-          "correctAnswer": "Confirming After meal"
+          "correctAnswer": "Confirming After meal",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食後の確認」 (shokugo no kakunin) expresses 'Confirming After meal'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食後の確認 (shokugo no kakunin) — Confirming After meal"
         },
         {
           "id": "u9_l10_2",
@@ -1936,7 +2000,8 @@
             "か",
             "に"
           ],
-          "correctAnswer": "しょくごのかくにん"
+          "correctAnswer": "しょくごのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食後の確認」 (shokugo no kakunin) expresses 'Build 'Confirming After meal''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食後の確認 (shokugo no kakunin) — Build 'Confirming After meal'"
         },
         {
           "id": "u9_l10_3",
@@ -1955,7 +2020,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なアレルギーの確認です。」 (Kore wa ichiban taisetsu na arerugii no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Allergy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なアレルギーの確認です。 (Kore wa ichiban taisetsu na arerugii no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Allergy."
         },
         {
           "id": "u9_l10_4",
@@ -1977,7 +2042,8 @@
             "アレルギーの確認",
             "です"
           ],
-          "correctAnswer": "これはアレルギーの確認です"
+          "correctAnswer": "これはアレルギーの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはアレルギーの確認です」 (Kore wa arerugii no kakunin desu.) expresses 'This is Confirming Allergy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはアレルギーの確認です (Kore wa arerugii no kakunin desu.) — This is Confirming Allergy."
         },
         {
           "id": "u9_l10_5",
@@ -1994,7 +2060,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "お大事にの確認"
+          "correctAnswer": "お大事にの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お大事にの確認」 (odaiji ni no kakunin) expresses 'Pronounce: Confirming Take care / get well soon'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お大事にの確認 (odaiji ni no kakunin) — Pronounce: Confirming Take care / get well soon"
         },
         {
           "id": "u9_l10_6",
@@ -2014,7 +2081,8 @@
             "お大事にの確認",
             "です"
           ],
-          "correctAnswer": "お大事にの確認です"
+          "correctAnswer": "お大事にの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お大事にの確認です」 (odaiji ni no kakunin desu.) expresses 'It is Confirming Take care / get well soon.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お大事にの確認です (odaiji ni no kakunin desu.) — It is Confirming Take care / get well soon."
         },
         {
           "id": "u9_l10_7",
@@ -2054,7 +2122,8 @@
               "romaji": "byouin no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「食後の確認・アレルギーの確認・お大事にの確認・病院の確認」 (shokugo no kakunin, arerugii no kakunin, odaiji ni no kakunin, byouin no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・食後の確認・アレルギーの確認・お大事にの確認・病院の確認 (shokugo no kakunin, arerugii no kakunin, odaiji ni no kakunin, byouin no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l10_8",
@@ -2078,7 +2147,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「薬局の準備はできていますか？」 (yakkyoku no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Pharmacy ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・薬局の準備はできていますか？ (yakkyoku no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Pharmacy ready?"
         }
       ]
     },
@@ -2126,7 +2196,8 @@
             "Doctor's prescription",
             "Confirming Hospital / clinic"
           ],
-          "correctAnswer": "Confirming Hospital / clinic"
+          "correctAnswer": "Confirming Hospital / clinic",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院の確認」 (byouin no kakunin) expresses 'Confirming Hospital / clinic'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院の確認 (byouin no kakunin) — Confirming Hospital / clinic"
         },
         {
           "id": "u9_l11_2",
@@ -2146,7 +2217,8 @@
             "く",
             "ょ"
           ],
-          "correctAnswer": "びょういんのかくにん"
+          "correctAnswer": "びょういんのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院の確認」 (byouin no kakunin) expresses 'Build 'Confirming Hospital / clinic''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院の確認 (byouin no kakunin) — Build 'Confirming Hospital / clinic'"
         },
         {
           "id": "u9_l11_3",
@@ -2165,7 +2237,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な薬局の確認です。」 (Kore wa ichiban taisetsu na yakkyoku no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Pharmacy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な薬局の確認です。 (Kore wa ichiban taisetsu na yakkyoku no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Pharmacy."
         },
         {
           "id": "u9_l11_4",
@@ -2187,7 +2259,8 @@
             "薬局の確認",
             "です"
           ],
-          "correctAnswer": "これは薬局の確認です"
+          "correctAnswer": "これは薬局の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは薬局の確認です」 (Kore wa yakkyoku no kakunin desu.) expresses 'This is Confirming Pharmacy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは薬局の確認です (Kore wa yakkyoku no kakunin desu.) — This is Confirming Pharmacy."
         },
         {
           "id": "u9_l11_5",
@@ -2204,7 +2277,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "熱の確認"
+          "correctAnswer": "熱の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱の確認」 (netsu no kakunin) expresses 'Pronounce: Confirming Fever'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱の確認 (netsu no kakunin) — Pronounce: Confirming Fever"
         },
         {
           "id": "u9_l11_6",
@@ -2224,7 +2298,8 @@
             "熱の確認",
             "です"
           ],
-          "correctAnswer": "熱の確認です"
+          "correctAnswer": "熱の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱の確認です」 (netsu no kakunin desu.) expresses 'It is Confirming Fever.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱の確認です (netsu no kakunin desu.) — It is Confirming Fever."
         },
         {
           "id": "u9_l11_7",
@@ -2264,7 +2339,8 @@
               "romaji": "zutsuu no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院の確認・薬局の確認・熱の確認・頭痛の確認」 (byouin no kakunin, yakkyoku no kakunin, netsu no kakunin, zutsuu no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院の確認・薬局の確認・熱の確認・頭痛の確認 (byouin no kakunin, yakkyoku no kakunin, netsu no kakunin, zutsuu no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l11_8",
@@ -2288,7 +2364,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱についてどう思われますか？」 (netsu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Fever?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱についてどう思われますか？ (netsu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Fever?"
         }
       ]
     },
@@ -2335,7 +2412,8 @@
             "Confirming Headache",
             "Doctor's prescription"
           ],
-          "correctAnswer": "Confirming Headache"
+          "correctAnswer": "Confirming Headache",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛の確認」 (zutsuu no kakunin) expresses 'Confirming Headache'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛の確認 (zutsuu no kakunin) — Confirming Headache"
         },
         {
           "id": "u9_l12_2",
@@ -2355,7 +2433,8 @@
             "つ",
             "か"
           ],
-          "correctAnswer": "ずつうのかくにん"
+          "correctAnswer": "ずつうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛の確認」 (zutsuu no kakunin) expresses 'Build 'Confirming Headache''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛の確認 (zutsuu no kakunin) — Build 'Confirming Headache'"
         },
         {
           "id": "u9_l12_3",
@@ -2374,7 +2453,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な喉の確認です。」 (Kore wa ichiban taisetsu na nodo no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Throat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な喉の確認です。 (Kore wa ichiban taisetsu na nodo no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Throat."
         },
         {
           "id": "u9_l12_4",
@@ -2396,7 +2475,8 @@
             "喉の確認",
             "です"
           ],
-          "correctAnswer": "これは喉の確認です"
+          "correctAnswer": "これは喉の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは喉の確認です」 (Kore wa nodo no kakunin desu.) expresses 'This is Confirming Throat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは喉の確認です (Kore wa nodo no kakunin desu.) — This is Confirming Throat."
         },
         {
           "id": "u9_l12_5",
@@ -2413,7 +2493,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "お腹の確認"
+          "correctAnswer": "お腹の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お腹の確認」 (onaka no kakunin) expresses 'Pronounce: Confirming Stomach / belly'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お腹の確認 (onaka no kakunin) — Pronounce: Confirming Stomach / belly"
         },
         {
           "id": "u9_l12_6",
@@ -2433,7 +2514,8 @@
             "お腹の確認",
             "です"
           ],
-          "correctAnswer": "お腹の確認です"
+          "correctAnswer": "お腹の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お腹の確認です」 (onaka no kakunin desu.) expresses 'It is Confirming Stomach / belly.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お腹の確認です (onaka no kakunin desu.) — It is Confirming Stomach / belly."
         },
         {
           "id": "u9_l12_7",
@@ -2473,7 +2555,8 @@
               "romaji": "byouin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛の確認・喉の確認・お腹の確認・病院」 (zutsuu no kakunin, nodo no kakunin, onaka no kakunin, byouin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛の確認・喉の確認・お腹の確認・病院 (zutsuu no kakunin, nodo no kakunin, onaka no kakunin, byouin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l12_8",
@@ -2497,7 +2580,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は頭痛に進みましょう。」 (Tsugi wa zutsuu ni susumimashou.) expresses 'Speaker: Let's proceed to Headache next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は頭痛に進みましょう。 (Tsugi wa zutsuu ni susumimashou.) — Speaker: Let's proceed to Headache next."
         }
       ]
     },
@@ -2539,7 +2623,8 @@
             "Confirming Painful / hurts",
             "Hospital / clinic"
           ],
-          "correctAnswer": "Hospital / clinic"
+          "correctAnswer": "Hospital / clinic",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院」 (byouin) expresses 'Hospital / clinic'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院 (byouin) — Hospital / clinic"
         },
         {
           "id": "u9_l13_2",
@@ -2559,7 +2644,8 @@
             "お",
             "ょ"
           ],
-          "correctAnswer": "びょういん"
+          "correctAnswer": "びょういん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院」 (byouin) expresses 'Build 'Hospital / clinic''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院 (byouin) — Build 'Hospital / clinic'"
         },
         {
           "id": "u9_l13_3",
@@ -2578,7 +2664,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な薬局です。」 (Kore wa ichiban taisetsu na yakkyoku desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Pharmacy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な薬局です。 (Kore wa ichiban taisetsu na yakkyoku desu.) — Fill in topic particle 'は' (wa): This is the most important Pharmacy."
         },
         {
           "id": "u9_l13_4",
@@ -2600,7 +2686,8 @@
             "薬局",
             "です"
           ],
-          "correctAnswer": "これは薬局です"
+          "correctAnswer": "これは薬局です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは薬局です」 (Kore wa yakkyoku desu.) expresses 'This is Pharmacy.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは薬局です (Kore wa yakkyoku desu.) — This is Pharmacy."
         },
         {
           "id": "u9_l13_5",
@@ -2617,7 +2704,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "熱"
+          "correctAnswer": "熱",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱」 (netsu) expresses 'Pronounce: Fever'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱 (netsu) — Pronounce: Fever"
         },
         {
           "id": "u9_l13_6",
@@ -2637,7 +2725,8 @@
             "熱",
             "です"
           ],
-          "correctAnswer": "熱です"
+          "correctAnswer": "熱です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱です」 (netsu desu.) expresses 'It is Fever.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱です (netsu desu.) — It is Fever."
         },
         {
           "id": "u9_l13_7",
@@ -2677,7 +2766,8 @@
               "romaji": "zutsuu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院・薬局・熱・頭痛」 (byouin, yakkyoku, netsu, zutsuu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院・薬局・熱・頭痛 (byouin, yakkyoku, netsu, zutsuu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l13_8",
@@ -2701,7 +2791,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「病院について教えていただけますか？」 (byouin ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Hospital / clinic?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・病院について教えていただけますか？ (byouin ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Hospital / clinic?"
         }
       ]
     },
@@ -2742,7 +2833,8 @@
             "Doctor's prescription",
             "Confirming Allergy"
           ],
-          "correctAnswer": "Headache"
+          "correctAnswer": "Headache",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛」 (zutsuu) expresses 'Headache'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛 (zutsuu) — Headache"
         },
         {
           "id": "u9_l14_2",
@@ -2762,7 +2854,8 @@
             "ゆ",
             "は"
           ],
-          "correctAnswer": "ずつう"
+          "correctAnswer": "ずつう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛」 (zutsuu) expresses 'Build 'Headache''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛 (zutsuu) — Build 'Headache'"
         },
         {
           "id": "u9_l14_3",
@@ -2781,7 +2874,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な喉です。」 (Kore wa ichiban taisetsu na nodo desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Throat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な喉です。 (Kore wa ichiban taisetsu na nodo desu.) — Fill in topic particle 'は' (wa): This is the most important Throat."
         },
         {
           "id": "u9_l14_4",
@@ -2803,7 +2896,8 @@
             "喉",
             "です"
           ],
-          "correctAnswer": "これは喉です"
+          "correctAnswer": "これは喉です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは喉です」 (Kore wa nodo desu.) expresses 'This is Throat.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは喉です (Kore wa nodo desu.) — This is Throat."
         },
         {
           "id": "u9_l14_5",
@@ -2820,7 +2914,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "お腹"
+          "correctAnswer": "お腹",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お腹」 (onaka) expresses 'Pronounce: Stomach / belly'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お腹 (onaka) — Pronounce: Stomach / belly"
         },
         {
           "id": "u9_l14_6",
@@ -2840,7 +2935,8 @@
             "お腹",
             "です"
           ],
-          "correctAnswer": "お腹です"
+          "correctAnswer": "お腹です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「お腹です」 (onaka desu.) expresses 'It is Stomach / belly.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・お腹です (onaka desu.) — It is Stomach / belly."
         },
         {
           "id": "u9_l14_7",
@@ -2880,7 +2976,8 @@
               "romaji": "itai"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「頭痛・喉・お腹・痛い」 (zutsuu, nodo, onaka, itai) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・頭痛・喉・お腹・痛い (zutsuu, nodo, onaka, itai) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l14_8",
@@ -2904,7 +3001,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「薬局の準備はできていますか？」 (yakkyoku no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Pharmacy ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・薬局の準備はできていますか？ (yakkyoku no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Pharmacy ready?"
         }
       ]
     },
@@ -2945,7 +3043,8 @@
             "Cough",
             "Painful / hurts"
           ],
-          "correctAnswer": "Painful / hurts"
+          "correctAnswer": "Painful / hurts",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「痛い」 (itai) expresses 'Painful / hurts'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・痛い (itai) — Painful / hurts"
         },
         {
           "id": "u9_l15_2",
@@ -2965,7 +3064,8 @@
             "よ",
             "る"
           ],
-          "correctAnswer": "いたい"
+          "correctAnswer": "いたい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「痛い」 (itai) expresses 'Build 'Painful / hurts''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・痛い (itai) — Build 'Painful / hurts'"
         },
         {
           "id": "u9_l15_3",
@@ -2984,7 +3084,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な風邪です。」 (Kore wa ichiban taisetsu na kaze desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Common cold.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な風邪です。 (Kore wa ichiban taisetsu na kaze desu.) — Fill in topic particle 'は' (wa): This is the most important Common cold."
         },
         {
           "id": "u9_l15_4",
@@ -3006,7 +3106,8 @@
             "風邪",
             "です"
           ],
-          "correctAnswer": "これは風邪です"
+          "correctAnswer": "これは風邪です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは風邪です」 (Kore wa kaze desu.) expresses 'This is Common cold.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは風邪です (Kore wa kaze desu.) — This is Common cold."
         },
         {
           "id": "u9_l15_5",
@@ -3023,7 +3124,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "咳"
+          "correctAnswer": "咳",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「咳」 (seki) expresses 'Pronounce: Cough'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・咳 (seki) — Pronounce: Cough"
         },
         {
           "id": "u9_l15_6",
@@ -3043,7 +3145,8 @@
             "咳",
             "です"
           ],
-          "correctAnswer": "咳です"
+          "correctAnswer": "咳です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「咳です」 (seki desu.) expresses 'It is Cough.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・咳です (seki desu.) — It is Cough."
         },
         {
           "id": "u9_l15_7",
@@ -3083,7 +3186,8 @@
               "romaji": "kusuri"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「痛い・風邪・咳・薬」 (itai, kaze, seki, kusuri) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・痛い・風邪・咳・薬 (itai, kaze, seki, kusuri) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u9_l15_8",
@@ -3107,7 +3211,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「熱についてどう思われますか？」 (netsu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Fever?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・熱についてどう思われますか？ (netsu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Fever?"
         }
       ]
     }

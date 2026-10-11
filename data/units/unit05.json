@@ -49,7 +49,8 @@
             "In front / ahead",
             "Road / path / way"
           ],
-          "correctAnswer": "Train station"
+          "correctAnswer": "Train station",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅」 (eki) expresses 'Train station'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅 (eki) — Train station"
         },
         {
           "id": "u5_l1_2",
@@ -69,7 +70,8 @@
             "と",
             "せ"
           ],
-          "correctAnswer": "えき"
+          "correctAnswer": "えき",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅」 (eki) expresses 'Build 'Train station''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅 (eki) — Build 'Train station'"
         },
         {
           "id": "u5_l1_3",
@@ -88,7 +90,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切などこです。」 (Kore wa ichiban taisetsu na doko desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Where.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切などこです。 (Kore wa ichiban taisetsu na doko desu.) — Fill in topic particle 'は' (wa): This is the most important Where."
         },
         {
           "id": "u5_l1_4",
@@ -110,7 +112,8 @@
             "どこ",
             "です"
           ],
-          "correctAnswer": "これはどこです"
+          "correctAnswer": "これはどこです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはどこです」 (Kore wa doko desu.) expresses 'This is Where.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはどこです (Kore wa doko desu.) — This is Where."
         },
         {
           "id": "u5_l1_5",
@@ -127,7 +130,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "右"
+          "correctAnswer": "右",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「右」 (migi) expresses 'Pronounce: Right side'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・右 (migi) — Pronounce: Right side"
         },
         {
           "id": "u5_l1_6",
@@ -147,7 +151,8 @@
             "右",
             "です"
           ],
-          "correctAnswer": "右です"
+          "correctAnswer": "右です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「右です」 (migi desu.) expresses 'It is Right side.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・右です (migi desu.) — It is Right side."
         },
         {
           "id": "u5_l1_7",
@@ -187,7 +192,8 @@
               "romaji": "hidari"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅・どこ・右・左」 (eki, doko, migi, hidari) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅・どこ・右・左 (eki, doko, migi, hidari) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l1_8",
@@ -211,7 +217,8 @@
             "はい、元気です",
             "美味しかったです"
           ],
-          "correctAnswer": "この道をまっすぐ行って、二つ目の信号を右です。"
+          "correctAnswer": "この道をまっすぐ行って、二つ目の信号を右です。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「渋谷駅はどちらですか？」 (Shibuya-eki wa dochira desu ka?) expresses 'Traveler: Excuse me, which way is Shibuya Station?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・渋谷駅はどちらですか？ (Shibuya-eki wa dochira desu ka?) — Traveler: Excuse me, which way is Shibuya Station?"
         }
       ]
     },
@@ -250,7 +257,8 @@
             "Ticket machine area",
             "East exit"
           ],
-          "correctAnswer": "Left side"
+          "correctAnswer": "Left side",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「左」 (hidari) expresses 'Left side'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・左 (hidari) — Left side"
         },
         {
           "id": "u5_l2_2",
@@ -270,7 +278,8 @@
             "て",
             "り"
           ],
-          "correctAnswer": "ひだり"
+          "correctAnswer": "ひだり",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「左」 (hidari) expresses 'Build 'Left side''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・左 (hidari) — Build 'Left side'"
         },
         {
           "id": "u5_l2_3",
@@ -289,7 +298,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なまっすぐです。」 (Kore wa ichiban taisetsu na massugu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Straight ahead.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なまっすぐです。 (Kore wa ichiban taisetsu na massugu desu.) — Fill in topic particle 'は' (wa): This is the most important Straight ahead."
         },
         {
           "id": "u5_l2_4",
@@ -311,7 +320,8 @@
             "まっすぐ",
             "です"
           ],
-          "correctAnswer": "これはまっすぐです"
+          "correctAnswer": "これはまっすぐです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはまっすぐです」 (Kore wa massugu desu.) expresses 'This is Straight ahead.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはまっすぐです (Kore wa massugu desu.) — This is Straight ahead."
         },
         {
           "id": "u5_l2_5",
@@ -328,7 +338,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "前"
+          "correctAnswer": "前",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「前」 (mae) expresses 'Pronounce: In front / ahead'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・前 (mae) — Pronounce: In front / ahead"
         },
         {
           "id": "u5_l2_6",
@@ -348,7 +359,8 @@
             "前",
             "です"
           ],
-          "correctAnswer": "前です"
+          "correctAnswer": "前です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「前です」 (mae desu.) expresses 'It is In front / ahead.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・前です (mae desu.) — It is In front / ahead."
         },
         {
           "id": "u5_l2_7",
@@ -388,7 +400,8 @@
               "romaji": "ushiro"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「左・まっすぐ・前・後ろ」 (hidari, massugu, mae, ushiro) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・左・まっすぐ・前・後ろ (hidari, massugu, mae, ushiro) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l2_8",
@@ -412,7 +425,8 @@
             "さようなら",
             "ごちそうさまでした"
           ],
-          "correctAnswer": "わかりました、ありがとうございます！"
+          "correctAnswer": "わかりました、ありがとうございます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あの交差点を渡ったすぐそこですよ。」 (Ano kousaten o watatta sugu soko desu yo.) expresses 'Local: For Hachiko Square, it's right after crossing that intersection.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あの交差点を渡ったすぐそこですよ。 (Ano kousaten o watatta sugu soko desu yo.) — Local: For Hachiko Square, it's right after crossing that intersection."
         }
       ]
     },
@@ -452,7 +466,8 @@
             "Behind / back",
             "North exit"
           ],
-          "correctAnswer": "Behind / back"
+          "correctAnswer": "Behind / back",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後ろ」 (ushiro) expresses 'Behind / back'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後ろ (ushiro) — Behind / back"
         },
         {
           "id": "u5_l3_2",
@@ -472,7 +487,8 @@
             "め",
             "し"
           ],
-          "correctAnswer": "うしろ"
+          "correctAnswer": "うしろ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後ろ」 (ushiro) expresses 'Build 'Behind / back''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後ろ (ushiro) — Build 'Behind / back'"
         },
         {
           "id": "u5_l3_3",
@@ -491,7 +507,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な隣です。」 (Kore wa ichiban taisetsu na tonari desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Next to / beside.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な隣です。 (Kore wa ichiban taisetsu na tonari desu.) — Fill in topic particle 'は' (wa): This is the most important Next to / beside."
         },
         {
           "id": "u5_l3_4",
@@ -513,7 +529,8 @@
             "隣",
             "です"
           ],
-          "correctAnswer": "これは隣です"
+          "correctAnswer": "これは隣です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは隣です」 (Kore wa tonari desu.) expresses 'This is Next to / beside.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは隣です (Kore wa tonari desu.) — This is Next to / beside."
         },
         {
           "id": "u5_l3_5",
@@ -530,7 +547,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "向かい"
+          "correctAnswer": "向かい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「向かい」 (mukai) expresses 'Pronounce: Across from / opposite'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・向かい (mukai) — Pronounce: Across from / opposite"
         },
         {
           "id": "u5_l3_6",
@@ -550,7 +568,8 @@
             "向かい",
             "です"
           ],
-          "correctAnswer": "向かいです"
+          "correctAnswer": "向かいです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「向かいです」 (mukai desu.) expresses 'It is Across from / opposite.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・向かいです (mukai desu.) — It is Across from / opposite."
         },
         {
           "id": "u5_l3_7",
@@ -590,7 +609,8 @@
               "romaji": "chikaku"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後ろ・隣・向かい・近く」 (ushiro, tonari, mukai, chikaku) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後ろ・隣・向かい・近く (ushiro, tonari, mukai, chikaku) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l3_8",
@@ -614,7 +634,8 @@
             "はい、そうです",
             "日本から来ました"
           ],
-          "correctAnswer": "だいたい5分くらいで着きますよ。"
+          "correctAnswer": "だいたい5分くらいで着きますよ。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「歩いて何分くらいかかりますか？」 (Aruite nanpun kurai kakarimasu ka?) expresses 'Tourist: How many minutes does it take on foot?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・歩いて何分くらいかかりますか？ (Aruite nanpun kurai kakarimasu ka?) — Tourist: How many minutes does it take on foot?"
         }
       ]
     },
@@ -656,7 +677,8 @@
             "Left side",
             "Train station"
           ],
-          "correctAnswer": "Nearby"
+          "correctAnswer": "Nearby",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「近く」 (chikaku) expresses 'Nearby'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・近く (chikaku) — Nearby"
         },
         {
           "id": "u5_l4_2",
@@ -676,7 +698,8 @@
             "そ",
             "く"
           ],
-          "correctAnswer": "ちかく"
+          "correctAnswer": "ちかく",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「近く」 (chikaku) expresses 'Build 'Nearby''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・近く (chikaku) — Build 'Nearby'"
         },
         {
           "id": "u5_l4_3",
@@ -695,7 +718,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な遠いです。」 (Kore wa ichiban taisetsu na tooi desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Far away.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な遠いです。 (Kore wa ichiban taisetsu na tooi desu.) — Fill in topic particle 'は' (wa): This is the most important Far away."
         },
         {
           "id": "u5_l4_4",
@@ -717,7 +740,8 @@
             "遠い",
             "です"
           ],
-          "correctAnswer": "これは遠いです"
+          "correctAnswer": "これは遠いです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは遠いです」 (Kore wa tooi desu.) expresses 'This is Far away.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは遠いです (Kore wa tooi desu.) — This is Far away."
         },
         {
           "id": "u5_l4_5",
@@ -734,7 +758,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "交差点"
+          "correctAnswer": "交差点",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交差点」 (kousaten) expresses 'Pronounce: Intersection'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交差点 (kousaten) — Pronounce: Intersection"
         },
         {
           "id": "u5_l4_6",
@@ -754,7 +779,8 @@
             "交差点",
             "です"
           ],
-          "correctAnswer": "交差点です"
+          "correctAnswer": "交差点です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交差点です」 (kousaten desu.) expresses 'It is Intersection.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交差点です (kousaten desu.) — It is Intersection."
         },
         {
           "id": "u5_l4_7",
@@ -794,7 +820,8 @@
               "romaji": "shingou"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「近く・遠い・交差点・信号」 (chikaku, tooi, kousaten, shingou) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・近く・遠い・交差点・信号 (chikaku, tooi, kousaten, shingou) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l4_8",
@@ -818,7 +845,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "あそこのコンビニの隣にありますよ。"
+          "correctAnswer": "あそこのコンビニの隣にありますよ。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交番はありますか？」 (Kouban wa arimasu ka?) expresses 'Lost: Excuse me, I'm lost. Is there a police box?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交番はありますか？ (Kouban wa arimasu ka?) — Lost: Excuse me, I'm lost. Is there a police box?"
         }
       ]
     },
@@ -862,7 +890,8 @@
             "Traffic light",
             "In front / ahead"
           ],
-          "correctAnswer": "Traffic light"
+          "correctAnswer": "Traffic light",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「信号」 (shingou) expresses 'Traffic light'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・信号 (shingou) — Traffic light"
         },
         {
           "id": "u5_l5_2",
@@ -882,7 +911,8 @@
             "し",
             "ご"
           ],
-          "correctAnswer": "しんごう"
+          "correctAnswer": "しんごう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「信号」 (shingou) expresses 'Build 'Traffic light''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・信号 (shingou) — Build 'Traffic light'"
         },
         {
           "id": "u5_l5_3",
@@ -901,7 +931,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な角です。」 (Kore wa ichiban taisetsu na kado desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Street corner.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な角です。 (Kore wa ichiban taisetsu na kado desu.) — Fill in topic particle 'は' (wa): This is the most important Street corner."
         },
         {
           "id": "u5_l5_4",
@@ -923,7 +953,8 @@
             "角",
             "です"
           ],
-          "correctAnswer": "これは角です"
+          "correctAnswer": "これは角です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは角です」 (Kore wa kado desu.) expresses 'This is Street corner.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは角です (Kore wa kado desu.) — This is Street corner."
         },
         {
           "id": "u5_l5_5",
@@ -940,7 +971,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "横断歩道"
+          "correctAnswer": "横断歩道",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「横断歩道」 (oudanhodou) expresses 'Pronounce: Pedestrian crosswalk'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・横断歩道 (oudanhodou) — Pronounce: Pedestrian crosswalk"
         },
         {
           "id": "u5_l5_6",
@@ -960,7 +992,8 @@
             "横断歩道",
             "です"
           ],
-          "correctAnswer": "横断歩道です"
+          "correctAnswer": "横断歩道です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「横断歩道です」 (oudanhodou desu.) expresses 'It is Pedestrian crosswalk.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・横断歩道です (oudanhodou desu.) — It is Pedestrian crosswalk."
         },
         {
           "id": "u5_l5_7",
@@ -1000,7 +1033,8 @@
               "romaji": "kaisatsu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「信号・角・横断歩道・改札」 (shingou, kado, oudanhodou, kaisatsu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・信号・角・横断歩道・改札 (shingou, kado, oudanhodou, kaisatsu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l5_8",
@@ -1024,7 +1058,8 @@
             "はい、元気です",
             "美味しかったです"
           ],
-          "correctAnswer": "この道をまっすぐ行って、二つ目の信号を右です。"
+          "correctAnswer": "この道をまっすぐ行って、二つ目の信号を右です。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「渋谷駅はどちらですか？」 (Shibuya-eki wa dochira desu ka?) expresses 'Traveler: Excuse me, which way is Shibuya Station?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・渋谷駅はどちらですか？ (Shibuya-eki wa dochira desu ka?) — Traveler: Excuse me, which way is Shibuya Station?"
         }
       ]
     },
@@ -1069,7 +1104,8 @@
             "Straight ahead",
             "Next to / beside"
           ],
-          "correctAnswer": "Ticket gate"
+          "correctAnswer": "Ticket gate",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改札」 (kaisatsu) expresses 'Ticket gate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改札 (kaisatsu) — Ticket gate"
         },
         {
           "id": "u5_l6_2",
@@ -1089,7 +1125,8 @@
             "い",
             "こ"
           ],
-          "correctAnswer": "かいさつ"
+          "correctAnswer": "かいさつ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改札」 (kaisatsu) expresses 'Build 'Ticket gate''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改札 (kaisatsu) — Build 'Ticket gate'"
         },
         {
           "id": "u5_l6_3",
@@ -1108,7 +1145,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な切符売り場です。」 (Kore wa ichiban taisetsu na kippu uriba desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Ticket machine area.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な切符売り場です。 (Kore wa ichiban taisetsu na kippu uriba desu.) — Fill in topic particle 'は' (wa): This is the most important Ticket machine area."
         },
         {
           "id": "u5_l6_4",
@@ -1130,7 +1167,8 @@
             "切符売り場",
             "です"
           ],
-          "correctAnswer": "これは切符売り場です"
+          "correctAnswer": "これは切符売り場です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは切符売り場です」 (Kore wa kippu uriba desu.) expresses 'This is Ticket machine area.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは切符売り場です (Kore wa kippu uriba desu.) — This is Ticket machine area."
         },
         {
           "id": "u5_l6_5",
@@ -1147,7 +1185,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "出口"
+          "correctAnswer": "出口",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「出口」 (deguchi) expresses 'Pronounce: Exit'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・出口 (deguchi) — Pronounce: Exit"
         },
         {
           "id": "u5_l6_6",
@@ -1167,7 +1206,8 @@
             "出口",
             "です"
           ],
-          "correctAnswer": "出口です"
+          "correctAnswer": "出口です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「出口です」 (deguchi desu.) expresses 'It is Exit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・出口です (deguchi desu.) — It is Exit."
         },
         {
           "id": "u5_l6_7",
@@ -1207,7 +1247,8 @@
               "romaji": "kitaguchi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改札・切符売り場・出口・北口」 (kaisatsu, kippu uriba, deguchi, kitaguchi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改札・切符売り場・出口・北口 (kaisatsu, kippu uriba, deguchi, kitaguchi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l6_8",
@@ -1231,7 +1272,8 @@
             "さようなら",
             "ごちそうさまでした"
           ],
-          "correctAnswer": "わかりました、ありがとうございます！"
+          "correctAnswer": "わかりました、ありがとうございます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あの交差点を渡ったすぐそこですよ。」 (Ano kousaten o watatta sugu soko desu yo.) expresses 'Local: For Hachiko Square, it's right after crossing that intersection.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あの交差点を渡ったすぐそこですよ。 (Ano kousaten o watatta sugu soko desu yo.) — Local: For Hachiko Square, it's right after crossing that intersection."
         }
       ]
     },
@@ -1274,7 +1316,8 @@
             "Next to / beside",
             "North exit"
           ],
-          "correctAnswer": "North exit"
+          "correctAnswer": "North exit",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「北口」 (kitaguchi) expresses 'North exit'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・北口 (kitaguchi) — North exit"
         },
         {
           "id": "u5_l7_2",
@@ -1294,7 +1337,8 @@
             "ほ",
             "ち"
           ],
-          "correctAnswer": "きたぐち"
+          "correctAnswer": "きたぐち",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「北口」 (kitaguchi) expresses 'Build 'North exit''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・北口 (kitaguchi) — Build 'North exit'"
         },
         {
           "id": "u5_l7_3",
@@ -1313,7 +1357,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な南口です。」 (Kore wa ichiban taisetsu na minamiguchi desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important South exit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な南口です。 (Kore wa ichiban taisetsu na minamiguchi desu.) — Fill in topic particle 'は' (wa): This is the most important South exit."
         },
         {
           "id": "u5_l7_4",
@@ -1335,7 +1379,8 @@
             "南口",
             "です"
           ],
-          "correctAnswer": "これは南口です"
+          "correctAnswer": "これは南口です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは南口です」 (Kore wa minamiguchi desu.) expresses 'This is South exit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは南口です (Kore wa minamiguchi desu.) — This is South exit."
         },
         {
           "id": "u5_l7_5",
@@ -1352,7 +1397,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "東口"
+          "correctAnswer": "東口",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「東口」 (higashiguchi) expresses 'Pronounce: East exit'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・東口 (higashiguchi) — Pronounce: East exit"
         },
         {
           "id": "u5_l7_6",
@@ -1372,7 +1418,8 @@
             "東口",
             "です"
           ],
-          "correctAnswer": "東口です"
+          "correctAnswer": "東口です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「東口です」 (higashiguchi desu.) expresses 'It is East exit.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・東口です (higashiguchi desu.) — It is East exit."
         },
         {
           "id": "u5_l7_7",
@@ -1412,7 +1459,8 @@
               "romaji": "nishiguchi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「北口・南口・東口・西口」 (kitaguchi, minamiguchi, higashiguchi, nishiguchi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・北口・南口・東口・西口 (kitaguchi, minamiguchi, higashiguchi, nishiguchi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l7_8",
@@ -1436,7 +1484,8 @@
             "はい、そうです",
             "日本から来ました"
           ],
-          "correctAnswer": "だいたい5分くらいで着きますよ。"
+          "correctAnswer": "だいたい5分くらいで着きますよ。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「歩いて何分くらいかかりますか？」 (Aruite nanpun kurai kakarimasu ka?) expresses 'Tourist: How many minutes does it take on foot?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・歩いて何分くらいかかりますか？ (Aruite nanpun kurai kakarimasu ka?) — Tourist: How many minutes does it take on foot?"
         }
       ]
     },
@@ -1475,7 +1524,8 @@
             "West exit",
             "Next to / beside"
           ],
-          "correctAnswer": "West exit"
+          "correctAnswer": "West exit",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「西口」 (nishiguchi) expresses 'West exit'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・西口 (nishiguchi) — West exit"
         },
         {
           "id": "u5_l8_2",
@@ -1495,7 +1545,8 @@
             "ろ",
             "ゆ"
           ],
-          "correctAnswer": "にしぐち"
+          "correctAnswer": "にしぐち",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「西口」 (nishiguchi) expresses 'Build 'West exit''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・西口 (nishiguchi) — Build 'West exit'"
         },
         {
           "id": "u5_l8_3",
@@ -1514,7 +1565,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なトイレです。」 (Kore wa ichiban taisetsu na toire desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Restroom.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なトイレです。 (Kore wa ichiban taisetsu na toire desu.) — Fill in topic particle 'は' (wa): This is the most important Restroom."
         },
         {
           "id": "u5_l8_4",
@@ -1536,7 +1587,8 @@
             "トイレ",
             "です"
           ],
-          "correctAnswer": "これはトイレです"
+          "correctAnswer": "これはトイレです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはトイレです」 (Kore wa toire desu.) expresses 'This is Restroom.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはトイレです (Kore wa toire desu.) — This is Restroom."
         },
         {
           "id": "u5_l8_5",
@@ -1553,7 +1605,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "コンビニ"
+          "correctAnswer": "コンビニ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「コンビニ」 (konbini) expresses 'Pronounce: Convenience store'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・コンビニ (konbini) — Pronounce: Convenience store"
         },
         {
           "id": "u5_l8_6",
@@ -1573,7 +1626,8 @@
             "コンビニ",
             "です"
           ],
-          "correctAnswer": "コンビニです"
+          "correctAnswer": "コンビニです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「コンビニです」 (konbini desu.) expresses 'It is Convenience store.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・コンビニです (konbini desu.) — It is Convenience store."
         },
         {
           "id": "u5_l8_7",
@@ -1613,7 +1667,8 @@
               "romaji": "kouban"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「西口・トイレ・コンビニ・交番」 (nishiguchi, toire, konbini, kouban) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・西口・トイレ・コンビニ・交番 (nishiguchi, toire, konbini, kouban) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l8_8",
@@ -1637,7 +1692,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "あそこのコンビニの隣にありますよ。"
+          "correctAnswer": "あそこのコンビニの隣にありますよ。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交番はありますか？」 (Kouban wa arimasu ka?) expresses 'Lost: Excuse me, I'm lost. Is there a police box?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交番はありますか？ (Kouban wa arimasu ka?) — Lost: Excuse me, I'm lost. Is there a police box?"
         }
       ]
     },
@@ -1681,7 +1737,8 @@
             "North exit",
             "Straight ahead"
           ],
-          "correctAnswer": "Police box"
+          "correctAnswer": "Police box",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交番」 (kouban) expresses 'Police box'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交番 (kouban) — Police box"
         },
         {
           "id": "u5_l9_2",
@@ -1701,7 +1758,8 @@
             "な",
             "け"
           ],
-          "correctAnswer": "こうばん"
+          "correctAnswer": "こうばん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交番」 (kouban) expresses 'Build 'Police box''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交番 (kouban) — Build 'Police box'"
         },
         {
           "id": "u5_l9_3",
@@ -1720,7 +1778,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な銀行です。」 (Kore wa ichiban taisetsu na ginkou desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Bank.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な銀行です。 (Kore wa ichiban taisetsu na ginkou desu.) — Fill in topic particle 'は' (wa): This is the most important Bank."
         },
         {
           "id": "u5_l9_4",
@@ -1742,7 +1800,8 @@
             "銀行",
             "です"
           ],
-          "correctAnswer": "これは銀行です"
+          "correctAnswer": "これは銀行です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは銀行です」 (Kore wa ginkou desu.) expresses 'This is Bank.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは銀行です (Kore wa ginkou desu.) — This is Bank."
         },
         {
           "id": "u5_l9_5",
@@ -1759,7 +1818,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "郵便局"
+          "correctAnswer": "郵便局",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「郵便局」 (yuubinkyoku) expresses 'Pronounce: Post office'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・郵便局 (yuubinkyoku) — Pronounce: Post office"
         },
         {
           "id": "u5_l9_6",
@@ -1779,7 +1839,8 @@
             "郵便局",
             "です"
           ],
-          "correctAnswer": "郵便局です"
+          "correctAnswer": "郵便局です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「郵便局です」 (yuubinkyoku desu.) expresses 'It is Post office.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・郵便局です (yuubinkyoku desu.) — It is Post office."
         },
         {
           "id": "u5_l9_7",
@@ -1819,7 +1880,8 @@
               "romaji": "aruite"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交番・銀行・郵便局・歩いて」 (kouban, ginkou, yuubinkyoku, aruite) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交番・銀行・郵便局・歩いて (kouban, ginkou, yuubinkyoku, aruite) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l9_8",
@@ -1843,7 +1905,8 @@
             "はい、元気です",
             "美味しかったです"
           ],
-          "correctAnswer": "この道をまっすぐ行って、二つ目の信号を右です。"
+          "correctAnswer": "この道をまっすぐ行って、二つ目の信号を右です。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「渋谷駅はどちらですか？」 (Shibuya-eki wa dochira desu ka?) expresses 'Traveler: Excuse me, which way is Shibuya Station?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・渋谷駅はどちらですか？ (Shibuya-eki wa dochira desu ka?) — Traveler: Excuse me, which way is Shibuya Station?"
         }
       ]
     },
@@ -1883,7 +1946,8 @@
             "South exit",
             "On foot / walking"
           ],
-          "correctAnswer": "On foot / walking"
+          "correctAnswer": "On foot / walking",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「歩いて」 (aruite) expresses 'On foot / walking'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・歩いて (aruite) — On foot / walking"
         },
         {
           "id": "u5_l10_2",
@@ -1903,7 +1967,8 @@
             "て",
             "あ"
           ],
-          "correctAnswer": "あるいて"
+          "correctAnswer": "あるいて",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「歩いて」 (aruite) expresses 'Build 'On foot / walking''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・歩いて (aruite) — Build 'On foot / walking'"
         },
         {
           "id": "u5_l10_3",
@@ -1922,7 +1987,7 @@
             "で"
           ],
           "correctAnswer": "を",
-          "explanation": "助詞「を」 (o) marks the object of the action verb."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「毎日、日本語を曲がる。」 (Mainichi, nihongo o magaru.) expresses 'Fill in direct object particle 'を' (o): To turn Japanese every day.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・毎日、日本語を曲がる。 (Mainichi, nihongo o magaru.) — Fill in direct object particle 'を' (o): To turn Japanese every day."
         },
         {
           "id": "u5_l10_4",
@@ -1944,7 +2009,8 @@
             "曲がる",
             "です"
           ],
-          "correctAnswer": "これは曲がるです"
+          "correctAnswer": "これは曲がるです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは曲がるです」 (Kore wa magaru desu.) expresses 'This is To turn.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは曲がるです (Kore wa magaru desu.) — This is To turn."
         },
         {
           "id": "u5_l10_5",
@@ -1961,7 +2027,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "渡る"
+          "correctAnswer": "渡る",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「渡る」 (wataru) expresses 'Pronounce: To cross (street/bridge)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・渡る (wataru) — Pronounce: To cross (street/bridge)"
         },
         {
           "id": "u5_l10_6",
@@ -1981,7 +2048,8 @@
             "渡る",
             "です"
           ],
-          "correctAnswer": "渡るです"
+          "correctAnswer": "渡るです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「渡るです」 (wataru desu.) expresses 'It is To cross (street/bridge).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・渡るです (wataru desu.) — It is To cross (street/bridge)."
         },
         {
           "id": "u5_l10_7",
@@ -2021,7 +2089,8 @@
               "romaji": "michi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「歩いて・曲がる・渡る・道」 (aruite, magaru, wataru, michi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・歩いて・曲がる・渡る・道 (aruite, magaru, wataru, michi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l10_8",
@@ -2045,7 +2114,8 @@
             "さようなら",
             "ごちそうさまでした"
           ],
-          "correctAnswer": "わかりました、ありがとうございます！"
+          "correctAnswer": "わかりました、ありがとうございます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あの交差点を渡ったすぐそこですよ。」 (Ano kousaten o watatta sugu soko desu yo.) expresses 'Local: For Hachiko Square, it's right after crossing that intersection.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あの交差点を渡ったすぐそこですよ。 (Ano kousaten o watatta sugu soko desu yo.) — Local: For Hachiko Square, it's right after crossing that intersection."
         }
       ]
     },
@@ -2086,7 +2156,8 @@
             "Train station",
             "Road / path / way"
           ],
-          "correctAnswer": "Road / path / way"
+          "correctAnswer": "Road / path / way",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「道」 (michi) expresses 'Road / path / way'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・道 (michi) — Road / path / way"
         },
         {
           "id": "u5_l11_2",
@@ -2106,7 +2177,8 @@
             "け",
             "か"
           ],
-          "correctAnswer": "みち"
+          "correctAnswer": "みち",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「道」 (michi) expresses 'Build 'Road / path / way''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・道 (michi) — Build 'Road / path / way'"
         },
         {
           "id": "u5_l11_3",
@@ -2125,7 +2197,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な案内です。」 (Kore wa ichiban taisetsu na annai desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Guidance / directions.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な案内です。 (Kore wa ichiban taisetsu na annai desu.) — Fill in topic particle 'は' (wa): This is the most important Guidance / directions."
         },
         {
           "id": "u5_l11_4",
@@ -2147,7 +2219,8 @@
             "案内",
             "です"
           ],
-          "correctAnswer": "これは案内です"
+          "correctAnswer": "これは案内です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは案内です」 (Kore wa annai desu.) expresses 'This is Guidance / directions.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは案内です (Kore wa annai desu.) — This is Guidance / directions."
         },
         {
           "id": "u5_l11_5",
@@ -2164,7 +2237,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "迷う"
+          "correctAnswer": "迷う",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「迷う」 (mayou) expresses 'Pronounce: To get lost'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・迷う (mayou) — Pronounce: To get lost"
         },
         {
           "id": "u5_l11_6",
@@ -2184,7 +2258,8 @@
             "迷う",
             "です"
           ],
-          "correctAnswer": "迷うです"
+          "correctAnswer": "迷うです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「迷うです」 (mayou desu.) expresses 'It is To get lost.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・迷うです (mayou desu.) — It is To get lost."
         },
         {
           "id": "u5_l11_7",
@@ -2224,7 +2299,8 @@
               "romaji": "sugu soko"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「道・案内・迷う・すぐそこ」 (michi, annai, mayou, sugu soko) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・道・案内・迷う・すぐそこ (michi, annai, mayou, sugu soko) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l11_8",
@@ -2248,7 +2324,8 @@
             "はい、そうです",
             "日本から来ました"
           ],
-          "correctAnswer": "だいたい5分くらいで着きますよ。"
+          "correctAnswer": "だいたい5分くらいで着きますよ。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「歩いて何分くらいかかりますか？」 (Aruite nanpun kurai kakarimasu ka?) expresses 'Tourist: How many minutes does it take on foot?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・歩いて何分くらいかかりますか？ (Aruite nanpun kurai kakarimasu ka?) — Tourist: How many minutes does it take on foot?"
         }
       ]
     },
@@ -2289,7 +2366,8 @@
             "Landmark",
             "Far away"
           ],
-          "correctAnswer": "Right over there"
+          "correctAnswer": "Right over there",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「すぐそこ」 (sugu soko) expresses 'Right over there'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・すぐそこ (sugu soko) — Right over there"
         },
         {
           "id": "u5_l12_2",
@@ -2309,7 +2387,8 @@
             "ぐ",
             "や"
           ],
-          "correctAnswer": "すぐそこ"
+          "correctAnswer": "すぐそこ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「すぐそこ」 (sugu soko) expresses 'Build 'Right over there''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・すぐそこ (sugu soko) — Build 'Right over there'"
         },
         {
           "id": "u5_l12_3",
@@ -2328,7 +2407,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な目印です。」 (Kore wa ichiban taisetsu na mejirushi desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Landmark.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な目印です。 (Kore wa ichiban taisetsu na mejirushi desu.) — Fill in topic particle 'は' (wa): This is the most important Landmark."
         },
         {
           "id": "u5_l12_4",
@@ -2350,7 +2429,8 @@
             "目印",
             "です"
           ],
-          "correctAnswer": "これは目印です"
+          "correctAnswer": "これは目印です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは目印です」 (Kore wa mejirushi desu.) expresses 'This is Landmark.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは目印です (Kore wa mejirushi desu.) — This is Landmark."
         },
         {
           "id": "u5_l12_5",
@@ -2367,7 +2447,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "看板"
+          "correctAnswer": "看板",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「看板」 (kanban) expresses 'Pronounce: Signboard'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・看板 (kanban) — Pronounce: Signboard"
         },
         {
           "id": "u5_l12_6",
@@ -2389,7 +2470,8 @@
             "を",
             "お願いします"
           ],
-          "correctAnswer": "看板をお願いします"
+          "correctAnswer": "看板をお願いします",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「看板をお願いします」 (kanban o onegaishimasu.) expresses 'Signboard, please.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・看板をお願いします (kanban o onegaishimasu.) — Signboard, please."
         },
         {
           "id": "u5_l12_7",
@@ -2429,7 +2511,8 @@
               "romaji": "eki"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「すぐそこ・目印・看板・駅」 (sugu soko, mejirushi, kanban, eki) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・すぐそこ・目印・看板・駅 (sugu soko, mejirushi, kanban, eki) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l12_8",
@@ -2453,7 +2536,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "あそこのコンビニの隣にありますよ。"
+          "correctAnswer": "あそこのコンビニの隣にありますよ。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「交番はありますか？」 (Kouban wa arimasu ka?) expresses 'Lost: Excuse me, I'm lost. Is there a police box?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・交番はありますか？ (Kouban wa arimasu ka?) — Lost: Excuse me, I'm lost. Is there a police box?"
         }
       ]
     },
@@ -2492,7 +2576,8 @@
             "Bank",
             "Restroom"
           ],
-          "correctAnswer": "Train station"
+          "correctAnswer": "Train station",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅」 (eki) expresses 'Train station'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅 (eki) — Train station"
         },
         {
           "id": "u5_l13_2",
@@ -2512,7 +2597,8 @@
             "り",
             "う"
           ],
-          "correctAnswer": "えき"
+          "correctAnswer": "えき",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅」 (eki) expresses 'Build 'Train station''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅 (eki) — Build 'Train station'"
         },
         {
           "id": "u5_l13_3",
@@ -2531,7 +2617,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切などこです。」 (Kore wa ichiban taisetsu na doko desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Where.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切などこです。 (Kore wa ichiban taisetsu na doko desu.) — Fill in topic particle 'は' (wa): This is the most important Where."
         },
         {
           "id": "u5_l13_4",
@@ -2553,7 +2639,8 @@
             "どこ",
             "です"
           ],
-          "correctAnswer": "これはどこです"
+          "correctAnswer": "これはどこです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはどこです」 (Kore wa doko desu.) expresses 'This is Where.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはどこです (Kore wa doko desu.) — This is Where."
         },
         {
           "id": "u5_l13_5",
@@ -2570,7 +2657,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "右"
+          "correctAnswer": "右",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「右」 (migi) expresses 'Pronounce: Right side'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・右 (migi) — Pronounce: Right side"
         },
         {
           "id": "u5_l13_6",
@@ -2590,7 +2678,8 @@
             "右",
             "です"
           ],
-          "correctAnswer": "右です"
+          "correctAnswer": "右です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「右です」 (migi desu.) expresses 'It is Right side.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・右です (migi desu.) — It is Right side."
         },
         {
           "id": "u5_l13_7",
@@ -2630,7 +2719,8 @@
               "romaji": "hidari"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「駅・どこ・右・左」 (eki, doko, migi, hidari) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・駅・どこ・右・左 (eki, doko, migi, hidari) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l13_8",
@@ -2654,7 +2744,8 @@
             "はい、元気です",
             "美味しかったです"
           ],
-          "correctAnswer": "この道をまっすぐ行って、二つ目の信号を右です。"
+          "correctAnswer": "この道をまっすぐ行って、二つ目の信号を右です。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「渋谷駅はどちらですか？」 (Shibuya-eki wa dochira desu ka?) expresses 'Traveler: Excuse me, which way is Shibuya Station?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・渋谷駅はどちらですか？ (Shibuya-eki wa dochira desu ka?) — Traveler: Excuse me, which way is Shibuya Station?"
         }
       ]
     },
@@ -2693,7 +2784,8 @@
             "Guidance / directions",
             "Left side"
           ],
-          "correctAnswer": "Left side"
+          "correctAnswer": "Left side",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「左」 (hidari) expresses 'Left side'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・左 (hidari) — Left side"
         },
         {
           "id": "u5_l14_2",
@@ -2713,7 +2805,8 @@
             "め",
             "だ"
           ],
-          "correctAnswer": "ひだり"
+          "correctAnswer": "ひだり",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「左」 (hidari) expresses 'Build 'Left side''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・左 (hidari) — Build 'Left side'"
         },
         {
           "id": "u5_l14_3",
@@ -2732,7 +2825,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なまっすぐです。」 (Kore wa ichiban taisetsu na massugu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Straight ahead.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なまっすぐです。 (Kore wa ichiban taisetsu na massugu desu.) — Fill in topic particle 'は' (wa): This is the most important Straight ahead."
         },
         {
           "id": "u5_l14_4",
@@ -2754,7 +2847,8 @@
             "まっすぐ",
             "です"
           ],
-          "correctAnswer": "これはまっすぐです"
+          "correctAnswer": "これはまっすぐです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはまっすぐです」 (Kore wa massugu desu.) expresses 'This is Straight ahead.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはまっすぐです (Kore wa massugu desu.) — This is Straight ahead."
         },
         {
           "id": "u5_l14_5",
@@ -2771,7 +2865,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "前"
+          "correctAnswer": "前",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「前」 (mae) expresses 'Pronounce: In front / ahead'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・前 (mae) — Pronounce: In front / ahead"
         },
         {
           "id": "u5_l14_6",
@@ -2791,7 +2886,8 @@
             "前",
             "です"
           ],
-          "correctAnswer": "前です"
+          "correctAnswer": "前です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「前です」 (mae desu.) expresses 'It is In front / ahead.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・前です (mae desu.) — It is In front / ahead."
         },
         {
           "id": "u5_l14_7",
@@ -2831,7 +2927,8 @@
               "romaji": "ushiro"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「左・まっすぐ・前・後ろ」 (hidari, massugu, mae, ushiro) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・左・まっすぐ・前・後ろ (hidari, massugu, mae, ushiro) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l14_8",
@@ -2855,7 +2952,8 @@
             "さようなら",
             "ごちそうさまでした"
           ],
-          "correctAnswer": "わかりました、ありがとうございます！"
+          "correctAnswer": "わかりました、ありがとうございます！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「あの交差点を渡ったすぐそこですよ。」 (Ano kousaten o watatta sugu soko desu yo.) expresses 'Local: For Hachiko Square, it's right after crossing that intersection.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・あの交差点を渡ったすぐそこですよ。 (Ano kousaten o watatta sugu soko desu yo.) — Local: For Hachiko Square, it's right after crossing that intersection."
         }
       ]
     },
@@ -2895,7 +2993,8 @@
             "East exit",
             "Nearby"
           ],
-          "correctAnswer": "Behind / back"
+          "correctAnswer": "Behind / back",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後ろ」 (ushiro) expresses 'Behind / back'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後ろ (ushiro) — Behind / back"
         },
         {
           "id": "u5_l15_2",
@@ -2915,7 +3014,8 @@
             "け",
             "よ"
           ],
-          "correctAnswer": "うしろ"
+          "correctAnswer": "うしろ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後ろ」 (ushiro) expresses 'Build 'Behind / back''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後ろ (ushiro) — Build 'Behind / back'"
         },
         {
           "id": "u5_l15_3",
@@ -2934,7 +3034,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な隣です。」 (Kore wa ichiban taisetsu na tonari desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Next to / beside.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な隣です。 (Kore wa ichiban taisetsu na tonari desu.) — Fill in topic particle 'は' (wa): This is the most important Next to / beside."
         },
         {
           "id": "u5_l15_4",
@@ -2956,7 +3056,8 @@
             "隣",
             "です"
           ],
-          "correctAnswer": "これは隣です"
+          "correctAnswer": "これは隣です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは隣です」 (Kore wa tonari desu.) expresses 'This is Next to / beside.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは隣です (Kore wa tonari desu.) — This is Next to / beside."
         },
         {
           "id": "u5_l15_5",
@@ -2973,7 +3074,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "向かい"
+          "correctAnswer": "向かい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「向かい」 (mukai) expresses 'Pronounce: Across from / opposite'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・向かい (mukai) — Pronounce: Across from / opposite"
         },
         {
           "id": "u5_l15_6",
@@ -2993,7 +3095,8 @@
             "向かい",
             "です"
           ],
-          "correctAnswer": "向かいです"
+          "correctAnswer": "向かいです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「向かいです」 (mukai desu.) expresses 'It is Across from / opposite.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・向かいです (mukai desu.) — It is Across from / opposite."
         },
         {
           "id": "u5_l15_7",
@@ -3033,7 +3136,8 @@
               "romaji": "chikaku"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後ろ・隣・向かい・近く」 (ushiro, tonari, mukai, chikaku) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後ろ・隣・向かい・近く (ushiro, tonari, mukai, chikaku) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u5_l15_8",
@@ -3057,7 +3161,8 @@
             "はい、そうです",
             "日本から来ました"
           ],
-          "correctAnswer": "だいたい5分くらいで着きますよ。"
+          "correctAnswer": "だいたい5分くらいで着きますよ。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「歩いて何分くらいかかりますか？」 (Aruite nanpun kurai kakarimasu ka?) expresses 'Tourist: How many minutes does it take on foot?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・歩いて何分くらいかかりますか？ (Aruite nanpun kurai kakarimasu ka?) — Tourist: How many minutes does it take on foot?"
         }
       ]
     }

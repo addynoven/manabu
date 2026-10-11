@@ -55,7 +55,8 @@
             "Confirming Enthusiasm / will to achieve",
             "Job interview"
           ],
-          "correctAnswer": "Job interview"
+          "correctAnswer": "Job interview",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接」 (mensetsu) expresses 'Job interview'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接 (mensetsu) — Job interview"
         },
         {
           "id": "u19_l1_2",
@@ -75,7 +76,8 @@
             "ら",
             "か"
           ],
-          "correctAnswer": "めんせつ"
+          "correctAnswer": "めんせつ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接」 (mensetsu) expresses 'Build 'Job interview''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接 (mensetsu) — Build 'Job interview'"
         },
         {
           "id": "u19_l1_3",
@@ -94,7 +96,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な志望動機です。」 (Kore wa ichiban taisetsu na shibou douki desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Motivation for applying.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な志望動機です。 (Kore wa ichiban taisetsu na shibou douki desu.) — Fill in topic particle 'は' (wa): This is the most important Motivation for applying."
         },
         {
           "id": "u19_l1_4",
@@ -116,7 +118,8 @@
             "志望動機",
             "です"
           ],
-          "correctAnswer": "これは志望動機です"
+          "correctAnswer": "これは志望動機です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは志望動機です」 (Kore wa shibou douki desu.) expresses 'This is Motivation for applying.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは志望動機です (Kore wa shibou douki desu.) — This is Motivation for applying."
         },
         {
           "id": "u19_l1_5",
@@ -133,7 +136,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "自己PR"
+          "correctAnswer": "自己PR",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PR」 (jiko pii aaru) expresses 'Pronounce: Self-promotion'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PR (jiko pii aaru) — Pronounce: Self-promotion"
         },
         {
           "id": "u19_l1_6",
@@ -153,7 +157,8 @@
             "自己PR",
             "です"
           ],
-          "correctAnswer": "自己PRです"
+          "correctAnswer": "自己PRです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PRです」 (jiko pii aaru desu.) expresses 'It is Self-promotion.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PRです (jiko pii aaru desu.) — It is Self-promotion."
         },
         {
           "id": "u19_l1_7",
@@ -193,7 +198,8 @@
               "romaji": "chousho"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接・志望動機・自己PR・長所」 (mensetsu, shibou douki, jiko pii aaru, chousho) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接・志望動機・自己PR・長所 (mensetsu, shibou douki, jiko pii aaru, chousho) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l1_8",
@@ -217,7 +223,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接について教えていただけますか？」 (mensetsu ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Job interview?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接について教えていただけますか？ (mensetsu ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Job interview?"
         }
       ]
     },
@@ -260,7 +267,8 @@
             "Strength / strong point",
             "Confirming Weakness / shortcoming"
           ],
-          "correctAnswer": "Strength / strong point"
+          "correctAnswer": "Strength / strong point",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所」 (chousho) expresses 'Strength / strong point'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所 (chousho) — Strength / strong point"
         },
         {
           "id": "u19_l2_2",
@@ -280,7 +288,8 @@
             "ょ",
             "ん"
           ],
-          "correctAnswer": "ちょうしょ"
+          "correctAnswer": "ちょうしょ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所」 (chousho) expresses 'Build 'Strength / strong point''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所 (chousho) — Build 'Strength / strong point'"
         },
         {
           "id": "u19_l2_3",
@@ -299,7 +308,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な短所です。」 (Kore wa ichiban taisetsu na tansho desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Weakness / shortcoming.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な短所です。 (Kore wa ichiban taisetsu na tansho desu.) — Fill in topic particle 'は' (wa): This is the most important Weakness / shortcoming."
         },
         {
           "id": "u19_l2_4",
@@ -321,7 +330,8 @@
             "短所",
             "です"
           ],
-          "correctAnswer": "これは短所です"
+          "correctAnswer": "これは短所です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは短所です」 (Kore wa tansho desu.) expresses 'This is Weakness / shortcoming.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは短所です (Kore wa tansho desu.) — This is Weakness / shortcoming."
         },
         {
           "id": "u19_l2_5",
@@ -338,7 +348,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "採用"
+          "correctAnswer": "採用",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「採用」 (saiyou) expresses 'Pronounce: Recruitment / hiring'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・採用 (saiyou) — Pronounce: Recruitment / hiring"
         },
         {
           "id": "u19_l2_6",
@@ -358,7 +369,8 @@
             "採用",
             "です"
           ],
-          "correctAnswer": "採用です"
+          "correctAnswer": "採用です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「採用です」 (saiyou desu.) expresses 'It is Recruitment / hiring.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・採用です (saiyou desu.) — It is Recruitment / hiring."
         },
         {
           "id": "u19_l2_7",
@@ -398,7 +410,8 @@
               "romaji": "rirekisho"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所・短所・採用・履歴書」 (chousho, tansho, saiyou, rirekisho) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所・短所・採用・履歴書 (chousho, tansho, saiyou, rirekisho) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l2_8",
@@ -422,7 +435,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「志望動機の準備はできていますか？」 (shibou douki no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Motivation for applying ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・志望動機の準備はできていますか？ (shibou douki no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Motivation for applying ready?"
         }
       ]
     },
@@ -466,7 +480,8 @@
             "Confirming Unofficial job offer",
             "Resume / curriculum vitae"
           ],
-          "correctAnswer": "Resume / curriculum vitae"
+          "correctAnswer": "Resume / curriculum vitae",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「履歴書」 (rirekisho) expresses 'Resume / curriculum vitae'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・履歴書 (rirekisho) — Resume / curriculum vitae"
         },
         {
           "id": "u19_l3_2",
@@ -486,7 +501,8 @@
             "お",
             "し"
           ],
-          "correctAnswer": "りれきしょ"
+          "correctAnswer": "りれきしょ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「履歴書」 (rirekisho) expresses 'Build 'Resume / curriculum vitae''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・履歴書 (rirekisho) — Build 'Resume / curriculum vitae'"
         },
         {
           "id": "u19_l3_3",
@@ -505,7 +521,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な貢献です。」 (Kore wa ichiban taisetsu na kouken desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Contribution.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な貢献です。 (Kore wa ichiban taisetsu na kouken desu.) — Fill in topic particle 'は' (wa): This is the most important Contribution."
         },
         {
           "id": "u19_l3_4",
@@ -527,7 +543,8 @@
             "貢献",
             "です"
           ],
-          "correctAnswer": "これは貢献です"
+          "correctAnswer": "これは貢献です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは貢献です」 (Kore wa kouken desu.) expresses 'This is Contribution.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは貢献です (Kore wa kouken desu.) — This is Contribution."
         },
         {
           "id": "u19_l3_5",
@@ -544,7 +561,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "適性"
+          "correctAnswer": "適性",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「適性」 (tekisei) expresses 'Pronounce: Aptitude / suitability'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・適性 (tekisei) — Pronounce: Aptitude / suitability"
         },
         {
           "id": "u19_l3_6",
@@ -564,7 +582,8 @@
             "適性",
             "です"
           ],
-          "correctAnswer": "適性です"
+          "correctAnswer": "適性です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「適性です」 (tekisei desu.) expresses 'It is Aptitude / suitability.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・適性です (tekisei desu.) — It is Aptitude / suitability."
         },
         {
           "id": "u19_l3_7",
@@ -604,7 +623,8 @@
               "romaji": "iyoku"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「履歴書・貢献・適性・意欲」 (rirekisho, kouken, tekisei, iyoku) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・履歴書・貢献・適性・意欲 (rirekisho, kouken, tekisei, iyoku) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l3_8",
@@ -628,7 +648,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PRについてどう思われますか？」 (jiko pii aaru ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Self-promotion?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PRについてどう思われますか？ (jiko pii aaru ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Self-promotion?"
         }
       ]
     },
@@ -671,7 +692,8 @@
             "Enthusiasm / will to achieve",
             "Job interview"
           ],
-          "correctAnswer": "Enthusiasm / will to achieve"
+          "correctAnswer": "Enthusiasm / will to achieve",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「意欲」 (iyoku) expresses 'Enthusiasm / will to achieve'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・意欲 (iyoku) — Enthusiasm / will to achieve"
         },
         {
           "id": "u19_l4_2",
@@ -691,7 +713,8 @@
             "せ",
             "す"
           ],
-          "correctAnswer": "いよく"
+          "correctAnswer": "いよく",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「意欲」 (iyoku) expresses 'Build 'Enthusiasm / will to achieve''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・意欲 (iyoku) — Build 'Enthusiasm / will to achieve'"
         },
         {
           "id": "u19_l4_3",
@@ -710,7 +733,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な実績です。」 (Kore wa ichiban taisetsu na jisseki desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Track record / achievements.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な実績です。 (Kore wa ichiban taisetsu na jisseki desu.) — Fill in topic particle 'は' (wa): This is the most important Track record / achievements."
         },
         {
           "id": "u19_l4_4",
@@ -732,7 +755,8 @@
             "実績",
             "です"
           ],
-          "correctAnswer": "これは実績です"
+          "correctAnswer": "これは実績です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは実績です」 (Kore wa jisseki desu.) expresses 'This is Track record / achievements.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは実績です (Kore wa jisseki desu.) — This is Track record / achievements."
         },
         {
           "id": "u19_l4_5",
@@ -749,7 +773,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "入社"
+          "correctAnswer": "入社",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「入社」 (nyuusha) expresses 'Pronounce: Joining a company'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・入社 (nyuusha) — Pronounce: Joining a company"
         },
         {
           "id": "u19_l4_6",
@@ -769,7 +794,8 @@
             "入社",
             "です"
           ],
-          "correctAnswer": "入社です"
+          "correctAnswer": "入社です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「入社です」 (nyuusha desu.) expresses 'It is Joining a company.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・入社です (nyuusha desu.) — It is Joining a company."
         },
         {
           "id": "u19_l4_7",
@@ -809,7 +835,8 @@
               "romaji": "kisha"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「意欲・実績・入社・貴社」 (iyoku, jisseki, nyuusha, kisha) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・意欲・実績・入社・貴社 (iyoku, jisseki, nyuusha, kisha) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l4_8",
@@ -833,7 +860,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は長所に進みましょう。」 (Tsugi wa chousho ni susumimashou.) expresses 'Speaker: Let's proceed to Strength / strong point next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は長所に進みましょう。 (Tsugi wa chousho ni susumimashou.) — Speaker: Let's proceed to Strength / strong point next."
         }
       ]
     },
@@ -876,7 +904,8 @@
             "Your esteemed company (written)",
             "Confirming Your esteemed company (spoken)"
           ],
-          "correctAnswer": "Your esteemed company (written)"
+          "correctAnswer": "Your esteemed company (written)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貴社」 (kisha) expresses 'Your esteemed company (written)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貴社 (kisha) — Your esteemed company (written)"
         },
         {
           "id": "u19_l5_2",
@@ -896,7 +925,8 @@
             "ぬ",
             "き"
           ],
-          "correctAnswer": "きしゃ"
+          "correctAnswer": "きしゃ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貴社」 (kisha) expresses 'Build 'Your esteemed company (written)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貴社 (kisha) — Build 'Your esteemed company (written)'"
         },
         {
           "id": "u19_l5_3",
@@ -915,7 +945,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な御社です。」 (Kore wa ichiban taisetsu na onsha desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Your esteemed company (spoken).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な御社です。 (Kore wa ichiban taisetsu na onsha desu.) — Fill in topic particle 'は' (wa): This is the most important Your esteemed company (spoken)."
         },
         {
           "id": "u19_l5_4",
@@ -937,7 +967,8 @@
             "御社",
             "です"
           ],
-          "correctAnswer": "これは御社です"
+          "correctAnswer": "これは御社です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは御社です」 (Kore wa onsha desu.) expresses 'This is Your esteemed company (spoken).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは御社です (Kore wa onsha desu.) — This is Your esteemed company (spoken)."
         },
         {
           "id": "u19_l5_5",
@@ -954,7 +985,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "内定"
+          "correctAnswer": "内定",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「内定」 (naitei) expresses 'Pronounce: Unofficial job offer'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・内定 (naitei) — Pronounce: Unofficial job offer"
         },
         {
           "id": "u19_l5_6",
@@ -974,7 +1006,8 @@
             "内定",
             "です"
           ],
-          "correctAnswer": "内定です"
+          "correctAnswer": "内定です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「内定です」 (naitei desu.) expresses 'It is Unofficial job offer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・内定です (naitei desu.) — It is Unofficial job offer."
         },
         {
           "id": "u19_l5_7",
@@ -1014,7 +1047,8 @@
               "romaji": "mensetsu no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貴社・御社・内定・面接の確認」 (kisha, onsha, naitei, mensetsu no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貴社・御社・内定・面接の確認 (kisha, onsha, naitei, mensetsu no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l5_8",
@@ -1038,7 +1072,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接について教えていただけますか？」 (mensetsu ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Job interview?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接について教えていただけますか？ (mensetsu ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Job interview?"
         }
       ]
     },
@@ -1089,7 +1124,8 @@
             "Confirming Contribution",
             "Confirming Weakness / shortcoming"
           ],
-          "correctAnswer": "Confirming Job interview"
+          "correctAnswer": "Confirming Job interview",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接の確認」 (mensetsu no kakunin) expresses 'Confirming Job interview'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接の確認 (mensetsu no kakunin) — Confirming Job interview"
         },
         {
           "id": "u19_l6_2",
@@ -1109,7 +1145,8 @@
             "に",
             "つ"
           ],
-          "correctAnswer": "めんせつのかくにん"
+          "correctAnswer": "めんせつのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接の確認」 (mensetsu no kakunin) expresses 'Build 'Confirming Job interview''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接の確認 (mensetsu no kakunin) — Build 'Confirming Job interview'"
         },
         {
           "id": "u19_l6_3",
@@ -1128,7 +1165,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な志望動機の確認です。」 (Kore wa ichiban taisetsu na shibou douki no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Motivation for applying.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な志望動機の確認です。 (Kore wa ichiban taisetsu na shibou douki no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Motivation for applying."
         },
         {
           "id": "u19_l6_4",
@@ -1150,7 +1187,8 @@
             "志望動機の確認",
             "です"
           ],
-          "correctAnswer": "これは志望動機の確認です"
+          "correctAnswer": "これは志望動機の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは志望動機の確認です」 (Kore wa shibou douki no kakunin desu.) expresses 'This is Confirming Motivation for applying.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは志望動機の確認です (Kore wa shibou douki no kakunin desu.) — This is Confirming Motivation for applying."
         },
         {
           "id": "u19_l6_5",
@@ -1167,7 +1205,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "自己PRの確認"
+          "correctAnswer": "自己PRの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PRの確認」 (jiko pii aaru no kakunin) expresses 'Pronounce: Confirming Self-promotion'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PRの確認 (jiko pii aaru no kakunin) — Pronounce: Confirming Self-promotion"
         },
         {
           "id": "u19_l6_6",
@@ -1187,7 +1226,8 @@
             "自己PRの確認",
             "です"
           ],
-          "correctAnswer": "自己PRの確認です"
+          "correctAnswer": "自己PRの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PRの確認です」 (jiko pii aaru no kakunin desu.) expresses 'It is Confirming Self-promotion.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PRの確認です (jiko pii aaru no kakunin desu.) — It is Confirming Self-promotion."
         },
         {
           "id": "u19_l6_7",
@@ -1227,7 +1267,8 @@
               "romaji": "chousho no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接の確認・志望動機の確認・自己PRの確認・長所の確認」 (mensetsu no kakunin, shibou douki no kakunin, jiko pii aaru no kakunin, chousho no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接の確認・志望動機の確認・自己PRの確認・長所の確認 (mensetsu no kakunin, shibou douki no kakunin, jiko pii aaru no kakunin, chousho no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l6_8",
@@ -1251,7 +1292,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「志望動機の準備はできていますか？」 (shibou douki no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Motivation for applying ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・志望動機の準備はできていますか？ (shibou douki no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Motivation for applying ready?"
         }
       ]
     },
@@ -1300,7 +1342,8 @@
             "Confirming Strength / strong point",
             "Confirming Self-promotion"
           ],
-          "correctAnswer": "Confirming Strength / strong point"
+          "correctAnswer": "Confirming Strength / strong point",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所の確認」 (chousho no kakunin) expresses 'Confirming Strength / strong point'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所の確認 (chousho no kakunin) — Confirming Strength / strong point"
         },
         {
           "id": "u19_l7_2",
@@ -1320,7 +1363,8 @@
             "ょ",
             "ち"
           ],
-          "correctAnswer": "ちょうしょのかくにん"
+          "correctAnswer": "ちょうしょのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所の確認」 (chousho no kakunin) expresses 'Build 'Confirming Strength / strong point''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所の確認 (chousho no kakunin) — Build 'Confirming Strength / strong point'"
         },
         {
           "id": "u19_l7_3",
@@ -1339,7 +1383,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な短所の確認です。」 (Kore wa ichiban taisetsu na tansho no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Weakness / shortcoming.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な短所の確認です。 (Kore wa ichiban taisetsu na tansho no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Weakness / shortcoming."
         },
         {
           "id": "u19_l7_4",
@@ -1361,7 +1405,8 @@
             "短所の確認",
             "です"
           ],
-          "correctAnswer": "これは短所の確認です"
+          "correctAnswer": "これは短所の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは短所の確認です」 (Kore wa tansho no kakunin desu.) expresses 'This is Confirming Weakness / shortcoming.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは短所の確認です (Kore wa tansho no kakunin desu.) — This is Confirming Weakness / shortcoming."
         },
         {
           "id": "u19_l7_5",
@@ -1378,7 +1423,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "採用の確認"
+          "correctAnswer": "採用の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「採用の確認」 (saiyou no kakunin) expresses 'Pronounce: Confirming Recruitment / hiring'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・採用の確認 (saiyou no kakunin) — Pronounce: Confirming Recruitment / hiring"
         },
         {
           "id": "u19_l7_6",
@@ -1398,7 +1444,8 @@
             "採用の確認",
             "です"
           ],
-          "correctAnswer": "採用の確認です"
+          "correctAnswer": "採用の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「採用の確認です」 (saiyou no kakunin desu.) expresses 'It is Confirming Recruitment / hiring.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・採用の確認です (saiyou no kakunin desu.) — It is Confirming Recruitment / hiring."
         },
         {
           "id": "u19_l7_7",
@@ -1438,7 +1485,8 @@
               "romaji": "rirekisho no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所の確認・短所の確認・採用の確認・履歴書の確認」 (chousho no kakunin, tansho no kakunin, saiyou no kakunin, rirekisho no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所の確認・短所の確認・採用の確認・履歴書の確認 (chousho no kakunin, tansho no kakunin, saiyou no kakunin, rirekisho no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l7_8",
@@ -1462,7 +1510,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PRについてどう思われますか？」 (jiko pii aaru ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Self-promotion?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PRについてどう思われますか？ (jiko pii aaru ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Self-promotion?"
         }
       ]
     },
@@ -1512,7 +1561,8 @@
             "Aptitude / suitability",
             "Confirming Job interview"
           ],
-          "correctAnswer": "Confirming Resume / curriculum vitae"
+          "correctAnswer": "Confirming Resume / curriculum vitae",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「履歴書の確認」 (rirekisho no kakunin) expresses 'Confirming Resume / curriculum vitae'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・履歴書の確認 (rirekisho no kakunin) — Confirming Resume / curriculum vitae"
         },
         {
           "id": "u19_l8_2",
@@ -1532,7 +1582,8 @@
             "れ",
             "く"
           ],
-          "correctAnswer": "りれきしょのかくにん"
+          "correctAnswer": "りれきしょのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「履歴書の確認」 (rirekisho no kakunin) expresses 'Build 'Confirming Resume / curriculum vitae''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・履歴書の確認 (rirekisho no kakunin) — Build 'Confirming Resume / curriculum vitae'"
         },
         {
           "id": "u19_l8_3",
@@ -1551,7 +1602,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な貢献の確認です。」 (Kore wa ichiban taisetsu na kouken no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Contribution.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な貢献の確認です。 (Kore wa ichiban taisetsu na kouken no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Contribution."
         },
         {
           "id": "u19_l8_4",
@@ -1573,7 +1624,8 @@
             "貢献の確認",
             "です"
           ],
-          "correctAnswer": "これは貢献の確認です"
+          "correctAnswer": "これは貢献の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは貢献の確認です」 (Kore wa kouken no kakunin desu.) expresses 'This is Confirming Contribution.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは貢献の確認です (Kore wa kouken no kakunin desu.) — This is Confirming Contribution."
         },
         {
           "id": "u19_l8_5",
@@ -1590,7 +1642,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "適性の確認"
+          "correctAnswer": "適性の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「適性の確認」 (tekisei no kakunin) expresses 'Pronounce: Confirming Aptitude / suitability'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・適性の確認 (tekisei no kakunin) — Pronounce: Confirming Aptitude / suitability"
         },
         {
           "id": "u19_l8_6",
@@ -1610,7 +1663,8 @@
             "適性の確認",
             "です"
           ],
-          "correctAnswer": "適性の確認です"
+          "correctAnswer": "適性の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「適性の確認です」 (tekisei no kakunin desu.) expresses 'It is Confirming Aptitude / suitability.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・適性の確認です (tekisei no kakunin desu.) — It is Confirming Aptitude / suitability."
         },
         {
           "id": "u19_l8_7",
@@ -1650,7 +1704,8 @@
               "romaji": "iyoku no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「履歴書の確認・貢献の確認・適性の確認・意欲の確認」 (rirekisho no kakunin, kouken no kakunin, tekisei no kakunin, iyoku no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・履歴書の確認・貢献の確認・適性の確認・意欲の確認 (rirekisho no kakunin, kouken no kakunin, tekisei no kakunin, iyoku no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l8_8",
@@ -1674,7 +1729,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は長所に進みましょう。」 (Tsugi wa chousho ni susumimashou.) expresses 'Speaker: Let's proceed to Strength / strong point next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は長所に進みましょう。 (Tsugi wa chousho ni susumimashou.) — Speaker: Let's proceed to Strength / strong point next."
         }
       ]
     },
@@ -1723,7 +1779,8 @@
             "Unofficial job offer",
             "Enthusiasm / will to achieve"
           ],
-          "correctAnswer": "Confirming Enthusiasm / will to achieve"
+          "correctAnswer": "Confirming Enthusiasm / will to achieve",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「意欲の確認」 (iyoku no kakunin) expresses 'Confirming Enthusiasm / will to achieve'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・意欲の確認 (iyoku no kakunin) — Confirming Enthusiasm / will to achieve"
         },
         {
           "id": "u19_l9_2",
@@ -1743,7 +1800,8 @@
             "か",
             "の"
           ],
-          "correctAnswer": "いよくのかくにん"
+          "correctAnswer": "いよくのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「意欲の確認」 (iyoku no kakunin) expresses 'Build 'Confirming Enthusiasm / will to achieve''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・意欲の確認 (iyoku no kakunin) — Build 'Confirming Enthusiasm / will to achieve'"
         },
         {
           "id": "u19_l9_3",
@@ -1762,7 +1820,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な実績の確認です。」 (Kore wa ichiban taisetsu na jisseki no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Track record / achievements.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な実績の確認です。 (Kore wa ichiban taisetsu na jisseki no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Track record / achievements."
         },
         {
           "id": "u19_l9_4",
@@ -1784,7 +1842,8 @@
             "実績の確認",
             "です"
           ],
-          "correctAnswer": "これは実績の確認です"
+          "correctAnswer": "これは実績の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは実績の確認です」 (Kore wa jisseki no kakunin desu.) expresses 'This is Confirming Track record / achievements.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは実績の確認です (Kore wa jisseki no kakunin desu.) — This is Confirming Track record / achievements."
         },
         {
           "id": "u19_l9_5",
@@ -1801,7 +1860,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "入社の確認"
+          "correctAnswer": "入社の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「入社の確認」 (nyuusha no kakunin) expresses 'Pronounce: Confirming Joining a company'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・入社の確認 (nyuusha no kakunin) — Pronounce: Confirming Joining a company"
         },
         {
           "id": "u19_l9_6",
@@ -1821,7 +1881,8 @@
             "入社の確認",
             "です"
           ],
-          "correctAnswer": "入社の確認です"
+          "correctAnswer": "入社の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「入社の確認です」 (nyuusha no kakunin desu.) expresses 'It is Confirming Joining a company.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・入社の確認です (nyuusha no kakunin desu.) — It is Confirming Joining a company."
         },
         {
           "id": "u19_l9_7",
@@ -1861,7 +1922,8 @@
               "romaji": "kisha no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「意欲の確認・実績の確認・入社の確認・貴社の確認」 (iyoku no kakunin, jisseki no kakunin, nyuusha no kakunin, kisha no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・意欲の確認・実績の確認・入社の確認・貴社の確認 (iyoku no kakunin, jisseki no kakunin, nyuusha no kakunin, kisha no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l9_8",
@@ -1885,7 +1947,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接について教えていただけますか？」 (mensetsu ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Job interview?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接について教えていただけますか？ (mensetsu ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Job interview?"
         }
       ]
     },
@@ -1934,7 +1997,8 @@
             "Confirming Your esteemed company (written)",
             "Unofficial job offer"
           ],
-          "correctAnswer": "Confirming Your esteemed company (written)"
+          "correctAnswer": "Confirming Your esteemed company (written)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貴社の確認」 (kisha no kakunin) expresses 'Confirming Your esteemed company (written)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貴社の確認 (kisha no kakunin) — Confirming Your esteemed company (written)"
         },
         {
           "id": "u19_l10_2",
@@ -1954,7 +2018,8 @@
             "の",
             "し"
           ],
-          "correctAnswer": "きしゃのかくにん"
+          "correctAnswer": "きしゃのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貴社の確認」 (kisha no kakunin) expresses 'Build 'Confirming Your esteemed company (written)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貴社の確認 (kisha no kakunin) — Build 'Confirming Your esteemed company (written)'"
         },
         {
           "id": "u19_l10_3",
@@ -1973,7 +2038,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な御社の確認です。」 (Kore wa ichiban taisetsu na onsha no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Your esteemed company (spoken).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な御社の確認です。 (Kore wa ichiban taisetsu na onsha no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Your esteemed company (spoken)."
         },
         {
           "id": "u19_l10_4",
@@ -1995,7 +2060,8 @@
             "御社の確認",
             "です"
           ],
-          "correctAnswer": "これは御社の確認です"
+          "correctAnswer": "これは御社の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは御社の確認です」 (Kore wa onsha no kakunin desu.) expresses 'This is Confirming Your esteemed company (spoken).'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは御社の確認です (Kore wa onsha no kakunin desu.) — This is Confirming Your esteemed company (spoken)."
         },
         {
           "id": "u19_l10_5",
@@ -2012,7 +2078,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "内定の確認"
+          "correctAnswer": "内定の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「内定の確認」 (naitei no kakunin) expresses 'Pronounce: Confirming Unofficial job offer'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・内定の確認 (naitei no kakunin) — Pronounce: Confirming Unofficial job offer"
         },
         {
           "id": "u19_l10_6",
@@ -2032,7 +2099,8 @@
             "内定の確認",
             "です"
           ],
-          "correctAnswer": "内定の確認です"
+          "correctAnswer": "内定の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「内定の確認です」 (naitei no kakunin desu.) expresses 'It is Confirming Unofficial job offer.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・内定の確認です (naitei no kakunin desu.) — It is Confirming Unofficial job offer."
         },
         {
           "id": "u19_l10_7",
@@ -2072,7 +2140,8 @@
               "romaji": "mensetsu no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「貴社の確認・御社の確認・内定の確認・面接の確認」 (kisha no kakunin, onsha no kakunin, naitei no kakunin, mensetsu no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・貴社の確認・御社の確認・内定の確認・面接の確認 (kisha no kakunin, onsha no kakunin, naitei no kakunin, mensetsu no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l10_8",
@@ -2096,7 +2165,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「志望動機の準備はできていますか？」 (shibou douki no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Motivation for applying ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・志望動機の準備はできていますか？ (shibou douki no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Motivation for applying ready?"
         }
       ]
     },
@@ -2147,7 +2217,8 @@
             "Confirming Job interview",
             "Your esteemed company (written)"
           ],
-          "correctAnswer": "Confirming Job interview"
+          "correctAnswer": "Confirming Job interview",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接の確認」 (mensetsu no kakunin) expresses 'Confirming Job interview'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接の確認 (mensetsu no kakunin) — Confirming Job interview"
         },
         {
           "id": "u19_l11_2",
@@ -2167,7 +2238,8 @@
             "の",
             "せ"
           ],
-          "correctAnswer": "めんせつのかくにん"
+          "correctAnswer": "めんせつのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接の確認」 (mensetsu no kakunin) expresses 'Build 'Confirming Job interview''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接の確認 (mensetsu no kakunin) — Build 'Confirming Job interview'"
         },
         {
           "id": "u19_l11_3",
@@ -2186,7 +2258,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な志望動機の確認です。」 (Kore wa ichiban taisetsu na shibou douki no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Motivation for applying.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な志望動機の確認です。 (Kore wa ichiban taisetsu na shibou douki no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Motivation for applying."
         },
         {
           "id": "u19_l11_4",
@@ -2208,7 +2280,8 @@
             "志望動機の確認",
             "です"
           ],
-          "correctAnswer": "これは志望動機の確認です"
+          "correctAnswer": "これは志望動機の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは志望動機の確認です」 (Kore wa shibou douki no kakunin desu.) expresses 'This is Confirming Motivation for applying.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは志望動機の確認です (Kore wa shibou douki no kakunin desu.) — This is Confirming Motivation for applying."
         },
         {
           "id": "u19_l11_5",
@@ -2225,7 +2298,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "自己PRの確認"
+          "correctAnswer": "自己PRの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PRの確認」 (jiko pii aaru no kakunin) expresses 'Pronounce: Confirming Self-promotion'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PRの確認 (jiko pii aaru no kakunin) — Pronounce: Confirming Self-promotion"
         },
         {
           "id": "u19_l11_6",
@@ -2245,7 +2319,8 @@
             "自己PRの確認",
             "です"
           ],
-          "correctAnswer": "自己PRの確認です"
+          "correctAnswer": "自己PRの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PRの確認です」 (jiko pii aaru no kakunin desu.) expresses 'It is Confirming Self-promotion.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PRの確認です (jiko pii aaru no kakunin desu.) — It is Confirming Self-promotion."
         },
         {
           "id": "u19_l11_7",
@@ -2285,7 +2360,8 @@
               "romaji": "chousho no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接の確認・志望動機の確認・自己PRの確認・長所の確認」 (mensetsu no kakunin, shibou douki no kakunin, jiko pii aaru no kakunin, chousho no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接の確認・志望動機の確認・自己PRの確認・長所の確認 (mensetsu no kakunin, shibou douki no kakunin, jiko pii aaru no kakunin, chousho no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l11_8",
@@ -2309,7 +2385,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PRについてどう思われますか？」 (jiko pii aaru ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Self-promotion?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PRについてどう思われますか？ (jiko pii aaru ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Self-promotion?"
         }
       ]
     },
@@ -2358,7 +2435,8 @@
             "Self-promotion",
             "Confirming Strength / strong point"
           ],
-          "correctAnswer": "Confirming Strength / strong point"
+          "correctAnswer": "Confirming Strength / strong point",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所の確認」 (chousho no kakunin) expresses 'Confirming Strength / strong point'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所の確認 (chousho no kakunin) — Confirming Strength / strong point"
         },
         {
           "id": "u19_l12_2",
@@ -2378,7 +2456,8 @@
             "か",
             "の"
           ],
-          "correctAnswer": "ちょうしょのかくにん"
+          "correctAnswer": "ちょうしょのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所の確認」 (chousho no kakunin) expresses 'Build 'Confirming Strength / strong point''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所の確認 (chousho no kakunin) — Build 'Confirming Strength / strong point'"
         },
         {
           "id": "u19_l12_3",
@@ -2397,7 +2476,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な短所の確認です。」 (Kore wa ichiban taisetsu na tansho no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Weakness / shortcoming.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な短所の確認です。 (Kore wa ichiban taisetsu na tansho no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Weakness / shortcoming."
         },
         {
           "id": "u19_l12_4",
@@ -2419,7 +2498,8 @@
             "短所の確認",
             "です"
           ],
-          "correctAnswer": "これは短所の確認です"
+          "correctAnswer": "これは短所の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは短所の確認です」 (Kore wa tansho no kakunin desu.) expresses 'This is Confirming Weakness / shortcoming.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは短所の確認です (Kore wa tansho no kakunin desu.) — This is Confirming Weakness / shortcoming."
         },
         {
           "id": "u19_l12_5",
@@ -2436,7 +2516,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "採用の確認"
+          "correctAnswer": "採用の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「採用の確認」 (saiyou no kakunin) expresses 'Pronounce: Confirming Recruitment / hiring'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・採用の確認 (saiyou no kakunin) — Pronounce: Confirming Recruitment / hiring"
         },
         {
           "id": "u19_l12_6",
@@ -2456,7 +2537,8 @@
             "採用の確認",
             "です"
           ],
-          "correctAnswer": "採用の確認です"
+          "correctAnswer": "採用の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「採用の確認です」 (saiyou no kakunin desu.) expresses 'It is Confirming Recruitment / hiring.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・採用の確認です (saiyou no kakunin desu.) — It is Confirming Recruitment / hiring."
         },
         {
           "id": "u19_l12_7",
@@ -2496,7 +2578,8 @@
               "romaji": "mensetsu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所の確認・短所の確認・採用の確認・面接」 (chousho no kakunin, tansho no kakunin, saiyou no kakunin, mensetsu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所の確認・短所の確認・採用の確認・面接 (chousho no kakunin, tansho no kakunin, saiyou no kakunin, mensetsu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l12_8",
@@ -2520,7 +2603,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は長所に進みましょう。」 (Tsugi wa chousho ni susumimashou.) expresses 'Speaker: Let's proceed to Strength / strong point next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は長所に進みましょう。 (Tsugi wa chousho ni susumimashou.) — Speaker: Let's proceed to Strength / strong point next."
         }
       ]
     },
@@ -2565,7 +2649,8 @@
             "Confirming Self-promotion",
             "Job interview"
           ],
-          "correctAnswer": "Job interview"
+          "correctAnswer": "Job interview",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接」 (mensetsu) expresses 'Job interview'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接 (mensetsu) — Job interview"
         },
         {
           "id": "u19_l13_2",
@@ -2585,7 +2670,8 @@
             "ん",
             "ろ"
           ],
-          "correctAnswer": "めんせつ"
+          "correctAnswer": "めんせつ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接」 (mensetsu) expresses 'Build 'Job interview''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接 (mensetsu) — Build 'Job interview'"
         },
         {
           "id": "u19_l13_3",
@@ -2604,7 +2690,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な志望動機です。」 (Kore wa ichiban taisetsu na shibou douki desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Motivation for applying.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な志望動機です。 (Kore wa ichiban taisetsu na shibou douki desu.) — Fill in topic particle 'は' (wa): This is the most important Motivation for applying."
         },
         {
           "id": "u19_l13_4",
@@ -2626,7 +2712,8 @@
             "志望動機",
             "です"
           ],
-          "correctAnswer": "これは志望動機です"
+          "correctAnswer": "これは志望動機です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは志望動機です」 (Kore wa shibou douki desu.) expresses 'This is Motivation for applying.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは志望動機です (Kore wa shibou douki desu.) — This is Motivation for applying."
         },
         {
           "id": "u19_l13_5",
@@ -2643,7 +2730,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "自己PR"
+          "correctAnswer": "自己PR",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PR」 (jiko pii aaru) expresses 'Pronounce: Self-promotion'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PR (jiko pii aaru) — Pronounce: Self-promotion"
         },
         {
           "id": "u19_l13_6",
@@ -2663,7 +2751,8 @@
             "自己PR",
             "です"
           ],
-          "correctAnswer": "自己PRです"
+          "correctAnswer": "自己PRです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PRです」 (jiko pii aaru desu.) expresses 'It is Self-promotion.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PRです (jiko pii aaru desu.) — It is Self-promotion."
         },
         {
           "id": "u19_l13_7",
@@ -2703,7 +2792,8 @@
               "romaji": "chousho"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接・志望動機・自己PR・長所」 (mensetsu, shibou douki, jiko pii aaru, chousho) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接・志望動機・自己PR・長所 (mensetsu, shibou douki, jiko pii aaru, chousho) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l13_8",
@@ -2727,7 +2817,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「面接について教えていただけますか？」 (mensetsu ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Job interview?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・面接について教えていただけますか？ (mensetsu ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Job interview?"
         }
       ]
     },
@@ -2770,7 +2861,8 @@
             "Strength / strong point",
             "Confirming Self-promotion"
           ],
-          "correctAnswer": "Strength / strong point"
+          "correctAnswer": "Strength / strong point",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所」 (chousho) expresses 'Strength / strong point'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所 (chousho) — Strength / strong point"
         },
         {
           "id": "u19_l14_2",
@@ -2790,7 +2882,8 @@
             "し",
             "く"
           ],
-          "correctAnswer": "ちょうしょ"
+          "correctAnswer": "ちょうしょ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所」 (chousho) expresses 'Build 'Strength / strong point''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所 (chousho) — Build 'Strength / strong point'"
         },
         {
           "id": "u19_l14_3",
@@ -2809,7 +2902,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な短所です。」 (Kore wa ichiban taisetsu na tansho desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Weakness / shortcoming.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な短所です。 (Kore wa ichiban taisetsu na tansho desu.) — Fill in topic particle 'は' (wa): This is the most important Weakness / shortcoming."
         },
         {
           "id": "u19_l14_4",
@@ -2831,7 +2924,8 @@
             "短所",
             "です"
           ],
-          "correctAnswer": "これは短所です"
+          "correctAnswer": "これは短所です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは短所です」 (Kore wa tansho desu.) expresses 'This is Weakness / shortcoming.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは短所です (Kore wa tansho desu.) — This is Weakness / shortcoming."
         },
         {
           "id": "u19_l14_5",
@@ -2848,7 +2942,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "採用"
+          "correctAnswer": "採用",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「採用」 (saiyou) expresses 'Pronounce: Recruitment / hiring'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・採用 (saiyou) — Pronounce: Recruitment / hiring"
         },
         {
           "id": "u19_l14_6",
@@ -2868,7 +2963,8 @@
             "採用",
             "です"
           ],
-          "correctAnswer": "採用です"
+          "correctAnswer": "採用です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「採用です」 (saiyou desu.) expresses 'It is Recruitment / hiring.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・採用です (saiyou desu.) — It is Recruitment / hiring."
         },
         {
           "id": "u19_l14_7",
@@ -2908,7 +3004,8 @@
               "romaji": "rirekisho"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「長所・短所・採用・履歴書」 (chousho, tansho, saiyou, rirekisho) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・長所・短所・採用・履歴書 (chousho, tansho, saiyou, rirekisho) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l14_8",
@@ -2932,7 +3029,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「志望動機の準備はできていますか？」 (shibou douki no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Motivation for applying ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・志望動機の準備はできていますか？ (shibou douki no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Motivation for applying ready?"
         }
       ]
     },
@@ -2976,7 +3074,8 @@
             "Confirming Job interview",
             "Aptitude / suitability"
           ],
-          "correctAnswer": "Resume / curriculum vitae"
+          "correctAnswer": "Resume / curriculum vitae",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「履歴書」 (rirekisho) expresses 'Resume / curriculum vitae'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・履歴書 (rirekisho) — Resume / curriculum vitae"
         },
         {
           "id": "u19_l15_2",
@@ -2996,7 +3095,8 @@
             "ょ",
             "れ"
           ],
-          "correctAnswer": "りれきしょ"
+          "correctAnswer": "りれきしょ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「履歴書」 (rirekisho) expresses 'Build 'Resume / curriculum vitae''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・履歴書 (rirekisho) — Build 'Resume / curriculum vitae'"
         },
         {
           "id": "u19_l15_3",
@@ -3015,7 +3115,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な貢献です。」 (Kore wa ichiban taisetsu na kouken desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Contribution.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な貢献です。 (Kore wa ichiban taisetsu na kouken desu.) — Fill in topic particle 'は' (wa): This is the most important Contribution."
         },
         {
           "id": "u19_l15_4",
@@ -3037,7 +3137,8 @@
             "貢献",
             "です"
           ],
-          "correctAnswer": "これは貢献です"
+          "correctAnswer": "これは貢献です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは貢献です」 (Kore wa kouken desu.) expresses 'This is Contribution.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは貢献です (Kore wa kouken desu.) — This is Contribution."
         },
         {
           "id": "u19_l15_5",
@@ -3054,7 +3155,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "適性"
+          "correctAnswer": "適性",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「適性」 (tekisei) expresses 'Pronounce: Aptitude / suitability'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・適性 (tekisei) — Pronounce: Aptitude / suitability"
         },
         {
           "id": "u19_l15_6",
@@ -3074,7 +3176,8 @@
             "適性",
             "です"
           ],
-          "correctAnswer": "適性です"
+          "correctAnswer": "適性です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「適性です」 (tekisei desu.) expresses 'It is Aptitude / suitability.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・適性です (tekisei desu.) — It is Aptitude / suitability."
         },
         {
           "id": "u19_l15_7",
@@ -3114,7 +3217,8 @@
               "romaji": "iyoku"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「履歴書・貢献・適性・意欲」 (rirekisho, kouken, tekisei, iyoku) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・履歴書・貢献・適性・意欲 (rirekisho, kouken, tekisei, iyoku) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u19_l15_8",
@@ -3138,7 +3242,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自己PRについてどう思われますか？」 (jiko pii aaru ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Self-promotion?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自己PRについてどう思われますか？ (jiko pii aaru ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Self-promotion?"
         }
       ]
     }

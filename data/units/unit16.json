@@ -53,7 +53,8 @@
             "Hypothesis / assumption",
             "Proposal / suggestion"
           ],
-          "correctAnswer": "Hypothesis / assumption"
+          "correctAnswer": "Hypothesis / assumption",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定」 (katei) expresses 'Hypothesis / assumption'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定 (katei) — Hypothesis / assumption"
         },
         {
           "id": "u16_l1_2",
@@ -73,7 +74,8 @@
             "て",
             "せ"
           ],
-          "correctAnswer": "かてい"
+          "correctAnswer": "かてい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定」 (katei) expresses 'Build 'Hypothesis / assumption''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定 (katei) — Build 'Hypothesis / assumption'"
         },
         {
           "id": "u16_l1_3",
@@ -92,7 +94,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な条件です。」 (Kore wa ichiban taisetsu na jouken desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Condition / requirement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な条件です。 (Kore wa ichiban taisetsu na jouken desu.) — Fill in topic particle 'は' (wa): This is the most important Condition / requirement."
         },
         {
           "id": "u16_l1_4",
@@ -114,7 +116,8 @@
             "条件",
             "です"
           ],
-          "correctAnswer": "これは条件です"
+          "correctAnswer": "これは条件です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは条件です」 (Kore wa jouken desu.) expresses 'This is Condition / requirement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは条件です (Kore wa jouken desu.) — This is Condition / requirement."
         },
         {
           "id": "u16_l1_5",
@@ -131,7 +134,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "場合"
+          "correctAnswer": "場合",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合」 (baai) expresses 'Pronounce: Case / scenario'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合 (baai) — Pronounce: Case / scenario"
         },
         {
           "id": "u16_l1_6",
@@ -151,7 +155,8 @@
             "場合",
             "です"
           ],
-          "correctAnswer": "場合です"
+          "correctAnswer": "場合です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合です」 (baai desu.) expresses 'It is Case / scenario.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合です (baai desu.) — It is Case / scenario."
         },
         {
           "id": "u16_l1_7",
@@ -191,7 +196,8 @@
               "romaji": "moshi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定・条件・場合・もし」 (katei, jouken, baai, moshi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定・条件・場合・もし (katei, jouken, baai, moshi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l1_8",
@@ -215,7 +221,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定について教えていただけますか？」 (katei ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Hypothesis / assumption?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定について教えていただけますか？ (katei ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Hypothesis / assumption?"
         }
       ]
     },
@@ -254,7 +261,8 @@
             "Confirming If / supposing that",
             "If / supposing that"
           ],
-          "correctAnswer": "If / supposing that"
+          "correctAnswer": "If / supposing that",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もし」 (moshi) expresses 'If / supposing that'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もし (moshi) — If / supposing that"
         },
         {
           "id": "u16_l2_2",
@@ -274,7 +282,8 @@
             "の",
             "と"
           ],
-          "correctAnswer": "もし"
+          "correctAnswer": "もし",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もし」 (moshi) expresses 'Build 'If / supposing that''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もし (moshi) — Build 'If / supposing that'"
         },
         {
           "id": "u16_l2_3",
@@ -293,7 +302,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なたとえです。」 (Kore wa ichiban taisetsu na tatoe desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Even if / supposing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なたとえです。 (Kore wa ichiban taisetsu na tatoe desu.) — Fill in topic particle 'は' (wa): This is the most important Even if / supposing."
         },
         {
           "id": "u16_l2_4",
@@ -315,7 +324,8 @@
             "たとえ",
             "です"
           ],
-          "correctAnswer": "これはたとえです"
+          "correctAnswer": "これはたとえです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはたとえです」 (Kore wa tatoe desu.) expresses 'This is Even if / supposing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはたとえです (Kore wa tatoe desu.) — This is Even if / supposing."
         },
         {
           "id": "u16_l2_5",
@@ -332,7 +342,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "後悔"
+          "correctAnswer": "後悔",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後悔」 (koukai) expresses 'Pronounce: Regret'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後悔 (koukai) — Pronounce: Regret"
         },
         {
           "id": "u16_l2_6",
@@ -352,7 +363,8 @@
             "後悔",
             "です"
           ],
-          "correctAnswer": "後悔です"
+          "correctAnswer": "後悔です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後悔です」 (koukai desu.) expresses 'It is Regret.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後悔です (koukai desu.) — It is Regret."
         },
         {
           "id": "u16_l2_7",
@@ -392,7 +404,8 @@
               "romaji": "kaizen"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もし・たとえ・後悔・改善」 (moshi, tatoe, koukai, kaizen) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もし・たとえ・後悔・改善 (moshi, tatoe, koukai, kaizen) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l2_8",
@@ -416,7 +429,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「条件の準備はできていますか？」 (jouken no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Condition / requirement ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・条件の準備はできていますか？ (jouken no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Condition / requirement ready?"
         }
       ]
     },
@@ -460,7 +474,8 @@
             "Option / choice",
             "Response / dealing with"
           ],
-          "correctAnswer": "Improvement / Kaizen"
+          "correctAnswer": "Improvement / Kaizen",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改善」 (kaizen) expresses 'Improvement / Kaizen'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改善 (kaizen) — Improvement / Kaizen"
         },
         {
           "id": "u16_l3_2",
@@ -480,7 +495,8 @@
             "ぜ",
             "そ"
           ],
-          "correctAnswer": "かいぜん"
+          "correctAnswer": "かいぜん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改善」 (kaizen) expresses 'Build 'Improvement / Kaizen''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改善 (kaizen) — Build 'Improvement / Kaizen'"
         },
         {
           "id": "u16_l3_3",
@@ -499,7 +515,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な提案です。」 (Kore wa ichiban taisetsu na teian desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Proposal / suggestion.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な提案です。 (Kore wa ichiban taisetsu na teian desu.) — Fill in topic particle 'は' (wa): This is the most important Proposal / suggestion."
         },
         {
           "id": "u16_l3_4",
@@ -521,7 +537,8 @@
             "提案",
             "です"
           ],
-          "correctAnswer": "これは提案です"
+          "correctAnswer": "これは提案です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは提案です」 (Kore wa teian desu.) expresses 'This is Proposal / suggestion.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは提案です (Kore wa teian desu.) — This is Proposal / suggestion."
         },
         {
           "id": "u16_l3_5",
@@ -538,7 +555,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "可能性"
+          "correctAnswer": "可能性",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「可能性」 (kanousei) expresses 'Pronounce: Possibility / potential'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・可能性 (kanousei) — Pronounce: Possibility / potential"
         },
         {
           "id": "u16_l3_6",
@@ -558,7 +576,8 @@
             "可能性",
             "です"
           ],
-          "correctAnswer": "可能性です"
+          "correctAnswer": "可能性です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「可能性です」 (kanousei desu.) expresses 'It is Possibility / potential.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・可能性です (kanousei desu.) — It is Possibility / potential."
         },
         {
           "id": "u16_l3_7",
@@ -598,7 +617,8 @@
               "romaji": "sentakushi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改善・提案・可能性・選択肢」 (kaizen, teian, kanousei, sentakushi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改善・提案・可能性・選択肢 (kaizen, teian, kanousei, sentakushi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l3_8",
@@ -622,7 +642,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合についてどう思われますか？」 (baai ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Case / scenario?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合についてどう思われますか？ (baai ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Case / scenario?"
         }
       ]
     },
@@ -666,7 +687,8 @@
             "Confirming Influence / effect",
             "Option / choice"
           ],
-          "correctAnswer": "Option / choice"
+          "correctAnswer": "Option / choice",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「選択肢」 (sentakushi) expresses 'Option / choice'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・選択肢 (sentakushi) — Option / choice"
         },
         {
           "id": "u16_l4_2",
@@ -686,7 +708,8 @@
             "ん",
             "く"
           ],
-          "correctAnswer": "せんたくし"
+          "correctAnswer": "せんたくし",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「選択肢」 (sentakushi) expresses 'Build 'Option / choice''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・選択肢 (sentakushi) — Build 'Option / choice'"
         },
         {
           "id": "u16_l4_3",
@@ -705,7 +728,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な判断です。」 (Kore wa ichiban taisetsu na handan desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Judgement / decision.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な判断です。 (Kore wa ichiban taisetsu na handan desu.) — Fill in topic particle 'は' (wa): This is the most important Judgement / decision."
         },
         {
           "id": "u16_l4_4",
@@ -727,7 +750,8 @@
             "判断",
             "です"
           ],
-          "correctAnswer": "これは判断です"
+          "correctAnswer": "これは判断です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは判断です」 (Kore wa handan desu.) expresses 'This is Judgement / decision.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは判断です (Kore wa handan desu.) — This is Judgement / decision."
         },
         {
           "id": "u16_l4_5",
@@ -744,7 +768,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "影響"
+          "correctAnswer": "影響",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「影響」 (eikyou) expresses 'Pronounce: Influence / effect'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・影響 (eikyou) — Pronounce: Influence / effect"
         },
         {
           "id": "u16_l4_6",
@@ -764,7 +789,8 @@
             "影響",
             "です"
           ],
-          "correctAnswer": "影響です"
+          "correctAnswer": "影響です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「影響です」 (eikyou desu.) expresses 'It is Influence / effect.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・影響です (eikyou desu.) — It is Influence / effect."
         },
         {
           "id": "u16_l4_7",
@@ -804,7 +830,8 @@
               "romaji": "man-ichi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「選択肢・判断・影響・万一」 (sentakushi, handan, eikyou, man-ichi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・選択肢・判断・影響・万一 (sentakushi, handan, eikyou, man-ichi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l4_8",
@@ -828,7 +855,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次はもしに進みましょう。」 (Tsugi wa moshi ni susumimashou.) expresses 'Speaker: Let's proceed to If / supposing that next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次はもしに進みましょう。 (Tsugi wa moshi ni susumimashou.) — Speaker: Let's proceed to If / supposing that next."
         }
       ]
     },
@@ -871,7 +899,8 @@
             "Improvement / Kaizen",
             "Confirming Option / choice"
           ],
-          "correctAnswer": "In the unlikely event"
+          "correctAnswer": "In the unlikely event",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「万一」 (man-ichi) expresses 'In the unlikely event'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・万一 (man-ichi) — In the unlikely event"
         },
         {
           "id": "u16_l5_2",
@@ -891,7 +920,8 @@
             "る",
             "ち"
           ],
-          "correctAnswer": "まんいち"
+          "correctAnswer": "まんいち",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「万一」 (man-ichi) expresses 'Build 'In the unlikely event''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・万一 (man-ichi) — Build 'In the unlikely event'"
         },
         {
           "id": "u16_l5_3",
@@ -910,7 +940,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な予測です。」 (Kore wa ichiban taisetsu na yosoku desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Prediction / forecast.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な予測です。 (Kore wa ichiban taisetsu na yosoku desu.) — Fill in topic particle 'は' (wa): This is the most important Prediction / forecast."
         },
         {
           "id": "u16_l5_4",
@@ -932,7 +962,8 @@
             "予測",
             "です"
           ],
-          "correctAnswer": "これは予測です"
+          "correctAnswer": "これは予測です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは予測です」 (Kore wa yosoku desu.) expresses 'This is Prediction / forecast.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは予測です (Kore wa yosoku desu.) — This is Prediction / forecast."
         },
         {
           "id": "u16_l5_5",
@@ -949,7 +980,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "対応"
+          "correctAnswer": "対応",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「対応」 (taiou) expresses 'Pronounce: Response / dealing with'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・対応 (taiou) — Pronounce: Response / dealing with"
         },
         {
           "id": "u16_l5_6",
@@ -969,7 +1001,8 @@
             "対応",
             "です"
           ],
-          "correctAnswer": "対応です"
+          "correctAnswer": "対応です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「対応です」 (taiou desu.) expresses 'It is Response / dealing with.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・対応です (taiou desu.) — It is Response / dealing with."
         },
         {
           "id": "u16_l5_7",
@@ -1009,7 +1042,8 @@
               "romaji": "katei no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「万一・予測・対応・仮定の確認」 (man-ichi, yosoku, taiou, katei no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・万一・予測・対応・仮定の確認 (man-ichi, yosoku, taiou, katei no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l5_8",
@@ -1033,7 +1067,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定について教えていただけますか？」 (katei ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Hypothesis / assumption?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定について教えていただけますか？ (katei ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Hypothesis / assumption?"
         }
       ]
     },
@@ -1082,7 +1117,8 @@
             "Confirming Possibility / potential",
             "Confirming Hypothesis / assumption"
           ],
-          "correctAnswer": "Confirming Hypothesis / assumption"
+          "correctAnswer": "Confirming Hypothesis / assumption",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定の確認」 (katei no kakunin) expresses 'Confirming Hypothesis / assumption'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定の確認 (katei no kakunin) — Confirming Hypothesis / assumption"
         },
         {
           "id": "u16_l6_2",
@@ -1102,7 +1138,8 @@
             "の",
             "に"
           ],
-          "correctAnswer": "かていのかくにん"
+          "correctAnswer": "かていのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定の確認」 (katei no kakunin) expresses 'Build 'Confirming Hypothesis / assumption''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定の確認 (katei no kakunin) — Build 'Confirming Hypothesis / assumption'"
         },
         {
           "id": "u16_l6_3",
@@ -1121,7 +1158,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な条件の確認です。」 (Kore wa ichiban taisetsu na jouken no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Condition / requirement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な条件の確認です。 (Kore wa ichiban taisetsu na jouken no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Condition / requirement."
         },
         {
           "id": "u16_l6_4",
@@ -1143,7 +1180,8 @@
             "条件の確認",
             "です"
           ],
-          "correctAnswer": "これは条件の確認です"
+          "correctAnswer": "これは条件の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは条件の確認です」 (Kore wa jouken no kakunin desu.) expresses 'This is Confirming Condition / requirement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは条件の確認です (Kore wa jouken no kakunin desu.) — This is Confirming Condition / requirement."
         },
         {
           "id": "u16_l6_5",
@@ -1160,7 +1198,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "場合の確認"
+          "correctAnswer": "場合の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合の確認」 (baai no kakunin) expresses 'Pronounce: Confirming Case / scenario'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合の確認 (baai no kakunin) — Pronounce: Confirming Case / scenario"
         },
         {
           "id": "u16_l6_6",
@@ -1180,7 +1219,8 @@
             "場合の確認",
             "です"
           ],
-          "correctAnswer": "場合の確認です"
+          "correctAnswer": "場合の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合の確認です」 (baai no kakunin desu.) expresses 'It is Confirming Case / scenario.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合の確認です (baai no kakunin desu.) — It is Confirming Case / scenario."
         },
         {
           "id": "u16_l6_7",
@@ -1220,7 +1260,8 @@
               "romaji": "moshi no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定の確認・条件の確認・場合の確認・もしの確認」 (katei no kakunin, jouken no kakunin, baai no kakunin, moshi no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定の確認・条件の確認・場合の確認・もしの確認 (katei no kakunin, jouken no kakunin, baai no kakunin, moshi no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l6_8",
@@ -1244,7 +1285,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「条件の準備はできていますか？」 (jouken no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Condition / requirement ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・条件の準備はできていますか？ (jouken no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Condition / requirement ready?"
         }
       ]
     },
@@ -1289,7 +1331,8 @@
             "Confirming Case / scenario",
             "Confirming Possibility / potential"
           ],
-          "correctAnswer": "Confirming If / supposing that"
+          "correctAnswer": "Confirming If / supposing that",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もしの確認」 (moshi no kakunin) expresses 'Confirming If / supposing that'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もしの確認 (moshi no kakunin) — Confirming If / supposing that"
         },
         {
           "id": "u16_l7_2",
@@ -1309,7 +1352,8 @@
             "く",
             "し"
           ],
-          "correctAnswer": "もしのかくにん"
+          "correctAnswer": "もしのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もしの確認」 (moshi no kakunin) expresses 'Build 'Confirming If / supposing that''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もしの確認 (moshi no kakunin) — Build 'Confirming If / supposing that'"
         },
         {
           "id": "u16_l7_3",
@@ -1328,7 +1372,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なたとえの確認です。」 (Kore wa ichiban taisetsu na tatoe no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Even if / supposing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なたとえの確認です。 (Kore wa ichiban taisetsu na tatoe no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Even if / supposing."
         },
         {
           "id": "u16_l7_4",
@@ -1350,7 +1394,8 @@
             "たとえの確認",
             "です"
           ],
-          "correctAnswer": "これはたとえの確認です"
+          "correctAnswer": "これはたとえの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはたとえの確認です」 (Kore wa tatoe no kakunin desu.) expresses 'This is Confirming Even if / supposing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはたとえの確認です (Kore wa tatoe no kakunin desu.) — This is Confirming Even if / supposing."
         },
         {
           "id": "u16_l7_5",
@@ -1367,7 +1412,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "後悔の確認"
+          "correctAnswer": "後悔の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後悔の確認」 (koukai no kakunin) expresses 'Pronounce: Confirming Regret'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後悔の確認 (koukai no kakunin) — Pronounce: Confirming Regret"
         },
         {
           "id": "u16_l7_6",
@@ -1387,7 +1433,8 @@
             "後悔の確認",
             "です"
           ],
-          "correctAnswer": "後悔の確認です"
+          "correctAnswer": "後悔の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後悔の確認です」 (koukai no kakunin desu.) expresses 'It is Confirming Regret.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後悔の確認です (koukai no kakunin desu.) — It is Confirming Regret."
         },
         {
           "id": "u16_l7_7",
@@ -1427,7 +1474,8 @@
               "romaji": "kaizen no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もしの確認・たとえの確認・後悔の確認・改善の確認」 (moshi no kakunin, tatoe no kakunin, koukai no kakunin, kaizen no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もしの確認・たとえの確認・後悔の確認・改善の確認 (moshi no kakunin, tatoe no kakunin, koukai no kakunin, kaizen no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l7_8",
@@ -1451,7 +1499,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合についてどう思われますか？」 (baai ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Case / scenario?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合についてどう思われますか？ (baai ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Case / scenario?"
         }
       ]
     },
@@ -1501,7 +1550,8 @@
             "If / supposing that",
             "Confirming Improvement / Kaizen"
           ],
-          "correctAnswer": "Confirming Improvement / Kaizen"
+          "correctAnswer": "Confirming Improvement / Kaizen",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改善の確認」 (kaizen no kakunin) expresses 'Confirming Improvement / Kaizen'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改善の確認 (kaizen no kakunin) — Confirming Improvement / Kaizen"
         },
         {
           "id": "u16_l8_2",
@@ -1521,7 +1571,8 @@
             "に",
             "く"
           ],
-          "correctAnswer": "かいぜんのかくにん"
+          "correctAnswer": "かいぜんのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改善の確認」 (kaizen no kakunin) expresses 'Build 'Confirming Improvement / Kaizen''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改善の確認 (kaizen no kakunin) — Build 'Confirming Improvement / Kaizen'"
         },
         {
           "id": "u16_l8_3",
@@ -1540,7 +1591,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な提案の確認です。」 (Kore wa ichiban taisetsu na teian no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Proposal / suggestion.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な提案の確認です。 (Kore wa ichiban taisetsu na teian no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Proposal / suggestion."
         },
         {
           "id": "u16_l8_4",
@@ -1562,7 +1613,8 @@
             "提案の確認",
             "です"
           ],
-          "correctAnswer": "これは提案の確認です"
+          "correctAnswer": "これは提案の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは提案の確認です」 (Kore wa teian no kakunin desu.) expresses 'This is Confirming Proposal / suggestion.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは提案の確認です (Kore wa teian no kakunin desu.) — This is Confirming Proposal / suggestion."
         },
         {
           "id": "u16_l8_5",
@@ -1579,7 +1631,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "可能性の確認"
+          "correctAnswer": "可能性の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「可能性の確認」 (kanousei no kakunin) expresses 'Pronounce: Confirming Possibility / potential'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・可能性の確認 (kanousei no kakunin) — Pronounce: Confirming Possibility / potential"
         },
         {
           "id": "u16_l8_6",
@@ -1599,7 +1652,8 @@
             "可能性の確認",
             "です"
           ],
-          "correctAnswer": "可能性の確認です"
+          "correctAnswer": "可能性の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「可能性の確認です」 (kanousei no kakunin desu.) expresses 'It is Confirming Possibility / potential.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・可能性の確認です (kanousei no kakunin desu.) — It is Confirming Possibility / potential."
         },
         {
           "id": "u16_l8_7",
@@ -1639,7 +1693,8 @@
               "romaji": "sentakushi no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改善の確認・提案の確認・可能性の確認・選択肢の確認」 (kaizen no kakunin, teian no kakunin, kanousei no kakunin, sentakushi no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改善の確認・提案の確認・可能性の確認・選択肢の確認 (kaizen no kakunin, teian no kakunin, kanousei no kakunin, sentakushi no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l8_8",
@@ -1663,7 +1718,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次はもしに進みましょう。」 (Tsugi wa moshi ni susumimashou.) expresses 'Speaker: Let's proceed to If / supposing that next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次はもしに進みましょう。 (Tsugi wa moshi ni susumimashou.) — Speaker: Let's proceed to If / supposing that next."
         }
       ]
     },
@@ -1713,7 +1769,8 @@
             "Regret",
             "Case / scenario"
           ],
-          "correctAnswer": "Confirming Option / choice"
+          "correctAnswer": "Confirming Option / choice",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「選択肢の確認」 (sentakushi no kakunin) expresses 'Confirming Option / choice'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・選択肢の確認 (sentakushi no kakunin) — Confirming Option / choice"
         },
         {
           "id": "u16_l9_2",
@@ -1733,7 +1790,8 @@
             "せ",
             "た"
           ],
-          "correctAnswer": "せんたくしのかくにん"
+          "correctAnswer": "せんたくしのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「選択肢の確認」 (sentakushi no kakunin) expresses 'Build 'Confirming Option / choice''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・選択肢の確認 (sentakushi no kakunin) — Build 'Confirming Option / choice'"
         },
         {
           "id": "u16_l9_3",
@@ -1752,7 +1810,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な判断の確認です。」 (Kore wa ichiban taisetsu na handan no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Judgement / decision.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な判断の確認です。 (Kore wa ichiban taisetsu na handan no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Judgement / decision."
         },
         {
           "id": "u16_l9_4",
@@ -1774,7 +1832,8 @@
             "判断の確認",
             "です"
           ],
-          "correctAnswer": "これは判断の確認です"
+          "correctAnswer": "これは判断の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは判断の確認です」 (Kore wa handan no kakunin desu.) expresses 'This is Confirming Judgement / decision.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは判断の確認です (Kore wa handan no kakunin desu.) — This is Confirming Judgement / decision."
         },
         {
           "id": "u16_l9_5",
@@ -1791,7 +1850,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "影響の確認"
+          "correctAnswer": "影響の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「影響の確認」 (eikyou no kakunin) expresses 'Pronounce: Confirming Influence / effect'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・影響の確認 (eikyou no kakunin) — Pronounce: Confirming Influence / effect"
         },
         {
           "id": "u16_l9_6",
@@ -1811,7 +1871,8 @@
             "影響の確認",
             "です"
           ],
-          "correctAnswer": "影響の確認です"
+          "correctAnswer": "影響の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「影響の確認です」 (eikyou no kakunin desu.) expresses 'It is Confirming Influence / effect.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・影響の確認です (eikyou no kakunin desu.) — It is Confirming Influence / effect."
         },
         {
           "id": "u16_l9_7",
@@ -1851,7 +1912,8 @@
               "romaji": "man-ichi no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「選択肢の確認・判断の確認・影響の確認・万一の確認」 (sentakushi no kakunin, handan no kakunin, eikyou no kakunin, man-ichi no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・選択肢の確認・判断の確認・影響の確認・万一の確認 (sentakushi no kakunin, handan no kakunin, eikyou no kakunin, man-ichi no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l9_8",
@@ -1875,7 +1937,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定について教えていただけますか？」 (katei ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Hypothesis / assumption?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定について教えていただけますか？ (katei ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Hypothesis / assumption?"
         }
       ]
     },
@@ -1924,7 +1987,8 @@
             "Confirming In the unlikely event",
             "Prediction / forecast"
           ],
-          "correctAnswer": "Confirming In the unlikely event"
+          "correctAnswer": "Confirming In the unlikely event",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「万一の確認」 (man-ichi no kakunin) expresses 'Confirming In the unlikely event'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・万一の確認 (man-ichi no kakunin) — Confirming In the unlikely event"
         },
         {
           "id": "u16_l10_2",
@@ -1944,7 +2008,8 @@
             "く",
             "ち"
           ],
-          "correctAnswer": "まんいちのかくにん"
+          "correctAnswer": "まんいちのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「万一の確認」 (man-ichi no kakunin) expresses 'Build 'Confirming In the unlikely event''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・万一の確認 (man-ichi no kakunin) — Build 'Confirming In the unlikely event'"
         },
         {
           "id": "u16_l10_3",
@@ -1963,7 +2028,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な予測の確認です。」 (Kore wa ichiban taisetsu na yosoku no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Prediction / forecast.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な予測の確認です。 (Kore wa ichiban taisetsu na yosoku no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Prediction / forecast."
         },
         {
           "id": "u16_l10_4",
@@ -1985,7 +2050,8 @@
             "予測の確認",
             "です"
           ],
-          "correctAnswer": "これは予測の確認です"
+          "correctAnswer": "これは予測の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは予測の確認です」 (Kore wa yosoku no kakunin desu.) expresses 'This is Confirming Prediction / forecast.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは予測の確認です (Kore wa yosoku no kakunin desu.) — This is Confirming Prediction / forecast."
         },
         {
           "id": "u16_l10_5",
@@ -2002,7 +2068,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "対応の確認"
+          "correctAnswer": "対応の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「対応の確認」 (taiou no kakunin) expresses 'Pronounce: Confirming Response / dealing with'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・対応の確認 (taiou no kakunin) — Pronounce: Confirming Response / dealing with"
         },
         {
           "id": "u16_l10_6",
@@ -2022,7 +2089,8 @@
             "対応の確認",
             "です"
           ],
-          "correctAnswer": "対応の確認です"
+          "correctAnswer": "対応の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「対応の確認です」 (taiou no kakunin desu.) expresses 'It is Confirming Response / dealing with.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・対応の確認です (taiou no kakunin desu.) — It is Confirming Response / dealing with."
         },
         {
           "id": "u16_l10_7",
@@ -2062,7 +2130,8 @@
               "romaji": "katei no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「万一の確認・予測の確認・対応の確認・仮定の確認」 (man-ichi no kakunin, yosoku no kakunin, taiou no kakunin, katei no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・万一の確認・予測の確認・対応の確認・仮定の確認 (man-ichi no kakunin, yosoku no kakunin, taiou no kakunin, katei no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l10_8",
@@ -2086,7 +2155,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「条件の準備はできていますか？」 (jouken no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Condition / requirement ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・条件の準備はできていますか？ (jouken no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Condition / requirement ready?"
         }
       ]
     },
@@ -2135,7 +2205,8 @@
             "Confirming Hypothesis / assumption",
             "Confirming Influence / effect"
           ],
-          "correctAnswer": "Confirming Hypothesis / assumption"
+          "correctAnswer": "Confirming Hypothesis / assumption",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定の確認」 (katei no kakunin) expresses 'Confirming Hypothesis / assumption'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定の確認 (katei no kakunin) — Confirming Hypothesis / assumption"
         },
         {
           "id": "u16_l11_2",
@@ -2155,7 +2226,8 @@
             "く",
             "い"
           ],
-          "correctAnswer": "かていのかくにん"
+          "correctAnswer": "かていのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定の確認」 (katei no kakunin) expresses 'Build 'Confirming Hypothesis / assumption''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定の確認 (katei no kakunin) — Build 'Confirming Hypothesis / assumption'"
         },
         {
           "id": "u16_l11_3",
@@ -2174,7 +2246,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な条件の確認です。」 (Kore wa ichiban taisetsu na jouken no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Condition / requirement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な条件の確認です。 (Kore wa ichiban taisetsu na jouken no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Condition / requirement."
         },
         {
           "id": "u16_l11_4",
@@ -2196,7 +2268,8 @@
             "条件の確認",
             "です"
           ],
-          "correctAnswer": "これは条件の確認です"
+          "correctAnswer": "これは条件の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは条件の確認です」 (Kore wa jouken no kakunin desu.) expresses 'This is Confirming Condition / requirement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは条件の確認です (Kore wa jouken no kakunin desu.) — This is Confirming Condition / requirement."
         },
         {
           "id": "u16_l11_5",
@@ -2213,7 +2286,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "場合の確認"
+          "correctAnswer": "場合の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合の確認」 (baai no kakunin) expresses 'Pronounce: Confirming Case / scenario'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合の確認 (baai no kakunin) — Pronounce: Confirming Case / scenario"
         },
         {
           "id": "u16_l11_6",
@@ -2233,7 +2307,8 @@
             "場合の確認",
             "です"
           ],
-          "correctAnswer": "場合の確認です"
+          "correctAnswer": "場合の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合の確認です」 (baai no kakunin desu.) expresses 'It is Confirming Case / scenario.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合の確認です (baai no kakunin desu.) — It is Confirming Case / scenario."
         },
         {
           "id": "u16_l11_7",
@@ -2273,7 +2348,8 @@
               "romaji": "moshi no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定の確認・条件の確認・場合の確認・もしの確認」 (katei no kakunin, jouken no kakunin, baai no kakunin, moshi no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定の確認・条件の確認・場合の確認・もしの確認 (katei no kakunin, jouken no kakunin, baai no kakunin, moshi no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l11_8",
@@ -2297,7 +2373,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合についてどう思われますか？」 (baai ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Case / scenario?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合についてどう思われますか？ (baai ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Case / scenario?"
         }
       ]
     },
@@ -2342,7 +2419,8 @@
             "Response / dealing with",
             "In the unlikely event"
           ],
-          "correctAnswer": "Confirming If / supposing that"
+          "correctAnswer": "Confirming If / supposing that",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もしの確認」 (moshi no kakunin) expresses 'Confirming If / supposing that'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もしの確認 (moshi no kakunin) — Confirming If / supposing that"
         },
         {
           "id": "u16_l12_2",
@@ -2362,7 +2440,8 @@
             "し",
             "め"
           ],
-          "correctAnswer": "もしのかくにん"
+          "correctAnswer": "もしのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もしの確認」 (moshi no kakunin) expresses 'Build 'Confirming If / supposing that''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もしの確認 (moshi no kakunin) — Build 'Confirming If / supposing that'"
         },
         {
           "id": "u16_l12_3",
@@ -2381,7 +2460,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なたとえの確認です。」 (Kore wa ichiban taisetsu na tatoe no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Even if / supposing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なたとえの確認です。 (Kore wa ichiban taisetsu na tatoe no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Even if / supposing."
         },
         {
           "id": "u16_l12_4",
@@ -2403,7 +2482,8 @@
             "たとえの確認",
             "です"
           ],
-          "correctAnswer": "これはたとえの確認です"
+          "correctAnswer": "これはたとえの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはたとえの確認です」 (Kore wa tatoe no kakunin desu.) expresses 'This is Confirming Even if / supposing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはたとえの確認です (Kore wa tatoe no kakunin desu.) — This is Confirming Even if / supposing."
         },
         {
           "id": "u16_l12_5",
@@ -2420,7 +2500,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "後悔の確認"
+          "correctAnswer": "後悔の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後悔の確認」 (koukai no kakunin) expresses 'Pronounce: Confirming Regret'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後悔の確認 (koukai no kakunin) — Pronounce: Confirming Regret"
         },
         {
           "id": "u16_l12_6",
@@ -2440,7 +2521,8 @@
             "後悔の確認",
             "です"
           ],
-          "correctAnswer": "後悔の確認です"
+          "correctAnswer": "後悔の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後悔の確認です」 (koukai no kakunin desu.) expresses 'It is Confirming Regret.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後悔の確認です (koukai no kakunin desu.) — It is Confirming Regret."
         },
         {
           "id": "u16_l12_7",
@@ -2480,7 +2562,8 @@
               "romaji": "katei"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もしの確認・たとえの確認・後悔の確認・仮定」 (moshi no kakunin, tatoe no kakunin, koukai no kakunin, katei) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もしの確認・たとえの確認・後悔の確認・仮定 (moshi no kakunin, tatoe no kakunin, koukai no kakunin, katei) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l12_8",
@@ -2504,7 +2587,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次はもしに進みましょう。」 (Tsugi wa moshi ni susumimashou.) expresses 'Speaker: Let's proceed to If / supposing that next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次はもしに進みましょう。 (Tsugi wa moshi ni susumimashou.) — Speaker: Let's proceed to If / supposing that next."
         }
       ]
     },
@@ -2547,7 +2631,8 @@
             "Confirming In the unlikely event",
             "Hypothesis / assumption"
           ],
-          "correctAnswer": "Hypothesis / assumption"
+          "correctAnswer": "Hypothesis / assumption",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定」 (katei) expresses 'Hypothesis / assumption'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定 (katei) — Hypothesis / assumption"
         },
         {
           "id": "u16_l13_2",
@@ -2567,7 +2652,8 @@
             "と",
             "へ"
           ],
-          "correctAnswer": "かてい"
+          "correctAnswer": "かてい",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定」 (katei) expresses 'Build 'Hypothesis / assumption''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定 (katei) — Build 'Hypothesis / assumption'"
         },
         {
           "id": "u16_l13_3",
@@ -2586,7 +2672,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な条件です。」 (Kore wa ichiban taisetsu na jouken desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Condition / requirement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な条件です。 (Kore wa ichiban taisetsu na jouken desu.) — Fill in topic particle 'は' (wa): This is the most important Condition / requirement."
         },
         {
           "id": "u16_l13_4",
@@ -2608,7 +2694,8 @@
             "条件",
             "です"
           ],
-          "correctAnswer": "これは条件です"
+          "correctAnswer": "これは条件です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは条件です」 (Kore wa jouken desu.) expresses 'This is Condition / requirement.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは条件です (Kore wa jouken desu.) — This is Condition / requirement."
         },
         {
           "id": "u16_l13_5",
@@ -2625,7 +2712,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "場合"
+          "correctAnswer": "場合",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合」 (baai) expresses 'Pronounce: Case / scenario'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合 (baai) — Pronounce: Case / scenario"
         },
         {
           "id": "u16_l13_6",
@@ -2645,7 +2733,8 @@
             "場合",
             "です"
           ],
-          "correctAnswer": "場合です"
+          "correctAnswer": "場合です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合です」 (baai desu.) expresses 'It is Case / scenario.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合です (baai desu.) — It is Case / scenario."
         },
         {
           "id": "u16_l13_7",
@@ -2685,7 +2774,8 @@
               "romaji": "moshi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定・条件・場合・もし」 (katei, jouken, baai, moshi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定・条件・場合・もし (katei, jouken, baai, moshi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l13_8",
@@ -2709,7 +2799,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「仮定について教えていただけますか？」 (katei ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Hypothesis / assumption?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・仮定について教えていただけますか？ (katei ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Hypothesis / assumption?"
         }
       ]
     },
@@ -2748,7 +2839,8 @@
             "If / supposing that",
             "Option / choice"
           ],
-          "correctAnswer": "If / supposing that"
+          "correctAnswer": "If / supposing that",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もし」 (moshi) expresses 'If / supposing that'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もし (moshi) — If / supposing that"
         },
         {
           "id": "u16_l14_2",
@@ -2768,7 +2860,8 @@
             "え",
             "む"
           ],
-          "correctAnswer": "もし"
+          "correctAnswer": "もし",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もし」 (moshi) expresses 'Build 'If / supposing that''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もし (moshi) — Build 'If / supposing that'"
         },
         {
           "id": "u16_l14_3",
@@ -2787,7 +2880,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なたとえです。」 (Kore wa ichiban taisetsu na tatoe desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Even if / supposing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なたとえです。 (Kore wa ichiban taisetsu na tatoe desu.) — Fill in topic particle 'は' (wa): This is the most important Even if / supposing."
         },
         {
           "id": "u16_l14_4",
@@ -2809,7 +2902,8 @@
             "たとえ",
             "です"
           ],
-          "correctAnswer": "これはたとえです"
+          "correctAnswer": "これはたとえです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはたとえです」 (Kore wa tatoe desu.) expresses 'This is Even if / supposing.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはたとえです (Kore wa tatoe desu.) — This is Even if / supposing."
         },
         {
           "id": "u16_l14_5",
@@ -2826,7 +2920,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "後悔"
+          "correctAnswer": "後悔",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後悔」 (koukai) expresses 'Pronounce: Regret'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後悔 (koukai) — Pronounce: Regret"
         },
         {
           "id": "u16_l14_6",
@@ -2846,7 +2941,8 @@
             "後悔",
             "です"
           ],
-          "correctAnswer": "後悔です"
+          "correctAnswer": "後悔です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「後悔です」 (koukai desu.) expresses 'It is Regret.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・後悔です (koukai desu.) — It is Regret."
         },
         {
           "id": "u16_l14_7",
@@ -2886,7 +2982,8 @@
               "romaji": "kaizen"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「もし・たとえ・後悔・改善」 (moshi, tatoe, koukai, kaizen) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・もし・たとえ・後悔・改善 (moshi, tatoe, koukai, kaizen) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l14_8",
@@ -2910,7 +3007,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「条件の準備はできていますか？」 (jouken no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Condition / requirement ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・条件の準備はできていますか？ (jouken no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Condition / requirement ready?"
         }
       ]
     },
@@ -2954,7 +3052,8 @@
             "Improvement / Kaizen",
             "Prediction / forecast"
           ],
-          "correctAnswer": "Improvement / Kaizen"
+          "correctAnswer": "Improvement / Kaizen",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改善」 (kaizen) expresses 'Improvement / Kaizen'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改善 (kaizen) — Improvement / Kaizen"
         },
         {
           "id": "u16_l15_2",
@@ -2974,7 +3073,8 @@
             "ぜ",
             "し"
           ],
-          "correctAnswer": "かいぜん"
+          "correctAnswer": "かいぜん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改善」 (kaizen) expresses 'Build 'Improvement / Kaizen''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改善 (kaizen) — Build 'Improvement / Kaizen'"
         },
         {
           "id": "u16_l15_3",
@@ -2993,7 +3093,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な提案です。」 (Kore wa ichiban taisetsu na teian desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Proposal / suggestion.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な提案です。 (Kore wa ichiban taisetsu na teian desu.) — Fill in topic particle 'は' (wa): This is the most important Proposal / suggestion."
         },
         {
           "id": "u16_l15_4",
@@ -3015,7 +3115,8 @@
             "提案",
             "です"
           ],
-          "correctAnswer": "これは提案です"
+          "correctAnswer": "これは提案です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは提案です」 (Kore wa teian desu.) expresses 'This is Proposal / suggestion.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは提案です (Kore wa teian desu.) — This is Proposal / suggestion."
         },
         {
           "id": "u16_l15_5",
@@ -3032,7 +3133,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "可能性"
+          "correctAnswer": "可能性",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「可能性」 (kanousei) expresses 'Pronounce: Possibility / potential'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・可能性 (kanousei) — Pronounce: Possibility / potential"
         },
         {
           "id": "u16_l15_6",
@@ -3052,7 +3154,8 @@
             "可能性",
             "です"
           ],
-          "correctAnswer": "可能性です"
+          "correctAnswer": "可能性です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「可能性です」 (kanousei desu.) expresses 'It is Possibility / potential.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・可能性です (kanousei desu.) — It is Possibility / potential."
         },
         {
           "id": "u16_l15_7",
@@ -3092,7 +3195,8 @@
               "romaji": "sentakushi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「改善・提案・可能性・選択肢」 (kaizen, teian, kanousei, sentakushi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・改善・提案・可能性・選択肢 (kaizen, teian, kanousei, sentakushi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u16_l15_8",
@@ -3116,7 +3220,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「場合についてどう思われますか？」 (baai ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Case / scenario?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・場合についてどう思われますか？ (baai ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Case / scenario?"
         }
       ]
     }

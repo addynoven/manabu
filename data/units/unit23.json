@@ -57,7 +57,8 @@
             "Confirming Data leak / security breach",
             "Transformation / reform"
           ],
-          "correctAnswer": "Artificial Intelligence (AI)"
+          "correctAnswer": "Artificial Intelligence (AI)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能」 (jinkou chinou) expresses 'Artificial Intelligence (AI)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能 (jinkou chinou) — Artificial Intelligence (AI)"
         },
         {
           "id": "u23_l1_2",
@@ -77,7 +78,8 @@
             "う",
             "ひ"
           ],
-          "correctAnswer": "じどうか"
+          "correctAnswer": "じどうか",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自動化」 (jidouka) expresses 'Build 'Automation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自動化 (jidouka) — Build 'Automation'"
         },
         {
           "id": "u23_l1_3",
@@ -96,7 +98,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な自動化です。」 (Kore wa ichiban taisetsu na jidouka desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Automation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な自動化です。 (Kore wa ichiban taisetsu na jidouka desu.) — Fill in topic particle 'は' (wa): This is the most important Automation."
         },
         {
           "id": "u23_l1_4",
@@ -118,7 +120,8 @@
             "自動化",
             "です"
           ],
-          "correctAnswer": "これは自動化です"
+          "correctAnswer": "これは自動化です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは自動化です」 (Kore wa jidouka desu.) expresses 'This is Automation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは自動化です (Kore wa jidouka desu.) — This is Automation."
         },
         {
           "id": "u23_l1_5",
@@ -135,7 +138,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "高齢化"
+          "correctAnswer": "高齢化",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化」 (koureika) expresses 'Pronounce: Population aging'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化 (koureika) — Pronounce: Population aging"
         },
         {
           "id": "u23_l1_6",
@@ -155,7 +159,8 @@
             "高齢化",
             "です"
           ],
-          "correctAnswer": "高齢化です"
+          "correctAnswer": "高齢化です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化です」 (koureika desu.) expresses 'It is Population aging.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化です (koureika desu.) — It is Population aging."
         },
         {
           "id": "u23_l1_7",
@@ -195,7 +200,8 @@
               "romaji": "shoushika"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能・自動化・高齢化・少子化」 (jinkou chinou, jidouka, koureika, shoushika) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能・自動化・高齢化・少子化 (jinkou chinou, jidouka, koureika, shoushika) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l1_8",
@@ -219,7 +225,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能について教えていただけますか？」 (jinkou chinou ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Artificial Intelligence (AI)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能について教えていただけますか？ (jinkou chinou ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Artificial Intelligence (AI)?"
         }
       ]
     },
@@ -265,7 +272,8 @@
             "Confirming Artificial Intelligence (AI)",
             "Adoption / implementation"
           ],
-          "correctAnswer": "Declining birthrate"
+          "correctAnswer": "Declining birthrate",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化」 (shoushika) expresses 'Declining birthrate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化 (shoushika) — Declining birthrate"
         },
         {
           "id": "u23_l2_2",
@@ -285,7 +293,8 @@
             "う",
             "ょ"
           ],
-          "correctAnswer": "しょうしか"
+          "correctAnswer": "しょうしか",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化」 (shoushika) expresses 'Build 'Declining birthrate''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化 (shoushika) — Build 'Declining birthrate'"
         },
         {
           "id": "u23_l2_3",
@@ -304,7 +313,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な革新です。」 (Kore wa ichiban taisetsu na kakushin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Innovation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な革新です。 (Kore wa ichiban taisetsu na kakushin desu.) — Fill in topic particle 'は' (wa): This is the most important Innovation."
         },
         {
           "id": "u23_l2_4",
@@ -326,7 +335,8 @@
             "革新",
             "です"
           ],
-          "correctAnswer": "これは革新です"
+          "correctAnswer": "これは革新です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは革新です」 (Kore wa kakushin desu.) expresses 'This is Innovation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは革新です (Kore wa kakushin desu.) — This is Innovation."
         },
         {
           "id": "u23_l2_5",
@@ -343,7 +353,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "持続可能"
+          "correctAnswer": "持続可能",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「持続可能」 (jizoku kanou) expresses 'Pronounce: Sustainable'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・持続可能 (jizoku kanou) — Pronounce: Sustainable"
         },
         {
           "id": "u23_l2_6",
@@ -363,7 +374,8 @@
             "持続可能",
             "です"
           ],
-          "correctAnswer": "持続可能です"
+          "correctAnswer": "持続可能です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「持続可能です」 (jizoku kanou desu.) expresses 'It is Sustainable.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・持続可能です (jizoku kanou desu.) — It is Sustainable."
         },
         {
           "id": "u23_l2_7",
@@ -403,7 +415,8 @@
               "romaji": "fukyuu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化・革新・持続可能・普及」 (shoushika, kakushin, jizoku kanou, fukyuu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化・革新・持続可能・普及 (shoushika, kakushin, jizoku kanou, fukyuu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l2_8",
@@ -427,7 +440,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自動化の準備はできていますか？」 (jidouka no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Automation ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自動化の準備はできていますか？ (jidouka no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Automation ready?"
         }
       ]
     },
@@ -471,7 +485,8 @@
             "Confirming Data leak / security breach",
             "Confirming Artificial Intelligence (AI)"
           ],
-          "correctAnswer": "Diffusion / spread"
+          "correctAnswer": "Diffusion / spread",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「普及」 (fukyuu) expresses 'Diffusion / spread'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・普及 (fukyuu) — Diffusion / spread"
         },
         {
           "id": "u23_l3_2",
@@ -491,7 +506,8 @@
             "ゅ",
             "う"
           ],
-          "correctAnswer": "ふきゅう"
+          "correctAnswer": "ふきゅう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「普及」 (fukyuu) expresses 'Build 'Diffusion / spread''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・普及 (fukyuu) — Build 'Diffusion / spread'"
         },
         {
           "id": "u23_l3_3",
@@ -510,7 +526,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な開発です。」 (Kore wa ichiban taisetsu na kaihatsu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Development / R&D.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な開発です。 (Kore wa ichiban taisetsu na kaihatsu desu.) — Fill in topic particle 'は' (wa): This is the most important Development / R&D."
         },
         {
           "id": "u23_l3_4",
@@ -532,7 +548,8 @@
             "開発",
             "です"
           ],
-          "correctAnswer": "これは開発です"
+          "correctAnswer": "これは開発です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは開発です」 (Kore wa kaihatsu desu.) expresses 'This is Development / R&D.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは開発です (Kore wa kaihatsu desu.) — This is Development / R&D."
         },
         {
           "id": "u23_l3_5",
@@ -549,7 +566,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "効率化"
+          "correctAnswer": "効率化",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「効率化」 (kouritsuka) expresses 'Pronounce: Streamlining / efficiency'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・効率化 (kouritsuka) — Pronounce: Streamlining / efficiency"
         },
         {
           "id": "u23_l3_6",
@@ -569,7 +587,8 @@
             "効率化",
             "です"
           ],
-          "correctAnswer": "効率化です"
+          "correctAnswer": "効率化です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「効率化です」 (kouritsuka desu.) expresses 'It is Streamlining / efficiency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・効率化です (kouritsuka desu.) — It is Streamlining / efficiency."
         },
         {
           "id": "u23_l3_7",
@@ -609,7 +628,8 @@
               "romaji": "dounyuu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「普及・開発・効率化・導入」 (fukyuu, kaihatsu, kouritsuka, dounyuu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・普及・開発・効率化・導入 (fukyuu, kaihatsu, kouritsuka, dounyuu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l3_8",
@@ -633,7 +653,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化についてどう思われますか？」 (koureika ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Population aging?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化についてどう思われますか？ (koureika ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Population aging?"
         }
       ]
     },
@@ -678,7 +699,8 @@
             "Adoption / implementation",
             "Confirming Ethics / moral standards"
           ],
-          "correctAnswer": "Adoption / implementation"
+          "correctAnswer": "Adoption / implementation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「導入」 (dounyuu) expresses 'Adoption / implementation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・導入 (dounyuu) — Adoption / implementation"
         },
         {
           "id": "u23_l4_2",
@@ -698,7 +720,8 @@
             "を",
             "に"
           ],
-          "correctAnswer": "どうにゅう"
+          "correctAnswer": "どうにゅう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「導入」 (dounyuu) expresses 'Build 'Adoption / implementation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・導入 (dounyuu) — Build 'Adoption / implementation'"
         },
         {
           "id": "u23_l4_3",
@@ -717,7 +740,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な課題です。」 (Kore wa ichiban taisetsu na kadai desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Challenge / issue to solve.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な課題です。 (Kore wa ichiban taisetsu na kadai desu.) — Fill in topic particle 'は' (wa): This is the most important Challenge / issue to solve."
         },
         {
           "id": "u23_l4_4",
@@ -739,7 +762,8 @@
             "課題",
             "です"
           ],
-          "correctAnswer": "これは課題です"
+          "correctAnswer": "これは課題です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは課題です」 (Kore wa kadai desu.) expresses 'This is Challenge / issue to solve.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは課題です (Kore wa kadai desu.) — This is Challenge / issue to solve."
         },
         {
           "id": "u23_l4_5",
@@ -756,7 +780,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "情報漏洩"
+          "correctAnswer": "情報漏洩",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「情報漏洩」 (jouhou rouei) expresses 'Pronounce: Data leak / security breach'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・情報漏洩 (jouhou rouei) — Pronounce: Data leak / security breach"
         },
         {
           "id": "u23_l4_6",
@@ -776,7 +801,8 @@
             "情報漏洩",
             "です"
           ],
-          "correctAnswer": "情報漏洩です"
+          "correctAnswer": "情報漏洩です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「情報漏洩です」 (jouhou rouei desu.) expresses 'It is Data leak / security breach.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・情報漏洩です (jouhou rouei desu.) — It is Data leak / security breach."
         },
         {
           "id": "u23_l4_7",
@@ -816,7 +842,8 @@
               "romaji": "rinri"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「導入・課題・情報漏洩・倫理」 (dounyuu, kadai, jouhou rouei, rinri) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・導入・課題・情報漏洩・倫理 (dounyuu, kadai, jouhou rouei, rinri) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l4_8",
@@ -840,7 +867,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は少子化に進みましょう。」 (Tsugi wa shoushika ni susumimashou.) expresses 'Speaker: Let's proceed to Declining birthrate next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は少子化に進みましょう。 (Tsugi wa shoushika ni susumimashou.) — Speaker: Let's proceed to Declining birthrate next."
         }
       ]
     },
@@ -884,7 +912,8 @@
             "Ethics / moral standards",
             "Confirming Population aging"
           ],
-          "correctAnswer": "Ethics / moral standards"
+          "correctAnswer": "Ethics / moral standards",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「倫理」 (rinri) expresses 'Ethics / moral standards'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・倫理 (rinri) — Ethics / moral standards"
         },
         {
           "id": "u23_l5_2",
@@ -904,7 +933,8 @@
             "え",
             "く"
           ],
-          "correctAnswer": "りんり"
+          "correctAnswer": "りんり",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「倫理」 (rinri) expresses 'Build 'Ethics / moral standards''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・倫理 (rinri) — Build 'Ethics / moral standards'"
         },
         {
           "id": "u23_l5_3",
@@ -923,7 +953,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な変革です。」 (Kore wa ichiban taisetsu na henkaku desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Transformation / reform.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な変革です。 (Kore wa ichiban taisetsu na henkaku desu.) — Fill in topic particle 'は' (wa): This is the most important Transformation / reform."
         },
         {
           "id": "u23_l5_4",
@@ -945,7 +975,8 @@
             "変革",
             "です"
           ],
-          "correctAnswer": "これは変革です"
+          "correctAnswer": "これは変革です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは変革です」 (Kore wa henkaku desu.) expresses 'This is Transformation / reform.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは変革です (Kore wa henkaku desu.) — This is Transformation / reform."
         },
         {
           "id": "u23_l5_5",
@@ -962,7 +993,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "将来性"
+          "correctAnswer": "将来性",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「将来性」 (shouraisei) expresses 'Pronounce: Future potential / promise'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・将来性 (shouraisei) — Pronounce: Future potential / promise"
         },
         {
           "id": "u23_l5_6",
@@ -982,7 +1014,8 @@
             "将来性",
             "です"
           ],
-          "correctAnswer": "将来性です"
+          "correctAnswer": "将来性です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「将来性です」 (shouraisei desu.) expresses 'It is Future potential / promise.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・将来性です (shouraisei desu.) — It is Future potential / promise."
         },
         {
           "id": "u23_l5_7",
@@ -1022,7 +1055,8 @@
               "romaji": "jinkou chinou no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「倫理・変革・将来性・人工知能の確認」 (rinri, henkaku, shouraisei, jinkou chinou no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・倫理・変革・将来性・人工知能の確認 (rinri, henkaku, shouraisei, jinkou chinou no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l5_8",
@@ -1046,7 +1080,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能について教えていただけますか？」 (jinkou chinou ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Artificial Intelligence (AI)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能について教えていただけますか？ (jinkou chinou ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Artificial Intelligence (AI)?"
         }
       ]
     },
@@ -1099,7 +1134,8 @@
             "Artificial Intelligence (AI)",
             "Confirming Artificial Intelligence (AI)"
           ],
-          "correctAnswer": "Confirming Artificial Intelligence (AI)"
+          "correctAnswer": "Confirming Artificial Intelligence (AI)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能の確認」 (jinkou chinou no kakunin) expresses 'Confirming Artificial Intelligence (AI)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能の確認 (jinkou chinou no kakunin) — Confirming Artificial Intelligence (AI)"
         },
         {
           "id": "u23_l6_2",
@@ -1119,7 +1155,8 @@
             "の",
             "こ"
           ],
-          "correctAnswer": "じんこうちのうのかくにん"
+          "correctAnswer": "じんこうちのうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能の確認」 (jinkou chinou no kakunin) expresses 'Build 'Confirming Artificial Intelligence (AI)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能の確認 (jinkou chinou no kakunin) — Build 'Confirming Artificial Intelligence (AI)'"
         },
         {
           "id": "u23_l6_3",
@@ -1138,7 +1175,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な自動化の確認です。」 (Kore wa ichiban taisetsu na jidouka no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Automation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な自動化の確認です。 (Kore wa ichiban taisetsu na jidouka no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Automation."
         },
         {
           "id": "u23_l6_4",
@@ -1160,7 +1197,8 @@
             "自動化の確認",
             "です"
           ],
-          "correctAnswer": "これは自動化の確認です"
+          "correctAnswer": "これは自動化の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは自動化の確認です」 (Kore wa jidouka no kakunin desu.) expresses 'This is Confirming Automation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは自動化の確認です (Kore wa jidouka no kakunin desu.) — This is Confirming Automation."
         },
         {
           "id": "u23_l6_5",
@@ -1177,7 +1215,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "高齢化の確認"
+          "correctAnswer": "高齢化の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化の確認」 (koureika no kakunin) expresses 'Pronounce: Confirming Population aging'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化の確認 (koureika no kakunin) — Pronounce: Confirming Population aging"
         },
         {
           "id": "u23_l6_6",
@@ -1197,7 +1236,8 @@
             "高齢化の確認",
             "です"
           ],
-          "correctAnswer": "高齢化の確認です"
+          "correctAnswer": "高齢化の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化の確認です」 (koureika no kakunin desu.) expresses 'It is Confirming Population aging.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化の確認です (koureika no kakunin desu.) — It is Confirming Population aging."
         },
         {
           "id": "u23_l6_7",
@@ -1237,7 +1277,8 @@
               "romaji": "shoushika no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能の確認・自動化の確認・高齢化の確認・少子化の確認」 (jinkou chinou no kakunin, jidouka no kakunin, koureika no kakunin, shoushika no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能の確認・自動化の確認・高齢化の確認・少子化の確認 (jinkou chinou no kakunin, jidouka no kakunin, koureika no kakunin, shoushika no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l6_8",
@@ -1261,7 +1302,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自動化の準備はできていますか？」 (jidouka no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Automation ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自動化の準備はできていますか？ (jidouka no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Automation ready?"
         }
       ]
     },
@@ -1313,7 +1355,8 @@
             "Confirming Challenge / issue to solve",
             "Confirming Automation"
           ],
-          "correctAnswer": "Confirming Declining birthrate"
+          "correctAnswer": "Confirming Declining birthrate",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化の確認」 (shoushika no kakunin) expresses 'Confirming Declining birthrate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化の確認 (shoushika no kakunin) — Confirming Declining birthrate"
         },
         {
           "id": "u23_l7_2",
@@ -1333,7 +1376,8 @@
             "の",
             "ょ"
           ],
-          "correctAnswer": "しょうしかのかくにん"
+          "correctAnswer": "しょうしかのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化の確認」 (shoushika no kakunin) expresses 'Build 'Confirming Declining birthrate''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化の確認 (shoushika no kakunin) — Build 'Confirming Declining birthrate'"
         },
         {
           "id": "u23_l7_3",
@@ -1352,7 +1396,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な革新の確認です。」 (Kore wa ichiban taisetsu na kakushin no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Innovation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な革新の確認です。 (Kore wa ichiban taisetsu na kakushin no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Innovation."
         },
         {
           "id": "u23_l7_4",
@@ -1374,7 +1418,8 @@
             "革新の確認",
             "です"
           ],
-          "correctAnswer": "これは革新の確認です"
+          "correctAnswer": "これは革新の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは革新の確認です」 (Kore wa kakushin no kakunin desu.) expresses 'This is Confirming Innovation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは革新の確認です (Kore wa kakushin no kakunin desu.) — This is Confirming Innovation."
         },
         {
           "id": "u23_l7_5",
@@ -1391,7 +1436,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "持続可能の確認"
+          "correctAnswer": "持続可能の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「持続可能の確認」 (jizoku kanou no kakunin) expresses 'Pronounce: Confirming Sustainable'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・持続可能の確認 (jizoku kanou no kakunin) — Pronounce: Confirming Sustainable"
         },
         {
           "id": "u23_l7_6",
@@ -1411,7 +1457,8 @@
             "持続可能の確認",
             "です"
           ],
-          "correctAnswer": "持続可能の確認です"
+          "correctAnswer": "持続可能の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「持続可能の確認です」 (jizoku kanou no kakunin desu.) expresses 'It is Confirming Sustainable.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・持続可能の確認です (jizoku kanou no kakunin desu.) — It is Confirming Sustainable."
         },
         {
           "id": "u23_l7_7",
@@ -1451,7 +1498,8 @@
               "romaji": "fukyuu no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化の確認・革新の確認・持続可能の確認・普及の確認」 (shoushika no kakunin, kakushin no kakunin, jizoku kanou no kakunin, fukyuu no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化の確認・革新の確認・持続可能の確認・普及の確認 (shoushika no kakunin, kakushin no kakunin, jizoku kanou no kakunin, fukyuu no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l7_8",
@@ -1475,7 +1523,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化についてどう思われますか？」 (koureika ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Population aging?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化についてどう思われますか？ (koureika ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Population aging?"
         }
       ]
     },
@@ -1525,7 +1574,8 @@
             "Confirming Diffusion / spread",
             "Confirming Future potential / promise"
           ],
-          "correctAnswer": "Confirming Diffusion / spread"
+          "correctAnswer": "Confirming Diffusion / spread",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「普及の確認」 (fukyuu no kakunin) expresses 'Confirming Diffusion / spread'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・普及の確認 (fukyuu no kakunin) — Confirming Diffusion / spread"
         },
         {
           "id": "u23_l8_2",
@@ -1545,7 +1595,8 @@
             "う",
             "き"
           ],
-          "correctAnswer": "ふきゅうのかくにん"
+          "correctAnswer": "ふきゅうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「普及の確認」 (fukyuu no kakunin) expresses 'Build 'Confirming Diffusion / spread''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・普及の確認 (fukyuu no kakunin) — Build 'Confirming Diffusion / spread'"
         },
         {
           "id": "u23_l8_3",
@@ -1564,7 +1615,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な開発の確認です。」 (Kore wa ichiban taisetsu na kaihatsu no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Development / R&D.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な開発の確認です。 (Kore wa ichiban taisetsu na kaihatsu no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Development / R&D."
         },
         {
           "id": "u23_l8_4",
@@ -1586,7 +1637,8 @@
             "開発の確認",
             "です"
           ],
-          "correctAnswer": "これは開発の確認です"
+          "correctAnswer": "これは開発の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは開発の確認です」 (Kore wa kaihatsu no kakunin desu.) expresses 'This is Confirming Development / R&D.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは開発の確認です (Kore wa kaihatsu no kakunin desu.) — This is Confirming Development / R&D."
         },
         {
           "id": "u23_l8_5",
@@ -1603,7 +1655,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "効率化の確認"
+          "correctAnswer": "効率化の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「効率化の確認」 (kouritsuka no kakunin) expresses 'Pronounce: Confirming Streamlining / efficiency'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・効率化の確認 (kouritsuka no kakunin) — Pronounce: Confirming Streamlining / efficiency"
         },
         {
           "id": "u23_l8_6",
@@ -1623,7 +1676,8 @@
             "効率化の確認",
             "です"
           ],
-          "correctAnswer": "効率化の確認です"
+          "correctAnswer": "効率化の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「効率化の確認です」 (kouritsuka no kakunin desu.) expresses 'It is Confirming Streamlining / efficiency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・効率化の確認です (kouritsuka no kakunin desu.) — It is Confirming Streamlining / efficiency."
         },
         {
           "id": "u23_l8_7",
@@ -1663,7 +1717,8 @@
               "romaji": "dounyuu no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「普及の確認・開発の確認・効率化の確認・導入の確認」 (fukyuu no kakunin, kaihatsu no kakunin, kouritsuka no kakunin, dounyuu no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・普及の確認・開発の確認・効率化の確認・導入の確認 (fukyuu no kakunin, kaihatsu no kakunin, kouritsuka no kakunin, dounyuu no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l8_8",
@@ -1687,7 +1742,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は少子化に進みましょう。」 (Tsugi wa shoushika ni susumimashou.) expresses 'Speaker: Let's proceed to Declining birthrate next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は少子化に進みましょう。 (Tsugi wa shoushika ni susumimashou.) — Speaker: Let's proceed to Declining birthrate next."
         }
       ]
     },
@@ -1738,7 +1794,8 @@
             "Confirming Innovation",
             "Declining birthrate"
           ],
-          "correctAnswer": "Confirming Adoption / implementation"
+          "correctAnswer": "Confirming Adoption / implementation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「導入の確認」 (dounyuu no kakunin) expresses 'Confirming Adoption / implementation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・導入の確認 (dounyuu no kakunin) — Confirming Adoption / implementation"
         },
         {
           "id": "u23_l9_2",
@@ -1758,7 +1815,8 @@
             "ゅ",
             "く"
           ],
-          "correctAnswer": "どうにゅうのかくにん"
+          "correctAnswer": "どうにゅうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「導入の確認」 (dounyuu no kakunin) expresses 'Build 'Confirming Adoption / implementation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・導入の確認 (dounyuu no kakunin) — Build 'Confirming Adoption / implementation'"
         },
         {
           "id": "u23_l9_3",
@@ -1777,7 +1835,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な課題の確認です。」 (Kore wa ichiban taisetsu na kadai no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Challenge / issue to solve.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な課題の確認です。 (Kore wa ichiban taisetsu na kadai no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Challenge / issue to solve."
         },
         {
           "id": "u23_l9_4",
@@ -1799,7 +1857,8 @@
             "課題の確認",
             "です"
           ],
-          "correctAnswer": "これは課題の確認です"
+          "correctAnswer": "これは課題の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは課題の確認です」 (Kore wa kadai no kakunin desu.) expresses 'This is Confirming Challenge / issue to solve.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは課題の確認です (Kore wa kadai no kakunin desu.) — This is Confirming Challenge / issue to solve."
         },
         {
           "id": "u23_l9_5",
@@ -1816,7 +1875,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "情報漏洩の確認"
+          "correctAnswer": "情報漏洩の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「情報漏洩の確認」 (jouhou rouei no kakunin) expresses 'Pronounce: Confirming Data leak / security breach'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・情報漏洩の確認 (jouhou rouei no kakunin) — Pronounce: Confirming Data leak / security breach"
         },
         {
           "id": "u23_l9_6",
@@ -1836,7 +1896,8 @@
             "情報漏洩の確認",
             "です"
           ],
-          "correctAnswer": "情報漏洩の確認です"
+          "correctAnswer": "情報漏洩の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「情報漏洩の確認です」 (jouhou rouei no kakunin desu.) expresses 'It is Confirming Data leak / security breach.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・情報漏洩の確認です (jouhou rouei no kakunin desu.) — It is Confirming Data leak / security breach."
         },
         {
           "id": "u23_l9_7",
@@ -1876,7 +1937,8 @@
               "romaji": "rinri no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「導入の確認・課題の確認・情報漏洩の確認・倫理の確認」 (dounyuu no kakunin, kadai no kakunin, jouhou rouei no kakunin, rinri no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・導入の確認・課題の確認・情報漏洩の確認・倫理の確認 (dounyuu no kakunin, kadai no kakunin, jouhou rouei no kakunin, rinri no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l9_8",
@@ -1900,7 +1962,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能について教えていただけますか？」 (jinkou chinou ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Artificial Intelligence (AI)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能について教えていただけますか？ (jinkou chinou ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Artificial Intelligence (AI)?"
         }
       ]
     },
@@ -1950,7 +2013,8 @@
             "Confirming Ethics / moral standards",
             "Confirming Sustainable"
           ],
-          "correctAnswer": "Confirming Ethics / moral standards"
+          "correctAnswer": "Confirming Ethics / moral standards",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「倫理の確認」 (rinri no kakunin) expresses 'Confirming Ethics / moral standards'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・倫理の確認 (rinri no kakunin) — Confirming Ethics / moral standards"
         },
         {
           "id": "u23_l10_2",
@@ -1970,7 +2034,8 @@
             "か",
             "り"
           ],
-          "correctAnswer": "りんりのかくにん"
+          "correctAnswer": "りんりのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「倫理の確認」 (rinri no kakunin) expresses 'Build 'Confirming Ethics / moral standards''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・倫理の確認 (rinri no kakunin) — Build 'Confirming Ethics / moral standards'"
         },
         {
           "id": "u23_l10_3",
@@ -1989,7 +2054,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な変革の確認です。」 (Kore wa ichiban taisetsu na henkaku no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Transformation / reform.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な変革の確認です。 (Kore wa ichiban taisetsu na henkaku no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Transformation / reform."
         },
         {
           "id": "u23_l10_4",
@@ -2011,7 +2076,8 @@
             "変革の確認",
             "です"
           ],
-          "correctAnswer": "これは変革の確認です"
+          "correctAnswer": "これは変革の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは変革の確認です」 (Kore wa henkaku no kakunin desu.) expresses 'This is Confirming Transformation / reform.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは変革の確認です (Kore wa henkaku no kakunin desu.) — This is Confirming Transformation / reform."
         },
         {
           "id": "u23_l10_5",
@@ -2028,7 +2094,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "将来性の確認"
+          "correctAnswer": "将来性の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「将来性の確認」 (shouraisei no kakunin) expresses 'Pronounce: Confirming Future potential / promise'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・将来性の確認 (shouraisei no kakunin) — Pronounce: Confirming Future potential / promise"
         },
         {
           "id": "u23_l10_6",
@@ -2048,7 +2115,8 @@
             "将来性の確認",
             "です"
           ],
-          "correctAnswer": "将来性の確認です"
+          "correctAnswer": "将来性の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「将来性の確認です」 (shouraisei no kakunin desu.) expresses 'It is Confirming Future potential / promise.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・将来性の確認です (shouraisei no kakunin desu.) — It is Confirming Future potential / promise."
         },
         {
           "id": "u23_l10_7",
@@ -2088,7 +2156,8 @@
               "romaji": "jinkou chinou no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「倫理の確認・変革の確認・将来性の確認・人工知能の確認」 (rinri no kakunin, henkaku no kakunin, shouraisei no kakunin, jinkou chinou no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・倫理の確認・変革の確認・将来性の確認・人工知能の確認 (rinri no kakunin, henkaku no kakunin, shouraisei no kakunin, jinkou chinou no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l10_8",
@@ -2112,7 +2181,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自動化の準備はできていますか？」 (jidouka no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Automation ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自動化の準備はできていますか？ (jidouka no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Automation ready?"
         }
       ]
     },
@@ -2165,7 +2235,8 @@
             "Automation",
             "Confirming Challenge / issue to solve"
           ],
-          "correctAnswer": "Confirming Artificial Intelligence (AI)"
+          "correctAnswer": "Confirming Artificial Intelligence (AI)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能の確認」 (jinkou chinou no kakunin) expresses 'Confirming Artificial Intelligence (AI)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能の確認 (jinkou chinou no kakunin) — Confirming Artificial Intelligence (AI)"
         },
         {
           "id": "u23_l11_2",
@@ -2185,7 +2256,8 @@
             "じ",
             "ち"
           ],
-          "correctAnswer": "じんこうちのうのかくにん"
+          "correctAnswer": "じんこうちのうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能の確認」 (jinkou chinou no kakunin) expresses 'Build 'Confirming Artificial Intelligence (AI)''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能の確認 (jinkou chinou no kakunin) — Build 'Confirming Artificial Intelligence (AI)'"
         },
         {
           "id": "u23_l11_3",
@@ -2204,7 +2276,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な自動化の確認です。」 (Kore wa ichiban taisetsu na jidouka no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Automation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な自動化の確認です。 (Kore wa ichiban taisetsu na jidouka no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Automation."
         },
         {
           "id": "u23_l11_4",
@@ -2226,7 +2298,8 @@
             "自動化の確認",
             "です"
           ],
-          "correctAnswer": "これは自動化の確認です"
+          "correctAnswer": "これは自動化の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは自動化の確認です」 (Kore wa jidouka no kakunin desu.) expresses 'This is Confirming Automation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは自動化の確認です (Kore wa jidouka no kakunin desu.) — This is Confirming Automation."
         },
         {
           "id": "u23_l11_5",
@@ -2243,7 +2316,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "高齢化の確認"
+          "correctAnswer": "高齢化の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化の確認」 (koureika no kakunin) expresses 'Pronounce: Confirming Population aging'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化の確認 (koureika no kakunin) — Pronounce: Confirming Population aging"
         },
         {
           "id": "u23_l11_6",
@@ -2263,7 +2337,8 @@
             "高齢化の確認",
             "です"
           ],
-          "correctAnswer": "高齢化の確認です"
+          "correctAnswer": "高齢化の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化の確認です」 (koureika no kakunin desu.) expresses 'It is Confirming Population aging.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化の確認です (koureika no kakunin desu.) — It is Confirming Population aging."
         },
         {
           "id": "u23_l11_7",
@@ -2303,7 +2378,8 @@
               "romaji": "shoushika no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能の確認・自動化の確認・高齢化の確認・少子化の確認」 (jinkou chinou no kakunin, jidouka no kakunin, koureika no kakunin, shoushika no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能の確認・自動化の確認・高齢化の確認・少子化の確認 (jinkou chinou no kakunin, jidouka no kakunin, koureika no kakunin, shoushika no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l11_8",
@@ -2327,7 +2403,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化についてどう思われますか？」 (koureika ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Population aging?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化についてどう思われますか？ (koureika ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Population aging?"
         }
       ]
     },
@@ -2379,7 +2456,8 @@
             "Confirming Artificial Intelligence (AI)",
             "Diffusion / spread"
           ],
-          "correctAnswer": "Confirming Declining birthrate"
+          "correctAnswer": "Confirming Declining birthrate",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化の確認」 (shoushika no kakunin) expresses 'Confirming Declining birthrate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化の確認 (shoushika no kakunin) — Confirming Declining birthrate"
         },
         {
           "id": "u23_l12_2",
@@ -2399,7 +2477,8 @@
             "か",
             "の"
           ],
-          "correctAnswer": "しょうしかのかくにん"
+          "correctAnswer": "しょうしかのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化の確認」 (shoushika no kakunin) expresses 'Build 'Confirming Declining birthrate''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化の確認 (shoushika no kakunin) — Build 'Confirming Declining birthrate'"
         },
         {
           "id": "u23_l12_3",
@@ -2418,7 +2497,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な革新の確認です。」 (Kore wa ichiban taisetsu na kakushin no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Innovation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な革新の確認です。 (Kore wa ichiban taisetsu na kakushin no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Innovation."
         },
         {
           "id": "u23_l12_4",
@@ -2440,7 +2519,8 @@
             "革新の確認",
             "です"
           ],
-          "correctAnswer": "これは革新の確認です"
+          "correctAnswer": "これは革新の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは革新の確認です」 (Kore wa kakushin no kakunin desu.) expresses 'This is Confirming Innovation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは革新の確認です (Kore wa kakushin no kakunin desu.) — This is Confirming Innovation."
         },
         {
           "id": "u23_l12_5",
@@ -2457,7 +2537,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "持続可能の確認"
+          "correctAnswer": "持続可能の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「持続可能の確認」 (jizoku kanou no kakunin) expresses 'Pronounce: Confirming Sustainable'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・持続可能の確認 (jizoku kanou no kakunin) — Pronounce: Confirming Sustainable"
         },
         {
           "id": "u23_l12_6",
@@ -2477,7 +2558,8 @@
             "持続可能の確認",
             "です"
           ],
-          "correctAnswer": "持続可能の確認です"
+          "correctAnswer": "持続可能の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「持続可能の確認です」 (jizoku kanou no kakunin desu.) expresses 'It is Confirming Sustainable.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・持続可能の確認です (jizoku kanou no kakunin desu.) — It is Confirming Sustainable."
         },
         {
           "id": "u23_l12_7",
@@ -2517,7 +2599,8 @@
               "romaji": "jinkou chinou"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化の確認・革新の確認・持続可能の確認・人工知能」 (shoushika no kakunin, kakushin no kakunin, jizoku kanou no kakunin, jinkou chinou) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化の確認・革新の確認・持続可能の確認・人工知能 (shoushika no kakunin, kakushin no kakunin, jizoku kanou no kakunin, jinkou chinou) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l12_8",
@@ -2541,7 +2624,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は少子化に進みましょう。」 (Tsugi wa shoushika ni susumimashou.) expresses 'Speaker: Let's proceed to Declining birthrate next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は少子化に進みましょう。 (Tsugi wa shoushika ni susumimashou.) — Speaker: Let's proceed to Declining birthrate next."
         }
       ]
     },
@@ -2588,7 +2672,8 @@
             "Artificial Intelligence (AI)",
             "Confirming Future potential / promise"
           ],
-          "correctAnswer": "Artificial Intelligence (AI)"
+          "correctAnswer": "Artificial Intelligence (AI)",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能」 (jinkou chinou) expresses 'Artificial Intelligence (AI)'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能 (jinkou chinou) — Artificial Intelligence (AI)"
         },
         {
           "id": "u23_l13_2",
@@ -2608,7 +2693,8 @@
             "け",
             "か"
           ],
-          "correctAnswer": "じどうか"
+          "correctAnswer": "じどうか",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自動化」 (jidouka) expresses 'Build 'Automation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自動化 (jidouka) — Build 'Automation'"
         },
         {
           "id": "u23_l13_3",
@@ -2627,7 +2713,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な自動化です。」 (Kore wa ichiban taisetsu na jidouka desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Automation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な自動化です。 (Kore wa ichiban taisetsu na jidouka desu.) — Fill in topic particle 'は' (wa): This is the most important Automation."
         },
         {
           "id": "u23_l13_4",
@@ -2649,7 +2735,8 @@
             "自動化",
             "です"
           ],
-          "correctAnswer": "これは自動化です"
+          "correctAnswer": "これは自動化です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは自動化です」 (Kore wa jidouka desu.) expresses 'This is Automation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは自動化です (Kore wa jidouka desu.) — This is Automation."
         },
         {
           "id": "u23_l13_5",
@@ -2666,7 +2753,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "高齢化"
+          "correctAnswer": "高齢化",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化」 (koureika) expresses 'Pronounce: Population aging'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化 (koureika) — Pronounce: Population aging"
         },
         {
           "id": "u23_l13_6",
@@ -2686,7 +2774,8 @@
             "高齢化",
             "です"
           ],
-          "correctAnswer": "高齢化です"
+          "correctAnswer": "高齢化です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化です」 (koureika desu.) expresses 'It is Population aging.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化です (koureika desu.) — It is Population aging."
         },
         {
           "id": "u23_l13_7",
@@ -2726,7 +2815,8 @@
               "romaji": "shoushika"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能・自動化・高齢化・少子化」 (jinkou chinou, jidouka, koureika, shoushika) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能・自動化・高齢化・少子化 (jinkou chinou, jidouka, koureika, shoushika) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l13_8",
@@ -2750,7 +2840,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「人工知能について教えていただけますか？」 (jinkou chinou ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Artificial Intelligence (AI)?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・人工知能について教えていただけますか？ (jinkou chinou ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Artificial Intelligence (AI)?"
         }
       ]
     },
@@ -2796,7 +2887,8 @@
             "Declining birthrate",
             "Confirming Transformation / reform"
           ],
-          "correctAnswer": "Declining birthrate"
+          "correctAnswer": "Declining birthrate",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化」 (shoushika) expresses 'Declining birthrate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化 (shoushika) — Declining birthrate"
         },
         {
           "id": "u23_l14_2",
@@ -2816,7 +2908,8 @@
             "う",
             "か"
           ],
-          "correctAnswer": "しょうしか"
+          "correctAnswer": "しょうしか",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化」 (shoushika) expresses 'Build 'Declining birthrate''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化 (shoushika) — Build 'Declining birthrate'"
         },
         {
           "id": "u23_l14_3",
@@ -2835,7 +2928,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な革新です。」 (Kore wa ichiban taisetsu na kakushin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Innovation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な革新です。 (Kore wa ichiban taisetsu na kakushin desu.) — Fill in topic particle 'は' (wa): This is the most important Innovation."
         },
         {
           "id": "u23_l14_4",
@@ -2857,7 +2950,8 @@
             "革新",
             "です"
           ],
-          "correctAnswer": "これは革新です"
+          "correctAnswer": "これは革新です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは革新です」 (Kore wa kakushin desu.) expresses 'This is Innovation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは革新です (Kore wa kakushin desu.) — This is Innovation."
         },
         {
           "id": "u23_l14_5",
@@ -2874,7 +2968,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "持続可能"
+          "correctAnswer": "持続可能",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「持続可能」 (jizoku kanou) expresses 'Pronounce: Sustainable'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・持続可能 (jizoku kanou) — Pronounce: Sustainable"
         },
         {
           "id": "u23_l14_6",
@@ -2894,7 +2989,8 @@
             "持続可能",
             "です"
           ],
-          "correctAnswer": "持続可能です"
+          "correctAnswer": "持続可能です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「持続可能です」 (jizoku kanou desu.) expresses 'It is Sustainable.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・持続可能です (jizoku kanou desu.) — It is Sustainable."
         },
         {
           "id": "u23_l14_7",
@@ -2934,7 +3030,8 @@
               "romaji": "fukyuu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「少子化・革新・持続可能・普及」 (shoushika, kakushin, jizoku kanou, fukyuu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・少子化・革新・持続可能・普及 (shoushika, kakushin, jizoku kanou, fukyuu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l14_8",
@@ -2958,7 +3055,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「自動化の準備はできていますか？」 (jidouka no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Automation ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・自動化の準備はできていますか？ (jidouka no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Automation ready?"
         }
       ]
     },
@@ -3002,7 +3100,8 @@
             "Confirming Artificial Intelligence (AI)",
             "Diffusion / spread"
           ],
-          "correctAnswer": "Diffusion / spread"
+          "correctAnswer": "Diffusion / spread",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「普及」 (fukyuu) expresses 'Diffusion / spread'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・普及 (fukyuu) — Diffusion / spread"
         },
         {
           "id": "u23_l15_2",
@@ -3022,7 +3121,8 @@
             "ゅ",
             "ふ"
           ],
-          "correctAnswer": "ふきゅう"
+          "correctAnswer": "ふきゅう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「普及」 (fukyuu) expresses 'Build 'Diffusion / spread''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・普及 (fukyuu) — Build 'Diffusion / spread'"
         },
         {
           "id": "u23_l15_3",
@@ -3041,7 +3141,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な開発です。」 (Kore wa ichiban taisetsu na kaihatsu desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Development / R&D.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な開発です。 (Kore wa ichiban taisetsu na kaihatsu desu.) — Fill in topic particle 'は' (wa): This is the most important Development / R&D."
         },
         {
           "id": "u23_l15_4",
@@ -3063,7 +3163,8 @@
             "開発",
             "です"
           ],
-          "correctAnswer": "これは開発です"
+          "correctAnswer": "これは開発です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは開発です」 (Kore wa kaihatsu desu.) expresses 'This is Development / R&D.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは開発です (Kore wa kaihatsu desu.) — This is Development / R&D."
         },
         {
           "id": "u23_l15_5",
@@ -3080,7 +3181,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "効率化"
+          "correctAnswer": "効率化",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「効率化」 (kouritsuka) expresses 'Pronounce: Streamlining / efficiency'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・効率化 (kouritsuka) — Pronounce: Streamlining / efficiency"
         },
         {
           "id": "u23_l15_6",
@@ -3100,7 +3202,8 @@
             "効率化",
             "です"
           ],
-          "correctAnswer": "効率化です"
+          "correctAnswer": "効率化です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「効率化です」 (kouritsuka desu.) expresses 'It is Streamlining / efficiency.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・効率化です (kouritsuka desu.) — It is Streamlining / efficiency."
         },
         {
           "id": "u23_l15_7",
@@ -3140,7 +3243,8 @@
               "romaji": "dounyuu"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「普及・開発・効率化・導入」 (fukyuu, kaihatsu, kouritsuka, dounyuu) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・普及・開発・効率化・導入 (fukyuu, kaihatsu, kouritsuka, dounyuu) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u23_l15_8",
@@ -3164,7 +3268,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「高齢化についてどう思われますか？」 (koureika ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Population aging?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・高齢化についてどう思われますか？ (koureika ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Population aging?"
         }
       ]
     }

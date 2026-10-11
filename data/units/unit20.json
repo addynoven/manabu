@@ -53,7 +53,8 @@
             "Inflation",
             "Confirming Stock price"
           ],
-          "correctAnswer": "Economic climate"
+          "correctAnswer": "Economic climate",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気」 (keiki) expresses 'Economic climate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気 (keiki) — Economic climate"
         },
         {
           "id": "u20_l1_2",
@@ -73,7 +74,8 @@
             "き",
             "を"
           ],
-          "correctAnswer": "けいき"
+          "correctAnswer": "けいき",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気」 (keiki) expresses 'Build 'Economic climate''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気 (keiki) — Build 'Economic climate'"
         },
         {
           "id": "u20_l1_3",
@@ -92,7 +94,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な株価です。」 (Kore wa ichiban taisetsu na kabuka desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Stock price.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な株価です。 (Kore wa ichiban taisetsu na kabuka desu.) — Fill in topic particle 'は' (wa): This is the most important Stock price."
         },
         {
           "id": "u20_l1_4",
@@ -114,7 +116,8 @@
             "株価",
             "です"
           ],
-          "correctAnswer": "これは株価です"
+          "correctAnswer": "これは株価です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは株価です」 (Kore wa kabuka desu.) expresses 'This is Stock price.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは株価です (Kore wa kabuka desu.) — This is Stock price."
         },
         {
           "id": "u20_l1_5",
@@ -131,7 +134,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "円安"
+          "correctAnswer": "円安",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安」 (enyasu) expresses 'Pronounce: Weak yen depreciation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安 (enyasu) — Pronounce: Weak yen depreciation"
         },
         {
           "id": "u20_l1_6",
@@ -151,7 +155,8 @@
             "円安",
             "です"
           ],
-          "correctAnswer": "円安です"
+          "correctAnswer": "円安です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安です」 (enyasu desu.) expresses 'It is Weak yen depreciation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安です (enyasu desu.) — It is Weak yen depreciation."
         },
         {
           "id": "u20_l1_7",
@@ -191,7 +196,8 @@
               "romaji": "endaka"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気・株価・円安・円高」 (keiki, kabuka, enyasu, endaka) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気・株価・円安・円高 (keiki, kabuka, enyasu, endaka) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l1_8",
@@ -215,7 +221,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気について教えていただけますか？」 (keiki ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Economic climate?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気について教えていただけますか？ (keiki ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Economic climate?"
         }
       ]
     },
@@ -256,7 +263,8 @@
             "Confirming Strong yen appreciation",
             "Confirming Growth rate"
           ],
-          "correctAnswer": "Strong yen appreciation"
+          "correctAnswer": "Strong yen appreciation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高」 (endaka) expresses 'Strong yen appreciation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高 (endaka) — Strong yen appreciation"
         },
         {
           "id": "u20_l2_2",
@@ -276,7 +284,8 @@
             "だ",
             "か"
           ],
-          "correctAnswer": "えんだか"
+          "correctAnswer": "えんだか",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高」 (endaka) expresses 'Build 'Strong yen appreciation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高 (endaka) — Build 'Strong yen appreciation'"
         },
         {
           "id": "u20_l2_3",
@@ -295,7 +304,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なインフレです。」 (Kore wa ichiban taisetsu na infure desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Inflation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なインフレです。 (Kore wa ichiban taisetsu na infure desu.) — Fill in topic particle 'は' (wa): This is the most important Inflation."
         },
         {
           "id": "u20_l2_4",
@@ -317,7 +326,8 @@
             "インフレ",
             "です"
           ],
-          "correctAnswer": "これはインフレです"
+          "correctAnswer": "これはインフレです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはインフレです」 (Kore wa infure desu.) expresses 'This is Inflation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはインフレです (Kore wa infure desu.) — This is Inflation."
         },
         {
           "id": "u20_l2_5",
@@ -334,7 +344,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "報道"
+          "correctAnswer": "報道",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「報道」 (houdou) expresses 'Pronounce: News report / journalism'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・報道 (houdou) — Pronounce: News report / journalism"
         },
         {
           "id": "u20_l2_6",
@@ -354,7 +365,8 @@
             "報道",
             "です"
           ],
-          "correctAnswer": "報道です"
+          "correctAnswer": "報道です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「報道です」 (houdou desu.) expresses 'It is News report / journalism.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・報道です (houdou desu.) — It is News report / journalism."
         },
         {
           "id": "u20_l2_7",
@@ -394,7 +406,8 @@
               "romaji": "seisaku"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高・インフレ・報道・政策」 (endaka, infure, houdou, seisaku) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高・インフレ・報道・政策 (endaka, infure, houdou, seisaku) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l2_8",
@@ -418,7 +431,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「株価の準備はできていますか？」 (kabuka no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Stock price ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・株価の準備はできていますか？ (kabuka no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Stock price ready?"
         }
       ]
     },
@@ -462,7 +476,8 @@
             "Confirming News report / journalism",
             "Confirming Economic climate"
           ],
-          "correctAnswer": "Government policy"
+          "correctAnswer": "Government policy",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「政策」 (seisaku) expresses 'Government policy'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・政策 (seisaku) — Government policy"
         },
         {
           "id": "u20_l3_2",
@@ -482,7 +497,8 @@
             "さ",
             "ま"
           ],
-          "correctAnswer": "せいさく"
+          "correctAnswer": "せいさく",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「政策」 (seisaku) expresses 'Build 'Government policy''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・政策 (seisaku) — Build 'Government policy'"
         },
         {
           "id": "u20_l3_3",
@@ -501,7 +517,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な市場です。」 (Kore wa ichiban taisetsu na shijou desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Financial market.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な市場です。 (Kore wa ichiban taisetsu na shijou desu.) — Fill in topic particle 'は' (wa): This is the most important Financial market."
         },
         {
           "id": "u20_l3_4",
@@ -523,7 +539,8 @@
             "市場",
             "です"
           ],
-          "correctAnswer": "これは市場です"
+          "correctAnswer": "これは市場です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは市場です」 (Kore wa shijou desu.) expresses 'This is Financial market.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは市場です (Kore wa shijou desu.) — This is Financial market."
         },
         {
           "id": "u20_l3_5",
@@ -540,7 +557,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "成長率"
+          "correctAnswer": "成長率",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「成長率」 (seichouritsu) expresses 'Pronounce: Growth rate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・成長率 (seichouritsu) — Pronounce: Growth rate"
         },
         {
           "id": "u20_l3_6",
@@ -560,7 +578,8 @@
             "成長率",
             "です"
           ],
-          "correctAnswer": "成長率です"
+          "correctAnswer": "成長率です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「成長率です」 (seichouritsu desu.) expresses 'It is Growth rate.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・成長率です (seichouritsu desu.) — It is Growth rate."
         },
         {
           "id": "u20_l3_7",
@@ -600,7 +619,8 @@
               "romaji": "shouhi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「政策・市場・成長率・消費」 (seisaku, shijou, seichouritsu, shouhi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・政策・市場・成長率・消費 (seisaku, shijou, seichouritsu, shouhi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l3_8",
@@ -624,7 +644,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安についてどう思われますか？」 (enyasu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Weak yen depreciation?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安についてどう思われますか？ (enyasu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Weak yen depreciation?"
         }
       ]
     },
@@ -667,7 +688,8 @@
             "Confirming Inflation",
             "Confirming Consumption / spending"
           ],
-          "correctAnswer": "Consumption / spending"
+          "correctAnswer": "Consumption / spending",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「消費」 (shouhi) expresses 'Consumption / spending'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・消費 (shouhi) — Consumption / spending"
         },
         {
           "id": "u20_l4_2",
@@ -687,7 +709,8 @@
             "う",
             "ょ"
           ],
-          "correctAnswer": "しょうひ"
+          "correctAnswer": "しょうひ",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「消費」 (shouhi) expresses 'Build 'Consumption / spending''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・消費 (shouhi) — Build 'Consumption / spending'"
         },
         {
           "id": "u20_l4_3",
@@ -706,7 +729,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な投資です。」 (Kore wa ichiban taisetsu na toushi desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Investment.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な投資です。 (Kore wa ichiban taisetsu na toushi desu.) — Fill in topic particle 'は' (wa): This is the most important Investment."
         },
         {
           "id": "u20_l4_4",
@@ -728,7 +751,8 @@
             "投資",
             "です"
           ],
-          "correctAnswer": "これは投資です"
+          "correctAnswer": "これは投資です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは投資です」 (Kore wa toushi desu.) expresses 'This is Investment.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは投資です (Kore wa toushi desu.) — This is Investment."
         },
         {
           "id": "u20_l4_5",
@@ -745,7 +769,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "企業"
+          "correctAnswer": "企業",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「企業」 (kigyou) expresses 'Pronounce: Enterprise / corporation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・企業 (kigyou) — Pronounce: Enterprise / corporation"
         },
         {
           "id": "u20_l4_6",
@@ -765,7 +790,8 @@
             "企業",
             "です"
           ],
-          "correctAnswer": "企業です"
+          "correctAnswer": "企業です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「企業です」 (kigyou desu.) expresses 'It is Enterprise / corporation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・企業です (kigyou desu.) — It is Enterprise / corporation."
         },
         {
           "id": "u20_l4_7",
@@ -805,7 +831,8 @@
               "romaji": "eikyou"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「消費・投資・企業・影響」 (shouhi, toushi, kigyou, eikyou) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・消費・投資・企業・影響 (shouhi, toushi, kigyou, eikyou) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l4_8",
@@ -829,7 +856,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は円高に進みましょう。」 (Tsugi wa endaka ni susumimashou.) expresses 'Speaker: Let's proceed to Strong yen appreciation next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は円高に進みましょう。 (Tsugi wa endaka ni susumimashou.) — Speaker: Let's proceed to Strong yen appreciation next."
         }
       ]
     },
@@ -872,7 +900,8 @@
             "Confirming Consumption / spending",
             "Impact / consequence"
           ],
-          "correctAnswer": "Impact / consequence"
+          "correctAnswer": "Impact / consequence",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「影響」 (eikyou) expresses 'Impact / consequence'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・影響 (eikyou) — Impact / consequence"
         },
         {
           "id": "u20_l5_2",
@@ -892,7 +921,8 @@
             "む",
             "え"
           ],
-          "correctAnswer": "えいきょう"
+          "correctAnswer": "えいきょう",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「影響」 (eikyou) expresses 'Build 'Impact / consequence''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・影響 (eikyou) — Build 'Impact / consequence'"
         },
         {
           "id": "u20_l5_3",
@@ -911,7 +941,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な懸念です。」 (Kore wa ichiban taisetsu na kenen desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Concern / anxiety.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な懸念です。 (Kore wa ichiban taisetsu na kenen desu.) — Fill in topic particle 'は' (wa): This is the most important Concern / anxiety."
         },
         {
           "id": "u20_l5_4",
@@ -933,7 +963,8 @@
             "懸念",
             "です"
           ],
-          "correctAnswer": "これは懸念です"
+          "correctAnswer": "これは懸念です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは懸念です」 (Kore wa kenen desu.) expresses 'This is Concern / anxiety.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは懸念です (Kore wa kenen desu.) — This is Concern / anxiety."
         },
         {
           "id": "u20_l5_5",
@@ -950,7 +981,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "見通し"
+          "correctAnswer": "見通し",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見通し」 (mitooshi) expresses 'Pronounce: Outlook / prospect'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見通し (mitooshi) — Pronounce: Outlook / prospect"
         },
         {
           "id": "u20_l5_6",
@@ -970,7 +1002,8 @@
             "見通し",
             "です"
           ],
-          "correctAnswer": "見通しです"
+          "correctAnswer": "見通しです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見通しです」 (mitooshi desu.) expresses 'It is Outlook / prospect.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見通しです (mitooshi desu.) — It is Outlook / prospect."
         },
         {
           "id": "u20_l5_7",
@@ -1010,7 +1043,8 @@
               "romaji": "keiki no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「影響・懸念・見通し・景気の確認」 (eikyou, kenen, mitooshi, keiki no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・影響・懸念・見通し・景気の確認 (eikyou, kenen, mitooshi, keiki no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l5_8",
@@ -1034,7 +1068,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気について教えていただけますか？」 (keiki ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Economic climate?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気について教えていただけますか？ (keiki ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Economic climate?"
         }
       ]
     },
@@ -1083,7 +1118,8 @@
             "Confirming Economic climate",
             "Economic climate"
           ],
-          "correctAnswer": "Confirming Economic climate"
+          "correctAnswer": "Confirming Economic climate",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気の確認」 (keiki no kakunin) expresses 'Confirming Economic climate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気の確認 (keiki no kakunin) — Confirming Economic climate"
         },
         {
           "id": "u20_l6_2",
@@ -1103,7 +1139,8 @@
             "き",
             "く"
           ],
-          "correctAnswer": "けいきのかくにん"
+          "correctAnswer": "けいきのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気の確認」 (keiki no kakunin) expresses 'Build 'Confirming Economic climate''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気の確認 (keiki no kakunin) — Build 'Confirming Economic climate'"
         },
         {
           "id": "u20_l6_3",
@@ -1122,7 +1159,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な株価の確認です。」 (Kore wa ichiban taisetsu na kabuka no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Stock price.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な株価の確認です。 (Kore wa ichiban taisetsu na kabuka no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Stock price."
         },
         {
           "id": "u20_l6_4",
@@ -1144,7 +1181,8 @@
             "株価の確認",
             "です"
           ],
-          "correctAnswer": "これは株価の確認です"
+          "correctAnswer": "これは株価の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは株価の確認です」 (Kore wa kabuka no kakunin desu.) expresses 'This is Confirming Stock price.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは株価の確認です (Kore wa kabuka no kakunin desu.) — This is Confirming Stock price."
         },
         {
           "id": "u20_l6_5",
@@ -1161,7 +1199,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "円安の確認"
+          "correctAnswer": "円安の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安の確認」 (enyasu no kakunin) expresses 'Pronounce: Confirming Weak yen depreciation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安の確認 (enyasu no kakunin) — Pronounce: Confirming Weak yen depreciation"
         },
         {
           "id": "u20_l6_6",
@@ -1181,7 +1220,8 @@
             "円安の確認",
             "です"
           ],
-          "correctAnswer": "円安の確認です"
+          "correctAnswer": "円安の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安の確認です」 (enyasu no kakunin desu.) expresses 'It is Confirming Weak yen depreciation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安の確認です (enyasu no kakunin desu.) — It is Confirming Weak yen depreciation."
         },
         {
           "id": "u20_l6_7",
@@ -1221,7 +1261,8 @@
               "romaji": "endaka no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気の確認・株価の確認・円安の確認・円高の確認」 (keiki no kakunin, kabuka no kakunin, enyasu no kakunin, endaka no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気の確認・株価の確認・円安の確認・円高の確認 (keiki no kakunin, kabuka no kakunin, enyasu no kakunin, endaka no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l6_8",
@@ -1245,7 +1286,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「株価の準備はできていますか？」 (kabuka no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Stock price ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・株価の準備はできていますか？ (kabuka no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Stock price ready?"
         }
       ]
     },
@@ -1292,7 +1334,8 @@
             "Impact / consequence",
             "Confirming Enterprise / corporation"
           ],
-          "correctAnswer": "Confirming Strong yen appreciation"
+          "correctAnswer": "Confirming Strong yen appreciation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高の確認」 (endaka no kakunin) expresses 'Confirming Strong yen appreciation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高の確認 (endaka no kakunin) — Confirming Strong yen appreciation"
         },
         {
           "id": "u20_l7_2",
@@ -1312,7 +1355,8 @@
             "か",
             "に"
           ],
-          "correctAnswer": "えんだかのかくにん"
+          "correctAnswer": "えんだかのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高の確認」 (endaka no kakunin) expresses 'Build 'Confirming Strong yen appreciation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高の確認 (endaka no kakunin) — Build 'Confirming Strong yen appreciation'"
         },
         {
           "id": "u20_l7_3",
@@ -1331,7 +1375,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なインフレの確認です。」 (Kore wa ichiban taisetsu na infure no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Inflation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なインフレの確認です。 (Kore wa ichiban taisetsu na infure no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Inflation."
         },
         {
           "id": "u20_l7_4",
@@ -1353,7 +1397,8 @@
             "インフレの確認",
             "です"
           ],
-          "correctAnswer": "これはインフレの確認です"
+          "correctAnswer": "これはインフレの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはインフレの確認です」 (Kore wa infure no kakunin desu.) expresses 'This is Confirming Inflation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはインフレの確認です (Kore wa infure no kakunin desu.) — This is Confirming Inflation."
         },
         {
           "id": "u20_l7_5",
@@ -1370,7 +1415,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "報道の確認"
+          "correctAnswer": "報道の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「報道の確認」 (houdou no kakunin) expresses 'Pronounce: Confirming News report / journalism'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・報道の確認 (houdou no kakunin) — Pronounce: Confirming News report / journalism"
         },
         {
           "id": "u20_l7_6",
@@ -1390,7 +1436,8 @@
             "報道の確認",
             "です"
           ],
-          "correctAnswer": "報道の確認です"
+          "correctAnswer": "報道の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「報道の確認です」 (houdou no kakunin desu.) expresses 'It is Confirming News report / journalism.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・報道の確認です (houdou no kakunin desu.) — It is Confirming News report / journalism."
         },
         {
           "id": "u20_l7_7",
@@ -1430,7 +1477,8 @@
               "romaji": "seisaku no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高の確認・インフレの確認・報道の確認・政策の確認」 (endaka no kakunin, infure no kakunin, houdou no kakunin, seisaku no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高の確認・インフレの確認・報道の確認・政策の確認 (endaka no kakunin, infure no kakunin, houdou no kakunin, seisaku no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l7_8",
@@ -1454,7 +1502,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安についてどう思われますか？」 (enyasu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Weak yen depreciation?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安についてどう思われますか？ (enyasu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Weak yen depreciation?"
         }
       ]
     },
@@ -1504,7 +1553,8 @@
             "Confirming Financial market",
             "Confirming Concern / anxiety"
           ],
-          "correctAnswer": "Confirming Government policy"
+          "correctAnswer": "Confirming Government policy",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「政策の確認」 (seisaku no kakunin) expresses 'Confirming Government policy'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・政策の確認 (seisaku no kakunin) — Confirming Government policy"
         },
         {
           "id": "u20_l8_2",
@@ -1524,7 +1574,8 @@
             "い",
             "さ"
           ],
-          "correctAnswer": "せいさくのかくにん"
+          "correctAnswer": "せいさくのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「政策の確認」 (seisaku no kakunin) expresses 'Build 'Confirming Government policy''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・政策の確認 (seisaku no kakunin) — Build 'Confirming Government policy'"
         },
         {
           "id": "u20_l8_3",
@@ -1543,7 +1594,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な市場の確認です。」 (Kore wa ichiban taisetsu na shijou no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Financial market.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な市場の確認です。 (Kore wa ichiban taisetsu na shijou no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Financial market."
         },
         {
           "id": "u20_l8_4",
@@ -1565,7 +1616,8 @@
             "市場の確認",
             "です"
           ],
-          "correctAnswer": "これは市場の確認です"
+          "correctAnswer": "これは市場の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは市場の確認です」 (Kore wa shijou no kakunin desu.) expresses 'This is Confirming Financial market.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは市場の確認です (Kore wa shijou no kakunin desu.) — This is Confirming Financial market."
         },
         {
           "id": "u20_l8_5",
@@ -1582,7 +1634,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "成長率の確認"
+          "correctAnswer": "成長率の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「成長率の確認」 (seichouritsu no kakunin) expresses 'Pronounce: Confirming Growth rate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・成長率の確認 (seichouritsu no kakunin) — Pronounce: Confirming Growth rate"
         },
         {
           "id": "u20_l8_6",
@@ -1602,7 +1655,8 @@
             "成長率の確認",
             "です"
           ],
-          "correctAnswer": "成長率の確認です"
+          "correctAnswer": "成長率の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「成長率の確認です」 (seichouritsu no kakunin desu.) expresses 'It is Confirming Growth rate.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・成長率の確認です (seichouritsu no kakunin desu.) — It is Confirming Growth rate."
         },
         {
           "id": "u20_l8_7",
@@ -1642,7 +1696,8 @@
               "romaji": "shouhi no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「政策の確認・市場の確認・成長率の確認・消費の確認」 (seisaku no kakunin, shijou no kakunin, seichouritsu no kakunin, shouhi no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・政策の確認・市場の確認・成長率の確認・消費の確認 (seisaku no kakunin, shijou no kakunin, seichouritsu no kakunin, shouhi no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l8_8",
@@ -1666,7 +1721,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は円高に進みましょう。」 (Tsugi wa endaka ni susumimashou.) expresses 'Speaker: Let's proceed to Strong yen appreciation next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は円高に進みましょう。 (Tsugi wa endaka ni susumimashou.) — Speaker: Let's proceed to Strong yen appreciation next."
         }
       ]
     },
@@ -1715,7 +1771,8 @@
             "Confirming Outlook / prospect",
             "Confirming News report / journalism"
           ],
-          "correctAnswer": "Confirming Consumption / spending"
+          "correctAnswer": "Confirming Consumption / spending",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「消費の確認」 (shouhi no kakunin) expresses 'Confirming Consumption / spending'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・消費の確認 (shouhi no kakunin) — Confirming Consumption / spending"
         },
         {
           "id": "u20_l9_2",
@@ -1735,7 +1792,8 @@
             "う",
             "し"
           ],
-          "correctAnswer": "しょうひのかくにん"
+          "correctAnswer": "しょうひのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「消費の確認」 (shouhi no kakunin) expresses 'Build 'Confirming Consumption / spending''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・消費の確認 (shouhi no kakunin) — Build 'Confirming Consumption / spending'"
         },
         {
           "id": "u20_l9_3",
@@ -1754,7 +1812,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な投資の確認です。」 (Kore wa ichiban taisetsu na toushi no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Investment.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な投資の確認です。 (Kore wa ichiban taisetsu na toushi no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Investment."
         },
         {
           "id": "u20_l9_4",
@@ -1776,7 +1834,8 @@
             "投資の確認",
             "です"
           ],
-          "correctAnswer": "これは投資の確認です"
+          "correctAnswer": "これは投資の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは投資の確認です」 (Kore wa toushi no kakunin desu.) expresses 'This is Confirming Investment.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは投資の確認です (Kore wa toushi no kakunin desu.) — This is Confirming Investment."
         },
         {
           "id": "u20_l9_5",
@@ -1793,7 +1852,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "企業の確認"
+          "correctAnswer": "企業の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「企業の確認」 (kigyou no kakunin) expresses 'Pronounce: Confirming Enterprise / corporation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・企業の確認 (kigyou no kakunin) — Pronounce: Confirming Enterprise / corporation"
         },
         {
           "id": "u20_l9_6",
@@ -1813,7 +1873,8 @@
             "企業の確認",
             "です"
           ],
-          "correctAnswer": "企業の確認です"
+          "correctAnswer": "企業の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「企業の確認です」 (kigyou no kakunin desu.) expresses 'It is Confirming Enterprise / corporation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・企業の確認です (kigyou no kakunin desu.) — It is Confirming Enterprise / corporation."
         },
         {
           "id": "u20_l9_7",
@@ -1853,7 +1914,8 @@
               "romaji": "eikyou no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「消費の確認・投資の確認・企業の確認・影響の確認」 (shouhi no kakunin, toushi no kakunin, kigyou no kakunin, eikyou no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・消費の確認・投資の確認・企業の確認・影響の確認 (shouhi no kakunin, toushi no kakunin, kigyou no kakunin, eikyou no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l9_8",
@@ -1877,7 +1939,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気について教えていただけますか？」 (keiki ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Economic climate?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気について教えていただけますか？ (keiki ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Economic climate?"
         }
       ]
     },
@@ -1926,7 +1989,8 @@
             "Confirming Impact / consequence",
             "Confirming News report / journalism"
           ],
-          "correctAnswer": "Confirming Impact / consequence"
+          "correctAnswer": "Confirming Impact / consequence",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「影響の確認」 (eikyou no kakunin) expresses 'Confirming Impact / consequence'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・影響の確認 (eikyou no kakunin) — Confirming Impact / consequence"
         },
         {
           "id": "u20_l10_2",
@@ -1946,7 +2010,8 @@
             "ょ",
             "き"
           ],
-          "correctAnswer": "えいきょうのかくにん"
+          "correctAnswer": "えいきょうのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「影響の確認」 (eikyou no kakunin) expresses 'Build 'Confirming Impact / consequence''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・影響の確認 (eikyou no kakunin) — Build 'Confirming Impact / consequence'"
         },
         {
           "id": "u20_l10_3",
@@ -1965,7 +2030,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な懸念の確認です。」 (Kore wa ichiban taisetsu na kenen no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Concern / anxiety.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な懸念の確認です。 (Kore wa ichiban taisetsu na kenen no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Concern / anxiety."
         },
         {
           "id": "u20_l10_4",
@@ -1987,7 +2052,8 @@
             "懸念の確認",
             "です"
           ],
-          "correctAnswer": "これは懸念の確認です"
+          "correctAnswer": "これは懸念の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは懸念の確認です」 (Kore wa kenen no kakunin desu.) expresses 'This is Confirming Concern / anxiety.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは懸念の確認です (Kore wa kenen no kakunin desu.) — This is Confirming Concern / anxiety."
         },
         {
           "id": "u20_l10_5",
@@ -2004,7 +2070,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "見通しの確認"
+          "correctAnswer": "見通しの確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見通しの確認」 (mitooshi no kakunin) expresses 'Pronounce: Confirming Outlook / prospect'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見通しの確認 (mitooshi no kakunin) — Pronounce: Confirming Outlook / prospect"
         },
         {
           "id": "u20_l10_6",
@@ -2024,7 +2091,8 @@
             "見通しの確認",
             "です"
           ],
-          "correctAnswer": "見通しの確認です"
+          "correctAnswer": "見通しの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「見通しの確認です」 (mitooshi no kakunin desu.) expresses 'It is Confirming Outlook / prospect.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・見通しの確認です (mitooshi no kakunin desu.) — It is Confirming Outlook / prospect."
         },
         {
           "id": "u20_l10_7",
@@ -2064,7 +2132,8 @@
               "romaji": "keiki no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「影響の確認・懸念の確認・見通しの確認・景気の確認」 (eikyou no kakunin, kenen no kakunin, mitooshi no kakunin, keiki no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・影響の確認・懸念の確認・見通しの確認・景気の確認 (eikyou no kakunin, kenen no kakunin, mitooshi no kakunin, keiki no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l10_8",
@@ -2088,7 +2157,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「株価の準備はできていますか？」 (kabuka no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Stock price ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・株価の準備はできていますか？ (kabuka no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Stock price ready?"
         }
       ]
     },
@@ -2137,7 +2207,8 @@
             "Confirming Weak yen depreciation",
             "Confirming Enterprise / corporation"
           ],
-          "correctAnswer": "Confirming Economic climate"
+          "correctAnswer": "Confirming Economic climate",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気の確認」 (keiki no kakunin) expresses 'Confirming Economic climate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気の確認 (keiki no kakunin) — Confirming Economic climate"
         },
         {
           "id": "u20_l11_2",
@@ -2157,7 +2228,8 @@
             "ん",
             "け"
           ],
-          "correctAnswer": "けいきのかくにん"
+          "correctAnswer": "けいきのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気の確認」 (keiki no kakunin) expresses 'Build 'Confirming Economic climate''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気の確認 (keiki no kakunin) — Build 'Confirming Economic climate'"
         },
         {
           "id": "u20_l11_3",
@@ -2176,7 +2248,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な株価の確認です。」 (Kore wa ichiban taisetsu na kabuka no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Stock price.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な株価の確認です。 (Kore wa ichiban taisetsu na kabuka no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Stock price."
         },
         {
           "id": "u20_l11_4",
@@ -2198,7 +2270,8 @@
             "株価の確認",
             "です"
           ],
-          "correctAnswer": "これは株価の確認です"
+          "correctAnswer": "これは株価の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは株価の確認です」 (Kore wa kabuka no kakunin desu.) expresses 'This is Confirming Stock price.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは株価の確認です (Kore wa kabuka no kakunin desu.) — This is Confirming Stock price."
         },
         {
           "id": "u20_l11_5",
@@ -2215,7 +2288,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "円安の確認"
+          "correctAnswer": "円安の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安の確認」 (enyasu no kakunin) expresses 'Pronounce: Confirming Weak yen depreciation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安の確認 (enyasu no kakunin) — Pronounce: Confirming Weak yen depreciation"
         },
         {
           "id": "u20_l11_6",
@@ -2235,7 +2309,8 @@
             "円安の確認",
             "です"
           ],
-          "correctAnswer": "円安の確認です"
+          "correctAnswer": "円安の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安の確認です」 (enyasu no kakunin desu.) expresses 'It is Confirming Weak yen depreciation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安の確認です (enyasu no kakunin desu.) — It is Confirming Weak yen depreciation."
         },
         {
           "id": "u20_l11_7",
@@ -2275,7 +2350,8 @@
               "romaji": "endaka no kakunin"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気の確認・株価の確認・円安の確認・円高の確認」 (keiki no kakunin, kabuka no kakunin, enyasu no kakunin, endaka no kakunin) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気の確認・株価の確認・円安の確認・円高の確認 (keiki no kakunin, kabuka no kakunin, enyasu no kakunin, endaka no kakunin) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l11_8",
@@ -2299,7 +2375,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安についてどう思われますか？」 (enyasu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Weak yen depreciation?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安についてどう思われますか？ (enyasu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Weak yen depreciation?"
         }
       ]
     },
@@ -2346,7 +2423,8 @@
             "Confirming News report / journalism",
             "Confirming Government policy"
           ],
-          "correctAnswer": "Confirming Strong yen appreciation"
+          "correctAnswer": "Confirming Strong yen appreciation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高の確認」 (endaka no kakunin) expresses 'Confirming Strong yen appreciation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高の確認 (endaka no kakunin) — Confirming Strong yen appreciation"
         },
         {
           "id": "u20_l12_2",
@@ -2366,7 +2444,8 @@
             "か",
             "に"
           ],
-          "correctAnswer": "えんだかのかくにん"
+          "correctAnswer": "えんだかのかくにん",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高の確認」 (endaka no kakunin) expresses 'Build 'Confirming Strong yen appreciation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高の確認 (endaka no kakunin) — Build 'Confirming Strong yen appreciation'"
         },
         {
           "id": "u20_l12_3",
@@ -2385,7 +2464,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なインフレの確認です。」 (Kore wa ichiban taisetsu na infure no kakunin desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Confirming Inflation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なインフレの確認です。 (Kore wa ichiban taisetsu na infure no kakunin desu.) — Fill in topic particle 'は' (wa): This is the most important Confirming Inflation."
         },
         {
           "id": "u20_l12_4",
@@ -2407,7 +2486,8 @@
             "インフレの確認",
             "です"
           ],
-          "correctAnswer": "これはインフレの確認です"
+          "correctAnswer": "これはインフレの確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはインフレの確認です」 (Kore wa infure no kakunin desu.) expresses 'This is Confirming Inflation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはインフレの確認です (Kore wa infure no kakunin desu.) — This is Confirming Inflation."
         },
         {
           "id": "u20_l12_5",
@@ -2424,7 +2504,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "報道の確認"
+          "correctAnswer": "報道の確認",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「報道の確認」 (houdou no kakunin) expresses 'Pronounce: Confirming News report / journalism'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・報道の確認 (houdou no kakunin) — Pronounce: Confirming News report / journalism"
         },
         {
           "id": "u20_l12_6",
@@ -2444,7 +2525,8 @@
             "報道の確認",
             "です"
           ],
-          "correctAnswer": "報道の確認です"
+          "correctAnswer": "報道の確認です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「報道の確認です」 (houdou no kakunin desu.) expresses 'It is Confirming News report / journalism.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・報道の確認です (houdou no kakunin desu.) — It is Confirming News report / journalism."
         },
         {
           "id": "u20_l12_7",
@@ -2484,7 +2566,8 @@
               "romaji": "keiki"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高の確認・インフレの確認・報道の確認・景気」 (endaka no kakunin, infure no kakunin, houdou no kakunin, keiki) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高の確認・インフレの確認・報道の確認・景気 (endaka no kakunin, infure no kakunin, houdou no kakunin, keiki) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l12_8",
@@ -2508,7 +2591,8 @@
             "ごめんなさい",
             "私は学生です"
           ],
-          "correctAnswer": "了解いたしました！"
+          "correctAnswer": "了解いたしました！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「次は円高に進みましょう。」 (Tsugi wa endaka ni susumimashou.) expresses 'Speaker: Let's proceed to Strong yen appreciation next.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・次は円高に進みましょう。 (Tsugi wa endaka ni susumimashou.) — Speaker: Let's proceed to Strong yen appreciation next."
         }
       ]
     },
@@ -2551,7 +2635,8 @@
             "Stock price",
             "Confirming Stock price"
           ],
-          "correctAnswer": "Economic climate"
+          "correctAnswer": "Economic climate",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気」 (keiki) expresses 'Economic climate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気 (keiki) — Economic climate"
         },
         {
           "id": "u20_l13_2",
@@ -2571,7 +2656,8 @@
             "と",
             "ま"
           ],
-          "correctAnswer": "けいき"
+          "correctAnswer": "けいき",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気」 (keiki) expresses 'Build 'Economic climate''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気 (keiki) — Build 'Economic climate'"
         },
         {
           "id": "u20_l13_3",
@@ -2590,7 +2676,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な株価です。」 (Kore wa ichiban taisetsu na kabuka desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Stock price.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な株価です。 (Kore wa ichiban taisetsu na kabuka desu.) — Fill in topic particle 'は' (wa): This is the most important Stock price."
         },
         {
           "id": "u20_l13_4",
@@ -2612,7 +2698,8 @@
             "株価",
             "です"
           ],
-          "correctAnswer": "これは株価です"
+          "correctAnswer": "これは株価です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは株価です」 (Kore wa kabuka desu.) expresses 'This is Stock price.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは株価です (Kore wa kabuka desu.) — This is Stock price."
         },
         {
           "id": "u20_l13_5",
@@ -2629,7 +2716,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "円安"
+          "correctAnswer": "円安",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安」 (enyasu) expresses 'Pronounce: Weak yen depreciation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安 (enyasu) — Pronounce: Weak yen depreciation"
         },
         {
           "id": "u20_l13_6",
@@ -2649,7 +2737,8 @@
             "円安",
             "です"
           ],
-          "correctAnswer": "円安です"
+          "correctAnswer": "円安です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安です」 (enyasu desu.) expresses 'It is Weak yen depreciation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安です (enyasu desu.) — It is Weak yen depreciation."
         },
         {
           "id": "u20_l13_7",
@@ -2689,7 +2778,8 @@
               "romaji": "endaka"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気・株価・円安・円高」 (keiki, kabuka, enyasu, endaka) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気・株価・円安・円高 (keiki, kabuka, enyasu, endaka) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l13_8",
@@ -2713,7 +2803,8 @@
             "いいえ、日本人です",
             "はじめまして"
           ],
-          "correctAnswer": "はい、詳しくご説明いたします。"
+          "correctAnswer": "はい、詳しくご説明いたします。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「景気について教えていただけますか？」 (keiki ni tsuite oshiete itadakemasu ka?) expresses 'Speaker: Could you tell me about Economic climate?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・景気について教えていただけますか？ (keiki ni tsuite oshiete itadakemasu ka?) — Speaker: Could you tell me about Economic climate?"
         }
       ]
     },
@@ -2754,7 +2845,8 @@
             "Concern / anxiety",
             "Stock price"
           ],
-          "correctAnswer": "Strong yen appreciation"
+          "correctAnswer": "Strong yen appreciation",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高」 (endaka) expresses 'Strong yen appreciation'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高 (endaka) — Strong yen appreciation"
         },
         {
           "id": "u20_l14_2",
@@ -2774,7 +2866,8 @@
             "り",
             "そ"
           ],
-          "correctAnswer": "えんだか"
+          "correctAnswer": "えんだか",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高」 (endaka) expresses 'Build 'Strong yen appreciation''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高 (endaka) — Build 'Strong yen appreciation'"
         },
         {
           "id": "u20_l14_3",
@@ -2793,7 +2886,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切なインフレです。」 (Kore wa ichiban taisetsu na infure desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Inflation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切なインフレです。 (Kore wa ichiban taisetsu na infure desu.) — Fill in topic particle 'は' (wa): This is the most important Inflation."
         },
         {
           "id": "u20_l14_4",
@@ -2815,7 +2908,8 @@
             "インフレ",
             "です"
           ],
-          "correctAnswer": "これはインフレです"
+          "correctAnswer": "これはインフレです",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはインフレです」 (Kore wa infure desu.) expresses 'This is Inflation.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはインフレです (Kore wa infure desu.) — This is Inflation."
         },
         {
           "id": "u20_l14_5",
@@ -2832,7 +2926,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "報道"
+          "correctAnswer": "報道",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「報道」 (houdou) expresses 'Pronounce: News report / journalism'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・報道 (houdou) — Pronounce: News report / journalism"
         },
         {
           "id": "u20_l14_6",
@@ -2852,7 +2947,8 @@
             "報道",
             "です"
           ],
-          "correctAnswer": "報道です"
+          "correctAnswer": "報道です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「報道です」 (houdou desu.) expresses 'It is News report / journalism.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・報道です (houdou desu.) — It is News report / journalism."
         },
         {
           "id": "u20_l14_7",
@@ -2892,7 +2988,8 @@
               "romaji": "seisaku"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円高・インフレ・報道・政策」 (endaka, infure, houdou, seisaku) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円高・インフレ・報道・政策 (endaka, infure, houdou, seisaku) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l14_8",
@@ -2916,7 +3013,8 @@
             "ごちそうさまでした",
             "駅はどこですか"
           ],
-          "correctAnswer": "はい、万全です！"
+          "correctAnswer": "はい、万全です！",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「株価の準備はできていますか？」 (kabuka no junbi wa dekite imasu ka?) expresses 'Speaker: Is the preparation for Stock price ready?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・株価の準備はできていますか？ (kabuka no junbi wa dekite imasu ka?) — Speaker: Is the preparation for Stock price ready?"
         }
       ]
     },
@@ -2960,7 +3058,8 @@
             "Government policy",
             "Confirming Weak yen depreciation"
           ],
-          "correctAnswer": "Government policy"
+          "correctAnswer": "Government policy",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「政策」 (seisaku) expresses 'Government policy'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・政策 (seisaku) — Government policy"
         },
         {
           "id": "u20_l15_2",
@@ -2980,7 +3079,8 @@
             "さ",
             "や"
           ],
-          "correctAnswer": "せいさく"
+          "correctAnswer": "せいさく",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「政策」 (seisaku) expresses 'Build 'Government policy''. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・政策 (seisaku) — Build 'Government policy'"
         },
         {
           "id": "u20_l15_3",
@@ -2999,7 +3099,7 @@
             "に"
           ],
           "correctAnswer": "は",
-          "explanation": "助詞「は」 (wa) marks the sentence topic 'これ' (this)."
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これはいちばん大切な市場です。」 (Kore wa ichiban taisetsu na shijou desu.) expresses 'Fill in topic particle 'は' (wa): This is the most important Financial market.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これはいちばん大切な市場です。 (Kore wa ichiban taisetsu na shijou desu.) — Fill in topic particle 'は' (wa): This is the most important Financial market."
         },
         {
           "id": "u20_l15_4",
@@ -3021,7 +3121,8 @@
             "市場",
             "です"
           ],
-          "correctAnswer": "これは市場です"
+          "correctAnswer": "これは市場です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「これは市場です」 (Kore wa shijou desu.) expresses 'This is Financial market.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・これは市場です (Kore wa shijou desu.) — This is Financial market."
         },
         {
           "id": "u20_l15_5",
@@ -3038,7 +3139,8 @@
             "Different meaning",
             "Antonym phrase"
           ],
-          "correctAnswer": "成長率"
+          "correctAnswer": "成長率",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「成長率」 (seichouritsu) expresses 'Pronounce: Growth rate'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・成長率 (seichouritsu) — Pronounce: Growth rate"
         },
         {
           "id": "u20_l15_6",
@@ -3058,7 +3160,8 @@
             "成長率",
             "です"
           ],
-          "correctAnswer": "成長率です"
+          "correctAnswer": "成長率です",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「成長率です」 (seichouritsu desu.) expresses 'It is Growth rate.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・成長率です (seichouritsu desu.) — It is Growth rate."
         },
         {
           "id": "u20_l15_7",
@@ -3098,7 +3201,8 @@
               "romaji": "shouhi"
             }
           ],
-          "correctAnswer": "all"
+          "correctAnswer": "all",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「政策・市場・成長率・消費」 (seisaku, shijou, seichouritsu, shouhi) expresses 'Match each Japanese word to its English meaning.'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・政策・市場・成長率・消費 (seisaku, shijou, seichouritsu, shouhi) — Match each Japanese word to its English meaning."
         },
         {
           "id": "u20_l15_8",
@@ -3122,7 +3226,8 @@
             "美味しいです",
             "いいえ、結構です"
           ],
-          "correctAnswer": "大変重要だと思います。"
+          "correctAnswer": "大変重要だと思います。",
+          "explanation": "📌 Grammar & Usage Context:\nIn Japanese, 「円安についてどう思われますか？」 (enyasu ni tsuite dou omowaremasu ka?) expresses 'Speaker: What are your thoughts on Weak yen depreciation?'. Understanding when to use this expression is essential for natural communication.\n\n🎎 Cultural & Social Etiquette:\nThis expression is standard in daily conversations across Japan. When speaking with teachers, elders, or workplace superiors, ensure you maintain appropriate politeness level.\n\n💬 Example Sentence:\n・円安についてどう思われますか？ (enyasu ni tsuite dou omowaremasu ka?) — Speaker: What are your thoughts on Weak yen depreciation?"
         }
       ]
     }
