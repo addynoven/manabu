@@ -13,12 +13,21 @@ export interface AuthenticatedUser {
 }
 
 export async function verifyAuthToken(req: NextRequest): Promise<AuthenticatedUser | null> {
+  // 1. Try Authorization Header
+  let token: string | undefined;
   const authHeader = req.headers.get('authorization');
-  if (!authHeader || !authHeader.startsWith('Bearer ')) {
-    return null;
+  if (authHeader && authHeader.startsWith('Bearer ')) {
+    token = authHeader.slice(7).trim();
   }
 
-  const token = authHeader.slice(7).trim();
+  // 2. Fallback to HTTP-Only Cookie
+  if (!token) {
+    const cookieSession = req.cookies.get('manabu_session')?.value;
+    if (cookieSession) {
+      token = cookieSession;
+    }
+  }
+
   if (!token) return null;
 
   try {
