@@ -1,8 +1,10 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { fetchWithAuth } from '@/core/api/httpClient';
+import { useAuth } from '@/features/auth/hooks/useAuth';
 import rawVocab from '@/data/vocab_n5.json';
+import curriculumData from '@/data/curriculum.json';
 
 export interface SrsItem {
   id: string;
@@ -25,9 +27,9 @@ export interface StageSummary {
   totalCards: number;
 }
 
-const STORAGE_DECK_KEY = 'manabu_web_srs_deck';
-
 export function useSrsQueue() {
+  const { user, loading: authLoading } = useAuth();
+
   const [dueQueue, setDueQueue] = useState<SrsItem[]>([]);
   const [allCards, setAllCards] = useState<SrsItem[]>([]);
   const [stageSummary, setStageSummary] = useState<StageSummary>({
@@ -49,19 +51,61 @@ export function useSrsQueue() {
     return 9;
   };
 
-  const fetchQueue = useCallback(async () => {
-    setLoading(true);
-    setError(null);
+  // Build comprehensive dictionary map across vocab_n5.json and curriculum.json
+  const dictionaryMap = useMemo(() => {
+    const map = new Map<string, { kanji: string; kana: string; meaning: string }>();
 
-    // Build vocab dictionary map
-    const vocabMap = new Map<string, { kanji: string; kana: string; meaning: string }>();
+    // 1. Populate from vocab_n5.json
     (rawVocab as any[]).forEach((item) => {
-      vocabMap.set(String(item.jmdict_seq), {
+      map.set(String(item.jmdict_seq), {
         kanji: item.kanji || item.kana,
         kana: item.kana,
         meaning: item.waller_definition,
       });
     });
+
+    // 2. Populate from curriculum.json exercises
+    (curriculumData as any[]).forEach((unit) => {
+      unit.lessons?.forEach((lesson: any) => {
+        lesson.exercises?.forEach((ex: any) => {
+          if (ex.id) {
+            const primaryText = ex.character || ex.correctAnswer || ex.prompt || '';
+            const subText = ex.subPrompt ? ex.subPrompt.split('•')[0].trim() : primaryText;
+            const defText = ex.prompt !== primaryText ? ex.prompt : ex.correctAnswer || 'Lesson Drill';
+
+            map.set(ex.id, {
+              kanji: primaryText,
+              kana: subText,
+              meaning: defText,
+            });
+          }
+        });
+      });
+    });
+
+    return map;
+  }, []);
+
+  const fetchQueue = useCallback(async () => {
+    if (authLoading) return;
+
+    if (!user) {
+      setDueQueue([]);
+      setAllCards([]);
+      setStageSummary({
+        apprenticeCount: 0,
+        guruCount: 0,
+        masterCount: 0,
+        enlightenedCount: 0,
+        burnedCount: 0,
+        totalCards: 0,
+      });
+      setLoading(false);
+      return;
+    }
+
+    setLoading(true);
+    setError(null);
 
     try {
       const res = await fetchWithAuth<{
@@ -93,10 +137,10 @@ export function useSrsQueue() {
         const fetchedAll = res.data.allCards || [];
 
         const mappedQueue: SrsItem[] = fetchedQueue.map((c) => {
-          const vocab = vocabMap.get(c.cardId) || {
-            kanji: c.cardId.replace(/^(u\d+_l\d+_\d+)/, '$1'),
+          const vocab = dictionaryMap.get(c.cardId) || {
+            kanji: c.cardId,
             kana: c.cardId,
-            meaning: 'Lesson Vocabulary Item',
+            meaning: 'Japanese Practice Item',
           };
           return {
             id: c.cardId,
@@ -112,10 +156,10 @@ export function useSrsQueue() {
         });
 
         const mappedAll: SrsItem[] = fetchedAll.map((c) => {
-          const vocab = vocabMap.get(c.cardId) || {
+          const vocab = dictionaryMap.get(c.cardId) || {
             kanji: c.cardId,
             kana: c.cardId,
-            meaning: 'Lesson Vocabulary Item',
+            meaning: 'Japanese Practice Item',
           };
           return {
             id: c.cardId,
@@ -135,41 +179,17 @@ export function useSrsQueue() {
         if (res.data.stageSummary) {
           setStageSummary(res.data.stageSummary);
         }
-
-        // Cache local backup
-        if (typeof window !== 'undefined') {
-          localStorage.setItem(STORAGE_DECK_KEY, JSON.stringify(mappedAll));
-        }
         setLoading(false);
         return;
       }
-    } catch {
-      // Offline fallback
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Failed to fetch review queue');
     }
 
-    // Fallback to local storage or starter cards
-    if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem(STORAGE_DECK_KEY);
-        if (saved) {
-          const parsed: SrsItem[] = JSON.parse(saved);
-          const due = parsed.filter((i) => i.dueAt <= Date.now() && i.stage < 9);
-          setDueQueue(due);
-          setAllCards(parsed);
-          setStageSummary({
-            apprenticeCount: parsed.filter((i) => i.stage >= 1 && i.stage <= 4).length,
-            guruCount: parsed.filter((i) => i.stage >= 5 && i.stage <= 6).length,
-            masterCount: parsed.filter((i) => i.stage === 7).length,
-            enlightenedCount: parsed.filter((i) => i.stage === 8).length,
-            burnedCount: parsed.filter((i) => i.stage === 9).length,
-            totalCards: parsed.length,
-          });
-        }
-      } catch {}
-    }
-
+    setDueQueue([]);
+    setAllCards([]);
     setLoading(false);
-  }, []);
+  }, [authLoading, user, dictionaryMap]);
 
   const submitReview = async (cardId: string, cardType: string, rating: 1 | 2 | 3 | 4) => {
     try {
@@ -183,7 +203,7 @@ export function useSrsQueue() {
       });
 
       if (res.ok) {
-        fetchQueue();
+        await fetchQueue();
         return true;
       }
     } catch (err) {
@@ -193,14 +213,16 @@ export function useSrsQueue() {
   };
 
   useEffect(() => {
-    fetchQueue();
-  }, [fetchQueue]);
+    if (!authLoading) {
+      fetchQueue();
+    }
+  }, [authLoading, user?.uid, fetchQueue]);
 
   return {
     dueQueue,
     allCards,
     stageSummary,
-    loading,
+    loading: authLoading || loading,
     error,
     refetch: fetchQueue,
     submitReview,
