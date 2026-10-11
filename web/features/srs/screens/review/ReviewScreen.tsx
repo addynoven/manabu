@@ -106,6 +106,7 @@ export function ReviewScreen() {
           />
 
           <FsrsRetentionGraph
+            cards={allCards}
             stability={
               allCards.length > 0
                 ? Number(
