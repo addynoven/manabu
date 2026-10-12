@@ -2,9 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 import { StitchHeader } from '@/core/components/StitchHeader';
-import { AuthGate } from '@/features/auth/components/AuthGate';
-import { speakJapanese } from '@/features/content/models/kana';
+import { AuthGate } from '@/features/auth';
+import { speakJapanese } from '@/features/content';
 import { VisualThemePanel } from './components';
+import { Volume2, Sliders, Palette } from 'lucide-react';
 
 export function SettingsScreen() {
   const [activeTab, setActiveTab] = useState<'visual' | 'fsrs' | 'audio'>('visual');
@@ -16,7 +17,7 @@ export function SettingsScreen() {
   const [ghostReviews, setGhostReviews] = useState<boolean>(true);
 
   const [voicePack, setVoicePack] = useState<'haru' | 'kenji' | 'aoi'>('haru');
-  const [autoPlayAudio, setAutoPlayAudio] = useState<boolean>(true);
+  const [speechSpeed, setSpeechSpeed] = useState<number>(1.0);
 
   const [saveSuccess, setSaveSuccess] = useState(false);
 
@@ -83,8 +84,36 @@ export function SettingsScreen() {
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <span className="material-symbols-outlined text-[20px] text-primary-container">palette</span>
+                      <Palette size={18} className="text-primary-container" />
                       <span className="text-sm font-medium">Visual Styling &amp; Themes</span>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => setActiveTab('fsrs')}
+                    className={`w-full flex items-center justify-between px-3.5 py-3 rounded-lg text-left transition-all ${
+                      activeTab === 'fsrs'
+                        ? 'bg-surface-muted border-l-4 border-primary-container text-text-primary font-bold shadow-sm'
+                        : 'hover:bg-surface-elevated text-text-secondary hover:text-text-primary'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <Sliders size={18} className="text-amber-400" />
+                      <span className="text-sm font-medium">FSRS-6 Algorithm Calibration</span>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => setActiveTab('audio')}
+                    className={`w-full flex items-center justify-between px-3.5 py-3 rounded-lg text-left transition-all ${
+                      activeTab === 'audio'
+                        ? 'bg-surface-muted border-l-4 border-primary-container text-text-primary font-bold shadow-sm'
+                        : 'hover:bg-surface-elevated text-text-secondary hover:text-text-primary'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <Volume2 size={18} className="text-emerald-400" />
+                      <span className="text-sm font-medium">Audio Speech Synthesis</span>
                     </div>
                   </button>
                 </nav>
@@ -92,12 +121,125 @@ export function SettingsScreen() {
             </aside>
 
             <div className="lg:col-span-8 flex flex-col gap-6">
-              <VisualThemePanel
-                theme={theme}
-                furiganaMode={furiganaMode}
-                onSetTheme={setTheme}
-                onSetFuriganaMode={setFuriganaMode}
-              />
+              {activeTab === 'visual' && (
+                <VisualThemePanel
+                  theme={theme}
+                  furiganaMode={furiganaMode}
+                  onSetTheme={setTheme}
+                  onSetFuriganaMode={setFuriganaMode}
+                />
+              )}
+
+              {activeTab === 'fsrs' && (
+                <div className="bg-surface-base border border-border-hairline rounded-xl p-6 shadow-sm space-y-6">
+                  <div className="border-b border-border-hairline pb-4">
+                    <h2 className="text-xl font-bold text-white">FSRS-6 Algorithm Calibration</h2>
+                    <p className="text-xs text-text-secondary mt-1">
+                      Configure target memory retention rate and ghost interval scheduling.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div>
+                      <div className="flex justify-between text-xs font-bold mb-2">
+                        <span>Target Retention Rate</span>
+                        <span className="text-amber-400 font-mono">{retentionRate}%</span>
+                      </div>
+                      <input
+                        type="range"
+                        min={80}
+                        max={95}
+                        step={1}
+                        value={retentionRate}
+                        onChange={(e) => setRetentionRate(Number(e.target.value))}
+                        className="w-full accent-amber-400 cursor-pointer"
+                      />
+                      <p className="text-[11px] text-text-muted mt-1">
+                        Higher retention rates trigger reviews sooner to guarantee recall stability.
+                      </p>
+                    </div>
+
+                    <div className="pt-4 border-t border-border-hairline flex items-center justify-between">
+                      <div>
+                        <span className="text-xs font-bold text-white block">Ghost Reviews</span>
+                        <span className="text-[11px] text-text-muted">
+                          Automatically generate ghost practice cards on lapsed items.
+                        </span>
+                      </div>
+                      <button
+                        onClick={() => setGhostReviews(!ghostReviews)}
+                        className={`w-12 h-6 rounded-full transition-colors relative ${
+                          ghostReviews ? 'bg-primary-container' : 'bg-surface-muted'
+                        }`}
+                      >
+                        <span
+                          className={`w-4 h-4 rounded-full bg-white absolute top-1 transition-transform ${
+                            ghostReviews ? 'left-7' : 'left-1'
+                          }`}
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {activeTab === 'audio' && (
+                <div className="bg-surface-base border border-border-hairline rounded-xl p-6 shadow-sm space-y-6">
+                  <div className="border-b border-border-hairline pb-4">
+                    <h2 className="text-xl font-bold text-white">Tokyo Speech Synthesis Audio</h2>
+                    <p className="text-xs text-text-secondary mt-1">
+                      Select voice profile and test playback speed.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="grid grid-cols-3 gap-3">
+                      {[
+                        { id: 'haru', label: 'Haru (Tokyo Female)' },
+                        { id: 'kenji', label: 'Kenji (Tokyo Male)' },
+                        { id: 'aoi', label: 'Aoi (Soft Native)' },
+                      ].map((v) => (
+                        <button
+                          key={v.id}
+                          onClick={() => {
+                            setVoicePack(v.id as any);
+                            speakJapanese('こんにちは');
+                          }}
+                          className={`p-4 rounded-xl border text-left transition ${
+                            voicePack === v.id
+                              ? 'bg-surface-muted border-primary-container text-white font-bold'
+                              : 'bg-background-deep border-border-hairline text-text-secondary'
+                          }`}
+                        >
+                          <span className="text-xs font-mono block">{v.label}</span>
+                        </button>
+                      ))}
+                    </div>
+
+                    <div className="pt-4 border-t border-border-hairline flex items-center justify-between">
+                      <span className="text-xs font-bold text-white">Speech Playback Speed</span>
+                      <div className="flex gap-1">
+                        {[0.8, 1.0, 1.2].map((spd) => (
+                          <button
+                            key={spd}
+                            onClick={() => {
+                              setSpeechSpeed(spd);
+                              speakJapanese('日本語');
+                            }}
+                            className={`px-3 py-1 rounded-lg text-xs font-mono transition ${
+                              speechSpeed === spd
+                                ? 'bg-primary-container text-white font-bold'
+                                : 'bg-surface-muted text-text-secondary border border-border-hairline'
+                            }`}
+                          >
+                            {spd}x
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               <div className="sticky bottom-6 z-40 bg-surface-container-high/95 backdrop-blur-md border border-border-hairline rounded-xl p-4 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="flex items-center gap-2.5 text-xs text-text-secondary">

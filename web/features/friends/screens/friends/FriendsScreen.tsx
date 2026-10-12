@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { StitchHeader } from '@/core/components/StitchHeader';
 import { AuthGate, useAuth } from '@/features/auth';
 import { fetchWithAuth } from '@/core/api/httpClient';
-import { RefreshCw, Trophy, Users, UserPlus } from 'lucide-react';
+import { RefreshCw, Trophy, Users } from 'lucide-react';
 import {
   ScholarCodeBanner,
   SapphireLeagueBoard,
@@ -15,14 +15,14 @@ import {
 export function FriendsScreen() {
   const { profile } = useAuth();
 
-  const [activeTab, setActiveTab] = useState<'board' | 'friends' | 'requests'>('board');
+  const [activeTab, setActiveTab] = useState<'board' | 'friends'>('board');
   const [friends, setFriends] = useState<FriendUser[]>([]);
   const [currentWeekId, setCurrentWeekId] = useState('');
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [actionMessage, setActionMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
-  const friendCode = profile?.friendCode || 'R4B6-53B4';
+  const friendCode = profile?.friendCode || 'ZCQEHCXG';
 
   const fetchCommunityData = useCallback(async (isRefresh = false) => {
     if (isRefresh) setRefreshing(true);
@@ -52,7 +52,7 @@ export function FriendsScreen() {
   const handleAddFriend = async (code: string) => {
     const clean = code.trim().replace(/[\s-]/g, '').toUpperCase();
     if (clean.length !== 8) {
-      setActionMessage({ type: 'error', text: 'Friend code must be 8 characters (e.g. K7MQ-2XRD).' });
+      setActionMessage({ type: 'error', text: 'Friend code must be 8 characters (e.g. ZCQEHCXG).' });
       return;
     }
 
@@ -112,7 +112,7 @@ export function FriendsScreen() {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-border-subtle">
               <div className="space-y-1">
                 <div className="flex items-center gap-2 text-xs text-text-muted">
-                  <span>{friends.length + 42} Scholars in Dojo</span>
+                  <span>{friends.length} Clan Scholars Active</span>
                 </div>
                 <h1 className="text-xl sm:text-2xl font-bold text-text-primary tracking-tight">
                   Exchange mnemonics, challenge rivals, and compete in weekly cohorts.
@@ -190,7 +190,12 @@ export function FriendsScreen() {
               loading={loading}
               friends={friends}
               onRemoveFriend={handleRemoveFriend}
-              onOpenChallengeModal={() => {}}
+              onOpenChallengeModal={(friend) =>
+                setActionMessage({
+                  type: 'success',
+                  text: `⚔️ Live PvP Challenge issued to ${friend.displayName || 'Scholar'}! Go to Arcade to duel.`,
+                })
+              }
             />
           )}
         </main>

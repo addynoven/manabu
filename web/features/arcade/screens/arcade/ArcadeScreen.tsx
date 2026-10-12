@@ -134,7 +134,11 @@ function ArcadeContent() {
                 onSelectTab={setActiveTab}
                 onOpenSolo={(game) => {
                   setLiveMatchId(null);
-                  setActiveGame(game);
+                  if (game === 'bushidoSurvival') setActiveGame('survival');
+                  else if (game === 'kanaRain') setActiveGame('rain');
+                  else if (game === 'kanaSnake') setActiveGame('snake');
+                  else if (game === 'kanaCatch') setActiveGame('catch');
+                  else setActiveGame(game as ActiveGame);
                 }}
                 onOpenLobby={handleOpenLobby}
               />
