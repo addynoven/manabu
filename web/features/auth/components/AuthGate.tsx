@@ -16,18 +16,8 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
     setMounted(true);
   }, []);
 
-  const hasLocalSession = (() => {
-    if (typeof window === 'undefined') return true;
-    try {
-      const u = localStorage.getItem('manabu_user');
-      const p = localStorage.getItem('manabu_auth_profile');
-      return !!(u || p);
-    } catch {
-      return true;
-    }
-  })();
-
-  if (!mounted || user || profile || hasLocalSession) {
+  // Pre-render layout during SSR and initial hydration pass (!mounted or loading)
+  if (!mounted || loading || user || profile) {
     return <>{children}</>;
   }
 
@@ -36,8 +26,8 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
     setAuthError(null);
     try {
       await signInWithGoogle();
-    } catch (err: any) {
-      setAuthError(err?.message || 'Google sign-in could not be completed.');
+    } catch (err: unknown) {
+      setAuthError(err instanceof Error ? err.message : 'Google sign-in could not be completed.');
     } finally {
       setSigningInGoogle(false);
     }
