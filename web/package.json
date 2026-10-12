@@ -8,6 +8,7 @@
     "sync:curriculum": "bun run ./scripts/export_curriculum_to_web.ts",
     "gen:feature": "bun scripts/gen-feature.ts",
     "typecheck": "tsc --noEmit",
+    "test": "bun test",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
