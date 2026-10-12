@@ -6,9 +6,11 @@ on:
     branches: [master, main]
 
 jobs:
-  verify:
+  web-verify:
+    name: Web Workstation CI (Next.js)
     runs-on: ubuntu-latest
     timeout-minutes: 15
+
     services:
       postgres:
         image: postgres:16
@@ -26,15 +28,21 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
 
-      - name: Install dependencies
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install Web Dependencies
         run: cd web && bun install
 
-      - name: Typecheck
+      - name: TypeScript Typecheck
         run: cd web && bun run typecheck
 
-      - name: Setup CI Database Schema
+      - name: ESLint Architecture Boundaries
+        run: cd web && bun run lint
+
+      - name: Initialize PostgreSQL Schema
         run: |
           PGPASSWORD=postgres psql -h localhost -U postgres -d defaultdb -c "CREATE SCHEMA IF NOT EXISTS manabu;"
           PGPASSWORD=postgres psql -h localhost -U postgres -d defaultdb -c "
@@ -135,13 +143,31 @@ jobs:
             );
           "
 
-      - name: Test
+      - name: Unit & Integration Tests
         run: cd web && bun run test
         env:
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/defaultdb
 
-      - name: Build
+      - name: Production Build
         run: cd web && bun run build
         env:
           NODE_ENV: production
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/defaultdb
+
+  mobile-verify:
+    name: Mobile Workstation CI (React Native)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install Mobile Dependencies
+        run: cd mobile && bun install
+
+      - name: Mobile TypeScript Typecheck
+        run: cd mobile && bunx tsc --noEmit
