@@ -25,22 +25,13 @@ export function proxy(request: NextRequest) {
   const isProtected = protectedPaths.some((path) => pathname.startsWith(path));
 
   if (isProtected) {
+    const response = NextResponse.next();
     const sessionCookie = request.cookies.get('manabu_session')?.value;
     const userCookie = request.cookies.get('manabu_user')?.value;
-    const authHeader = request.headers.get('authorization');
 
-    const hasSession = !!(sessionCookie || userCookie || authHeader);
-
-    if (!hasSession) {
-      // Early redirect to home page with auth query parameter
-      const redirectUrl = new URL('/', request.url);
-      redirectUrl.searchParams.set('auth', 'required');
-      redirectUrl.searchParams.set('redirect', pathname);
-      return NextResponse.redirect(redirectUrl);
+    if (sessionCookie || userCookie) {
+      response.headers.set('x-manabu-session', 'active');
     }
-
-    const response = NextResponse.next();
-    response.headers.set('x-manabu-session', 'active');
     return response;
   }
 

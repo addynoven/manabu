@@ -143,8 +143,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const unsubscribe = onAuthStateChanged(firebaseAuth, async (fbUser) => {
       setUser(fbUser);
       if (fbUser) {
+        if (typeof document !== 'undefined') {
+          document.cookie = `manabu_user=${fbUser.uid}; Path=/; max-age=604800; SameSite=Lax`;
+        }
         await syncProfileToPostgres(fbUser);
       } else {
+        if (typeof document !== 'undefined') {
+          document.cookie = `manabu_user=; Path=/; max-age=0; SameSite=Lax`;
+        }
         setProfile(null);
       }
       setLoading(false);
