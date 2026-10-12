@@ -1,32 +1,25 @@
 # Next.js App Router Architecture Blueprint & Playbook (v4)
 
 > Domain-agnostic spec for Next.js App Router apps. Written for solo devs, teams, and AI coding agents.
-> **Prime directive: build the simplest thing that works. Add complexity only after hitting a real, measured limit.**
+> **Prime directive: one architecture, full structure from day one. Nothing is ever "upgraded" or moved later, so there is no migration phase.**
 
 ---
 
-## 0. Tier Selection (and how to move between tiers)
+## 0. One Architecture, No Tiers
 
-### Tier A: Lean (default for every new project)
-- Folders: `app/` + `features/` + a small `lib/` (no `core/` split yet).
-- Data: direct queries in a `repositories/` file per feature. Server Components fetch directly.
-- Client cache: React Query or SWR only where the UI needs live/optimistic data.
-- Auth: signed session cookie, verified in a server helper (`getSession()`).
-- No Redis, no pub/sub, no multi-layer cache, no Zod on every DB row.
+Every project starts with the full skeleton: `app/`, `core/`, `features/`, import boundaries, repositories, Server Actions, error/loading files, cache adapter, tests setup, CI.
 
-### Tier B: Full Core (only when a trigger below is hit)
-3-tier layout (`app/` `core/` `features/`), Redis/Valkey cache, edge proxy auth, API contracts, atomic invalidation.
+### Why no "start lean, upgrade later"
+The expensive part of a rewrite is not adding Redis or a queue. It is **moving files and rewriting imports** across the whole codebase (e.g. `lib/` to `core/`, deep imports into feature internals, logic living in `app/`), while humans and AI agents keep producing code in the old shape. A full skeleton from day one means growth only ever means *adding files inside folders that already exist*.
 
-### Upgrade triggers (move only when one is true, and measured)
-| Trigger | Upgrade |
-|---|---|
-| Same query is slow (>300ms p95) AND read-heavy | Add Valkey cache for that query only |
-| 2+ devs stepping on each other in shared folders | Split `lib/` into `core/`, enforce import boundaries |
-| Third-party/mobile clients need your API | Add Zod-validated public API contracts + versioning |
-| Auth checks needed before render on many routes | Add edge proxy (JWT-only check, see section 4) |
-| >10k active users or multi-region | Revisit caching + DB read replicas |
+### What stays small at the start (content, not structure)
+- A feature begins with only the files it needs, but they live in the final folders (`repositories/`, `actions/`, `screens/`, `models/`).
+- Infrastructure sits behind a seam from day one: `core/cache` has one interface; the driver is Valkey in production and in-memory locally. Turning caching on for a query is a one-line change in that repository, not a refactor.
+- No speculative features: no pub/sub or multi-region logic until a real requirement exists. These plug into `core/` without moving anything.
+- **Out of scope for now (revisit when on the roadmap):** multi-tenancy, microservices, multi-region.
 
-Rule: write the trigger and the measurement in an ADR (section 12) before upgrading.
+### Full structure is only fast if it is generated
+Hand-writing boilerplate is what makes "go full" feel slow. Keep a generator (`bun run gen:feature <name>`, via plop/hygen or a small script) that creates the whole feature folder, barrel exports, a test stub and a route adapter. Agents must use it instead of creating folders by hand.
 
 ---
 
@@ -35,15 +28,14 @@ Rule: write the trigger and the measurement in an ADR (section 12) before upgrad
 ```text
 /
 ├── app/            # Routing adapters + app/api route handlers
-├── core/           # Tier B: shared foundations (db, cache, auth, config, errors, ui primitives)
+├── core/           # Shared foundations (db, cache, auth, config, errors, ui primitives)
 ├── features/       # Self-contained domain modules
 ├── data/           # Static datasets, seeds
+├── worker/         # Long-running BullMQ worker process (deployed separately from Vercel)
 ├── public/
-├── proxy.ts        # Tier B: edge auth gate (named middleware.ts on Next <16)
+├── proxy.ts        # Edge auth gate (named middleware.ts on Next <16)
 └── types.ts
 ```
-
-Tier A swaps `core/` for `lib/` (same contents, flatter, fewer rules).
 
 ### 1.1 Golden rule of `app/`
 Routes are thin adapters (<10 lines) importing screens from `@/features/<feature>/screens`.
@@ -72,12 +64,15 @@ Route-level special files (`layout.tsx`, `loading.tsx`, `error.tsx`, `not-found.
 
 ---
 
-## 3. Shared Foundations (`core/` or `lib/`)
+## 3. Shared Foundations (`core/`)
 
 ```text
 core/
 ├── api/        # httpClient.ts (traced fetch), response.ts (ok/fail helpers)
 ├── auth/       # session.ts (verify/create), permissions.ts (RBAC helpers)
+├── cache/      # cache.ts (interface), valkey driver, in-memory driver
+├── queue/      # BullMQ queue factory + connection
+├── email/      # provider interface (Resend/SES/Postmark driver)
 ├── components/ # AppHeader, AuthGate, FeatureGate, Button, Modal
 ├── db/         # postgres.ts, valkey.ts, migrations/
 ├── config/     # config.schema.ts (Zod env), config.ts, flags.ts
@@ -121,18 +116,18 @@ UI gate only. Data is protected by server checks.
 
 ## 5. Data & Caching
 
-### 5.1 Layers (add one at a time)
-1. **Server fetch + Next cache** (Tier A default).
+### 5.1 Layers (all wired from day one, each behind a seam)
+1. **Server fetch + Next cache** for Server Components.
 2. **React Query/SWR** for client interactivity.
-3. **Valkey/Redis** (Tier B, per-query, after measuring). Default TTL 5 min; choose TTL per data type.
+3. **`core/cache`** (Valkey in production, in-memory driver locally). Repositories decide per query whether to cache and for how long (default TTL 5 min; choose per data type). Features never talk to Redis directly.
 
 ### 5.2 Invalidation (corrected)
 - Client: invalidate query keys from `keys.ts`.
 - Next: `revalidateTag` / `revalidatePath` in the mutation.
 - Redis: **`DEL` does not support wildcards.** `valkey.del("app:cache:uid*")` deletes nothing. Use one of:
-    - **Key versioning (preferred):** store `cache:ver:{uid}`; include it in every key; invalidate by `INCR`.
-    - **Tag sets:** `SADD tag:{uid} key`, then `DEL` all members.
-    - `SCAN` + `UNLINK` only for rare admin purges, never on a hot path.
+  - **Key versioning (preferred):** store `cache:ver:{uid}`; include it in every key; invalidate by `INCR`.
+  - **Tag sets:** `SADD tag:{uid} key`, then `DEL` all members.
+  - `SCAN` + `UNLINK` only for rare admin purges, never on a hot path.
 - Always invalidate after the DB write commits, not before.
 - Cache stampede: for hot keys use short lock or stale-while-revalidate on the server.
 
@@ -153,6 +148,7 @@ features/<name>/
 ├── engine/         # pure domain logic (no React, no IO)
 ├── hooks/          # client hooks
 ├── actions/        # Server Actions ('use server')
+├── jobs/           # BullMQ job definitions: Zod payload + processor
 ├── models/         # Zod schemas + inferred types
 ├── repositories/   # data access ('server-only'), returns Result<T, AppError>
 ├── screens/<screen>/{components/,<Screen>.tsx,index.ts}
@@ -194,7 +190,7 @@ Do not copy server data into Zustand.
 ## 8. Security Baseline
 
 - Security headers (CSP, `X-Content-Type-Options`, `Referrer-Policy`, `frame-ancestors`) via `next.config` or proxy.
-- Rate limit auth endpoints, mutations, and anything public (Valkey token bucket in Tier B; in-memory or provider-level in Tier A).
+- Rate limit auth endpoints, mutations, and anything public (Valkey token bucket through `core/cache`; in-memory driver locally).
 - Secrets only in env, validated by `config.schema.ts`; never `NEXT_PUBLIC_` for secrets.
 - Sanitize user-generated HTML (DOMPurify) before `dangerouslySetInnerHTML`; prefer not using it.
 - File uploads: validate type/size server-side, use signed URLs to object storage.
@@ -242,11 +238,94 @@ Do not copy server data into Zustand.
 
 ---
 
-## 12. Project Hygiene & Delivery
+## 12. Background Jobs, Webhooks & Email
 
-- **ADRs:** one short markdown file per significant decision in `docs/adr/NNN-title.md` (context, decision, consequences). Required for every tier upgrade.
+### 12.1 Queue: BullMQ on Valkey/Redis (part of the base from day one)
+- `core/queue/` exposes a queue factory and the connection. Features define jobs in `features/<name>/jobs/<job>.job.ts`: a Zod payload schema plus a processor function.
+- `worker/index.ts` registers every processor and runs as its own process (`bun run worker` locally).
+- Rules:
+  1. Validate payloads with Zod on enqueue and on process.
+  2. **Jobs must be idempotent** (safe to run twice). Retries will happen.
+  3. Retries with exponential backoff; failed jobs stay in the failed set and trigger an alert (section 13.3).
+  4. Processors hold no business logic: they call the feature's `engine/` and `repositories/`.
+  5. Enqueue **after** the DB write commits.
+  6. Scheduled work uses BullMQ job schedulers (repeatable jobs), not a separate cron system.
+
+### 12.2 Where the worker runs
+Vercel functions can **enqueue** jobs, but they are short-lived and cannot host a worker. Run `worker/` as an always-on process (Docker on Railway, Fly.io, a VPS, etc.). Document the target in the deploy notes.
+
+### 12.3 Redis/Valkey configuration
+- BullMQ needs `maxmemory-policy noeviction` (it must never lose job keys). A cache usually wants an eviction policy. **Use separate instances for queue and cache**, or you risk losing jobs under memory pressure.
+- Workers need `maxRetriesPerRequest: null` on the ioredis connection.
+- Valkey is Redis-protocol compatible and generally works with BullMQ; verify with a smoke test in CI.
+
+### 12.4 Webhooks
+- **API call:** you call them, when you want something ("is payment X paid?").
+- **Webhook:** they call you, when something happens on their side ("payment X just succeeded"), at a URL you registered. Same HTTP mechanics, opposite direction. Payments need it because the user pays on the gateway's page and your server cannot know when it finishes.
+- Rules for every webhook route (`app/api/webhooks/<provider>/route.ts`, thin adapter into `features/<f>/`):
+  1. **Verify the signature** using the raw body and the provider's secret. Reject otherwise.
+  2. **Respond 2xx fast**; do the real work in a queue job.
+  3. **Idempotency:** store the provider's event id; ignore duplicates (providers retry and sometimes send twice).
+  4. Don't assume ordering; re-fetch current state from the provider when it matters.
+  5. Log event id and outcome; never log secrets or card data.
+  6. Test locally with the provider's CLI or a tunnel; keep a sample payload fixture for tests.
+- For payments: your database is the source of truth, updated by the verified webhook. A redirect back to your site from the gateway is a hint, not proof.
+
+### 12.5 Email
+Send through `core/email` (provider interface, one driver) from a queue job, never inline in a request. Templates live in the feature that owns them.
+
+---
+
+## 13. Operations
+
+### 13.1 Database migrations without downtime
+During a deploy, old and new code run side by side for a while, so a migration must work with both. Use **expand then contract**:
+1. **Expand:** add the new column/table (nullable or with a default). Deploy.
+2. Code writes to both old and new; **backfill** old rows (in a job, in batches).
+3. Switch reads to the new column. Deploy.
+4. **Contract:** drop the old column in a later deploy.
+   Never rename or drop a column in the same deploy as the code that stops using it. Large index builds: `CREATE INDEX CONCURRENTLY`. Take a backup before any destructive migration.
+
+### 13.2 Environments
+- **Local:** own database, seeded from `data/`.
+- **Preview:** Vercel deploys a preview per PR; point it at a separate preview/staging database, never production.
+- **Production:** deploys from `main` only after CI is green.
+- Same env var names everywhere, validated by `config.schema.ts`.
+
+### 13.3 Monitoring minimum
+- Error tracking (Sentry or equivalent) via `captureError()`.
+- `GET /api/health` (checks DB and Valkey); external uptime monitor pings it and alerts you.
+- Alert when a queue's failed-job count grows or jobs stall.
+- Vercel logs and analytics on; structured logs from section 11.
+- `RUNBOOK.md` in the repo: how to roll back a deploy, how to restore the database, where logs and dashboards are, who/what to check first.
+
+---
+
+## 14. Privacy & Compliance (asked at project start)
+
+When a project is created, the generator asks which level applies, and records the answer in `docs/privacy.md`:
+
+| Level | Meaning | Baseline |
+|---|---|---|
+| 0 | Hobby/no personal data | Don't collect what you don't need; no secrets in logs |
+| 1 | Normal app with accounts | Privacy policy + terms, cookie consent where required, user data export and delete, minimal PII, encryption in transit, backups |
+| 2 | Sensitive data or regulated users | Level 1 plus audit log of reads/writes to sensitive data, retention schedule, data-processor agreements with vendors, field-level encryption where needed, access reviews |
+
+Always: collect the minimum, know where personal data lives (a short data map in `docs/privacy.md`), and make account deletion actually remove or anonymise data including caches and queue payloads. This is engineering guidance, not legal advice; check the rules for your users' regions.
+
+---
+
+## 15. Project Hygiene & Delivery
+
+- **ADRs:** one short markdown file per significant decision in `docs/adr/NNN-title.md` (context, decision, consequences). Required for every significant architecture decision.
+- **Generator:** `bun run gen:feature <name>` scaffolds a complete feature (folders, barrels, test stub, route adapter). Never create feature folders by hand.
 - **Env:** `.env.example` committed, real `.env*` ignored, validated at boot.
-- **CI (GitHub Actions):** install, typecheck, lint, test, build, (optional) E2E + preview deploy.
+- **Formatting & linting:** Prettier (formatting) + ESLint (rules, import boundaries). One config, committed.
+- **Pre-commit hook (Husky + lint-staged):** on each commit, run ESLint `--fix` and Prettier only on the staged files. Keep it fast (seconds); typecheck can run on pre-push, and the full build belongs to CI. Setup:
+  1. `bun add -D husky lint-staged` then `bunx husky init`
+  2. Put `bunx lint-staged` in `.husky/pre-commit`
+  3. In `package.json`: `"lint-staged": { "*.{ts,tsx}": ["eslint --fix", "prettier --write"], "*.{json,md,css}": ["prettier --write"] }`
+- **CI (GitHub Actions):** install, typecheck, lint, test, build, (optional) E2E. Branch protection: `main` requires green CI. Vercel deploys automatically from `main` and creates previews per PR.
 - **Git:** small PRs, Conventional Commits, no direct pushes to main.
 - **Feature flags:** flat boolean object in `flags.ts`; remove flags after rollout.
 - **Deploy:** document target (Vercel/Docker), required env vars, DB migration step, rollback plan.
@@ -254,7 +333,7 @@ Do not copy server data into Zustand.
 
 ---
 
-## 13. Definition of Done
+## 16. Definition of Done
 
 A task is complete only when all are true:
 1. `bunx tsc --noEmit` passes with 0 errors.
@@ -267,18 +346,18 @@ A task is complete only when all are true:
 
 ---
 
-## 14. Agent Skills (from skills.sh)
+## 17. Agent Skills (from skills.sh)
 
 Skills are installable instruction packs that keep an agent on current Next.js patterns instead of falling back to Pages Router habits. Install with `npx skills add <owner/repo>` (see the skills.sh CLI docs for picking individual skills from a repo).
 
-### 14.1 Core set (install on day one)
+### 17.1 Core set (install on day one)
 | Skill | Source | Why it fits this blueprint |
 |---|---|---|
 | `next-best-practices` | `vercel-labs/next-skills` | File conventions, RSC boundaries, data patterns, async APIs, metadata. Backs sections 1 and 2. |
 | `vercel-react-best-practices` | `vercel-labs/agent-skills` | 69 React/Next performance rules (waterfalls, bundle size, re-renders). Backs sections 2 and 11. |
 | `vercel-composition-patterns` | `vercel-labs/agent-skills` | Composable component architecture. Backs the screen/component split in section 6. |
 
-### 14.2 Add when you hit the need (lean rule applies to skills too)
+### 17.2 Add when the need appears
 | Skill | Source | Add when |
 |---|---|---|
 | `next-cache-components` | `vercel-labs/next-skills` | You adopt PPR / the `use cache` directive (`cacheLife`, `cacheTag`, `revalidateTag`). Overlaps section 5, so adopt it deliberately. |
@@ -289,37 +368,37 @@ Skills are installable instruction packs that keep an agent on current Next.js p
 | `turborepo` | `vercel/turborepo` | You move to a monorepo. |
 | `ai-sdk` | `vercel/ai` | You build chat/streaming/tool-calling features with the Vercel AI SDK. |
 
-### 14.3 Match your database (pick the one you use, ignore the rest)
+### 17.3 Match your database (pick the one you use, ignore the rest)
 - Prisma: `prisma-client-api`, `prisma-cli`, `prisma-postgres`, `prisma-database-setup` (`prisma/skills`).
 - Supabase: `supabase`, `supabase-postgres-best-practices` (`supabase/agent-skills`).
 - Neon: `neon-postgres` (`neondatabase/agent-skills`).
 - Plain `pg` / Drizzle: no dedicated skill from the directory page; section 5.3 covers it.
 
-### 14.4 Process skills (optional, pair with section 13)
+### 17.4 Process skills (optional, pair with section 16)
 - `test-driven-development`, `systematic-debugging`, `verification-before-completion` (`obra/superpowers`) and `tdd` (`mattpocock/skills`) reinforce the Definition of Done and the testing strategy.
 
-### 14.5 Rules for using skills
-1. **Blueprint wins on conflict.** Skills are generic; this document is your house style (Tier A first, thin routes, import boundaries, Result types).
+### 17.5 Rules for using skills
+1. **Blueprint wins on conflict.** Skills are generic; this document is your house style (thin routes, import boundaries, Result types, full structure from day one).
 2. **Install the core set only**, then add one skill at a time when a real need appears. More skills means more context for the agent to read and more chances of contradictory advice.
 3. **Review before installing.** A skill is third-party instructions your agent will follow. Prefer official/known publishers and check the skills.sh audits page and the repo's `SKILL.md` first.
 4. **Pin and re-check.** Re-read installed skills after major Next.js upgrades so they don't push outdated APIs.
-5. Skills applies to any host; Vercel-specific ones are only for Vercel deployments.
+5. Skills apply to any host; Vercel-specific ones are only for Vercel deployments.
 
 ---
 
-## 15. Master Prompt for AI Coding Agents
+## 18. Master Prompt for AI Coding Agents
 
 ```text
 I am building a Next.js App Router application. Follow this blueprint.
 
-PRIME RULE: Build the simplest thing that works. Start in Tier A (lean). Do NOT add Redis,
-queues, extra abstraction layers, or "future-proofing" unless I name a measured trigger.
-If you think complexity is needed, say why and ask first.
+PRIME RULE: One architecture, full structure from day one. Never create a "temporary simple"
+layout that would need files moved later. Create features with `bun run gen:feature <name>`.
+Do NOT add speculative infrastructure (pub/sub, multi-region, multi-tenancy) without a stated requirement.
 
 Structure:
 - app/: thin routing adapters (<10 lines) + app/api handlers. No business logic.
 - features/<feature>/: components, engine, hooks, actions, models, repositories, screens/<screen>, store, __tests__, keys.ts, index.ts
-- core/ (or lib/ in Tier A): db, auth, config, errors, logging, security, shared UI.
+- core/: db, cache, auth, config, errors, logging, security, shared UI.
 - Features import other features only via their index.ts. core never imports features.
 
 Rules:
@@ -328,12 +407,15 @@ Rules:
 3. Every action/handler: authenticate -> authorize (ownership) -> validate with Zod -> repository.
 4. Repositories are 'server-only', return Result<T, AppError>, always filter by userId.
 5. Auth: HttpOnly session cookie, verified server-side. Proxy/middleware is only a fast gate. Never gate on localStorage.
-6. Cache only after measuring. Redis invalidation via key versioning or tag sets (DEL has no wildcards).
+6. Cache only through core/cache (Valkey prod, in-memory dev); never call Redis from features. Invalidate via key versioning or tag sets (DEL has no wildcards).
 7. Each route segment with data has loading.tsx and error.tsx.
 8. TypeScript strict, zero any, zero @ts-ignore. Files: components <=150 lines, screens <=180.
 9. Add tests for new logic and a regression test for every bug fix.
 10. No new dependency without a one-line justification.
-11. If agent skills are installed (next-best-practices, vercel-react-best-practices, vercel-composition-patterns), use them for Next/React specifics, but THIS blueprint wins on any conflict.
+11. Background work goes through BullMQ (core/queue, features/<f>/jobs, worker/): Zod payloads, idempotent jobs, retries, never inline in a request. Email is sent from a job.
+12. Webhook routes: verify signature on raw body, respond 2xx fast, dedupe by event id, process in a job. Redirects from payment gateways are never proof of payment.
+13. Migrations are backward-compatible (expand then contract); never drop or rename in the same deploy as the code change.
+14. If agent skills are installed (next-best-practices, vercel-react-best-practices, vercel-composition-patterns), use them for Next/React specifics, but THIS blueprint wins on any conflict.
 
 Before declaring done: bunx tsc --noEmit, bun run lint, bun run test, bun run build must all pass with 0 errors.
 ```
