@@ -20,8 +20,12 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Rate limit: 60 per minute for matchmaking polling
-  const rl = await checkRateLimit(user.uid, 'duel.matchmaking', { limit: 60, windowSeconds: 60 });
+  // Rate limit: 60 per minute for matchmaking polling (sensitive: failClosed = true)
+  const rl = await checkRateLimit(user.uid, 'duel.matchmaking', {
+    limit: 60,
+    windowSeconds: 60,
+    failClosed: true,
+  });
   if (!rl.allowed) {
     return NextResponse.json(
       { error: { code: 'rate_limited', message: 'Matchmaking rate limit exceeded' } },

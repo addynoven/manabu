@@ -5,8 +5,25 @@ import { query } from '@/core/db/postgres';
 
 export const dynamic = 'force-dynamic';
 
+const GAME_MAX_SCORES: Record<string, number> = {
+  rain: 3000,
+  snake: 2500,
+  catch: 3500,
+  survival: 5000,
+};
+
+const ProofSchema = z
+  .object({
+    durationSeconds: z.number().int().min(5).max(300).default(60),
+    itemsHandled: z.number().int().min(1).max(300).default(20),
+    accuracy: z.number().min(0).max(1).default(1.0),
+    timestamp: z.number().optional(),
+  })
+  .optional();
+
 const RespondChallengeSchema = z.object({
   score: z.number().int().min(0),
+  proof: ProofSchema,
 });
 
 export async function POST(
@@ -35,7 +52,7 @@ export async function POST(
     return NextResponse.json({ error: { code: 'validation_failed', message: 'Score is required' } }, { status: 422 });
   }
 
-  const { score } = parsed.data;
+  const { score, proof } = parsed.data;
 
   try {
     const res = await query('SELECT * FROM manabu.score_challenges WHERE id = $1', [challengeId]);
@@ -55,6 +72,24 @@ export async function POST(
     if (new Date(c.expires_at).getTime() < Date.now()) {
       await query("UPDATE manabu.score_challenges SET status = 'expired' WHERE id = $1", [challengeId]);
       return NextResponse.json({ error: { code: 'expired', message: 'Challenge has expired' } }, { status: 410 });
+    }
+
+    // Authoritative server-side score bounds & proof validation
+    const game = c.game || 'rain';
+    const maxAllowedScore = GAME_MAX_SCORES[game] || 3000;
+    const itemsHandled = proof?.itemsHandled || Math.ceil(score / 50) || 1;
+    const maxPlausibleScore = Math.min(maxAllowedScore, Math.max(100, itemsHandled * 150));
+
+    if (score > maxPlausibleScore) {
+      return NextResponse.json(
+        {
+          error: {
+            code: 'validation_failed',
+            message: `Submitted score (${score}) exceeds maximum allowed score (${maxPlausibleScore}) for ${game}`,
+          },
+        },
+        { status: 422 }
+      );
     }
 
     await query(`

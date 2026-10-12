@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifyAuthToken } from '@/features/auth/repositories/auth';
 import { query } from '@/core/db/postgres';
 import { SrsRepository } from '@/features/srs/repositories/srsRepository';
+import { checkRateLimit } from '@/core/network/rateLimit';
 
 export const dynamic = 'force-dynamic';
 
@@ -45,6 +46,19 @@ export async function PUT(req: NextRequest) {
     return NextResponse.json(
       { error: { code: 'unauthorized', message: 'Missing or invalid token' } },
       { status: 401 }
+    );
+  }
+
+  // Rate limit: 30 per minute (sensitive sync execution: failClosed = true)
+  const rl = await checkRateLimit(user.uid, 'backup.put', {
+    limit: 30,
+    windowSeconds: 60,
+    failClosed: true,
+  });
+  if (!rl.allowed) {
+    return NextResponse.json(
+      { error: { code: 'rate_limited', message: 'Backup sync rate limit exceeded' } },
+      { status: 429 }
     );
   }
 

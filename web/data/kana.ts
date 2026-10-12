@@ -331,12 +331,45 @@ export function getKanaStrokeCount(kana: string): number {
   return KANA_STROKE_COUNTS[kana] || 2;
 }
 
-export function speakJapanese(text: string) {
+export interface SpeakOptions {
+  rate?: number;
+  voice?: 'haru' | 'kenji' | 'aoi' | string;
+}
+
+export function speakJapanese(text: string, options?: SpeakOptions) {
   if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'ja-JP';
-    utterance.rate = 0.9;
+
+    const savedRate = localStorage.getItem('manabu_speech_speed');
+    const effectiveRate = options?.rate ?? (savedRate ? Number(savedRate) : 1.0);
+    utterance.rate = Math.max(0.5, Math.min(effectiveRate, 2.0));
+
+    const savedVoice = localStorage.getItem('manabu_voice');
+    const targetVoice = options?.voice ?? savedVoice;
+    if (targetVoice) {
+      const voices = window.speechSynthesis
+        .getVoices()
+        .filter((v) => v.lang.startsWith('ja') || v.lang.includes('JP'));
+      if (voices.length > 0) {
+        if (targetVoice === 'kenji') {
+          const male = voices.find(
+            (v) =>
+              v.name.toLowerCase().includes('male') ||
+              v.name.toLowerCase().includes('hatsuki') ||
+              v.name.toLowerCase().includes('ichiro') ||
+              v.name.toLowerCase().includes('otoya')
+          );
+          utterance.voice = male || voices[0];
+        } else if (targetVoice === 'aoi') {
+          utterance.voice = voices[1] || voices[0];
+        } else {
+          utterance.voice = voices[0];
+        }
+      }
+    }
+
     window.speechSynthesis.speak(utterance);
   }
 }

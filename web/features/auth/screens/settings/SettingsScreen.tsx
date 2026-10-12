@@ -2,12 +2,15 @@
 
 import React, { useState, useEffect } from 'react';
 import { StitchHeader } from '@/core/components/StitchHeader';
-import { AuthGate } from '@/features/auth';
+import { AuthGate, useAuth } from '@/features/auth';
+import { firebaseAuth } from '@/core/api/firebaseClient';
 import { speakJapanese } from '@/features/content';
+import { getWeekId } from '@/core/utils/helpers';
 import { VisualThemePanel } from './components';
 import { Volume2, Sliders, Palette } from 'lucide-react';
 
 export function SettingsScreen() {
+  const { profile, refreshProfile } = useAuth();
   const [activeTab, setActiveTab] = useState<'visual' | 'fsrs' | 'audio'>('visual');
 
   const [theme, setTheme] = useState<'bunpro' | 'obsidian' | 'alabaster'>('bunpro');
@@ -25,24 +28,74 @@ export function SettingsScreen() {
     try {
       const savedTheme = localStorage.getItem('manabu_theme') as any;
       if (savedTheme) setTheme(savedTheme);
+
       const savedFurigana = localStorage.getItem('manabu_furigana') as any;
       if (savedFurigana) setFuriganaMode(savedFurigana);
+
       const savedRetention = localStorage.getItem('manabu_fsrs_retention');
-      if (savedRetention) setRetentionRate(Number(savedRetention));
+      if (savedRetention) {
+        setRetentionRate(Number(savedRetention));
+      } else if (profile?.desiredRetention) {
+        setRetentionRate(Math.round(profile.desiredRetention * 100));
+      }
+
       const savedVoice = localStorage.getItem('manabu_voice') as any;
       if (savedVoice) setVoicePack(savedVoice);
-    } catch {}
-  }, []);
 
-  const handleSavePreferences = () => {
+      const savedSpeed = localStorage.getItem('manabu_speech_speed');
+      if (savedSpeed) setSpeechSpeed(Number(savedSpeed));
+
+      if (typeof document !== 'undefined') {
+        document.documentElement.setAttribute('data-theme', savedTheme || 'bunpro');
+        document.documentElement.setAttribute('data-furigana', savedFurigana || 'hover');
+      }
+    } catch {}
+  }, [profile?.desiredRetention]);
+
+  const handleSavePreferences = async () => {
     try {
       localStorage.setItem('manabu_theme', theme);
       localStorage.setItem('manabu_furigana', furiganaMode);
       localStorage.setItem('manabu_fsrs_retention', String(retentionRate));
       localStorage.setItem('manabu_voice', voicePack);
+      localStorage.setItem('manabu_speech_speed', String(speechSpeed));
+
+      if (typeof document !== 'undefined') {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute('data-furigana', furiganaMode);
+      }
+
+      // Sync desired_retention to PostgreSQL backend
+      if (firebaseAuth.currentUser) {
+        const token = await firebaseAuth.currentUser.getIdToken();
+        const desiredRetention = Number((retentionRate / 100).toFixed(2));
+        await fetch('/api/v1/profile', {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            displayName: profile?.displayName || firebaseAuth.currentUser.displayName || 'Learner',
+            avatarEmoji: profile?.avatarEmoji || '🥋',
+            beltRank: profile?.beltRank || 'white',
+            level: profile?.level || 1,
+            totalXp: profile?.totalXp || 0,
+            weeklyXp: profile?.weeklyXp || 0,
+            weekId: profile?.weekId || getWeekId(),
+            currentStreak: profile?.currentStreak || 1,
+            lastActiveDate: profile?.lastActiveDate || null,
+            desiredRetention,
+          }),
+        });
+        await refreshProfile();
+      }
+
       setSaveSuccess(true);
       setTimeout(() => setSaveSuccess(false), 2500);
-    } catch {}
+    } catch (err) {
+      console.error('[Settings] Error saving preferences:', err);
+    }
   };
 
   return (
@@ -125,8 +178,18 @@ export function SettingsScreen() {
                 <VisualThemePanel
                   theme={theme}
                   furiganaMode={furiganaMode}
-                  onSetTheme={setTheme}
-                  onSetFuriganaMode={setFuriganaMode}
+                  onSetTheme={(t) => {
+                    setTheme(t);
+                    if (typeof document !== 'undefined') {
+                      document.documentElement.setAttribute('data-theme', t);
+                    }
+                  }}
+                  onSetFuriganaMode={(f) => {
+                    setFuriganaMode(f);
+                    if (typeof document !== 'undefined') {
+                      document.documentElement.setAttribute('data-furigana', f);
+                    }
+                  }}
                 />
               )}
 
@@ -203,7 +266,7 @@ export function SettingsScreen() {
                           key={v.id}
                           onClick={() => {
                             setVoicePack(v.id as any);
-                            speakJapanese('こんにちは');
+                            speakJapanese('こんにちは！日本語を勉強しましょう', { rate: speechSpeed, voice: v.id });
                           }}
                           className={`p-4 rounded-xl border text-left transition ${
                             voicePack === v.id
@@ -224,7 +287,7 @@ export function SettingsScreen() {
                             key={spd}
                             onClick={() => {
                               setSpeechSpeed(spd);
-                              speakJapanese('日本語');
+                              speakJapanese('日本語', { rate: spd, voice: voicePack });
                             }}
                             className={`px-3 py-1 rounded-lg text-xs font-mono transition ${
                               speechSpeed === spd
@@ -269,3 +332,4 @@ export function SettingsScreen() {
     </AuthGate>
   );
 }
+

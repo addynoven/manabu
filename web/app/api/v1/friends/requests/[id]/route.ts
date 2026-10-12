@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAuthToken } from '@/features/auth/repositories/auth';
-import { query } from '@/core/db/postgres';
+import { withTransaction } from '@/core/db/postgres';
 
 export const dynamic = 'force-dynamic';
 
@@ -20,13 +20,17 @@ export async function DELETE(
   }
 
   try {
-    const res = await query(`
-      DELETE FROM manabu.friend_requests 
-      WHERE id = $1 AND from_uid = $2 AND status = 'pending'
-      RETURNING id;
-    `, [requestId, user.uid]);
+    const deleted = await withTransaction(async (client) => {
+      const res = await client.query(`
+        DELETE FROM manabu.friend_requests
+        WHERE id = $1 AND from_uid = $2 AND status = 'pending'
+        RETURNING id;
+      `, [requestId, user.uid]);
 
-    if (res.rows.length === 0) {
+      return res.rows.length > 0;
+    });
+
+    if (!deleted) {
       return NextResponse.json({ error: { code: 'not_found', message: 'Pending request not found or not owned' } }, { status: 404 });
     }
 

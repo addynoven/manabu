@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAuthToken } from '@/features/auth/repositories/auth';
-import { query } from '@/core/db/postgres';
+import { withTransaction } from '@/core/db/postgres';
 
 export const dynamic = 'force-dynamic';
 
@@ -19,17 +19,26 @@ export async function DELETE(
   }
 
   try {
-    // 1. Delete friendship
-    await query(`
-      DELETE FROM manabu.friendships 
-      WHERE user_a = LEAST($1, $2) AND user_b = GREATEST($1, $2);
-    `, [user.uid, targetUid]);
+    await withTransaction(async (client) => {
+      // Lock profile rows in deterministic order
+      const uids = [user.uid, targetUid].sort();
+      await client.query(
+        'SELECT uid FROM manabu.profiles WHERE uid IN ($1, $2) ORDER BY uid FOR UPDATE;',
+        [uids[0], uids[1]]
+      );
 
-    // 2. Delete any friend requests between them so they can re-add later
-    await query(`
-      DELETE FROM manabu.friend_requests 
-      WHERE (from_uid = $1 AND to_uid = $2) OR (from_uid = $2 AND to_uid = $1);
-    `, [user.uid, targetUid]);
+      // 1. Delete friendship
+      await client.query(`
+        DELETE FROM manabu.friendships
+        WHERE user_a = LEAST($1, $2) AND user_b = GREATEST($1, $2);
+      `, [user.uid, targetUid]);
+
+      // 2. Delete any friend requests between them so they can re-add later
+      await client.query(`
+        DELETE FROM manabu.friend_requests
+        WHERE (from_uid = $1 AND to_uid = $2) OR (from_uid = $2 AND to_uid = $1);
+      `, [user.uid, targetUid]);
+    });
 
     return NextResponse.json({ success: true, message: 'Friend removed' });
   } catch (error) {

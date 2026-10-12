@@ -63,3 +63,21 @@ body {
   color: #f0f0f0;
 }
 
+/* Furigana Display Modes */
+[data-furigana="hidden"] ruby rt {
+  display: none !important;
+}
+
+[data-furigana="hover"] ruby rt {
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+
+[data-furigana="hover"] ruby:hover rt {
+  opacity: 1;
+}
+
+[data-furigana="always"] ruby rt {
+  opacity: 1 !important;
+}
+

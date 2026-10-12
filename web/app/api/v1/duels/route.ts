@@ -43,8 +43,12 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Rate limit: 20 per hour
-  const rl = await checkRateLimit(user.uid, 'duel.create', { limit: 20, windowSeconds: 3600 });
+  // Rate limit: 20 per hour (sensitive: failClosed = true)
+  const rl = await checkRateLimit(user.uid, 'duel.create', {
+    limit: 20,
+    windowSeconds: 3600,
+    failClosed: true,
+  });
   if (!rl.allowed) {
     return NextResponse.json(
       { error: { code: 'rate_limited', message: 'Too many duel invitations created' } },

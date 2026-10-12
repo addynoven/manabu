@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifyAuthToken } from '@/features/auth/repositories/auth';
 import { SrsRepository } from '@/features/srs/repositories/srsRepository';
 import { ReviewSubmissionPayloadSchema } from '@/features/srs/models/srs.types';
+import { checkRateLimit } from '@/core/network/rateLimit';
 
 export const dynamic = 'force-dynamic';
 
@@ -10,6 +11,19 @@ export async function POST(req: NextRequest) {
     const authUser = await verifyAuthToken(req);
     if (!authUser) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
+    // Rate limit: 120 per minute (sensitive SRS execution: failClosed = true)
+    const rl = await checkRateLimit(authUser.uid, 'srs.review', {
+      limit: 120,
+      windowSeconds: 60,
+      failClosed: true,
+    });
+    if (!rl.allowed) {
+      return NextResponse.json(
+        { error: 'Rate limit exceeded for SRS review submission' },
+        { status: 429 }
+      );
     }
 
     const body = await req.json();

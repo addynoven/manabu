@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
+    "drizzle-orm": "^0.45.4",
     "firebase": "^12.19.0",
     "ioredis": "^6.0.0",
     "jose": "^6.2.12",
@@ -45,6 +46,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/wanakana": "^5.3.0",
+    "drizzle-kit": "^0.31.11",
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
     "husky": "^9.1.7",

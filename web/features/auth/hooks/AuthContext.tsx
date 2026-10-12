@@ -26,6 +26,7 @@ export interface UserProfile {
   currentStreak: number;
   lastActiveDate: string | null;
   friendCode: string;
+  desiredRetention?: number;
   daily?: {
     date: string;
     score: number;

@@ -3,6 +3,13 @@ import { fetchWithAuth } from '@/core/api/httpClient';
 export type ChallengeGameType = 'rain' | 'snake' | 'catch' | 'survival';
 export type ChallengeStatus = 'pending' | 'accepted' | 'declined' | 'completed' | 'expired';
 
+export interface GameProof {
+  durationSeconds: number;
+  itemsHandled: number;
+  accuracy?: number;
+  timestamp?: number;
+}
+
 export interface ScoreChallenge {
   id: string;
   game: ChallengeGameType;
@@ -24,18 +31,31 @@ export class ScoreChallengeClient {
     return fetchWithAuth<{ challenges: ScoreChallenge[] }>('/api/v1/challenges');
   }
 
-  async createChallenge(targetUid: string, game: ChallengeGameType, score: number) {
+  async createChallenge(
+    targetUid: string,
+    game: ChallengeGameType,
+    score: number,
+    proof?: GameProof
+  ) {
     return fetchWithAuth<{ challenge: ScoreChallenge }>('/api/v1/challenges', {
       method: 'POST',
-      body: JSON.stringify({ targetUid, game, score }),
+      body: JSON.stringify({ targetUid, game, creatorScore: score, proof }),
     });
   }
 
-  async respondChallenge(challengeId: string, action: 'accept' | 'decline' | 'complete', score?: number) {
-    return fetchWithAuth<{ challenge: ScoreChallenge }>(`/api/v1/challenges/${challengeId}/respond`, {
-      method: 'POST',
-      body: JSON.stringify({ action, score }),
-    });
+  async respondChallenge(
+    challengeId: string,
+    action: 'accept' | 'decline' | 'complete',
+    score?: number,
+    proof?: GameProof
+  ) {
+    return fetchWithAuth<{ challenge: ScoreChallenge }>(
+      `/api/v1/challenges/${challengeId}/respond`,
+      {
+        method: 'POST',
+        body: JSON.stringify({ action, score, proof }),
+      }
+    );
   }
 }
 

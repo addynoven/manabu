@@ -7,6 +7,31 @@ import { checkRateLimit } from '@/core/network/rateLimit';
 
 export const dynamic = 'force-dynamic';
 
+export function calculateLevelAndBelt(totalXp: number): {
+  level: number;
+  beltRank: 'white' | 'yellow' | 'green' | 'blue' | 'purple' | 'brown' | 'black';
+} {
+  const safeXp = Math.max(0, Math.floor(totalXp));
+  const level = Math.floor(Math.sqrt(safeXp / 100)) + 1;
+  const belts: Array<'white' | 'yellow' | 'green' | 'blue' | 'purple' | 'brown' | 'black'> = [
+    'white',
+    'yellow',
+    'green',
+    'blue',
+    'purple',
+    'brown',
+    'black',
+  ];
+  const beltRank = belts[Math.min(Math.max(0, level - 1), belts.length - 1)];
+  return { level, beltRank };
+}
+
+function getYesterdayDateStr(): string {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return d.toISOString().split('T')[0];
+}
+
 const ProfilePutSchema = z.object({
   displayName: z.string().trim().min(1).max(24),
   avatarEmoji: z.string().max(16).default('🥋'),
@@ -17,6 +42,7 @@ const ProfilePutSchema = z.object({
   weekId: z.string().regex(/^\d{4}-W\d{2}$/),
   currentStreak: z.number().int().min(0).default(0),
   lastActiveDate: z.string().nullable().optional(),
+  desiredRetention: z.number().min(0.70).max(0.97).optional(),
   daily: z.object({
     date: z.string(),
     score: z.number().int(),
@@ -53,6 +79,7 @@ export async function GET(req: NextRequest) {
         lastActiveDate: row.last_active_date,
         friendCode: row.friend_code,
         banned: row.banned,
+        desiredRetention: row.desired_retention != null ? Number(row.desired_retention) : 0.90,
         daily: row.daily_date ? {
           date: row.daily_date,
           score: row.daily_score,
@@ -73,8 +100,12 @@ export async function PUT(req: NextRequest) {
     return NextResponse.json({ error: { code: 'unauthorized', message: 'Missing or invalid token' } }, { status: 401 });
   }
 
-  // Rate limit: 60 per hour to be forgiving during sync testing (plan defaults to 6/hr in prod)
-  const rl = await checkRateLimit(user.uid, 'profile.put', { limit: 60, windowSeconds: 3600 });
+  // Rate limit: 60 per hour to be forgiving during sync testing (sensitive: failClosed = true)
+  const rl = await checkRateLimit(user.uid, 'profile.put', {
+    limit: 60,
+    windowSeconds: 3600,
+    failClosed: true,
+  });
   if (!rl.allowed) {
     return NextResponse.json({ error: { code: 'rate_limited', message: 'Too many profile updates' } }, { status: 429 });
   }
@@ -94,11 +125,94 @@ export async function PUT(req: NextRequest) {
   const p = parsed.data;
 
   try {
-    // Check if user is banned
-    const checkBan = await query('SELECT banned FROM manabu.profiles WHERE uid = $1', [user.uid]);
-    if (checkBan.rows[0]?.banned) {
+    // 1. Fetch existing profile to enforce authoritative server state
+    const existingRes = await query('SELECT * FROM manabu.profiles WHERE uid = $1', [user.uid]);
+    const existing = existingRes.rows[0];
+
+    if (existing?.banned) {
       return NextResponse.json({ error: { code: 'banned', message: 'User account is restricted' } }, { status: 403 });
     }
+
+    // 2. Reconcile daily challenge data
+    let dailyDate: string | null = null;
+    let dailyScore: number | null = null;
+    let dailyTimeSec: number | null = null;
+    let dailyAccuracy: number | null = null;
+    let dailyXpAwarded = 0;
+
+    if (p.daily) {
+      const clampedScore = Math.min(Math.max(0, p.daily.score), 1000);
+      const clampedAccuracy = Math.min(Math.max(0, p.daily.accuracy), 100);
+      const clampedTime = Math.max(0, p.daily.timeSeconds);
+
+      dailyDate = p.daily.date;
+      dailyScore = clampedScore;
+      dailyTimeSec = clampedTime;
+      dailyAccuracy = clampedAccuracy;
+
+      if (existing && existing.daily_date === p.daily.date) {
+        const existingScore = existing.daily_score ? Number(existing.daily_score) : 0;
+        if (clampedScore > existingScore) {
+          dailyXpAwarded = clampedScore - existingScore;
+        } else {
+          dailyScore = existingScore;
+          dailyTimeSec = existing.daily_time_sec ? Number(existing.daily_time_sec) : clampedTime;
+          dailyAccuracy = existing.daily_accuracy ? Number(existing.daily_accuracy) : clampedAccuracy;
+          dailyXpAwarded = 0;
+        }
+      } else {
+        dailyXpAwarded = clampedScore;
+      }
+    }
+
+    // 3. Reconcile Total XP & Weekly XP
+    let reconciledTotalXp = 0;
+    let reconciledWeeklyXp = 0;
+
+    if (existing) {
+      const serverTotalXp = Number(existing.total_xp || 0);
+      const isNewWeek = existing.week_id !== p.weekId;
+      const serverWeeklyXp = isNewWeek ? 0 : Number(existing.weekly_xp || 0);
+
+      const rawGain = Math.max(0, p.totalXp - serverTotalXp);
+      const maxAllowedGain = Math.max(dailyXpAwarded, 500);
+      const xpGain = Math.min(rawGain, maxAllowedGain);
+
+      reconciledTotalXp = serverTotalXp + xpGain;
+      reconciledWeeklyXp = serverWeeklyXp + xpGain;
+    } else {
+      reconciledTotalXp = Math.min(Math.max(0, p.totalXp), 100);
+      reconciledWeeklyXp = reconciledTotalXp;
+    }
+
+    // 4. Derive Level & Belt Rank on server from authoritative XP
+    const { level: reconciledLevel, beltRank: reconciledBeltRank } = calculateLevelAndBelt(reconciledTotalXp);
+
+    // 5. Reconcile streak & last active date
+    const todayStr = new Date().toISOString().split('T')[0];
+    let reconciledStreak = 0;
+    let reconciledLastActive: string | null = null;
+
+    if (existing) {
+      const serverStreak = Number(existing.current_streak || 0);
+      const serverLastActive = existing.last_active_date || null;
+
+      if (serverLastActive === todayStr) {
+        reconciledStreak = serverStreak;
+      } else if (serverLastActive === getYesterdayDateStr()) {
+        reconciledStreak = p.lastActiveDate ? serverStreak + 1 : serverStreak;
+      } else {
+        reconciledStreak = p.lastActiveDate ? 1 : 0;
+      }
+
+      reconciledStreak = Math.min(reconciledStreak, serverStreak + 1);
+      reconciledLastActive = p.lastActiveDate || serverLastActive || todayStr;
+    } else {
+      reconciledStreak = Math.min(Math.max(0, p.currentStreak), 1);
+      reconciledLastActive = p.lastActiveDate || todayStr;
+    }
+
+    const desiredRetention = p.desiredRetention ?? (existing?.desired_retention != null ? Number(existing.desired_retention) : 0.90);
 
     // Upsert with friend_code generation loop
     let friendCode = '';
@@ -112,12 +226,12 @@ export async function PUT(req: NextRequest) {
             uid, email, display_name, avatar_emoji, belt_rank, level,
             total_xp, weekly_xp, week_id, current_streak, last_active_date,
             daily_date, daily_score, daily_time_sec, daily_accuracy,
-            friend_code, updated_at
+            friend_code, desired_retention, updated_at
           ) VALUES (
             $1, $2, $3, $4, $5, $6,
             $7, $8, $9, $10, $11,
             $12, $13, $14, $15,
-            $16, now()
+            $16, $17, now()
           )
           ON CONFLICT (uid) DO UPDATE SET
             email = COALESCE(EXCLUDED.email, manabu.profiles.email),
@@ -134,6 +248,7 @@ export async function PUT(req: NextRequest) {
             daily_score = COALESCE(EXCLUDED.daily_score, manabu.profiles.daily_score),
             daily_time_sec = COALESCE(EXCLUDED.daily_time_sec, manabu.profiles.daily_time_sec),
             daily_accuracy = COALESCE(EXCLUDED.daily_accuracy, manabu.profiles.daily_accuracy),
+            desired_retention = COALESCE(EXCLUDED.desired_retention, manabu.profiles.desired_retention),
             updated_at = now()
           RETURNING *;
         `, [
@@ -141,18 +256,19 @@ export async function PUT(req: NextRequest) {
           user.email || null,
           p.displayName,
           p.avatarEmoji,
-          p.beltRank,
-          p.level,
-          p.totalXp,
-          p.weeklyXp,
+          reconciledBeltRank,
+          reconciledLevel,
+          reconciledTotalXp,
+          reconciledWeeklyXp,
           p.weekId,
-          p.currentStreak,
-          p.lastActiveDate || null,
-          p.daily?.date || null,
-          p.daily?.score ?? null,
-          p.daily?.timeSeconds ?? null,
-          p.daily?.accuracy ?? null,
+          reconciledStreak,
+          reconciledLastActive,
+          dailyDate,
+          dailyScore,
+          dailyTimeSec,
+          dailyAccuracy,
           friendCode,
+          desiredRetention,
         ]);
 
         savedRow = res.rows[0];
@@ -184,6 +300,7 @@ export async function PUT(req: NextRequest) {
         currentStreak: savedRow.current_streak,
         lastActiveDate: savedRow.last_active_date,
         friendCode: savedRow.friend_code,
+        desiredRetention: savedRow.desired_retention != null ? Number(savedRow.desired_retention) : 0.90,
         daily: savedRow.daily_date ? {
           date: savedRow.daily_date,
           score: savedRow.daily_score,
@@ -197,3 +314,4 @@ export async function PUT(req: NextRequest) {
     return NextResponse.json({ error: { code: 'server_error', message: 'Internal error' } }, { status: 500 });
   }
 }
+

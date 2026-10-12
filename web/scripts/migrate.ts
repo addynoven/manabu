@@ -61,6 +61,7 @@ async function migrate() {
         UNIQUE (from_uid, to_uid)
       );
       CREATE INDEX IF NOT EXISTS friend_requests_to_idx ON manabu.friend_requests (to_uid, status);
+      CREATE UNIQUE INDEX IF NOT EXISTS friend_requests_pending_pair_idx ON manabu.friend_requests (LEAST(from_uid, to_uid), GREATEST(from_uid, to_uid)) WHERE status = 'pending';
     `);
 
     // 3. Friendships

@@ -5,11 +5,28 @@ import { query } from '@/core/db/postgres';
 
 export const dynamic = 'force-dynamic';
 
+const GAME_MAX_SCORES: Record<string, number> = {
+  rain: 3000,
+  snake: 2500,
+  catch: 3500,
+  survival: 5000,
+};
+
+const ProofSchema = z
+  .object({
+    durationSeconds: z.number().int().min(5).max(300).default(60),
+    itemsHandled: z.number().int().min(1).max(300).default(20),
+    accuracy: z.number().min(0).max(1).default(1.0),
+    timestamp: z.number().optional(),
+  })
+  .optional();
+
 const CreateChallengeSchema = z.object({
   game: z.enum(['rain', 'snake', 'catch', 'survival']),
   mode: z.string().default('default'),
   targetUid: z.string().min(1),
   creatorScore: z.number().int().min(0),
+  proof: ProofSchema,
 });
 
 export async function GET(req: NextRequest) {
@@ -97,10 +114,27 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: { code: 'validation_failed', message: parsed.error.issues?.[0]?.message || 'Validation failed' } }, { status: 422 });
   }
 
-  const { game, mode, targetUid, creatorScore } = parsed.data;
+  const { game, mode, targetUid, creatorScore, proof } = parsed.data;
 
   if (targetUid === user.uid) {
     return NextResponse.json({ error: { code: 'self', message: 'Cannot challenge yourself' } }, { status: 409 });
+  }
+
+  // Authoritative server-side score bounds & proof validation
+  const maxAllowedScore = GAME_MAX_SCORES[game] || 3000;
+  const itemsHandled = proof?.itemsHandled || Math.ceil(creatorScore / 50) || 1;
+  const maxPlausibleScore = Math.min(maxAllowedScore, Math.max(100, itemsHandled * 150));
+
+  if (creatorScore > maxPlausibleScore) {
+    return NextResponse.json(
+      {
+        error: {
+          code: 'validation_failed',
+          message: `Submitted score (${creatorScore}) exceeds maximum allowed score (${maxPlausibleScore}) for ${game}`,
+        },
+      },
+      { status: 422 }
+    );
   }
 
   try {
