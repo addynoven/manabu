@@ -18,12 +18,8 @@ export function KanaScreen() {
     category: 'main',
   });
 
-  const { progressMap, markPracticed, getStats } = useKanaProgress();
-
+  const { markPracticed } = useKanaProgress();
   const dataset = script === 'hiragana' ? HIRAGANA_DATA : KATAKANA_DATA;
-  const activeCategory = subGroup === 'main' ? 'main' : subGroup === 'dakuten' ? 'dakuten' : 'combo';
-  const activeSubgroupDataset = dataset.filter((k) => k.category === activeCategory);
-  const currentStats = getStats(activeSubgroupDataset);
 
   const handleSelectKana = (item: KanaItem) => {
     setSelectedKana(item);
@@ -42,7 +38,6 @@ export function KanaScreen() {
         subGroup={subGroup}
         audioEnabled={audioEnabled}
         romajiVisible={romajiVisible}
-        percentageText={currentStats.percentageText}
         onSetScript={setScript}
         onSetSubGroup={setSubGroup}
         onToggleAudio={() => setAudioEnabled((prev) => !prev)}
@@ -58,7 +53,6 @@ export function KanaScreen() {
               dataset={dataset}
               selectedKana={selectedKana}
               romajiVisible={romajiVisible}
-              progressMap={progressMap}
               onSelectKana={handleSelectKana}
             />
           </section>

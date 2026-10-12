@@ -19,6 +19,7 @@ export interface StrokeStep {
   numberPos: StrokePoint;
   directionHint: string;
   tip?: string;
+  transform?: string;
 }
 
 export type StrokeCategory =
@@ -197,6 +198,73 @@ function loadLevelEntries(
   return [];
 }
 
+const DAKUTEN_BASE_MAP: Record<string, { base: string; type: 'dakuten' | 'handakuten' }> = {
+  // Hiragana Dakuten (25)
+  が: { base: 'か', type: 'dakuten' },
+  ぎ: { base: 'き', type: 'dakuten' },
+  ぐ: { base: 'く', type: 'dakuten' },
+  げ: { base: 'け', type: 'dakuten' },
+  ご: { base: 'こ', type: 'dakuten' },
+  ざ: { base: 'さ', type: 'dakuten' },
+  じ: { base: 'し', type: 'dakuten' },
+  ず: { base: 'す', type: 'dakuten' },
+  ぜ: { base: 'せ', type: 'dakuten' },
+  ぞ: { base: 'そ', type: 'dakuten' },
+  だ: { base: 'た', type: 'dakuten' },
+  ぢ: { base: 'ち', type: 'dakuten' },
+  づ: { base: 'つ', type: 'dakuten' },
+  で: { base: 'て', type: 'dakuten' },
+  ど: { base: 'と', type: 'dakuten' },
+  ば: { base: 'は', type: 'dakuten' },
+  び: { base: 'ひ', type: 'dakuten' },
+  ぶ: { base: 'ふ', type: 'dakuten' },
+  べ: { base: 'へ', type: 'dakuten' },
+  ぼ: { base: 'ほ', type: 'dakuten' },
+  ぱ: { base: 'は', type: 'handakuten' },
+  ぴ: { base: 'ひ', type: 'handakuten' },
+  ぷ: { base: 'ふ', type: 'handakuten' },
+  ぺ: { base: 'へ', type: 'handakuten' },
+  ぽ: { base: 'ほ', type: 'handakuten' },
+
+  // Katakana Dakuten (25)
+  ガ: { base: 'カ', type: 'dakuten' },
+  ギ: { base: 'キ', type: 'dakuten' },
+  グ: { base: 'ク', type: 'dakuten' },
+  ゲ: { base: 'ケ', type: 'dakuten' },
+  ゴ: { base: 'コ', type: 'dakuten' },
+  ザ: { base: 'サ', type: 'dakuten' },
+  ジ: { base: 'シ', type: 'dakuten' },
+  ズ: { base: 'ス', type: 'dakuten' },
+  ゼ: { base: 'セ', type: 'dakuten' },
+  ゾ: { base: 'ソ', type: 'dakuten' },
+  ダ: { base: 'タ', type: 'dakuten' },
+  ヂ: { base: 'チ', type: 'dakuten' },
+  ヅ: { base: 'ツ', type: 'dakuten' },
+  デ: { base: 'テ', type: 'dakuten' },
+  ド: { base: 'ト', type: 'dakuten' },
+  バ: { base: 'ハ', type: 'dakuten' },
+  ビ: { base: 'ヒ', type: 'dakuten' },
+  ブ: { base: 'フ', type: 'dakuten' },
+  ベ: { base: 'ヘ', type: 'dakuten' },
+  ボ: { base: 'ホ', type: 'dakuten' },
+  パ: { base: 'ハ', type: 'handakuten' },
+  ピ: { base: 'ヒ', type: 'handakuten' },
+  プ: { base: 'フ', type: 'handakuten' },
+  ペ: { base: 'ヘ', type: 'handakuten' },
+  ポ: { base: 'ホ', type: 'handakuten' },
+};
+
+const SMALL_KANA_TO_BASE: Record<string, string> = {
+  ゃ: 'や',
+  ゅ: 'ゆ',
+  ょ: 'よ',
+  ャ: 'ヤ',
+  ュ: 'ユ',
+  ョ: 'ヨ',
+  っ: 'つ',
+  ッ: 'ツ',
+};
+
 export function getCharacterStrokeData(
   char: string,
 ): CharacterStrokeData | undefined {
@@ -204,10 +272,174 @@ export function getCharacterStrokeData(
     return characterLookup.get(char);
   }
 
+  // Handle Dakuten / Handakuten single characters (e.g. が, ざ, ぱ, ガ, パ)
+  if (DAKUTEN_BASE_MAP[char]) {
+    const info = DAKUTEN_BASE_MAP[char];
+    const baseData = getCharacterStrokeData(info.base);
+    if (baseData) {
+      const baseStrokes = baseData.strokes;
+      const baseLen = baseStrokes.length;
+
+      const markStrokes: StrokeStep[] =
+        info.type === 'dakuten'
+          ? [
+              {
+                strokeNumber: baseLen + 1,
+                path: 'M 78,14 Q 85,20 90,26',
+                points: [{ x: 78, y: 14 }, { x: 90, y: 26 }],
+                startPoint: { x: 78, y: 14 },
+                endPoint: { x: 90, y: 26 },
+                numberPos: { x: 74, y: 12 },
+                directionHint: 'Dakuten mark: top-right stroke 1',
+              },
+              {
+                strokeNumber: baseLen + 2,
+                path: 'M 86,11 Q 93,17 98,23',
+                points: [{ x: 86, y: 11 }, { x: 98, y: 23 }],
+                startPoint: { x: 86, y: 11 },
+                endPoint: { x: 98, y: 23 },
+                numberPos: { x: 82, y: 9 },
+                directionHint: 'Dakuten mark: top-right stroke 2',
+              },
+            ]
+          : [
+              {
+                strokeNumber: baseLen + 1,
+                path: 'M 88,14 A 7,7 0 1,1 87.9,14',
+                points: [{ x: 88, y: 14 }],
+                startPoint: { x: 88, y: 14 },
+                endPoint: { x: 88, y: 14 },
+                numberPos: { x: 80, y: 12 },
+                directionHint: 'Handakuten mark: top-right circle',
+              },
+            ];
+
+      return {
+        char,
+        type: baseData.type,
+        romaji: KANA_ROMAJI[char] || char,
+        strokeCount: baseLen + markStrokes.length,
+        strokes: [...baseStrokes, ...markStrokes],
+      };
+    }
+  }
+
+  // Handle 2-character Yōon combos (e.g. シャ, きゃ, キョ, ぎゃ, ぴゃ)
+  if (char.length === 2) {
+    const char1 = char[0];
+    const char2Base = SMALL_KANA_TO_BASE[char[1]] || char[1];
+    const data1 = getCharacterStrokeData(char1);
+    const data2 = getCharacterStrokeData(char2Base);
+
+    if (data1) {
+      const strokes1 = data1.strokes.map((s) => ({
+        ...s,
+        transform: 'translate(-2, 4) scale(0.58, 0.88)',
+        startPoint: { x: Math.round(s.startPoint.x * 0.58 - 2), y: Math.round(s.startPoint.y * 0.88 + 4) },
+        numberPos: { x: Math.round(s.numberPos.x * 0.58 - 2), y: Math.round(s.numberPos.y * 0.88 + 4) },
+      }));
+
+      const strokes2 = data2
+        ? data2.strokes.map((s, idx) => ({
+            ...s,
+            strokeNumber: data1.strokes.length + idx + 1,
+            transform: 'translate(48, 28) scale(0.48, 0.48)',
+            startPoint: { x: Math.round(s.startPoint.x * 0.48 + 48), y: Math.round(s.startPoint.y * 0.48 + 28) },
+            numberPos: { x: Math.round(s.numberPos.x * 0.48 + 48), y: Math.round(s.numberPos.y * 0.48 + 28) },
+          }))
+        : [];
+
+      const combinedStrokes = [...strokes1, ...strokes2];
+      return {
+        char,
+        type: data1.type,
+        romaji: KANA_ROMAJI[char] || char,
+        strokeCount: combinedStrokes.length,
+        strokes: combinedStrokes,
+      };
+    }
+  }
+
   const level = kanjiLevelLookup.get(char);
   if (level && level !== 'N5') {
     loadLevelEntries(level);
     return characterLookup.get(char);
+  }
+
+  return undefined;
+}
+
+export function parseKanjiVgXml(char: string, svgText: string): CharacterStrokeData | undefined {
+  const meta = kanjiMetaMap[char];
+  const level = meta?.level || 'N5';
+  const romaji = KANA_ROMAJI[char] || meta?.onyomi || meta?.kunyomi || '';
+
+  const pathMatches = [...svgText.matchAll(/<path[^>]*d="([^"]+)"/g)];
+  if (pathMatches.length === 0) return undefined;
+
+  const textMatches = [...svgText.matchAll(/transform="matrix\(1 0 0 1 ([0-9.-]+) ([0-9.-]+)\)">([0-9]+)</g)];
+  const numberPosMap = new Map<number, { x: number; y: number }>();
+  for (const m of textMatches) {
+    const x = Math.round(parseFloat(m[1]) * 10) / 10;
+    const y = Math.round(parseFloat(m[2]) * 10) / 10;
+    const num = parseInt(m[3], 10);
+    numberPosMap.set(num, { x, y });
+  }
+
+  const strokes: StrokeStep[] = pathMatches.map((m, idx) => {
+    const strokeNumber = idx + 1;
+    const pathD = m[1];
+
+    const startMatch = pathD.match(/M\s*([0-9.-]+)[,\s]+([0-9.-]+)/i);
+    const startX = startMatch ? Math.round(parseFloat(startMatch[1]) * 10) / 10 : 20;
+    const startY = startMatch ? Math.round(parseFloat(startMatch[2]) * 10) / 10 : 20;
+
+    const numPos = numberPosMap.get(strokeNumber) || { x: startX - 6, y: startY - 2 };
+
+    return {
+      strokeNumber,
+      path: pathD,
+      points: [{ x: startX, y: startY }],
+      startPoint: { x: startX, y: startY },
+      endPoint: { x: startX + 10, y: startY + 10 },
+      numberPos: numPos,
+      directionHint: 'Follow vector stroke path',
+      tip: `Stroke ${strokeNumber}: Start at glowing beacon.`,
+    };
+  });
+
+  const charData: CharacterStrokeData = {
+    char,
+    type: 'kanji',
+    level,
+    romaji,
+    meaning: meta?.meaning,
+    onyomi: meta?.onyomi,
+    kunyomi: meta?.kunyomi,
+    strokeCount: strokes.length,
+    strokes,
+    overallTip: meta ? `JLPT ${level} • ${meta.meaning}` : undefined,
+  };
+
+  characterLookup.set(char, charData);
+  return charData;
+}
+
+export async function fetchKanjiVgStrokeData(char: string): Promise<CharacterStrokeData | undefined> {
+  if (characterLookup.has(char)) {
+    return characterLookup.get(char);
+  }
+
+  try {
+    const hex = char.charCodeAt(0).toString(16).padStart(5, '0');
+    const url = `https://cdn.jsdelivr.net/gh/kanjivg/kanjivg/kanji/${hex}.svg`;
+    const res = await fetch(url);
+    if (res.ok) {
+      const svgText = await res.text();
+      return parseKanjiVgXml(char, svgText);
+    }
+  } catch (err) {
+    console.warn(`[strokeData] Failed to fetch KanjiVG SVG for '${char}':`, err);
   }
 
   return undefined;

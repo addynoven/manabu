@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Uncomment if repository tests need a real database / Valkey:
+    # services:
+    #   postgres:
+    #     image: postgres:16
+    #     env: { POSTGRES_PASSWORD: postgres }
+    #     ports: ['5432:5432']
+    #     options: >-
+    #       --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - run: bun run typecheck
+      - run: bun run lint
+      - run: bun run test
+      - run: bun run build
+        env:
+          # config.schema.ts validates env at boot. Provide dummy values the build needs.
+          NODE_ENV: production
+          # DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres
+          # SESSION_SECRET: ci-only-not-a-real-secret

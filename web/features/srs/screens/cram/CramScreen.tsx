@@ -2,8 +2,8 @@
 
 import React, { useState, useMemo } from 'react';
 import { StitchHeader } from '@/core/components/StitchHeader';
-import { AuthGate } from '@/features/auth/components/AuthGate';
-import { speakJapanese } from '@/features/content/models/kana';
+import { AuthGate } from '@/features/auth';
+import { speakJapanese } from '@/features/content';
 import rawVocab from '@/data/vocab_n5.json';
 import {
   CramHeader,

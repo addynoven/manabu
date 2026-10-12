@@ -6,6 +6,7 @@ import { conjugate, type ConjugateResult } from '../../engine/conjugate';
 import {
   ConjugatorHeaderSearch,
   InflectionMatrixGrid,
+  SpeedDrillModal,
 } from './components';
 
 export function ConjugatorScreen() {
@@ -16,6 +17,7 @@ export function ConjugatorScreen() {
   const [showFurigana, setShowFurigana] = useState(true);
   const [showPitchAccent, setShowPitchAccent] = useState(true);
   const [audioAutoplay, setAudioAutoplay] = useState(false);
+  const [isSpeedDrillOpen, setIsSpeedDrillOpen] = useState(false);
 
   const conjugationData = useMemo<ConjugateResult>(() => {
     return conjugate(inputVerb.trim() || '食べる');
@@ -48,7 +50,7 @@ export function ConjugatorScreen() {
   }, [conjugationData]);
 
   return (
-    <div className="bg-background-canvas min-h-screen text-text-primary antialiased flex flex-col font-sans select-none custom-scroll">
+    <div className="bg-background-canvas min-h-screen text-text-primary antialiased flex flex-col font-sans select-none custom-scroll selection:bg-primary-container selection:text-white">
       <StitchHeader />
 
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 py-6 flex flex-col space-y-6">
@@ -70,7 +72,7 @@ export function ConjugatorScreen() {
           onTogglePitchAccent={setShowPitchAccent}
           onToggleAudioAutoplay={setAudioAutoplay}
           onSpeak={speak}
-          onStartSpeedDrill={() => {}}
+          onStartSpeedDrill={() => setIsSpeedDrillOpen(true)}
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
@@ -78,10 +80,21 @@ export function ConjugatorScreen() {
             inputVerb={inputVerb}
             conjugationData={conjugationData}
             formsMap={formsMap}
+            formality={formality}
+            polarity={polarity}
+            tense={tense}
+            showFurigana={showFurigana}
+            showPitchAccent={showPitchAccent}
             onSpeak={speak}
           />
         </div>
       </main>
+
+      <SpeedDrillModal
+        isOpen={isSpeedDrillOpen}
+        onClose={() => setIsSpeedDrillOpen(false)}
+        onSpeak={speak}
+      />
     </div>
   );
 }

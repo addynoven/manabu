@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { speakJapanese } from '@/features/content/models/kana';
+import { speakJapanese } from '@/features/content';
 import { Volume2, XCircle, CheckCircle2 } from 'lucide-react';
 
 export interface CramItem {

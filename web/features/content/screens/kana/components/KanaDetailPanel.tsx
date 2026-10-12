@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useLayoutEffect } from 'react';
 import { KanaItem, speakJapanese, getKanaStrokeCount } from '../../../models/kana';
 import { getKanaMnemonic } from '../../../data/kanaMnemonics';
 import { getCharacterStrokeData } from '../../../models/strokeData';
@@ -9,8 +9,7 @@ interface AnimatedSVGPathProps {
   d: string;
   strokeColor: string;
   strokeWidth: string;
-  isDrawingActive: boolean;
-  isCompleted: boolean;
+  isDrawn: boolean;
   durationMs?: number;
 }
 
@@ -18,19 +17,18 @@ function AnimatedSVGPath({
   d,
   strokeColor,
   strokeWidth,
-  isDrawingActive,
-  isCompleted,
-  durationMs = 900,
+  isDrawn,
+  durationMs = 850,
 }: AnimatedSVGPathProps) {
   const pathRef = useRef<SVGPathElement | null>(null);
-  const [totalLength, setTotalLength] = useState<number>(300);
+  const [pathLength, setPathLength] = useState<number>(0);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (pathRef.current) {
       try {
         const len = pathRef.current.getTotalLength();
         if (len > 0) {
-          setTotalLength(len);
+          setPathLength(Math.ceil(len));
         }
       } catch (err) {
         // Fallback default length
@@ -38,7 +36,8 @@ function AnimatedSVGPath({
     }
   }, [d]);
 
-  const dashOffset = isCompleted ? 0 : isDrawingActive ? 0 : totalLength;
+  const dashArray = pathLength > 0 ? pathLength : undefined;
+  const dashOffset = isDrawn ? 0 : pathLength;
 
   return (
     <path
@@ -50,13 +49,9 @@ function AnimatedSVGPath({
       strokeLinecap="round"
       strokeLinejoin="round"
       style={{
-        strokeDasharray: totalLength,
+        strokeDasharray: dashArray,
         strokeDashoffset: dashOffset,
-        transition: isDrawingActive
-          ? `stroke-dashoffset ${durationMs}ms cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s ease`
-          : isCompleted
-          ? 'stroke-dashoffset 0s, stroke 0.3s ease'
-          : 'stroke-dashoffset 0.2s ease, stroke 0.3s ease',
+        transition: `stroke-dashoffset ${durationMs}ms cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s ease`,
       }}
     />
   );
@@ -70,7 +65,7 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
   const [padMode, setPadMode] = useState<'anim' | 'teacher'>('anim');
   const [activeStrokeIndex, setActiveStrokeIndex] = useState(0);
 
-  // Looping stroke animation state
+  // 0 = clean canvas, 1..N = drawing stroke, N+1 = full completion hold
   const [animStep, setAnimStep] = useState(0);
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -83,17 +78,30 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
   const mnemonicText = getKanaMnemonic(selectedKana.kana, selectedKana.romaji);
   const unicodeHex = `U+${selectedKana.kana.charCodeAt(0).toString(16).toUpperCase()}`;
 
-  // Infinite looping stroke-by-stroke animation effect in 'anim' mode
+  // Smooth step-by-step looping animation timer in 'anim' mode
   useEffect(() => {
     if (padMode !== 'anim' || !strokeData) return;
 
-    const total = strokeData.strokes.length;
-    const interval = setInterval(() => {
-      setAnimStep((prev) => (prev + 1) % (total + 1));
-    }, 1200);
+    const totalStrokes = strokeData.strokes.length;
+    let timer: NodeJS.Timeout;
 
-    return () => clearInterval(interval);
-  }, [padMode, strokeData, selectedKana.kana]);
+    if (animStep === 0) {
+      // Pause on clean canvas before starting stroke 1
+      timer = setTimeout(() => setAnimStep(1), 350);
+    } else if (animStep >= 1 && animStep <= totalStrokes) {
+      // Allow 900ms per stroke for Point A -> Point B drawing animation
+      timer = setTimeout(() => {
+        setAnimStep((s) => s + 1);
+      }, 950);
+    } else if (animStep > totalStrokes) {
+      // Hold completed character on screen for 1.6s before resetting
+      timer = setTimeout(() => {
+        setAnimStep(0);
+      }, 1600);
+    }
+
+    return () => clearTimeout(timer);
+  }, [padMode, animStep, strokeData, selectedKana.kana]);
 
   // Reset state when selectedKana or padMode changes
   useEffect(() => {
@@ -109,6 +117,11 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
     if (!ctx) return;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     setHasDrawn(false);
+  };
+
+  const handleResetTeacherMode = () => {
+    setActiveStrokeIndex(0);
+    clearCanvas();
   };
 
   const startDrawing = (e: React.MouseEvent<HTMLCanvasElement> | React.TouchEvent<HTMLCanvasElement>) => {
@@ -156,11 +169,17 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
     if (!isDrawing) return;
     setIsDrawing(false);
 
-    if (strokeData && activeStrokeIndex < strokeData.strokes.length - 1) {
-      setActiveStrokeIndex((prev) => prev + 1);
+    if (strokeData && activeStrokeIndex < strokeData.strokes.length) {
+      const nextIndex = activeStrokeIndex + 1;
+      setActiveStrokeIndex(nextIndex);
+      if (nextIndex === strokeData.strokes.length) {
+        // Final stroke completed! Play pronunciation audio
+        speakJapanese(selectedKana.kana);
+      }
     }
   };
 
+  const isAllStrokesCompleted = strokeData && activeStrokeIndex >= strokeData.strokes.length;
   const currentStroke = strokeData?.strokes[activeStrokeIndex];
 
   return (
@@ -243,14 +262,31 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
           </div>
         </div>
 
-        {/* Teacher Mode Hint Banner */}
-        {padMode === 'teacher' && currentStroke && (
-          <div className="mb-3 px-3 py-1.5 rounded-lg bg-accent-gold-subtle border border-accent-gold/30 text-[11px] font-medium text-accent-gold flex items-center justify-between">
-            <span>
-              Stroke {activeStrokeIndex + 1} / {strokeCount}: {currentStroke.directionHint || 'Sweep smoothly'}
-            </span>
-            <span className="w-2 h-2 rounded-full bg-accent-gold animate-ping" />
-          </div>
+        {/* Teacher Mode Hint / Completion Banner */}
+        {padMode === 'teacher' && (
+          <>
+            {isAllStrokesCompleted ? (
+              <div className="mb-3 px-3 py-1.5 rounded-lg bg-success/20 border border-success/40 text-[11px] font-bold text-success flex items-center justify-between shadow-sm">
+                <div className="flex items-center gap-1.5">
+                  <span className="material-symbols-outlined text-[16px]">check_circle</span>
+                  <span>Character Mastered! Excellent!</span>
+                </div>
+                <button
+                  onClick={handleResetTeacherMode}
+                  className="text-[10px] underline hover:text-white font-bold ml-2"
+                >
+                  Repeat
+                </button>
+              </div>
+            ) : currentStroke ? (
+              <div className="mb-3 px-3 py-1.5 rounded-lg bg-accent-gold-subtle border border-accent-gold/30 text-[11px] font-medium text-accent-gold flex items-center justify-between">
+                <span>
+                  Stroke {activeStrokeIndex + 1} / {strokeCount}: {currentStroke.directionHint || 'Sweep smoothly'}
+                </span>
+                <span className="w-2 h-2 rounded-full bg-accent-gold animate-ping" />
+              </div>
+            ) : null}
+          </>
         )}
 
         {/* Tatami Canvas & Progressive SVG Vector Guide */}
@@ -264,41 +300,56 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
             <svg viewBox="0 0 109 109" className="absolute inset-0 w-full h-full p-2 pointer-events-none select-none z-0">
               {/* Background faint guide for unreached strokes */}
               {strokeData.strokes.map((stroke) => (
-                <path
-                  key={`bg-${stroke.strokeNumber}`}
-                  d={stroke.path}
-                  fill="none"
-                  stroke="rgba(255,255,255,0.08)"
-                  strokeWidth="5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+                <g key={`bg-g-${stroke.strokeNumber}`} transform={stroke.transform}>
+                  <path
+                    key={`bg-${stroke.strokeNumber}`}
+                    d={stroke.path}
+                    fill="none"
+                    stroke="rgba(255,255,255,0.08)"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </g>
               ))}
 
               {/* Progressive Point A-to-B Animated Strokes */}
               {strokeData.strokes.map((stroke, idx) => {
-                const isPast = padMode === 'teacher' ? idx < activeStrokeIndex : idx < animStep;
-                const isCurrent = padMode === 'teacher' ? idx === activeStrokeIndex : idx === animStep;
+                const strokeStepNum = idx + 1;
+                const isDrawn =
+                  padMode === 'teacher'
+                    ? idx < activeStrokeIndex
+                    : animStep >= strokeStepNum;
+
+                const isCurrent =
+                  padMode === 'teacher'
+                    ? idx === activeStrokeIndex
+                    : animStep === strokeStepNum;
 
                 const strokeColor =
                   padMode === 'anim'
-                    ? idx === animStep
-                      ? '#fbbf24' // Current animating stroke in gold
-                      : '#c74a4a' // Completed stroke in red
+                    ? isCurrent
+                      ? '#fbbf24' // Active drawing stroke in gold
+                      : isDrawn
+                      ? '#c74a4a' // Completed stroke in red
+                      : 'transparent'
                     : isCurrent
                     ? '#c74a4a' // Active target stroke in bright red
-                    : '#38bdf8'; // Completed stroke in blue
+                    : isDrawn
+                    ? '#38bdf8' // Completed stroke in blue
+                    : 'transparent';
 
                 return (
                   <g key={stroke.strokeNumber}>
-                    <AnimatedSVGPath
-                      d={stroke.path}
-                      strokeColor={strokeColor}
-                      strokeWidth={isCurrent ? '7' : '5'}
-                      isDrawingActive={isCurrent}
-                      isCompleted={isPast}
-                      durationMs={1000}
-                    />
+                    <g transform={stroke.transform}>
+                      <AnimatedSVGPath
+                        d={stroke.path}
+                        strokeColor={strokeColor}
+                        strokeWidth={isCurrent ? '7' : '5'}
+                        isDrawn={isDrawn}
+                        durationMs={850}
+                      />
+                    </g>
 
                     {/* Numbered Badge */}
                     <text
@@ -334,8 +385,12 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
               })}
             </svg>
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-              <span className="text-[160px] font-serif text-text-muted/15 font-bold leading-none">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none px-2">
+              <span
+                className={`${
+                  selectedKana.kana.length > 1 ? 'text-[85px] tracking-tighter' : 'text-[160px]'
+                } font-serif text-text-muted/15 font-bold leading-none whitespace-nowrap`}
+              >
                 {selectedKana.kana}
               </span>
             </div>
@@ -371,16 +426,16 @@ export function KanaDetailPanel({ selectedKana }: KanaDetailPanelProps) {
           </button>
 
           <button
-            onClick={clearCanvas}
+            onClick={handleResetTeacherMode}
             className={`py-2 rounded-lg border font-semibold transition flex items-center justify-center gap-1 ${
-              hasDrawn
+              hasDrawn || isAllStrokesCompleted
                 ? 'bg-primary-container text-white border-primary-container shadow'
                 : 'bg-surface-muted border-border-hairline text-text-secondary hover:text-white'
             }`}
-            title="Clear canvas"
+            title="Clear canvas and reset strokes"
           >
             <span className="material-symbols-outlined text-[16px]">refresh</span>
-            <span>Clear Pad</span>
+            <span>Reset Strokes</span>
           </button>
         </div>
       </div>

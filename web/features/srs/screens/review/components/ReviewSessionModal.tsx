@@ -2,7 +2,7 @@
 
 import React from 'react';
 import confetti from 'canvas-confetti';
-import { speakJapanese } from '@/features/content/models/kana';
+import { speakJapanese } from '@/features/content';
 import { Volume2, CheckCircle2, XCircle } from 'lucide-react';
 
 export interface SrsItem {

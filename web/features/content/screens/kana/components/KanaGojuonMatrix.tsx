@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { KanaItem } from '../../../models/kana';
-import { KanaItemProgress } from '../../../repositories/kanaProgressStore';
 
 const VOWELS = ['a', 'i', 'u', 'e', 'o'];
 
@@ -49,7 +48,6 @@ interface KanaGojuonMatrixProps {
   dataset: KanaItem[];
   selectedKana: KanaItem;
   romajiVisible: boolean;
-  progressMap?: Record<string, KanaItemProgress>;
   onSelectKana: (item: KanaItem) => void;
 }
 
@@ -59,28 +57,8 @@ export function KanaGojuonMatrix({
   dataset,
   selectedKana,
   romajiVisible,
-  progressMap,
   onSelectKana,
 }: KanaGojuonMatrixProps) {
-  const renderStatusDot = (kana: string) => {
-    const prog = progressMap?.[kana];
-    if (!prog || prog.status === 'unlearned' || prog.practiceCount === 0) return null;
-    if (prog.status === 'mastered') {
-      return (
-        <div
-          className="absolute top-1 right-1.5 w-1.5 h-1.5 rounded-full bg-success shadow-[0_0_6px_rgba(34,197,94,0.6)]"
-          title="Mastered (3+ practices)"
-        />
-      );
-    }
-    return (
-      <div
-        className="absolute top-1 right-1.5 w-1.5 h-1.5 rounded-full bg-accent-gold shadow-[0_0_6px_rgba(234,179,8,0.6)]"
-        title="Learning in progress"
-      />
-    );
-  };
-
   const getMainKanaForCell = (consonant: string, vowel: string): KanaItem | null => {
     let targetRomaji = consonant + vowel;
     if (consonant === 's' && vowel === 'i') targetRomaji = 'shi';
@@ -157,7 +135,6 @@ export function KanaGojuonMatrix({
                           : 'bg-surface-base hover:bg-surface-muted border border-border-hairline'
                       }`}
                     >
-                      {renderStatusDot(item.kana)}
                       <span className="text-2xl font-serif font-bold text-text-primary group-hover:scale-105 transition-transform">
                         {item.kana}
                       </span>
@@ -214,7 +191,6 @@ export function KanaGojuonMatrix({
                           : 'bg-surface-base hover:bg-surface-muted border border-border-hairline'
                       }`}
                     >
-                      {renderStatusDot(item.kana)}
                       <span className="text-2xl font-serif font-bold text-text-primary group-hover:scale-105 transition-transform">
                         {item.kana}
                       </span>
@@ -241,7 +217,6 @@ export function KanaGojuonMatrix({
                   }
                   className="relative group cursor-pointer bg-surface-base hover:bg-surface-muted rounded-lg border border-accent-gold/40 p-2 flex flex-col items-center justify-center transition-all"
                 >
-                  {renderStatusDot(script === 'hiragana' ? 'ん' : 'ン')}
                   <span className="text-2xl font-serif font-bold text-accent-gold">
                     {script === 'hiragana' ? 'ん' : 'ン'}
                   </span>

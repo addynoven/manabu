@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import { StitchHeader } from '@/core/components/StitchHeader';
 import { speakJapanese } from '../../models/kana';
+import { getCharacterStrokeData } from '../../models/strokeData';
 import n5Kanji from '@/data/kanji_n5.json';
 import n4Kanji from '@/data/kanji_n4.json';
 import n3Kanji from '@/data/kanji_n3.json';
@@ -104,13 +105,36 @@ export function KanjiScreen() {
       return true;
     });
 
+    // Helper for fast stroke count lookup
+    const getKanjiStrokes = (char: string): number => {
+      const data = getCharacterStrokeData(char);
+      return data?.strokeCount || 10;
+    };
+
     // 4. Sorting Logic
     if (sortOption.includes('Stroke Count (Fewest')) {
-      result = [...result].sort((a, b) => (a.kanjiChar.length || 1) - (b.kanjiChar.length || 1));
+      result = [...result].sort((a, b) => {
+        const countA = a.strokeCount || getKanjiStrokes(a.kanjiChar);
+        const countB = b.strokeCount || getKanjiStrokes(b.kanjiChar);
+        if (countA !== countB) return countA - countB;
+        return a.id - b.id;
+      });
     } else if (sortOption.includes('Stroke Count (Most')) {
-      result = [...result].sort((a, b) => (b.kanjiChar.length || 1) - (a.kanjiChar.length || 1));
+      result = [...result].sort((a, b) => {
+        const countA = a.strokeCount || getKanjiStrokes(a.kanjiChar);
+        const countB = b.strokeCount || getKanjiStrokes(b.kanjiChar);
+        if (countA !== countB) return countB - countA;
+        return a.id - b.id;
+      });
     } else if (sortOption.includes('Alphabetical')) {
-      result = [...result].sort((a, b) => a.meanings[0]?.localeCompare(b.meanings[0] || '') || 0);
+      result = [...result].sort((a, b) => {
+        const nameA = a.meanings[0] || '';
+        const nameB = b.meanings[0] || '';
+        return nameA.localeCompare(nameB);
+      });
+    } else {
+      // Default: JLPT Curriculum (Ascending)
+      result = [...result].sort((a, b) => a.id - b.id);
     }
 
     return result;
@@ -175,15 +199,7 @@ export function KanjiScreen() {
           onSetPage={setCurrentPage}
         />
 
-        <KanjiDetailInspector
-          activeKanji={activeKanji}
-          activeStroke={activeStroke}
-          svgPaths={activeSvgPaths}
-          onAnimateStroke={() => {
-            setActiveStroke((prev) => (prev >= activeSvgPaths.length ? 1 : prev + 1));
-            speakJapanese(activeKanji.kanjiChar);
-          }}
-        />
+        <KanjiDetailInspector activeKanji={activeKanji} />
       </main>
     </div>
   );

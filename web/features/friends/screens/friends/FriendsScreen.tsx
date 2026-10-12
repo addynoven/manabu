@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { StitchHeader } from '@/core/components/StitchHeader';
-import { AuthGate } from '@/features/auth/components/AuthGate';
-import { useAuth } from '@/features/auth/hooks/useAuth';
+import { AuthGate, useAuth } from '@/features/auth';
 import { fetchWithAuth } from '@/core/api/httpClient';
 import { RefreshCw, Trophy, Users, UserPlus } from 'lucide-react';
 import {

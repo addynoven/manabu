@@ -17,40 +17,18 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
   }, []);
 
   const hasLocalSession = (() => {
-    if (typeof window === 'undefined') return false;
+    if (typeof window === 'undefined') return true;
     try {
       const u = localStorage.getItem('manabu_user');
       const p = localStorage.getItem('manabu_auth_profile');
       return !!(u || p);
     } catch {
-      return false;
+      return true;
     }
   })();
 
-  if (!mounted) {
-    return (
-      <div className="min-h-screen bg-[#04131a] flex flex-col items-center justify-center p-4">
-        <div className="w-14 h-14 rounded-2xl bg-gradient-to-b from-[#103e4e] to-[#082630] border border-[#17424f] shadow-2xl flex items-center justify-center text-2xl font-bold text-[#c74a4a] animate-pulse">
-          学
-        </div>
-        <p className="text-xs font-mono text-[#8fa2aa] mt-3">Connecting to Manabu Dojo...</p>
-      </div>
-    );
-  }
-
-  if (user || profile || hasLocalSession) {
+  if (!mounted || user || profile || hasLocalSession) {
     return <>{children}</>;
-  }
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-[#04131a] flex flex-col items-center justify-center p-4">
-        <div className="w-14 h-14 rounded-2xl bg-gradient-to-b from-[#103e4e] to-[#082630] border border-[#17424f] shadow-2xl flex items-center justify-center text-2xl font-bold text-[#c74a4a] animate-pulse">
-          学
-        </div>
-        <p className="text-xs font-mono text-[#8fa2aa] mt-3">Connecting to Manabu Dojo...</p>
-      </div>
-    );
   }
 
   const handleGoogleSignIn = async () => {

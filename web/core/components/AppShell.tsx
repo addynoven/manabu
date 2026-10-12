@@ -23,9 +23,7 @@ import {
   Zap,
 } from 'lucide-react';
 
-import { syncContentWithBackend } from '@/features/content/store/contentStore';
-import { useAuth } from '@/features/auth/hooks/useAuth';
-import { AuthModal } from '@/features/auth/components/AuthModal';
+import { useAuth, AuthModal } from '@/features/auth';
 
 interface AppShellProps {
   children: React.ReactNode;
@@ -67,10 +65,6 @@ export function AppShell({ children }: AppShellProps) {
       if (savedStreak && !profile) setStreak(Number(savedStreak));
     } catch {}
 
-    const timer = setTimeout(() => {
-      syncContentWithBackend().catch(() => {});
-    }, 600);
-    return () => clearTimeout(timer);
   }, [profile]);
 
   const copyFriendCode = (code: string) => {

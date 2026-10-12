@@ -6,6 +6,8 @@
     "dev": "next dev",
     "prebuild": "node -e \"const fs = require('fs'); if (fs.existsSync('./scripts/export_curriculum_to_web.ts')) { require('child_process').execSync('bun run ./scripts/export_curriculum_to_web.ts', { stdio: 'inherit' }); } else { console.log('Using pre-bundled curriculum.json'); }\"",
     "sync:curriculum": "bun run ./scripts/export_curriculum_to_web.ts",
+    "gen:feature": "bun scripts/gen-feature.ts",
+    "typecheck": "tsc --noEmit",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

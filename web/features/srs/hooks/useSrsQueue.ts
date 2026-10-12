@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { fetchWithAuth } from '@/core/api/httpClient';
-import { useAuth } from '@/features/auth/hooks/useAuth';
+import { useAuth } from '@/features/auth';
 import rawVocab from '@/data/vocab_n5.json';
 import curriculumData from '@/data/curriculum.json';
 

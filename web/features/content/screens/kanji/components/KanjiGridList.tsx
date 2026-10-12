@@ -11,6 +11,7 @@ export interface KanjiEntry {
   meanings: string[];
   level?: string;
   strokes?: number;
+  strokeCount?: number;
   radical?: string;
 }
 
