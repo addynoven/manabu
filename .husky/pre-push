@@ -1,2 +1,2 @@
 #!/bin/sh
-cd web && bun run typecheck
+cd web && bun run typecheck && bun run test
