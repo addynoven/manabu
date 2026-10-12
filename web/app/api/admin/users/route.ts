@@ -1,17 +1,33 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { query } from '@/core/db/postgres';
+import { getAdminSecret, verifyAdminJwt } from '../auth/route';
 
 export const dynamic = 'force-dynamic';
 
-function checkAdminAuth(req: NextRequest): boolean {
-  const secret = process.env.ADMIN_SECRET || 'manabu_admin_2026_secure';
-  const cookie = req.cookies.get('manabu_admin_session')?.value;
-  const header = req.headers.get('x-admin-secret');
-  return cookie === secret || header === secret;
+async function checkAdminAuth(req: NextRequest): Promise<boolean> {
+  const adminSecret = getAdminSecret();
+  if (!adminSecret) {
+    return false; // Fail closed if ADMIN_SECRET is not configured
+  }
+
+  // 1. Check signed JWT session cookie
+  const cookieToken = req.cookies.get('manabu_admin_session')?.value;
+  if (cookieToken) {
+    const isValidJwt = await verifyAdminJwt(cookieToken, adminSecret);
+    if (isValidJwt) return true;
+  }
+
+  // 2. Check x-admin-secret header against validated ADMIN_SECRET
+  const headerSecret = req.headers.get('x-admin-secret');
+  if (headerSecret && headerSecret.trim() === adminSecret) {
+    return true;
+  }
+
+  return false;
 }
 
 export async function GET(req: NextRequest) {
-  if (!checkAdminAuth(req)) {
+  if (!(await checkAdminAuth(req))) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
@@ -20,7 +36,7 @@ export async function GET(req: NextRequest) {
 
   try {
     let sql = 'SELECT * FROM manabu.profiles ORDER BY updated_at DESC LIMIT 50';
-    let params: any[] = [];
+    let params: unknown[] = [];
 
     if (q) {
       sql = `
@@ -41,12 +57,13 @@ export async function GET(req: NextRequest) {
 }
 
 export async function PATCH(req: NextRequest) {
-  if (!checkAdminAuth(req)) {
+  if (!(await checkAdminAuth(req))) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
   try {
-    const { uid, banned } = await req.json();
+    const body = await req.json().catch(() => ({}));
+    const { uid, banned } = body;
     if (!uid || typeof banned !== 'boolean') {
       return NextResponse.json({ error: 'Invalid parameters' }, { status: 400 });
     }
@@ -60,7 +77,7 @@ export async function PATCH(req: NextRequest) {
 }
 
 export async function DELETE(req: NextRequest) {
-  if (!checkAdminAuth(req)) {
+  if (!(await checkAdminAuth(req))) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
