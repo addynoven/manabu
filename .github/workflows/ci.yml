@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master, main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - name: Install dependencies
+        run: cd web && bun install
+      - name: Typecheck
+        run: cd web && bun run typecheck
+      - name: Test
+        run: cd web && bun run test
+      - name: Build
+        run: cd web && bun run build
+        env:
+          NODE_ENV: production
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          VALKEY_URL: ${{ secrets.VALKEY_URL }}
