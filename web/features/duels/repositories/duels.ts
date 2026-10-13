@@ -169,24 +169,31 @@ export async function acceptMatch(id: string, uid: string): Promise<DuelState> {
     throw new Error('Only the invited player can accept');
   }
 
-  if (raw.status !== 'waiting') {
-    throw new Error(`Cannot accept match with status: ${raw.status}`);
+  // Atomic Compare-And-Set using Valkey Lua Script to eliminate race conditions
+  const now = Date.now();
+  const deadline = raw.game === 'shiritori' ? now + 30000 : now + ROUND_TIME_MS;
+
+  const luaScript = `
+    local currentStatus = redis.call('HGET', KEYS[1], 'status')
+    if currentStatus ~= 'waiting' then
+      return 0
+    end
+    redis.call('HSET', KEYS[1], 'status', 'live', 'startedAt', ARGV[1])
+    return 1
+  `;
+
+  const casSuccess = await valkey.eval(luaScript, 1, matchKey, String(now));
+  if (!casSuccess) {
+    throw new Error('Match is no longer waiting or has already been accepted');
   }
 
-  const now = Date.now();
   if (raw.game === 'shiritori') {
-    const turnDeadline = now + 30000;
     await valkey.hset(matchKey, {
-      status: 'live',
-      startedAt: now,
       turn: raw.a,
-      turnDeadlineMs: turnDeadline,
+      turnDeadlineMs: deadline,
     });
   } else {
-    const deadline = now + ROUND_TIME_MS;
     await valkey.hset(matchKey, {
-      status: 'live',
-      startedAt: now,
       round: 0,
       roundDeadlineMs: deadline,
     });

@@ -17,11 +17,19 @@ export function getDbPool(): pg.Pool {
     }
   }
 
+  // Enforce strict TLS certificate verification in production
+  const isProd = process.env.NODE_ENV === 'production';
+  const sslConfig = ca
+    ? { rejectUnauthorized: true, ca }
+    : isProd
+    ? { rejectUnauthorized: true }
+    : { rejectUnauthorized: false };
+
   const connectionString = process.env.DATABASE_URL;
   if (connectionString) {
     pool = new pg.Pool({
       connectionString,
-      ssl: ca ? { rejectUnauthorized: true, ca } : { rejectUnauthorized: false },
+      ssl: sslConfig,
       max: 5,
       idleTimeoutMillis: 30000,
       connectionTimeoutMillis: 10000,
@@ -33,7 +41,7 @@ export function getDbPool(): pg.Pool {
       user: process.env.PGUSER,
       password: process.env.PGPASSWORD,
       database: process.env.PGDATABASE || 'defaultdb',
-      ssl: ca ? { rejectUnauthorized: true, ca } : { rejectUnauthorized: false },
+      ssl: sslConfig,
       max: 5,
       idleTimeoutMillis: 30000,
       connectionTimeoutMillis: 10000,

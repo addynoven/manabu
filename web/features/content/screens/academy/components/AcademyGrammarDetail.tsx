@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import DOMPurify from 'isomorphic-dompurify';
 import { AcademyItem } from '../../../models/academyData';
 
 interface AcademyGrammarDetailProps {
@@ -299,7 +300,7 @@ export function AcademyGrammarDetail({
               </div>
               <p
                 className="text-xl font-bold text-white font-serif tracking-wide leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: ex.japaneseHtml }}
+                dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(ex.japaneseHtml) }}
               />
               <p className="text-xs text-text-primary font-medium">
                 {ex.english}
